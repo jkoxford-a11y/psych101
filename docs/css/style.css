@@ -1,0 +1,210 @@
+/* Psych101 Textbook — base stylesheet */
+
+:root {
+  --color-bg: #ffffff;
+  --color-text: #1a1a2e;
+  --color-accent: #4a6fa5;
+  --color-accent-light: #e8eef7;
+  --color-muted: #6b7280;
+  --color-border: #e5e7eb;
+  --color-callout-bg: #f0f4ff;
+  --color-callout-border: #4a6fa5;
+  --font-body: 'Georgia', 'Times New Roman', serif;
+  --font-ui: 'Segoe UI', system-ui, sans-serif;
+  --max-width: 780px;
+  --sidebar-width: 260px;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: var(--font-body);
+  font-size: 18px;
+  line-height: 1.75;
+  color: var(--color-text);
+  background: var(--color-bg);
+}
+
+/* ── Layout ── */
+.layout {
+  display: flex;
+  min-height: 100vh;
+}
+
+.sidebar {
+  width: var(--sidebar-width);
+  flex-shrink: 0;
+  background: #f9fafb;
+  border-right: 1px solid var(--color-border);
+  padding: 2rem 1.25rem;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+.main {
+  flex: 1;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 3rem 2rem 6rem;
+}
+
+/* ── Sidebar nav ── */
+.sidebar .book-title {
+  font-family: var(--font-ui);
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-accent);
+  margin-bottom: 1.5rem;
+}
+
+.sidebar nav ul {
+  list-style: none;
+}
+
+.sidebar nav li {
+  margin-bottom: 0.1rem;
+}
+
+.sidebar nav a {
+  font-family: var(--font-ui);
+  font-size: 0.875rem;
+  color: var(--color-muted);
+  text-decoration: none;
+  display: block;
+  padding: 0.3rem 0.5rem;
+  border-radius: 4px;
+  transition: background 0.15s, color 0.15s;
+}
+
+.sidebar nav a:hover,
+.sidebar nav a.active {
+  background: var(--color-accent-light);
+  color: var(--color-accent);
+}
+
+.sidebar nav .pillar {
+  font-family: var(--font-ui);
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--color-muted);
+  margin: 1.25rem 0 0.4rem 0.5rem;
+}
+
+/* ── Typography ── */
+h1 {
+  font-family: var(--font-ui);
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--color-text);
+  margin-bottom: 0.5rem;
+}
+
+h2 {
+  font-family: var(--font-ui);
+  font-size: 1.35rem;
+  font-weight: 600;
+  margin: 2.5rem 0 0.75rem;
+  color: var(--color-text);
+}
+
+h3 {
+  font-family: var(--font-ui);
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 1.75rem 0 0.5rem;
+  color: var(--color-text);
+}
+
+p { margin-bottom: 1.25rem; }
+
+a { color: var(--color-accent); }
+
+/* ── Chapter header ── */
+.chapter-meta {
+  font-family: var(--font-ui);
+  font-size: 0.85rem;
+  color: var(--color-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 0.5rem;
+}
+
+.chapter-divider {
+  border: none;
+  border-top: 2px solid var(--color-accent);
+  margin: 1.5rem 0 2.5rem;
+  width: 60px;
+}
+
+/* ── Callout boxes ── */
+.callout {
+  background: var(--color-callout-bg);
+  border-left: 4px solid var(--color-callout-border);
+  border-radius: 0 6px 6px 0;
+  padding: 1rem 1.25rem;
+  margin: 1.75rem 0;
+  font-size: 0.95rem;
+}
+
+.callout-title {
+  font-family: var(--font-ui);
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-accent);
+  margin-bottom: 0.4rem;
+}
+
+/* ── Key terms ── */
+.key-term {
+  font-weight: 700;
+  color: var(--color-accent);
+}
+
+/* ── TOC page ── */
+.toc-pillar {
+  margin: 2rem 0 0.5rem;
+  font-family: var(--font-ui);
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--color-muted);
+}
+
+.toc-list {
+  list-style: none;
+  margin-bottom: 0.5rem;
+}
+
+.toc-list li {
+  margin-bottom: 0.35rem;
+}
+
+.toc-list a {
+  font-size: 1rem;
+  text-decoration: none;
+  color: var(--color-text);
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.15s;
+}
+
+.toc-list a:hover {
+  border-bottom-color: var(--color-accent);
+  color: var(--color-accent);
+}
+
+/* ── Responsive ── */
+@media (max-width: 700px) {
+  .sidebar { display: none; }
+  .main { padding: 2rem 1.25rem 4rem; }
+  h1 { font-size: 1.6rem; }
+}
