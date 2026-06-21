@@ -202,6 +202,141 @@ a { color: var(--color-accent); }
   color: var(--color-accent);
 }
 
+/* ── Callout variants (pedagogical devices) ── */
+.callout--objectives { border-left-color: var(--color-accent); background: var(--color-callout-bg); }
+
+.callout--misconception { border-left-color: #b45309; background: #fff7ed; }
+.callout--misconception .callout-title { color: #b45309; }
+
+.callout--stop-retrieve { border-left-color: #15803d; background: #f0fdf4; }
+.callout--stop-retrieve .callout-title { color: #15803d; }
+
+.callout--think-about-it { border-left-color: #7c3aed; background: #f5f3ff; }
+.callout--think-about-it .callout-title { color: #7c3aed; }
+
+.callout--ai-connection { border-left-color: #0891b2; background: #ecfeff; }
+.callout--ai-connection .callout-title { color: #0891b2; }
+
+.callout--classic-study { border-left-color: #b91c1c; background: #fef2f2; }
+.callout--classic-study .callout-title { color: #b91c1c; }
+
+.callout--do-not-confuse { border-left-color: #be185d; background: #fdf2f8; }
+.callout--do-not-confuse .callout-title { color: #be185d; }
+
+.callout p:last-child { margin-bottom: 0; }
+.callout ol, .callout ul { margin: 0.5rem 0 0.5rem 1.25rem; }
+
+/* ── Where This Fits ── */
+.where-this-fits {
+  font-style: italic;
+  color: var(--color-text);
+}
+
+/* ── Tables (history table, connections table, etc.) ── */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  font-size: 0.92rem;
+}
+
+th, td {
+  padding: 0.65rem 0.85rem;
+  border: 1px solid var(--color-border);
+  text-align: left;
+  vertical-align: top;
+}
+
+th {
+  background: #f9fafb;
+  font-family: var(--font-ui);
+  font-weight: 600;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: var(--color-muted);
+}
+
+/* ── Review questions ── */
+.review-q {
+  margin-bottom: 1.75rem;
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.review-q .options {
+  list-style: none;
+  margin: 0.6rem 0 0.75rem 0;
+}
+
+.review-q .options li {
+  margin-bottom: 0.3rem;
+}
+
+.review-q details {
+  margin-top: 0.6rem;
+}
+
+.review-q summary {
+  cursor: pointer;
+  font-family: var(--font-ui);
+  font-size: 0.85rem;
+  color: var(--color-accent);
+  font-weight: 600;
+}
+
+.review-q .answer {
+  margin-top: 0.6rem;
+  padding: 0.85rem 1rem;
+  background: var(--color-callout-bg);
+  border-radius: 6px;
+  font-size: 0.92rem;
+}
+
+.review-q .answer p:last-child { margin-bottom: 0; }
+
+/* ── Key terms glossary ── */
+.key-terms dt {
+  font-weight: 700;
+  color: var(--color-accent);
+  margin-top: 1.1rem;
+  font-family: var(--font-ui);
+  font-size: 1rem;
+}
+
+.key-terms dd {
+  margin: 0.3rem 0 0 0;
+}
+
+/* ── Further reading / references ── */
+.further-reading .fr-item {
+  margin-bottom: 1.25rem;
+}
+
+.further-reading .fr-title {
+  font-weight: 700;
+}
+
+.further-reading .fr-url {
+  font-size: 0.85rem;
+  word-break: break-all;
+}
+
+.references p {
+  font-size: 0.9rem;
+  padding-left: 1.5rem;
+  text-indent: -1.5rem;
+  margin-bottom: 0.75rem;
+  color: var(--color-muted);
+}
+
+.references .verify-note {
+  font-style: italic;
+  text-indent: 0;
+  padding-left: 0;
+  margin-top: 1rem;
+}
+
 /* ── Responsive ── */
 @media (max-width: 700px) {
   .sidebar { display: none; }

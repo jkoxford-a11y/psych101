@@ -19,7 +19,7 @@ The science of psychology exists precisely because common sense about human beha
 
 ## Where This Fits
 
-This chapter is the epistemological foundation for everything that follows. Before we can talk about how memory works, how conditioning shapes behavior, or why social influence is so powerful, we need to understand what kind of enterprise psychology is — what questions it asks, how it asks them, and why that matters. This chapter also tells the story of how those questions evolved: from Victorian-era introspection labs to modern neuroscience and evolutionary psychology. When you know where the field came from, the perspectives that dominate it today stop looking like arbitrary choices and start looking like what they are — the scar tissue from a century of productive arguments.
+This chapter is the epistemological (that is, how scientists decide what is true) foundation for everything that follows. Before we can talk about how memory works, how conditioning shapes behavior, or why social influence is so powerful, we need to understand what kind of enterprise psychology is — what questions it asks, how it asks them, and why that matters. This chapter also tells the story of how those questions changed over time: from Victorian-era introspection labs to modern neuroscience and evolutionary biology. When you know where the field came from, the perspectives that dominate it today stop looking like arbitrary choices and start looking like what they are — the scar tissue from a century of productive arguments.
 
 ---
 
@@ -27,11 +27,11 @@ This chapter is the epistemological foundation for everything that follows. Befo
 
 By the end of this chapter, you should be able to:
 
-1. Define psychology and distinguish it from related disciplines — psychiatry, neuroscience, and philosophy of mind.
-2. Identify the major historical schools of thought in psychology and explain what problem each was trying to solve.
-3. Describe the seven modern perspectives and explain why no single perspective is sufficient.
+1. Define psychology as the scientific study of behavior and mental processes, and describe the breadth of the field beyond common stereotypes.
+2. Identify the major historical schools of thought in psychology, the question each was trying to answer, and the limitation that forced the next school's emergence.
+3. Describe the modern theoretical perspectives in psychology and explain why no single perspective is sufficient.
 4. Apply the biopsychosocial model to explain a specific behavior or mental state.
-5. Explain what evolutionary framing adds to psychological explanation, and what it cannot explain on its own.
+5. Explain what the evolutionary perspective adds to psychological explanation, and where that kind of explanation needs to be handled with caution.
 6. Identify at least three cases where psychological findings contradict common sense, and explain why intuition fails in those cases.
 
 ---
@@ -46,26 +46,11 @@ The honest answer is no. The more useful answer is that if you could, it would n
 
 Notice what that definition does *not* say. It does not say "treatment of mental illness." It does not say "analysis of dreams and childhood." It does not say "helping people feel better." Some psychologists do those things. Most do not. The field spans basic research (how does attention work?), applied science (how do we design cockpits so pilots do not miss critical warnings?), clinical and counseling work, educational practice, forensic consultation, sports performance, health behavior, human factors engineering, and organizational behavior. The stereotype of the therapist on the couch is one corner of an enormous territory.
 
-The confusion most worth clearing up early is between psychology and psychiatry, because students mix them up constantly and the distinction matters.
+A concrete example of the behavior/mental-process distinction: you flinch at a sudden loud sound before you consciously register what made it. The flinch is the **behavior** — observable, measurable, something a camera could record. The split-second appraisal that decided "that sound is worth reacting to" is the **mental process** — unobservable directly, but inferable from the behavior it produced. Psychology studies both ends of that chain, and a lot of the interesting work happens in figuring out how they connect.
 
----
+"Scientific" is doing a lot of work in "scientific study of behavior and mental processes." What makes something a science is not the subject matter — history departments are not sciences, chemistry labs are. What makes something a science is the *method*: systematic observation, testable hypotheses, data collected through controlled procedures, conclusions revised when evidence demands it. Psychology adopted that method. That is the claim, and the rest of this chapter is the story of how it happened and what it cost.
 
-### Do Not Confuse: Psychology vs. Psychiatry
-
-| | **Psychology** | **Psychiatry** |
-|---|---|---|
-| **Training** | Graduate degree (PhD, PsyD, or MA) | Medical degree (MD or DO) followed by psychiatric residency |
-| **Prescribes medication?** | Generally no (a small number of states allow licensed psychologists with additional training to prescribe) | Yes |
-| **Scope** | Research, clinical practice, education, organizational work, basic science | Primarily diagnosis and medical management of mental disorders |
-| **What they share** | Both study and treat psychological disorders; frequently collaborate on the same patient |
-
-*Diagnostic question for yourself:* A child is struggling in school — the teacher suspects ADHD. There are both medication questions and behavioral strategy questions. Who do you consult? A psychiatrist handles the medication evaluation. A psychologist conducts the diagnostic assessment (attention measures, behavioral observation, cognitive testing) and designs the behavioral intervention. Often both are involved. Different training, different tools, shared territory.
-
----
-
-Back to the definition: "scientific" is doing a lot of work in "scientific study of behavior and mental processes." What makes something a science is not the subject matter — history departments are not sciences, chemistry labs are. What makes something a science is the *method*: systematic observation, testable hypotheses, data collected through controlled procedures, conclusions revised when evidence demands it. Psychology adopted that method. That is the claim, and the rest of this chapter is the story of how it happened and what it cost.
-
-> **Stop and Retrieve:** Before reading on — in your own words, what is the difference between psychology and psychiatry? What does each do that the other typically does not?
+> **Stop and Retrieve:** Before reading on — in your own words, what is the difference between a "behavior" and a "mental process" in psychology? Give an example of each that is not from this chapter.
 
 > **Think About It:** What did *you* think psychologists did before reading this? How close was your prior image to the actual scope of the field? Where did that image come from?
 
@@ -73,89 +58,36 @@ Back to the definition: "scientific" is doing a lot of work in "scientific study
 
 ## Section 2: A Short History, Organized by Problems
 
-I want to tell you something about my own intellectual history that will make this chapter easier to read.
+My own academic background is in animal behavioral ecology and developmental psychology — fields built on asking *why* a behavior exists, not just *how* it works. That habit of mind shows up throughout this course, especially once we reach the biological basis of behavior in Chapter 2. For now, here is the short version of a much older argument: a sequence of disagreements about what the right question for psychology even is. Each school below answered something the one before it could not, and ran into a limitation that forced the next move.
 
-My doctoral training was in developmental behavioral ecology — the study of how animal behavior develops within an evolutionary context. I spent years asking why animals do what they do: why do some birds share food with non-relatives, why do mammals play, how does early experience calibrate later risk-taking? These are ethology questions, comparative psychology questions, evolutionary biology questions.
+| School | Core question | Contribution | Limitation |
+|---|---|---|---|
+| **Structuralism** (Wundt, 1879) | What is consciousness made of? | Brought measurement to the study of mind | Introspective reports were unreliable across observers |
+| **Functionalism** (James, 1890) | What is the mind *for*? | Connected mind to adaptation and function | Too broad and literary to generate testable laboratory methods |
+| **Behaviorism** (Watson, 1913; Skinner, 1957) | What can we actually observe? | Rigorous, replicable principles of learning and conditioning | Could not explain language or other generative cognition (Chomsky, 1959) |
+| **Psychoanalysis** (Freud) | What is hidden from awareness? | Drew attention to unconscious motivation and early experience | Claims were structured so that no outcome could disconfirm them — weak falsifiability (Popper, 1959) |
+| **Cognitive** (Miller, 1956, and others) | How does the mind process information? | Rebuilt attention, memory, and language as legitimate scientific objects | Risk of over-relying on the computer as a model — minds are not always computer-like |
+| **Biological / evolutionary** (ongoing) | What are the physical mechanisms, and why do they exist? | Connected mind to brain, genetics, and natural selection | Risk of reductionism, or of generating untestable "just-so" stories about why a trait evolved (Gould & Lewontin, 1979) |
 
-They are also, I eventually understood, just *psychology* questions. The same framework that explains why a vervet monkey freezes at a predator call also explains why you flinch at a loud sound before you consciously register it. The question is always the same: *what problem did this behavior or mental mechanism solve?* The organism is different; the logic of the question is not.
+The **behaviorism** row is probably the one you have already watched in action: every time someone trains a dog to sit for a treat, or you notice your own stomach drop at a notification sound that has come to mean "bad news," you are watching conditioning at work — no claims about what the dog or you are "thinking" required. We cover the full mechanics in Chapter 6.
 
-I mention this because the history of psychology is, in large part, the history of people arguing about what the right question is. What follows is that argument, organized not by dates but by the problems each school of thought was trying to solve.
+A couple of these rows deserve one more sentence.
 
-### The Problem of Consciousness: Structuralism
+**Humanistic psychology** does not appear in the table because it was less a *next move* in this particular argument than a reaction against two rows at once. By the mid-twentieth century, **Abraham Maslow** and **Carl Rogers** argued that both behaviorism and psychoanalysis were missing something: human agency, growth, and the experience of being a person rather than a stimulus-response machine or a bundle of unconscious conflict (Maslow, 1943; Rogers, 1951). Humanistic psychology never built a strong research base, but its influence on clinical practice has held up — particularly the finding that the quality of the therapeutic relationship itself is a meaningful driver of change.
 
-In 1879, a German physiologist named **Wilhelm Wundt** opened the first laboratory dedicated to experimental psychology in Leipzig. The date is usually cited as the founding of psychology as a discipline, and for good reason — Wundt made a methodological commitment that his predecessors had not. He was going to *measure* the mind.
+The transition from the behaviorism row to the cognitive row is worth a closer look, because the debate that caused it shows up again later in unexpected company. In 1957, Skinner argued in *Verbal Behavior* that language was an elaborate chain of conditioned responses. In 1959, the linguist Noam Chomsky reviewed the book and took the argument apart: children produce and understand sentences they have never heard before, too quickly and too creatively to be explained by reinforcement history alone. Something generative was happening, and behaviorism had no account of it.
 
-His method was **introspection**: trained observers would examine their own conscious experience and report its elements — sensations, feelings, images — as precisely as possible. The goal was **structuralism**: identify the basic building blocks of conscious experience the way a chemist identifies elements. If you know the periodic table of consciousness, you know the mind.
-
-The project failed, but instructively. Introspection turned out to be too unreliable — trained observers at different labs reported different elements for the same stimuli. The inner world does not sit still long enough to be catalogued, and the act of examining a thought changes it. But Wundt's commitment to measurement — the idea that consciousness could be studied empirically, not just philosophized about — was the founding contribution. The method was wrong; the project was right.
-
-### The Problem of Purpose: Functionalism
-
-In the United States, **William James** was unimpressed with structuralism. Cataloguing the elements of consciousness seemed to him like dissecting a bird to understand flight — technically thorough, missing the point. James wanted to know what the mind *does* and *why*. What is the *function* of consciousness? Why did evolution build it?
-
-James was a Darwinian, and his **functionalism** reflected that: the mind is a tool shaped by natural selection to help organisms adapt to their environments. Ask not what experience is made of. Ask what experience is *for*.
-
-Functionalism did not survive as a distinct school — it was too loose, too literary, too resistant to laboratory methods. But the question it asked never went away. Every time a psychologist frames a research question as "what problem did this solve for the organism?" — which in this course will be often — they are doing functionalism.
-
-> **Stop and Retrieve:** What was the key conceptual difference between Wundt and James? What did each think psychology should be trying to explain?
-
-### The Problem of Objectivity: Behaviorism
-
-By 1913, a young American psychologist named **John B. Watson** had run out of patience with both structuralism and functionalism. Both relied on unobservable mental states — consciousness, purpose, will. Science needs data. Data means measurement. You cannot measure a thought.
-
-Watson's 1913 paper, "Psychology as the Behaviorist Views It," was a manifesto: *ditch the mind*. Study only what is observable — **behavior**. Stimulus in, response out. Everything else is speculation dressed as science.
-
----
-
-#### Classic Study: Watson's 1913 Manifesto and the Rise of Behaviorism
-
-Watson's argument was productive. Under Watson and then **B.F. Skinner**, **behaviorism** generated a substantial body of knowledge: the principles of classical conditioning (learned associations between stimuli, developed in parallel by **Ivan Pavlov**), operant conditioning (behavior shaped by its consequences), reinforcement schedules, extinction, generalization, and discrimination. These principles are robust, they replicate across species, and they have direct applications in education, clinical treatment, and behavior change. We cover them in full in Chapter 6.
-
-The limit of behaviorism appeared when researchers turned to language. In 1957, Skinner published *Verbal Behavior*, arguing that language was an elaborate system of conditioned responses. In 1959, the linguist Noam Chomsky reviewed it and effectively dismantled that claim. Children acquire language too fast, too accurately, and too creatively to be explained by reinforcement history. A child who has never heard the sentence "The rhinoceros chased the geologist across the moonlit plateau" can understand it immediately and knows how to make it passive. No amount of stimulus-response pairing explains that.
-
-The Skinner-Chomsky debate was a turning point. Behaviorism explained an enormous amount, but it could not explain the productive, rule-governed, generative character of human cognition. Something else was needed.
+> **Stop and Retrieve:** Pick any two adjacent rows in the table. What did the second school explain that the first one could not?
 
 ---
 
 #### AI Connection
 
-In 1950, the mathematician Alan Turing proposed a test for machine intelligence: if a human interrogator could not distinguish a machine's responses from a human's in text-based conversation, the machine could be considered intelligent. This is behaviorism applied to machines — judge by outputs, not internal states. The Skinner-Chomsky debate maps directly onto it: Turing's test works if language is a behavior to be imitated; it fails as a test of understanding if language requires the kind of generative, meaning-based competence Chomsky was defending. Large language models today produce Turing-test-passing text through statistical pattern learning — closer to Skinner's view of language than Chomsky's. Whether that means they understand language, or very convincingly simulate understanding it, is a live debate. You will be better equipped to have it by the end of Chapter 8.
+In 1950, the mathematician Alan Turing proposed a test for machine intelligence: if a human interrogator could not distinguish a machine's text responses from a human's, the machine could be considered intelligent (Turing, 1950). That is behaviorism applied to machines — judge by outputs, not internal states. The Skinner-Chomsky debate maps directly onto it: Turing's test works if language is a behavior to imitate; it fails as a test of *understanding* if language requires the generative, meaning-based competence Chomsky was defending. Large language models today produce Turing-test-passing text through statistical pattern learning — closer to Skinner's view of language than Chomsky's. Whether that means they understand language, or very convincingly simulate understanding it, is a live debate. You will be better equipped to have it by the end of Chapter 8.
 
 ---
 
-### A Parallel Track: Psychoanalysis
-
-While behaviorism dominated American academic psychology, a Viennese neurologist was building a very different theory of mind. **Sigmund Freud** argued that the most important determinants of behavior were *unconscious* — wishes, fears, and conflicts the conscious mind could not access directly. His method was not the lab but the consulting room: free association, dream analysis, interpretation of slips and symptoms.
-
-Freud's **psychoanalysis** was enormously influential. The idea that we are not fully transparent to ourselves — that we defend against uncomfortable thoughts, that early experience shapes adult functioning, that relationships carry unconscious dynamics — these insights have not gone away, even as the specific mechanisms Freud proposed have mostly failed empirical scrutiny.
-
-The core problem with classical psychoanalysis is **falsifiability**: a theory that cannot be shown wrong cannot be science. If a patient improves after analysis, it confirms the theory. If they worsen, it is resistance. If nothing changes, they need more analysis. No outcome disconfirms the framework. This does not mean the insights are worthless — it means they require better evidence than Freud provided. Modern psychodynamic therapy has moved considerably in that direction.
-
-### The Third Force: Humanistic Psychology
-
-By the mid-twentieth century, American psychology was divided between behaviorism in the research labs and psychoanalysis in the clinical offices. **Abraham Maslow** and **Carl Rogers** thought both were missing something fundamental: agency, meaning, growth, and the possibility of becoming fully oneself.
-
-**Humanistic psychology** emphasized subjective experience, free will, and the human drive toward **self-actualization** — becoming the most complete version of oneself. Rogers developed **client-centered therapy**, in which the therapeutic relationship — characterized by genuine positive regard, empathy, and authenticity — is itself the mechanism of change. Maslow proposed his famous hierarchy of needs (physiological → safety → belonging → esteem → self-actualization), an influential framework that unfortunately outran the evidence supporting it.
-
-Humanistic psychology did not build a strong research tradition, but it had lasting influence on clinical practice and education. Its emphasis on the quality of the therapeutic relationship is well-supported by outcome research. The specific mechanisms — self-actualization, the hierarchy — are better treated as useful metaphors than established mechanisms.
-
-### The Return of the Mind: The Cognitive Revolution
-
-The cognitive revolution of the late 1950s and 1960s did not announce itself as a revolution. It started with problems behaviorism could not solve — language, as above, plus the demonstrable limits of attention and memory. **George Miller's** 1956 paper "The Magical Number Seven" established that short-term memory holds approximately seven items, plus or minus two. That is not a behavioral fact. It is a structural fact about mental capacity. Behaviorism had no way to talk about it.
-
-The critical move was treating the mind as an **information-processing system** — one that takes in information, represents it internally, transforms it, stores it, and uses it to guide behavior. Computers provided a working model: software has data structures and operations on those data structures, and so does the mind. You could not understand the program by watching only inputs and outputs. You needed the inner workings.
-
-**Cognitive psychology** rebuilt the interior that behaviorism had evacuated: attention, memory, language, reasoning, problem-solving, decision-making. Its methods — reaction time studies, memory experiments, psycholinguistic tasks — were clever and reproducible. By the 1970s and 1980s it had become the dominant paradigm in academic psychology. It is also the direct intellectual ancestor of artificial intelligence as a field: the assumption that thinking is computation drove both simultaneously.
-
-> **Think About It:** Cognitive psychology treats the mind as an information processor. Does that framing feel right to you from the inside? When you are trying to solve a problem, does it feel like computation? What does your introspection say — and why should you be cautious about trusting it?
-
-### The Biological and Evolutionary Turn
-
-The cognitive revolution focused on software and largely bracketed the hardware. The biological turn that followed reconnected mind to brain and brain to evolution.
-
-New imaging technologies — PET scans, then fMRI — let researchers observe brain activity during psychological tasks for the first time. Behavioral genetics established that traits including intelligence, personality, and vulnerability to certain disorders have substantial heritable components. **Evolutionary psychology** argued that the mind, like the body, is a product of natural selection — its mechanisms were built (by selection pressures, not a designer) to solve recurrent problems in ancestral environments.
-
-The evolutionary lens does not replace other levels of analysis. It asks a different question: *why* does this mechanism exist at all? Why do we have emotions rather than purely rational deliberation? Why does social rejection hurt? Why is an infant's cry nearly impossible to ignore? These are not merely interesting questions — they generate testable predictions about where psychological mechanisms will work well, where they will fail, and what their characteristic biases will be. Ask what a mechanism was *for*, then ask what happens when the modern environment does not match the ancestral one. That mismatch explains a remarkable amount of modern human difficulty.
+The biological/evolutionary row is the one we return to most often in this course — carefully. Chapter 2 covers the mechanisms in depth. One framing you will hear constantly, in this course and outside it, is **nature versus nurture**: are we shaped more by genes or by environment? Treat that framing as a starting question, not an answer. Virtually every trait psychology studies turns out to be shaped by genes and environment *interacting*, not competing — Chapter 3 covers exactly how that interaction works. The working rule for the rest of this book: it is always fair to ask what a mechanism might be *for*, but any specific story about why it evolved needs to clear the same evidentiary bar as any other scientific claim.
 
 ---
 
@@ -175,15 +107,17 @@ The **cognitive perspective** focuses on mental representations and information 
 
 The **sociocultural perspective** examines how behavior and mental processes are shaped by social context — culture, norms, groups, institutions, and history. What looks like an individual psychological fact is often, on closer examination, a social product. Chapter 9 develops this in detail.
 
-The **evolutionary perspective** asks why psychological mechanisms exist — what selection pressures built them. It connects psychology to biology, primatology, and behavioral ecology.
+The **evolutionary perspective** asks why a psychological mechanism exists — what problem it might have solved over evolutionary time, rather than just how it works in the moment. It is a useful question to ask in nearly every chapter of this book. It is also a perspective that needs to be handled with some care: claims about *why* a specific trait evolved are hard to test directly, since we cannot observe ancestral environments, and the broader scientific literature has a documented history of generating plausible-sounding evolutionary stories that turn out to be untestable (Gould & Lewontin, 1979). Use this lens to generate good questions about function. Hold any specific answer to the same evidentiary standard you would hold any other scientific claim.
 
-No perspective is sufficient alone. Consider depression. The biological perspective identifies dysregulation in serotonin, dopamine, and norepinephrine systems, along with substantial genetic risk factors. The psychodynamic perspective looks at loss, early attachment disruption, and internalized anger. The behavioral perspective notes the role of reinforcement withdrawal and social avoidance spirals. The cognitive perspective examines distorted thinking patterns — the cognitive triad of negative views about self, world, and future. The sociocultural perspective points to poverty, discrimination, and social isolation as risk amplifiers. The evolutionary perspective asks why vulnerability to depression persists at all, and offers interesting answers involving social defeat signaling, energy conservation, and rumination as a specialized problem-solving mode.
+No perspective is sufficient alone. Here is an everyday example: why did you check your phone three times in the last ten minutes? The behavioral perspective points to a reinforcement history — checking sometimes produces a rewarding notification, and unpredictable rewards are especially good at sustaining a behavior. The cognitive perspective points to the discomfort of an unresolved question ("did they respond?") competing for your attention until you resolve it. The sociocultural perspective points to a social environment that treats constant availability as normal. The evolutionary perspective asks why a brain would be built to find social information so hard to ignore in the first place — and points to the cost of missing socially relevant information for a species that depends on group cooperation to survive. None of these four answers contradicts the others. Each is answering a different question about the same five seconds of behavior.
+
+A more serious example makes the same point. Consider depression. The biological perspective identifies dysregulation in serotonin, dopamine, and norepinephrine systems, along with substantial genetic risk factors. The psychodynamic perspective looks at loss, early attachment disruption, and internalized anger. The behavioral perspective notes the role of reinforcement withdrawal and social avoidance spirals. The cognitive perspective examines distorted thinking patterns — the cognitive triad of negative views about self, world, and future. The sociocultural perspective points to poverty, discrimination, and social isolation as risk amplifiers.
 
 All of these are partially right. None is complete. This is what the **biopsychosocial model** formalizes: biological, psychological, and social/environmental factors interact to produce behavior and mental states. Explanation that ignores any of these domains will be incomplete.
 
 > **Stop and Retrieve:** Name one thing the biopsychosocial model can explain about depression that a purely biological account cannot. Name one thing a purely sociocultural account misses.
 
-> **Think About It:** Choose a habit you have — something you do regularly without much thought. How would a behavioral psychologist explain it? How would a cognitive psychologist? How would an evolutionary psychologist? Do the three accounts conflict, or does each add something the others miss?
+> **Think About It:** Choose a habit you have — something you do regularly without much thought. How would a behavioral psychologist explain it? How would a cognitive psychologist? How would a sociocultural psychologist? Do the accounts conflict, or does each add something the others miss?
 
 ---
 
@@ -193,11 +127,11 @@ We are all amateur psychologists. We have to be — predicting what other people
 
 The answer is: mostly you cannot, without systematic data. Here is why.
 
-**Hindsight bias** is the tendency, after learning an outcome, to believe you knew it all along. It is nearly universal and nearly impossible to suppress even when you are aware of it. Studies of hindsight bias ask participants to predict the outcome of a study, show them the results, then ask them to recall what they predicted. Recalled predictions shift reliably toward the outcome they just learned. The brain rapidly incorporates new information into its causal narrative and smoothes over prior uncertainty. This is efficient for learning; it is disastrous for evaluating evidence. It means that almost any finding in psychology will feel like common sense once you know it — which tells you nothing about whether you could have predicted it.
+**Hindsight bias** is the tendency, after learning an outcome, to believe you knew it all along (Fischhoff, 1975). It is nearly universal and nearly impossible to suppress even when you are aware of it. You have felt this watching sports: a close game ends, and suddenly everyone in the room is certain they "knew" the winner the whole time — even people who were nervous about the outcome five minutes earlier. Studies of hindsight bias do the same thing under controlled conditions: ask participants to predict the outcome of a study, show them the results, then ask them to recall what they predicted. Recalled predictions shift reliably toward the outcome they just learned. The brain rapidly incorporates new information into its causal narrative and smoothes over prior uncertainty. This is efficient for learning; it is disastrous for evaluating evidence. It means that almost any finding in psychology will feel like common sense once you know it — which tells you nothing about whether you could have predicted it.
 
-Related is **confirmation bias**: the tendency to seek out, interpret, and remember information that confirms existing beliefs, and to discount information that challenges them. Our informal theories of human behavior are protected from disconfirmation by the same cognitive machinery that builds them. The brain is not an objective theory-tester. It is a theory-preserver.
+Related is **confirmation bias**: the tendency to seek out, interpret, and remember information that confirms existing beliefs, and to discount information that challenges them (Nickerson, 1998). Our informal theories of human behavior are protected from disconfirmation by the same cognitive machinery that builds them. The brain is not an objective theory-tester. It is a theory-preserver.
 
-Science is a set of procedures designed to work around these biases: pre-registration of hypotheses before data collection, control conditions, blinded review, systematic replication, public data. None of these is magic. Science gets things wrong — sometimes spectacularly, sometimes for extended periods. Psychology has faced a genuine reckoning with this over the past decade: beginning around 2011, researchers began systematically attempting to replicate published findings and discovered that a substantial number did not hold up — the **replication crisis**.
+Science is a set of procedures designed to work around these biases: pre-registration of hypotheses before data collection, control conditions, blinded review, systematic replication, public data. None of these is magic. Science gets things wrong — sometimes spectacularly, sometimes for extended periods. Psychology has faced a genuine reckoning with this over the past decade: beginning around 2011, researchers began systematically attempting to replicate published findings and discovered that a substantial number did not hold up — the **replication crisis** (Open Science Collaboration, 2015).
 
 The replication crisis is not a reason to distrust psychology. It is, paradoxically, a reason to trust the process more than you did before — because those failures came to light through the scientific process itself. Bad findings get caught, eventually, in a way that bad intuitions never do. Chapter 10 covers research methods in full. For now, the point is simple: common sense about human behavior is unreliable, systematic observation is better, and even systematic observation needs institutional checks to stay honest.
 
@@ -207,7 +141,7 @@ The replication crisis is not a reason to distrust psychology. It is, paradoxica
 
 ## Chapter Summary
 
-Psychology is the scientific study of behavior and mental processes — a definition that is broader than most students expect. The field spans basic research, applied science, clinical practice, education, organizational work, and more. It is not psychiatry, which is a medical specialty with a primary focus on diagnosis and pharmacological treatment of mental disorders; the two disciplines are parallel, with overlapping territory but different training and tools.
+Psychology is the scientific study of behavior and mental processes — a definition that is broader than most students expect. The field spans basic research, applied science, clinical practice, education, organizational work, and more; the stereotype of the therapist on a couch is one corner of a much larger territory.
 
 The history of psychology is best understood as a series of arguments about what the right question is. Wundt brought measurement to the study of consciousness; James shifted the question from structure to function; Watson and Skinner evacuated the mind and studied only observable behavior; Freud argued that the most important mental events were unconscious; humanistic psychologists protested that behaviorism and psychoanalysis both misrepresented human experience; the cognitive revolution restored the interior of the mind as a legitimate scientific object; and the biological and evolutionary turns reconnected mind to brain, body, and natural history.
 
@@ -221,11 +155,11 @@ Psychology exists as a science because common sense about human behavior is unre
 
 | Concept from this chapter | Reappears in | Why it matters there |
 |---|---|---|
-| [Behaviorism / operant conditioning](#the-problem-of-objectivity-behaviorism) | Ch. 6 — Learning | Ch. 6 covers the full mechanics of classical and operant conditioning; the brief historical framing here becomes a complete working theory |
-| [Cognitive revolution](#the-return-of-the-mind-the-cognitive-revolution) | Ch. 7/8 — Memory and Cognition | The information-processing framework introduced here is the foundation for all content on attention, memory, and reasoning |
-| [Evolutionary psychology framing](#the-biological-and-evolutionary-turn) | Woven throughout (Ch. 2, 6, 9, 10, 11) | Every chapter that asks "why does this mechanism exist?" is applying this lens |
-| [Nature vs. nurture](#a-parallel-track-psychoanalysis) | Ch. 3 — Development | Epigenetics and gene-environment interaction reframe the nature-nurture debate as a false dichotomy — it is never one or the other |
-| [Unconscious processes / psychoanalysis](#a-parallel-track-psychoanalysis) | Ch. 5 — Consciousness | Modern cognitive neuroscience has given the unconscious a rigorous empirical treatment that goes well beyond Freud — but his core insight survives |
+| [Behaviorism / operant conditioning](#section-2-a-short-history-organized-by-problems) | Ch. 6 — Learning | Ch. 6 covers the full mechanics of classical and operant conditioning; the brief historical framing here becomes a complete working theory |
+| [Cognitive revolution](#section-2-a-short-history-organized-by-problems) | Ch. 7/8 — Memory and Cognition | The information-processing framework introduced here is the foundation for all content on attention, memory, and reasoning |
+| [Evolutionary / behavioral-ecology framing](#section-2-a-short-history-organized-by-problems) | Ch. 2 — Biological Bases (and woven throughout: Ch. 6, 9, 10, 11) | Chapter 2 develops the mechanisms in depth; every later chapter that asks "why does this mechanism exist?" is applying this lens with the same caution introduced here |
+| [Nature vs. nurture](#section-2-a-short-history-organized-by-problems) | Ch. 3 — Development | Epigenetics and gene-environment interaction reframe the nature-nurture debate as a false dichotomy — it is never one or the other |
+| [Unconscious processes / psychoanalysis](#section-2-a-short-history-organized-by-problems) | Ch. 5 — Consciousness | Modern cognitive neuroscience has given the unconscious a rigorous empirical treatment that goes well beyond Freud — but his core insight survives |
 | [Biopsychosocial model](#section-3-modern-perspectives--seven-lenses-no-single-truth) | Ch. 13 — Psychological Disorders | The biopsychosocial model is the dominant framework for understanding, diagnosing, and treating psychological disorders |
 | [Hindsight bias / confirmation bias](#section-4-why-science-and-why-its-harder-than-it-looks) | Ch. 10 — Research Methods | These biases are the motivating problem for the scientific method — Ch. 10 covers the solutions in detail |
 
@@ -240,7 +174,7 @@ b) the scientific study of behavior and mental processes
 c) the medical specialty concerned with diagnosing brain disorders  
 d) the philosophical investigation of consciousness and free will  
 
-*Answer: b. Why the others are tempting: (a) is the most common misconception — conflating psychology with clinical practice and psychiatry; (c) describes psychiatry and neurology more than psychology; (d) describes philosophy of mind. Psychology can include all of these domains but is not defined by any one of them.*
+*Answer: b. Why the others are tempting: (a) is the most common misconception — most people picture psychology as exclusively clinical, when most psychologists do not treat mental illness at all; (c) describes a medical specialty, not psychology; (d) describes philosophy of mind, a related but separate discipline. Psychology touches all of these domains but is not defined by any one of them.*
 
 ---
 
@@ -251,7 +185,7 @@ b) focus exclusively on observable behavior and abandon reference to internal me
 c) study only abnormal behavior because normal behavior requires no explanation  
 d) integrate evolutionary theory with clinical observation  
 
-*Answer: b. Why (a) is tempting: introspection was the dominant method Watson was explicitly rejecting — knowing this distinction is the point. (d) is what evolutionary psychology does, which comes much later in the field's history.*
+*Answer: b. Why (a) is tempting: introspection was the dominant method Watson was explicitly rejecting — knowing this distinction is the point. (d) describes the evolutionary perspective, which comes much later in the field's history and asks a different kind of question.*
 
 ---
 
@@ -266,14 +200,14 @@ d) it ignored the role of unconscious processes
 
 ---
 
-**4.** Which of the following best describes the relationship between psychology and psychiatry?
+**4.** A dog learns to sit reliably whenever it hears the word "sit" because sitting is consistently followed by a treat. Which school of thought provides the most complete explanation of this learning, without needing to make any claim about what the dog is thinking?
 
-a) They study completely different phenomena with no overlap  
-b) Psychiatry is a subspecialty within psychology  
-c) Psychology has a graduate research focus and broader scope; psychiatry is a medical specialty focused primarily on diagnosis and medication  
-d) They are different names for the same profession in different countries  
+a) Structuralism  
+b) Psychoanalysis  
+c) Behaviorism  
+d) Humanistic psychology  
 
-*Answer: c. Why (b) is tempting: the hierarchy feels intuitive if you associate "medical" with "higher." In fact they are parallel disciplines with different training paths and different but overlapping territory.*
+*Answer: c. Why (b) is tempting: psychoanalysis does focus on internal states, but unconscious motivation is not what is driving a conditioned response. Behaviorism's entire methodological point is that this kind of learning can be fully explained by observable stimulus-response-consequence relationships, with no claims about inner experience required.*
 
 ---
 
@@ -350,7 +284,7 @@ b) What selection pressures shaped the psychological mechanisms we observe?
 c) How do genetic mutations cause psychological disorders?  
 d) What behavioral differences exist between humans and other animals?  
 
-*Answer: b. Why (d) is tempting: comparative psychology studies cross-species differences, and evolutionary psychology uses comparative data. But the evolutionary perspective's defining question is why a mechanism exists — its adaptive function — not just what differences are present across species.*
+*Answer: b. Why (d) is tempting: comparative research across species often informs evolutionary explanations, so the two get blurred. But the evolutionary perspective's defining question is why a mechanism exists — its adaptive function — not just what differences are present across species.*
 
 ---
 
@@ -375,7 +309,7 @@ d) a reason to prefer psychoanalytic theory over cognitive research
 
 **Confirmation bias** — The tendency to seek, interpret, and remember information in ways that confirm preexisting beliefs, and to discount contradicting evidence.
 
-**Evolutionary psychology** — The application of evolutionary theory to understanding psychological mechanisms; asks what selection pressures produced a given mental process and what adaptive problems it solved.
+**Evolutionary perspective** — A theoretical lens that asks why a psychological mechanism exists — what adaptive problem it may have solved over evolutionary time — rather than only how it operates. Useful for generating questions; specific claims about why a trait evolved require the same evidentiary standard as any other scientific claim and are harder to test directly than claims about present-day mechanism.
 
 **Falsifiability** — The property of a scientific claim that makes it testable — that is, capable of being shown wrong by some possible observation. Claims that cannot be falsified are outside the scope of science.
 
@@ -401,7 +335,7 @@ d) a reason to prefer psychoanalytic theory over cognitive research
 https://www.apa.org/education-career/guide/subfields/what-is-psychology  
 Brief, authoritative overview of the field's scope and the range of careers psychologists pursue.
 
-**Noba Project — History of Psychology** (Greenwood & Rademaker)  
+**Noba Project — History of Psychology** (Baker & Sperry)  
 https://nobaproject.com/modules/history-of-psychology  
 Peer-reviewed, open-access chapter; more depth on each major school than this chapter provides, with primary source references.
 
@@ -409,6 +343,40 @@ Peer-reviewed, open-access chapter; more depth on each major school than this ch
 *Psychological Review, 20*, 158–177.  
 The manifesto itself — short, readable, and genuinely worth reading. You can see the argument Watson was making and why it was persuasive, even where it goes too far.
 
-**Open Science Collaboration. (2015). Estimating the replicability of psychological science.**  
-*Science, 349*, aac4716.  
+**Open Science Collaboration. (2015). Estimating the reproducibility of psychological science.**  
+*Science, 349*(6251), aac4716.  
 The paper that launched the modern conversation about replication in psychology. The abstract and introduction are accessible without a statistics background.
+
+---
+
+## References
+
+*Full citations for factual claims made in this chapter, for instructors or students who want to verify or go deeper. Distinct from Further Reading above, which is curated for student exploration rather than completeness.*
+
+Chomsky, N. (1959). Review of *Verbal Behavior*, by B. F. Skinner. *Language, 35*(1), 26–58.
+
+Fischhoff, B. (1975). Hindsight ≠ foresight: The effect of outcome knowledge on judgment under uncertainty. *Journal of Experimental Psychology: Human Perception and Performance, 1*(3), 288–299.
+
+Gould, S. J., & Lewontin, R. C. (1979). The spandrels of San Marco and the Panglossian paradigm: A critique of the adaptationist programme. *Proceedings of the Royal Society B, 205*(1161), 581–598.
+
+James, W. (1890). *The principles of psychology*. Henry Holt.
+
+Maslow, A. H. (1943). A theory of human motivation. *Psychological Review, 50*(4), 370–396.
+
+Miller, G. A. (1956). The magical number seven, plus or minus two: Some limits on our capacity for processing information. *Psychological Review, 63*(2), 81–97.
+
+Nickerson, R. S. (1998). Confirmation bias: A ubiquitous phenomenon in many guises. *Review of General Psychology, 2*(2), 175–220.
+
+Open Science Collaboration. (2015). Estimating the reproducibility of psychological science. *Science, 349*(6251), aac4716.
+
+Popper, K. (1959). *The logic of scientific discovery*. Basic Books.
+
+Rogers, C. R. (1951). *Client-centered therapy: Its current practice, implications, and theory*. Houghton Mifflin.
+
+Skinner, B. F. (1957). *Verbal behavior*. Appleton-Century-Crofts.
+
+Turing, A. M. (1950). Computing machinery and intelligence. *Mind, 59*(236), 433–460.
+
+Watson, J. B. (1913). Psychology as the behaviorist views it. *Psychological Review, 20*, 158–177.
+
+> **Note on verification:** I pulled and checked these citations against secondary sources during drafting, but I have not independently re-read every primary source against the page numbers below. Spot-check before this goes live, especially the Fischhoff and Turing page ranges, where different secondary sources show minor discrepancies.
