@@ -11,7 +11,7 @@
 
 You have probably heard this. You may have thought it yourself when you signed up for this course. It is an understandable position — you have been observing human behavior your entire life, you have reasonably good intuitions about people, and when you read about psychological findings they often seem obvious. Of course people work harder when they feel their work matters. Of course we remember emotionally charged events better than boring ones. Of course first impressions stick. Everybody knows these things.
 
-Here is the problem: when researchers ask people to predict experimental findings *before* seeing the results, their accuracy hovers barely above chance. And when they see findings that contradict their intuitions, they often remember the finding as what they expected all along. This is called the **hindsight bias** — the feeling, after the fact, that you knew it all along. Every result looks obvious once you know it. That is not the same as knowing it.
+Here is the problem: experts are not much better at this than anyone else. Before Stanley Milgram ran his famous study on obedience to authority, he asked a panel of 39 psychiatrists to predict how many participants would go all the way to the maximum, most severe shock level. Their prediction: about one in a thousand (Milgram, 1963). The actual number was 26 of 40 — about two in three. We return to this study in Chapter 10. And when people see findings that contradict their intuitions, they often remember the finding as what they expected all along. This is called the **hindsight bias** — the feeling, after the fact, that you knew it all along. Every result looks obvious once you know it. That is not the same as knowing it.
 
 The science of psychology exists precisely because common sense about human behavior is unreliable. We return to this throughout the course. For now: if the ideas in this chapter feel obvious, treat that feeling as data, not as proof.
 
@@ -62,10 +62,11 @@ My own academic background is in animal behavioral ecology and developmental psy
 
 | School | Core question | Contribution | Limitation |
 |---|---|---|---|
-| **Structuralism** (Wundt, 1879) | What is consciousness made of? | Brought measurement to the study of mind | Introspective reports were unreliable across observers |
-| **Functionalism** (James, 1890) | What is the mind *for*? | Connected mind to adaptation and function | Too broad and literary to generate testable laboratory methods |
+| **Structuralism / early experimental psychology** (Wundt, 1879; Titchener) | What is consciousness made of? | Brought measurement to the study of mind | Introspective reports were unreliable across observers |
+| **Functionalism** (James, 1890) | What is the mind *for*? | Connected mind to adaptation and function | Less unified as a laboratory program than behaviorism; harder to reduce to a single method |
 | **Behaviorism** (Watson, 1913; Skinner, 1957) | What can we actually observe? | Rigorous, replicable principles of learning and conditioning | Could not explain language or other generative cognition (Chomsky, 1959) |
 | **Psychoanalysis** (Freud) | What is hidden from awareness? | Drew attention to unconscious motivation and early experience | Claims were structured so that no outcome could disconfirm them — weak falsifiability (Popper, 1959) |
+| **Humanistic psychology** (Maslow, 1943; Rogers, 1951) | What makes human life meaningful? | Restored agency, growth, and subjective experience as legitimate objects of study | Weaker research base than behavioral or cognitive approaches |
 | **Cognitive** (Miller, 1956, and others) | How does the mind process information? | Rebuilt attention, memory, and language as legitimate scientific objects | Risk of over-relying on the computer as a model — minds are not always computer-like |
 | **Biological / evolutionary** (ongoing) | What are the physical mechanisms, and why do they exist? | Connected mind to brain, genetics, and natural selection | Risk of reductionism, or of generating untestable "just-so" stories about why a trait evolved (Gould & Lewontin, 1979) |
 
@@ -73,7 +74,7 @@ The **behaviorism** row is probably the one you have already watched in action: 
 
 A couple of these rows deserve one more sentence.
 
-**Humanistic psychology** does not appear in the table because it was less a *next move* in this particular argument than a reaction against two rows at once. By the mid-twentieth century, **Abraham Maslow** and **Carl Rogers** argued that both behaviorism and psychoanalysis were missing something: human agency, growth, and the experience of being a person rather than a stimulus-response machine or a bundle of unconscious conflict (Maslow, 1943; Rogers, 1951). Humanistic psychology never built a strong research base, but its influence on clinical practice has held up — particularly the finding that the quality of the therapeutic relationship itself is a meaningful driver of change.
+**Humanistic psychology** earns its place in the table as a reaction against the two rows just above it. By the mid-twentieth century, **Abraham Maslow** and **Carl Rogers** argued that both behaviorism and psychoanalysis were missing something: human agency, growth, and the experience of being a person rather than a stimulus-response machine or a bundle of unconscious conflict. Its research base is thinner relative to the behavioral and cognitive traditions, but one finding has held up well: Rogers's claim that the quality of the therapeutic relationship itself — genuine positive regard, empathy, authenticity — is a meaningful driver of change in therapy, somewhat independent of specific technique.
 
 The transition from the behaviorism row to the cognitive row is worth a closer look, because the debate that caused it shows up again later in unexpected company. In 1957, Skinner argued in *Verbal Behavior* that language was an elaborate chain of conditioned responses. In 1959, the linguist Noam Chomsky reviewed the book and took the argument apart: children produce and understand sentences they have never heard before, too quickly and too creatively to be explained by reinforcement history alone. Something generative was happening, and behaviorism had no account of it.
 
@@ -83,7 +84,7 @@ The transition from the behaviorism row to the cognitive row is worth a closer l
 
 #### AI Connection
 
-In 1950, the mathematician Alan Turing proposed a test for machine intelligence: if a human interrogator could not distinguish a machine's text responses from a human's, the machine could be considered intelligent (Turing, 1950). That is behaviorism applied to machines — judge by outputs, not internal states. The Skinner-Chomsky debate maps directly onto it: Turing's test works if language is a behavior to imitate; it fails as a test of *understanding* if language requires the generative, meaning-based competence Chomsky was defending. Large language models today produce Turing-test-passing text through statistical pattern learning — closer to Skinner's view of language than Chomsky's. Whether that means they understand language, or very convincingly simulate understanding it, is a live debate. You will be better equipped to have it by the end of Chapter 8.
+In 1950, the mathematician Alan Turing proposed a test for machine intelligence: if a human interrogator could not distinguish a machine's text responses from a human's, the machine could be considered intelligent (Turing, 1950). That is behaviorism applied to machines — judge by outputs, not internal states. The Skinner-Chomsky debate maps directly onto it: Turing's test works if language is a behavior to imitate; it fails as a test of *understanding* if language requires the generative, meaning-based competence Chomsky was defending. Large language models complicate this debate rather than resolving it in either direction. They produce fluent language through statistical learning over massive text corpora — not through human-like childhood reinforcement histories, and not through explicitly Chomskyan grammar rules either. That makes them a useful test case for a deeper question: when does language-like behavior count as understanding? You will be better equipped to take a position on that by the end of Chapter 8.
 
 ---
 
@@ -95,17 +96,17 @@ The biological/evolutionary row is the one we return to most often in this cours
 
 The historical schools are still alive, though they have changed shape. Today's psychology offers multiple theoretical perspectives — ways of framing questions and explaining findings — and most working psychologists draw on several rather than committing to one.
 
-The **biological perspective** explains behavior in terms of brain structures, neural circuits, neurotransmitter systems, hormones, and genetic influences. It asks: what is the physical mechanism? Chapter 3 is entirely about this level of analysis.
+| Perspective | Main question |
+|---|---|
+| Biological | What physical mechanisms are involved? |
+| Behavioral | What learning history shaped this behavior? |
+| Cognitive | What thoughts, beliefs, memories, or interpretations matter? |
+| Psychodynamic | What unconscious conflicts or early experiences may matter? |
+| Humanistic | What goals, meanings, or growth needs are involved? |
+| Sociocultural | What social norms, roles, institutions, or cultural expectations matter? |
+| Evolutionary | What adaptive problem might this mechanism have helped solve? |
 
-The **psychodynamic perspective** retains the psychoanalytic emphasis on unconscious processes, early experience, and the influence of unresolved conflicts on current functioning — updated with better research methods and considerably less of the Freudian mythology.
-
-The **behavioral perspective** applies the principles of conditioning and reinforcement to understanding and changing behavior. Behavioral therapies for anxiety disorders, phobias, addiction, and autism spectrum disorder are among the most robustly evidence-supported treatments in clinical psychology.
-
-The **humanistic perspective** emphasizes conscious experience, personal agency, and the drive toward growth and meaning. Its research base is thinner than other perspectives, but its influence on therapeutic practice — particularly on the central role of the therapeutic alliance — is substantial.
-
-The **cognitive perspective** focuses on mental representations and information processing — how we perceive, attend, remember, reason, and decide. It is currently the most productive research perspective in the field.
-
-The **sociocultural perspective** examines how behavior and mental processes are shaped by social context — culture, norms, groups, institutions, and history. What looks like an individual psychological fact is often, on closer examination, a social product. Chapter 10 develops this in detail.
+A few of these are worth one more sentence. The biological perspective gets a full chapter of its own — Chapter 3 is entirely about this level of analysis. Behavioral approaches to treatment, including exposure therapy for anxiety and phobias and applied behavior analysis for autism spectrum disorder, are among the more robustly evidence-supported treatments in clinical psychology. The cognitive perspective is one of the most productive research perspectives in the field, though hardly the only candidate for that title. The sociocultural perspective gets its own extended treatment in Chapter 10.
 
 The **evolutionary perspective** asks why a psychological mechanism exists — what problem it might have solved over evolutionary time, rather than just how it works in the moment. It is a useful question to ask in nearly every chapter of this book. It is also a perspective that needs to be handled with some care: claims about *why* a specific trait evolved are hard to test directly, since we cannot observe ancestral environments, and the broader scientific literature has a documented history of generating plausible-sounding evolutionary stories that turn out to be untestable (Gould & Lewontin, 1979). Use this lens to generate good questions about function. Hold any specific answer to the same evidentiary standard you would hold any other scientific claim.
 
@@ -133,7 +134,7 @@ Related is **confirmation bias**: the tendency to seek out, interpret, and remem
 
 Science is a set of procedures designed to work around these biases: pre-registration of hypotheses before data collection, control conditions, blinded review, systematic replication, public data. None of these is magic. Science gets things wrong — sometimes spectacularly, sometimes for extended periods. Psychology has faced a genuine reckoning with this over the past decade: beginning around 2011, researchers began systematically attempting to replicate published findings and discovered that a substantial number did not hold up — the **replication crisis** (Open Science Collaboration, 2015).
 
-The replication crisis is not a reason to distrust psychology. It is, paradoxically, a reason to trust the process more than you did before — because those failures came to light through the scientific process itself. Bad findings get caught, eventually, in a way that bad intuitions never do. Chapter 2 covers research methods in full. For now, the point is simple: common sense about human behavior is unreliable, systematic observation is better, and even systematic observation needs institutional checks to stay honest.
+The replication crisis is not a reason to dismiss psychology. It is a reason to be more careful about which findings you trust, and how confidently. The failures were real, and in some subfields substantial — but they were exposed by researchers using the tools of science itself: replication, transparency, statistical criticism, and open data. Bad findings get caught more often than bad intuitions do, not because psychologists are exceptionally honest, but because the field has built mechanisms that do not depend on anyone being exceptionally honest. Chapter 2 covers research methods in full. For now, the point is simple: common sense about human behavior is unreliable, systematic observation is better, and even systematic observation needs institutional checks to stay honest.
 
 > **Think About It:** Think of a belief you hold about human nature — something you take for granted about why people do what they do. What would it take to convince you that you are wrong? If your answer is "I cannot imagine evidence that would change my mind," that is worth noticing.
 
@@ -162,6 +163,7 @@ Psychology exists as a science because common sense about human behavior is unre
 | [Unconscious processes / psychoanalysis](#section-2-a-short-history-organized-by-problems) | Ch. 5 — States of Consciousness | Modern cognitive neuroscience has given the unconscious a rigorous empirical treatment that goes well beyond Freud — but his core insight survives |
 | [Biopsychosocial model](#section-3-modern-perspectives--seven-lenses-no-single-truth) | Ch. 14 — Psychological Disorders & Therapy | The biopsychosocial model is the dominant framework for understanding, diagnosing, and treating psychological disorders |
 | [Hindsight bias / confirmation bias](#section-4-why-science-and-why-its-harder-than-it-looks) | Ch. 2 — Research Methods & Statistics | These biases are the motivating problem for the scientific method — Ch. 2 covers the solutions in detail |
+| [Milgram's psychiatrist-prediction failure](#misconception-opener) | Ch. 10 — Social Psychology | The misconception opener's example is the same study Ch. 10 covers in full — obedience to authority and why expert intuition badly underestimated it |
 
 ---
 
@@ -299,6 +301,17 @@ d) a reason to prefer psychoanalytic theory over cognitive research
 
 ---
 
+**13.** According to the humanistic perspective, the most important factor in successful therapy is often:
+
+a) precise application of conditioning techniques  
+b) correct interpretation of unconscious conflict  
+c) the quality of the therapeutic relationship itself — genuine positive regard, empathy, and authenticity  
+d) statistical evidence of treatment efficacy from randomized controlled trials  
+
+*Answer: c. Why (d) is tempting: this sounds like the scientifically responsible answer, but the question asks what humanistic psychology itself emphasizes, not what would make the strongest research design. Rogers's specific and lasting claim is that the relationship functions as the mechanism of change, somewhat independent of technique.*
+
+---
+
 ## Key Terms
 
 **Behaviorism** — The theoretical school, associated with Watson and Skinner, that argued psychology should study only observable behavior and abandon reference to unobservable mental states.
@@ -325,7 +338,7 @@ d) a reason to prefer psychoanalytic theory over cognitive research
 
 **Replication crisis** — The finding, emerging from systematic replication efforts beginning around 2011, that a substantial proportion of published psychological findings could not be reproduced; prompted reforms in methodology and publication practice.
 
-**Structuralism** — Wundt's program to identify the basic elements of conscious experience through trained introspection; the first experimental school in psychology.
+**Structuralism** — The program, most directly associated with Edward Titchener (a student of Wundt), to identify the basic elements of conscious experience through trained introspection. Grew out of Wundt's founding of experimental psychology but diverged from Wundt's own framework, which historians usually call voluntarism.
 
 ---
 
@@ -362,6 +375,8 @@ Gould, S. J., & Lewontin, R. C. (1979). The spandrels of San Marco and the Pangl
 James, W. (1890). *The principles of psychology*. Henry Holt.
 
 Maslow, A. H. (1943). A theory of human motivation. *Psychological Review, 50*(4), 370–396.
+
+Milgram, S. (1963). Behavioral study of obedience. *Journal of Abnormal and Social Psychology, 67*(4), 371–378.
 
 Miller, G. A. (1956). The magical number seven, plus or minus two: Some limits on our capacity for processing information. *Psychological Review, 63*(2), 81–97.
 
