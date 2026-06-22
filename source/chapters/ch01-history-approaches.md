@@ -58,7 +58,7 @@ A concrete example of the behavior/mental-process distinction: you flinch at a s
 
 ## Section 2: A Short History, Organized by Problems
 
-My own academic background is in animal behavioral ecology and developmental psychology — fields built on asking *why* a behavior exists, not just *how* it works. That habit of mind shows up throughout this course, especially once we reach the biological basis of behavior in Chapter 2. For now, here is the short version of a much older argument: a sequence of disagreements about what the right question for psychology even is. Each school below answered something the one before it could not, and ran into a limitation that forced the next move.
+My own academic background is in animal behavioral ecology and developmental psychology — fields built on asking *why* a behavior exists, not just *how* it works. That habit of mind shows up throughout this course, especially once we reach the biological basis of behavior in Chapter 3. For now, here is the short version of a much older argument: a sequence of disagreements about what the right question for psychology even is. Each school below answered something the one before it could not, and ran into a limitation that forced the next move.
 
 | School | Core question | Contribution | Limitation |
 |---|---|---|---|
@@ -87,7 +87,7 @@ In 1950, the mathematician Alan Turing proposed a test for machine intelligence:
 
 ---
 
-The biological/evolutionary row is the one we return to most often in this course — carefully. Chapter 2 covers the mechanisms in depth. One framing you will hear constantly, in this course and outside it, is **nature versus nurture**: are we shaped more by genes or by environment? Treat that framing as a starting question, not an answer. Virtually every trait psychology studies turns out to be shaped by genes and environment *interacting*, not competing — Chapter 3 covers exactly how that interaction works. The working rule for the rest of this book: it is always fair to ask what a mechanism might be *for*, but any specific story about why it evolved needs to clear the same evidentiary bar as any other scientific claim.
+The biological/evolutionary row is the one we return to most often in this course — carefully. Chapter 3 covers the mechanisms in depth. One framing you will hear constantly, in this course and outside it, is **nature versus nurture**: are we shaped more by genes or by environment? Treat that framing as a starting question, not an answer. Virtually every trait psychology studies turns out to be shaped by genes and environment *interacting*, not competing — Chapter 9 covers exactly how that interaction works. The working rule for the rest of this book: it is always fair to ask what a mechanism might be *for*, but any specific story about why it evolved needs to clear the same evidentiary bar as any other scientific claim.
 
 ---
 
@@ -95,7 +95,7 @@ The biological/evolutionary row is the one we return to most often in this cours
 
 The historical schools are still alive, though they have changed shape. Today's psychology offers multiple theoretical perspectives — ways of framing questions and explaining findings — and most working psychologists draw on several rather than committing to one.
 
-The **biological perspective** explains behavior in terms of brain structures, neural circuits, neurotransmitter systems, hormones, and genetic influences. It asks: what is the physical mechanism? Chapter 2 is entirely about this level of analysis.
+The **biological perspective** explains behavior in terms of brain structures, neural circuits, neurotransmitter systems, hormones, and genetic influences. It asks: what is the physical mechanism? Chapter 3 is entirely about this level of analysis.
 
 The **psychodynamic perspective** retains the psychoanalytic emphasis on unconscious processes, early experience, and the influence of unresolved conflicts on current functioning — updated with better research methods and considerably less of the Freudian mythology.
 
@@ -105,7 +105,7 @@ The **humanistic perspective** emphasizes conscious experience, personal agency,
 
 The **cognitive perspective** focuses on mental representations and information processing — how we perceive, attend, remember, reason, and decide. It is currently the most productive research perspective in the field.
 
-The **sociocultural perspective** examines how behavior and mental processes are shaped by social context — culture, norms, groups, institutions, and history. What looks like an individual psychological fact is often, on closer examination, a social product. Chapter 9 develops this in detail.
+The **sociocultural perspective** examines how behavior and mental processes are shaped by social context — culture, norms, groups, institutions, and history. What looks like an individual psychological fact is often, on closer examination, a social product. Chapter 10 develops this in detail.
 
 The **evolutionary perspective** asks why a psychological mechanism exists — what problem it might have solved over evolutionary time, rather than just how it works in the moment. It is a useful question to ask in nearly every chapter of this book. It is also a perspective that needs to be handled with some care: claims about *why* a specific trait evolved are hard to test directly, since we cannot observe ancestral environments, and the broader scientific literature has a documented history of generating plausible-sounding evolutionary stories that turn out to be untestable (Gould & Lewontin, 1979). Use this lens to generate good questions about function. Hold any specific answer to the same evidentiary standard you would hold any other scientific claim.
 
@@ -133,7 +133,7 @@ Related is **confirmation bias**: the tendency to seek out, interpret, and remem
 
 Science is a set of procedures designed to work around these biases: pre-registration of hypotheses before data collection, control conditions, blinded review, systematic replication, public data. None of these is magic. Science gets things wrong — sometimes spectacularly, sometimes for extended periods. Psychology has faced a genuine reckoning with this over the past decade: beginning around 2011, researchers began systematically attempting to replicate published findings and discovered that a substantial number did not hold up — the **replication crisis** (Open Science Collaboration, 2015).
 
-The replication crisis is not a reason to distrust psychology. It is, paradoxically, a reason to trust the process more than you did before — because those failures came to light through the scientific process itself. Bad findings get caught, eventually, in a way that bad intuitions never do. Chapter 10 covers research methods in full. For now, the point is simple: common sense about human behavior is unreliable, systematic observation is better, and even systematic observation needs institutional checks to stay honest.
+The replication crisis is not a reason to distrust psychology. It is, paradoxically, a reason to trust the process more than you did before — because those failures came to light through the scientific process itself. Bad findings get caught, eventually, in a way that bad intuitions never do. Chapter 2 covers research methods in full. For now, the point is simple: common sense about human behavior is unreliable, systematic observation is better, and even systematic observation needs institutional checks to stay honest.
 
 > **Think About It:** Think of a belief you hold about human nature — something you take for granted about why people do what they do. What would it take to convince you that you are wrong? If your answer is "I cannot imagine evidence that would change my mind," that is worth noticing.
 
@@ -157,11 +157,11 @@ Psychology exists as a science because common sense about human behavior is unre
 |---|---|---|
 | [Behaviorism / operant conditioning](#section-2-a-short-history-organized-by-problems) | Ch. 6 — Learning | Ch. 6 covers the full mechanics of classical and operant conditioning; the brief historical framing here becomes a complete working theory |
 | [Cognitive revolution](#section-2-a-short-history-organized-by-problems) | Ch. 7/8 — Memory and Cognition | The information-processing framework introduced here is the foundation for all content on attention, memory, and reasoning |
-| [Evolutionary / behavioral-ecology framing](#section-2-a-short-history-organized-by-problems) | Ch. 2 — Biological Bases (and woven throughout: Ch. 6, 9, 10, 11) | Chapter 2 develops the mechanisms in depth; every later chapter that asks "why does this mechanism exist?" is applying this lens with the same caution introduced here |
-| [Nature vs. nurture](#section-2-a-short-history-organized-by-problems) | Ch. 3 — Development | Epigenetics and gene-environment interaction reframe the nature-nurture debate as a false dichotomy — it is never one or the other |
-| [Unconscious processes / psychoanalysis](#section-2-a-short-history-organized-by-problems) | Ch. 5 — Consciousness | Modern cognitive neuroscience has given the unconscious a rigorous empirical treatment that goes well beyond Freud — but his core insight survives |
-| [Biopsychosocial model](#section-3-modern-perspectives--seven-lenses-no-single-truth) | Ch. 13 — Psychological Disorders | The biopsychosocial model is the dominant framework for understanding, diagnosing, and treating psychological disorders |
-| [Hindsight bias / confirmation bias](#section-4-why-science-and-why-its-harder-than-it-looks) | Ch. 10 — Research Methods | These biases are the motivating problem for the scientific method — Ch. 10 covers the solutions in detail |
+| [Evolutionary / behavioral-ecology framing](#section-2-a-short-history-organized-by-problems) | Ch. 3 — Neuroscience & Biological Bases (and woven throughout: Ch. 6, 9, 10, 12) | Chapter 3 develops the mechanisms in depth; every later chapter that asks "why does this mechanism exist?" is applying this lens with the same caution introduced here |
+| [Nature vs. nurture](#section-2-a-short-history-organized-by-problems) | Ch. 9 — Lifespan Development | Epigenetics and gene-environment interaction reframe the nature-nurture debate as a false dichotomy — it is never one or the other |
+| [Unconscious processes / psychoanalysis](#section-2-a-short-history-organized-by-problems) | Ch. 5 — States of Consciousness | Modern cognitive neuroscience has given the unconscious a rigorous empirical treatment that goes well beyond Freud — but his core insight survives |
+| [Biopsychosocial model](#section-3-modern-perspectives--seven-lenses-no-single-truth) | Ch. 14 — Psychological Disorders & Therapy | The biopsychosocial model is the dominant framework for understanding, diagnosing, and treating psychological disorders |
+| [Hindsight bias / confirmation bias](#section-4-why-science-and-why-its-harder-than-it-looks) | Ch. 2 — Research Methods & Statistics | These biases are the motivating problem for the scientific method — Ch. 2 covers the solutions in detail |
 
 ---
 

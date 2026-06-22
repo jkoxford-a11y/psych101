@@ -1,0 +1,51 @@
+<svg viewBox="0 0 900 560" xmlns="http://www.w3.org/2000/svg" font-family="Georgia, 'Times New Roman', serif">
+  <defs>
+    <marker id="arrow3" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#4a6fa5"/>
+    </marker>
+  </defs>
+
+  <text x="450" y="36" text-anchor="middle" font-size="22" font-weight="bold" fill="#1a1a2e">Figure 2.3 — Anatomy of a True Experiment</text>
+  <text x="450" y="62" text-anchor="middle" font-size="15" fill="#6b7280">Worked example: the hot sauce paradigm (Lieberman et al., 1999)</text>
+
+  <!-- Sample box -->
+  <rect x="300" y="90" width="300" height="64" rx="10" fill="#ffffff" stroke="#4a6fa5" stroke-width="2"/>
+  <text x="450" y="128" text-anchor="middle" font-size="16" font-weight="bold" fill="#1a1a2e">Sample of participants</text>
+
+  <!-- Arrow down to random assignment -->
+  <line x1="450" y1="154" x2="450" y2="196" stroke="#4a6fa5" stroke-width="2.5" marker-end="url(#arrow3)"/>
+
+  <!-- Random assignment box -->
+  <rect x="330" y="200" width="240" height="60" rx="10" fill="#e8eef7" stroke="#4a6fa5" stroke-width="2"/>
+  <text x="450" y="235" text-anchor="middle" font-size="16" font-weight="bold" fill="#1a1a2e">Random assignment</text>
+
+  <!-- Branch arrows -->
+  <line x1="400" y1="260" x2="220" y2="320" stroke="#4a6fa5" stroke-width="2.5" marker-end="url(#arrow3)"/>
+  <line x1="500" y1="260" x2="680" y2="320" stroke="#4a6fa5" stroke-width="2.5" marker-end="url(#arrow3)"/>
+
+  <!-- Experimental group -->
+  <rect x="90" y="324" width="260" height="100" rx="10" fill="#ffffff" stroke="#4a6fa5" stroke-width="2"/>
+  <text x="220" y="354" text-anchor="middle" font-size="16" font-weight="bold" fill="#1a1a2e">Experimental group</text>
+  <text x="220" y="378" text-anchor="middle" font-size="13" fill="#6b7280">IV: mortality-reminder prompt</text>
+  <text x="220" y="398" text-anchor="middle" font-size="13" fill="#6b7280">(the manipulated cause)</text>
+
+  <!-- Control group -->
+  <rect x="550" y="324" width="260" height="100" rx="10" fill="#ffffff" stroke="#4a6fa5" stroke-width="2"/>
+  <text x="680" y="354" text-anchor="middle" font-size="16" font-weight="bold" fill="#1a1a2e">Control group</text>
+  <text x="680" y="378" text-anchor="middle" font-size="13" fill="#6b7280">neutral prompt</text>
+  <text x="680" y="398" text-anchor="middle" font-size="13" fill="#6b7280">(baseline for comparison)</text>
+
+  <!-- arrows down to DV -->
+  <line x1="220" y1="424" x2="220" y2="466" stroke="#4a6fa5" stroke-width="2.5" marker-end="url(#arrow3)"/>
+  <line x1="680" y1="424" x2="680" y2="466" stroke="#4a6fa5" stroke-width="2.5" marker-end="url(#arrow3)"/>
+
+  <!-- DV measurement boxes -->
+  <rect x="90" y="470" width="260" height="70" rx="10" fill="#e8eef7" stroke="#4a6fa5" stroke-width="2"/>
+  <text x="220" y="498" text-anchor="middle" font-size="15" font-weight="bold" fill="#1a1a2e">DV: hot sauce allocated</text>
+  <text x="220" y="518" text-anchor="middle" font-size="12" fill="#6b7280">(operational measure of aggression)</text>
+
+  <rect x="550" y="470" width="260" height="70" rx="10" fill="#e8eef7" stroke="#4a6fa5" stroke-width="2"/>
+  <text x="680" y="498" text-anchor="middle" font-size="15" font-weight="bold" fill="#1a1a2e">DV: hot sauce allocated</text>
+  <text x="680" y="518" text-anchor="middle" font-size="12" fill="#6b7280">(same measure, compared)</text>
+
+</svg>
