@@ -1,0 +1,48 @@
+<svg viewBox="0 0 900 600" xmlns="http://www.w3.org/2000/svg" font-family="Georgia, 'Times New Roman', serif">
+  <defs>
+    <marker id="arrow5" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#4a6fa5"/>
+    </marker>
+  </defs>
+
+  <text x="450" y="36" text-anchor="middle" font-size="22" font-weight="bold" fill="#1a1a2e">Figure 2.5 — Two Different Random Processes</text>
+  <text x="450" y="62" text-anchor="middle" font-size="15" fill="#6b7280">Random sampling and random assignment solve different problems</text>
+
+  <!-- Population box -->
+  <rect x="330" y="90" width="240" height="64" rx="10" fill="#ffffff" stroke="#4a6fa5" stroke-width="2"/>
+  <text x="450" y="128" text-anchor="middle" font-size="16" font-weight="bold" fill="#1a1a2e">Population</text>
+
+  <!-- Arrow + label: random sampling -->
+  <line x1="450" y1="154" x2="450" y2="206" stroke="#4a6fa5" stroke-width="2.5" marker-end="url(#arrow5)"/>
+  <rect x="490" y="160" width="320" height="42" rx="8" fill="#e8eef7"/>
+  <text x="505" y="177" font-size="13" font-weight="bold" fill="#1a1a2e">Random sampling</text>
+  <text x="505" y="195" font-size="12" fill="#6b7280">supports external validity (generalization)</text>
+
+  <!-- Sample box -->
+  <rect x="330" y="210" width="240" height="64" rx="10" fill="#e8eef7" stroke="#4a6fa5" stroke-width="2"/>
+  <text x="450" y="248" text-anchor="middle" font-size="16" font-weight="bold" fill="#1a1a2e">Sample</text>
+
+  <!-- Arrow + label: random assignment -->
+  <line x1="450" y1="274" x2="450" y2="326" stroke="#4a6fa5" stroke-width="2.5" marker-end="url(#arrow5)"/>
+  <rect x="490" y="280" width="320" height="42" rx="8" fill="#e8eef7"/>
+  <text x="505" y="297" font-size="13" font-weight="bold" fill="#1a1a2e">Random assignment</text>
+  <text x="505" y="315" font-size="12" fill="#6b7280">supports internal validity (causal inference)</text>
+
+  <!-- Branch into experimental / control -->
+  <line x1="400" y1="330" x2="220" y2="390" stroke="#4a6fa5" stroke-width="2.5" marker-end="url(#arrow5)"/>
+  <line x1="500" y1="330" x2="680" y2="390" stroke="#4a6fa5" stroke-width="2.5" marker-end="url(#arrow5)"/>
+
+  <rect x="90" y="394" width="260" height="70" rx="10" fill="#ffffff" stroke="#4a6fa5" stroke-width="2"/>
+  <text x="220" y="424" text-anchor="middle" font-size="16" font-weight="bold" fill="#1a1a2e">Experimental group</text>
+  <text x="220" y="446" text-anchor="middle" font-size="12" fill="#6b7280">receives the manipulation</text>
+
+  <rect x="550" y="394" width="260" height="70" rx="10" fill="#ffffff" stroke="#4a6fa5" stroke-width="2"/>
+  <text x="680" y="424" text-anchor="middle" font-size="16" font-weight="bold" fill="#1a1a2e">Control group</text>
+  <text x="680" y="446" text-anchor="middle" font-size="12" fill="#6b7280">baseline for comparison</text>
+
+  <!-- Bottom note -->
+  <rect x="120" y="500" width="660" height="76" rx="10" fill="#f9fafb" stroke="#e5e7eb" stroke-width="1.5"/>
+  <text x="450" y="528" text-anchor="middle" font-size="13" fill="#1a1a2e" font-weight="bold">A study can have one of these without the other.</text>
+  <text x="450" y="550" text-anchor="middle" font-size="12" fill="#6b7280">A randomized experiment on an unrepresentative sample: strong internal validity, weak external validity.</text>
+  <text x="450" y="568" text-anchor="middle" font-size="12" fill="#6b7280">A representative sample with no random assignment: strong external validity, weak internal validity.</text>
+</svg>
