@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080" role="img">
+<rect width="1920" height="1080" fill="white"/>
+<text x="960" y="115" font-family="Arial, sans-serif" font-size="54" font-weight="700" fill="#1F2937" text-anchor="middle" dominant-baseline="middle">Random Sampling vs. Random Assignment</text>
+<rect x="75.0" y="517.5" width="350" height="165" rx="28" fill="#DBEAFE" stroke="#2563EB" stroke-width="4"/>
+<text x="250" y="600" font-family="Arial, sans-serif" font-size="36" font-weight="700" fill="#1F2937" text-anchor="middle" dominant-baseline="middle">Population</text>
+<rect x="535.0" y="517.5" width="350" height="165" rx="28" fill="#D1FAE5" stroke="#059669" stroke-width="4"/>
+<text x="710" y="579.3" font-family="Arial, sans-serif" font-size="36" font-weight="700" fill="#1F2937" text-anchor="middle" dominant-baseline="middle">Study</text>
+<text x="710" y="620.6999999999999" font-family="Arial, sans-serif" font-size="36" font-weight="700" fill="#1F2937" text-anchor="middle" dominant-baseline="middle">sample</text>
+<rect x="1115.0" y="355.0" width="370" height="150" rx="28" fill="#FFEDD5" stroke="#EA580C" stroke-width="4"/>
+<text x="1300" y="409.3" font-family="Arial, sans-serif" font-size="36" font-weight="700" fill="#1F2937" text-anchor="middle" dominant-baseline="middle">Experimental</text>
+<text x="1300" y="450.7" font-family="Arial, sans-serif" font-size="36" font-weight="700" fill="#1F2937" text-anchor="middle" dominant-baseline="middle">group</text>
+<rect x="1115.0" y="645.0" width="370" height="150" rx="28" fill="#FEE2E2" stroke="#DC2626" stroke-width="4"/>
+<text x="1300" y="699.3" font-family="Arial, sans-serif" font-size="36" font-weight="700" fill="#1F2937" text-anchor="middle" dominant-baseline="middle">Control</text>
+<text x="1300" y="740.6999999999999" font-family="Arial, sans-serif" font-size="36" font-weight="700" fill="#1F2937" text-anchor="middle" dominant-baseline="middle">group</text>
+<defs><marker id="arrow-2563EB" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M 0 0 L 12 6 L 0 12 z" fill="#2563EB"/></marker></defs><line x1="425" y1="600" x2="535" y2="600" stroke="#2563EB" stroke-width="7" marker-end="url(#arrow-2563EB)"/>
+<defs><marker id="arrow-059669" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M 0 0 L 12 6 L 0 12 z" fill="#059669"/></marker></defs><line x1="885" y1="600" x2="1115" y2="470" stroke="#059669" stroke-width="7" marker-end="url(#arrow-059669)"/>
+<defs><marker id="arrow-059669" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M 0 0 L 12 6 L 0 12 z" fill="#059669"/></marker></defs><line x1="885" y1="600" x2="1115" y2="700" stroke="#059669" stroke-width="7" marker-end="url(#arrow-059669)"/>
+<text x="505" y="435.45" font-family="Arial, sans-serif" font-size="34" font-weight="700" fill="#2563EB" text-anchor="middle" dominant-baseline="middle">random</text>
+<text x="505" y="474.54999999999995" font-family="Arial, sans-serif" font-size="34" font-weight="700" fill="#2563EB" text-anchor="middle" dominant-baseline="middle">sampling</text>
+<text x="1015" y="365.45" font-family="Arial, sans-serif" font-size="34" font-weight="700" fill="#059669" text-anchor="middle" dominant-baseline="middle">random</text>
+<text x="1015" y="404.54999999999995" font-family="Arial, sans-serif" font-size="34" font-weight="700" fill="#059669" text-anchor="middle" dominant-baseline="middle">assignment</text>
+<rect x="340" y="836" width="470" height="118" rx="24" fill="#DBEAFE"/>
+<text x="575" y="877.75" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#2563EB" text-anchor="middle" dominant-baseline="middle">Who gets into the study?</text>
+<text x="575" y="912.25" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#2563EB" text-anchor="middle" dominant-baseline="middle">External validity</text>
+<rect x="1005" y="836" width="470" height="118" rx="24" fill="#D1FAE5"/>
+<text x="1240" y="877.75" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#059669" text-anchor="middle" dominant-baseline="middle">Who goes into which condition?</text>
+<text x="1240" y="912.25" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#059669" text-anchor="middle" dominant-baseline="middle">Internal validity</text>
+<text x="960" y="1010" font-family="Arial, sans-serif" font-size="28" font-weight="400" fill="#64748B" text-anchor="middle" dominant-baseline="middle">Both help reduce bias, but they answer different research-design questions.</text>
+</svg>
