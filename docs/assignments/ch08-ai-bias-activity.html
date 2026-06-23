@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Using AI Without Outsourcing Your Thinking — Chapter 8 Activity</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <style>
+    /* Assignment-specific styles */
+    .assignment-header {
+      background: var(--color-dark, #1a1a2e);
+      color: #fff;
+      padding: 2rem 2.5rem 1.5rem;
+      border-radius: 6px;
+      margin-bottom: 2rem;
+    }
+    .assignment-header h1 {
+      margin: 0 0 .4rem;
+      font-size: 1.55rem;
+      font-weight: 700;
+      color: #fff;
+    }
+    .assignment-header .meta {
+      font-size: .9rem;
+      opacity: .8;
+      margin: 0;
+    }
+    .assignment-header .meta span {
+      margin-right: 1.5rem;
+    }
+
+    .timing-bar {
+      display: flex;
+      gap: .5rem;
+      flex-wrap: wrap;
+      margin: 1.5rem 0;
+    }
+    .timing-chip {
+      background: #f0f4ff;
+      border: 1px solid #c8d4f5;
+      border-radius: 20px;
+      padding: .25rem .85rem;
+      font-size: .82rem;
+      font-weight: 600;
+      color: #3a4a8a;
+      white-space: nowrap;
+    }
+    .timing-chip.total {
+      background: #3a4a8a;
+      color: #fff;
+      border-color: #3a4a8a;
+    }
+
+    .part-block {
+      border-left: 4px solid #3a4a8a;
+      padding: 1.25rem 1.5rem;
+      margin: 2rem 0;
+      background: #f8f9ff;
+      border-radius: 0 6px 6px 0;
+    }
+    .part-block h2 {
+      margin: 0 0 .6rem;
+      font-size: 1.15rem;
+      color: #1a1a2e;
+    }
+    .part-block .part-meta {
+      font-size: .83rem;
+      color: #666;
+      margin-bottom: 1rem;
+      font-style: italic;
+    }
+
+    .prompt-box {
+      background: #fff;
+      border: 1.5px solid #3a4a8a;
+      border-radius: 5px;
+      padding: 1rem 1.25rem;
+      margin: 1rem 0;
+      font-family: 'Courier New', Courier, monospace;
+      font-size: .88rem;
+      line-height: 1.6;
+      color: #1a1a2e;
+      position: relative;
+    }
+    .prompt-box::before {
+      content: "PROMPT";
+      position: absolute;
+      top: -10px;
+      left: 12px;
+      background: #3a4a8a;
+      color: #fff;
+      font-family: sans-serif;
+      font-size: .68rem;
+      font-weight: 700;
+      letter-spacing: .08em;
+      padding: 1px 7px;
+      border-radius: 3px;
+    }
+    .prompt-box .blank {
+      background: #e8edff;
+      border-bottom: 2px solid #3a4a8a;
+      padding: 0 .3rem;
+      font-family: inherit;
+      font-style: italic;
+      color: #3a4a8a;
+    }
+
+    .evaluate-block {
+      background: #fffbe6;
+      border: 1px solid #e0c84a;
+      border-radius: 5px;
+      padding: 1rem 1.25rem;
+      margin: 1rem 0;
+    }
+    .evaluate-block h4 {
+      margin: 0 0 .5rem;
+      color: #7a5c00;
+      font-size: .9rem;
+      text-transform: uppercase;
+      letter-spacing: .05em;
+    }
+    .evaluate-block ol, .evaluate-block ul {
+      margin: .4rem 0 0 1.1rem;
+      padding: 0;
+    }
+    .evaluate-block li {
+      margin-bottom: .4rem;
+      font-size: .92rem;
+    }
+
+    .provided-text {
+      background: #f4f4f4;
+      border-left: 3px solid #999;
+      padding: .85rem 1.1rem;
+      margin: 1rem 0;
+      font-size: .9rem;
+      line-height: 1.65;
+      border-radius: 0 4px 4px 0;
+    }
+    .provided-text::before {
+      content: "PROVIDED AI OUTPUT — use this if you don't have a device";
+      display: block;
+      font-size: .72rem;
+      font-weight: 700;
+      letter-spacing: .06em;
+      color: #666;
+      margin-bottom: .6rem;
+      text-transform: uppercase;
+    }
+
+    .concepts-box {
+      background: #f0f7ef;
+      border: 1px solid #8bc48b;
+      border-radius: 6px;
+      padding: 1.1rem 1.4rem;
+      margin: 2rem 0;
+    }
+    .concepts-box h3 {
+      margin: 0 0 .75rem;
+      color: #2d5a2d;
+      font-size: .95rem;
+      text-transform: uppercase;
+      letter-spacing: .06em;
+    }
+    .concepts-box dl {
+      display: grid;
+      grid-template-columns: max-content 1fr;
+      gap: .3rem .9rem;
+      margin: 0;
+      font-size: .88rem;
+    }
+    .concepts-box dt {
+      font-weight: 700;
+      color: #2d5a2d;
+      white-space: nowrap;
+    }
+    .concepts-box dd {
+      margin: 0;
+      color: #333;
+    }
+
+    .reflection-block {
+      border-left: 4px solid #c0392b;
+      padding: 1.25rem 1.5rem;
+      background: #fff8f8;
+      border-radius: 0 6px 6px 0;
+      margin: 2rem 0;
+    }
+    .reflection-block h2 {
+      margin: 0 0 .6rem;
+      color: #7a1a1a;
+      font-size: 1.1rem;
+    }
+    .reflection-block ol {
+      margin: .5rem 0 0 1.1rem;
+      padding: 0;
+    }
+    .reflection-block li {
+      margin-bottom: .75rem;
+      font-size: .93rem;
+      line-height: 1.55;
+    }
+
+    .reuse-box {
+      background: #1a1a2e;
+      color: #e8eaf6;
+      border-radius: 6px;
+      padding: 1.25rem 1.5rem;
+      margin: 2.5rem 0 1rem;
+      font-size: .88rem;
+    }
+    .reuse-box h3 {
+      color: #a0b4ff;
+      margin: 0 0 .6rem;
+      font-size: .95rem;
+      text-transform: uppercase;
+      letter-spacing: .06em;
+    }
+    .reuse-box p {
+      margin: .4rem 0;
+      line-height: 1.6;
+    }
+    .reuse-box .prompt-list {
+      margin: .75rem 0 0 1.1rem;
+      padding: 0;
+    }
+    .reuse-box .prompt-list li {
+      margin-bottom: .5rem;
+      font-family: 'Courier New', Courier, monospace;
+      font-size: .83rem;
+      color: #c8d4f5;
+    }
+
+    .instructor-note {
+      background: #fff3e0;
+      border: 1px solid #f0a040;
+      border-radius: 5px;
+      padding: .85rem 1.1rem;
+      margin: 1.5rem 0;
+      font-size: .85rem;
+    }
+    .instructor-note::before {
+      content: "INSTRUCTOR NOTE";
+      display: block;
+      font-weight: 700;
+      font-size: .72rem;
+      letter-spacing: .07em;
+      color: #8a5000;
+      margin-bottom: .4rem;
+    }
+
+    .write-space {
+      border: 1px dashed #bbb;
+      border-radius: 4px;
+      padding: .6rem .9rem;
+      margin: .5rem 0;
+      min-height: 60px;
+      color: #aaa;
+      font-size: .85rem;
+      font-style: italic;
+    }
+
+    @media print {
+      .assignment-header { background: #1a1a2e !important; -webkit-print-color-adjust: exact; }
+      .part-block, .reflection-block { break-inside: avoid; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="assignment-header">
+  <h1>Using AI Without Outsourcing Your Thinking</h1>
+  <p class="meta">
+    <span>Chapter 8 — Thinking, Language &amp; Intelligence</span>
+    <span>In-class activity</span>
+    <span>~50 minutes</span>
+  </p>
+</div>
+
+<!-- Concepts reference -->
+<div class="concepts-box">
+  <h3>Chapter 8 Concepts — Quick Reference</h3>
+  <dl>
+    <dt>System 1</dt>
+    <dd>Fast, automatic, associative processing. Produces intuitive judgments with little effort.</dd>
+    <dt>System 2</dt>
+    <dd>Slow, deliberate, effortful processing. Required for checking, evaluating, and reasoning through evidence.</dd>
+    <dt>Availability heuristic</dt>
+    <dd>Estimating frequency or probability based on how easily examples come to mind.</dd>
+    <dt>Representativeness heuristic</dt>
+    <dd>Judging probability based on how well something matches a prototype, rather than base rates.</dd>
+    <dt>Confirmation bias</dt>
+    <dd>Seeking, interpreting, and remembering evidence that confirms what we already believe.</dd>
+    <dt>Anchoring</dt>
+    <dd>Over-relying on the first number or claim encountered when making estimates or judgments.</dd>
+    <dt>Fluency heuristic</dt>
+    <dd>Treating smooth, easy-to-read output as more likely to be true — even when it isn't.</dd>
+    <dt>Base rate neglect</dt>
+    <dd>Ignoring how common something is in the general population when making a probability judgment.</dd>
+  </dl>
+</div>
+
+<!-- Timing overview -->
+<div class="timing-bar">
+  <span class="timing-chip">Part 1 — Bias Audit: 10 min</span>
+  <span class="timing-chip">Part 2 — Source Check: 15 min</span>
+  <span class="timing-chip">Part 3 — Disconfirmation: 15 min</span>
+  <span class="timing-chip">Reflection: 10 min</span>
+  <span class="timing-chip total">Total: ~50 min</span>
+</div>
+
+<p>This activity has one goal: to practice applying Chapter 8's concepts <em>to</em> AI output, not just to abstract examples. Each part gives you a prompt to run and then asks you to evaluate what came back — using the same tools the chapter says our thinking usually skips.</p>
+
+<p>You will need: a device with access to an AI assistant (Claude, ChatGPT, or similar). If you do not have a device, a provided AI output is included in Parts 2 and 3 — use that instead.</p>
+
+<div class="instructor-note">
+  Suggested grouping: pairs. One person runs the prompt; the other person evaluates the output using the questions below. Switch roles for Part 3. Debrief as a full class after the reflection questions.
+</div>
+
+<hr>
+
+<!-- PART 1 -->
+<div class="part-block">
+  <h2>Part 1 — The Bias Audit</h2>
+  <p class="part-meta">10 minutes — individual or pairs</p>
+
+  <p>Think of a real decision you are facing, or choose one from this list:</p>
+  <ul>
+    <li>Which major or career path to pursue</li>
+    <li>Whether to study alone or in a group for this course</li>
+    <li>Whether a friend's behavior was intentionally rude or just stressed</li>
+    <li>Whether a news story you recently read is trustworthy</li>
+  </ul>
+
+  <p>Run this prompt with your decision filled in:</p>
+
+  <div class="prompt-box">
+I am making a decision about <span class="blank">[your decision here]</span>. Identify three cognitive biases that could affect my judgment. For each one, explain what evidence would make me change my mind. Do not tell me what to decide.
+  </div>
+
+  <div class="evaluate-block">
+    <h4>Evaluate the output — do not skip this step</h4>
+    <ol>
+      <li><strong>Fluency check:</strong> Does the AI's response read smoothly and confidently? Note whether that fluency made you want to accept it before you finished reading. This is the <strong>fluency heuristic</strong> operating in real time.</li>
+      <li><strong>Availability check:</strong> Are the three biases the AI named ones you had already heard of? If so, the AI may have defaulted to the most available (most commonly discussed) biases rather than the most relevant ones for your specific decision. Are there biases from Chapter 8 that are <em>not</em> in the list but might actually fit better?</li>
+      <li><strong>Specificity check:</strong> Could the AI's explanations apply to almost any decision, or are they genuinely specific to yours? Vague-but-fluent responses are a form of <strong>representativeness</strong> in reverse: they feel tailored because they match the general template of "good advice."</li>
+    </ol>
+    <p><strong>Write one sentence:</strong> What would you change about the AI's response, and why?</p>
+    <div class="write-space">Your response here (or on paper)…</div>
+  </div>
+</div>
+
+<!-- PART 2 -->
+<div class="part-block">
+  <h2>Part 2 — The Source Check</h2>
+  <p class="part-meta">15 minutes — pairs</p>
+
+  <p>Take a previous AI response — the one from Part 1 works, or use the provided text below — and run this prompt:</p>
+
+  <div class="prompt-box">
+List the factual claims in your previous answer that would require a citation to verify. For each one, say what kind of source would confirm or disconfirm it. Do not invent citations — if you are not sure a source exists, say so.
+  </div>
+
+  <div class="provided-text">
+<strong>Provided AI-generated paragraph (use this if you have no device):</strong><br><br>
+Studies consistently show that multitasking reduces productivity by up to 40 percent. The human brain cannot truly process two tasks simultaneously; instead, it rapidly switches between them, and each switch carries a cognitive cost. Research from Stanford University found that heavy media multitaskers actually performed worse on tests of attention, memory, and the ability to switch tasks efficiently than light multitaskers — the opposite of what most people expect. Psychologists estimate it takes an average of 23 minutes to fully refocus after an interruption. These findings suggest that students who study while watching video content retain significantly less than students who study in silence.
+  </div>
+
+  <div class="evaluate-block">
+    <h4>Evaluate the output</h4>
+    <ol>
+      <li><strong>Pick two claims</strong> from the AI's list and try to verify them independently — search for the actual study, check whether the statistic appears in the source the AI names, and confirm the finding says what the AI says it says.</li>
+      <li><strong>Confirmation bias trap:</strong> Did you search in a way that was more likely to find confirming sources? (e.g., searching "multitasking reduces productivity" rather than "multitasking and productivity: conflicting findings"). If so, that is confirmation bias applied to source-checking itself.</li>
+      <li><strong>Anchoring:</strong> Did the AI's framing of each claim influence how you searched for it? Rephrasing a claim in neutral terms before searching is a System 2 move.</li>
+    </ol>
+    <p><strong>Report out:</strong> Of the two claims you checked, how many held up? What changed in your trust of the paragraph after checking?</p>
+    <div class="write-space">Your response here (or on paper)…</div>
+  </div>
+</div>
+
+<!-- PART 3 -->
+<div class="part-block">
+  <h2>Part 3 — The Disconfirmation Test</h2>
+  <p class="part-meta">15 minutes — switch roles if working in pairs</p>
+
+  <p>Choose one of the beliefs below, or supply your own psychology-related belief:</p>
+  <ul>
+    <li>"People learn better when taught in their preferred learning style."</li>
+    <li>"Venting anger — talking about it or physically releasing it — reduces aggressive feelings."</li>
+    <li>"Most people use only about 10 percent of their brain."</li>
+    <li>"Eyewitness testimony is generally reliable if the witness is confident."</li>
+    <li>"IQ is mostly genetic and stays roughly constant throughout life."</li>
+  </ul>
+
+  <p>Run this prompt:</p>
+
+  <div class="prompt-box">
+I believe <span class="blank">[your chosen belief]</span>. Generate the strongest evidence that counts against this belief. For each piece of evidence, explain what result would genuinely change the conclusion — not just qualify it, but reverse it.
+  </div>
+
+  <div class="evaluate-block">
+    <h4>Evaluate the output — this is the hardest step</h4>
+    <ol>
+      <li><strong>Fluency ≠ strength:</strong> AI-generated counterarguments are often well-written and organized. Does the output actually provide strong evidence, or does it <em>sound</em> like strong evidence? Before accepting a counterargument as compelling, ask: does it cite a specific, checkable finding, or does it gesture at "research suggests"?</li>
+      <li><strong>Representativeness:</strong> Does the counterevidence match your prototype of "what a good scientific argument looks like"? If so, pause — matching the template of a convincing argument is not the same as being a convincing argument.</li>
+      <li><strong>Test the AI's test:</strong> The prompt asked for evidence that would <em>reverse</em> the conclusion, not just qualify it. Did the AI actually do that? Or did it generate evidence that weakens the belief without fully disconfirming it? This is the AI version of the Wason selection task — looking for confirming qualifications instead of genuine falsifiers.</li>
+    </ol>
+    <p><strong>Write one sentence:</strong> Did the AI's response change how confident you are in the belief? If yes, why — and how would you verify the specific evidence it offered?</p>
+    <div class="write-space">Your response here (or on paper)…</div>
+  </div>
+</div>
+
+<!-- REFLECTION -->
+<div class="reflection-block">
+  <h2>Reflection — Full Class Discussion (~10 minutes)</h2>
+  <ol>
+    <li>In which part did you feel most tempted to accept the AI output without checking? What feature of the output triggered that — fluency, confidence of tone, length, organization?</li>
+    <li>The chapter's AI Connection argues that well-written AI output deactivates System 2 monitoring. Did you experience this? What did it feel like to consciously switch to System 2 during the evaluation steps?</li>
+    <li>The availability heuristic predicts you will judge AI as more reliable on topics where you have seen it be right before. For which of the topics in this activity were you <em>most</em> willing to trust the AI — and is that topic actually one where AI is reliable?</li>
+    <li>Confirmation bias shapes not just what evidence we look for, but how we search for it and which results we click on. Describe one specific thing you could do differently in a real search to reduce confirmation bias.</li>
+    <li>After today: in what situations would you use the three prompts from this activity on your own? In what situations would they not help?</li>
+  </ol>
+</div>
+
+<!-- Reuse note -->
+<div class="reuse-box">
+  <h3>Using these prompts beyond Chapter 8</h3>
+  <p>The three prompts below are designed to be general. They work with any topic, any decision, and any course. You do not need to be studying cognitive psychology to use them — you need only the habit of running them before trusting output.</p>
+  <ul class="prompt-list">
+    <li><strong>Bias audit:</strong> "I am making a decision about [topic]. Identify three cognitive biases that could affect my judgment. For each one, explain what evidence would make me change my mind. Do not tell me what to decide."</li>
+    <li><strong>Source check:</strong> "List the factual claims in your previous answer that would require a citation. For each one, say what kind of source would verify it. Do not invent citations."</li>
+    <li><strong>Disconfirmation:</strong> "I believe [belief]. Generate the strongest evidence that counts against this belief, and explain what result would genuinely change the conclusion."</li>
+  </ul>
+  <p>What Chapter 8 adds is a vocabulary for evaluating the results: fluency heuristic, confirmation bias, System 1 vs. System 2, base rate neglect. Those concepts let you explain <em>why</em> an AI response feels convincing even when it should not — which is more useful than just being skeptical.</p>
+</div>
+
+<footer style="margin-top:3rem; padding-top:1rem; border-top:1px solid #ddd; font-size:.8rem; color:#888;">
+  General Psychology — Chapter 8 Supplementary Activity &nbsp;|&nbsp;
+  Jonathan Oxford, Ph.D. &nbsp;|&nbsp;
+  <a href="../chapters/08-thinking-language-intelligence.html">Return to Chapter 8</a>
+</footer>
+
+</body>
+</html>

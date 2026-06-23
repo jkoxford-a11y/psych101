@@ -15,7 +15,7 @@ Research consistently shows that human reasoning is not a slow, impartial weighi
 
 This is not a character flaw. These patterns are the predictable products of a cognitive system that evolved to make quick, good-enough judgments under uncertainty — and they are surprisingly resistant to correction, even when we know about them. As you work through this chapter, try to catch yourself using the very shortcuts we discuss. It is harder than it sounds.
 
-**Stop and Predict:** Before reading further — off the top of your head, are there more words in English that start with the letter *k*, or more words in English that have *k* as the third letter? Write down your answer and reasoning, then return to this question after reading Section 2.
+**Stop and Predict:** Without looking anything up, write down your answer: are there more English words that begin with *k*, or more English words that have *k* as the third letter? Also write one sentence explaining how you made the judgment. You will return to this after reading Section 2.
 
 ---
 
@@ -101,7 +101,16 @@ When estimating the frequency or probability of something, people tend to judge 
 
 In most circumstances this works well — frequent things are easier to bring to mind than rare things. But availability is affected by factors other than actual frequency: vividness, recency, media coverage, and personal relevance. Shark attacks are rare but dramatic and heavily reported, so people overestimate their likelihood. Car accidents are common but familiar, so people underestimate their relative risk. Mortality from smoking is distributed across millions of individual cases over decades, which makes it less vivid than a single plane crash, even though the smoking toll is vastly larger.
 
-Return now to the *k* question from the Misconception Opener. Most people say there are more words starting with *k*. In fact, there are roughly three times as many words with *k* as the third letter. But it is much easier to generate words that *start* with *k* (king, key, kite) than words where *k* is the third position (ask, ski, ink) — so availability misleads the estimate (Tversky & Kahneman, 1973).
+**Return to your prediction from the Misconception Opener.** The point is not whether you guessed correctly — it is *how* you generated the answer. Most people say there are more words starting with *k*. In fact, there are roughly three times as many words with *k* as the third letter. But words that *start* with *k* (king, key, kite) are much easier to pull from memory than words where *k* is the third letter (ask, ski, ink) — and ease of recall gets mistaken for frequency. The method you described in your one-sentence explanation is the availability heuristic in action (Tversky & Kahneman, 1973).
+
+> **Classroom version — a predict→reveal→name→transfer sequence:**
+> 1. Students vote by hand or poll: "starts with *k*" vs. "*k* as third letter."
+> 2. Give 30 seconds to list examples of each type. Ask which list felt easier to build.
+> 3. Reveal the actual frequency ratio (~3:1 in favor of third-letter *k*).
+> 4. Ask: what does this tell us about how you make frequency estimates? Ease of generation ≠ actual frequency.
+> 5. *Then* introduce the term **availability heuristic** and name the mechanism.
+>
+> This sequence — predict → reveal the error → name the mechanism → transfer to a real-world case — is worth repeating across the chapter. Students who feel the heuristic first are far more likely to recognize it later than students who are simply told its definition.
 
 ### The Representativeness Heuristic
 
@@ -235,7 +244,7 @@ A useful illustration: a 25-year-old computer science student typically outperfo
 
 ### Gardner's Multiple Intelligences
 
-Howard Gardner (1985) proposed a more radical departure from the *g*-factor tradition. In *Frames of Mind*, Gardner argued that traditional IQ-based conceptions of intelligence are too narrow and culturally biased — they predominantly measure academic-linguistic and logical-mathematical abilities while ignoring others. He proposed that there are at least **eight relatively independent intelligences**, each with its own neural basis, developmental trajectory, and profile of strengths:
+Howard Gardner (1985) proposed a more radical departure from the *g*-factor tradition. In *Frames of Mind*, Gardner argued that traditional IQ-based conceptions of intelligence are too narrow and culturally biased — they predominantly measure academic-linguistic and logical-mathematical abilities while ignoring others. His original 1983 theory identified **seven relatively independent intelligences**, each with its own neural basis, developmental trajectory, and profile of strengths; he later described at least eight, adding naturalistic intelligence:
 
 1. **Logical-mathematical** — reasoning with numbers and logical rules
 2. **Verbal-linguistic** — sensitivity to language, grammar, and story
@@ -244,9 +253,9 @@ Howard Gardner (1985) proposed a more radical departure from the *g*-factor trad
 5. **Bodily-kinesthetic** — skilled use and awareness of the body
 6. **Interpersonal** — understanding others' emotions and motivations
 7. **Intrapersonal** — understanding one's own emotional life
-8. **Naturalistic** — recognizing and classifying features of the natural world
+8. **Naturalistic** — recognizing and classifying features of the natural world (added later)
 
-Gardner's theory has been enormously influential in educational settings because it offers a framework for thinking about diverse learner profiles. It is also controversial among researchers (Biswas-Diener, 2026; Waterhouse, 2006): the evidence that these eight abilities are genuinely *independent* intelligences (rather than personality traits, talents, or forms of g applied to different domains) is not strong, and the criteria Gardner used to identify them were not derived from psychometric data. Most cognitive psychologists treat multiple intelligences as an educationally useful heuristic rather than a well-established psychological model. It is worth knowing Gardner's framework; it is also worth knowing that its empirical footing is less solid than its cultural footprint.
+Gardner's theory is valuable as an educational reminder that students have different strengths and that school success is not the same thing as total human ability. But as a psychometric theory of *independent* intelligences, it is weakly supported (Biswas-Diener, 2026; Waterhouse, 2006). The evidence that these abilities are genuinely independent — rather than personality traits, domain-specific talents, or expressions of *g* applied to different content — is not strong, and the criteria Gardner used to identify them were not derived from psychometric data. Most cognitive psychologists treat multiple intelligences as an influential educational framework, not as a strongly validated model of intelligence structure.
 
 ### Sternberg's Triarchic Theory
 
