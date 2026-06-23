@@ -1,6 +1,6 @@
 # Chapter 2: Research Methods and Statistics
 
-> Draft v0.3 — 2026-06-21 | Status: second round of revisions (round 2 of ChatGPT feedback, evaluated point-by-point) + Jon review pending
+> Draft v0.4 — 2026-06-23 | Status: figures updated to Jon's generated versions (fig2-5, fig2-6, fig2-7); p-value misconceptions text box replaced with fig2-7
 > Word count target: 3,500–5,000 body words | AI touchpoints: medium (operational definitions → prompt specificity, sampling bias → training data bias, Type I/II error → calibrating trust in AI claims)
 > Note: RM-012 (volunteer bias / sampling bias) is flagged `needs-verification` in concept_lineage_revised.csv — defined from Noba Project framing (Chance & Rossman; Mehl), not course materials. Reliability and validity are not separately tracked as RM-* concepts in concept_lineage_revised.csv (they appear as TLI-014, tagged to Ch. 8's IQ-testing content) — added here because they're a necessary extension of the operational-definition material already in this chapter; Ch. 8 should build on this introduction for the IQ-specific application rather than re-deriving the basic definitions.
 > v0.3 changes: split old Section 3 into Section 3 (Experiments and Causal Claims) and Section 4 (Bias Controls and Research Ethics) to reduce cognitive load; old Section 4 (Statistics) renumbered to Section 5. Added Figs 2.5 (random sampling vs. random assignment) and 2.6 (reliability/validity target diagram). Added a p-value "Common Misreadings" box, an ethics safeguard table, a depression-questionnaire reliability/validity example, and a "Common student mistake" column to the evidence-ladder table. Softened the childhood-books causal claim with a real citation (Sikora, Evans, & Kelley, 2019) instead of asserting a confound with too much confidence. Added the 2010 Cochrane placebo update and the Rosenthal & Rosnow (1975) volunteer-bias citation.
@@ -85,8 +85,8 @@ These are different questions, and a measure can pass one while failing the othe
 
 A psychology-specific version of the same gap: a depression questionnaire could be highly reliable — a student gets nearly the same score every time they take it — while still being a questionable measure of depression if what it is actually tracking is sleep loss or fatigue, which have plenty of causes besides depression. Reliable scores do not guarantee you are measuring the thing you think you are measuring.
 
-![Figure 2.6 — A 2×2 grid of dartboard-style targets showing four combinations of reliability and validity: tight cluster on the bullseye (reliable and valid), tight cluster off-center (reliable but not valid), scattered shots centered on the bullseye on average (valid on average but not reliable), and scattered shots off-center (neither reliable nor valid)](../images/ch02/fig2-6-reliability-validity.png)
-*Figure 2.6. Reliability and validity are independent. A measure can be consistent without hitting the right target, or hit the right target on average without being consistent.*
+![Figure 2.6 — A four-panel target diagram showing clusters of simulated points. The first cluster is tight at the bullseye (reliable and valid), the second is tight away from the bullseye (reliable but not valid), the third is scattered around the bullseye (unreliable but roughly valid), and the fourth is scattered away from the bullseye (neither reliable nor valid).](../images/ch02/fig2-6-reliability-validity-targets.svg)
+*Figure 2.6. Reliability means consistency, while validity means measuring the intended target. A measure can be reliable and valid, reliable but inaccurate, scattered around the correct target, or both inconsistent and inaccurate.*
 
 We will put both questions to work directly in Section 3, on a real, named measure.
 
@@ -144,8 +144,8 @@ The feature that separates a true experiment from a correlational study is **ran
 
 Internal validity and external validity solve different problems at different stages of a study, even though both involve the word "random." Random *sampling* (Section 2) is about who gets *into* the study, and supports generalizing beyond it. Random *assignment* (here) is about how participants already in the study get *divided*, and supports a causal claim within it. A study can have one without the other — a perfectly randomized experiment run on an unrepresentative sample has strong internal validity and weak external validity, and vice versa.
 
-![Figure 2.5 — Diagram showing a population funneling into a sample through random sampling (labeled "supports external validity"), then the sample splitting into experimental and control groups through random assignment (labeled "supports internal validity")](../images/ch02/fig2-5-sampling-vs-assignment.png)
-*Figure 2.5. Two different random processes, two different jobs. Random sampling happens once, at recruitment, and supports generalizing beyond the study. Random assignment happens after recruitment, and supports the causal claim within it.*
+![Figure 2.5 — A flow diagram shows a population leading through random sampling to a study sample, then through random assignment to an experimental group and a control group. Side labels explain that sampling concerns who enters the study (external validity) and assignment concerns who enters each condition (internal validity).](../images/ch02/fig2-5-random-sampling-vs-assignment.svg)
+*Figure 2.5. Random sampling and random assignment answer different research-design questions. Random sampling determines who gets into the study and supports external validity; random assignment determines who goes into which condition and supports internal validity.*
 
 **Worked example: the hot sauce paradigm.** The hot sauce allocation task was first used by McGregor and colleagues (1998) in terror-management research, testing whether reminding people of their own mortality increases aggression toward someone who threatens their cultural worldview. Participants who wrote about their own death, then encountered someone who criticized their political views, allocated more hot sauce to that person than participants who had written about a neutral topic. Lieberman and colleagues (1999) then formalized hot sauce allocation as a general laboratory measure of aggression, independent of the terror-management question that introduced it — establishing it as a reusable tool other researchers could apply to different questions, rather than a one-off solution.
 
@@ -191,18 +191,8 @@ A finished experiment produces a pile of numbers, and two different jobs need to
 
 The most commonly reported inferential result in psychology is **statistical significance**, usually reported as a *p*-value. A *p*-value tells us how incompatible the observed data are with a specified null model — typically, the assumption that no real effect exists — assuming that model and its underlying assumptions are appropriate (Wasserstein & Lazar, 2016). That is a precise and limited claim. A *p*-value does **not** tell you the probability that your hypothesis is true, the probability the finding is real, the size of the effect, or whether the finding will replicate. Conventionally, *p* < .05 is treated as the threshold for "significant" — meaning that if there were truly no effect, a result this extreme would occur by chance less than 5% of the time.
 
----
-
-#### Common Misreadings of a *p*-Value
-
-A result reported as *p* = .03 is misread constantly, including by working scientists. Four readings, only one of them correct:
-
-- *Wrong:* "There is a 97% chance the hypothesis is true." A *p*-value is not a probability statement about the hypothesis.
-- *Wrong:* "The effect is large and practically important." Significance says nothing about size — that is the job of effect size, covered next.
-- *Wrong:* "The result will replicate." Replication is a separate, empirical question that a single *p*-value cannot answer.
-- *Better:* "These data would be relatively unusual if the null model were true, assuming the model and its assumptions are appropriate."
-
----
+![Figure 2.7 — A slide titled "What a p-value does - and does not - tell you." Left panel (blue): one correct interpretation — how unusual the observed data are under the null model, assuming the model is appropriate. Right panel: four incorrect interpretations marked with X: probability the hypothesis is true, effect size, practical importance, and whether the finding will replicate.](../images/ch02/fig2-7-p-value-misconceptions.svg)
+*Figure 2.7. A p-value describes how unusual the observed data would be under the null model, assuming the model is appropriate. It does not tell whether the hypothesis is true, how large or important an effect is, or whether a finding will replicate.*
 
 This distinction underlies two kinds of mistakes a researcher can make. A **Type I error** is concluding an effect exists when it does not — a false positive. A **Type II error** is concluding no effect exists when one actually does — a false negative (Neyman & Pearson, 1933). Every significance threshold is a deliberate trade-off between these two risks; demanding a smaller *p*-value to reduce Type I errors correspondingly increases the risk of Type II errors, and no single setting eliminates both.
 
