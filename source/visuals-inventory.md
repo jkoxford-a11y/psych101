@@ -6,12 +6,15 @@ Status key: ✅ File exists in `docs/images/` | ⚠️ Exists but needs review/d
 ---
 
 ## Prologue
+Markdown draft complete (v0.2). Awaiting Jon's line-by-line review. HTML conversion prompt written for Codex.
 
 | # | Description | Status | Filename |
 |---|-------------|--------|----------|
-| 0.1 | Ebbinghaus forgetting curve (spaced review) | ✅ | `prologue/fig0_1_forgetting_curve.png` |
-| 0.2 | Dunning-Kruger effect | ⚠️ | `prologue/dunning k.jpg` (in holding space) — **do not move yet**: popular curve shape doesn't match Kruger & Dunning 1999 actual data; needs a redrawn version from real data or a caveat caption before use |
-| 0.3 | Human-AI Cognitive Alignment unit figure | 🔲 | Needed when Prologue is drafted |
+| P.1 | Ebbinghaus forgetting curve (spaced review with review-reset intervals) | ✅ | `prologue/fig_forgetting_curve_ebbinghaus.png` — Jon/GPT original |
+| P.2 | Kruger & Dunning (1999) Study 2 — actual bar data by quartile (not "Mount Stupid" curve) | ✅ | `prologue/fig_dunning_kruger_actual_data.svg/.png` — programmatic figure built from Study 2 logical reasoning data |
+| P.3 | "Exposure Is Not Learning" decision tree | ✅ | `prologue/learning_exposure_retrieval_decision_tree.svg/.png` — Jon/GPT original |
+| P.4 | "AI Can Replace Retrieval or Support It" two-column diagram | ✅ | `prologue/ai_replacement_vs_scaffolding.svg/.png` — Jon/GPT original |
+| P.5 | Human-AI Cognitive Alignment — grounding/context diagram | ⚠️ | GPT version exists but has rendering artifacts (strikethrough text, stray nodes). Needs rebuild or GPT retry before use. Intended for Section 8 (AI unit). |
 
 ---
 
