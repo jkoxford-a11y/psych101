@@ -127,9 +127,50 @@
 
 ---
 
+### 2026-06-24 — Session 35
+
+**What happened:** Revised prologue to v0.2 per Jon's detailed review. Built two new figures.
+
+**Figures built (docs/images/prologue/):**
+- `learning_exposure_retrieval_decision_tree.svg/.png` — "Exposure Is Not Learning" flowchart (Figure P.3). Jon's own GPT-original (from holding space). Proper diamond decision nodes, color-coded: orange = decision, red = familiarity, blue = recall, green = strong evidence, gray = next action.
+- `ai_replacement_vs_scaffolding.svg/.png` — "AI Can Replace Retrieval or Support It" (Figure P.4). Jon's own GPT-original (from holding space). Two-column layout: red replacement pathway vs. teal scaffolding pathway. Both replaced the programmatic SVG versions built earlier this session.
+
+**Prologue v0.2 changes applied:**
+- Added "How to Use This Prologue" block (after opener, before learning objectives)
+- Softened opener — removed "often the worst" phrasing; added Dunlosky et al. (2013) as the evidentiary basis
+- Added Ward et al. (2017) phone-presence claim with narrow, study-specific wording
+- Corrected K-D label: Study 1 → Study 2 (logical reasoning, per Jon confirming from PDF)
+- Softened Ebbinghaus caption — removed specific percentages; notes method-specificity (nonsense syllables, savings measure)
+- Revised AI memory language — product-agnostic; notes some systems retain context but still don't know what student understands
+- Reframed Clark & Brennan as applied communication framework (not an AI source)
+- Added Dunlosky et al. (2013) and Diekelmann & Born (2010) to inline citations and full References section
+- Added Study Method Diagnostic table (5 rows: what you did / what it mostly trains / better next step)
+- Added Do Not Confuse box: deep processing ≠ long processing (Section 2)
+- Added boxed AI Study Prompt (copy-and-use quiz prompt) in Section 8
+- Compressed sleep to 3 subsections (attention / consolidation / emotional regulation); all-nighter integrated into consolidation paragraph
+- Added metacognition row to Learning System table
+- Added Study Contract box with download placeholder (`docs/assignments/prologue-study-contract.docx` — build during final activities pass)
+- Added Cepeda et al. (2006) for spacing; added Dunning (2011) for metacognition review
+- Updated Further Reading (Walker removed; Diekelmann & Born added; Dunlosky added as first entry)
+- Wired P.3 and P.4 figure references in body text
+- All 4 figures now confirmed in `docs/images/prologue/`
+
+**Open items:**
+- Confirm demo embed URLs (working memory demo, retrieval cards, etc.) before HTML conversion
+- Build `docs/assignments/prologue-study-contract.docx` during final activities pass
+- Jon's line-by-line review of prologue v0.2
+
+**Files created/modified:**
+- `source/chapters/prologue-how-to-study.md` — v0.1 → v0.2
+- `docs/images/prologue/learning_exposure_retrieval_decision_tree.svg/.png` — new
+- `docs/images/prologue/ai_replacement_vs_scaffolding.svg/.png` — new
+- `HANDOFF.md` — this entry prepended
+
+---
+
 ### 2026-06-24 — Session 34
 
-**What happened:** Drafted the prologue — `source/prologue-how-to-study.md` (v0.1).
+**What happened:** Drafted the prologue — `source/chapters/prologue-how-to-study.md` (v0.1).
 
 **Source material:** Adapted directly from Jon's own `psych101_awesome-sauce` "How Studying Works" content (https://jkoxford-a11y.github.io/psych101_awesome-sauce/how-studying-works.html) as instructed by spec §0. That site covers attention, working memory, encoding, retrieval, spacing, sleep, study habits, and AI use — all adapted and reorganized into the textbook's standard format.
 
@@ -150,7 +191,7 @@
 - The three-student opening case (Emma/Luis/Nia) is adapted from the awesome-sauce content — Jon should confirm he is happy with this framing as the prologue's main pedagogical hook.
 
 **Files created/modified:**
-- `source/prologue-how-to-study.md` — new, v0.1
+- `source/chapters/prologue-how-to-study.md` — new, v0.1
 - `HANDOFF.md` — Status updated; this entry prepended
 
 ---
