@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+<title id="title">Wason selection task prompt</title>
+<desc id="desc">Four cards labeled E, K, 4, and 7 under the rule If vowel, then even number, asking which cards must be turned over.</desc>
+<defs>
+  <filter id="softShadow" x="-10%" y="-10%" width="120%" height="130%">
+    <feDropShadow dx="0" dy="8" stdDeviation="9" flood-color="#102a43" flood-opacity="0.12"/>
+  </filter>
+  <marker id="arrow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 Z" fill="#52606d"/>
+  </marker>
+</defs>
+<rect width="1600" height="900" fill="#ffffff"/>
+<rect x="52" y="54" width="1496" height="792" rx="24" fill="#f8fbfd" stroke="#dde7ee" stroke-width="2"/>
+<text x="96" y="116" font-family="Aptos, Arial, sans-serif" font-size="42" font-weight="700" fill="#102a43" text-anchor="start" >Testing a Conditional Rule</text>
+<text x="96" y="152" font-family="Aptos, Arial, sans-serif" font-size="22" font-weight="400" fill="#52606d" text-anchor="start" >Which evidence would actually test the rule?</text>
+<rect x="456" y="184" width="688" height="72" rx="18" fill="#ffffff" stroke="#c9d6df" stroke-width="2.5"/>
+<text x="800" y="231" font-family="Aptos, Arial, sans-serif" font-size="32" font-weight="700" fill="#102a43" text-anchor="middle" >Rule: &quot;If vowel, then even number.&quot;</text>
+<g filter="url(#softShadow)">
+  <rect x="300" y="314" width="180" height="240" rx="18" fill="#ffffff" stroke="#c9d6df" stroke-width="5"/><text x="390" y="455" font-family="Aptos, Arial, sans-serif" font-size="98" font-weight="800" fill="#102a43" text-anchor="middle" >E</text><rect x="590" y="314" width="180" height="240" rx="18" fill="#ffffff" stroke="#c9d6df" stroke-width="5"/><text x="680" y="455" font-family="Aptos, Arial, sans-serif" font-size="98" font-weight="800" fill="#102a43" text-anchor="middle" >K</text><rect x="880" y="314" width="180" height="240" rx="18" fill="#ffffff" stroke="#c9d6df" stroke-width="5"/><text x="970" y="455" font-family="Aptos, Arial, sans-serif" font-size="98" font-weight="800" fill="#102a43" text-anchor="middle" >4</text><rect x="1170" y="314" width="180" height="240" rx="18" fill="#ffffff" stroke="#c9d6df" stroke-width="5"/><text x="1260" y="455" font-family="Aptos, Arial, sans-serif" font-size="98" font-weight="800" fill="#102a43" text-anchor="middle" >7</text>
+</g>
+<rect x="490" y="680" width="620" height="58" rx="29" fill="#eaf4f8" stroke="#c9d6df" stroke-width="2"/>
+<text x="800" y="718" font-family="Aptos, Arial, sans-serif" font-size="28" font-weight="700" fill="#102a43" text-anchor="middle" >Which cards must you turn over?</text>
+</svg>

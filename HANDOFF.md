@@ -6,7 +6,9 @@
 
 ## Current Status
 
-**Phase:** Chapter 1 (History & Approaches) live, fully reviewed. Chapter 2 (Research Methods & Statistics) at v0.3, HTML on hold pending Jon’s images. Chapters 3–12 are markdown-complete (various versions), all awaiting Jon’s line-by-line review. Chapter 13 (Psychological Disorders & Therapy) is a first draft (v0.1), not yet reviewed by Jon. **All 13 chapters now have at least a v0.1 markdown draft.**
+**Phase:** Chapter 1 (History & Approaches) live, fully reviewed. Chapter 2 (Research Methods & Statistics) at v0.3, HTML on hold pending Jon’s images. Chapters 3–13 are markdown-complete (various versions), all awaiting Jon’s line-by-line review. **All 13 chapters now have at least a v0.1 markdown draft.**
+
+**Image organization complete (Session 32):** All viable images from the "Potential Images for Chapters Holding Space" folder have been moved to their chapter `docs/images/` folders. Full visuals inventory saved at `source/visuals-inventory.md` — covers each chapter’s existing figures, what still needs to be made, and decisions pending from Jon.
 
 **Book restructure (Session 31):** Chapters 12 and 13 merged into a single chapter — Ch. 12 "Emotion, Stress & Coping" — using Barrett’s constructionist/allostatic framework as the spine. The former Ch. 12 (Motivation & Emotion, `ch12-motivation-emotion.md`) and Ch. 13 (Stress & Health, `ch13-stress-health.md`) are superseded; both files remain on disk but are no longer part of the book. What was Ch. 14 (Psychological Disorders & Therapy) is now Ch. 13. Book is now **13 chapters**. `docs/index.html` updated to reflect the new TOC.
 
@@ -49,6 +51,18 @@
 ---
 
 ## Next Up
+
+1. **Create figures for chapters with none yet (Chs 6, 7, 9, 10, 12 are the biggest gaps).** See `source/visuals-inventory.md` for the full per-chapter breakdown. Priority figures: Ch6 (classical conditioning diagram, operant 2×2, reinforcement schedules, dopamine prediction error); Ch7 (Atkinson-Shiffrin 3-box, Baddeley working memory, levels-of-processing, serial position curve, explicit/implicit taxonomy); Ch9 (Piaget stages, Ainsworth attachment styles, Vygotsky ZPD); Ch10 (Milgram setup, attribution model, ELM dual-route, bystander 5-step); Ch12 (Russell's circumplex, GAS 3 stages, body-budget diagram). Ch5 also still needs SCN pathway (5.3) and tolerance/withdrawal (5.4).
+
+2. **Decisions needed from Jon before HTML conversion:**
+   - Ch2: What are Jon's own images, and which existing `docs/images/ch02/` figures do they replace or supplement?
+   - Ch3: Confirm figures 3.3, 3.5, 3.7 (lecture-deck slides) are original. Accept or trim ~5,800 word count?
+   - Ch4: Use infographic versions (richer) or SVG programmatic versions for figs 4.3/4.5/4.6, or both?
+   - Prologue DK figure: Replace Dunning-Kruger with a redrawn version from actual data, add a caveat caption, or drop it?
+
+3. **Jon's line-by-line review of Chapters 3–13** — all markdown-complete and unreviewed. Same review pattern as Ch1/Ch2. Open items per chapter documented in previous HANDOFF entries.
+
+4. **Old "Next Up" items 3–10 from prior sessions** (HTML conversion, Ch2 hold, prologue, demo builds) still apply — see Session 31 HANDOFF entry for the full prioritized list.
 
 1. **All 14 chapters now have a v0.1 draft. The immediate priority is Jon's line-by-line review of Chapters 3–7** — five chapters are markdown-complete and unreviewed. Open items for Ch3 specifically: (a) body word count runs ~5,800, well over target — trim or accept? (b) confirm the 3 lecture-deck-sourced figures (3.3, 3.5, 3.7) and keep the agonist/antagonist paragraph or cut it; (c) supply live embed URLs for the three flagged demo placeholders (action-potential simulator, neurotransmitter mixing board, oxytocin/vasopressin demo); (d) decide whether to do a similar image-provenance pass on other lecture decks before drafting future chapters. Open items for Ch4 specifically: (a) confirm the copyright-handling deviation for the four concepts with no Noba/APA IPI module to draw on (Gestalt, place/frequency theory, gate control theory, perceptual constancy) — original prose was used instead, flagged inline in the chapter header; (b) decide on figures; (c) supply or build the three flagged demo placeholders (SDT simulator — doesn't exist yet, Heider & Simmons, size-weight illusion). Open items for Ch5 specifically: (a) decide whether to keep the two optional additions (Charles Bonnet syndrome mention, meditation paragraph) — neither is a tracked CON-* concept; (b) confirm whether the `psych101_awesome-sauce` "sleep" demo can be reused/cross-linked in Ch5 or stays Prologue-exclusive; (c) decide on figures — priority order now set (5.1 two-process model first, 5.2 hypnogram second; 5.5 and 5.6 on hold). Open items for Ch6 specifically: (a) body word count runs ~5,340, over target — trim or accept, same flag-don't-cut precedent as Ch3; (b) **decide whether to correct Chapter 5's Sapolsky citation** — Ch5 says the lecture was at "Stanford University" but it is the Pritzker Lecture at the California Academy of Sciences (Feb 15, 2011); Ch6 already uses the corrected venue; (c) confirm the copyright-handling deviation for LRN-011 (Shaping) and LRN-016 (Sapolsky) — no Noba module covers "shaping" by name, so original prose from Skinner's own 1951 source was used instead, flagged inline; (d) decide on figures; (e) the conditioning simulator is still the #1 priority demo-build per spec §5. Open items for Ch7 specifically: (a) body word count runs ~5,440, over target — same flag-don't-cut precedent; (b) decide on figures; (c) supply a live embed URL for the `psych101_awesome-sauce` encoding/retrieval/spacing demos; (d) confirm the Clive Wearing contrast-case framing.
 2. **Get Jon's line-by-line review of Chapters 8–14** — five chapters are now markdown-complete and unreviewed; this is the immediate next step before any of them goes further, independent of how far chapter drafting continues. Open items for Ch3 specifically: (a) body word count runs ~5,800, well over target — trim or accept? (b) confirm the 3 lecture-deck-sourced figures (3.3, 3.5, 3.7) and keep the agonist/antagonist paragraph or cut it; (c) supply live embed URLs for the three flagged demo placeholders (action-potential simulator, neurotransmitter mixing board, oxytocin/vasopressin demo); (d) decide whether to do a similar image-provenance pass on other lecture decks before drafting future chapters. Open items for Ch4 specifically: (a) confirm the copyright-handling deviation for the four concepts with no Noba/APA IPI module to draw on (Gestalt, place/frequency theory, gate control theory, perceptual constancy) — original prose was used instead, flagged inline in the chapter header; (b) decide on figures; (c) supply or build the three flagged demo placeholders (SDT simulator — doesn't exist yet, Heider & Simmons, size-weight illusion). Open items for Ch5 specifically: (a) decide whether to keep the two optional additions (Charles Bonnet syndrome mention, meditation paragraph) — neither is a tracked CON-* concept; (b) confirm whether the `psych101_awesome-sauce` "sleep" demo can be reused/cross-linked in Ch5 or stays Prologue-exclusive; (c) decide on figures — priority order now set (5.1 two-process model first, 5.2 hypnogram second; 5.5 and 5.6 on hold). Note: attention gap resolved (CON-013 added to CSV, bridge in Section 1). Note: Sapolsky n.d. citation resolved (replaced by Schultz, Dayan, & Montague 1997 throughout Ch5). Open items for Ch6 specifically: (a) body word count runs ~5,340, over target — trim or accept, same flag-don't-cut precedent as Ch3; (b) **decide whether to correct Chapter 5's Sapolsky citation** — Ch5 says the dopamine lecture was given "at Stanford University," but Session 12 verified it was actually the Pritzker Lecture at the California Academy of Sciences (Feb 15, 2011); Ch6 already uses the corrected venue; (c) confirm the copyright-handling deviation for LRN-011 (Shaping) and LRN-016 (Dopamine/Sapolsky) — no Noba module covers "shaping" by name, so original prose grounded in Skinner's own 1951 primary source was used instead, flagged inline; (d) decide on figures, same open question as every prior chapter; (e) the conditioning simulator is still the #1 priority demo-build per spec §5 and no embed placeholder exists in the chapter yet since the demo doesn't exist. Open items for Ch7 specifically: (a) body word count runs ~5,440, over target — same flag-don't-cut precedent; (b) decide on figures; (c) supply a live embed URL for the `psych101_awesome-sauce` encoding/retrieval/spacing demos, or confirm none is needed since Sperling's demo and digit span are written as narrated self-administerable exercises instead; (d) confirm the Clive Wearing contrast-case framing reads the way Jon intends, since it's the first time this book has paired a classic case study with a second, deliberately-contrasting case rather than treating one case as definitive.
@@ -104,6 +118,37 @@
 ---
 
 ## Session Log
+
+---
+
+### 2026-06-24 — Session 32
+
+**What happened:** Two tasks. (1) Assessed all images in `Potential Images for Chapters Holding Space/` and moved viable ones to their chapter `docs/images/` folders. (2) Compiled a full visuals inventory by chapter.
+
+**Images moved/organized:**
+- `docs/images/prologue/` — created; added `fig0_1_forgetting_curve.png` (Ebbinghaus curve with spaced review intervals)
+- `docs/images/ch02/` — added 5 new figures: evidence ladder (fig2-5), random sampling vs. assignment (fig2-6), operational definition/reliability/validity (fig2-7), Type I/II error matrix with AI analogy (fig2-8), double-blind placebo flowchart (fig2-double-blind-placebo)
+- `docs/images/ch04/` — renamed 3 loose infographic PNGs to proper figure names: `fig4_3_retina_infographic.png`, `fig4_5_cochlea_infographic.png`, `fig4_6_gate_control_infographic.png` (richer versions alongside existing SVG programmatic figures)
+- `docs/images/ch05/` — created; added `fig5_1_two_process_sleep_model.svg/.png` and `fig5_2_sleep_hypnogram.svg/.png` (rendered from SVG via cairosvg at 150 dpi)
+- `docs/images/ch08/` — created; added 5 figures × SVG+PNG: bias/question substitution matrix, IQ standardization curve, Linda nested-set diagram, Wason task prompt, Wason task answer
+- `docs/images/ch13/` — created; added `fig13_1_anxiety_maintenance_cycle.png` (4-step cycle with ERP callout)
+
+**Images NOT moved (decisions needed):**
+- `dunning k.jpg` in holding space: the popular "peak of Mount Stupid" curve shape does not match Kruger & Dunning (1999) actual data — the low-competence spike is an internet distortion. Did not move per Jon's "never overstate" instruction. Jon needs to decide: redraw from actual data, add a caveat caption, or drop.
+- Two Ch2 candidate images excluded due to typos: `d87e5616...` has "Performace"; `2bf60bb8...` has "not conlusive." Both need regeneration before use.
+- Ch2 folder has numbering conflicts (old `fig2-5-sampling-vs-assignment` and new `fig2-6-random-sampling-vs-assignment` for same concept) — Jon needs to reconcile when he supplies his own images.
+
+**Visuals inventory:** Full per-chapter breakdown saved at `source/visuals-inventory.md`. Covers: existing figures ✅, needed figures 🔲, decisions pending from Jon ⚠️. Biggest gaps: Ch6 (0 figures), Ch7 (0 figures), Ch9 (0 figures), Ch10 (0 figures), Ch12 (0 figures).
+
+**Files created/modified this session:**
+- `docs/images/prologue/` — new folder + fig0_1
+- `docs/images/ch02/` — 9 new files (5 figures × PNG+SVG, plus one PNG-only)
+- `docs/images/ch04/` — 3 files renamed
+- `docs/images/ch05/` — new folder + 4 files (2 SVG + 2 PNG)
+- `docs/images/ch08/` — new folder + 10 files (5 figures × SVG+PNG)
+- `docs/images/ch13/` — new folder + 1 file
+- `source/visuals-inventory.md` — new, full visuals inventory by chapter
+- `HANDOFF.md` — Status, Next Up updated; this entry prepended
 
 ---
 
