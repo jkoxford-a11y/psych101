@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+<title id="title">Nested sets and the conjunction fallacy</title>
+<desc id="desc">A large circle for bank tellers contains a smaller circle for feminist bank tellers, showing that the subset cannot be more probable than the containing set.</desc>
+<defs>
+  <filter id="softShadow" x="-10%" y="-10%" width="120%" height="130%">
+    <feDropShadow dx="0" dy="8" stdDeviation="9" flood-color="#102a43" flood-opacity="0.12"/>
+  </filter>
+  <marker id="arrow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 Z" fill="#52606d"/>
+  </marker>
+</defs>
+<rect width="1600" height="900" fill="#ffffff"/>
+<rect x="52" y="54" width="1496" height="792" rx="24" fill="#f8fbfd" stroke="#dde7ee" stroke-width="2"/>
+<text x="96" y="116" font-family="Aptos, Arial, sans-serif" font-size="42" font-weight="700" fill="#102a43" text-anchor="start" >The Conjunction Fallacy</text>
+<text x="96" y="152" font-family="Aptos, Arial, sans-serif" font-size="22" font-weight="400" fill="#52606d" text-anchor="start" >A specific combination can feel more plausible while being less probable.</text>
+<g filter="url(#softShadow)">
+  <circle cx="800" cy="440" r="285" fill="#eaf4f8" stroke="#2f5d7c" stroke-width="5"/>
+  <circle cx="875" cy="470" r="138" fill="#f7d5c2" stroke="#c65f4b" stroke-width="5"/>
+</g>
+<text x="695" y="290" font-family="Aptos, Arial, sans-serif" font-size="40" font-weight="700" fill="#102a43" text-anchor="middle" >Bank tellers</text>
+<text x="875" y="457" font-family="Aptos, Arial, sans-serif" font-size="32" font-weight="700" fill="#8f3d2e" text-anchor="middle"><tspan x="875" dy="0">Feminist</tspan><tspan x="875" dy="40.0">bank tellers</tspan></text>
+<line x1="400" y1="742" x2="1200" y2="742" stroke="#c9d6df" stroke-width="2"/>
+<text x="800" y="786" font-family="Aptos, Arial, sans-serif" font-size="28" font-weight="700" fill="#102a43" text-anchor="middle" >A subset cannot be more probable than the set that contains it.</text>
+</svg>
