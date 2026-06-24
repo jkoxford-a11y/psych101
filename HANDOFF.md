@@ -6,9 +6,15 @@
 
 ## Current Status
 
-**Phase:** Chapter 1 (History & Approaches) live, fully reviewed. Chapter 2 (Research Methods & Statistics) at v0.3, HTML on hold pending Jon’s images. Chapters 3–13 are markdown-complete (various versions), all awaiting Jon’s line-by-line review. **All 13 chapters now have at least a v0.1 markdown draft.**
+**Phase:** Chapter 1 (History & Approaches) live, fully reviewed. Chapter 2 (Research Methods & Statistics) at v0.3, HTML on hold pending Jon’s images. Chapters 3–13 are markdown-complete (various versions), all awaiting Jon’s line-by-line review. **All 13 chapters now have at least a v0.1 markdown draft. Prologue is now also a v0.1 draft.**
 
-**Image organization complete (Session 32):** All viable images from the "Potential Images for Chapters Holding Space" folder have been moved to their chapter `docs/images/` folders. Full visuals inventory saved at `source/visuals-inventory.md` — covers each chapter’s existing figures, what still needs to be made, and decisions pending from Jon.
+**Image organization complete (Session 32):** All viable images from the "Potential Images for Chapters Holding Space" folder have been moved to their chapter `docs/images/` folders. Full visuals inventory saved at `source/visuals-inventory.md`.
+
+**Naming convention (Session 32):** All image files now use descriptor-only names — no sequential numbers — so chapters can be reshuffled without renaming files. Pattern: `fig_<descriptor>.png` (e.g., `fig_retina_rods_cones.png`). All chapter markdown references updated to match. Ch01 left as-is (live HTML). Old numbered files could not be deleted from bash (OneDrive permission restriction) — orphaned files remain in folders but are not referenced by any markdown; Jon can delete them manually or ignore them.
+
+**Ch04 figure decisions (Session 32):** For figs 4.3 (retina) and 4.5 (cochlea), the programmatic SVG/PNG versions are primary in the chapter — they show actual data (receptor density curves; tonotopic map). For fig 4.6 (gate control), switched to the infographic version — it shows the three gate states (open/partially closed/closed) more clearly. Infographic versions of 4.3 and 4.5 remain in the folder as `fig_retina_infographic.png` and `fig_cochlea_infographic.png` for slide use.
+
+**Dunning-Kruger (Session 32):** Built an accurate figure from Kruger & Dunning (1999) Study 1 actual data — bar chart showing perceived vs. actual performance by quartile, not the popular spike-at-zero curve. Saved as `docs/images/prologue/fig_dunning_kruger_actual_data.svg/.png`.
 
 **Book restructure (Session 31):** Chapters 12 and 13 merged into a single chapter — Ch. 12 "Emotion, Stress & Coping" — using Barrett’s constructionist/allostatic framework as the spine. The former Ch. 12 (Motivation & Emotion, `ch12-motivation-emotion.md`) and Ch. 13 (Stress & Health, `ch13-stress-health.md`) are superseded; both files remain on disk but are no longer part of the book. What was Ch. 14 (Psychological Disorders & Therapy) is now Ch. 13. Book is now **13 chapters**. `docs/index.html` updated to reflect the new TOC.
 
@@ -39,8 +45,8 @@
 1 History & Approaches · 2 Research Methods & Statistics · 3 Neuroscience & Biological Bases · 4 Sensation & Perception · 5 States of Consciousness · 6 Learning · 7 Memory · 8 Thinking, Language & Intelligence · 9 Lifespan Development · 10 Social Psychology · 11 Personality · 12 Emotion, Stress & Coping · 13 Psychological Disorders & Therapy.
 
 **What's not started:**
-- Prologue (not started)
 - Ch2–Ch14 → HTML conversion (all markdown-complete, awaiting Jon's review first; Ch2 HTML on hold pending Jon's images)
+- Prologue HTML conversion (awaiting Jon's review of v0.1 draft)
 
 **Ch01 figures — now complete.** `docs/images/ch01/` created with 8 files: 5 portraits (Wundt, James, Watson, Freud, Skinner — Wikimedia Commons public domain), Fig 1.1 scope map (Jon's original), Fig 1.2 Maslow hierarchy (Wikimedia Commons), Fig 1.3 Skinner/Chomsky/LLM diagram (Jon + ChatGPT original). HTML wired: portrait strip at Section 2 opener, three numbered `.chapter-figure` blocks. CSS added to style.css (`.chapter-figure`, `.portrait-strip`). Attribution README at `docs/images/ch01/README_captions_alt_text_attribution.md`. Turing and Chomsky portraits skipped — represented in Fig 1.3. "Don't use these" folder contents excluded per folder label.
 
@@ -112,12 +118,72 @@
 | `ch10-social-psychology.md` | `source/chapters/` | Chapter 10 markdown source — v0.1, awaiting Jon's review |
 | `ch11-personality.md` | `source/chapters/` | Chapter 11 markdown source — v0.2, 2 figures (fig11-1, fig11-2), awaiting Jon's review |
 | `ch12-emotion-stress-coping.md` | `source/chapters/` | Chapter 12 markdown source — v0.1, Barrett-centered, merges former Ch12+Ch13, awaiting Jon's review |
-| `ch14-psychological-disorders-therapy.md` | `source/chapters/` | Chapter 13 markdown source — v0.1, awaiting Jon's review (file still named ch14; rename when converting to HTML) |
+| `ch13-psychological-disorders-therapy.md` | `source/chapters/` | Chapter 13 markdown source — v0.1, awaiting Jon's review |
 | `style.css` | `docs/css/` | Site styles incl. callout variants, tables, review-question pattern |
 
 ---
 
 ## Session Log
+
+---
+
+### 2026-06-24 — Session 34
+
+**What happened:** Drafted the prologue — `source/prologue-how-to-study.md` (v0.1).
+
+**Source material:** Adapted directly from Jon's own `psych101_awesome-sauce` "How Studying Works" content (https://jkoxford-a11y.github.io/psych101_awesome-sauce/how-studying-works.html) as instructed by spec §0. That site covers attention, working memory, encoding, retrieval, spacing, sleep, study habits, and AI use — all adapted and reorganized into the textbook's standard format.
+
+**What was added beyond the awesome-sauce content:**
+- Section 7 (Metacognition) — new; uses the `fig_dunning_kruger_actual_data.svg/.png` figure built in Session 33. Describes what Kruger & Dunning (1999) actually found (bar chart by quartile — bottom-quartile overestimation of ~50 percentile points; top-quartile slight underestimation). Connects calibration to retrieval practice as the antidote.
+- The Ebbinghaus forgetting curve figure (`fig_forgetting_curve_ebbinghaus.png`, also from Session 33) embedded in Section 4 (Spacing).
+- Full Clark & Brennan grounding theory applied to AI in Section 8 (Working With AI), per spec §12 prologue content.
+- Connections table (11 rows linking to Chs 4–10), review questions (8, all with wrong-answer rationales), key terms (15), and further reading (5 entries with annotations, including a Walker caveat).
+
+**Architecture:** Misconception Opener → Learning Objectives (8) → Opening Case (Emma/Luis/Nia) → Learning System table → Section 1 Attention → Section 2 Encoding → Section 3 Retrieval → Section 4 Spacing + Ebbinghaus figure → Section 5 Sleep → Section 6 Study Habits → Section 7 Metacognition + DK figure → Section 8 AI → Summary → Connections → Review Questions → Key Terms → Further Reading.
+
+**Word count:** 6,058 total; body prose estimated ~4,000 (inside 3,500–5,000 target).
+
+**Open items / decisions for Jon:**
+- Demo embeds: the awesome-sauce demos (working memory demo, retrieval cards, spacing simulator, AI decision tree) are referenced in the source as interactive placeholders. Jon needs to confirm live URLs for iframe embeds before HTML conversion. Working memory demo URL: https://jkoxford-a11y.github.io/psych101_awesome-sauce/working-memory-demo.html — confirm this is stable/current.
+- Walker (2017) included in Further Reading with an explicit caveat about contested claims. Jon may want to drop it or expand the caveat.
+- Section 8 (AI unit) is the first appearance of the Clark & Brennan grounding theory in the book. Jon should decide whether this level of technical specificity is right for an intro audience, or whether a lighter framing is better.
+- The three-student opening case (Emma/Luis/Nia) is adapted from the awesome-sauce content — Jon should confirm he is happy with this framing as the prologue's main pedagogical hook.
+
+**Files created/modified:**
+- `source/prologue-how-to-study.md` — new, v0.1
+- `HANDOFF.md` — Status updated; this entry prepended
+
+---
+
+### 2026-06-24 — Session 33
+
+**What happened:** Three tasks following Jon's responses to the visuals inventory decisions.
+
+**(1) Built accurate Dunning-Kruger figure** from Kruger & Dunning (1999) Study 1 actual data. The popular "Mount Stupid" spike-at-zero curve doesn't appear in the paper — the real finding is a grouped bar chart showing 4 quartile groups' actual vs. perceived test performance. Bottom quartile overestimates by ~50 percentile points; top quartile slightly underestimates. Saved as `docs/images/prologue/fig_dunning_kruger_actual_data.svg/.png`.
+
+**(2) Chose best Ch4 figures** after viewing all competing versions:
+- Fig 4.3 (retina): Programmatic SVG wins — shows actual receptor density data.
+- Fig 4.5 (cochlea): Programmatic SVG wins — shows actual tonotopic frequency map.
+- Fig 4.6 (gate control): Switched to infographic — it shows three gate states (open/partially closed/closed) more clearly than the SVG. Updated ch04 markdown to reference `fig_gate_control_infographic.png`.
+
+**(3) Renamed all image files to descriptor-only names** (no sequential numbers) across Prologue, Ch02–Ch05, Ch08, Ch11, Ch13. Ch01 left unchanged (live HTML). Pattern: `fig_<descriptor>.png`. All chapter markdown references (ch02, ch03, ch04, ch11) updated to match. Orphaned old numbered files remain in folders — cannot delete from bash due to OneDrive FUSE permissions; Jon can delete manually.
+
+Also: for Ch02, chose the new two-panel `fig_random_sampling_vs_assignment.png` (from holding space) over the old flowchart version — the side-by-side design makes the distinction cleaner. Kept both reliability/validity figures (`fig_reliability_validity_dartboard.svg` and `fig_operational_definition_reliability_validity.png`) — they cover different aspects and are complementary.
+
+**Files modified:**
+- `docs/images/prologue/` — renamed `fig0_1` → `fig_forgetting_curve_ebbinghaus.png`; added `fig_dunning_kruger_actual_data.svg/.png`
+- `docs/images/ch02/` — all files renamed to `fig_*` descriptors; old numbered files remain (orphaned)
+- `docs/images/ch03/` — all 15 files renamed to `fig_*` descriptors
+- `docs/images/ch04/` — all 15 files renamed to `fig_*` descriptors
+- `docs/images/ch05/` — 4 files renamed
+- `docs/images/ch08/` — 10 files renamed
+- `docs/images/ch11/` — 2 files renamed
+- `docs/images/ch13/` — 1 file renamed
+- `source/chapters/ch02-research-methods.md` — 7 figure references updated
+- `source/chapters/ch03-neuroscience-biological-bases.md` — 7 figure references updated
+- `source/chapters/ch04-sensation-perception.md` — 6 figure references updated (4.6 now uses infographic)
+- `source/chapters/ch11-personality.md` — 2 figure references updated
+- `HANDOFF.md` — Status updated; this entry prepended
 
 ---
 
@@ -175,7 +241,7 @@
 **Decisions made:**
 - Book is now 13 chapters. Former Ch. 14 (Disorders & Therapy) renumbers to Ch. 13.
 - `docs/index.html` updated: Ch. 12 → `12-emotion-stress-coping.html` (not yet created); Ch. 13 → `13-disorders-therapy.html`.
-- Old files `ch12-motivation-emotion.md` and `ch13-stress-health.md` retained on disk but are superseded — do not continue developing them.
+- Old files renamed to `_superseded-ch12-motivation-emotion.md` and `_superseded-ch13-stress-health.md` — retained on disk but excluded from rendering by the underscore prefix convention.
 - Noba pages returned empty again (client-side rendered). MOT-004 theories-of-emotion content sourced from verified primary papers directly (James 1884, Cannon 1927, Schachter & Singer 1962, Barrett 2017 SCAN paper). No OpenStax needed this time — primary literature alone was sufficient. No copyright deviation to flag.
 - Activity ideas logged in chapter footer: body-budget audit (one-week tracker), granularity exercise (20-item emotion word list), coping strategy matching (6 scenarios varying in controllability).
 - Demo ideas logged in chapter footer: core affect circumplex (live 2D class overlay), body-budget ledger (deposits/withdrawals simulation), GAS timeline (animated cortisol/immune function).

@@ -181,7 +181,7 @@ The lesson is not that character is irrelevant. It is that a strong situational 
 
 Consider conscientiousness and class attendance. A conscientious student will *on average* attend class more reliably than a less conscientious one. But whether they show up on *any given Tuesday* depends heavily on whether they're sick, whether there's a family crisis, whether their car starts, whether there's a blizzard. The trait predicts the semester pattern; the situation explains Tuesday. This is why Mischel's "correlation of .30" is not a verdict on the importance of personality in general — it is a statement about the noise in predicting single behavioral acts.
 
-![Figure 11.1. Left panel shows a scatter plot of trait score vs. single behavioral observation with r ≈ .29 — wide dispersion. Right panel shows trait score vs. behavior averaged across 20 situations with r ≈ .72 — much tighter relationship. Caption: Traits predict single behavioral acts with limited accuracy (r ≈ .30). When behavior is averaged across many situations, the trait signal becomes much clearer.](../images/ch11/fig11-1-trait-signal-aggregation.png)
+![Figure 11.1. Left panel shows a scatter plot of trait score vs. single behavioral observation with r ≈ .29 — wide dispersion. Right panel shows trait score vs. behavior averaged across 20 situations with r ≈ .72 — much tighter relationship. Caption: Traits predict single behavioral acts with limited accuracy (r ≈ .30). When behavior is averaged across many situations, the trait signal becomes much clearer.](../images/ch11/fig_trait_signal_aggregation.png)
 
 ### The Modern Interactionist Resolution
 
@@ -193,7 +193,7 @@ Several qualifications on the situationist challenge emerge from subsequent rese
 
 **Weak vs. strong situations.** In **strong situations** — clear norms, obvious behavioral expectations, significant consequences for noncompliance — traits matter less. In **weak situations** — ambiguous, unstructured, without clear norms — traits matter more. Darley and Batson created a strong situation; in an unstructured social gathering, extraversion predicts behavior well. Figure 11.2 illustrates this interaction.
 
-![Figure 11.2. Bar chart showing helping behavior (0–10) across low, medium, and high conscientiousness under two conditions. In the weak situation (blue bars), behavior ranges widely (≈4.7 pts) across trait levels. In the strong situation (orange bars), behavior is compressed into a narrow range (≈0.8 pts) regardless of trait. Caption: In weak situations, personality traits produce a wide spread of behavior. In strong situations, situational pressure compresses behavior regardless of trait level.](../images/ch11/fig11-2-person-situation-grid.png)
+![Figure 11.2. Bar chart showing helping behavior (0–10) across low, medium, and high conscientiousness under two conditions. In the weak situation (blue bars), behavior ranges widely (≈4.7 pts) across trait levels. In the strong situation (orange bars), behavior is compressed into a narrow range (≈0.8 pts) regardless of trait. Caption: In weak situations, personality traits produce a wide spread of behavior. In strong situations, situational pressure compresses behavior regardless of trait level.](../images/ch11/fig_person_situation_grid.png)
 
 **Behavioral signatures.** Mischel and Shoda (1995) proposed that personality is not unconditional cross-situational consistency but *if-then* patterns: "if in a situation of type A, then behavior X; if in type B, then behavior Y." These conditional behavioral signatures are consistent across time and distinctive across individuals — they just look like inconsistency if you expect unconditional uniformity.
 
@@ -380,18 +380,4 @@ Jang, K. L., Livesley, W. J., & Vernon, P. A. (1996). Heritability of the Big Fi
 
 Jiang, H., Zhang, X., Cao, X., Breazeal, C., Roy, D., & Kabbara, J. (2024). PersonaLLM: Investigating the ability of large language models to express Big Five personality traits. In *Findings of the Association for Computational Linguistics: NAACL 2024* (pp. 2162–2185). Association for Computational Linguistics.
 
-McCrae, R. R., & Costa, P. T., Jr. (1997). Personality trait structure as a human universal. *American Psychologist*, *52*(5), 509–516.
-
-Mihura, J. L., Meyer, G. J., Dumitrascu, N., & Bombel, G. (2013). The validity of individual Rorschach variables: Systematic reviews and meta-analyses of the Comprehensive System. *Psychological Bulletin*, *139*(3), 548–605.
-
-Mischel, W. (1968). *Personality and assessment*. Wiley.
-
-Mischel, W., & Shoda, Y. (1995). A cognitive-affective system theory of personality: Reconceptualizing situations, dispositions, dynamics, and invariance in personality structure. *Psychological Review*, *102*(2), 246–268.
-
-Murray, H. A. (1943). *Thematic Apperception Test manual*. Harvard University Press.
-
-Rogers, C. R. (1961). *On becoming a person: A therapist's view of psychotherapy*. Houghton Mifflin.
-
-Rorschach, H. (1921). *Psychodiagnostik*. Bircher. [English translation: Rorschach, H. (1942). *Psychodiagnostics: A diagnostic test based on perception* (P. Lemkau & B. Kronenberg, Trans.). Huber.]
-
-Wood, J. M., Nezworski, M. T., Lilienfeld, S. O., & Garb, H. N. (2003). *What's wrong with the Rorschach? Science confronts the controversial inkblot test*. Jossey-Bass.
+McCrae, R. R., & Costa, P. T., Jr. (1997). Personality trait structure as a human universal. *American Psychologist*, *52*(5), 50
