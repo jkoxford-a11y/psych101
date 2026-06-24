@@ -1,6 +1,6 @@
 <!-- ch09-lifespan-development.md -->
 <!-- Chapter 9: Lifespan Development -->
-<!-- Version: 0.1 — first draft -->
+<!-- Version: 0.3 — editorial pass: learning objectives 6-7 rewritten; "none of us remembers" softened; teratogen/alcohol "no safe window" language added (Jones & Smith 1973); Genie paragraph de-decisive; core knowledge "not learned from experience" → "initial biases/starting points"; Wynn "number" → "quantity tracking"; AI/ZPD assimilation language replaced with "schema unchanged" framing; DEV-013 artifact removed; "deep evolutionary roots" softened in Warneken/Tomasello paragraph; retrieval prompt sharpened; Key Terms expanded (fluid/crystallized intelligence, identity formation, moral motivation, moral reasoning, emerging adulthood); References expanded (Baumrind 1966, Casey et al. 2008, Horn & Cattell 1967, Huttenlocher 1979, Jones & Smith 1973, van IJzendoorn & Kroonenberg 1988, Charles & Carstensen 2010); Lucca et al. author order corrected (Yuen 2nd, not Capelier-Mourguy) -->
 <!-- Concepts covered: DEV-001 through DEV-014 (14 concepts) -->
 <!-- DEV-006 (Vygotsky/ZPD) sourced from Noba: Siegler, R. (2026). Cognitive development in childhood. In R. Biswas-Diener & E. Diener (Eds.), Noba textbook series: Psychology. Champaign, IL: DEF publishers. http://noba.to/8uv4fn9h -->
 <!-- All other DEV-* concepts: instructor-original / canonical-common-knowledge; drafted from course materials and verified primary literature -->
@@ -23,7 +23,7 @@ This matters beyond being an interesting fact. If children's thinking is qualita
 
 ## Where This Fits
 
-Development is the thread that connects everything else in this book. The biological machinery introduced in Chapter 3 builds itself out over years. The learning mechanisms from Chapter 6 shape behavior from birth onward. The memory systems covered in Chapter 7 are not fully online at birth — the hippocampal connections that support explicit autobiographical memory complete their development only after infancy, which is why none of us remembers being two. And the social behavior covered in Chapter 10 has its roots in the very first attachment relationships of infancy. This chapter traces the arc of that construction project from before birth through late adulthood, organizing the story around three recurring questions: How do nature and nurture interact? Does development proceed in discrete stages or gradually? And which aspects of who we are remain stable across the lifespan?
+Development is the thread that connects everything else in this book. The biological machinery introduced in Chapter 3 builds itself out over years. The learning mechanisms from Chapter 6 shape behavior from birth onward. The memory systems covered in Chapter 7 are not fully online at birth — the hippocampal connections that support explicit autobiographical memory complete their development only after infancy, which is one reason most adults have few reliable autobiographical memories from the first years of life. And the social behavior covered in Chapter 10 has its roots in the very first attachment relationships of infancy. This chapter traces the arc of that construction project from before birth through late adulthood, organizing the story around three recurring questions: How do nature and nurture interact? Does development proceed in discrete stages or gradually? And which aspects of who we are remain stable across the lifespan?
 
 ---
 
@@ -36,8 +36,8 @@ By the end of this chapter, students should be able to:
 3. **Describe** the four stages of Piaget's theory, including their defining milestones, and evaluate major criticisms of the stage model.
 4. **Contrast** Piaget's and Vygotsky's accounts of cognitive development, and define the zone of proximal development.
 5. **Summarize** Ainsworth's attachment classifications and explain how early attachment relates to later development.
-6. **Apply** Kohlberg's three levels of moral reasoning to real scenarios and identify a key limitation of his framework.
-7. **Identify** at least four of Erikson's psychosocial stages and the central conflict each involves.
+6. **Distinguish** moral motivation from moral reasoning, using toddler helping, infant social evaluation, and Kohlberg's framework as examples.
+7. **Explain** why identity formation is a central developmental task of adolescence, and describe why Erikson's broader stage theory is useful but limited.
 8. **Explain** how fluid and crystallized intelligence change across adulthood and what drives those changes.
 
 ---
@@ -64,15 +64,15 @@ A **longitudinal study** follows the same participants across years or decades, 
 
 The construction project begins before birth. **Teratogens** are environmental agents — chemical, biological, or physical — that disrupt normal prenatal development and can cause structural or functional deficits. Alcohol is among the most studied; heavy or binge drinking during pregnancy can cause fetal alcohol spectrum disorders, with effects ranging from mild cognitive impairment to the full profile of fetal alcohol syndrome (growth restriction, characteristic facial features, severe intellectual disability). Nicotine restricts fetal blood flow and is associated with low birth weight. Certain medications, high-dose radiation, and some viruses (rubella, cytomegalovirus) are also established teratogens.
 
-Timing matters enormously. Teratogens do their most serious damage during **sensitive periods** — windows of time when a particular system is actively being built and is therefore maximally vulnerable to disruption. Alcohol exposure during the first trimester, when the brain is establishing its basic architecture, carries greater risk of structural brain defects than the same exposure later. This principle of sensitive periods — that the developing organism is differentially vulnerable to environmental input at specific points — extends beyond prenatal development into postnatal brain maturation.
+Timing matters enormously for many teratogens. Different systems are vulnerable at different points because they are being constructed at different times; disruption during active construction does the most damage. This principle of sensitive periods extends beyond prenatal development into postnatal brain maturation. Alcohol is a partial exception to the simple timing story: while first-trimester exposure — when the brain is establishing its basic architecture — is associated with the most severe structural deficits, no point in pregnancy has been identified as a safe window for alcohol exposure. The brain is under construction throughout, and no threshold below which alcohol is harmless has been established (Jones & Smith, 1973).
 
 ### Brain development after birth: building, pruning, and myelinating
 
-At birth, a human infant has most of the neurons it will ever have — roughly 86 billion — but the connections between them are sparse. Over the first two years, the brain undergoes an explosive phase of **synaptogenesis**: dendrites branch, synaptic connections are massively overproduced, and the brain builds far more circuitry than it will ultimately keep. This is followed by **synaptic pruning**, in which unused connections are eliminated. The principle is blunt but effective: use it or lose it. Connections that are activated by experience are maintained and strengthened; those that remain quiet are retracted. The result is a brain architecture precisely tuned to the environment the child actually encountered, rather than a generic architecture optimized for no particular environment.
+At birth, a human infant has most of the neurons it will ever have — roughly 86 billion — but the connections between them are sparse. Over the first two years, the brain undergoes an explosive phase of **synaptogenesis**: dendrites branch, synaptic connections are massively overproduced, and the brain builds far more circuitry than it will ultimately keep (Huttenlocher, 1979). This is followed by **synaptic pruning**, in which unused connections are eliminated. The principle is blunt but effective: use it or lose it. Connections that are activated by experience are maintained and strengthened; those that remain quiet are retracted. The result is a brain architecture precisely tuned to the environment the child actually encountered, rather than a generic architecture optimized for no particular environment.
 
 **Myelination** — the wrapping of axons in a fatty sheath that dramatically speeds signal transmission — proceeds from birth through adolescence and into early adulthood, with the prefrontal cortex among the last regions to be fully myelinated. This late maturation of the prefrontal cortex has direct consequences for adolescent behavior, which we return to in Section 4.
 
-The sensitive-period principle shows up dramatically in cases of extreme deprivation. Children raised in severely impoverished sensory environments — the heartbreaking cases of children discovered after years of isolation, such as the case of Genie in 1970s California — often fail to acquire language normally even after rescue and intensive intervention, if the deprivation extended through the critical period for language development. Their cases illustrate what experimental manipulation would be unethical to attempt directly: the developing brain is not equally plastic at all ages, and some developmental windows close.
+The sensitive-period principle shows up dramatically in cases of extreme deprivation. Cases of extreme deprivation — such as the case of Genie in 1970s California, a child discovered after years of severe isolation — are consistent with the sensitive-period account: she failed to acquire normal language despite intensive intervention after rescue. These cases are not clean tests, however. Severe deprivation, trauma, malnutrition, and unstable later care are entangled together, making it impossible to isolate the timing effect alone. What they do suggest, with appropriate uncertainty, is that the developing brain is not equally plastic at all ages, and that some developmental windows may close.
 
 > **Think About It:** Think about a skill you learned early in life — a language, a musical instrument, a sport — and one you are trying to learn as an adult. Does the difference in ease match what you'd expect from the sensitive-period framework?
 
@@ -108,7 +108,7 @@ Baillargeon's violation-of-expectation experiments demonstrated object permanenc
 
 Similarly, **theory of mind** — the understanding that other people have beliefs, intentions, and desires that may differ from one's own, and that behavior follows from mental states, not just from reality — develops earlier than Piaget's egocentrism claims implied. Wimmer and Perner's (1983) false-belief task is the standard measure: a child watches a character place an object in a basket, leave the room, and return after another character has moved the object to a different location. Children who understand that the returning character has a *false belief* (she still thinks the object is in the basket) correctly predict she will look in the basket. Children below about 4 years of age typically fail — they say she will look where the object actually is, not where she falsely believes it to be. But this is age 4, not age 7, which is earlier than Piaget's three-mountains task suggested the egocentrism limitation was overcome.
 
-The implication: development is somewhat more continuous and more context-dependent than a strict stage model suggests, and children are competent earlier than Piaget's classical tasks revealed.
+The pattern across these findings points to a conclusion Piaget's framework underweighted: infants do not arrive as blank constructors working from raw perceptual experience. Karen Wynn's (1992) classic demonstration showed that 5-month-old infants watching a puppet show — one object placed behind a screen, a second added — looked longer when the screen dropped to reveal an impossible outcome (one object) than the expected two. Some form of quantity tracking is operating well before language and well before formal operations. Elizabeth Spelke's (2000) **core knowledge** framework synthesizes these findings into a broader principle: infants arrive with domain-specific cognitive systems for representing objects, quantity, geometry, and agents. These systems are not constructed from scratch by general learning alone. They appear early enough that they are better understood as initial biases or representational starting points that experience then tunes and elaborates. Piaget's constructivist insight stands — infants actively build understanding — but they build from a richer starting kit than his original model assumed.
 
 ### Vygotsky and the social construction of mind
 
@@ -120,7 +120,7 @@ Vygotsky also argued that language and thought are deeply intertwined in ways Pi
 
 The Noba module "Cognitive Development in Childhood" (Siegler, 2026) summarizes the relationship between Piaget and Vygotsky as follows: both saw the child as an active agent in her own development, but Piaget located the engine of development primarily in the child's individual encounters with the physical world, while Vygotsky located it in the child's social interactions with more capable others. Both perspectives have received substantial empirical support, and most contemporary developmental psychologists treat them as complementary rather than competing.
 
-> **AI Connection:** Vygotsky's ZPD has become a popular framework for thinking about AI-assisted learning — if AI can meet a student in the zone, providing just the right amount of support to make a difficult task achievable, it could be a powerful scaffold. The limitation is important to name: effective scaffolding requires calibration. A scaffold set too low leaves the learner in territory they could reach alone; a scaffold set too high skips the zone entirely. The danger with AI tutoring is the second case — a student who asks an AI to generate an essay, or to produce the steps of a proof, has *assimilated* (fitted the output into their existing schema without restructuring it) rather than *accommodated* (revised their schema in response to a challenge). Chapter 8 made a related point: statistical learning in infants and in large language models share a surface resemblance, but the infant's learning is embedded in a social context that actively calibrates difficulty — the caregiver who raises vocabulary complexity gradually as comprehension grows. A language model provides responses calibrated to the prompt, not to the learner's ZPD.
+> **AI Connection:** Vygotsky's ZPD has become a popular framework for thinking about AI-assisted learning — if AI can meet a student in the zone, providing just the right amount of support to make a difficult task achievable, it could be a powerful scaffold. The limitation is important to name: effective scaffolding requires calibration. A scaffold set too low leaves the learner in territory they could reach alone; a scaffold set too high skips the zone entirely. The danger with AI tutoring is the second case — when an AI completes the essay or produces the proof steps, the performance is completed but the learner's own schema remains unchanged. Effective scaffolding should leave the student more capable after the support is removed; AI-generated output that skips the zone entirely can produce the appearance of learning without the underlying development. Chapter 8 made a related point: statistical learning in infants and in large language models share a surface resemblance, but the infant's learning is embedded in a social context that actively calibrates difficulty — the caregiver who raises vocabulary complexity gradually as comprehension grows. A language model provides responses calibrated to the prompt, not to the learner's ZPD.
 
 *Stop and retrieve: How does Vygotsky's view of development differ from Piaget's? What role does the ZPD play in each?*
 
@@ -146,7 +146,7 @@ The infant's behavior during *reunion* — not during separation, which is less 
 
 **Anxious-avoidant attachment** (roughly 20–25%): The infant shows little visible distress at separation and avoids or ignores the caregiver on reunion. This can look like independence; closer examination reveals it to be a suppression of attachment behavior, likely developed in response to caregiving that consistently rejected or withdrew from proximity-seeking.
 
-A fourth category, **disorganized attachment**, was identified later by Main and Solomon (1986) — it involves contradictory, confused behavior at reunion, and is associated with caregiving that is frightening or severely neglectful.
+Researchers have identified additional patterns beyond these three — including a disorganized category associated with frightening or severely neglectful caregiving (Main & Solomon, 1986) — but secure, ambivalent, and avoidant cover the core of what most students encounter in the literature.
 
 > **Classic Study: The Strange Situation (Ainsworth et al., 1978)**
 >
@@ -158,7 +158,7 @@ A fourth category, **disorganized attachment**, was identified later by Main and
 >
 > *Importance:* The study was among the first to operationalize Bowlby's theoretical constructs, demonstrating that individual differences in attachment were measurable and traceable to specific caregiving patterns. Secure attachment in infancy predicts better outcomes across childhood and adolescence: more positive peer relationships, better emotional regulation, and — though more modestly — somewhat better cognitive performance.
 >
-> *A caution:* Most early attachment research was conducted with Western, middle-class samples. Cross-cultural research shows both universal patterns (the basic attachment behavioral system appears across cultures) and meaningful cultural variation in the distribution of attachment classifications — what counts as sensitive caregiving is partly culturally calibrated. The Strange Situation should not be treated as a culture-universal assessment without acknowledging this.
+> *A caution:* Most early attachment research was conducted with Western, middle-class samples. Cross-cultural research shows both universal patterns (the basic attachment behavioral system appears across cultures) and meaningful cultural variation in the distribution of attachment classifications — what counts as sensitive caregiving is partly culturally calibrated (van IJzendoorn & Kroonenberg, 1988). The Strange Situation should not be treated as a culture-universal assessment without acknowledging this.
 
 ### Temperament and the orchid-dandelion distinction
 
@@ -170,7 +170,7 @@ This framework reframes "difficult temperament" as not straightforwardly bad but
 
 ### Parenting styles
 
-Diana Baumrind's research identified four primary **parenting styles** defined by two dimensions: demandingness (how much the parent sets and enforces expectations) and responsiveness (how much the parent responds to and accepts the child's needs and perspective).
+Diana Baumrind's (1966) research identified four primary **parenting styles** defined by two dimensions: demandingness (how much the parent sets and enforces expectations) and responsiveness (how much the parent responds to and accepts the child's needs and perspective).
 
 **Authoritative** parents are high on both. They set clear expectations and enforce them consistently, but they explain their reasoning, respond warmly to the child's perspective, and negotiate. Authoritative parenting is associated with the best overall outcomes across childhood and adolescence in Western samples: higher academic achievement, greater self-regulation, lower rates of externalizing behavior problems.
 
@@ -180,50 +180,33 @@ Diana Baumrind's research identified four primary **parenting styles** defined b
 
 **Uninvolved** parents are low on both dimensions. This is the style associated with the worst developmental outcomes; in extreme cases it constitutes neglect.
 
-A reliable caveat: the parenting-style literature is correlational. Children influence parents as much as parents influence children, and the parenting styles that are most reliably associated with good outcomes in Western, middle-class samples show more variation in their effects across cultural contexts (DEV-013).
+A reliable caveat: the parenting-style literature is correlational. Children influence parents as much as parents influence children, and the parenting styles that are most reliably associated with good outcomes in Western, middle-class samples show more variation in their effects across cultural contexts.
 
-### Kohlberg and moral development
+### Moral motivation and moral reasoning
 
-Lawrence Kohlberg extended Piaget's analysis of reasoning to the moral domain, presenting children and adults with hypothetical moral dilemmas (most famously, the "Heinz dilemma": should a man steal a drug he cannot afford to save his dying wife?) and analyzing the structure of their reasoning rather than whether they said yes or no (Kohlberg, 1969). He proposed three levels, each divided into two stages:
+The development of moral behavior breaks into two separable questions: where moral *motivation* comes from, and how moral *reasoning* becomes more sophisticated with development. These need not have the same answer.
 
-**Preconventional morality** (typical of young children): Moral reasoning is driven by consequences to the self. Stage 1 is obedience to avoid punishment; Stage 2 is exchange and self-interest ("I'll scratch your back if you scratch mine").
+On motivation: by 18 months, toddlers spontaneously help adults who are struggling — handing over a dropped object, opening a cabinet door the adult cannot reach — without being asked and without any expectation of reward. Warneken and Tomasello (2006) documented this in 18-month-olds and, strikingly, in young chimpanzees as well, consistent with the idea that at least some forms of prosocial motivation have deep evolutionary roots and do not have to be constructed entirely through explicit teaching. Whether something like this motivational base is present even earlier — in preverbal infants — is an active area of inquiry. An influential study by Hamlin, Wynn, and Bloom (2007) found that 6-month-olds preferred a puppet that had helped another character over one that had hindered it, suggesting social evaluation before language. A large preregistered replication across 37 laboratories (Lucca et al., 2025), however, found that infants performed at chance — a direct null result. The story of very early moral motivation is not yet settled, and this is an honest place to leave it.
 
-**Conventional morality** (typical of older children and most adults): Reasoning is grounded in social norms and maintaining relationships or social order. Stage 3 is pleasing others and being a good person; Stage 4 is respecting authority and following rules to maintain social order.
+On reasoning: Kohlberg (1969) proposed that the *logic* people use to justify moral judgments develops across three broad levels. Young children reason primarily from consequences to themselves. Most adolescents and adults reason from social norms and relationships. Some adults reach a level at which reasoning appeals to principles that transcend particular rules. The framework is useful for one insight worth keeping: people can disagree about the same moral situation not because one is factually wrong but because they are reasoning from different structural commitments. Its limitations are also worth knowing — the sample was all male, the dilemmas were framed around abstract justice, and the empirical support for the full hierarchy is weaker than the framework's influence would suggest. Don't memorize the levels; understand that the structure of moral reasoning, not just its content, changes across development, and that motivation and reasoning are distinct problems that developed differently.
 
-**Postconventional morality** (less common, typically requires formal reasoning capacity): Moral thinking appeals to abstract principles that transcend particular rules or relationships. Stage 5 involves a social-contract view — rules are valid insofar as they serve human welfare and can be revised; Stage 6 involves universal ethical principles (justice, human dignity) that override particular laws.
-
-Kohlberg's framework is useful for identifying the *logic* behind moral reasoning and for explaining why moral disagreements are often not really about the facts of the case. Two people who agree on what happened can disagree about what was right because they are reasoning at different levels — one from consequences to self, one from social convention, one from principle.
-
-Its limitations are also worth knowing. Carol Gilligan (1982) argued that Kohlberg's framework — derived from an all-male sample using dilemmas framed around justice — systematically undervalued a care-based orientation more common in women's moral reasoning, which emphasizes relationships, context, and responsibility rather than abstract rules. Subsequent research has not found the dramatic gender difference Gilligan proposed, but her critique sharpened attention to the diversity of moral frameworks and to whose reasoning the developmental stage hierarchy was implicitly treating as normative.
-
-*Stop and retrieve: What is the difference between conventional and postconventional moral reasoning? Give an example of a moral judgment that exemplifies each level.*
+*Stop and retrieve: Warneken & Tomasello's toddler-helping finding and Kohlberg's stage model both concern moral development. What is each actually explaining, and why is neither a complete account of moral behavior by itself?*
 
 ---
 
 ## Section 4: Adolescence Through Adulthood — Identity, Maturity, and Aging
 
-### Erikson's stages: the full lifespan view
+### Development doesn't stop at adolescence
 
-Erik Erikson's psychosocial theory is the most ambitious developmental framework in the field — it covers the full lifespan in eight stages, each defined by a central psychosocial **conflict** that must be navigated (Erikson, 1963). Unlike Piaget's stages, Erikson's are not cognitive; they are about the relationship between the developing self and the social world. Healthy development involves successfully resolving each conflict, building psychological capacities that prepare the person for the next stage. Failures or incomplete resolutions accumulate.
+A recurring mistake in older developmental psychology was to treat adulthood as a plateau and late life as simple decline. Erik Erikson's (1963) contribution was to insist that meaningful psychological development continues across the full lifespan — that people face characteristic challenges at each life phase, shaped by the intersection of biology and social context, and that navigating those challenges (or not) has real consequences for wellbeing. Whether his specific stage labels, sequence, or count of eight are empirically justified is more doubtful; the data supporting the full framework as a universal developmental sequence are modest, and the life trajectory it assumes maps more cleanly onto 20th-century Western norms than onto the range of human lives across cultures and historical periods.
 
-| Stage | Age (approx.) | Central Conflict | Healthy Resolution |
-|---|---|---|---|
-| 1. Trust vs. Mistrust | Birth–1 year | Will my needs be reliably met? | Basic trust in the world's responsiveness |
-| 2. Autonomy vs. Shame & Doubt | 1–3 years | Can I act independently? | Will and self-control without shame |
-| 3. Initiative vs. Guilt | 3–6 years | Can I pursue my own goals? | Purpose and direction |
-| 4. Industry vs. Inferiority | 6–12 years | Am I competent at things? | Sense of competence and mastery |
-| 5. Identity vs. Role Confusion | Adolescence | Who am I? | Coherent sense of self and direction |
-| 6. Intimacy vs. Isolation | Young adulthood | Can I form deep relationships? | Capacity for committed intimacy |
-| 7. Generativity vs. Stagnation | Middle adulthood | Am I contributing something beyond myself? | Productivity, care, mentorship |
-| 8. Integrity vs. Despair | Late adulthood | Did my life have meaning? | Acceptance and wisdom |
-
-Erikson's model is a useful organizing frame, but it carries the limitations of its era. The stage sequence reflects a particular life trajectory (a relatively linear path through education, career, partnership, parenthood, and retirement) that is less universal than Erikson's framing implied — it maps more cleanly onto 20th-century Western, middle-class life courses than onto more variable contemporary patterns or onto life courses in other cultural contexts.
+The piece that has held up best, and that bears directly on what follows, is the observation that **identity formation** is the defining psychological task of adolescence. The question "Who am I?" — not just "What is my name and role?" but "What do I believe, what do I value, and what kind of person am I becoming?" — becomes urgent with puberty, abstract reasoning, and the social pressure to make consequential choices about future and self. That is the durable Eriksonian insight, and it needs no memorized stage list to be useful.
 
 ### The teenage brain: when impulse control lags reward seeking
 
 Adolescence is the period of most rapid physical and neural change after infancy. **Puberty** triggers a cascade of hormonal changes — gonadal hormones and adrenal androgens — that transform body and behavior. The onset of formal operational reasoning gives adolescents the cognitive capacity to reason abstractly about identity, ideology, and the future. And the frontal cortex, which underlies impulse control, risk assessment, and long-term planning, is among the last brain regions to complete myelination — a process that continues into the mid-20s.
 
-The result is a characteristic developmental asymmetry: reward-seeking systems (the ventral striatum, dopamine circuits) mature earlier than regulatory systems (prefrontal cortex). Sensation-seeking peaks in the mid-teens; impulse control catches up only gradually as frontal maturation continues (Blakemore & Choudhury, 2006). This is not a design flaw — the elevated novelty-seeking and peer-orientation of adolescence may reflect adaptive pressures toward exploration and independence — but it does explain why adolescence is a period of elevated risk-taking across almost all cultures and historical periods studied.
+The result is a characteristic developmental asymmetry: reward-seeking systems (the ventral striatum, dopamine circuits) mature earlier than regulatory systems (prefrontal cortex). Sensation-seeking peaks in the mid-teens; impulse control catches up only gradually as frontal maturation continues (Blakemore & Choudhury, 2006; Casey, Getz, & Galvan, 2008). This is not a design flaw — the elevated novelty-seeking and peer-orientation of adolescence may reflect adaptive pressures toward exploration and independence — but it does explain why adolescence is a period of elevated risk-taking across almost all cultures and historical periods studied.
 
 Erikson's fifth stage, **identity versus role confusion**, is the psychosocial frame for this period. The adolescent task is to construct a coherent answer to the question "Who am I?" — not just a name and a social role, but a set of values, commitments, and beliefs that unify the self across contexts. The **"Who am I?"** inquiry is both an abstract intellectual exercise and a deeply lived experience during adolescence, driving the experimental identity exploration — trying out different groups, roles, ideologies, and presentations of self — that is characteristic of the period. Emerging adulthood (roughly 18–25) extends this period of identity exploration for many in industrialized societies, delaying the assumption of full adult social roles.
 
@@ -233,11 +216,11 @@ Erikson's fifth stage, **identity versus role confusion**, is the psychosocial f
 
 Physical development peaks in early adulthood. Strength, reaction time, and sensory acuity generally reach their maximum in the early-to-mid 20s and show gradual decline thereafter, with the pace accelerating in late adulthood. These are averages, however, and individual variation is large; health behaviors (exercise, sleep, nutrition) moderate the trajectory substantially.
 
-The distinction between **fluid intelligence** and **crystallized intelligence** — introduced in Chapter 8 in the context of IQ — maps directly onto patterns of adult cognitive aging. Fluid intelligence, which involves novel problem solving, working-memory capacity, and processing speed, begins a slow decline in the 30s and accelerates after 60. Crystallized intelligence, which involves accumulated knowledge, verbal ability, and expertise, continues to grow or remain stable well into late adulthood. An older adult who struggles with a novel logic puzzle (fluid) may vastly outperform a younger adult on a task requiring deep domain knowledge or sophisticated verbal reasoning (crystallized). This is the cognitive trade-off of aging: speed and flexibility decline, wisdom and knowledge accumulate.
+The distinction between **fluid intelligence** and **crystallized intelligence** — introduced in Chapter 8 in the context of IQ (Horn & Cattell, 1967) — maps directly onto patterns of adult cognitive aging. Fluid intelligence, which involves novel problem solving, working-memory capacity, and processing speed, begins a slow decline in the 30s and accelerates after 60. Crystallized intelligence, which involves accumulated knowledge, verbal ability, and expertise, continues to grow or remain stable well into late adulthood. An older adult who struggles with a novel logic puzzle (fluid) may vastly outperform a younger adult on a task requiring deep domain knowledge or sophisticated verbal reasoning (crystallized). This is the cognitive trade-off of aging: speed and flexibility decline, wisdom and knowledge accumulate.
 
 Memory shows a parallel pattern. Explicit memory for recent events (especially free recall) is more vulnerable to aging than recognition memory or long-term autobiographical memory for well-consolidated events. The subjective experience of forgetting names and recent details that many adults notice in midlife reflects real but modest decline in working-memory function — not the precursor to dementia that many fear.
 
-Perhaps the most counterintuitive finding in the psychology of aging is that subjective **well-being** does not reliably decline with age. Large-scale surveys consistently find that emotional well-being — ratio of positive to negative affect, satisfaction with life — is at least as high in late adulthood as in young adulthood, and often higher. Older adults report less anger, stress, and worry; they weight positive emotional experiences more heavily; and they are better at emotional regulation. Brain-imaging evidence mirrors this: neural reactivity to negative stimuli diminishes with age. The *midlife crisis* of popular imagination is more elusive in the data than in the cultural narrative.
+Perhaps the most counterintuitive finding in the psychology of aging is that subjective **well-being** does not reliably decline with age. Large-scale surveys consistently find that emotional well-being — ratio of positive to negative affect, satisfaction with life — is at least as high in late adulthood as in young adulthood, and often higher (Charles & Carstensen, 2010). Older adults report less anger, stress, and worry; they weight positive emotional experiences more heavily; and they are better at emotional regulation. Brain-imaging evidence mirrors this: neural reactivity to negative stimuli diminishes with age. The *midlife crisis* of popular imagination is more elusive in the data than in the cultural narrative.
 
 ---
 
@@ -245,11 +228,11 @@ Perhaps the most counterintuitive finding in the psychology of aging is that sub
 
 The study of lifespan development is organized around three core tensions: nature versus nurture (always an interaction), continuity versus stages (probably both, depending on what you measure and how often), and stability versus change (some dimensions stable across life, others not). Development begins before birth, with teratogens capable of disrupting normal prenatal construction, especially during sensitive periods when particular systems are being built. Postnatally, the brain undergoes synaptogenesis and pruning — building enormous connectivity and then sculpting it through experience. Sensitive periods shape which features of the environment the developing brain is maximally responsive to.
 
-Piaget argued that children pass through four qualitatively distinct cognitive stages, constructing knowledge actively through assimilation and accommodation. Modern research confirms the broad progression while pushing milestone timing earlier than Piaget's tasks suggested. Object permanence appears in early infancy; theory of mind is present by age 4. Vygotsky added the critical insight that cognitive development is socially mediated: the zone of proximal development captures the space where learning happens with support that gradually withdraws as competence solidifies.
+Piaget argued that children pass through four qualitatively distinct cognitive stages, constructing knowledge actively through assimilation and accommodation. Modern research confirms the broad progression while pushing milestone timing earlier than Piaget's tasks suggested — object permanence in early infancy, theory of mind by age 4. Crucially, infants do not arrive as blank constructors: core knowledge research (Wynn, 1992; Spelke, 2000) shows domain-specific systems for number, objects, and agents operating well before language, suggesting a richer starting state than Piaget assumed. Vygotsky added the critical insight that cognitive development is socially mediated: the zone of proximal development captures the space where learning happens with calibrated support that gradually withdraws as competence solidifies.
 
-Attachment theory identifies early caregiver-infant relationships as the origin of working models of the social world. Ainsworth's Strange Situation revealed three main attachment patterns — secure, anxious-ambivalent, anxious-avoidant — traceable to differences in caregiver sensitivity. Temperament moderates these effects; orchid children are more sensitive to environmental quality in both directions. Parenting style research points toward authoritative parenting as associated with the best developmental outcomes, with important cultural caveats. Kohlberg mapped moral development from preconventional (consequences to self) through conventional (social norms) to postconventional (abstract principles), though his framework's gender and cultural assumptions limit its universality.
+Attachment theory identifies early caregiver-infant relationships as the origin of working models of the social world. Ainsworth's Strange Situation revealed three main attachment patterns — secure, anxious-ambivalent, anxious-avoidant — traceable to differences in caregiver sensitivity, with additional patterns (including disorganized) identified subsequently. Temperament moderates these effects; orchid children are more sensitive to environmental quality in both directions. Parenting style research points toward authoritative parenting as associated with the best developmental outcomes, with important cultural caveats. On moral development, motivation and reasoning need separate accounts: spontaneous helping appears by 18 months (Warneken & Tomasello, 2006), suggesting prosocial motivation precedes language; Kohlberg's framework usefully maps the development of moral reasoning structure (preconventional → conventional → postconventional) while the empirical support for its full stage hierarchy is weaker than its influence would imply.
 
-Erikson provided a lifespan map of eight psychosocial conflicts, with identity formation as the central challenge of adolescence. The adolescent brain's asymmetry — reward systems maturing before impulse-control systems — explains elevated risk-taking in the teenage years. Across adulthood, fluid intelligence declines while crystallized intelligence is maintained; well-being is at least as high in late adulthood as in young adulthood, contrary to widespread expectation.
+Development does not stop at adolescence — the Eriksonian insight that holds up best is that identity formation is the defining psychological task of the teenage years. The adolescent brain's asymmetry — reward systems maturing before impulse-control systems — explains elevated risk-taking. Across adulthood, fluid intelligence declines while crystallized intelligence is maintained; well-being is at least as high in late adulthood as in young adulthood, contrary to widespread expectation.
 
 ---
 
@@ -284,7 +267,7 @@ Erikson provided a lifespan map of eight psychosocial conflicts, with identity f
 
 7. An orchid child raised in a supportive, structured household shows fewer behavior problems than her dandelion classmates. The same orchid child, transferred to a chaotic, unpredictable environment, shows more problems than dandelion peers in the same environment. What does this pattern illustrate about the orchid-dandelion distinction?
 
-8. A college student refuses to give a homeless person money because she thinks doing so would violate a campus rule against giving to panhandlers. What level of Kohlberg's framework is she likely operating at? What would reasoning at the postconventional level look like in the same situation?
+8. Warneken and Tomasello found spontaneous helping in 18-month-olds. What does this finding imply about when moral motivation develops relative to Kohlberg's stage model? What are at least two limitations of Kohlberg's framework that the textbook identifies?
 
 9. Why does adolescent risk-taking peak before impulse control fully develops? Which brain region's late maturation is primarily responsible for this asymmetry?
 
@@ -310,11 +293,15 @@ Erikson provided a lifespan map of eight psychosocial conflicts, with identity f
 
 **Cohort effect** — A characteristic that distinguishes a particular generation due to the historical period and circumstances in which they grew up, which can confound cross-sectional comparisons of different age groups.
 
+**Core knowledge** — Spelke's term for domain-specific cognitive systems present at birth (or early infancy) for representing objects, number, geometry, and agents; the initial conditions that make subsequent learning possible rather than the product of it.
+
 **Conservation** — The understanding that the quantity of a substance remains constant despite perceptual transformations (such as changing the shape of a container); absent in Piaget's preoperational stage.
 
 **Cross-sectional study** — A research design that compares people of different ages at the same point in time; efficient but vulnerable to cohort effects.
 
 **Egocentrism** — In Piaget's framework, the preoperational child's difficulty taking a perspective other than her own; a cognitive limitation, not a personality trait.
+
+**Emerging adulthood** — A period (roughly 18–25 years) of extended identity exploration in industrialized societies, characterized by delayed assumption of full adult social roles.
 
 **Erikson's psychosocial stages** — A lifespan theory of development in which each of eight stages presents a characteristic conflict whose resolution (successful or not) shapes subsequent development.
 
@@ -342,6 +329,16 @@ Erikson provided a lifespan map of eight psychosocial conflicts, with identity f
 
 **Zone of proximal development (ZPD)** — Vygotsky's term for the gap between what a learner can accomplish independently and what she can accomplish with guidance from a more capable partner; the space where effective learning and teaching occur.
 
+**Fluid intelligence** — The capacity for novel problem solving, working memory, and processing speed; declines gradually from early adulthood onward. Contrast with crystallized intelligence.
+
+**Crystallized intelligence** — Accumulated knowledge, verbal ability, and domain expertise; remains stable or continues to grow into late adulthood. Contrast with fluid intelligence.
+
+**Identity formation** — Erikson's term for the central psychological task of adolescence: constructing a coherent sense of values, beliefs, and commitments that unify the self across contexts.
+
+**Moral motivation** — The drive to act prosocially or avoid harm; appears early in development (spontaneous helping by 18 months) and does not require explicit moral reasoning.
+
+**Moral reasoning** — The cognitive process of justifying moral judgments by appeal to consequences, social norms, or abstract principles; the focus of Kohlberg's stage model.
+
 ---
 
 ## References
@@ -350,19 +347,33 @@ Ainsworth, M. D. S., Blehar, M. C., Waters, E., & Wall, S. (1978). *Patterns of 
 
 Baillargeon, R. (1987). Object permanence in 3 1/2- and 4 1/2-month-old infants. *Developmental Psychology, 23,* 655–664.
 
+Baumrind, D. (1966). Effects of authoritative parental control on child behavior. *Child Development, 37*(4), 887–907.
+
 Blakemore, S.-J., & Choudhury, S. (2006). Development of the adolescent brain: Implications for executive function and social cognition. *Journal of Child Psychiatry and Psychology, 47,* 296–312.
 
 Bowlby, J. (1969). *Attachment and loss: Vol. 1. Attachment.* New York: Basic Books.
 
 Boyce, W. T., & Ellis, B. J. (2005). Biological sensitivity to context: I. An evolutionary-developmental theory of the origins and functions of stress reactivity. *Development & Psychopathology, 17,* 271–301.
 
+Casey, B. J., Getz, S., & Galvan, A. (2008). The adolescent brain. *Developmental Review, 28,* 62–77.
+
+Charles, S. T., & Carstensen, L. L. (2010). Social and emotional aging. *Annual Review of Psychology, 61,* 383–409.
+
 Erikson, E. H. (1963). *Childhood and society* (2nd ed.). New York: Norton.
 
-Gilligan, C. (1982). *In a different voice: Psychological theory and women's development.* Cambridge, MA: Harvard University Press.
+Hamlin, J. K., Wynn, K., & Bloom, P. (2007). Social evaluation by preverbal infants. *Nature, 450,* 557–559.
 
-Main, M., & Solomon, J. (1986). Discovery of an insecure-disorganized/disoriented attachment pattern. In T. B. Brazelton & M. W. Yogman (Eds.), *Affective development in infancy* (pp. 95–124). Norwood, NJ: Ablex.
+Horn, J. L., & Cattell, R. B. (1967). Age differences in fluid and crystallized intelligence. *Acta Psychologica, 26,* 107–129.
+
+Huttenlocher, P. R. (1979). Synaptic density in human frontal cortex — developmental changes and effects of aging. *Brain Research, 163,* 195–205.
+
+Jones, K. L., & Smith, D. W. (1973). Recognition of the fetal alcohol syndrome in early infancy. *The Lancet, 302,* 999–1001.
 
 Kohlberg, L. (1969). Stage and sequence: The cognitive-developmental approach to socialization. In D. A. Goslin (Ed.), *Handbook of socialization theory and research* (pp. 347–480). Chicago: Rand McNally.
+
+Lucca, K., Yuen, F., Wang, Y., Alessandroni, N., Allison, O., Alvarez, M., … Hamlin, J. K. (2025). Infants' social evaluation of helpers and hinderers: A large-scale, multi-lab, coordinated replication study. *Developmental Science, 28*(1), Article e13581. https://doi.org/10.1111/desc.13581
+
+Main, M., & Solomon, J. (1986). Discovery of an insecure-disorganized/disoriented attachment pattern. In T. B. Brazelton & M. W. Yogman (Eds.), *Affective development in infancy* (pp. 95–124). Norwood, NJ: Ablex.
 
 Piaget, J. (1952). *The child's concept of number.* New York: Norton.
 
@@ -370,11 +381,19 @@ Piaget, J. (1954). *The construction of reality in the child.* New York: Basic B
 
 Siegler, R. (2026). Cognitive development in childhood. In R. Biswas-Diener & E. Diener (Eds.), *Noba textbook series: Psychology.* Champaign, IL: DEF Publishers. Retrieved from http://noba.to/8uv4fn9h
 
+Spelke, E. S. (2000). Core knowledge. *American Psychologist, 55*(11), 1233–1243.
+
 Thomas, A., & Chess, S. (1977). *Temperament and development.* New York: Brunner/Mazel.
+
+van IJzendoorn, M. H., & Kroonenberg, P. M. (1988). Cross-cultural patterns of attachment: A meta-analysis of the Strange Situation. *Child Development, 59,* 147–156.
 
 Vygotsky, L. S. (1978). *Mind in society: The development of higher psychological processes.* Cambridge, MA: Harvard University Press.
 
+Warneken, F., & Tomasello, M. (2006). Altruistic helping in human infants and young chimpanzees. *Science, 311,* 1301–1303.
+
 Wimmer, H., & Perner, J. (1983). Beliefs about beliefs: Representation and constraining function of wrong beliefs in young children's understanding of deception. *Cognition, 13,* 103–128.
+
+Wynn, K. (1992). Addition and subtraction by human infants. *Nature, 358,* 749–750.
 
 ---
 

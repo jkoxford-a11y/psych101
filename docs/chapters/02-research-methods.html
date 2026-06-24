@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chapter 2: Research Methods and Statistics — General Psychology</title>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+<div class="layout">
+
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="book-title">General Psychology</div>
+    <nav>
+      <ul>
+        <li><a href="../index.html">Table of Contents</a></li>
+
+        <li class="pillar">Foundations</li>
+        <li><a href="01-history-approaches.html">1 — History &amp; Approaches</a></li>
+        <li><a href="02-research-methods.html" class="active">2 — Research Methods &amp; Statistics</a></li>
+
+        <li class="pillar">Biological</li>
+        <li><a href="03-neuroscience.html">3 — Neuroscience &amp; Biological Bases</a></li>
+        <li><a href="04-sensation-perception.html">4 — Sensation &amp; Perception</a></li>
+        <li><a href="05-consciousness.html">5 — States of Consciousness</a></li>
+
+        <li class="pillar">Cognitive</li>
+        <li><a href="06-learning.html">6 — Learning</a></li>
+        <li><a href="07-memory.html">7 — Memory</a></li>
+        <li><a href="08-thinking-language-intelligence.html">8 — Thinking, Language &amp; Intelligence</a></li>
+
+        <li class="pillar">Developmental</li>
+        <li><a href="09-lifespan-development.html">9 — Lifespan Development</a></li>
+
+        <li class="pillar">Social &amp; Personality</li>
+        <li><a href="10-social-psychology.html">10 — Social Psychology</a></li>
+        <li><a href="11-personality.html">11 — Personality</a></li>
+
+        <li class="pillar">Mental &amp; Physical Health</li>
+        <li><a href="12-motivation-emotion.html">12 — Motivation &amp; Emotion</a></li>
+        <li><a href="13-stress-health.html">13 — Stress &amp; Health</a></li>
+        <li><a href="14-disorders-therapy.html">14 — Psychological Disorders &amp; Therapy</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+  <!-- Main content -->
+  <main class="main">
+    <p class="chapter-meta">Chapter 2 · Foundations</p>
+    <h1>Research Methods and Statistics</h1>
+    <hr class="chapter-divider" />
+
+    <!-- Misconception Opener -->
+    <div class="callout callout--misconception" id="misconception-opener">
+      <div class="callout-title">Common Belief</div>
+      <p><em>It is hard not to believe this, at least some of the time: if two things are correlated, one of them must be causing the other.</em></p>
+      <p>News stories about psychology and health lean on this logic constantly: a study finds that people who do X also tend to have outcome Y, and the headline writes itself — X causes Y. Eat more chocolate, live longer. Spend more time on social media, get more depressed. Own more books as a child, score higher on intelligence tests as an adult.</p>
+      <p>Here is the problem: a correlation tells you that two things move together. It does not tell you which one, if either, is causing the other — or whether something else entirely is causing both. The childhood-books-and-intelligence correlation is real, and the honest story is more complicated than either the headline version or its easy debunking. Some of the effect likely reflects parental education and household income, which shape both how many books are in a house and a child's broader cognitive environment. But growing up with more books at home also predicts better adult literacy, numeracy, and technology skills even after accounting for parental and personal education (Sikora, Evans, &amp; Kelley, 2019) — so the books may be doing some real work too, not just marking something else. What the correlation alone cannot tell you is how to separate those possibilities.</p>
+      <p>This is one of the most common reasoning errors in how the public — and, often, the media reporting on psychology — interprets behavioral science. The good news is that psychology has a well-developed toolkit for telling the difference between "these two things travel together" and "this one thing produces that one." That toolkit is what this chapter is about.</p>
+    </div>
+
+    <!-- Where This Fits -->
+    <h2 id="where-this-fits">Where This Fits</h2>
+    <p class="where-this-fits">Chapter 1 ended with a problem: common sense about behavior is unreliable, and even systematic science can go wrong — sometimes for years, as the replication crisis showed. This chapter is the resolution to that problem. It is the actual machinery — descriptive methods, correlational designs, true experiments, and the statistics that interpret all three — that lets psychology tell a good explanation from a comforting one. Nearly every finding referenced in every later chapter of this book rests on the logic developed here.</p>
+
+    <!-- Learning Objectives -->
+    <h2 id="learning-objectives">Learning Objectives</h2>
+    <div class="callout callout--objectives">
+      <div class="callout-title">By the end of this chapter, you should be able to:</div>
+      <ol>
+        <li>Distinguish descriptive, correlational, and experimental research designs, and identify which kind of question each one can and cannot answer.</li>
+        <li>Explain why correlation does not establish causation, and identify the third-variable problem in a real example.</li>
+        <li>Distinguish reliability from validity when evaluating a measure, and apply both questions to a real operational definition.</li>
+        <li>Distinguish internal validity from external validity, and identify which design feature — random assignment or random sampling — supports each.</li>
+        <li>Identify the independent variable, dependent variable, and control condition in a described experiment.</li>
+        <li>Explain what a p-value does and does not tell you, and explain why effect size and confidence intervals add information that significance alone does not (Theme 1: psychological science relies on empirical evidence and adapts as new evidence emerges).</li>
+        <li>Evaluate a research claim — including an AI-generated one — for sampling bias, operational vagueness, and overstated certainty.</li>
+      </ol>
+    </div>
+
+    <!-- Evidence Ladder -->
+    <h2 id="evidence-ladder">A Map Before the Details: The Evidence Ladder</h2>
+    <p>Before the details accumulate, here is the shape of the whole chapter. Each method below answers a different kind of question, and — this is the part worth committing to memory before anything else — only one of them can establish that one thing causes another.</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Method</th>
+          <th>Main question it answers</th>
+          <th>Can it show causation?</th>
+          <th>Main strength</th>
+          <th>Main limitation</th>
+          <th>Common student mistake</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Case study</strong></td>
+          <td>What happened in this one, unusual case?</td>
+          <td>No</td>
+          <td>Rich detail; can reveal the unanticipated</td>
+          <td>Cannot show how common something is; no comparison group</td>
+          <td>Assuming one vivid case proves a general rule</td>
+        </tr>
+        <tr>
+          <td><strong>Naturalistic observation</strong></td>
+          <td>What does behavior look like in its normal setting?</td>
+          <td>No</td>
+          <td>High ecological validity</td>
+          <td>No control over competing explanations</td>
+          <td>Treating an observed pattern as an explanation</td>
+        </tr>
+        <tr>
+          <td><strong>Survey</strong></td>
+          <td>What do people report about their own attitudes or behavior?</td>
+          <td>No</td>
+          <td>Efficient; can reach large samples</td>
+          <td>Depends on accurate, honest self-report</td>
+          <td>Assuming self-report is automatically accurate</td>
+        </tr>
+        <tr>
+          <td><strong>Correlation</strong></td>
+          <td>Do two variables move together, and how strongly?</td>
+          <td>No</td>
+          <td>Can study relationships that cannot be ethically manipulated</td>
+          <td>Cannot rule out reverse causation or a third variable</td>
+          <td>Treating association as proof of cause</td>
+        </tr>
+        <tr>
+          <td><strong>Experiment</strong></td>
+          <td>Does manipulating X change Y?</td>
+          <td>Yes</td>
+          <td>Random assignment supports causal inference</td>
+          <td>Some questions cannot ethically or practically be manipulated</td>
+          <td>Assuming random assignment also guarantees a representative sample</td>
+        </tr>
+        <tr>
+          <td><strong>Statistics</strong></td>
+          <td>What can this sample tell us about the population, and how confident should we be?</td>
+          <td>— (a tool for analyzing data, not a way of collecting it)</td>
+          <td>Quantifies uncertainty</td>
+          <td>Easy to mistake for proof; cannot fix a flawed design</td>
+          <td>Treating "statistically significant" as "proven" or "important"</td>
+        </tr>
+        <tr>
+          <td><strong>Replication</strong></td>
+          <td>Does the finding hold up when someone else tries it?</td>
+          <td>— (a verification step, not a data-collection method)</td>
+          <td>Builds genuine confidence in a finding</td>
+          <td>Costly, time-consuming, and historically under-rewarded</td>
+          <td>Trusting a single study because it was well-designed</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>Keep this table in view as you read. The first five rows are <em>ways of collecting data</em>; the last two are <em>what you do once you have it</em>. Confusing those two categories — treating "it was statistically significant" as if it were a research method in its own right — is itself a common source of confusion, which is exactly why it gets its own section later in this chapter.</p>
+
+    <!-- Section 1 -->
+    <h2 id="section-1-asking-questions-without-touching-the-system">Section 1: Asking Questions Without Touching the System</h2>
+
+    <p>Long before I taught psychology, I spent time doing fieldwork in animal behavioral ecology — the kind of research where you do not get to manipulate anything. Some questions can only be answered by watching carefully and not interfering.</p>
+
+    <p>Psychology inherited a version of the same constraint. You cannot ethically or practically assign people to develop a childhood trauma, lose a spouse, or experience a manic episode in order to study the effects. For a wide range of psychological questions, the only available approach is to describe what is already happening, as precisely and systematically as possible. This is <strong>descriptive research</strong>, and it comes in a few standard forms.</p>
+
+    <p>The <strong>case study</strong> is an intensive examination of a single individual or small group, usually because the case is rare, extreme, or otherwise unusually informative — Phineas Gage's personality change after frontal lobe damage, discussed in Chapter 1, is a case study. Case studies generate rich detail and can reveal phenomena no one anticipated, but a single case cannot tell you how common something is, and there is no comparison group to rule out competing explanations.</p>
+
+    <p><strong>Naturalistic observation</strong> means watching behavior unfold in its normal environment without interfering. The strength is ecological validity: you are watching the real thing. The weakness is the same one above — no control over competing explanations, so a pattern you notice cannot yet be explained.</p>
+
+    <p>The <strong>survey method</strong> asks large numbers of people to report on their own attitudes, experiences, or behavior. Surveys are efficient and can sample huge populations, but they depend entirely on people accurately knowing and honestly reporting their own internal states — a shakier assumption than it sounds. People misremember, round their answers toward what seems socially acceptable, and sometimes lack introspective access to the thing being asked about.</p>
+
+    <p>Whatever the method, descriptive research depends on a step that is easy to skip and expensive to skip badly: the <strong>operational definition</strong> — a precise, measurable specification of exactly what you mean by a concept. "Aggression" is not a usable scientific variable until you decide it means something concrete and measurable. Without that translation step, you cannot collect data, because you do not yet know what to count.</p>
+
+    <div class="callout callout--stop-retrieve">
+      <div class="callout-title">Stop and Retrieve</div>
+      <p>Before reading further — what is the key limitation that case studies, naturalistic observation, and surveys all share, even though they differ in method?</p>
+    </div>
+
+    <h3 id="two-more-questions-every-measure-has-to-answer">Two More Questions Every Measure Has to Answer</h3>
+
+    <p>Writing down an operational definition is not the end of the job. Once a concept has been translated into something measurable, two further questions decide whether the measurement is any good.</p>
+
+    <p><strong>Reliability</strong> is whether a measure produces consistent results. If you measured the same thing again, under the same conditions, would you get roughly the same answer?</p>
+
+    <p><strong>Validity</strong> is whether a measure actually captures the concept it claims to capture, rather than something else that happens to be easier to measure.</p>
+
+    <p>These are different questions, and a measure can pass one while failing the other. A bathroom scale that reads three pounds heavy every time is perfectly <em>reliable</em> — consistent — but not a <em>valid</em> measure of your true weight. A measure can also be unreliable (bouncing around unpredictably) while still being, in principle, an appropriate way to capture the concept. Reliability without validity is consistent measurement of the wrong thing. Validity without reliability is measuring the right thing too inconsistently to trust any single reading.</p>
+
+    <p>A psychology-specific version of the same gap: a depression questionnaire could be highly reliable — a student gets nearly the same score every time they take it — while still being a questionable measure of depression if what it is actually tracking is sleep loss or fatigue, which have plenty of causes besides depression. Reliable scores do not guarantee you are measuring the thing you think you are measuring.</p>
+
+    <figure class="chapter-figure">
+      <img src="../images/ch02/fig2-6-reliability-validity-targets.svg" alt="A four-panel target diagram showing clusters of simulated points. The first cluster is tight at the bullseye (reliable and valid), the second is tight away from the bullseye (reliable but not valid), the third is scattered around the bullseye (unreliable but roughly valid), and the fourth is scattered away from the bullseye (neither reliable nor valid)." />
+      <figcaption><strong>Figure 2.6.</strong> Reliability means consistency, while validity means measuring the intended target. A measure can be reliable and valid, reliable but inaccurate, scattered around the correct target, or both inconsistent and inaccurate. Original figure by Jonathan K. Oxford.</figcaption>
+    </figure>
+
+    <p>We will put both questions to work directly in Section 3, on a real, named measure.</p>
+
+    <div class="callout callout--think-about-it">
+      <div class="callout-title">Think About It</div>
+      <p>Operationalizing a concept precisely enough to measure it is not just a research skill — it is the same move you have to make any time you ask an AI tool for something useful. "Write me something good" gets you nothing testable; "summarize the three main arguments in this article in under 100 words" gets you something you can evaluate. Specifying what you actually want, precisely enough to check whether you got it, is the same underlying skill in both places.</p>
+    </div>
+
+    <!-- Section 2 -->
+    <h2 id="section-2-the-trap-of-together-means-together">Section 2: The Trap of "Together Means Together"</h2>
+
+    <p>Descriptive methods tell you what is happening. The next step is asking whether two things happen <em>together</em> in a reliable way — which is where this chapter's opening misconception lives.</p>
+
+    <p>A <strong>correlation</strong> describes the degree to which two variables change together. The <strong>correlation coefficient</strong> (symbolized <em>r</em>) ranges from −1.00 to +1.00. A positive correlation means the variables move in the same direction; a negative correlation means they move in opposite directions. The magnitude tells you how tight the relationship is; the sign tells you the direction. A correlation near 0 means the variables are essentially unrelated.</p>
+
+    <figure class="chapter-figure">
+      <img src="../images/ch02/fig2-1-correlation.png" alt="Three scatterplots showing positive, negative, and near-zero correlation, each labeled with its actual r value." />
+      <figcaption><strong>Figure 2.1.</strong> What a correlation coefficient looks like in raw data. Even the "near-zero" panel still has a visible scatter of points — <em>r</em> describes a statistical tendency across an entire sample, not a rule for any one point. Original figure by Jonathan K. Oxford.</figcaption>
+    </figure>
+
+    <p>Correlational research has a genuine strength: it can study relationships that cannot ethically or practically be created in a lab. Nobody is going to randomly assign infants to neglectful versus attentive caregiving to study attachment, so what we know about attachment and later relationship functioning comes substantially from correlational work, with appropriate caveats.</p>
+
+    <p>Those caveats matter, because correlational data alone cannot establish what is causing what.</p>
+
+    <h4>Do Not Confuse: Correlation vs. Causation</h4>
+
+    <p>Children's shoe size and reading ability are positively correlated — kids with bigger feet tend to read better. Bigger feet do not improve reading comprehension. Both shoe size and reading ability increase with <strong>age</strong>, which is doing the actual causal work. Age is a <strong>third variable</strong> — something correlated with both measured variables that produces the appearance of a direct relationship where none exists.</p>
+
+    <p>There are three possible explanations any time X correlates with Y: X causes Y, Y causes X, or a third variable causes both. Correlational data alone cannot distinguish among these.</p>
+
+    <figure class="chapter-figure">
+      <img src="../images/ch02/fig2-2-third-variable.svg" alt="Diagram showing Age as a third variable causing both Shoe size and Reading ability, with a dashed question-marked line between the two showing no direct causal link." />
+      <figcaption><strong>Figure 2.2.</strong> The third-variable problem, diagrammed. Age drives both shoe size and reading ability independently; the correlation between shoe size and reading is a byproduct, not a causal relationship. Original figure by Jonathan K. Oxford.</figcaption>
+    </figure>
+
+    <p><em><strong>Diagnostic question:</strong> A study finds that teenagers who play more violent video games report more aggressive behavior. A news article concludes that violent games cause aggression. What is at least one alternative explanation the article is ignoring?</em> (Reverse causation — already-aggressive teens may be drawn to violent games — or a third variable, such as family conflict or impulsivity, independently increasing both.)</p>
+
+    <p>Two further problems concern <em>who</em> ends up in your sample.</p>
+
+    <p><strong>Random sampling</strong> means every member of the population you are studying has an equal chance of being selected. This is what supports <strong>external validity</strong> — confidence that a sample's results generalize to the broader population. True random sampling is difficult and expensive, which is part of why so much psychology research has historically relied on whoever was willing and available. This pattern has been influentially summarized as the <strong>WEIRD</strong> problem: a large share of psychology's research base draws from people who are Western, Educated, Industrialized, Rich, and Democratic — a narrow and unusual slice of humanity to generalize claims about "human" behavior from (Henrich, Heine, &amp; Norenzayan, 2010).</p>
+
+    <p>This connects to <strong>volunteer bias</strong> (sometimes called <strong>sampling bias</strong> more broadly): the systematic difference between people who agree to participate in research and the population a researcher actually wants to draw conclusions about. People who volunteer for psychology studies are not a random slice of the population — they differ in personality, motivation, and circumstance from people who do not volunteer, a pattern documented across decades of methodological research (Rosenthal &amp; Rosnow, 1975) and still relevant to how findings should be read today (Chance &amp; Rossman, 2026; Mehl, 2026).</p>
+
+    <div class="callout callout--think-about-it">
+      <div class="callout-title">Think About It</div>
+      <p>A large language model's training data has a version of this same problem — it overrepresents recent English-language internet text and the people who had the time, access, and inclination to write it, which is a different population than "everything any human has ever known." Sampling bias and training-data bias are the same underlying shape: who ends up in the data determines what conclusions the data can support.</p>
+    </div>
+
+    <div class="callout callout--stop-retrieve">
+      <div class="callout-title">Stop and Retrieve</div>
+      <p>Random sampling supports <em>external</em> validity. Section 3 introduces random <em>assignment</em>, which supports a different kind of validity. Before reading on — what do you think the difference is?</p>
+    </div>
+
+    <!-- Section 3 -->
+    <h2 id="section-3-experiments-and-causal-claims">Section 3: Experiments and Causal Claims</h2>
+
+    <p>Correlational research can tell you that two things are related. Only one method can tell you that one thing <em>causes</em> another: the <strong>experiment</strong>.</p>
+
+    <p>An experiment works by deliberately manipulating one variable and measuring its effect on another, while holding everything else as constant as possible. The variable the researcher manipulates is the <strong>independent variable (IV)</strong> — the suspected cause. The variable the researcher measures afterward is the <strong>dependent variable (DV)</strong> — the suspected effect. Participants who receive the manipulation make up the <strong>experimental group</strong>; participants who do not make up the <strong>control group</strong>, which exists so the researcher has a baseline for comparison.</p>
+
+    <p>The feature that separates a true experiment from a correlational study is <strong>random assignment</strong>: participants are assigned to conditions entirely by chance, not by any characteristic of their own. If assignment is truly random, the experimental and control groups should be equivalent, on average, on every variable except the one the researcher deliberately manipulated. Any outcome difference between the groups can then be attributed to the manipulation. This is what supports <strong>internal validity</strong> — confidence that the manipulation, and not some other factor, caused the observed difference.</p>
+
+    <p>Internal validity and external validity solve different problems at different stages of a study, even though both involve the word "random." Random <em>sampling</em> (Section 2) is about who gets <em>into</em> the study, and supports generalizing beyond it. Random <em>assignment</em> (here) is about how participants already in the study get <em>divided</em>, and supports a causal claim within it. A study can have one without the other — a perfectly randomized experiment run on an unrepresentative sample has strong internal validity and weak external validity, and vice versa.</p>
+
+    <figure class="chapter-figure">
+      <img src="../images/ch02/fig2-5-random-sampling-vs-assignment.svg" alt="A flow diagram shows a population leading through random sampling to a study sample, then through random assignment to an experimental group and a control group. Side labels explain that sampling concerns who enters the study (external validity) and assignment concerns who enters each condition (internal validity)." />
+      <figcaption><strong>Figure 2.5.</strong> Random sampling and random assignment answer different research-design questions. Random sampling determines who gets into the study and supports external validity; random assignment determines who goes into which condition and supports internal validity. Original figure by Jonathan K. Oxford.</figcaption>
+    </figure>
+
+    <p><strong>Worked example: the hot sauce paradigm.</strong> The hot sauce allocation task was first used by McGregor and colleagues (1998) in terror-management research, testing whether reminding people of their own mortality increases aggression toward someone who threatens their cultural worldview. Participants who wrote about their own death, then encountered someone who criticized their political views, allocated more hot sauce to that person than participants who had written about a neutral topic. Lieberman and colleagues (1999) then formalized hot sauce allocation as a general laboratory measure of aggression, independent of the terror-management question that introduced it — establishing it as a reusable tool other researchers could apply to different questions, rather than a one-off solution.</p>
+
+    <p>The logic solves a real problem: "aggression" is not directly observable, and you cannot ethically let participants actually hurt each other. The operational definition is the amount of hot sauce a participant allocates to someone described as disliking spicy food, who will have to consume whatever is given. Working through the design: the <strong>IV</strong> is whichever manipulation varies between groups — for instance, a mortality reminder versus a neutral prompt. The <strong>DV</strong> is the amount of hot sauce allocated. The <strong>control group</strong> receives the neutral prompt. <strong>Random assignment</strong> rules out the possibility that mortality-reminder participants were simply more aggressive people to begin with — supporting internal validity for the causal claim.</p>
+
+    <p>Now return to the two questions from Section 1. <em>Is hot sauce allocation reliable?</em> The question is whether the same participant, under matching conditions, would allocate a similar amount each time — a real empirical question researchers have tested directly, not something you can settle by inspecting the procedure alone. <em>Is it valid?</em> This is more contested. Allocating hot sauce to someone who dislikes spicy food plausibly captures willingness to cause discomfort, but a methodological critique of laboratory aggression paradigms has specifically questioned whether hot sauce allocation might instead reflect something adjacent to aggression — like indifference to wasting a condiment, or a norm violation that reads as transgressive without being aggressive in the way a punch or an insult is (Ritter &amp; Eslea, 2005). This is not a flaw unique to this measure; it is the normal condition of operationalizing any psychological construct, and it is exactly why reliability and validity have to be asked as separate, ongoing questions rather than settled once and assumed forever after.</p>
+
+    <figure class="chapter-figure">
+      <img src="../images/ch02/fig2-3-experiment-flowchart.svg" alt="Flowchart from sample of participants, through random assignment, branching into experimental group (IV: mortality-reminder prompt) and control group (neutral prompt), both measured on the same DV: hot sauce allocated." />
+      <figcaption><strong>Figure 2.3.</strong> The logic of a true experiment, mapped onto the hot sauce paradigm. Original figure by Jonathan K. Oxford.</figcaption>
+    </figure>
+
+    <div class="callout callout--stop-retrieve">
+      <div class="callout-title">Stop and Retrieve</div>
+      <p>A researcher wants to know whether sleep deprivation increases hot sauce allocation. Participants are randomly assigned to either a full night's sleep or a sleep-restricted night, then complete the hot sauce task the next day. Identify the IV, the DV, and what random assignment is ruling out in this design.</p>
+    </div>
+
+    <!-- Section 4 -->
+    <h2 id="section-4-bias-controls-and-research-ethics">Section 4: Bias Controls and Research Ethics</h2>
+
+    <p>A randomized design rules out preexisting differences between groups, but two further sources of bias can still distort a clean experiment, and a separate set of ethical obligations constrains the whole enterprise regardless of how clean the design is.</p>
+
+    <p>A <strong>placebo</strong> is an inactive treatment given to a control group so researchers can separate the effect of the actual treatment from the effect of believing you received treatment. The <strong>placebo effect</strong> itself is real but smaller and less universal than its popular reputation: an influential 1955 paper claimed roughly a third of patients improve on placebo alone (Beecher, 1955), but more rigorous later reviews comparing placebo against no treatment at all found little to no effect on objective outcomes, with a modest and inconsistent effect mainly on subjective, self-reported ones (Hróbjartsson &amp; Gøtzsche, 2001, 2010). Treat that contrast itself as a small case study in this chapter's argument: a single influential finding is not the same as a finding that has held up.</p>
+
+    <p>The <strong>double-blind procedure</strong> goes a step further: neither the participant nor the researcher interacting with them knows who is in which group. This guards against participants behaving differently because they know what they are "supposed" to feel, and against researchers unconsciously treating groups differently. That second risk is not hypothetical — it is named directly after a horse. Clever Hans appeared to solve arithmetic by tapping a hoof, until investigation revealed he was reading unconscious postural cues from his questioner, who unknowingly signaled the correct answer (Pfungst, 1965/1911). Blinding exists because researchers are not immune to doing the human equivalent without realizing it — a direct descendant of the confirmation bias discussed in Chapter 1.</p>
+
+    <p>Running any experiment on human participants also carries an ethical obligation that constrains every design choice above, regardless of how methodologically clean it is.</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Safeguard</th>
+          <th>What it protects against</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Informed consent</strong></td>
+          <td>Participants agreeing to take part without understanding what the study involves or what risks are reasonably foreseeable</td>
+        </tr>
+        <tr>
+          <td><strong>IRB review</strong></td>
+          <td>Researchers being the sole judge of whether their own study is ethically acceptable</td>
+        </tr>
+        <tr>
+          <td><strong>Belmont principles</strong> (respect for persons, beneficence, justice)</td>
+          <td>Research that treats participants as a means to an end, ignores risk/benefit balance, or unfairly selects vulnerable populations</td>
+        </tr>
+        <tr>
+          <td><strong>Debriefing</strong></td>
+          <td>Participants leaving a study deceived, confused, or distressed without explanation</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p><strong>Informed consent</strong> means participants are told, before agreeing to take part, what the study involves and what risks are reasonably foreseeable. At colleges, universities, hospitals, and other research institutions, research involving human participants is normally submitted for <strong>Institutional Review Board (IRB)</strong> review before it begins — not because researchers cannot be trusted, but because an independent body, rather than the research team itself, is positioned to evaluate the design objectively. Some minimal-risk projects may qualify for an exempt or expedited review rather than full review, but the underlying principle holds regardless: researchers do not simply decide for themselves that a human-subjects study is ethically acceptable. The modern IRB system traces to the Belmont Report's three core principles — respect for persons, beneficence, and justice — formalized after historical research abuses that informed consent, on paper, had not prevented (National Commission for the Protection of Human Subjects, 1979).</p>
+
+    <p>The hot sauce paradigm itself typically involves mild <strong>deception</strong> — participants are not always told the study concerns aggression, since knowing the real purpose would change how they behave — which is why a full <strong>debriefing</strong>, explaining the study's actual purpose and confirming no one was harmed, is a required part of the procedure once data collection ends.</p>
+
+    <div class="callout callout--think-about-it">
+      <div class="callout-title">Think About It</div>
+      <p>Imagine you are an IRB member reviewing the hot sauce study design before it could run. What is the actual risk to participants, and why might a reviewer judge it acceptable despite the deception involved?</p>
+    </div>
+
+    <!-- Section 5 -->
+    <h2 id="section-5-knowing-what-to-believe--statistics-significance-and-replication">Section 5: Knowing What to Believe — Statistics, Significance, and Replication</h2>
+
+    <p>A finished experiment produces a pile of numbers, and two different jobs need to be done with them. <strong>Descriptive statistics</strong> summarize and organize a data set — the mean, the standard deviation, a percentage. They describe <em>this</em> sample. <strong>Inferential statistics</strong> use sample data to draw conclusions about the larger population the sample was drawn from, and to estimate how likely an observed result is to have occurred by chance.</p>
+
+    <p>The most commonly reported inferential result in psychology is <strong>statistical significance</strong>, usually reported as a <em>p</em>-value. A <em>p</em>-value tells us how incompatible the observed data are with a specified null model — typically, the assumption that no real effect exists — assuming that model and its underlying assumptions are appropriate (Wasserstein &amp; Lazar, 2016). That is a precise and limited claim. A <em>p</em>-value does <strong>not</strong> tell you the probability that your hypothesis is true, the probability the finding is real, the size of the effect, or whether the finding will replicate. Conventionally, <em>p</em> &lt; .05 is treated as the threshold for "significant" — meaning that if there were truly no effect, a result this extreme would occur by chance less than 5% of the time.</p>
+
+    <figure class="chapter-figure">
+      <img src="../images/ch02/fig2-7-p-value-misconceptions.svg" alt="A slide titled 'What a p-value does - and does not - tell you.' Left panel (blue): one correct interpretation — how unusual the observed data are under the null model, assuming the model is appropriate. Right panel: four incorrect interpretations marked with X: probability the hypothesis is true, effect size, practical importance, and whether the finding will replicate." />
+      <figcaption><strong>Figure 2.7.</strong> A <em>p</em>-value describes how unusual the observed data would be under the null model, assuming the model is appropriate. It does not tell whether the hypothesis is true, how large or important an effect is, or whether a finding will replicate. Original figure by Jonathan K. Oxford.</figcaption>
+    </figure>
+
+    <p>This distinction underlies two kinds of mistakes a researcher can make. A <strong>Type I error</strong> is concluding an effect exists when it does not — a false positive. A <strong>Type II error</strong> is concluding no effect exists when one actually does — a false negative (Neyman &amp; Pearson, 1933). Every significance threshold is a deliberate trade-off between these two risks; demanding a smaller <em>p</em>-value to reduce Type I errors correspondingly increases the risk of Type II errors, and no single setting eliminates both.</p>
+
+    <p>It is tempting to read "5% false-positive rate" as "5% of published findings are false," but that is not quite right either. Under ideal conditions, a .05 threshold means some null effects will appear significant by chance alone, simply because thousands of studies are run every year. In the real published literature, that baseline problem can be amplified by small sample sizes, unreported analyses that never make it into the paper, publication bias toward positive results, and a habit of treating "statistically significant" as more definitive than the term was ever meant to claim.</p>
+
+    <h3 id="beyond-significance-effect-size-and-confidence-intervals">Beyond Significance: Effect Size and Confidence Intervals</h3>
+
+    <p>A <em>p</em>-value answers one specific question — is this result unlikely under the null model? — and stops there. Two further questions matter just as much for deciding whether a finding is worth caring about.</p>
+
+    <p><strong>Effect size</strong> asks how large the result actually is. <strong>Confidence intervals</strong> show the range of plausible values for the true effect, given the data and the statistical model used to analyze it — not certainty about a single number, but a calibrated range.</p>
+
+    <p>These matter because significance and size are not the same thing. A tiny, practically meaningless effect can reach statistical significance if the sample is large enough — with enough participants, almost any nonzero difference will eventually clear the <em>p</em> &lt; .05 bar. Conversely, a real and meaningful effect can fail to reach significance in a small sample, simply because the study lacked the statistical power to detect it. A result's <em>p</em>-value, by itself, cannot tell you which of these situations you are looking at; effect size and confidence intervals can.</p>
+
+    <div class="callout callout--ai-connection">
+      <div class="callout-title">AI Connection</div>
+      <p>Deciding whether to trust an AI-generated claim involves a version of the same two-sided error problem as significance testing. Accepting a fluent but false AI output as true functions like a Type I error; dismissing a correct AI output purely out of general skepticism functions like a Type II error. The real difference is calibration: a confidence interval at least tells you how precise an estimate is, under a stated statistical model, with a stated set of assumptions. A chatbot's fluent prose is not an uncertainty estimate — it tells you only that the model can produce fluent prose, with no equivalent signal attached for how likely the claim is to be correct.</p>
+    </div>
+
+    <p>Even a well-designed, significant, properly randomized single study is not the end of the story. <strong>Replication</strong> — repeating a study, ideally with a new sample, to see whether the result holds up — is what actually builds confidence in a finding, not any individual result. Chapter 1 introduced the replication crisis: beginning around 2011, systematic attempts to replicate published psychological findings revealed that a substantial number did not hold up (Open Science Collaboration, 2015). The methods in this chapter are not a guarantee against that outcome. Replication is the check on that risk — not any single design feature, however careful.</p>
+
+    <figure class="chapter-figure">
+      <img src="../images/ch02/fig2-4-clt.png" alt="Two histograms: a skewed population distribution of individual scores, and the resulting approximately normal sampling distribution of the mean from 10,000 repeated samples of size 30." />
+      <figcaption><strong>Figure 2.4.</strong> The Central Limit Theorem, shown with simulated data: skewed individual scores (left) versus the sampling distribution of the mean across 10,000 repeated samples of 30 (right). This is part of why inferential statistics work on real-world variables that are not themselves normally distributed. Original figure by Jonathan K. Oxford.</figcaption>
+    </figure>
+
+    <div class="callout callout--stop-retrieve">
+      <div class="callout-title">Demo — Coming Soon</div>
+      <p><em>[Placeholder — interactive sampling/CLT demo to be embedded here once live URL is available. Predict, before interacting: what should a sampling distribution of means look like if you draw repeated random samples from a skewed population? After interacting: was your prediction right?]</em></p>
+    </div>
+
+    <div class="callout callout--think-about-it">
+      <div class="callout-title">Think About It</div>
+      <p>Has a study result you encountered outside of class — in the news, on social media, in a supplement or product claim — turned out, on a closer look, to rest on a single unreplicated study, a correlation reported as causation, or a sample too narrow to generalize from?</p>
+    </div>
+
+    <!-- Chapter Summary -->
+    <h2 id="chapter-summary">Chapter Summary</h2>
+
+    <p>Psychology answers different kinds of questions with different methods, and matching the method to the question is the central skill of this chapter — summarized in the evidence-ladder table near the start. Descriptive methods describe what is happening but cannot identify causes, and depend on precise operational definitions to be usable at all. Once a concept is operationalized, it has to clear two further bars: reliability (consistency) and validity (actually capturing the intended concept), which are independent questions a measure can pass or fail separately.</p>
+
+    <p>Correlational research quantifies how strongly two variables move together but cannot distinguish among the three explanations for any correlation: X causes Y, Y causes X, or a third variable causes both. Random sampling supports external validity — generalizing beyond the sample — while volunteer bias and the broader WEIRD-sample problem can undermine it even in well-analyzed studies.</p>
+
+    <p>Only the true experiment can establish causation, through manipulation of an independent variable, measurement of a dependent variable, and random assignment, which supports internal validity by ruling out competing explanations. Placebo controls and double-blind procedures close off two further sources of bias. None of this is optional ethically: informed consent, IRB review, and debriefing after any deception are required safeguards grounded in real historical failures to protect research participants.</p>
+
+    <p>Once data exist, descriptive statistics summarize the sample, and inferential statistics estimate what it tells you about the population — most visibly through statistical significance, a narrow claim about the probability of the data under a null model, not a measure of a finding's size, importance, or truth. Effect size and confidence intervals answer the questions a <em>p</em>-value cannot: how large is this, and how precisely do we know it? Because any individual study carries some chance of error, replication — not any single result — is what ultimately earns a finding scientific trust.</p>
+
+    <!-- Connections -->
+    <h2 id="connections">Connections</h2>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Concept from this chapter</th>
+          <th>Reappears in</th>
+          <th>Why it matters there</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><a href="#section-2-the-trap-of-together-means-together">Correlation vs. causation / third-variable problem</a></td>
+          <td>Ch. 10 — Social Psychology</td>
+          <td>Classic correlational findings on media violence and aggression are exactly the kind of result this chapter teaches you to interrogate before accepting a causal story</td>
+        </tr>
+        <tr>
+          <td><a href="#section-3-experiments-and-causal-claims">Hot sauce paradigm / experimental aggression manipulation</a></td>
+          <td>Ch. 10 — Social Psychology</td>
+          <td>The same operationalization problem — how to measure aggression without anyone getting hurt — recurs throughout the social psychology literature on frustration and aggression</td>
+        </tr>
+        <tr>
+          <td><a href="#two-more-questions-every-measure-has-to-answer">Reliability and validity</a></td>
+          <td>Ch. 8 — Thinking, Language &amp; Intelligence</td>
+          <td>IQ test standardization is the clearest applied case of these two questions — a test can be highly reliable while its validity as a measure of "intelligence" remains genuinely contested</td>
+        </tr>
+        <tr>
+          <td><a href="#section-4-bias-controls-and-research-ethics">Placebo effect</a></td>
+          <td>Ch. 14 — Psychological Disorders &amp; Therapy</td>
+          <td>Every claim about a treatment's effectiveness, including psychotherapy and medication, has to be evaluated against a placebo-controlled comparison to mean anything</td>
+        </tr>
+        <tr>
+          <td><a href="#section-2-the-trap-of-together-means-together">Volunteer bias / WEIRD samples</a></td>
+          <td>Ch. 9 — Lifespan Development</td>
+          <td>Longitudinal studies lose participants non-randomly over years of follow-up, which can quietly bias conclusions about how people change across the lifespan</td>
+        </tr>
+        <tr>
+          <td><a href="#beyond-significance-effect-size-and-confidence-intervals">Effect size and statistical significance</a></td>
+          <td>Ch. 6 — Learning</td>
+          <td>Effect sizes in reinforcement-schedule research, not significance alone, determine which findings about what actually strengthens behavior get taken seriously</td>
+        </tr>
+        <tr>
+          <td><a href="#section-4-bias-controls-and-research-ethics">Double-blind procedure / observer-expectancy effects</a></td>
+          <td>Ch. 1 — History &amp; Approaches</td>
+          <td>This method exists specifically to guard against the confirmation bias discussed in Chapter 1 — Clever Hans is confirmation bias with hooves</td>
+        </tr>
+        <tr>
+          <td><a href="#section-5-knowing-what-to-believe--statistics-significance-and-replication">Replication</a></td>
+          <td>Ch. 1 — History &amp; Approaches</td>
+          <td>Chapter 1 introduced the replication crisis as evidence the field is self-correcting; this chapter explains the statistical reason any single study needs that check</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- Review Questions -->
+    <h2 id="review-questions">Review Questions</h2>
+
+    <div class="review-q">
+      <p><strong>1.</strong> A researcher finds that people who own more houseplants report lower stress levels. Which is the most accurate interpretation?</p>
+      <ol class="options" type="a">
+        <li>Owning houseplants reduces stress</li>
+        <li>Lower stress causes people to buy more houseplants</li>
+        <li>The two variables are correlated, but the direction of causation — if any — cannot be determined from this data alone</li>
+        <li>The finding is meaningless because correlations are never useful in psychology</li>
+      </ol>
+      <details>
+        <summary>Show answer &amp; rationale</summary>
+        <div class="answer">
+          <p><strong>Answer: c.</strong> Why (a) and (b) are tempting: both are possible, but so is a third variable (income, free time, life stability) influencing both — the data alone cannot adjudicate. (d) overcorrects; correlational findings are genuinely useful for relationships that cannot be experimentally manipulated.</p>
+        </div>
+      </details>
+    </div>
+
+    <div class="review-q">
+      <p><strong>2.</strong> Which method would be most appropriate for studying how children naturally resolve conflicts during unstructured play, preserving authentic behavior?</p>
+      <ol class="options" type="a">
+        <li>A controlled laboratory experiment</li>
+        <li>A case study of one child</li>
+        <li>Naturalistic observation</li>
+        <li>A double-blind survey</li>
+      </ol>
+      <details>
+        <summary>Show answer &amp; rationale</summary>
+        <div class="answer">
+          <p><strong>Answer: c.</strong> (a) risks disrupting the behavior under study; (b) cannot establish how children in general behave; (d) is not a real method — "double-blind" applies to experiments, not surveys.</p>
+        </div>
+      </details>
+    </div>
+
+    <div class="review-q">
+      <p><strong>3.</strong> A researcher develops a new questionnaire to measure "test anxiety." Students who retake the questionnaire a week later get nearly identical scores each time, but follow-up interviews suggest the questionnaire is actually capturing general nervousness rather than anything specific to testing. This measure is:</p>
+      <ol class="options" type="a">
+        <li>Reliable but not valid</li>
+        <li>Valid but not reliable</li>
+        <li>Neither reliable nor valid</li>
+        <li>Both reliable and valid</li>
+      </ol>
+      <details>
+        <summary>Show answer &amp; rationale</summary>
+        <div class="answer">
+          <p><strong>Answer: a.</strong> Why (b) is tempting: it reverses the two terms — consistent scores across retakes is the definition of reliability, not validity; the interview finding is what calls validity into question here.</p>
+        </div>
+      </details>
+    </div>
+
+    <div class="review-q">
+      <p><strong>4.</strong> In an experiment testing whether a new study technique improves test scores, the independent variable is:</p>
+      <ol class="options" type="a">
+        <li>the test scores</li>
+        <li>whether participants use the new technique or not</li>
+        <li>the participants' GPA before the study</li>
+        <li>the statistical significance of the result</li>
+      </ol>
+      <details>
+        <summary>Show answer &amp; rationale</summary>
+        <div class="answer">
+          <p><strong>Answer: b.</strong> Test scores are measured in this study, which makes them the dependent variable — the outcome — not the manipulated variable.</p>
+        </div>
+      </details>
+    </div>
+
+    <div class="review-q">
+      <p><strong>5.</strong> Random assignment primarily supports which kind of validity, and why?</p>
+      <ol class="options" type="a">
+        <li>External validity, because it makes the sample more representative of the population</li>
+        <li>Internal validity, because it distributes unknown participant differences roughly equally across conditions, ruling them out as alternative explanations</li>
+        <li>External validity, because it guarantees statistical significance</li>
+        <li>Internal validity, because it eliminates the need for a control group</li>
+      </ol>
+      <details>
+        <summary>Show answer &amp; rationale</summary>
+        <div class="answer">
+          <p><strong>Answer: b.</strong> Why (a) is tempting: representativeness is the job of random <em>sampling</em> (external validity), a related but distinct concept — random assignment addresses causal inference within the study (internal validity), not generalizability beyond it.</p>
+        </div>
+      </details>
+    </div>
+
+    <div class="review-q">
+      <p><strong>6.</strong> A study gives one group a real pill and another a sugar pill, with neither participants nor administering researchers told which is which. This design controls for:</p>
+      <ol class="options" type="a">
+        <li>random sampling error</li>
+        <li>both participant expectation effects and researcher expectation effects</li>
+        <li>only the placebo effect</li>
+        <li>Type I error specifically</li>
+      </ol>
+      <details>
+        <summary>Show answer &amp; rationale</summary>
+        <div class="answer">
+          <p><strong>Answer: b.</strong> The placebo control alone addresses participant expectation; the "double" in double-blind specifically adds protection against researcher-side bias — the Clever Hans problem — that a single-blind design would not catch.</p>
+        </div>
+      </details>
+    </div>
+
+    <div class="review-q">
+      <p><strong>7.</strong> Which statement most accurately describes the role of IRB review?</p>
+      <ol class="options" type="a">
+        <li>Every human-participants study must undergo the same full review process with no exceptions</li>
+        <li>Research involving human participants is normally submitted for IRB determination before it begins, though some minimal-risk projects may qualify for exempt or expedited review</li>
+        <li>IRB review is a formality that has no effect on study design</li>
+        <li>Researchers are trusted to determine for themselves whether their own study is ethical</li>
+      </ol>
+      <details>
+        <summary>Show answer &amp; rationale</summary>
+        <div class="answer">
+          <p><strong>Answer: b.</strong> Why (a) is tempting: it overstates the rule — not every study requires the same intensity of review, but the underlying principle (researchers do not self-certify) holds in every case.</p>
+        </div>
+      </details>
+    </div>
+
+    <div class="review-q">
+      <p><strong>8.</strong> A <em>p</em>-value of .03 for a study result means:</p>
+      <ol class="options" type="a">
+        <li>There is a 97% chance the finding is true</li>
+        <li>The effect is large and practically important</li>
+        <li>The observed data are unlikely under the assumption that no real effect exists, given the statistical model used</li>
+        <li>The study has been successfully replicated</li>
+      </ol>
+      <details>
+        <summary>Show answer &amp; rationale</summary>
+        <div class="answer">
+          <p><strong>Answer: c.</strong> (a) is the single most common misinterpretation of a <em>p</em>-value — it is not a statement about the probability the hypothesis is true.</p>
+        </div>
+      </details>
+    </div>
+
+    <div class="review-q">
+      <p><strong>9.</strong> A study finds a statistically significant effect (<em>p</em> &lt; .05) in a sample of 50,000 participants, but the effect size is extremely small. The most accurate conclusion is:</p>
+      <ol class="options" type="a">
+        <li>The finding is definitely important because it reached significance</li>
+        <li>Statistical significance and practical importance are not the same thing — a large enough sample can make even a trivial effect statistically significant</li>
+        <li>The result must be a Type I error</li>
+        <li>Effect size is irrelevant once significance is established</li>
+      </ol>
+      <details>
+        <summary>Show answer &amp; rationale</summary>
+        <div class="answer">
+          <p><strong>Answer: b.</strong> Why (c) is tempting: it is possible, but not the most accurate conclusion — a tiny, statistically significant effect in a huge sample is exactly the expected, unremarkable outcome of how significance testing interacts with sample size, not necessarily evidence of an error.</p>
+        </div>
+      </details>
+    </div>
+
+    <div class="review-q">
+      <p><strong>10.</strong> A psychology study recruits participants entirely from introductory psychology students at one university. The most accurate criticism of this sample is that it:</p>
+      <ol class="options" type="a">
+        <li>is too large to analyze properly</li>
+        <li>lacks random assignment</li>
+        <li>may not generalize well due to volunteer bias and the WEIRD-sample problem</li>
+        <li>cannot produce a correlation coefficient</li>
+      </ol>
+      <details>
+        <summary>Show answer &amp; rationale</summary>
+        <div class="answer">
+          <p><strong>Answer: c.</strong> Why (b) is tempting: random assignment concerns how participants are divided into groups once recruited, not who gets recruited in the first place — this sample's problem is at the recruitment stage.</p>
+        </div>
+      </details>
+    </div>
+
+    <div class="review-q">
+      <p><strong>11.</strong> You ask an AI assistant a factual question and receive a fluent, confident answer that happens to be wrong. Accepting it without checking is most analogous to which statistical error?</p>
+      <ol class="options" type="a">
+        <li>Type I error — accepting a false claim as real</li>
+        <li>Type II error — rejecting a true claim as false</li>
+        <li>Volunteer bias</li>
+        <li>The placebo effect</li>
+      </ol>
+      <details>
+        <summary>Show answer &amp; rationale</summary>
+        <div class="answer">
+          <p><strong>Answer: a.</strong> (b) is the opposite mistake — dismissing a correct AI output purely out of general skepticism is the Type II version of the same underlying calibration problem.</p>
+        </div>
+      </details>
+    </div>
+
+    <div class="review-q">
+      <p><strong>12.</strong> Why does a single well-designed, statistically significant study not, by itself, establish that a finding is reliable?</p>
+      <ol class="options" type="a">
+        <li>Significance testing permits some false positives by design, and any individual study carries some chance of being one of them</li>
+        <li>Single studies are always poorly designed</li>
+        <li>Statistical significance has nothing to do with reliability</li>
+        <li>Only correlational studies need replication; experiments do not</li>
+      </ol>
+      <details>
+        <summary>Show answer &amp; rationale</summary>
+        <div class="answer">
+          <p><strong>Answer: a.</strong> (d) is wrong: experiments are less vulnerable to some confounds than correlational studies, but they are not immune to the basic statistical fact that any threshold permits some false positives — replication matters for both.</p>
+        </div>
+      </details>
+    </div>
+
+    <!-- Key Terms -->
+    <h2 id="key-terms">Key Terms</h2>
+
+    <dl class="key-terms">
+      <dt>Case study</dt>
+      <dd>An intensive examination of a single individual or small group, useful for rare or unusually informative cases but unable to establish how common a phenomenon is or to rule out alternative explanations.</dd>
+
+      <dt>Confidence interval</dt>
+      <dd>A range of plausible values for a true population effect, given the data and the statistical model used to estimate it.</dd>
+
+      <dt>Control group</dt>
+      <dd>The group in an experiment that does not receive the manipulation, providing a baseline for comparison.</dd>
+
+      <dt>Correlation coefficient</dt>
+      <dd>A statistic, ranging from −1.00 to +1.00, describing the strength and direction of the relationship between two variables.</dd>
+
+      <dt>Dependent variable (DV)</dt>
+      <dd>The variable measured in an experiment; the presumed effect.</dd>
+
+      <dt>Double-blind procedure</dt>
+      <dd>A design in which neither participants nor the researchers interacting with them know who is in which condition.</dd>
+
+      <dt>Effect size</dt>
+      <dd>A quantitative measure of how large a result is, independent of whether it reaches statistical significance.</dd>
+
+      <dt>External validity</dt>
+      <dd>The degree to which a study's results generalize beyond the specific sample studied; supported by random sampling.</dd>
+
+      <dt>Independent variable (IV)</dt>
+      <dd>The variable deliberately manipulated by the researcher; the presumed cause.</dd>
+
+      <dt>Informed consent</dt>
+      <dd>The ethical requirement that participants be told, in advance, what a study involves and what risks are reasonably foreseeable.</dd>
+
+      <dt>Institutional Review Board (IRB)</dt>
+      <dd>An independent committee that reviews proposed research involving human participants before it begins.</dd>
+
+      <dt>Internal validity</dt>
+      <dd>The degree to which a study supports the conclusion that the manipulation, rather than some other factor, caused the observed effect; supported by random assignment.</dd>
+
+      <dt>Naturalistic observation</dt>
+      <dd>Watching and recording behavior as it occurs in its normal environment, without interference.</dd>
+
+      <dt>Operational definition</dt>
+      <dd>A precise, measurable specification of exactly what a researcher means by a concept.</dd>
+
+      <dt>Placebo / placebo effect</dt>
+      <dd>An inactive treatment given to a control group; the placebo effect is improvement caused by the expectation of treatment, real but more modest and inconsistent than commonly believed.</dd>
+
+      <dt>Random assignment</dt>
+      <dd>Assigning participants to conditions purely by chance, supporting internal validity.</dd>
+
+      <dt>Random sampling</dt>
+      <dd>Selecting participants such that every member of the population has an equal chance of being chosen, supporting external validity.</dd>
+
+      <dt>Reliability</dt>
+      <dd>The consistency of a measure: whether it produces similar results under similar conditions.</dd>
+
+      <dt>Replication</dt>
+      <dd>Repeating a study, ideally with a new sample, to determine whether a finding holds up.</dd>
+
+      <dt>Statistical significance</dt>
+      <dd>A finding's estimated improbability under a specified null model, commonly reported as a <em>p</em>-value; not a measure of a finding's size, importance, or truth.</dd>
+
+      <dt>Third-variable problem</dt>
+      <dd>The possibility that an observed correlation is produced by a separate variable influencing both measured variables, rather than either causing the other.</dd>
+
+      <dt>Type I error</dt>
+      <dd>Concluding an effect exists when it does not; a false positive.</dd>
+
+      <dt>Type II error</dt>
+      <dd>Concluding an effect does not exist when it does; a false negative.</dd>
+
+      <dt>Validity</dt>
+      <dd>Whether a measure actually captures the concept it claims to capture.</dd>
+
+      <dt>Volunteer bias / sampling bias</dt>
+      <dd>The systematic difference between people who agree to participate in research and the broader population a researcher wants to draw conclusions about.</dd>
+    </dl>
+
+    <!-- Further Reading -->
+    <h2 id="further-reading">Further Reading</h2>
+
+    <div class="further-reading">
+      <div class="fr-item">
+        <p class="fr-title">Noba Project — Statistical Thinking (Chance &amp; Rossman)</p>
+        <p class="fr-url"><a href="https://nobaproject.com/modules/statistical-thinking">https://nobaproject.com/modules/statistical-thinking</a></p>
+        <p>Open-access treatment of sampling, distributions, and inferential logic, with more statistical depth than this chapter provides.</p>
+      </div>
+
+      <div class="fr-item">
+        <p class="fr-title">Noba Project — Conducting Psychology Research in the Real World (Mehl)</p>
+        <p class="fr-url"><a href="https://nobaproject.com/modules/conducting-psychology-research-in-the-real-world">https://nobaproject.com/modules/conducting-psychology-research-in-the-real-world</a></p>
+        <p>Covers ecological validity and real-world methodological tradeoffs not fully developed here.</p>
+      </div>
+
+      <div class="fr-item">
+        <p class="fr-title">HHS Office for Human Research Protections — The Belmont Report</p>
+        <p class="fr-url"><a href="https://www.hhs.gov/ohrp/regulations-and-policy/belmont-report/read-the-belmont-report/index.html">https://www.hhs.gov/ohrp/regulations-and-policy/belmont-report/read-the-belmont-report/index.html</a></p>
+        <p>The original 1979 document establishing the ethical framework behind modern IRB review; short and readable.</p>
+      </div>
+
+      <div class="fr-item">
+        <p class="fr-title">The American Statistical Association's Statement on p-Values (Wasserstein &amp; Lazar, 2016)</p>
+        <p class="fr-url"><a href="https://doi.org/10.1080/00031305.2016.1154108">https://doi.org/10.1080/00031305.2016.1154108</a></p>
+        <p>A short, authoritative, and surprisingly readable corrective to the most common misinterpretations of statistical significance — written for exactly this purpose.</p>
+      </div>
+
+      <div class="fr-item">
+        <p class="fr-title">Open Science Collaboration. (2015). Estimating the reproducibility of psychological science.</p>
+        <p><em>Science, 349</em>(6251), aac4716.</p>
+        <p>The replication-crisis paper introduced in Chapter 1; directly relevant to this chapter's discussion of why any single significant result is not the end of the story.</p>
+      </div>
+
+      <div class="fr-item">
+        <p class="fr-title">Hróbjartsson &amp; Gøtzsche (2001, 2010) — Is the placebo powerless? / Placebo interventions for all clinical conditions.</p>
+        <p><em>New England Journal of Medicine, 344</em>(21), 1594–1602; <em>Cochrane Database of Systematic Reviews</em>, CD003974.</p>
+        <p>The systematic reanalysis (and later Cochrane update) that substantially revised the popular understanding of placebo effects — a good case study in this chapter's own lesson about not trusting a single influential finding without replication.</p>
+      </div>
+
+      <div class="fr-item">
+        <p class="fr-title">Sikora, Evans, &amp; Kelley (2019). Scholarly culture: How books in adolescence enhance adult literacy, numeracy and technology skills in 31 societies.</p>
+        <p><em>Social Science Research, 77</em>, 1–15.</p>
+        <p>The study behind this chapter's softened claim about childhood books and adult skills — useful for seeing how a real correlational literature handles confounds rather than just asserting "correlation isn't causation" in the abstract.</p>
+      </div>
+    </div>
+
+    <!-- References -->
+    <h2 id="references">References</h2>
+    <p style="font-size: 0.9rem; color: var(--color-muted); font-style: italic; margin-bottom: 1.25rem;">Full citations for factual claims made in this chapter, for instructors or students who want to verify or go deeper. Distinct from Further Reading above, which is curated for student exploration rather than completeness.</p>
+
+    <div class="references">
+      <p>Beecher, H. K. (1955). The powerful placebo. <em>JAMA, 159</em>(17), 1602–1606. https://doi.org/10.1001/jama.1955.02960340022006</p>
+
+      <p>Chance, B., &amp; Rossman, A. (2026). Statistical thinking. In R. Biswas-Diener &amp; E. Diener (Eds.), <em>Noba textbook series: Psychology</em>. DEF Publishers. https://nobaproject.com/modules/statistical-thinking</p>
+
+      <p>Henrich, J., Heine, S. J., &amp; Norenzayan, A. (2010). The weirdest people in the world? <em>Behavioral and Brain Sciences, 33</em>(2–3), 61–83. https://doi.org/10.1017/S0140525X0999152X</p>
+
+      <p>Hróbjartsson, A., &amp; Gøtzsche, P. C. (2001). Is the placebo powerless? An analysis of clinical trials comparing placebo with no treatment. <em>New England Journal of Medicine, 344</em>(21), 1594–1602. https://doi.org/10.1056/NEJM200105243442106</p>
+
+      <p>Hróbjartsson, A., &amp; Gøtzsche, P. C. (2010). Placebo interventions for all clinical conditions. <em>Cochrane Database of Systematic Reviews</em>, Issue 1, Art. No. CD003974. https://doi.org/10.1002/14651858.CD003974.pub3</p>
+
+      <p>Lieberman, J. D., Solomon, S., Greenberg, J., &amp; McGregor, H. A. (1999). A hot new way to measure aggression: Hot sauce allocation. <em>Aggressive Behavior, 25</em>(5), 331–348. https://doi.org/10.1002/(SICI)1098-2337(1999)25:5%3C331::AID-AB2%3E3.0.CO;2-1</p>
+
+      <p>McGregor, H. A., Lieberman, J. D., Greenberg, J., Solomon, S., Arndt, J., Simon, L., &amp; Pyszczynski, T. (1998). Terror management and aggression: Evidence that mortality salience motivates aggression against worldview-threatening others. <em>Journal of Personality and Social Psychology, 74</em>(3), 590–605. https://doi.org/10.1037/0022-3514.74.3.590</p>
+
+      <p>Mehl, M. R. (2026). Conducting psychology research in the real world. In R. Biswas-Diener &amp; E. Diener (Eds.), <em>Noba textbook series: Psychology</em>. DEF Publishers. https://nobaproject.com/modules/conducting-psychology-research-in-the-real-world</p>
+
+      <p>National Commission for the Protection of Human Subjects of Biomedical and Behavioral Research. (1979). <em>The Belmont Report: Ethical principles and guidelines for the protection of human subjects of research</em>. U.S. Department of Health, Education, and Welfare.</p>
+
+      <p>Neyman, J., &amp; Pearson, E. S. (1933). On the problem of the most efficient tests of statistical hypotheses. <em>Philosophical Transactions of the Royal Society A, 231</em>(694–706), 289–337. https://doi.org/10.1098/rsta.1933.0009</p>
+
+      <p>Open Science Collaboration. (2015). Estimating the reproducibility of psychological science. <em>Science, 349</em>(6251), aac4716. https://doi.org/10.1126/science.aac4716</p>
+
+      <p>Pfungst, O. (1965). <em>Clever Hans: The horse of Mr. von Osten</em> (C. L. Rahn, Trans.; R. Rosenthal, Ed.). Holt, Rinehart and Winston. (Original work published 1911)</p>
+
+      <p>Ritter, D., &amp; Eslea, M. (2005). Hot sauce, toy guns, and graffiti: A critical account of current laboratory aggression paradigms. <em>Aggressive Behavior, 31</em>(5), 407–419. https://doi.org/10.1002/ab.20066</p>
+
+      <p>Rosenthal, R., &amp; Rosnow, R. L. (1975). <em>The volunteer subject</em>. Wiley.</p>
+
+      <p>Sikora, J., Evans, M. D. R., &amp; Kelley, J. (2019). Scholarly culture: How books in adolescence enhance adult literacy, numeracy and technology skills in 31 societies. <em>Social Science Research, 77</em>, 1–15. https://doi.org/10.1016/j.ssresearch.2018.10.003</p>
+
+      <p>Wasserstein, R. L., &amp; Lazar, N. A. (2016). The ASA's statement on p-values: Context, process, and purpose. <em>The American Statistician, 70</em>(2), 129–133. https://doi.org/10.1080/00031305.2016.1154108</p>
+
+      <p class="verify-note">Note on verification: DOIs above were checked against publisher/Crossref/PubMed records during drafting. The Ritter &amp; Eslea (2005) author order is confirmed via Crossref metadata. The Sikora et al. (2019) DOI was corrected via Crossref title search after a search-engine-reported DOI resolved to an unrelated paper — a reminder that a search-engine DOI is a claim, not a fact, until checked against the registry. The Noba module citation year (2026) reflects Noba's own "cite this module" convention at time of writing.</p>
+    </div>
+
+  </main>
+</div>
+<script src="../js/nav.js"></script>
+</body>
+</html>

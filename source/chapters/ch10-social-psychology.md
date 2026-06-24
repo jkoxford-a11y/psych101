@@ -1,6 +1,6 @@
 # Chapter 10: Social Psychology
 
-> **Copyright and sourcing note:** All 12 SOC-* concepts in this chapter were checked for `wording_change_driver`. SOC-001 through SOC-007, SOC-009, and SOC-012 are `instructor-original` or `canonical-common-knowledge` with driver `instructor-revision` or `n/a` and were drafted from course materials and verified primary literature. Three concepts are flagged `book-adoption` and were sourced from Noba Project modules per the project copyright rule: SOC-008 (Group polarization / groupthink) from Forsyth, D. R. (2014/2026), "The Psychology of Groups," Noba Textbook Series; SOC-010 (Bystander effect) and SOC-011 (Altruism) from the "Helping and Prosocial Behavior" module, Noba Textbook Series. Neither Forsyth's module nor the helping module uses course-materials wording — content was drawn from the Noba framing and independently verified against primary literature.
+> **Copyright and sourcing note:** All 12 SOC-* concepts in this chapter were checked for `wording_change_driver`. SOC-001 through SOC-007, SOC-009, and SOC-012 are `instructor-original` or `canonical-common-knowledge` with driver `instructor-revision` or `n/a` and were drafted from course materials and verified primary literature. Three concepts are flagged `book-adoption` and were sourced from Noba Project modules per the project copyright rule: SOC-008 (Group polarization / groupthink) from Forsyth, D. R. (2014/2026), "The Psychology of Groups," Noba Textbook Series; SOC-010 (Bystander effect) and SOC-011 (Altruism) from Poepsel, D. L., & Schroeder, D. A., "Helping and Prosocial Behavior," Noba Textbook Series. Content was verified directly against PDF copies of both Noba modules (reviewed 2026-06-23). Neither Forsyth's module nor the helping module uses course-materials wording.
 
 ---
 
@@ -20,7 +20,7 @@ By the end of this chapter you should be able to:
 4. Apply the situationist insight to real-world behavior while accurately representing what the Stanford Prison Experiment does and does not show.
 5. Define group polarization and groupthink, and describe the conditions that foster each.
 6. Distinguish prejudice, stereotypes, and discrimination, and explain social identity theory.
-7. Explain the bystander effect's five-step model and summarize the empathy-altruism hypothesis and the frustration-aggression hypothesis.
+7. Explain the bystander effect's five-step model and summarize the empathy-altruism model and the frustration-aggression hypothesis.
 
 ---
 
@@ -46,7 +46,7 @@ Neither is inherently wrong, but our default leans heavily toward disposition, a
 
 The **fundamental attribution error** (FAE) is the tendency to overestimate dispositional factors and underestimate situational ones when explaining *other people's* behavior. When a driver cuts you off, your first thought is probably that they're rude or aggressive — not that they're racing to the hospital. When a student does poorly on an exam, we are inclined to attribute it to low ability or poor effort rather than ask whether the test conditions were fair, the student was ill, or the topic was genuinely difficult.
 
-The FAE is robust across many laboratory paradigms. In a classic demonstration, participants watched a person read aloud an essay defending a position — say, in favor of a controversial policy — and were told explicitly that the person had been *assigned* that position by the experimenter. Even knowing the person had no choice, participants still rated them as genuinely holding the view expressed (Ross, Greene, & House, 1977). The situational constraint was available information; it was simply discounted.
+The FAE is robust across many laboratory paradigms. In a classic demonstration, participants read pro- or anti-Castro essays and were told explicitly that the writer had been *assigned* that position — no choice involved. Even with that information available, participants still rated the writer as personally holding the view expressed (Jones & Harris, 1967). The situational constraint was right in front of them; they simply discounted it.
 
 Cross-cultural research suggests the FAE is not universal to the same degree: it is more pronounced in individualistic cultures (which emphasize personal agency) than in collectivist cultures (which tend to frame behavior in relational context). This is itself an important reminder that "basic" social-psychological tendencies are not culture-free (Choi, Nisbett, & Norenzayan, 1999).
 
@@ -158,7 +158,7 @@ Group polarization helps explain the dynamic of online communities that sort peo
 
 ### Groupthink
 
-When a highly cohesive group is under pressure and insulated from outside opinions, a different dysfunction can emerge: members suppress doubt and converge prematurely on a course of action that none of them would have endorsed on independent reflection. Irving Janis (1972) identified this as **groupthink** and documented it through historical case studies including the Kennedy administration's Bay of Pigs invasion and the decision by NASA managers to launch the *Challenger* space shuttle despite engineers' explicit warnings.
+When a highly cohesive group is under pressure and insulated from outside opinions, a different dysfunction can emerge: members suppress doubt and converge prematurely on a course of action that none of them would have endorsed on independent reflection. Irving Janis (1982) developed the concept of **groupthink** — defining it as the failure mode in cohesive groups where the desire for unanimity becomes stronger than the motivation to realistically evaluate alternatives — through historical case studies including the Kennedy administration's Bay of Pigs invasion and the Johnson administration's Vietnam escalation decisions. Later researchers applied the groupthink framework to other high-profile failures, including NASA managers' decision to launch the *Challenger* space shuttle in 1986 despite engineers' explicit warnings about the O-ring seals.
 
 Forsyth (2014/2026) identifies the conditions that foster groupthink: high group cohesiveness, isolation from outside information, directive leadership that signals a preferred outcome, and high-stakes pressure. The symptoms include an illusion of invulnerability, collective rationalization of warning signs, belief in the group's inherent morality, stereotyping of outsiders as weak or evil, pressure on dissenters to fall in line, self-censorship of doubts, an illusion of unanimity, and the emergence of self-appointed "mindguards" who filter out inconvenient information.
 
@@ -178,7 +178,7 @@ A **stereotype** is a cognitive generalization about the traits of members of a 
 
 Stereotypes affect their targets directly through **stereotype threat** — the risk of confirming a negative stereotype about one's group that, when made salient, can impair performance. This was covered in Chapter 8 in the context of intelligence testing and group score differences, and applies equally here.
 
-What reduces prejudice? Allport (1954) proposed the **contact hypothesis**: intergroup contact can reduce prejudice when the contact is between people of equal status, involves cooperative interdependence (working toward a shared goal), is sanctioned by authority, and is sustained over time. All four conditions matter. Brief, unequal, or competitive contact between groups can increase hostility rather than reduce it.
+What reduces prejudice? Allport (1954) proposed the **contact hypothesis**: intergroup contact is most likely to reduce prejudice when it involves equal status between the groups, cooperative interdependence (working toward a shared goal), institutional support or authority sanction, and sustained rather than brief interaction. These conditions are facilitating rather than strictly required — later meta-analytic research found that contact reduces prejudice across a wide range of conditions, not only when all four are present — but contact that is brief, unequal, unsupported, or competitive is less likely to help and can sometimes increase hostility.
 
 ---
 
@@ -186,7 +186,7 @@ What reduces prejudice? Allport (1954) proposed the **contact hypothesis**: inte
 
 ### The Bystander Effect
 
-In 1964, Kitty Genovese was attacked outside her apartment building in New York City. Newspaper accounts, widely repeated and taught for decades, claimed that 38 neighbors watched the attack and did nothing. More careful subsequent journalism and scholarship revealed that the number of actual witnesses was much smaller, that some did attempt to intervene or call police, and that the attack was more fragmented and less publicly visible than reported. The bystander effect is real — but the Genovese case as traditionally told is not an accurate representation of it.
+In 1964, Kitty Genovese was attacked outside her apartment building in New York City. Newspaper accounts, widely repeated and taught for decades, claimed that 38 neighbors watched the attack and did nothing. More careful subsequent journalism and scholarship revealed that the number of actual witnesses was much smaller, that some did attempt to intervene or call police, and that the attack was more fragmented and less publicly visible than reported (Manning, Levine, & Collins, 2007). The bystander effect is real — but the Genovese case as traditionally told is not an accurate representation of it.
 
 The experimental evidence is more reliable. Darley and Latané (1968) invited participants to discuss personal problems with other students via intercom, then staged one "student" appearing to have a seizure. When participants believed they were the only other person on the call, 85% left to get help within 60 seconds. When they believed four others were also on the call, only 31% responded within the same window. The probability of any individual helping decreased as the apparent group size increased.
 
@@ -198,7 +198,7 @@ Latané and Darley described a **five-step decision model** for why bystanders f
 4. **Know what to do** — some bystanders don't know how to help even when they want to.
 5. **Decide to act** — **evaluation apprehension**: in an uncertain situation, people fear being embarrassed if they overreact or intervene incorrectly.
 
-Each step is a point at which the intervention chain can fail. The practical implication: if you need help, making the situation less ambiguous and singling out a specific individual ("You, in the blue jacket — call 911") counteracts diffusion of responsibility directly.
+Each step is a point at which the intervention chain can fail. Poepsel and Schroeder (in Noba) emphasize a third mechanism beyond pluralistic ignorance and diffusion of responsibility: even when a bystander has correctly interpreted the situation and accepts some personal responsibility, they still weigh the **costs and benefits** of helping — time, physical risk, emotional distress, embarrassment from overreacting — against the benefit to the victim. High perceived costs suppress intervention even in people who care. The practical implication: if you need help, making the situation less ambiguous and singling out a specific individual ("You, in the blue jacket — call 911") counteracts diffusion of responsibility directly and reduces the perceived cost of acting.
 
 ### Altruism
 
@@ -206,7 +206,7 @@ Why do people ever help strangers at cost to themselves? At the evolutionary lev
 
 Hamilton's rule explains nepotism, parental investment, and much of cooperation within social groups, but it cannot fully account for cooperation among non-relatives. Trivers (1971) proposed **reciprocal altruism** as the extension: in stable social groups with repeated interactions, helping non-relatives can evolve if the probability of future return-help is high enough. You help me now; I help you later. The logic requires memory of past interactions and punishment of defectors.
 
-These evolutionary accounts explain why prosocial capacities exist. But they do not fully determine whether a given individual, in a given moment, will actually help. Batson (1991) proposed the **empathy-altruism hypothesis** at the psychological level: when bystanders take the perspective of a person in need and experience **empathic concern** — genuinely feeling something for the other person's plight — they develop altruistic motivation, with the other person's welfare as the ultimate goal rather than as a means of relieving their own distress. The debate between Batson's altruistic account and egoistic accounts (all helping ultimately reduces the helper's discomfort) has generated several decades of experimental work and remains active, though most psychologists agree that empathic concern is a distinct motivational state from simple distress-reduction.
+These evolutionary accounts explain why prosocial capacities exist. But they do not fully determine whether a given individual, in a given moment, will actually help. Batson (2011) proposed the **empathy-altruism model** at the psychological level: when bystanders take the perspective of a person in need and experience **empathic concern** — genuinely feeling something for the other person's plight — they develop altruistic motivation, with the other person's welfare as the ultimate goal rather than as a means of relieving their own distress. This contrasts with egoistic accounts, which hold that all helping ultimately reduces the helper's own discomfort (negative state relief) or involves a cost-benefit calculation in the helper's favor. The debate between these accounts has generated several decades of experimental work and remains active, though most researchers agree that empathic concern is a functionally distinct motivational state from personal distress-reduction.
 
 ### Aggression
 
@@ -216,7 +216,7 @@ The oldest psychological account of human aggression proposed that frustration i
 
 As documented in Chapter 6's Bobo doll coverage, Bandura's work showed that aggression can also be acquired through **observational learning**: children who watched an adult behave aggressively toward a large inflatable doll later imitated the specific aggressive acts they had witnessed. Social learning of aggression has implications for how exposure to aggressive models — in media, in the home, in peer groups — shapes behavioral repertoires, though the relationship between media violence exposure and real-world aggression is modest in effect size and methodologically complex to disentangle.
 
-Biological factors also matter: testosterone is associated with dominance and aggression, though the relationship is bidirectional (winning raises testosterone rather than high testosterone simply causing winning); serotonin appears to inhibit impulsive aggression (low serotonergic activity is associated with increased impulsive aggression); and the amygdala plays a central role in threat detection and the triggering of aggressive responses.
+Biological systems modulate aggression rather than simply causing it. Testosterone is more consistently linked to dominance, status competition, and aggression under some social conditions than to aggression in general — and the relationship is bidirectional, with winning raising testosterone rather than high testosterone straightforwardly causing aggression. Serotonergic functioning has been associated with impulse control, and low serotonergic activity is often linked to impulsive aggression. The amygdala contributes to threat detection within a broader network involving prefrontal regulation, rather than acting as a simple "aggression center." These patterns parallel what Chapter 3 covered about neurotransmitters and brain regions: they set conditions for behavior without determining it.
 
 **Deindividuation** — the loss of individual self-awareness in groups or crowds — can increase aggression by reducing the normal inhibitory function of self-monitoring. Anonymity, arousal, and diffuse responsibility contribute to deindividuation; together they help explain mob behavior, online harassment, and crowd violence.
 
@@ -226,15 +226,15 @@ Biological factors also matter: testosterone is associated with dominance and ag
 >
 > The chapter spec notes that Social Psychology is the chapter where the most accessible AI ethics discussion lives. That is because the mechanisms that cause errors in social judgment — attributing mental states, yielding to social pressure, taking peripheral cues as evidence — are exactly the mechanisms activated when people interact with AI systems.
 >
-> **The Fundamental Attribution Error → Anthropomorphism.** When an AI system uses natural language confidently and appropriately, people spontaneously attribute to it intentions, emotions, personality, and goals. This is not a new cognitive mechanism — it is the same tendency we saw in Section 1 applied to a new object. FAE leads us to attribute a person's behavior to their character rather than their situation; applied to AI, it leads us to attribute a system's output to its "thinking" or "wanting" rather than to the statistical properties of its training distribution. The breakdown is the same as with FAE: the attribution is to an entity, not to a situation (in this case, the training data and architecture that produced the output).
+> **Attribution → Anthropomorphism.** When an AI system uses natural language confidently and appropriately, people spontaneously attribute to it intentions, emotions, personality, and goals. This is not a new cognitive mechanism — it is the same tendency we saw in Section 1 applied to a new object. FAE leads us to attribute a person's behavior to their character rather than their situation; applied to AI, it leads us to attribute a system's output to its "thinking" or "wanting" rather than to the statistical properties of its training distribution. The breakdown is the same as with FAE: the attribution is to an entity, not to a situation (in this case, the training data and architecture that produced the output).
 >
-> **Conformity → AI as a Confident Consensus of One.** In Asch's study, the power of conformity came from a unanimous group. When we receive information from an AI system, we receive confident output from what feels like a single authoritative source — but we do not receive the dissenting minority view that, in Asch's studies, was sufficient on its own to halve conformity rates. There is no devil's advocate built into the output. No competing voice says "actually, I've seen this go wrong." The informational social influence of a fluent, confident AI response operates without any of the checks that social environments normally provide.
+> **Informational Social Influence → AI as a Confident Consensus of One.** In Asch's study, the power of conformity came from a unanimous group. When we receive information from an AI system, we receive confident output from what feels like a single authoritative source — but we do not receive the dissenting minority view that, in Asch's studies, was sufficient on its own to halve conformity rates. There is no devil's advocate built into the output. No competing voice says "actually, I've seen this go wrong." The informational social influence of a fluent, confident AI response operates without any of the checks that social environments normally provide.
 >
 > **The ELM Peripheral Route → Accepting AI Output on Fluency.** When motivation or ability to carefully evaluate a message is low — when a student is tired, pressed for time, or working on an unfamiliar topic — the ELM predicts that peripheral cues drive attitude change rather than argument quality. Fluency is the most powerful peripheral cue: text that reads smoothly and confidently triggers the attribution that the author knows what they are talking about (Reber & Schwarz, 1999). AI-generated text is optimized to be fluent. This means AI errors are most likely to slip through exactly when the stakes of missing them are highest — when the reader lacks the domain knowledge to evaluate the argument on its merits.
 >
 > **The Bystander Effect → Diffusion of Responsibility for AI Output.** When AI-generated content causes harm — a hallucinated citation, dangerous advice, a biased decision — diffusion of responsibility operates across every link in the chain. The AI "just generated" the output. The user "just passed it along." The recipient "should have checked." Nobody in particular feels they did the harmful thing. The same five-step failure model from Darley and Latané applies: each actor in the chain fails to notice, interpret, accept responsibility, know how to intervene, or act. Understanding bystander dynamics is prerequisite to understanding why AI-mediated harm is difficult to attribute and therefore to prevent.
 >
-> **Social Desirability Bias → Sycophancy.** AI systems trained on human preference ratings inherit a systematic bias toward agreement and approval. This parallels the social desirability bias documented in survey research: respondents shade their self-reports toward what they believe is socially approved rather than accurate. An AI system optimized to receive high ratings from human evaluators learns, in effect, to say agreeable things. The result is sycophancy: the tendency to validate the user's existing position rather than challenge it, regardless of accuracy.
+> **Social Desirability Bias → Sycophancy.** AI systems trained through human preference feedback can develop response patterns that over-agree with users, because agreeable responses are often rewarded by raters. This resembles social desirability pressure — respondents shade self-reports toward what seems socially approved rather than accurate — though the mechanism in AI is optimization rather than a human motive for approval. The result is sycophancy: a tendency to validate the user's existing position rather than challenge it, regardless of accuracy.
 >
 > **The Precise Breakdown: Theory of Mind.** Every mechanism above — FAE, conformity via informational influence, ELM peripheral processing, bystander dynamics, social desirability — presupposes an entity that has mental states: intentions, beliefs, desires, social concerns, the experience of what it feels like to be evaluated. **Theory of Mind** — the capacity to attribute mental states to others and to reason about what they believe, want, and intend — is the cognitive foundation of social psychology. It is what social psychology's phenomena are *about*. AI systems process tokens based on statistical patterns over training data. There are no beliefs, intentions, or social concerns being processed. The anthropomorphism that FAE generates is an error in attribution, not a recognition — and that error is the root cause of most AI-mediated social phenomena described above.
 
@@ -248,7 +248,7 @@ Social influence encompasses conformity (responding to peer norms), obedience (r
 
 In group processes, group polarization amplifies initial attitudes through exposure to one-sided arguments and social comparison, while groupthink — driven by cohesion, isolation, and stress — produces premature consensus and suppression of dissent. Prejudice (attitudes), stereotypes (beliefs), and discrimination (behavior) are distinct but linked. Social identity theory explains in-group favoritism as a consequence of the human need to belong to groups with positive distinctiveness.
 
-Prosocial behavior is explained at the evolutionary level by kin selection and reciprocal altruism, and at the psychological level by Batson's empathy-altruism hypothesis, which proposes that empathic concern motivates genuinely other-focused helping. The bystander effect — reduced helping in the presence of others — results from diffusion of responsibility, pluralistic ignorance, and evaluation apprehension, operating across a five-step decision process. Aggression is shaped by frustration and aversive arousal, social learning, biological factors, and deindividuation.
+Prosocial behavior is explained at the evolutionary level by kin selection and reciprocal altruism, and at the psychological level by Batson's empathy-altruism model, which proposes that empathic concern motivates genuinely other-focused helping. The bystander effect — reduced helping in the presence of others — results from diffusion of responsibility, pluralistic ignorance, cost-benefit calculation, and evaluation apprehension, operating across a five-step decision process. Aggression is shaped by frustration and aversive arousal, social learning, biological factors, and deindividuation.
 
 In the AI Connection, the chapter maps five social-psychological mechanisms onto AI interaction: FAE → anthropomorphism; conformity → AI as confident consensus-of-one; ELM peripheral processing → fluency-based credulity; bystander effect → diffusion of responsibility for AI output; social desirability bias → sycophancy. The breakdown point for all of these is Theory of Mind: social psychology's phenomena require entities with mental states, and AI has none.
 
@@ -296,7 +296,7 @@ In the AI Connection, the chapter maps five social-psychological mechanisms onto
 
 **Pluralistic ignorance** — A situation in which each individual privately doubts a social norm but believes others endorse it, because all are suppressing their doubt.
 
-**Empathy-altruism hypothesis** — Batson's proposal that empathic concern for a person in need produces genuinely altruistic motivation — helping aimed at the other's welfare, not at the helper's own distress-relief.
+**Empathy-altruism model** — Batson's proposal that empathic concern for a person in need produces genuinely altruistic motivation — helping aimed at the other's welfare, not at the helper's own distress-relief.
 
 **Kin selection** — The evolutionary mechanism by which behaviors that reduce the individual's own reproductive success can evolve if they sufficiently increase the reproductive success of genetic relatives.
 
@@ -338,9 +338,9 @@ In the AI Connection, the chapter maps five social-psychological mechanisms onto
 
    <details><summary>Rationale</summary>This is an incorrect characterization. Milgram's situationist interpretation specifically argues against attribution to character. Participants showed visible distress — they did not enjoy what they were doing. The high compliance rate was produced by structural features of the situation: incremental escalation, legitimate authority, physical distance from the victim, and the ongoing social relationship with the experimenter. The lesson is about the power of situational forces, not about the character of participants.</details>
 
-5. What are the four conditions that, according to Allport's contact hypothesis, must be present for intergroup contact to reduce prejudice?
+5. What four conditions make intergroup contact especially likely to reduce prejudice, according to Allport?
 
-   <details><summary>Rationale</summary>Equal-status contact between groups, cooperative interdependence (working toward a shared goal rather than competing), institutional sanction or authority support for the contact, and sustained (not brief) interaction. All four conditions matter; contact that lacks any of them (especially equal status and cooperation) can increase hostility.</details>
+   <details><summary>Rationale</summary>Equal-status contact between groups, cooperative interdependence (working toward a shared goal rather than competing), institutional sanction or authority support for the contact, and sustained (not brief) interaction. These conditions are facilitating rather than strictly necessary — later meta-analytic research shows contact often reduces prejudice even when not all four are present — but contact that lacks them (especially equal status and cooperation) is less likely to help and can worsen hostility.</details>
 
 6. An employee is afraid to tell their supervisor that a proposed plan has serious flaws, because all their colleagues have enthusiastically endorsed it. What social-psychological phenomenon best describes this situation? What symptom of groupthink might emerge from it?
 
@@ -352,7 +352,7 @@ In the AI Connection, the chapter maps five social-psychological mechanisms onto
 
 8. "Reciprocal altruism explains all human prosocial behavior." Evaluate this claim.
 
-   <details><summary>Rationale</summary>Reciprocal altruism (Trivers, 1971) explains cooperation among non-relatives in repeated interactions where defection can be detected and punished. But it cannot fully explain helping strangers one will never encounter again (where no return help is possible), donations to anonymous recipients, or behavior in one-shot interactions. Kin selection complements it for interactions with relatives. Batson's empathy-altruism hypothesis addresses the psychological motivation level, where empathic concern appears to produce genuine altruistic motivation beyond self-interest. No single mechanism accounts for the full range of prosocial behavior.</details>
+   <details><summary>Rationale</summary>Reciprocal altruism (Trivers, 1971) explains cooperation among non-relatives in repeated interactions where defection can be detected and punished. But it cannot fully explain helping strangers one will never encounter again (where no return help is possible), donations to anonymous recipients, or behavior in one-shot interactions. Kin selection complements it for interactions with relatives. Batson's empathy-altruism model addresses the psychological motivation level, where empathic concern appears to produce genuine altruistic motivation beyond self-interest. No single mechanism accounts for the full range of prosocial behavior.</details>
 
 9. A professor at a highly selective university believes strongly in academic integrity. After a student is caught plagiarizing and apologizes sincerely, the professor still reports the violation to the academic integrity board, even though it causes the student serious consequences. Is this a case of prejudice, discrimination, or neither? Explain.
 
@@ -370,7 +370,7 @@ Allport, G. W. (1954). *The Nature of Prejudice*. Addison-Wesley.
 
 Asch, S. E. (1955). Opinions and social pressure. *Scientific American*, 193(5), 31–35.
 
-Batson, C. D. (1991). *The Altruism Question: Toward a Social-Psychological Answer*. Erlbaum.
+Batson, C. D. (2011). *Altruism in Humans*. Oxford University Press.
 
 Berkowitz, L. (1989). Frustration-aggression hypothesis: Examination and reformulation. *Psychological Bulletin*, 106, 59–73.
 
@@ -386,13 +386,15 @@ Festinger, L. (1957). *A Theory of Cognitive Dissonance*. Stanford University Pr
 
 Festinger, L., & Carlsmith, J. M. (1959). Cognitive consequences of forced compliance. *Journal of Abnormal and Social Psychology*, 58(2), 203–210.
 
-Forsyth, D. R. (2014/2026). The psychology of groups. In R. Biswas-Diener & E. Diener (Eds.), *Noba Textbook Series: Psychology*. Diener Education Fund.
+Forsyth, D. R. (2014/2026). The psychology of groups. In R. Biswas-Diener & E. Diener (Eds.), *Noba Textbook Series: Psychology*. DEF Publishers.
+
+Poepsel, D. L., & Schroeder, D. A. (2014/2026). Helping and prosocial behavior. In R. Biswas-Diener & E. Diener (Eds.), *Noba Textbook Series: Psychology*. DEF Publishers.
 
 Hamilton, W. D. (1964). The genetical evolution of social behaviour. I & II. *Journal of Theoretical Biology*, 7, 1–16, 17–52.
 
 Haney, C., Banks, W., & Zimbardo, P. (1973). Interpersonal dynamics in a simulated prison. *International Journal of Criminology and Penology*, 1, 69–97.
 
-Janis, I. L. (1972). *Victims of Groupthink*. Houghton Mifflin.
+Janis, I. L. (1982). *Groupthink: Psychological Studies of Policy Decisions and Fiascoes* (2nd ed.). Houghton Mifflin.
 
 Latané, B., Williams, K., & Harkins, S. (1979). Many hands make light the work: Causes and consequences of social loafing. *Journal of Personality and Social Psychology*, 37, 822–832.
 
@@ -408,7 +410,9 @@ Petty, R. E., & Cacioppo, J. T. (1986). The elaboration likelihood model of pers
 
 Reber, R., & Schwarz, N. (1999). Effects of perceptual fluency on judgments of truth. *Consciousness and Cognition*, 8, 338–342.
 
-Ross, L., Greene, D., & House, P. (1977). The "false consensus effect": An egocentric bias in social perception and attribution processes. *Journal of Experimental Social Psychology*, 13, 279–301.
+Jones, E. E., & Harris, V. A. (1967). The attribution of attitudes. *Journal of Experimental Social Psychology*, 3, 1–24.
+
+Manning, R., Levine, M., & Collins, A. (2007). The Kitty Genovese murder and the social psychology of helping: The parable of the 38 witnesses. *American Psychologist*, 62(6), 555–562.
 
 Stroebe, W. (2012). The truth about Triplett (1898), but nobody seems to care. *Perspectives on Psychological Science*, 7, 54–57.
 

@@ -1,0 +1,497 @@
+# HTML Conversion Spec — Psych101 Textbook
+
+> Use this document to convert a completed markdown chapter draft into the site's HTML format. Every chapter must match this spec exactly so that CSS, navigation, and pedagogy patterns are consistent across all 14 chapters.
+>
+> **Read this file in full before touching any chapter HTML.** The sidebar template alone will break the whole page if mis-copied.
+
+---
+
+## 0. Prerequisites
+
+Before converting, confirm:
+- The markdown draft is content-complete and has been reviewed by Jon.
+- The chapter's figure files (if any) already exist in `docs/images/chNN/`.
+- Any interactive demo embed URLs have been confirmed (do not insert placeholder iframes).
+- You know the chapter number, title, and APA pillar group from `docs/index.html`.
+
+**Always check `docs/index.html` for the authoritative chapter order, number, filename, and pillar group** — do not derive these from the CSV.
+
+Output file location: `docs/chapters/NN-slug.html`  
+(e.g., `docs/chapters/06-learning.html`)
+
+---
+
+## 1. Page Scaffold
+
+Every chapter HTML file has this outer structure:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chapter N: [Full Title] — General Psychology</title>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+<div class="layout">
+
+  <!-- Sidebar -->
+  [SIDEBAR BLOCK — see §2]
+
+  <!-- Main content -->
+  <main class="main">
+    [CHAPTER CONTENT — see §3–§12]
+  </main>
+
+</div>
+<script src="../js/nav.js"></script>
+</body>
+</html>
+```
+
+---
+
+## 2. Sidebar (Fixed — Copy Exactly, Change Only `class="active"`)
+
+The sidebar is **identical across all chapters**. The only change per chapter is adding `class="active"` to the link for the current chapter.
+
+```html
+  <aside class="sidebar">
+    <div class="book-title">General Psychology</div>
+    <nav>
+      <ul>
+        <li><a href="../index.html">Table of Contents</a></li>
+
+        <li class="pillar">Foundations</li>
+        <li><a href="01-history-approaches.html">1 — History &amp; Approaches</a></li>
+        <li><a href="02-research-methods.html">2 — Research Methods &amp; Statistics</a></li>
+
+        <li class="pillar">Biological</li>
+        <li><a href="03-neuroscience.html">3 — Neuroscience &amp; Biological Bases</a></li>
+        <li><a href="04-sensation-perception.html">4 — Sensation &amp; Perception</a></li>
+        <li><a href="05-consciousness.html">5 — States of Consciousness</a></li>
+
+        <li class="pillar">Cognitive</li>
+        <li><a href="06-learning.html">6 — Learning</a></li>
+        <li><a href="07-memory.html">7 — Memory</a></li>
+        <li><a href="08-thinking-language-intelligence.html">8 — Thinking, Language &amp; Intelligence</a></li>
+
+        <li class="pillar">Developmental</li>
+        <li><a href="09-lifespan-development.html">9 — Lifespan Development</a></li>
+
+        <li class="pillar">Social &amp; Personality</li>
+        <li><a href="10-social-psychology.html">10 — Social Psychology</a></li>
+        <li><a href="11-personality.html">11 — Personality</a></li>
+
+        <li class="pillar">Mental &amp; Physical Health</li>
+        <li><a href="12-motivation-emotion.html">12 — Motivation &amp; Emotion</a></li>
+        <li><a href="13-stress-health.html">13 — Stress &amp; Health</a></li>
+        <li><a href="14-disorders-therapy.html">14 — Psychological Disorders &amp; Therapy</a></li>
+      </ul>
+    </nav>
+  </aside>
+```
+
+**To mark the current chapter active**, add `class="active"` to its `<a>` tag only. Example for Chapter 6:
+
+```html
+<li><a href="06-learning.html" class="active">6 — Learning</a></li>
+```
+
+---
+
+## 3. Chapter Header
+
+Immediately inside `<main class="main">`, before any content:
+
+```html
+<p class="chapter-meta">Chapter N · PillarName</p>
+<h1>Full Chapter Title</h1>
+<hr class="chapter-divider" />
+```
+
+**Pillar names** (from `docs/index.html`):
+- Chapters 1–2: `Foundations`
+- Chapters 3–5: `Biological`
+- Chapters 6–8: `Cognitive`
+- Chapter 9: `Developmental`
+- Chapters 10–11: `Social &amp; Personality`
+- Chapters 12–14: `Mental &amp; Physical Health`
+
+---
+
+## 4. Callout Boxes — Complete Reference
+
+All callouts share the base class `callout` plus one variant class. **Do not invent new variant class names.** The full list:
+
+| Markdown element | HTML class | Left border / bg color |
+|---|---|---|
+| Misconception Opener | `callout callout--misconception` | amber / warm white |
+| Learning Objectives | `callout callout--objectives` | blue (accent) |
+| Stop and Retrieve | `callout callout--stop-retrieve` | green |
+| Think About It | `callout callout--think-about-it` | purple |
+| AI Connection | `callout callout--ai-connection` | cyan |
+| Classic Study Walkthrough | `callout callout--classic-study` | red |
+| Do Not Confuse | `callout callout--do-not-confuse` | pink |
+
+### Generic callout pattern
+
+```html
+<div class="callout callout--[variant]">
+  <div class="callout-title">Label Text</div>
+  <p>Content paragraph.</p>
+</div>
+```
+
+### Misconception Opener (always first, always has id)
+
+```html
+<div class="callout callout--misconception" id="misconception-opener">
+  <div class="callout-title">Common Belief</div>
+  <p><em>"The misconception statement."</em></p>
+  <p>Paragraph explaining why the misconception is tempting.</p>
+  <p>Paragraph replacing it with the scientific account.</p>
+</div>
+```
+
+### Learning Objectives
+
+```html
+<div class="callout callout--objectives">
+  <div class="callout-title">By the end of this chapter, you should be able to:</div>
+  <ol>
+    <li>Objective one.</li>
+    <li>Objective two.</li>
+  </ol>
+</div>
+```
+
+### Stop and Retrieve
+
+```html
+<div class="callout callout--stop-retrieve">
+  <div class="callout-title">Stop and Retrieve</div>
+  <p>Before reading on — [retrieval prompt].</p>
+</div>
+```
+
+### Think About It
+
+```html
+<div class="callout callout--think-about-it">
+  <div class="callout-title">Think About It</div>
+  <p>[Self-referential prompt using "you".]</p>
+</div>
+```
+
+### AI Connection
+
+```html
+<div class="callout callout--ai-connection">
+  <div class="callout-title">AI Connection</div>
+  <p>[Paragraph 1: the parallel.]</p>
+  <p>[Paragraph 2: the simplification.]</p>
+  <p>[Paragraph 3: what the breakdown tells us.]</p>
+</div>
+```
+
+Figures may appear inside the AI Connection callout (same `<figure class="chapter-figure">` pattern — see §6).
+
+### Classic Study Walkthrough
+
+```html
+<div class="callout callout--classic-study">
+  <div class="callout-title">Classic Study: [Author(s) + Year]</div>
+  <p><strong>Question:</strong> ...</p>
+  <p><strong>Method:</strong> ...</p>
+  <p><strong>Key finding:</strong> ...</p>
+  <p><strong>Why it matters:</strong> ...</p>
+  <p><strong>Replication note:</strong> ...</p>
+</div>
+```
+
+The exact sub-headings may vary by chapter; bold labels are the pattern.
+
+### Do Not Confuse
+
+```html
+<div class="callout callout--do-not-confuse">
+  <div class="callout-title">Do Not Confuse: Term A vs. Term B</div>
+  <p>[Prose distinguishing the two concepts.]</p>
+  <p><strong>Diagnostic question:</strong> [Question that forces discrimination.]</p>
+</div>
+```
+
+---
+
+## 5. Section Headings and IDs
+
+Use `<h2>` for all major sections. Add an `id` attribute as a lowercase, hyphenated slug of the heading text. The spec prescribes four headings that must appear in every chapter (Where This Fits, Learning Objectives, Chapter Summary, Connections, Review Questions, Key Terms, Further Reading, References) plus 3–5 numbered content sections.
+
+```html
+<h2 id="where-this-fits">Where This Fits</h2>
+<h2 id="learning-objectives">Learning Objectives</h2>
+<h2 id="section-1-slug-of-title">Section 1: Title</h2>
+<h2 id="chapter-summary">Chapter Summary</h2>
+<h2 id="connections">Connections</h2>
+<h2 id="review-questions">Review Questions</h2>
+<h2 id="key-terms">Key Terms</h2>
+<h2 id="further-reading">Further Reading</h2>
+<h2 id="references">References</h2>
+```
+
+Section content headings (subsections within a section, rare): use `<h3>`.
+
+---
+
+## 6. Where This Fits
+
+```html
+<h2 id="where-this-fits">Where This Fits</h2>
+<p class="where-this-fits">[~100-word paragraph in instructor voice.]</p>
+```
+
+---
+
+## 7. Body Prose
+
+- All body prose uses plain `<p>` tags — no bullets inside sections.
+- First use of each key term: `<strong>term</strong>` (bold in body), not a separate span.
+- Inline cross-chapter cues in parentheses: just prose, no special tag.
+- `&amp;` for `&` throughout, `&mdash;` or `—` for em dash (UTF-8 direct is fine).
+
+---
+
+## 8. Tables
+
+Plain HTML table, no CSS class needed (global `table` styles apply):
+
+```html
+<table>
+  <thead>
+    <tr>
+      <th>Column 1</th>
+      <th>Column 2</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell</td>
+      <td>Cell</td>
+    </tr>
+  </tbody>
+</table>
+```
+
+---
+
+## 9. Figures
+
+Single figure (numbered, with caption):
+
+```html
+<figure class="chapter-figure">
+  <img src="../images/chNN/fig-slug.png"
+       alt="[Descriptive alt text — at least one sentence describing what the figure shows.]" />
+  <figcaption><strong>Figure N.N.</strong> Caption text. Source attribution if applicable.</figcaption>
+</figure>
+```
+
+Figure inside a callout box: same markup, nested directly inside the `<div class="callout ...">`. Add `style="margin-top:1.25rem;"` to the figure tag when it follows a paragraph inside a callout (see Ch1 AI Connection for example).
+
+Portrait strip (Ch1-specific, not needed for other chapters):
+
+```html
+<div class="portrait-strip" aria-label="[Description]">
+  <figure>
+    <img src="../images/ch01/portrait_name.jpg" alt="[Alt text]" />
+    <figcaption>Name<br/><em>years</em></figcaption>
+  </figure>
+</div>
+```
+
+**If a chapter's figures are not yet finalized**, leave an HTML comment placeholder — do not insert broken `<img>` tags:
+
+```html
+<!-- FIGURE PLACEHOLDER: Figure N.N — [description of what figure will show] — file not yet available -->
+```
+
+---
+
+## 10. Interactive Demo Embeds
+
+Only embed a demo if a confirmed URL exists. Use this wrapper:
+
+```html
+<!-- DEMO: [demo name] -->
+<div class="callout callout--stop-retrieve">
+  <div class="callout-title">Before You Try This</div>
+  <p>[Prediction prompt.]</p>
+</div>
+<iframe src="[CONFIRMED URL]"
+        width="100%" height="500"
+        style="border:1px solid var(--color-border); border-radius:6px; margin:1.5rem 0;"
+        title="[Demo name — accessible label]"
+        loading="lazy">
+</iframe>
+<div class="callout callout--stop-retrieve">
+  <div class="callout-title">After You Try This</div>
+  <p>[Explanation and retrieval prompt.]</p>
+</div>
+```
+
+**If no confirmed URL exists**, leave a comment — do not insert a broken or placeholder iframe:
+
+```html
+<!-- DEMO PLACEHOLDER: [demo name] — embed URL not yet confirmed -->
+```
+
+---
+
+## 11. Connections Table
+
+```html
+<h2 id="connections">Connections</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Concept from this chapter</th>
+      <th>Reappears in</th>
+      <th>Why it matters there</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="#section-id-anchor">Concept name</a></td>
+      <td>Ch. N — Chapter Title</td>
+      <td>One sentence.</td>
+    </tr>
+  </tbody>
+</table>
+```
+
+The `href` in the concept link should point to the `id` of the section where the concept appears in this chapter (e.g., `#section-2-classical-conditioning`).
+
+---
+
+## 12. Review Questions
+
+Each question uses this pattern:
+
+```html
+<div class="review-q">
+  <p><strong>N.</strong> Question text?</p>
+  <ol class="options" type="a">
+    <li>Option a</li>
+    <li>Option b</li>
+    <li>Option c</li>
+    <li>Option d</li>
+  </ol>
+  <details>
+    <summary>Show answer &amp; rationale</summary>
+    <div class="answer">
+      <p><strong>Answer: b.</strong> Why [correct answer] is right, and why the most tempting wrong answer is wrong.</p>
+    </div>
+  </details>
+</div>
+```
+
+Note: `type="a"` on the `<ol>` renders letters (a, b, c, d). Do not use a different list type.
+
+---
+
+## 13. Key Terms Glossary
+
+```html
+<h2 id="key-terms">Key Terms</h2>
+
+<dl class="key-terms">
+  <dt>Term</dt>
+  <dd>One-sentence definition.</dd>
+
+  <dt>Term</dt>
+  <dd>One-sentence definition.</dd>
+</dl>
+```
+
+Terms are in alphabetical order. No `<p>` tags inside `<dd>` unless the definition is multi-sentence.
+
+---
+
+## 14. Further Reading
+
+```html
+<h2 id="further-reading">Further Reading</h2>
+
+<div class="further-reading">
+  <div class="fr-item">
+    <p class="fr-title">Source title — Author(s)</p>
+    <p class="fr-url"><a href="https://...">https://...</a></p>
+    <p>One or two sentence annotation.</p>
+  </div>
+
+  <div class="fr-item">
+    <p class="fr-title">Citation for a book or article (no URL)</p>
+    <p><em>Journal Name, Vol</em>(Issue), pages.</p>
+    <p>Annotation.</p>
+  </div>
+</div>
+```
+
+---
+
+## 15. References
+
+```html
+<h2 id="references">References</h2>
+<p style="font-size: 0.9rem; color: var(--color-muted); font-style: italic; margin-bottom: 1.25rem;">Full citations for factual claims made in this chapter, for instructors or students who want to verify or go deeper. Distinct from Further Reading above, which is curated for student exploration rather than completeness.</p>
+
+<div class="references">
+  <p>Author, A. A. (Year). Title of work. <em>Journal Name, Vol</em>(Issue), pages.</p>
+  <p>Author, B. B. (Year). <em>Title of Book</em>. Publisher.</p>
+  <p class="verify-note">Note on verification: [any flags about citations that need a closer check before publication.]</p>
+</div>
+```
+
+References are alphabetical by first author's last name. The hanging-indent is handled by CSS (`padding-left: 1.5rem; text-indent: -1.5rem`), so no manual indentation is needed in the HTML.
+
+---
+
+## 16. Common Errors to Avoid
+
+| Error | Correct form |
+|---|---|
+| `&` in text or attributes | `&amp;` |
+| `callout--think` | `callout--think-about-it` |
+| `callout--stop` | `callout--stop-retrieve` |
+| `callout--donotconfuse` | `callout--do-not-confuse` |
+| `callout--classic` | `callout--classic-study` |
+| `callout--ai` | `callout--ai-connection` |
+| Missing `id="misconception-opener"` on the opener div | Always add this id |
+| Omitting `type="a"` on review question option lists | Always include |
+| Forgetting `<script src="../js/nav.js"></script>` before `</body>` | Always include |
+| Guessing a figure filename or demo URL | Leave a comment placeholder instead |
+| Sidebar not copied exactly | Copy §2 verbatim; only add `class="active"` |
+
+---
+
+## 17. Validation Checklist
+
+Before saving the final HTML file, confirm:
+
+- [ ] `<title>` says `Chapter N: [Title] — General Psychology`
+- [ ] Sidebar is verbatim with correct `class="active"` on this chapter's link only
+- [ ] `chapter-meta` text reads `Chapter N · PillarName`
+- [ ] Misconception Opener has `id="misconception-opener"`
+- [ ] All callout variant class names match the table in §4 exactly
+- [ ] All `<h2>` elements have `id` attributes
+- [ ] All review questions use `<ol class="options" type="a">` and `<details>/<summary>`
+- [ ] Key terms use `<dl class="key-terms">`, not a bullet list
+- [ ] No broken `<img>` tags — placeholder comments instead
+- [ ] No placeholder `<iframe>` tags — placeholder comments instead
+- [ ] `&amp;` used for all `&` characters
+- [ ] `<script src="../js/nav.js"></script>` present before `</body>`
+- [ ] File saved to `docs/chapters/NN-slug.html` matching the name in `docs/index.html`
