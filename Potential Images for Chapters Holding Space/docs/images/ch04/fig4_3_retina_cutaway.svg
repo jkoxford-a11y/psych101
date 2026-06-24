@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+<title id="title">The Retina Is Not a Camera Sensor</title>
+<desc id="desc">Simplified eye cross-section with a zoomed retina inset showing rods, cones, fovea, optic nerve, and blind spot.</desc>
+<defs>
+  <linearGradient id="eyeFill" x1="0" x2="1" y1="0" y2="1">
+    <stop offset="0" stop-color="#fbfdff"/>
+    <stop offset="0.55" stop-color="#eaf4f8"/>
+    <stop offset="1" stop-color="#d7e9f1"/>
+  </linearGradient>
+  <linearGradient id="retinaGrad" x1="0" x2="0" y1="0" y2="1">
+    <stop offset="0" stop-color="#f4c6aa"/>
+    <stop offset="0.58" stop-color="#df8260"/>
+    <stop offset="1" stop-color="#a95343"/>
+  </linearGradient>
+  <radialGradient id="corneaGrad" cx="42%" cy="45%" r="70%">
+    <stop offset="0" stop-color="#e8f7ff" stop-opacity="0.88"/>
+    <stop offset="1" stop-color="#82b7d0" stop-opacity="0.72"/>
+  </radialGradient>
+  <filter id="softShadow" x="-10%" y="-10%" width="120%" height="130%">
+    <feDropShadow dx="0" dy="8" stdDeviation="9" flood-color="#102a43" flood-opacity="0.13"/>
+  </filter>
+  <marker id="arrow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+    <path d="M0,0 L10,5 L0,10 Z" fill="#52606d"/>
+  </marker>
+  <clipPath id="eyeClip">
+    <ellipse cx="395" cy="445" rx="292" ry="203"/>
+  </clipPath>
+</defs>
+
+<rect width="1600" height="900" fill="#ffffff"/>
+<rect x="52" y="54" width="1496" height="792" rx="24" fill="#f8fbfd" stroke="#dde7ee" stroke-width="2"/>
+<text x="96" y="116" font-family="Aptos, Arial, sans-serif" font-size="42" font-weight="700" fill="#102a43" text-anchor="start" >The Retina Is Not a Camera Sensor</text>
+<text x="96" y="152" font-family="Aptos, Arial, sans-serif" font-size="22" font-weight="400" fill="#52606d" text-anchor="start" >Photoreceptors are distributed for biological function, not even pixel sampling.</text>
+
+<g filter="url(#softShadow)">
+  <ellipse cx="395" cy="445" rx="292" ry="203" fill="#eaf4f8" stroke="#2f5d7c" stroke-width="4"/>
+  <path d="M622,319 C695,366 704,525 620,574 C632,512 637,384 622,319Z" fill="#f4b18d" opacity="0.88"/>
+  <path d="M603,329 C671,374 679,515 604,565" fill="none" stroke="#df8260" stroke-width="18" stroke-linecap="round"/>
+  <path d="M604,333 C674,377 682,513 606,561" fill="none" stroke="#f6d7c6" stroke-width="4" stroke-linecap="round" opacity="0.9"/>
+  <path d="M649,482 C698,491 732,517 760,552" fill="none" stroke="#d8a25b" stroke-width="30" stroke-linecap="round"/>
+  <path d="M642,481 C692,491 729,519 761,556" fill="none" stroke="#9b6a36" stroke-width="10" stroke-linecap="round"/>
+  <circle cx="606" cy="448" r="13" fill="#d97b48" stroke="#ffffff" stroke-width="4"/>
+  <circle cx="641" cy="483" r="17" fill="#f8fbfd" stroke="#243b53" stroke-width="3"/>
+  <ellipse cx="199" cy="445" rx="72" ry="104" fill="#d9eff9" stroke="#2f5d7c" stroke-width="3"/>
+  <ellipse cx="258" cy="445" rx="34" ry="118" fill="#244f67" opacity="0.12"/>
+  <circle cx="222" cy="445" r="20" fill="#111827"/>
+  <ellipse cx="314" cy="445" rx="43" ry="92" fill="#f2d6a9" stroke="#c97832" stroke-width="3"/>
+  <path d="M236,445 C325,395 462,384 604,448" fill="none" stroke="#f2d16b" stroke-width="3" stroke-linecap="round" opacity="0.75"/>
+  <path d="M236,445 C331,492 466,506 604,448" fill="none" stroke="#f2d16b" stroke-width="3" stroke-linecap="round" opacity="0.75"/>
+</g>
+
+<path d="M176,334 C180.5,334 180.5,356 185,356" fill="none" stroke="#52606d" stroke-width="2.2" stroke-linecap="round" marker-end="url(#arrow)"/><text x="171" y="348" font-family="Aptos, Arial, sans-serif" font-size="22" font-weight="600" fill="#243b53" text-anchor="end" >cornea</text>
+<path d="M222,445 C182.0,445 182.0,455 142,455" fill="none" stroke="#52606d" stroke-width="2.2" stroke-linecap="round" marker-end="url(#arrow)"/><text x="128" y="462" font-family="Aptos, Arial, sans-serif" font-size="22" font-weight="600" fill="#243b53" text-anchor="end" >pupil</text>
+<path d="M316,445 C295.0,445 295.0,610 274,610" fill="none" stroke="#52606d" stroke-width="2.2" stroke-linecap="round" marker-end="url(#arrow)"/><text x="264" y="638" font-family="Aptos, Arial, sans-serif" font-size="22" font-weight="600" fill="#243b53" text-anchor="end" >lens</text>
+<path d="M614,382 C659.5,382 659.5,306 705,306" fill="none" stroke="#52606d" stroke-width="2.2" stroke-linecap="round" marker-end="url(#arrow)"/><text x="717" y="304" font-family="Aptos, Arial, sans-serif" font-size="22" font-weight="600" fill="#243b53" text-anchor="start" >retina</text>
+<path d="M606,448 C655.0,448 655.0,454 704,454" fill="none" stroke="#52606d" stroke-width="2.2" stroke-linecap="round" marker-end="url(#arrow)"/><text x="718" y="462" font-family="Aptos, Arial, sans-serif" font-size="22" font-weight="600" fill="#243b53" text-anchor="start" >fovea</text>
+<path d="M721,529 C729.5,529 729.5,637 738,637" fill="none" stroke="#52606d" stroke-width="2.2" stroke-linecap="round" marker-end="url(#arrow)"/><text x="750" y="671" font-family="Aptos, Arial, sans-serif" font-size="22" font-weight="600" fill="#243b53" text-anchor="start" >optic nerve</text>
+<path d="M641,483 C672.5,483 672.5,540 704,540" fill="none" stroke="#52606d" stroke-width="2.2" stroke-linecap="round" marker-end="url(#arrow)"/><text x="716" y="548" font-family="Aptos, Arial, sans-serif" font-size="22" font-weight="600" fill="#243b53" text-anchor="start" >blind spot</text>
+
+<path d="M660,365 C733,333 800,315 864,294" fill="none" stroke="#b8c7d3" stroke-width="3" stroke-dasharray="8 8"/>
+<path d="M660,527 C738,575 802,602 864,628" fill="none" stroke="#b8c7d3" stroke-width="3" stroke-dasharray="8 8"/>
+
+<g filter="url(#softShadow)">
+  <rect x="864" y="235" width="612" height="420" rx="18" fill="#ffffff" stroke="#c9d6df" stroke-width="2.5"/>
+  <rect x="896" y="336" width="548" height="250" rx="12" fill="#f6fafc" stroke="#e4edf3" stroke-width="2"/>
+  <path d="M900,458 C965,430 1030,414 1084,444 C1126,467 1168,467 1214,446 C1276,416 1355,430 1440,468 L1440,586 L900,586 Z" fill="#f7d5c2"/>
+  <path d="M900,454 C968,426 1031,414 1086,442 C1130,464 1170,464 1214,442 C1276,411 1352,428 1440,463" fill="none" stroke="#c65f4b" stroke-width="7" stroke-linecap="round"/>
+  <path d="M1090,463 C1118,489 1164,489 1192,463 C1177,521 1107,521 1090,463Z" fill="#fff8ef" stroke="#d97b48" stroke-width="3"/>
+  <rect x="1388" y="380" width="54" height="202" rx="10" fill="#f8fbfd" stroke="#243b53" stroke-width="3"/>
+  <path d="M1416,582 C1430,622 1466,642 1500,648" fill="none" stroke="#9b6a36" stroke-width="18" stroke-linecap="round"/>
+  <path d="M1415,582 C1430,620 1465,640 1500,646" fill="none" stroke="#d8a25b" stroke-width="30" stroke-linecap="round" opacity="0.72"/>
+  <rect x="900" y="366" width="11" height="68" rx="5.5" fill="#466b80" opacity="0.95"/><rect x="936" y="366" width="11" height="78" rx="5.5" fill="#466b80" opacity="0.95"/><rect x="972" y="366" width="11" height="68" rx="5.5" fill="#466b80" opacity="0.95"/><rect x="1008" y="366" width="11" height="78" rx="5.5" fill="#466b80" opacity="0.95"/><rect x="1190" y="388" width="11" height="68" rx="5.5" fill="#466b80" opacity="0.95"/><rect x="1226" y="388" width="11" height="78" rx="5.5" fill="#466b80" opacity="0.95"/><rect x="1262" y="388" width="11" height="68" rx="5.5" fill="#466b80" opacity="0.95"/><rect x="1298" y="388" width="11" height="78" rx="5.5" fill="#466b80" opacity="0.95"/><rect x="1334" y="388" width="11" height="68" rx="5.5" fill="#466b80" opacity="0.95"/><rect x="1370" y="388" width="11" height="78" rx="5.5" fill="#466b80" opacity="0.95"/><rect x="910" y="512" width="10" height="64" rx="5" fill="#466b80" opacity="0.78"/><rect x="1280" y="512" width="10" height="64" rx="5" fill="#466b80" opacity="0.78"/><rect x="1318" y="512" width="10" height="64" rx="5" fill="#466b80" opacity="0.78"/><rect x="1355" y="512" width="10" height="64" rx="5" fill="#466b80" opacity="0.78"/>
+  <path d="M1078,399.0 L1087.0,481.0 L1069.0,481.0 Z" fill="#d97b48" opacity="0.96"/><path d="M1105,390.8 L1115.8,489.2 L1094.2,489.2 Z" fill="#d97b48" opacity="0.96"/><path d="M1135,384.6 L1147.2,495.4 L1122.8,495.4 Z" fill="#d97b48" opacity="0.96"/><path d="M1168,392.9 L1178.3,487.1 L1157.7,487.1 Z" fill="#d97b48" opacity="0.96"/><path d="M1200,401.1 L1208.5,478.9 L1191.5,478.9 Z" fill="#d97b48" opacity="0.96"/><path d="M1088,514 L1096,570 L1080,570 Z" fill="#d97b48" opacity="0.9"/><path d="M1120,514 L1128,570 L1112,570 Z" fill="#d97b48" opacity="0.9"/><path d="M1152,514 L1160,570 L1144,570 Z" fill="#d97b48" opacity="0.9"/><path d="M1184,514 L1192,570 L1176,570 Z" fill="#d97b48" opacity="0.9"/>
+  <circle cx="1142" cy="454" r="8" fill="#d97b48"/>
+  <circle cx="1415" cy="472" r="11" fill="#ffffff" stroke="#243b53" stroke-width="3"/>
+  <text x="898" y="292" font-family="Aptos, Arial, sans-serif" font-size="30" font-weight="700" fill="#102a43" text-anchor="start" >Zoomed retina strip</text>
+  <text x="898" y="322" font-family="Aptos, Arial, sans-serif" font-size="19" font-weight="400" fill="#52606d" text-anchor="start" >Dense cones at the fovea; rods become more common away from it.</text>
+  <text x="1124" y="622" font-family="Aptos, Arial, sans-serif" font-size="21" font-weight="700" fill="#8f3d2e" text-anchor="middle" >fovea</text>
+  <text x="1415" y="622" font-family="Aptos, Arial, sans-serif" font-size="21" font-weight="700" fill="#243b53" text-anchor="middle" >blind spot</text>
+</g>
+
+<path d="M1014,364 L1014,386" fill="none" stroke="#52606d" stroke-width="2.2" stroke-linecap="round" marker-end="url(#arrow)"/>
+<text x="1014" y="356" font-family="Aptos, Arial, sans-serif" font-size="22" font-weight="600" fill="#243b53" text-anchor="middle" >rods</text>
+<path d="M1145,404 C1161.5,404 1161.5,710 1178,710" fill="none" stroke="#52606d" stroke-width="2.2" stroke-linecap="round" marker-end="url(#arrow)"/><text x="1178" y="740" font-family="Aptos, Arial, sans-serif" font-size="22" font-weight="600" fill="#243b53" text-anchor="middle" >cones</text>
+<path d="M1416,472 C1389.0,472 1389.0,710 1362,710" fill="none" stroke="#52606d" stroke-width="2.2" stroke-linecap="round" marker-end="url(#arrow)"/><text x="1362" y="740" font-family="Aptos, Arial, sans-serif" font-size="22" font-weight="600" fill="#243b53" text-anchor="middle" >no photoreceptors</text>
+
+<g>
+  <rect x="96" y="774" width="1408" height="44" rx="22" fill="#eaf4f8" stroke="#c9d6df" stroke-width="1.5"/>
+  <text x="800" y="804" font-family="Aptos, Arial, sans-serif" font-size="24" font-weight="700" fill="#102a43" text-anchor="middle" >The retinal signal is already organized before conscious vision.</text>
+</g>
+</svg>

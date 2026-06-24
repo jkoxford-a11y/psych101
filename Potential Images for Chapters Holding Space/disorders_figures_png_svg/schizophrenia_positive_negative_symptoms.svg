@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="914.4pt" height="520.56pt" viewBox="0 0 914.4 520.56" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-06-24T16:13:19.216625</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.8, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 520.56 
+L 914.4 520.56 
+L 914.4 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 19.728 504.7704 
+L 894.672 504.7704 
+L 894.672 15.7896 
+L 19.728 15.7896 
+L 19.728 504.7704 
+z
+" clip-path="url(#p478b2442c9)" style="fill: none; stroke: #d0d0d0; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 73.296 399.9888 
+L 439.344 399.9888 
+L 439.344 90.6336 
+L 73.296 90.6336 
+z
+" clip-path="url(#p478b2442c9)" style="fill: #ffffff; stroke: #333333; stroke-width: 1.4; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 475.056 399.9888 
+L 841.104 399.9888 
+L 841.104 90.6336 
+L 475.056 90.6336 
+z
+" clip-path="url(#p478b2442c9)" style="fill: #ffffff; stroke: #333333; stroke-width: 1.4; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 73.296 145.5192 
+L 439.344 145.5192 
+L 439.344 90.6336 
+L 73.296 90.6336 
+z
+" clip-path="url(#p478b2442c9)" style="fill: #eee8f8; stroke: #333333; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 475.056 145.5192 
+L 841.104 145.5192 
+L 841.104 90.6336 
+L 475.056 90.6336 
+z
+" clip-path="url(#p478b2442c9)" style="fill: #eaf4ea; stroke: #333333; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 117.936 135.54 
+C 126.223066 135.54 134.171832 133.699925 140.031673 130.42503 
+C 145.891514 127.150135 149.184 122.707801 149.184 118.0764 
+C 149.184 113.444999 145.891514 109.002665 140.031673 105.72777 
+C 134.171832 102.452875 126.223066 100.6128 117.936 100.6128 
+C 109.648934 100.6128 101.700168 102.452875 95.840327 105.72777 
+C 89.980486 109.002665 86.688 113.444999 86.688 118.0764 
+C 86.688 122.707801 89.980486 127.150135 95.840327 130.42503 
+C 101.700168 133.699925 109.648934 135.54 117.936 135.54 
+z
+" clip-path="url(#p478b2442c9)" style="fill: #6b55a3"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 519.696 135.54 
+C 527.983066 135.54 535.931832 133.699925 541.791673 130.42503 
+C 547.651514 127.150135 550.944 122.707801 550.944 118.0764 
+C 550.944 113.444999 547.651514 109.002665 541.791673 105.72777 
+C 535.931832 102.452875 527.983066 100.6128 519.696 100.6128 
+C 511.408934 100.6128 503.460168 102.452875 497.600327 105.72777 
+C 491.740486 109.002665 488.448 113.444999 488.448 118.0764 
+C 488.448 122.707801 491.740486 127.150135 497.600327 130.42503 
+C 503.460168 133.699925 511.408934 135.54 519.696 135.54 
+z
+" clip-path="url(#p478b2442c9)" style="fill: #5c8f62"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 110.3472 476.57916 
+L 804.0528 476.57916 
+Q 817.4448 476.57916 817.4448 469.09476 
+L 817.4448 435.66444 
+Q 817.4448 428.18004 804.0528 428.18004 
+L 110.3472 428.18004 
+Q 96.9552 428.18004 96.9552 435.66444 
+L 96.9552 469.09476 
+Q 96.9552 476.57916 110.3472 476.57916 
+z
+" clip-path="url(#p478b2442c9)" style="fill: #ffffff; stroke: #bdbdbd; stroke-width: 1.4; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 26px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #111111" x="457.2" y="55.503938" transform="rotate(-0 457.2 55.503938)">Positive vs. Negative Symptoms of Schizophrenia</text>
+   </g>
+   <g id="text_2">
+    <text style="font-weight: 700; font-size: 24px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #ffffff" x="117.936" y="124.6989" transform="rotate(-0 117.936 124.6989)">+</text>
+   </g>
+   <g id="text_3">
+    <text style="font-weight: 700; font-size: 28px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #ffffff" x="519.696" y="125.80265" transform="rotate(-0 519.696 125.80265)">–</text>
+   </g>
+   <g id="text_4">
+    <text style="font-weight: 700; font-size: 16px; font-family: 'DejaVu Sans'" transform="translate(184.3995 113.47065)">Positive symptoms</text>
+    <text style="font-weight: 700; font-size: 16px; font-family: 'DejaVu Sans'" transform="translate(177.13325 131.51215)">(experiences added)</text>
+   </g>
+   <g id="text_5">
+    <text style="font-weight: 700; font-size: 16px; font-family: 'DejaVu Sans'" transform="translate(590.705 113.47065)">Negative symptoms</text>
+    <text style="font-weight: 700; font-size: 16px; font-family: 'DejaVu Sans'" transform="translate(588.11 131.51215)">(capacities reduced)</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 16px; font-family: 'DejaVu Sans'; text-anchor: start" x="117.936" y="194.8406" transform="rotate(-0 117.936 194.8406)">• Hallucinations</text>
+   </g>
+   <g id="text_7">
+    <text style="font-size: 16px; font-family: 'DejaVu Sans'; text-anchor: start" x="117.936" y="239.747" transform="rotate(-0 117.936 239.747)">• Delusions</text>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 16px; font-family: 'DejaVu Sans'; text-anchor: start" x="117.936" y="284.6534" transform="rotate(-0 117.936 284.6534)">• Disorganized speech</text>
+   </g>
+   <g id="text_9">
+    <text style="font-size: 16px; font-family: 'DejaVu Sans'; text-anchor: start" x="117.936" y="329.5598" transform="rotate(-0 117.936 329.5598)">• Disorganized behavior</text>
+   </g>
+   <g id="text_10">
+    <text style="font-size: 16px; font-family: 'DejaVu Sans'; text-anchor: start" x="519.696" y="194.8406" transform="rotate(-0 519.696 194.8406)">• Flat affect</text>
+   </g>
+   <g id="text_11">
+    <text style="font-size: 16px; font-family: 'DejaVu Sans'; text-anchor: start" x="519.696" y="234.7574" transform="rotate(-0 519.696 234.7574)">• Alogia (reduced speech)</text>
+   </g>
+   <g id="text_12">
+    <text style="font-size: 16px; font-family: 'DejaVu Sans'; text-anchor: start" x="519.696" y="274.6742" transform="rotate(-0 519.696 274.6742)">• Avolition (reduced motivation)</text>
+   </g>
+   <g id="text_13">
+    <text style="font-size: 16px; font-family: 'DejaVu Sans'; text-anchor: start" x="519.696" y="314.591" transform="rotate(-0 519.696 314.591)">• Anhedonia</text>
+   </g>
+   <g id="text_14">
+    <text style="font-size: 16px; font-family: 'DejaVu Sans'; text-anchor: start" x="519.696" y="354.5078" transform="rotate(-0 519.696 354.5078)">• Social withdrawal</text>
+   </g>
+   <g id="text_15">
+    <text style="font-size: 14px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #111111" x="457.2" y="456.242725" transform="rotate(-0 457.2 456.242725)">Positive symptoms often respond better to antipsychotic medication; negative symptoms are usually harder to treat.</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p478b2442c9">
+   <rect x="10.8" y="10.8" width="892.8" height="498.96"/>
+  </clipPath>
+ </defs>
+</svg>

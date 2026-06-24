@@ -1,0 +1,68 @@
+[
+  {
+    "figure": "Fig. 4.1",
+    "title": "Sensation vs. Perception: From Energy to Meaning",
+    "files": [
+      "fig_4_1_sensation_perception_pipeline.png",
+      "fig_4_1_sensation_perception_pipeline.svg"
+    ],
+    "caption": "Physical energy becomes neural activity through transduction, but perception requires the nervous system to organize and interpret that signal.",
+    "alt_text": "Flowchart showing physical stimulus, receptor transduction, neural signal, brain interpretation, and meaningful perception, with top-down expectations feeding back into interpretation.",
+    "attribution": "Original diagram by Jon Oxford with AI assistance. No external assets."
+  },
+  {
+    "figure": "Fig. 4.2",
+    "title": "Signal Detection Theory Matrix",
+    "files": [
+      "fig_4_2_signal_detection_matrix.png",
+      "fig_4_2_signal_detection_matrix.svg"
+    ],
+    "caption": "Signal detection theory separates what is actually present from what the observer reports, producing hits, misses, false alarms, and correct rejections.",
+    "alt_text": "Two-by-two matrix crossing stimulus present versus absent with observer says yes versus no, labeling hit, miss, false alarm, and correct rejection.",
+    "attribution": "Original diagram by Jon Oxford with AI assistance. No external assets."
+  },
+  {
+    "figure": "Fig. 4.3",
+    "title": "The Retina Is Not a Camera Sensor",
+    "files": [
+      "fig_4_3_retina_rods_cones_fovea_blindspot.png",
+      "fig_4_3_retina_rods_cones_fovea_blindspot.svg"
+    ],
+    "caption": "Rods, cones, the fovea, and the blind spot show why visual sensation is already biologically organized before perception begins.",
+    "alt_text": "Labeled eye cross-section showing light entering the pupil, focusing on the retina, with cones concentrated at the fovea, rods more common in the periphery, and a blind spot where the optic nerve exits.",
+    "attribution": "Original diagram by Jon Oxford with AI assistance. No external assets."
+  },
+  {
+    "figure": "Fig. 4.6",
+    "title": "Gestalt Principles in One Page",
+    "files": [
+      "fig_4_6_gestalt_principles_panel.png",
+      "fig_4_6_gestalt_principles_panel.svg"
+    ],
+    "caption": "Gestalt principles show how the visual system groups separate elements into organized wholes.",
+    "alt_text": "Four panels illustrating figure-ground, proximity, similarity, and closure using simple dots, shapes, and incomplete outlines.",
+    "attribution": "Original diagram by Jon Oxford with AI assistance. No external assets."
+  },
+  {
+    "figure": "Fig. 4.8",
+    "title": "Cochlea: Place and Frequency Coding",
+    "files": [
+      "fig_4_8_cochlea_place_frequency_theory.png",
+      "fig_4_8_cochlea_place_frequency_theory.svg"
+    ],
+    "caption": "Place theory and frequency theory solve different parts of the pitch perception problem.",
+    "alt_text": "Uncoiled basilar membrane labeled with high-frequency peaks near the base and low-frequency coding toward the apex, with an inset showing firing rate coding for low frequencies.",
+    "attribution": "Original diagram by Jon Oxford with AI assistance. No external assets."
+  },
+  {
+    "figure": "Fig. 4.9",
+    "title": "Gate Control Theory of Pain",
+    "files": [
+      "fig_4_9_gate_control_pain.png",
+      "fig_4_9_gate_control_pain.svg"
+    ],
+    "caption": "Pain is modulated at the spinal cord by incoming touch signals and descending signals from the brain.",
+    "alt_text": "Diagram showing injury signals and touch signals entering the spinal cord, a modulatable gate, upward pain transmission to the brain, and descending brain signals that can partly close the gate.",
+    "attribution": "Original diagram by Jon Oxford with AI assistance, based on Melzack and Wall\u2019s gate control theory. No external assets."
+  }
+]

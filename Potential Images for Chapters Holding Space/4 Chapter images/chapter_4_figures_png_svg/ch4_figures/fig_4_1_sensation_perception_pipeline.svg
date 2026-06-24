@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="758.3814pt" height="430.2pt" viewBox="0 0 758.3814 430.2" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-06-21T18:33:56.023773</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.8, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 430.2 
+L 758.3814 430.2 
+L 758.3814 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 45.329047 218.796 
+L 141.116652 218.796 
+Q 148.091478 218.796 148.091478 211.866 
+L 148.091478 165.204 
+Q 148.091478 158.274 141.116652 158.274 
+L 45.329047 158.274 
+Q 38.354221 158.274 38.354221 165.204 
+L 38.354221 211.866 
+Q 38.354221 218.796 45.329047 218.796 
+z
+" clip-path="url(#p67b16f0ee3)" style="fill: #eceff3; stroke: #5f6670; stroke-width: 1.6; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 180.175676 218.796 
+L 275.963281 218.796 
+Q 282.938106 218.796 282.938106 211.866 
+L 282.938106 165.204 
+Q 282.938106 158.274 275.963281 158.274 
+L 180.175676 158.274 
+Q 173.20085 158.274 173.20085 165.204 
+L 173.20085 211.866 
+Q 173.20085 218.796 180.175676 218.796 
+z
+" clip-path="url(#p67b16f0ee3)" style="fill: #6ea3c5; stroke: #2f5d7c; stroke-width: 1.6; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 315.022304 218.796 
+L 410.809909 218.796 
+Q 417.784735 218.796 417.784735 211.866 
+L 417.784735 165.204 
+Q 417.784735 158.274 410.809909 158.274 
+L 315.022304 158.274 
+Q 308.047479 158.274 308.047479 165.204 
+L 308.047479 211.866 
+Q 308.047479 218.796 315.022304 218.796 
+z
+" clip-path="url(#p67b16f0ee3)" style="fill: #8fc4a3; stroke: #3f7f5f; stroke-width: 1.6; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 449.868933 218.796 
+L 545.656538 218.796 
+Q 552.631364 218.796 552.631364 211.866 
+L 552.631364 165.204 
+Q 552.631364 158.274 545.656538 158.274 
+L 449.868933 158.274 
+Q 442.894107 158.274 442.894107 165.204 
+L 442.894107 211.866 
+Q 442.894107 218.796 449.868933 218.796 
+z
+" clip-path="url(#p67b16f0ee3)" style="fill: #eceff3; stroke: #5f6670; stroke-width: 1.6; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 584.715562 218.796 
+L 708.402469 218.796 
+Q 715.377295 218.796 715.377295 211.866 
+L 715.377295 165.204 
+Q 715.377295 158.274 708.402469 158.274 
+L 584.715562 158.274 
+Q 577.740736 158.274 577.740736 165.204 
+L 577.740736 211.866 
+Q 577.740736 218.796 584.715562 218.796 
+z
+" clip-path="url(#p67b16f0ee3)" style="fill: #e8b17d; stroke: #c97832; stroke-width: 1.6; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 151.699451 188.535 
+Q 160.647536 188.535 167.135946 188.535 
+" clip-path="url(#p67b16f0ee3)" style="fill: none; stroke: #5f6670; stroke-width: 2.2; stroke-linecap: round"/>
+    <path d="M 159.935946 184.935 
+L 167.135946 188.535 
+L 159.935946 192.135 
+z
+" clip-path="url(#p67b16f0ee3)" style="fill: #5f6670; stroke: #5f6670; stroke-width: 2.2; stroke-linecap: round"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 286.54608 188.535 
+Q 295.494165 188.535 301.982574 188.535 
+" clip-path="url(#p67b16f0ee3)" style="fill: none; stroke: #5f6670; stroke-width: 2.2; stroke-linecap: round"/>
+    <path d="M 294.782574 184.935 
+L 301.982574 188.535 
+L 294.782574 192.135 
+z
+" clip-path="url(#p67b16f0ee3)" style="fill: #5f6670; stroke: #5f6670; stroke-width: 2.2; stroke-linecap: round"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 421.392709 188.535 
+Q 430.340793 188.535 436.829203 188.535 
+" clip-path="url(#p67b16f0ee3)" style="fill: none; stroke: #5f6670; stroke-width: 2.2; stroke-linecap: round"/>
+    <path d="M 429.629203 184.935 
+L 436.829203 188.535 
+L 429.629203 192.135 
+z
+" clip-path="url(#p67b16f0ee3)" style="fill: #5f6670; stroke: #5f6670; stroke-width: 2.2; stroke-linecap: round"/>
+   </g>
+   <g id="patch_10">
+    <path d="M 556.239338 188.535 
+Q 565.187422 188.535 571.675832 188.535 
+" clip-path="url(#p67b16f0ee3)" style="fill: none; stroke: #5f6670; stroke-width: 2.2; stroke-linecap: round"/>
+    <path d="M 564.475832 184.935 
+L 571.675832 188.535 
+L 564.475832 192.135 
+z
+" clip-path="url(#p67b16f0ee3)" style="fill: #5f6670; stroke: #5f6670; stroke-width: 2.2; stroke-linecap: round"/>
+   </g>
+   <g id="patch_11">
+    <path d="M 470.79341 375.876 
+L 650.278923 375.876 
+Q 657.253748 375.876 657.253748 368.946 
+L 657.253748 329.214 
+Q 657.253748 322.284 650.278923 322.284 
+L 470.79341 322.284 
+Q 463.818584 322.284 463.818584 329.214 
+L 463.818584 368.946 
+Q 463.818584 375.876 470.79341 375.876 
+z
+" clip-path="url(#p67b16f0ee3)" style="fill: #f5e6ca; stroke: #c97832; stroke-width: 1.6; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_12">
+    <path d="M 563.250703 314.854525 
+Q 591.922923 270.539936 619.319719 228.196589 
+" clip-path="url(#p67b16f0ee3)" style="fill: none; stroke: #c97832; stroke-width: 2.1; stroke-linecap: round"/>
+    <path d="M 613.156398 231.831622 
+L 619.319719 228.196589 
+L 618.529754 235.308266 
+z
+" clip-path="url(#p67b16f0ee3)" style="fill: #c97832; stroke: #c97832; stroke-width: 2.1; stroke-linecap: round"/>
+   </g>
+   <g id="patch_13">
+    <path d="M 519.074466 316.43412 
+Q 444.287943 270.539307 371.502527 225.872529 
+" clip-path="url(#p67b16f0ee3)" style="fill: none; stroke: #c97832; stroke-width: 2.1; stroke-linecap: round"/>
+    <path d="M 375.283558 231.947378 
+L 371.502527 225.872529 
+L 378.631026 226.492613 
+z
+" clip-path="url(#p67b16f0ee3)" style="fill: #c97832; stroke: #c97832; stroke-width: 2.1; stroke-linecap: round"/>
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 24px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #222831" x="35.099303" y="46.22625" transform="rotate(-0 35.099303 46.22625)">Fig. 4.1  Sensation vs. Perception</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 13.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #5f6670" x="35.099303" y="58.113891" transform="rotate(-0 35.099303 58.113891)">From physical energy to meaningful experience</text>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 13px; font-family: 'DejaVu Sans'; fill: #222831" transform="translate(66.782068 170.286453)">Physical</text>
+    <text style="font-size: 13px; font-family: 'DejaVu Sans'; fill: #222831" transform="translate(65.72074 184.843609)">stimulus</text>
+    <text style="font-size: 13px; font-family: 'DejaVu Sans'; fill: #222831" transform="translate(50.355349 199.400766)">(light, sound,</text>
+    <text style="font-size: 13px; font-family: 'DejaVu Sans'; fill: #222831" transform="translate(62.618006 213.957922)">pressure)</text>
+   </g>
+   <g id="text_4">
+    <text style="font-weight: 700; font-size: 14px; font-family: 'DejaVu Sans'; fill: #222831" transform="translate(204.383228 184.559656)">Sense</text>
+    <text style="font-weight: 700; font-size: 14px; font-family: 'DejaVu Sans'; fill: #222831" transform="translate(194.354634 200.236594)">receptor</text>
+   </g>
+   <g id="text_5">
+    <text style="font-weight: 700; font-size: 13.5px; font-family: 'DejaVu Sans'; fill: #222831" transform="translate(313.726537 177.037641)">Transduction</text>
+    <text style="font-weight: 700; font-size: 13.5px; font-family: 'DejaVu Sans'; fill: #222831" transform="translate(301.651419 192.154688)">energy → neural</text>
+    <text style="font-weight: 700; font-size: 13.5px; font-family: 'DejaVu Sans'; fill: #222831" transform="translate(340.078958 207.377203)">signal</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 14px; font-family: 'DejaVu Sans'; fill: #222831" transform="translate(474.670392 184.559656)">Neural</text>
+    <text style="font-size: 14px; font-family: 'DejaVu Sans'; fill: #222831" transform="translate(467.691173 200.236594)">pathway</text>
+   </g>
+   <g id="text_7">
+    <text style="font-weight: 700; font-size: 13.5px; font-family: 'DejaVu Sans'; fill: #222831" transform="translate(605.310187 177.037641)">Perception</text>
+    <text style="font-weight: 700; font-size: 13.5px; font-family: 'DejaVu Sans'; fill: #222831" transform="translate(606.184523 192.154688)">organized,</text>
+    <text style="font-weight: 700; font-size: 13.5px; font-family: 'DejaVu Sans'; fill: #222831" transform="translate(567.658898 207.377203)">interpreted meaning</text>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 13px; font-family: 'DejaVu Sans'; fill: #222831" transform="translate(494.400697 345.388609)">Top-down influences</text>
+    <text style="font-size: 13px; font-family: 'DejaVu Sans'; fill: #222831" transform="translate(413.530541 359.945766)">expectations • context • memory • attention</text>
+   </g>
+   <g id="text_9">
+    <text style="font-size: 14.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #222831" x="42.074128" y="272.85" transform="rotate(-0 42.074128 272.85)">Sensation begins with receptor response and transduction.</text>
+   </g>
+   <g id="text_10">
+    <text style="font-size: 14.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #222831" x="42.074128" y="295.95" transform="rotate(-0 42.074128 295.95)">Perception emerges as the nervous system organizes and interprets the signal.</text>
+   </g>
+   <g id="text_11">
+    <text style="font-size: 11.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #5f6670" x="42.074128" y="397.59" transform="rotate(-0 42.074128 397.59)">Teaching note: the boundary is useful, but not absolute—early sensory systems already preprocess input.</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p67b16f0ee3">
+   <rect x="7.2" y="7.2" width="743.9814" height="415.8"/>
+  </clipPath>
+ </defs>
+</svg>

@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="914.4pt" height="520.56pt" viewBox="0 0 914.4 520.56" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-06-24T16:13:19.444528</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.8, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 520.56 
+L 914.4 520.56 
+L 914.4 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 19.728 504.7704 
+L 894.672 504.7704 
+L 894.672 15.7896 
+L 19.728 15.7896 
+L 19.728 504.7704 
+z
+" clip-path="url(#pf035024df6)" style="fill: none; stroke: #d0d0d0; stroke-linejoin: miter"/>
+   </g>
+   <g id="line2d_1">
+    <path d="M 365.130393 211.819771 
+L 225.567883 145.925386 
+" clip-path="url(#pf035024df6)" style="fill: none; stroke: #0f6468; stroke-width: 2.2; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_2">
+    <path d="M 336.68991 256.4516 
+L 233.994693 257.441141 
+" clip-path="url(#pf035024df6)" style="fill: none; stroke: #0f6468; stroke-width: 2.2; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_3">
+    <path d="M 366.68705 299.770367 
+L 225.106652 369.345951 
+" clip-path="url(#pf035024df6)" style="fill: none; stroke: #0f6468; stroke-width: 2.2; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_4">
+    <path d="M 549.269607 211.819771 
+L 688.832117 145.925386 
+" clip-path="url(#pf035024df6)" style="fill: none; stroke: #0f6468; stroke-width: 2.2; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_5">
+    <path d="M 577.71009 256.4516 
+L 680.405307 257.441141 
+" clip-path="url(#pf035024df6)" style="fill: none; stroke: #0f6468; stroke-width: 2.2; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_6">
+    <path d="M 547.71295 299.770367 
+L 689.293348 369.345951 
+" clip-path="url(#pf035024df6)" style="fill: none; stroke: #0f6468; stroke-width: 2.2; stroke-linecap: square"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 330.217063 415.140416 
+Q 298.363578 417.641876 280.950728 393.28686 
+" clip-path="url(#pf035024df6)" style="fill: none; stroke: #0f6468; stroke-width: 1.8; stroke-linecap: round"/>
+    <path d="M 281.790075 398.587378 
+L 280.950728 393.28686 
+L 285.694751 395.795693 
+z
+" clip-path="url(#pf035024df6)" style="fill: #0f6468; stroke: #0f6468; stroke-width: 1.8; stroke-linecap: round"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 584.182937 415.140416 
+Q 616.036422 417.641876 633.449272 393.28686 
+" clip-path="url(#pf035024df6)" style="fill: none; stroke: #0f6468; stroke-width: 1.8; stroke-linecap: round"/>
+    <path d="M 628.705249 395.795693 
+L 633.449272 393.28686 
+L 632.609925 398.587378 
+z
+" clip-path="url(#pf035024df6)" style="fill: #0f6468; stroke: #0f6468; stroke-width: 1.8; stroke-linecap: round"/>
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 26px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #111111" x="457.2" y="55.503938" transform="rotate(-0 457.2 55.503938)">Therapy Mechanisms Map</text>
+   </g>
+   <g id="patch_5">
+    <path d="M 128.2032 172.21356 
+L 268.3728 172.21356 
+Q 281.7648 172.21356 281.7648 164.72916 
+L 281.7648 101.36124 
+Q 281.7648 93.87684 268.3728 93.87684 
+L 128.2032 93.87684 
+Q 114.8112 93.87684 114.8112 101.36124 
+L 114.8112 164.72916 
+Q 114.8112 172.21356 128.2032 172.21356 
+z
+" clip-path="url(#pf035024df6)" style="fill: #e7f4f4; stroke: #0f6468; stroke-width: 1.4; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 128.2032 296.95356 
+L 268.3728 296.95356 
+Q 281.7648 296.95356 281.7648 289.46916 
+L 281.7648 226.10124 
+Q 281.7648 218.61684 268.3728 218.61684 
+L 128.2032 218.61684 
+Q 114.8112 218.61684 114.8112 226.10124 
+L 114.8112 289.46916 
+Q 114.8112 296.95356 128.2032 296.95356 
+z
+" clip-path="url(#pf035024df6)" style="fill: #e7f4f4; stroke: #0f6468; stroke-width: 1.4; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 128.2032 421.69356 
+L 268.3728 421.69356 
+Q 281.7648 421.69356 281.7648 414.20916 
+L 281.7648 350.84124 
+Q 281.7648 343.35684 268.3728 343.35684 
+L 128.2032 343.35684 
+Q 114.8112 343.35684 114.8112 350.84124 
+L 114.8112 414.20916 
+Q 114.8112 421.69356 128.2032 421.69356 
+z
+" clip-path="url(#pf035024df6)" style="fill: #e7f4f4; stroke: #0f6468; stroke-width: 1.4; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 646.0272 172.21356 
+L 786.1968 172.21356 
+Q 799.5888 172.21356 799.5888 164.72916 
+L 799.5888 101.36124 
+Q 799.5888 93.87684 786.1968 93.87684 
+L 646.0272 93.87684 
+Q 632.6352 93.87684 632.6352 101.36124 
+L 632.6352 164.72916 
+Q 632.6352 172.21356 646.0272 172.21356 
+z
+" clip-path="url(#pf035024df6)" style="fill: #e7f4f4; stroke: #0f6468; stroke-width: 1.4; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 646.0272 296.95356 
+L 786.1968 296.95356 
+Q 799.5888 296.95356 799.5888 289.46916 
+L 799.5888 226.10124 
+Q 799.5888 218.61684 786.1968 218.61684 
+L 646.0272 218.61684 
+Q 632.6352 218.61684 632.6352 226.10124 
+L 632.6352 289.46916 
+Q 632.6352 296.95356 646.0272 296.95356 
+z
+" clip-path="url(#pf035024df6)" style="fill: #e7f4f4; stroke: #0f6468; stroke-width: 1.4; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_10">
+    <path d="M 646.0272 421.69356 
+L 786.1968 421.69356 
+Q 799.5888 421.69356 799.5888 414.20916 
+L 799.5888 350.84124 
+Q 799.5888 343.35684 786.1968 343.35684 
+L 646.0272 343.35684 
+Q 632.6352 343.35684 632.6352 350.84124 
+L 632.6352 414.20916 
+Q 632.6352 421.69356 646.0272 421.69356 
+z
+" clip-path="url(#pf035024df6)" style="fill: #e7f4f4; stroke: #0f6468; stroke-width: 1.4; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_2">
+    <text style="font-weight: 700; font-size: 15px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #0f6468" x="457.2" y="434.065463" transform="rotate(-0 457.2 434.065463)">Technique-specific mechanisms</text>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 14px; font-family: 'DejaVu Sans'; text-anchor: middle" x="457.2" y="478.695925" transform="rotate(-0 457.2 478.695925)">Therapies may share relationship factors while differing in the mechanisms targeted by specific techniques.</text>
+   </g>
+   <g id="text_4">
+    <text style="font-weight: 700; font-size: 13.5px; font-family: 'DejaVu Sans'; fill: #111111" transform="translate(139.655812 121.547841)">Psychodynamic</text>
+    <text style="font-weight: 700; font-size: 13.5px; font-family: 'DejaVu Sans'; fill: #111111" transform="translate(154.641867 136.770356)">insight into</text>
+    <text style="font-weight: 700; font-size: 13.5px; font-family: 'DejaVu Sans'; fill: #111111" transform="translate(165.71925 151.992872)">patterns</text>
+   </g>
+   <g id="text_5">
+    <text style="font-weight: 700; font-size: 13.5px; font-family: 'DejaVu Sans'; fill: #111111" transform="translate(139.366828 246.340575)">Client-centered</text>
+    <text style="font-weight: 700; font-size: 13.5px; font-family: 'DejaVu Sans'; fill: #111111" transform="translate(146.236008 261.457622)">unconditional</text>
+    <text style="font-weight: 700; font-size: 13.5px; font-family: 'DejaVu Sans'; fill: #111111" transform="translate(140.165227 276.574669)">positive regard</text>
+   </g>
+   <g id="text_6">
+    <text style="font-weight: 700; font-size: 13.5px; font-family: 'DejaVu Sans'; fill: #111111" transform="translate(183.584602 371.027841)">CBT</text>
+    <text style="font-weight: 700; font-size: 13.5px; font-family: 'DejaVu Sans'; fill: #111111" transform="translate(132.034641 386.144888)">thought/behavior</text>
+    <text style="font-weight: 700; font-size: 13.5px; font-family: 'DejaVu Sans'; fill: #111111" transform="translate(147.691477 401.367403)">restructuring</text>
+   </g>
+   <g id="text_7">
+    <text style="font-weight: 700; font-size: 13.5px; font-family: 'DejaVu Sans'; fill: #111111" transform="translate(700.758914 121.600575)">DBT</text>
+    <text style="font-weight: 700; font-size: 13.5px; font-family: 'DejaVu Sans'; fill: #111111" transform="translate(644.842547 136.717622)">distress tolerance,</text>
+    <text style="font-weight: 700; font-size: 13.5px; font-family: 'DejaVu Sans'; fill: #111111" transform="translate(643.133953 151.834669)">emotion regulation</text>
+   </g>
+   <g id="text_8">
+    <text style="font-weight: 700; font-size: 13.5px; font-family: 'DejaVu Sans'; fill: #111111" transform="translate(648.522352 246.287841)">Pharmacotherapy</text>
+    <text style="font-weight: 700; font-size: 13.5px; font-family: 'DejaVu Sans'; fill: #111111" transform="translate(660.353836 261.510356)">neurochemical</text>
+    <text style="font-weight: 700; font-size: 13.5px; font-family: 'DejaVu Sans'; fill: #111111" transform="translate(688.348406 276.627403)">targets</text>
+   </g>
+   <g id="text_9">
+    <text style="font-weight: 700; font-size: 13.5px; font-family: 'DejaVu Sans'; fill: #111111" transform="translate(701.942273 371.133309)">ECT</text>
+    <text style="font-weight: 700; font-size: 13.5px; font-family: 'DejaVu Sans'; fill: #111111" transform="translate(667.095398 386.250356)">direct neural</text>
+    <text style="font-weight: 700; font-size: 13.5px; font-family: 'DejaVu Sans'; fill: #111111" transform="translate(669.092977 401.367403)">intervention</text>
+   </g>
+   <g id="patch_11">
+    <path d="M 457.2 322.65 
+C 489.164399 322.65 519.823923 315.552568 542.426166 302.92083 
+C 565.02841 290.289092 577.728 273.154375 577.728 255.2904 
+C 577.728 237.426425 565.02841 220.291708 542.426166 207.65997 
+C 519.823923 195.028232 489.164399 187.9308 457.2 187.9308 
+C 425.235601 187.9308 394.576077 195.028232 371.973834 207.65997 
+C 349.37159 220.291708 336.672 237.426425 336.672 255.2904 
+C 336.672 273.154375 349.37159 290.289092 371.973834 302.92083 
+C 394.576077 315.552568 425.235601 322.65 457.2 322.65 
+z
+" clip-path="url(#pf035024df6)" style="fill: #fff4d8; stroke: #b57a00; stroke-width: 1.6; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_10">
+    <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: middle" x="457.2" y="235.033338" transform="rotate(-0 457.2 235.033338)">Common factors</text>
+   </g>
+   <g id="text_11">
+    <text style="font-size: 14px; font-family: 'DejaVu Sans'" transform="translate(387.589375 254.798683)">therapeutic alliance</text>
+    <text style="font-size: 14px; font-family: 'DejaVu Sans'" transform="translate(426.017187 271.007511)">empathy</text>
+    <text style="font-size: 14px; font-family: 'DejaVu Sans'" transform="translate(430.431562 287.216339)">warmth</text>
+    <text style="font-size: 14px; font-family: 'DejaVu Sans'" transform="translate(378.871094 303.425167)">expectation of change</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pf035024df6">
+   <rect x="10.8" y="10.8" width="892.8" height="498.96"/>
+  </clipPath>
+ </defs>
+</svg>

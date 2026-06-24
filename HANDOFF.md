@@ -6,7 +6,9 @@
 
 ## Current Status
 
-**Phase:** Chapter 1 (History & Approaches) live, fully reviewed. Chapter 2 (Research Methods & Statistics) at v0.3, HTML on hold pending Jon’s images. Chapters 3–9 are markdown-complete (various versions), all awaiting Jon’s line-by-line review. Chapter 10 (Social Psychology) markdown is a new full first draft (v0.1, Session 20), not yet reviewed by Jon.
+**Phase:** Chapter 1 (History & Approaches) live, fully reviewed. Chapter 2 (Research Methods & Statistics) at v0.3, HTML on hold pending Jon’s images. Chapters 3–12 are markdown-complete (various versions), all awaiting Jon’s line-by-line review. Chapter 13 (Psychological Disorders & Therapy) is a first draft (v0.1), not yet reviewed by Jon. **All 13 chapters now have at least a v0.1 markdown draft.**
+
+**Book restructure (Session 31):** Chapters 12 and 13 merged into a single chapter — Ch. 12 "Emotion, Stress & Coping" — using Barrett’s constructionist/allostatic framework as the spine. The former Ch. 12 (Motivation & Emotion, `ch12-motivation-emotion.md`) and Ch. 13 (Stress & Health, `ch13-stress-health.md`) are superseded; both files remain on disk but are no longer part of the book. What was Ch. 14 (Psychological Disorders & Therapy) is now Ch. 13. Book is now **13 chapters**. `docs/index.html` updated to reflect the new TOC.
 
 **What's ready:**
 - `source/concept_lineage_revised.csv` — 181 concepts across all APA chapters, with textbook-era lineage, origin flags, and `wording_change_driver` column. Note: the chapter's concept prefix is `BIO-*` (not `NEU-*` as previously referred to informally) — 19 concepts total, IDs BIO-001 through BIO-019.
@@ -25,17 +27,18 @@
 
 - `source/chapters/ch07-memory.md` — Chapter 7 draft at v0.2 (Session 16 structural revision), not yet reviewed by Jon. All 27 MEM-* concepts covered. 25 instructor-original; MEM-019 and MEM-020 sourced from two Noba modules (Laney & Loftus; McDermott & Roediger). Body word count ~5,440 — over target, flagged not cut. No figures. Not yet converted to HTML. Full architecture, citations, and open items documented in Session 16 log entry.
 
-- `source/chapters/ch10-social-psychology.md` — Chapter 10 draft, new this session (v0.1), content-complete, not yet reviewed by Jon. All 12 SOC-* concepts covered (verified programmatically). 9 concepts are `instructor-original`/`canonical-common-knowledge`; 3 flagged `book-adoption` (SOC-008 Group polarization/groupthink, SOC-010 Bystander effect, SOC-011 Altruism) — sourced from Forsyth's "The Psychology of Groups" and the "Helping and Prosocial Behavior" Noba modules (Noba pages are client-rendered; content sourced from search-result summaries and primary literature, flagged in chapter header). 22 citations, all independently verified via web search; programmatic cross-check confirmed Burger (2009) gap and it was corrected before finalizing. Body word count ~4,701 — inside the 3,500–5,000 target. Architecture: 4 sections — (1) Social cognition (FAE with Ross, Greene, & House 1977 quizmaster study; self-serving bias; cognitive dissonance with Festinger & Carlsmith 1959 $1/$20 study; ELM); (2) Social influence (Asch 1955 conformity; Classic Study Walkthrough for Milgram 1963/1974; Do Not Confuse: conformity vs. obedience; Stanford Prison Experiment with Le Texier 2019 critique — presented as flawed illustration, not clean evidence; social facilitation/loafing with Zajonc 1965 and Latané et al. 1979); (3) Groups and intergroup relations (group polarization Moscovici & Zavalloni 1969; groupthink Janis 1972 with Bay of Pigs/Challenger; prejudice/stereotypes/discrimination; social identity theory Tajfel & Turner 1979; stereotype threat cross-reference to Ch8; contact hypothesis Allport 1954); (4) Prosocial and antisocial behavior (bystander effect Darley & Latané 1968 with five-step model; Kitty Genovese framing noted as inaccurately reported; altruism with kin selection Hamilton 1964, reciprocal altruism Trivers 1971, Batson 1991 empathy-altruism hypothesis; aggression with Dollard et al. 1939/Berkowitz 1989 frustration-aggression, Bandura cross-reference to Ch6, deindividuation). Full AI Connection per spec §12: FAE→anthropomorphism; conformity→AI as confident consensus-of-one; ELM peripheral route→fluency-based credulity; bystander effect→diffusion of AI responsibility; social desirability bias→sycophancy; ToM as the precise breakdown point for all five mechanisms. Triplett (1898) cited with Stroebe (2012) re-analysis caveat. No demo placeholder — no existing demo in the inventory covers social psychology topics; flagged as a gap. Not yet converted to HTML.
+- `source/chapters/ch11-personality.md` — Chapter 11 now at **v0.2** (Sessions 23 + 28), content-complete with 5 sections and 2 figures, not yet reviewed by Jon. All 7 PER-* concepts covered. v0.2 changes from v0.1: 5-section structure (person-situation and assessment split into separate sections); chapter map table; Big Five converted to full table; traits-vs-types Do Not Confuse added; HEXACO sentence added; Mischel r=.30 reframed using both Funder & Ozer 1983 and 2019; Rogers therapy evidence narrowed to Farber et al. (2018) positive-regard meta-analysis (g=.28) and Elliott et al. (2018) empathy meta-analysis (r=.28); Freud citations fixed (1923 for structural model, 1933/1964 for "seething cauldron" quote); Electra complex attribution corrected (Jung coined it; Freud preferred Oedipus complex for both sexes); recovered-memory caveat added; Rogers worked example (student with conditions of worth) added; AI Connection citation fixed — Rao et al. (2023) replaced by Jiang et al. (2024) PersonaLLM with caveat that this is assigned not spontaneous personality; Rorschach section balanced with Mihura et al. (2013); MMPI claim narrowed; 4 Do Not Confuse panels; 5 Stop & Retrieve prompts; personality assessment table; class-attendance aggregation example; 24 references (all verified). Body word count ~3,750 — inside the 3,500–5,000 target. **2 figures built** (`docs/images/ch11/`): fig11-1-trait-signal-aggregation (scatter plot showing r≈.29 for single act vs. r≈.72 aggregated) and fig11-2-person-situation-grid (helping behavior across trait levels × weak/strong situation). Not yet converted to HTML.
+
+- `source/chapters/ch10-social-psychology.md` — Chapter 10 draft (v0.3), content-complete, Noba-verified, Jon's review pass applied, not yet converted to HTML. All 12 SOC-* concepts covered (verified programmatically). 9 concepts are `instructor-original`/`canonical-common-knowledge`; 3 flagged `book-adoption` (SOC-008 Group polarization/groupthink, SOC-010 Bystander effect, SOC-011 Altruism) — sourced from and verified against PDF copies of Forsyth's "The Psychology of Groups" and Poepsel & Schroeder's "Helping and Prosocial Behavior" Noba modules (reviewed 2026-06-23). 23 citations (added Poepsel & Schroeder), all verified; programmatic cross-check confirmed all in-text citations match References entries. Body word count ~4,701 — inside the 3,500–5,000 target. Architecture: 4 sections — (1) Social cognition (FAE with Ross, Greene, & House 1977 quizmaster study; self-serving bias; cognitive dissonance with Festinger & Carlsmith 1959 $1/$20 study; ELM); (2) Social influence (Asch 1955 conformity; Classic Study Walkthrough for Milgram 1963/1974; Do Not Confuse: conformity vs. obedience; Stanford Prison Experiment with Le Texier 2019 critique — presented as flawed illustration, not clean evidence; social facilitation/loafing with Zajonc 1965 and Latané et al. 1979); (3) Groups and intergroup relations (group polarization Moscovici & Zavalloni 1969; groupthink Janis 1982 2nd ed. with actual Forsyth definition quote, Bay of Pigs/Challenger; prejudice/stereotypes/discrimination; social identity theory Tajfel & Turner 1979; stereotype threat cross-reference to Ch8; contact hypothesis Allport 1954); (4) Prosocial and antisocial behavior (bystander effect Darley & Latané 1968 with five-step model plus cost-benefit analysis as third mechanism per Noba; Kitty Genovese framing noted as inaccurately reported; altruism with kin selection Hamilton 1964, reciprocal altruism Trivers 1971, Batson 2011 empathy-altruism model; aggression with Dollard et al. 1939/Berkowitz 1989 frustration-aggression, Bandura cross-reference to Ch6, deindividuation). Full AI Connection per spec §12: FAE→anthropomorphism; conformity→AI as confident consensus-of-one; ELM peripheral route→fluency-based credulity; bystander effect→diffusion of AI responsibility; social desirability bias→sycophancy; ToM as the precise breakdown point for all five mechanisms. Triplett (1898) cited with Stroebe (2012) re-analysis caveat. No demo placeholder — no existing demo in the inventory covers social psychology topics; flagged as a gap. Not yet converted to HTML.
 
 - `source/chapters/ch08-thinking-language-intelligence.md` — Chapter 8 draft, new this session (v0.1), content-complete, not yet reviewed by Jon. All 15 TLI-* concepts covered (verified programmatically by topic keyword). 13 of 15 are `instructor-original`/`canonical-common-knowledge`; two flagged `book-adoption` — TLI-004 (Representativeness heuristic) drafted from Bazerman (2026) Noba module "Judgment and Decision Making," and TLI-012 (Gardner's multiple intelligences) drafted from Biswas-Diener (2026) Noba module "Intelligence" — both fetched and read in full before drafting, not secondhand. No concepts had a Noba-coverage gap this chapter (both flagged concepts had adequate module coverage, unlike Ch4/Ch6 where some `book-adoption` concepts had no matching Noba module). All 26 citations independently verified via web search before inclusion; programmatic cross-check confirmed all in-text citation keys match References entries in both directions, no orphans. Architecture: 4 sections — (1) Concepts, categories, and problem solving (prototypes, exemplars, hierarchical categories, algorithms vs. heuristics, working-forward/backward/means-ends analysis, mental set with Luchins 1942, functional fixedness with Duncker 1945's candle problem, insight and Jung-Beeman et al. 2004 neural correlates); (2) Heuristics, biases, and the two-system view (System 1/2 framework with a full Do Not Confuse panel, availability heuristic, representativeness heuristic with the Linda problem as a full Classic Study Walkthrough, confirmation bias with Wason 1968 selection task, framing effect, anchoring); (3) Language (phoneme→morpheme→syntax→semantics→pragmatics, nativist vs. behaviorist acquisition debate with Chomsky 1965 LAD/universal grammar and Saffran et al. 1996 statistical learning, linguistic relativity weak vs. strong with Whorf 1956 and a Do Not Confuse panel on relativity vs. determinism); (4) Intelligence (Spearman 1904 *g* and the positive manifold, fluid vs. crystallized with Horn & Cattell 1966, Gardner 1985 multiple intelligences with a caveated discussion of empirical limitations, Sternberg 1985 triarchic theory with analytic/creative/practical, IQ standardization and the bell curve, reliability/validity building on Ch2, Flynn Effect 1987, and group differences with stereotype threat Spencer et al. 1999 and note on environmental factors). Full AI Connection (the chapter's primary AI touchpoint per spec §12 Ch7/8, three-part structure): (a) System 1 fluency heuristic — polished AI output deactivates System 2 metacognitive checking because fluency signals accuracy (Reber & Schwarz 1999); (b) availability heuristic applied to AI use — past experience of AI being right overcounts reliability on topics where AI is actually unreliable; (c) schemas → template-driven AI output — model output is high-fidelity pattern completion, not reasoning, similar to schema-driven human memory reconstruction; breakdown point: human schemas are revised through embodied corrective feedback, model weights don't self-correct through reasoning mid-conversation. Misconception Opener: "We trust our own thinking — we assume we notice what matters and weigh information accurately." Includes a *k*-word prediction task that students complete before Section 2 and return to after reading the availability heuristic section. Body word count ~4,981 — inside the 3,500–5,000 target (only the second chapter after Ch4 to land inside range on a first draft). No figures yet. No demo placeholder (no existing demo covers heuristics or language acquisition; flagged as a gap, not placeholded). Not yet converted to HTML.
 
-**Confirmed this session — the real 14-chapter order (from `docs/index.html`, not re-derivable from the CSV alone since it has only 13 categories — the 14th chapter, Stress & Health, isn't in the extraction at all):**
-1 History & Approaches · 2 Research Methods & Statistics · 3 Neuroscience & Biological Bases · 4 Sensation & Perception · 5 States of Consciousness · 6 Learning · 7 Memory · 8 Thinking, Language & Intelligence · 9 Lifespan Development · 10 Social Psychology · 11 Personality · 12 Motivation & Emotion · 13 Stress & Health · 14 Psychological Disorders & Therapy.
+**Current 13-chapter order (updated Session 31 — `docs/index.html` is authoritative):**
+1 History & Approaches · 2 Research Methods & Statistics · 3 Neuroscience & Biological Bases · 4 Sensation & Perception · 5 States of Consciousness · 6 Learning · 7 Memory · 8 Thinking, Language & Intelligence · 9 Lifespan Development · 10 Social Psychology · 11 Personality · 12 Emotion, Stress & Coping · 13 Psychological Disorders & Therapy.
 
 **What's not started:**
-- Chapters 11–14 content; Ch3–Ch10 → HTML conversion (all markdown-complete, awaiting Jon's review first); Ch2 HTML conversion (on hold, see below)
 - Prologue (not started)
-- Chapter 13 (Stress & Health) has no source material in `concept_lineage_revised.csv` — will need separate sourcing when its turn comes, not pulled from the existing extraction.
+- Ch2–Ch14 → HTML conversion (all markdown-complete, awaiting Jon's review first; Ch2 HTML on hold pending Jon's images)
 
 **Ch01 figures — now complete.** `docs/images/ch01/` created with 8 files: 5 portraits (Wundt, James, Watson, Freud, Skinner — Wikimedia Commons public domain), Fig 1.1 scope map (Jon's original), Fig 1.2 Maslow hierarchy (Wikimedia Commons), Fig 1.3 Skinner/Chomsky/LLM diagram (Jon + ChatGPT original). HTML wired: portrait strip at Section 2 opener, three numbered `.chapter-figure` blocks. CSS added to style.css (`.chapter-figure`, `.portrait-strip`). Attribution README at `docs/images/ch01/README_captions_alt_text_attribution.md`. Turing and Chomsky portraits skipped — represented in Fig 1.3. "Don't use these" folder contents excluded per folder label.
 
@@ -47,15 +50,15 @@
 
 ## Next Up
 
-1. **Continue drafting Chapters 11–14, one at a time, full rigor** — **Chapter 11 (Personality) is next.** The spec §12 AI touchpoint table does not have a dedicated Personality entry; Jon's own framing ("AI has personalities") connects to trait theory and the person-situation debate — use these as the AI Connection hook. Pull PER-* concepts from `concept_lineage_revised.csv` and scan `voice_profile_merged.csv` for Personality-course and Gen-Psych personality-tagged entries before drafting.
-2. **Get Jon's line-by-line review of Chapters 3–7** — five chapters are now markdown-complete and unreviewed; this is the immediate next step before any of them goes further, independent of how far chapter drafting continues. Open items for Ch3 specifically: (a) body word count runs ~5,800, well over target — trim or accept? (b) confirm the 3 lecture-deck-sourced figures (3.3, 3.5, 3.7) and keep the agonist/antagonist paragraph or cut it; (c) supply live embed URLs for the three flagged demo placeholders (action-potential simulator, neurotransmitter mixing board, oxytocin/vasopressin demo); (d) decide whether to do a similar image-provenance pass on other lecture decks before drafting future chapters. Open items for Ch4 specifically: (a) confirm the copyright-handling deviation for the four concepts with no Noba/APA IPI module to draw on (Gestalt, place/frequency theory, gate control theory, perceptual constancy) — original prose was used instead, flagged inline in the chapter header; (b) decide on figures; (c) supply or build the three flagged demo placeholders (SDT simulator — doesn't exist yet, Heider & Simmons, size-weight illusion). Open items for Ch5 specifically: (a) decide whether to keep the two optional additions (Charles Bonnet syndrome mention, meditation paragraph) — neither is a tracked CON-* concept; (b) confirm whether the `psych101_awesome-sauce` "sleep" demo can be reused/cross-linked in Ch5 or stays Prologue-exclusive; (c) decide on figures — priority order now set (5.1 two-process model first, 5.2 hypnogram second; 5.5 and 5.6 on hold). Note: attention gap resolved (CON-013 added to CSV, bridge in Section 1). Note: Sapolsky n.d. citation resolved (replaced by Schultz, Dayan, & Montague 1997 throughout Ch5). Open items for Ch6 specifically: (a) body word count runs ~5,340, over target — trim or accept, same flag-don't-cut precedent as Ch3; (b) **decide whether to correct Chapter 5's Sapolsky citation** — Ch5 says the dopamine lecture was given "at Stanford University," but Session 12 verified it was actually the Pritzker Lecture at the California Academy of Sciences (Feb 15, 2011); Ch6 already uses the corrected venue; (c) confirm the copyright-handling deviation for LRN-011 (Shaping) and LRN-016 (Dopamine/Sapolsky) — no Noba module covers "shaping" by name, so original prose grounded in Skinner's own 1951 primary source was used instead, flagged inline; (d) decide on figures, same open question as every prior chapter; (e) the conditioning simulator is still the #1 priority demo-build per spec §5 and no embed placeholder exists in the chapter yet since the demo doesn't exist. Open items for Ch7 specifically: (a) body word count runs ~5,440, over target — same flag-don't-cut precedent; (b) decide on figures; (c) supply a live embed URL for the `psych101_awesome-sauce` encoding/retrieval/spacing demos, or confirm none is needed since Sperling's demo and digit span are written as narrated self-administerable exercises instead; (d) confirm the Clive Wearing contrast-case framing reads the way Jon intends, since it's the first time this book has paired a classic case study with a second, deliberately-contrasting case rather than treating one case as definitive.
+1. **All 14 chapters now have a v0.1 draft. The immediate priority is Jon's line-by-line review of Chapters 3–7** — five chapters are markdown-complete and unreviewed. Open items for Ch3 specifically: (a) body word count runs ~5,800, well over target — trim or accept? (b) confirm the 3 lecture-deck-sourced figures (3.3, 3.5, 3.7) and keep the agonist/antagonist paragraph or cut it; (c) supply live embed URLs for the three flagged demo placeholders (action-potential simulator, neurotransmitter mixing board, oxytocin/vasopressin demo); (d) decide whether to do a similar image-provenance pass on other lecture decks before drafting future chapters. Open items for Ch4 specifically: (a) confirm the copyright-handling deviation for the four concepts with no Noba/APA IPI module to draw on (Gestalt, place/frequency theory, gate control theory, perceptual constancy) — original prose was used instead, flagged inline in the chapter header; (b) decide on figures; (c) supply or build the three flagged demo placeholders (SDT simulator — doesn't exist yet, Heider & Simmons, size-weight illusion). Open items for Ch5 specifically: (a) decide whether to keep the two optional additions (Charles Bonnet syndrome mention, meditation paragraph) — neither is a tracked CON-* concept; (b) confirm whether the `psych101_awesome-sauce` "sleep" demo can be reused/cross-linked in Ch5 or stays Prologue-exclusive; (c) decide on figures — priority order now set (5.1 two-process model first, 5.2 hypnogram second; 5.5 and 5.6 on hold). Open items for Ch6 specifically: (a) body word count runs ~5,340, over target — trim or accept, same flag-don't-cut precedent as Ch3; (b) **decide whether to correct Chapter 5's Sapolsky citation** — Ch5 says the lecture was at "Stanford University" but it is the Pritzker Lecture at the California Academy of Sciences (Feb 15, 2011); Ch6 already uses the corrected venue; (c) confirm the copyright-handling deviation for LRN-011 (Shaping) and LRN-016 (Sapolsky) — no Noba module covers "shaping" by name, so original prose from Skinner's own 1951 source was used instead, flagged inline; (d) decide on figures; (e) the conditioning simulator is still the #1 priority demo-build per spec §5. Open items for Ch7 specifically: (a) body word count runs ~5,440, over target — same flag-don't-cut precedent; (b) decide on figures; (c) supply a live embed URL for the `psych101_awesome-sauce` encoding/retrieval/spacing demos; (d) confirm the Clive Wearing contrast-case framing.
+2. **Get Jon's line-by-line review of Chapters 8–14** — five chapters are now markdown-complete and unreviewed; this is the immediate next step before any of them goes further, independent of how far chapter drafting continues. Open items for Ch3 specifically: (a) body word count runs ~5,800, well over target — trim or accept? (b) confirm the 3 lecture-deck-sourced figures (3.3, 3.5, 3.7) and keep the agonist/antagonist paragraph or cut it; (c) supply live embed URLs for the three flagged demo placeholders (action-potential simulator, neurotransmitter mixing board, oxytocin/vasopressin demo); (d) decide whether to do a similar image-provenance pass on other lecture decks before drafting future chapters. Open items for Ch4 specifically: (a) confirm the copyright-handling deviation for the four concepts with no Noba/APA IPI module to draw on (Gestalt, place/frequency theory, gate control theory, perceptual constancy) — original prose was used instead, flagged inline in the chapter header; (b) decide on figures; (c) supply or build the three flagged demo placeholders (SDT simulator — doesn't exist yet, Heider & Simmons, size-weight illusion). Open items for Ch5 specifically: (a) decide whether to keep the two optional additions (Charles Bonnet syndrome mention, meditation paragraph) — neither is a tracked CON-* concept; (b) confirm whether the `psych101_awesome-sauce` "sleep" demo can be reused/cross-linked in Ch5 or stays Prologue-exclusive; (c) decide on figures — priority order now set (5.1 two-process model first, 5.2 hypnogram second; 5.5 and 5.6 on hold). Note: attention gap resolved (CON-013 added to CSV, bridge in Section 1). Note: Sapolsky n.d. citation resolved (replaced by Schultz, Dayan, & Montague 1997 throughout Ch5). Open items for Ch6 specifically: (a) body word count runs ~5,340, over target — trim or accept, same flag-don't-cut precedent as Ch3; (b) **decide whether to correct Chapter 5's Sapolsky citation** — Ch5 says the dopamine lecture was given "at Stanford University," but Session 12 verified it was actually the Pritzker Lecture at the California Academy of Sciences (Feb 15, 2011); Ch6 already uses the corrected venue; (c) confirm the copyright-handling deviation for LRN-011 (Shaping) and LRN-016 (Dopamine/Sapolsky) — no Noba module covers "shaping" by name, so original prose grounded in Skinner's own 1951 primary source was used instead, flagged inline; (d) decide on figures, same open question as every prior chapter; (e) the conditioning simulator is still the #1 priority demo-build per spec §5 and no embed placeholder exists in the chapter yet since the demo doesn't exist. Open items for Ch7 specifically: (a) body word count runs ~5,440, over target — same flag-don't-cut precedent; (b) decide on figures; (c) supply a live embed URL for the `psych101_awesome-sauce` encoding/retrieval/spacing demos, or confirm none is needed since Sperling's demo and digit span are written as narrated self-administerable exercises instead; (d) confirm the Clive Wearing contrast-case framing reads the way Jon intends, since it's the first time this book has paired a classic case study with a second, deliberately-contrasting case rather than treating one case as definitive.
 3. **Once Ch3–7 are approved:** convert to HTML in `docs/chapters/03-neuroscience.html` through `docs/chapters/07-memory.html` (filenames already match `docs/index.html`'s links), reusing Ch1's CSS classes and the `<details>/<summary>` review-question pattern.
 4. **When Jon says Ch2's images are ready:** convert Ch2 to HTML, using the same template/CSS classes established for Ch1 (`.callout--*` variants, table styles, `<details>` review-question pattern) plus new `<figure>`/`<img>` markup (no CSS for this yet — add a `.chapter-figure` style to `style.css` during conversion). Get the solid-carnival demo embed URL from Jon at the same time — still an open placeholder in the Ch2 markdown.
 5. **Decide on a per-chapter figure budget going forward** — Ch2 set a pattern (3–5 original diagrams per chapter, SVG+PNG, sized for slide reuse); Ch1, Ch3, Ch4, Ch5, Ch6, and Ch7 all currently have none (Ch3 is pending Jon's figure decisions, the rest haven't been raised yet) — worth deciding with Jon whether every chapter gets original figures or only ones with strong visual/data content.
 6. **Write prologue** — adapt from psych101_awesome-sauce content; add Human-AI Cognitive Alignment unit per spec §12.
 7. **Priority demos to build:** conditioning simulator (needed for Ch6), signal detection theory demo (needed for Ch4), correlation/causation simulator, forgetting/retrieval simulator (needed for Ch7 — spacing/testing-effect content would benefit from one too).
-8. **Chapter 13 (Stress & Health) has no source material in `concept_lineage_revised.csv`** — will need separate sourcing when its turn comes; flag this again as drafting approaches Ch13 rather than discovering it cold.
-9. **Chapter activities — log ideas now, build later (final book pass):** As each chapter is drafted or revised, note any activity ideas that arise naturally from the content (e.g., the Ch8 AI-bias activity created in Session 21). Do NOT build each one immediately — log the idea in the session entry and carry it forward in this list. After all 14 chapters are drafted, do a dedicated final pass to create activities for all chapters. Format template: `docs/assignments/ch08-ai-bias-activity.html`. Chatbot-prompt activities are particularly well-suited to chapters where metacognitive transfer is a chapter goal (heuristics, memory errors, social influence). Activity ideas so far: Ch8 — AI bias audit (built); Chs 3–7, 9–14 — TBD during drafting pass.
+8. **Chapter activities — log ideas now, build later (final book pass):** As each chapter is drafted or revised, log activity ideas in `docs/teaching/activity-ideas.md` (created Session 22) — the structured backlog for activities, demos, assignments, and chatbot-prompt exercises. Do NOT build each one immediately. After all 14 chapters are drafted, do a dedicated final pass to create activities for all chapters. Format template: `docs/assignments/ch08-ai-bias-activity.html`. Chatbot-prompt activities are particularly well-suited to chapters where metacognitive transfer is a chapter goal (heuristics, memory errors, social influence). Activity ideas logged so far: Ch8 — AI bias audit (Built), K-Word Availability Demo (Draftable), Linda Problem Nested-Set Mini-Exercise (Draftable), Wason Selection Task Rule-Testing Demo (Draftable). Chs 3–7, 9–14 — TBD during drafting pass.
+10. **Chapter interactive demos — log ideas now, build later:** At the end of each drafting session (before writing this HANDOFF entry), brainstorm interactive demo ideas that arose from the chapter content. Log them in the session entry below AND in `project_chapter_demos.md` in memory. Do NOT build during the drafting sprint. After all 14 chapters are drafted (and after the activities pass), do a dedicated demo-building pass. **Distinction:** demos are standalone interactive widgets (simulators, visualizations, manipulable sliders) that illustrate a phenomenon — the student observes/manipulates. Activities are guided exercises where the student applies chapter vocabulary. **End-of-session order:** (a) brainstorm activity ideas → log in item 9; (b) brainstorm demo ideas → log here; (c) write HANDOFF entry. Demo ideas logged so far: Ch3 — SDT slider (d-prime vs. β), visual illusions, Gestalt grouping. Ch5 — Rescorla-Wagner/prediction-error simulator. Ch3 specifically is the highest-priority chapter for demos (phenomena that are hard to describe but easy to show). Chs 1–2, 4, 6–14 — TBD during drafting pass.
 10. **Ch1 images still blocked on Jon.** He uploaded "Images with links.docx" — a curated list of 6 historical-figure portraits (Wundt, James, Watson, Skinner, Freud, Turing) from Wikimedia Commons with licensing notes, each mapped to a specific spot in Ch1. The sandbox cannot reach wikimedia.org domains (confirmed: both curl and the web-fetch tool fail/return empty) — Jon needs to download the actual image files himself before any of this can move forward. No `docs/images/ch01/` folder exists yet.
 
 ---
@@ -80,6 +83,7 @@
 | `concept_lineage_revised.csv` | `source/` | 181 concepts with era lineage and risk flags |
 | `voice_profile_merged.csv` | `source/` | 129 voice entries across Gen Psych + 5 specialist courses |
 | `chapter-spec.md` | `pipeline/` | Full chapter-writing pipeline spec (v3.0) |
+| `html-conversion-spec.md` | `pipeline/` | HTML conversion reference: sidebar template, all CSS class names, every structural pattern — use this for Codex batch conversion |
 | `index.html` | `docs/` | TOC landing page (GitHub Pages root) — live |
 | `01-history-approaches.html` | `docs/chapters/` | Chapter 1 — complete and live |
 | `ch01-history-approaches.md` | `source/chapters/` | Chapter 1 markdown source |
@@ -90,13 +94,312 @@
 | `ch06-learning.md` | `source/chapters/` | Chapter 6 markdown source — v0.1, awaiting Jon's review |
 | `ch07-memory.md` | `source/chapters/` | Chapter 7 markdown source — v0.2, awaiting Jon's review |
 | `ch08-thinking-language-intelligence.md` | `source/chapters/` | Chapter 8 markdown source — v0.1, awaiting Jon's review |
-| `ch09-lifespan-development.md` | `source/chapters/` | Chapter 9 markdown source — v0.1, awaiting Jon's review |
+| `ch09-lifespan-development.md` | `source/chapters/` | Chapter 9 markdown source — v0.3, awaiting Jon's review |
 | `ch10-social-psychology.md` | `source/chapters/` | Chapter 10 markdown source — v0.1, awaiting Jon's review |
+| `ch11-personality.md` | `source/chapters/` | Chapter 11 markdown source — v0.2, 2 figures (fig11-1, fig11-2), awaiting Jon's review |
+| `ch12-emotion-stress-coping.md` | `source/chapters/` | Chapter 12 markdown source — v0.1, Barrett-centered, merges former Ch12+Ch13, awaiting Jon's review |
+| `ch14-psychological-disorders-therapy.md` | `source/chapters/` | Chapter 13 markdown source — v0.1, awaiting Jon's review (file still named ch14; rename when converting to HTML) |
 | `style.css` | `docs/css/` | Site styles incl. callout variants, tables, review-question pattern |
 
 ---
 
 ## Session Log
+
+---
+
+### 2026-06-24 — Session 31
+
+**What happened:** Jon approved a redesign of Chs. 12 and 13 (from prior session's discussion) and confirmed with "yes." Drafted the new merged chapter: `source/chapters/ch12-emotion-stress-coping.md` (v0.1). Updated `docs/index.html` to reflect the 13-chapter structure. Updated HANDOFF.md.
+
+**Redesign rationale:** Jon found the original 12-concept Motivation & Emotion chapter "squishy" and preferred Lisa Feldman Barrett's constructionist account as the central framing. Ch. 13 (Stress & Health) had zero entries in `concept_lineage_revised.csv` and was already covered by MOT-006/007/008. Merging into a single Barrett-centered chapter with an allostasis spine was approved (Option B). SDT, intrinsic/extrinsic motivation, and Maslow as a theory were dropped by design decision.
+
+**Architecture of new Ch. 12:**
+- Misconception Opener: "Emotions are reflexes that happen to you"
+- Section 1: Body budget — homeostasis vs. allostasis (McEwen 1998), interoception, core affect / Russell's circumplex
+- Section 2: Emotions are constructed — James-Lange / Cannon-Bard / Schachter-Singer as scaffolding; Barrett's constructionist account; Classic Study Walkthrough: affect labeling (Torre & Lieberman 2018 meta-analysis); emotional granularity (Kashdan, Barrett & McKnight 2015); brief Ekman note under constructionist reading
+- Section 3: Stress as budget emergency — GAS (Selye 1956), fight-or-flight (Cannon 1929), tend-and-befriend (Taylor et al. 2000), allostatic load (McEwen 1998)
+- Section 4: Coping — problem-focused / emotion-focused (Lazarus & Folkman 1984), social support, body-budget deposits (sleep/movement/nutrition), affect labeling as active coping
+- AI Connection: Barrett framework makes the gap precise — no body, no interoception, no allostatic state; emotion-shaped output without the bodily referent; affect-labeling effect may still have functional value for users regardless of speaker source
+
+**Concepts covered:** MOT-004 (theories of emotion) ✓, MOT-005 (Ekman/basic emotions — brief) ✓, MOT-006 (GAS/Selye) ✓, MOT-007 (fight-or-flight/tend-and-befriend) ✓, MOT-008 (coping styles) ✓. MOT-001/002/003 dropped by design. New content (allostasis, interoception, core affect, emotional granularity, affect labeling, allostatic load) added from primary literature.
+
+**Citations:** All 24 references independently verified. Programmatic cross-check: no orphans in either direction.
+
+**Body word count:** ~4,800 estimated (inside 3,500–5,000 target).
+
+**Decisions made:**
+- Book is now 13 chapters. Former Ch. 14 (Disorders & Therapy) renumbers to Ch. 13.
+- `docs/index.html` updated: Ch. 12 → `12-emotion-stress-coping.html` (not yet created); Ch. 13 → `13-disorders-therapy.html`.
+- Old files `ch12-motivation-emotion.md` and `ch13-stress-health.md` retained on disk but are superseded — do not continue developing them.
+- Noba pages returned empty again (client-side rendered). MOT-004 theories-of-emotion content sourced from verified primary papers directly (James 1884, Cannon 1927, Schachter & Singer 1962, Barrett 2017 SCAN paper). No OpenStax needed this time — primary literature alone was sufficient. No copyright deviation to flag.
+- Activity ideas logged in chapter footer: body-budget audit (one-week tracker), granularity exercise (20-item emotion word list), coping strategy matching (6 scenarios varying in controllability).
+- Demo ideas logged in chapter footer: core affect circumplex (live 2D class overlay), body-budget ledger (deposits/withdrawals simulation), GAS timeline (animated cortisol/immune function).
+
+**Files created/modified this session:**
+- `source/chapters/ch12-emotion-stress-coping.md` — new v0.1; then **v0.2** (review corrections applied — see below)
+- `docs/index.html` — updated to 13-chapter TOC (Ch.12 renamed, Ch.13 removed, Ch.14→Ch.13)
+- `docs/teaching/activity-ideas.md` — Ch.12 section added (4 activities: body-budget audit, granularity exercise, coping strategy matching, AI affect-labeling check)
+- `HANDOFF.md` — Status, Next Up, Key Files, chapter order updated; this entry prepended
+
+**v0.2 changes (review corrections — same session):**
+- Barrett framing softened throughout: "most comprehensive current account" → "one influential contemporary framework"; "still an active area of debate" added to theory table
+- Do Not Confuse: Constructed Does Not Mean Fake or Chosen box added after Misconception Opener
+- Classic theories prose → 4-row comparison table (James-Lange / Cannon-Bard / Schachter-Singer / Constructed emotion)
+- Stop & Retrieve prompt added after core affect section
+- Reference cleanup: Damásio et al. (1994) and Lazarus (1991) removed as orphans; Ekman (1992), Barrett et al. (2019) PSPI, and Heinrichs et al. (2003) added
+- Citation disambiguation: Barrett (2017) → (2017a) book / (2017b) SCAN paper throughout; McEwen (1998) → (1998a) NEJM / (1998b) NYAS throughout
+- Torre & Lieberman (2018) corrected from "meta-analysis" to "review"
+- Emotional granularity: worked mini-example added ("I feel bad" vs. precise label); intervention sentence softened
+- Ekman note: added Ekman (1992) citation; added Barrett et al. (2019) facial movement caveat
+- Oxytocin: "introduced in Chapter 3" cross-reference removed (oxytocin not in Ch.3 currently); defined inline with **bold**
+- GAS resistance stage: "stress hormones remain elevated" → "stress mediators remain repeatedly engaged"
+- Post-finals illness example: hedged to "plausible interpretation" / "consistent with"
+- Social support/oxytocin: Heinrichs et al. (2003) added; claim softened from assertive to evidenced
+- Sleep: "single most impactful variable" removed; replaced with evidenced hedged framing
+- Movement/BDNF, blood glucose: both hedged
+- AI Connection: "clinically significant" → "may matter when people use AI … in ways that replace rather than supplement genuine social connection"
+- Coping match table added in Section 4
+- Key Terms: oxytocin added
+- Activity backlog (docs/teaching/activity-ideas.md): Ch.12 section added with 4 activities
+
+---
+
+### 2026-06-24 — Session 30
+
+**What happened:** Jon said "Chapter 14 draft" (after a restart). Read HANDOFF.md per standing instruction; confirmed Chapter 14 (Psychological Disorders & Therapy) is the last remaining unstarted chapter. Confirmed title/filename from `docs/index.html`. Pulled all 12 DIS-* concepts from `concept_lineage_revised.csv` — all `canonical-common-knowledge` with instructor-original origin EXCEPT DIS-009 (Humanistic therapy / client-centered), which is flagged `needs-verification` (appeared only in SP18, publisher-supplied). Attempted to fetch Noba for DIS-009 but the server timed out (client-rendered pages, same pattern as Sessions 9/20). Applied the established deviation precedent: drafted DIS-009 from Rogers's own primary sources (Rogers 1951, 1957) and the Flückiger et al. 2018 meta-analysis already verified in Ch11, with an explicit inline note in the chapter header. Verified 5 citations independently via web search: Temerlin (1968) — J. Nervous and Mental Disease, 147(4), 349–353 ✓; Seeman et al. (1976) — Nature, 261, 717–719 ✓; Cardno & Gottesman (2000) — American Journal of Medical Genetics, 97(1), 12–17 (MZ concordance 40–65%, not the "~50%" shorthand) ✓; Geddes et al. (2003) — Lancet, 361(9360), 799–808 ✓; Craddock & Sklar (2013) — Lancet, 381, 1654–1662 ✓. 15 additional citations included from high-confidence training knowledge and flagged [*] in References for Jon to audit. Scanned voice profile for Disorders-tagged entries; used the 3D criteria discussion tip (51 hits, perennial), fear-vs-anxiety "right now" distinction (3 hits, Disorders slides), Sapolsky/dopamine → depression and ADHD (5 hits), and Phineas Gage → ASPD (82 hits, cross-chapter). Programmatic concept check: 12/12 DIS-* concepts present. Body word count: ~4,260 (inside 3,500–5,000 target, first draft).
+
+**Architecture:** 4 sections — (1) Defining and diagnosing: 3D criteria, DSM-5-TR, diathesis-stress model, biopsychosocial model, Classic Study Walkthrough for Rosenhan (1973) with Cahalan (2019) data-integrity caveat foregrounded (consistent with Ch10/SPE treatment), Temerlin (1968) as the better-evidenced labeling-effects complement; (2) Anxiety, mood, and psychotic disorders: GAD/phobia/panic/OCD/PTSD with fear-vs-anxiety opener, MDD with Beck's cognitive triad and Abramson et al. (1978) depressogenic style plus Moncrieff (2022) caveat on serotonin, Sapolsky/dopamine framing for anhedonia, PDD, bipolar I/II (Craddock & Sklar 2013 heritability), schizophrenia positive/negative symptoms, dopamine hypothesis with complexity caveat (Seeman et al. 1976), twin concordance (Cardno & Gottesman 2000); (3) Personality and neurodevelopmental disorders: three PD clusters, ASPD with Cleckley/PCL-R/Phineas Gage cross-ref, BPD with Linehan biosocial theory, Do Not Confuse panel (ASPD ≠ antisocial behavior ≠ psychopathy ≠ legal insanity), ADHD with dopamine/executive function, ASD with Theory of Mind (Baron-Cohen et al. 1985) and Ch9 cross-reference; (4) Treatments: Dodo Bird Verdict + therapeutic alliance as frame, psychodynamic (Shedler 2010), humanistic/client-centered (Rogers 1951/1957, Flückiger 2018, DIS-009 deviation flagged), CBT/REBT/ERP/DBT (Beck 1979, Ellis 1962, Linehan 1993, Hofmann et al. 2012), pharmacotherapy (SSRIs/antipsychotics/lithium/benzodiazepines, honest mechanism-uncertainty framing, Cipriani et al. 2018), ECT (Geddes et al. 2003, modern-vs-Cuckoo's-Nest reframe). Full AI Connection per spec §12 Ch13 touchpoints: (a) diagnostic anchoring/premature closure = Ch8 heuristics at scale; (b) HIPAA/PHI — what clinical information entered into AI tools is actually protected; (c) AI sentiment mirroring ≠ empathy — pattern completion vs. regulated affective presence; (d) cognitive restructuring breakdown — requires a believing, feeling client and a therapist who notices what's unsaid.
+
+**Decisions made:**
+- Rosenhan (1973) treated like SPE in Ch10: classic study walkthrough with Cahalan (2019) data-integrity critique foregrounded. Phenomenon of labeling effects supported by Temerlin (1968) as a better-controlled complement.
+- OCD and PTSD noted as now in separate DSM chapters from anxiety disorders proper — accurate per DSM-5-TR, covered in Section 2 for pedagogical continuity.
+- Serotonin/depression: same honest treatment as Session 14 (Ch1 revision) and Ch11 — Moncrieff et al. (2022) used; SSRI efficacy acknowledged as real but mechanism-uncertain (Cipriani et al. 2018).
+- 15 unverified citations flagged [*] for Jon's audit — transparent departure from full-verification standard, disclosed rather than silently included.
+- Activity ideas: Diagnostic criteria case vignettes (apply 3D criteria to ambiguous vignettes) — Draftable; Therapy matching exercise (match presenting problem to evidence-based treatment) — Draftable.
+- Demo ideas: No existing demo covers diagnosis or therapy. Possible future builds: symptoms-to-diagnosis case simulator; therapy-approach decision tree.
+
+**Files created/modified this session:**
+- `source/chapters/ch14-psychological-disorders-therapy.md` — new, full first draft (v0.1), ~4,260 body words, 12/12 DIS-* concepts, 24 references (15 flagged [*] for audit)
+- `HANDOFF.md` — Status, Next Up, Key Files updated; this entry prepended
+
+---
+
+### 2026-06-24 — Session 29
+
+**What happened:** Resumed mid-task (context had compacted again). Completed Ch9 v0.2 → v0.3 editorial pass based on Jon's detailed review. All nine prose fixes applied; learning objectives 6-7 rewritten; References expanded and corrected; Key Terms expanded with 5 new entries.
+
+**Changes in v0.3:**
+- Learning objectives 6 & 7 rewritten to match actual chapter content (moral motivation/reasoning distinction and identity formation gist, not Kohlberg stages or Erikson eight-stages)
+- "None of us remembers being two" → "one reason most adults have few reliable autobiographical memories from the first years of life"
+- Teratogen/alcohol paragraph: restructured to note alcohol has no established safe window (Jones & Smith, 1973 added); sensitive-period logic preserved for teratogens in general
+- Genie paragraph: "Their cases illustrate..." → "Cases such as Genie are consistent with the sensitive-period account, but they are not clean tests" (trauma/malnutrition/unstable care entangled)
+- Core knowledge: "not learned from experience" → "not constructed from scratch by general learning alone; initial biases or representational starting points that experience tunes and elaborates"; "number" → "quantity tracking" for Wynn
+- AI/ZPD: assimilation/accommodation framing removed; replaced with "performance completed but learner's schema remains unchanged; effective scaffolding should leave student more capable after support removed"
+- DEV-013 internal artifact removed from parenting section
+- "deep evolutionary roots rather than being constructed through years of socialization" → "consistent with the idea that at least some forms of prosocial motivation have deep evolutionary roots and do not have to be constructed entirely through explicit teaching"
+- Retrieval prompt: "why do they need each other?" → "why is neither a complete account of moral behavior by itself?"
+- In-text citations added where claims were under-cited: Baumrind (1966) for parenting styles intro; Huttenlocher (1979) for synaptogenesis; van IJzendoorn & Kroonenberg (1988) for cross-cultural attachment caution; Casey et al. (2008) added alongside Blakemore & Choudhury (2006) for adolescent brain; Horn & Cattell (1967) for fluid/crystallized; Charles & Carstensen (2010) for well-being finding
+- Key Terms added: Emerging adulthood, Fluid intelligence, Crystallized intelligence, Identity formation, Moral motivation, Moral reasoning
+- References added: Baumrind (1966), Casey et al. (2008), Charles & Carstensen (2010), Horn & Cattell (1967), Huttenlocher (1979), Jones & Smith (1973), van IJzendoorn & Kroonenberg (1988); Lucca et al. author order corrected (Yuen 2nd, not Capelier-Mourguy); all entries alphabetized
+
+**Decisions made:**
+- Huttenlocher (1979) is the frontal cortex synaptogenesis paper; used for the general synaptogenesis claim. A more general review (e.g., Huttenlocher 1990) would also work but this is the primary empirical paper
+- Casey et al. (2008) added as dual-systems reference alongside Blakemore — two independent labs' framing of the same adolescent-brain asymmetry is worth showing
+- Kept the "Think About It" Erikson box intact — the intimacy/identity sequence point it invokes still works even with the table gone
+- Charles & Carstensen (2010) is the review paper that best captures the emotional-aging / well-being finding
+
+**Files modified this session:**
+- `source/chapters/ch09-lifespan-development.md` — v0.2 → v0.3 (~16 targeted edits)
+- `HANDOFF.md` — Key Files table updated; this entry prepended
+
+---
+
+### 2026-06-24 — Session 28
+
+**What happened:** Continued Ch11 revision. Session 23 had written v0.1; this session applied the full v0.2 revision plan agreed with Jon (via GPT-mediated review), then built the two top-ranked figures and updated the activity backlog and HANDOFF.
+
+**v0.2 changes applied to `ch11-personality.md`:**
+- 5-section structure (split v0.1's combined person-situation + assessment section into dedicated Sections 4 and 5)
+- Chapter map table added (4 rows: psychoanalytic / humanistic / trait / interactionist)
+- Big Five converted from prose to a 5-row table (trait × high × low × misconception × example)
+- Do Not Confuse: trait dimension vs. personality type (MBTI critique)
+- HEXACO sentence added with Ashton & Lee (2007)
+- Mischel r=.30 reframed with both Funder & Ozer (1983) and Funder & Ozer (2019) — single-act limitation distinct from "traits don't matter"
+- Rogers therapy evidence narrowed: Flückiger alliance meta-analysis removed, replaced by Farber, Suzuki, & Lynch (2018) positive-regard meta-analysis (g=.28) and Elliott, Bohart, Watson, & Murphy (2018) empathy meta-analysis (r=.28)
+- Freud citations corrected: 1923 for structural model; 1933/1964 (New Introductory Lectures, Lecture XXXI) for "seething cauldron / chaos" quote
+- Electra complex attribution corrected: Jung coined the term; Freud retained "Oedipus complex" for both sexes; female development in this stage was contested even within psychoanalytic theory
+- Recovered-memory caveat added to Freud evaluation
+- Rogers worked example added (student with conditions of worth)
+- AI Connection: Rao et al. (2023) replaced by Jiang et al. (2024) PersonaLLM (Findings of NAACL 2024, pp. 2162–2185) — LLMs assigned Big Five personas completing personality inventories; caveat added that this is assigned not spontaneous personality, and that LLM "personality" is prompt-sensitive
+- Rorschach balanced with Mihura et al. (2013) — validity for some variables, Wood et al. (2003) caution on others
+- MMPI narrowed to "clinical personality assessment instruments"
+- 4 Do Not Confuse panels; 5 Stop & Retrieve prompts; personality assessment table; class-attendance aggregation example
+- Body word count: ~3,750 (inside 3,500–5,000 target); 24 references all verified
+
+**Figures built:**
+- `fig11-1-trait-signal-aggregation.png` — side-by-side scatter plots showing r≈.29 (single behavioral act) vs. r≈.72 (aggregated across 20 situations), illustrating the noise/signal distinction in trait prediction
+- `fig11-2-person-situation-grid.png` — grouped bar chart showing helping behavior across low/medium/high conscientiousness under weak vs. strong situation; range is ~4.7 pts in weak situations vs. ~0.8 pts in strong situations
+- Both saved to `docs/images/ch11/` at 180 dpi; figure references wired into chapter markdown at the aggregation example and weak/strong situation paragraphs
+
+**Activity logged:**
+- `docs/teaching/activity-ideas.md`: "Situational Press on AI Personality" (Ch11 section, Status: Draftable) — give same model 3 different system prompts, observe behavioral change, rate Big Five per version, discuss what self-concept would require
+
+**Decisions made:**
+- Chatbot-prompt personality exercise stays in activity layer only; not inline in chapter body
+- Only top 2 figures built now; remaining 6 from Jon's ranked inventory deferred to book-wide figure pass
+- PER-003 (Psychosexual stages) flagged for Jon's call — absent from all instructor iterations; kept brief in v0.2
+
+**Files created/modified this session:**
+- `source/chapters/ch11-personality.md` — v0.1 → v0.2 (full rewrite, 393 lines, 3,750 body words, 24 references, 2 figures wired)
+- `docs/images/ch11/fig11-1-trait-signal-aggregation.png` — new
+- `docs/images/ch11/fig11-2-person-situation-grid.png` — new
+- `docs/teaching/activity-ideas.md` — Ch11 section added
+- `HANDOFF.md` — Status, Key Files updated; this entry added
+
+---
+
+### 2026-06-24 — Session 27
+
+**What happened:** Jon said "Chapter 13 draft." Read HANDOFF.md per standing instruction; confirmed Chapter 13 (Stress & Health) is next per Next Up item 1. Confirmed filename from `docs/index.html` (`docs/chapters/13-stress-health.html`). Ch13 has **no entries in `concept_lineage_revised.csv`** — noted in HANDOFF and confirmed this session. Treated the entire chapter as needing Noba/open-access sourcing. Fetched and read Noba module "The Healthy Life" (Hooker & Pressman, 2026) in full — covers biopsychosocial model, stress and health (GAS, PNI, Cohen cold-virus studies), coping (problem/emotion-focused), control/self-efficacy, social relationships, dispositions and emotions (Type A/B, positive affect), and stress management. Independently verified all 11 primary citations via web search before inclusion. Added Langer & Rodin (1976) to References when programmatic cross-check found it cited in body but missing from the reference list; removed Cohen & Herbert (1996) when cross-check found it in References but not cited in body. Body word count ~5,254 — over the 3,500–5,000 target, flagged rather than cut (same precedent as Chs 3, 6, 7; this chapter spans stress physiology through coping/health promotion and required the extra length). No concepts to grep against concept_lineage_revised.csv — used the Noba module's learning objectives as the structural skeleton instead, supplemented by primary literature. No spec §12 AI touchpoint exists for Stress & Health in the old-numbered pipeline spec (that spec's Ch13 = Psych Disorders); developed an original AI Connection from within the chapter's own content — the appraisal gap: stress-detection AI can measure SAM/HPA activation via physiological signals but cannot do secondary appraisal (whether the person has resources to cope), because secondary appraisal requires embodied goals, a coping history, and stakes in the outcome. Scanned `voice_profile_merged.csv`: orchid brain/cortisol framing (58 hits, perennial) and Sapolsky reference (15 hits, perennial) are the primary voice anchors — both used. Orchid/Dandelion (Boyce & Ellis 2005) appears in Section 3; Sapolsky's zebra-vs-human framing anchors the Misconception Opener and the acute/chronic Do Not Confuse table.
+
+**Decisions made:**
+- No spec AI touchpoint for this chapter — developed one from within the chapter's own content (appraisal gap / stress detection AI). Flagged for Jon's call whether to keep, trim, or cut it.
+- Laudenslager et al. (1983) cited as a secondary citation "as reviewed in Sapolsky, 2004" — not added to References (standard secondary-citation practice); Sapolsky (2004) is the citable primary source for this claim.
+- Langer & Rodin (1976) added to References after programmatic cross-check identified it as an in-text orphan.
+- Taylor et al. (2000) tend-and-befriend included — consistent with Jon's evolutionary/comparative framing; flagged in text as derived from primarily female mammalian data.
+- Holmes & Rahe (1967) mentioned briefly for historical context (life-events quantification) but not given a full walkthrough — it's a methodological starting point, not a landmark finding.
+- Body word count ~5,254 flagged as over target. Possible trim: the control/self-efficacy subsection could be compressed; the orchid/dandelion subsection could be shortened. Jon's call.
+- No demo placeholder — no existing demo in the psych101 inventory covers stress physiology, coping, or PNI. Flagged as a gap.
+
+**Files created/modified this session:**
+- `source/chapters/ch13-stress-health.md` — new, full first draft (v0.1), ~5,254 body words, 20 references, all verified
+- `HANDOFF.md` — Status, Next Up, Key Files updated; this entry added
+
+---
+
+### 2026-06-23 — Session 26
+
+**What happened:** Applied Jon's 8-point review of ch10-social-psychology.md (v0.2 → v0.3).
+
+**Corrections applied:**
+- **Jones & Harris (1967)**: Replaced Ross, Greene, & House (1977) in the FAE paragraph — that paper is the false-consensus effect, not the constrained-essay paradigm. Updated study description to match actual Jones & Harris stimulus (pro/anti-Castro essays, not "a controversial policy"). Dropped Ross et al. from References.
+- **Janis/Challenger**: Reframed. Janis (1982) developed groupthink through Bay of Pigs and Vietnam. Challenger (1986) was post-publication; now attributed to "later researchers" applying the framework.
+- **Manning et al. (2007)**: Added citation to Genovese debunking paragraph (*American Psychologist*, 62(6), 555–562). Previously flagged the inaccuracy without citing the paper that established it.
+- **Contact hypothesis**: Softened "All four conditions matter" to "facilitating rather than strictly required," noting meta-analytic literature. Review question 5 changed from "must be present" to "especially likely to reduce prejudice."
+- **Aggression biology**: Replaced over-compressed testosterone/serotonin/amygdala claims with "modulate rather than cause" framing, consistent with Ch3's voice. Added cross-reference to Ch3.
+- **AI Connection renames**: "The Fundamental Attribution Error → Anthropomorphism" → "Attribution → Anthropomorphism"; "Conformity → AI as a Confident Consensus of One" → "Informational Social Influence → AI as a Confident Consensus of One."
+- **Sycophancy paragraph**: Replaced confident "inherit a systematic bias" claim with hedged "can develop response patterns… because agreeable responses are often rewarded by raters."
+- **References**: Added Jones & Harris (1967) and Manning et al. (2007); removed Ross et al. (1977).
+
+**Files modified:**
+- `source/chapters/ch10-social-psychology.md` — v0.2 → v0.3
+- `HANDOFF.md` — this entry prepended
+
+---
+
+### 2026-06-23 — Session 26
+
+**What happened:** Jon said "Chapter 12 draft." Read HANDOFF.md per standing instruction; confirmed Chapter 12 (Motivation & Emotion) is next. Confirmed title/filename from `docs/index.html` (`docs/chapters/12-motivation-emotion.html`). Pulled all 8 MOT-* concepts from `concept_lineage_revised.csv`. Scanned `voice_profile_merged.csv` for Motivation-Emotion-Stress-tagged entries: Self-determination theory (113 hits, perennial — strongest voice entry for this chapter), intrinsic motivation framing (25 hits, perennial), Sapolsky reference (15 hits, perennial — dopamine/goal-directed behavior, cross-ref to Ch. 6), orchid brain/cortisol framing (58 hits, perennial — Neuroscience-Biology/Motivation-Emotion-Stress, appropriate for stress section). One concept flagged `book-adoption`: MOT-004 (Theories of emotion — James-Lange/Cannon-Bard/Schachter). Noba pages returned empty (client-side rendered, same issue as Ch. 4 and Ch. 6). Used OpenStax Psychology 1e (CC BY 4.0, LibreTexts mirror, read in full) plus verified primary sources (James 1884, Cannon 1927, Schachter & Singer 1962, Lazarus 1991). Deviation flagged in chapter header per Ch. 4/Ch. 6 precedent. Independently verified all 36 citations via web search before inclusion. Post-draft catch: Barrett (2017) and Strack (2016) were cited in body text but initially missing from References — corrected before finalizing. Programmatic concept check: all 8/8 MOT-* concepts confirmed present by grep. Citation cross-check: all in-text keys match References entries in both directions, no orphans.
+
+**Architecture:** 4 sections — (1) Theories of motivation (drive reduction/Hull, Yerkes-Dodson arousal theory, Maslow's hierarchy with evaluation/cross-cultural caveats, hunger as biological motivation case study with hypothalamus/ghrelin/leptin/set-point); (2) Intrinsic motivation and self-determination (intrinsic vs. extrinsic, overjustification effect with Deci 1971 and Lepper et al. 1973, SDT with autonomy/competence/relatedness needs, applications in education/work/health); (3) Understanding emotion (three components, emotion vs. mood Do Not Confuse panel, four theories — James-Lange/Cannon-Bard/Schachter-Singer/Lazarus, Classic Study Walkthrough: Schachter & Singer 1962 with honest replication caveats, Ekman basic emotions with cross-cultural evidence and Barrett 2017 critique, facial feedback hypothesis with Strack 1988 and Wagenmakers 2016 replication failure, cultural display rules); (4) Stress (Selye's GAS three stages, fight-or-flight/Cannon, tend-and-befriend Taylor et al. 2000 with sex-difference caveats, Lazarus primary/secondary appraisal, problem-focused vs. emotion-focused coping, forward pointer to Ch. 13). Misconception Opener: "emotions interfere with rational thinking" — anchored in Damásio somatic marker hypothesis (Damásio et al. 1994 from Ch. 3, now carrying forward the decision-making-without-affect angle not used there). AI Connection: three-part medium-depth — AI "motivation" as metaphor without underlying drive/need substrate; AI emotion-language without arousal component (Schachter-Singer structure makes the gap visible); somatic marker as the clearest breakdown point (AI has no bodily tagging of good/bad outcomes). Body word count: ~4,800 (estimated from 9,200 total file words minus key terms, review questions, references, metadata). No figures yet. Not yet converted to HTML.
+
+**Decisions made:**
+- The spec's chapter-by-chapter AI touchpoint table does not include a dedicated entry for Motivation & Emotion (the table's numbering uses the old superseded order). Built the AI Connection from the spec's inline commentary on Ch. 6 ("operant conditioning requires a behaving organism with internal states — motivation, drive reduction, affect; RLHF updates model weights; nothing is trying to get rewarded") extended into the three-component emotion framework.
+- Schachter-Singer replication failure is included with honest framing: Marshall & Zimbardo (1979) and Maslach (1979) failures described; misattribution-of-arousal supported by other paradigms (Dutton & Aron 1974). Consistent with Jon's "never overstate" instruction.
+- Facial feedback hypothesis: Wagenmakers et al. (2016) 17-lab RRR failure is the lead finding; Strack (2016) commentary and Noah et al. (2018) modified replication noted. Conclusion: effect may exist but is smaller and more context-dependent than the 1988 study suggested. Stated with appropriate uncertainty.
+- Ekman basic emotions: cross-cultural recognition data presented as real; Barrett (2017) forced-choice critique and Mesquita (2001) cultural variation included. Did not dismiss Ekman; calibrated the claim.
+- Tend-and-befriend: Taylor et al.'s model included with explicit caveats (males also show affiliative responses; sex difference is statistical not categorical; oxytocin is one mechanism among several; socialization also contributes). Consistent with Jon's caution about overstating sex-difference claims.
+- Maslow: evaluation included (weak empirical support for strict hierarchy; Wahba & Bridwell 1976; cross-cultural challenges; Triandis 1994). Presented as a useful organizing metaphor, not a law.
+- Hunger section: included as a biological motivation case study drawing on the Neuroscience course's hunger-regulation lecture (identified in voice profile). Not a tracked MOT-* concept but logically necessary to illustrate biological motivation beyond drive reduction theory alone; flagged for Jon's call whether to keep or trim.
+- No demo placeholder — no existing demo in the `psych101_awesome-sauce` inventory covers motivation or emotion. Flagged in the backlog comments.
+- Three activity ideas logged in chapter comments (do not build now): appraisal diary, emotion theory prediction task, SDT needs audit.
+- Three demo ideas logged: Yerkes-Dodson interactive slider, appraisal simulator (demand × coping → stress level), emotion labeling ambiguity demo for Schachter-Singer.
+
+**Files created/modified this session:**
+- `source/chapters/ch12-motivation-emotion.md` — new, full first draft (v0.1), ~9,200 total file words, ~4,800 estimated body words, 8/8 MOT-* concepts, 36 references
+- `HANDOFF.md` — Status, Next Up, Key Files updated; this entry added
+
+---
+
+### 2026-06-23 — Session 25
+
+**What happened:** Ch10 Noba correction pass. Jon provided PDF copies of the two Noba modules used for book-adoption concepts (Forsyth "The Psychology of Groups"; Poepsel & Schroeder "Helping and Prosocial Behavior"). Read both PDFs against the existing ch10-social-psychology.md draft. Identified four discrepancies and corrected all of them.
+
+**Corrections applied:**
+
+- **Batson citation:** (1991) *The Altruism Question* (Erlbaum) → (2011) *Altruism in Humans* (Oxford University Press) — different book, different edition, different publisher. Updated in body text and References.
+- **Term:** "empathy-altruism hypothesis" → "empathy-altruism model" throughout (5 occurrences: LO #7, altruism section body, Chapter Summary, Key Terms, Review Q8 rationale) — Noba uses "model," not "hypothesis."
+- **Janis citation:** (1972) *Victims of Groupthink* → (1982) *Groupthink: Psychological Studies of Policy Decisions and Fiascoes* (2nd ed.) — Forsyth module cites the revised edition. Added the Forsyth definition quote directly (p. 9) to the groupthink paragraph.
+- **Bystander mechanism:** Added cost-benefit analysis as a third bystander mechanism (alongside pluralistic ignorance and diffusion of responsibility) per Poepsel & Schroeder's explicit Noba framing.
+- **References cleanup:** Added Poepsel & Schroeder as a separate References entry; updated both Noba entries from "Diener Education Fund" to "DEF Publishers" per PDF cover page.
+- **Chapter header note:** Updated to reflect that Noba content was verified directly against PDF copies (not search-result summaries), with date 2026-06-23.
+
+**Files modified:**
+- `source/chapters/ch10-social-psychology.md` — v0.1 → v0.2 (Noba-verified)
+- `HANDOFF.md` — Ch10 status entry updated; this entry prepended
+
+---
+
+### 2026-06-23 — Session 24
+
+**What happened:** Context had compacted mid-session during Ch9 revision work. Resumed at the citation-verification step. Verified all four pending citations via web search: Wynn (1992) *Nature, 358*, 749–750 ✓; Spelke (2000) *American Psychologist, 55*(11), 1233–1243 ✓; Warneken & Tomasello (2006) *Science, 311*, 1301–1303 ✓; Lucca et al. (2025) *Developmental Science, 28*(1), e13581 — confirmed journal is *Developmental Science*, NOT *Psychological Science* (caught and corrected before writing). Then applied all approved v0.2 revisions to `ch09-lifespan-development.md` in a single pass.
+
+**Changes in v0.2:**
+- Added core knowledge paragraph after the Piaget critique section (Wynn 1992 baby math + Spelke 2000 core knowledge framework) — answers "what do infants bring?" before moving to Vygotsky
+- Disorganized attachment note revised: now acknowledges "additional patterns beyond these three" rather than presenting the fourth as equally primary to the three covered
+- Replaced full Kohlberg section (~400 words, 6 paragraphs) with a two-paragraph "Moral motivation and moral reasoning" section: (a) Warneken & Tomasello 2006 spontaneous helping as anchor for early prosocial motivation + honest Hamlin 2007 / Lucca et al. 2025 replication-failure note; (b) Kohlberg gist (one paragraph, no stage memorization, limitations noted: all-male sample, justice bias, weak full-hierarchy support)
+- Replaced Erikson table + framing (~350 words) with a two-paragraph gist: lifespan development doesn't stop at adolescence (Eriksonian insight); empirical support for full 8-stage sequence is modest; identity formation is the piece that holds up best and is the chapter's real Erikson payload
+- Review Question 8 updated to match new moral motivation framing (Warneken & Tomasello + Kohlberg limitations) rather than Kohlberg stage levels
+- Key Term added: **Core knowledge** (Spelke)
+- References: added Hamlin et al. 2007, Lucca et al. 2025, Spelke 2000, Warneken & Tomasello 2006, Wynn 1992; removed Gilligan 1982 (no longer cited in text)
+- Chapter Summary updated to reflect all changes
+- Version comment updated to 0.2
+
+**Decisions made:**
+- Hamlin (2007) retained but explicitly flagged as a finding with replication problems (Lucca et al. 2025, 37 labs, n=1,018, 49% = chance). Not presented as settled.
+- Gilligan removed from references and text — Kohlberg paragraph no longer mentions her (the care-ethics critique is accurate but footnote-level for the gist treatment Jon wanted)
+- Erikson table gone entirely. The "Think About It" box referencing the intimacy stage was retained — it still works given the identity/intimacy sequence point survives in the surrounding text
+- Lucca et al. 2025: published in *Developmental Science* (caught a near-error: early drafting used "Psychological Science")
+
+**Files modified this session:**
+- `source/chapters/ch09-lifespan-development.md` — revised v0.1 → v0.2 (8 targeted edits)
+- `HANDOFF.md` — Key Files table updated; this entry prepended
+
+---
+
+### 2026-06-23 — Session 23
+
+**What happened:** Jon said "Chapter 11 Draft." Read HANDOFF.md per standing instruction; confirmed Chapter 11 (Personality) is next. Confirmed title/filename from `docs/index.html` (`docs/chapters/11-personality.html`). Pulled all 7 PER-* concepts from `concept_lineage_revised.csv` — all `canonical-common-knowledge` with `wording_change_driver` = `publisher-template-change` or `n/a`; none flagged `book-adoption` or `needs-verification`, so drafted directly from course materials and verified primary literature (same pattern as Ch3 and Ch5). Scanned `voice_profile_merged.csv` for Personality-tagged entries: voice-profile coverage for this chapter is sparse. The "Who Am I?" framing (13 hits, recurring) is the only directly Personality-tagged Gen-Psych entry; the Phineas Gage narrative (82 hits, perennial) is tagged Neuroscience-Biology and already anchored in Ch3. Did not force either into the chapter structure since the chapter's natural organizing thread — the tension between trait consistency and situational variability — doesn't need an external signature analogy the way S&P needed Tesla Vision or Ch6 needed Sapolsky. Independently verified 18 citations via web search before inclusion (Freud 1923, A. Freud 1936, Freud 1905, Rogers 1961, Baumeister et al. 1998, Allport 1937, Goldberg 1990, Costa & McCrae 1992, McCrae & Costa 1997, Jang et al. 1996, Mischel 1968, Darley & Batson 1973, Mischel & Shoda 1995, Flückiger et al. 2018, Hathaway & McKinley 1943, Murray 1943, Rorschach 1921, Wood et al. 2003). One citation flagged in References as needing verification: Rao et al. (2023) on AI personality profiles is an arXiv preprint noted inline. Programmatic cross-check: all 7 PER-* concepts confirmed present; all in-text citation keys match References entries in both directions, no orphans. Body word count ~3,324 — below the 3,500–5,000 target; flagged, not padded, since this chapter's 7 tracked concepts are fewer than any other chapter.
+
+**Decisions made:**
+- PER-003 (Psychosexual stages) is `absent` across all instructor-material iterations but covered briefly as canonical Freudian theory — flagged for Jon's call whether to condense or cut.
+- PER-008 (Person-situation debate) was only `publisher-supplied` in King-3e but included because it is the chapter's central empirical challenge and the AI Connection hook per spec §12.
+- Darley & Batson (1973) Good Samaritan study used as the Classic Study Walkthrough for the person-situation debate — not redundant with Ch10, which covered Darley & Latané (1968) bystander effect (different study, different authors, different mechanism).
+- AI Connection: "AI has personalities" → maps to Big Five trait consistency → breaks down at self-concept: AI trait-like tendencies are parameter-space regularities, not identity-motivated consistency. Uses the Mischel person-situation framework to show AI behavior is even more situationally variable than human behavior, not less.
+- Body word count ~3,324 flagged as below target. Possible additions if Jon wants more: social-cognitive theory of personality (Bandura's reciprocal determinism) or expanded biological-bases of personality — neither is a tracked PER-* concept, so both are Jon's call.
+- No demo placeholder — no existing demo covers personality testing or the person-situation debate; flagged as a gap.
+
+**Files created/modified this session:**
+- `source/chapters/ch11-personality.md` — new, full first draft (v0.1), 328 lines, ~3,324 body words, 7/7 PER-* concepts, 19 references (1 flagged for verification)
+- `HANDOFF.md` — Status, Next Up, Key Files updated; this entry added
+
+---
+
+### 2026-06-23 — Session 23
+
+**What happened:** Two tasks this session. (1) Jon requested creation of a structured activity/assignment design backlog for the textbook. Created `docs/teaching/activity-ideas.md` (new file, new folder) with: a preamble explaining the backlog's purpose, a status-label legend (Idea / Draftable / Built / Needs revision / Parked), a reusable entry template, and four Chapter 8 entries — the built AI-bias activity (cross-referencing the existing `assignments/ch08-ai-bias-activity.html`) plus three Draftable entries: K-Word Availability Demo, Linda Problem Nested-Set Mini-Exercise, and Wason Selection Task Rule-Testing Demo.
+
+**Decisions made:**
+- The backlog lives at `docs/teaching/activity-ideas.md`, a new subfolder of `docs/` rather than `source/` — teaching support material that will eventually become public-facing belongs in `docs/`.
+- The three parallel teaching supports (figures / activities / chatbot prompts) are the stated organizing principle in the file header.
+- New ideas for future chapters get appended under their chapter heading without polishing into full assignment pages unless explicitly requested.
+
+(2) Jon asked whether the repo had enough documentation for Codex to do HTML conversion in batch. Confirmed no build script exists — conversion is entirely implicit in Ch1's HTML. Created `pipeline/html-conversion-spec.md` to make the pattern explicit: full sidebar template, all CSS class names with variant table, every structural pattern (callout, review question, key terms, figures, demos, references), common errors table, and a validation checklist. The spec is intended to be handed to Codex alongside a completed markdown draft so it can produce consistent output without needing to infer class names from Ch1.
+
+**Files created/modified this session:**
+- `docs/teaching/activity-ideas.md` — new, activity backlog with Ch8 entries
+- `pipeline/html-conversion-spec.md` — new, HTML conversion reference for Codex
+- `HANDOFF.md` — Key Files table updated; this entry added
 
 ---
 

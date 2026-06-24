@@ -1,0 +1,1 @@
+Figures generated with Python/matplotlib as original diagrams. SVG files are editable; PNG files are 16:9 slide-ready. No external image assets were used.

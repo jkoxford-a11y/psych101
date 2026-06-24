@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="947.721094pt" height="520.56pt" viewBox="0 0 947.721094 520.56" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-06-24T16:13:18.541418</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.8, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 520.56 
+L 947.721094 520.56 
+L 947.721094 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 36.388547 504.7704 
+L 911.332547 504.7704 
+L 911.332547 15.7896 
+L 36.388547 15.7896 
+L 36.388547 504.7704 
+z
+" clip-path="url(#pa7cd516412)" style="fill: none; stroke: #d0d0d0; stroke-linejoin: miter"/>
+   </g>
+   <g id="line2d_1">
+    <path d="M 134.596547 419.9472 
+L 134.596547 100.6128 
+" clip-path="url(#pa7cd516412)" style="fill: none; stroke: #111111; stroke-width: 2.5; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_2">
+    <path d="M 188.164547 200.4048 
+L 813.124547 200.4048 
+" clip-path="url(#pa7cd516412)" style="fill: none; stroke-dasharray: 10,10; stroke-dashoffset: 0; stroke: #111111; stroke-width: 2"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 304.228547 419.9472 
+L 447.076547 419.9472 
+L 447.076547 100.6128 
+L 304.228547 100.6128 
+z
+" clip-path="url(#pa7cd516412)" style="fill: #ffffff; stroke: #111111; stroke-width: 1.3; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 580.996547 419.9472 
+L 723.844547 419.9472 
+L 723.844547 100.6128 
+L 580.996547 100.6128 
+z
+" clip-path="url(#pa7cd516412)" style="fill: #ffffff; stroke: #111111; stroke-width: 1.3; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 304.228547 419.9472 
+L 447.076547 419.9472 
+L 447.076547 260.28 
+L 304.228547 260.28 
+z
+" clip-path="url(#pa7cd516412)" style="fill: #d8dce0"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 580.996547 419.9472 
+L 723.844547 419.9472 
+L 723.844547 345.1032 
+L 580.996547 345.1032 
+z
+" clip-path="url(#pa7cd516412)" style="fill: #d8dce0"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 304.228547 260.28 
+L 447.076547 260.28 
+L 447.076547 200.4048 
+L 304.228547 200.4048 
+z
+" clip-path="url(#pa7cd516412)" style="fill: #bdd7ee"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 580.996547 345.1032 
+L 723.844547 345.1032 
+L 723.844547 215.3736 
+L 580.996547 215.3736 
+z
+" clip-path="url(#pa7cd516412)" style="fill: #bdd7ee"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 304.228547 200.4048 
+L 447.076547 200.4048 
+L 447.076547 130.5504 
+L 304.228547 130.5504 
+z
+" clip-path="url(#pa7cd516412)" style="fill: #d95f5f; opacity: 0.78"/>
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 26px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #111111" x="473.860547" y="55.503938" transform="rotate(-0 473.860547 55.503938)">Diathesis–Stress Threshold Model</text>
+   </g>
+   <g id="patch_10">
+    <path d="M 134.596547 98.613793 
+Q 134.596547 85.64547 134.596547 75.472232 
+" clip-path="url(#pa7cd516412)" style="fill: none; stroke: #111111; stroke-width: 2.5; stroke-linecap: round"/>
+    <path d="M 130.996547 82.672232 
+L 134.596547 75.472232 
+L 138.196547 82.672232 
+z
+" clip-path="url(#pa7cd516412)" style="fill: #111111; stroke: #111111; stroke-width: 2.5; stroke-linecap: round"/>
+   </g>
+   <g id="text_2">
+    <text style="font-weight: 700; font-size: 15px; font-family: 'DejaVu Sans'" transform="translate(70.401469 86.315709)">High</text>
+    <text style="font-weight: 700; font-size: 15px; font-family: 'DejaVu Sans'" transform="translate(64.195219 103.229616)">stress</text>
+   </g>
+   <g id="text_3">
+    <text style="font-weight: 700; font-size: 15px; font-family: 'DejaVu Sans'" transform="translate(73.095609 415.687903)">Low</text>
+    <text style="font-weight: 700; font-size: 15px; font-family: 'DejaVu Sans'" transform="translate(64.195219 432.484622)">stress</text>
+   </g>
+   <g id="text_4">
+    <text style="font-weight: 700; font-size: 15px; font-family: 'DejaVu Sans'" transform="translate(830.980547 196.145503)">Disorder</text>
+    <text style="font-weight: 700; font-size: 15px; font-family: 'DejaVu Sans'" transform="translate(830.980547 212.942222)">threshold</text>
+   </g>
+   <g id="text_5">
+    <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'" transform="translate(353.490125 75.694384)">High</text>
+    <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'" transform="translate(314.973172 94.863478)">vulnerability</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #444444" x="375.652547" y="343.42485" transform="rotate(-0 375.652547 343.42485)">vulnerability</text>
+   </g>
+   <g id="line2d_3">
+    <path d="M 466.718147 260.28 
+L 466.718147 130.5504 
+" clip-path="url(#pa7cd516412)" style="fill: none; stroke: #0f6468; stroke-width: 2.2; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_4">
+    <path d="M 457.790147 260.28 
+L 475.646147 260.28 
+" clip-path="url(#pa7cd516412)" style="fill: none; stroke: #0f6468; stroke-width: 2.2; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_5">
+    <path d="M 457.790147 130.5504 
+L 475.646147 130.5504 
+" clip-path="url(#pa7cd516412)" style="fill: none; stroke: #0f6468; stroke-width: 2.2; stroke-linecap: square"/>
+   </g>
+   <g id="text_7">
+    <text style="font-weight: 700; font-size: 12.5px; font-family: 'DejaVu Sans'; fill: #0f6468" transform="translate(493.502147 191.865786)">same</text>
+    <text style="font-weight: 700; font-size: 12.5px; font-family: 'DejaVu Sans'; fill: #0f6468" transform="translate(493.502147 205.863052)">stressor</text>
+   </g>
+   <g id="text_8">
+    <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'" transform="translate(633.311484 75.760791)">Low</text>
+    <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'" transform="translate(591.741172 94.797072)">vulnerability</text>
+   </g>
+   <g id="text_9">
+    <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #444444" x="652.420547" y="385.83645" transform="rotate(-0 652.420547 385.83645)">vulnerability</text>
+   </g>
+   <g id="line2d_6">
+    <path d="M 743.486147 345.1032 
+L 743.486147 215.3736 
+" clip-path="url(#pa7cd516412)" style="fill: none; stroke: #0f6468; stroke-width: 2.2; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_7">
+    <path d="M 734.558147 345.1032 
+L 752.414147 345.1032 
+" clip-path="url(#pa7cd516412)" style="fill: none; stroke: #0f6468; stroke-width: 2.2; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_8">
+    <path d="M 734.558147 215.3736 
+L 752.414147 215.3736 
+" clip-path="url(#pa7cd516412)" style="fill: none; stroke: #0f6468; stroke-width: 2.2; stroke-linecap: square"/>
+   </g>
+   <g id="text_10">
+    <text style="font-weight: 700; font-size: 12.5px; font-family: 'DejaVu Sans'; fill: #0f6468" transform="translate(770.270147 276.688986)">same</text>
+    <text style="font-weight: 700; font-size: 12.5px; font-family: 'DejaVu Sans'; fill: #0f6468" transform="translate(770.270147 290.686252)">stressor</text>
+   </g>
+   <g id="text_11">
+    <text style="font-weight: 700; font-size: 15px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #b63d3d" x="464.932547" y="154.647863" transform="rotate(-0 464.932547 154.647863)">Disorder</text>
+   </g>
+   <g id="patch_11">
+    <path d="M 454.189957 161.333101 
+Q 429.218242 172.963074 406.070842 183.743415 
+" clip-path="url(#pa7cd516412)" style="fill: none; stroke: #b63d3d; stroke-width: 1.8; stroke-linecap: round"/>
+    <path d="M 411.435332 183.89255 
+L 406.070842 183.743415 
+L 409.408845 179.541304 
+z
+" clip-path="url(#pa7cd516412)" style="fill: #b63d3d; stroke: #b63d3d; stroke-width: 1.8; stroke-linecap: round"/>
+   </g>
+   <g id="text_12">
+    <text style="font-size: 15px; font-family: 'DejaVu Sans'; text-anchor: middle" x="473.860547" y="464.003063" transform="rotate(-0 473.860547 464.003063)">The same stressor can cross the threshold when vulnerability is high, but remain below threshold when vulnerability is low.</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pa7cd516412">
+   <rect x="27.460547" y="10.8" width="892.8" height="498.96"/>
+  </clipPath>
+ </defs>
+</svg>

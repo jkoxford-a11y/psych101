@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080" role="img">
+<rect width="1920" height="1080" fill="white"/>
+<text x="960" y="115" font-family="Arial, sans-serif" font-size="50" font-weight="700" fill="#1F2937" text-anchor="middle" dominant-baseline="middle">What a p-value does - and does not - tell you</text>
+<rect x="160" y="280" width="810" height="525" rx="34" fill="#DBEAFE" stroke="#2563EB" stroke-width="5"/>
+<text x="565" y="370" font-family="Arial, sans-serif" font-size="38" font-weight="700" fill="#2563EB" text-anchor="middle" dominant-baseline="middle">A p-value tells you:</text>
+<text x="565" y="526.3" font-family="Arial, sans-serif" font-size="38" font-weight="400" fill="#1F2937" text-anchor="middle" dominant-baseline="middle">How unusual the observed data</text>
+<text x="565" y="570.0" font-family="Arial, sans-serif" font-size="38" font-weight="400" fill="#1F2937" text-anchor="middle" dominant-baseline="middle">are under the null model,</text>
+<text x="565" y="613.6999999999999" font-family="Arial, sans-serif" font-size="38" font-weight="400" fill="#1F2937" text-anchor="middle" dominant-baseline="middle">assuming the model is appropriate.</text>
+<rect x="1060" y="280" width="700" height="525" rx="34" fill="white" stroke="#E5E7EB" stroke-width="5"/>
+<text x="1410" y="350" font-family="Arial, sans-serif" font-size="38" font-weight="700" fill="#DC2626" text-anchor="middle" dominant-baseline="middle">A p-value is not:</text>
+<rect x="1130" y="432" width="565" height="76" rx="22" fill="#FEE2E2" stroke="#DC2626" stroke-width="3"/>
+<text x="1170" y="470" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#DC2626" text-anchor="middle" dominant-baseline="middle">X</text>
+<text x="1210" y="470" font-family="Arial, sans-serif" font-size="27" font-weight="400" fill="#1F2937" text-anchor="start" dominant-baseline="middle">Probability the hypothesis is true</text>
+<rect x="1130" y="532" width="565" height="76" rx="22" fill="#FEE2E2" stroke="#DC2626" stroke-width="3"/>
+<text x="1170" y="570" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#DC2626" text-anchor="middle" dominant-baseline="middle">X</text>
+<text x="1210" y="570" font-family="Arial, sans-serif" font-size="27" font-weight="400" fill="#1F2937" text-anchor="start" dominant-baseline="middle">Effect size</text>
+<rect x="1130" y="632" width="565" height="76" rx="22" fill="#FEE2E2" stroke="#DC2626" stroke-width="3"/>
+<text x="1170" y="670" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#DC2626" text-anchor="middle" dominant-baseline="middle">X</text>
+<text x="1210" y="670" font-family="Arial, sans-serif" font-size="27" font-weight="400" fill="#1F2937" text-anchor="start" dominant-baseline="middle">Practical importance</text>
+<rect x="1130" y="732" width="565" height="76" rx="22" fill="#FEE2E2" stroke="#DC2626" stroke-width="3"/>
+<text x="1170" y="770" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#DC2626" text-anchor="middle" dominant-baseline="middle">X</text>
+<text x="1210" y="770" font-family="Arial, sans-serif" font-size="27" font-weight="400" fill="#1F2937" text-anchor="start" dominant-baseline="middle">Whether the finding will replicate</text>
+<text x="960" y="980" font-family="Arial, sans-serif" font-size="29" font-weight="400" fill="#64748B" text-anchor="middle" dominant-baseline="middle">Statistical evidence is one part of interpretation, not the whole conclusion.</text>
+</svg>
