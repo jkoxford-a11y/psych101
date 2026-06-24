@@ -309,3 +309,45 @@ Notes:
 - Keep in assignment layer only — do NOT put chatbot prompt inline in the chapter body.
 - The goal is not to let AI diagnose the emotion — it's to use AI-generated vocabulary as a starting point for student self-reflection.
 - Discuss afterward: what would the AI need to do this well that it does not have? (Body state, interoception, allostatic context.)
+
+---
+
+## Chapter 13 — Psychological Disorders & Therapy
+
+*Needs activity ideas — only rough sketches logged so far (from Session 30 chapter drafting).*
+
+### Diagnostic Criteria Case Vignettes
+Status: Draftable
+Type: in-class small-group activity
+Estimated time: 20–30 minutes
+Core concepts: 3D criteria (distress, dysfunction, deviance), DSM-5-TR, diathesis-stress model, biopsychosocial model
+Learning goal: Students apply the 3D criteria to ambiguous vignettes and practice distinguishing disorder from normal-range distress.
+Activity sketch:
+- Present 4–5 brief case vignettes that vary in how clearly they meet the 3D criteria.
+- Small groups classify each: meets criteria / borderline / does not meet criteria, with justification.
+- Debrief: highlight cases where reasonable people disagree and why.
+Student deliverable: classification worksheet with written justifications.
+Materials needed: vignette handout.
+Possible output: PDF worksheet in docs/assignments/.
+Notes:
+- Vignettes should be fictional and constructed to avoid reinforcing stigma.
+- Connect to Rosenhan (1973) and the Temerlin (1968) labeling-effects discussion.
+
+---
+
+### Therapy Matching Exercise
+Status: Draftable
+Type: individual or small-group activity
+Estimated time: 20 minutes
+Core concepts: CBT, DBT, psychodynamic therapy, humanistic/client-centered therapy, pharmacotherapy, Dodo Bird Verdict, therapeutic alliance
+Learning goal: Students match evidence-based treatment approaches to presenting problems, then evaluate why the match is imperfect.
+Activity sketch:
+- Present 5–6 presenting problems (e.g., panic disorder, MDD, BPD, schizophrenia, PTSD, grief).
+- Students match each to a primary evidence-based treatment and briefly justify.
+- Debrief: discuss the Dodo Bird Verdict (all bona fide therapies show similar outcomes overall) and what therapeutic alliance means across approaches.
+Student deliverable: matching worksheet with justifications.
+Materials needed: treatment-type reference card (could be the chapter's treatment comparison table).
+Possible output: PDF worksheet in docs/assignments/.
+Notes:
+- Do not ask students to say which therapy is "best" — the Dodo Bird framing is the point.
+- Keep pharmacotherapy options in the mix; students often default to "medication" without justification.
