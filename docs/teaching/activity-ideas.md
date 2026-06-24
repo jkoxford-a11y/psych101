@@ -32,6 +32,91 @@ Notes:
 
 ---
 
+## Prologue — How to Actually Learn This Stuff
+
+### First-Week Retrieval Audit
+Status: Draftable
+Type: in-class demo / opener
+Estimated time: 10 minutes
+Core concepts: testing effect, metacognition, fluency illusion, familiarity vs. recall
+Learning goal: Students experience the gap between feeling like they know something and being able to retrieve it — the core problem the prologue is designed to fix.
+Activity sketch:
+1. Display a list of 12 common psychology terms (no definitions — terms only): e.g., cognitive dissonance, classical conditioning, confirmation bias, working memory, etc.
+2. Students rate confidence: "How well do you know this?" (1 = never heard of it, 5 = could explain it right now).
+3. Students close their notes/devices and write a one-sentence definition for each term they rated 4 or 5.
+4. Compare predicted confidence vs. actual recall accuracy.
+5. Debrief: the gap IS the fluency illusion. Recognition feels like knowing; recall reveals what you actually have.
+Student deliverable: confidence rating sheet + attempted definitions (self-scored).
+Materials needed: term list (slide or handout); no device needed after step 1.
+Possible output: handout in docs/assignments/ or a slide routine; also works as a verbal opener with a poll.
+Notes:
+- Best run the very first day or first week before any content is introduced.
+- Works as a concrete setup for the prologue message: "Familiarity is not the same as learning."
+- Keep the tone non-threatening — the point is that everyone overestimates, not that students are bad.
+
+---
+
+### AI Fluency Demonstration
+Status: Draftable
+Type: in-class demo / AI literacy exercise
+Estimated time: 15 minutes
+Core concepts: fluency illusion, desirable difficulty, retrieval practice, metacognition
+Learning goal: Students observe that AI explanations feel clear and accessible — and that this ease is precisely what makes them weak as learning tools when not paired with retrieval effort.
+Activity sketch:
+1. Instructor displays an AI-generated explanation of a concept (e.g., confirmation bias) — well-written, clear, confident prose.
+2. Students read it and rate: "How well do you understand this now?" (1–5).
+3. Students close the text and immediately write down what they remember and can explain.
+4. Students compare their rated confidence to what they actually recalled.
+5. Debrief: fluent input ≠ durable encoding. AI prose is highly fluent. That's a risk, not a feature.
+Student deliverable: confidence rating + recall attempt.
+Materials needed: pre-written AI explanation (displayed on screen); no AI access required for students.
+Possible output: slide routine; could become a standalone handout.
+Notes:
+- Instructor should prepare the AI text in advance — do NOT use live generation, as latency disrupts pacing.
+- The concept used as the example doesn't matter much; what matters is that students feel the confidence-recall gap.
+- Connects directly to prologue Section 8 (Working With AI) and the AI scaffolding vs. replacement framework.
+
+---
+
+### Study Habit Behavior Chain
+Status: Idea
+Type: short individual reflection / take-home
+Estimated time: 5–10 minutes (in class or homework)
+Core concepts: metacognition, self-regulated learning, avoidance behavior
+Learning goal: Students map one real procrastination or avoidance pattern as a behavior chain to identify where the chain breaks and what an effective interruption point would be.
+Activity sketch:
+1. Students identify one recurring study avoidance behavior (e.g., "I open my notes, feel overwhelmed, open my phone").
+2. Students map the sequence: trigger → thought → feeling → behavior → short-term outcome → long-term cost.
+3. Students identify one specific intervention point: where in the chain could a different behavior fit?
+Student deliverable: one completed behavior chain diagram + one sentence naming the intervention point.
+Materials needed: simple worksheet template.
+Possible output: PDF handout in docs/assignments/ or a journal prompt.
+Notes:
+- Frame as observation, not self-criticism. Students do not need to share personal content.
+- Pairs with the Study Contract (docs/assignments/prologue-study-contract.docx — to be built during final activities pass).
+
+---
+
+### Exam Wrapper — First Quiz Version
+Status: Draftable
+Type: post-assessment reflection
+Estimated time: 10 minutes (immediately after first quiz)
+Core concepts: metacognition, testing effect, encoding failure vs. retrieval failure, spacing
+Learning goal: Students distinguish among the three failure modes (didn't learn it, learned it but forgot it, knew it but couldn't retrieve under pressure) so they can choose corrective strategies rather than just "study more."
+Activity sketch:
+1. Students receive their first quiz/exam results.
+2. For each missed item, students classify the failure: (a) I never encoded this; (b) I learned it but didn't space my review; (c) I knew it but couldn't retrieve under test conditions.
+3. Students identify one concrete behavioral change per failure type.
+Student deliverable: completed exam wrapper (3-column table: missed item / failure type / corrective strategy).
+Materials needed: simple 3-column worksheet; quiz result.
+Possible output: PDF handout in docs/assignments/.
+Notes:
+- Assign the same day as the first quiz so the metacognitive moment is fresh.
+- Connects to prologue Section 4 (Retrieval) and Section 7 (Metacognition).
+- Do not reveal answers before students complete the wrapper — the attempt at diagnosis is the point.
+
+---
+
 ## Chapter 8 — Thinking, Language & Intelligence
 
 ### Using AI Without Outsourcing Your Thinking
