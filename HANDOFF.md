@@ -6,7 +6,7 @@
 
 ## Current Status
 
-**Phase:** Chapter 1 (History & Approaches) live, fully reviewed. Chapter 2 (Research Methods & Statistics) at v0.3, HTML on hold pending Jon’s images. Chapters 3–13 are markdown-complete (various versions), all awaiting Jon’s line-by-line review. **All 13 chapters now have at least a v0.1 markdown draft. Prologue is now also a v0.1 draft.**
+**Phase:** Chapter 1 (History & Approaches) live, fully reviewed. Chapter 2 (Research Methods & Statistics) at v0.3, HTML on hold pending Jon’s images. Chapters 3–13 are markdown-complete (various versions), all awaiting Jon’s line-by-line review. **All 13 chapters now have at least a v0.1 markdown draft. Prologue HTML (`docs/chapters/prologue.html`) now has interactive components wired in (Session 38).**
 
 **Image organization complete (Session 32):** All viable images from the "Potential Images for Chapters Holding Space" folder have been moved to their chapter `docs/images/` folders. Full visuals inventory saved at `source/visuals-inventory.md`.
 
@@ -26,7 +26,7 @@
 - `source/chapters/ch01-history-approaches.md` and `docs/chapters/01-history-approaches.html` — Chapter 1 complete, reviewed line-by-line by Jon twice now (initial review in Session 3, a second detailed editorial pass in Session 14), pushed live, both files kept in sync. Session 14 added a Humanistic psychology row to the history table, a Section 3 perspectives table, a new Review Question 13, and Milgram (1963) as the Misconception Opener's anchor citation — see Session Log for the full list.
 - `source/chapters/ch02-research-methods.md` — Chapter 2 now at v0.3 (~4,140 body words, inside the 3,500–5,000 target). All 13 RM-* concepts from `concept_lineage_revised.csv` covered. RM-012 (volunteer/sampling bias) sourced from Noba (Chance & Rossman; Mehl) per the `needs-verification` copyright rule, not course materials — now also paired with Rosenthal & Rosnow (1975), a real classic citation, since Noba alone was judged too thin to carry the claim's weight on its own. 5 sections now (was 4) — split the old combined "experimental method" section into Section 3 (Experiments and Causal Claims) and Section 4 (Bias Controls and Research Ethics) to reduce cognitive load, per feedback evaluated and agreed with. Added: an evidence-ladder "Common student mistake" column, a depression-questionnaire reliability/validity example, a p-value "Common Misreadings" box, an ethics-safeguards table, and a softened/cited childhood-books example (Sikora, Evans, & Kelley, 2019, replacing an overstated causal dismissal). Still contains one open placeholder: the Section 5 data-interpretation demo references the existing "solid-carnival" repo but needs Jon to supply the actual embed URL.
 - `docs/images/ch02/` — now 6 figures (was 4). Added `fig2-5-sampling-vs-assignment` (population→sample→experimental/control flowchart contrasting what random sampling vs. random assignment each support) and `fig2-6-reliability-validity` (2×2 dartboard/target diagram — the classic reliable/valid quadrant illustration, built with real scattered data, not just illustrative dots). Original four (`fig2-1` through `fig2-4`) unchanged. Same build approach as before: matplotlib for data-driven figures, hand-coded SVG + cairosvg for diagrams, `docs/css/style.css` palette, `.svg` + ~2,400px `.png` for both web and slide use.
-- `source/chapters/ch03-neuroscience-biological-bases.md` — Chapter 3 draft, v0.2 with figures, not yet reviewed by Jon. All 19 BIO-* concepts covered. None of them carry `book-adoption` or `needs-verification` flags (all are `instructor-original`/`canonical-common-knowledge`), so the whole chapter was drafted directly from course materials and verified primary literature — no Noba/APA IPI substitution required, a first for this project. Every citation (Beyerstein 1999, Damasio et al. 1994, Harlow 1848, Hart 1988, Herculano-Houzel 2009, Hodgkin & Huxley 1952, Insel & Young 2001, LeDoux 2012, Nielsen et al. 2013, Raichle & Gusnard 2002, Sapolsky 2004, Schultz 1998, Scoville & Milner 1957, Sperry 1968, Williams & Herrup 1988) was independently verified via web search before inclusion, not pulled from memory. Architecture: 4 sections — neuron structure/action potential (with an AI Connection on artificial vs. biological "neurons"), neurotransmitters/hormones (with a Do Not Confuse panel on neurotransmitter vs. hormone, and a short added paragraph on agonists/antagonists to anchor Figure 3.5 — not in the original BIO-* list, flag to Jon as optional), the autonomic nervous system/stress response, and brain structures (with a Phineas Gage classic-study walkthrough and a Do Not Confuse panel on the left-brain/right-brain personality myth vs. real split-brain findings). Misconception Opener is the "10% of the brain" myth. Body word count is ~5,800 words (grew from figure-adjacent prose and the agonist/antagonist addition), further over the 3,500–5,000 target — flagged to Jon, not cut. Three open demo placeholders still need live embed URLs from Jon: action-potential simulator, neurotransmitter mixing board, and oxytocin/vasopressin demo. Not yet converted to HTML.
+- `source/chapters/ch03-neuroscience-biological-bases.md` — Chapter 3 at **v0.3** (Session 37 revision). Reviewed by Jon; structural revision applied. All 19 BIO-* concepts covered. No Noba/APA IPI substitution required (all `instructor-original`/`canonical-common-knowledge`). **Key v0.3 changes:** agonist/antagonist section removed; neurotransmitter section restructured around excitation/inhibition principle + neuromodulation concept, with dopamine as the single worked example (Schultz 1998 prediction-error framing; ADHD medication connection added); serotonin/GABA/oxytocin catalog removed; brain imaging reduced to fMRI only (interpretive lesson: activation blobs show relative blood flow differences, not causation); "Brain Regions Are Specialized, but Behavior Is Networked" paragraph added before Gage section; Harlow (1868) added to References for personality-change account (distinct from Harlow 1848 acute case); Hart (1988) and Insel & Young (2001) removed from References; AI Connection compressed; figures renumbered in captions only (3.6→3.5, 3.7→3.6, 3.9→3.7; filenames unchanged). Two open demo placeholders remain: action-potential simulator and dopamine/neurotransmitter mixing board (oxytocin/vasopressin demo placeholder removed with that section). **HTML converted**: `docs/chapters/03-neuroscience.html` created this session.
 - `docs/images/ch03/` — 9 figures (3.1–3.9, sequential in reading order) plus a `README_captions_alt_text_attribution.md` with captions/alt text/attribution for all nine. Six (3.1, 3.2, 3.4, 3.6, 3.8, 3.9) are original diagrams Jon built with ChatGPT specifically for this chapter — clean, accurate, and captioned almost exactly to match the chapter's own framing (e.g., the split-brain figure's caption independently echoes the Do Not Confuse panel's wording). Three (3.3, 3.5, 3.7) are rendered directly from slides in Jon's "6 Chapter 2 Biology.pptx" lecture deck — confirmed his own original infographics (distinct dark-card design language, no Worth/Myers credit line), not publisher material. See Session 8 log entry for the full image-provenance audit of that pptx (68 slides reviewed; roughly a third carried explicit "Myers/DeWall, Psychology, 13e, © 2021 Worth Publishers" credits and were excluded, a few more were excluded for matching that same publisher illustration style without a visible credit, and a few YouTube-screenshot and named-stock-photo slides were excluded as third-party content unrelated to the textbook-publisher copyright rule but still not Jon's own).
 - `source/chapters/ch04-sensation-perception.md` — Chapter 4, now at **v0.3** (Session 11: 6 figures added, Other Senses sidebar added). Previously: new this session (v0.1), content-complete; then v0.2 revised from external GPT review; not yet reviewed by Jon. All 15 SP-* concepts covered (verified by direct text search, not just by eye). Copyright handling was materially different from Ch1–3: most SP-* concepts are flagged `book-adoption` (SP-004 and SP-014 additionally `needs-verification`), so most of the chapter was drafted from two Noba Project modules — "Sensation and Perception" (Privitera) and "Vision" (Buetti & Lleras) — fetched and read in full this session, not pulled from memory or secondhand summaries. Four concepts (SP-007 Gestalt principles, SP-012 place vs. frequency theory of pitch, SP-013 gate control theory of pain, SP-015 perceptual constancy) have no dedicated Noba or APA IPI module to borrow from; for these, drafted original prose grounded in verified primary literature (Wertheimer 1912; Melzack & Wall 1965; von Békésy 1960) instead, and flagged this explicitly in the chapter's own header note as a deviation from the stated copyright-handling process — the safeguard against copying Wade/King/Myers wording is intact either way, since none of this prose originates from course materials. Architecture: 4 sections — psychophysics foundations (thresholds, Weber's Law, signal detection theory, sensory adaptation, with a Do Not Confuse panel on sensation vs. perception), vision (retina/rods/cones, depth cues, trichromatic/opponent-process color theory, with a Hubel & Wiesel classic-study walkthrough on feature detectors), perceptual organization (top-down vs. bottom-up processing, Gestalt principles, perceptual constancy, with a full AI Connection extending the Tesla Vision signature analogy to CNNs and predictive coding), and hearing/body senses (cochlea, place vs. frequency theory with a Do Not Confuse panel, gate control theory of pain). Misconception Opener is "your eyes work like a camera." Body word count came in at ~4,600 words — the first chapter in this project to land inside the 3,500–5,000 target on the first draft rather than over or under it. Voice profile coverage was rich for this chapter (20 S&P-course-tagged entries, including 23 Tesla-analogy hits) — used the Tesla Vision framing as the chapter's central recurring analogy, plus the ambiguous-figure ("duck/rabbit") demonstration and the lens-accommodation hands-on exercise from the voice profile's mnemonic entry. Did not build a section on selective attention/dichotic listening despite 17 voice-profile hits on that demo, because attention is not a tracked SP-* concept in the extraction — added a one-sentence forward-pointer to Chapter 5 instead rather than forcing in untracked content (see Decisions below). Three open demo placeholders need live embed URLs or builds from Jon: a signal detection theory simulator (does not exist yet — priority #3 on the demo-gap list), the "motionperception" repo's Heider & Simmons demo, and the "takingaction" repo's size-weight illusion. No figures yet — open question for Jon, same status as Ch1 and Ch3. Not yet converted to HTML.
 - `source/chapters/ch05-states-of-consciousness.md` — Chapter 5 at v0.2 (Sessions 11 + 17), not yet reviewed by Jon. Now 13 CON-* concepts: the original 12 plus CON-013 (Selective attention / inattentional blindness), added at Jon's explicit direction in Session 17 to resolve the Ch4→Ch5 attention promise — a 310-word bridge inserted in Section 1 using inattentional blindness (Simons & Chabris, 1999) as the primary example. Session 17 also applied six precision corrections: (A) parasomnias — NREM arousal parasomnias vs. REM sleep behavior disorder now distinguished; (B) H.M. — corrected to "medial temporal lobe structures including hippocampal region," not hippocampus-only; (C) cannabis — separated from classical hallucinogens into its own paragraph (CB1 vs. 5-HT2A distinction made explicit); (D) opioids — overdose mechanism clarified as brainstem respiratory depression, not GABA, with polydrug-combination risk added; (E) dopamine — "anticipation signal" replaced with reward prediction error framing, Schultz, Dayan, & Montague (1997) replaces Sapolsky n.d. throughout; (F) hidden observer — Hilgard's interpretation now framed as interpretation rather than settled fact. Process C/S practical-intervention paragraph also added: caffeine targets Process S (adenosine), light therapy/melatonin targets Process C — "different tool for different process" framing. Body word count ~4,820 (verified). Two optional additions still flagged for Jon's call: Charles Bonnet syndrome mention in the dreaming section, and meditation paragraph alongside hypnosis — neither is a tracked CON-* concept. No figures yet — priority order now set (5.1 two-process model, 5.2 hypnogram, 5.3 SCN pathway, 5.4 tolerance/withdrawal; 5.5 drug mechanisms and 5.6 dream theories on hold). No demo in inventory covers circadian rhythms, drugs, or hypnosis directly; `psych101_awesome-sauce` "sleep" demo still needs Jon's confirmation for reuse. Not yet converted to HTML.
@@ -108,7 +108,8 @@
 | `01-history-approaches.html` | `docs/chapters/` | Chapter 1 — complete and live |
 | `ch01-history-approaches.md` | `source/chapters/` | Chapter 1 markdown source |
 | `ch02-research-methods.md` | `source/chapters/` | Chapter 2 markdown source — v0.3, 6 figures, HTML on hold |
-| `ch03-neuroscience-biological-bases.md` | `source/chapters/` | Chapter 3 markdown source — v0.2 with figures, awaiting Jon's review |
+| `ch03-neuroscience-biological-bases.md` | `source/chapters/` | Chapter 3 markdown source — v0.3, Jon's structural review applied |
+| `03-neuroscience.html` | `docs/chapters/` | Chapter 3 HTML — complete (Session 37) |
 | `ch04-sensation-perception.md` | `source/chapters/` | Chapter 4 markdown source — v0.3, 6 figures, Other Senses sidebar, awaiting Jon's review |
 | `ch05-states-of-consciousness.md` | `source/chapters/` | Chapter 5 markdown source — v0.2, 13 CON-* concepts (CON-013 added), awaiting Jon's review |
 | `ch06-learning.md` | `source/chapters/` | Chapter 6 markdown source — v0.1, awaiting Jon's review |
@@ -124,6 +125,82 @@
 ---
 
 ## Session Log
+
+---
+
+### 2026-06-25 — Session 38
+
+**What happened:** Added interactive components to `docs/chapters/prologue.html`.
+
+**New files created:**
+- `docs/css/prologue-interactive.css` — styles for all interactive components; inherits CSS variables from style.css
+- `docs/js/prologue-interactive.js` — all component logic; no framework, no backend, no raw answer storage
+
+**Components implemented:**
+1. **Hybrid retrieval prompts** — all 8 Stop & Retrieve callouts converted to two-stage interactive boxes: write answer → rate confidence (Low/Medium/High) → reveal model answer → self-score against 4 criteria → calibration feedback line. Feedback is specific and non-shaming, tied to Section 7 content. Stores only `{promptId, confidence, scored, total, timestamp}` in localStorage — never the student's written text.
+2. **Calibration dashboard** (`#calibration-dashboard`, before Review Questions) — aggregates confidence and self-score across all 8 prompts; shows attempted count, avg accuracy, avg confidence, over/underconfident counts, a cautious interpretation sentence. Clear-data button. Graceful fallback if localStorage unavailable.
+3. **Stepwise MCQs** — two placed in the chapter: one after the recognition/recall/application table in Section 3 (`mcq-recognition-levels`), one in Section 8 before the final Stop & Retrieve (`mcq-ai-use`). 5-second countdown before options appear; explanatory feedback (not just correct/incorrect).
+4. **Spaced retrieval scheduler** — replaces static Study Contract. Quiz date input auto-suggests three sessions (within 24h, midpoint, 1–2 days before). Print / copy plain text / download .ics calendar file with three events titled with student's concept list.
+5. **AI prompt builder** — replaces static single-prompt callout. Three patterns (A: quiz me, B: critique my explanation, C: application scenarios), each with topic input, copy-to-clipboard, accessible status message (no alert()). Teaching note under each explains why the pattern works.
+
+**Phone-presence demo deliberately not implemented** — within-subject design in a browser has confounds severe enough to undermine the chapter's credibility on empirical precision.
+
+**HTML changes to `prologue.html`:**
+- Added `<link>` for `prologue-interactive.css`
+- Added `data-interactive="retrieve"` and `data-prompt-id="..."` to all 8 `callout--stop-retrieve` divs (not the "Core Distinction" box at the top, which has no data attributes and is unchanged)
+- Two MCQ `callout--stop-retrieve` divs inserted (Section 3 after levels table; Section 8 before final Stop & Retrieve)
+- Static Study Contract replaced with `<div id="scheduler-widget">`
+- Static AI prompt callout replaced with `<div id="ai-prompt-builder">`
+- Calibration dashboard div inserted before Review Questions
+- `<script src="js/prologue-interactive.js">` added before `</body>`
+
+**Verification:** All 8 data-prompt-id values in HTML confirmed to match PROMPTS object keys in JS. Both MCQ IDs confirmed to match MCQS object keys. JS syntax check passed (Node --check). CSS brace count balanced (75/75). Script and stylesheet links confirmed in HTML.
+
+**Open items:**
+- Jon's line-by-line review of the interactive components in the browser
+- Confirm localStorage behavior in the LMS environment (Canvas may clear it unpredictably — dashboard is designed to degrade gracefully but students should know data is session-scoped)
+- Demo embed URLs for working memory demo (Section 1 placeholder comment still present)
+
+**Files created/modified this session:**
+- `docs/css/prologue-interactive.css` — new
+- `docs/js/prologue-interactive.js` — new
+- `docs/chapters/prologue.html` — interactive components wired in
+- `HANDOFF.md` — this entry prepended
+
+---
+
+### 2026-06-25 — Session 37
+
+**What happened:** Jon's structural review of Chapter 3 (Neuroscience). Applied full revision plan to markdown (v0.2 → v0.3); converted to HTML.
+
+**v0.3 revision rationale:** Jon wanted deeper coverage of fewer topics rather than broad survey. Drove four structural changes: (1) neurotransmitters treated as a principle (excitation/inhibition → neuromodulation), not a catalog of chemicals with ascribed functions; dopamine retained as the single worked example because Jon teaches prediction error, goal-directed action, operant conditioning, and ADHD meds around it; serotonin/GABA/oxytocin removed; (2) agonist/antagonist section and Fig 3.5 removed from chapter flow; (3) brain imaging reduced from 4-method survey to fMRI only, with interpretive lesson foregrounded; (4) network framing paragraph added ("Brain Regions Are Specialized, but Behavior Is Networked") before Gage section.
+
+**Changes applied to `ch03-neuroscience-biological-bases.md`:**
+- LO2 rewritten to reflect network framing
+- Neurotransmitter section restructured: excitation/inhibition principle → neuromodulation concept → dopamine as worked example (prediction error, Schultz 1998; goal-directed action; ADHD medication connection)
+- Serotonin/GABA/oxytocin paragraphs removed
+- Agonist/antagonist section removed; Fig 3.5 removed from chapter flow (file retained for slides)
+- Sickness behavior/depression paragraph and Hart (1988) citation removed; Insel & Young (2001) removed
+- Brain imaging paragraph replaced: 4-method table → fMRI-focused paragraph; Fig 3.8 removed from chapter flow (file retained)
+- "Brain Regions Are Specialized, but Behavior Is Networked" paragraph added
+- Gage section updated: Harlow (1868) cited for personality-change account; Harlow (1848) retained for acute injury description
+- AI Connection sidebar compressed (~250 → ~150 words)
+- Figure captions renumbered: old 3.6→3.5, old 3.7→3.6, old 3.9→3.7 (filenames unchanged to preserve slide references)
+- Key Terms: removed Agonist, Antagonist, GABA, Oxytocin; added Dopamine, Neuromodulator
+- Review Q4 updated; Chapter Summary updated; Connections table updated
+- References: added Harlow (1868); removed Hart (1988) and Insel & Young (2001)
+- Further Reading: added Harlow (1868); oxytocin/vasopressin demo placeholder removed
+
+**HTML created:** `docs/chapters/03-neuroscience.html` — complete. Matches Ch1 HTML structure exactly: sidebar with Ch3 active, all callout classes, `<details>/<summary>` review questions, `<dl class="key-terms">`, `<div class="further-reading">`, `<div class="references">`. 7 active figures use original filenames (fig3_6_stress_response_fast_slow.png serves as caption Fig 3.5; fig3_7_ans_balance_lecture.jpg as Fig 3.6; fig3_9_split_brain_logic.png as Fig 3.7). Jon confirmed he created the page directly; file also present at the path above.
+
+**Open items remaining for Ch3:**
+- Two demo placeholders still need live embed URLs: action-potential simulator (awesome-sauce_neuroscience repo) and dopamine/neurotransmitter mixing board (neuronew repo)
+- Body word count still ~5,400 after revision — over 3,500–5,000 target; Jon's call whether to trim further
+
+**Files created/modified this session:**
+- `source/chapters/ch03-neuroscience-biological-bases.md` — v0.2 → v0.3
+- `docs/chapters/03-neuroscience.html` — new, complete
+- `HANDOFF.md` — Status, Key Files updated; this entry prepended
 
 ---
 

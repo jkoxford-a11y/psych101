@@ -1,0 +1,563 @@
+/* prologue-interactive.css
+   Interactive component styles for the Psych101 Prologue
+   Companion to prologue-interactive.js
+   Inherits CSS variables from style.css — load after it. */
+
+/* ── Utilities ──────────────────────────────────────────────────────────────── */
+
+.sr-only {
+  position: absolute;
+  width: 1px; height: 1px;
+  padding: 0; margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* ── Shared button base ─────────────────────────────────────────────────────── */
+
+.pi-btn {
+  font-family: var(--font-ui);
+  font-size: 0.875rem;
+  padding: 0.45rem 1rem;
+  border: 1px solid var(--color-accent);
+  border-radius: 4px;
+  background: transparent;
+  color: var(--color-accent);
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+}
+
+.pi-btn:hover {
+  background: var(--color-accent);
+  color: #fff;
+}
+
+.pi-btn:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}
+
+.pi-btn:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+  border-color: var(--color-muted);
+  color: var(--color-muted);
+}
+
+.pi-btn:disabled:hover {
+  background: transparent;
+}
+
+.pi-btn--sm {
+  font-size: 0.8rem;
+  padding: 0.3rem 0.7rem;
+}
+
+.pi-btn--danger {
+  border-color: #dc2626;
+  color: #dc2626;
+}
+
+.pi-btn--danger:hover {
+  background: #dc2626;
+  color: #fff;
+}
+
+/* ── Hybrid Retrieval Prompts ───────────────────────────────────────────────── */
+
+.retrieve-question {
+  margin-bottom: 0.9rem;
+}
+
+.retrieve-label {
+  display: block;
+  font-family: var(--font-ui);
+  font-size: 0.82rem;
+  color: var(--color-muted);
+  margin-bottom: 0.4rem;
+}
+
+.retrieve-textarea {
+  width: 100%;
+  min-height: 100px;
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  padding: 0.6rem 0.8rem;
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
+  background: var(--color-bg);
+  color: var(--color-text);
+  resize: vertical;
+  display: block;
+  margin-bottom: 0.75rem;
+}
+
+.retrieve-textarea:focus {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 1px;
+}
+
+.confidence-fieldset {
+  border: none;
+  padding: 0;
+  margin: 0 0 0.8rem;
+}
+
+.confidence-fieldset legend {
+  font-family: var(--font-ui);
+  font-size: 0.82rem;
+  color: var(--color-muted);
+  margin-bottom: 0.4rem;
+}
+
+.confidence-options {
+  display: flex;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+}
+
+.confidence-option {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-family: var(--font-ui);
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.confidence-option input {
+  cursor: pointer;
+}
+
+.reveal-hint {
+  font-family: var(--font-ui);
+  font-size: 0.8rem;
+  color: var(--color-muted);
+  font-style: italic;
+  margin: 0.5rem 0 0;
+}
+
+.model-answer-block {
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
+  padding: 0.85rem 1rem;
+  margin-bottom: 1rem;
+}
+
+.model-answer-label {
+  font-family: var(--font-ui);
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-muted);
+  margin-bottom: 0.45rem;
+}
+
+.model-answer-text {
+  font-size: 0.95rem;
+  line-height: 1.65;
+  margin: 0;
+}
+
+.criteria-fieldset {
+  border: none;
+  padding: 0;
+  margin: 0 0 0.9rem;
+}
+
+.criteria-fieldset legend {
+  font-family: var(--font-ui);
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: 0.6rem;
+}
+
+.criterion-label {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  margin-bottom: 0.55rem;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  cursor: pointer;
+}
+
+.criterion-check {
+  margin-top: 0.2rem;
+  flex-shrink: 0;
+  cursor: pointer;
+}
+
+.calibration-feedback {
+  font-family: var(--font-ui);
+  font-size: 0.88rem;
+  line-height: 1.6;
+  padding: 0.75rem 0.9rem;
+  background: var(--color-callout-bg);
+  border-left: 3px solid var(--color-accent);
+  border-radius: 0 4px 4px 0;
+  margin-bottom: 0.75rem;
+}
+
+/* ── Calibration Dashboard ──────────────────────────────────────────────────── */
+
+#calibration-dashboard {
+  border: 1px solid var(--color-border);
+  border-radius: 6px;
+  padding: 1.25rem;
+  margin: 2rem 0;
+}
+
+#calibration-dashboard h2 {
+  margin-top: 0;
+}
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.dashboard-stat {
+  background: var(--color-callout-bg);
+  border: 1px solid var(--color-border);
+  border-radius: 6px;
+  padding: 0.65rem 0.85rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.stat-label {
+  font-family: var(--font-ui);
+  font-size: 0.7rem;
+  color: var(--color-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 0.3rem;
+}
+
+.stat-value {
+  font-family: var(--font-ui);
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--color-accent);
+}
+
+.dashboard-interpretation {
+  font-family: var(--font-ui);
+  font-size: 0.88rem;
+  line-height: 1.55;
+  margin-bottom: 0.75rem;
+}
+
+.dashboard-empty {
+  font-family: var(--font-ui);
+  font-size: 0.88rem;
+  color: var(--color-muted);
+  font-style: italic;
+  margin-bottom: 0.75rem;
+}
+
+.dashboard-warning {
+  font-family: var(--font-ui);
+  font-size: 0.82rem;
+  color: #b45309;
+  margin-top: 0.5rem;
+}
+
+/* ── Stepwise MCQs ──────────────────────────────────────────────────────────── */
+
+.mcq-scenario {
+  margin-bottom: 0.6rem;
+}
+
+.mcq-cue {
+  font-family: var(--font-ui);
+  font-size: 0.88rem;
+  color: var(--color-muted);
+  margin-bottom: 0.5rem;
+}
+
+.mcq-countdown {
+  font-family: var(--font-ui);
+  font-size: 0.82rem;
+  color: var(--color-muted);
+  margin-bottom: 0.65rem;
+}
+
+.mcq-options {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 0.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.mcq-option {
+  width: 100%;
+  text-align: left;
+  font-family: var(--font-ui);
+  font-size: 0.9rem;
+  line-height: 1.45;
+  padding: 0.6rem 0.85rem;
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
+  background: var(--color-bg);
+  color: var(--color-text);
+  cursor: pointer;
+  transition: background 0.12s, border-color 0.12s;
+}
+
+.mcq-option:not(:disabled):hover {
+  border-color: var(--color-accent);
+  background: var(--color-accent-light);
+}
+
+.mcq-option:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 1px;
+}
+
+.mcq-option:disabled {
+  cursor: default;
+}
+
+.mcq-option.mcq-correct {
+  border-color: #15803d;
+  background: #f0fdf4;
+  color: #15803d;
+  opacity: 1;
+}
+
+.mcq-option.mcq-incorrect {
+  border-color: #dc2626;
+  background: #fef2f2;
+  color: #dc2626;
+  opacity: 1;
+}
+
+.mcq-option.mcq-show-correct {
+  border-color: #15803d;
+  background: #f0fdf4;
+  color: #15803d;
+  opacity: 1;
+}
+
+.mcq-feedback {
+  font-family: var(--font-ui);
+  font-size: 0.88rem;
+  line-height: 1.55;
+  min-height: 1.5em;
+  padding: 0.4rem 0;
+}
+
+/* ── Spaced Retrieval Scheduler ─────────────────────────────────────────────── */
+
+.scheduler-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  margin: 0.85rem 0;
+}
+
+.field-row {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.field-row label {
+  font-family: var(--font-ui);
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.field-row input[type="date"],
+.field-row input[type="text"],
+.field-row textarea {
+  font-family: var(--font-ui);
+  font-size: 0.9rem;
+  padding: 0.45rem 0.7rem;
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
+  background: var(--color-bg);
+  color: var(--color-text);
+}
+
+.field-row input:focus,
+.field-row textarea:focus {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 1px;
+}
+
+.field-row textarea {
+  resize: vertical;
+}
+
+.sessions-suggested {
+  border: 1px solid var(--color-border);
+  border-radius: 6px;
+  padding: 0.85rem 1rem;
+  background: var(--color-callout-bg);
+}
+
+.sessions-note {
+  font-family: var(--font-ui);
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 0.65rem;
+}
+
+.sessions-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 0.75rem;
+}
+
+.session-slot label {
+  font-family: var(--font-ui);
+  font-size: 0.82rem;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+.session-tip {
+  font-weight: 400;
+  color: var(--color-muted);
+  font-size: 0.78rem;
+}
+
+.session-slot input {
+  font-family: var(--font-ui);
+  font-size: 0.88rem;
+  padding: 0.4rem 0.6rem;
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
+  background: var(--color-bg);
+  color: var(--color-text);
+  width: 100%;
+}
+
+.scheduler-actions {
+  display: flex;
+  gap: 0.65rem;
+  flex-wrap: wrap;
+  margin-top: 0.65rem;
+}
+
+.sched-status {
+  font-family: var(--font-ui);
+  font-size: 0.82rem;
+  color: var(--color-accent);
+  margin-top: 0.4rem;
+  min-height: 1.3em;
+}
+
+/* ── AI Prompt Builder ──────────────────────────────────────────────────────── */
+
+.pattern-card {
+  border: 1px solid var(--color-border);
+  border-radius: 6px;
+  padding: 0.9rem 1rem;
+  margin-bottom: 0.85rem;
+  background: var(--color-bg);
+}
+
+.pattern-card:last-child {
+  margin-bottom: 0;
+}
+
+.pattern-name {
+  font-family: var(--font-ui);
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: var(--color-accent);
+  margin-bottom: 0.4rem;
+}
+
+.pattern-template {
+  font-family: var(--font-ui);
+  font-size: 0.88rem;
+  line-height: 1.55;
+  background: var(--color-callout-bg);
+  border-left: 3px solid var(--color-accent);
+  padding: 0.5rem 0.75rem;
+  border-radius: 0 4px 4px 0;
+  margin-bottom: 0.5rem;
+}
+
+.pattern-note {
+  font-family: var(--font-ui);
+  font-size: 0.82rem;
+  color: var(--color-muted);
+  margin-bottom: 0.7rem;
+}
+
+.pattern-row {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.pattern-topic {
+  flex: 1;
+  min-width: 200px;
+  font-family: var(--font-ui);
+  font-size: 0.88rem;
+  padding: 0.4rem 0.65rem;
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
+  background: var(--color-bg);
+  color: var(--color-text);
+}
+
+.pattern-topic:focus {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 1px;
+}
+
+.copy-status {
+  font-family: var(--font-ui);
+  font-size: 0.8rem;
+  color: #15803d;
+  margin-top: 0.35rem;
+  min-height: 1.2em;
+}
+
+/* ── Print ──────────────────────────────────────────────────────────────────── */
+
+@media print {
+  .retrieve-stage.stage-1 textarea,
+  .retrieve-stage.stage-2,
+  .retrieve-stage.stage-3,
+  .pi-btn,
+  .scheduler-actions,
+  #calibration-dashboard,
+  #ai-prompt-builder .pattern-row,
+  .mcq-countdown,
+  .mcq-options {
+    display: none !important;
+  }
+}
+
+/* ── Reduced motion ─────────────────────────────────────────────────────────── */
+
+@media (prefers-reduced-motion: reduce) {
+  .pi-btn,
+  .mcq-option {
+    transition: none;
+  }
+}
