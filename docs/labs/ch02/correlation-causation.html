@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Correlation vs. Causation Classifier - General Psychology</title>
+  <link rel="stylesheet" href="../../css/style.css" />
+  <link rel="stylesheet" href="../../css/labs.css" />
+</head>
+<body>
+<div class="layout">
+  <aside class="sidebar">
+    <div class="book-title">General Psychology</div>
+    <nav aria-label="Book navigation">
+      <ul>
+        <li><a href="../../index.html">Table of Contents</a></li>
+        <li><a href="../index.html">Learning Labs</a></li>
+        <li><a href="../../prologue.html">0 - Prologue: How to Actually Learn This Stuff</a></li>
+
+        <li class="pillar">Foundations</li>
+        <li><a href="../../chapters/01-history-approaches.html">1 - History &amp; Approaches</a></li>
+        <li><a href="../../chapters/02-research-methods.html">2 - Research Methods &amp; Statistics</a></li>
+
+        <li class="pillar">Biological</li>
+        <li><a href="../../chapters/03-neuroscience.html">3 - Neuroscience &amp; Biological Bases</a></li>
+        <li><a href="../../chapters/04-sensation-perception.html">4 - Sensation &amp; Perception</a></li>
+        <li><a href="../../chapters/05-consciousness.html">5 - States of Consciousness</a></li>
+
+        <li class="pillar">Cognitive</li>
+        <li><a href="../../chapters/06-learning.html">6 - Learning</a></li>
+        <li><a href="../../chapters/07-memory.html">7 - Memory</a></li>
+        <li><a href="../../chapters/08-thinking-language-intelligence.html">8 - Thinking, Language &amp; Intelligence</a></li>
+
+        <li class="pillar">Developmental</li>
+        <li><a href="../../chapters/09-lifespan-development.html">9 - Lifespan Development</a></li>
+
+        <li class="pillar">Social &amp; Personality</li>
+        <li><a href="../../chapters/10-social-psychology.html">10 - Social Psychology</a></li>
+        <li><a href="../../chapters/11-personality.html">11 - Personality</a></li>
+
+        <li class="pillar">Mental &amp; Physical Health</li>
+        <li><a href="../../chapters/12-emotion-stress-coping.html">12 - Emotion, Stress &amp; Coping</a></li>
+        <li><a href="../../chapters/13-disorders-therapy.html">13 - Psychological Disorders &amp; Therapy</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+  <main class="main lab-main">
+    <p class="chapter-meta">Learning Lab - Chapter 2</p>
+    <h1>Correlation vs. Causation Classifier</h1>
+    <hr class="chapter-divider" />
+
+    <p>Each headline below is fictional. First decide whether the headline's evidence can support a causal claim. Then reveal the study design, identify the research-methods problem, and explain your reasoning in one sentence.</p>
+
+    <div class="callout callout--objectives">
+      <div class="callout-title">Accessibility and Privacy</div>
+      <p>This lab is fully local to your browser. It stores your in-progress responses in sessionStorage so a refresh does not immediately erase your work, and it does not collect names, emails, IDs, analytics, or any personally identifying information.</p>
+    </div>
+
+    <section class="lab-panel" aria-labelledby="classifier-heading">
+      <div class="lab-progress" aria-live="polite">
+        <span id="item-counter">Item 1 of 10</span>
+        <span id="progress-status">Prediction not yet committed</span>
+      </div>
+
+      <h2 id="classifier-heading" tabindex="-1">Headline Classifier</h2>
+
+      <article class="classifier-item" id="classifier-item" aria-live="polite">
+        <p class="lab-kicker" id="item-topic">Research headline</p>
+        <h3 id="headline-text"></h3>
+
+        <form id="lab-form" novalidate>
+          <fieldset class="lab-fieldset" id="prediction-fieldset">
+            <legend>Predict and commit: based only on the headline, can the evidence support a causal claim?</legend>
+            <label class="option-row">
+              <input type="radio" name="causalPrediction" value="yes" />
+              <span>Yes, this could support a causal claim.</span>
+            </label>
+            <label class="option-row">
+              <input type="radio" name="causalPrediction" value="no" />
+              <span>No, this should be treated as correlational or uncertain.</span>
+            </label>
+          </fieldset>
+
+          <button class="lab-btn" type="button" id="commit-prediction">Commit prediction</button>
+
+          <section class="observe-panel" id="observe-panel" hidden>
+            <h3>Observe the study design</h3>
+            <p id="study-details"></p>
+
+            <fieldset class="lab-fieldset">
+              <legend>Identify the strongest research-methods classification.</legend>
+              <label class="option-row">
+                <input type="radio" name="problemType" value="experiment" />
+                <span>True experiment: random assignment supports a causal claim.</span>
+              </label>
+              <label class="option-row">
+                <input type="radio" name="problemType" value="correlation" />
+                <span>Correlation only: variables moved together, but no causal test was done.</span>
+              </label>
+              <label class="option-row">
+                <input type="radio" name="problemType" value="directionality" />
+                <span>Directionality problem: cause and effect could be reversed.</span>
+              </label>
+              <label class="option-row">
+                <input type="radio" name="problemType" value="third-variable" />
+                <span>Third-variable problem: another factor may explain both variables.</span>
+              </label>
+              <label class="option-row">
+                <input type="radio" name="problemType" value="both" />
+                <span>Both directionality and third-variable problems.</span>
+              </label>
+            </fieldset>
+
+            <label class="text-label" for="student-explanation">Explain your classification in one sentence.</label>
+            <textarea id="student-explanation" name="studentExplanation" rows="4" placeholder="Example: This is correlational because..." required></textarea>
+
+            <button class="lab-btn" type="button" id="check-answer">Check answer</button>
+          </section>
+        </form>
+
+        <section class="feedback-panel" id="feedback-panel" hidden tabindex="-1" aria-live="polite">
+          <h3 id="feedback-heading"></h3>
+          <p id="feedback-text"></p>
+          <p id="model-explanation"></p>
+          <div class="lab-actions">
+            <button class="lab-btn" type="button" id="next-item">Next headline</button>
+          </div>
+        </section>
+      </article>
+    </section>
+
+    <section class="lab-panel" id="summary-panel" hidden aria-labelledby="summary-heading">
+      <h2 id="summary-heading">Summary and Transfer</h2>
+      <p id="summary-score"></p>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Headline</th>
+              <th>Your prediction</th>
+              <th>Your classification</th>
+              <th>Best classification</th>
+            </tr>
+          </thead>
+          <tbody id="summary-table-body"></tbody>
+        </table>
+      </div>
+
+      <label class="text-label" for="transfer-response">Choose one headline and describe a study design that would get closer to establishing causation.</label>
+      <textarea id="transfer-response" rows="5"></textarea>
+      <div class="lab-actions">
+        <button class="lab-btn" type="button" id="save-transfer">Save transfer response locally</button>
+        <button class="lab-btn lab-btn--secondary" type="button" id="restart-lab">Restart lab</button>
+      </div>
+      <p class="save-status" id="transfer-status" aria-live="polite"></p>
+    </section>
+
+    <section class="callout callout--think-about-it">
+      <div class="callout-title">Instructor Note</div>
+      <p>Use this lab as a 10-15 minute in-class pair activity. Students work in pairs, classify the headlines, choose two contested cases, and bring those cases to the debrief. Use the disagreements to distinguish causal language, directionality, third variables, and true random assignment.</p>
+    </section>
+  </main>
+</div>
+<script src="../../js/nav.js"></script>
+<script src="../../js/labs-correlation-causation.js"></script>
+</body>
+</html>
