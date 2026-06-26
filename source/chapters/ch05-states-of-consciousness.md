@@ -4,9 +4,9 @@
 > Word count target: 3,500–5,000 body words (v0.2 verified ~4,820 — Section 1 through end of Section 4, per established Body definition)
 > Copyright note: all 13 CON-* concepts now in `concept_lineage_revised.csv` are flagged `instructor-original`/`canonical-common-knowledge`. CON-013 (Selective attention / inattentional blindness) added Session 12 at Jon's direction. No `book-adoption` or `needs-verification` flags — drafted from course materials and verified literature, no Noba/APA IPI substitution required.
 > Resolved: Ch4 attention gap. CON-13 added to CSV and a 250–350-word bridge inserted in Section 1 (inattentional blindness as primary example). Three jobs: (1) repair Ch4 promise, (2) explain perception-without-conscious-report, (3) introduce attention as gateway into awareness. Does not sprawl into a full attention chapter.
-> Two optional additions, flagged for Jon's review (same pattern as Ch3's agonist/antagonist paragraph): (1) a brief mention of Charles Bonnet syndrome in Section 2 to illustrate that the cortex generates a perceptual model whether or not it's currently sensory-driven — strengthens the dreaming discussion but isn't a tracked concept; (2) a short paragraph on meditation in Section 4, alongside hypnosis, grounded in real voice-profile material (the in-class focused-attention demo, the mind-wandering statistic) but also not a tracked CON-* concept.
+> Optional addition flagged for Jon's review: a brief mention of Charles Bonnet syndrome in Section 2 to illustrate that the cortex generates a perceptual model whether or not it's currently sensory-driven — strengthens the dreaming discussion but isn't a tracked concept.
 > Figures: none yet — open question for Jon, same status as Ch1, Ch3, and Ch4.
-> Demos: no existing demo in the inventory covers circadian rhythms, drugs, or hypnosis directly. The `psych101_awesome-sauce` repo (currently used for the Prologue) lists a "sleep" demo among its existing modules — flagging this as a possible cross-link or embed for Section 2's sleep material; need Jon to confirm whether that demo is prologue-exclusive or fair to reuse here. None of these are listed among the priority demo-builds in `pipeline/chapter-spec.md` §5, so no urgency implied, just noting the gap.
+> Demos: no existing demo in the inventory covers circadian rhythms or drugs directly. The `psych101_awesome-sauce` repo (currently used for the Prologue) lists a "sleep" demo among its existing modules — flagging this as a possible cross-link or embed for Section 2's sleep material; need Jon to confirm whether that demo is prologue-exclusive or fair to reuse here. None of these are listed among the priority demo-builds in `pipeline/chapter-spec.md` §5, so no urgency implied, just noting the gap.
 
 ---
 
@@ -18,7 +18,7 @@ It certainly feels that way. Right now you can report what you are thinking abou
 
 A useful way to put this, borrowed from how this course has always framed it: in everyday life, you mostly function like an automatic camera, with a manual, conscious override available when you need it. An automatic camera handles focus, exposure, and white balance on its own, continuously, without anyone deciding each setting — but a photographer can always switch to manual and take deliberate control of any one of those settings when the automatic defaults are not good enough for the shot. Your brain runs the overwhelming majority of its business the same way: on automatic, with consciousness available as a manual override for the relatively rare situations — a novel problem, an unexpected danger, a decision with real stakes — where automatic processing is not good enough. The feeling that you are aware of "most of what is happening" is itself a kind of automatic-camera illusion: you are aware of whatever currently has your attention, and it does not feel like anything is missing, because the missing parts are, by definition, not the parts you are aware of.
 
-**Consciousness**, then, is best defined not as a single on/off light but as your subjective awareness of internal and external stimuli — and that awareness comes in degrees, not just two settings. William James (1890) captured this with his famous description of consciousness as a *stream*: not a series of separate, static snapshots, but a continuously flowing, ever-changing process, personal to the individual experiencing it. This chapter follows that stream as it moves through several genuinely different states: the daily rise and fall of the sleep-wake cycle, the distinct architecture of sleep itself and the dreams that occur within it, the chemical alteration of consciousness by psychoactive drugs, and the deliberately induced altered states of hypnosis. Across all of them, the same basic question recurs: how much of what is happening in this person's mind, right now, is automatic, and how much is under conscious, manual control?
+**Consciousness**, then, is best defined not as a single on/off light but as your subjective awareness of internal and external stimuli — and that awareness comes in degrees, not just two settings. William James (1890) captured this with his famous description of consciousness as a *stream*: not a series of separate, static snapshots, but a continuously flowing, ever-changing process, personal to the individual experiencing it. This chapter follows that stream as it moves through several genuinely different states: the daily rise and fall of the sleep-wake cycle, the distinct architecture of sleep itself and the dreams that occur within it, the chemical alteration of consciousness by psychoactive drugs, and the concrete, measurable consequences that follow when the sleep process is cut short. Across all of them, the same basic question recurs: how much of what is happening in this person's mind, right now, is automatic, and how much is under conscious, manual control?
 
 ---
 
@@ -37,7 +37,7 @@ By the end of this chapter, you should be able to:
 3. Identify the stages of sleep by their distinct EEG signatures, and evaluate at least two non-exclusive explanations for why sleep evolved in the first place.
 4. Compare activation-synthesis theory and threat-simulation theory as explanations for dreaming, and explain sleep's role in memory consolidation.
 5. Classify a psychoactive drug as a depressant, stimulant, or hallucinogen based on its primary neurotransmitter mechanism, and distinguish tolerance from withdrawal in a specific case.
-6. Evaluate dissociation theory and social-cognitive theory as competing explanations for hypnosis, using the "hidden observer" finding as a case study (APA IPI Theme 1: psychological science relies on evidence and revises itself as that evidence accumulates).
+6. Explain how sleep deprivation impairs prefrontal regulation of the amygdala, and describe at least two additional documented consequences of sleep loss — metabolic, immune, or otherwise — and what each reveals about the function sleep is maintaining.
 7. Apply the evolutionary perspective to explain why consciousness and sleep vary across species and individuals rather than working identically for everyone, everywhere, all the time.
 
 ---
@@ -79,6 +79,8 @@ Before 1953, sleep was widely treated as a single, roughly uniform state — the
 The discovery launched **polysomnography** — the simultaneous recording of brain activity (EEG), eye movement (EOG), and muscle activity (EMG) during sleep — as the standard tool for studying it, and that tool revealed sleep's full architecture. **Non-REM (NREM) sleep** has three stages of progressively deeper sleep. NREM 1 is a brief transitional stage, marked by slowing brain waves and sometimes a sudden muscle twitch (a hypnic jerk) as the body settles. NREM 2 is characterized by distinctive bursts called sleep spindles and K-complexes, and makes up the largest share of total sleep time. NREM 3, often called slow-wave sleep, shows large, slow delta waves and is the deepest stage — the hardest stage from which to be awakened, and typically the stage from which NREM arousal parasomnias — sleepwalking and night terrors — emerge, most often in the first half of the night when slow-wave sleep predominates. This is why ordinary sleepwalking is not best understood as acting out a dream: it arises from deep NREM sleep, not from the dreaming state. Dreaming is concentrated in REM sleep, not NREM 3, and REM sleep comes with **REM atonia**, a near-total paralysis of the body's voluntary muscles that ordinarily prevents a vividly dreaming person's body from moving at all. A full night cycles through these stages roughly every 90 minutes, with REM periods growing progressively longer across the night, which is why a person woken in the early morning is far more likely to report a vivid dream than someone woken at midnight.
 
 Why does any of this happen at all? No single theory of sleep's function fully explains it, and the leading accounts are complementary rather than competing. The restorative account holds that sleep allows the body and brain to repair and replenish — clearing metabolic waste products, restoring depleted energy stores, and supporting immune function. The evolutionary-adaptive account points out that sleep timing in most species lines up closely with when that species would otherwise be least able to do anything useful or safe — a strategy that conserves energy and reduces a sleeping animal's exposure to predators or hazards during hours it could not productively exploit anyway (which also predicts, correctly, that prey species tend to sleep less and more lightly than well-protected predator species). And a substantial and growing body of evidence supports a memory-consolidation account: sleep, and especially the interplay between slow-wave sleep and REM sleep, actively reorganizes and strengthens recently formed memories, helping transfer them from a temporary hippocampal trace toward more stable, distributed cortical storage (Diekelmann & Born, 2010). These three accounts are not actually in competition; a brain shutting down most input, conserving energy, and using the resulting downtime to do memory housekeeping are entirely compatible descriptions of the same nightly process, viewed from different angles.
+
+The restorative account gained its most concrete mechanistic support in 2013 with the identification of the **glymphatic system** (Xie et al., 2013). During deep slow-wave sleep, cerebrospinal fluid is actively pumped through the narrow interstitial spaces between brain cells, flushing out the metabolic waste products that accumulate over a day of neural activity. Among the molecules cleared this way is adenosine — the same molecule whose buildup constitutes the "sleep pressure" of Process S described in Section 1 — which means that the relief from sleepiness following a full night of deep sleep is not simply the result of time passing, but of the brain having physically cleared the chemical record of that day's wakefulness. This clearance mechanism operates significantly less efficiently while the brain is awake and active, so the cleaning cannot happen on the go. A brain that routinely skips or shortens deep sleep is not only failing to consolidate memory; it is failing to run the only maintenance cycle it has available.
 
 That memory-consolidation function connects directly to one of the most famous patients in the history of psychology. **H.M. (Henry Molaison)**, who had substantial medial temporal lobe tissue — including the hippocampal region — surgically removed in 1953 to control severe epilepsy, lost the ability to form new long-term declarative memories afterward: he could learn a new motor skill, but the next day had no memory of ever having practiced it (Scoville & Milner, 1957). His case showed that medial temporal lobe structures, including the hippocampal region, are crucial for forming new long-term declarative memories — not through a simple one-structure answer, but through a distributed circuit that sleep research now shows is active in overnight memory replay and consolidation. H.M.'s case gets its full treatment in Chapter 7, where memory itself is the subject; the narrower point to carry forward is that whatever sleep is doing to consolidate memory, it appears to work through the same medial temporal lobe machinery whose loss left H.M. unable to form new explicit memories.
 
@@ -126,21 +128,19 @@ What the breakdown tells us: sleep-dependent consolidation is not just "offline 
 
 ---
 
-## Section 4: Hypnosis and Other Non-Ordinary States
+## Section 4: Sleep Deprivation and Its Consequences
 
-#### Do Not Confuse: Hypnosis vs. Sleep
+If the previous sections established that sleep is a biologically active process — running a waste-clearance cycle, consolidating memory, and synchronizing nearly every bodily system to a 24-hour schedule — then a direct question follows: what happens when that process is cut short? The research literature answers in concrete, measured terms.
 
-Stage hypnosis and popular media have left many people with the impression that hypnosis is a sleep-like trance — the very word comes from the Greek for sleep. It is not. **Hypnosis** is a social interaction in which one person (the hypnotist) suggests changes in another person's sensations, perceptions, thoughts, or behavior, and the hypnotized person experiences those suggestions as involuntary; EEG recordings of hypnotized people look like relaxed wakefulness, not any stage of actual sleep. *Diagnostic question:* a hypnotized participant is asked to lift their arm "as if pulled up by a string," and reports the movement felt involuntary, something that simply happened to them rather than something they did. Is this person asleep? (No — they remain awake and responsive throughout; the felt involuntariness is the central puzzle hypnosis researchers are trying to explain, not evidence of reduced wakefulness.)
+#### Do Not Confuse: Being "Emotional" vs. Having Impaired Prefrontal Regulation
 
-That central puzzle — how a suggestion can produce an experience that feels involuntary to the person having it — has two long-standing, genuinely competing explanations, and the field has not fully settled between them. **Dissociation theory**, most closely associated with Ernest Hilgard, holds that hypnosis produces an actual division, or splitting, of consciousness into separate streams that can operate simultaneously with limited communication between them. The most striking evidence for this view came from Hilgard's "hidden observer" research: hypnotized participants given a suggestion that they would feel no pain from immersing an arm in ice water reported little or no pain when asked directly — yet their heart rate and blood pressure rose just as much as an unhypnotized person's would, and when asked (through automatic writing or a similar indirect channel) whether "some part" of them was registering the cold accurately, that hidden part reported the pain at essentially full intensity (Hilgard, 1977). Hilgard interpreted these findings as evidence that the hypnotic suggestion had blocked pain from the consciously reported stream of experience, while a separate stream — accessible only through an indirect channel — tracked it accurately the entire time.
+The common interpretation of becoming irritable after a poor night's sleep is that it is a matter of patience or willpower: the person is choosing not to manage their reactions, or lacks the composure they would ordinarily have. The mechanism is more specific. Sleep deprivation selectively reduces prefrontal cortex activity, which normally exerts top-down inhibitory control over the amygdala — the brain's primary threat- and emotion-detection system. Without that regulation in place, the amygdala's responses become both stronger and less contextually modulated. In a study using fMRI, participants who had gone without sleep showed 60% greater amygdala reactivity to emotionally negative images than well-rested controls, and the functional connectivity between medial prefrontal cortex and amygdala — the circuit that ordinarily keeps emotional reactions proportionate to the actual situation — was sharply reduced (Yoo et al., 2007). *Diagnostic question:* After four hours of sleep, you find yourself disproportionately upset by a minor frustration. Is this evidence of poor self-control? (No — the prefrontal circuitry that normally modulates amygdala activity is measurably less effective under sleep deprivation. What looks like a character issue is a specific, documented brain state.)
 
-**Social-cognitive theory**, developed largely by Nicholas Spanos, offers a very different account: hypnosis is not a special, altered state of consciousness at all, but an unusually motivated form of ordinary social compliance, shaped by the participant's expectations about what a "good hypnotic subject" is supposed to experience and do. On this view, the hidden-observer finding does not require an actual division of consciousness — a participant who has been told a "hidden part" of them might still register the pain, and who wants to be a cooperative, convincing research subject, may simply produce a report consistent with that expectation, without any genuine splitting of awareness. Neither theory has been fully eliminated by the evidence so far, which makes hypnosis a genuinely live scientific debate rather than a settled textbook fact — a useful reminder that not every phenomenon covered in this course has a single, fully agreed-upon explanation.
+The consequences of sleep loss extend beyond emotional regulation. Sleep deprivation specifically disrupts two hormones that govern appetite: **leptin**, produced by fat tissue and signaling satiety, drops; **ghrelin**, produced by the stomach and signaling hunger, rises — producing an increase in appetite and a preference for high-calorie foods that occurs independently of actual energy expenditure (Spiegel et al., 2004). Sleep-deprived individuals are also rated as measurably less attractive and less healthy-looking by naive observers viewing photographs, an effect documented in a controlled experimental study (Axelsson et al., 2010). Immune function is similarly degraded: sleep-deprived participants exposed to rhinovirus are significantly more likely to develop clinical illness than well-rested controls. Each effect tracks the same logic: a system that is serviced during sleep, deprived of that servicing, degrades in specific and predictable ways.
 
-Whatever its ultimate explanation, hypnosis has real, replicated clinical applications, most notably in pain management. Hypnotic analgesia produces measurable reductions in reported pain and, in some studies, in the physiological stress response to painful procedures — a modern echo of Chapter 4's gate control theory, in which signals descending from the brain (here, a hypnotic suggestion) measurably modulate how much pain reaches conscious awareness, regardless of which theory of hypnosis itself turns out to be correct.
+The most extreme demonstration of what sleep deprivation ultimately costs is **fatal familial insomnia**, a rare prion disease that progressively destroys the thalamus — the structure that regulates both sensory relay and sleep architecture. As the thalamus degenerates, affected individuals progress from severe insomnia through mounting hallucinations, dementia, and unresponsiveness to death, typically within 12 to 18 months of onset. Fatal familial insomnia is not a typical sleep disorder; it is a terminal neurological disease. Its relevance here is as the clearest available demonstration that sleep is a biological necessity, not optional recovery time — and that the system whose failure is fatal is the same system that builds and maintains sleep itself.
 
-> **Stop and Retrieve:** Before moving on — in one sentence each, what does dissociation theory claim is happening during a hypnotic "hidden observer" finding, and what does social-cognitive theory claim is happening instead?
-
-*[Optional addition — flagged for Jon: meditation is not a tracked CON-* concept, but the voice profile contains real, specific material for it — an in-class two-minute focused-attention demonstration and a striking statistic worth including if Jon wants this section expanded: people's minds wander, on average, during roughly 47% of their waking hours, and that wandering is associated with reduced happiness in the moment, regardless of what the person happens to be thinking about (Killingsworth & Gilbert, 2010). Meditation, broadly defined as a family of practices for deliberately training attention and awareness, is one of the few non-pharmacological, non-hypnotic ways people intentionally try to gain a degree of manual override over the otherwise highly automatic process of where attention wanders. This paragraph deliberately stops short of claiming meditation reliably produces broader health or therapeutic benefits — that literature is mixed and would need its own careful treatment — and is offered here only as an optional extension of the altered-states theme, not as required content.]*
+> **Stop and Retrieve:** In your own words, explain why a sleep-deprived person's emotional reactivity is better understood as a brain-state change than as a character trait. What specific neural circuit is implicated?
 
 ---
 
@@ -150,7 +150,7 @@ Consciousness is your subjective awareness of internal and external stimuli, bet
 
 Sleep cycles through four distinct stages roughly every 90 minutes — three stages of NREM sleep culminating in deep, slow-wave NREM 3, and REM sleep, marked by rapid eye movement, near-total muscle paralysis, and the most vivid dreaming — a structure first revealed by Aserinsky and Kleitman's 1953 discovery. Sleep likely serves multiple complementary functions at once: physical restoration, evolutionarily adaptive energy conservation, and active memory consolidation, the last of which depends on coordinated medial temporal lobe activity — the same circuitry whose damage, in the case of H.M., produced one of the most famous findings in the history of memory research. Dreams, concentrated in REM sleep, may reflect the cortex's attempt to synthesize meaning from internally generated activity (activation-synthesis theory) or evolved rehearsal for threat detection (threat-simulation theory) — accounts that are not mutually exclusive. When these systems break down, the result is a sleep disorder: insomnia, sleep apnea, narcolepsy, or a parasomnia. NREM arousal parasomnias (sleepwalking, night terrors) emerge from deep NREM sleep; REM sleep behavior disorder, a distinct parasomnia, involves failure of REM atonia and actual enactment of dream content — the disorder that matches the common misconception about sleepwalking.
 
-Psychoactive drugs alter consciousness by acting as agonists or antagonists within specific neurotransmitter systems, producing tolerance with continued use and withdrawal when use stops. Depressants like alcohol and barbiturates slow nervous system activity via GABA; opioids act on opioid receptors and are especially dangerous in overdose through brainstem respiratory suppression rather than GABA effects. Stimulants like caffeine, cocaine, and amphetamines increase arousal; cocaine and amphetamines specifically hijack the dopamine reward-prediction-error system, driving addiction through motivational circuitry rather than simple pleasure. Classic hallucinogens such as LSD act at serotonin 5-HT2A receptors; cannabis, a distinct category, acts at CB1 cannabinoid receptors with a different effects profile. Hypnosis is a social interaction, not a sleep-like state, that produces involuntary-feeling changes in experience through mechanisms still genuinely debated between dissociation theory and social-cognitive theory, with real, replicated applications in pain management.
+Psychoactive drugs alter consciousness by acting as agonists or antagonists within specific neurotransmitter systems, producing tolerance with continued use and withdrawal when use stops. Depressants like alcohol and barbiturates slow nervous system activity via GABA; opioids act on opioid receptors and are especially dangerous in overdose through brainstem respiratory suppression rather than GABA effects. Stimulants like caffeine, cocaine, and amphetamines increase arousal; cocaine and amphetamines specifically hijack the dopamine reward-prediction-error system, driving addiction through motivational circuitry rather than simple pleasure. Classic hallucinogens such as LSD act at serotonin 5-HT2A receptors; cannabis, a distinct category, acts at CB1 cannabinoid receptors with a different effects profile. Sleep deprivation measurably impairs prefrontal regulation of the amygdala — producing emotional dysregulation that reflects a documented brain state, not a character deficit — while also disrupting leptin and ghrelin to shift appetite regulation, degrading immune function, and in the extreme case of fatal familial insomnia, proving lethal, confirming that sleep is a biological necessity rather than optional recuperation. The glymphatic system, identified in 2013, provides the clearest mechanistic account of what restoration during deep sleep actually means: cerebrospinal fluid physically flushes metabolic waste — including adenosine — from brain tissue in a process that cannot run at the same rate during wakefulness.
 
 ---
 
@@ -162,7 +162,7 @@ Psychoactive drugs alter consciousness by acting as agonists or antagonists with
 | [Suprachiasmatic nucleus and the hypothalamus](#section-1-the-architecture-of-awareness--circadian-rhythms) | Ch. 3 — Neuroscience & Biological Bases (review) | The SCN is one specific, well-studied job performed by a structure Chapter 3 already introduced for its broader role in regulating basic biological drives |
 | [Dopamine and the reward pathway (stimulants)](#section-3-psychoactive-drugs-and-the-chemistry-of-altered-consciousness) | Ch. 6 — Learning | The reward prediction error signal that stimulant drugs hijack is the same signal Chapter 6 uses to explain ordinary reinforcement learning — this chapter introduces the mechanism, Chapter 6 applies it to conditioning |
 | [Tolerance, withdrawal, and substance use](#section-3-psychoactive-drugs-and-the-chemistry-of-altered-consciousness) | Ch. 14 — Psychological Disorders & Therapy | Substance use disorder is diagnosed using exactly this vocabulary — tolerance and withdrawal as criteria, not just side effects |
-| [Hypnotic analgesia and gate control theory](#section-4-hypnosis-and-other-non-ordinary-states) | Ch. 4 — Sensation & Perception (review) | Hypnotic pain reduction is a real-world, clinically replicated case of the brain's descending pain modulation that gate control theory was originally proposed to explain |
+| [Sleep deprivation and prefrontal-amygdala regulation](#section-4-sleep-deprivation-and-its-consequences) | Ch. 11 — Stress, Health & Coping | The amygdala-PFC circuit whose failure under sleep deprivation explains emotional dysregulation is the same circuit that Chapter 11 returns to when explaining the neural mechanisms of stress reactivity |
 | [Evolutionary function of sleep](#section-2-sleep--architecture-function-and-dreams) | Ch. 1 — History & Approaches (review) | Chapter 1 introduced the evolutionary "what problem did this solve?" lens, with a caution against overclaiming; this chapter applies it to a concrete, measurable behavior pattern (species-typical sleep timing) rather than a speculative story |
 
 ---
@@ -257,36 +257,36 @@ d) the complete absence of any reward
 
 ---
 
-**9.** EEG recordings of a hypnotized person most closely resemble:
+**9.** According to Yoo et al. (2007), the primary neural reason sleep-deprived people show stronger emotional reactions to negative stimuli is:
 
-a) deep NREM 3 sleep  
-b) REM sleep  
-c) relaxed wakefulness  
-d) a complete absence of brain activity  
+a) increased dopamine release in the reward pathway  
+b) reduced prefrontal top-down regulation of the amygdala  
+c) elevated activity in the hippocampus  
+d) suppression of the SCN's melatonin output  
 
-*Answer: c. Why (a) and (b) are tempting: the word "hypnosis" suggests sleep, and stage hypnosis reinforces that impression, but hypnotized participants remain behaviorally responsive and EEG-awake throughout, which is the chapter's central argument against treating hypnosis as a sleep-like trance.*
-
----
-
-**10.** In Hilgard's "hidden observer" research, hypnotized participants who reported little or no pain from ice water immersion nonetheless showed:
-
-a) no physiological response of any kind, consistent with complete pain elimination  
-b) elevated heart rate and blood pressure matching an unhypnotized person's response, plus accurate pain reports through an indirect channel like automatic writing  
-c) immediate awakening from a sleep-like hypnotic trance  
-d) total amnesia for the entire hypnotic session  
-
-*Answer: b. Why (a) is tempting: the participants' verbal reports did suggest the pain was eliminated, but their physiological responses and their indirect ("hidden observer") reports told a different story — accurate registration of the pain at a level not reflected in their conscious, verbal report.*
+*Answer: b. Why (a) is tempting: dopamine is associated with motivation and emotional processing, but the specific mechanism identified in fMRI studies of sleep deprivation is the prefrontal-amygdala circuit — reduced PFC activity means the amygdala's emotional responses are less contextually modulated, not that dopamine is directly elevated.*
 
 ---
 
-**11.** Social-cognitive theory's explanation for the hidden-observer finding differs from dissociation theory's in that social-cognitive theory holds that:
+**10.** The glymphatic system, identified in 2013, most directly supports the restorative account of sleep because:
 
-a) consciousness genuinely splits into separate, simultaneously active streams  
-b) the hidden-observer report reflects motivated social compliance with situational expectations, not an actual division of consciousness  
-c) hypnosis is identical to ordinary sleep  
-d) pain cannot be reduced by hypnotic suggestion under any circumstances  
+a) it produces melatonin in the pineal gland during darkness  
+b) it generates REM atonia to prevent dream enactment  
+c) it actively flushes metabolic waste products — including adenosine — from interstitial brain spaces during deep sleep, a process that cannot run at the same rate during wakefulness  
+d) it synchronizes the circadian clock to the light-dark cycle via the SCN  
 
-*Answer: b. Why (a) is tempting: that is specifically dissociation theory's account, not social-cognitive theory's — the question is testing whether the two competing theories' core claims can be told apart, which is the chapter's central point about this debate remaining genuinely unsettled.*
+*Answer: c. Why (d) is tempting: light and circadian regulation are the domain of the SCN and retinohypothalamic tract, not the glymphatic system. The glymphatic system's contribution is specifically physical waste clearance during slow-wave sleep.*
+
+---
+
+**11.** After a night of severe sleep deprivation, a person reports unusual hunger despite having eaten normally. According to the hormonal research covered in this chapter, the most likely explanation is:
+
+a) elevated cortisol from circadian disruption stimulating appetite  
+b) reduced leptin (satiety signal) and elevated ghrelin (hunger signal), shifting appetite regulation independent of actual caloric need  
+c) suppressed dopamine signaling producing a compensatory food craving  
+d) adenosine accumulation triggering hunger circuits in the hypothalamus  
+
+*Answer: b. Why (a) is tempting: cortisol is associated with stress and does influence appetite, and sleep deprivation does activate a stress response — but the specific hormonal mechanism in the sleep-deprivation literature centers on the leptin-ghrelin axis (Spiegel et al., 2004), not cortisol.*
 
 ---
 
@@ -309,11 +309,9 @@ d) sleep serves no function that could plausibly be explained by natural selecti
 
 **Consciousness** — Subjective awareness of internal and external stimuli, understood as a continuously varying stream rather than a binary state.
 
-**Dissociation theory (of hypnosis)** — Hilgard's theory that hypnosis produces a genuine division of consciousness into simultaneously active but separately monitored streams.
-
 **Entrainment** — The synchronization of an internal biological rhythm to an external cue, most often the light-dark cycle.
 
-**Hypnosis** — A social interaction in which one person suggests changes in another's sensations, perceptions, thoughts, or behavior, experienced by the hypnotized person as involuntary.
+**Glymphatic system** — The brain's cerebrospinal-fluid-based waste-clearance mechanism, which flushes metabolic byproducts — including adenosine — from interstitial spaces during deep slow-wave sleep; its discovery provided concrete mechanistic support for the restorative account of sleep.
 
 **Inattentional blindness** — The failure to consciously perceive a clearly visible stimulus simply because attention is directed elsewhere at the time.
 
@@ -331,8 +329,6 @@ d) sleep serves no function that could plausibly be explained by natural selecti
 
 **Selective attention** — The process by which the brain actively amplifies certain inputs and suppresses others, determining which processed information reaches the level of conscious, reportable experience.
 
-**Social-cognitive theory (of hypnosis)** — Spanos's theory that hypnotic phenomena reflect motivated social compliance with situational expectations rather than a genuinely altered state of consciousness.
-
 **Suprachiasmatic nucleus (SCN)** — A structure in the hypothalamus that serves as the body's master circadian clock, entrained by light input from the retina.
 
 **Threat-simulation theory** — Revonsuo's (2000) theory that dreaming evolved to provide safe, repeated rehearsal of threat perception and avoidance.
@@ -347,8 +343,8 @@ d) sleep serves no function that could plausibly be explained by natural selecti
 
 ## Further Reading
 
-**Hilgard, E. R. (1977). *Divided Consciousness: Multiple Controls in Human Thought and Action.* Wiley.**
-The original source for dissociation theory and the "hidden observer" research, for students who want the full argument rather than a secondhand summary.
+**Walker, M. (2017). *Why We Sleep: Unlocking the Power of Sleep and Dreams.* Scribner.**
+The most accessible book-length treatment of the science of sleep available; covers sleep stages, memory consolidation, and deprivation consequences in readable depth. Note that some specific quantitative claims in the book have been disputed in the primary literature — verify key statistics against journal sources if using for coursework.
 
 **Aserinsky, E., & Kleitman, N. (1953). Regularly occurring periods of eye motility, and concomitant phenomena, during sleep.**
 *Science, 118*, 273–274.
@@ -375,13 +371,9 @@ Dement, W., & Kleitman, N. (1957). The relation of eye movements during sleep to
 
 Diekelmann, S., & Born, J. (2010). The memory function of sleep. *Nature Reviews Neuroscience, 11*, 114–126.
 
-Hilgard, E. R. (1977). *Divided consciousness: Multiple controls in human thought and action*. Wiley.
-
 Hobson, J. A., & McCarley, R. W. (1977). The brain as a dream state generator: An activation-synthesis hypothesis of the dream process. *American Journal of Psychiatry, 134*(12), 1335–1348.
 
 James, W. (1890). *The principles of psychology* (Vol. 1). Henry Holt and Company.
-
-Killingsworth, M. A., & Gilbert, D. T. (2010). A wandering mind is an unhappy mind. *Science, 330*, 932.
 
 Revonsuo, A. (2000). The reinterpretation of dreams: An evolutionary hypothesis of the function of dreaming. *Behavioral and Brain Sciences, 23*(6), 877–901.
 
@@ -390,3 +382,11 @@ Schultz, W., Dayan, P., & Montague, P. R. (1997). A neural substrate of predicti
 Scoville, W. B., & Milner, B. (1957). Loss of recent memory after bilateral hippocampal lesions. *Journal of Neurology, Neurosurgery, and Psychiatry, 20*, 11–21.
 
 Simons, D. J., & Chabris, C. F. (1999). Gorillas in our midst: Sustained inattentional blindness for dynamic events. *Perception, 28*(9), 1059–1074.
+
+Axelsson, J., Sundelin, T., Ingre, M., Van Someren, E. J., Olsson, A., & Lekander, M. (2010). Beauty sleep: Experimental study on the perceived health and attractiveness of sleep deprived people. *BMJ, 341*, c6614.
+
+Spiegel, K., Tasali, E., Penev, P., & Van Cauter, E. (2004). Brief communication: Sleep curtailment in healthy young men is associated with decreased leptin levels, elevated ghrelin levels, and increased hunger and appetite. *Annals of Internal Medicine, 141*(11), 846–850.
+
+Xie, L., Kang, H., Xu, Q., Chen, M. J., Liao, Y., Thiyagarajan, M., … Nedergaard, M. (2013). Sleep drives metabolite clearance from the adult brain. *Science, 342*(6156), 373–377.
+
+Yoo, S. S., Gujar, N., Hu, P., Jolesz, F. A., & Walker, M. P. (2007). The human emotional brain without sleep — a prefrontal amygdala disconnect. *Current Biology, 17*(20), R877–R878.
