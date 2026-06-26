@@ -52,7 +52,7 @@
 
     <p>This simulator uses a simplified instructional model to show how a conditioned response can grow during acquisition, weaken during extinction, and partially return after a delay. It is not a full biological model or a real experiment.</p>
 
-    <div class="callout callout--objectives">
+    <div class="callout callout--note">
       <div class="callout-title">Accessibility and Privacy</div>
       <p>This lab runs entirely in your browser. It stores your prediction, trial progress, explanation, and transfer response in sessionStorage for this browser session only. It does not collect names, emails, IDs, analytics, or personally identifying information.</p>
     </div>
@@ -151,6 +151,10 @@
 
     <section class="lab-panel phase-panel" id="explain-panel" hidden aria-labelledby="explain-heading">
       <h2 id="explain-heading">Explain</h2>
+      <div class="callout callout--note">
+        <div class="callout-title">What the simulator just showed you</div>
+        <p>Extinction did not erase the original CS–CR association. It created a new, competing inhibitory connection — after repeated CS-alone trials, the tone now predicts "nothing coming." After a simulated delay, that inhibitory learning weakened faster than the original excitatory association, so the original CS–CR link partially resurfaced. This is the new-learning account of extinction: the original association is suppressed, not deleted, which is why spontaneous recovery is possible and why context matters — extinction learned in one environment often does not fully transfer to a new one.</p>
+      </div>
       <label class="text-label" for="explanation-response">What does spontaneous recovery reveal about what extinction actually changed?</label>
       <textarea id="explanation-response" rows="5"></textarea>
       <button class="lab-btn" type="button" id="save-explanation">Save explanation locally</button>

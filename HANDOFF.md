@@ -16,7 +16,7 @@
 
 **Naming convention (Session 32):** All image files now use descriptor-only names — no sequential numbers — so chapters can be reshuffled without renaming files. Pattern: `fig_<descriptor>.png` (e.g., `fig_retina_rods_cones.png`). All chapter markdown references updated to match. Ch01 left as-is (live HTML). Old numbered files could not be deleted from bash (OneDrive permission restriction) — orphaned files remain in folders but are not referenced by any markdown; Jon can delete them manually or ignore them.
 
-**Ch04 figure decisions (Session 32):** For figs 4.3 (retina) and 4.5 (cochlea), the programmatic SVG/PNG versions are primary in the chapter — they show actual data (receptor density curves; tonotopic map). For fig 4.6 (gate control), switched to the infographic version — it shows the three gate states (open/partially closed/closed) more clearly. Infographic versions of 4.3 and 4.5 remain in the folder as `fig_retina_infographic.png` and `fig_cochlea_infographic.png` for slide use.
+**Ch04 figure decisions (Session 41, supersedes Session 32):** All six figures now wired in both markdown and HTML. Fig 4.1 pipeline rebuilt from scratch in Matplotlib (fixed clipping + excess-whitespace bug in original SVG). Figs 4.3 and 4.5 now use the infographic versions (`fig_retina_infographic.png`, `fig_cochlea_infographic.png`) — reversed from Session 32 decision; richer infographics are better for students than the programmatic data-curve versions. Fig 4.4 Gestalt replaced with a new 5-panel OpenStax composite (`fig_gestalt_principles_openstax.png`, 920×688, built in Python from 5 individual OpenStax webp images); CC BY-NC-SA 4.0 attribution added to caption. Fig 4.6 (gate control infographic) — unchanged, already the best option. 10 OpenStax images downloaded and renamed in `docs/images/ch04/` (gestalt ×5, eye anatomy, rods/cones layers, trichromatic sensitivity, afterimage flag, ear anatomy) — see folder for filenames. **License note:** Using OpenStax CC BY-NC-SA 4.0 images requires the textbook to carry a compatible license (CC BY-NC-SA). Attribution format: "Source: Spielman et al., Psychology 2e (OpenStax, 2020), CC BY-NC-SA 4.0."
 
 **Dunning-Kruger (Session 32):** Built an accurate figure from Kruger & Dunning (1999) Study 1 actual data — bar chart showing perceived vs. actual performance by quartile, not the popular spike-at-zero curve. Saved as `docs/images/prologue/fig_dunning_kruger_actual_data.svg/.png`.
 
@@ -62,30 +62,31 @@
 
 ## Next Up
 
-1. **Jon's line-by-line review of Chapters 3–13** — all markdown-complete, none yet reviewed (except Ch1/Ch2). Start with Ch3–7. Open items per chapter in Session Log entries. Same review pattern as Ch1/Ch2.
+1. **Ch6 visuals** — now the next concrete task. Highest-value figures: (a) classical conditioning timeline (UCS/UCR → CS+UCS → CS/CR); (b) operant conditioning 2×2 (reinforcement/punishment × add/remove); (c) reinforcement schedules comparison. These should be original diagrams, not decorative images. Build as SVG + PNG per the existing pattern in `docs/images/`.
 
-2. **Labs vertical slice — build when Jon is ready for a dedicated labs session:**
-   - `docs/labs/index.html` — skeleton conceptual-map structure (psychological-function grouping, not chapter grouping)
-   - `docs/labs/assets/labs.css` + `labs.js` — shared shell
-   - `docs/labs/ch02/correlation-causation.html` — first complete lab (classifier type); establishes the pattern for 4–5 other chapter classifiers
-   - Ch6 reinforcement classifier is the second build (same pattern, more complex feedback)
-   - Spec: Jon shared a full "Psych 101 Learning Labs Specification v0.1" in Session 39 (not yet saved to file — save it as `pipeline/labs-spec.md` at start of next labs session)
+2. **Jon's line-by-line review of Chapters 3–13** — all markdown-complete, none yet reviewed (except Ch1/Ch2). Start with Ch3–7.
 
-3. **Figures for chapters with none (Chs 5–7, 9, 10, 12 are the biggest gaps).** See `source/visuals-inventory.md`. Priority: Ch6 (conditioning diagram, operant 2×2, reinforcement schedules, dopamine prediction error); Ch7 (Atkinson-Shiffrin 3-box, Baddeley working memory, serial position curve); Ch9 (Piaget stages, Ainsworth, Vygotsky ZPD); Ch10 (Milgram setup, ELM dual-route, bystander 5-step); Ch12 (Russell's circumplex, GAS 3 stages). Ch5 still needs SCN pathway (5.3) and tolerance/withdrawal (5.4).
+3. **Labs — Codex built two labs (Session 40); pattern now established:**
+   - `docs/labs/ch02/correlation-causation.html` — complete
+   - `docs/labs/ch06/classical-conditioning.html` — complete, audited, fixed, linked from ch06
+   - `docs/labs/lab-design-spec.md` — pattern spec written (Session 40)
+   - `docs/labs/index.html` — needs the two labs added as entries
+   - Next lab: Ch2 classifier or Ch6 reinforcement classifier (Jon to decide)
+   - Do NOT save the original "Psych 101 Learning Labs Specification v0.1" from Session 39 as `pipeline/labs-spec.md` — the audit-derived `docs/labs/lab-design-spec.md` supersedes it.
 
-4. **Decisions needed from Jon before HTML conversion of Ch2–Ch13:**
+4. **Figures for chapters with none (Chs 5–7, 9, 10, 12 are the biggest gaps).** See `source/visuals-inventory.md`. Priority: Ch6 (see item 1 above); Ch7 (Atkinson-Shiffrin 3-box, Baddeley working memory, serial position curve); Ch9 (Piaget stages, Ainsworth, Vygotsky ZPD); Ch10 (Milgram setup, ELM dual-route, bystander 5-step); Ch12 (Russell's circumplex, GAS 3 stages). Ch5 still needs SCN pathway (5.3) and tolerance/withdrawal (5.4).
+
+5. **Decisions needed from Jon before HTML conversion of Ch2–Ch13:**
    - Ch2: What are Jon's own images, and which existing `docs/images/ch02/` figures do they replace or supplement?
    - Ch3: Confirm figures 3.3, 3.5, 3.7 (lecture-deck slides) are Jon's originals. Accept or trim ~5,800 word count?
-   - Ch4: Use infographic or SVG programmatic versions for figs 4.3/4.5/4.6, or both?
+   - Ch4: ~~Use infographic or SVG programmatic versions for figs 4.3/4.5/4.6?~~ Resolved Session 41 — infographics for 4.3/4.5, infographic already in use for 4.6.
    - Prologue DK figure: Replace with redrawn actual-data version, add caveat caption, or drop?
 
-5. **HTML conversion of Ch3–Ch13** — once Jon's review pass is done, convert in order using `pipeline/html-conversion-spec.md`. Ch3 HTML already exists (`docs/chapters/03-neuroscience.html`); others pending.
+6. **HTML conversion of Ch3–Ch13** — once Jon's review pass is done, convert in order using `pipeline/html-conversion-spec.md`. Ch3 HTML already exists (`docs/chapters/03-neuroscience.html`); others pending.
 
-6. **Ch2 HTML** — on hold until Jon confirms his images. Get solid-carnival demo embed URL at the same time.
+7. **Ch2 HTML** — on hold until Jon confirms his images. Get solid-carnival demo embed URL at the same time.
 
-7. **Activities and labs log** — continue logging ideas to `docs/teaching/activity-ideas.md` during chapter review. Do NOT build individual items yet; the labs pass is a dedicated phase after chapters are HTML-complete.
-
-8. **Priority standalone demos to build (after labs vertical slice):** conditioning simulator (Ch6), signal detection theory simulator (Ch4), forgetting curve / spacing simulator (Ch7).
+8. **Activities and labs log** — continue logging ideas to `docs/teaching/activity-ideas.md` during chapter review. Do NOT build individual items yet; the labs pass is a dedicated phase after chapters are HTML-complete.
 
 ---
 
@@ -116,7 +117,8 @@
 | `ch02-research-methods.md` | `source/chapters/` | Chapter 2 markdown source — v0.3, 6 figures, HTML on hold |
 | `ch03-neuroscience-biological-bases.md` | `source/chapters/` | Chapter 3 markdown source — v0.3, Jon's structural review applied |
 | `03-neuroscience.html` | `docs/chapters/` | Chapter 3 HTML — complete (Session 37) |
-| `ch04-sensation-perception.md` | `source/chapters/` | Chapter 4 markdown source — v0.3, 6 figures, Other Senses sidebar, awaiting Jon's review |
+| `ch04-sensation-perception.md` | `source/chapters/` | Chapter 4 markdown source — v0.3, 6 figures (all updated Session 41), Other Senses sidebar, awaiting Jon's review |
+| `04-sensation-perception.html` | `docs/chapters/` | Chapter 4 HTML — exists; all figure refs updated Session 41 |
 | `ch05-states-of-consciousness.md` | `source/chapters/` | Chapter 5 markdown source — v0.2, 13 CON-* concepts (CON-013 added), awaiting Jon's review |
 | `ch06-learning.md` | `source/chapters/` | Chapter 6 markdown source — v0.1, awaiting Jon's review |
 | `ch07-memory.md` | `source/chapters/` | Chapter 7 markdown source — v0.2, awaiting Jon's review |
@@ -131,6 +133,63 @@
 ---
 
 ## Session Log
+
+---
+
+### 2026-06-26 — Session 41
+
+**What happened:** Ch4 image quality improvement pass. Discussed CC BY-NC-SA 4.0 attribution requirements for OpenStax images (answer: caption credit line; textbook must carry CC BY-NC-SA compatible license). Decided that building original figures had too much quality/work cost; proceeded with OpenStax sourcing.
+
+**Files created/modified:**
+- `docs/images/ch04/fig_sensation_perception_pipeline.png` + `.svg` — **rebuilt** from scratch in Matplotlib (fixed rightmost-box clipping and excess whitespace in original)
+- `docs/images/ch04/fig_gestalt_principles_openstax.png` — **new** 5-panel composite (figure-ground, proximity, similarity, good continuation, closure) built in Python from 5 OpenStax webp images
+- `docs/images/ch04/fig_gestalt_*_openstax.webp` (×5) — OpenStax Gestalt source images (CC BY-NC-SA 4.0)
+- `docs/images/ch04/fig_eye_anatomy_openstax.webp`, `fig_rods_cones_layers_openstax.webp`, `fig_trichromatic_sensitivity_openstax.webp`, `fig_afterimage_flag_openstax.webp`, `fig_ear_anatomy_openstax.webp` — downloaded for future use
+- `source/chapters/ch04-sensation-perception.md` — Fig 4.3, 4.4, 4.5 image paths and alt text updated
+- `docs/chapters/04-sensation-perception.html` — same three figures updated in HTML
+
+**Key decisions:**
+- Infographics (4.3, 4.5) preferred over programmatic data-curve versions (reverses Session 32 — Jon judged quality/work tradeoff not worth building originals)
+- OpenStax CC BY-NC-SA 4.0: attribution = one caption credit line per figure; textbook license must be CC BY-NC-SA compatible
+- Good continuation added to Gestalt figure (5 panels vs. original 4); chapter text mentions 4 principles; minor discrepancy, not a problem
+
+**Not done this session:** Ch4 is still awaiting Jon's line-by-line review of the text.
+
+---
+
+### 2026-06-26 — Session 40
+
+**What happened:** Codex had built two labs (`docs/labs/ch02/correlation-causation.html` and `docs/labs/ch06/classical-conditioning.html`) plus `docs/labs/index.html` before this session. Audited the Ch6 Classical Conditioning Simulator for pedagogy, accessibility, privacy, and maintainability; applied fixes; linked it from the chapter; wrote the lab design spec.
+
+**Audit findings and fixes applied:**
+
+1. **Extinction framing (must-fix):** The lab correctly said extinction "didn't erase learning" but never stated what extinction *is* — new inhibitory learning layered on top of the original association. Two fixes applied:
+   - Added a `callout--note` reveal paragraph inside the Explain panel (visible after spontaneous recovery, before the student's explain prompt) that explicitly states the new-learning account and why context matters.
+   - Updated the final event log entry in `runSpontaneousRecoveryTest()` to include the full mechanistic explanation.
+
+2. **Completion summary (must-fix):** Was "Summary: acquisition raised CR to X%, extinction reduced responding, recovery showed partial return at X%." Rewritten to include: "That partial return is the evidence that extinction suppressed the response rather than deleting the underlying association."
+
+3. **Privacy callout class (should-fix):** The privacy/accessibility notice used `callout--objectives` — the same teal class as learning objectives in chapters. Changed to `callout--note`. Added `.callout--note` to `docs/css/labs.css` (neutral gray, reusable across labs).
+
+4. **Lab link added to chapter:** Inserted a `callout--think-about-it` "Learning Lab" callout at the end of Section 1 in `docs/chapters/06-learning.html`, after the Do Not Confuse panel and before Section 2. Links to `../labs/ch06/classical-conditioning.html`.
+
+5. **Lab design spec written:** `docs/labs/lab-design-spec.md` — documents the full reusable pattern (prediction/commit, manipulation, text reveal, explain prompt, transfer prompt, completion summary, privacy/storage rules, accessibility checklist, CSS/JS conventions, callout class table). Supersedes the unwritten Session 39 "labs-spec.md" plan.
+
+**What's solid in the lab (not changed):** Pedagogical gating (predictions gate the simulator), button disable logic by phase, aria-live regions, SVG title/desc + text event log as accessibility equivalent, focus management after commit, sessionStorage restart.
+
+**sessionStorage decision (documented in spec):** Lab uses sessionStorage (clears on tab close), not localStorage (persists across sessions). More private, appropriate for single-session labs. Spec documents this as the standard; future labs should follow it.
+
+**Not built this session:** generalization/discrimination (explicitly deferred — see Next Up), Ch6 visuals.
+
+**Next:** Ch6 figures — classical conditioning timeline, operant 2×2, reinforcement schedules comparison. Original diagrams, not decorative images.
+
+**Files created/modified this session:**
+- `docs/css/labs.css` — added `.callout--note` variant
+- `docs/js/labs-classical-conditioning.js` — updated spontaneous recovery log entry; updated completion summary
+- `docs/labs/ch06/classical-conditioning.html` — privacy callout class fixed; reveal paragraph added in Explain panel
+- `docs/chapters/06-learning.html` — lab link callout inserted after Section 1 Do Not Confuse panel
+- `docs/labs/lab-design-spec.md` — new, full pattern spec
+- `HANDOFF.md` — Next Up rewritten; this entry prepended
 
 ---
 
