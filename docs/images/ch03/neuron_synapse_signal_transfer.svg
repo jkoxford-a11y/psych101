@@ -1,0 +1,194 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080" role="img" aria-labelledby="title desc">
+  <title id="title">How One Neuron Signals the Next</title>
+  <desc id="desc">Diagram of neuron-to-neuron communication. An electrical signal travels down a myelinated axon to an axon terminal. A magnified synapse inset shows vesicles releasing neurotransmitters into the synaptic cleft, where they bind to receptors on the postsynaptic neuron and influence whether it fires.</desc>
+  <defs>
+    <linearGradient id="bgGradient" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="0.58" stop-color="#f8fbff"/>
+      <stop offset="1" stop-color="#eef6ff"/>
+    </linearGradient>
+    <radialGradient id="somaGradient" cx="44%" cy="38%" r="64%">
+      <stop offset="0" stop-color="#ffe7a9"/>
+      <stop offset="0.48" stop-color="#f4a742"/>
+      <stop offset="1" stop-color="#c76c1f"/>
+    </radialGradient>
+    <linearGradient id="axonGradient" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#d47b2b"/>
+      <stop offset="0.5" stop-color="#f5b14a"/>
+      <stop offset="1" stop-color="#c86a21"/>
+    </linearGradient>
+    <linearGradient id="myelinGradient" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#efe7ff"/>
+      <stop offset="0.45" stop-color="#b8a7e6"/>
+      <stop offset="1" stop-color="#7d68bf"/>
+    </linearGradient>
+    <linearGradient id="terminalGradient" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffd68a"/>
+      <stop offset="0.55" stop-color="#e68d31"/>
+      <stop offset="1" stop-color="#b85d1e"/>
+    </linearGradient>
+    <linearGradient id="postGradient" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#f1d0aa"/>
+      <stop offset="0.5" stop-color="#d99655"/>
+      <stop offset="1" stop-color="#b76c30"/>
+    </linearGradient>
+    <linearGradient id="insetGradient" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#eef7fb"/>
+    </linearGradient>
+    <linearGradient id="cleftGradient" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#eaf9ff"/>
+      <stop offset="0.5" stop-color="#c5f4ff"/>
+      <stop offset="1" stop-color="#eef8ff"/>
+    </linearGradient>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="12" stdDeviation="12" flood-color="#24435c" flood-opacity="0.16"/>
+    </filter>
+    <filter id="smallShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#213547" flood-opacity="0.20"/>
+    </filter>
+    <filter id="blueGlow" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="7" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <marker id="arrowBlue" markerWidth="14" markerHeight="14" refX="11" refY="7" orient="auto">
+      <path d="M 0 0 L 14 7 L 0 14 Z" fill="#1597d3"/>
+    </marker>
+    <marker id="arrowTeal" markerWidth="13" markerHeight="13" refX="10" refY="6.5" orient="auto">
+      <path d="M 0 0 L 13 6.5 L 0 13 Z" fill="#079b9b"/>
+    </marker>
+    <marker id="arrowOrange" markerWidth="13" markerHeight="13" refX="10" refY="6.5" orient="auto">
+      <path d="M 0 0 L 13 6.5 L 0 13 Z" fill="#d87524"/>
+    </marker>
+    <style>
+      .label { font-family: Arial, Helvetica, sans-serif; font-size: 28px; font-weight: 700; fill: #263241; }
+      .small-label { font-family: Arial, Helvetica, sans-serif; font-size: 22px; font-weight: 700; fill: #263241; }
+      .micro-label { font-family: Arial, Helvetica, sans-serif; font-size: 18px; font-weight: 700; fill: #334155; }
+      .note { font-family: Arial, Helvetica, sans-serif; font-size: 18px; fill: #445469; }
+      .callout { stroke: #65758b; stroke-width: 2.5; fill: none; stroke-linecap: round; }
+      .axon-core { stroke: url(#axonGradient); stroke-width: 34; fill: none; stroke-linecap: round; }
+      .axon-highlight { stroke: #ffd789; stroke-width: 8; fill: none; stroke-linecap: round; opacity: 0.65; }
+      .ap-arrow { stroke: #1597d3; stroke-width: 9; fill: none; stroke-linecap: round; stroke-linejoin: round; marker-end: url(#arrowBlue); filter: url(#blueGlow); }
+      .chemical-arrow { stroke: #079b9b; stroke-width: 6; fill: none; stroke-linecap: round; marker-end: url(#arrowTeal); }
+      .orange-arrow { stroke: #d87524; stroke-width: 6; fill: none; stroke-linecap: round; marker-end: url(#arrowOrange); }
+    </style>
+  </defs>
+
+  <rect width="1920" height="1080" fill="url(#bgGradient)"/>
+  <path d="M 96 920 C 450 830, 800 920, 1160 842 S 1620 790, 1840 908" fill="none" stroke="#dcecf5" stroke-width="34" opacity="0.7"/>
+
+  <!-- Main left-to-right pathway -->
+  <g id="main-neuron" filter="url(#softShadow)">
+    <path d="M 205 341 C 150 286, 96 286, 66 243" stroke="#c36d22" stroke-width="18" fill="none" stroke-linecap="round"/>
+    <path d="M 214 388 C 139 398, 91 449, 50 483" stroke="#cf7a27" stroke-width="18" fill="none" stroke-linecap="round"/>
+    <path d="M 243 294 C 220 227, 166 191, 136 150" stroke="#d9852d" stroke-width="16" fill="none" stroke-linecap="round"/>
+    <path d="M 294 288 C 320 220, 305 166, 330 108" stroke="#c86d22" stroke-width="16" fill="none" stroke-linecap="round"/>
+    <path d="M 177 325 C 120 336, 100 355, 62 354" stroke="#d7832b" stroke-width="13" fill="none" stroke-linecap="round"/>
+    <circle cx="282" cy="352" r="94" fill="url(#somaGradient)"/>
+    <circle cx="282" cy="352" r="41" fill="#c96f2a" opacity="0.34"/>
+    <circle cx="268" cy="325" r="24" fill="#ffe8ad" opacity="0.35"/>
+  </g>
+
+  <path class="axon-core" d="M 368 351 C 508 336, 596 344, 723 353 C 874 363, 999 341, 1134 353 C 1228 361, 1289 365, 1347 347"/>
+  <path class="axon-highlight" d="M 380 340 C 560 326, 735 345, 900 348 C 1055 351, 1214 359, 1323 340"/>
+
+  <g id="myelin" filter="url(#smallShadow)">
+    <rect x="492" y="306" width="118" height="82" rx="38" fill="url(#myelinGradient)" transform="rotate(3 551 347)"/>
+    <rect x="674" y="314" width="128" height="84" rx="40" fill="url(#myelinGradient)" transform="rotate(5 738 356)"/>
+    <rect x="866" y="306" width="128" height="84" rx="40" fill="url(#myelinGradient)" transform="rotate(-3 930 348)"/>
+    <rect x="1060" y="313" width="126" height="84" rx="40" fill="url(#myelinGradient)" transform="rotate(5 1123 355)"/>
+  </g>
+
+  <g id="terminal-main" filter="url(#softShadow)">
+    <path d="M 1336 348 C 1394 305, 1456 289, 1514 314 C 1578 342, 1579 416, 1518 446 C 1452 479, 1382 438, 1333 391 C 1314 373, 1316 362, 1336 348 Z" fill="url(#terminalGradient)"/>
+    <circle cx="1490" cy="349" r="17" fill="#ffe0a2" opacity="0.75"/>
+    <circle cx="1530" cy="390" r="13" fill="#ffe0a2" opacity="0.72"/>
+    <circle cx="1455" cy="416" r="12" fill="#ffe0a2" opacity="0.68"/>
+  </g>
+
+  <path d="M 1612 332 C 1667 271, 1742 251, 1834 251" stroke="url(#postGradient)" stroke-width="34" fill="none" stroke-linecap="round" filter="url(#softShadow)"/>
+  <path d="M 1608 394 C 1682 412, 1754 456, 1832 524" stroke="url(#postGradient)" stroke-width="34" fill="none" stroke-linecap="round" filter="url(#softShadow)"/>
+  <path d="M 1612 360 C 1664 352, 1733 352, 1836 362" stroke="url(#postGradient)" stroke-width="44" fill="none" stroke-linecap="round" filter="url(#softShadow)"/>
+
+  <path class="ap-arrow" d="M 445 254 C 642 211, 850 239, 1042 253 C 1168 262, 1253 258, 1372 228"/>
+  <circle cx="1035" cy="253" r="21" fill="#39c2f1" opacity="0.88" filter="url(#blueGlow)"/>
+
+  <!-- Main labels -->
+  <text x="160" y="604" class="label">Presynaptic neuron</text>
+  <path class="callout" d="M 265 585 C 275 520, 280 470, 282 426"/>
+  <text x="58" y="92" class="label">Dendrites</text>
+  <path class="callout" d="M 177 103 C 162 142, 146 179, 130 218"/>
+  <text x="330" y="164" class="label">Soma</text>
+  <path class="callout" d="M 355 174 C 332 232, 309 278, 292 313"/>
+  <text x="736" y="232" class="label">Action potential</text>
+  <text x="763" y="264" class="note">electrical signal</text>
+  <text x="647" y="441" class="label">Axon</text>
+  <path class="callout" d="M 712 427 C 735 392, 760 371, 791 356"/>
+  <text x="890" y="498" class="label">Myelin sheath</text>
+  <path class="callout" d="M 1006 480 C 1040 432, 1086 393, 1123 355"/>
+  <text x="1332" y="180" class="label">Axon terminal</text>
+  <path class="callout" d="M 1454 190 C 1461 244, 1474 286, 1493 323"/>
+  <text x="1530" y="612" class="label">Postsynaptic neuron</text>
+  <path class="callout" d="M 1646 590 C 1660 515, 1673 438, 1690 364"/>
+
+  <!-- Magnified synapse inset -->
+  <g id="synapse-inset" transform="translate(865 512)">
+    <rect x="0" y="0" width="960" height="492" rx="34" fill="url(#insetGradient)" stroke="#c8dbe8" stroke-width="3" filter="url(#softShadow)"/>
+    <text x="38" y="54" class="label">Magnified synapse: signal changes form</text>
+
+    <rect x="396" y="92" width="154" height="318" rx="52" fill="url(#cleftGradient)" stroke="#90dff0" stroke-width="2"/>
+    <text x="389" y="444" class="small-label">Synaptic cleft</text>
+
+    <path d="M 80 170 C 158 94, 310 96, 363 180 C 413 260, 360 376, 242 386 C 150 394, 89 344, 64 280 C 46 234, 48 202, 80 170 Z" fill="url(#terminalGradient)" stroke="#b85d1e" stroke-width="2.5"/>
+    <text x="84" y="133" class="small-label">Presynaptic axon terminal</text>
+
+    <g id="vesicles" opacity="0.96">
+      <circle cx="202" cy="205" r="26" fill="#ffd68a" stroke="#b96c24" stroke-width="3"/>
+      <circle cx="286" cy="190" r="23" fill="#ffe0a2" stroke="#b96c24" stroke-width="3"/>
+      <circle cx="166" cy="291" r="25" fill="#ffe0a2" stroke="#b96c24" stroke-width="3"/>
+      <circle cx="274" cy="300" r="27" fill="#ffd68a" stroke="#b96c24" stroke-width="3"/>
+      <circle cx="338" cy="253" r="19" fill="#ffe0a2" stroke="#b96c24" stroke-width="3"/>
+    </g>
+    <text x="109" y="421" class="small-label">Synaptic vesicles</text>
+    <path class="callout" d="M 203 399 C 206 348, 207 278, 202 205"/>
+
+    <path class="chemical-arrow" d="M 335 260 C 371 240, 397 236, 431 245"/>
+    <text x="338" y="82" class="micro-label">Chemical signal</text>
+    <path class="chemical-arrow" d="M 394 91 C 437 96, 471 112, 501 139"/>
+
+    <g id="neurotransmitters" fill="#11b6ad" stroke="#047d82" stroke-width="2">
+      <circle cx="422" cy="198" r="9"/>
+      <circle cx="456" cy="223" r="8"/>
+      <circle cx="430" cy="274" r="8"/>
+      <circle cx="491" cy="259" r="10"/>
+      <circle cx="464" cy="315" r="8"/>
+      <circle cx="512" cy="202" r="8"/>
+      <circle cx="521" cy="304" r="9"/>
+    </g>
+    <text x="374" y="382" class="small-label">Neurotransmitters</text>
+
+    <path d="M 612 142 C 702 105, 846 116, 894 199 C 941 282, 884 382, 768 402 C 674 418, 606 367, 582 294 C 559 226, 568 164, 612 142 Z" fill="url(#postGradient)" stroke="#9f5b2b" stroke-width="2.5"/>
+    <text x="662" y="133" class="small-label">Postsynaptic neuron</text>
+    <path d="M 590 201 C 648 209, 690 219, 732 235" stroke="#9f5b2b" stroke-width="18" fill="none" stroke-linecap="round" opacity="0.45"/>
+    <path d="M 590 290 C 653 280, 701 278, 744 288" stroke="#9f5b2b" stroke-width="18" fill="none" stroke-linecap="round" opacity="0.45"/>
+
+    <g id="receptors" fill="#5d4aa8" stroke="#33236b" stroke-width="2.5">
+      <path d="M 576 202 c 20 -18, 44 -18, 62 0 l -20 24 c -9 -8 -18 -8 -28 0 Z"/>
+      <path d="M 574 274 c 21 -18, 45 -18, 64 0 l -22 25 c -9 -9 -18 -9 -28 0 Z"/>
+      <path d="M 584 333 c 20 -17, 44 -17, 62 0 l -20 24 c -9 -8 -18 -8 -28 0 Z"/>
+    </g>
+    <text x="648" y="458" class="small-label">Receptors</text>
+    <path class="callout" d="M 688 438 C 650 382, 623 333, 603 289"/>
+
+    <path class="orange-arrow" d="M 700 226 C 758 232, 805 251, 842 291"/>
+    <circle cx="790" cy="263" r="18" fill="#ffbb62" opacity="0.88" filter="url(#smallShadow)"/>
+    <text x="742" y="204" class="micro-label">Receptor binding</text>
+    <text x="721" y="350" class="small-label">Postsynaptic response</text>
+    <text x="724" y="378" class="note">changes likelihood of firing</text>
+    <path class="ap-arrow" d="M 630 92 C 690 76, 746 78, 806 96"/>
+    <text x="632" y="78" class="micro-label">Electrical signal</text>
+  </g>
+</svg>

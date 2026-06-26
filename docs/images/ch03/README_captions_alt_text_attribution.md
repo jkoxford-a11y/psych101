@@ -52,3 +52,11 @@ Figures 3.3, 3.5, 3.7: Original figure by Jonathan Oxford, from personal lecture
 **Caption:** Split-brain studies show real hemispheric specialization under unusual surgical conditions, not left-brain/right-brain personality types.
 **Alt text:** Diagram showing how information presented to the left visual field reaches the right hemisphere in a split-brain patient and can guide the left hand even when the patient cannot verbally report it.
 **Files:** `fig3_9_split_brain_logic.png`, `fig3_9_split_brain_logic.svg`
+
+## Additional original figure - How One Neuron Signals the Next
+**Filename:** `neuron_synapse_signal_transfer.svg`, `neuron_synapse_signal_transfer.png`
+**Suggested title:** How One Neuron Signals the Next
+**Caption:** Neural communication changes form at the synapse: an electrical action potential travels down the presynaptic axon, neurotransmitters cross the synaptic cleft, and receptors on the postsynaptic neuron convert that chemical signal into a change in the next cell's likelihood of firing.
+**Alt text:** Diagram of neuron-to-neuron communication. An electrical signal travels down a myelinated axon to an axon terminal. A magnified synapse inset shows vesicles releasing neurotransmitters into the synaptic cleft, where they bind to receptors on the postsynaptic neuron and influence whether it fires.
+**Attribution:** Original diagram created for Oxford Psychology 101. No external image source used.
+**Public-sharing status:** Safe for public sharing; original vector artwork.

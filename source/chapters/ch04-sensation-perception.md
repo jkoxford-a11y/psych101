@@ -72,6 +72,10 @@ Both of these thresholds — and the everyday experience of uncertain detection 
 
 *Figure 4.2. Signal detection theory separates sensory sensitivity from the observer's decision criterion. Two people with identical sensitivity can have very different hit and false-alarm rates if their criteria differ.*
 
+![S-shaped psychometric function curve plotting probability of detecting a stimulus against stimulus intensity, with the 50% threshold point marked at the inflection point of the curve.](../images/ch04/fig_psychometric_function_webvision.jpg)
+
+*The psychometric function shows how detection probability rises with signal intensity. The absolute threshold is the intensity detected 50% of the time (the inflection point). SDT's criterion shifts where on the curve the observer's yes/no boundary falls without changing underlying sensitivity. Source: Kalloniatis & Luu, Webvision (CC BY-NC 4.0), https://webvision.med.utah.edu/*
+
 > **Think About It:** Think of a recent time you thought you sensed something — a phantom phone vibration, hearing your name called in a noisy room, seeing movement out of the corner of your eye — that turned out not to be there. Using signal detection theory's vocabulary, was that a false alarm, and what do you think your decision criterion was doing in that moment?
 
 > *[Demo placeholder — Jon: no existing demo in the inventory covers signal detection theory directly; it is listed as the #3 priority demo to build (d′, criterion, ROC curve). This section is the natural home for it once it exists. Predict/explain/retrieve scaffold once built: predict how raising versus lowering a detection criterion changes the balance of hits, misses, false alarms, and correct rejections; manipulate the criterion; explain the trade-off in your own words.]*
