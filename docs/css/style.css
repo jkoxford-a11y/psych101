@@ -265,8 +265,8 @@ th {
 }
 
 .review-q .options {
-  list-style: none;
-  margin: 0.6rem 0 0.75rem 0;
+  margin: 0.6rem 0 0.75rem 1.4rem;
+  padding-left: 0.25rem;
 }
 
 .review-q .options li {
