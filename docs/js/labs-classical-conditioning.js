@@ -158,7 +158,7 @@
     state.crStrength = Math.min(recoveredStrength, simulationConfig.maxStrength);
     state.history.push({ trial: state.trialCount, phase: 'Spontaneous recovery', strength: state.crStrength });
     state.log.push(`Spontaneous recovery test after a simulated delay: CS tone alone produces a partial CR of ${formatStrength(state.crStrength)}.`);
-    state.log.push('Key idea: extinction changed performance in this context; it did not permanently erase the original learning.');
+    state.log.push('Key idea: extinction did not erase the original CS–CR association. Instead, it created a new, competing inhibitory connection — the CS now predicts “nothing coming.” After a delay, that inhibitory learning weakens faster than the original excitatory one, so the original association partially resurfaces. This is also why context matters: extinction learned in one setting often does not fully transfer to a new one, because the original association is still intact underneath.');
     state.phase = 'complete';
     saveState();
     renderAll();
@@ -257,7 +257,7 @@
   function renderReflectionPanels() {
     elements.explainPanel.hidden = state.phase !== 'complete';
     elements.transferPanel.hidden = state.phase !== 'complete';
-    elements.completionSummary.textContent = `Summary: acquisition raised CR strength to ${formatStrength(state.peakStrength)}, extinction reduced responding, and the spontaneous recovery test showed a partial return at ${formatStrength(state.crStrength)}.`;
+    elements.completionSummary.textContent = `Summary: acquisition raised CR strength to ${formatStrength(state.peakStrength)}, extinction reduced responding to ${formatStrength(state.history.filter(function(h){ return h.phase === 'Extinction'; }).slice(-1)[0]?.strength ?? 0)}, and after a simulated delay the spontaneous recovery test showed a partial return at ${formatStrength(state.crStrength)}. That partial return is the evidence that extinction suppressed the response rather than deleting the underlying association.`;
     elements.explanationResponse.value = state.explanation;
     elements.transferResponse.value = state.transfer;
   }
