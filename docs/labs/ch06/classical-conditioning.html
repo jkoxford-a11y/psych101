@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Classical Conditioning Simulator - General Psychology</title>
+  <link rel="stylesheet" href="../../css/style.css" />
+  <link rel="stylesheet" href="../../css/labs.css" />
+</head>
+<body>
+<div class="layout">
+  <aside class="sidebar">
+    <div class="book-title">General Psychology</div>
+    <nav aria-label="Book navigation">
+      <ul>
+        <li><a href="../../index.html">Table of Contents</a></li>
+        <li><a href="../index.html">Learning Labs</a></li>
+        <li><a href="../../prologue.html">0 - Prologue: How to Actually Learn This Stuff</a></li>
+
+        <li class="pillar">Foundations</li>
+        <li><a href="../../chapters/01-history-approaches.html">1 - History &amp; Approaches</a></li>
+        <li><a href="../../chapters/02-research-methods.html">2 - Research Methods &amp; Statistics</a></li>
+
+        <li class="pillar">Biological</li>
+        <li><a href="../../chapters/03-neuroscience.html">3 - Neuroscience &amp; Biological Bases</a></li>
+        <li><a href="../../chapters/04-sensation-perception.html">4 - Sensation &amp; Perception</a></li>
+        <li><a href="../../chapters/05-consciousness.html">5 - States of Consciousness</a></li>
+
+        <li class="pillar">Cognitive</li>
+        <li><a href="../../chapters/06-learning.html">6 - Learning</a></li>
+        <li><a href="../../chapters/07-memory.html">7 - Memory</a></li>
+        <li><a href="../../chapters/08-thinking-language-intelligence.html">8 - Thinking, Language &amp; Intelligence</a></li>
+
+        <li class="pillar">Developmental</li>
+        <li><a href="../../chapters/09-lifespan-development.html">9 - Lifespan Development</a></li>
+
+        <li class="pillar">Social &amp; Personality</li>
+        <li><a href="../../chapters/10-social-psychology.html">10 - Social Psychology</a></li>
+        <li><a href="../../chapters/11-personality.html">11 - Personality</a></li>
+
+        <li class="pillar">Mental &amp; Physical Health</li>
+        <li><a href="../../chapters/12-emotion-stress-coping.html">12 - Emotion, Stress &amp; Coping</a></li>
+        <li><a href="../../chapters/13-disorders-therapy.html">13 - Psychological Disorders &amp; Therapy</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+  <main class="main lab-main">
+    <p class="chapter-meta">Learning Lab - Chapter 6</p>
+    <h1>Classical Conditioning Simulator</h1>
+    <hr class="chapter-divider" />
+
+    <p>This simulator uses a simplified instructional model to show how a conditioned response can grow during acquisition, weaken during extinction, and partially return after a delay. It is not a full biological model or a real experiment.</p>
+
+    <div class="callout callout--objectives">
+      <div class="callout-title">Accessibility and Privacy</div>
+      <p>This lab runs entirely in your browser. It stores your prediction, trial progress, explanation, and transfer response in sessionStorage for this browser session only. It does not collect names, emails, IDs, analytics, or personally identifying information.</p>
+    </div>
+
+    <section class="lab-panel" aria-labelledby="terms-heading">
+      <h2 id="terms-heading">Conditioning Terms</h2>
+      <div class="concept-grid">
+        <article class="concept-card">
+          <h3>US</h3>
+          <p><strong>Unconditioned stimulus:</strong> the puff of air that naturally produces a blink.</p>
+        </article>
+        <article class="concept-card">
+          <h3>UR</h3>
+          <p><strong>Unconditioned response:</strong> the natural blink after the air puff.</p>
+        </article>
+        <article class="concept-card">
+          <h3>CS</h3>
+          <p><strong>Conditioned stimulus:</strong> the tone that starts out neutral.</p>
+        </article>
+        <article class="concept-card">
+          <h3>CR</h3>
+          <p><strong>Conditioned response:</strong> the learned blink to the tone alone.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="lab-panel" aria-labelledby="predict-heading" id="prediction-panel">
+      <h2 id="predict-heading">Predict and Commit</h2>
+      <form id="prediction-form" novalidate>
+        <label class="text-label" for="acquisition-prediction">After repeated CS-US pairings, what will happen when the CS is presented alone?</label>
+        <textarea id="acquisition-prediction" rows="4" required></textarea>
+
+        <label class="text-label" for="extinction-prediction">After extinction, is the CR gone permanently?</label>
+        <textarea id="extinction-prediction" rows="4" required></textarea>
+
+        <button class="lab-btn" type="button" id="commit-predictions">Commit predictions</button>
+      </form>
+      <p class="save-status" id="prediction-status" aria-live="polite"></p>
+    </section>
+
+    <section class="lab-panel" aria-labelledby="sim-heading" id="simulator-panel" hidden>
+      <div class="lab-progress" aria-live="polite">
+        <span id="phase-status">Phase: Ready for acquisition</span>
+        <span id="trial-status">CR strength: 0%</span>
+      </div>
+
+      <h2 id="sim-heading" tabindex="-1">Manipulate and Observe</h2>
+      <p id="phase-summary">Run CS-US pairings to build a conditioned response.</p>
+
+      <dl class="sim-stats">
+        <div class="sim-stat">
+          <dt>Current phase</dt>
+          <dd id="current-phase">Acquisition</dd>
+        </div>
+        <div class="sim-stat">
+          <dt>Trial count</dt>
+          <dd id="trial-count">0</dd>
+        </div>
+        <div class="sim-stat">
+          <dt>CR strength</dt>
+          <dd id="cr-strength">0%</dd>
+        </div>
+      </dl>
+
+      <div class="curve-wrap" aria-labelledby="curve-title curve-description">
+        <svg class="curve-svg" id="curve-svg" viewBox="0 0 720 320" role="img">
+          <title id="curve-title">Conditioned response strength curve</title>
+          <desc id="curve-description">A line graph that updates after each trial. A text summary and event log below provide the same information.</desc>
+          <line class="curve-axis" x1="60" y1="260" x2="680" y2="260"></line>
+          <line class="curve-axis" x1="60" y1="30" x2="60" y2="260"></line>
+          <line class="curve-grid" x1="60" y1="145" x2="680" y2="145"></line>
+          <text class="curve-label" x="18" y="36">100%</text>
+          <text class="curve-label" x="25" y="150">50%</text>
+          <text class="curve-label" x="35" y="264">0%</text>
+          <text class="curve-caption" x="280" y="300">Trials over time</text>
+          <text class="curve-caption" x="4" y="18">CR strength</text>
+          <path class="curve-line" id="curve-line" d=""></path>
+          <g id="phase-markers"></g>
+          <g id="curve-points"></g>
+        </svg>
+      </div>
+
+      <p id="graph-summary" aria-live="polite">No trials yet. CR strength is 0%.</p>
+
+      <div class="sim-controls">
+        <button class="lab-btn" type="button" id="run-acquisition">Run CS-US pairing</button>
+        <button class="lab-btn" type="button" id="run-extinction" disabled>Run CS-alone extinction trial</button>
+        <button class="lab-btn" type="button" id="run-recovery" disabled>Run spontaneous recovery test</button>
+      </div>
+
+      <h3>Text Event Log</h3>
+      <div class="event-log" id="event-log" aria-live="polite">
+        <ol id="event-list"></ol>
+      </div>
+    </section>
+
+    <section class="lab-panel phase-panel" id="explain-panel" hidden aria-labelledby="explain-heading">
+      <h2 id="explain-heading">Explain</h2>
+      <label class="text-label" for="explanation-response">What does spontaneous recovery reveal about what extinction actually changed?</label>
+      <textarea id="explanation-response" rows="5"></textarea>
+      <button class="lab-btn" type="button" id="save-explanation">Save explanation locally</button>
+      <p class="save-status" id="explanation-status" aria-live="polite"></p>
+    </section>
+
+    <section class="lab-panel phase-panel" id="transfer-panel" hidden aria-labelledby="transfer-heading">
+      <h2 id="transfer-heading">Retrieve and Transfer</h2>
+      <p id="completion-summary"></p>
+      <label class="text-label" for="transfer-response">How does this model explain why a 'recovered' smoker can relapse after seeing an old smoking friend? Use CS, CR, and extinction in your answer.</label>
+      <textarea id="transfer-response" rows="5"></textarea>
+      <div class="lab-actions">
+        <button class="lab-btn" type="button" id="save-transfer">Save transfer response locally</button>
+        <button class="lab-btn lab-btn--secondary" type="button" id="restart-lab">Restart lab</button>
+      </div>
+      <p class="save-status" id="transfer-status" aria-live="polite"></p>
+    </section>
+
+    <section class="callout callout--think-about-it">
+      <div class="callout-title">Instructor Note</div>
+      <p>Use this lab as a short prediction-and-debrief activity. Have students commit predictions, run acquisition and extinction in pairs, then pause on spontaneous recovery to discuss why extinction reduces responding without erasing the original association.</p>
+    </section>
+  </main>
+</div>
+<script src="../../js/nav.js"></script>
+<script src="../../js/labs-classical-conditioning.js"></script>
+</body>
+</html>

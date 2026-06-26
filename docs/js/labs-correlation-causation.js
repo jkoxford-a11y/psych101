@@ -109,7 +109,7 @@
     restoreState();
     bindEvents();
 
-    if (state.responses.length >= items.length) {
+    if (allItemsAnswered()) {
       showSummary();
     } else {
       state.currentIndex = Math.min(state.currentIndex, items.length - 1);
@@ -169,8 +169,10 @@
     setPredictionControlsDisabled(false);
     setProblemControlsDisabled(false);
 
-    if (existingResponse) {
+    if (existingResponse && existingResponse.problem) {
       restoreCompletedItem(existingResponse);
+    } else if (existingResponse && existingResponse.prediction) {
+      restoreCommittedPrediction(existingResponse);
     }
   }
 
@@ -181,6 +183,11 @@
       elements.progressStatus.textContent = 'Choose a prediction before committing.';
       focusFirstInput('causalPrediction');
       return;
+    }
+
+    if (!state.responses[state.currentIndex]) {
+      state.responses[state.currentIndex] = { prediction };
+      saveState();
     }
 
     elements.observePanel.hidden = false;
@@ -300,6 +307,14 @@
     showFeedback(items[state.currentIndex], response);
   }
 
+  function restoreCommittedPrediction(response) {
+    setCheckedValue('causalPrediction', response.prediction);
+    elements.observePanel.hidden = false;
+    elements.commitPrediction.disabled = true;
+    setPredictionControlsDisabled(true);
+    elements.progressStatus.textContent = 'Prediction committed. Study design revealed.';
+  }
+
   function saveTransferResponse() {
     state.transferResponse = elements.transferResponse.value.trim();
     saveState();
@@ -343,6 +358,12 @@
   function getCheckedValue(name) {
     const checked = elements.form.querySelector(`input[name="${name}"]:checked`);
     return checked ? checked.value : '';
+  }
+
+  function allItemsAnswered() {
+    return items.every(function (item, index) {
+      return Boolean(state.responses[index] && state.responses[index].problem);
+    });
   }
 
   function setCheckedValue(name, value) {
