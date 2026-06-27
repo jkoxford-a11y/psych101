@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chemical Imbalance Claim-Check - General Psychology</title>
+  <link rel="stylesheet" href="../../css/style.css" />
+  <link rel="stylesheet" href="../../css/labs.css" />
+</head>
+<body>
+<div class="layout">
+  <aside class="sidebar">
+    <div class="book-title">General Psychology</div>
+    <nav aria-label="Book navigation">
+      <ul>
+        <li><a href="../../index.html">Table of Contents</a></li>
+        <li><a href="../index.html">Learning Labs</a></li>
+        <li><a href="../../prologue.html">0 - Prologue: How to Actually Learn This Stuff</a></li>
+
+        <li class="pillar">Foundations</li>
+        <li><a href="../../chapters/01-history-approaches.html">1 - History &amp; Approaches</a></li>
+        <li><a href="../../chapters/02-research-methods.html">2 - Research Methods &amp; Statistics</a></li>
+
+        <li class="pillar">Biological</li>
+        <li><a href="../../chapters/03-neuroscience.html">3 - Neuroscience &amp; Biological Bases</a></li>
+        <li><a href="../../chapters/04-sensation-perception.html">4 - Sensation &amp; Perception</a></li>
+        <li><a href="../../chapters/05-consciousness.html">5 - States of Consciousness</a></li>
+
+        <li class="pillar">Cognitive</li>
+        <li><a href="../../chapters/06-learning.html">6 - Learning</a></li>
+        <li><a href="../../chapters/07-memory.html">7 - Memory</a></li>
+        <li><a href="../../chapters/08-thinking-language-intelligence.html">8 - Thinking, Language &amp; Intelligence</a></li>
+
+        <li class="pillar">Developmental</li>
+        <li><a href="../../chapters/09-lifespan-development.html">9 - Lifespan Development</a></li>
+
+        <li class="pillar">Social &amp; Personality</li>
+        <li><a href="../../chapters/10-social-psychology.html">10 - Social Psychology</a></li>
+        <li><a href="../../chapters/11-personality.html">11 - Personality</a></li>
+
+        <li class="pillar">Mental &amp; Physical Health</li>
+        <li><a href="../../chapters/12-emotion-stress-coping.html">12 - Emotion, Stress &amp; Coping</a></li>
+        <li><a href="../../chapters/13-disorders-therapy.html">13 - Psychological Disorders &amp; Therapy</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+  <main class="main lab-main">
+    <p class="chapter-meta">Learning Lab - Chapter 3</p>
+    <h1>Chemical Imbalance Claim-Check</h1>
+    <hr class="chapter-divider" />
+
+    <p>Brain chemistry matters. The misconception is the simpler claim that a psychological disorder is caused by one missing chemical, and that a helpful medication proves that original cause. This lab asks you to separate careful claims from claims that overreach.</p>
+
+    <div class="callout callout--note">
+      <div class="callout-title">Accessibility and Privacy</div>
+      <p>This lab stores progress only in this browser tab/session and does not send data anywhere. It stores your prediction, claim choices, and transfer response in sessionStorage only; it does not collect names, emails, IDs, analytics, or personal health information.</p>
+    </div>
+
+    <section class="lab-panel" id="prediction-panel" aria-labelledby="prediction-heading">
+      <h2 id="prediction-heading" tabindex="-1">Prediction</h2>
+      <form id="prediction-form" novalidate>
+        <fieldset class="lab-fieldset">
+          <legend>Which kind of claim do you think will be hardest to classify?</legend>
+          <label class="option-row">
+            <input type="radio" name="hardestClaim" value="medication" />
+            <span>Medication efficacy claims</span>
+          </label>
+          <label class="option-row">
+            <input type="radio" name="hardestClaim" value="serotonin" />
+            <span>Serotonin claims</span>
+          </label>
+          <label class="option-row">
+            <input type="radio" name="hardestClaim" value="brain-chemistry" />
+            <span>General brain-chemistry claims</span>
+          </label>
+        </fieldset>
+        <button class="lab-btn" type="button" id="commit-prediction">Commit prediction</button>
+      </form>
+      <p class="save-status" id="prediction-status" aria-live="polite"></p>
+    </section>
+
+    <section class="lab-panel" id="claim-panel" hidden aria-labelledby="claim-heading">
+      <div class="lab-progress" aria-live="polite">
+        <span id="item-counter">Claim 1 of 10</span>
+        <span id="progress-status">Choose a classification.</span>
+      </div>
+
+      <h2 id="claim-heading" tabindex="-1">Claim Check</h2>
+
+      <article class="classifier-item" id="claim-item" aria-live="polite">
+        <p class="lab-kicker" id="claim-topic">Claim</p>
+        <h3 id="claim-text"></h3>
+
+        <form id="claim-form" novalidate>
+          <fieldset class="lab-fieldset">
+            <legend>How should this claim be classified?</legend>
+            <label class="option-row">
+              <input type="radio" name="classification" value="supported" />
+              <span>Supported</span>
+            </label>
+            <label class="option-row">
+              <input type="radio" name="classification" value="overstated" />
+              <span>Overstated</span>
+            </label>
+            <label class="option-row">
+              <input type="radio" name="classification" value="wrong-incomplete" />
+              <span>Wrong / incomplete</span>
+            </label>
+          </fieldset>
+          <button class="lab-btn" type="button" id="check-answer">Check answer</button>
+        </form>
+
+        <section class="feedback-panel" id="feedback-panel" hidden tabindex="-1" aria-live="polite">
+          <h3 id="feedback-heading"></h3>
+          <p id="feedback-text"></p>
+          <p id="tempting-text"></p>
+          <div class="lab-actions">
+            <button class="lab-btn" type="button" id="next-item">Next claim</button>
+          </div>
+        </section>
+      </article>
+    </section>
+
+    <section class="lab-panel" id="summary-panel" hidden aria-labelledby="summary-heading">
+      <h2 id="summary-heading" tabindex="-1">Summary and Transfer</h2>
+      <p id="summary-score"></p>
+
+      <h3>Key Takeaways</h3>
+      <ol>
+        <li>Medication effects do not prove that a disorder was caused by a simple chemical deficiency.</li>
+        <li>Brain chemistry matters, but it acts through receptors, circuits, time course, body state, development, cognition, social context, and environment.</li>
+        <li>Careful neuroscience claims usually avoid single-cause explanations and ask what system, context, and evidence are involved.</li>
+      </ol>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Claim</th>
+              <th>Your classification</th>
+              <th>Best classification</th>
+            </tr>
+          </thead>
+          <tbody id="summary-table-body"></tbody>
+        </table>
+      </div>
+
+      <label class="text-label" for="transfer-response">Evaluate a new claim you see online about brain chemistry or medication. What would you need to know before accepting it?</label>
+      <textarea id="transfer-response" rows="5"></textarea>
+      <div class="lab-actions">
+        <button class="lab-btn" type="button" id="save-transfer">Save transfer response locally</button>
+        <button class="lab-btn lab-btn--secondary" type="button" id="restart-lab">Restart lab</button>
+      </div>
+      <p class="save-status" id="transfer-status" aria-live="polite"></p>
+    </section>
+
+    <section class="callout callout--think-about-it">
+      <div class="callout-title">Instructor Note</div>
+      <p>Use this lab as a short claim-check activity before discussing neurotransmitters or medication. The key debrief moment is the difference between saying chemistry is involved and saying one chemical is the whole cause.</p>
+    </section>
+  </main>
+</div>
+<script src="../../js/nav.js"></script>
+<script src="../../js/labs-chemical-imbalance-claim-check.js"></script>
+</body>
+</html>
