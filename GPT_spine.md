@@ -1,399 +1,509 @@
-# GPT Theoretical Spine
+# Working Philosophy for the Psych 101 Textbook
 ## Psychology as Biological Sense-Making Under Constraint
 
-*Working document — not a chapter draft. Use this during chapter review and revision to keep the book's framing consistent, preserve the live theoretical work, and guard against overclaiming. Last updated: 2026-06-27.*
+*Working record — not a chapter draft. This file preserves the current philosophical synthesis behind the textbook so the ideas are not lost as chapters, visuals, assignments, and Learning Labs develop.*
 
 ---
 
-## Purpose
+## 1. The central thesis
 
-This file captures the current GPT-side synthesis of the textbook's intellectual spine. It is meant to complement, not replace, chapter drafts. Treat it as a conceptual map for reviewing chapters, generating figures, designing Learning Labs, and deciding which examples belong in the book.
+Psychology is biological sense-making under constraint.
 
-The document has three layers:
+Human beings do not passively receive reality. We build usable models of reality from partial information. Those models are biological, developmental, embodied, social, emotional, linguistic, and cultural. They are built by brains, but not by brains alone. They are built by bodies living in environments, inside relationships, across development, using language and culture.
 
-1. **Compressed thesis** — the one-paragraph version of the argument.
-2. **Part 2 spine** — compressed but ordered propositions that can guide chapter structure.
-3. **Layer 3 theoretical notes** — decompressed notes by chapter, added progressively as the framework develops.
+The brain is sealed off from the world. It does not get direct access to reality. It receives partial, filtered, delayed electrochemical signals from sensory systems. From those signals, it must infer what is probably out there, what matters, what is likely to happen next, and what the organism should do.
+
+That model is constrained. The brain cannot process everything with equal priority. Attention is limited. Consciousness is narrower still. Working memory is small. Time matters. Energy matters. Action often cannot wait for perfect information. The organism has to respond before all evidence is in.
+
+So the brain predicts. Prediction is not a side feature of psychology. It is one of the major ways the nervous system manages limited information and limited processing capacity. The brain uses prior experience, concepts, emotion, bodily state, context, goals, and social cues to build an action-ready model of the world.
+
+When the model works, life feels fluent. Perception seems immediate. Action feels automatic. Social life feels predictable. Memory feels sufficient. The organism does not have to think everything through.
+
+When the model fails, something has to happen. Some errors are small and update silently. Other errors matter because they involve threat, reward, pain, loss, uncertainty, social status, attachment, control, identity, or important goals. Those errors recruit attention. They may produce emotion. They may mobilize the body. They may force learning.
+
+The spine is:
+
+> Psychology studies how biological organisms build, use, protect, revise, and share models of reality.
 
 ---
 
-## Compressed thesis
+## 2. Multicellularity, communication, and the origin of nervous systems
 
-**Psychology is biological sense-making under constraint.**
+One important way to frame neuroscience is through the problem of multicellularity.
 
-A developing brain, sealed off from direct contact with the world, builds an action-oriented model from partial sensory input. Development tunes that model to the local physical and social ecology. Attention manages limited processing capacity; prediction allows fast action; prediction error forces reallocation and possible updating. Emotion marks model states with meaning and urgency, and stress mobilizes energy when the model predicts demand, threat, uncertainty, or insufficient control. Memory keeps the model current by reconstructing, forgetting, and compressing prior experience into concepts; imagination uses that same model to simulate possible futures. Language bridges private models, collaboration calibrates them, and science disciplines them against evidence.
+A single-celled organism can sense and respond, but a multicellular organism has a harder problem: many cells must coordinate as one body. The body needs communication before it can behave as a unified organism.
 
----
+Chemical communication is ancient. Hormones are slower, body-wide chemical signals. Synapses are faster, more targeted chemical communication points. The nervous system is the fast communication network of a multicellular body.
 
-## Part 2: Compressed spine
+This reframes neurotransmitters. They are not “happy chemicals” or “sad chemicals.” They are chemical-control systems that bias what the organism is ready to do next: move, stop, seek, avoid, attend, learn, inhibit, persist, rest, defend, explore, or exploit.
 
-### 1. Biology is the substrate
+A bilaterally symmetrical organism has to choose direction. Go this way, not that way. Approach, avoid, pause, orient, feed, mate, hide, fight, freeze. A nervous system helps solve that action-selection problem.
 
-Everything psychological has a biological substrate, but biological does not mean fixed. The nervous system is living, plastic, metabolically costly tissue that develops inside a particular ecology. Biological explanation at the level of molecules and cells does not exhaust psychological explanation, because organisms live in social worlds, use language, inherit culture, and act through meanings.
+Dopamine can be taught as a “go, seek, learn from reward prediction” system, but not simply as pleasure. Serotonin can be taught as regulation, inhibition, satiety, waiting, and stabilization, but not simply as happiness. Norepinephrine can be taught as arousal and mobilization. Acetylcholine as attention and sensory tuning. GABA and glutamate as local inhibition and excitation. The details matter, but the larger point is that neurotransmitters bias action in a body that must respond.
 
-### 2. The brain is sealed off from the world
+Brains become useful when organisms need rapid, flexible sensing, integration, and action. Organisms that do not need rapid flexible action often do not maintain large centralized nervous systems. The sea squirt example is useful: the mobile larva has a nervous system; the sessile adult reduces it. The point is not that non-moving organisms do not respond to the environment. All living things respond. The point is that flexible movement and rapid action create pressure for neural control.
 
-The brain does not receive reality directly. It receives partial, filtered, delayed electrochemical signals from sensory systems. It builds a working model of what is probably out there, what matters, what is likely to happen next, and what the organism should do.
-
-### 3. The brain builds an action model
-
-The function of the model is not passive representation. It is action. Perception, learning, memory, emotion, and cognition help the organism respond effectively to its current and anticipated environment.
-
-### 4. Development tunes the model to ecology
-
-Genes constrain the range of possible development, but experience calibrates the system within that range. The physical and social ecology supplies the repeated stimuli the brain adapts to process: light, sound, food, danger, faces, voices, attachment patterns, language, reward histories, status cues, norms, and cultural categories.
-
-Development is local calibration, not simply growth. The resulting model is partly shared because humans have common biology and culture, but partly private because no two organisms have the same body, developmental history, or social ecology.
-
-### 5. Attention is the bottleneck
-
-The brain processes far more information than consciousness can hold. Attention allocates limited processing capacity toward what currently matters. It varies across individuals and states: fatigue, stress, arousal, sleep, hunger, drugs, motivation, expertise, trauma history, and context all change what becomes salient.
-
-Consciousness is narrower still. It becomes especially important when automatic processing is insufficient: when something surprising happens, predictions are violated, action is uncertain, or flexible control is needed.
-
-### 6. Prediction manages the bottleneck
-
-Because full, equal-priority processing is impossible, the brain uses prediction to compress and prioritize information. Priors, heuristics, concepts, priming, bodily state, emotion, social context, and current goals help the organism infer what probably matters before all evidence is available.
-
-When predictions hold, processing can remain fast, efficient, and mostly automatic. Routine perception, skilled action, social interpretation, and habit all depend on not starting from scratch.
-
-### 7. Prediction error drives reallocation and updating
-
-Prediction error is a mismatch between what the model expected and what occurred. It does not automatically become emotion or stress. Small, low-stakes errors can update silently. Meaningful errors — those involving threat, reward, loss, uncertainty, social signals, attachment, pain, control, or goal relevance — recruit attention more forcefully and may mobilize the body.
-
-Useful working formula:
-
-> **prediction error + meaning + action relevance = attentional priority + emotional signal + possible physiological mobilization**
-
-Prediction error is not emotion. It is a computational description of mismatch. Emotion is a biological response that tags information with urgency, valence, and action relevance.
-
-### 8. Emotion marks model states with meaning
-
-Emotion is not irrational noise layered on top of cognition. Emotion is part of the organism's priority system. It marks model states as urgent, valuable, threatening, disgusting, surprising, frustrating, socially important, identity-relevant, or worth exploring.
-
-Different emotions signal different model situations:
-
-| Emotion | What it signals |
-|---|---|
-| Surprise | Something violated expectation |
-| Fear | Something may threaten safety |
-| Disgust | Something may contaminate, degrade, or violate boundaries |
-| Curiosity | Uncertainty feels potentially resolvable and worth exploring |
-| Anxiety | Future uncertainty feels threatening and unresolved |
-| Frustration | Expected progress or reward is blocked |
-| Shame | The social-self model is under threat |
-| Pride | The self-model has gained agency, status, or competence |
-| Grief | The attachment model repeatedly predicts a person who is no longer available |
-| Relief | A predicted threat or loss did not occur |
-
-Common structure: the model has encountered information with implications for action, value, threat, control, attachment, identity, or learning. These are not interchangeable forms of one generic signal.
-
-### 9. Dopamine is the reward-learning teaching case
-
-Dopamine reward-prediction error is the clearest teaching example because it gives a concrete mechanism: dopamine is not simply pleasure; it tracks prediction, anticipation, and mismatch between expected and actual reward. When actual reward exceeds prediction, dopamine neurons fire; when expected reward fails to appear, firing drops below baseline.
-
-Caution: the classical reward-prediction-error model is incomplete. Present it as the best-understood case of reward learning, not as the mechanism for all prediction error, all emotion, or stress. The logic of mismatch detection generalizes; the dopamine mechanism does not.
-
-### 10. Stress mobilizes energy when the model predicts demand
-
-Stress arises when the organism predicts demand, threat, uncertainty, or insufficient control. The body mobilizes energy because action may be required. If the mismatch resolves, the system updates and settles. If it does not — because the threat is chronic, symbolic, social, remembered, imagined, or future-oriented — mobilization stays on. That cumulative cost is allostatic load.
-
-Prediction error is one route into stress, not the only one.
-
-Working chain:
-
-> **meaningful prediction error or perceived demand → emotional tagging → possible physiological mobilization → if unresolved, allostatic load**
-
-Stress, emotion, prediction error, and allostatic load are related but not interchangeable.
-
-### 11. The cognitive light cone expands human stress
-
-A zebra mostly mobilizes stress physiology around immediate physical threat. Humans can activate the same ancient systems around imagined futures, remembered failures, symbolic threats, social judgment, possible rejection, financial uncertainty, moral conflict, future selves, and imagined social consequences.
-
-The human cognitive light cone — the range of events, meanings, timescales, and possible futures that can matter to the organism — is unusually large. This is our advantage and our vulnerability.
-
-### 12. Memory keeps the current model useful
-
-Memory is not an archive. It is a life-history adaptation for keeping the organism's current and future action model useful. Natural selection favored organisms that retained what was currently relevant, shed what no longer improved action, and accessed relevant material quickly.
-
-Memory reconstructs prior experience to inform present and future prediction. What remains ecologically live stays accessible. What becomes routine or transferable compresses into semantic knowledge and concepts. What no longer supports current action fades.
-
-### 13. Concepts are compressed memory for prediction
-
-Concepts are not vocabulary words. They are compressed models built from experience. Repeated episodes, examples, actions, and social interactions can consolidate into semantic structures that allow prediction without retrieving individual instances.
-
-Once a student really understands *reinforcement*, *validity*, *stress*, *attachment*, or *perception*, the details become less arbitrary. They become inferable from the concept's structure.
-
-Teaching should help students move from isolated episodes and examples toward generative concepts. Memorization without concepts is brittle; concepts give details somewhere to live.
-
-### 14. Imagination simulates possible futures
-
-Memory and imagination are related model operations. Memory reconstructs prior experience to serve the current model; imagination runs the model forward into possible futures. Planning is simulated action before bodily commitment.
-
-This future-simulation capacity lets humans prepare, but also lets us suffer from futures that have not happened.
-
-### 15. Language bridges private models
-
-Each person's model is partly private because each person's biology, development, and social ecology are unique. Language makes private models partially shareable. Words, metaphors, diagrams, examples, stories, data, and conversation let people compare, revise, explain, test, and coordinate.
-
-Language does not perfectly transfer experience, but it creates enough overlap for teaching, collaboration, science, therapy, and culture.
-
-### 16. Collaboration calibrates models
-
-Other people are alternate developmental histories. They are differently tuned nervous systems carrying different priors, concepts, examples, and felt meanings. When students interact, their models collide.
-
-If structured well, that collision creates prediction error in a safe enough context to support updating rather than defensiveness. Good teaching controls the threat level so mismatch produces curiosity rather than shutdown.
-
-### 17. Science disciplines the whole process
-
-Private models can be useful, but they can also be wrong. Science disciplines sense-making through operational definitions, measurement, experimental design, statistics, replication, and theory revision. It keeps private models answerable to shared evidence.
+Psychology emerges when this communication-and-control system becomes capable of prediction, attention, memory, emotion, language, imagination, self-regulation, and flexible action.
 
 ---
 
-## Tesla Vision analogy
+## 3. Human life history as the foundation of psychology
 
-The Tesla analogy works because any vision system — biological or artificial — faces a compression problem. Raw sensory input is not perception. A system has to infer objects, motion, risk, and action relevance from incomplete data. It cannot treat every pixel, edge, or cue as equally important.
+Human psychology cannot be understood apart from human life history.
 
-But the analogy has limits. Humans are embodied, affective, developmental organisms. Our predictions are tied to action, survival, attachment, status, goals, bodily regulation, and social meaning. Tesla's system has none of that. Use the analogy to illuminate bottleneck management, not to imply mechanism-level equivalence.
+Humans are not just animals with big brains. Humans are animals with an unusually slow, protected, socially provisioned developmental strategy that allows expensive brains to be built across time.
 
-Useful teaching line:
+Life history theory asks how organisms allocate finite time and energy across growth, maintenance, reproduction, parenting, kin investment, and survival. Humans are unusual because we invest heavily in brain growth, childhood, learning, social development, language, culture, and long-term dependency.
 
-> **Vision is not data collection. Vision is bottleneck management under uncertainty.**
+The human brain is expensive. A costly brain requires a life history that can pay for it. Human childhood, prolonged dependence, cooperative caregiving, fathers, grandmothers, siblings, alloparents, and cultural provisioning are part of the energy system that makes the human mind possible.
 
----
+Childhood is not just a prelude to adulthood. Childhood is the life-history solution to building a culture-learning brain.
 
-## Trade-off structure
+Human infants are born immature in many ways, but into a social world structured to support that immaturity. The developing brain is tuned through faces, voices, touch, attachment, language, play, food, danger, norms, social rank, cooperation, conflict, and cultural tools. The human mind is socially subsidized.
 
-The whole system is organized around compounding trade-offs.
+This changes how to think about development. Development is not one chapter among many. Development is the human strategy. Humans evolved a long period in which the brain remains open to environmental input because the relevant adult skills are too complex to be preinstalled.
 
-**Speed vs. accuracy.** Fast prediction usually works, but can mislead. Deliberate processing is slower, more costly, and sometimes more accurate.
+Play becomes low-stakes model-building. Adolescence becomes a life-history stage for practicing adult social, sexual, economic, identity, and cultural skills while the brain remains unusually plastic and socially sensitive. Education becomes part of the cultural extension of human life history: a formal system for accelerating conceptual compression.
 
-**Prediction vs. updating.** Priors are cheap. Incorporating new information costs attention and energy. Meaningful prediction errors force reallocation.
-
-**Efficiency vs. flexibility.** Automatic models save effort but can become rigid. This explains why extinction is not erasure, why habits are hard to break, and why trauma can keep threat predictions alive after the ecology has changed.
-
-**Stability vs. change.** A coherent model gives identity and confidence, but makes revision harder. Both therapy and education work against this resistance.
-
-**Local fit vs. general truth.** Development tunes organisms to their ecology, but that tuning may fail elsewhere — in new cultures, novel environments, or situations the developmental history did not prepare for.
-
-**Private experience vs. shared reality.** Each model is unique, but language, collaboration, and science create enough overlap to allow comparison, coordination, and cumulative knowledge.
+The human mind is built by a protected developmental ecology.
 
 ---
 
-## Memory: life-history adaptation
+## 4. Development tunes the model to local ecology
 
-Memory is a life-history adaptation, not an archival system. The organizing question is not "why did we forget that?" but "what allows the organism to be maximally efficacious in its current environment?"
+Genes constrain the range of possible development, but experience tunes the actual system.
 
-### Selective encoding
+The brain develops inside a local physical and social ecology. That ecology supplies the repeated stimuli the brain learns to process: faces, voices, accents, caregivers, foods, dangers, norms, language, status cues, reward histories, moral expectations, and cultural categories.
 
-The brain preferentially encodes events that violated expectation or carried emotional significance: novelty, threat, reward, social meaning, surprise, dissonance. Routine events that were fully predicted generate small prediction errors and leave little episodic trace. This is compression working correctly, not memory failing.
+Development is calibration. The organism learns what kind of world it is living in.
 
-### Ecological relevance, not just encoding strength
+A child growing up in a safe, predictable, responsive ecology may learn that waiting, trusting, exploring, planning, and investing in the future usually pay off. A child growing up in a harsh, unstable, or unpredictable ecology may learn that vigilance, fast response, immediate reward, distrust, and sensitivity to threat are more adaptive.
 
-Routine events from prior ecologies are not merely weakly encoded. They become irrelevant as the social and physical context that gave them meaning dissolves. A morning routine from junior high was calibrated to an ecology that no longer exists. Even if retrievable, it would support no current prediction and no current action.
+This is not moral ranking. It is not destiny. It is ecological calibration.
 
-What persists is what still connects to the present organism's world: transferable skills, conceptual structures, attachment patterns, threat calibrations, unresolved states.
+This matters for personality, stress, attachment, memory, learning, social psychology, and disorders. A behavior that looks irrational in one ecology may have been sensible in another. A nervous system may be well tuned to a past environment and poorly tuned to the current one.
 
-### Priming keeps the relevant past accessible
-
-The things most likely to be needed in the current ecology should be most rapidly accessible. Priming is the mechanism by which current context keeps relevant material activated for fast response. The model is always current; memory contributes to it where the past is still ecologically live.
-
-### Episodic memory compresses into semantic memory
-
-Episodes accumulate and compress into generative concepts — schemas, skills, semantic knowledge — that predict without requiring retrieval of individual instances. The episodic scaffolding then dissolves because only the compressed product is needed.
-
-This is also the arc of good teaching: students begin with episodic traces ("I read this example") and instruction drives compression into a concept that travels and predicts.
+This helps explain why people do not simply disagree because one person is rational and the other is irrational. They often bring differently tuned models to the same stimulus.
 
 ---
 
-## Trauma: unresolved threat in the model
+## 5. Perception as bottleneck management
 
-Do not reduce trauma to "a strong memory." Trauma is better understood as a high-stakes unresolved model state: sensory-affective elements remain highly accessible, contextual integration may be weakened, threat generalization widens, and the triggered state can interfere with the very regulatory machinery needed to update the memory.
+Perception is not recording. Perception is inference under constraint.
 
-### Trauma as stuck consolidation
+The brain is locked in the dark. It receives sensory signals, not the world itself. It must build an action-ready model from incomplete input.
 
-Traumatic memories can resist the normal episodic→semantic pathway. The episode stays primed and vivid because the nervous system treats the threat as unresolved. Consolidation into a managed semantic structure requires something like "this situation is understood and handled." If that signal never arrives, the specific episode remains maximally accessible for rapid activation.
+The Tesla Vision analogy helps because any vision system faces the same general problem: raw input is not perception. The system must infer objects, motion, risk, and action relevance from incomplete data. It cannot process every pixel with equal priority. It has to decide what matters.
 
-Use "stuck consolidation" as shorthand, not as the whole explanation.
+But the analogy has limits. Humans are embodied, affective, developmental organisms. Our perception is tied to action, survival, attachment, status, emotion, bodily regulation, social meaning, and prior experience. Tesla does not have that.
 
-### Encoding failure upstream of consolidation failure
+Perceptual organization is where evolved constraint and ecological tuning meet. The visual system is not a blank slate. It has built-in organizing tendencies: figure-ground, grouping, edge detection, depth processing, constancy, motion sensitivity. But experience, attention, expertise, goals, language, and prediction tune how input becomes perception.
 
-Extreme stress — high cortisol, amygdala hyperactivation, defensive mobilization — can disrupt hippocampal encoding during the traumatic event itself. The hippocampus helps contextualize memory in time and place. Under severe threat, contextual encoding may be impaired while sensory-affective elements remain potent.
+The best line:
 
-Teaching shorthand:
-
-> The event may not be fully tagged as "there, then, and over."
-
-### Fear generalization widens the threat net
-
-The nervous system does not keep only the original cues flagged. It broadens the similarity radius. Stimuli that partially resemble the original threat get treated as dangerous. Immediately after real threat, over-detection is adaptive. It becomes maladaptive when the threat net stays wide in a changed ecology.
-
-### The dysregulation paradox
-
-The triggered threat response is often the worst state for integration. Recontextualization requires prefrontal and hippocampal functions: narration, temporal reasoning, inhibition, contextual updating. But the threat response shifts the organism toward defensive responding and can impair the very systems needed for integration.
-
-Working line:
-
-> The memory activates the physiological state that prevents its own integration.
-
-### Interpersonal trauma as a special case
-
-When the original threat involved another person — violation, betrayal, abuse, domination, humiliation — the threat model incorporates social signals: facial expressions, tone of voice, proximity, authority, dependency, power differences, attachment cues, and sexual or status signals.
-
-This is particularly costly because close relationships, which often provide the safety needed for regulation and updating, share structure with the original threat. The recovery context may partially resemble the danger context.
-
-### Reconsolidation logic
-
-Memories can become labile when retrieved, then restabilize. Treatments that activate the memory while pairing it with safety, agency, or corrective information may alter the original trace more directly than extinction alone. Keep this distinction tentative and evidence-calibrated: extinction adds new inhibitory learning alongside an old trace; reconsolidation approaches attempt to update the retrieved trace itself.
+> Vision is not data collection. Vision is bottleneck management under uncertainty.
 
 ---
 
-## Layer 3 theoretical notes by chapter
+## 6. Attention, consciousness, and working memory
 
-This section is for decompressed elaborations. Add to it progressively as chapter work reveals deeper connections.
+Attention is the bottleneck.
 
-### Prologue — Teaching as conceptual compression
+The brain processes far more information than consciousness can hold. Attention allocates limited processing capacity toward what currently matters. It is affected by fatigue, stress, arousal, sleep, hunger, drugs, motivation, expertise, trauma history, emotion, goals, and context.
 
-Students arrive with episodic fragments: isolated facts, examples half-remembered, intuitions without structure. Good instruction creates conditions for compression. Episodes accumulate until a generative concept emerges.
+Consciousness is narrower still. Most of perception, action, emotion, and regulation runs automatically. Consciousness becomes especially important when automatic processing is insufficient: when prediction fails, action is uncertain, explanation is needed, communication is required, or flexible control becomes necessary.
+
+Consciousness is not the whole mind. It is the narrow workspace where selected information becomes reportable, flexible, and socially shareable.
+
+Working memory is limited because active control is biologically expensive. It requires sustained neural activity, resistance to interference, attentional control, coordination across regions, time, and metabolic support. The prefrontal cortex is central to this system, but working memory limits should be framed as whole-network biological constraints, not simply as “the PFC uses too much energy.”
+
+Still, the intuition matters: flexible control is costly. Automatic processing is efficient because effortful control is limited.
+
+---
+
+## 7. Prediction and prediction error
+
+Prediction is one of the brain’s main solutions to limited information and limited processing capacity.
+
+The brain uses priors, heuristics, concepts, priming, bodily state, emotion, social context, and current goals to decide what is probably happening. That lets the system run quickly and cheaply most of the time.
+
+When prediction holds, processing stays automatic.
+
+When prediction fails, the system must decide whether the error matters.
+
+Small, low-stakes errors can update silently. Meaningful errors recruit attention more forcefully. These include errors involving threat, reward, pain, loss, uncertainty, social evaluation, attachment, control, or goal relevance.
+
+The useful formula is:
+
+> prediction error + meaning + action relevance = attentional priority + emotional signal + possible physiological mobilization
+
+But prediction error is not the same as emotion. Prediction error is a mismatch. Emotion is a biological priority signal that tags model states with urgency, valence, and action relevance.
+
+---
+
+## 8. Emotion as model-priority signaling
+
+Emotion is not irrational noise layered on top of cognition. Emotion is part of the priority system.
+
+Emotion tells the organism that something matters for action, prediction, control, attachment, status, threat, reward, loss, identity, or learning.
+
+Prediction error is often the trigger, but not all emotion is simply prediction error. A better formulation is:
+
+> Emotion is how a biological prediction system marks what matters.
+
+Different emotions indicate different model states:
+
+- Surprise: something violated expectation.
+- Fear: something may threaten safety.
+- Disgust: something may contaminate, degrade, or violate boundaries.
+- Curiosity: uncertainty feels resolvable and worth exploring.
+- Anxiety: future uncertainty feels threatening and unresolved.
+- Frustration: expected progress or reward is blocked.
+- Shame: the social-self model is under threat.
+- Pride: the self-model has gained competence, agency, or status.
+- Grief: the attachment model keeps predicting a person who is no longer available.
+- Relief: a predicted threat or loss did not occur.
+
+The common structure is not “all emotions are prediction error.” The common structure is that the organism’s model has encountered information with implications for action, value, threat, control, attachment, identity, or learning.
+
+Emotion prepares action, shapes memory, regulates bodily state, narrows or redirects attention, communicates to others, and marks what the organism cannot ignore.
+
+---
+
+## 9. Stress, allostasis, and the cognitive light cone
+
+Stress occurs when the organism predicts demand, threat, uncertainty, or insufficient control.
+
+Stress is not simply prediction error. Prediction error is one route into stress. The broader chain is:
+
+> meaningful prediction error or perceived demand → emotional tagging → physiological mobilization → if unresolved, allostatic load
+
+Stress mobilizes energy because action may be required. Acute mobilization is adaptive. The problem is unresolved, chronic, repeated, symbolic, social, remembered, imagined, or future-oriented mobilization.
+
+The zebra point matters. Zebras mostly mobilize stress physiology around immediate physical threat. Humans can mobilize the same ancient systems around imagined futures, remembered failures, symbolic threats, social judgment, financial uncertainty, moral conflict, possible rejection, and future selves.
+
+The human cognitive light cone is huge. Humans can be affected by events far away, long ago, not yet happened, socially implied, morally imagined, or symbolically represented. That is our advantage and our vulnerability.
+
+The same simulation capacity that enables planning also enables chronic stress.
+
+---
+
+## 10. Sleep as recalibration and model maintenance
+
+Sleep is not downtime.
+
+Sleep is a recurring biological state in which the brain and body regulate, consolidate, prune, restore, and recalibrate.
+
+Sleep stages are integral to brain development and tuning. Sleep supports memory consolidation, synaptic regulation, emotional regulation, attention, metabolic restoration, and developmental plasticity. Sleep loss narrows attention, weakens executive control, increases emotional reactivity, disrupts learning, and alters stress physiology.
+
+This means sleep belongs in the spine. It is not merely a “state of consciousness.” It shows that consciousness, memory, development, emotion, and regulation depend on recurring brain-body states.
+
+Sleep is part of model maintenance.
+
+---
+
+## 11. Memory as life-history adaptation
+
+Memory is not an archive. It is a life-history adaptation for keeping the organism’s current action model useful.
+
+The central question is not “why did we forget that?” The better question is:
+
+> What allows the organism to respond effectively in its current environment?
+
+Memory reconstructs prior experience to inform the present and future. It retains what is currently useful, compresses what is routine or transferable, primes what is likely to matter, and lets ecologically dead episodes fade.
+
+A junior high morning routine is not merely weakly encoded. It belonged to a body, schedule, identity, social world, and ecology that no longer exist. Keeping it highly accessible would add search cost without improving present action.
+
+Forgetting is not always failure. Sometimes forgetting is model maintenance.
+
+Memory works through ecological relevance:
+
+- Events with prediction error, novelty, threat, reward, or social meaning are more likely to be encoded.
+- Repeated experiences compress into schemas, skills, and concepts.
+- The current context primes relevant past material.
+- Past experiences fade when they no longer support current action.
+- Unresolved experiences remain accessible because the model still treats them as live.
+
+Memory is prospective, not archival. It serves the current and future model.
+
+---
+
+## 12. Concepts as compressed memory
+
+Concepts are not vocabulary words. Concepts are compressed models built from experience.
+
+Repeated episodes, examples, actions, conversations, and social encounters can consolidate into semantic structures that allow prediction without retrieving individual instances.
+
+Once someone understands “apple,” they can predict seeds, taste, texture, uses, colors, category boundaries, and memories. Once students understand “reinforcement,” “validity,” “stress,” “attachment,” or “perception,” the details become less arbitrary. They become inferable.
+
+This connects directly to teaching.
+
+Students arrive with episodic fragments: a fact, an example, a memory from class, a phrase from the reading, an intuition, a misconception. Good instruction creates conditions for compression. The fragments become a generative concept.
 
 A concept is ready when a student can use it to predict something they have not been explicitly told.
 
-**Concepts give details somewhere to live.** Before a concept is in place, facts are arbitrary and fragile. After it is in place, facts become inferable consequences of the structure.
+Memorization without concepts is brittle. Concepts give details somewhere to live.
 
-**Students as alternate developmental histories.** Structured peer discussion is not a break from learning; it is a mechanism for model revision. Differently tuned models collide. In a safe enough context, that collision creates productive prediction error rather than defensiveness.
+The textbook itself is part of this process. It is the semantic product of years of teaching episodes: student confusions, classroom examples, failed explanations, successful demonstrations, arguments, metaphors, and conceptual revisions. The book teaches the process by which it was made.
 
-**The zebra question as pedagogy.** Is a zebra black with white stripes or white with black stripes? The question looks trivial but forces students to ask what evidence would count: embryology, evolutionary history, developmental sequence, related species, function. The answer matters less than the process. The question creates a situation where the student's current concept is insufficient and must be rebuilt from multiple converging sources.
+---
 
-### Ch. 2 — Research methods and statistics
+## 13. Imagination and future simulation
 
-Science is the calibration layer. Because private models can be compelling and wrong, psychology needs operational definitions, reliable and valid measures, comparison groups, random assignment, statistics, effect sizes, confidence intervals, replication, and ethical constraints.
+Memory and imagination use related model operations.
 
-Ch. 2 should teach students that scientific method is not a pile of rules. It is a disciplined way of comparing models against evidence.
+Memory reconstructs prior experience to serve the present and future. Imagination runs the model forward into possible futures. Planning is simulated action before bodily commitment.
 
-### Ch. 3 — Neuroscience
+This is one reason humans are powerful. We can test possible futures before acting. We can imagine social consequences, moral possibilities, future selves, threats, opportunities, regrets, and plans.
 
-**Dopamine RPE as illustration, not total mechanism.** The Schultz reward-prediction-error model is the clearest mechanistic example of mismatch detection driving learning. Present it as such. The teaching value is the principle: expected ≠ actual → update. Do not imply dopamine is the prediction-error signal for the whole brain.
+But this is also why humans suffer from imagined futures. The same system that allows planning can activate stress, shame, fear, grief, or anxiety around events that are not physically present.
 
-**Stress physiology as mobilization.** Sympathetic activation and cortisol are not "bad." They are costly tools. They mobilize energy for acute demands. The problem is chronic activation by symbolic, social, remembered, imagined, or future threats.
+Imagination expands the cognitive light cone.
 
-### Ch. 4 — Sensation and perception
+---
 
-**Perception as bottleneck management.** The brain is locked in the dark, receiving signals rather than reality. Perception is the process of building an action-ready model from partial input. Bottom-up input matters, but top-down expectations, context, priming, attention, and prior learning shape what is perceived.
+## 14. Language as the bridge between private models
 
-The Tesla Vision analogy belongs here as a bridge: more raw sensory data does not solve the problem. The hard problem is deciding what the data means and what matters for action.
+Each person’s model is partly private because each person’s biology, development, body state, history, culture, and ecology are partly unique.
 
-Core line:
+Language makes private models partially shareable.
 
-> Vision is not recording. Vision is inference under constraint.
+Words never fully transfer experience. My “yellow,” “home,” “threat,” “fair,” “success,” “authority,” and “safe” may not feel like yours. But language lets us point, compare, explain, revise, metaphorize, argue, test, coordinate, and teach.
 
-### Ch. 5 — Consciousness and attention
+Language is the bridge between private models.
 
-**Attention-consciousness as the control hinge.** Attention reallocates processing when the current model needs revision. Consciousness is not the whole system; it is the narrow workspace where selected information becomes reportable, flexible, and socially shareable.
+This is why teaching is not only information transfer. It is model alignment. The teacher is trying to build enough shared structure that students can use concepts flexibly, not merely repeat words.
 
-Prediction error can recruit attention directly. Emotion amplifies recruitment when the error has meaning. Consciousness becomes especially important when automatic prediction fails and the organism needs flexible control, explanation, communication, or deliberate updating.
+Science, therapy, collaboration, and culture all depend on this bridge.
 
-### Ch. 6 — Learning
+---
 
-**Extinction as prediction error, not erasure.** Extinction is not deletion of the original association. It is new inhibitory learning layered on top: a new prediction ("CS no longer predicts US") that competes with the original. The original trace remains, which explains spontaneous recovery, renewal, and return of fear under stress.
+## 15. Collaboration as model calibration
 
-This is the prediction/updating trade-off made concrete: updating is expensive, partial, and context-dependent.
+Other people are alternate developmental histories.
 
-### Ch. 7 — Memory
+They are not just holders of opinions. They are differently tuned nervous systems carrying different priors, concepts, examples, fears, hopes, attachments, and felt meanings.
 
-Memory is the chapter where the life-history argument should become explicit. Memory serves the current model, not the past. It reconstructs, compresses, primes, and forgets according to ecological relevance.
+When students interact, their models collide. That collision can produce prediction error. If the context is safe enough, the mismatch produces curiosity and updating. If the context feels threatening, the same mismatch can produce defensiveness.
 
-Core frame:
+Good teaching controls the threat level so that model collision becomes productive.
 
-> Memory is not a museum. It is model maintenance.
+This may be one of the deepest teaching principles:
 
-Episodic→semantic compression should become the bridge to concepts and teaching.
+> Create situations where students’ current concepts are insufficient, but not humiliatingly so. Let them feel the limits of their model. Give them other minds to think with. Then help them build a richer concept that predicts more, explains more, and travels farther.
 
-### Ch. 8 — Thinking, language, and intelligence
+The zebra question captures this. “Is a zebra black with white stripes or white with black stripes?” looks trivial, but it forces students to ask what evidence would count: embryology, evolution, development, function, related species. The answer matters less than the process. The question creates safe conceptual insufficiency.
 
-System 1/System 2 can be framed as fast heuristic prediction versus slower deliberate updating. Heuristics are compressed models. Biases are often prediction systems applied outside the ecology or context where they were calibrated.
+---
 
-Language should be treated as the symbolic bridge between private models. AI belongs here as a contrast case: language-like output without the same embodied developmental pathway, though multimodal and agentic systems complicate the boundary.
+## 16. Statistics and science as public calibration
 
-### Ch. 9 — Lifespan development
+Statistics belongs in the spine.
 
-Development is calibration to local ecology within genetic constraints. Sensitive periods, perceptual narrowing, attachment, language acquisition, and adolescent social sensitivity are all cases where the system tunes itself to recurring environmental structure.
+Statistics help individually tuned minds find truth beyond their own qualia and limited experience.
 
-Attachment is especially important: early caregivers are not just relationships; they are the social ecology that trains prediction about safety, availability, regulation, and self-worth.
+Each person’s perception is partial. Memory is selective. Attention is biased. Intuition is tuned to local ecology. Experience is limited. Confidence can exceed evidence. A person can be sincere and wrong.
 
-### Ch. 10 — Social psychology
+Science is the system humans built to discipline private models against public evidence.
 
-Social psychology is where other minds become the dominant environment. Social cues are stimuli; norms are predictive structures; conformity and obedience are model-calibration pressures; prejudice can be understood as a fast social heuristic overgeneralized into moral and empirical error.
+Statistics are not just math procedures. They are tools for model correction. They help us ask whether a pattern is larger than noise, whether an effect is reliable, whether a sample represents a population, whether a relationship might be due to chance, whether a measure captures what it claims, and whether our explanation survives comparison with alternatives.
 
-Group contexts alter attention, emotion, threat sensitivity, and prediction about what behavior is safe, rewarded, punished, or identity-consistent.
+Research methods are not a pile of rules. They are the shared calibration system for minds that cannot fully trust themselves.
 
-### Ch. 11 — Personality
+This means Ch. 2 is not separate from the philosophy of the book. It is where private experience becomes publicly accountable.
 
-Personality can be framed as stable individual differences in how the model is tuned: sensitivity to threat, reward, novelty, order, social approval, uncertainty, and control. Person-situation interaction becomes model × context: the same person expresses different patterns depending on which cues the situation activates.
+---
 
-### Ch. 12 — Emotion, stress, and coping
+## 17. Personality as stable model-tuning
 
-This is the central chapter for emotion as model-priority signal and stress as mobilization around perceived demand.
+Personality is not a fixed inner essence.
 
-**Cognitive light cone.** Human simulation expands what can matter. We can mobilize ancient stress physiology around remembered failures, imagined futures, symbolic threats, social judgment, and future selves.
+Personality is a relatively stable pattern in how a person’s biological model of the world is tuned: what feels threatening, rewarding, controllable, trustworthy, worth pursuing, worth avoiding, or worth delaying gratification for.
 
-**Coping.** Coping strategies differ partly by whether they change the situation, change the model, change the body state, or change attention.
+Traits describe these patterns. Development helps tune them. Situations activate them.
 
-### Ch. 13 — Disorders and therapy
+The Big Five should remain the descriptive backbone:
 
-Disorders can often be framed as models that are rigid, overgeneralized, under-updated, miscalibrated, or costly in the current ecology. This does not mean disorders are "just beliefs." They are biological model states involving body, attention, memory, prediction, emotion, learning, social context, and development.
+- Neuroticism: sensitivity to threat, uncertainty, loss, and negative affect.
+- Extraversion: sensitivity to reward, energy, and social opportunity.
+- Conscientiousness: future-model control, planning, inhibition, and reliability.
+- Agreeableness: trust, cooperation, empathy, and social-harmony weighting.
+- Openness: exploration, novelty tolerance, imagination, and conceptual flexibility.
+
+Life history theory adds one useful question:
+
+> What kind of world did this nervous system learn it was living in?
+
+A predictable, supportive world may reward patience, trust, and long-term investment. A harsh or unpredictable world may reward vigilance, fast response, immediate reward, and skepticism about distant promises.
+
+The guardrail is essential: this is not destiny, not a moral ranking, and not a replacement for trait models. It is a lens for asking why a pattern may have made sense in one ecology and may fit poorly in another.
+
+---
+
+## 18. Trauma as unresolved threat in the model
+
+Trauma is not simply a strong memory.
+
+Trauma is a high-stakes unresolved model state. Sensory-affective elements remain highly accessible. Contextual integration may be weakened. Threat generalization widens. Cues can trigger present-tense activation. The triggered state can interfere with the regulatory machinery needed to update the memory.
+
+The short version:
+
+> The past remains biologically present because the model has not successfully recontextualized the threat as over.
+
+Several mechanisms matter:
+
+- Extreme stress can impair hippocampal contextual encoding.
+- The event may not be fully tagged as “there, then, and over.”
+- Fear generalization broadens the threat net.
+- The triggered threat state can suppress or impair the prefrontal and hippocampal systems needed for integration.
+- Interpersonal trauma is especially costly because social cues become part of the threat model.
+- Recovery often requires safe relationship, but relationship may partially resemble the danger context.
+
+The dysregulation paradox is important:
+
+> The memory activates the physiological state that prevents its own integration.
+
+“Stuck consolidation” is useful shorthand, but it should not become the whole explanation. Trauma involves disrupted contextualization, overgeneralized threat prediction, cue-reactivity, dysregulation, and reconsolidation problems.
+
+Therapy can be framed as guided model revision: safety, relationship, exposure, reappraisal, behavioral change, body regulation, and memory updating.
+
+---
+
+## 19. Disorders and therapy as model problems, not “just thoughts”
+
+Disorders can often be understood as models that are rigid, overgeneralized, under-updated, miscalibrated, or costly in the current ecology.
+
+This does not mean disorders are “just beliefs.” They are biological model states involving attention, memory, emotion, stress physiology, learning, development, social context, body state, and culture.
 
 Examples:
 
 - Depression: negative priors about self, future, agency, reward, and social worth.
-- Anxiety: overprediction of threat and underprediction of coping/control.
+- Anxiety: overprediction of threat and underprediction of coping or control.
 - PTSD: unresolved threat, weakened contextual integration, widened threat generalization, cue-triggered present-tense activation.
-- Substance use: reward-learning systems hijacked by artificially intense prediction and motivation signals.
-- Therapy: guided model revision through safety, relationship, exposure, reappraisal, behavioral change, and memory reconsolidation.
+- Substance use: reward-learning systems captured by unusually intense motivation and prediction signals.
+- OCD: threat or error signals that fail to settle.
+- Eating disorders: body, control, reward, threat, social evaluation, and identity models interacting.
+
+Therapy is model revision under conditions of safety and support.
+
+The goal is not simply insight. The goal is updating: new predictions, new bodily responses, new behavior, new social experiences, new memory meanings, and new forms of control.
 
 ---
 
-## Learning Labs implied by the spine
+## 20. AI as contrast case
 
-Standalone labs should let students practice model-building, prediction, revision, and calibration without outsourcing thinking.
+AI helps clarify human psychology when used carefully.
+
+AI can produce language-like output, summarize information, generate associations, and mimic explanation. But AI does not have a human life history. It does not have a body that had to survive infancy, regulate stress, attach to caregivers, learn through play, develop through adolescence, feel hunger, fear rejection, undergo puberty, sleep, grieve, or build concepts from embodied experience.
+
+This makes AI useful as a contrast. It shows that language and intelligence-like output are not the same as human meaning. Humans do not just have information. Humans have embodied, affective, developmental models of the world.
+
+Responsible AI use in the textbook should follow an AI-after-effort model:
+
+1. Students first build their own model.
+2. Then they use AI to find gaps, counterexamples, alternative explanations, and overclaims.
+3. They remain responsible for revision.
+
+AI should help students refine concepts, not outsource cognition.
+
+---
+
+## 21. What this philosophy changes about the textbook
+
+The book should not teach psychology as a list of topics.
+
+It should teach psychology as the study of how biological organisms build usable worlds.
+
+Each chapter becomes one view of the same system:
+
+- Ch. 2 Research Methods: how private models become publicly accountable.
+- Ch. 3 Neuroscience: how multicellular bodies communicate, coordinate, and control action.
+- Ch. 4 Sensation and Perception: how partial input becomes action-ready perception.
+- Ch. 5 Consciousness and Sleep: how states, attention, and sleep regulate model access and maintenance.
+- Ch. 6 Learning: how prediction and consequences update behavior.
+- Ch. 7 Memory: how the past is reconstructed, compressed, primed, and forgotten to serve the current model.
+- Ch. 8 Thinking, Language, and Intelligence: how concepts, symbols, and simulation extend the model.
+- Ch. 9 Development: how the human life history builds the mind across dependence, play, social learning, and culture.
+- Ch. 10 Social Psychology: how other minds become the central ecology.
+- Ch. 11 Personality: how stable model-tunings differ across people.
+- Ch. 12 Emotion, Stress, and Coping: how the organism marks what matters and mobilizes around demand.
+- Ch. 13 Disorders and Therapy: how models become rigid, miscalibrated, costly, and revised.
+
+---
+
+## 22. Learning Labs implied by the philosophy
+
+Learning Labs should let students practice model-building, prediction, revision, calibration, and AI-after-effort.
 
 Potential reusable labs:
 
-- **Perception as prediction lab:** ambiguous images, degraded stimuli, priming, and expectation effects.
-- **Attention bottleneck lab:** inattentional blindness, divided attention, state effects on salience.
-- **Prediction error learning lab:** students make trial-by-trial predictions, receive feedback, and track updating.
-- **Concept compression lab:** students move from examples to a generative concept and test whether it predicts new cases.
-- **Memory relevance lab:** students distinguish archival memory from ecologically useful memory.
-- **Stress/cognitive light cone lab:** students map immediate threats, remembered threats, imagined futures, and body mobilization.
-- **Social model-collision lab:** structured disagreement designed to create curiosity rather than defensiveness.
-- **AI-after-effort lab:** students first build their own model, then use AI to find counterexamples, missing mechanisms, and overclaims.
+- Perception as prediction: ambiguous images, degraded stimuli, expectation effects.
+- Attention bottleneck: divided attention, inattentional blindness, state effects.
+- Prediction error learning: students make predictions, receive feedback, and track updating.
+- Concept compression: students move from examples to generative concepts.
+- Memory relevance: archival memory versus ecologically useful memory.
+- Stress and cognitive light cone: students map immediate, remembered, imagined, symbolic, and future threats.
+- Social model collision: structured disagreement that produces curiosity instead of defensiveness.
+- AI-after-effort: students first build their own explanation, then ask AI for counterexamples and missing mechanisms.
+- Statistics as calibration: students compare intuition, anecdote, sample data, and statistical inference.
+- Sleep as model maintenance: students connect sleep stages to memory, emotion, attention, and development.
 
-Learning Labs should remain accessibility-first, privacy-preserving, and evidence-calibrated. Do not overclaim that a brief individual activity is a valid experiment on the student.
-
----
-
-## What not to claim
-
-- Do not present active inference or free energy minimization as consensus neuroscience. It is a productive theoretical framework, not a settled account.
-- Do not say the brain *is* a prediction machine as if that settles the debate. Say the brain *uses* prediction as a major organizing principle.
-- Do not collapse prediction error, dopamine, emotion, stress, and allostatic load into a single mechanism.
-- Do not imply the Tesla analogy is mechanistically accurate. It illustrates the bottleneck problem.
-- Do not say full sensory processing is metabolically impossible as the whole explanation. The bottleneck is attention, bandwidth, working memory, time, and action demands, not metabolism alone.
-- Do not generalize the dopamine RPE mechanism to other emotional systems or to stress physiology.
-- Do not make emotion identical to prediction error. Emotion marks meaningful, action-relevant model states; prediction error is often a trigger.
-- Do not reduce trauma to stuck consolidation alone. Treat that phrase as shorthand for disrupted contextualization, overgeneralized threat prediction, cue-reactivity, dysregulation, and reconsolidation problems.
-- Do not imply all forgetting is adaptive. Forgetting can be adaptive, neutral, or harmful depending on what is lost and what the organism currently needs.
-- Do not invoke qualia heavily as a teaching concept. The phenomenological point — each person's model has a first-person texture — can usually be made without entering philosophy of mind disputes.
-- Do not say "everything psychological is biological" without adding that biological explanation does not exhaust psychological explanation.
+Labs should be accessibility-first, privacy-preserving, evidence-calibrated, and should not claim that a brief classroom activity is a valid experiment on the student.
 
 ---
 
-## Current open questions
+## 23. Guardrails: what not to overclaim
 
-1. How much of this spine belongs visibly in the Prologue versus remaining in this working document?
-2. Should Ch. 4 explicitly introduce "perception as bottleneck management," or should that stay as instructor-facing logic?
-3. Where should the memory→concepts→imagination arc first appear for students?
-4. How much trauma theory belongs in Ch. 13 without overwhelming Psych 101 students?
-5. How often should AI be used as a contrast case versus a genuine explanatory analogy?
-6. What original figure best represents the whole spine?
+This framework is powerful, but it should not become monocausal.
 
-Candidate figure: **From Signals to Shared Models** — sensory input → action model → attention bottleneck → prediction/update loop → memory/concept compression → imagination → language/collaboration/science.
+Do not claim:
+
+- The brain is only a prediction machine.
+- All emotion is prediction error.
+- Dopamine explains all learning, emotion, or motivation.
+- Stress is only unresolved prediction error.
+- Trauma is only stuck consolidation.
+- Forgetting is always adaptive.
+- Personality is destiny.
+- Life history theory explains all personality differences.
+- Race, class, or culture are biological destiny.
+- AI language output is equivalent to human meaning.
+- Tesla Vision is mechanistically equivalent to human perception.
+- Active inference or free-energy theories are settled consensus.
+- Everything psychological is biological without adding that biological explanation does not exhaust psychological explanation.
+
+The goal is not to force every topic into one theory. The goal is to use the spine as an integrating model while preserving empirical humility.
+
+---
+
+## 24. The deepest personal discovery
+
+The framework describes the process that produced the framework.
+
+Years of teaching created episodes: classroom moments, student questions, failed examples, successful demos, discussions, confusions, arguments, metaphors, and moments of insight. Over time, those episodes compressed into concepts. Those concepts are now becoming the textbook.
+
+The textbook is not separate from the integration work. It is the semantic product of a life history spent teaching, thinking, revising, and trying to understand.
+
+Teaching is meaningful not only because it helps students. Teaching is the ecology that allowed this integration to happen. It generated the repeated encounters with ideas, students, misunderstandings, and examples that made the larger conceptual structure possible.
+
+The book is the tapestry.
+
+It teaches psychology as biological sense-making under constraint, and it was created by the same process: experience compressed into concepts, concepts elaborated through language, and models calibrated through collaboration.
+
+---
+
+## 25. Best one-sentence version
+
+Psychology is the study of how biological bodies, built across development inside social ecologies, use brains to build, update, protect, share, and sometimes repair action-oriented models of reality.
+
+---
+
+## 26. Best teaching version
+
+Your brain does not simply record the world. It builds a model that helps you act. That model is shaped by your body, your development, your culture, your relationships, your memories, your emotions, and your current state. Psychology studies how that model is built, how it works, how it fails, and how it changes.
+
+---
+
+## 27. Best internal version
+
+Human psychology is the product of a slow life history: an expensive brain, extended childhood, prolonged dependence, social provisioning, play, language, and cultural learning. The developing organism builds a compressed action model from partial information. Attention manages the bottleneck, prediction enables speed, emotion marks what matters, stress mobilizes around demand, sleep and memory maintain the model, concepts compress experience, imagination simulates futures, language bridges private worlds, collaboration calibrates them, and science disciplines them against evidence.
