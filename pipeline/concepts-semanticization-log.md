@@ -213,6 +213,32 @@ Therapy often creates conditions for accommodation:
 
 This connects therapy to the broader spine: prediction, emotion, memory, trauma, and semanticization.
 
+## Concepts and emotions: meaning vs. mattering
+
+The explicit/implicit distinction is not the best way to separate concepts from emotions. Concepts can run automatically and implicitly. Emotions can become explicit when they are labeled, reflected on, or communicated.
+
+The better distinction is semantic prediction versus embodied appraisal prediction.
+
+Concepts are semantic predictions. They help the organism infer what something is, what category it belongs to, what properties usually follow, and what other meanings are nearby. “Dog” predicts animal, pet, fur, barking, leash, friendliness or danger, breed, memory, and context.
+
+Emotions are embodied appraisal predictions. They estimate what a situation means for bodily regulation, goals, safety, status, attachment, control, and action. Fear predicts possible danger and prepares escape, freezing, attention narrowing, or defense. Anger predicts blocked goals or violation and prepares confrontation or repair. Shame predicts social-self threat and prepares hiding, appeasement, or status repair. Curiosity predicts that uncertainty is resolvable and worth approach.
+
+Working line:
+
+> Concepts predict meaning. Emotions predict mattering.
+
+Both are compressed from prior experience. Both can operate automatically. Both can become explicit through language and consciousness. Their difference is not explicit versus implicit; it is what kind of future the system is preparing for.
+
+This also prevents an overcorrection. Emotion is not outside conceptual processing. Emotion concepts such as “anger,” “fear,” “sadness,” and “pride” help categorize bodily sensations and situations into a reportable emotional experience. But the emotional system is not merely semantic labeling. It is tied to interoception, allostasis, action readiness, motivational priority, social signaling, and bodily mobilization.
+
+Possible spine sentence:
+
+> Concepts are semantic predictions about what something is and what follows from it. Emotions are embodied appraisal predictions about what the situation means for the organism’s body, goals, safety, status, attachment, control, and action.
+
+Compressed teaching version:
+
+> Concepts predict meaning. Emotions predict mattering.
+
 ## AI connection
 
 AI is useful because it makes semantic compression visible.
@@ -306,6 +332,8 @@ Concepts are not dictionary entries. Repeated examples compress into semantic ne
 Concepts are semantic compression.
 
 Concepts are portable prediction tools.
+
+Concepts predict meaning. Emotions predict mattering.
 
 A concept is ready when a student can use it to predict something they have not been explicitly told.
 
