@@ -62,7 +62,17 @@
 
 ## Next Up
 
-1. **Ch6 visuals** — now the next concrete task. Highest-value figures: (a) classical conditioning timeline (UCS/UCR → CS+UCS → CS/CR); (b) operant conditioning 2×2 (reinforcement/punishment × add/remove); (c) reinforcement schedules comparison. These should be original diagrams, not decorative images. Build as SVG + PNG per the existing pattern in `docs/images/`.
+1. **Theoretical framework is complete — carry into chapter drafts.** `pipeline/theoretical-spine.md` and `pipeline/theoretical-foundations.md` were substantially expanded in Sessions 45–46. All spine notes and foundations sections are now current. Key additions to carry into chapter markdown on review:
+   - **Ch. 3**: Bilateral symmetry argument; chemical imbalance misconception as explicit correction; gut-brain axis framing; oxytocin as neuropeptide entry point.
+   - **Ch. 4**: Seth's controlled hallucination; dress illusion as teaching demo; binding problem; perceptual disorders (agnosia, Charles Bonnet); Müller-Lyer cultural variation; individual differences taxonomy; Ch4→Ch5 bridge (leave perception question open).
+   - **Ch. 5**: Hard problem / easy problems (Chalmers, hedged); cognitive light cone in Ch5 context; octopus foil (one paragraph); self as construction (Seth); neural delay/retrospective construction (Eagleman).
+   - **Ch. 8**: Semantic space theory as the organizing frame for conceptual knowledge (concept = location + pattern of relations, not definition); Huth et al. (2016) neural atlas; social/emotional primacy finding (hedged — corpus effect); Piaget-schema developmental sequence (sensorimotor → prototype → differentiated concept); LLM-brain alignment as AI bridge (Tang et al. 2023; Tang & Huth 2025); reinforcement as worked example of prototype→differentiation arc. **Verify Popham et al. (2021) citation** (visual/linguistic boundary alignment) before using in chapter text — not yet independently confirmed.
+   - **Ch. 9**: Mother-infant biobehavioral synchrony as attachment mechanism; oxytocin/breastfeeding → HPA attenuation; secondary altriciality, cooperative breeding, differential susceptibility still pending chapter body entry.
+   - **Ch. 10**: Beliefs-as-transmitted vs. feelings-as-conditioned; just-world hypothesis as stigma mechanism; source amnesia as belief-to-felt-truth.
+   - **Ch. 12**: SM amygdala case study (Adolphs et al. 1994); hedonic treadmill (Brickman & Campbell 1971) with dopamine mechanism.
+   - **Ch. 13**: Mesolimbic pathway as common addiction mechanism (VTA→NAcc; wanting vs. liking); postpartum depression / oxytocin-HPA link; sickness behavior as evolved depression template.
+
+2. **Ch6 visuals** — next concrete build task. Highest-value figures: (a) classical conditioning timeline (UCS/UCR → CS+UCS → CS/CR); (b) operant conditioning 2×2 (reinforcement/punishment × add/remove); (c) reinforcement schedules comparison. These should be original diagrams, not decorative images. Build as SVG + PNG per the existing pattern in `docs/images/`.
 
 2. **Jon's line-by-line review of Chapters 3–13** — all markdown-complete, none yet reviewed (except Ch1/Ch2). Start with Ch3–7.
 
@@ -134,6 +144,111 @@
 ---
 
 ## Session Log
+
+---
+
+### 2026-06-27 — Session 46
+
+**What happened:** Conceptual knowledge / semantic space theory session. Jon uploaded Ch9 Conceptual Knowledge PPT (66 slides) and Huth et al. (2016) *Nature* paper. Extended discussion of how conceptual knowledge is the foundational architecture underlying prototypes, stereotypes, expertise, Dunning-Kruger, Piaget schemas, and AI. Web search confirmed all major empirical claims. Both theoretical files updated.
+
+**Added to `pipeline/theoretical-spine.md`:**
+- New full section: **### Ch. 8 — Thinking, Intelligence & Conceptual Knowledge** — covers the organizing formulation ("concept = location + pattern of relations in semantic space"), the six-way chapter sequence (why definitions fail → prototypes → exemplars → semantic networks → connectionism → embodied cognition), Huth et al. (2016) as neural atlas, the social/emotional primacy finding with evolutionary framing and corpus-effect hedge, LLM-brain alignment (Tang et al. 2023; Tang & Huth 2025), Piaget-schema developmental sequence (sensorimotor → coarse prototype → differentiated concept), assimilation/accommodation as prediction/model revision, the "reinforcement" worked example, and what not to claim.
+
+**Added to `pipeline/theoretical-foundations.md`:**
+- New **Section 18: Semantic Space Theory and Conceptual Knowledge** — full intellectual record covering: core claim, the compression chain, Huth et al. (2016) methodology and key findings, the co-occurrence/prototype connection, social/emotional primacy with hedges, Piaget developmental trajectory (including sensorimotor origin), implications for stereotypes/expertise/DK, newer literature (Tang et al. 2023; Tang & Huth 2025; brain-LLM alignment 2024), and full what-not-to-claim list.
+- **Sources section**: 12 new citations added (Huth et al. 2016, Rosch 1975, Collins & Quillian 1969, Hauk et al. 2004, Judd & Park 1988, Tang et al. 2023, Tang & Huth 2025, Gignac & Zajenkowski 2020, brain-LLM alignment 2024, Tanaka & Taylor 1991, Rosch & Mervis 1975).
+
+**Flag for Ch8 chapter review:** Popham et al. (2021) citation (visual/linguistic semantic map boundary alignment) was not independently confirmed in this session — do not use in chapter text until verified.
+
+**Files modified this session:**
+- `pipeline/theoretical-spine.md` — Ch8 section added.
+- `pipeline/theoretical-foundations.md` — Section 18 added + Sources expanded.
+- `HANDOFF.md` — Next Up updated to include Ch8 theoretical additions.
+
+---
+
+### 2026-06-27 — Session 45
+
+**What happened:** Two-phase session. Phase 1: completed the full 45-PPT sweep (eras 15–18), added three theoretical threads to spine.md. Phase 2: major expansion of both theoretical files from neuroscience and S&P specialist exam question discussions.
+
+**Phase 1 — PPT sweep (eras 15–18 complete):**
+- All 45 PPT text files now read. Era 15–16 (SS23/FS24) mostly stripped Myers publisher slides — limited new content. Era 17–18 (FS25/SS26) richest in original Jon framings.
+- Earliest appearances confirmed: Kissling et al. (2008) and "Beliefs, where do they come from?" → `15_SS23_Foundations-History_0 First Class Gen 22SS.pptx.txt`.
+- Three additions made: pattern-detection as psychopathology substrate (Statistics section); priming as probabilistic parsing (Ch7); source amnesia as belief-to-felt-truth (Ch10).
+
+**Phase 2 — Theoretical files expanded from exam question discussions:**
+
+New additions to `pipeline/theoretical-spine.md`:
+- **Ch4 S&P**: Seth's controlled hallucination; dress illusion; perceptual disorders (agnosia, prosopagnosia, Charles Bonnet, anosognosia); Müller-Lyer cultural variation; individual differences taxonomy (3 sources); binding problem as Ch4→Ch5 bridge.
+- **Ch5 Consciousness**: Hard problem / easy problems (Chalmers, hedged); cognitive light cone in Ch5 context; octopus foil; self as construction (Seth); neural delay / retrospective construction (Eagleman).
+- **Ch3 Neuroscience**: Chemical imbalance misconception as explicit correction; gut-brain axis as defensible framing; oxytocin as neuropeptide entry point.
+- **Ch12 Emotion**: SM / amygdala case study (Adolphs et al. 1994); hedonic treadmill (Brickman & Campbell 1971) with dopamine prediction-error mechanism.
+- **Ch13 Disorders**: Mesolimbic pathway as common addiction mechanism (VTA→NAcc; wanting vs. liking, Berridge); postpartum depression / oxytocin-HPA attenuation chain.
+- **Ch9 Development**: Mother-infant biobehavioral synchrony (Feldman et al.); oxytocin/breastfeeding → HPA attenuation → attachment.
+- **What not to claim**: 12 new entries (Seth framing, Chalmers hard problem, oxytocin as "love hormone," breastfeeding/bonding conflation, PPD causality, dopamine = pleasure, chemical imbalance, mesolimbic reductionism).
+
+New additions to `pipeline/theoretical-foundations.md`:
+- **Section 12**: Perception as controlled hallucination (Seth) — dress illusion, predictive self, Ch4→Ch5 bridge.
+- **Section 13**: Hard problem of consciousness (Chalmers) — easy problems taxonomy, Dennett counterposition, pedagogical approach.
+- **Section 14**: Binding problem — distributed feature processing, temporal synchrony and attention as candidate mechanisms.
+- **Section 15**: Hedonic treadmill — Brickman & Campbell 1971/1978; dopamine prediction-error mechanism; implications for Ch12.
+- **Section 16**: Mesolimbic addiction mechanism — VTA→NAcc; drug-by-drug mechanism; wanting/liking dissociation; cross-chapter connections.
+- **Section 17**: Oxytocin, biobehavioral synchrony, postpartum depression — neuropeptide primer; Feldman synchrony research; HPA attenuation chain; multi-chapter connections.
+- **Section 8 Sources**: 20 new citations added (Seth, Chalmers, Dennett, Treisman, Singer & Gray, Brickman, Berridge & Robinson, Koob & Volkow, Feldman, Uvnäs-Moberg, De Dreu, Adolphs et al. 1994, and others).
+
+**Files modified this session:**
+- `pipeline/theoretical-spine.md` — substantial expansion across 7 chapter note sections + What not to claim.
+- `pipeline/theoretical-foundations.md` — 6 new sections (12–17) + expanded Sources section.
+
+---
+
+### 2026-06-27 — Session 44
+
+**What happened:** Continued theoretical development from Session 43. Two tasks: (1) update `pipeline/theoretical-foundations.md` with additions agreed at end of Session 43; (2) search the Extraction Output folder (last 5 years) for theoretical threads missing from the framework.
+
+**Extraction Output files read (last 5 years, individual):**
+- `17_FS25_Foundations-History_GenPsych_Copilot_Prologue_TeachingCore.docx.txt` — standard prologue coverage, confirmed existing framework.
+- `17_FS25_Neuroscience-Biology_000 Where to Add Biology Anchors.docx.txt` — biology-anchor suggestions per chapter; confirmed existing framing; "first-night effect as one-hemisphere vigilance in unfamiliar environments" noted as a sleep detail.
+- `18_SS26_Sensation-Perception_4 Ch 6 Sensation Perception Teaching Analysis.docx.txt` — very rich. Three-act narrative arc (Problem → Solutions → Tradeoffs) for Ch. 4/S&P; "The same machinery that makes us fast makes us wrong" as the Act III framing; the unifying perceptual arc (Too much input → filters → detectors → shortcuts → top-down correction → stable model) is a clean summary.
+- `18_SS26_Neuroscience-Biology_6 Ch 2 Biology Narrative.docx.txt` — student-facing Ch. 3 narrative guide; "Your mind is what your brain does" as the chapter's takeaway sentence; "college years are, neuroscientifically speaking, still a highly sensitive period" as student application of secondary altriciality.
+- `18_SS26_Learning_7 ChapterIntegrationGuide.docx.txt` — Chapters 7+13+14 integration guide; "Disorders are not a separate category of human experience — they are what happens when normal processes become self-sustaining and costly" as the chapter's unifying framing; six-question framework (What got associated? What behavior is maintained? What was learned by watching? How did interpretation shape the response? How did others amplify it? Why did it become maladaptive?); just-world hypothesis as the social mechanism linking Ch. 10 to Ch. 13.
+- `18_FS25_Uncategorized_2 Overarching Question of Chapter 8.docx.txt` — Ch. 8 narrative arc; confirmed existing framework.
+- `18_SS26_Uncategorized_Ch3_Teaching_Feedback.docx.txt` — Ch. 5 (Consciousness/Sleep) exam feedback; medial PFC-amygdala circuit as a functional teaching connection between Ch. 3 and Ch. 5; "What keeps your emotional reactions proportional to the situation?" as the teaching question for mPFC.
+- `18_SS26_Uncategorized_ch6_instructor_rationale.docx.txt` — Ch. 4 (S&P) distractor rationale; confirmed existing framework.
+- `13_SS22_Foundations-History_zzz NOTES FOR THIS ITERATION.docx.txt` — iteration notes SS22; **"Beliefs are vertically transmitted information. Feelings are based on one's own experiences — like classical conditioning."** — key theoretical distinction not yet in any pipeline document; course restructuring ideas (many not adopted; current order is final).
+- `14_FS22_Foundations-History_zzz Notes for 22FS Iteration.docx.txt` — FS22 iteration notes; pedagogical philosophy (student as investor not consumer; professor as facilitator); confirmed Jon's "challenge assumptions, not beliefs directly" stance.
+
+**New theoretical threads identified (not previously in framework):**
+1. **Differential susceptibility / Orchid-Dandelion** (Boyce & Ellis 2005) — orchids are MORE reactive to BOTH environments, upside included. Reframes "at-risk" as "most responsive." 58 voice hits. Missing from theoretical files until this session.
+2. **Sickness behavior as evolved template for depression-like states** (Hart 1988; Dantzer & Kelley 2007) — same behavioral profile, same neuroimmune machinery (IL-1β, TNF-α). Reframes depression beyond "low serotonin." Confirmed in voice profile (specialist materials). Missing until this session.
+3. **"Automatic camera with manual override"** — Jon's signature consciousness analogy (alongside Tesla Vision). In voice profile and HANDOFF but not yet in theoretical-foundations.md or theoretical-spine.md until this session.
+4. **Beliefs as transmitted vs. feelings as conditioned** — a theoretical distinction between propositional, culturally transmitted attitudes and experientially conditioned affective responses. From Jon's own SS22 iteration notes. Not in any pipeline document until this session. Explains attitude-change asymmetry (persuasion works on beliefs; exposure-based re-learning works on feelings).
+5. **"Disorders are not a separate category of human experience"** — the clearest formulation of Jon's disorders framing. From the SS26 Chapter Integration Guide (Learning+Social+Disorders). Added to Ch. 13 spine notes.
+6. **Just-world hypothesis as stigma mechanism** — the social-psychology route by which FAE generates and sustains mental health stigma. Connects Ch. 10 to Ch. 13 across the spine. From the same integration guide.
+
+**Files created/modified this session:**
+- `pipeline/theoretical-foundations.md` — added: Section 9 (Differential Susceptibility), Section 10 (Sickness Behavior), Section 11 (Beliefs vs. Feelings); updated Section 7 (automatic camera analogy added to original insights); updated Section 8 (sources added: Boyce & Ellis 2005, Ellis & Boyce 2008, Hart 1988, Dantzer & Kelley 2007).
+- `pipeline/theoretical-spine.md` — expanded emotion table (added shame, pride, grief, relief); added "Automatic camera with manual override" analogy to Ch. 5 notes; added sleep as a new spine-level section ("model maintenance and consolidation"); added statistics as a new spine-level section ("public model calibration"); added differential susceptibility to Ch. 9 notes; added Ch. 10 notes (new — beliefs vs. feelings, just-world hypothesis); added Ch. 11 stub; expanded Ch. 13 notes (sickness behavior, disorders-as-normal-processes framing); updated chapter connections table throughout.
+
+---
+
+### 2026-06-27 — Session 43
+
+**What happened:** Theoretical development session — no chapter content written. Discussed and documented the intellectual foundations of the textbook's theoretical spine.
+
+**Key ideas developed:**
+
+1. **Bilateral symmetry as the origin of the action-selection problem.** Bilateral body plan (front/back, left/right) = committed direction of movement = must decide: move toward/away, stop, persist, explore, exploit, consume, mate, defend, rest. That IS why nervous systems exist. Serotonin = "current state acceptable, maintain course." Dopamine = "opportunity/mismatch — redirect and learn that direction." Jon's framing; developed in session.
+
+2. **Oxford & Geary life history paper** applied to the textbook spine. Key contributions: expensive brain problem (4-year-old uses double adult glucose → requires cooperative funding); secondary altriciality as the tuning mechanism (25% brain volume at birth = maximum postnatal plasticity); cooperative breeding as the social infrastructure that made big brains possible (broke the "gray ceiling"); developmental stages as evolved programs; Neanderthal comparison as natural experiment (faster development → less plasticity); teaching as evolutionary adaptation, not invention.
+
+3. **Two-file structure established for theoretical documentation:**
+   - `pipeline/theoretical-spine.md` — structured drafting reference, organized by chapter. **Updated this session:** organizing thesis now complete for all 13 chapters; Ch. 3 Layer 3 expanded (bilateral symmetry, multicellular organism framing, PFC/WM conjecture, serotonin/dopamine as action-selection signals); Ch. 9 Layer 3 added (full life history grounding from the Oxford & Geary paper).
+   - `pipeline/theoretical-foundations.md` — **new this session.** Intellectual record organized by idea: bilateral symmetry argument, multicellular organism framing, life history grounding (with paper citations), prediction/emotion/stress distinction, memory as life history adaptation, what-not-to-claim reasoning, original insights attributed to Jon, full source list.
+
+**Files created/modified this session:**
+- `pipeline/theoretical-foundations.md` — new
+- `pipeline/theoretical-spine.md` — organizing thesis completed; Ch. 3 and Ch. 9 Layer 3 notes added/expanded
 
 ---
 
