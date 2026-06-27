@@ -9,7 +9,7 @@
 
 **Psychology is biological sense-making under constraint.**
 
-Brains receive partial information. Development tunes them to local ecologies. Attention manages the bottleneck. Prediction makes fast action possible. Emotion tags meaningful mismatch. Stress mobilizes energy when prediction implies demand or threat. Memory reconstructs to inform the present and the future; what is no longer needed as episode compresses into concept or semantic knowledge. Imagination runs on the same machinery — simulating futures the body hasn't yet committed to. Language bridges private models. Collaboration and science calibrate those models against evidence and other minds.
+Brains receive partial information. Development tunes them to local ecologies. Attention manages the bottleneck. Prediction makes fast action possible. Emotion tags meaningful mismatch. Stress mobilizes energy when prediction implies demand or threat. Memory reconstructs to inform the present and prediction of the future; what is no longer needed as episode compresses into concept or semantics. Imagination runs on the same machinery — simulating futures the body hasn't yet committed to. Language bridges individual's private models. Collaboration and science calibrate those models against evidence and other minds.
 
 ---
 
@@ -103,9 +103,25 @@ Current state also matters — hormones, fatigue, stress, attention, context, sl
 
 ---
 
+## Memory
+
+Memory is a life history adaptation, not an archival system. Natural selection shaped memory toward ecological efficacy: organisms that retain what is currently relevant, shed what is no longer relevant, and can access relevant material rapidly will respond more appropriately and quickly than those carrying dead weight or searching slowly. The organizing question is not "why did we forget that?" but "what allows the organism to be maximally efficacious in its current environment?"
+
+**Selective encoding.** The brain preferentially encodes events that violated expectation or carried emotional significance — novelty, threat, reward, social meaning. Routine events that were fully predicted generate small prediction errors and leave little trace. This is compression working correctly, not memory failing.
+
+**Ecological relevance, not just encoding strength.** Routine events from prior ecologies are not merely weakly encoded — they become irrelevant as the social and physical context that gave them meaning dissolves. A morning routine from junior high was calibrated to an ecology that no longer exists. Even if retrievable, it would support no current prediction and no current action. What persists is what still connects to the present organism's world: transferable skills, conceptual structures, attachment patterns, threat calibrations, unresolved states.
+
+**Priming keeps the relevant past accessible.** The things most likely to be needed in the current ecology should be most rapidly accessible. Priming is the mechanism by which current context keeps relevant material activated for fast response. The model is always current; memory contributes to it only where the past is still ecologically live.
+
+**Episodic memory compresses into semantic memory.** This is the normal consolidation pathway. Episodes accumulate and compress into generative concepts — schemas, skills, semantic knowledge — that predict without requiring retrieval of individual instances. The episodic scaffolding then dissolves because only the compressed product is needed. This is also the arc of good teaching: students begin with episodic traces ("I read this example") and instruction drives compression into a concept that travels and predicts.
+
+**Trauma as stuck consolidation.** Traumatic memories resist the episodic→semantic pathway. The episode stays primed and vivid because the nervous system treats the threat as unresolved. Consolidation into a managed semantic structure requires something like "this situation is understood and handled." If that signal never arrives, the specific episode remains maximally accessible for rapid activation. Current environmental cues that share structure with the original threat keep triggering the old model. The organism is doing exactly what it evolved to do — keeping a high-stakes unresolved situation primed — but the calibration is stuck. This is why reconsolidation-based treatments work on the episode itself rather than just adding new knowledge alongside it.
+
+---
+
 ## Concepts
 
-A good concept is not a vocabulary word. It is a prediction machine. Once I understand "apple," I can predict seeds, taste, texture, colors, uses, memories, and category boundaries. Once students understand "reinforcement," "validity," "stress," "attachment," or "perception," the details become less arbitrary — they become inferable from the structure of the concept.
+Concepts are one major product of memory compression. As episodes accumulate and the episodic scaffolding dissolves, what remains is a generative structure that predicts without requiring retrieval of individual instances. A good concept is not a vocabulary word. It is a prediction machine. Once I understand "apple," I can predict seeds, taste, texture, colors, uses, memories, and category boundaries. Once students understand "reinforcement," "validity," "stress," "attachment," or "perception," the details become less arbitrary — they become inferable from the structure of the concept.
 
 This is why teaching should not be memorization-first. Memorization without concepts is brittle. Concepts compress experience so that details become predictable. The instructor's job is to help students elaborate concepts until the details have somewhere to live.
 
@@ -117,7 +133,9 @@ But concepts are also partly subjective because they are built from lived experi
 
 Language is the bridge. It lets us make private models partially public — not perfectly; words never fully transfer experience. But they let us point, compare, revise, explain, metaphorize, argue, test, and coordinate. Education, science, therapy, and collaboration all depend on this bridge.
 
-Other people are alternate developmental histories. They are not just holders of opinions. They are differently tuned nervous systems carrying different priors, concepts, examples, and felt meanings. When students interact, their models collide. If structured well, that collision creates prediction error in a safe enough context to support updating rather than defensiveness.
+Other people are alternate developmental histories. They are not just holders of opinions. They are differently tuned nervous systems carrying different priors, concepts, examples, and felt meanings. When students interact, their models collide. That collision is itself a prediction error — the student encounters a perspective their current model didn't generate.
+
+Whether that error drives updating or defensiveness depends on threat level. A student whose model is challenged in a low-threat context can tolerate the discomfort of not knowing and use it as motivation to update. A student whose model is challenged under conditions of embarrassment, judgment, or failure is more likely to shut down or defend. The same prediction error that drives learning in one context drives resistance in another. Good pedagogy controls the threat level so that mismatch produces curiosity rather than defensiveness — sufficient activation to engage the material, sufficient safety to keep the updating system online.
 
 That may be the deepest teaching model: create situations where students' current concepts are insufficient, but not humiliatingly so. Let them experience the limits of their model. Give them other minds to think with. Then help them build a richer concept that predicts more, explains more, and travels farther.
 
@@ -138,22 +156,6 @@ The whole system is organized around compounding trade-offs:
 **Local fit vs. general truth.** Development tunes us to our ecology, but that tuning may fail elsewhere — in new cultures, novel environments, or situations the developmental history didn't prepare for.
 
 **Private experience vs. shared reality.** Each model is unique, but language and science create enough overlap to allow comparison, coordination, and cumulative knowledge.
-
----
-
-## Memory
-
-Memory is a life history adaptation, not an archival system. Natural selection shaped memory toward ecological efficacy: organisms that retain what is currently relevant, shed what is no longer relevant, and can access relevant material rapidly will respond more appropriately and quickly than those carrying dead weight or searching slowly. The organizing question is not "why did we forget that?" but "what allows the organism to be maximally efficacious in its current environment?"
-
-**Selective encoding.** The brain preferentially encodes events that violated expectation or carried emotional significance — novelty, threat, reward, social meaning. Routine events that were fully predicted generate small prediction errors and leave little trace. This is compression working correctly, not memory failing.
-
-**Ecological relevance, not just encoding strength.** Routine events from prior ecologies are not merely weakly encoded — they become irrelevant as the social and physical context that gave them meaning dissolves. A morning routine from junior high was calibrated to an ecology that no longer exists. Even if retrievable, it would support no current prediction and no current action. What persists is what still connects to the present organism's world: transferable skills, conceptual structures, attachment patterns, threat calibrations, unresolved states.
-
-**Priming keeps the relevant past accessible.** The things most likely to be needed in the current ecology should be most rapidly accessible. Priming is the mechanism by which current context keeps relevant material activated for fast response. The model is always current; memory contributes to it only where the past is still ecologically live.
-
-**Episodic memory compresses into semantic memory.** This is the normal consolidation pathway. Episodes accumulate and compress into generative concepts — schemas, skills, semantic knowledge — that predict without requiring retrieval of individual instances. The episodic scaffolding then dissolves because only the compressed product is needed. This is also the arc of good teaching: students begin with episodic traces ("I read this example") and instruction drives compression into a concept that travels and predicts.
-
-**Trauma as stuck consolidation.** Traumatic memories resist the episodic→semantic pathway. The episode stays primed and vivid because the nervous system treats the threat as unresolved. Consolidation into a managed semantic structure requires something like "this situation is understood and handled." If that signal never arrives, the specific episode remains maximally accessible for rapid activation. Current environmental cues that share structure with the original threat keep triggering the old model. The organism is doing exactly what it evolved to do — keeping a high-stakes unresolved situation primed — but the calibration is stuck. This is why reconsolidation-based treatments work on the episode itself rather than just adding new knowledge alongside it.
 
 ---
 
@@ -190,6 +192,30 @@ Memory is a life history adaptation, not an archival system. Natural selection s
 **Students as alternate developmental histories.** When students talk to each other, differently tuned models collide. That collision is itself a prediction error — the student encounters a perspective their current model didn't generate. If the context is safe enough, that error drives updating rather than defensiveness. Structured peer discussion is not a break from learning; it is a mechanism for model revision.
 
 **The zebra question as pedagogy.** Is a zebra black with white stripes or white with black stripes? The question looks trivial but forces students to ask: what evidence would count? Embryology, evolutionary history, developmental sequence, related species, function. The answer matters less than the process — the question creates a situation where the student's current concept is insufficient and has to be rebuilt from multiple converging sources.
+
+---
+
+### Ch. 4 — Sensation & Perception
+
+**Perception as bottleneck management.** The chapter's central argument is that perception is not passive reception — it is active inference from partial input. The sensory systems don't deliver reality; they deliver filtered, compressed signals that the brain must interpret. The bottleneck is real: the retina discards most of what falls on it; the auditory system extracts patterns from continuous acoustic noise; the skin provides coarse spatial information that the brain interpolates. The brain's solution is to use prior knowledge, context, and expectations to fill the gaps — predicting what is probably there rather than computing it from scratch.
+
+**Top-down prediction in early perceptual processing.** The predictive coding account (Rao & Ballard, 1999) holds that higher cortical areas send predictions down to lower areas, which send back only the error — the difference between what was predicted and what arrived. This is efficient: most of the time the prediction is close enough that little error propagates. When it isn't — when the stimulus is unexpected, ambiguous, or novel — more signal propagates upward and more updating occurs. This is why expectation shapes perception before we are aware of choosing anything: the top-down signal is already running.
+
+**The Tesla analogy lives here.** Any vision system faces the same compression problem: raw pixel data is not yet perception of objects, motion, depth, or risk. The system has to infer what matters for action from incomplete data. The analogy illuminates why prediction is necessary, not optional. Its limit: Tesla has no body, no developmental history, no survival stakes, no attachment system. Its compression problem is computational; ours is biological, developmental, and motivational.
+
+**Perceptual constancy as the success case.** Size, shape, color, and brightness constancy show the predictive system working well — the brain correctly adjusts for viewing angle, distance, and illumination to recover the stable properties of objects. The visual system is not fooled by the proximal stimulus; it sees through it to the distal cause. Perceptual illusions are the failure case: the same machinery that produces constancy also produces systematic errors when the heuristics are applied to stimuli they weren't calibrated for.
+
+---
+
+### Ch. 5 — Consciousness & Attention
+
+**Attention as the bottleneck control system.** The brain processes far more than consciousness can hold. Attention is the mechanism that decides which parts of the ongoing model matter right now — amplifying some signals, suppressing others, biasing perception toward what is currently relevant, expected, threatening, rewarding, or goal-related. Attention is not a spotlight that illuminates a passive scene; it is a control system that shapes what gets processed at all.
+
+**Consciousness as the narrow, reportable layer.** Most of perception, learning, emotion, and bodily regulation runs automatically and below the threshold of conscious access. Consciousness is the narrow slice that becomes available for flexible, deliberate control. It becomes especially important when the automatic system fails: when something surprising happens, when predictions are violated substantially, when competing responses conflict, or when action is uncertain. Routine, well-predicted situations can run entirely on automatic processing — expertise, habit, fluent perception, and social script-following all depend on keeping consciousness out of the loop.
+
+**Consciousness as override, not supervisor.** The common intuition is that consciousness runs cognition. The more accurate account is that automatic processing runs most of cognition, and consciousness intervenes when automatic processing is insufficient. This is why skilled performers often say "I stopped thinking and it clicked" — they removed the override from a system that was already well-calibrated. It is also why novel, uncertain, or emotionally significant situations demand conscious attention: the automatic system doesn't have a calibrated response.
+
+**The attention-consciousness hierarchy.** Attention and consciousness are related but not identical. Attention can operate without consciousness — subliminal priming, attentional capture by unnoticed stimuli, and inattentional blindness all demonstrate that the attentional system selects and suppresses signals that never reach conscious awareness. Consciousness is narrower than attention. This distinction matters for the chapter: students often conflate "paying attention" with "being conscious of something," but the mechanisms are partially dissociable.
 
 ---
 
