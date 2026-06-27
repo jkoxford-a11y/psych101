@@ -62,7 +62,7 @@
 
 ## Next Up
 
-1. **Ch. 3 is now v0.4** — spine v2.1 integration complete. Both markdown and HTML updated and in sync. Key changes: action-selection/cephalization opener; serotonin behavioral-inhibition contrast; Do Not Confuse: Chemical Influence vs. Chemical Cause (Moncrieff et al. 2022); dopamine RPE caveat; ADHD sentence softened; oxytocin as neuropeptide case study; gut-brain paragraph; fMRI tightened; spine question in opener and summary; Connections table corrected (Ch. 14 → Ch. 13). Word count is now ~6,800 total file words (body only estimate ~5,500+) — over target, same precedent as Ch6 (flag not cut). Jon should do line-by-line review.
+1. **Ch. 3 is now v0.5** — Jon's review pass applied (Session 49). Both markdown and HTML updated and in sync. Pending: verify the 2024 *Nature Neuroscience* dopamine perspective citation before final publication (flagged in References with a [verify] note).
 
 2. **Ch. 4 is the natural next revision target.** Spine additions waiting for Ch. 4: Seth's controlled hallucination; dress illusion as teaching demo; binding problem as Ch4→Ch5 bridge; perceptual disorders (agnosia, prosopagnosia, Charles Bonnet, anosognosia); Müller-Lyer cultural variation; individual differences three-source taxonomy. All documented in `pipeline/theoretical-spine.md` Ch. 4 Layer 3 notes.
 
@@ -77,7 +77,7 @@
    - `docs/labs/index.html` — needs the two labs added as entries
    - Next lab: Ch2 classifier or Ch6 reinforcement classifier (Jon to decide)
 
-6. **Figures for chapters with none (Chs 5–7, 9, 10, 12 are the biggest gaps).** See `source/visuals-inventory.md`.
+6. **Figures for chapters with none (Chs 5–7, 9, 10, 12 are the biggest gaps).** See `source/visuals-inventory.md`. **New Ch. 3 figure proposed (Session 49):** cephalization/action-selection opener diagram — title "Directional Movement Creates an Action-Selection Problem"; panels: chemical-gradient organism → radial/local response → bilateral/front-end sensing → centralized action selection. Build as SVG + PNG in same pass as Ch6 visuals.
 
 7. **Decisions needed from Jon before HTML conversion of Ch2–Ch13:**
    - Ch2: What are Jon's own images, and which existing `docs/images/ch02/` figures do they replace or supplement?
@@ -115,8 +115,8 @@
 | `01-history-approaches.html` | `docs/chapters/` | Chapter 1 — complete and live |
 | `ch01-history-approaches.md` | `source/chapters/` | Chapter 1 markdown source |
 | `ch02-research-methods.md` | `source/chapters/` | Chapter 2 markdown source — v0.3, 6 figures, HTML on hold |
-| `ch03-neuroscience-biological-bases.md` | `source/chapters/` | Chapter 3 markdown source — v0.3, Jon's structural review applied |
-| `03-neuroscience.html` | `docs/chapters/` | Chapter 3 HTML — complete (Session 37) |
+| `ch03-neuroscience-biological-bases.md` | `source/chapters/` | Chapter 3 markdown source — v0.5, Jon's review pass applied (Session 49) |
+| `03-neuroscience.html` | `docs/chapters/` | Chapter 3 HTML — in sync with v0.5; sidebar corrected to 13-chapter TOC (Session 49) |
 | `ch04-sensation-perception.md` | `source/chapters/` | Chapter 4 markdown source — v0.3, 6 figures (all updated Session 41), Other Senses sidebar, awaiting Jon's review |
 | `04-sensation-perception.html` | `docs/chapters/` | Chapter 4 HTML — exists; all figure refs updated Session 41 |
 | `ch05-states-of-consciousness.md` | `source/chapters/` | Chapter 5 markdown source — v0.3, 12 CON-* concepts (hypnosis/CON-010 cut Session 42), Section 4 now Sleep Deprivation; glymphatic system added Section 2; awaiting Jon's review |
@@ -134,6 +134,36 @@
 ---
 
 ## Session Log
+
+---
+
+### 2026-06-27 — Session 49
+
+**What happened:** Jon's line-by-line review of Ch. 3 v0.4 applied. All refinements executed in both `source/chapters/ch03-neuroscience-biological-bases.md` (→ v0.5) and `docs/chapters/03-neuroscience.html`.
+
+**Key issue resolved — chapter numbering:** HTML sidebar was still showing the old 14-chapter structure (Ch12 Motivation & Emotion, Ch13 Stress & Health, Ch14 Disorders), while the body text correctly referenced the current 13-chapter structure. Sidebar corrected to match: Ch12 Emotion, Stress & Coping → `12-emotion-stress-coping.html`; Ch13 Psychological Disorders & Therapy → `13-disorders-therapy.html`. Body text and Connections table were already correct.
+
+**All 13 refinements applied (both files):**
+1. HTML sidebar corrected to 13-chapter TOC
+2. Where This Fits: "motivation, emotion, and stress (Chapters 12 and 13)" → "emotion, stress, and coping (Chapter 12)"
+3. Opener: "organisms without one do not" → "organisms with less directional body plans face in differently organized ways"
+4. Opener closing: "small set of structures and chemicals produce" → "structures, chemicals, circuits, and bodies constrain"
+5. Serotonin paragraph: replaced "functional complement" language with Jon's exact wording — teaching contrast framing
+6. ADHD sentence: "dopaminergic activity in prefrontal circuits" → "dopamine and norepinephrine signaling in prefrontal-striatal circuits"
+7. Moncrieff claim: "most comprehensive systematic review of this evidence to date" → "of the major lines of evidence"
+8. H.M.: "clearest single piece of evidence" → "one of the clearest single pieces of evidence"
+9. Demo placeholder renamed from "mixing board" to Dopamine Prediction Error Demo (with trial-type description)
+10. Lab placeholder added after chemical imbalance callout (Chemical Imbalance Claim-Check)
+11. Chapter Summary restructured to 5-paragraph hierarchy: action-selection → neurons → chemical messengers/context (merged with chemical imbalance) → stress/body state → localization/network
+12. Carter (2014) *Annual Review of Psychology* added to References for oxytocin neuropeptide claims
+13. 2024 *Nature Neuroscience* dopamine perspective flagged [Citation needed — verify] in References of both files
+
+**Proposed figure (logged for figures pass):** Cephalization/action-selection opener diagram — 4-panel progression from chemical-gradient organism to centralized action selection. See Next Up #6.
+
+**Files modified:**
+- `source/chapters/ch03-neuroscience-biological-bases.md` — v0.4 → v0.5
+- `docs/chapters/03-neuroscience.html` — in sync with v0.5
+- `HANDOFF.md` — Status, Next Up, Key Files, this entry
 
 ---
 
