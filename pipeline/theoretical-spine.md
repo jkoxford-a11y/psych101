@@ -9,7 +9,7 @@
 
 **Psychology is biological sense-making under constraint.**
 
-Organisms do not receive reality directly. They receive partial, delayed, filtered signals from their bodies and the world. A nervous system must select what matters, compress what repeats, predict what is likely, act before all evidence is available, and revise when errors matter. Human psychology is this process expanded across development, language, culture, memory, imagination, relationships, science, and self-reflection. We build models of reality, use those models to act, protect them when they feel threatened, revise them when experience forces change, and share them imperfectly with other people.
+Organisms do not receive reality directly. They receive partial, delayed, filtered signals from their bodies and the world. A nervous system must select what matters, extract useful structure from experience, predict what is likely, act before all evidence is available, and revise when errors matter. Human psychology is this process expanded across development, language, culture, memory, imagination, relationships, science, and self-reflection. We build models of reality, use them to act, resist revising them when they are tied to safety, identity, or belonging, update them when experience makes the old model too inaccurate or costly to maintain, and share them imperfectly with other people.
 
 ---
 
@@ -42,11 +42,21 @@ The brain cannot process every signal with equal priority, in time, at available
 
 The bottleneck is also why prediction is necessary. If the system had to process everything from scratch in real time, it would be too slow to act. Compression and prediction are solutions to a hard physical constraint, not optional features.
 
+### Construction under constraint
+
+The brain does not passively receive reality. It constructs a usable version of reality from partial sensory input, prior experience, body state, goals, concepts, emotions, language, culture, and current context. This construction is constrained by the world — it is not arbitrary — but it is not a copy of the world either.
+
+*The mind does not experience reality directly. It constructs a usable version of reality fast enough to act in. That construction is both the source of human intelligence and the source of systematic error.*
+
+This connects every chapter: perception is constructed from sensory fragments (Ch. 4); memory is reconstructed at retrieval, not replayed (Ch. 7); emotions are constructed from core affect and context (Ch. 12); social judgments are constructed from fast inference under ambiguity (Ch. 11); the self is a constructed model of the organism (Ch. 5); diagnoses are constructed categories applied to continuous experience (Ch. 13); AI outputs are constructed from statistical patterns without grounding (AI bridges across chapters).
+
+This is not relativism. The constructed model is constrained by the body, the world, other people, and evidence. Some constructions work better than others. Science matters because it checks private constructions against shared reality.
+
 ### Prediction and updating
 
 The brain uses prior experience — compressed into concepts, schemas, heuristics, emotions, and bodily states — to predict what is probably happening and act before full evidence is available. This is fast and usually good enough.
 
-Predictions take different forms depending on what is being predicted. *Semantic predictions* organize meaning: what is this, what category does it belong to, what follows? *Affective predictions* organize mattering: what does this situation mean for the organism's body, goals, safety, status, attachment, and action? Concepts are the brain's semantic predictions. Emotions are its affective predictions. Neither is inherently explicit or implicit — both can run automatically below awareness and both can become conscious and reportable. The distinction is not explicit versus implicit; it is what kind of future the system is preparing for.
+Predictions take different forms depending on what is being predicted. Concepts are semantic structures that generate predictions about meaning: what something is, what category it belongs to, and what usually follows. Emotions are embodied appraisal processes that generate predictions about mattering: what the situation means for bodily regulation, goals, safety, status, attachment, control, and action. Neither concepts nor emotions are inherently explicit or implicit — both can run automatically below awareness and both can become conscious and reportable. The distinction is not explicit versus implicit; it is what kind of future the system is preparing for.
 
 When prediction holds, processing stays automatic. When it fails, the system must assess whether the error matters:
 
@@ -57,7 +67,11 @@ When prediction holds, processing stays automatic. When it fails, the system mus
 
 Prediction error is not the same as emotion. Prediction error is a computational description of mismatch. Emotion is a biological response that marks something as mattering for action. They are related but not interchangeable.
 
-Dopamine reward-prediction error (Schultz et al., 1997) is the clearest worked example: dopamine tracks the gap between expected and actual reward, not pleasure itself. When actual reward exceeds prediction, dopamine neurons fire; when expected reward fails to appear, firing drops below baseline. This is a concrete mechanism for one kind of prediction-error-driven learning. *Do not generalize the dopamine mechanism to other emotional systems or to stress physiology. The logic of mismatch detection generalizes; this specific pathway does not.*
+The classic phasic dopamine finding is the clearest worked example of reward prediction error. In simple reward-learning tasks, some midbrain dopamine neurons respond strongly to unexpected reward, shift their response to cues that predict reward, and dip when an expected reward fails to appear. This is not pleasure itself; it is closer to learning, anticipation, wanting, and updating. Sapolsky's "dopamine is about anticipation" framing is compatible with this. The caveat is that dopamine is not only a reward-prediction-error signal — different dopamine pathways also contribute to motivation, movement, novelty, salience, and action selection.
+
+*Student-facing version: Dopamine is not the pleasure chemical. In classic reward-learning studies, it is closer to a "better or worse than expected" teaching signal. Once the system learns what predicts the reward, dopamine shifts toward the cue — the anticipation — not the reward itself.*
+
+*Do not generalize the dopamine RPE mechanism to other emotional systems or to stress physiology. The logic of mismatch detection generalizes; this specific pathway does not.*
 
 ### Semanticization and lossy compression
 
@@ -104,7 +118,7 @@ Each emotion reflects a different kind of situation for the organism, not a diff
 
 Emotions are not just flags. Each carries a characteristic *action tendency* (Frijda): a prepared direction for response. Fear prepares escape or freezing. Anger prepares confrontation or defense. Curiosity prepares approach and exploration. Shame prepares withdrawal or repair. Emotions are partial action plans, initiated before deliberate thought completes.
 
-Emotion concepts are constitutive of emotion, not labels added after the fact (Barrett). Core affect — undifferentiated interoceptive signal: valence and arousal — becomes a specific emotion only when a concept categorizes it. The same negatively valenced, aroused bodily state can become fear, disgust, or shame depending on which concept the brain applies to the situation. Concepts and emotions work together in the same predictive hierarchy; they are not parallel or competing systems.
+In constructionist accounts (Barrett), emotion concepts help constitute specific emotion experiences by categorizing core affect in context — the same negatively valenced, aroused bodily state can become fear, disgust, or shame depending on which concept the brain applies. Importantly, in Barrett's account emotion concepts need not be linguistic: even nonverbal organisms can have emotion through non-linguistic categorization of core affect. This means the account does not imply that infants, animals, or nonverbal humans lack emotion. In broader appraisal accounts, emotions still involve evaluations of meaning, action relevance, control, threat, loss, and goal progress. For the spine, the safe claim is that emotions are not irrational noise: they organize mattering, bodily regulation, and action-readiness. Concepts and emotions work together in the same predictive hierarchy; they are not parallel or competing systems.
 
 *Concepts predict meaning. Emotions predict mattering.*
 
@@ -112,7 +126,9 @@ Emotion concepts are constitutive of emotion, not labels added after the fact (B
 
 Stress arises when the organism predicts that demands may exceed available resources or control. The body mobilizes energy because action may be required. If the mismatch resolves, the system updates and settles. If it does not — because the threat is chronic, symbolic, social, remembered, imagined, or future-oriented — the mobilization stays on. That cumulative cost is allostatic load (McEwen & Stellar, 1993).
 
-The human cognitive light cone — the range of events, meanings, and consequences that can matter to the organism — is vastly larger than that of any other animal. Humans can activate the same ancient stress-mobilization systems around imagined futures, remembered failures, symbolic threats, social judgment, possible rejection, financial uncertainty, moral conflict, and future selves. The simulation capacity that evolved for planning becomes a vulnerability when it keeps the threat-mobilization system running in the absence of any real present danger. Chronic stress is what happens when the simulation machinery runs on threatening futures that never resolve.
+Humans can activate the same ancient stress-mobilization systems around imagined futures, remembered failures, symbolic threats, social judgment, possible rejection, financial uncertainty, moral conflict, and future selves. The simulation capacity that evolved for planning becomes a vulnerability when it keeps the threat-mobilization system running in the absence of any real present danger. Chronic stress is what happens when the simulation machinery runs on threatening futures that never resolve.
+
+*Course metaphor — "cognitive light cone":* This phrase is a course-specific metaphor, not a standard research or diagnostic term. It refers to the full range of events that can matter to the organism now: remembered pasts, imagined futures, other people's perspectives, social meanings, symbolic threats, possible selves, and counterfactual outcomes. Ground it in mental time travel and foresight (Suddendorf & Corballis), the use of past memory to imagine the future (Schacter, Addis & Buckner), prospection and anticipatory affect (Gilbert & Wilson), and Sapolsky's contrast between the zebra's immediate stressor and the human's chronic symbolic one (*Why Zebras Don't Get Ulcers*). *Verify Grupe & Nitschke before citing in chapter text.*
 
 ### Development: how the model gets built
 
@@ -200,6 +216,7 @@ These two chapters sit at the intersection of multiple spine threads and deserve
 - Show where the chapter's phenomena sit in the master loop
 - Use the lossy compression lens to connect competence and error — every chapter has both
 - Connect concepts to their costs: every efficient mental shortcut is also a source of systematic error
+- Every chapter should have a **student-facing spine question** — one sentence naming what the chapter explains in terms a student would find surprising or worth understanding. This question lives at the top of each chapter's Layer 3 notes and should guide the chapter's opening framing. It is not a learning objective; it is the question that makes a student want to read.
 
 **What the framework should not do:**
 
@@ -243,6 +260,8 @@ These two chapters sit at the intersection of multiple spine threads and deserve
 
 ### Prologue
 
+**Student-facing spine question:** *Why doesn't studying harder always mean learning more?*
+
 **The teaching model as episodic → semantic arc.** Students arrive with episodic traces — isolated facts, examples half-remembered, intuitions without structure. Good instruction drives compression: the episodes accumulate until a generative concept emerges that predicts rather than lists. The instructor's job is not to transfer information but to create conditions for compression. A concept is ready when a student can use it to predict something they have not been explicitly told.
 
 **Concepts give details somewhere to live.** Before a concept is in place, facts are arbitrary and fragile. After it is in place, facts become inferable consequences of the structure. This is why building the concept first — even roughly — makes subsequent detail easier to retain.
@@ -253,7 +272,21 @@ These two chapters sit at the intersection of multiple spine threads and deserve
 
 ---
 
+### Ch. 1 — History & Approaches
+
+**Student-facing spine question:** *Why does the same behavior look so different depending on who is explaining it?*
+
+---
+
+### Ch. 2 — Research Methods
+
+**Student-facing spine question:** *How do we know when our model of reality is wrong?*
+
+---
+
 ### Ch. 3 — Neuroscience
+
+**Student-facing spine question:** *What does the biology of the brain tell us about behavior — and what does it leave out?*
 
 **The bilateral symmetry argument: why nervous systems exist at all.** The action-selection problem is the origin of nervous systems, not a byproduct of them. Unicellular organisms solve approach/avoid via chemotaxis — no nervous system required. Radially symmetric multicellular organisms can still respond locally. But a bilateral body plan — front/back, left/right — means the organism has a committed direction of movement and must decide: move toward, move away, stop, persist, explore, exploit, consume, mate, defend, rest. That is the action-selection problem. Nervous systems evolve to solve it faster, across a spatially distributed body. Brains are centralized action-selection systems with memory and learning. Human brains extend action-selection into imagined futures.
 
@@ -274,6 +307,8 @@ These two chapters sit at the intersection of multiple spine threads and deserve
 ---
 
 ### Ch. 4 — Sensation & Perception
+
+**Student-facing spine question:** *Why does perception feel direct when it is constructed?*
 
 **Perception as bottleneck management.** The chapter's central argument is that perception is not passive reception — it is active inference from partial input. The sensory systems don't deliver reality; they deliver filtered, compressed signals that the brain must interpret. The brain's solution is to use prior knowledge, context, and expectations to fill the gaps — predicting what is probably there rather than computing it from scratch.
 
@@ -298,6 +333,8 @@ These two chapters sit at the intersection of multiple spine threads and deserve
 ---
 
 ### Ch. 5 — Consciousness & Attention
+
+**Student-facing spine question:** *Why don't we experience most of what our brain is doing?*
 
 **Attention as the bottleneck control system.** Attention is not a spotlight that illuminates a passive scene; it is a control system that shapes what gets processed at all — amplifying some signals, suppressing others, biasing perception toward what is currently relevant, expected, threatening, rewarding, or goal-related.
 
@@ -327,11 +364,15 @@ These two chapters sit at the intersection of multiple spine threads and deserve
 
 ### Ch. 6 — Learning
 
+**Student-facing spine question:** *Why is unlearning harder than learning?*
+
 **Extinction as prediction error, not erasure.** Extinction is not the deletion of the original association. It is new inhibitory learning layered on top — a new prediction ("CS no longer predicts US") that competes with the original. The original trace remains. This is why spontaneous recovery occurs, why renewal occurs when context changes, and why extinguished responses can return under stress. The organism's model was updated, but the prior was not erased — it was suppressed by a more recent prediction.
 
 ---
 
 ### Ch. 7 — Memory
+
+**Student-facing spine question:** *Why does memory preserve meaning better than detail?*
 
 **The life history argument.** Memory is a fitness-relevant adaptation, not an archival system. The organizing question is not "why did we forget that?" but "what allows the organism to be maximally efficacious in its current environment?" Natural selection shaped memory toward ecological efficacy: fast access to what is relevant now, shedding what is no longer relevant, compressing what is useful but doesn't need to be episodic.
 
@@ -345,20 +386,22 @@ These two chapters sit at the intersection of multiple spine threads and deserve
 
 ### Ch. 8 — Thinking, Intelligence & Conceptual Knowledge
 
+**Student-facing spine question:** *Why is one good concept worth more than a hundred memorized facts?*
+
 **The organizing formulation: a concept is a location plus a pattern of relations in semantic space.** Not a definition, not a box, not a label. "Apple" sits near fruit, food, sweetness, trees, red/green/yellow, seeds, pie, school lunches, brands, health, childhood — a compressed region of meaning built from repeated episodes. This formulation unifies the entire chapter sequence:
 
 - *Why definitions fail:* natural concepts don't have fixed boundaries (Wittgenstein, family resemblance).
 - *Why prototypes work:* typical cases sit near the center of a semantic neighborhood (Rosch, 1975).
 - *Why exemplars matter:* specific encounters populate and stretch the neighborhood; expertise makes the space denser.
 - *Why semantic networks are right but incomplete:* spreading activation is real but concepts are not discrete nodes.
-- *Why connectionism is the mechanism:* PDP/connectionist models learn from co-occurrence statistics across experience, adjusting weights until the network settles on distributed representations.
+- *Why connectionism is one important computational model:* PDP/connectionist models learn from co-occurrence statistics across experience, adjusting weights until the network settles on distributed representations. This is not the confirmed neural mechanism — it is a productive model of how distributed semantic structure could be learned from repeated patterns.
 - *Why embodied cognition is partially right:* Hauk et al. (2004) found somatotopic motor activation when reading action words. *Hedge: the epiphenomenal critique is live — motor activation may accompany rather than constitute meaning.*
 
 **Huth et al. (2016) as convergent evidence.** Seven subjects listened to 2+ hours of Moth Radio Hour stories in fMRI. A semantic embedding space predicted voxel-by-voxel BOLD responses across the entire cortex. Key findings: ~140 semantically selective areas continuously distributed across temporal, parietal, and prefrontal cortex; first and largest PCA dimension: social/emotional/violent vs. perceptual/locational/numeric; semantic maps were remarkably consistent across individuals. *Do not say this proves the brain stores concepts as word embeddings — the embedding is a modeling tool that predicts BOLD responses, not a description of the neural code.*
 
 **The social/emotional primacy finding and its evolutionary interpretation.** The largest variance dimension separating human semantic space is social/emotional/violent vs. perceptual/physical/numeric. Evolutionarily interpretable: the most important semantic dimension for a hypersocial primate is other minds and their states. *Hedge: the social primacy may partly reflect the stimulus — Moth Radio Hour stories are narratively social. Present as a finding from naturalistic story processing, not a universal architectural fact.*
 
-**LLM-brain alignment as the modern AI bridge.** Tang et al. (2023, *Nature Neuroscience*) showed that LLM embeddings fitted to voxel models can reconstruct the gist of what someone is hearing from fMRI alone. Tang & Huth (2025, *Current Biology*) showed decoding generalizes across participants. The brain-LLM alignment literature (2024) shows contextual LLM embeddings best predict brain responses, and the best-fitting layers are the middle layers. The reason for alignment: both systems are shaped by statistical regularities of human language. *Hedge: alignment is correlation, not mechanism. LLMs and brains may be convergent solutions to the same statistical input, not shared implementations.*
+**LLM-brain alignment as the modern AI bridge.** Tang et al. (2023, *Nature Neuroscience*) showed that LLM embeddings fitted to voxel models can reconstruct the gist of what someone is hearing from fMRI alone. *Verify Tang & Huth (2025, *Current Biology*) and 2024 brain-LLM alignment claims before using in chapter text — not yet independently confirmed in our research.* The reason for alignment: both systems are shaped by statistical regularities of human language. *Hedge: alignment is correlation, not mechanism. LLMs and brains may be convergent solutions to the same statistical input, not shared implementations.*
 
 **The Piaget-schema developmental sequence.** 1. *Sensorimotor schema* (infant): action-based, not yet conceptual. 2. *Early prototype* (toddler): coarse, overextended — "doggie" may include deer. 3. *Accommodation/differentiation* (preschool–school age): world pushes back, schema splits and sharpens. 4. *Mature concept* (school age onward): richer semantic neighborhood, supports inference and flexible generalization. Key: this is not "prototypes, then concepts." Adults still use prototypes; children also store exemplars. What changes with development and expertise is the density, differentiation, and range of the semantic neighborhood.
 
@@ -371,6 +414,8 @@ These two chapters sit at the intersection of multiple spine threads and deserve
 ---
 
 ### Ch. 9 — Lifespan Development
+
+**Student-facing spine question:** *Why does it take humans so much longer to grow up than other animals?*
 
 *Primary source: Oxford & Geary, "Life History Evolution in Hominins" (Jon's paper — use as grounding reference for this chapter, not necessarily as an in-text citation for an intro course).*
 
@@ -398,6 +443,20 @@ These two chapters sit at the intersection of multiple spine threads and deserve
 
 *(Note: in the proposed swap, this is the Social Psychology chapter — currently Ch. 10 in published order, proposed as Ch. 11.)*
 
+**Student-facing spine question:** *Why do other people's models change our own?*
+
+**Social psychology as model-building organisms in contact.** Social psychology studies what happens when model-building organisms interpret, influence, coordinate with, and defend themselves against other model-building organisms. Other people are the most important input the brain processes — the most relevant, most variable, most consequential, and most ambiguous source of information an organism encounters. Social cognition is not a specialized module; it is the prediction system applied to its most important domain.
+
+**Social judgment as fast inference under ambiguity.** People are the hardest things to read — intentions are invisible, faces are ambiguous, words are underdetermined, behavior is situationally shaped. The brain resolves this ambiguity the same way it resolves perceptual ambiguity: fast inference using priors. Those priors include category membership, past experience, current goals, mood, and cultural scripts. Social judgment is quick, usually good enough, and systematically wrong in predictable ways.
+
+**Attribution is compression: behavior becomes character, situation gets discarded.** When a person acts, the brain rapidly constructs an explanation. The fundamental attribution error is the systematic over-compression of situational causes into dispositional ones — behavior is stamped as character even when the situation was doing most of the causal work. This is lossy compression applied to people: we retain the trait inference and discard the contextual detail.
+
+**Stereotypes are social compression with power.** Stereotypes are category expectations built from biased, salient, culturally supplied examples. They allow fast social prediction in the same way any concept allows fast inference — at the cost of lossy generalization. The special feature is the sampling bias: social categories are learned from media, cultural narrative, limited personal contact, and emotionally charged examples, not from representative samples. And unlike misremembering the word "apple," stereotype-based errors have asymmetric social consequences.
+
+**Conformity is social calibration.** When people shift their responses toward group norms, they are often not simply caving to pressure — they are updating their model using social information. Other people's responses are data about what is probably true, safe, appropriate, or expected. Asch's conformity studies are most interesting not as demonstrations of weakness but as demonstrations that social consensus is a legitimate epistemic input — one that the prediction system weights heavily and not always wrongly.
+
+**Obedience narrows the action model.** Milgram's findings are not primarily about aggression or sadism. They are about how authority, role, and context reshape the perceived range of available actions. Obedience works partly by shifting perceived responsibility and partly by narrowing the model of what one is free to do. This connects to the agentic state as a situation in which the action-selection system is partially outsourced.
+
 **Beliefs as transmitted vs. feelings as conditioned.** Beliefs are vertically transmitted information — acquired through explicit instruction, narrative, family, culture, peer group. Feelings (conditioned affective responses) are built from personal experience history through associative learning. This distinction matters for attitude change: persuasion and evidence work better on belief-based attitudes; direct exposure and experiential re-learning work better on feeling-based ones. A student can update the belief "snakes are not dangerous by default" and still feel visceral fear around them — because the fear is conditioned, not believed.
 
 **Source amnesia as the mechanism that blurs the belief/feeling boundary.** Beliefs can become felt truths through repetition. Familiarity from repeated exposure generates an implicit sense of recognition that is cognitively indistinguishable from genuine knowing. The person no longer tracks *why* they believe something; it just feels true. Propaganda, advertising, and politically motivated repetition exploit this.
@@ -410,11 +469,25 @@ These two chapters sit at the intersection of multiple spine threads and deserve
 
 *(Note: in the proposed swap, this is the Personality chapter — currently Ch. 11 in published order, proposed as Ch. 10.)*
 
-*No extended Layer 3 notes yet. The spine node is: stable individual differences in how the model is tuned; person-situation interaction as model × context.*
+**Student-facing spine question:** *Why do the same people behave differently across situations and yet remain recognizably themselves?*
+
+**Traits as probabilistic summaries, not inner switches.** The Big Five (and other trait frameworks) describe reliable patterns of variation across people — tendencies to interpret, regulate, seek, and avoid in characteristic ways. A trait is not a fixed response or an inner essence. It is a probabilistic summary of how a person tends to behave, on average, across many situations. High conscientiousness does not guarantee conscientiousness in every situation; it predicts it more often than low conscientiousness would.
+
+**Personality is person × situation.** The same person can be warm in one context and guarded in another, impulsive at a party and disciplined at work. This is not inconsistency — it is the interaction of a stable tuned model with different situational contexts. Traits predict behavior most reliably across aggregated situations and least reliably in any single instance. Mischel's original critique and subsequent resolution both live here: traits are real, situations are powerful, and the interaction is the phenomenon.
+
+**Self-concept as a compressed self-model.** Just as a concept is a compressed model of an external category, the self-concept is a compressed model of the organism itself — its goals, values, abilities, roles, relationships, and characteristic patterns. It is built from episodic memory, feedback from others, social comparison, and cultural meaning. Like any compressed model, it is incomplete, selective, and updated slowly.
+
+**Identity gives continuity but can resist revision.** A stable identity allows prediction, planning, and commitment. It also provides a reference model that interprets new information in ways that preserve coherence. This is why identity can resist revision even in the face of contradictory evidence — the model is protecting its own internal consistency. Therapy, education, and significant life transitions all sometimes require this resistance to be worked through, not just bypassed.
+
+**Personality develops from temperament plus ecology.** Temperament — the biologically rooted, early-appearing variation in reactivity, self-regulation, and approach/avoidance — sets the initial tuning. Ecology (family, peers, culture, socioeconomic context, life events) shapes how that temperament is expressed, reinforced, and elaborated. Neither temperament nor ecology is destiny. Differential susceptibility applies: high-reactive temperaments show larger effects in both directions.
+
+**Durable personality change requires repeated new contexts, not just insight.** Understanding why a pattern exists does not automatically change it. Durable change more often follows sustained new roles, relationships, habits, behavioral experiments, and feedback loops that repeatedly engage different responses and reward them. This connects to Ch. 6 (learning through consequence) and Ch. 13 (therapy as model revision through new experience, not only understanding).
 
 ---
 
 ### Ch. 12 — Emotion, Stress & Coping
+
+**Student-facing spine question:** *How does the body decide what matters?*
 
 **The cognitive light cone as the mechanism for human-specific chronic stress.** Zebras mobilize stress physiology around immediate physical threat. Humans can activate the same ancient systems around imagined futures, remembered failures, symbolic threats, social judgment, financial uncertainty, moral conflict, and future selves. Chronic stress is what happens when the simulation machinery runs on threatening futures that never resolve.
 
@@ -425,6 +498,8 @@ These two chapters sit at the intersection of multiple spine threads and deserve
 ---
 
 ### Ch. 13 — Disorders & Therapy
+
+**Student-facing spine question:** *When does a protective model become costly?*
 
 **Trauma as stuck episodic consolidation.** Traumatic memories resist the episodic → semantic pathway. They remain primed, vivid, and intrusive because the nervous system treats the threat as unresolved. Extreme stress — high cortisol, amygdala hyperactivation — disrupts hippocampal encoding during the traumatic event itself. The hippocampus contextualizes memory in time and place, stamping events as "this happened, there, then, and is now over." Under severe threat, that contextual encoding is impaired. The memory never gets marked as past. This is why traumatic intrusions feel present-tense rather than like remembering.
 

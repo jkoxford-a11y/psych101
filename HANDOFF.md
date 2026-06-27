@@ -62,15 +62,25 @@
 
 ## Next Up
 
-1. **Theoretical framework is complete — carry into chapter drafts.** `pipeline/theoretical-spine.md` and `pipeline/theoretical-foundations.md` were substantially expanded in Sessions 45–46. All spine notes and foundations sections are now current. Key additions to carry into chapter markdown on review:
-   - **Ch. 3**: Bilateral symmetry argument; chemical imbalance misconception as explicit correction; gut-brain axis framing; oxytocin as neuropeptide entry point.
-   - **Ch. 4**: Seth's controlled hallucination; dress illusion as teaching demo; binding problem; perceptual disorders (agnosia, Charles Bonnet); Müller-Lyer cultural variation; individual differences taxonomy; Ch4→Ch5 bridge (leave perception question open).
-   - **Ch. 5**: Hard problem / easy problems (Chalmers, hedged); cognitive light cone in Ch5 context; octopus foil (one paragraph); self as construction (Seth); neural delay/retrospective construction (Eagleman).
-   - **Ch. 8**: Semantic space theory as the organizing frame for conceptual knowledge (concept = location + pattern of relations, not definition); Huth et al. (2016) neural atlas; social/emotional primacy finding (hedged — corpus effect); Piaget-schema developmental sequence (sensorimotor → prototype → differentiated concept); LLM-brain alignment as AI bridge (Tang et al. 2023; Tang & Huth 2025); reinforcement as worked example of prototype→differentiation arc. **Verify Popham et al. (2021) citation** (visual/linguistic boundary alignment) before using in chapter text — not yet independently confirmed.
-   - **Ch. 9**: Mother-infant biobehavioral synchrony as attachment mechanism; oxytocin/breastfeeding → HPA attenuation; secondary altriciality, cooperative breeding, differential susceptibility still pending chapter body entry.
-   - **Ch. 10**: Beliefs-as-transmitted vs. feelings-as-conditioned; just-world hypothesis as stigma mechanism; source amnesia as belief-to-felt-truth.
-   - **Ch. 12**: SM amygdala case study (Adolphs et al. 1994); hedonic treadmill (Brickman & Campbell 1971) with dopamine mechanism.
-   - **Ch. 13**: Mesolimbic pathway as common addiction mechanism (VTA→NAcc; wanting vs. liking); postpartum depression / oxytocin-HPA link; sickness behavior as evolved depression template.
+1. **Theoretical spine is finalized (v2.1) — ready to use as drafting control panel.** `pipeline/theoretical-spine.md` is now clean, complete, and organized. All 10 revision proposals executed in Session 47. Key additions now in the spine and available for chapter drafting:
+   - **New core principle: "Construction under constraint"** — connects perception, memory, emotion, social judgment, self-concept, and diagnosis under one framing.
+   - **Concepts/emotions distinction** — "Concepts predict meaning. Emotions predict mattering." Use in Ch. 4, 8, 12.
+   - **Barrett hedge on nonverbal creatures** — safe to use in Ch. 12 Emotion section.
+   - **Cognitive light cone** — labeled course metaphor with proper grounding references. Verify Grupe & Nitschke before chapter text.
+   - **Student-facing spine questions** for all 13 chapters — in each chapter's Layer 3 notes. Use these to guide chapter openers.
+   - **Personality Layer 3** — full elaboration now available for drafting Ch. 11.
+   - **Social Psychology Layer 3** — full elaboration now available for drafting Ch. 10.
+   - **Key additions to carry into chapter markdown on review** (from Sessions 45–46):
+     - Ch. 3: Bilateral symmetry argument; chemical imbalance misconception as explicit correction; gut-brain axis framing; oxytocin as neuropeptide entry point.
+     - Ch. 4: Seth's controlled hallucination; dress illusion as teaching demo; binding problem; perceptual disorders (agnosia, Charles Bonnet); Müller-Lyer cultural variation; individual differences taxonomy; Ch4→Ch5 bridge.
+     - Ch. 5: Hard problem / easy problems (Chalmers, hedged); cognitive light cone in Ch5 context; octopus foil; self as construction (Seth); neural delay/retrospective construction (Eagleman).
+     - Ch. 8: Semantic space theory (concept = location + pattern of relations); Huth et al. (2016) neural atlas; Piaget-schema sequence; LLM-brain alignment as AI bridge. **Verify Popham et al. (2021)** before chapter text.
+     - Ch. 9: Mother-infant biobehavioral synchrony; oxytocin/breastfeeding → HPA attenuation; secondary altriciality and cooperative breeding.
+     - Ch. 10: Beliefs-as-transmitted vs. feelings-as-conditioned; just-world hypothesis as stigma mechanism; source amnesia as belief-to-felt-truth.
+     - Ch. 12: SM amygdala case study (Adolphs et al. 1994); hedonic treadmill (Brickman & Campbell 1971) with dopamine mechanism.
+     - Ch. 13: Mesolimbic pathway as common addiction mechanism (VTA→NAcc; wanting vs. liking); postpartum depression / oxytocin-HPA link; sickness behavior as evolved depression template.
+
+2. **Decision needed: Social/Personality chapter swap (Ch. 10 ↔ Ch. 11).** Proposed in Session 47 based on framework logic (Personality = stable individual tuning; Social = model-building organisms in contact; Social better motivates Personality if taught second). Currently marked with ★ in the chapter map. Files that need updating if approved: `source/chapters/ch10-social-psychology.md`, `source/chapters/ch11-personality.md`, `docs/chapters/10-social-psychology.html` (doesn't exist yet), `docs/chapters/11-personality.html` (doesn't exist yet), `docs/index.html`, and cross-references in both chapters. Low cost now; grows as HTML conversion progresses.
 
 2. **Ch6 visuals** — next concrete build task. Highest-value figures: (a) classical conditioning timeline (UCS/UCR → CS+UCS → CS/CR); (b) operant conditioning 2×2 (reinforcement/punishment × add/remove); (c) reinforcement schedules comparison. These should be original diagrams, not decorative images. Build as SVG + PNG per the existing pattern in `docs/images/`.
 
@@ -144,6 +154,34 @@
 ---
 
 ## Session Log
+
+---
+
+### 2026-06-27 — Session 47
+
+**What happened:** Theoretical spine refinement — extended discussion and full v2 rewrite plus second targeted revision pass.
+
+**Phase 1 (prior context window):** Extended discussion of semantic/affective prediction distinction (concepts vs. emotions). Agreed framing: concepts are semantic structures generating predictions about meaning; emotions are embodied appraisal processes generating predictions about mattering. Teaching line: "Concepts predict meaning. Emotions predict mattering." Made targeted edits to spine.md reflecting this distinction. Then: read full v1 spine, diagnosed "three-document collapse" problem, discussed reorganization. Wrote clean v2 full rewrite with 8-section structure (thesis → master loop → core principles → trade-off table → chapter map → drafting rules → Layer 3 notes). Social/Personality chapter swap proposed and marked in chapter map.
+
+**Phase 2 (this context window):** Discussed and executed 10 specific revision proposals on v2. All 10 executed.
+
+**Changes made to `pipeline/theoretical-spine.md`:**
+1. **Thesis** — "compress what repeats" → "extract useful structure from experience"; "protect them when they feel threatened" → "resist revising them when they are tied to safety, identity, or belonging, update them when experience makes the old model too inaccurate or costly to maintain"
+2. **New section: "Construction under constraint"** — added as core principle between Constraint/bottleneck and Prediction/updating
+3. **Concepts/emotions wording** — rewritten to "Concepts are semantic structures that generate predictions about meaning... Emotions are embodied appraisal processes that generate predictions about mattering..."
+4. **Barrett hedge** — added nonverbal-organism nuance; emotion concepts need not be linguistic; broader appraisal account framing; "safe claim" formulation
+5. **Dopamine paragraph** — replaced with richer version: phasic dopamine finding, Sapolsky compatibility, caveat on multiple pathways, student-facing version, do-not-generalize warning
+6. **Cognitive light cone** — labeled as course metaphor; grounded in mental time travel (Suddendorf & Corballis), future imagination (Schacter, Addis & Buckner), anticipatory affect (Gilbert & Wilson), Sapolsky contrast; verify Grupe & Nitschke flag added
+7. **Personality Layer 3** — fully expanded (was a stub): traits as probabilistic summaries, person × situation, self-concept as compressed self-model, identity resisting revision, temperament + ecology, durable change requires new contexts; student-facing spine question added
+8. **Social Psychology Layer 3** — fully expanded (was mostly stubs): social psychology as model-building organisms in contact, social judgment as fast inference, attribution as compression, stereotypes as social compression with power, conformity as social calibration, obedience narrows action model; student-facing spine question added
+9. **Ch. 8 connectionism overclaim** — "the mechanism" → "one important computational model... not the confirmed neural mechanism"; Tang/Huth 2025 and 2024 brain-LLM alignment claims flagged for verification
+10. **Student-facing spine questions** — rule added to Drafting Rules; questions added to Layer 3 for all 13 chapters (Prologue through Ch. 13); two-week memory targets kept separate (Layer 3, not chapter map)
+
+**Social/Personality swap** still proposed, not executed. Files that would need updating listed in chapter map.
+
+**Files modified this session:**
+- `pipeline/theoretical-spine.md` — 11 targeted edits (v2 → v2.1)
+- `HANDOFF.md` — this entry
 
 ---
 
