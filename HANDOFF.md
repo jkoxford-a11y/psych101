@@ -62,51 +62,31 @@
 
 ## Next Up
 
-1. **Theoretical spine is finalized (v2.1) — ready to use as drafting control panel.** `pipeline/theoretical-spine.md` is now clean, complete, and organized. All 10 revision proposals executed in Session 47. Key additions now in the spine and available for chapter drafting:
-   - **New core principle: "Construction under constraint"** — connects perception, memory, emotion, social judgment, self-concept, and diagnosis under one framing.
-   - **Concepts/emotions distinction** — "Concepts predict meaning. Emotions predict mattering." Use in Ch. 4, 8, 12.
-   - **Barrett hedge on nonverbal creatures** — safe to use in Ch. 12 Emotion section.
-   - **Cognitive light cone** — labeled course metaphor with proper grounding references. Verify Grupe & Nitschke before chapter text.
-   - **Student-facing spine questions** for all 13 chapters — in each chapter's Layer 3 notes. Use these to guide chapter openers.
-   - **Personality Layer 3** — full elaboration now available for drafting Ch. 11.
-   - **Social Psychology Layer 3** — full elaboration now available for drafting Ch. 10.
-   - **Key additions to carry into chapter markdown on review** (from Sessions 45–46):
-     - Ch. 3: Bilateral symmetry argument; chemical imbalance misconception as explicit correction; gut-brain axis framing; oxytocin as neuropeptide entry point.
-     - Ch. 4: Seth's controlled hallucination; dress illusion as teaching demo; binding problem; perceptual disorders (agnosia, Charles Bonnet); Müller-Lyer cultural variation; individual differences taxonomy; Ch4→Ch5 bridge.
-     - Ch. 5: Hard problem / easy problems (Chalmers, hedged); cognitive light cone in Ch5 context; octopus foil; self as construction (Seth); neural delay/retrospective construction (Eagleman).
-     - Ch. 8: Semantic space theory (concept = location + pattern of relations); Huth et al. (2016) neural atlas; Piaget-schema sequence; LLM-brain alignment as AI bridge. **Verify Popham et al. (2021)** before chapter text.
-     - Ch. 9: Mother-infant biobehavioral synchrony; oxytocin/breastfeeding → HPA attenuation; secondary altriciality and cooperative breeding.
-     - Ch. 10: Beliefs-as-transmitted vs. feelings-as-conditioned; just-world hypothesis as stigma mechanism; source amnesia as belief-to-felt-truth.
-     - Ch. 12: SM amygdala case study (Adolphs et al. 1994); hedonic treadmill (Brickman & Campbell 1971) with dopamine mechanism.
-     - Ch. 13: Mesolimbic pathway as common addiction mechanism (VTA→NAcc; wanting vs. liking); postpartum depression / oxytocin-HPA link; sickness behavior as evolved depression template.
+1. **Ch. 3 is now v0.4** — spine v2.1 integration complete. Both markdown and HTML updated and in sync. Key changes: action-selection/cephalization opener; serotonin behavioral-inhibition contrast; Do Not Confuse: Chemical Influence vs. Chemical Cause (Moncrieff et al. 2022); dopamine RPE caveat; ADHD sentence softened; oxytocin as neuropeptide case study; gut-brain paragraph; fMRI tightened; spine question in opener and summary; Connections table corrected (Ch. 14 → Ch. 13). Word count is now ~6,800 total file words (body only estimate ~5,500+) — over target, same precedent as Ch6 (flag not cut). Jon should do line-by-line review.
 
-2. **Decision needed: Social/Personality chapter swap (Ch. 10 ↔ Ch. 11).** Proposed in Session 47 based on framework logic (Personality = stable individual tuning; Social = model-building organisms in contact; Social better motivates Personality if taught second). Currently marked with ★ in the chapter map. Files that need updating if approved: `source/chapters/ch10-social-psychology.md`, `source/chapters/ch11-personality.md`, `docs/chapters/10-social-psychology.html` (doesn't exist yet), `docs/chapters/11-personality.html` (doesn't exist yet), `docs/index.html`, and cross-references in both chapters. Low cost now; grows as HTML conversion progresses.
+2. **Ch. 4 is the natural next revision target.** Spine additions waiting for Ch. 4: Seth's controlled hallucination; dress illusion as teaching demo; binding problem as Ch4→Ch5 bridge; perceptual disorders (agnosia, prosopagnosia, Charles Bonnet, anosognosia); Müller-Lyer cultural variation; individual differences three-source taxonomy. All documented in `pipeline/theoretical-spine.md` Ch. 4 Layer 3 notes.
 
-2. **Ch6 visuals** — next concrete build task. Highest-value figures: (a) classical conditioning timeline (UCS/UCR → CS+UCS → CS/CR); (b) operant conditioning 2×2 (reinforcement/punishment × add/remove); (c) reinforcement schedules comparison. These should be original diagrams, not decorative images. Build as SVG + PNG per the existing pattern in `docs/images/`.
+3. **Decision needed: Social/Personality chapter swap (Ch. 10 ↔ Ch. 11).** Proposed in Session 47 based on framework logic. Files that need updating if approved: both chapter markdowns, both HTML files (don't exist yet), `docs/index.html`, and cross-references. Low cost now; grows as HTML conversion progresses.
 
-2. **Jon's line-by-line review of Chapters 3–13** — all markdown-complete, none yet reviewed (except Ch1/Ch2). Start with Ch3–7.
+4. **Ch6 visuals** — next concrete build task. Highest-value figures: (a) classical conditioning timeline (UCS/UCR → CS+UCS → CS/CR); (b) operant conditioning 2×2 (reinforcement/punishment × add/remove); (c) reinforcement schedules comparison. Build as SVG + PNG per existing pattern.
 
-3. **Labs — Codex built two labs (Session 40); pattern now established:**
+5. **Labs — Codex built two labs (Session 40); pattern now established:**
    - `docs/labs/ch02/correlation-causation.html` — complete
    - `docs/labs/ch06/classical-conditioning.html` — complete, audited, fixed, linked from ch06
    - `docs/labs/lab-design-spec.md` — pattern spec written (Session 40)
    - `docs/labs/index.html` — needs the two labs added as entries
    - Next lab: Ch2 classifier or Ch6 reinforcement classifier (Jon to decide)
-   - Do NOT save the original "Psych 101 Learning Labs Specification v0.1" from Session 39 as `pipeline/labs-spec.md` — the audit-derived `docs/labs/lab-design-spec.md` supersedes it.
 
-4. **Figures for chapters with none (Chs 5–7, 9, 10, 12 are the biggest gaps).** See `source/visuals-inventory.md`. Priority: Ch6 (see item 1 above); Ch7 (Atkinson-Shiffrin 3-box, Baddeley working memory, serial position curve); Ch9 (Piaget stages, Ainsworth, Vygotsky ZPD); Ch10 (Milgram setup, ELM dual-route, bystander 5-step); Ch12 (Russell's circumplex, GAS 3 stages). Ch5 still needs two-process model, hypnogram, SCN pathway, tolerance/withdrawal — Section 4 content change (hypnosis → sleep deprivation) means the old figure priority list needs revisiting.
+6. **Figures for chapters with none (Chs 5–7, 9, 10, 12 are the biggest gaps).** See `source/visuals-inventory.md`.
 
-5. **Decisions needed from Jon before HTML conversion of Ch2–Ch13:**
+7. **Decisions needed from Jon before HTML conversion of Ch2–Ch13:**
    - Ch2: What are Jon's own images, and which existing `docs/images/ch02/` figures do they replace or supplement?
-   - Ch3: Confirm figures 3.3, 3.5, 3.7 (lecture-deck slides) are Jon's originals. Accept or trim ~5,800 word count?
-   - Ch4: ~~Use infographic or SVG programmatic versions for figs 4.3/4.5/4.6?~~ Resolved Session 41 — infographics for 4.3/4.5, infographic already in use for 4.6.
+   - Ch3: ~~Spine additions pending~~ — done. Confirm figures 3.3, 3.5, 3.7 (lecture-deck slides) are Jon's originals.
    - Prologue DK figure: Replace with redrawn actual-data version, add caveat caption, or drop?
 
-6. **HTML conversion of Ch3–Ch13** — once Jon's review pass is done, convert in order using `pipeline/html-conversion-spec.md`. Ch3 HTML already exists (`docs/chapters/03-neuroscience.html`); others pending.
+8. **HTML conversion of Ch4–Ch13** — once Jon's review pass is done, convert in order using `pipeline/html-conversion-spec.md`. Ch3 and Ch4 and Ch5 HTML already exist; others pending.
 
-7. **Ch2 HTML** — on hold until Jon confirms his images. Get solid-carnival demo embed URL at the same time.
-
-8. **Activities and labs log** — continue logging ideas to `docs/teaching/activity-ideas.md` during chapter review. Do NOT build individual items yet; the labs pass is a dedicated phase after chapters are HTML-complete.
+9. **Ch2 HTML** — on hold until Jon confirms his images.
 
 ---
 
@@ -154,6 +134,33 @@
 ---
 
 ## Session Log
+
+---
+
+### 2026-06-27 — Session 48
+
+**What happened:** Ch. 3 spine integration — v0.3 → v0.4. Jon approved the proposed spine additions (7 items) with two corrections and one restraint: cephalization framing instead of "bilateral symmetry requires a brain"; serotonin as behavioral-inhibition contrast rather than a hard slogan; gut-brain axis trimmed to ~80 words, neuron count corrected to "over 100 million." Both markdown and HTML updated in full.
+
+**Changes applied (both `source/chapters/ch03-neuroscience-biological-bases.md` and `docs/chapters/03-neuroscience.html`):**
+
+1. **Opener replaced** — "Why Do We Have a Brain?" replaces the old Misconception Opener. Action-selection problem and cephalization become the chapter's conceptual anchor. 10% myth demoted to a short misconception box within the opener. Student-facing spine question added.
+2. **Dopamine RPE caveat** — one paragraph added after the Schultz paragraph: dopamine is not simply "the RPE chemical"; different pathways also track salience, novelty, movement, action selection; 2024 *Nature Neuroscience* perspective cited.
+3. **ADHD dopamine sentence softened** — "explains how stimulant medications work" → "provides one framework for understanding why stimulant medications help many people with ADHD"; explicit caution added: "this is not the same as saying ADHD is caused by 'low dopamine.'"
+4. **Serotonin contrast paragraph added** — behavioral inhibition, patience, staying with a course of action; explicitly not "the happiness chemical"; sets up the chemical imbalance correction below.
+5. **New Do Not Confuse: Chemical Influence vs. Chemical Cause** — chemical imbalance model named as popularized through drug advertising and simplified public explanations (not established science); Moncrieff et al. (2022) umbrella review cited; SSRI efficacy vs. deficit-model distinction drawn.
+6. **Hormones section renamed** to "Hormones, Neuropeptides, and Bodily State." Oxytocin restored as neuropeptide case study (hypothalamic synthesis, pituitary release, context-dependent social modulation, HPA attenuation; "love hormone" label explicitly rejected). Pays forward to Ch. 9 (biobehavioral synchrony) and Ch. 12 (stress regulation).
+7. **Gut-brain paragraph added** — ~85 words; enteric nervous system, >100M neurons, bidirectional vagal/immune/microbiota communication; framed as defensible basis for gut-mood reasoning, not simplistic "eat this → feel better."
+8. **fMRI section tightened** — ~190 words → ~110 words.
+9. **Chapter Summary expanded** — spine question echoed; action-selection framing added; serotonin, chemical imbalance, oxytocin, enteric NS all included; closing line restates what the biology leaves out.
+10. **Connections table corrected** — Ch. 13 Stress & Health → Ch. 12 Emotion, Stress & Coping; Ch. 14 → Ch. 13; new oxytocin row added.
+11. **Key Terms** — Cephalization, Serotonin, Neuropeptide added; Dopamine definition updated.
+12. **References** — Moncrieff et al. (2022) added to both markdown and HTML.
+
+**Word count note:** Body word count now estimated ~5,500+, above the 3,500–5,000 target. Same precedent as Ch. 3 v0.3 and Ch. 6 (flag, not cut). Jon's call.
+
+**Files modified:**
+- `source/chapters/ch03-neuroscience-biological-bases.md` — v0.3 → v0.4
+- `docs/chapters/03-neuroscience.html` — in sync with v0.4
 
 ---
 
