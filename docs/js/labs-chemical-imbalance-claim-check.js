@@ -238,12 +238,13 @@
 
   function buildFeedbackText(claim, response) {
     const correctLabel = classificationLabels[claim.correct];
+    const chosenLabel = classificationLabels[response.choice];
 
     if (response.correct) {
       return `${correctLabel}: ${claim.feedback}`;
     }
 
-    return `${correctLabel}: ${claim.feedback}`;
+    return `You chose ${chosenLabel}. Best classification: ${correctLabel}. ${claim.feedback}`;
   }
 
   function goToNextItem() {
