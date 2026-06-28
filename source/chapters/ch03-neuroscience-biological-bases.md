@@ -51,8 +51,8 @@ In 1848, a 25-year-old railroad foreman named Phineas Gage was tamping explosive
 
 A **neuron** is a cell specialized for receiving, processing, and transmitting information through electrochemical signals. Three parts matter most for our purposes. **Dendrites** are the branching extensions that receive input from other neurons — think of them as the receiving antennae, typically numerous and richly branched, since a single neuron can receive signals from thousands of others. The **soma**, or cell body, contains the nucleus and the machinery that keeps the cell alive. The **axon** is the single long output fiber that carries the neuron's signal away from the soma toward the next cell in the chain, sometimes for a distance of more than a meter, as in the neurons running from your spinal cord to your toes. Many axons are wrapped in **myelin**, a fatty insulating sheath produced by support cells called glia; myelin is interrupted at regular gaps called nodes of Ranvier, and this matters for speed, which we get to shortly. Where the end of one neuron's axon meets the next neuron — typically at a dendrite — there is a tiny gap called the **synapse**, across which communication switches from electrical to chemical.
 
-![Figure 3.1 — A neuron showing dendrites receiving input, a soma integrating it, a myelinated axon with nodes of Ranvier, and axon terminals forming synapses with the next cell](../images/ch03/fig_neuron_anatomy.png)
-*Figure 3.1. Information enters through the dendrites, gets integrated in the soma, and travels down the axon as output — myelin speeds the trip along the way.*
+![Figure 3.1 — Labeled neuron anatomy showing dendrites, nucleus, axon, Schwann cells, myelin sheath, nodes of Ranvier, and axon terminals](../images/ch03/fig3_1_neuron_anatomy_pressbooks.jpeg)
+*Figure 3.1. Dendrites receive input, the soma contains the nucleus, and the axon carries signals toward terminals — myelin helps signals travel efficiently.*
 
 There are, by a widely used estimate, roughly 86 billion neurons in an adult human brain (Herculano-Houzel, 2009) — though you will also encounter the older figure of 100 billion in many textbooks (Williams & Herrup, 1988); the revision happened because a better counting method (literally dissolving brain tissue into a uniform "soup" and counting nuclei) came along decades after the original estimate. That revision is worth sitting with for a moment: even a number this basic, about an organ humans have been dissecting for centuries, was wrong by a meaningful margin until fifteen years ago. Psychological and biological science revises its facts as better methods become available (APA IPI Theme 1) — that is a feature of the enterprise, not an embarrassment.
 
@@ -72,8 +72,8 @@ Our basic model of this entire process comes from work that, on its face, has no
 
 Myelin matters here because of speed. On an unmyelinated axon, the action potential must regenerate, point by point, along the entire membrane — slow, and metabolically expensive. On a myelinated axon, the insulated stretches cannot fire at all, so the signal effectively skips from node to node, a process called **saltatory conduction** (from the Latin for "to leap"). This is faster and cheaper, which is one reason the disease multiple sclerosis, which destroys myelin, produces such a wide range of motor and sensory disruption: it does not destroy the neurons, but it badly degrades the speed and reliability of the signal traveling through them.
 
-![Figure 3.2 — Line graph of membrane voltage over time showing a failed subthreshold response and a full action potential after threshold is crossed, followed by a refractory period](../images/ch03/fig_action_potential_threshold.png)
-*Figure 3.2. Above threshold, action potentials do not get bigger — stronger stimulation is represented mainly by firing rate, not spike size.*
+![Figure 3.2 — Line graph of membrane voltage over time showing threshold of excitation, peak action potential, repolarization, hyperpolarization, and resting potential](../images/ch03/fig3_2_action_potential_pressbooks.jpeg)
+*Figure 3.2. Once threshold is crossed, the action potential rises rapidly, repolarizes, briefly hyperpolarizes, and returns toward resting potential.*
 
 > **Think About It:** You have probably had the experience of your foot or hand "falling asleep" and then experienced the prickling sensation as it wakes back up. Given what you now know about ion channels, pressure, and signal transmission, what do you think is actually happening to your neurons during that minute or two?
 
@@ -85,8 +85,8 @@ But the analogy breaks at almost every level of mechanism. An artificial "neuron
 
 The breakdown is informative in both directions. "Neural network" is a name borrowed for inspiration, not a claim of mechanism-level equivalence. And the fact that evolution retained all of that biological complexity — the chemistry, the timing, the metabolic cost — is itself evidence that the complexity is doing real work the simplified artificial version cannot. When you hear someone say an AI system "thinks like a brain," that claim is doing considerably more work than the underlying mechanism supports.
 
-![Figure 3.3 — Myth/reality card: a stronger stimulus does not produce a bigger action potential, it produces more of them](../images/ch03/fig_action_potential_misconception.jpg)
-*Figure 3.3. Pulling a trigger harder does not make the bullet faster — but you can fire more often. Firing rate, not spike size, is how the nervous system encodes intensity.*
+![Figure 3.3 — Three panels showing weak input with no action potential, threshold-crossing input with one full-sized action potential, and stronger sustained input with several full-sized spikes closer together](../images/ch03/fig3_3_action_potential_firing_rate.png)
+*Figure 3.3. Stronger input does not make any individual action potential larger; it produces more full-sized spikes closer together.*
 
 > *[Demo placeholder — Jon: the action potential simulator from the "awesome-sauce_neuroscience" repo (threshold/all-or-none, voltage-gated channels, refractory period, saltatory conduction, each with a prediction challenge) fits here. Need the live embed URL to wire this in.]* **Predict, before interacting:** if you reduce the strength of a stimulus to a neuron, will the resulting action potential be smaller, or will it simply fail to occur at all? After interacting: was your prediction correct, and can you explain why in terms of the all-or-nothing principle?
 
