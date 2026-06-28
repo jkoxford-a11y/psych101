@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Stronger input changes firing rate, not spike size</title>
+  <desc id="desc">Three-panel educational diagram. Weak input below threshold produces no action potential. Input crossing threshold produces one full-sized action potential. Stronger sustained input produces several full-sized action potentials closer together.</desc>
+  <defs>
+    <style>
+      .bg { fill: #f8fafc; }
+      .panel { fill: #ffffff; stroke: #cbd5e1; stroke-width: 3; rx: 18; }
+      .axis { stroke: #334155; stroke-width: 4; stroke-linecap: round; }
+      .grid { stroke: #e2e8f0; stroke-width: 2; }
+      .threshold { stroke: #b45309; stroke-width: 4; stroke-dasharray: 12 10; }
+      .rest { stroke: #64748b; stroke-width: 3; stroke-dasharray: 6 8; }
+      .trace { fill: none; stroke: #2563eb; stroke-width: 7; stroke-linecap: round; stroke-linejoin: round; }
+      .input { fill: none; stroke: #10b981; stroke-width: 6; stroke-linecap: round; stroke-linejoin: round; }
+      .label { fill: #0f172a; font-family: Arial, Helvetica, sans-serif; font-size: 34px; font-weight: 700; }
+      .small { fill: #334155; font-family: Arial, Helvetica, sans-serif; font-size: 24px; font-weight: 600; }
+      .tiny { fill: #475569; font-family: Arial, Helvetica, sans-serif; font-size: 20px; font-weight: 600; }
+      .callout { fill: #ffffff; stroke: #cbd5e1; stroke-width: 2; rx: 10; }
+    </style>
+  </defs>
+
+  <rect class="bg" width="1600" height="900"/>
+  <text x="800" y="76" text-anchor="middle" class="label">Stronger input does not make a bigger spike</text>
+  <text x="800" y="116" text-anchor="middle" class="small">Intensity is encoded by firing rate</text>
+
+  <g transform="translate(70 165)">
+    <rect class="panel" width="460" height="650" rx="18"/>
+    <text x="32" y="56" class="label">A</text>
+    <text x="86" y="56" class="small">Weak input</text>
+    <text x="86" y="90" class="tiny">below threshold: no spike</text>
+
+    <line class="axis" x1="70" y1="500" x2="405" y2="500"/>
+    <line class="axis" x1="70" y1="150" x2="70" y2="500"/>
+    <line class="grid" x1="70" y1="260" x2="405" y2="260"/>
+    <line class="grid" x1="70" y1="390" x2="405" y2="390"/>
+    <line class="threshold" x1="70" y1="260" x2="405" y2="260"/>
+    <line class="rest" x1="70" y1="390" x2="405" y2="390"/>
+    <text x="86" y="247" class="tiny">threshold</text>
+    <text x="86" y="380" class="tiny">rest</text>
+    <text x="230" y="530" text-anchor="middle" class="tiny">time</text>
+    <text x="34" y="332" class="tiny" transform="rotate(-90 34 332)">voltage</text>
+
+    <path class="trace" d="M80 390 C130 390 155 390 180 390 C205 370 230 342 250 336 C280 326 305 352 330 390 C355 392 380 390 400 390"/>
+    <rect class="callout" x="118" y="572" width="224" height="42" rx="10"/>
+    <path class="input" d="M138 596 L190 596 C212 596 212 578 234 578 L322 578"/>
+    <text x="228" y="620" text-anchor="middle" class="tiny">input stays too small</text>
+  </g>
+
+  <g transform="translate(570 165)">
+    <rect class="panel" width="460" height="650" rx="18"/>
+    <text x="32" y="56" class="label">B</text>
+    <text x="86" y="56" class="small">Crosses threshold</text>
+    <text x="86" y="90" class="tiny">one full-sized action potential</text>
+
+    <line class="axis" x1="70" y1="500" x2="405" y2="500"/>
+    <line class="axis" x1="70" y1="150" x2="70" y2="500"/>
+    <line class="grid" x1="70" y1="260" x2="405" y2="260"/>
+    <line class="grid" x1="70" y1="390" x2="405" y2="390"/>
+    <line class="threshold" x1="70" y1="260" x2="405" y2="260"/>
+    <line class="rest" x1="70" y1="390" x2="405" y2="390"/>
+    <text x="86" y="247" class="tiny">threshold</text>
+    <text x="86" y="380" class="tiny">rest</text>
+    <text x="230" y="530" text-anchor="middle" class="tiny">time</text>
+
+    <path class="trace" d="M80 390 L150 390 C180 390 195 315 212 260 C225 210 240 152 260 152 C282 152 292 260 302 338 C310 414 334 444 365 410 C378 398 388 390 400 390"/>
+    <rect class="callout" x="118" y="572" width="224" height="42" rx="10"/>
+    <path class="input" d="M138 596 L190 596 C212 596 212 564 234 564 L322 564"/>
+    <text x="228" y="620" text-anchor="middle" class="tiny">one threshold crossing</text>
+  </g>
+
+  <g transform="translate(1070 165)">
+    <rect class="panel" width="460" height="650" rx="18"/>
+    <text x="32" y="56" class="label">C</text>
+    <text x="86" y="56" class="small">Stronger input</text>
+    <text x="86" y="90" class="tiny">same spike size, closer together</text>
+
+    <line class="axis" x1="70" y1="500" x2="405" y2="500"/>
+    <line class="axis" x1="70" y1="150" x2="70" y2="500"/>
+    <line class="grid" x1="70" y1="260" x2="405" y2="260"/>
+    <line class="grid" x1="70" y1="390" x2="405" y2="390"/>
+    <line class="threshold" x1="70" y1="260" x2="405" y2="260"/>
+    <line class="rest" x1="70" y1="390" x2="405" y2="390"/>
+    <text x="86" y="247" class="tiny">threshold</text>
+    <text x="86" y="380" class="tiny">rest</text>
+    <text x="230" y="530" text-anchor="middle" class="tiny">time</text>
+
+    <path class="trace" d="M80 390 C104 390 112 318 122 260 C132 205 144 152 160 152 C178 152 186 260 194 338 C200 410 216 430 234 390 C248 360 252 296 262 260 C272 205 284 152 300 152 C318 152 326 260 334 338 C340 410 356 430 374 390 C384 370 392 390 400 390"/>
+    <rect class="callout" x="118" y="572" width="224" height="42" rx="10"/>
+    <path class="input" d="M138 596 L180 596 C202 596 202 548 224 548 L322 548"/>
+    <text x="228" y="620" text-anchor="middle" class="tiny">sustained input</text>
+  </g>
+</svg>
