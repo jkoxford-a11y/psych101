@@ -62,7 +62,7 @@
 
 ## Next Up
 
-1. **Ch. 4 is the natural next revision target.** Spine additions waiting for Ch. 4: Seth's controlled hallucination; dress illusion as teaching demo; binding problem as Ch4→Ch5 bridge; perceptual disorders (agnosia, prosopagnosia, Charles Bonnet, anosognosia); Müller-Lyer cultural variation; individual differences three-source taxonomy. All documented in `pipeline/theoretical-spine.md` Ch. 4 Layer 3 notes.
+1. **Ch. 4 markdown is v0.4 — Jon's line-by-line review needed before HTML sync.** All Session 51 structural additions applied. Fig 4.7 (dress illuminant diagram) is described but not yet generated — needs to be built as SVG/PNG. After Jon's review, sync `docs/chapters/04-sensation-perception.html`.
 
 3. **Decision needed: Social/Personality chapter swap (Ch. 10 ↔ Ch. 11).** Proposed in Session 47 based on framework logic. Files that need updating if approved: both chapter markdowns, both HTML files (don't exist yet), `docs/index.html`, and cross-references. Low cost now; grows as HTML conversion progresses.
 
@@ -115,8 +115,8 @@
 | `ch02-research-methods.md` | `source/chapters/` | Chapter 2 markdown source — v0.3, 6 figures, HTML on hold |
 | `ch03-neuroscience-biological-bases.md` | `source/chapters/` | Chapter 3 markdown source — v0.6, batch revision complete (Session 50) |
 | `03-neuroscience.html` | `docs/chapters/` | Chapter 3 HTML — in sync with v0.6 (Session 50) |
-| `ch04-sensation-perception.md` | `source/chapters/` | Chapter 4 markdown source — v0.3, 6 figures (all updated Session 41), Other Senses sidebar, awaiting Jon's review |
-| `04-sensation-perception.html` | `docs/chapters/` | Chapter 4 HTML — exists; all figure refs updated Session 41 |
+| `ch04-sensation-perception.md` | `source/chapters/` | Chapter 4 markdown source — **v0.4** (Session 51 structural revision); 8 figures (6 existing + Fig 4.7 dress diagram to generate + Fig 4.8 Müller-Lyer); predictive coding spine; Seth caveat; perceptual disorders sidebar; individual differences table; critical periods; binding problem bridge; awaiting Jon's review |
+| `04-sensation-perception.html` | `docs/chapters/` | Chapter 4 HTML — NOT YET SYNCED to v0.4 markdown; still reflects v0.3 content |
 | `ch05-states-of-consciousness.md` | `source/chapters/` | Chapter 5 markdown source — v0.3, 12 CON-* concepts (hypnosis/CON-010 cut Session 42), Section 4 now Sleep Deprivation; glymphatic system added Section 2; awaiting Jon's review |
 | `05-consciousness.html` | `docs/chapters/` | Chapter 5 HTML — exists and in sync with markdown v0.3 (Session 42) |
 | `ch06-learning.md` | `source/chapters/` | Chapter 6 markdown source — v0.1, awaiting Jon's review |
@@ -132,6 +132,44 @@
 ---
 
 ## Session Log
+
+---
+
+### 2026-06-30 — Session 51
+
+**What happened:** Ch. 4 structural revision — v0.3 → v0.4. Full one-thesis rewrite of `source/chapters/ch04-sensation-perception.md` around the organizing claim that perception is active, predictive construction from incomplete input. Also: Müller-Lyer image renamed and attribution identified; HANDOFF Key Files and Next Up updated.
+
+**Image:**
+- `docs/images/ch04/muller-lyer illusion.jpeg` renamed to `ch04_muller-lyer.jpeg`
+- Attribution: Sevitt, J., *Introduction to Psychology: A Critical Approach*, CUNY Pressbooks, CC BY 4.0
+
+**Changes applied to `source/chapters/ch04-sensation-perception.md`:**
+
+1. Version header updated to v0.4; copyright and figure notes updated
+2. Opener final paragraph sharpened — added closing sentence: "perception is not a recording of the world — it is an active prediction about it, continuously tested against incoming data and revised when wrong"
+3. Section 3 renamed from "From Sensation to Perception — How the Brain Builds an Experience" to "Perception as Prediction — How the Brain Builds an Experience"
+4. Predictive coding paragraph added to Section 3 opening — Rao & Ballard (1999) as scientific backbone; higher areas send predictions down, lower areas return prediction errors; "draft + tracked changes" analogy
+5. Seth "controlled hallucination" added with explicit two-sentence caveat: influential teaching formulation, not settled consensus, extent of mechanism vs. metaphor remains active research
+6. Duck/rabbit removed; replaced with dress illusion (Brainard & Hurlbert, 2015) — illuminant-assumption account; description of original Fig 4.7 diagram (two observers, same color patches, different illuminant assumptions → different percepts)
+7. Plassman et al. (2008) wine/price/mOFC study added in Section 3 as concrete example of priors changing neural response (not just ratings)
+8. Tesla AI Connection trimmed ~120 words — LLM "world-model" tail removed; predictive coding mention kept brief (engineering parallel); kept CNN/feature-detector parallel and breakdown point ("data collection was never the hard problem")
+9. Hubel & Wiesel Classic Study extended with monocular deprivation paragraph — kittens with eye sutured shut; cortical columns fail to develop for deprived eye; critical period concept introduced; amblyopia clinical application; chronic otitis media / auditory processing difficulties during auditory critical period (Gravel & Wallace, 1992)
+10. Stop and Retrieve after H&W updated to include monocular deprivation
+11. Müller-Lyer figure added as Fig 4.8 (ch04_muller-lyer.jpeg) with CUNY Pressbooks CC BY 4.0 attribution
+12. Müller-Lyer cultural variation paragraph added — Segall et al. (1963) cross-cultural susceptibility; soft claim (experience shapes priors); carpentered-world explanation specifically noted as contested (Seth, 2021 — Being You); not called "strongest evidence"
+13. Individual differences table added (4 rows: sensory equipment, learned priors, current state, personality/trait — sensation-seeking Zuckerman 1994 + RDS Blum et al. 1996 with contested-construct caveat)
+14. Perceptual Disorders sidebar added — visual agnosia (Lissauer 1890), prosopagnosia, Charles Bonnet syndrome; framed as diagnostic/illustrative of predictive architecture, not proof; explicit caveat that consistent-with ≠ evidence-for
+15. "A Note on What Comes Next" section added — binding problem bridge; V4/V5/IT parallel streams → unified experience → Ch5 opens with this; language: "Ch4 shows how the brain constructs a perceptual model; Ch5 asks which parts of that construction become conscious" (not claiming Ch5 is primarily about binding)
+16. Connections table — added row for predictive coding / binding problem → Ch5; added row for critical periods → Ch10 (Development)
+17. Learning Objectives — LO 5 rewritten to foreground predictive coding; LO 6 now covers Gestalt/constancy separately
+18. Review Questions — added Q6 (monocular deprivation), Q7 (predictive coding), Q8 (dress illusion), Q12 (Plassman wine study); updated Q6 (formerly H&W feature detectors) to monocular deprivation; renumbered throughout; now 13 questions
+19. Key Terms — added: amblyopia, binding problem, Charles Bonnet syndrome, critical period, predictive coding, prosopagnosia, sensation-seeking, visual agnosia
+20. References — added: Blum et al. (1996), Brainard & Hurlbert (2015), Gravel & Wallace (1992), Hubel & Wiesel (1970), Lissauer (1890), Plassmann et al. (2008), Rao & Ballard (1999), Segall et al. (1963), Seth (2021) [used for both controlled-hallucination and carpentered-world-contested claims], Sevitt (n.d.), Zuckerman (1994)
+21. Further Reading — added Seth (2021) *Being You* with brief annotation
+
+**Still needed before HTML sync:**
+- Jon's line-by-line review
+- Fig 4.7 (dress illuminant diagram) built as SVG/PNG
 
 ---
 
