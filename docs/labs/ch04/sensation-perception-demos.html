@@ -81,6 +81,7 @@ const DEMOS=[
   {id:'gestalt',label:'Gestalt Grouping',sub:'Perceptual Organization',icon:'◈',color:'#9878d8'},
   {id:'fade',label:'Threshold & Adaptation',sub:'Fading Dot / Troxler Effect',icon:'◌',color:'#58d8a0'},
   {id:'stroop',label:'Stroop Effect',sub:'Top-Down vs Bottom-Up Conflict',icon:'◉',color:'#58a0e8'},
+  {id:'heider',label:'Heider & Simmel',sub:'Social Motion Perception',icon:'△',color:'#e878b0'},
 ];
 const $=id=>document.getElementById(id);
 const el=(t,a,...ch)=>{const e=document.createElement(t);if(a)Object.entries(a).forEach(([k,v])=>{if(k==='style'&&typeof v==='object')Object.assign(e.style,v);else if(k.startsWith('on'))e.addEventListener(k.slice(2).toLowerCase(),v);else e.setAttribute(k,v)});ch.flat().forEach(c=>{if(c!=null)e.appendChild(typeof c==='string'?document.createTextNode(c):c)});return e};
@@ -113,7 +114,7 @@ function launch(id){
     el('div',{},el('h2',{},info.label),el('div',{class:'dsub'},info.sub))
   ));
   const c=el('div',{class:'card'});a.appendChild(c);
-  ({sdt:runSDT,weber:runWeber,after:runAfter,gestalt:runGestalt,fade:runFade,stroop:runStroop})[id](c);
+  ({sdt:runSDT,weber:runWeber,after:runAfter,gestalt:runGestalt,fade:runFade,stroop:runStroop,heider:runHeider})[id](c);
 }
 
 // ═══════════════════════════════════════
@@ -784,6 +785,23 @@ function runStroop(C){
   intro();
 }
 
+
+// ═══════════════════════════════════════
+// 7. HEIDER & SIMMEL
+// ═══════════════════════════════════════
+function runHeider(C){
+  C.appendChild(el('p',{class:'inst mb16'},'Watch the animation and describe what you see. Try to avoid intentional language — no "chasing," "afraid," or "trying." Notice how hard that is.'));
+  const wrap=el('div',{style:{position:'relative',width:'100%',paddingBottom:'66%',borderRadius:'10px',overflow:'hidden',background:'#000'}});
+  const iframe=el('iframe',{
+    src:'../motion/demos/heider-simmel/index.html',
+    style:{position:'absolute',top:'0',left:'0',width:'100%',height:'100%',border:'none'},
+    allow:'fullscreen',
+    title:'Heider and Simmel Social Motion Demo'
+  });
+  wrap.appendChild(iframe);
+  C.appendChild(wrap);
+  C.appendChild(el('p',{class:'meta mt16'},'Press Space to start/stop · R to reset · F for fullscreen'));
+}
 
 // ─── Init ───
 menu();
