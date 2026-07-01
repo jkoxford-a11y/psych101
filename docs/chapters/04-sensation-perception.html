@@ -55,7 +55,7 @@
       <p><em>"Your eyes work like a camera: they record the world exactly as it is, and your brain just plays the recording back."</em></p>
       <p>This is an easy thing to believe, because vision does not feel like work. You open your eyes and the world is simply <em>there</em> — sharp, colored, three-dimensional, already organized into objects and distances. There is no felt sense of construction, no moment where you can catch your brain in the act of building the scene. Compare that to, say, solving a math problem, where you can feel yourself working through steps. Seeing feels immediate. So it is natural to assume that what you experience is a more or less direct transcript of what is actually out there.</p>
       <p>It is not. Two simple demonstrations make this concrete before we ever get to the underlying mechanism. First: your retina has a blind spot — a region with no photoreceptors at all, where the optic nerve exits the eye — yet you do not see a hole in your visual field, because your brain fills it in with a plausible guess based on the surrounding pattern. A camera with a dead patch of sensor would simply show a dead patch; your visual system edits the dead patch out and shows you something that was never actually sensed. Second: read the phrase in this sentence quickly, out loud, instead of slowly word by word, and see see if you notice anything unusual about it. Most readers do not catch the repeated word on the first pass, because the brain expects the sentence to make sense and skips over evidence that it does not. A beginning reader sounding out each word individually is far more likely to catch the error. Both demonstrations point at the same conclusion: your visual system is not a passive recorder. It is constantly filling gaps, editing out anomalies, and making confident guesses about what is probably there — using a mix of the raw input and what you already expect to see.</p>
-      <p>The evidence for this goes well beyond a couple of clever tricks; it is one of the organizing distinctions of this entire chapter, between processing that is purely <strong>bottom-up</strong> (built from the raw data) and processing that is <strong>top-down</strong> (shaped by expectation, memory, and context). A camera only does the bottom-up part. Your visual system does both, constantly, and it is often impossible to tell from the inside which parts of your experience came from the world and which parts your brain supplied on its own. Later in this chapter, we will use a genuinely modern version of the camera-versus-brain comparison — a car that is marketed as having "vision" — to make this distinction concrete, because the engineers who built that system ran headfirst into the exact same problem your visual system solves every waking second.</p>
+      <p>The evidence for this goes well beyond a couple of clever tricks; it is one of the organizing distinctions of this entire chapter, between processing that is purely <strong>bottom-up</strong> (built from the raw data) and processing that is <strong>top-down</strong> (shaped by expectation, memory, and context). A camera only does the bottom-up part. Your visual system does both, constantly, and it is often impossible to tell from the inside which parts of your experience came from the world and which parts your brain supplied on its own. Later in this chapter, we will use a genuinely modern version of the camera-versus-brain comparison — a car that is marketed as having "vision" — to make this distinction concrete, because the engineers who built that system ran headfirst into the exact same problem your visual system solves every waking second. The upshot, which this chapter will return to again and again: perception is not a recording of the world — it is an active prediction about it, continuously tested against incoming data and revised when wrong.</p>
     </div>
 
     <h2 id="where-this-fits">Where This Fits</h2>
@@ -69,31 +69,40 @@
         <li>Define absolute threshold and difference threshold (Weber's Law), and apply signal detection theory to a real-world detection problem involving uncertainty.</li>
         <li>Describe the basic anatomy of the visual and auditory systems, and trace how each converts physical energy (light, sound waves) into a neural signal.</li>
         <li>Explain why trichromatic theory and opponent-process theory of color vision are complementary rather than competing, and apply the same logic to place theory and frequency theory of pitch perception.</li>
-        <li>Distinguish top-down from bottom-up processing, and use Gestalt principles and perceptual constancy to explain how perception actively organizes incomplete sensory input into a stable experience (APA IPI Theme 5: our perceptions and biases can be inaccurate).</li>
+        <li>Distinguish top-down from bottom-up processing, and explain how predictive coding describes the brain as generating expectations that are continuously tested against sensory input (APA IPI Theme 5: our perceptions and biases can be inaccurate).</li>
+        <li>Use Gestalt principles and perceptual constancy to explain how perception actively organizes incomplete sensory input into a stable experience.</li>
         <li>Explain the gate control theory of pain as a case where a "purely physical" sensation turns out to be shaped by signals descending from the brain.</li>
         <li>Apply the evolutionary perspective to explain why a specific sensory system is tuned the way it is, rather than some other plausible way it could have been built.</li>
       </ol>
     </div>
 
     <h2 id="section-1-the-basics-detecting-a-changing-world">Section 1: The Basics — Detecting a Changing World</h2>
+
     <div class="callout callout--do-not-confuse">
       <div class="callout-title">Do Not Confuse: Sensation vs. Perception</div>
       <p>Before anything else, this chapter needs one foundational distinction in place, because almost everything else builds on it. <strong>Sensation</strong> is the physical process by which a sense organ responds to a stimulus and converts it into a neural signal — light hitting your retina, a sound wave reaching your eardrum, a chemical binding to a receptor on your tongue. <strong>Perception</strong> is the psychological process of organizing and interpreting that signal so that it becomes a meaningful experience — recognizing the light pattern as your friend's face, the sound as your name being called, the taste as the coffee you ordered. Sensation begins with receptor transduction at the sense organ; perception emerges as the nervous system organizes and interprets those signals — a process that starts surprisingly early (the retina and cochlea both do real preprocessing before a signal ever reaches the brain) and continues through many stages of the brain, not just one final "perception step."</p>
       <p><em>Diagnostic question:</em> a person with a particular kind of brain damage can have completely normal eyes, an intact retina, and a fully functional optic nerve — every sensory component working — yet be unable to recognize faces, a condition called prosopagnosia. Is this a deficit of sensation or of perception? (Perception: the sensory machinery delivering the raw signal is intact; the breakdown is in the brain's later interpretation of that signal.)</p>
     </div>
+
     <figure class="chapter-figure">
-      <img src="../images/ch04/fig_sensation_perception_pipeline.png" alt="Figure 4.1 — Flowchart from physical stimulus through transduction, early neural preprocessing, and brain interpretation to perception, with a top-down feedback arrow from higher cortex back to early processing stages" />
-      <figcaption></figcaption>
+      <img src="../images/ch04/fig_sensation_perception_pipeline.png"
+           alt="Flowchart from physical stimulus through transduction, early neural preprocessing, and brain interpretation to perception, with a top-down feedback arrow from higher cortex back to early processing stages." />
+      <figcaption><strong>Figure 4.1.</strong> Sensation begins at the sense organ; perception is built across many processing stages. Top-down expectations (purple arrow) feed back into earlier stages, which is why what you expect to perceive shapes what you actually do.</figcaption>
     </figure>
-    <p><em>Figure 4.1. Sensation begins at the sense organ; perception is built across many processing stages. Top-down expectations (purple arrow) feed back into earlier stages, which is why what you expect to perceive shapes what you actually do.</em></p>
+
     <p>A useful starting question for this whole chapter, and one that fits the evolutionary lens this course keeps returning to, is: why does any organism sense anything at all? The answer is not "to have rich experiences" — it is that detecting relevant changes in the environment, and doing almost nothing else, is what kept your ancestors' ancestors alive long enough to have ancestors of their own. That framing explains a cluster of basic principles that hold across every sense organ we will cover in this chapter, human or otherwise.</p>
+
     <p>The first principle is that detection has a floor. Each sense organ requires some minimum amount of stimulation before it registers anything at all — your eyes will not respond to an arbitrarily faint light, and your ears will not respond to an arbitrarily quiet sound. Researchers call this minimum the <strong>absolute threshold</strong>, formally defined as the smallest amount of stimulation needed for a person to detect a stimulus 50% of the time (not 100%, because detection at very low intensities is probabilistic, not all-or-nothing, and varies from moment to moment depending on fatigue, attention, and what you were just exposed to). Human sensory capability at this floor is genuinely remarkable: under ideal dark conditions, the human eye can detect the equivalent of a candle flame burning some 30 miles away, and under ideal quiet conditions, the human ear can detect a watch ticking from 20 feet away (Galanter, 1962).</p>
+
     <p>Detecting whether <em>something</em> is there is one problem. Detecting whether something <em>changed</em> is a related but separate problem, and it follows a different rule. Pick up a 1-pound weight, then a 2-pound weight — the difference is obvious. Now pick up a 10-pound weight, then an 11-pound weight — also a 1-pound difference, but it is much harder to notice. This is <strong>Weber's Law</strong>: the smallest detectable difference between two stimuli — the <strong>difference threshold</strong>, or <strong>just noticeable difference (JND)</strong> — is not a fixed amount, but a roughly constant <em>proportion</em> of the original stimulus's size (Weber, 1834; formalized by Fechner, 1860). A bigger stimulus needs a bigger absolute change before the difference registers, even though the proportional change required stays about the same.</p>
+
     <div class="callout callout--stop-retrieve">
       <div class="callout-title">Stop and Retrieve</div>
       <p>Before reading on — in your own words, what is the difference between an absolute threshold and a difference threshold, and how does Weber's Law connect to the second one?</p>
     </div>
+
     <p>Both of these thresholds — and the everyday experience of uncertain detection in general — are studied using a framework called <strong>signal detection theory</strong>, which formalizes something every one of us has actually lived through: deciding whether a faint stimulus was really there, under conditions where you cannot be certain. Imagine you are waiting for an important text message and you feel your phone vibrate in your pocket — except it turns out there was no message. Signal detection theory gives this experience precise vocabulary. A <strong>hit</strong> is correctly detecting a stimulus that was actually present; a <strong>miss</strong> is failing to detect one that was present; a <strong>false alarm</strong> is reporting a stimulus that was not actually there (the phantom vibration); and a <strong>correct rejection</strong> is correctly reporting that nothing was there. Critically, signal detection theory recognizes that your <em>willingness</em> to report "yes, I detected it" — your decision criterion — is separate from your actual sensory sensitivity, and the criterion shifts depending on the cost of getting it wrong. A radiologist scanning for a tumor and a teenager waiting for a crush to text back are running the same basic detection process, with very different criteria for how much ambiguous evidence is enough to say "yes."</p>
+
     <table>
       <thead>
         <tr>
@@ -115,32 +124,46 @@
         </tr>
       </tbody>
     </table>
+
     <figure class="chapter-figure">
-      <img src="../images/ch04/fig_signal_detection_matrix.png" alt="Figure 4.2 — Two-by-two matrix crossing stimulus present versus absent with observer says yes versus no, with the four cells labeled Hit, Miss, False Alarm, and Correct Rejection, each with a real-world example" />
-      <figcaption></figcaption>
+      <img src="../images/ch04/fig_signal_detection_matrix.png"
+           alt="Two-by-two matrix crossing stimulus present versus absent with observer says yes versus no, with the four cells labeled Hit, Miss, False Alarm, and Correct Rejection, each with a real-world example." />
+      <figcaption><strong>Figure 4.2.</strong> Signal detection theory separates sensory sensitivity from the observer's decision criterion. Two people with identical sensitivity can have very different hit and false-alarm rates if their criteria differ.</figcaption>
     </figure>
-    <p><em>Figure 4.2. Signal detection theory separates sensory sensitivity from the observer's decision criterion. Two people with identical sensitivity can have very different hit and false-alarm rates if their criteria differ.</em></p>
+
     <figure class="chapter-figure">
-      <img src="../images/ch04/fig_psychometric_function_webvision.jpg" alt="S-shaped psychometric function curve plotting probability of detecting a stimulus (y-axis, 0 to 1) against stimulus intensity (x-axis). The curve rises steeply from near-zero detection at low intensities through the 50% threshold point to near-certain detection at high intensities. The 50% point on the curve is marked as the absolute threshold." />
-      <figcaption></figcaption>
+      <img src="../images/ch04/fig_psychometric_function_webvision.jpg"
+           alt="S-shaped psychometric function curve plotting probability of detecting a stimulus against stimulus intensity, with the 50% threshold point marked at the inflection point of the curve." />
+      <figcaption>The psychometric function shows how detection probability rises with signal intensity. The absolute threshold is the intensity detected 50% of the time (the inflection point). SDT's criterion shifts where on the curve the observer's yes/no boundary falls without changing underlying sensitivity. Source: Kalloniatis &amp; Luu, <em>Webvision</em> (CC BY-NC 4.0), <a href="https://webvision.med.utah.edu/">webvision.med.utah.edu</a>.</figcaption>
     </figure>
-    <p><em>The psychometric function shows how detection probability rises with signal intensity — slowly at first, steeply near threshold, then leveling off. The absolute threshold is defined as the intensity detected 50% of the time (the inflection point). SDT's criterion does not change the shape of this curve or a person's underlying sensitivity; it shifts where on the curve the observer's "yes/no" boundary falls. Source: Kalloniatis &amp; Luu, <a href="https://webvision.med.utah.edu/" target="_blank">Webvision</a> (CC BY-NC 4.0).</em></p>
+
     <div class="callout callout--think-about-it">
       <div class="callout-title">Think About It</div>
       <p>Think of a recent time you thought you sensed something — a phantom phone vibration, hearing your name called in a noisy room, seeing movement out of the corner of your eye — that turned out not to be there. Using signal detection theory's vocabulary, was that a false alarm, and what do you think your decision criterion was doing in that moment?</p>
     </div>
-    <!-- DEMO PLACEHOLDER: Jon: no existing demo in the inventory covers signal detection theory directly; it is listed as the #3 priority demo to build (d′, criterion, ROC curve). This section is the natural home for it once it exists. Predict/explain/retrieve scaffold once built: predict how raising versus lowering a detection criterion changes the balance of hits, misses, false alarms, and correct rejections; manipulate the criterion; explain the trade-off in your own words. — embed URL not yet confirmed -->
+
+    <!-- DEMO PLACEHOLDER: SDT simulator (d′, criterion, ROC curve) — embed URL not yet confirmed -->
+    <div class="callout callout--stop-retrieve">
+      <div class="callout-title">Try it in the lab</div>
+      <p>Adjust a detection criterion and watch how your hit rate and false-alarm rate trade off against each other. Practice this in the signal detection lab when available.</p>
+    </div>
+
     <p>Finally, sense organs respond strongly to a stimulus when it first appears, but progressively less as it persists unchanged — in effect, becoming tuned to <em>change</em> rather than to whatever is currently constant. When a stimulus stays the same for long enough, your receptors gradually stop responding to it — a phenomenon called <strong>sensory adaptation</strong>. This is why you stop feeling the weight of your own clothing within a few minutes of putting it on, why a persistent background hum disappears from awareness, and why the car radio that sounded perfectly reasonable last night seems blaringly loud the next morning — your auditory system adapted to the volume over the course of the drive, then reset overnight (Privitera, 2026). From an evolutionary standpoint, this makes excellent sense: a constant stimulus is, almost by definition, not new information, and devoting limited processing resources to monitoring it continuously would be a poor use of a metabolically expensive nervous system. What is worth your attention is what <em>changes</em> — which is exactly what the rest of this chapter's machinery is built to catch.</p>
 
     <h2 id="section-2-vision-from-photons-to-faces">Section 2: Vision — From Photons to Faces</h2>
+
     <p>Light is, by a wide margin, the sense this course (and most introductory psychology courses) spends the most time on, partly because human vision is unusually well studied and partly because an enormous fraction of the cortex — by some estimates, nearly a third — is devoted to processing it (Buetti &amp; Lleras, 2026). The story starts with <strong>transduction</strong>: the conversion of one form of energy into another, which is the job every sense organ in this chapter performs in its own way. For vision, that means converting photons of light into the electrochemical signal Chapter 3 already described.</p>
+
     <p>Light enters the eye through the pupil, gets focused by the lens onto the <strong>retina</strong> — a thin layer of light-sensitive tissue lining the back of the eyeball — and is transduced there by two types of photoreceptor cells. <strong>Rods</strong> are extremely sensitive to dim light and are responsible for night vision, but cannot register color or fine detail; they are concentrated in the periphery of the retina and nearly absent from its center. <strong>Cones</strong> require more light to activate but provide both color vision and sharp detail; they are densely packed in the <strong>fovea</strong>, the small central region of the retina that you are using right now to read this sentence (Privitera, 2026). This is why a dim star seems to vanish if you stare directly at it — you are aiming your cone-dense fovea at it, when the rods in your peripheral retina would actually detect it better — and why you cannot read fine print using only your peripheral vision, no matter how hard you try.</p>
+
     <figure class="chapter-figure">
-      <img src="../images/ch04/fig_retina_infographic.png" alt="Figure 4.3 — Instructional infographic titled &quot;The Retina Is Not a Camera Sensor.&quot; Left side shows a cutaway of the eye labeling the cornea, pupil, lens, retina, fovea, optic nerve, and blind spot. Right side zooms into the retinal layers, identifying rods and cones and noting that cones are concentrated at the fovea, rods dominate the periphery, and the blind spot contains no photoreceptors." />
-      <figcaption></figcaption>
+      <img src="../images/ch04/fig_retina_rods_cones_fovea_blindspot.png"
+           alt="Instructional infographic titled 'The Retina Is Not a Camera Sensor.' Left side shows a cutaway of the eye labeling the cornea, pupil, lens, retina, fovea, optic nerve, and blind spot. Right side zooms into the retinal layers, identifying rods and cones and noting that cones are concentrated at the fovea, rods dominate the periphery, and the blind spot contains no photoreceptors." />
+      <figcaption><strong>Figure 4.3.</strong> Rods and cones are not evenly distributed across the retina. Cones are densest at the fovea (color, fine detail); rods dominate the periphery (dim light, motion). The blind spot, where the optic nerve exits, has no photoreceptors at all — yet you normally never notice it.</figcaption>
     </figure>
-    <p><em>Figure 4.3. Rods and cones are not evenly distributed across the retina. Cones are densest at the fovea (color, fine detail); rods dominate the periphery (dim light, motion). The blind spot, where the optic nerve exits, has no photoreceptors at all — yet you normally never notice it.</em></p>
+
     <p>Depth perception draws on cues that require both eyes (<strong>binocular cues</strong>) and cues that work with just one (<strong>monocular cues</strong>):</p>
+
     <table>
       <thead>
         <tr>
@@ -171,99 +194,206 @@
         </tr>
       </tbody>
     </table>
+
     <p>All three cues are genuinely available to try right now, and accommodation in particular is one you can feel directly, not just reason about abstractly.</p>
+
     <div class="callout callout--classic-study">
-      <div class="callout-title">Classic Study: Hubel and Wiesel and the Discovery of Feature Detectors</div>
-      <p>In the late 1950s and 1960s, David Hubel and Torsten Wiesel ran a deceptively simple set of experiments: they recorded the activity of single neurons in a cat's primary visual cortex while showing the cat bars of light at different orientations and positions (Hubel &amp; Wiesel, 1962). What they found reshaped how psychology and neuroscience think about vision. Individual neurons in this region did not respond to "light" in general — each one responded selectively to a bar at one specific orientation, in one specific location, and stayed almost silent for every other orientation. Some cells preferred horizontal edges, others vertical, others a precise diagonal, tiled across the visual field like a set of specialized detectors. This was the discovery of <strong>feature detectors</strong>: neurons tuned to respond to a specific, simple feature of the visual scene rather than to visual stimulation in general.</p>
-      <p>The finding mattered for two reasons. First, it gave psychology a concrete, mechanistic answer to a question that had previously been almost entirely theoretical: object and scene perception does not start with the brain recognizing whole objects directly. It starts with a layer of neurons each registering one small, simple feature — an edge here, an orientation there — that gets assembled into more complex representations only at later stages of processing. Second, it earned Hubel and Wiesel the 1981 Nobel Prize in Physiology or Medicine, and it became one of the most direct pieces of evidence that the visual system performs real, identifiable computation rather than simply transmitting an image, the way a camera's sensor does. We will come back to feature detectors directly in the next section, because this exact finding turns out to be the single most concrete point of contact between human vision and the artificial vision systems built into modern camera-based driver-assistance technology.</p>
+      <div class="callout-title">Classic Study: Hubel and Wiesel (1962, 1970)</div>
+      <p><strong>Question:</strong> How does the visual cortex represent the visual scene — do individual neurons respond to general "light," or are they tuned to something more specific?</p>
+      <p><strong>Method:</strong> David Hubel and Torsten Wiesel recorded the activity of single neurons in a cat's primary visual cortex while showing the cat bars of light at different orientations and positions. In a second series of experiments, they sutured one eye shut in young kittens during the first weeks of life, then later opened it and recorded from visual cortex.</p>
+      <p><strong>Key finding (1962 — feature detectors):</strong> Individual neurons did not respond to "light" in general. Each one responded selectively to a bar at one specific orientation, in one specific location, and stayed almost silent for every other orientation — some preferred horizontal edges, others vertical, others a precise diagonal. This was the discovery of <strong>feature detectors</strong>: neurons tuned to respond to a specific, simple feature of the visual scene.</p>
+      <p><strong>Key finding (1970 — critical periods):</strong> Kittens with one eye sutured shut during a sensitive developmental window failed to develop normal cortical columns for the deprived eye. The eye itself was anatomically intact; the problem was that the cortex had not been given the right experience during the <strong>critical period</strong> — a developmental window during which sensory input is required to wire normal perceptual architecture. After the critical period ended, the cortical territory had been redistributed to the open eye and could not easily be reclaimed.</p>
+      <p><strong>Why it matters:</strong> The 1962 finding established that object perception is built from simple components assembled in stages, not registered all at once — the mechanistic foundation for everything that followed in visual neuroscience, and the conceptual ancestor of convolutional neural networks. The 1970 finding revealed that the brain uses sensory experience to wire itself during development, and that missing the critical window has lasting consequences. Clinically: children with early-onset cataracts or strong visual imbalance between the two eyes can develop <strong>amblyopia</strong> ("lazy eye"), where the weaker eye's cortical representation fails to develop normally. Patching the stronger eye is most effective in early childhood, before the critical period closes. A parallel story plays out in the auditory system: children with chronic otitis media (recurrent middle-ear infections) often have intermittent hearing loss at the age when auditory cortex is organizing around the native language's phoneme patterns — even after the infections resolve, some show lasting auditory processing difficulties that appear to reflect incomplete wiring during a critical period that cannot be revisited (Gravel &amp; Wallace, 1992).</p>
+      <p><strong>Recognition:</strong> Hubel and Wiesel received the 1981 Nobel Prize in Physiology or Medicine.</p>
     </div>
+
     <div class="callout callout--stop-retrieve">
       <div class="callout-title">Stop and Retrieve</div>
-      <p>In your own words, what did Hubel and Wiesel's cats teach us about how the visual cortex represents a scene — and why does "a few orientation-tuned cells, assembled into something more complex later" matter more than "the brain just sees the whole image at once"?</p>
+      <p>In your own words, what did Hubel and Wiesel's cats teach us about how the visual cortex represents a scene — and what does the monocular deprivation finding add to that story that the feature-detector experiments alone could not tell us?</p>
     </div>
-    <figure class="chapter-figure">
-      <img src="../images/ch04/fig_trichromatic_sensitivity_openstax.webp" alt="Graph showing the spectral sensitivity curves of the three human cone types plotted against wavelength in nanometers. The short-wavelength cone (blue curve) peaks in the blue range around 420 nm, the medium-wavelength cone (grey curve) peaks in the green range around 530 nm, and the long-wavelength cone (red curve) peaks in the yellow-green range around 560 nm. The curves overlap substantially, especially the medium and long wavelength cones." />
-      <figcaption></figcaption>
-    </figure>
-    <p><em>The three cone types — short-wavelength (blue), medium-wavelength (grey), and long-wavelength (red) — have overlapping sensitivity curves rather than cleanly separated color channels. Every color percept is produced by the ratio of activity across all three. Source: Spielman et al., Psychology 2e (OpenStax, 2020), CC BY-NC-SA 4.0.</em></p>
+
     <p>Color vision raises a puzzle that took roughly a century to resolve. The leading early account, <strong>trichromatic theory</strong> (Young, 1802; von Helmholtz, 1867), proposed that color perception depends on three types of cones, each maximally sensitive to a different wavelength range — informally, "red," "green," and "blue" cones — with every color you see produced by some combination of how strongly each type fires. This theory explains a great deal, including why mixing three colored lights of adjustable intensity can reproduce nearly any color the eye can perceive (the same principle behind every pixel on the screen you may be reading this on). What trichromatic theory cannot explain is the <em>afterimage</em> effect: stare at a brightly colored image for thirty seconds, then look at a plain white surface, and you will see a ghostly image in the <em>opposite</em> colors — red where there was green, yellow where there was blue. <strong>Opponent-process theory</strong> (Hering, 1892) explains this second phenomenon: retinal ganglion cells beyond the cones are organized into opposing pairs — red/green, blue/yellow, and black/white — and code color as the <em>difference</em> between the two members of a pair rather than as a simple combination of raw cone signals. This is also why you can never perceive a reddish-green or a bluish-yellow: the two members of an opponent pair cancel each other out rather than blending. Trichromatic and opponent-process theory are not rival explanations where one must be wrong — they describe two real stages of the same system, the first at the cones, the second at the ganglion cells that process the cones' output (Hering, 1892; Svaetichin, 1956).</p>
+
     <figure class="chapter-figure">
-      <img src="../images/ch04/fig_afterimage_flag_openstax.webp" alt="A flag image with colors inverted from the standard American flag — green stripes instead of red, black stars on a yellow canton instead of white on blue — designed to produce a red-white-and-blue afterimage when the viewer stares at the center dot and then looks at a white surface." />
-      <figcaption></figcaption>
+      <img src="../images/ch04/ch04_color_vision_two_stage_model_v1.png"
+           alt="'Two Stages of Color Vision.' Left panel shows Stage 1 (Trichromatic Theory — The Eye): three cone photoreceptor types with different wavelength sensitivity curves send separate signals about how much light of each type is present. Right panel shows Stage 2 (Opponent-Process Theory — The Brain): opponent channels compare cone signals in red/green, yellow/blue, and light/dark pairs. Key idea: Stage 1 measures light with three cone types; Stage 2 constructs color by comparing opponent pairs." />
+      <figcaption><strong>Figure 4.4.</strong> Color vision operates in two complementary stages. The eye's cones measure raw wavelength energy (trichromatic stage); downstream ganglion cells compare those cone signals in opponent pairs (opponent-process stage). Afterimages and the impossibility of reddish-green or bluish-yellow arise from Stage 2.</figcaption>
     </figure>
-    <p><em>Stare at the center of this image for 30 seconds, then look at a white wall or blank screen. The afterimage appears in the complementary colors: green fatigues the green-opponent channel, so the afterimage reads as red; yellow fatigues the yellow-opponent channel, so the afterimage reads as blue. Trichromatic theory alone cannot account for this — opponent-process theory explains it. Source: Spielman et al., Psychology 2e (OpenStax, 2020), CC BY-NC-SA 4.0.</em></p>
+
     <div class="callout callout--think-about-it">
       <div class="callout-title">Think About It</div>
       <p>The next time you notice an afterimage — after looking at a bright window, a camera flash, or a brightly lit screen in a dark room — try to name the color of the afterimage <em>before</em> you have read this section again from memory. Does it match what opponent-process theory predicts?</p>
     </div>
 
-    <h2 id="section-3-from-sensation-to-perception-how-the-brain-builds-an-experience">Section 3: From Sensation to Perception — How the Brain Builds an Experience</h2>
+    <h2 id="section-3-perception-as-prediction-how-the-brain-builds-an-experience">Section 3: Perception as Prediction — How the Brain Builds an Experience</h2>
+
     <p>Section 1 introduced the distinction between bottom-up and top-down processing through a couple of quick demonstrations. Here is the formal version. <strong>Bottom-up processing</strong> builds a percept from the ground up, starting with the raw sensory data and assembling increasingly complex representations from it — exactly the kind of stepwise construction Hubel and Wiesel's feature detectors perform. <strong>Top-down processing</strong> runs in the other direction: your existing knowledge, expectations, and context actively shape what you perceive, sometimes overriding what the raw data alone would suggest (Privitera, 2026). Both are happening essentially all the time, in parallel, and the relative balance between them is a large part of what separates expert perception from novice perception in any domain — an experienced radiologist's top-down knowledge of what tumors typically look like changes what jumps out at them in a scan that, bottom-up, contains exactly the same pixels for an untrained viewer.</p>
-    <p>This is also a good place to look at a deliberately ambiguous image — the kind where the same bottom-up input supports two different top-down interpretations, and your perception flips between them depending on which one your brain currently favors. The classic example is a simple line drawing that can be seen as either a duck or a rabbit, depending entirely on which features you mentally group together; nothing about the ink on the page changes, only the interpretation imposed on it. The fact that your perception can flip between two completely different objects, with zero change in the actual sensory input, is about as direct a demonstration as exists that perception is not simply a transcript of sensation.</p>
+
+    <p>One of the more influential theoretical accounts of how top-down and bottom-up processing interact comes from computational neuroscience. <strong>Predictive coding</strong> proposes that higher brain areas do not simply wait for input from lower areas and then interpret it — they continuously send <em>predictions</em> downward about what the lower areas are likely to report next. Lower areas send back only the <em>prediction error</em>: the difference between what was predicted and what actually arrived. On this account, what you consciously perceive is largely the brain's current best prediction, corrected by whatever errors the sensory data revealed (Rao &amp; Ballard, 1999). Perception is less like reading a message and more like sending a draft and getting back tracked changes — the brain generates most of the content itself, and the world mostly just corrects the mistakes.</p>
+
+    <figure class="chapter-figure">
+      <img src="../images/ch04/ch04_perception_prediction_loop.png"
+           alt="'Perception Is a Prediction Loop.' A five-step circular diagram: (1) World — rich and complex, we never get all of it; (2) Sensory Evidence — senses provide partial, noisy input; (3) Prediction Error — incoming evidence compared with what was expected, mismatch produces prediction error; (4) Prediction — the brain's best current guess about the world, top-down predictions shape early processing; (5) Perception — the updated model becomes conscious experience and guides actions. Actions change the world and produce new sensory input, keeping the loop going. Bottom label reads: 'Not a recording — a controlled guess.'" />
+      <figcaption><strong>Figure 4.5.</strong> Perception as a prediction loop. Rather than passively receiving sensory data, the brain continuously generates predictions, compares them against incoming evidence, and updates its model accordingly. The loop is closed by action — behavior changes the sensory input, which feeds the next cycle of prediction and correction.</figcaption>
+    </figure>
+
+    <p>Some researchers, including the neuroscientist Anil Seth, have distilled this into a striking phrase: perception is a "controlled hallucination" — the brain's best guess about the cause of sensory input, constrained but not dictated by the actual signal (Seth, 2021). This is an influential teaching formulation, and it captures something important about the active, generative nature of perception that the camera metaphor misses entirely. It is worth being clear, though, that predictive coding is a theoretical framework with strong empirical support in some domains, not a fully settled account of all perception — not all perceptual scientists use it as their primary framework, and the extent to which it describes the precise mechanism (rather than a useful computational metaphor) remains an area of active research.</p>
+
+    <p>With that framing in place, look at what predictive coding predicts about ambiguous input: when the sensory data is compatible with two different predictions, perception should flip between them — whichever the brain's current prior favors. A vivid real-world case is <strong>the dress</strong>, a photograph that went viral in 2015 when people discovered they saw wildly different colors in the same image. About half of viewers perceived it as white and gold; the other half as blue and black. The physical fact is unambiguous: the pixels are a fixed mix of blue and brown. What differs between observers is the <em>unconscious illuminant assumption</em> each brain makes before reading the surface color. Vision scientists, including David Brainard, noted that the visual system must correct for the ambient light source before it can interpret surface reflectance — and the dress image provides enough ambiguity that the brain's inference about the light source tips in one of two stable directions (Brainard &amp; Hurlbert, 2015). If the brain assumes the dress is in shadow (bluish light), it subtracts that blue cast and perceives white and gold. If it assumes daylight or an artificial warm light, it reads the uncorrected values and perceives blue and black.</p>
+
+    <figure class="chapter-figure">
+      <img src="../images/ch04/ch04_same_pixels_illumination_assumptions_v1.png"
+           alt="'Same Pixels, Different Percepts.' Two scenarios show the same fabric object under different lighting assumptions. In Assumption A (blue shadow), the brain discounts the blue cast and perceives the surface as lighter and warmer. In Assumption B (warm light), the brain discounts yellow and perceives the surface as darker and cooler. The center panel shows identical light reaching both eyes. Key idea label: 'Perception is an inference. With the same sensory input, different assumptions lead the brain to different interpretations of the world.'" />
+      <figcaption><strong>Figure 4.6.</strong> Same pixels, different percepts. Both scenarios deliver identical light to the retina; what differs is the brain's unconscious assumption about the illuminant. Assumption A (cool/blue shadow) leads to a lighter, warmer perceived surface color; Assumption B (warm/yellow light) leads to a darker, cooler one. This is the mechanism behind the viral dress illusion — and a concrete demonstration that perception is inference, not readout.</figcaption>
+    </figure>
+
+    <p>The dress is not just a curiosity. It is a demonstration, in plain sight, of something the camera metaphor cannot handle at all: two people with identical retinal input can have opposite perceptual experiences, because the differences are happening in the prediction layer, not the sensory layer.</p>
+
+    <p>A particularly striking piece of evidence that priors can change the <em>neural response itself</em> — not just the report — comes from an fMRI study by Plassmann and colleagues (2008). Participants tasted the same wine while being told it had been purchased at different prices. Wines labeled as more expensive were rated as tasting better. More revealingly, scans showed greater activation in the medial orbitofrontal cortex (mOFC) — a region associated with experienced pleasantness — for the supposedly pricier wine. The prior ("this wine costs more, therefore it is better") did not just nudge the rating; it changed the measured neural response in a region encoding the actual experience of reward. What the brain predicts it will feel, it partly does feel.</p>
+
     <div class="callout callout--ai-connection">
       <div class="callout-title">AI Connection: Feature Detectors and Tesla Vision</div>
       <p>Hubel and Wiesel's feature detectors are the direct conceptual ancestor of the <strong>convolutional neural network (CNN)</strong>, the architecture behind most image-recognition AI. A CNN's early layers are built to do almost exactly what Hubel and Wiesel found in the cat's visual cortex: detect simple local features like edges and orientations, then combine them into increasingly complex representations in later layers. This is not just a loose metaphor — researchers have directly compared trained CNNs' response patterns to recordings from biological visual cortex and found measurable correspondence in early layers.</p>
-      <p>A concrete example makes this tangible: <strong>Tesla Vision</strong>, the name Tesla gives to the supervised, camera-based driver-assistance system used in Model 3 and Model Y vehicles sold in North America since May 2021, which relies entirely on an array of roughly eight cameras providing 360-degree coverage, with no radar or lidar (Tesla, n.d.). (Tesla calls its broader system "Full Self-Driving (Supervised)" — the name is aspirational marketing, and Tesla's own materials are explicit that the system requires active driver supervision and does not make the vehicle autonomous.) Eight well-placed cameras genuinely capture more raw visual data, from more angles, than a pair of human eyes ever could. If vision were just data collection, the car's system should win on data alone.</p>
-      <p><strong>But the analogy breaks.</strong> Raw camera data is not perception any more than raw retinal stimulation is — both still require something like Hubel and Wiesel's feature-detection stage, plus a great deal of top-down work layered on top: deciding what in the visual stream matters right now (compression), where to direct processing (attention), and where a partially occluded pedestrian or fast-moving cyclist is about to be a moment from now (prediction). Human vision performs an enormous amount of this same forward-looking inference, constantly anticipating what comes next so that the roughly 100-millisecond lag built into early visual processing does not leave you reacting to a world that has already moved on (Enns &amp; Lleras, 2008). Some vision scientists describe this through <strong>predictive coding</strong> — perceptual systems continuously generating and updating a model of what they expect to sense next, rather than rebuilding perception from scratch on every frame. Large language models do something that sounds related, generating a probability distribution over the next likely word — but the parallel is looser than it sounds: an LLM is not coupled to a continuously changing physical scene through the kind of sensorimotor feedback loop biological vision relies on, so the comparison illuminates the general idea of prediction without licensing the claim that a language model "sees" the way a visual system does.</p>
-      <p>What the breakdown tells us: collecting visual data was never the hard problem, for Tesla's engineers or for your own eyes — the difficult work, in both cases, is deciding what the data means. And it tells us why vision feels effortless: most of the compression, filtering, and prediction described above happens before anything reaches conscious awareness at all.</p>
+      <p>A concrete example makes this tangible: <strong>Tesla Vision</strong>, the name Tesla gives to the supervised, camera-based driver-assistance system used in Model 3 and Model Y vehicles sold in North America since May 2021, which relies entirely on an array of roughly eight cameras providing 360-degree coverage, with no radar or lidar (Hawkins, 2021; Tesla, n.d.). (Tesla calls its broader system "Full Self-Driving (Supervised)" — the name is aspirational marketing, and Tesla's own materials are explicit that the system requires active driver supervision and does not make the vehicle autonomous.) Eight well-placed cameras genuinely capture more raw visual data, from more angles, than a pair of human eyes ever could. If vision were just data collection, the car's system should win on data alone.</p>
+      <p><strong>But the analogy breaks.</strong> Raw camera data is not perception any more than raw retinal stimulation is — both still require something like Hubel and Wiesel's feature-detection stage, plus top-down work layered on top: deciding what in the visual stream matters right now, where to direct processing, and where a partially occluded pedestrian is about to be a moment from now. This is precisely what predictive coding describes at the neural level, and it is the same engineering problem Tesla's system must solve in silicon. Collecting visual data was never the hard problem, for Tesla's engineers or for your own eyes — the difficult work, in both cases, is deciding what the data means.</p>
     </div>
-    <!-- DEMO PLACEHOLDER: Jon: the "motionperception" repo's Heider &amp; Simmons demo (simple animated geometric shapes that viewers spontaneously interpret as intentional agents with goals and emotions) fits perfectly here as a vivid top-down processing demonstration — the shapes are bottom-up identical for every viewer, and the top-down social interpretation is added entirely by the viewer's brain. Need the live embed URL. Predict/explain/retrieve scaffold: predict whether you will be able to describe the shapes' motion without using intentional language ("chasing," "afraid," "trying to"); attempt it; explain why this is difficult. — embed URL not yet confirmed -->
-    <p>Two further organizing principles round out how the brain converts raw sensation into a stable, navigable world. <strong>Gestalt principles</strong> — from the German <em>Gestalt</em>, meaning roughly "whole form" — describe rules the visual system uses to group separate sensory elements into unified objects, first systematically described by Max Wertheimer and his collaborators Wolfgang Köhler and Kurt Koffka starting in 1912 (Wertheimer, 1912). The Gestalt psychologists' central claim, still accurate today, was that the perceived whole is not simply the sum of its sensory parts — your brain actively imposes organization that the raw data does not, strictly speaking, contain. A few of the most useful Gestalt principles: <strong>figure-ground</strong> organization is the tendency to automatically segment a scene into a focal object (the figure) and a background (the ground) — the same raw visual input can sometimes support two different figure-ground assignments, as in the well-known vase-or-two-faces illusion, where your perception flips between treating the white region or the dark region as the figure. <strong>Proximity</strong> describes the tendency to group elements that are physically close together as belonging to a single object, and <strong>similarity</strong> describes the tendency to group elements that share visual features (color, shape, orientation) even when they are not close together. <strong>Closure</strong> describes the tendency to perceptually complete an incomplete figure — a circle drawn with several small gaps is still seen as a circle, not as a series of disconnected arcs — which is really the blind-spot-filling trick from this chapter's opener, generalized into a broader principle.</p>
+
+    <!-- DEMO PLACEHOLDER: Heider & Simmons motion demo (motionperception repo) — embed URL not yet confirmed -->
+    <div class="callout callout--stop-retrieve">
+      <div class="callout-title">Try it in the lab</div>
+      <p>Watch a short animation of geometric shapes moving and try to describe what they are doing without using intentional language — no "chasing," no "afraid," no "trying." Notice how hard that is. Practice this in the motion perception lab when available.</p>
+    </div>
+
+    <p>Two further organizing principles round out how the brain converts raw sensation into a stable, navigable world. <strong>Gestalt principles</strong> — from the German <em>Gestalt</em>, meaning roughly "whole form" — describe rules the visual system uses to group separate sensory elements into unified objects, first systematically described by Max Wertheimer and his collaborators Wolfgang K&ouml;hler and Kurt Koffka starting in 1912 (Wertheimer, 1912). The Gestalt psychologists' central claim, still accurate today, was that the perceived whole is not simply the sum of its sensory parts — your brain actively imposes organization that the raw data does not, strictly speaking, contain. A few of the most useful Gestalt principles: <strong>figure-ground</strong> organization is the tendency to automatically segment a scene into a focal object (the figure) and a background (the ground) — the same raw visual input can sometimes support two different figure-ground assignments, as in the well-known vase-or-two-faces illusion, where your perception flips between treating the white region or the dark region as the figure. <strong>Proximity</strong> describes the tendency to group elements that are physically close together as belonging to a single object, and <strong>similarity</strong> describes the tendency to group elements that share visual features (color, shape, orientation) even when they are not close together. <strong>Closure</strong> describes the tendency to perceptually complete an incomplete figure — a circle drawn with several small gaps is still seen as a circle, not as a series of disconnected arcs — which is really the blind-spot-filling trick from this chapter's opener, generalized into a broader principle.</p>
+
     <figure class="chapter-figure">
-      <img src="../images/ch04/fig_gestalt_principles_openstax.png" alt="Figure 4.4 — Five-panel figure illustrating Gestalt principles. Panel A (Figure-Ground): a face-vase ambiguous figure that can be seen as either two facing profiles or a white vase. Panel B (Proximity): two spatially separated clusters of dots that group into two distinct objects. Panel C (Similarity): a grid of shapes where rows of circles and rows of squares appear to form separate horizontal bands. Panel D (Good Continuation): two intersecting curved lines that are perceived as two smooth, continuous arcs rather than four disconnected segments. Panel E (Closure): an incomplete circular shape whose gaps are perceptually filled in so that it still looks like a circle." />
-      <figcaption></figcaption>
+      <img src="../images/ch04/fig_gestalt_principles_openstax.png"
+           alt="Five-panel figure illustrating Gestalt principles. Panel A (Figure-Ground): a face-vase ambiguous figure seen as either two facing profiles or a white vase. Panel B (Proximity): two spatially separated clusters of dots grouping into two distinct objects. Panel C (Similarity): a grid of shapes where rows of circles and rows of squares appear to form separate horizontal bands. Panel D (Good Continuation): two intersecting curved lines perceived as two smooth, continuous arcs. Panel E (Closure): an incomplete circular shape whose gaps are perceptually filled in so it still looks like a circle." />
+      <figcaption><strong>Figure 4.7.</strong> Gestalt principles describe how the visual system organizes separate elements into unified wholes. Each panel above can be "read" more than one way — notice that your perception, not the image, does the organizing. Source: Spielman et al., <em>Psychology 2e</em> (OpenStax, 2020), CC BY-NC-SA 4.0.</figcaption>
     </figure>
-    <p><em>Figure 4.4. Gestalt principles describe how the visual system organizes separate elements into unified wholes. Each panel above can be "read" more than one way — notice that your perception, not the image, does the organizing. Source: Spielman et al., Psychology 2e (OpenStax, 2020), CC BY-NC-SA 4.0.</em></p>
+
     <p><strong>Perceptual constancy</strong> is the related tendency to perceive an object as stable and unchanging even as the raw sensory information it produces changes dramatically — a door swinging open projects a rapidly changing trapezoidal shape onto your retina, yet you continue to perceive a single rectangular door rotating in space, not a series of different shapes (shape constancy). A person walking away from you produces a steadily shrinking retinal image, yet you do not perceive them as physically shrinking (size constancy); your visual system uses cues like distance and context to correctly infer that the object itself has not changed, only the size and shape of its retinal projection. Without perceptual constancy, the visual world would be in a state of constant, dizzying transformation every time you or anything in your environment moved at all — which makes constancy less an interesting quirk and more a basic precondition for being able to act on a stable world.</p>
-    <!-- DEMO PLACEHOLDER: Jon: the "takingaction" repo's size-weight illusion fits naturally as a hands-on constancy/expectation demonstration — two objects of equal weight but different size are reliably perceived and lifted as though the smaller one is heavier, because expectation (top-down) miscalibrates the effort prediction. Need the live embed URL. — embed URL not yet confirmed -->
+
+    <!-- DEMO PLACEHOLDER: size-weight illusion (takingaction repo) — embed URL not yet confirmed -->
+    <div class="callout callout--stop-retrieve">
+      <div class="callout-title">Try it in the lab</div>
+      <p>Lift two objects of equal weight but different sizes and notice how your expectation changes how heavy they feel. Practice this in the size-weight illusion lab when available.</p>
+    </div>
+
+    <p>If perception is a prediction shaped by prior experience, then different experiences should produce different perceptions — even for the same physical stimulus. The <strong>M&uuml;ller-Lyer illusion</strong> is one of the most studied cases: two lines of identical length are bracketed by fins pointing inward (making the line look longer) or outward (making it look shorter). Most observers see a clear length difference where none exists, which is consistent with the interpretation that the brain is using corner-geometry cues — the same fins correspond to inside vs. outside corners in three-dimensional architectural space — to estimate perceived depth and scale.</p>
+
+    <figure class="chapter-figure">
+      <img src="../images/ch04/ch04_muller-lyer.jpeg"
+           alt="The M&uuml;ller-Lyer illusion. Panel (a) shows two vertical lines of equal length: the left line has outward-pointing fins and appears shorter; the right line has inward-pointing fins and appears longer. Panel (b) shows the same lines embedded in an architectural scene with room corners and doorways, illustrating how the fin configurations correspond to inside and outside corners in three-dimensional space." />
+      <figcaption><strong>Figure 4.8.</strong> The M&uuml;ller-Lyer illusion. The two vertical lines in panel (a) are identical in length; the fins create the illusion of a difference. Panel (b) shows the architectural interpretation: fins pointing inward resemble an inside corner (line appears farther away and therefore longer); fins pointing outward resemble an outside corner (line appears nearer and shorter). Source: Sevitt, J., <em>Introduction to Psychology: A Critical Approach</em>, CUNY Pressbooks. Licensed under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.</figcaption>
+    </figure>
+
+    <p>Segall, Campbell, and Herskovits (1963) reported that people raised in environments with many right-angle, straight-edged buildings — a "carpentered world" — were more susceptible to the M&uuml;ller-Lyer illusion than people raised in environments without this architectural regularity. The straightforward interpretation is that priors learned from a carpentered environment make the corner-geometry inference automatic and hard to override. This is a plausible account, but it is worth being clear about what the evidence does and does not support: the cross-cultural difference in susceptibility is real and has been replicated in various forms, but the specific carpentered-world explanation for <em>why</em> it occurs is contested, and alternative accounts exist (Seth, 2021). The broader point — that perceptual experience shapes perceptual priors, and therefore that two people may perceive the same stimulus differently based on developmental history — is better supported than any single mechanistic explanation for how.</p>
+
+    <h3>Individual Differences in Perception</h3>
+
+    <p>Perception varies across people, and not only because of cultural history. Four sources of individual variation are worth knowing:</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Source</th>
+          <th>What varies</th>
+          <th>Example</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Sensory equipment</strong></td>
+          <td>The hardware delivering the input</td>
+          <td>Trichromats see color differently from people with color-vision deficiencies; conductive hearing loss changes what frequencies are available</td>
+        </tr>
+        <tr>
+          <td><strong>Learned priors</strong></td>
+          <td>The expectations built from experience</td>
+          <td>Expert radiologists see abnormalities that novices miss in the same scan; wine experts perceive complexity beginners cannot</td>
+        </tr>
+        <tr>
+          <td><strong>Current state</strong></td>
+          <td>Transient changes in the perceiver</td>
+          <td>Hunger increases attention to food-related stimuli; fatigue raises detection thresholds; mood shifts attention toward mood-congruent material</td>
+        </tr>
+        <tr>
+          <td><strong>Personality / trait</strong></td>
+          <td>Stable individual differences in how the brain weighs novel or intense stimulation</td>
+          <td>High <strong>sensation-seekers</strong> (Zuckerman, 1994) actively seek intense, novel, and varied experiences; <strong>reward deficiency syndrome</strong> (Blum et al., 1996) is a proposed construct in which reduced dopamine receptor density leads to a blunted response to ordinary reward — note that RDS remains a contested construct with mixed empirical support</td>
+        </tr>
+      </tbody>
+    </table>
 
     <h2 id="section-4-hearing-and-the-body-senses">Section 4: Hearing and the Body Senses</h2>
-    <figure class="chapter-figure">
-      <img src="../images/ch04/fig_ear_anatomy_openstax.webp" alt="Cross-section diagram of the human ear showing the outer ear (pinna and auditory canal), the middle ear (eardrum, malleus, incus, and stapes), and the inner ear (cochlea, semicircular canals, and auditory nerve). Arrows show the path of sound waves from the outer ear through the middle ear bones to the fluid-filled cochlea." />
-      <figcaption></figcaption>
-    </figure>
-    <p><em>Sound is funneled by the outer ear through the auditory canal to the eardrum, amplified by three tiny middle-ear bones (malleus, incus, stapes), and transmitted into the fluid-filled cochlea of the inner ear where transduction occurs. Source: Spielman et al., Psychology 2e (OpenStax, 2020), CC BY-NC-SA 4.0.</em></p>
+
     <div class="callout callout--do-not-confuse">
       <div class="callout-title">Do Not Confuse: Place Theory vs. Frequency Theory of Pitch</div>
-      <p>Sound waves are funneled by the outer ear into the <strong>auditory canal</strong>, vibrate the eardrum, and are amplified by three tiny bones before reaching the fluid-filled <strong>cochlea</strong>, a coiled structure in the inner ear containing the <strong>basilar membrane</strong>, along which <strong>hair cells</strong> — the auditory system's transduction site — convert mechanical vibration into a neural signal (Privitera, 2026). How that system encodes <em>pitch</em> specifically was a genuine scientific puzzle for decades, and the two competing answers turn out, again, to both be partly right. <strong>Place theory</strong> holds that pitch is determined by <em>where</em> along the basilar membrane the vibration peaks — different frequencies maximally displace different locations, with high frequencies peaking near the membrane's base and low frequencies peaking near its tip, a mechanism directly demonstrated by Georg von Békésy's physical recordings of basilar-membrane motion, work that earned him the 1961 Nobel Prize (von Békésy, 1960). <strong>Frequency theory</strong> holds that pitch is instead encoded by the <em>rate</em> at which auditory neurons fire, with firing rate tracking the sound wave's frequency directly. Neither theory works alone across the entire range of human hearing: neurons cannot physically fire fast enough to track very high frequencies one-to-one, which is where place theory is indispensable; but place theory becomes imprecise at very low frequencies, where the basilar membrane's response is too broad and shallow to localize a peak — exactly where firing-rate information does the most work. The accepted modern picture uses both mechanisms, each covering the range the other one cannot.</p>
+      <p>Sound waves are funneled by the outer ear into the <strong>auditory canal</strong>, vibrate the eardrum, and are amplified by three tiny bones before reaching the fluid-filled <strong>cochlea</strong>, a coiled structure in the inner ear containing the <strong>basilar membrane</strong>, along which <strong>hair cells</strong> — the auditory system's transduction site — convert mechanical vibration into a neural signal (Privitera, 2026). How that system encodes <em>pitch</em> specifically was a genuine scientific puzzle for decades, and the two competing answers turn out, again, to both be partly right. <strong>Place theory</strong> holds that pitch is determined by <em>where</em> along the basilar membrane the vibration peaks — different frequencies maximally displace different locations, with high frequencies peaking near the membrane's base and low frequencies peaking near its tip, a mechanism directly demonstrated by Georg von B&eacute;k&eacute;sy's physical recordings of basilar-membrane motion, work that earned him the 1961 Nobel Prize (von B&eacute;k&eacute;sy, 1960). <strong>Frequency theory</strong> holds that pitch is instead encoded by the <em>rate</em> at which auditory neurons fire, with firing rate tracking the sound wave's frequency directly. Neither theory works alone across the entire range of human hearing: neurons cannot physically fire fast enough to track very high frequencies one-to-one, which is where place theory is indispensable; but place theory becomes imprecise at very low frequencies, where the basilar membrane's response is too broad and shallow to localize a peak — exactly where firing-rate information does the most work. The accepted modern picture uses both mechanisms, each covering the range the other one cannot.</p>
       <p><em>Diagnostic question:</em> a sound is so low in pitch that the basilar membrane fails to show a sharp peak anywhere along its length, yet listeners can still identify the pitch accurately. Which mechanism is doing the work, place or frequency? (Frequency — this is precisely the low-frequency range where firing-rate coding compensates for place theory's breakdown.)</p>
     </div>
+
     <div class="callout callout--stop-retrieve">
       <div class="callout-title">Stop and Retrieve</div>
       <p>Before moving on — in one sentence each, what does place theory explain well, and what does frequency theory explain well, about pitch perception?</p>
     </div>
+
     <figure class="chapter-figure">
-      <img src="../images/ch04/fig_cochlea_infographic.png" alt="Figure 4.5 — Instructional infographic titled &quot;Pitch Is Coded in Two Ways.&quot; Top section shows a cutaway cochlea and an unrolled basilar membrane labeled with frequency regions from high-frequency at the base to low-frequency at the apex, illustrating place theory. Bottom section shows waveform examples with slow and fast neural firing patterns, illustrating frequency theory&#x27;s rate-coding for lower pitches. Labels identify the scala vestibuli, scala tympani, Organ of Corti, basilar membrane, hair cells, and auditory nerve." />
-      <figcaption></figcaption>
+      <img src="../images/ch04/fig_cochlea_place_frequency_pitch.png"
+           alt="Instructional infographic titled 'Pitch Is Coded in Two Ways.' Top section shows a cutaway cochlea and an unrolled basilar membrane, labeled with frequency regions from high-frequency at the base to low-frequency at the apex, illustrating place theory. Bottom section shows waveform examples with slow and fast neural firing patterns, illustrating frequency theory's rate-coding for lower pitches." />
+      <figcaption><strong>Figure 4.9.</strong> Place theory and frequency theory solve different parts of the pitch-encoding problem. High frequencies are localized by where the basilar membrane deflects (place); very low frequencies are tracked by how fast auditory neurons fire (frequency). Neither mechanism alone covers the full human hearing range.</figcaption>
     </figure>
-    <p><em>Figure 4.5. Place theory and frequency theory solve different parts of the pitch-encoding problem. High frequencies are localized by where the basilar membrane deflects (place); very low frequencies are tracked by how fast auditory neurons fire (frequency). Neither mechanism alone covers the full human hearing range.</em></p>
+
     <p>The skin, the body's largest sense organ, transduces touch, temperature, and pain through specialized receptors — <strong>mechanoreceptors</strong> for touch and pressure, <strong>thermoreceptors</strong> for temperature, and <strong>nociceptors</strong> for pain specifically — sending that information through the thalamus to a strip of cortex organized as a <strong>somatotopic map</strong> — a point-for-point representation of the body surface, with more cortical territory devoted to especially sensitive regions like the lips and fingertips than to less sensitive ones like the shoulder (Penfield &amp; Rasmussen, 1950). Pain deserves special attention, because it is the clearest possible case for why an organism benefits from an unpleasant sensation rather than no sensation at all — without pain, there is no signal to withdraw a hand from a hot stove or rest a torn muscle, and people born with rare genetic conditions that eliminate pain perception entirely tend to accumulate serious, repeated injury precisely because nothing stops them.</p>
+
     <p>For most of the twentieth century, the dominant model of pain treated it as a simple, direct wire from injury to brain: more tissue damage, more pain, full stop. This model could not explain a long list of real clinical observations — soldiers with severe battlefield wounds who reported little pain in the moment, chronic pain that persists long after an injury has fully healed, or the fact that rubbing an injured area, or distracting yourself, measurably reduces how much pain you feel from the same physical injury. <strong>Gate control theory</strong>, proposed by Ronald Melzack and Patrick Wall (1965), resolved this by introducing a "gate" at the spinal cord — a deliberately simplified model of spinal modulation, not a literal anatomical structure: pain signals traveling up from the body must pass through this gate before reaching the brain, and the gate can be partially closed by other incoming signals — including non-painful touch signals (which is part of why rubbing a stubbed toe genuinely helps) and, more strikingly, by signals coming <em>down</em> from the brain itself, including attention, emotional state, and expectation. Gate control theory was the first widely accepted model to treat pain as something the brain actively modulates rather than something the brain passively receives — a top-down influence on a sensation many people assume must be purely bottom-up, which connects this section directly back to Section 3's central theme.</p>
+
     <figure class="chapter-figure">
-      <img src="../images/ch04/fig_gate_control_infographic.png" alt="Figure 4.6 — Diagram of the spinal cord with nociceptor (pain) signals and Aβ touch signals entering from the left, a modulatable gate in the dorsal horn, pain signals traveling up to the brain on the right, and a descending arrow from the brain representing attentional and emotional modulation that can close the gate." />
-      <figcaption></figcaption>
+      <img src="../images/ch04/fig_gate_control_pain.png"
+           alt="Diagram of the spinal cord with nociceptor (pain) signals and A-beta touch signals entering from the left, a modulatable gate in the dorsal horn, pain signals traveling up to the brain on the right, and a descending arrow from the brain representing attentional and emotional modulation that can close the gate." />
+      <figcaption><strong>Figure 4.10.</strong> Gate control theory proposes that pain signals must pass through a spinal "gate" before reaching the brain. Touch signals (rubbing an injury) and descending signals from the brain (attention, emotion, endorphins) can partially close the gate — reducing how much pain reaches conscious awareness.</figcaption>
     </figure>
-    <p><em>Figure 4.6. Gate control theory proposes that pain signals must pass through a spinal "gate" before reaching the brain. Touch signals (rubbing an injury) and descending signals from the brain (attention, emotion, endorphins) can partially close the gate — reducing how much pain reaches conscious awareness.</em></p>
+
     <div class="callout callout--think-about-it">
       <div class="callout-title">Think About It</div>
       <p>Have you ever noticed pain less in the moment of an injury — during a sports game, an argument, a stressful event — only to feel it much more once your attention was free to focus on it? How does gate control theory account for that experience, in a way a simple "damage equals pain" model could not?</p>
     </div>
+
+    <hr class="chapter-divider" />
+    <h3>Sidebar: Perceptual Disorders — When the Construction Breaks Down</h3>
+
+    <p>If perception is an active construction rather than a faithful recording, then damage to the construction process should produce specific, revealing failures — and it does. Three conditions are worth knowing, both because they are clinically important and because each illustrates a different way the system can come apart.</p>
+
+    <p><strong>Visual agnosia</strong> is a deficit in the ability to recognize objects despite intact basic vision — the patient can see, can describe edges and shapes and colors, but cannot assemble them into a recognized whole (Lissauer, 1890). The defect is not in sensation; the early sensory machinery is working. It is in the later integration that turns a collection of features into a recognized object. <strong>Prosopagnosia</strong> is a face-specific form of recognition failure: the person cannot recognize familiar faces — sometimes including their own in a mirror — yet may have fully normal object recognition otherwise. The specificity is scientifically important, because it implies that face recognition is handled by a partially separable system, not just a general-purpose visual recognition process.</p>
+
+    <p><strong>Charles Bonnet syndrome</strong> runs in the opposite direction: instead of failing to recognize what is there, the visual system generates detailed, vivid hallucinations in people who have lost significant vision — often through macular degeneration or other retinal disease. The hallucinations can be extraordinarily specific: faces, figures, geometric patterns. What the syndrome makes visible is the predictive architecture described in Section 3: when the expected sensory input fails to arrive, the brain's generative model does not simply go quiet — it continues producing predictions that are no longer corrected by incoming data. The controlled hallucination runs unchecked. Charles Bonnet syndrome is not associated with psychiatric illness and is not experienced as "real" by most patients, who remain aware that what they are seeing is not externally present; it is, rather, what happens when the error-correction side of predictive perception is damaged while the generative side keeps running.</p>
+
+    <p>All three conditions are diagnostic, not proof. They are consistent with a predictive-coding account of perception, but consistent-with is not the same as evidence-for — other frameworks can also accommodate them. Their pedagogical value is this: they make the active construction of perception visible by showing what happens when pieces of the construction fail.</p>
+
+    <hr class="chapter-divider" />
     <h3>Sidebar: The Other Senses</h3>
+
     <p>Vision, hearing, touch, and pain are not the whole story. Two chemical senses — <strong>taste</strong> and <strong>smell</strong> — transduce molecules rather than physical energy. <strong>Taste (gustation)</strong> begins when chemical compounds dissolved in saliva bind to taste receptor cells on the tongue, with five basic qualities — sweet, salty, sour, bitter, and umami (savory) — combining with smell and texture to produce the much richer experience of flavor. <strong>Smell (olfaction)</strong> works differently: airborne molecules bind directly to olfactory receptors in the nasal epithelium, which project through the olfactory bulb to brain areas including the amygdala and hippocampus — a shorter, more direct route to emotion and memory than any other sense. This anatomy is why smells are so reliably good at triggering vivid autobiographical memories (sometimes called the Proustian memory effect after the novelist who described it) and why losing the sense of smell (anosmia) produces a much deeper disruption to the experience of flavor and mood than most people expect.</p>
+
     <p>Two senses that are not on most people's intuitive list are <strong>the vestibular sense</strong> and <strong>proprioception</strong>. The vestibular system, housed in the inner ear's semicircular canals and otolith organs, detects head orientation and acceleration — giving you the sense of balance, the feeling of falling, and the nauseating input that drives motion sickness when vestibular information conflicts with what the eyes report. <strong>Proprioception</strong> is the sense of where your own body parts are in space, delivered by receptors in muscles, tendons, and joints. Close your eyes and touch your nose with your index finger: you just navigated entirely on proprioceptive feedback, without any visual input. Proprioception is almost completely invisible in everyday experience precisely because it works so well — and its disruption, as in certain peripheral neuropathies or experimental deprivation studies, produces a strikingly disorienting loss of bodily agency.</p>
 
-    <div class="callout callout--think-about-it">
-      <div class="callout-title">Learning Lab — Sensation &amp; Perception</div>
-      <p>Six interactive demos let you experience the concepts from this chapter directly: run a Signal Detection Theory task and compute your own d′, test Weber's Law with line lengths, generate opponent-process afterimages, manipulate Gestalt grouping principles with a slider, find your absolute threshold and watch Troxler fading, and measure your own Stroop interference effect.</p>
-      <p><a href="../labs/ch04/sensation-perception-demos.html">Open the Sensation &amp; Perception Lab →</a></p>
-    </div>
-
     <h2 id="chapter-summary">Chapter Summary</h2>
+
     <p>Sensation is the physical conversion of outside energy into a neural signal — transduction — and perception is the psychological process of organizing that signal into something meaningful; the two are related but separable, as cases like prosopagnosia make clear. Every sense has a floor (absolute threshold) and a smallest detectable change that scales with stimulus size (Weber's Law and the difference threshold), and signal detection theory adds the recognition that detecting a faint or ambiguous stimulus always involves a decision criterion, not just raw sensitivity. Sensory adaptation keeps attention focused on what changes rather than what stays constant.</p>
-    <p>Vision transduces light at the retina's rods and cones, with cones concentrated at the fovea for color and detail and rods dominating the periphery for sensitivity in dim light; depth perception draws on binocular cues like disparity and convergence and monocular cues like accommodation; color vision requires both trichromatic theory (three cone types) and opponent-process theory (paired ganglion-cell channels) to explain the full range of color phenomena, including afterimages. Hubel and Wiesel's discovery of orientation-tuned feature detectors in visual cortex showed that scene perception is built up from simple components rather than registered all at once — a finding with a direct modern echo in how convolutional neural networks, including the camera-only vision systems in vehicles like Tesla's supervised driver-assistance system, are architected, though the AI version still lacks the deep predictive, attention-driven inference that makes biological vision more than just very good data collection.</p>
-    <p>Top-down processing — expectation and prior knowledge shaping what you perceive — operates constantly alongside bottom-up processing built from raw sensory data, and Gestalt principles (figure-ground, proximity, similarity, closure) along with perceptual constancy describe specific rules the brain uses to impose stable organization on a sensory stream that is, on its own, ambiguous and constantly changing. Hearing relies on place theory and frequency theory together to encode pitch across the full range of human hearing, and gate control theory shows that even pain — a sensation that feels purely physical — is modulated by signals descending from the brain, not simply registered passively from the body.</p>
+
+    <p>Vision transduces light at the retina's rods and cones, with cones concentrated at the fovea for color and detail and rods dominating the periphery for sensitivity in dim light; depth perception draws on binocular cues like disparity and convergence and monocular cues like accommodation; color vision requires both trichromatic theory (three cone types) and opponent-process theory (paired ganglion-cell channels) to explain the full range of color phenomena, including afterimages. Hubel and Wiesel's discovery of orientation-tuned feature detectors showed that scene perception is built from simple components — a finding echoed directly in how convolutional neural networks, including camera-based vehicle vision systems like Tesla's supervised driver-assistance system, are architected. Their monocular deprivation experiments revealed that the visual cortex requires normal sensory experience during a critical developmental period to wire itself correctly — and that missing this window has lasting consequences, from amblyopia in humans to auditory processing difficulties in children with chronic otitis media.</p>
+
+    <p>Perception is best understood not as a recording but as an active prediction: higher brain areas send expectations downward, lower areas return prediction errors, and what you consciously experience is largely the brain's current best guess corrected by incoming data — the predictive coding account proposed by Rao and Ballard (1999). The dress illusion makes this concrete: identical pixel values produce opposite color percepts in different viewers because the visual system must first estimate the illuminant, and the image is ambiguous enough that two stable illuminant assumptions are both defensible. Plassmann et al. (2008) showed that price-expectation priors alter not just wine ratings but measured mOFC activation, illustrating that top-down signals can change the neural response encoding the experience itself. Gestalt principles (figure-ground, proximity, similarity, closure) and perceptual constancy describe specific rules the brain uses to impose stable organization on a sensory stream that is, on its own, ambiguous and constantly changing. M&uuml;ller-Lyer cross-cultural data suggest that perceptual priors are partly shaped by developmental experience, though the specific mechanism behind cultural susceptibility differences remains debated. Hearing relies on place theory and frequency theory together to encode pitch across the full range of human hearing, and gate control theory shows that even pain — a sensation that feels purely physical — is modulated by signals descending from the brain.</p>
+
+    <h2 id="a-note-on-what-comes-next">A Note on What Comes Next</h2>
+
+    <p>This chapter traced how the brain builds a perceptual model — decomposing a scene into features, assembling them into objects, filling gaps with predictions, correcting those predictions against error signals. But it has largely set aside one question: which parts of that model become <em>conscious</em> experience?</p>
+
+    <p>Color is processed primarily in area V4, motion in V5/MT, form in inferotemporal cortex — three separate processing streams, running in parallel — yet you do not experience three separate visual worlds. You experience one unified, colored, moving scene. How the brain integrates these parallel streams into a single, coherent percept is known as the <strong>binding problem</strong>, and it sits at the boundary between perception and consciousness. Chapter 4 shows how the brain constructs a perceptual model; Chapter 5 asks which parts of that construction become conscious — and why some perceptions reach awareness while others, equally well-processed, never do.</p>
 
     <h2 id="connections">Connections</h2>
+
     <table>
       <thead>
         <tr>
@@ -274,19 +404,19 @@
       </thead>
       <tbody>
         <tr>
-          <td><a href="#section-2-vision--from-photons-to-faces">Transduction and the neural signal</a></td>
+          <td><a href="#section-2-vision-from-photons-to-faces">Transduction and the neural signal</a></td>
           <td>Ch. 3 — Neuroscience &amp; Biological Bases (review)</td>
-          <td>Every sense organ in this chapter hands its signal off to the same action-potential mechanism Chapter 3 already established — nothing new is needed at that stage</td>
+          <td>Every sense organ in this chapter hands its signal off to the same action-potential mechanism Chapter 3 already established</td>
         </tr>
         <tr>
-          <td><a href="#section-3-from-sensation-to-perception--how-the-brain-builds-an-experience">Top-down processing and expectation</a></td>
+          <td><a href="#section-3-perception-as-prediction-how-the-brain-builds-an-experience">Top-down processing and expectation</a></td>
           <td>Ch. 7 — Memory</td>
           <td>The same expectation-driven construction that shapes what you perceive shapes what you later remember — memory is reconstructive for exactly the reason perception is</td>
         </tr>
         <tr>
-          <td><a href="#section-1-the-basics--detecting-a-changing-world">Signal detection theory</a></td>
-          <td>Ch. 14 — Psychological Disorders &amp; Therapy</td>
-          <td>Clinical diagnostic decisions (is this symptom pattern a real disorder or normal variation?) involve the same hit/miss/false-alarm/correct-rejection trade-off introduced here, with much higher stakes</td>
+          <td><a href="#section-1-the-basics-detecting-a-changing-world">Signal detection theory</a></td>
+          <td>Ch. 13 — Psychological Disorders &amp; Therapy</td>
+          <td>Clinical diagnostic decisions involve the same hit/miss/false-alarm/correct-rejection trade-off introduced here, with much higher stakes</td>
         </tr>
         <tr>
           <td><a href="#where-this-fits">Selective attention (forward pointer)</a></td>
@@ -294,24 +424,35 @@
           <td>This chapter raises which sensations get noticed at all; Chapter 5 covers the attentional mechanisms — including the cocktail-party effect — that decide the answer</td>
         </tr>
         <tr>
-          <td><a href="#section-3-from-sensation-to-perception--how-the-brain-builds-an-experience">Gestalt principles</a></td>
+          <td><a href="#a-note-on-what-comes-next">Predictive coding and the binding problem</a></td>
+          <td>Ch. 5 — States of Consciousness</td>
+          <td>Perception builds a model; consciousness selects which parts of it become experience — the binding problem bridges the two chapters</td>
+        </tr>
+        <tr>
+          <td><a href="#section-3-perception-as-prediction-how-the-brain-builds-an-experience">Gestalt principles</a></td>
           <td>Ch. 8 — Thinking, Language &amp; Intelligence</td>
           <td>The same grouping-and-organizing logic that structures visual scenes reappears in how people organize concepts, categories, and problem representations</td>
         </tr>
         <tr>
           <td><a href="#section-4-hearing-and-the-body-senses">Gate control theory of pain</a></td>
-          <td>Ch. 13 — Stress &amp; Health</td>
-          <td>Chronic pain's interaction with attention, mood, and stress — a major topic in health psychology — depends directly on the descending modulation gate control theory describes</td>
+          <td>Ch. 12 — Emotion, Stress &amp; Coping</td>
+          <td>Chronic pain's interaction with attention, mood, and stress depends directly on the descending modulation gate control theory describes</td>
         </tr>
         <tr>
-          <td><a href="#section-1-the-basics--detecting-a-changing-world">Evolutionary tuning of sensory thresholds</a></td>
+          <td><a href="#section-1-the-basics-detecting-a-changing-world">Evolutionary tuning of sensory thresholds</a></td>
           <td>Ch. 1 — History &amp; Approaches (review)</td>
-          <td>Chapter 1 introduced the evolutionary "what problem did this solve?" lens with a caution about overclaiming; this chapter applies it to concrete, measurable sensory tuning rather than a speculative behavioral story</td>
+          <td>Chapter 1 introduced the evolutionary "what problem did this solve?" lens with a caution about overclaiming; this chapter applies it to concrete, measurable sensory tuning</td>
+        </tr>
+        <tr>
+          <td><a href="#section-2-vision-from-photons-to-faces">Critical periods</a></td>
+          <td>Ch. 9 — Lifespan Development</td>
+          <td>Critical periods for sensory development are among the best-documented examples of experience-dependent plasticity — a theme Development extends into cognitive and social domains</td>
         </tr>
       </tbody>
     </table>
 
     <h2 id="review-questions">Review Questions</h2>
+
     <div class="review-q">
       <p><strong>1.</strong> A patient has fully intact eyes, retina, and optic nerve, but cannot recognize familiar faces after a brain injury. This is best described as a deficit of:</p>
       <ol class="options" type="a">
@@ -327,6 +468,7 @@
         </div>
       </details>
     </div>
+
     <div class="review-q">
       <p><strong>2.</strong> Weber's Law predicts that a person will more easily notice the difference between which pair of weights?</p>
       <ol class="options" type="a">
@@ -338,10 +480,11 @@
       <details>
         <summary>Show answer &amp; rationale</summary>
         <div class="answer">
-          <p><strong>Answer: b.</strong> Why (d) is tempting: all three pairs do involve the same 1-lb. absolute difference, but Weber's Law specifically predicts that detectability depends on the <em>proportion</em> of the original stimulus, not the absolute amount — 1 lb. is a much larger fraction of 5 lbs. than of 50 or 100 lbs.</p>
+          <p><strong>Answer: b.</strong> Why (d) is tempting: all three pairs do involve the same 1-lb. absolute difference, but Weber's Law specifically predicts that detectability depends on the proportion of the original stimulus, not the absolute amount — 1 lb. is a much larger fraction of 5 lbs. than of 50 or 100 lbs.</p>
         </div>
       </details>
     </div>
+
     <div class="review-q">
       <p><strong>3.</strong> In signal detection theory, a person who reports hearing their name called in a noisy room when no one actually called it has made a:</p>
       <ol class="options" type="a">
@@ -357,6 +500,7 @@
         </div>
       </details>
     </div>
+
     <div class="review-q">
       <p><strong>4.</strong> Rods and cones differ in that:</p>
       <ol class="options" type="a">
@@ -372,6 +516,7 @@
         </div>
       </details>
     </div>
+
     <div class="review-q">
       <p><strong>5.</strong> Opponent-process theory is necessary, in addition to trichromatic theory, primarily because trichromatic theory alone cannot explain:</p>
       <ol class="options" type="a">
@@ -383,55 +528,59 @@
       <details>
         <summary>Show answer &amp; rationale</summary>
         <div class="answer">
-          <p><strong>Answer: c.</strong> Why (a) is tempting: trichromatic theory is specifically the theory that accounts for three cone types, so it cannot be the gap that requires a second theory — the actual gap is the afterimage phenomenon, explained by opponent-process channels operating at the ganglion-cell level.</p>
+          <p><strong>Answer: c.</strong> Why (a) is tempting: trichromatic theory is specifically the theory that accounts for three cone types, so it cannot be the gap that requires a second theory — the actual gap is the afterimage phenomenon, explained by opponent-process channels at the ganglion-cell level.</p>
         </div>
       </details>
     </div>
+
     <div class="review-q">
-      <p><strong>6.</strong> Hubel and Wiesel's recordings from cat visual cortex found that individual neurons:</p>
+      <p><strong>6.</strong> Hubel and Wiesel's monocular deprivation experiments (suturing one eye shut in kittens) showed that:</p>
       <ol class="options" type="a">
-        <li>responded equally to all visual stimulation</li>
-        <li>responded selectively to bars of light at specific orientations and locations</li>
-        <li>only responded to color, never to shape</li>
-        <li>fired in the auditory cortex, not the visual cortex</li>
+        <li>the visual system is fully formed at birth and requires no sensory experience to develop normally</li>
+        <li>the visual cortex requires normal sensory experience during a critical developmental period to wire correctly for each eye</li>
+        <li>depriving one eye of input permanently damages the eye's photoreceptors</li>
+        <li>the findings in cats do not apply to humans in any way</li>
       </ol>
       <details>
         <summary>Show answer &amp; rationale</summary>
         <div class="answer">
-          <p><strong>Answer: b.</strong> Why (a) is tempting: it would be the simpler, more intuitive finding — that "vision neurons" just respond to "vision" — but the actual discovery was much more specific: narrow tuning to particular orientations and positions, which is what made it the foundation of feature-detector theory.</p>
+          <p><strong>Answer: b.</strong> Why (a) is tempting: the kittens' sensory hardware — the eyes themselves — was intact throughout, which might suggest the deficit is hardware. But the cortical columns failed to develop for the deprived eye, showing that experience during the critical period drives the cortical wiring, not just the peripheral organ.</p>
         </div>
       </details>
     </div>
+
     <div class="review-q">
-      <p><strong>7.</strong> A camera-only vehicle vision system like Tesla Vision can capture more raw visual data, from more simultaneous angles, than a human's two eyes. According to this chapter's AI Connection, why does this not automatically make the car's perception better than human perception?</p>
+      <p><strong>7.</strong> According to predictive coding (Rao &amp; Ballard, 1999), what do higher visual areas primarily send downward to lower areas?</p>
       <ol class="options" type="a">
-        <li>it does make the car's perception strictly better, with no exceptions</li>
-        <li>cameras cannot transduce light at all, unlike the human retina</li>
-        <li>raw data collection is not the hard problem — turning that data into useful perception requires compression, attention, and predictive inference, the same problem biological vision solves</li>
-        <li>camera-only vehicle vision systems do not actually use cameras</li>
+        <li>raw sensory data</li>
+        <li>predictions about what the lower areas are likely to report</li>
+        <li>motor commands for eye movement</li>
+        <li>long-term memory traces of past visual scenes</li>
       </ol>
       <details>
         <summary>Show answer &amp; rationale</summary>
         <div class="answer">
-          <p><strong>Answer: c.</strong> Why (a) is tempting: more raw data sounds like a straightforward advantage, but the chapter's argument is specifically that data collection was never the bottleneck — the difficult engineering problem, mirrored in biological vision, is what to do with that data: what to ignore, what to attend to, and what to predict.</p>
+          <p><strong>Answer: b.</strong> Why (a) is tempting: the intuitive model of perception is that signals flow upward from sensors — raw data is processed and passed along. Predictive coding inverts part of this: higher areas generate predictions that flow downward, and lower areas return the discrepancy between prediction and actual input.</p>
         </div>
       </details>
     </div>
+
     <div class="review-q">
-      <p><strong>8.</strong> The Gestalt principle of closure is best illustrated by:</p>
+      <p><strong>8.</strong> The dress illusion (white-and-gold vs. blue-and-black percepts of the same image) is best explained by:</p>
       <ol class="options" type="a">
-        <li>grouping objects that are physically close together</li>
-        <li>perceiving a circle with several small gaps as a complete circle rather than disconnected arcs</li>
-        <li>grouping objects that share the same color</li>
-        <li>perceiving a moving object as a single rigid shape</li>
+        <li>differences in retinal cone density between people who see each version</li>
+        <li>different unconscious assumptions about the light source illuminating the dress, which the visual system must correct for before reading surface color</li>
+        <li>one group having trichromatic vision and the other having opponent-process vision</li>
+        <li>the image being digitally altered to show different colors to different users</li>
       </ol>
       <details>
         <summary>Show answer &amp; rationale</summary>
         <div class="answer">
-          <p><strong>Answer: b.</strong> Why (a) and (c) are tempting: both are real Gestalt principles (proximity and similarity, respectively) covered in the same section, but closure specifically refers to perceptually completing an incomplete figure, not to grouping separate, already-complete elements.</p>
+          <p><strong>Answer: b.</strong> Why (a) is tempting: a hardware difference in the eye would be a natural explanation for perceptual differences between people, but the dress percept is not stable within individuals the way a hardware difference would be — the same person can flip between percepts under different conditions, pointing to a top-down inference rather than a fixed sensory difference.</p>
         </div>
       </details>
     </div>
+
     <div class="review-q">
       <p><strong>9.</strong> Perceptual constancy explains why:</p>
       <ol class="options" type="a">
@@ -447,6 +596,7 @@
         </div>
       </details>
     </div>
+
     <div class="review-q">
       <p><strong>10.</strong> Place theory of pitch perception is most useful for explaining how listeners perceive:</p>
       <ol class="options" type="a">
@@ -462,6 +612,7 @@
         </div>
       </details>
     </div>
+
     <div class="review-q">
       <p><strong>11.</strong> According to gate control theory, which of the following could reduce the pain you feel from a stubbed toe?</p>
       <ol class="options" type="a">
@@ -477,8 +628,25 @@
         </div>
       </details>
     </div>
+
     <div class="review-q">
-      <p><strong>12.</strong> A researcher wants to know why human sensory thresholds (such as the eye's sensitivity to a single candle flame at 30 miles) are tuned to the specific levels they are, rather than being far more or less sensitive. Which approach does this chapter recommend for answering that kind of question?</p>
+      <p><strong>12.</strong> The Plassmann et al. (2008) wine and price study showed that a higher price label:</p>
+      <ol class="options" type="a">
+        <li>had no effect on either ratings or brain activity</li>
+        <li>changed subjective ratings but not neural activity in reward-related areas</li>
+        <li>changed both subjective ratings and mOFC activation, suggesting the prior altered the experienced pleasantness itself</li>
+        <li>only affected participants who were told the study was about wine preferences</li>
+      </ol>
+      <details>
+        <summary>Show answer &amp; rationale</summary>
+        <div class="answer">
+          <p><strong>Answer: c.</strong> Why (b) is tempting: it would be a more modest finding — "just a rating bias" — but the mOFC result shows the effect went deeper than a post-hoc adjustment. The neural signature of pleasantness itself was altered by the expectation, which is the point the study is cited to make.</p>
+        </div>
+      </details>
+    </div>
+
+    <div class="review-q">
+      <p><strong>13.</strong> A researcher wants to know why human sensory thresholds are tuned to the specific levels they are. Which approach does this chapter recommend?</p>
       <ol class="options" type="a">
         <li>assume sensitivity evolved to be as high as biologically possible, since more sensitivity is always better</li>
         <li>ask what problem a given level of sensitivity solved for survival and reproduction, while holding the explanation to ordinary evidentiary standards rather than accepting an appealing story automatically</li>
@@ -494,103 +662,173 @@
     </div>
 
     <h2 id="key-terms">Key Terms</h2>
+
     <dl class="key-terms">
       <dt>Absolute threshold</dt>
       <dd>The smallest amount of stimulation needed for a stimulus to be detected 50% of the time.</dd>
+
       <dt>Accommodation</dt>
       <dd>A monocular depth cue in which the eye's lens changes shape to focus on objects at different distances.</dd>
+
+      <dt>Amblyopia</dt>
+      <dd>A reduction in visual acuity in one eye caused by failure of normal cortical wiring during the critical period, often resulting from early unequal visual input between the two eyes.</dd>
+
       <dt>Basilar membrane</dt>
       <dd>A structure within the cochlea along which hair cells are arranged; its pattern of vibration is central to place theory of pitch perception.</dd>
+
       <dt>Binocular cues</dt>
       <dd>Depth cues, such as binocular disparity and convergence, that require both eyes working together.</dd>
+
+      <dt>Binding problem</dt>
+      <dd>The question of how the brain integrates information processed by separate neural streams (color, motion, form) into a single, unified perceptual experience.</dd>
+
       <dt>Bottom-up processing</dt>
       <dd>Building a perceptual experience from raw sensory data, piece by piece, without reliance on prior knowledge or expectation.</dd>
+
+      <dt>Charles Bonnet syndrome</dt>
+      <dd>A condition in which people with significant visual loss experience vivid, complex visual hallucinations, attributed to loss of error-correction input to an otherwise intact generative perceptual system.</dd>
+
       <dt>Cochlea</dt>
       <dd>The fluid-filled, coiled structure of the inner ear where sound vibration is transduced into a neural signal.</dd>
+
       <dt>Cones</dt>
       <dd>Photoreceptors concentrated in the fovea that support color vision and fine visual detail in bright light.</dd>
+
+      <dt>Critical period</dt>
+      <dd>A developmental window during which normal sensory experience is required for the perceptual system to wire correctly; disrupted experience during this window has lasting effects not easily reversed afterward.</dd>
+
       <dt>Difference threshold (just noticeable difference)</dt>
       <dd>The smallest difference between two stimuli that can be detected 50% of the time; governed by Weber's Law.</dd>
+
       <dt>Feature detectors</dt>
       <dd>Neurons in the visual cortex that respond selectively to a specific simple feature of a stimulus, such as an edge at a particular orientation.</dd>
+
       <dt>Gate control theory</dt>
       <dd>Melzack and Wall's (1965) theory that pain signals must pass through a modulatable "gate" in the spinal cord, which can be partially closed by competing sensory input or by signals descending from the brain.</dd>
+
       <dt>Gestalt principles</dt>
       <dd>Rules, including figure-ground, proximity, similarity, and closure, describing how the visual system organizes separate sensory elements into unified wholes.</dd>
+
       <dt>Nociceptor</dt>
       <dd>A specialized receptor in the skin and other tissues responsible for transducing pain.</dd>
+
       <dt>Opponent-process theory</dt>
       <dd>The theory that color is encoded by retinal ganglion cells organized into opposing pairs (red/green, blue/yellow, black/white), explaining afterimages and why certain color combinations cannot be perceived.</dd>
+
       <dt>Perception</dt>
       <dd>The psychological process of organizing and interpreting sensory signals into a meaningful experience.</dd>
+
       <dt>Perceptual constancy</dt>
       <dd>The tendency to perceive an object as stable despite continuous changes in the raw sensory information it produces.</dd>
+
       <dt>Place theory</dt>
       <dd>The theory that pitch is encoded by which location along the basilar membrane is maximally displaced by a sound wave.</dd>
+
+      <dt>Predictive coding</dt>
+      <dd>A theoretical account of perception in which higher brain areas send predictions downward to lower areas, which return prediction errors; perception is the brain's current best prediction corrected by incoming sensory data (Rao &amp; Ballard, 1999).</dd>
+
+      <dt>Prosopagnosia</dt>
+      <dd>A face-specific recognition deficit in which the person cannot identify familiar faces despite otherwise intact object recognition and normal basic vision.</dd>
+
       <dt>Rods</dt>
       <dd>Photoreceptors concentrated in the retinal periphery that support vision in dim light but not color or fine detail.</dd>
+
       <dt>Sensation</dt>
       <dd>The physical process by which a sense organ responds to and transduces a stimulus into a neural signal.</dd>
+
+      <dt>Sensation-seeking</dt>
+      <dd>A personality trait characterized by the tendency to seek intense, novel, and varied experiences and a low tolerance for boredom; measured by Zuckerman's Sensation Seeking Scale.</dd>
+
       <dt>Sensory adaptation</dt>
       <dd>The decrease in a receptor's response to a stimulus that remains constant over time.</dd>
+
       <dt>Signal detection theory</dt>
       <dd>A framework for analyzing detection decisions made under uncertainty, distinguishing sensory sensitivity from decision criterion and classifying responses as hits, misses, false alarms, or correct rejections.</dd>
+
       <dt>Top-down processing</dt>
       <dd>Perceptual processing shaped by prior knowledge, expectation, and context, rather than built solely from raw sensory data.</dd>
+
       <dt>Transduction</dt>
       <dd>The conversion of one form of physical energy (light, sound waves, chemical molecules) into the neural signal a sense organ sends to the brain.</dd>
+
       <dt>Trichromatic theory</dt>
       <dd>The theory that color vision depends on three types of cones, each maximally sensitive to a different range of wavelengths.</dd>
+
+      <dt>Visual agnosia</dt>
+      <dd>A deficit in the ability to recognize objects despite intact basic vision, resulting from disruption to the processes that assemble sensory features into recognized wholes.</dd>
+
       <dt>Weber's Law</dt>
       <dd>The principle that the smallest detectable difference between two stimuli is a roughly constant proportion of the original stimulus's magnitude, not a fixed amount.</dd>
     </dl>
 
     <h2 id="further-reading">Further Reading</h2>
+
     <div class="further-reading">
       <div class="fr-item">
-        <p class="fr-title">**Noba Project</p>
-        <p>Sensation and Perception** (Privitera) https://nobaproject.com/modules/sensation-and-perception The primary source for this chapter's treatment of thresholds, signal detection, sensory adaptation, vision basics, hearing, touch, and the chemical senses.</p>
+        <p class="fr-title">Noba Project — Sensation and Perception (Privitera)</p>
+        <p class="fr-url"><a href="https://nobaproject.com/modules/sensation-and-perception">https://nobaproject.com/modules/sensation-and-perception</a></p>
+        <p>The primary source for this chapter's treatment of thresholds, signal detection, sensory adaptation, vision basics, hearing, touch, and the chemical senses.</p>
       </div>
       <div class="fr-item">
-        <p class="fr-title">**Noba Project</p>
-        <p>Vision** (Buetti &amp; Lleras) https://nobaproject.com/modules/vision A deeper treatment of visual processing, contrast, lateral inhibition, and the predictive function of vision that this chapter's AI Connection draws on directly.</p>
+        <p class="fr-title">Noba Project — Vision (Buetti &amp; Lleras)</p>
+        <p class="fr-url"><a href="https://nobaproject.com/modules/vision">https://nobaproject.com/modules/vision</a></p>
+        <p>A deeper treatment of visual processing, contrast, lateral inhibition, and the predictive function of vision that this chapter's AI Connection draws on directly.</p>
       </div>
       <div class="fr-item">
-        <p class="fr-title"><strong>Melzack, R., &amp; Wall, P. D. (1965). Pain mechanisms: A new theory.</strong> <em>Science, 150</em>, 971–979. The original gate control theory paper</p>
-        <p>short, readable, and worth encountering before any secondhand summary, including this chapter's.</p>
+        <p class="fr-title">Seth, A. (2021). <em>Being You: A New Science of Consciousness.</em> Dutton.</p>
+        <p>The source of the "controlled hallucination" formulation discussed in Section 3. Accessible and well-written; best read after this chapter so the technical vocabulary is already in place.</p>
       </div>
       <div class="fr-item">
-        <p class="fr-title">**Crash Course Psychology #7</p>
-        <p>"Perceiving Is Believing"** https://youtu.be/n46umYA_4dM A fast-paced, accessible video treatment of top-down processing and ambiguous figures, useful as a review or a first pass before reading Section 3.</p>
+        <p class="fr-title">Melzack, R., &amp; Wall, P. D. (1965). Pain mechanisms: A new theory. <em>Science, 150,</em> 971–979.</p>
+        <p>The original gate control theory paper — short, readable, and worth encountering before any secondhand summary, including this chapter's.</p>
       </div>
       <div class="fr-item">
-        <p class="fr-title"><strong>Hubel, D. H., &amp; Wiesel, T. N. (1962). Receptive fields, binocular interaction and functional architecture in the cat's visual cortex.</strong> <em>The Journal of Physiology, 160</em>(1), 106–154. The original feature-detector paper discussed in this chapter's Classic Study section, for students who want to see the actual data behind the famous finding.</p>
+        <p class="fr-title">Crash Course Psychology #7 — "Perceiving Is Believing"</p>
+        <p class="fr-url"><a href="https://youtu.be/n46umYA_4dM">https://youtu.be/n46umYA_4dM</a></p>
+        <p>A fast-paced, accessible video treatment of top-down processing and ambiguous figures, useful as a review or a first pass before reading Section 3.</p>
+      </div>
+      <div class="fr-item">
+        <p class="fr-title">Hubel, D. H., &amp; Wiesel, T. N. (1962). Receptive fields, binocular interaction and functional architecture in the cat's visual cortex. <em>The Journal of Physiology, 160</em>(1), 106–154.</p>
+        <p>The original feature-detector paper discussed in this chapter's Classic Study section.</p>
       </div>
     </div>
 
     <h2 id="references">References</h2>
     <p style="font-size: 0.9rem; color: var(--color-muted); font-style: italic; margin-bottom: 1.25rem;">Full citations for factual claims made in this chapter, for instructors or students who want to verify or go deeper. Distinct from Further Reading above, which is curated for student exploration rather than completeness.</p>
+
     <div class="references">
-      <p><em>Full citations for factual claims made in this chapter, for instructors or students who want to verify or go deeper. Distinct from Further Reading above, which is curated for student exploration rather than completeness.</em></p>
-      <p>Buetti, S., &amp; Lleras, A. (2026). Vision. In R. Biswas-Diener &amp; E. Diener (Eds.), <em>Noba textbook series: Psychology</em>. DEF publishers. http://noba.to/ngkr7ebh</p>
-      <p>Enns, J. T., &amp; Lleras, A. (2008). New evidence for prediction in human vision. <em>Trends in Cognitive Sciences, 12</em>, 327–333.</p>
-      <p>Fechner, G. T. (1860). <em>Elemente der Psychophysik</em>. Breitkopf und Härtel.</p>
+      <p>Blum, K., Cull, J. G., Braverman, E. R., &amp; Comings, D. E. (1996). Reward deficiency syndrome. <em>American Scientist, 84</em>(2), 132–145.</p>
+      <p>Brainard, D. H., &amp; Hurlbert, A. C. (2015). Colour appearance: on seeing the colour of the light. <em>Current Biology, 25</em>(13), R551–R554.</p>
+      <p>Buetti, S., &amp; Lleras, A. (2026). Vision. In R. Biswas-Diener &amp; E. Diener (Eds.), <em>Noba textbook series: Psychology</em>. DEF publishers. <a href="http://noba.to/ngkr7ebh">http://noba.to/ngkr7ebh</a></p>
+      <p>Enns, J. T., &amp; Lleras, A. (2008). New evidence for prediction in human vision. <em>Trends in Cognitive Sciences, 12,</em> 327–333.</p>
+      <p>Fechner, G. T. (1860). <em>Elemente der Psychophysik.</em> Breitkopf und H&auml;rtel.</p>
       <p>Galanter, E. (1962). Contemporary psychophysics. In R. Brown, E. Galanter, E. H. Hess, &amp; G. Mandler (Eds.), <em>New directions in psychology</em> (pp. 87–156). Holt, Rinehart and Winston.</p>
-      <p>Hering, E. (1892). <em>Grundzüge der Lehre vom Lichtsinn</em>. Springer.</p>
+      <p>Gravel, J. S., &amp; Wallace, I. F. (1992). Listening and language at 4 years of age: effects of early otitis media. <em>Journal of Speech and Hearing Research, 35</em>(3), 588–595.</p>
+      <p>Hawkins, A. J. (2021, May 25). Tesla is no longer using radar sensors in Model 3 and Model Y vehicles built in North America. <em>TechCrunch.</em> <a href="https://techcrunch.com/2021/05/25/tesla-is-no-longer-using-radar-sensors-in-model-3-and-model-y-vehicles-built-in-north-america/">https://techcrunch.com/2021/05/25/tesla-is-no-longer-using-radar-sensors-in-model-3-and-model-y-vehicles-built-in-north-america/</a></p>
+      <p>Hering, E. (1892). <em>Grundz&uuml;ge der Lehre vom Lichtsinn.</em> Springer.</p>
       <p>Hubel, D. H., &amp; Wiesel, T. N. (1962). Receptive fields, binocular interaction and functional architecture in the cat's visual cortex. <em>The Journal of Physiology, 160</em>(1), 106–154.</p>
-      <p>Melzack, R., &amp; Wall, P. D. (1965). Pain mechanisms: A new theory. <em>Science, 150</em>, 971–979.</p>
-      <p>Penfield, W., &amp; Rasmussen, T. (1950). <em>The cerebral cortex of man: A clinical study of localization of function</em>. Macmillan.</p>
-      <p>Privitera, A. J. (2026). Sensation and perception. In R. Biswas-Diener &amp; E. Diener (Eds.), <em>Noba textbook series: Psychology</em>. DEF publishers. http://noba.to/xgk3ajhy</p>
+      <p>Hubel, D. H., &amp; Wiesel, T. N. (1970). The period of susceptibility to the physiological effects of unilateral eye closure in kittens. <em>The Journal of Physiology, 206</em>(2), 419–436.</p>
+      <p>Lissauer, H. (1890). Ein Fall von Seelenblindheit nebst einem Beitrage zur Theorie derselben. <em>Archiv f&uuml;r Psychiatrie und Nervenkrankheiten, 21</em>(2), 222–270.</p>
+      <p>Melzack, R., &amp; Wall, P. D. (1965). Pain mechanisms: A new theory. <em>Science, 150,</em> 971–979.</p>
+      <p>Penfield, W., &amp; Rasmussen, T. (1950). <em>The cerebral cortex of man: A clinical study of localization of function.</em> Macmillan.</p>
+      <p>Plassmann, H., O'Doherty, J., Shiv, B., &amp; Rangel, A. (2008). Marketing actions can modulate neural representations of experienced pleasantness. <em>Proceedings of the National Academy of Sciences, 105</em>(3), 1050–1054.</p>
+      <p>Privitera, A. J. (2026). Sensation and perception. In R. Biswas-Diener &amp; E. Diener (Eds.), <em>Noba textbook series: Psychology.</em> DEF publishers. <a href="http://noba.to/xgk3ajhy">http://noba.to/xgk3ajhy</a></p>
+      <p>Rao, R. P., &amp; Ballard, D. H. (1999). Predictive coding in the visual cortex: a functional interpretation of some extra-classical receptive-field effects. <em>Nature Neuroscience, 2</em>(1), 79–87.</p>
+      <p>Segall, M. H., Campbell, D. T., &amp; Herskovits, M. J. (1963). Cultural differences in the perception of geometric illusions. <em>Science, 139,</em> 769–771.</p>
+      <p>Seth, A. (2021). <em>Being You: A New Science of Consciousness.</em> Dutton.</p>
+      <p>Sevitt, J. (n.d.). <em>Introduction to Psychology: A Critical Approach,</em> "5.1 Sensation versus Perception." CUNY Pressbooks. <a href="https://pressbooks.cuny.edu/jsevitt/chapter/5-1-sensation-versus-perception/">https://pressbooks.cuny.edu/jsevitt/chapter/5-1-sensation-versus-perception/</a>. Licensed under CC BY 4.0.</p>
       <p>Svaetichin, G. (1956). Spectral response curves from single cones. <em>Acta Physiologica Scandinavica, Supplementum, 39</em>(134), 17–46.</p>
-      <p>Tesla. (n.d.). <em>Autopilot and Full Self-Driving (Supervised)</em>. Tesla, Inc. https://www.tesla.com/autopilot</p>
-      <p>von Békésy, G. (1960). <em>Experiments in hearing</em>. McGraw-Hill.</p>
-      <p>von Helmholtz, H. (1867). <em>Handbuch der physiologischen Optik</em>. Voss.</p>
-      <p>Weber, E. H. (1834). <em>De pulsu, resorptione, auditu et tactu: Annotationes anatomicae et physiologicae</em>. Koehler.</p>
-      <p>Wertheimer, M. (1912). Experimentelle Studien über das Sehen von Bewegung. <em>Zeitschrift für Psychologie, 61</em>, 161–265.</p>
-      <p>Young, T. (1802). The Bakerian lecture: On the theory of light and colours. <em>Philosophical Transactions of the Royal Society of London, 92</em>, 12–48.</p>
+      <p>Tesla. (n.d.). <em>Autopilot and Full Self-Driving (Supervised).</em> Tesla, Inc. <a href="https://www.tesla.com/autopilot">https://www.tesla.com/autopilot</a></p>
+      <p>von B&eacute;k&eacute;sy, G. (1960). <em>Experiments in hearing.</em> McGraw-Hill.</p>
+      <p>von Helmholtz, H. (1867). <em>Handbuch der physiologischen Optik.</em> Voss.</p>
+      <p>Weber, E. H. (1834). <em>De pulsu, resorptione, auditu et tactu: Annotationes anatomicae et physiologicae.</em> Koehler.</p>
+      <p>Wertheimer, M. (1912). Experimentelle Studien &uuml;ber das Sehen von Bewegung. <em>Zeitschrift f&uuml;r Psychologie, 61,</em> 161–265.</p>
+      <p>Young, T. (1802). The Bakerian lecture: On the theory of light and colours. <em>Philosophical Transactions of the Royal Society of London, 92,</em> 12–48.</p>
+      <p>Zuckerman, M. (1994). <em>Behavioral expressions and biosocial bases of sensation seeking.</em> Cambridge University Press.</p>
     </div>
 
   </main>
+
 </div>
 <script src="../js/nav.js"></script>
 </body>
