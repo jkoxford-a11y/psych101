@@ -82,6 +82,15 @@ All figures listed in reading order. Figure numbers refer to v0.4 markdown.
 
 ---
 
+### Inline (unnumbered, Think About It callout) — `ch04_good_continuation_wm_redrawing.png` / `.svg`
+**Caption:** Good continuation overrides familiar letter identity. Original diagram created for this textbook, 2026.
+**Alt text:** Two-panel diagram showing overlapping W- and M-like strokes. The left panel emphasizes the familiar letter forms. The right panel fades the letters and highlights two smooth crossing continuations, showing how perception reorganizes the same strokes into new paths that override the original letter identities.
+**Source:** Original explanatory redrawing — Jon Oxford, 2026. Concept inspired by Wertheimer's Gestalt demonstrations; no modern source image copied or traced.
+**License:** © Jon Oxford — all rights reserved until open license assigned. No share-alike encumbrance.
+**Status:** ✅ In use (Think About It callout after Fig 4.7).
+
+---
+
 ### Fig 4.8 — `ch04_muller-lyer.jpeg`
 *(Previously `muller-lyer illusion.jpeg` — renamed for filename clarity and to remove spaces.)*
 **Caption:** The Müller-Lyer illusion. The two vertical lines in panel (a) are identical in length; the fins create the illusion of a difference. Panel (b) shows the architectural interpretation: fins pointing inward resemble an inside corner (line appears farther away and therefore longer); fins pointing outward resemble an outside corner (line appears nearer and shorter).
