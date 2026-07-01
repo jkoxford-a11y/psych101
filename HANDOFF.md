@@ -30,7 +30,7 @@
 - `source/chapters/ch01-history-approaches.md` and `docs/chapters/01-history-approaches.html` — Chapter 1 complete, reviewed line-by-line by Jon twice now (initial review in Session 3, a second detailed editorial pass in Session 14), pushed live, both files kept in sync. Session 14 added a Humanistic psychology row to the history table, a Section 3 perspectives table, a new Review Question 13, and Milgram (1963) as the Misconception Opener's anchor citation — see Session Log for the full list.
 - `source/chapters/ch02-research-methods.md` — Chapter 2 now at v0.3 (~4,140 body words, inside the 3,500–5,000 target). All 13 RM-* concepts from `concept_lineage_revised.csv` covered. RM-012 (volunteer/sampling bias) sourced from Noba (Chance & Rossman; Mehl) per the `needs-verification` copyright rule, not course materials — now also paired with Rosenthal & Rosnow (1975), a real classic citation, since Noba alone was judged too thin to carry the claim's weight on its own. 5 sections now (was 4) — split the old combined "experimental method" section into Section 3 (Experiments and Causal Claims) and Section 4 (Bias Controls and Research Ethics) to reduce cognitive load, per feedback evaluated and agreed with. Added: an evidence-ladder "Common student mistake" column, a depression-questionnaire reliability/validity example, a p-value "Common Misreadings" box, an ethics-safeguards table, and a softened/cited childhood-books example (Sikora, Evans, & Kelley, 2019, replacing an overstated causal dismissal). Still contains one open placeholder: the Section 5 data-interpretation demo references the existing "solid-carnival" repo but needs Jon to supply the actual embed URL.
 - `docs/images/ch02/` — now 6 figures (was 4). Added `fig2-5-sampling-vs-assignment` (population→sample→experimental/control flowchart contrasting what random sampling vs. random assignment each support) and `fig2-6-reliability-validity` (2×2 dartboard/target diagram — the classic reliable/valid quadrant illustration, built with real scattered data, not just illustrative dots). Original four (`fig2-1` through `fig2-4`) unchanged. Same build approach as before: matplotlib for data-driven figures, hand-coded SVG + cairosvg for diagrams, `docs/css/style.css` palette, `.svg` + ~2,400px `.png` for both web and slide use.
-- `source/chapters/ch03-neuroscience-biological-bases.md` — Chapter 3 at **v0.6** (Session 50 batch revision). Both markdown and HTML fully in sync. All 19 BIO-* concepts covered. **Key v0.6 changes:** myth box expanded (child RMR 70% / adult 20%, Naked and Afraid framing, infant care cost, overclaims softened); centralization figure added as Fig 3.1; Where This Fits simplified; glia paragraph rewritten (function list, no numbers); Pressbooks figures renumbered (neuron → 3.2, AP → 3.3); firing-rate figure removed; myelin/saltatory figure added as Fig 3.4; Think About It reframed to metabolic cost / pins-and-needles mechanism (with AI assistant note); synapse bridge paragraph added (receptor binding, reuptake, degradation, agonist/antagonist, glutamate/GABA); E/I figure added as Fig 3.6; DA/5HT projection figure added as Fig 3.7; Sapolsky (2011) Pritzker Lecture citation added; chemical messengers figure updated (wired/focal vs. broadcast) as Fig 3.5; DNC box rewritten; AI Connection moved to end of Section 2, reframed as "what was borrowed / what was engineered differently"; CGM example added to cortisol; enteric NS moved from Section 2 to Section 3; ANS figure updated as Fig 3.9; hypothalamus paragraph added to Section 4; lateral brain lobes figure added as Fig 3.10; H.M. promoted from preview callout to full Classic Study section with Corkin (2013); split-brain DNC box shortened; Review Q8 replaced with H.M. question; Review Q12 wording fixed ("suppose a future study"); Connections table updated (agonist/antagonist → Ch5/13; hypothalamus → Ch5); Key Terms expanded (agonist, antagonist, corpus callosum, enteric NS, GABA, glutamate, hypothalamus, reuptake, synapse added; hippocampus, neuropeptide updated).
+- `source/chapters/ch03-neuroscience-biological-bases.md` — Chapter 3 at **v0.7** (Session 53 cleanup pass, 2026-07-01). Both markdown and HTML fully in sync. **Jon's verdict: "move on after cleanup" — chapter is ready.** All 19 BIO-* concepts covered. 9 active figures (Figs 3.1–3.9; stress-response flowchart removed). **Key v0.7 cleanup changes:** Fig 3.1 (centralization) moved to immediately after cephalization paragraph, before "That framing matters"; AI aside removed from pins-and-needles Think About It; internal notes removed from AP demo placeholder ("Practice this in the lab when available"); GABA sentence softened — respiratory suppression now flagged as especially dangerous with alcohol/barbiturates or when combined; stress-response fast/slow flowchart (was Fig 3.8) removed; duplicated split-brain "broader lesson" paragraph deleted; "toward 70%" revised to "about 66%" (Kuzawa et al., 2014) in myth box and chapter summary; ENS paragraph now cites Furness (2006) for neuron count and Cryan et al. (2019) for gut-brain communication; figures renumbered: ANS push-pull 3.9→3.8, brain lobes 3.10→3.9; three new references added (Cryan et al. 2019, Furness 2006, Kuzawa et al. 2014).
 - `docs/images/ch03/` — 9 figures (3.1–3.9, sequential in reading order) plus a `README_captions_alt_text_attribution.md` with captions/alt text/attribution for all nine. Six (3.1, 3.2, 3.4, 3.6, 3.8, 3.9) are original diagrams Jon built with ChatGPT specifically for this chapter — clean, accurate, and captioned almost exactly to match the chapter's own framing (e.g., the split-brain figure's caption independently echoes the Do Not Confuse panel's wording). Three (3.3, 3.5, 3.7) are rendered directly from slides in Jon's "6 Chapter 2 Biology.pptx" lecture deck — confirmed his own original infographics (distinct dark-card design language, no Worth/Myers credit line), not publisher material. See Session 8 log entry for the full image-provenance audit of that pptx (68 slides reviewed; roughly a third carried explicit "Myers/DeWall, Psychology, 13e, © 2021 Worth Publishers" credits and were excluded, a few more were excluded for matching that same publisher illustration style without a visible credit, and a few YouTube-screenshot and named-stock-photo slides were excluded as third-party content unrelated to the textbook-publisher copyright rule but still not Jon's own).
 - `source/chapters/ch04-sensation-perception.md` — Chapter 4, now at **v0.4** (Session 51–52 structural revision + HTML sync). All 15 SP-* concepts covered. Copyright: most SP-* drafted from Noba (Privitera; Buetti & Lleras); concepts without Noba coverage (Gestalt, gate control, pitch theories, perceptual constancy) drafted from verified primary literature. **v0.4 spine:** perception is active, predictive construction from incomplete input — predictive coding (Rao & Ballard, 1999) as scientific backbone; Seth (2021) "controlled hallucination" with explicit two-sentence caveat. **Additions over v0.3:** predictive coding paragraph + Fig 4.5 (prediction loop diagram); dress illusion (Brainard & Hurlbert, 2015) + Fig 4.6 (illuminant-assumptions diagram); Plassman et al. (2008) wine/mOFC study; H&W monocular deprivation + critical periods + amblyopia/otitis media; Müller-Lyer + Fig 4.8 (CC BY 4.0) with carpentered-world-contested caveat; individual differences table (sensory equipment, learned priors, current state, sensation-seeking/RDS — RDS caveated as contested); perceptual disorders sidebar (visual agnosia, prosopagnosia, Charles Bonnet); binding problem bridge to Ch5; 3 new review questions (Q6 monocular deprivation, Q7 predictive coding, Q8 dress illusion); 8 new key terms; full references list (Seth 2021, Blum et al. 1996, Brainard & Hurlbert 2015, Gravel & Wallace 1992, Lissauer 1890, Plassmann et al. 2008, Rao & Ballard 1999, Segall et al. 1963, Zuckerman 1994, Hawkins 2021 for Tesla Vision). Three demo placeholders remain (SDT simulator, Heider & Simmons motion, size-weight illusion). **Awaiting Jon's line-by-line review before being considered final.**
 - `source/chapters/ch05-states-of-consciousness.md` — Chapter 5 now at **v0.3** (Session 42 content revision). 12 CON-* concepts (CON-010 hypnosis cut; CON-013 selective attention remains). **Section 4 now covers sleep deprivation** (was hypnosis): Do Not Confuse box on amygdala-PFC disconnect (Yoo et al., 2007); leptin/ghrelin/appetite (Spiegel et al., 2004); attractiveness (Axelsson et al., 2010); fatal familial insomnia. **Glymphatic system paragraph added to Section 2** (Xie et al., 2013) — mechanistic support for restorative account. HTML (`docs/chapters/05-consciousness.html`) updated in sync. One optional addition still flagged: Charles Bonnet syndrome mention in the dreaming section. Figures still needed: two-process model, hypnogram, SCN pathway, tolerance/withdrawal (Session 40 priority note; figure numbers may shift given Section 4 content change). `psych101_awesome-sauce` "sleep" demo still needs Jon's confirmation for reuse. Awaiting Jon's line-by-line review.
@@ -62,7 +62,7 @@
 
 ## Next Up
 
-1. **Ch. 4 HTML synced to v0.4 (Session 52).** `docs/chapters/04-sensation-perception.html` is now 835 lines, all §17 validation checks passed, all 11 figure files confirmed present on disk. **Jon's line-by-line review of the markdown/HTML is next** — it has not been reviewed yet. After Jon's review, make any editorial corrections to both files in sync.
+1. **Ch. 4 editorial review complete (Session 54, 2026-07-01).** Jon reviewed the HTML line by line; all 10 editorial items applied (see Session 54 log). HTML is now ~840 lines, 9 numbered figures (4.1–4.9), unnumbered Weber's Law inline figure. **Open items before Ch. 4 is fully done:** (a) drop corrected `fig_sensation_perception_pipeline.png` if typo fix is needed; (b) address "good continuation still strange" flag; (c) depth perception images/demo; (d) perceptual constancy image; (e) sync markdown source (`ch04-sensation-perception.md`) to match HTML changes; (f) push to GitHub to deploy. **Ch. 3 is done — v0.7 cleanup complete (Session 53, 2026-07-01).** Both markdown and HTML in sync.
 
 3. **Decision needed: Social/Personality chapter swap (Ch. 10 ↔ Ch. 11).** Proposed in Session 47 based on framework logic. Files that need updating if approved: both chapter markdowns, both HTML files (don't exist yet), `docs/index.html`, and cross-references. Low cost now; grows as HTML conversion progresses.
 
@@ -113,13 +113,13 @@
 | `01-history-approaches.html` | `docs/chapters/` | Chapter 1 — complete and live |
 | `ch01-history-approaches.md` | `source/chapters/` | Chapter 1 markdown source |
 | `ch02-research-methods.md` | `source/chapters/` | Chapter 2 markdown source — v0.3, 6 figures, HTML on hold |
-| `ch03-neuroscience-biological-bases.md` | `source/chapters/` | Chapter 3 markdown source — v0.6, batch revision complete (Session 50) |
-| `03-neuroscience.html` | `docs/chapters/` | Chapter 3 HTML — in sync with v0.6 (Session 50) |
-| `ch04-sensation-perception.md` | `source/chapters/` | Chapter 4 markdown source — **v0.4** (Session 51–52); predictive coding spine; Seth caveat; perceptual disorders sidebar; individual differences table; critical periods; binding problem bridge; 13 review questions; 31 key terms; awaiting Jon's review |
-| `04-sensation-perception.html` | `docs/chapters/` | Chapter 4 HTML — **SYNCED to v0.4** (Session 52); 835 lines; all 11 figures wired; 3 demo placeholder comments; §17 validation checklist passed |
+| `ch03-neuroscience-biological-bases.md` | `source/chapters/` | Chapter 3 markdown source — **v0.7**, cleanup pass complete (Session 53); Jon verdict: move on |
+| `03-neuroscience.html` | `docs/chapters/` | Chapter 3 HTML — in sync with v0.7 (Session 53) |
+| `ch04-sensation-perception.md` | `source/chapters/` | Chapter 4 markdown source — **v0.4** (Session 51–52); NOT yet synced to HTML editorial changes from Session 54 (SDT reorder, Tesla rewrite, harm avoidance, Weber's Law inline fig, motion lab link, Fig 4.1 caption) |
+| `04-sensation-perception.html` | `docs/chapters/` | Chapter 4 HTML — **editorial pass complete** (Session 54); ~840 lines; 9 numbered figures (4.1–4.9) + 1 unnumbered inline Weber's Law fig; SDT reordered; Tesla AI Connection rewritten; harm avoidance replaces RDS; motion hub linked; labs/index.html updated |
 | `ch05-states-of-consciousness.md` | `source/chapters/` | Chapter 5 markdown source — v0.3, 12 CON-* concepts (hypnosis/CON-010 cut Session 42), Section 4 now Sleep Deprivation; glymphatic system added Section 2; awaiting Jon's review |
 | `05-consciousness.html` | `docs/chapters/` | Chapter 5 HTML — exists and in sync with markdown v0.3 (Session 42) |
-| `ch06-learning.md` | `source/chapters/` | Chapter 6 markdown source — v0.1, awaiting Jon's review |
+| `ch06-learning.md` | `source/chapters/` | Chapter 6 markdown source — **v0.3** (Session 53 theory spine revision); awaiting Jon's review |
 | `ch07-memory.md` | `source/chapters/` | Chapter 7 markdown source — v0.2, awaiting Jon's review |
 | `ch08-thinking-language-intelligence.md` | `source/chapters/` | Chapter 8 markdown source — v0.1, awaiting Jon's review |
 | `ch09-lifespan-development.md` | `source/chapters/` | Chapter 9 markdown source — v0.3, awaiting Jon's review |
@@ -132,6 +132,77 @@
 ---
 
 ## Session Log
+
+---
+
+### 2026-07-01 — Session 54
+
+**What happened:** Jon's line-by-line editorial review of Ch. 4 HTML applied. All 10 items addressed. Fig 4.1 caption and alt text updated as final action.
+
+**Changes applied to `docs/chapters/04-sensation-perception.html`:**
+
+1. **SDT reordered** — signal detection content moved to where it first appears in text (after the sensation threshold paragraph). Section order: intro paragraph → Think About It (purple) → "Try it in the lab" green callout → 2×2 HTML table. Table now appears *after* the lab link callout.
+2. **SDT figure dropped** — figure had a vertical line artifact and was redundant with the HTML table. Removed entirely. All remaining figures renumbered: old 4.3–4.10 → new 4.2–4.9. Total numbered figures: 9.
+3. **Fig 4.2 (retina) aspect ratio fixed** — `style="width:100%; height:auto; display:block;"` added to `<img>` tag.
+4. **"Sidebar:" prefix removed** — from both `<h3>` headings ("Perceptual Disorders — When the Construction Breaks Down" and "The Other Senses").
+5. **Reward Deficiency Syndrome → Harm Avoidance** — individual differences table row revised; cites Cloninger (1987) as the opposite-end contrast to sensation-seeking (Zuckerman, 1994). Blum et al. (1996) removed from References; Cloninger (1987) added.
+6. **Motion perception hub linked** — entire `motionperception` repo copied to `docs/labs/motion/` (10 demos: aperture, apparent-motion, biomotion, corollary-discharge, heider-simmel, induced-motion, mae, rdk, rep-momentum, shortest-path). Heider-Simmel demo link added inline after Heider & Simmel paragraph. `docs/labs/index.html` updated with two Ch4 lab cards (Ch4 demos + Motion Perception Hub).
+7. **Tesla AI Connection rewritten** — two explicit breakdown points added: (a) developmental individuation of priors — human perceptual libraries individually built through developmental history (connected to Müller-Lyer and dress illusion); (b) dynamic contextual priming — what's primed in your library shifts moment to moment (radiologist/driver example); Tesla's weights don't shift within a drive. Hawkins (2021) citation and specific date framing removed from references and body.
+8. **Weber's Law inline figure added** — original matplotlib figure (`fig_webers_law_jnd_proportion.png`, 3564×2094 px at 300 dpi, also `.svg`) built by Codex; wired as unnumbered inline figure immediately after Weber's Law paragraph.
+9. **Fig 4.1 replaced** — richer GPT-assisted sensation/perception pipeline diagram (same filename `fig_sensation_perception_pipeline.png`) substituted; caption and alt text updated to GPT-suggested versions confirmed by Jon. Caption: "Sensation begins when sense organs transduce physical energy into neural signals. Perception is the brain's organization and interpretation of those signals. The process is not purely bottom-up: expectations, context, and goals can feed back and shape earlier processing." Note: possible "interpretting" typo in the image itself — Jon said likely fixed; check before publishing.
+10. **Psychometric function figure** — retained as unnumbered inline figure in SDT section (was already present in v0.4 HTML).
+
+**Not yet addressed (Jon flagged but deferred):**
+- "Good continuation still strange" — Gestalt description or figure may need attention
+- Depth perception images/interactive demo
+- Perceptual constancy image
+
+**Markdown source not yet synced:** `source/chapters/ch04-sensation-perception.md` still reflects v0.4 structure; does not include SDT reorder, Tesla rewrite, harm avoidance swap, or Weber's Law inline figure. Sync before calling the chapter final.
+
+**GitHub push pending:** all changes are on disk in OneDrive-synced repo; not yet committed or pushed.
+
+---
+
+### 2026-07-01 — Session 53
+
+**What happened:** Ch. 3 cleanup pass (v0.6 → v0.7). Applied all items from Jon's "move on after cleanup" review. Both `source/chapters/ch03-neuroscience-biological-bases.md` and `docs/chapters/03-neuroscience.html` updated in sync.
+
+**Changes applied (markdown and HTML):**
+
+1. **Fig 3.1 moved** — centralization figure relocated from after the 10% myth box to immediately after the cephalization paragraph, before "That framing matters for this entire chapter"
+2. **AI aside removed** — deleted "(If you want to map each step of the ion-channel mechanism to what you're feeling, this is a good question to bring to your AI assistant.)" from pins-and-needles Think About It
+3. **AP demo placeholder cleaned** — "Jon: the action potential simulator… Embed URL needed." replaced with "Practice this in the lab when available." (both markdown and HTML)
+4. **Dopamine demo placeholder cleaned** (HTML only) — same replacement; markdown version already lacked internal notes
+5. **GABA sentence softened** — "in high doses, suppress breathing" revised to "respiratory suppression is especially dangerous when alcohol or barbiturates are involved, or when depressants are combined"; updated in both body text and Chapter Summary
+6. **Stress-response fast/slow flowchart removed** — `fig_stress_response_fast_slow.png` block deleted from both files
+7. **Figures renumbered** — ANS push-pull 3.9→3.8; brain lobes 3.10→3.9 (both files)
+8. **Duplicate split-brain paragraph deleted** — removed "The broader lesson generalizes…" paragraph from inside the DNF callout (HTML only had it there redundantly); trimmed the free-standing external paragraph to remove the repeated opening, keeping the amygdala/LeDoux transition content
+9. **"toward 70%" → "about 66%"** — myth box and Chapter Summary both updated; Kuzawa et al. (2014) citation added inline
+10. **ENS citations added** — "contains over 100 million neurons (Furness, 2006)" and "communicates bidirectionally with the brain… (Cryan et al., 2019)"
+11. **Three new references added** (alphabetical): Cryan et al. (2019) *Physiological Reviews*; Furness (2006) *The Enteric Nervous System* (Blackwell); Kuzawa et al. (2014) *PNAS*
+12. **Version header updated** — v0.6 → v0.7; figure count 10 → 9; v0.7 changes line added
+
+**Not changed (per Jon's instructions — do not reorganize beyond these fixes):** Chapter voice, conceptual structure, section order, review questions, key terms.
+
+**Note on Fig 3.1 image labels:** Jon flagged that the centralization figure's labels ("simple body plans" / "advanced systems") risk implying an evolutionary ladder and should be revised to "less centralized" / "more centralized coordination for directed movement." This requires image regeneration — not a text-only edit. Flagged for the figures pass after Ch. 14 drafting is done.
+
+**Also this session — Ch. 6 theoretical spine revision (v0.2 → v0.3):**
+
+Discussed proposed spine revisions for Ch. 6 with Jon; approved with two constraints: (a) additions must stay surgical (~300–400 words added to body), (b) extinction wording should not treat "stress-induced return" as a named classical-conditioning effect parallel to spontaneous recovery and renewal. Implemented four changes:
+
+1. **Spine question added** — one sentence appended to end of "Where This Fits": "The deeper problem running through the chapter is this: experience updates the organism's model of the world, but those updates are often less permanent than they feel — which is why unlearning can be harder than learning."
+
+2. **Extinction → inhibitory learning paragraph** — added after spontaneous recovery passage, before "Two more processes…": frames extinction as new inhibitory learning competing with (not deleting) the original prediction; introduces **renewal** (context-based return); notes that extinguished responses can return with time, context change, or stress/arousal; bridges to exposure therapy generalization failure. ~95 words.
+
+3. **Habits paragraph + key terms** — added after shaping paragraph, before punishment-limits paragraph: frames habit as efficient action script that persists after its adaptive context changes; names the efficiency-vs-flexibility trade-off; connects to spine's lossy compression table (Ch. 6 entry). Added **Habit** and **Renewal** to Key Terms alphabetically. ~110 words body.
+
+4. **Master-loop sentence** — added as first sentence of Section 4: "This section gives the chapter's clearest neural example of the course's master loop: prediction error drives updating, and dopamine reward-prediction-error signals show that updating step directly at the level of neural activity."
+
+5. **Chapter Summary updated** — spine summary sentence appended to first paragraph: "Extinction, habit, and dopamine prediction error all show the same deeper principle: learning updates the organism's model of what predicts what, but old learning often remains available underneath the update."
+
+**Word count check:** ~301 words added to body (Section 1–4); new body word count ~5,694 (was ~5,340). Within the 300–400 target. Still over the 3,500–5,000 chapter target — same standing flag as before; Jon's call.
+
+**Files modified:** `source/chapters/ch06-learning.md` (v0.2 → v0.3)
 
 ---
 
