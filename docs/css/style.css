@@ -343,6 +343,16 @@ th {
   text-align: center;
 }
 
+/* Wide figures that benefit from more horizontal room (e.g. dense infographics).
+   Breaks out of the 780px text column by up to 160px on each side. */
+.chapter-figure.wide {
+  margin-left: clamp(-160px, -10vw, 0px);
+  margin-right: clamp(-160px, -10vw, 0px);
+}
+.chapter-figure.wide img {
+  max-width: 100%;
+}
+
 .chapter-figure img {
   max-width: 100%;
   height: auto;
