@@ -62,7 +62,7 @@
 
 ## Next Up
 
-1. **Ch. 4 editorial review complete (Session 54, 2026-07-01).** Jon reviewed the HTML line by line; all 10 editorial items applied (see Session 54 log). HTML is now ~840 lines, 9 numbered figures (4.1–4.9), unnumbered Weber's Law inline figure. **Open items before Ch. 4 is fully done:** (a) drop corrected `fig_sensation_perception_pipeline.png` if typo fix is needed; (b) address "good continuation still strange" flag; (c) depth perception images/demo; (d) perceptual constancy image; (e) sync markdown source (`ch04-sensation-perception.md`) to match HTML changes; (f) push to GitHub to deploy. **Ch. 3 is done — v0.7 cleanup complete (Session 53, 2026-07-01).** Both markdown and HTML in sync.
+1. **Ch. 4 HTML editorial pass complete (Session 54, 2026-07-01).** All editorial items applied; Gestalt section rewritten with Prägnanz framing + all 6 principles + Elder & Goldberg + predictive coding bridge; Heider & Simmel demo moved to `docs/labs/ch04/heider-simmel/` and embedded in Ch4 demos page; motion folder removed from labs. **Open items before Ch. 4 is fully done:** (a) sync markdown source (`ch04-sensation-perception.md`) to match HTML (use Codex prompt in Session 54 log — also add Gestalt/Prägnanz changes to that prompt); (b) push to GitHub; (c) delete `docs/labs/motion/` folder manually in File Explorer (nothing points to it). **Ch. 3 done — v0.7 cleanup complete (Session 53).** Both markdown and HTML in sync.
 
 3. **Decision needed: Social/Personality chapter swap (Ch. 10 ↔ Ch. 11).** Proposed in Session 47 based on framework logic. Files that need updating if approved: both chapter markdowns, both HTML files (don't exist yet), `docs/index.html`, and cross-references. Low cost now; grows as HTML conversion progresses.
 
