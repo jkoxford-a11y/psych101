@@ -72,14 +72,13 @@ All figures listed in reading order. Figure numbers refer to v0.4 markdown.
 
 ---
 
-### Fig 4.7 — `fig_gestalt_principles_openstax.png`
-*(Built from 5 individual OpenStax webp images in `docs/images/ch04/`. Generated SVG versions `fig_gestalt_principles.svg` and `fig_gestalt_principles.png` are NOT used and should not be referenced — the composite from OpenStax source images is the approved version.)*
-**Caption:** Gestalt principles describe how the visual system organizes separate elements into unified wholes. Each panel can be "read" more than one way — notice that your perception, not the image, does the organizing.
-**Alt text:** Five-panel figure illustrating Gestalt principles. Panel A (Figure-Ground): a face-vase ambiguous figure that can be seen as either two facing profiles or a white vase. Panel B (Proximity): two spatially separated clusters of dots that group into two distinct objects. Panel C (Similarity): a grid of shapes where rows of circles and rows of squares appear to form separate horizontal bands. Panel D (Good Continuation): two intersecting curved lines perceived as two smooth, continuous arcs rather than four disconnected segments. Panel E (Closure): an incomplete circular shape whose gaps are perceptually filled in so that it still looks like a circle.
-**Source:** Spielman, R. M., Jenkins, W. J., & Lovett, M. D. (2020). *Psychology 2e*. OpenStax. https://openstax.org/books/psychology-2e/pages/5-4-gestalt-principles-of-perception
-**License:** CC BY-NC-SA 4.0. Note: this license requires any derivative work to also carry CC BY-NC-SA 4.0 or a compatible license. Confirm with Jon before final publication.
-**Attribution line:** Source: Spielman et al., *Psychology 2e* (OpenStax, 2020), CC BY-NC-SA 4.0.
-**Status:** ✅ In use. ⚠️ License note recorded above — verify final publication license compatibility.
+### Fig 4.7 — `fig_gestalt_principles_original.png` / `.svg`
+*(Replaces `fig_gestalt_principles_openstax.png` — OpenStax CC BY-NC-SA image removed to allow clean open licensing.)*
+**Caption:** Gestalt principles are all instances of Prägnanz: the visual system resolves ambiguous or incomplete input toward the simplest, most stable interpretation available. The good continuation panel shows the interpretation your visual system rejects — two kinked V-shapes meeting at a crossing point — because smooth continuation across the intersection is always preferred. Original diagram created for this textbook, 2026.
+**Alt text:** Six-panel figure illustrating Gestalt principles of perceptual grouping. Proximity: two tight clusters of dots perceived as two separate groups. Similarity: a grid of alternating circles and squares perceived as columns by shape. Figure-Ground: a white vase silhouette on a dark background that can also be perceived as two facing profiles. Closure: three Pac-Man shapes arranged so the gaps imply a white triangle that is not actually drawn (Kanizsa triangle). Good Continuation: an ambiguous X shape shown alongside the same shape with upper arms highlighted in gold and lower arms in dark, illustrating the kinked interpretation that good continuation prevents you from perceiving. Common Fate: two clusters of dots with arrows — one cluster moving upward, one downward — perceived as two separate groups because elements share a common direction of motion.
+**Source:** Original diagram — Jon Oxford / Claude, 2026. No external copyrighted image assets used.
+**License:** © Jon Oxford — all rights reserved until open license assigned. No share-alike encumbrance.
+**Status:** ✅ In use.
 
 ---
 
@@ -119,13 +118,14 @@ All figures listed in reading order. Figure numbers refer to v0.4 markdown.
 | File | Notes |
 |---|---|
 | `perception as a predictive loop model.png` | Older version of Fig 4.5; superseded by `ch04_perception_prediction_loop.png`. Safe to delete. |
-| `fig_gestalt_principles.png` / `.svg` | Generated versions — NOT approved for use. Use `fig_gestalt_principles_openstax.png` instead. |
+| `fig_gestalt_principles_openstax.png` | Replaced by `fig_gestalt_principles_original.png`. OpenStax CC BY-NC-SA — no longer referenced. Safe to delete. |
+| `fig_gestalt_*_openstax.webp` (×5) | Source files used to build the old OpenStax composite — no longer needed. Safe to delete. |
 | `fig_retina_rods_cones.png` / `.svg` | Programmatic data-curve version — superseded by `fig_retina_rods_cones_fovea_blindspot.png` (infographic). |
 | `fig_cochlea_pitch_theory.png` / `.svg` | Programmatic version — superseded by `fig_cochlea_place_frequency_pitch.png`. |
 | `fig_gate_control_pain.svg` | SVG source for Fig 4.10 — keep as source file alongside PNG. |
 | `fig_signal_detection_matrix.svg` | SVG source for Fig 4.2 — keep. |
 | `fig_sensation_perception_pipeline.svg` | SVG source for Fig 4.1 — keep. |
-| `fig_gestalt_*_openstax.webp` (×5) | Source files used to build `fig_gestalt_principles_openstax.png` — keep as originals. |
+| `fig_gestalt_*_openstax.webp` (×5) | Source files for old OpenStax composite — no longer needed. Safe to delete. |
 | `fig_eye_anatomy_openstax.webp` | Downloaded OpenStax image — not currently referenced in ch04. Available if needed. |
 | `fig_ear_anatomy_openstax.webp` | Downloaded OpenStax image — not currently referenced in ch04. Available if needed. |
 | `fig_rods_cones_layers_openstax.webp` | Downloaded OpenStax image — not currently referenced in ch04. Available if needed. |
