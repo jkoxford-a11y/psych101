@@ -116,7 +116,7 @@
 | `ch03-neuroscience-biological-bases.md` | `source/chapters/` | Chapter 3 markdown source — **v0.7**, cleanup pass complete (Session 53); Jon verdict: move on |
 | `03-neuroscience.html` | `docs/chapters/` | Chapter 3 HTML — in sync with v0.7 (Session 53) |
 | `ch04-sensation-perception.md` | `source/chapters/` | Chapter 4 markdown source — **v0.4** (Session 51–52); NOT yet synced to HTML editorial changes from Session 54 (SDT reorder, Tesla rewrite, harm avoidance, Weber's Law inline fig, motion lab link, Fig 4.1 caption) |
-| `04-sensation-perception.html` | `docs/chapters/` | Chapter 4 HTML — **editorial pass complete** (Session 54); ~840 lines; 9 numbered figures (4.1–4.9) + 1 unnumbered inline Weber's Law fig; SDT reordered; Tesla AI Connection rewritten; harm avoidance replaces RDS; motion hub linked; labs/index.html updated |
+| `04-sensation-perception.html` | `docs/chapters/` | Chapter 4 HTML — **editorial pass complete** (Session 54); ~840 lines; 9 numbered figures (4.1–4.9) + 1 unnumbered inline Weber's Law fig; SDT reordered; Tesla AI Connection rewritten; harm avoidance replaces RDS; motion hub linked; labs/index.html updated. Session 56: Weber's Law fig swapped to `ch04_webers_law_weights.png` (Jon's GPT infographic); retina fig given `wide` class so it breaks out of 780px text column |
 | `ch05-states-of-consciousness.md` | `source/chapters/` | Chapter 5 markdown source — v0.3, 12 CON-* concepts (hypnosis/CON-010 cut Session 42), Section 4 now Sleep Deprivation; glymphatic system added Section 2; awaiting Jon's review |
 | `05-consciousness.html` | `docs/chapters/` | Chapter 5 HTML — exists and in sync with markdown v0.3 (Session 42) |
 | `ch06-learning.md` | `source/chapters/` | Chapter 6 markdown source — **v0.3** (Session 53 theory spine revision); awaiting Jon's review |
@@ -132,6 +132,19 @@
 ---
 
 ## Session Log
+
+---
+
+### 2026-07-01 — Session 56
+
+**What happened:** Two small Ch. 4 figure fixes.
+
+1. **Weber's Law figure swapped** — old line-graph (`fig_webers_law_jnd_proportion.png`) replaced with Jon's new GPT-generated infographic (`ch04_webers_law_weights.png`): side-by-side cast-iron weight comparison (5→6 lb = 20% vs. 50→51 lb = 2%). Alt text and caption updated to match.
+2. **Retina figure widened** — added `.chapter-figure.wide` CSS class to `docs/css/style.css` (negative-margin clamp, up to 160px breakout per side) and applied `wide` to the retina figure in HTML. The 1672×941 infographic was cramped at 780px column width; now displays larger on desktop while collapsing gracefully on mobile.
+
+**Files modified:**
+- `docs/chapters/04-sensation-perception.html` — Weber's Law img src/alt/caption; retina figure class
+- `docs/css/style.css` — `.chapter-figure.wide` rule added
 
 ---
 
