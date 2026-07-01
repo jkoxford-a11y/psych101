@@ -16,7 +16,7 @@ Purpose: temporary working list for revising Chapter 4 visuals. The authoritativ
 2. Decide later whether Figure 4.1 should remain as the simple sensation/perception pipeline or be replaced by a less linear diagram.
 3. Keep license flags visible for OpenStax Gestalt and Webvision assets.
 4. Accuracy-check retina, cochlea, gate-control, color-vision, and prediction-loop figures.
-5. Delete this temp tracker or fold any remaining notes into the permanent manifest after final Ch4 review.
+5. Retire this temp tracker or fold any remaining notes into the permanent manifest after final Ch4 review.
 
 ## License flags
 
