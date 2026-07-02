@@ -106,7 +106,8 @@
 | File | Location | Purpose |
 |------|----------|---------|
 | `concept_lineage_revised.csv` | `source/` | 181 concepts with era lineage and risk flags |
-| `voice_profile_merged.csv` | `source/` | 129 voice entries across Gen Psych + 5 specialist courses |
+| `voice_profile_merged.csv` | `source/` | 129 voice entries across Gen Psych + 5 specialist courses — raw evidence behind `voice-brief.md` |
+| `voice-brief.md` | `pipeline/` | **Read at the start of any drafting session** — distilled one-page voice/style guide (persona, signature analogies, recurring examples, prose rhythm, chapter skeleton, copyright guardrail, pre-flight checklist). Replaces grepping `voice_profile_merged.csv` for hit-counts. |
 | `chapter-spec.md` | `pipeline/` | Full chapter-writing pipeline spec (v3.0) |
 | `html-conversion-spec.md` | `pipeline/` | HTML conversion reference: sidebar template, all CSS class names, every structural pattern — use this for Codex batch conversion |
 | `index.html` | `docs/` | TOC landing page (GitHub Pages root) — live |
