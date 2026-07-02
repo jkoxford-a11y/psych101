@@ -6,9 +6,9 @@
 
 ## Current Status
 
-**Phase:** Chapter 1 (History & Approaches) live, fully reviewed. Chapter 2 (Research Methods & Statistics) at v0.3, HTML on hold pending Jon’s images. Chapters 3–14 are markdown-complete (various versions), all awaiting Jon’s line-by-line review. **All 14 chapters now have at least a v0.1 markdown draft.**
+**Phase:** Chapter 1 (History & Approaches) live, fully reviewed. Chapter 2 (Research Methods & Statistics) at v0.3, HTML on hold pending Jon’s images. Chapters 3–14 are markdown-complete (various versions), all awaiting Jon’s line-by-line review. **All 14 chapters now have at least a v0.1 markdown draft, and the Ch5/Ch6 Consciousness/Sleep split is now complete at the file level (Session 59).**
 
-**Chapter split confirmed (Session 58, 2026-07-02):** Old Ch. 5 (States of Consciousness) split into two standalone chapters: Ch. 5 = Consciousness (new file `source/chapters/ch05-consciousness.md`, v0.2); Ch. 6 = Sleep (from old `ch05-states-of-consciousness.md` v0.4, not yet renamed/restructured as ch06). Book is now **14 chapters** (+1 net from this split; Personality/Social merge is tabled). Chapter renumbering (old Ch6–13 → new Ch7–14) is pending mechanical work. New ch05-consciousness.md: blindsight hook, sea squirts/bilaterian evolution, predictive model definition, attention/salience/DNC, prediction error loop (expanded with gap-filling/illusions/metaphors, Rao & Ballard 1999, Kogo & Trengove 2015, Lakoff & Johnson 1980, Clark 2016), Seth/Charles Bonnet (with Hamedani & Pelak 2021 prevalence), five drug classes (stimulants condensed to cocaine/Ritalin only), Chalmers close. [VOICE] markers throughout for Jon’s lines. Awaiting Jon’s line-by-line review.
+**Chapter split COMPLETE at file level (Session 59, 2026-07-02):** Old Ch. 5 (States of Consciousness) is now fully split into two standalone chapter files: **Ch. 5 = Consciousness** (`source/chapters/ch05-consciousness.md`, v0.2) and **Ch. 6 = Sleep** (`source/chapters/ch06-sleep.md`, v0.1, created Session 59). Old `ch05-states-of-consciousness.md` is superseded but left on disk. Book is now **14 chapters** (+1 net from this split; Personality/Social merge is tabled). Chapter renumbering of the OTHER files (old Ch6–13 → new Ch7–14, i.e. ch06-learning.md → ch07 etc.) is still pending mechanical work — so `ch06-sleep.md` currently coexists with the old-numbered `ch06-learning.md`. New ch05-consciousness.md: blindsight hook, sea squirts/bilaterian evolution, predictive model definition, attention/salience/DNC, prediction error loop (expanded with gap-filling/illusions/metaphors, Rao & Ballard 1999, Kogo & Trengove 2015, Lakoff & Johnson 1980, Clark 2016), Seth/Charles Bonnet (with Hamedani & Pelak 2021 prevalence), five drug classes (stimulants condensed to cocaine/Ritalin only), Chalmers close. New ch06-sleep.md v0.1: sleep-specific misconception opener, Ch5 bridge, circadian/SCN/two-process (Section 1), sleep architecture + function + glymphatic + AI Connection + dreams (Section 2), sleep deprivation consequences (Section 3); all drug + attention + predictive-model-derivation content removed (now Ch5's); cross-refs on new 14-ch numbering; Cohen et al. (2009) added + verified for the immune claim; three sleep figures copied to `docs/images/ch06/`. Both chapters have [VOICE] markers for Jon’s lines. Both awaiting Jon’s line-by-line review.
 
 **Prologue interactive components complete (Session 38–39):** `docs/prologue.html` (the file actually served by GitHub Pages — NOT `docs/chapters/prologue.html`, which is a redundant copy) has all 5 interactive components wired: hybrid retrieval prompts (8), calibration dashboard, stepwise MCQs (2), spaced retrieval scheduler, AI prompt builder. CSS: `docs/css/prologue-interactive.css`. JS: `docs/js/prologue-interactive.js`. Reuse guide: `pipeline/interactive-components-spec.md`.
 
@@ -65,11 +65,11 @@ Note: renumbering is not yet applied to existing markdown files (ch06-learning.m
 
 ## Next Up
 
-1. **Ch. 5 Consciousness — Jon's line-by-line review.** `source/chapters/ch05-consciousness.md` is at v0.2 (this session). All agreed audit fixes applied. [VOICE] lines throughout need Jon's specific language before final draft. Key open items: (a) Jon fills in [VOICE] markers (bilaterian movement problem, octopus/comparative examples, amygdala speed framing, prediction error delivery, Seth payoff, Sapolsky dopamine, munchies framing, honest close); (b) decide fate of Eagleman Think About It (simplified to one question — Jon may want to keep or cut entirely); (c) decision needed: add an AI Connection to Ch5 (this chapter has none currently).
+1. **Ch. 5 Consciousness AND Ch. 6 Sleep — Jon's line-by-line review.** `ch05-consciousness.md` (v0.2) and `ch06-sleep.md` (v0.1) both await review. [VOICE] markers in both need Jon's language. Ch5 open items: (a) fill [VOICE] markers (bilaterian movement problem, octopus/comparative examples, amygdala speed, prediction error, Seth payoff, Sapolsky dopamine, munchies, honest close); (b) fate of Eagleman Think About It; (c) whether to add an AI Connection to Ch5. Ch6 open items: (a) fill the one [VOICE] marker (evolutionary sleep-as-trade-off line in Section 2); (b) confirm the sleep-specific misconception opener lands; (c) confirm the `psych101_awesome-sauce` "sleep" demo is fair to reuse or prologue-exclusive.
 
-2. **Create ch06-sleep.md** from old `source/chapters/ch05-states-of-consciousness.md` v0.4. Rename file, update chapter number references, trim any content that was already folded into the new Ch5, add Ch5 bridge in the opener.
+2. **~~Create ch06-sleep.md~~ — DONE (Session 59).** File created, drug/attention/predictive-model content removed (now Ch5's), cross-refs on new numbering, figures copied to `docs/images/ch06/`. Remaining tidy-up: Jon to delete superseded `ch05-states-of-consciousness.md` and the now-unused `docs/images/ch05/` sleep-figure copies once confirmed.
 
-3. **Mechanical renumbering** — update `docs/index.html` to 14-chapter TOC; update cross-reference numbers in all markdown files (ch06-learning → ch07-learning nomenclature etc.); update Connections tables. Low cost now; grows as HTML conversion progresses.
+3. **Mechanical renumbering** — update `docs/index.html` to 14-chapter TOC; rename/renumber the remaining markdown files (ch06-learning.md → ch07-learning.md through ch13 → ch14) and their cross-references + Connections tables. NOTE: ch05-consciousness.md and ch06-sleep.md already use the target 14-chapter numbering, so this pass only needs to reconcile the Ch7–Ch14 files and index.html to match. `ch06-sleep.md` coexisting with old-numbered `ch06-learning.md` makes this the higher-priority mechanical task now.
 
 4. **Ch. 4 HTML editorial pass complete (Session 54, 2026-07-01).** Open items: (a) sync markdown source (`ch04-sensation-perception.md`) to match HTML (SDT reorder, Tesla rewrite, harm avoidance, Weber's Law inline fig, Gestalt/Prägnanz changes); (b) push to GitHub; (c) delete `docs/labs/motion/` folder manually in File Explorer.
 
@@ -142,6 +142,32 @@ Note: renumbering is not yet applied to existing markdown files (ch06-learning.m
 ---
 
 ## Session Log
+
+---
+
+### 2026-07-02 — Session 59
+
+**What happened:** Executed Next Up item #2 — created `source/chapters/ch06-sleep.md` (v0.1) by splitting the sleep material out of old `ch05-states-of-consciousness.md` v0.4. This completes the Ch5/Ch6 split at the file level (new Ch5 = Consciousness, new Ch6 = Sleep).
+
+**What was cut from the old file (because it now lives in the new Ch5 Consciousness):**
+- The "Attention and the Limits of Consciousness" subsection (selective attention, inattentional blindness / Simons & Chabris gorilla, cocktail-party effect / Cherry) — moved to Ch5. Removed the "resolves Ch4's attention promise" claim from Where This Fits (Ch5 now owns that resolution).
+- The entire Section 3 psychoactive-drug taxonomy (depressants/GABA, stimulants/dopamine, hallucinogens/5-HT2A, cannabis/CB1, opioids, tolerance/withdrawal Do-Not-Confuse) — Ch5 now covers all drug classes under its "disruption reveals function" frame.
+- The standalone Seth "controlled hallucination" derivation and the full Charles Bonnet syndrome paragraph — trimmed to brief callbacks to Ch5, which owns both.
+- The old consciousness-defining opener (automatic camera, James's stream) — replaced with a new sleep-specific misconception opener ("sleep is the brain's downtime"), dismantled with the chapter's own content (active states, glymphatic clearance, consolidation, hormonal timing).
+
+**What was kept (the sleep chapter proper):** circadian rhythms / SCN / melatonin / two-process model (Section 1); sleep architecture (Aserinsky & Kleitman classic study, polysomnography, NREM stages, REM atonia, hypnogram); sleep function (restorative / evolutionary-adaptive / memory-consolidation, glymphatic system, H.M. bridge); the AI Connection (sleep consolidation vs. training/inference — sleep-specific, retained); dreams (activation-synthesis vs. threat-simulation); sleep disorders; and sleep deprivation consequences (prefrontal-amygdala per Yoo et al. 2007, leptin/ghrelin per Spiegel et al. 2004, immune, fatal familial insomnia). Restructured from 4 sections to 3 (drug section gone).
+
+**Cross-references updated to the 14-chapter numbering** (to match new Ch5, which already uses it): Learning Ch6→Ch7; Memory Ch7→Ch8 (incl. H.M. full treatment and working-memory pointer in the AI Connection); Thinking/Language/Intelligence Ch8→Ch9; Emotion/Stress Ch12→Ch13; Disorders/Therapy Ch13→Ch14. Connections table rebuilt: dropped the tolerance/withdrawal→disorders row (now Ch5's), added a "conscious model taken offline for maintenance → Ch5 review" row.
+
+**One new citation added and verified:** the immune claim was uncited in the old file; sourced it to Cohen et al. (2009), *Archives of Internal Medicine, 169*(1), 62–67 — verified authors/journal/volume/pages via web search. Reworded the claim from "sleep-deprived participants" to "participants who slept less," since Cohen 2009 is a naturalistic sleep-habits + experimental rhinovirus-exposure design, not a deprivation manipulation (avoids overstating). Also softened the fatal-familial-insomnia passage to flag that it proves thalamic degeneration is fatal, not "dying from lack of sleep" per se.
+
+**Citation integrity:** all 12 in-text citations match the References list in both directions (checked). Orphans removed with their content: Cherry (1953), Simons & Chabris (1999), Schultz/Dayan/Montague (1997), Seth (2021), James (1890).
+
+**Figures:** copied the three sleep figures from `docs/images/ch05/` to `docs/images/ch06/` (png + svg): `fig_scn_pathway` (now Fig 6.1), `fig_two_process_sleep_model` (Fig 6.2), `fig_sleep_hypnogram` (Fig 6.3). Markdown references updated to `../../images/ch06/`. The ch05 copies still exist on disk; the new Ch5 no longer references them (its figure need is a NT-pathway map, still to be built) — the ch05 copies can be deleted manually once confirmed unused.
+
+**Filename note:** `ch06-learning.md` still exists under the OLD numbering, so `ch06-sleep.md` now coexists with it. This is expected — the mechanical renumbering of ch06-learning→ch07 etc. is still pending (Next Up). Old `ch05-states-of-consciousness.md` is now fully superseded by ch05-consciousness.md + ch06-sleep.md but left on disk.
+
+**Not done:** old `ch05-states-of-consciousness.md` not deleted (left for Jon); ch06-sleep.md not converted to HTML; [VOICE] markers in ch06 (evolutionary trade-off line in Section 2) not yet filled — need Jon. Awaiting Jon's line-by-line review.
 
 ---
 
