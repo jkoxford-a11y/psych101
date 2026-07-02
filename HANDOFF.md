@@ -6,7 +6,9 @@
 
 ## Current Status
 
-**Phase:** Chapter 1 (History & Approaches) live, fully reviewed. Chapter 2 (Research Methods & Statistics) at v0.3, HTML on hold pending Jon’s images. Chapters 3–13 are markdown-complete (various versions), all awaiting Jon’s line-by-line review. **All 13 chapters now have at least a v0.1 markdown draft.** Ch. 5 now at v0.3 (Session 55) — full theoretical spine revision complete, three figures wired.
+**Phase:** Chapter 1 (History & Approaches) live, fully reviewed. Chapter 2 (Research Methods & Statistics) at v0.3, HTML on hold pending Jon’s images. Chapters 3–14 are markdown-complete (various versions), all awaiting Jon’s line-by-line review. **All 14 chapters now have at least a v0.1 markdown draft.**
+
+**Chapter split confirmed (Session 58, 2026-07-02):** Old Ch. 5 (States of Consciousness) split into two standalone chapters: Ch. 5 = Consciousness (new file `source/chapters/ch05-consciousness.md`, v0.2); Ch. 6 = Sleep (from old `ch05-states-of-consciousness.md` v0.4, not yet renamed/restructured as ch06). Book is now **14 chapters** (+1 net from this split; Personality/Social merge is tabled). Chapter renumbering (old Ch6–13 → new Ch7–14) is pending mechanical work. New ch05-consciousness.md: blindsight hook, sea squirts/bilaterian evolution, predictive model definition, attention/salience/DNC, prediction error loop (expanded with gap-filling/illusions/metaphors, Rao & Ballard 1999, Kogo & Trengove 2015, Lakoff & Johnson 1980, Clark 2016), Seth/Charles Bonnet (with Hamedani & Pelak 2021 prevalence), five drug classes (stimulants condensed to cocaine/Ritalin only), Chalmers close. [VOICE] markers throughout for Jon’s lines. Awaiting Jon’s line-by-line review.
 
 **Prologue interactive components complete (Session 38–39):** `docs/prologue.html` (the file actually served by GitHub Pages — NOT `docs/chapters/prologue.html`, which is a redundant copy) has all 5 interactive components wired: hybrid retrieval prompts (8), calibration dashboard, stepwise MCQs (2), spaced retrieval scheduler, AI prompt builder. CSS: `docs/css/prologue-interactive.css`. JS: `docs/js/prologue-interactive.js`. Reuse guide: `pipeline/interactive-components-spec.md`.
 
@@ -45,8 +47,9 @@
 
 - `source/chapters/ch08-thinking-language-intelligence.md` — Chapter 8 draft, new this session (v0.1), content-complete, not yet reviewed by Jon. All 15 TLI-* concepts covered (verified programmatically by topic keyword). 13 of 15 are `instructor-original`/`canonical-common-knowledge`; two flagged `book-adoption` — TLI-004 (Representativeness heuristic) drafted from Bazerman (2026) Noba module "Judgment and Decision Making," and TLI-012 (Gardner's multiple intelligences) drafted from Biswas-Diener (2026) Noba module "Intelligence" — both fetched and read in full before drafting, not secondhand. No concepts had a Noba-coverage gap this chapter (both flagged concepts had adequate module coverage, unlike Ch4/Ch6 where some `book-adoption` concepts had no matching Noba module). All 26 citations independently verified via web search before inclusion; programmatic cross-check confirmed all in-text citation keys match References entries in both directions, no orphans. Architecture: 4 sections — (1) Concepts, categories, and problem solving (prototypes, exemplars, hierarchical categories, algorithms vs. heuristics, working-forward/backward/means-ends analysis, mental set with Luchins 1942, functional fixedness with Duncker 1945's candle problem, insight and Jung-Beeman et al. 2004 neural correlates); (2) Heuristics, biases, and the two-system view (System 1/2 framework with a full Do Not Confuse panel, availability heuristic, representativeness heuristic with the Linda problem as a full Classic Study Walkthrough, confirmation bias with Wason 1968 selection task, framing effect, anchoring); (3) Language (phoneme→morpheme→syntax→semantics→pragmatics, nativist vs. behaviorist acquisition debate with Chomsky 1965 LAD/universal grammar and Saffran et al. 1996 statistical learning, linguistic relativity weak vs. strong with Whorf 1956 and a Do Not Confuse panel on relativity vs. determinism); (4) Intelligence (Spearman 1904 *g* and the positive manifold, fluid vs. crystallized with Horn & Cattell 1966, Gardner 1985 multiple intelligences with a caveated discussion of empirical limitations, Sternberg 1985 triarchic theory with analytic/creative/practical, IQ standardization and the bell curve, reliability/validity building on Ch2, Flynn Effect 1987, and group differences with stereotype threat Spencer et al. 1999 and note on environmental factors). Full AI Connection (the chapter's primary AI touchpoint per spec §12 Ch7/8, three-part structure): (a) System 1 fluency heuristic — polished AI output deactivates System 2 metacognitive checking because fluency signals accuracy (Reber & Schwarz 1999); (b) availability heuristic applied to AI use — past experience of AI being right overcounts reliability on topics where AI is actually unreliable; (c) schemas → template-driven AI output — model output is high-fidelity pattern completion, not reasoning, similar to schema-driven human memory reconstruction; breakdown point: human schemas are revised through embodied corrective feedback, model weights don't self-correct through reasoning mid-conversation. Misconception Opener: "We trust our own thinking — we assume we notice what matters and weigh information accurately." Includes a *k*-word prediction task that students complete before Section 2 and return to after reading the availability heuristic section. Body word count ~4,981 — inside the 3,500–5,000 target (only the second chapter after Ch4 to land inside range on a first draft). No figures yet. No demo placeholder (no existing demo covers heuristics or language acquisition; flagged as a gap, not placeholded). Not yet converted to HTML.
 
-**Current 13-chapter order (updated Session 31 — `docs/index.html` is authoritative):**
-1 History & Approaches · 2 Research Methods & Statistics · 3 Neuroscience & Biological Bases · 4 Sensation & Perception · 5 States of Consciousness · 6 Learning · 7 Memory · 8 Thinking, Language & Intelligence · 9 Lifespan Development · 10 Social Psychology · 11 Personality · 12 Emotion, Stress & Coping · 13 Psychological Disorders & Therapy.
+**Current 14-chapter order (updated Session 58 — `docs/index.html` still shows 13-chapter order and needs updating):**
+1 History & Approaches · 2 Research Methods & Statistics · 3 Neuroscience & Biological Bases · 4 Sensation & Perception · **5 Consciousness (NEW)** · **6 Sleep (from old Ch5)** · 7 Learning · 8 Memory · 9 Thinking, Language & Intelligence · 10 Lifespan Development · 11 Social Psychology · 12 Personality · 13 Emotion, Stress & Coping · 14 Psychological Disorders & Therapy.
+Note: renumbering is not yet applied to existing markdown files (ch06-learning.md through ch13-…md) or docs/index.html. Those updates are pending mechanical work.
 
 **What's not started:**
 - Ch2–Ch13 → HTML conversion (all markdown-complete, awaiting Jon's review first; Ch2 HTML on hold pending Jon's images)
@@ -62,7 +65,13 @@
 
 ## Next Up
 
-1. **Ch. 4 HTML editorial pass complete (Session 54, 2026-07-01).** All editorial items applied; Gestalt section rewritten with Prägnanz framing + all 6 principles + Elder & Goldberg + predictive coding bridge; Heider & Simmel demo moved to `docs/labs/ch04/heider-simmel/` and embedded in Ch4 demos page; motion folder removed from labs. **Open items before Ch. 4 is fully done:** (a) sync markdown source (`ch04-sensation-perception.md`) to match HTML (use Codex prompt in Session 54 log — also add Gestalt/Prägnanz changes to that prompt); (b) push to GitHub; (c) delete `docs/labs/motion/` folder manually in File Explorer (nothing points to it). **Ch. 3 done — v0.7 cleanup complete (Session 53).** Both markdown and HTML in sync.
+1. **Ch. 5 Consciousness — Jon's line-by-line review.** `source/chapters/ch05-consciousness.md` is at v0.2 (this session). All agreed audit fixes applied. [VOICE] lines throughout need Jon's specific language before final draft. Key open items: (a) Jon fills in [VOICE] markers (bilaterian movement problem, octopus/comparative examples, amygdala speed framing, prediction error delivery, Seth payoff, Sapolsky dopamine, munchies framing, honest close); (b) decide fate of Eagleman Think About It (simplified to one question — Jon may want to keep or cut entirely); (c) decision needed: add an AI Connection to Ch5 (this chapter has none currently).
+
+2. **Create ch06-sleep.md** from old `source/chapters/ch05-states-of-consciousness.md` v0.4. Rename file, update chapter number references, trim any content that was already folded into the new Ch5, add Ch5 bridge in the opener.
+
+3. **Mechanical renumbering** — update `docs/index.html` to 14-chapter TOC; update cross-reference numbers in all markdown files (ch06-learning → ch07-learning nomenclature etc.); update Connections tables. Low cost now; grows as HTML conversion progresses.
+
+4. **Ch. 4 HTML editorial pass complete (Session 54, 2026-07-01).** Open items: (a) sync markdown source (`ch04-sensation-perception.md`) to match HTML (SDT reorder, Tesla rewrite, harm avoidance, Weber's Law inline fig, Gestalt/Prägnanz changes); (b) push to GitHub; (c) delete `docs/labs/motion/` folder manually in File Explorer.
 
 3. **Decision needed: Social/Personality chapter swap (Ch. 10 ↔ Ch. 11).** Proposed in Session 47 based on framework logic. Files that need updating if approved: both chapter markdowns, both HTML files (don't exist yet), `docs/index.html`, and cross-references. Low cost now; grows as HTML conversion progresses.
 
@@ -133,6 +142,40 @@
 ---
 
 ## Session Log
+
+---
+
+### 2026-07-02 — Session 58
+
+**What happened:** Continuation session after context compaction. Prior session (57 continued) had drafted `source/chapters/ch05-consciousness.md` v0.1 — the new standalone consciousness chapter (split from old Ch5). This session: ran four parallel literature searches, discussed findings, then patched the chapter v0.1 → v0.2 with all agreed audit fixes.
+
+**Literature searches conducted:**
+1. Predictive processing → visual illusions, perceptual filling-in, gap completion → Rao & Ballard (1999), Gregory (1970), Kogo & Trengove (2015), Clark (2016), hollow mask illusion, Kanizsa triangle, blind spot filling-in
+2. Predictive coding → higher cognition, metaphor, inference → Clark (2016) *Surfing Uncertainty*; Lakoff & Johnson (1980); Synthese "Predictive coding and thought"
+3. Charles Bonnet syndrome clinical citation → Hamedani & Pelak (2021) PMC8405382; prevalence 10–30% of visually impaired adults
+4. Sea squirt/tunicate nervous system metamorphosis → confirmed adult retains a cerebral ganglion (movement-control portion reduces/reorganizes, not eliminated)
+5. Brain metabolic cost → Raichle & Gusnard (2002) PNAS: brain = 2% body weight, 20% energy
+
+**Patches applied to `source/chapters/ch05-consciousness.md` (v0.1 → v0.2):**
+1. Version header updated to v0.2 with full change summary
+2. Metabolic cost — added (Raichle & Gusnard, 2002) inline citation
+3. Sea squirt text softened — "chemically dismantles" and "no brain" replaced with "dramatically reduced and reorganized"; adult retains simplified ganglion; same fix in Chapter Summary
+4. Review Q2 option (c) softened — "no longer require nervous tissue" → "can be reduced and reorganized"
+5. Pessoa paragraph compressed from 4 sentences to 1: "The specific anatomy of subcortical visual routes in humans remains debated (Pessoa, 2005) — the dissociation between behavior and awareness is the point, not the wiring."
+6. Prediction error loop section expanded with new 3-paragraph addition: blind spot filling-in (Kogo & Trengove 2015), hollow mask illusion (Rao & Ballard 1999), Kanizsa triangle as examples; extension to inference/narrative completion/metaphor (Lakoff & Johnson 1980, Clark 2016); caveat that gap-filling is not uniquely human
+7. Charles Bonnet paragraph updated with 10–30% prevalence figure and Hamedani & Pelak (2021) citation
+8. Dreams sentence replaced with Ch6 bridge: "Chapter 6 will return to dreams as another case where the brain generates experience with reduced constraint from external input."
+9. Eagleman Think About It simplified from 5 sentences to 2 (core postdiction question retained; baseball example removed)
+10. GABA/ACh blackout mechanism simplified — specific ACh mechanism claim removed; replaced with "hippocampal systems needed to write new experiences into lasting episodic memory are disrupted by GABA enhancement"
+11. Stimulants section condensed — Adderall/amphetamines removed; one paragraph covering cocaine + methylphenidate (Ritalin) only; same seam/different tear delivery line kept as [VOICE] marker
+12. Key Terms: "cortive tendency" typo fixed to "brain's constructive tendency"
+13. References: added Clark (2016), Hamedani & Pelak (2021), Kogo & Trengove (2015), Lakoff & Johnson (1980), Raichle & Gusnard (2002), Rao & Ballard (1999)
+
+**Architecture decision confirmed:** Chapter split 13 → 14 chapters. Ch5 = Consciousness (new). Ch6 = Sleep (from old ch05-states-of-consciousness.md v0.4). Old file unchanged and remains as source; ch06-sleep.md has not yet been created. Personality/Social merge tabled. Renumbering pending.
+
+**Files modified:**
+- `source/chapters/ch05-consciousness.md` — v0.1 → v0.2
+- `HANDOFF.md` — Status, Next Up, chapter order, this entry
 
 ---
 
