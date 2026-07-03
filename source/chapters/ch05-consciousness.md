@@ -142,7 +142,7 @@ The case for any account of a complex system becomes stronger when systematic pe
 
 **The organizing principle: each major drug class targets a different neurotransmitter system, and what breaks tells you what that system does in the conscious model.**
 
-[VOICE] — own this frame explicitly. "If you want to know what a system does, perturb it and watch what fails." Your delivery line here. Also: a figure of major NT pathways (LC → NE, VTA/SNc → DA, Raphe → 5-HT, Basal Forebrain → ACh, GABA widely distributed) showing what they project to — so students can see the geography before the pharmacology. Already mentioned in ACh/REM context in Ch6; may want a simpler version here focused on the four systems most relevant to this section.
+Lesion studies ask what's lost when a part of the system is damaged — Chapter 3 leaned on that logic more than once. Try writing that protocol for a human ethics board, though, and watch how fast the meeting ends. Neurons run on electrochemical signaling, so the same question can be asked chemically instead: perturb a neurotransmitter system and watch what fails.
 
 ### GABA System → Depressants
 
@@ -150,7 +150,7 @@ The case for any account of a complex system becomes stronger when systematic pe
 
 What they disrupt in the conscious model is **arousal gating** — the maintenance of a sufficiently activated cortical system to support deliberate, flexible prediction and updating. At low doses, this reads as relaxation and disinhibition: the model runs more loosely, with less tight error-correction weighting on negative signals.
 
-[VOICE] — why alcohol "relaxes": the model becomes less responsive to prediction errors that would normally flag a problem. You stop weighting negative mismatches as heavily. The feeling of not caring about things that would ordinarily matter is, mechanistically, looser error-correction. Your framing.
+Two separate things are happening, not one. GABA enhancement dampens the amygdala directly — the same threat-and-salience system introduced earlier in this chapter — so fewer signals cross the threshold to register as "this matters" in the first place. But alcohol also weakens the connection between the amygdala and the prefrontal cortex, the same circuit doing the resolving work in extinction (Gorka et al., 2013). So even the error signals that do get generated are less likely to get contextualized, checked, or acted on. Less gets flagged, and what does get flagged gets less follow-through. That combination — a quieter alarm and weaker oversight — is what "relaxed" actually is, mechanistically.
 
 At higher doses, a more specific failure: **anterograde amnesia** — the alcohol blackout. Events continue to occur and are experienced in the moment, but no memory trace of them is formed. This is not memory that was formed and later lost; it is memory that was never encoded, because the hippocampal systems needed to write new experiences into lasting episodic memory are disrupted by GABA enhancement. The model ran; the update was not stored.
 
@@ -458,6 +458,8 @@ Daw, N. D., Kakade, S., & Dayan, P. (2002). Opponent interactions between seroto
 de Gelder, B., Tamietto, M., van Boxtel, G., Goebel, R., Sahraie, A., van den Stock, J., … Pegna, A. (2008). Intact navigation skills after bilateral loss of striate cortex. *Current Biology, 18*(24), R1128–R1129.
 
 Friston, K. J., Wiese, W., & Hobson, J. A. (2017). Sentience and the predictive mind. In T. Metzinger & W. Wiese (Eds.), *Philosophy and Predictive Processing.* MIND Group.
+
+Gorka, S. M., Fitzgerald, D. A., King, A. C., & Phan, K. L. (2013). Alcohol attenuates amygdala-frontal connectivity during processing social signals in heavy social drinkers: A preliminary pharmaco-fMRI study. *Psychopharmacology, 229*(1), 141–154.
 
 Goulty, M., Botton-Amiot, G., Rosato, E., Sprecher, S. G., & Feuda, R. (2023). The monoaminergic system is a bilaterian innovation. *Nature Communications, 14*, 3284. https://doi.org/10.1038/s41467-023-39030-2
 
