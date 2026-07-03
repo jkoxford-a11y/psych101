@@ -3,8 +3,9 @@
 > Draft v0.2 — 2026-07-02 | Status: Patched from v0.1 audit. Fixes: sea squirt biology softened (adult retains ganglion); GABA/ACh blackout claim replaced; Pessoa paragraph compressed to one sentence; dreams sentence replaced with Ch6 bridge; stimulants condensed to cocaine/Ritalin, Adderall removed; prediction error section expanded with gap-filling/illusions/metaphors paragraph (Rao & Ballard 1999, Kogo & Trengove 2015, Lakoff & Johnson 1980, Clark 2016); CBS prevalence added with Hamedani & Pelak 2021 citation; metabolic cost citation added (Raichle & Gusnard 2002); Eagleman Think About It simplified; typo fixed.
 > Word count target: 4,500–5,500 body words
 > Copyright note: all concepts instructor-original or canonical-common-knowledge. No book-adoption or needs-verification flags.
-> Figures: Fig 5.1 (Section 3 opener, neuromodulatory systems — GABA, DA+NE, 5-HT2A, Endocannabinoid, Opioid) built and wired (Session 62). Existing ch05 figures (hypnogram, two-process model, SCN pathway) moved to ch06. Open question: `docs/images/ch05/` also contains several more images (Attention_filter.png, Dopamine_1.png, blind_sight.png, charles_bonnet.png, dopamine_error.png, sea_squirt_life.png, the_prediction_model.png) not yet wired into the chapter — need Jon to confirm which section each belongs to before embedding.
-> Voice markers: [VOICE] tags throughout mark where Jon's specific lines, analogies, and comparative framings should be inserted before final draft.
+> Figures: All 8 now wired (Session 63). Fig 5.1 blindsight hallway (misconception opener), Fig 5.2 sea squirt life cycle (Section 1), Fig 5.3 attention-as-filter (Section 2, Do Not Confuse box), Fig 5.4 prediction error loop 5-step cycle (Section 2), Fig 5.5 Charles Bonnet syndrome (Section 2), Fig 5.6 neuromodulatory systems overview (Section 3 opener — renumbered from 5.1), Fig 5.7 dopamine "better/worse than expected" (Section 3), Fig 5.8 classic Schultz et al. cue-conditioning reward-prediction-error paradigm (Section 3). Existing ch05 sleep figures (hypnogram, two-process model, SCN pathway) confirmed unused here — correct copies live in ch06; orphaned ch05 copies still need manual deletion by Jon (bash cannot delete in the OneDrive-synced folder — same permission restriction as Session 32). Still awaiting Jon's confirmation on all 8 placements/captions during his line-by-line review.
+> Voice markers: all 11 [VOICE] tags filled (Session 62) — bilaterian/monoamine opener, octopus comparative aside, amygdala/extinction, Ch3-4-7-9 predictive-brain bridge, lesion-to-drugs framing, cocaine/Ritalin pharmacokinetics, Sapolsky dopamine-as-anticipation (with Dopamine Jackpot! video link), Seth controlled-hallucination payoff, munchies, honest close. Chapter still awaiting Jon's full line-by-line review pass.
+> Session 63 additions: (1) Eagleman/Sejnowski (2000) postdiction Think About It now grounded with a full explanatory paragraph and citations (previously a bare, uncited claim) — added the Patel et al. (2000) competing differential-latency account as an honest caveat that the mechanism is debated; revised the question to an eyewitness-testimony application rather than repeating the just-stated conceptual point. (2) New AI Connection added ("Fluent Hallucination Without a World to Check Against," end of Section 2) — LLM "hallucination" (Ji et al., 2023) paralleled against Seth's controlled-hallucination account, with an explicit breakdown point: human hallucination is a checking process that broke down, AI hallucination is generation that was never coupled to a checking process at all. Deliberately placed in Section 2 rather than Section 3, to avoid overlapping Ch7's dopamine/RLHF AI Connection. All three new citations verified via live search, not memory.
 
 ---
 
@@ -17,6 +18,9 @@ Consider this case. A man with complete damage to his primary visual cortex — 
 His brain was receiving and processing visual information. It was processing that information well enough to guide his body through a complex physical space. None of it ever became a conscious experience.
 
 This is **blindsight** — and it breaks the assumption buried in the misconception above. A great deal of what your brain does with sensory input never enters awareness at all. Consciousness and information processing are not the same thing.
+
+![Figure 5.1 — A cortically blind man walks down an obstacle-filled hallway, successfully weaving around cones and a plant while reporting no visual awareness of them; his conscious report ("I have no idea") is dissociated from the unconscious processing that guided his steps.](../images/ch05/blind_sight.png)
+*Figure 5.1. Blindsight: visual information can guide behavior — walking around obstacles — without ever producing a conscious visual experience of them (de Gelder et al., 2008).*
 
 You almost certainly have a version of this in your own experience. Have you ever driven a familiar route, arrived safely, and realized you have no memory of the last ten minutes of the trip? The car stopped at red lights, navigated turns, avoided other vehicles — all of it successfully. Nobody was home.
 
@@ -56,6 +60,9 @@ Start with an organism that solved the same basic biological problems — eating
 
 A sea squirt begins its life as a free-swimming larva. It has a primitive brain, photoreceptors, a notochord (the precursor to a vertebrate spine), and a tail for locomotion. It moves through the water, responds to light, navigates its environment. Then it finds a suitable surface, anchors itself permanently, and undergoes a dramatic transformation: the larval nervous system — the movement-control ganglion, the sensory structures, the neural machinery for navigating the world — is dramatically reduced and reorganized. The adult sea squirt is a sessile filter feeder. It draws seawater through its body and extracts nutrients. It does not move, pursue, avoid, or choose. A small simplified ganglion remains, suited to the adult's stationary life, but the elaborate prediction-and-navigation machinery of the larva is gone.
 
+![Figure 5.2 — The three life stages of a sea squirt: a free-swimming larva with an eyespot, a simple nervous system, and a tail for movement; settlement onto a surface; and a sessile filter-feeding adult whose nervous system has been dramatically reduced and reorganized.](../images/ch05/sea_squirt_life.png)
+*Figure 5.2. Brains are expensive. They are most valuable when a body must move, predict, and choose — and are reduced when it no longer needs to.*
+
 The sea squirt makes the point with unusual clarity: **nervous systems evolved for movement and action.** More precisely, they evolved to solve the problem that movement creates. Moving through the world directionally — with a front end that encounters the environment first — requires something sessile organisms do not need: advance information about what is ahead, fast enough to be useful before contact is made.
 
 Bilateral symmetry is where the modulatory chemistry comes online too — dopamine, serotonin, and their relatives, wired into a real signaling system specifically in this lineage (Goulty et al., 2023). In a rough but useful shorthand, grounded in a real theoretical account of dopamine/serotonin opponency (Daw, Kakade, & Dayan, 2002): dopamine says *turn toward this* — this cue predicts something worth pursuing. Serotonin says *stand down, alles in Ordnung* — nothing here needs a response right now. Push and pull, approach and hold. Scale that logic up across evolutionary time, into bodies built from millions of specialized cells each running their own job, and a simple push-pull signal isn't enough anymore — you need a working model of the world to act on within real constraints. And you need it to predict, not just react, because a system that can act on what's about to happen beats one that can only respond to what's already hit.
@@ -90,6 +97,9 @@ Attention is the filter. Consciousness is the model the filter feeds.
 
 You can direct attention without consciously monitoring everything your brain does with it — skilled, automated performance of a well-practiced task (typing, playing an instrument, driving a familiar route) involves attention in the sense of directed mental resources, but runs with minimal conscious deliberation precisely because it is well-practiced. And you can be conscious of things outside your current attentional focus — the dull ache you were not thinking about until this sentence mentioned it, the ambient sounds of the room you had not been tracking. The two are related but separable: attention helps determine what enters the conscious model, but they are distinct processes that can come apart.
 
+![Figure 5.3 — Attention shown as a filter selecting which signals from the environment pass through to become part of the conscious model, illustrating that attention and consciousness are related but distinct processes.](../images/ch05/Attention_filter.png)
+*Figure 5.3. Attention is the filter; consciousness is the model the filter feeds.*
+
 *Diagnostic question:* A musician gives a technically flawless performance of a piece she has played hundreds of times, monitoring her own tone and adjusting continuously. Is she fully conscious of each individual finger movement? Not necessarily — automated motor performance runs with minimal conscious monitoring, which is part of what makes it fast and fluent. Attention is engaged; explicit conscious deliberation about each movement has largely stepped back.
 
 The clearest evidence that attention and consciousness are distinct is **inattentional blindness** — the failure to consciously perceive a clearly visible object simply because attention is occupied elsewhere. In a now-classic demonstration, participants asked to count basketball passes in a video while attending closely to one team failed, roughly half the time, to notice a person in a gorilla costume walking directly through the scene (Simons & Chabris, 1999). Their visual systems were functioning normally; the gorilla was processed at the retinal level and beyond. It simply never entered the conscious model, because the attentional resources that would have flagged it as salient were occupied with the counting task.
@@ -114,13 +124,16 @@ Here is the core mechanism of the model:
 4. The model updates to reduce future prediction error.
 5. Action is selected based on the updated model.
 
+![Figure 5.4 — A five-step cycle: the brain predicts what will happen, sensory input arrives, a mismatch produces a prediction error, the model updates, and action is adjusted accordingly — then the cycle repeats.](../images/ch05/the_prediction_model.png)
+*Figure 5.4. The prediction error loop: prediction, sensory input, prediction error, model update, and action, running continuously.*
+
 This loop runs continuously, at every level of the cortical hierarchy. Higher cortical areas send predictions *downward* to lower areas; lower areas send prediction errors *upward*. The implication — and this is the critical insight — is that what reaches conscious awareness corresponds more to the top-down prediction than to the bottom-up sensory signal. Most sensory input, most of the time, matches the prediction well enough that no significant update is required, and it never reaches conscious awareness. You are not conscious of the constant ambient hum of a running appliance until it stops — at which point the sudden prediction error immediately enters awareness. The signal that flags itself for conscious attention is not the expected one; it is the unexpected one.
 
 This loop does more than filter: it constructs. A system that generates predictions about incoming sensory content and updates them from error signals is also a system that fills in gaps. Your visual field contains a genuine hole — the blind spot where the optic nerve exits the retina — yet you perceive no gap, because the prediction machinery fills it from surrounding context (Kogo & Trengove, 2015). Illusory contours appear where none exist: in the Kanizsa triangle, three partial circles with wedges removed produce a vivid white triangle that isn't there, because "triangle" is the prediction that minimizes error. The hollow mask illusion is even more instructive: a hollow face lit from behind should appear concave based on the available depth cues, but your brain's prior expectation that faces are convex is so strong that the prediction overrides the sensory evidence entirely — you see a convex face popping out, even knowing it doesn't. The error signal is correct; the prediction wins anyway (Rao & Ballard, 1999). Visual illusions are not failures of the perceptual system; they are the perceptual system doing exactly what it is designed to do, prioritizing robust prior predictions over ambiguous sensory data.
 
 The same gap-filling tendency extends beyond vision. A sentence with a mis—— word is comprehensible because the model completes it from context. Social inference — understanding what someone means by what they didn't quite say — requires generating predictions about likely intent from a sparse acoustic signal. Metaphor works because the prediction machinery finds structural mappings across domains with no shared sensory surface: "argument is war" because the brain recognizes relational structure that the two domains share even though they look nothing alike (Lakoff & Johnson, 1980). These are not separate cognitive faculties layered on top of perception; they are the same prediction-and-correction machinery running at higher levels of the cortical hierarchy (Clark, 2016). A brief caveat: gap-filling and structural inference are not uniquely human. Corvids solve novel problems by modeling hidden states; great apes pass false-belief tasks. What extends further in humans is the depth of the hierarchy and its reach into language and abstract symbol systems — but the machinery itself is evolutionarily old.
 
-None of this is decorative — it's the same machinery showing up under different names in different chapters. Chapter 3 introduced the brain as a centralized action-selection system; Chapter 4 showed perception as prediction constrained by sensory error; Chapter 7 will show learning as the same process again, a model updating itself from prediction error, just measured in outcomes instead of sensory mismatch. Consciousness, in this framework, is what happens when that same predictive model becomes globally available for flexible, deliberate action, rather than running as a fast, local, automatic shortcut. That fast/slow split is also where Chapter 8's System 1 and System 2 thinking comes from — System 1 is the predictive model running cheap and fast, right often enough to be worth the shortcut; System 2 is the same model forced to slow down and check its own prediction against the evidence. It doesn't always bother to check.
+None of this is decorative — it's the same machinery showing up under different names in different chapters. Chapter 3 introduced the brain as a centralized action-selection system; Chapter 4 showed perception as prediction constrained by sensory error; Chapter 7 will show learning as the same process again, a model updating itself from prediction error, just measured in outcomes instead of sensory mismatch. Consciousness, in this framework, is what happens when that same predictive model becomes globally available for flexible, deliberate action, rather than running as a fast, local, automatic shortcut. That fast/slow split is also where Chapter 9's System 1 and System 2 thinking comes from — System 1 is the predictive model running cheap and fast, right often enough to be worth the shortcut; System 2 is the same model forced to slow down and check its own prediction against the evidence. It doesn't always bother to check.
 
 ### The Controlled Hallucination
 
@@ -128,11 +141,22 @@ The neuroscientist Anil Seth has extended this logic to consciousness itself in 
 
 **Charles Bonnet syndrome** is the demonstration. People with significant vision loss — no psychiatric illness, no cognitive impairment, just degraded sensory input — sometimes experience vivid, detailed visual hallucinations: faces, animals, geometric patterns, elaborate scenes. The condition affects an estimated 10–30 percent of visually impaired adults; it is historically underreported because patients fear being thought psychotic (Hamedani & Pelak, 2021). The visual prediction machinery, deprived of its normal stream of error signals to correct against, continues generating predictive content. The result is perceptual experience that is indistinguishable from the inside from ordinary vision — except that nothing corresponding to it exists. The model is running; the correction mechanism has nothing to work with.
 
+![Figure 5.5 — Reduced visual input from conditions like cataracts, macular degeneration, or glaucoma leads to uncorrected predictions in the brain's visual model, producing vivid hallucinations even though the person knows they are not real.](../images/ch05/charles_bonnet.png)
+*Figure 5.5. Charles Bonnet syndrome: when sensory input is degraded, the brain's predictive model keeps generating perceptual content with little error signal left to correct it (Hamedani & Pelak, 2021).*
+
 Psychedelic drug states involve the prediction machinery losing its purchase on error signals through a different mechanism, as Section 3 will show. Chapter 6 will return to dreams as another case where the brain generates experience with reduced constraint from external input. Charles Bonnet syndrome, dreams, and drug-induced hallucinations are not three separate strange things; they are three variations on what happens when a prediction machine loses constraint from reality.
 
 > **Think About It:** A person with Charles Bonnet syndrome sees a vivid crowd of people in an empty room. She knows no one is there, yet she cannot make the hallucination stop. Using the predictive model framework, explain why: (a) the hallucination is occurring despite intact cognition, and (b) knowing it is not real does not make it go away.
 
-> **Think About It:** The brain integrates sensory information over a brief time window and "postdicts" — it reconstructs the most plausible sequence of events rather than registering them as they occur in real time. What does this suggest about whether conscious experience is simultaneous with the events it represents?
+The same constructive process applies to timing, not just content. When a stationary flash and a moving object appear in the same location at the same instant, observers reliably perceive the moving object as further along than the flash — the flash-lag effect. Eagleman and Sejnowski (2000) argued that this happens because visual awareness is **postdictive**: rather than registering position in real time, the brain waits on the order of tens of milliseconds after an event, integrates what happens in that window, and only then settles on a percept — using information that arrives slightly after the fact to construct what seemed to happen. This specific account is contested — Patel, Ogmen, Bedell, and Sampath (2000) proposed instead that the effect reflects differential processing latency between moving and flashed stimuli, not a genuine postdictive window, and the debate over which mechanism is doing the work is not fully settled. What both sides agree on is the broader point this chapter has been building toward: what you experience as instantaneous, continuous awareness is assembled with a short delay, not a live transcript of events as they happen.
+
+> **Think About It:** If conscious perception is assembled with a short delay rather than experienced in true real time, what does this imply about the reliability of eyewitness reports on the precise order of fast, closely spaced events — for instance, who moved first in a physical altercation?
+
+#### AI Connection: Fluent Hallucination Without a World to Check Against
+
+The field's own term for confident, plausible-sounding AI output that is not grounded in fact is **hallucination** (Ji et al., 2023) — and the label is not a loose borrowing. A large language model generates the statistically most probable next piece of text given its training data and the current context: a prediction, continuously produced, the same way this chapter has described perception as continuously produced prediction. What it lacks is anything resembling a stream of sensory error signal arriving in real time to check that prediction against. Its "confidence" is a function of how well the output fits patterns learned during training, not how well it matches the world outside the text.
+
+**But the analogy breaks in a place that matters.** Charles Bonnet syndrome and psychedelic states are cases of a system that ordinarily has a channel of error correction losing access to it — the visually impaired patient once had, and no longer has, a rich stream of retinal input constraining the model's predictions. A language model was never coupled to the world it describes in the first place; there was no error-correction channel to lose. Seth's (2021) "controlled hallucination" account works for human perception because the hallucination is normally controlled by something — sensory contact with reality. Calling AI output "hallucination" borrows the vivid half of that phrase without the mechanism that makes the human case interesting: nothing was disrupted, because nothing was ever checking in the first place.
 
 ---
 
@@ -144,8 +168,8 @@ The case for any account of a complex system becomes stronger when systematic pe
 
 Lesion studies ask what's lost when a part of the system is damaged — Chapter 3 leaned on that logic more than once. Try writing that protocol for a human ethics board, though, and watch how fast the meeting ends. Neurons run on electrochemical signaling, so the same question can be asked chemically instead: perturb a neurotransmitter system and watch what fails.
 
-![Figure 5.1 — Two broadcast neuromodulatory systems (Dopamine+Norepinephrine, Serotonin/5-HT2A) shown as point-source projections from a single brainstem/midbrain nucleus to their major targets, alongside three locally-acting systems (GABA, Endocannabinoids, Opioids) shown as distributed callout boxes without a single point of origin.](../images/ch05/fig_neuromodulatory_systems_section3.png)
-*Figure 5.1. The five neurotransmitter/receptor systems this section covers, and what breaks in the conscious model when each one is pharmacologically disrupted.*
+![Figure 5.6 — Two broadcast neuromodulatory systems (Dopamine+Norepinephrine, Serotonin/5-HT2A) shown as point-source projections from a single brainstem/midbrain nucleus to their major targets, alongside three locally-acting systems (GABA, Endocannabinoids, Opioids) shown as distributed callout boxes without a single point of origin.](../images/ch05/fig_neuromodulatory_systems_section3.png)
+*Figure 5.6. The five neurotransmitter/receptor systems this section covers, and what breaks in the conscious model when each one is pharmacologically disrupted.*
 
 ### GABA System → Depressants
 
@@ -167,7 +191,13 @@ What this reveals: the GABA system is not simply reducing arousal as a side effe
 
 A persistent misconception worth correcting directly: dopamine is often called the brain's "pleasure chemical," implying stimulant drugs simply produce pleasure. The research picture is more precise. Dopamine neurons in the reward circuit fire most strongly not when a reward is received, but when a reward is *better than expected* — and are suppressed when an expected reward fails to arrive. This is **reward prediction error**: dopamine encodes the discrepancy between the model's prediction and the actual outcome, not the reward itself (Schultz, Dayan, & Montague, 1997).
 
+![Figure 5.7 — Two scenarios: getting more than expected produces a burst of dopamine release and a "this is good, do it again" learning signal, while getting less than expected produces a drop in dopamine and a "not as good, adjust next time" signal.](../images/ch05/Dopamine_1.png)
+*Figure 5.7. Dopamine tracks the gap between expected and actual outcomes — not the outcome itself.*
+
 Dopamine doesn't spike when you get the reward — it spikes when something more important than predicted just happened, and that signal drives the behavior needed to act on it, not just flags it. A light comes on signaling a reward is available; the model updates, and dopamine gets the organism moving toward it. Same push as the amygdala's "turn toward this" from earlier in this chapter — the engine behind pursuit, not a reward handed out after the fact. It's also why methylphenidate (Ritalin) treats ADHD: not by calming the brain down, but by strengthening the motivational signal that makes a task feel worth doing, sharpening focus by making the goal-relevant cue matter more (Sapolsky, 2011). Chapter 7 opens the full mechanism, including why uncertainty itself — not just reward — is what makes that engine run hardest. Worth watching now, before Chapter 7: Sapolsky's original public lecture, *Dopamine Jackpot!* (2011) — it's where this whole framing comes from, and it will make Chapter 7's conditioning material click before you even get there.
+
+![Figure 5.8 — The classic reward-prediction-error paradigm: an unexpected reward produces a strong dopamine burst; once a cue reliably predicts the reward, dopamine shifts to firing at the cue; a fully expected reward produces little response; and an expected-but-omitted reward produces a dip below baseline.](../images/ch05/dopamine_error.png)
+*Figure 5.8. Reward prediction error: dopamine neurons learn to fire at the predictive cue rather than at the reward itself, and dip below baseline when an expected reward fails to appear (Schultz, Dayan, & Montague, 1997).*
 
 Stimulant drugs that flood this system produce a state in which the salience signal runs continuously at high intensity — everything seems more significant, more worth pursuing, more urgently demanding attention and action than it actually is. The model's salience-weighting system is not broken; it is running far too hot, decoupled from actual outcomes in the environment.
 
@@ -181,7 +211,7 @@ In the predictive processing framework, psychedelics effectively flatten the bra
 
 **What specifically breaks: the self-model.** The experience of being a bounded, continuous self persisting through time depends on the predictive model maintaining a stable representation of "the entity doing the predicting." When 5-HT2A agonism destabilizes the confidence of that prediction, the self-boundary can loosen or dissolve — the "ego dissolution" reported in higher-dose psychedelic experiences. This is also the proposed mechanism behind psychedelic-assisted therapy research: rigidly maladaptive, self-referential patterns may be more amenable to revision when the precision-weighting that normally locks them in place is temporarily reduced.
 
-[VOICE] — Seth pays off here. When the controlled hallucination loses its controller, you get an uncontrolled one. Your line.
+Every perception you've ever had was already a controlled hallucination — a prediction the brain builds and keeps tightly reined in by sensory error signals, so tightly that it never feels like a construction at all. Psychedelics don't create some new, alien kind of experience; they loosen the rein. Turn down how much the brain trusts its own error signals, and the same predicting-and-constructing machinery that quietly builds your ordinary perception runs looser, less checked, more free to wander. That's why what's reported isn't a different kind of consciousness — it's this one, with the leash taken off.
 
 Two specific pharmacological points worth making:
 
@@ -197,7 +227,7 @@ What this reveals: the 5-HT2A system contributes to **precision-weighting** in t
 
 The characteristic effects of cannabis intoxication — altered time perception (subjective slowing or stretching), impaired short-term memory formation, heightened salience of otherwise unremarkable stimuli, increased appetite — are consistent with a system that normally tags which signals should be stored, how they should be temporally ordered, and how much moment-to-moment relevance should be assigned to ongoing experience, running at altered intensity.
 
-[VOICE] — the munchies as the endocannabinoid relevance system misfiring: everything in the kitchen now seems important. The system that normally tells you which things in your environment are genuinely worth attending to is producing salience without the usual selectivity. Your framing.
+This is the munchies, mechanistically. The system that normally files most of your kitchen under "not currently relevant" has stopped filing anything under "not currently relevant." A single stale cracker becomes a genuine event. It's not that you're suddenly hungrier — it's that the system deciding what deserves your attention has lost its ability to say no to anything.
 
 A pharmacological note on classification: cannabis belongs to its own pharmacological category — **cannabinoids** — and is meaningfully distinct from classic psychedelics in mechanism, receptor system, and effects profile. Lumping them as "hallucinogens" loses exactly the mechanistic distinction this section depends on: CB1 disruption produces different specific failures in the model than 5-HT2A disruption does.
 
@@ -235,7 +265,7 @@ What it does not explain is what David Chalmers (1995) called the **hard problem
 
 That question is not resolved by anything in this chapter. It is the central unsolved problem in the science of consciousness — not a philosophical nicety but a genuine scientific gap. The framework this chapter uses is honest about what it can and cannot explain. What it can explain is extensive. What remains is genuinely open.
 
-[VOICE] — your honest close. "That's the frame. What consciousness IS is still debated." Your delivery.
+That's the frame. It does real work — but what consciousness actually *is* remains genuinely open, and it will likely stay that way past this course, this book, and possibly your lifetime. That's not this chapter failing to close the loop. That's just an honest report of where the science currently stands.
 
 ---
 
@@ -418,6 +448,8 @@ d) the problem of distinguishing conscious from unconscious processing in clinic
 
 **Predictive model (of consciousness)** — The framework used in this course: the brain continuously generates predictions about the state of the world and updates them based on sensory mismatch; consciousness corresponds to the model, not to a direct readout of reality.
 
+**Postdiction** — The proposal that conscious perception of an event's timing and position is assembled with a short delay (using information from shortly after the event) rather than registered as it happens; illustrated by the flash-lag effect, though the specific mechanism remains debated (Eagleman & Sejnowski, 2000; Patel et al., 2000).
+
 **Reward prediction error** — The dopaminergic signal encoding the gap between expected and actual reward outcomes; fires maximally when outcomes exceed predictions, is suppressed when expected rewards fail to appear; the mechanism behind reinforcement learning and the target of stimulant drugs.
 
 **Selective attention** — The process by which the brain actively amplifies certain signals and suppresses others, determining which processed information reaches the level of conscious, reportable experience; distinct from consciousness itself.
@@ -461,6 +493,8 @@ Daw, N. D., Kakade, S., & Dayan, P. (2002). Opponent interactions between seroto
 
 de Gelder, B., Tamietto, M., van Boxtel, G., Goebel, R., Sahraie, A., van den Stock, J., … Pegna, A. (2008). Intact navigation skills after bilateral loss of striate cortex. *Current Biology, 18*(24), R1128–R1129.
 
+Eagleman, D. M., & Sejnowski, T. J. (2000). Motion integration and postdiction in visual awareness. *Science, 287*(5460), 2036–2038.
+
 Friston, K. J., Wiese, W., & Hobson, J. A. (2017). Sentience and the predictive mind. In T. Metzinger & W. Wiese (Eds.), *Philosophy and Predictive Processing.* MIND Group.
 
 Gorka, S. M., Fitzgerald, D. A., King, A. C., & Phan, K. L. (2013). Alcohol attenuates amygdala-frontal connectivity during processing social signals in heavy social drinkers: A preliminary pharmaco-fMRI study. *Psychopharmacology, 229*(1), 141–154.
@@ -469,11 +503,15 @@ Goulty, M., Botton-Amiot, G., Rosato, E., Sprecher, S. G., & Feuda, R. (2023). T
 
 Hamedani, A. G., & Pelak, V. S. (2021). Nonpsychotic hallucinations and impaired vision: The Charles Bonnet syndrome. *Current Treatment Options in Neurology, 23*(9), 27. https://pmc.ncbi.nlm.nih.gov/articles/PMC8405382/
 
+Ji, Z., Lee, N., Frieske, R., Yu, T., Su, D., Xu, Y., Ishii, E., Bang, Y. J., Madotto, A., & Fung, P. (2023). Survey of hallucination in natural language generation. *ACM Computing Surveys, 55*(12), Article 248.
+
 Kogo, N., & Trengove, C. (2015). Predictive coding: A possible explanation of filling-in at the blind spot. *Frontiers in Psychology, 6*, 358.
 
 Lakoff, G., & Johnson, M. (1980). *Metaphors we live by.* University of Chicago Press.
 
 Moray, N. (1959). Attention in dichotic listening: Affective cues and the influence of instructions. *Quarterly Journal of Experimental Psychology, 11*(1), 56–60.
+
+Patel, S. S., Ogmen, H., Bedell, H. E., & Sampath, V. (2000). Flash-lag effect: Differential latency, not postdiction. *Science, 290*(5494), 1051.
 
 Pessoa, L. (2005). To what extent are emotional visual stimuli processed without attention and awareness? *Current Opinion in Neurobiology, 15*(2), 188–196.
 
