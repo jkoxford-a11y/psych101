@@ -251,12 +251,14 @@ Demo sketch: Play through a night's sleep on a hypnogram. Click any stage to see
 
 ## Chapter 6 — Learning
 
+> **Chapter-numbering flag (Session 65):** Under the locked 13-chapter map (HANDOFF Session 60–61), Learning is now **Chapter 7**, not 6 — Ch. 6 is Sleep. This file was not part of the Session 61 renumbering sweep (same gap `source/visuals-inventory.md` had until Session 62) and still uses the old numbering throughout. Not fixed here — flagging rather than doing an unreviewed file-wide renumber. **Separately, and more concretely:** the Classical Conditioning Simulator below is **already built** (`docs/labs/ch06/classical-conditioning.html` exists on disk, confirmed Session 65), so its status below is corrected from "Planned" to "Exists." It sits in a folder literally named `ch06`, which now collides with the Sleep chapter's number, and **it is not linked from the current `ch07-learning.md` draft at all** (checked Session 65 — no `docs/labs` reference anywhere in the file). Two open decisions for Jon: (1) rename the `docs/labs/ch06/` folder to `ch07/` for consistency with the locked map (and update `docs/labs/index.html`'s link accordingly), or leave it; (2) add the actual lab link into `ch07-learning.md` (natural spot: end of Section 1 or Section 2, where classical/operant conditioning is taught) — currently a real gap, not a placeholder.
+
 ### Classical Conditioning Simulator 👥 ★ Priority #1
-Status: Planned
+Status: Exists (built and linked from `docs/labs/index.html`; not yet linked from the chapter itself — see flag above)
 Type: simulation
 Core concepts: US, UR, CS, CR, acquisition, extinction, spontaneous recovery, generalization, discrimination
 Build priority: 1
-Lab path: `docs/labs/ch06/classical-conditioning.html`
+Lab path: `docs/labs/ch06/classical-conditioning.html` (folder name pending Jon's renumbering decision, see flag above)
 
 **Classroom version 👥:** Instructor runs demo on projector. Students predict whether CR will appear at each phase (pre-acquisition, mid-acquisition, after extinction). Class votes before each reveal. Spontaneous recovery is the key moment — most students predict it won't happen; its appearance is the pedagogical punch.
 
@@ -295,6 +297,14 @@ Type: animation
 Core concepts: prediction error (Schultz 1998), dopamine, Sapolsky framing
 Demo sketch: Three trial types animated across learning trials. Student watches the dopamine signal migrate from reward delivery to CS onset.
 Notes: Related to Ch3 dopamine mixing board; different framing (learning vs. neuromodulation). May share underlying widget.
+
+**Session 65 cross-check:** the spine re-alignment work order (`ch07-learning_SPINE-REALIGNMENT_TEMP.md`, now deleted) independently proposed a "Four-Contingencies Classifier" and a "Dopamine-Shift Visualizer" for this chapter — both already covered by the "Reinforcement vs. Punishment Classifier" and "Prediction Error / Dopamine Animator" entries directly above. No new demo entries added; recorded here so the two specs aren't duplicated later. The work order's recommended build order was: Reinforcement/Punishment Classifier first (cheap, reuses the Ch2 classifier scaffold), Classical Conditioning Simulator second — but the Classical Conditioning Simulator is the one that's actually already built (see flag above), so the real remaining build gap is the two Draftable operant items, not the flagship.
+
+### Video candidates (Gemini-style, 8–20s, 16:9, concept-first, no in-video text) — logged Session 65, not yet built
+1. **Extinction is not erasure** — fresh paint over old paint; under "stress" the old color bleeds back through. (~12s)
+2. **Dopamine shifts to the cue** — the signal spike visibly migrating from the reward moment to the earlier predictive cue across repeats. (~12s)
+3. **Variable-ratio pull** — an unpredictable payoff sustaining steady responding where a predictable one lapses. (~10s)
+4. **Preparedness** — taste + illness snapping together instantly; light + illness refusing to bond. (~10s)
 
 ---
 
