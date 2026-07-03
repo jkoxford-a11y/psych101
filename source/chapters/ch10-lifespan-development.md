@@ -1,5 +1,5 @@
-<!-- ch09-lifespan-development.md -->
-<!-- Chapter 9: Lifespan Development -->
+<!-- ch10-lifespan-development.md -->
+<!-- Chapter 10: Lifespan Development -->
 <!-- Version: 0.3 — editorial pass: learning objectives 6-7 rewritten; "none of us remembers" softened; teratogen/alcohol "no safe window" language added (Jones & Smith 1973); Genie paragraph de-decisive; core knowledge "not learned from experience" → "initial biases/starting points"; Wynn "number" → "quantity tracking"; AI/ZPD assimilation language replaced with "schema unchanged" framing; DEV-013 artifact removed; "deep evolutionary roots" softened in Warneken/Tomasello paragraph; retrieval prompt sharpened; Key Terms expanded (fluid/crystallized intelligence, identity formation, moral motivation, moral reasoning, emerging adulthood); References expanded (Baumrind 1966, Casey et al. 2008, Horn & Cattell 1967, Huttenlocher 1979, Jones & Smith 1973, van IJzendoorn & Kroonenberg 1988, Charles & Carstensen 2010); Lucca et al. author order corrected (Yuen 2nd, not Capelier-Mourguy) -->
 <!-- Concepts covered: DEV-001 through DEV-014 (14 concepts) -->
 <!-- DEV-006 (Vygotsky/ZPD) sourced from Noba: Siegler, R. (2026). Cognitive development in childhood. In R. Biswas-Diener & E. Diener (Eds.), Noba textbook series: Psychology. Champaign, IL: DEF publishers. http://noba.to/8uv4fn9h -->
@@ -7,7 +7,7 @@
 <!-- Citations independently verified via web search before inclusion -->
 <!-- Body word count target: 3,500–5,000 words -->
 
-# Chapter 9: Lifespan Development
+# Chapter 10: Lifespan Development
 
 ---
 
@@ -23,7 +23,7 @@ This matters beyond being an interesting fact. If children's thinking is qualita
 
 ## Where This Fits
 
-Development is the thread that connects everything else in this book. The biological machinery introduced in Chapter 3 builds itself out over years. The learning mechanisms from Chapter 6 shape behavior from birth onward. The memory systems covered in Chapter 7 are not fully online at birth — the hippocampal connections that support explicit autobiographical memory complete their development only after infancy, which is one reason most adults have few reliable autobiographical memories from the first years of life. And the social behavior covered in Chapter 10 has its roots in the very first attachment relationships of infancy. This chapter traces the arc of that construction project from before birth through late adulthood, organizing the story around three recurring questions: How do nature and nurture interact? Does development proceed in discrete stages or gradually? And which aspects of who we are remain stable across the lifespan?
+Development is the thread that connects everything else in this book. The biological machinery introduced in Chapter 3 builds itself out over years. The learning mechanisms from Chapter 7 shape behavior from birth onward. The memory systems covered in Chapter 8 are not fully online at birth — the hippocampal connections that support explicit autobiographical memory complete their development only after infancy, which is one reason most adults have few reliable autobiographical memories from the first years of life. And the social behavior covered in Chapter 11 has its roots in the very first attachment relationships of infancy. This chapter traces the arc of that construction project from before birth through late adulthood, organizing the story around three recurring questions: How do nature and nurture interact? Does development proceed in discrete stages or gradually? And which aspects of who we are remain stable across the lifespan?
 
 ---
 
@@ -120,7 +120,7 @@ Vygotsky also argued that language and thought are deeply intertwined in ways Pi
 
 The Noba module "Cognitive Development in Childhood" (Siegler, 2026) summarizes the relationship between Piaget and Vygotsky as follows: both saw the child as an active agent in her own development, but Piaget located the engine of development primarily in the child's individual encounters with the physical world, while Vygotsky located it in the child's social interactions with more capable others. Both perspectives have received substantial empirical support, and most contemporary developmental psychologists treat them as complementary rather than competing.
 
-> **AI Connection:** Vygotsky's ZPD has become a popular framework for thinking about AI-assisted learning — if AI can meet a student in the zone, providing just the right amount of support to make a difficult task achievable, it could be a powerful scaffold. The limitation is important to name: effective scaffolding requires calibration. A scaffold set too low leaves the learner in territory they could reach alone; a scaffold set too high skips the zone entirely. The danger with AI tutoring is the second case — when an AI completes the essay or produces the proof steps, the performance is completed but the learner's own schema remains unchanged. Effective scaffolding should leave the student more capable after the support is removed; AI-generated output that skips the zone entirely can produce the appearance of learning without the underlying development. Chapter 8 made a related point: statistical learning in infants and in large language models share a surface resemblance, but the infant's learning is embedded in a social context that actively calibrates difficulty — the caregiver who raises vocabulary complexity gradually as comprehension grows. A language model provides responses calibrated to the prompt, not to the learner's ZPD.
+> **AI Connection:** Vygotsky's ZPD has become a popular framework for thinking about AI-assisted learning — if AI can meet a student in the zone, providing just the right amount of support to make a difficult task achievable, it could be a powerful scaffold. The limitation is important to name: effective scaffolding requires calibration. A scaffold set too low leaves the learner in territory they could reach alone; a scaffold set too high skips the zone entirely. The danger with AI tutoring is the second case — when an AI completes the essay or produces the proof steps, the performance is completed but the learner's own schema remains unchanged. Effective scaffolding should leave the student more capable after the support is removed; AI-generated output that skips the zone entirely can produce the appearance of learning without the underlying development. Chapter 9 made a related point: statistical learning in infants and in large language models share a surface resemblance, but the infant's learning is embedded in a social context that actively calibrates difficulty — the caregiver who raises vocabulary complexity gradually as comprehension grows. A language model provides responses calibrated to the prompt, not to the learner's ZPD.
 
 *Stop and retrieve: How does Vygotsky's view of development differ from Piaget's? What role does the ZPD play in each?*
 
@@ -216,7 +216,7 @@ Erikson's fifth stage, **identity versus role confusion**, is the psychosocial f
 
 Physical development peaks in early adulthood. Strength, reaction time, and sensory acuity generally reach their maximum in the early-to-mid 20s and show gradual decline thereafter, with the pace accelerating in late adulthood. These are averages, however, and individual variation is large; health behaviors (exercise, sleep, nutrition) moderate the trajectory substantially.
 
-The distinction between **fluid intelligence** and **crystallized intelligence** — introduced in Chapter 8 in the context of IQ (Horn & Cattell, 1967) — maps directly onto patterns of adult cognitive aging. Fluid intelligence, which involves novel problem solving, working-memory capacity, and processing speed, begins a slow decline in the 30s and accelerates after 60. Crystallized intelligence, which involves accumulated knowledge, verbal ability, and expertise, continues to grow or remain stable well into late adulthood. An older adult who struggles with a novel logic puzzle (fluid) may vastly outperform a younger adult on a task requiring deep domain knowledge or sophisticated verbal reasoning (crystallized). This is the cognitive trade-off of aging: speed and flexibility decline, wisdom and knowledge accumulate.
+The distinction between **fluid intelligence** and **crystallized intelligence** — introduced in Chapter 9 in the context of IQ (Horn & Cattell, 1967) — maps directly onto patterns of adult cognitive aging. Fluid intelligence, which involves novel problem solving, working-memory capacity, and processing speed, begins a slow decline in the 30s and accelerates after 60. Crystallized intelligence, which involves accumulated knowledge, verbal ability, and expertise, continues to grow or remain stable well into late adulthood. An older adult who struggles with a novel logic puzzle (fluid) may vastly outperform a younger adult on a task requiring deep domain knowledge or sophisticated verbal reasoning (crystallized). This is the cognitive trade-off of aging: speed and flexibility decline, wisdom and knowledge accumulate.
 
 Memory shows a parallel pattern. Explicit memory for recent events (especially free recall) is more vulnerable to aging than recognition memory or long-term autobiographical memory for well-consolidated events. The subjective experience of forgetting names and recent details that many adults notice in midlife reflects real but modest decline in working-memory function — not the precursor to dementia that many fear.
 
@@ -241,13 +241,13 @@ Development does not stop at adolescence — the Eriksonian insight that holds u
 | Topic in This Chapter | Connects To | Why |
 |---|---|---|
 | Synaptogenesis and pruning | Ch. 3 (Biological Bases) | Same mechanisms introduced for neuron structure now applied to brain development |
-| Sensitive periods for language | Ch. 8 (Thinking, Language & Intelligence) | Connects Chomsky's language acquisition device and critical period hypothesis to developmental neuroscience |
-| Attachment and internal working models | Ch. 10 (Social Psychology) | Mental models of social relationships underlie social perception, trust, and in-group/out-group behavior |
-| Object permanence and theory of mind | Ch. 5 (States of Consciousness) | ToM is a prerequisite for understanding that mental states (beliefs, desires) can differ from external reality |
+| Sensitive periods for language | Ch. 9 (Thinking, Language & Intelligence) | Connects Chomsky's language acquisition device and critical period hypothesis to developmental neuroscience |
+| Attachment and internal working models | Ch. 11 (Social Psychology) | Mental models of social relationships underlie social perception, trust, and in-group/out-group behavior |
+| Object permanence and theory of mind | Ch. 5 (Consciousness) | ToM is a prerequisite for understanding that mental states (beliefs, desires) can differ from external reality |
 | Orchid/dandelion and gene-environment interaction | Ch. 3 (Biological Bases) | Differential susceptibility illustrates how the same gene can produce very different phenotypes in different environments |
-| Fluid and crystallized intelligence (aging) | Ch. 8 (Thinking, Language & Intelligence) | Extends the Horn & Cattell distinction introduced there into adult development |
-| Adolescent frontal cortex maturation | Ch. 3 (Biological Bases); Ch. 5 (States of Consciousness) | PFC maturation, first introduced for executive function, now applied to impulse control and risk-taking |
-| Well-being across adulthood | Ch. 12 (Motivation & Emotion) | Emotional regulation and affective set-points connect to motivation and hedonic adaptation |
+| Fluid and crystallized intelligence (aging) | Ch. 9 (Thinking, Language & Intelligence) | Extends the Horn & Cattell distinction introduced there into adult development |
+| Adolescent frontal cortex maturation | Ch. 3 (Biological Bases); Ch. 5 (Consciousness) | PFC maturation, first introduced for executive function, now applied to impulse control and risk-taking |
+| Well-being across adulthood | Ch. 12 (Emotion, Stress & Coping) | Emotional regulation and affective set-points connect to motivation and hedonic adaptation |
 
 ---
 

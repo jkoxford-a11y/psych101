@@ -96,6 +96,18 @@ body {
   margin: 1.25rem 0 0.4rem 0.5rem;
 }
 
+.sidebar nav .pillar-note {
+  padding: 0.4rem 0.7rem;
+  font-size: 0.92rem;
+  color: var(--color-muted);
+}
+
+.toc-pending {
+  font-size: 0.82rem;
+  font-style: italic;
+  color: var(--color-muted);
+}
+
 /* ── Typography ── */
 h1 {
   font-family: var(--font-ui);

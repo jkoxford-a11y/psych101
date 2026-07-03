@@ -1,4 +1,4 @@
-# Chapter 14: Psychological Disorders & Therapy
+# Chapter 13: Psychological Disorders & Therapy
 
 <!-- v0.1 — Full first draft. All 12 DIS-* concepts covered (verified below).
      Copyright: All concepts are canonical-common-knowledge with instructor-original origin
@@ -6,7 +6,8 @@
      Noba Project server was inaccessible this session (client-rendered pages timed out).
      DIS-009 drafted from Rogers's own primary sources (Rogers, 1951, 1957) and the
      Flückiger et al. (2018) meta-analysis already verified in Chapter 11, following the
-     established deviation precedent (Chapters 4, 6, 9, 11) — original prose from verified
+     established deviation precedent (Chapters 4, 7, 10, 11 — renumbered from the original
+     4, 6, 9, 11 after the Ch5/6 split) — original prose from verified
      primary literature when no Noba module can be accessed. No wording borrowed from
      Wade, King, or Myers.
 
@@ -55,7 +56,7 @@ When psychologist David Rosenhan (1973) sent healthy volunteers to psychiatric h
 
 ## Where This Fits
 
-This chapter draws on almost every chapter in this book. The biological bases of behavior (Chapter 3) underlie every disorder here — neural circuits, neurotransmitters, and genetic vulnerabilities shape risk. Learning principles (Chapter 6) explain how phobias develop and why exposure therapy works. Memory and cognition (Chapters 7–8) illuminate PTSD, depressive schemas, and the heuristic failures that affect clinical diagnosis. The personality system (Chapter 11) is continuous with personality disorders, not separate from them. And the therapeutic alliance — the relationship between therapist and client — is one of the most robustly replicated predictors of treatment outcome in all of psychology (Flückiger et al., 2018).
+This chapter draws on almost every chapter in this book. The biological bases of behavior (Chapter 3) underlie every disorder here — neural circuits, neurotransmitters, and genetic vulnerabilities shape risk. Learning principles (Chapter 7) explain how phobias develop and why exposure therapy works. Memory and cognition (Chapters 8–9) illuminate PTSD, depressive schemas, and the heuristic failures that affect clinical diagnosis. The personality system (Chapter 11) is continuous with personality disorders, not separate from them. And the therapeutic alliance — the relationship between therapist and client — is one of the most robustly replicated predictors of treatment outcome in all of psychology (Flückiger et al., 2018).
 
 ---
 
@@ -112,7 +113,7 @@ The **biopsychosocial model** adds social context explicitly: biological vulnera
 
 **Rosenhan's interpretation.** He concluded that it is impossible to distinguish the sane from the insane in psychiatric settings — that a diagnostic label, once attached, structures all subsequent perception of the person's behavior. The study contributed directly to the tightening of diagnostic criteria in DSM-III (1980).
 
-**The better-evidenced version of the same point.** Temerlin (1968) ran a cleaner test: clinicians listened to a recorded interview of a demonstrably healthy man, but a confederate authority figure briefly mentioned beforehand that the man "sounded neurotic." Diagnosis rates shifted substantially. This is the same anchoring mechanism from Chapter 8, now in a clinical context — and it does not rest on disputed field notes. Rosenhan's study made the argument famous; Temerlin's gives it a more defensible empirical foundation.
+**The better-evidenced version of the same point.** Temerlin (1968) ran a cleaner test: clinicians listened to a recorded interview of a demonstrably healthy man, but a confederate authority figure briefly mentioned beforehand that the man "sounded neurotic." Diagnosis rates shifted substantially. This is the same anchoring mechanism from Chapter 9, now in a clinical context — and it does not rest on disputed field notes. Rosenhan's study made the argument famous; Temerlin's gives it a more defensible empirical foundation.
 
 ---
 
@@ -124,7 +125,7 @@ A useful distinction: **fear** is a response to a threat that exists *right now*
 
 **Generalized Anxiety Disorder (GAD)** is characterized by persistent, excessive worry across multiple domains — work, health, family, finances — that the person finds difficult to control, accompanied by physical symptoms (muscle tension, fatigue, sleep disruption). The worry is disproportionate to the actual probability or impact of the feared events.
 
-**Specific phobia** involves intense fear of a particular object or situation (heights, spiders, blood, flying) that is out of proportion to actual danger, recognized by the person as excessive, and that leads to avoidance. Phobias develop through classical conditioning (the feared stimulus was paired with a genuinely aversive experience) and are maintained through negative reinforcement: avoidance immediately reduces anxiety, which reinforces the avoidance, which prevents extinction (Chapter 6).
+**Specific phobia** involves intense fear of a particular object or situation (heights, spiders, blood, flying) that is out of proportion to actual danger, recognized by the person as excessive, and that leads to avoidance. Phobias develop through classical conditioning (the feared stimulus was paired with a genuinely aversive experience) and are maintained through negative reinforcement: avoidance immediately reduces anxiety, which reinforces the avoidance, which prevents extinction (Chapter 7).
 
 **Social anxiety disorder** involves intense fear of social situations where one might be scrutinized or humiliated. It is distinct from shyness: it causes significant functional impairment and typically leads to avoidance of professional and social opportunities.
 
@@ -138,11 +139,11 @@ A useful distinction: **fear** is a response to a threat that exists *right now*
 
 **Major Depressive Disorder (MDD)** requires at least five of nine symptoms — including depressed mood or loss of interest/pleasure (*anhedonia*) — for at least two weeks, with significant impairment. Other symptoms include changes in appetite and sleep, fatigue, difficulty concentrating, feelings of worthlessness, and recurrent thoughts of death or suicidal ideation.
 
-Aaron Beck's **cognitive triad of depression** identifies three negative schemas: views of the self (*I am worthless*), the world (*nothing ever goes right*), and the future (*it will always be this way*). These schemas filter incoming information to confirm the negative view — confirmation bias applied to self-evaluation (Chapter 8). Abramson, Seligman, and Teasdale (1978) extended this with a **depressogenic attributional style**: depressed individuals tend to attribute negative events to internal, stable, and global causes.
+Aaron Beck's **cognitive triad of depression** identifies three negative schemas: views of the self (*I am worthless*), the world (*nothing ever goes right*), and the future (*it will always be this way*). These schemas filter incoming information to confirm the negative view — confirmation bias applied to self-evaluation (Chapter 9). Abramson, Seligman, and Teasdale (1978) extended this with a **depressogenic attributional style**: depressed individuals tend to attribute negative events to internal, stable, and global causes.
 
 The older "chemical imbalance" explanation — low serotonin causes depression — does not hold up under scrutiny. A 2022 umbrella review by Moncrieff and colleagues found no consistent evidence for reduced serotonin levels or activity in depression. This does not mean SSRIs are ineffective — the evidence for their efficacy is real — but it means we do not understand their mechanism as well as the popular story implied (Cipriani et al., 2018). Depression almost certainly involves HPA axis dysregulation, inflammatory processes, disrupted sleep, and circuit-level changes in prefrontal-limbic regulation.
 
-The Sapolsky/dopamine framing from Chapter 6 extends here: anhedonia in depression may reflect disrupted reward prediction error signaling. When dopamine anticipation signals fail — when nothing seems worth pursuing in advance — the motivational pull to initiate behavior collapses. This connects the phenomenology of depression (nothing seems worth doing) to disrupted dopaminergic anticipation circuitry in a way a serotonin story alone cannot.
+The Sapolsky/dopamine framing from Chapter 7 extends here: anhedonia in depression may reflect disrupted reward prediction error signaling. When dopamine anticipation signals fail — when nothing seems worth pursuing in advance — the motivational pull to initiate behavior collapses. This connects the phenomenology of depression (nothing seems worth doing) to disrupted dopaminergic anticipation circuitry in a way a serotonin story alone cannot.
 
 **Persistent Depressive Disorder (PDD)**, formerly dysthymia, involves chronically depressed mood lasting at least two years that does not meet full MDD criteria. People with PDD often describe the low mood as simply *how they are* — they have no memory of feeling otherwise.
 
@@ -198,9 +199,9 @@ Neurodevelopmental disorders have onset in the developmental period and involve 
 
 ADHD involves impaired prefrontal executive function — the system that regulates attention, inhibition, and working memory (Chapter 3). The Sapolsky/dopamine connection applies here: dopaminergic circuitry supporting goal-directed behavior and sustained effort appears underactive in ADHD. Stimulant medications (methylphenidate, amphetamine salts) increase dopamine and norepinephrine in prefrontal circuits, improving signal-to-noise for goal-directed attention.
 
-**Autism Spectrum Disorder (ASD)** is characterized by persistent deficits in social communication and social interaction across multiple contexts, alongside restricted, repetitive patterns of behavior, interests, or activities. "Spectrum" is accurate: individuals with ASD vary enormously in intellectual ability, language, and support needs. The core social-communication features include difficulty with the implicit conventions of social interaction and limited understanding of others' mental states — connecting directly to the Theory of Mind findings from Chapter 9 (Baron-Cohen, Leslie, & Frith, 1985).
+**Autism Spectrum Disorder (ASD)** is characterized by persistent deficits in social communication and social interaction across multiple contexts, alongside restricted, repetitive patterns of behavior, interests, or activities. "Spectrum" is accurate: individuals with ASD vary enormously in intellectual ability, language, and support needs. The core social-communication features include difficulty with the implicit conventions of social interaction and limited understanding of others' mental states — connecting directly to the Theory of Mind findings from Chapter 10 (Baron-Cohen, Leslie, & Frith, 1985).
 
-As flagged in Chapter 6: the popular "broken mirror neuron theory of autism" — which proposed that ASD reflects mirror neuron system dysfunction — is not well supported by current evidence. The well-documented finding is difficulty with Theory of Mind tasks. The mechanistic explanation remains contested.
+As flagged in Chapter 7: the popular "broken mirror neuron theory of autism" — which proposed that ASD reflects mirror neuron system dysfunction — is not well supported by current evidence. The well-documented finding is difficulty with Theory of Mind tasks. The mechanistic explanation remains contested.
 
 The origins of ASD appear to lie in prenatal brain development rather than postnatal experience. Postmortem tissue studies have found focal patches of disrupted cortical laminar architecture in prefrontal and temporal regions of individuals with ASD — an organizational failure that can only have occurred during the second trimester, when cortical layers are being established (Stoner et al., 2014). Consistent with this, children later diagnosed with ASD show accelerated brain overgrowth in the first year of life, before behavioral symptoms are detectable (Hazlett et al., 2017). At the synaptic level, Tang et al. (2014) found that cortical neurons in ASD postmortem tissue had significantly more synapses than age-matched controls, suggesting impaired **synaptic pruning** — the process by which microglia eliminate excess connections during development (Chapter 3). Many of the most replicated ASD-associated genetic variants affect proteins in the synaptic scaffolding families (SHANK, NRXN, NLGN) that regulate synapse formation and stability. Fetal active sleep — the in-utero precursor to REM — generates the spontaneous neural activity thought to drive activity-dependent synaptogenesis and circuit refinement; research on neonatal active sleep suggests that disruptions to this system during prenatal development may contribute to the synaptic excess observed in ASD (Blumberg, 2010). This is an active area of investigation, and the full causal chain from prenatal disruption to the specific behavioral profile of ASD remains to be worked out.
 
@@ -234,7 +235,7 @@ Empirical support for the specific mechanism Rogers proposed is modest — non-d
 
 Aaron Beck developed **cognitive therapy** originally for depression (Beck, Rush, Shaw, & Emery, 1979): the therapist helps clients identify automatic negative thoughts, examine the evidence for and against them, and develop more balanced alternatives (**cognitive restructuring**). Albert Ellis developed **Rational Emotive Behavior Therapy (REBT)**, targeting irrational *absolute demands* ("I must be approved of by everyone") and *catastrophizing* ("it would be awful if I failed") (Ellis, 1962).
 
-Behavioral components are powerful in their own right. **Behavioral activation** for depression involves scheduling rewarding activities to break the cycle of withdrawal and low mood. **Exposure therapy** for anxiety involves graduated contact with feared stimuli without the feared consequence, allowing extinction of the conditioned fear response (Chapter 6). **Exposure and Response Prevention (ERP)** for OCD exposes clients to obsessive triggers while preventing the compulsive response, allowing anxiety to rise and naturally subside.
+Behavioral components are powerful in their own right. **Behavioral activation** for depression involves scheduling rewarding activities to break the cycle of withdrawal and low mood. **Exposure therapy** for anxiety involves graduated contact with feared stimuli without the feared consequence, allowing extinction of the conditioned fear response (Chapter 7). **Exposure and Response Prevention (ERP)** for OCD exposes clients to obsessive triggers while preventing the compulsive response, allowing anxiety to rise and naturally subside.
 
 CBT has the strongest empirical evidence base of any psychological treatment for depression, anxiety disorders, OCD, PTSD, eating disorders, and insomnia, with moderate-to-large effect sizes and outcomes that typically maintain after treatment ends (Hofmann et al., 2012).
 
@@ -262,7 +263,7 @@ ECT is used primarily for **severe, treatment-resistant MDD** — cases in which
 
 **The parallel.** AI tools are increasingly applied in mental health contexts: chatbots for psychoeducation and support, symptom-pattern flagging systems, natural language processing of clinical notes. These applications borrow directly from clinical psychology — diagnostic reasoning, empathic responsiveness, cognitive restructuring. The parallels are real enough to be instructive about *both* AI's capabilities and psychology's actual mechanisms.
 
-**Diagnostic reasoning.** The same heuristic failures that affect human clinicians affect AI diagnostic tools. Anchoring — premature commitment to an initial diagnostic hypothesis — occurs when systems trained on symptom-label pairs learn to weight early input heavily. Premature closure — stopping the diagnostic search once a plausible explanation is found — follows. These are the heuristics from Chapter 8 operating at scale. An AI diagnostic tool is running something like System 1 inference over high-dimensional inputs; it is not immune to the biases that characterize fast thinking.
+**Diagnostic reasoning.** The same heuristic failures that affect human clinicians affect AI diagnostic tools. Anchoring — premature commitment to an initial diagnostic hypothesis — occurs when systems trained on symptom-label pairs learn to weight early input heavily. Premature closure — stopping the diagnostic search once a plausible explanation is found — follows. These are the heuristics from Chapter 9 operating at scale. An AI diagnostic tool is running something like System 1 inference over high-dimensional inputs; it is not immune to the biases that characterize fast thinking.
 
 **Confidentiality and data handling.** Therapists operate under strict legal obligations: protected health information (PHI) under HIPAA cannot be disclosed without consent. When a client enters symptoms, experiences, or diagnoses into an AI system — a chatbot, a mental health app, a general-purpose assistant — the legal protections around that information depend entirely on the platform and its data use policies, which vary widely. The clinical concern is that users may share sensitive clinical information with AI tools without understanding that this information is not protected the way therapist-disclosed information is. What counts as PHI, and who is covered by HIPAA, are questions worth raising explicitly with students who may already be using AI systems for emotional support.
 
@@ -345,11 +346,11 @@ Psychological treatments include psychodynamic therapy (insight and relational p
 | This chapter | Connects to | How |
 |---|---|---|
 | Diathesis-stress model | Ch. 3 (Neuroscience) | Biological vulnerabilities — amygdala reactivity, HPA axis, dopamine circuits — are the biological side of the diathesis |
-| Phobia development and maintenance | Ch. 6 (Learning) | Classical conditioning acquires the fear; negative reinforcement maintains avoidance; exposure therapy = extinction |
-| Anchoring and diagnostic errors | Ch. 8 (Thinking) | Diagnostic anchoring and premature closure are the same heuristic failures that affect human judgment generally |
-| PTSD and memory | Ch. 7 (Memory) | Intrusive memories, flashbulb-like re-experiencing, disrupted consolidation in trauma |
-| Dopamine and depression/ADHD | Ch. 6, Ch. 3 | Reward prediction error; dopaminergic mechanisms in motivation and attention |
-| Theory of Mind and ASD | Ch. 9 (Lifespan Development) | False belief task, social cognition development |
+| Phobia development and maintenance | Ch. 7 (Learning) | Classical conditioning acquires the fear; negative reinforcement maintains avoidance; exposure therapy = extinction |
+| Anchoring and diagnostic errors | Ch. 9 (Thinking) | Diagnostic anchoring and premature closure are the same heuristic failures that affect human judgment generally |
+| PTSD and memory | Ch. 8 (Memory) | Intrusive memories, flashbulb-like re-experiencing, disrupted consolidation in trauma |
+| Dopamine and depression/ADHD | Ch. 7, Ch. 3 | Reward prediction error; dopaminergic mechanisms in motivation and attention |
+| Theory of Mind and ASD | Ch. 10 (Lifespan Development) | False belief task, social cognition development |
 | Therapeutic alliance | Ch. 11 (Personality) | Rogers's UPR already introduced; alliance as an interpersonal relationship |
 | ASPD and Phineas Gage | Ch. 3 (Neuroscience) | vmPFC damage and disrupted social-emotional regulation |
 | AI diagnostic tools / therapy chatbots | AI Connection (this chapter) | Heuristic failures in AI diagnostic systems; limits of restructuring-shaped language without a believing, feeling client |

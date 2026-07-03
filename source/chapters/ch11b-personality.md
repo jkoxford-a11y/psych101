@@ -1,4 +1,6 @@
-# Chapter 11: Personality
+# Personality
+
+> **Status note (Session 60/61):** Jon decided Personality will NOT be a standalone numbered chapter. Its worthwhile material is to be glossed inside Chapter 11 — Social Psychology (`ch11-social-psychology.md`). This file is kept as a holding pen for that content (hence the `ch11b-` filename, deliberately not renumbered as its own chapter) pending the actual merge/dissolution pass. Do not treat "Chapter 11" references below as pointing to this file — Chapter 11 is Social Psychology; this content still needs to be selectively folded into it.
 
 *Draft v0.2 — Session 23 (2026-06-23)*
 *Revisions from v0.1: 5-section structure (person-situation and assessment split); chapter map table added; Big Five converted to table; traits-vs-types Do Not Confuse added; HEXACO sentence added; Mischel r=.30 reframed with Funder & Ozer 1983/2019; Rogers therapy evidence narrowed to Farber et al. 2018 and Elliott et al. 2018; Electra complex attribution fixed; seething-cauldron quote moved to Freud 1933; recovered-memory caveat added; Rogers worked example added; AI Connection citation fixed (Rao replaced by Jiang et al. 2024 with appropriate caveat); Rorschach section balanced with Mihura et al. 2013; MMPI claim narrowed; 4 Stop & Retrieve prompts added; personality assessment table added; class-attendance aggregation example added.*
@@ -23,7 +25,7 @@ A better way to think about traits is not "this person always behaves this way,"
 
 ## Where This Fits
 
-Chapter 3 introduced the Phineas Gage case — the first documented demonstration that a specific brain injury can alter personality. Chapter 9 covered Erikson's identity-formation stages and how development shapes who we become. Chapter 10 introduced the fundamental attribution error: our tendency to over-attribute behavior to stable dispositions and under-attribute it to situations. This chapter asks what personality *is*, where it comes from, how stable it actually is, and how we measure it. Chapter 12 (Motivation and Emotion) will extend some of these themes into what drives goal-directed behavior.
+Chapter 3 introduced the Phineas Gage case — the first documented demonstration that a specific brain injury can alter personality. Chapter 10 covered Erikson's identity-formation stages and how development shapes who we become. Chapter 11 introduced the fundamental attribution error: our tendency to over-attribute behavior to stable dispositions and under-attribute it to situations. This material asks what personality *is*, where it comes from, how stable it actually is, and how we measure it. Chapter 12 (Emotion, Stress & Coping) will extend some of these themes into what drives goal-directed behavior.
 
 ---
 
@@ -326,12 +328,12 @@ The colleague would invoke **reliability** (does the Rorschach produce consisten
 
 | This chapter... | ...connects to |
 |---|---|
-| Freud's structural model and unconscious | Ch. 5 (States of Consciousness); Ch. 14 (Disorders: psychodynamic therapy) |
-| Defense mechanisms | Ch. 7 (Memory: motivated forgetting and reconstructive memory); Ch. 8 (Thinking: confirmation bias and motivated reasoning) |
-| Psychosexual stages | Ch. 9 (Lifespan Development: early experience and attachment) |
-| Rogers, unconditional positive regard | Ch. 14 (Psychological Disorders: person-centered therapy) |
-| Big Five traits and heritability | Ch. 3 (Neuroscience: genetic contributions to behavior); Ch. 9 (Lifespan: personality stability across adulthood) |
-| Person-situation debate | Ch. 10 (Social Psychology: fundamental attribution error; situationism in Milgram and Asch) |
+| Freud's structural model and unconscious | Ch. 5 (Consciousness); Ch. 13 (Disorders: psychodynamic therapy) |
+| Defense mechanisms | Ch. 8 (Memory: motivated forgetting and reconstructive memory); Ch. 9 (Thinking: confirmation bias and motivated reasoning) |
+| Psychosexual stages | Ch. 10 (Lifespan Development: early experience and attachment) |
+| Rogers, unconditional positive regard | Ch. 13 (Psychological Disorders: person-centered therapy) |
+| Big Five traits and heritability | Ch. 3 (Neuroscience: genetic contributions to behavior); Ch. 10 (Lifespan: personality stability across adulthood) |
+| Person-situation debate | Ch. 11 (Social Psychology: fundamental attribution error; situationism in Milgram and Asch) |
 | Personality assessment | Ch. 2 (Research Methods: reliability, validity, and psychometrics) |
 
 ---
