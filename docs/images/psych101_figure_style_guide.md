@@ -354,7 +354,80 @@ Avoid video for static locator diagrams unless animation clarifies the concept.
 
 ---
 
-## 12. Image-generation prompt template
+## 12. Pre-generation workflow
+
+Before generating any textbook, slide, or public-facing course figure, write the figure spec first.
+
+Do not generate first and discover the teaching job afterward.
+
+A figure is ready to generate only after the following are clear:
+
+1. **Teaching job**  
+   State the one hard idea the figure teaches. This should be a mechanism, comparison, system relationship, or misconception correction.
+
+2. **Chapter placement**  
+   Identify where the figure belongs in the chapter and what nearby prose it supports.
+
+3. **Figure type**  
+   Choose the visual structure before generating:
+   - pathway / projection diagram
+   - side-by-side comparison
+   - sequential panels
+   - push-pull / balance diagram
+   - timeline / developmental arc
+   - misconception-correction diagram
+   - simplified data visualization
+
+4. **Core visual structure**  
+   Describe the layout in plain language. Specify what appears left, center, right, top, and bottom if relevant.
+
+5. **Required labels**  
+   List only the labels that must appear in the image. Keep labels short. Move explanation into the caption whenever possible.
+
+6. **Text to avoid**  
+   List phrases that should not appear in the image because they are too long, too absolute, misleading, or better handled in the caption.
+
+7. **Accuracy constraints**  
+   State what the image must not imply. Include common student misconceptions, biological simplifications, and any contested claims that need cautious wording.
+
+8. **Detailed image-generation prompt**  
+   Write the full prompt before generating. The prompt should include:
+   - intended audience
+   - core teaching idea
+   - style
+   - layout
+   - required labels
+   - accuracy constraints
+   - output format
+
+9. **Caption**  
+   Draft the caption before generation. The caption should explain the conceptual point, not merely describe the picture.
+
+10. **Alt text**  
+    Draft accessibility-first alt text before generation. The alt text should describe the figure’s structure and the relationship being taught.
+
+11. **Attribution and public-sharing status**  
+    Specify whether the figure is original, adapted, public-domain, CC-licensed, slide-only, candidate/reference, or use-now pending review.
+
+12. **Post-generation audit**  
+    After generation, audit the image against the spec before calling it final:
+    - Does it teach the intended hard idea?
+    - Is the visual hierarchy clear?
+    - Are all labels spelled correctly?
+    - Is the text readable at textbook and slide size?
+    - Are anatomical or statistical details accurate enough for Psych 101?
+    - Does it accidentally reinforce a misconception?
+    - Does it overstate the evidence?
+    - Does the caption carry appropriate nuance?
+    - Is alt text available?
+    - Is attribution recorded?
+    - Final status: use now, revise, slide only, candidate/reference, or retire.
+
+Use quick exploratory generations only when the user explicitly requests a rough mockup. Otherwise, the figure spec comes first.
+
+---
+
+## 13. Image-generation prompt template
 
 Use this structure for new generated figures:
 
@@ -391,7 +464,7 @@ PNG suitable for textbook and slides.
 
 ---
 
-## 13. Figure review checklist
+## 14. Figure review checklist
 
 Before using a generated or external figure:
 
@@ -412,7 +485,7 @@ If any answer is no, mark the figure as candidate/reference instead of use-now.
 
 ---
 
-## 14. Use-now vs. candidate standards
+## 15. Use-now vs. candidate standards
 
 ### Use now
 A figure can go into the chapter now if:
@@ -445,6 +518,6 @@ Do not use if:
 
 ---
 
-## 15. Standing preference
+## 16. Standing preference
 
 When in doubt, prefer an original explanatory diagram over an external image. External images are valuable when they show real anatomy, historical cases, or primary research visuals that would be difficult or inappropriate to redraw. For most course concepts, original diagrams are cleaner, safer, and more teachable.
