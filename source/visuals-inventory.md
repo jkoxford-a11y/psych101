@@ -130,11 +130,13 @@ Note: v0.7 (Session 51) renumbered two figures not yet reflected above — ANS p
 
 | # | Description | Status | Notes |
 |---|-------------|--------|-------|
-| 7.1 | Classical conditioning diagram (UCS/UCR → CS/CR acquisition, extinction, recovery) | 🔲 | Core — needed |
-| 7.2 | Operant conditioning 2×2 (positive/negative × reinforcement/punishment) | 🔲 | Core — needed; this trips up most students |
+| 7.1 | Classical conditioning diagram (UCS/UCR → CS/CR acquisition, extinction, recovery) — spine-flavored version: original CS→US association intact *underneath* a new inhibitory layer, with spontaneous recovery/renewal shown as the old layer resurfacing under stress/context change ("extinction is not erasure") | 🔲 | Core — needed. Framing per Session 65 spine work order §E.1 |
+| 7.2 | Operant conditioning 2×2 (positive/negative × reinforcement/punishment) | 🔲 | Core — needed; this trips up most students. Same grid the "Reinforcement vs. Punishment Classifier" demo (`docs/teaching/demo-ideas.md`) uses |
 | 7.3 | Reinforcement schedules comparison (FR/VR/FI/VI cumulative response curves) | 🔲 | Core — the classic staircase curves |
-| 7.4 | Dopamine prediction error / uncertainty diagram (Sapolsky/Schultz/Fiorillo framing) | 🔲 | Important — this chapter "delivers in full" the dopamine mechanism Ch5 previews |
+| 7.4 | Dopamine prediction error / uncertainty diagram (Sapolsky/Schultz/Fiorillo framing) — three-panel: response to unexpected reward → shift to predictive cue → dip on omission | 🔲 | Important — this chapter "delivers in full" the dopamine mechanism Ch5 previews. Pairs with "Prediction Error / Dopamine Animator" demo |
 | 7.5 | Bobo doll / observational learning setup | 🔲 | Optional — original illustration needed (can't use photo) |
+| 7.6 | Learning's place in the master loop (highlight the "prediction error → updating or defense" arc) | 🔲 | New (Session 65 spine work order §E.4) — reuses the book's master-loop motif for cross-chapter consistency; check whether a book-wide master-loop graphic already exists before building a one-off |
+| 7.7 | Garcia & Koelling crossed associations (taste↔illness fast, audiovisual↔shock fast, diagonals weak) | 🔲 | New (Session 65 spine work order §E.5) |
 
 ---
 
