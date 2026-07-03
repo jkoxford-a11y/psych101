@@ -48,7 +48,7 @@ The brain does not passively receive reality. It constructs a usable version of 
 
 *The mind does not experience reality directly. It constructs a usable version of reality fast enough to act in. That construction is both the source of human intelligence and the source of systematic error.*
 
-This connects every chapter: perception is constructed from sensory fragments (Ch. 4); memory is reconstructed at retrieval, not replayed (Ch. 7); emotions are constructed from core affect and context (Ch. 12); social judgments are constructed from fast inference under ambiguity (Ch. 11); the self is a constructed model of the organism (Ch. 5); diagnoses are constructed categories applied to continuous experience (Ch. 13); AI outputs are constructed from statistical patterns without grounding (AI bridges across chapters).
+This connects every chapter: perception is constructed from sensory fragments (Ch. 4); memory is reconstructed at retrieval, not replayed (Ch. 8); emotions are constructed from core affect and context (Ch. 12); social judgments are constructed from fast inference under ambiguity (Ch. 11); the self is a constructed model of the organism (Ch. 5); diagnoses are constructed categories applied to continuous experience (Ch. 13); AI outputs are constructed from statistical patterns without grounding (AI bridges across chapters).
 
 This is not relativism. The constructed model is constrained by the body, the world, other people, and evidence. Some constructions work better than others. Science matters because it checks private constructions against shared reality.
 
@@ -84,14 +84,14 @@ Examples of lossy compression errors, organized by chapter:
 | Error | Mechanism | Chapter |
 |---|---|---|
 | Optical illusions, the dress | Visual priors applied to unusual stimuli | Ch. 4 |
-| False memory, gist errors | Meaning retained, exact details reconstructed | Ch. 7 |
-| Source amnesia | Claim retained, provenance lost; familiarity becomes felt truth | Ch. 7, 10 |
+| False memory, gist errors | Meaning retained, exact details reconstructed | Ch. 8 |
+| Source amnesia | Claim retained, provenance lost; familiarity becomes felt truth | Ch. 8, 11 |
 | Stereotypes | Social category built from biased, salient examples | Ch. 11 |
 | Fundamental attribution error | Behavior compressed into trait; situation discarded | Ch. 11 |
-| Trauma triggers | Threat model retains structural similarity but loses contextual boundaries | Ch. 7, 13 |
-| Habits | Learned action script runs after context has changed | Ch. 6 |
-| Expert blind spots | Fluent pattern recognition causes premature closure | Ch. 8 |
-| Dunning-Kruger | Novice concept too coarse to reveal missing distinctions | Ch. 8 |
+| Trauma triggers | Threat model retains structural similarity but loses contextual boundaries | Ch. 8, 13 |
+| Habits | Learned action script runs after context has changed | Ch. 7 |
+| Expert blind spots | Fluent pattern recognition causes premature closure | Ch. 9 |
+| Dunning-Kruger | Novice concept too coarse to reveal missing distinctions | Ch. 9 |
 | Diagnosis reification | Label mistaken for causal explanation | Ch. 13 |
 | AI hallucination | Statistical pattern compressed without factual grounding | AI bridges |
 
@@ -150,7 +150,7 @@ Traumatic memories resist the episodic → semantic pathway. The episode stays p
 
 Language partially shares private models. It never fully transfers experience, but it lets people point, compare, revise, teach, argue, and coordinate. Education, science, therapy, and collaboration all depend on this bridge. Because other people are differently tuned nervous systems, when models collide in conversation that collision is itself a prediction error — an encounter with a perspective the current model didn't generate. Whether that error drives updating or defensiveness depends on threat level.
 
-Science is the collective attempt to calibrate individual models against shared evidence. Individual prediction systems are cheap and fast but biased toward local, recent, personally experienced patterns. Statistical reasoning pools observations across people, contexts, and time — making the collective model more accurate than any individual's could be. This is why Ch. 2 (Research Methods) belongs at the beginning of the course: it is the epistemological foundation the rest stands on, not a detour.
+Science is the collective attempt to calibrate individual models against shared evidence. Individual prediction systems are cheap and fast but biased toward local, recent, personally experienced patterns. Statistical reasoning pools observations across people, contexts, and time — making the collective model more accurate than any individual's could be. This is why Ch. 2 (Research Methods & Statistics) belongs at the beginning of the course: it is the epistemological foundation the rest stands on, not a detour.
 
 The same pattern-detection machinery that makes science necessary also explains why disorder is possible. The brain finds order in random data, reads agency into noise, and connects coincidences into causal narratives. Science is the corrective — a method for checking whether the pattern the model detected is actually in the world or was imposed by the detector.
 
@@ -177,35 +177,33 @@ The whole system operates under compounding trade-offs. These are not flaws — 
 
 ---
 
-## 5. Personality, social psychology, and the two individual chapters
+## 5. Personality and social psychology in the locked chapter structure
 
-These two chapters sit at the intersection of multiple spine threads and deserve a brief orienting note.
+Personality and social psychology sit at the intersection of multiple spine threads and deserve a brief orienting note. In the locked chapter map, **Social Psychology is Ch. 11**. Personality is not a standalone chapter; its content is selectively folded into Ch. 11 as a subsection.
 
-**Personality** (Ch. 10 in proposed order) reflects stable patterns in how a person's model is tuned: what they expect, notice, value, avoid, seek, regulate, and repeat across situations. Traits are real but probabilistic — the Big Five describes reliable variance in behavioral tendencies, not fixed responses. The person-situation debate is a spine-level issue: the model (trait) interacts with context (situation); behavior is the output of that interaction, not the trait alone.
+**Personality content within Ch. 11** reflects stable patterns in how a person's model is tuned: what they expect, notice, value, avoid, seek, regulate, and repeat across situations. Traits are real but probabilistic — the Big Five describes reliable variance in behavioral tendencies, not fixed responses. The person-situation debate is a spine-level issue: the model (trait) interacts with context (situation); behavior is the output of that interaction, not the trait alone.
 
-**Social psychology** (Ch. 11 in proposed order) is what happens when multiple differently tuned nervous systems occupy the same situation. Social heuristics, attribution errors, conformity, persuasion, prejudice, and bystander effects are all cases of the master loop operating in a social environment — where other people are both the most important input and the most consequential output. Stereotypes are social concepts built from biased samples; they are lossy compression applied to people, with unequal consequences.
+**Social psychology** (Ch. 11) is what happens when multiple differently tuned nervous systems occupy the same situation. Social heuristics, attribution errors, conformity, persuasion, prejudice, and bystander effects are all cases of the master loop operating in a social environment — where other people are both the most important input and the most consequential output. Stereotypes are social concepts built from biased samples; they are lossy compression applied to people, with unequal consequences.
 
 ---
 
 ## 6. Chapter map
 
-*★ = proposed position swap from current published order. Current order: Social Psychology = Ch. 10, Personality = Ch. 11. Proposed: Personality = Ch. 10, Social Psychology = Ch. 11. Rationale: Personality (stable individual tuning) sits naturally adjacent to Lifespan Development; Social Psychology (models in contact with other minds) sits naturally adjacent to Emotion. Files requiring updates if swap is adopted: `source/chapters/ch10-social-psychology.md`, `source/chapters/ch11-personality.md`, `docs/chapters/10-social-psychology.html`, `docs/chapters/11-personality.html` (if they exist), `docs/index.html`, and any cross-references within those two chapters.*
-
 | Ch | Title | Framework contribution |
 |---|---|---|
 | 1 | History & Approaches | What psychology is explaining; levels of analysis; the biological-but-not-reductionist position; APA pillars as five domains of the model |
-| 2 | Research Methods | Science as collective model calibration; statistics as the formal machinery; pattern-detection as two-edged adaptation |
-| 3 | Neuroscience | Biological substrate for sense-making; action-selection as the origin of nervous systems; serotonin/dopamine as action-selection signals; chemical imbalance as misconception to correct |
+| 2 | Research Methods & Statistics | Science as collective model calibration; statistics as the formal machinery; pattern-detection as two-edged adaptation |
+| 3 | Neuroscience & Biological Bases | Biological substrate for sense-making; action-selection as the origin of nervous systems; serotonin/dopamine as action-selection signals; chemical imbalance as misconception to correct |
 | 4 | Sensation & Perception | Input is not reality; the compression bottleneck; top-down prediction; perceptual constancy and illusions as lossy compression |
-| 5 | Consciousness & Sleep | Attention as bottleneck control; consciousness as override for failed predictions; sleep as maintenance window for the model |
-| 6 | Learning | Updating the model through experience; extinction as new learning not erasure; dopamine RPE as prediction-error worked example |
-| 7 | Memory | Ecological reconstruction; episodic → semantic compression; priming; trauma as stuck consolidation |
-| 8 | Thinking, Language & Intelligence | Concepts as semantic predictions; semanticization and lossy compression; expertise vs. novice concept density; AI bridge |
-| 9 | Lifespan Development | How the model gets built and tuned; life history; secondary altriciality; cooperative breeding; differential susceptibility |
-| 10 ★ | Personality | Stable individual tuning patterns; person-situation as model × context; self-schemas; identity as a coherent model under pressure |
-| 11 ★ | Social Psychology | Other minds as alternate models; shared, contested, and biased models; stereotypes as lossy social concepts; beliefs-as-transmitted vs. feelings-as-conditioned |
+| 5 | Consciousness | Attention as bottleneck control; consciousness as override for failed predictions; self-modeling and unified experience as constructed processes |
+| 6 | Sleep | Maintenance window for the model; consolidation; glymphatic clearance; regulatory reset |
+| 7 | Learning | Updating the model through experience; extinction as new learning not erasure; dopamine RPE as prediction-error worked example |
+| 8 | Memory | Ecological reconstruction; episodic → semantic compression; priming; trauma as stuck consolidation |
+| 9 | Thinking, Language & Intelligence | Concepts as semantic predictions; semanticization and lossy compression; expertise vs. novice concept density; AI bridge |
+| 10 | Lifespan Development | How the model gets built and tuned; life history; secondary altriciality; cooperative breeding; differential susceptibility |
+| 11 | Social Psychology | Other minds as alternate models; shared, contested, and biased models; stereotypes as lossy social concepts; beliefs-as-transmitted vs. feelings-as-conditioned; personality content as stable individual tuning within social context |
 | 12 | Emotion, Stress & Coping | Emotion as mattering and action-readiness; stress as demand/control prediction; allostatic load; Barrett's constructionist frame |
-| 13 | Disorders & Therapy | Maladaptive model persistence; disorders as normal processes gone chronic and costly; therapy as model revision, regulation, and relearning |
+| 13 | Psychological Disorders & Therapy | Maladaptive model persistence; disorders as normal processes gone chronic and costly; therapy as model revision, regulation, and relearning |
 
 ---
 
@@ -302,7 +300,7 @@ These two chapters sit at the intersection of multiple spine threads and deserve
 
 **Gut-brain axis as a more defensible bidirectional connection.** The enteric nervous system contains more neurons (~500 million) than the spinal cord and communicates bidirectionally with the brain via the vagus nerve, immune signaling, and microbiome-produced metabolites. This is a more defensible basis for "diet affects mood" reasoning than "eat this food → produce this neurotransmitter → feel different." *One paragraph; no overstatement of current knowledge about specific dietary interventions.*
 
-**Oxytocin as the neuropeptide entry point.** Neuropeptides (oxytocin, vasopressin, CRF) should be introduced in Ch. 3 alongside classical neurotransmitters to establish that the brain uses multiple classes of chemical signal. Oxytocin is the clearest teaching case: hypothalamic synthesis, posterior pituitary release, central neuromodulatory actions, HPA axis attenuation, and roles in social bonding and breastfeeding. This introduction pays forward to Ch. 9 (biobehavioral synchrony, attachment) and Ch. 12 (stress regulation). *Do not call it "the love hormone" — see Drafting Rules.*
+**Oxytocin as the neuropeptide entry point.** Neuropeptides (oxytocin, vasopressin, CRF) should be introduced in Ch. 3 alongside classical neurotransmitters to establish that the brain uses multiple classes of chemical signal. Oxytocin is the clearest teaching case: hypothalamic synthesis, posterior pituitary release, central neuromodulatory actions, HPA axis attenuation, and roles in social bonding and breastfeeding. This introduction pays forward to Ch. 10 (biobehavioral synchrony, attachment) and Ch. 12 (stress regulation). *Do not call it "the love hormone" — see Drafting Rules.*
 
 ---
 
@@ -332,7 +330,7 @@ These two chapters sit at the intersection of multiple spine threads and deserve
 
 ---
 
-### Ch. 5 — Consciousness & Attention
+### Ch. 5 — Consciousness
 
 **Student-facing spine question:** *Why don't we experience most of what our brain is doing?*
 
@@ -354,7 +352,11 @@ These two chapters sit at the intersection of multiple spine threads and deserve
 
 **Neural delay and retrospective construction (Eagleman).** The brain takes approximately 80ms to integrate signals from different modalities and produce a unified experience. Consciousness is not a live feed; it is a slightly delayed, edited broadcast. This reinforces the constructive account without requiring the full philosophical argument.
 
-**Sleep as model maintenance — detailed version.** Three functional layers for Ch. 5:
+---
+
+### Ch. 6 — Sleep
+
+**Sleep as model maintenance — detailed version.** Three functional layers for Ch. 6:
 
 - *Consolidation.* Memory traces laid down during waking are replayed, tagged, and transferred during sleep — particularly during slow-wave and REM stages. Sleep supports episodic-to-semantic compression; deprivation disrupts this and is not simply recoverable with effort.
 - *Glymphatic clearance.* During deep sleep, the glymphatic system flushes metabolic waste (including amyloid-beta) from brain tissue. Chronic sleep deprivation allows metabolic byproducts to accumulate.
@@ -362,7 +364,7 @@ These two chapters sit at the intersection of multiple spine threads and deserve
 
 ---
 
-### Ch. 6 — Learning
+### Ch. 7 — Learning
 
 **Student-facing spine question:** *Why is unlearning harder than learning?*
 
@@ -370,7 +372,7 @@ These two chapters sit at the intersection of multiple spine threads and deserve
 
 ---
 
-### Ch. 7 — Memory
+### Ch. 8 — Memory
 
 **Student-facing spine question:** *Why does memory preserve meaning better than detail?*
 
@@ -384,7 +386,7 @@ These two chapters sit at the intersection of multiple spine threads and deserve
 
 ---
 
-### Ch. 8 — Thinking, Intelligence & Conceptual Knowledge
+### Ch. 9 — Thinking, Intelligence & Conceptual Knowledge
 
 **Student-facing spine question:** *Why is one good concept worth more than a hundred memorized facts?*
 
@@ -413,7 +415,7 @@ These two chapters sit at the intersection of multiple spine threads and deserve
 
 ---
 
-### Ch. 9 — Lifespan Development
+### Ch. 10 — Lifespan Development
 
 **Student-facing spine question:** *Why does it take humans so much longer to grow up than other animals?*
 
@@ -439,9 +441,7 @@ These two chapters sit at the intersection of multiple spine threads and deserve
 
 ---
 
-### Ch. 10 — Social Psychology
-
-*(Note: in the proposed swap, this is the Social Psychology chapter — currently Ch. 10 in published order, proposed as Ch. 11.)*
+### Ch. 11 — Social Psychology
 
 **Student-facing spine question:** *Why do other people's models change our own?*
 
@@ -461,13 +461,9 @@ These two chapters sit at the intersection of multiple spine threads and deserve
 
 **Source amnesia as the mechanism that blurs the belief/feeling boundary.** Beliefs can become felt truths through repetition. Familiarity from repeated exposure generates an implicit sense of recognition that is cognitively indistinguishable from genuine knowing. The person no longer tracks *why* they believe something; it just feels true. Propaganda, advertising, and politically motivated repetition exploit this.
 
-**The just-world hypothesis as the social mechanism for stigma.** The belief that the world is fair generates victim-blaming when applied to mental illness, poverty, academic failure, or trauma. This is the social-psychology mechanism by which stigma is maintained and self-stigma is generated. It connects Ch. 10/11 directly to Ch. 13 (Disorders).
+**The just-world hypothesis as the social mechanism for stigma.** The belief that the world is fair generates victim-blaming when applied to mental illness, poverty, academic failure, or trauma. This is the social-psychology mechanism by which stigma is maintained and self-stigma is generated. It connects Ch. 11 directly to Ch. 13 (Disorders).
 
----
-
-### Ch. 11 — Personality
-
-*(Note: in the proposed swap, this is the Personality chapter — currently Ch. 11 in published order, proposed as Ch. 10.)*
+#### Personality (content folds into this chapter)
 
 **Student-facing spine question:** *Why do the same people behave differently across situations and yet remain recognizably themselves?*
 
@@ -481,7 +477,7 @@ These two chapters sit at the intersection of multiple spine threads and deserve
 
 **Personality develops from temperament plus ecology.** Temperament — the biologically rooted, early-appearing variation in reactivity, self-regulation, and approach/avoidance — sets the initial tuning. Ecology (family, peers, culture, socioeconomic context, life events) shapes how that temperament is expressed, reinforced, and elaborated. Neither temperament nor ecology is destiny. Differential susceptibility applies: high-reactive temperaments show larger effects in both directions.
 
-**Durable personality change requires repeated new contexts, not just insight.** Understanding why a pattern exists does not automatically change it. Durable change more often follows sustained new roles, relationships, habits, behavioral experiments, and feedback loops that repeatedly engage different responses and reward them. This connects to Ch. 6 (learning through consequence) and Ch. 13 (therapy as model revision through new experience, not only understanding).
+**Durable personality change requires repeated new contexts, not just insight.** Understanding why a pattern exists does not automatically change it. Durable change more often follows sustained new roles, relationships, habits, behavioral experiments, and feedback loops that repeatedly engage different responses and reward them. This connects to Ch. 7 (learning through consequence) and Ch. 13 (therapy as model revision through new experience, not only understanding).
 
 ---
 
