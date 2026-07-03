@@ -54,6 +54,15 @@ Circadian timing also varies systematically across individuals — **chronotypes
 
 Sleep timing is governed by two partly independent systems. A homeostatic **sleep pressure** builds the longer you are awake: **adenosine**, a metabolic byproduct of neural activity, accumulates throughout wakefulness and dissipates during sleep; caffeine works by blocking adenosine receptors, which masks the accumulated pressure without clearing it — the drowsiness returns once the caffeine wears off. This sleep pressure (**Process S**) works alongside the circadian alerting signal set by the SCN (**Process C**); together they make up Borbély's (1982) **two-process model of sleep regulation**. The two usually cooperate, but the misery of jet lag and overnight shift work is what happens when they give conflicting signals at once — sleep pressure saying one thing, the body clock saying another.
 
+That two-system split is also where the practical levers act — and because each lever works on a different system, they do different things:
+
+| Intervention | Acts on | What it does *not* do |
+|---|---|---|
+| **Caffeine** | Sleep pressure — blocks adenosine receptors | Doesn't clear the pressure; drowsiness returns when it wears off |
+| **Morning light** | Circadian clock — entrains the SCN | Doesn't replace lost sleep |
+| **Melatonin** | Circadian timing — signals biological night | Not a general sedative or "knockout" drug |
+| **A well-timed nap** | Sleep pressure — discharges some | Can undercut nighttime sleep if too long or too late |
+
 ---
 
 ## Section 2: Sleep — Architecture, Function, and Dreams
@@ -66,12 +75,25 @@ Before 1953, sleep was widely treated as a single, roughly uniform state — the
 
 > **Stop and Retrieve:** In your own words, what was Aserinsky and Kleitman's key observation, and why did it matter that they could connect a specific physiological signature (rapid eye movement, fast EEG activity) to a specific subjective experience (vivid dreaming)?
 
-The discovery launched **polysomnography** — the simultaneous recording of brain activity (EEG), eye movement (EOG), and muscle activity (EMG) during sleep — as the standard tool for studying it, and that tool revealed sleep's full architecture. **Non-REM (NREM) sleep** has three stages of progressively deeper sleep. NREM 1 is a brief transitional stage, marked by slowing brain waves and sometimes a sudden muscle twitch (a hypnic jerk) as the body settles. NREM 2 is characterized by distinctive bursts called sleep spindles and K-complexes, and makes up the largest share of total sleep time; sleep spindle density increases following new learning, which suggests these bursts play an active role in offline memory consolidation rather than simply marking sleep depth. NREM 3, often called slow-wave sleep, shows large, slow delta waves and is the deepest stage — the hardest stage from which to be awakened, and typically the stage from which NREM arousal parasomnias — sleepwalking and night terrors — emerge, most often in the first half of the night when slow-wave sleep predominates. This is why ordinary sleepwalking is not best understood as acting out a dream: it arises from deep NREM sleep, not from the dreaming state. Dreaming is concentrated in REM sleep, not NREM 3, and REM sleep comes with **REM atonia**, a near-total paralysis of the body's voluntary muscles that ordinarily prevents a vividly dreaming person's body from moving at all. A full night cycles through these stages roughly every 90 minutes, with REM periods growing progressively longer across the night, which is why a person woken in the early morning is far more likely to report a vivid dream than someone woken at midnight.
+The discovery launched **polysomnography** — the simultaneous recording of brain activity (EEG), eye movement (EOG), and muscle activity (EMG) during sleep — as the standard tool for studying it, and that tool revealed sleep's full architecture: three progressively deeper stages of **non-REM (NREM) sleep**, and **REM sleep**.
+
+| Stage | EEG signature | What to remember | Common confusion |
+|---|---|---|---|
+| **NREM 1** | Slowing waves; brief transition | The falling-asleep stage; hypnic jerks | Not "deep sleep" |
+| **NREM 2** | Sleep spindles and K-complexes | Largest share of the night; spindle density rises after learning (offline consolidation) | Spindles aren't just noise |
+| **NREM 3** | Large, slow delta waves | Deepest, hardest to wake; source of sleepwalking and night terrors | Not the vivid-dream stage |
+| **REM** | Fast, low-voltage, wake-like | Vivid dreaming; **REM atonia** (near-total muscle paralysis) | Not the same as sleepwalking |
+
+Two points the table sets up matter for the rest of the chapter. First, ordinary sleepwalking is *not* acting out a dream — it emerges from deep NREM 3, not from the dreaming state (the disorder that really is dream-enactment comes later in the chapter). Second, a full night cycles through these stages roughly every 90 minutes, with REM periods lengthening across the night — which is why someone woken in the early morning is far more likely to report a vivid dream than someone woken at midnight.
 
 ![Figure 6.2: A typical hypnogram across an 8-hour night. The y-axis shows sleep stage (Wake, REM, NREM 1–3); the x-axis shows hours of sleep. Note the ~90-minute cycling between NREM and REM, NREM 3 (slow-wave sleep) concentrated in the first half of the night, and REM periods lengthening across the night.](../../images/ch06/fig_sleep_hypnogram.png)
 *Figure 6.2. A typical hypnogram showing sleep stage cycling across a full night. Original figure.*
 
-Why does any of this happen at all? No single theory of sleep's function fully explains it, and the leading accounts are complementary rather than competing. The restorative account holds that sleep allows the body and brain to repair and replenish — clearing metabolic waste products, restoring depleted energy stores, and supporting immune function. The evolutionary-adaptive account points out that sleep timing in most species lines up closely with when that species would otherwise be least able to do anything useful or safe — a strategy that conserves energy and reduces a sleeping animal's exposure to predators or hazards during hours it could not productively exploit anyway. This account makes a testable comparative prediction, and the prediction holds: species that sleep in exposed, risky settings tend to shift the *architecture* of their sleep — less time in deep, vulnerable states, and lighter, more easily interrupted sleep — than well-protected species (Lima et al., 2005). Total sleep duration across species is messier and reflects many pressures at once, but the shift away from vulnerable deep sleep under predation risk is exactly what a trade-off between the benefits of sleep and the cost of vulnerability would produce. And a substantial and growing body of evidence supports a memory-consolidation account: sleep, and especially the interplay between slow-wave sleep and REM sleep, actively reorganizes and strengthens recently formed memories, helping transfer them from a temporary hippocampal trace toward more stable, distributed cortical storage (Diekelmann & Born, 2010). These three accounts are not actually in competition; a brain shutting down most input, conserving energy, and using the resulting downtime to do memory housekeeping are entirely compatible descriptions of the same nightly process, viewed from different angles.
+Why does any of this happen at all? No single theory of sleep's function fully explains it, and the leading accounts are complementary rather than competing. The restorative account holds that sleep allows the body and brain to repair and replenish — clearing metabolic waste products, restoring depleted energy stores, and supporting immune function. The evolutionary-adaptive account points out that sleep timing in most species lines up closely with when that species would otherwise be least able to do anything useful or safe — a strategy that conserves energy and reduces a sleeping animal's exposure to predators or hazards during hours it could not productively exploit anyway. This account makes a testable comparative prediction, and the prediction holds: species that sleep in exposed, risky settings tend to shift the *architecture* of their sleep — less time in deep, vulnerable states, and lighter, more easily interrupted sleep — than well-protected species (Lima et al., 2005). Total sleep duration across species is messier and reflects many pressures at once, but the shift away from vulnerable deep sleep under predation risk is exactly what a trade-off between the benefits of sleep and the cost of vulnerability would produce.
+
+Sleep is also not all-or-nothing. Many birds and aquatic mammals sleep one hemisphere at a time: a duck at the edge of a row keeps its outward-facing eye open and half its brain awake, and great frigatebirds sleep *in flight* — brief bursts totaling under an hour a day, often with the hemisphere steering the turn kept awake (Rattenborg et al., 2016). Humans keep a vestige of this: on your first night somewhere unfamiliar, one hemisphere stays lighter and more vigilant — a "night watch" that makes that first night restless (Tamaki et al., 2016). Sleep is regional and graded, not a single switch.
+
+And a substantial and growing body of evidence supports a memory-consolidation account: sleep, and especially the interplay between slow-wave sleep and REM sleep, actively reorganizes and strengthens recently formed memories, helping transfer them from a temporary hippocampal trace toward more stable, distributed cortical storage (Diekelmann & Born, 2010). These three accounts are not actually in competition; a brain shutting down most input, conserving energy, and using the resulting downtime to do memory housekeeping are entirely compatible descriptions of the same nightly process, viewed from different angles.
 
 [VOICE] — the evolutionary "what is it for" question is your home ground; this is a good place for a signature line on sleep as an adaptive trade-off rather than a design flaw, and on why "everybody needs exactly 8 hours" is the wrong way to think about a trait that natural selection tuned differently across species.
 
@@ -109,7 +131,21 @@ Whichever function (or combination of functions) turns out to be correct, both t
 
 #### Sleep Disorders
 
-When the systems described above break down, the result is a sleep disorder. **Insomnia**, the most common, is persistent difficulty falling or staying asleep despite adequate opportunity to do so. **Sleep apnea** involves repeated interruptions in breathing during sleep — most often from the airway physically collapsing or becoming obstructed — that briefly wake the sleeper, sometimes hundreds of times a night without the person ever being aware it is happening, leaving them exhausted despite what feels like a full night in bed. Sleep apnea is also one reason combining alcohol or other depressant drugs with sleep can be genuinely dangerous: depressants relax the airway muscles and blunt the brainstem's breathing response, deepening exactly the problem apnea already causes. **Narcolepsy** involves sudden, uncontrollable intrusions of REM-like sleep into ordinary waking activity, sometimes accompanied by **cataplexy** — a sudden, brief loss of voluntary muscle tone, essentially REM atonia occurring while the person is awake. The mechanism is a loss of **orexin** (also called hypocretin), a neuropeptide produced by a small cluster of neurons in the lateral hypothalamus that normally promotes and stabilizes wakefulness. In Type 1 narcolepsy, these orexin-producing neurons are destroyed by an autoimmune attack, leaving the sleep-wake switch without its primary stabilizer. The result is that strong emotion — laughter, excitement, surprise — can trigger a cataplectic episode, because the normal arousal response that would drive orexin release now finds no orexin system to activate. Narcolepsy is a clean clinical demonstration of why the arousal system, introduced in Chapter 5 as the norepinephrine-driven salience system, requires active maintenance: it does not stay on by default. **Parasomnias** divide into two distinct categories worth keeping separate. **NREM arousal parasomnias** — sleepwalking, sleep talking, and night terrors — typically emerge from deep NREM sleep, usually in the first half of the night, and are not REM dream-enactment (though fragmentary dream-like mentation is sometimes reported). A separate category, **REM sleep behavior disorder**, involves a failure of the normal REM atonia: the person physically enacts dream content during REM sleep instead of remaining paralyzed. These two categories matter because the common misconception — that sleepwalkers are "acting out a dream" — actually describes REM sleep behavior disorder, not ordinary sleepwalking.
+When the systems described above break down, the result is a sleep disorder.
+
+| Disorder | Mechanism | Key feature |
+|---|---|---|
+| **Insomnia** | Multiple; often hyperarousal | Persistent difficulty falling or staying asleep despite adequate opportunity |
+| **Sleep apnea** | Airway repeatedly collapses or obstructs, briefly waking the sleeper | Exhaustion despite a "full" night; dangerous with alcohol or other depressants, which relax the airway and blunt the breathing drive |
+| **Narcolepsy (Type 1)** | Autoimmune loss of **orexin**/hypocretin neurons in the lateral hypothalamus | REM intrudes into waking; **cataplexy** — REM atonia while awake, often triggered by strong emotion |
+| **NREM arousal parasomnias** | Incomplete arousal from deep NREM, first half of night | Sleepwalking, sleep talking, night terrors — *not* dream-enactment |
+| **REM sleep behavior disorder** | Failure of REM atonia | The sleeper physically enacts dream content — the disorder that actually matches "acting out a dream" |
+
+Two of these carry conceptual weight beyond the clinical detail. Narcolepsy is a clean demonstration of why wakefulness must be *actively stabilized*: the arousal system (introduced in Chapter 5 as the norepinephrine-driven salience system) does not stay on by default, so removing orexin's stabilizing signal lets a jolt of emotion drop someone straight into REM atonia. And the parasomnia split resolves the chapter's running misconception — "sleepwalkers are acting out a dream" actually describes REM sleep behavior disorder, not ordinary NREM sleepwalking.
+
+#### Do Not Confuse: Strong Sleep Science vs. Sleep Hype
+
+Sleep is a field where solid findings and confident-sounding overstatement travel together, so it is worth separating them. *Well established:* circadian timing and the SCN; the NREM/REM architecture and its ~90-minute cycling; that sleep loss degrades attention and emotional regulation; and that sleep supports memory consolidation. *Real but more variable:* the exact hormonal pathways linking sleep loss to appetite, single-function theories of dreaming, and many of the long-term disease-risk numbers popularized in trade books. A good scientific answer about sleep never stops at "sleep matters" — it asks *which* system, *which* outcome, and *how strong* the evidence is.
 
 ---
 
@@ -342,6 +378,8 @@ Lima, S. L., Rattenborg, N. C., Lesku, J. A., & Amlaner, C. J. (2005). Sleeping 
 
 Minges, K. E., & Redeker, N. S. (2016). Delayed school start times and adolescent sleep: A systematic review of the experimental evidence. *Sleep Medicine Reviews, 28*, 86–95.
 
+Rattenborg, N. C., et al. (2016). Evidence that birds sleep in mid-flight. *Nature Communications, 7*, 12468.
+
 Revonsuo, A. (2000). The reinterpretation of dreams: An evolutionary hypothesis of the function of dreaming. *Behavioral and Brain Sciences, 23*(6), 877–901.
 
 Roffwarg, H. P., Muzio, J. N., & Dement, W. C. (1966). Ontogenetic development of the human sleep-dream cycle. *Science, 152*(3722), 604–619.
@@ -349,6 +387,8 @@ Roffwarg, H. P., Muzio, J. N., & Dement, W. C. (1966). Ontogenetic development o
 Scoville, W. B., & Milner, B. (1957). Loss of recent memory after bilateral hippocampal lesions. *Journal of Neurology, Neurosurgery, and Psychiatry, 20*, 11–21.
 
 Spiegel, K., Tasali, E., Penev, P., & Van Cauter, E. (2004). Brief communication: Sleep curtailment in healthy young men is associated with decreased leptin levels, elevated ghrelin levels, and increased hunger and appetite. *Annals of Internal Medicine, 141*(11), 846–850.
+
+Tamaki, M., Bang, J. W., Watanabe, T., & Sasaki, Y. (2016). Night watch in one brain hemisphere during sleep associated with the first-night effect in humans. *Current Biology, 26*(9), 1190–1194.
 
 Valli, K., & Revonsuo, A. (2009). The threat simulation theory in light of recent empirical evidence: A review. *American Journal of Psychology, 122*(1), 17–38.
 
