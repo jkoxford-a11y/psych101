@@ -1,7 +1,7 @@
 # Theoretical Foundations
 ## Psychology as Biological Sense-Making Under Constraint
 
-*Intellectual record — not a drafting tool. This document captures the reasoning behind the theoretical spine: the arguments, sources, session discoveries, and original insights that ground the claims made in `theoretical-spine.md`. Organized by idea, not by chapter. Last updated: 2026-06-27.*
+*Intellectual record and pre-drafting framing reference. This document captures the reasoning behind the theoretical spine: the arguments, sources, session discoveries, and original insights that ground the claims made in `theoretical-spine.md`. Organized by idea, not by chapter. Use it alongside `voice-brief.md` when drafting: `voice-brief.md` is the **stylistic voice** (how Jon sounds); this file is the **conceptual voice** and the **epistemic guardrails** (what to claim, plus the "What not to claim" lists). Not for mining prose. Last updated: 2026-07-03.*
 
 *Companion file: `pipeline/theoretical-spine.md` (structured chapter reference).*
 
@@ -681,6 +681,68 @@ This is prediction/updating applied at the developmental timescale. Piaget was d
 
 ---
 
+## 19. Sleep as Maintenance of the Predictive Model — and the Developmental Arc
+
+*Session origin: developed 2026-07-03 (Session 60) during the Ch6 Sleep audit and revision. Builds on the Ch5→Ch6 spine, §3 (life history), and §12 (controlled hallucination). Covers Ch6 (Sleep); feeds Ch10 (Lifespan).*
+
+**The spine claim.** Ch5 frames consciousness as the brain's live predictive model; Ch6's job is to show what happens to that model offline. Sleep is not downtime — it is the maintenance window in which the model is cleaned (glymphatic clearance), consolidated (hippocampal–neocortical transfer), and re-synchronized to the day (circadian). *Framing guardrail:* say the brain *uses* prediction / that consciousness *is modeled as* a predictive process (Seth, §12) — do **not** say "the brain is a prediction machine" (§6.2).
+
+**The developmental arc — "REM builds, deep sleep prunes."**
+- Active (REM) sleep dominates the developing brain: as much as ~80% of near-continuous fetal sleep around 30 weeks' gestation → ~50% at term → ~25% by age 3, then stable.
+- **Ontogenetic hypothesis** (Roffwarg, Muzio & Dement, 1966): infant REM supplies endogenous neural stimulation that drives circuit development when there is little waking experience to do the job. This is the direct sleep-side complement to §3b — *maximum immaturity = maximum plasticity.* The brain evolved to be tuned by experience; before there is enough waking experience, REM generates its own.
+- Fetal/newborn "kicking" that looks like wakefulness is largely active-sleep motor output. Jon's first framing: the pons failing to suppress the outgoing signal (RBD-like). **Refinement (Blumberg, 2015):** infant active sleep *has* background atonia; the movements are discrete **myoclonic twitches** — actively generated brainstem events that break through and produce clean reafferent feedback that helps wire the sensorimotor map. Purposeful "motor babble," a feature rather than a failure of suppression — a better story than the RBD analogy, and it ties straight to the endogenous-stimulation idea.
+- **Deep/slow-wave sleep → pruning/downscaling:** Synaptic Homeostasis Hypothesis (Tononi & Cirelli, 2003/2006); adolescent slow-wave-activity decline tracks synaptic pruning (Feinberg, 1982; Feinberg & Campbell).
+- At the far end the maintenance system frays — less melatonin, less slow-wave sleep, advanced timing, nocturia (driven in older adults mainly by loss of the nighttime ADH rise, not bladder capacity). The same system: overbuilt for construction before birth, harder to sustain in age.
+
+**Human sleep is evolutionarily unusual (the "8 hours isn't universal" point).** Human sleep is the shortest and most REM-dense of any primate (~25% REM vs <5% in several monkeys/lemurs); the sleep intensity hypothesis (Samson & Nunn, 2015) ties this to ground-sleeping, groups, and fire. Evidence behind the Ch6 voice line that natural selection tuned sleep differently across species.
+
+**What not to claim.**
+- The ontogenetic hypothesis and SHY are leading *hypotheses*, not settled mechanism.
+- "REM builds / deep sleep prunes" is a clean teaching heuristic; reality overlaps (SHY downscaling is a nightly, all-ages renormalization; the developmental-pruning tie is strongest in adolescence).
+- Don't say the glymphatic system clears adenosine specifically — the demonstrated target is amyloid-beta and other metabolites (Xie et al., 2013).
+
+---
+
+## 20. Cognitive Aging: Gf→Gc, Novelty, and the Limits of "Use It or Lose It"
+
+*Session origin: developed 2026-07-03 (Session 60), extended exchange. Jon's live scholarly position — NOT settled fact; teach as hypothesis alongside the biological account. Feeds Ch9 (Thinking, Language & Intelligence) and Ch10 (Lifespan).*
+
+**Jon's position.**
+- It is *fluid* intelligence (Gf) that declines; *crystallized* (Gc) rises. We shift, not simply lose (Ackerman's PPIK: process→knowledge).
+- The *first* encounter with anything demands Gf; every encounter after starts from Gc. Truly novel tasks are rarely met after ~25 — the reminiscence bump (~15–25) marks where novelty density actually is; adult "expertise" (even mathematics) is mostly repackaging known machinery, not from-scratch reasoning.
+- Integrated model: senescence (life-history evolution) sets the decline *rate*; the metabolic expense of neural tissue means unused functions aren't maintained, so use-dependent pruning compounds it. Compensatory activation in older brains reflects accumulated strategy/scaffolding.
+
+**Where the evidence lands (honest).**
+- Solid: Gf declines from the ~20s; Gc maintained into the 70s–80s (Salthouse; Cattell–Horn). Reminiscence-bump *novelty/stability* account supports "peak novelty ~15–25" (competes with the cultural life-script account). "No adult is a heavy raw-Gf user" is substantially right.
+- The both/and (senescence rate + metabolic pruning) is legitimate and mainstream-compatible; disagreement narrows to *proportion*.
+- Pushback that survives: (a) **processing speed** — pacemaker of much Gf decline — falls from the 20s despite being impossible not to use; (b) cognitively demanding careers slow the decline *rate* but don't preserve *peak capacity* (reserve, not prevention); (c) far transfer of training to Gf is weak.
+- Direction caveat on compensatory activation: expertise → neural *efficiency* (LESS activation); compensatory over-recruitment (HAROLD/CRUNCH) is a *strain* signature, usually read as downstream of decline, not caused by strategy accumulation. STAC "scaffolding" is the thread that partly supports the strategy angle.
+- Best open empirical lever: do individual differences in continued novel-reasoning engagement predict Gf-decline *rate* strongly (use-model) or modestly (reserve-modulator)? Current: modest → use is a real *modulator*; biology sets the dominant *rate*.
+
+**Chessmaster autopsy (cautionary note).** Anecdote (heard, unverified): a chess master with neurodegeneration retained chess skill; autopsy showed chess regions least damaged, the rest "Swiss cheese." Read as use-protects-tissue. Two problems: (1) disease-topography confound — degenerative diseases spare regions for intrinsic reasons, so "chess areas intact" may be coincidence, not protection; (2) direction — "spared tissue → retained skill" is more parsimonious than "use → spared tissue." Real adjacent phenomena (expert skills preserved late in dementia; cognitive reserve) are about functional redundancy, not proven physical sparing. If a primary source surfaces, the test is region-by-region preservation vs. the disease's expected topography.
+
+**What not to claim.**
+- Don't teach the disuse/novelty account as *the cause* of Gf capacity decline — it is a contributing modulator; the biological pacemaker (processing speed, white-matter integrity) sets the rate.
+- Don't equate "fluid decline" with "losing intelligence" — crystallized rises; it's a shift.
+- Don't state the strategy→compensatory-activation causal chain as fact — the efficiency evidence points the other way.
+
+---
+
+## 21. Should We Drop the "Sensation" Definition? (S&P pedagogy)
+
+*Session origin: 2026-07-03 (Session 60). Connects to §12 (controlled hallucination) and §14 (binding problem). Bears on Ch4 (S&P) and Ch5.*
+
+**Jon's proposal.** Stop teaching "sensation" as a separate stage — after first exposure there is no truly novel sensation; the cortex always brings predictions (predictive coding).
+
+**Assessment.** The *clean* sensation→perception dichotomy is indeed false; S&P is one predictive process (matches the book's Seth / Rao & Ballard spine). But don't *delete* sensation:
+- Predictive coding is Bayesian = prior × likelihood; **sensation is the likelihood/evidence term.** Remove it and the framework breaks — no evidence term → no prediction error → nothing to correct.
+- Transduction and psychophysics (phototransduction, cochlear mechanics, Weber's law, adaptation) are lawful and largely prediction-independent at the receptor.
+- The naive dichotomy is the *foil* the misconception-then-correction structure needs.
+
+**Resolution.** Define sensation, then immediately show it is inseparably fused with prediction — one inferential process, two terms — rather than two sequential boxes.
+
+---
+
 ## 8. Sources Referenced
 
 - Rao, R.P.N., & Ballard, D.H. (1999). Predictive coding in the visual cortex. *Nature Neuroscience.*
@@ -726,3 +788,14 @@ This is prediction/updating applied at the developmental timescale. Piaget was d
 - Gignac, G.E., & Zajenkowski, M. (2020). The Dunning-Kruger effect is (mostly) a statistical artefact: valid approaches to testing the hypothesis with individual differences data. *Intelligence.*
 - [Brain-LLM alignment] Alignment of brain embeddings and artificial contextual embeddings in natural language points to common geometric patterns. *Nature Communications* (2024). [Confirm full author list before citing in text.]
 - Tanaka, J.W., & Taylor, M. (1991). Object categories and expertise: is the basic level in the eye of the beholder? *Cognitive Psychology.*
+- Roffwarg, H.P., Muzio, J.N., & Dement, W.C. (1966). Ontogenetic development of the human sleep-dream cycle. *Science*, 152(3722), 604–619.
+- Tononi, G., & Cirelli, C. (2006). Sleep function and synaptic homeostasis. *Sleep Medicine Reviews.*
+- Feinberg, I. (1982). Schizophrenia: caused by a fault in programmed synaptic elimination during adolescence? *Journal of Psychiatric Research.*
+- Blumberg, M.S. (2015). Developing sensorimotor systems in our sleep. *Current Directions in Psychological Science.*
+- Samson, D.R., & Nunn, C.L. (2015). Sleep intensity and the evolution of human cognition. *Evolutionary Anthropology.*
+- Rattenborg, N.C., et al. (2016). Evidence that birds sleep in mid-flight. *Nature Communications.*
+- Tamaki, M., et al. (2016). Night watch in one brain hemisphere during sleep associated with the first-night effect in humans. *Current Biology.*
+- Xie, L., et al. (2013). Sleep drives metabolite clearance from the adult brain. *Science.*
+- Salthouse, T.A. (1996). The processing-speed theory of adult age differences in cognition. *Psychological Review.*
+- Ackerman, P.L. (1996). A theory of adult intellectual development: process, personality, interests, and knowledge. *Intelligence.*
+- Reuter-Lorenz, P.A., & Cappell, K.A. (2008). Neurocognitive aging and the compensation hypothesis. *Current Directions in Psychological Science.*
