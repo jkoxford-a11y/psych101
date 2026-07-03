@@ -100,11 +100,9 @@ A related auditory effect: your own name, spoken across a noisy room in a conver
 
 The system that determines what gets promoted into the conscious model is built around threat and biological relevance. **Norepinephrine** released from the locus coeruleus modulates cortical arousal and attention broadly, firing in response to novelty, threat, and unexpected events, and amplifying processing in regions relevant to whatever triggered the response. The **amygdala** is particularly sensitive to emotionally significant stimuli — especially threatening ones — and can bias attentional allocation and direct conscious awareness toward a stimulus before any deliberate, considered evaluation has occurred.
 
-The clearest evidence that this salience system operates partly *below* the level of conscious awareness returns us to where this chapter began. The cortically blind patient who navigated the obstacle-filled hallway was not simply guessing. Visual signals — specifically, information relevant to obstacle detection and navigation — were reaching subcortical systems through routes that bypassed the damaged visual cortex entirely, influencing behavior without ever producing a conscious visual experience. His salience and action systems were responding to information his conscious model did not contain.
+The clearest evidence that this salience system operates partly *below* the level of conscious awareness returns us to where this chapter began. The cortically blind patient who navigated the obstacle-filled hallway was not simply guessing. Visual signals — specifically, information relevant to obstacle detection and navigation — were reaching subcortical systems through routes that bypassed the damaged visual cortex entirely, influencing behavior without ever producing a conscious visual experience. His salience and action systems were responding to information his conscious model did not contain. The specific anatomy of these subcortical visual routes in humans remains debated (Pessoa, 2005) — the dissociation between behavior and awareness is the point, not the wiring.
 
-[VOICE] — the amygdala doesn't wait. Evolution cannot afford a threat-detection system that requires full conscious deliberation before responding. The system that flags "this matters, NOW" must run faster than the system that builds a considered narrative about what is happening. Your framing here.
-
-The specific anatomy of subcortical visual routes in humans remains debated (Pessoa, 2005) — the dissociation between behavior and awareness is the point, not the wiring.
+The amygdala doesn't wait for the full story — evolution can't afford a threat system that pauses for a considered narrative before it responds. That speed is adaptive, but it comes at a cost: the fast tag is supposed to get revised once slower systems catch up with better evidence, and that revision doesn't always finish. A cue that was genuinely dangerous once can keep tripping the alarm long after it stopped being dangerous (Quirk & Mueller, 2008). Chapter 13 picks this up directly — phobias and PTSD are, in part, an update that never completed.
 
 ### The Prediction Error Loop
 
@@ -472,6 +470,8 @@ Lakoff, G., & Johnson, M. (1980). *Metaphors we live by.* University of Chicago 
 Moray, N. (1959). Attention in dichotic listening: Affective cues and the influence of instructions. *Quarterly Journal of Experimental Psychology, 11*(1), 56–60.
 
 Pessoa, L. (2005). To what extent are emotional visual stimuli processed without attention and awareness? *Current Opinion in Neurobiology, 15*(2), 188–196.
+
+Quirk, G. J., & Mueller, D. (2008). Neural mechanisms of extinction learning and retrieval. *Neuropsychopharmacology, 33*(1), 56–72.
 
 Raichle, M. E., & Gusnard, D. A. (2002). Appraising the brain's energy budget. *Proceedings of the National Academy of Sciences, 99*(16), 10237–10239.
 
