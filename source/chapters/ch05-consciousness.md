@@ -3,7 +3,7 @@
 > Draft v0.2 — 2026-07-02 | Status: Patched from v0.1 audit. Fixes: sea squirt biology softened (adult retains ganglion); GABA/ACh blackout claim replaced; Pessoa paragraph compressed to one sentence; dreams sentence replaced with Ch6 bridge; stimulants condensed to cocaine/Ritalin, Adderall removed; prediction error section expanded with gap-filling/illusions/metaphors paragraph (Rao & Ballard 1999, Kogo & Trengove 2015, Lakoff & Johnson 1980, Clark 2016); CBS prevalence added with Hamedani & Pelak 2021 citation; metabolic cost citation added (Raichle & Gusnard 2002); Eagleman Think About It simplified; typo fixed.
 > Word count target: 4,500–5,500 body words
 > Copyright note: all concepts instructor-original or canonical-common-knowledge. No book-adoption or needs-verification flags.
-> Figures needed: (1) NT pathway map — LC/NE, VTA/DA, Raphe/5-HT, Basal Forebrain/ACh, GABA distribution — for Section 3 opener. Existing ch05 figures (hypnogram, two-process model, SCN pathway) move to ch06.
+> Figures: Fig 5.1 (Section 3 opener, neuromodulatory systems — GABA, DA+NE, 5-HT2A, Endocannabinoid, Opioid) built and wired (Session 62). Existing ch05 figures (hypnogram, two-process model, SCN pathway) moved to ch06. Open question: `docs/images/ch05/` also contains several more images (Attention_filter.png, Dopamine_1.png, blind_sight.png, charles_bonnet.png, dopamine_error.png, sea_squirt_life.png, the_prediction_model.png) not yet wired into the chapter — need Jon to confirm which section each belongs to before embedding.
 > Voice markers: [VOICE] tags throughout mark where Jon's specific lines, analogies, and comparative framings should be inserted before final draft.
 
 ---
@@ -144,6 +144,9 @@ The case for any account of a complex system becomes stronger when systematic pe
 
 Lesion studies ask what's lost when a part of the system is damaged — Chapter 3 leaned on that logic more than once. Try writing that protocol for a human ethics board, though, and watch how fast the meeting ends. Neurons run on electrochemical signaling, so the same question can be asked chemically instead: perturb a neurotransmitter system and watch what fails.
 
+![Figure 5.1 — Two broadcast neuromodulatory systems (Dopamine+Norepinephrine, Serotonin/5-HT2A) shown as point-source projections from a single brainstem/midbrain nucleus to their major targets, alongside three locally-acting systems (GABA, Endocannabinoids, Opioids) shown as distributed callout boxes without a single point of origin.](../images/ch05/fig_neuromodulatory_systems_section3.png)
+*Figure 5.1. The five neurotransmitter/receptor systems this section covers, and what breaks in the conscious model when each one is pharmacologically disrupted.*
+
 ### GABA System → Depressants
 
 **GABA** is the brain's primary inhibitory neurotransmitter, reducing neural activity wherever it acts — and it acts widely throughout the cortex, hippocampus, and brainstem. The major depressant drug classes — alcohol, benzodiazepines (diazepam, alprazolam), and barbiturates — all work primarily by enhancing GABA activity, which is why they share a family resemblance in their effects: sedation, anxiolysis, slowed coordination, and impaired memory formation.
@@ -160,13 +163,11 @@ What this reveals: the GABA system is not simply reducing arousal as a side effe
 
 ### Dopamine and Norepinephrine → Stimulants
 
-**Cocaine** and **methylphenidate** (Ritalin) both block the dopamine and norepinephrine reuptake transporters, leaving more of both neurotransmitters active in the synapse and amplifying signaling in the brain's mesolimbic reward and arousal circuits. That they share the same molecular target surprises people given that one is a controlled street drug and the other a widely prescribed ADHD medication. The critical difference is pharmacokinetics, not mechanism: cocaine crosses the blood-brain barrier rapidly and produces a sharp, intense dopamine surge; methylphenidate has a slower onset and a modest, sustained profile. The reinforcement that drives addiction is substantially a function of how rapidly and completely the dopamine system is activated, not simply whether it is activated (Volkow et al., 1995). Same seam — different tear.
-
-[VOICE] — own the pharmacokinetics point. People expect mechanism to explain the risk difference. It doesn't. The timing does. Your framing.
+**Cocaine** and **methylphenidate** (Ritalin) both block the dopamine and norepinephrine reuptake transporters, leaving more of both neurotransmitters active in the synapse and amplifying signaling in the brain's mesolimbic reward and arousal circuits. That they share the same molecular target surprises people given that one is a controlled street drug and the other a widely prescribed ADHD medication. People expect the mechanism to explain that risk difference. It doesn't — the timing does. Cocaine crosses the blood-brain barrier rapidly and produces a sharp, intense dopamine surge; methylphenidate has a slower onset and a modest, sustained profile. The reinforcement that drives addiction is substantially a function of how rapidly and completely the dopamine system is activated, not simply whether it is activated (Volkow et al., 1995). Same seam — different tear.
 
 A persistent misconception worth correcting directly: dopamine is often called the brain's "pleasure chemical," implying stimulant drugs simply produce pleasure. The research picture is more precise. Dopamine neurons in the reward circuit fire most strongly not when a reward is received, but when a reward is *better than expected* — and are suppressed when an expected reward fails to arrive. This is **reward prediction error**: dopamine encodes the discrepancy between the model's prediction and the actual outcome, not the reward itself (Schultz, Dayan, & Montague, 1997).
 
-[VOICE] — Sapolsky on dopamine. Anticipation, not reward. The dopamine spike is the signal that something more important than predicted just happened — "update your model." This is your home territory; own it here.
+Dopamine doesn't spike when you get the reward — it spikes when something more important than predicted just happened, and that signal drives the behavior needed to act on it, not just flags it. A light comes on signaling a reward is available; the model updates, and dopamine gets the organism moving toward it. Same push as the amygdala's "turn toward this" from earlier in this chapter — the engine behind pursuit, not a reward handed out after the fact. It's also why methylphenidate (Ritalin) treats ADHD: not by calming the brain down, but by strengthening the motivational signal that makes a task feel worth doing, sharpening focus by making the goal-relevant cue matter more (Sapolsky, 2011). Chapter 7 opens the full mechanism, including why uncertainty itself — not just reward — is what makes that engine run hardest. Worth watching now, before Chapter 7: Sapolsky's original public lecture, *Dopamine Jackpot!* (2011) — it's where this whole framing comes from, and it will make Chapter 7's conditioning material click before you even get there.
 
 Stimulant drugs that flood this system produce a state in which the salience signal runs continuously at high intensity — everything seems more significant, more worth pursuing, more urgently demanding attention and action than it actually is. The model's salience-weighting system is not broken; it is running far too hot, decoupled from actual outcomes in the environment.
 
@@ -434,6 +435,9 @@ The most accessible and current book-length treatment of the predictive processi
 *Journal of Consciousness Studies, 2*(3), 200–219.
 The paper that named the hard problem and distinguished it from the "easy problems" of explaining the functional mechanisms of consciousness. Brief, clear, and worth reading directly.
 
+**Sapolsky, R. (2011, February 15). *Dopamine jackpot!* [Video lecture]. California Academy of Sciences. https://www.youtube.com/watch?v=axrywDP9Ii0**
+The original public lecture behind this chapter's dopamine-as-anticipation framing — accessible, no neuroscience background required. Watch it now: it's the direct source for Chapter 7's full treatment of variable-ratio schedules and why uncertainty itself drives the strongest dopamine response, so watching here will make that chapter click faster when you get there.
+
 **Sapolsky, R. M. (2017). *Behave: The Biology of Humans at Our Best and Worst.* Penguin Press.**
 Sapolsky's treatment of dopamine — anticipation, not reward — and the neuroscience of behavior more broadly. Chapter 2 in particular extends the dopamine prediction-error account developed in this chapter.
 
@@ -478,6 +482,8 @@ Quirk, G. J., & Mueller, D. (2008). Neural mechanisms of extinction learning and
 Raichle, M. E., & Gusnard, D. A. (2002). Appraising the brain's energy budget. *Proceedings of the National Academy of Sciences, 99*(16), 10237–10239.
 
 Rao, R. P. N., & Ballard, D. H. (1999). Predictive coding in the visual cortex: A functional interpretation of some extra-classical receptive-field effects. *Nature Neuroscience, 2*(1), 79–87.
+
+Sapolsky, R. (2011, February 15). *Dopamine jackpot!* [Pritzker Lecture]. California Academy of Sciences.
 
 Sapolsky, R. M. (2017). *Behave: The biology of humans at our best and worst.* Penguin Press.
 
