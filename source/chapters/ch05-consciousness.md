@@ -257,9 +257,9 @@ Psychoactive drugs are treated in this chapter not as a catalog but as evidence:
 | Predictive model of consciousness | Ch. 6 — Sleep | Sleep is framed as the overnight maintenance cycle for the model — memory consolidation, glymphatic clearance, and the consequences of skipping maintenance all follow from this chapter's framework |
 | Dopamine and reward prediction error | Ch. 7 — Learning | The prediction-error signal introduced here as the mechanism behind stimulant addiction is the same signal Chapter 7 uses to explain ordinary reinforcement and Pavlovian conditioning |
 | Salience, attention, and the amygdala | Ch. 12 — Emotion, Stress & Coping | The amygdala's role in salience and threat flagging developed here becomes central to the emotion and stress chapter's account of emotional reactivity |
-| Tolerance, withdrawal, and substance use disorder | Ch. 14 — Psychological Disorders & Therapy | Substance use disorder is diagnosed using tolerance and withdrawal as criteria; the neurobiological mechanisms introduced here are prerequisite understanding |
+| Tolerance, withdrawal, and substance use disorder | Ch. 13 — Psychological Disorders & Therapy | Substance use disorder is diagnosed using tolerance and withdrawal as criteria; the neurobiological mechanisms introduced here are prerequisite understanding |
 | Evolutionary framing (sea squirts, bilateral movement) | Ch. 1 — History & Approaches (review) | Chapter 1 introduced the "what problem did this solve?" evolutionary lens; this chapter applies it to the origin of nervous systems and consciousness specifically |
-| Hard problem of consciousness | Ch. 14 — Psychological Disorders & Therapy | The question of what constitutes a disorder of consciousness — vegetative states, disorders of awareness — requires exactly the distinction between functional consciousness (the model) and subjective experience that this chapter draws |
+| Hard problem of consciousness | Ch. 13 — Psychological Disorders & Therapy | The question of what constitutes a disorder of consciousness — vegetative states, disorders of awareness — requires exactly the distinction between functional consciousness (the model) and subjective experience that this chapter draws |
 
 ---
 

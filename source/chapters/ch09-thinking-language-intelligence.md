@@ -1,4 +1,4 @@
-# Chapter 8: Thinking, Language & Intelligence
+# Chapter 9: Thinking, Language & Intelligence
 
 <!-- v0.1 — first full draft (2026-06-23, Session 18) -->
 <!-- Concepts covered: TLI-001 through TLI-015 (15 concepts total) -->
@@ -21,11 +21,11 @@ This is not a character flaw. These patterns are the predictable products of a c
 
 ## Where This Fits
 
-Chapter 7 explored how memory works — how information is encoded, stored, and retrieved. This chapter asks what happens *after* retrieval: how we use information to form concepts, solve problems, make decisions, and communicate. These cognitive processes are among the most complex the human brain performs and are the subject of an entire field (cognitive psychology), of which this chapter gives a selective survey.
+Chapter 8 explored how memory works — how information is encoded, stored, and retrieved. This chapter asks what happens *after* retrieval: how we use information to form concepts, solve problems, make decisions, and communicate. These cognitive processes are among the most complex the human brain performs and are the subject of an entire field (cognitive psychology), of which this chapter gives a selective survey.
 
 Language is introduced here because it is both a cognitive tool and the medium through which most of what we know was acquired. Intelligence follows because modern conceptions of intelligence are rooted in cognitive science — IQ tests are, at bottom, measures of certain cognitive abilities.
 
-**Connections to other chapters:** Working memory (Ch. 7) is the active workspace for reasoning and problem-solving — its capacity limits directly constrain what we can hold in mind while thinking. Attention and perception (Ch. 4) shape what information even enters reasoning. Social cognition (Ch. 10) extends cognitive biases into the realm of person perception and group judgment. Intelligence measurement connects forward to personality assessment (Ch. 11) and to psychological diagnosis (Ch. 14), where IQ scores play a contested role.
+**Connections to other chapters:** Working memory (Ch. 8) is the active workspace for reasoning and problem-solving — its capacity limits directly constrain what we can hold in mind while thinking. Attention and perception (Ch. 4) shape what information even enters reasoning. Social cognition (Ch. 11) extends cognitive biases into the realm of person perception and group judgment. Intelligence measurement connects forward to personality assessment (Ch. 11, glossed within Social Psychology) and to psychological diagnosis (Ch. 13), where IQ scores play a contested role.
 
 ---
 
@@ -372,13 +372,13 @@ A striking empirical puzzle is the **Flynn Effect** (Flynn, 1987): average IQ sc
 
 | Topic in this chapter | Connected to | How |
 |---|---|---|
-| Working memory → reasoning | Ch. 7 (Memory) | Problem solving uses WM as the active workspace; WM capacity limits constrain how many problem states you can hold simultaneously |
+| Working memory → reasoning | Ch. 8 (Memory) | Problem solving uses WM as the active workspace; WM capacity limits constrain how many problem states you can hold simultaneously |
 | System 1/2 and metacognition | Ch. 4 (S&P) | Inattentional blindness is a System 1 failure to notice unattended stimuli; top-down expectation parallels schema-driven processing |
-| Confirmation bias | Ch. 10 (Social Psychology) | In-group favoritism and stereotyping involve selective attention to confirming evidence about social groups |
-| Linguistic relativity | Ch. 9 (Lifespan Development) | Language acquisition trajectory and the role of caregiver input connects Chomsky's LAD to developmental milestones |
-| Intelligence and IQ | Ch. 11 (Personality) | Personality assessment and intelligence testing share methodological roots; both rely on standardized, normed measures |
-| Intelligence group differences | Ch. 14 (Disorders) | IQ score thresholds are used in intellectual disability diagnosis; stereotype threat is relevant to assessment contexts |
-| Framing and decision making | Ch. 13 (Stress & Health) | Medical decision framing (surgery survival rate vs. mortality rate) directly affects patient choices |
+| Confirmation bias | Ch. 11 (Social Psychology) | In-group favoritism and stereotyping involve selective attention to confirming evidence about social groups |
+| Linguistic relativity | Ch. 10 (Lifespan Development) | Language acquisition trajectory and the role of caregiver input connects Chomsky's LAD to developmental milestones |
+| Intelligence and IQ | Ch. 11 (Personality, glossed within Social Psychology) | Personality assessment and intelligence testing share methodological roots; both rely on standardized, normed measures |
+| Intelligence group differences | Ch. 13 (Disorders) | IQ score thresholds are used in intellectual disability diagnosis; stereotype threat is relevant to assessment contexts |
+| Framing and decision making | Ch. 12 (Emotion, Stress & Coping) | Medical decision framing (surgery survival rate vs. mortality rate) directly affects patient choices |
 
 ---
 
