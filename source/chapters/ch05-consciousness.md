@@ -58,7 +58,7 @@ A sea squirt begins its life as a free-swimming larva. It has a primitive brain,
 
 The sea squirt makes the point with unusual clarity: **nervous systems evolved for movement and action.** More precisely, they evolved to solve the problem that movement creates. Moving through the world directionally — with a front end that encounters the environment first — requires something sessile organisms do not need: advance information about what is ahead, fast enough to be useful before contact is made.
 
-[VOICE] — your framing of the bilaterian movement problem. Bilateral body plan, front end hits first, prediction problem. This is your territory.
+Bilateral symmetry is where the modulatory chemistry comes online too — dopamine, serotonin, and their relatives, wired into a real signaling system specifically in this lineage (Goulty et al., 2023). In a rough but useful shorthand, grounded in a real theoretical account of dopamine/serotonin opponency (Daw, Kakade, & Dayan, 2002): dopamine says *turn toward this* — this cue predicts something worth pursuing. Serotonin says *stand down, alles in Ordnung* — nothing here needs a response right now. Push and pull, approach and hold. Scale that logic up across evolutionary time, into bodies built from millions of specialized cells each running their own job, and a simple push-pull signal isn't enough anymore — you need a working model of the world to act on within real constraints. And you need it to predict, not just react, because a system that can act on what's about to happen beats one that can only respond to what's already hit.
 
 Bilateral animals with a defined head end have a front that hits the world before the rest of the body does. What is ahead? Food, danger, a dead end, a potential mate? By the time direct physical contact confirms the answer, it may be too late to do anything useful. An organism with a system that builds and continuously updates a model of what is coming — integrating sensory signals into a working prediction of the near future — can act on that model before contact, not only in response to it. That predictive capacity is the origin of the nervous system, and in our framework, it is the origin of consciousness.
 
@@ -455,9 +455,13 @@ Chalmers, D. J. (1995). Facing up to the problem of consciousness. *Journal of C
 
 Cherry, E. C. (1953). Some experiments on the recognition of speech, with one and with two ears. *Journal of the Acoustical Society of America, 25*(5), 975–979.
 
+Daw, N. D., Kakade, S., & Dayan, P. (2002). Opponent interactions between serotonin and dopamine. *Neural Networks, 15*(4–6), 603–616.
+
 de Gelder, B., Tamietto, M., van Boxtel, G., Goebel, R., Sahraie, A., van den Stock, J., … Pegna, A. (2008). Intact navigation skills after bilateral loss of striate cortex. *Current Biology, 18*(24), R1128–R1129.
 
 Friston, K. J., Wiese, W., & Hobson, J. A. (2017). Sentience and the predictive mind. In T. Metzinger & W. Wiese (Eds.), *Philosophy and Predictive Processing.* MIND Group.
+
+Goulty, M., Botton-Amiot, G., Rosato, E., Sprecher, S. G., & Feuda, R. (2023). The monoaminergic system is a bilaterian innovation. *Nature Communications, 14*, 3284. https://doi.org/10.1038/s41467-023-39030-2
 
 Hamedani, A. G., & Pelak, V. S. (2021). Nonpsychotic hallucinations and impaired vision: The Charles Bonnet syndrome. *Current Treatment Options in Neurology, 23*(9), 27. https://pmc.ncbi.nlm.nih.gov/articles/PMC8405382/
 
