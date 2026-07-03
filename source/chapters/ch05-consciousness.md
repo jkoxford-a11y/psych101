@@ -62,7 +62,7 @@ Bilateral symmetry is where the modulatory chemistry comes online too — dopami
 
 Bilateral animals with a defined head end have a front that hits the world before the rest of the body does. What is ahead? Food, danger, a dead end, a potential mate? By the time direct physical contact confirms the answer, it may be too late to do anything useful. An organism with a system that builds and continuously updates a model of what is coming — integrating sensory signals into a working prediction of the near future — can act on that model before contact, not only in response to it. That predictive capacity is the origin of the nervous system, and in our framework, it is the origin of consciousness.
 
-[VOICE] — comparative examples here. Octopus (two-thirds of neurons in arms, not centralized brain — a different architectural solution to the same movement-prediction problem). Dolphins, birds. Your territory.
+Octopuses make the same point even more vividly. Roughly two-thirds of their neurons live in the arms, not the central brain — each arm has its own local nervous system, capable of processing touch and organizing movement on its own. The central brain can also step in and take direct control when it matters. The result: an octopus can genuinely be doing eight different things at once, then centralize when the task calls for it. Local control, central override — the same push-pull logic as the neuromodulator system above, running at the scale of the whole body.
 
 ### In Our Model, Consciousness Is...
 

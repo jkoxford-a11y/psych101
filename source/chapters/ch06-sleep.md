@@ -1,6 +1,6 @@
 # Chapter 6: Sleep
 
-> Draft v0.3 — 2026-07-02 | Status: Evidence-tiering pass on v0.2. Removed load-without-payoff details (spindle–IQ correlation, PGO-wave jargon, local-sleep single-case, adenosine→cortisol "second wind" mechanism). Fixed factual overreaches (glymphatic clears amyloid-beta, not adenosine; leptin/ghrelin softened to classic-study-plus-mixed-replication; predation reframed to sleep-architecture per Lima et al. 2005; school-start "consistently" softened per Minges & Redeker 2016). Restored two-process terms (Process C/S) in Section 1 so Review Q2/LO2 are answerable. Delivered the dopamine/reward cross-ref via Gujar et al. 2011. De-overclaimed the Surrealism box. Chapter Summary and Key Terms updated to match.
+> Draft v0.4 — 2026-07-03 | Status: Added Section 3 "Sleep Across the Lifespan" (developmental REM arc + older-adult fragmentation), written in the §3 life-history voice; deprivation section renumbered to Section 4; Roffwarg (1966) added; Connections anchors updated. Prior: v0.3 evidence-tiering pass on v0.2. Removed load-without-payoff details (spindle–IQ correlation, PGO-wave jargon, local-sleep single-case, adenosine→cortisol "second wind" mechanism). Fixed factual overreaches (glymphatic clears amyloid-beta, not adenosine; leptin/ghrelin softened to classic-study-plus-mixed-replication; predation reframed to sleep-architecture per Lima et al. 2005; school-start "consistently" softened per Minges & Redeker 2016). Restored two-process terms (Process C/S) in Section 1 so Review Q2/LO2 are answerable. Delivered the dopamine/reward cross-ref via Gujar et al. 2011. De-overclaimed the Surrealism box. Chapter Summary and Key Terms updated to match.
 > Word count target: 3,500–5,000 body words.
 > Copyright note: sleep concepts are `instructor-original`/`canonical-common-knowledge` — drafted from course materials and verified literature. No `book-adoption` or `needs-verification` flags requiring Noba/APA substitution.
 > Figures: two in `docs/images/ch06/` — `fig_scn_pathway.png` (Fig 6.1), `fig_sleep_hypnogram.png` (Fig 6.2). `fig_two_process_sleep_model.png` remains on disk but is no longer referenced in text (retired per Session 58 planning decision).
@@ -113,7 +113,15 @@ When the systems described above break down, the result is a sleep disorder. **I
 
 ---
 
-## Section 3: Sleep Deprivation and Its Consequences
+## Section 3: Sleep Across the Lifespan
+
+The maintenance system does not run identically at every age — and where it changes tells you what it is for. Before birth, the developing brain runs almost entirely on REM-like **active sleep**: as much as 80% of a fetus's near-continuous sleep around 30 weeks' gestation, falling to about 50% at term and roughly 25% by age 3. The **ontogenetic hypothesis** (Roffwarg et al., 1966) reads this as REM supplying the brain's own stimulation to drive circuit development before there is enough waking experience to do the job. This is the sleep-side version of a theme the book returns to in development: the human brain is born radically unfinished precisely so that it can be tuned by local conditions, and maximum immaturity buys maximum plasticity. The restless, twitchy movements of fetal and newborn active sleep fit the same logic — far from random, they generate the sensory feedback that helps wire the sensorimotor map, the brain practicing on itself. *(Chapter 10 develops the cognitive side of this story.)*
+
+At the other end of life, the maintenance system frays. Older adults produce less melatonin and less deep slow-wave sleep, their internal timing advances earlier, and sleep becomes lighter and more easily broken — often compounded by nocturia, which in older adults is driven less by shrinking bladder capacity than by the loss of the normal nighttime rise in antidiuretic hormone that concentrates urine overnight. The result is the same maintenance system seen from both ends of the lifespan: overbuilt for construction before birth, harder to sustain in age.
+
+---
+
+## Section 4: Sleep Deprivation and Its Consequences
 
 If the previous sections established that sleep is a biologically active process — running a waste-clearance cycle, consolidating memory, and synchronizing nearly every bodily system to a 24-hour schedule — then a direct question follows: what happens when that process is cut short? The research literature answers in concrete, measured terms.
 
@@ -145,9 +153,9 @@ Sleep deprivation measurably impairs prefrontal regulation of the amygdala — p
 |---|---|---|
 | [Sleep-dependent memory consolidation and H.M.](#section-2-sleep--architecture-function-and-dreams) | Ch. 8 — Memory | H.M.'s case gets its full treatment there; this chapter establishes why the same hippocampal machinery matters for sleep, not just for waking learning |
 | [Suprachiasmatic nucleus and the hypothalamus](#section-1-circadian-rhythms-and-sleep-pressure) | Ch. 3 — Neuroscience & Biological Bases (review) | The SCN is one specific, well-studied job performed by a structure Chapter 3 already introduced for its broader role in regulating basic biological drives |
-| [Adenosine, Process S, and reward/appetite consequences](#section-3-sleep-deprivation-and-its-consequences) | Ch. 7 — Learning | The dopamine reward machinery that sleep loss dysregulates is the same system Chapter 7 uses to explain ordinary reinforcement learning |
+| [Adenosine, Process S, and reward/appetite consequences](#section-4-sleep-deprivation-and-its-consequences) | Ch. 7 — Learning | The dopamine reward machinery that sleep loss dysregulates is the same system Chapter 7 uses to explain ordinary reinforcement learning |
 | [The conscious model, taken offline for maintenance](#section-2-sleep--architecture-function-and-dreams) | Ch. 5 — Consciousness (review) | This chapter is the concrete overnight case of the predictive model Chapter 5 defined — serviced, consolidated, and re-synchronized during sleep |
-| [Sleep deprivation and prefrontal-amygdala regulation](#section-3-sleep-deprivation-and-its-consequences) | Ch. 12 — Emotion, Stress & Coping | The amygdala-PFC circuit whose failure under sleep deprivation explains emotional dysregulation is the same circuit Chapter 12 returns to when explaining the neural mechanisms of stress reactivity |
+| [Sleep deprivation and prefrontal-amygdala regulation](#section-4-sleep-deprivation-and-its-consequences) | Ch. 13 — Emotion, Stress & Coping | The amygdala-PFC circuit whose failure under sleep deprivation explains emotional dysregulation is the same circuit Chapter 13 returns to when explaining the neural mechanisms of stress reactivity |
 | [Evolutionary function of sleep](#section-2-sleep--architecture-function-and-dreams) | Ch. 1 — History & Approaches (review) | Chapter 1 introduced the evolutionary "what problem did this solve?" lens, with a caution against overclaiming; this chapter applies it to a concrete, measurable behavior pattern (species-typical sleep timing) rather than a speculative story |
 
 ---
@@ -335,6 +343,8 @@ Lima, S. L., Rattenborg, N. C., Lesku, J. A., & Amlaner, C. J. (2005). Sleeping 
 Minges, K. E., & Redeker, N. S. (2016). Delayed school start times and adolescent sleep: A systematic review of the experimental evidence. *Sleep Medicine Reviews, 28*, 86–95.
 
 Revonsuo, A. (2000). The reinterpretation of dreams: An evolutionary hypothesis of the function of dreaming. *Behavioral and Brain Sciences, 23*(6), 877–901.
+
+Roffwarg, H. P., Muzio, J. N., & Dement, W. C. (1966). Ontogenetic development of the human sleep-dream cycle. *Science, 152*(3722), 604–619.
 
 Scoville, W. B., & Milner, B. (1957). Loss of recent memory after bilateral hippocampal lesions. *Journal of Neurology, Neurosurgery, and Psychiatry, 20*, 11–21.
 
