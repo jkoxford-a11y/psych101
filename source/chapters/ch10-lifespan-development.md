@@ -1,6 +1,7 @@
 <!-- ch10-lifespan-development.md -->
 <!-- Chapter 10: Lifespan Development -->
 <!-- Version: 0.3 — editorial pass: learning objectives 6-7 rewritten; "none of us remembers" softened; teratogen/alcohol "no safe window" language added (Jones & Smith 1973); Genie paragraph de-decisive; core knowledge "not learned from experience" → "initial biases/starting points"; Wynn "number" → "quantity tracking"; AI/ZPD assimilation language replaced with "schema unchanged" framing; DEV-013 artifact removed; "deep evolutionary roots" softened in Warneken/Tomasello paragraph; retrieval prompt sharpened; Key Terms expanded (fluid/crystallized intelligence, identity formation, moral motivation, moral reasoning, emerging adulthood); References expanded (Baumrind 1966, Casey et al. 2008, Horn & Cattell 1967, Huttenlocher 1979, Jones & Smith 1973, van IJzendoorn & Kroonenberg 1988, Charles & Carstensen 2010); Lucca et al. author order corrected (Yuen 2nd, not Capelier-Mourguy) -->
+<!-- Version: 0.4 — spine-alignment pass (Session 70): life history theory added as the evolutionary payoff for the nature/nurture tension (fast/slow continuum, secondary altriciality, cooperative breeding/gray ceiling — Kaplan et al. 2000, Isler & van Schaik 2012, Oxford & Geary 2019, cross-referencing Ch3's Kuzawa et al. 2014 glucose finding); Neanderthal brain-growth-pace comparison added (Ponce de León et al. 2008); one-sentence bridge added tying extended childhood to the stages/continuity tension; orchid/dandelion explicitly named as part of the same life-history/plasticity story; natural pedagogy added to the Vygotsky/ZPD subsection (Csibra & Gergely 2011); biobehavioral synchrony added to the attachment subsection as the physiological mechanism under Bowlby's internal working model (Feldman 2007; Feldman, Gordon, & Zagoory-Sharon 2011), cross-referenced to Ch3's oxytocin material; Chapter Summary closing line added naming life history as the chapter's organizing "why"; two Connections rows added (Ch3 cross-references); Key Terms added (Life history theory, Secondary altriciality, Cooperative breeding); References added (Csibra & Gergely 2011, Feldman 2007, Feldman et al. 2011, Isler & van Schaik 2012, Kaplan et al. 2000, Kuzawa et al. 2014, Oxford & Geary 2019, Ponce de León et al. 2008) -->
 <!-- Concepts covered: DEV-001 through DEV-014 (14 concepts) -->
 <!-- DEV-006 (Vygotsky/ZPD) sourced from Noba: Siegler, R. (2026). Cognitive development in childhood. In R. Biswas-Diener & E. Diener (Eds.), Noba textbook series: Psychology. Champaign, IL: DEF publishers. http://noba.to/8uv4fn9h -->
 <!-- All other DEV-* concepts: instructor-original / canonical-common-knowledge; drafted from course materials and verified primary literature -->
@@ -22,6 +23,8 @@ This matters beyond being an interesting fact. If children's thinking is qualita
 ---
 
 ## Where This Fits
+
+Why does it take a human being so much longer to grow up than any other animal on the planet — and why did evolution build it that way? That question sits underneath the whole chapter, and it's what gives the three organizing tensions below their teeth, rather than leaving them as truisms every student already half-suspects.
 
 Development is the thread that connects everything else in this book. The biological machinery introduced in Chapter 3 builds itself out over years. The learning mechanisms from Chapter 7 shape behavior from birth onward. The memory systems covered in Chapter 8 are not fully online at birth — the hippocampal connections that support explicit autobiographical memory complete their development only after infancy, which is one reason most adults have few reliable autobiographical memories from the first years of life. And the social behavior covered in Chapter 11 has its roots in the very first attachment relationships of infancy. This chapter traces the arc of that construction project from before birth through late adulthood, organizing the story around three recurring questions: How do nature and nurture interact? Does development proceed in discrete stages or gradually? And which aspects of who we are remain stable across the lifespan?
 
@@ -48,7 +51,19 @@ By the end of this chapter, students should be able to:
 
 Every developmental psychologist eventually runs up against three fundamental tensions. The first is **nature and nurture**: how much of who we become is written in our genes, and how much is shaped by experience? By now — having covered behavioral genetics, neuroscience, and learning — you know the answer is not "one or the other." It is always both, and crucially, the two interact: the same environment can have dramatically different effects on children with different genetic profiles, and genetic tendencies are expressed differently in different environments. The orchid-dandelion framework (discussed in Section 3) captures one of the cleaner empirical examples of this interaction.
 
-The second tension is **continuity versus stages**. Does development unfold like the widening of a tree trunk — slow, gradual, continuous — or like the metamorphosis of a caterpillar — sudden, discontinuous, with qualitatively new forms emerging at critical transitions? Piaget's answer was stages. Modern research has partly confirmed and partly complicated that answer, and we return to it in Section 2.
+### Why humans, specifically, take so long to grow up
+
+Saying development is "always both nature and nurture" is true, but by itself it explains very little — every species shows some gene-environment interaction. What's distinctive about humans is how far the balance has been pushed toward the nurture side, and life history theory explains why (Kaplan, Hill, Lancaster, & Hurtado, 2000; Oxford & Geary, 2019).
+
+Every species falls somewhere on a fast-to-slow **life history** continuum. Fast species — mice, many fish — reproduce early, often, and invest little in each offspring. Slow species — elephants, great apes — reproduce late, rarely, and invest heavily. Humans sit at the extreme slow end of that continuum: the largest brain relative to body size of any species, the longest childhood, the latest average age of first reproduction, and the longest lifespan. This is not incidental to human psychology. It is one of the central facts the rest of the field spends its time explaining the consequences of.
+
+The brain is the reason the slowdown happened, and it is expensive. Around age four to five, a child's brain is running at close to double an adult brain's metabolic rate per gram, and consumes roughly two-thirds of the body's total resting-energy budget (Kuzawa et al., 2014; see Chapter 3) — even though the rest of the body is still small and still growing. No single caregiver, working alone, can fund an organ that costly for that long. **Secondary altriciality** is evolution's partial answer on the input side: human infants are born with brains at only about 28% of their eventual adult volume, noticeably less complete than a chimpanzee infant's brain, which is closer to 40% of its adult size at birth. Being born less finished means more of the brain's wiring gets built after birth, outside the womb, shaped by whatever social and physical world the infant actually lands in. Maximum immaturity at birth buys maximum postnatal plasticity — which is also why the sensitive periods, synaptogenesis, and pruning described earlier in this section matter as much as they do: they are the machinery that secondary altriciality makes possible.
+
+But an infant that immature, requiring years of costly brain construction, creates an energetic problem no lone mother evolved to solve by herself. **Cooperative breeding** is the social half of the answer: grandmothers, fathers, older siblings, and other kin routinely share the cost of provisioning and caring for offspring, reducing the burden on any one mother and permitting shorter intervals between births than a lone parent could sustain. Isler and van Schaik (2012) argue that this restructuring of the social ecology — not a sudden leap in intelligence — is what let hominin brains break through a "gray ceiling" that otherwise limits brain size in primates that raise offspring without help. On this account, human intelligence and human sociality co-evolved; neither came first.
+
+The comparison with Neanderthals is a natural experiment on this same point, though it should be read with real caution. Neanderthals had brain volumes comparable to, or larger than, those of modern humans — but the fossil evidence suggests they reached that volume through *faster* early postnatal brain growth, not a more extended developmental window (Ponce de León et al., 2008). If that pattern holds, the *pace* of brain development, not just its final size, may be what matters for the kind of extended plasticity described above. This remains an active area of paleoanthropological research built on a genuinely small fossil sample, not a settled conclusion.
+
+The second tension is **continuity versus stages**. Does development unfold like the widening of a tree trunk — slow, gradual, continuous — or like the metamorphosis of a caterpillar — sudden, discontinuous, with qualitatively new forms emerging at critical transitions? Piaget's answer was stages. Modern research has partly confirmed and partly complicated that answer, and we return to it in Section 2. Whatever the answer, notice that the extended childhood just described is what makes the question askable in the first place — a childhood compressed into a few months, the way many other mammals experience it, would leave little room for a multi-stage sequence to unfold at all.
 
 The third tension is **stability and change**: how much does personality, temperament, or intellectual ability remain consistent across the lifespan? The evidence is genuinely mixed. Some traits (notably Big Five personality dimensions) show substantial rank-order stability from early adulthood onward. Others (like fluid cognitive abilities) follow reliable developmental arcs.
 
@@ -116,6 +131,8 @@ Piaget's child is largely a solo scientist, constructing knowledge through direc
 
 The centerpiece of Vygotsky's framework is the **zone of proximal development (ZPD)**: the gap between what a child can do independently and what she can do with guidance from a more capable partner — a parent, teacher, or more experienced peer. The zone is not a fixed quantity; it shifts as the child develops. Tasks that require scaffolding today become independent capabilities tomorrow. **Scaffolding** — the support structure that a more capable partner provides, calibrated to the child's current level and gradually withdrawn as competence grows — is the mechanism that drives development forward.
 
+Scaffolding is also, in a deeper sense, evolutionarily unusual. Csibra and Gergely (2011) argue that humans are the only species with **natural pedagogy**: communication specifically adapted for one individual to transmit generic, otherwise hard-to-observe knowledge to another, rather than simply modeling behavior for someone else to copy. Other animals learn a great deal by watching each other; almost none of them actively modify their own behavior to make learning easier for a naive observer the way human caregivers and teachers routinely do. A classroom, a worked example on a whiteboard, a parent narrating what she's doing while cooking, are all culturally elaborated versions of that basic teaching disposition. Scaffolding within the ZPD is Vygotsky's account of how that disposition actually moves a learner forward; natural pedagogy is the evolutionary claim for why humans bother teaching at all.
+
 Vygotsky also argued that language and thought are deeply intertwined in ways Piaget underestimated. Children's private speech — the running commentary children often produce while working on difficult tasks — is not meaningless self-entertainment; it is an internalization of the social dialogue through which children have been guided, now turned inward as a cognitive tool. Private speech declines in frequency as it is internalized into the inner monologue of adult thinking.
 
 The Noba module "Cognitive Development in Childhood" (Siegler, 2026) summarizes the relationship between Piaget and Vygotsky as follows: both saw the child as an active agent in her own development, but Piaget located the engine of development primarily in the child's individual encounters with the physical world, while Vygotsky located it in the child's social interactions with more capable others. Both perspectives have received substantial empirical support, and most contemporary developmental psychologists treat them as complementary rather than competing.
@@ -133,6 +150,8 @@ The Noba module "Cognitive Development in Childhood" (Siegler, 2026) summarizes 
 Decades of research have established that the quality of an infant's first close relationship has consequences that extend well beyond infancy. The theoretical account is John Bowlby's. Bowlby drew on evolutionary biology and ethology to argue that **attachment** — the deep, enduring emotional bond between infant and caregiver — is not a secondary byproduct of feeding, as learning theorists had assumed, but a biological system in its own right, shaped by natural selection because it kept vulnerable infants close to protective adults (Bowlby, 1969). An infant who fails to maintain proximity to caregivers in a dangerous environment does not survive to reproduce; the attachment behavioral system is the evolutionary solution to that problem.
 
 From repeated interactions with caregivers — who respond sometimes promptly, sometimes inconsistently, sometimes not at all — infants build an **internal working model**: a mental representation of the social world that answers the questions *Is the world a safe place? Will my needs be met? Can I trust others?* These working models, laid down in the first year of life, tend to persist and influence how children — and later, adults — approach close relationships.
+
+Bowlby's internal-working-model language describes the psychological outcome; Ruth Feldman's research on **biobehavioral synchrony** describes one plausible physiological mechanism for how it gets built. Mothers and infants coordinate not just gaze and vocal turn-taking but heart-rate rhythms, cortisol patterns, and oxytocin release during face-to-face interaction, achieved through synchronized eye contact, touch, and vocal exchange (Feldman, 2007; Feldman, Gordon, & Zagoory-Sharon, 2011) — extending the oxytocin material introduced in Chapter 3. Early in life, an infant's capacity to regulate its own physiological and emotional state is partly borrowed from the caregiver's regulated state through this coupling; over development, the infant gradually internalizes regulatory capacity that was initially supplied externally. Synchrony measured as early as 3–4 months predicts later attachment security and social competence.
 
 ### The Strange Situation: a window into attachment quality
 
@@ -166,7 +185,7 @@ Attachment quality is not determined solely by caregiver behavior. Infants arriv
 
 Boyce and Ellis's (2005) **biological sensitivity to context** framework — known more informally as the **orchid/dandelion hypothesis** — formalizes an important insight about temperament and environment: children vary not just in *how reactive* they are but in *how responsive to environmental quality* they are. Dandelion children — those with easy, robust temperament profiles — tend to develop reasonably well across a wide range of environments, from poor to excellent. They are buffered against environmental adversity. Orchid children — those with difficult or highly reactive temperament — are exquisitely sensitive to environmental quality in *both* directions. In supportive, predictable, high-quality environments, they often develop *better* than their dandelion peers; in adverse, chaotic, or low-quality environments, they tend to develop worse. The same genetic and biological sensitivity that makes an orchid child vulnerable to adversity makes her especially responsive to enrichment.
 
-This framework reframes "difficult temperament" as not straightforwardly bad but as a different ecological strategy — one with high risk in adverse conditions and high reward in good ones.
+This framework reframes "difficult temperament" as not straightforwardly bad but as a different ecological strategy — one with high risk in adverse conditions and high reward in good ones. It's also a concrete instance of the extended plasticity discussed in Section 1: secondary altriciality buys the developing brain an unusually long window of sensitivity to its environment, and orchid children are simply the clearer case of that sensitivity operating in both directions at once.
 
 ### Parenting styles
 
@@ -234,6 +253,8 @@ Attachment theory identifies early caregiver-infant relationships as the origin 
 
 Development does not stop at adolescence — the Eriksonian insight that holds up best is that identity formation is the defining psychological task of the teenage years. The adolescent brain's asymmetry — reward systems maturing before impulse-control systems — explains elevated risk-taking. Across adulthood, fluid intelligence declines while crystallized intelligence is maintained; well-being is at least as high in late adulthood as in young adulthood, contrary to widespread expectation.
 
+Running underneath all of it is a single evolutionary answer to the question this chapter opened with. Human childhood is long, plastic, and expensive because a brain that expensive can only be built with that much time and that much help: secondary altriciality buys the plasticity, cooperative breeding buys the household the resources to afford it, and attachment, language, teaching, and the slow construction of identity are the machinery layered on top that makes use of the time bought.
+
 ---
 
 ## Connections
@@ -248,6 +269,8 @@ Development does not stop at adolescence — the Eriksonian insight that holds u
 | Fluid and crystallized intelligence (aging) | Ch. 9 (Thinking, Language & Intelligence) | Extends the Horn & Cattell distinction introduced there into adult development |
 | Adolescent frontal cortex maturation | Ch. 3 (Biological Bases); Ch. 5 (Consciousness) | PFC maturation, first introduced for executive function, now applied to impulse control and risk-taking |
 | Well-being across adulthood | Ch. 12 (Emotion, Stress & Coping) | Emotional regulation and affective set-points connect to motivation and hedonic adaptation |
+| Expensive brain / secondary altriciality | Ch. 3 (Biological Bases) | Extends Kuzawa et al.'s brain-glucose finding into an evolutionary explanation for why human childhood is so long |
+| Biobehavioral synchrony (oxytocin, cortisol, heart-rate coupling) | Ch. 3 (Biological Bases) | Extends the oxytocin/neuropeptide material introduced there into the physiological mechanism of early attachment |
 
 ---
 
@@ -339,6 +362,12 @@ Development does not stop at adolescence — the Eriksonian insight that holds u
 
 **Moral reasoning** — The cognitive process of justifying moral judgments by appeal to consequences, social norms, or abstract principles; the focus of Kohlberg's stage model.
 
+**Life history theory** — The evolutionary framework describing how species allocate energy and time among growth, reproduction, and maintenance across the lifespan; humans sit at the extreme slow end of the fast-slow continuum, investing an unusually long developmental period in a small number of offspring.
+
+**Secondary altriciality** — The human pattern of being born with a brain far less complete than that of other primates (roughly 28% of adult volume, versus roughly 40% in chimpanzees), which maximizes postnatal brain plasticity at the cost of an extended period of infant dependency.
+
+**Cooperative breeding** — A reproductive strategy in which individuals other than the biological mother — fathers, grandmothers, older siblings, and other kin — routinely help provision and care for offspring, reducing the mother's energetic burden and permitting a longer, costlier developmental period than she could support alone.
+
 ---
 
 ## References
@@ -359,7 +388,13 @@ Casey, B. J., Getz, S., & Galvan, A. (2008). The adolescent brain. *Developmenta
 
 Charles, S. T., & Carstensen, L. L. (2010). Social and emotional aging. *Annual Review of Psychology, 61,* 383–409.
 
+Csibra, G., & Gergely, G. (2011). Natural pedagogy as evolutionary adaptation. *Philosophical Transactions of the Royal Society B: Biological Sciences, 366*(1567), 1149–1157.
+
 Erikson, E. H. (1963). *Childhood and society* (2nd ed.). New York: Norton.
+
+Feldman, R. (2007). Parent–infant synchrony: Biological foundations and developmental outcomes. *Current Directions in Psychological Science, 16*(6), 340–345.
+
+Feldman, R., Gordon, I., & Zagoory-Sharon, O. (2011). Maternal and paternal plasma, salivary, and urinary oxytocin and parent–infant synchrony: Considering stress and affiliation components of human bonding. *Developmental Science, 14*(4), 752–761.
 
 Hamlin, J. K., Wynn, K., & Bloom, P. (2007). Social evaluation by preverbal infants. *Nature, 450,* 557–559.
 
@@ -367,17 +402,27 @@ Horn, J. L., & Cattell, R. B. (1967). Age differences in fluid and crystallized 
 
 Huttenlocher, P. R. (1979). Synaptic density in human frontal cortex — developmental changes and effects of aging. *Brain Research, 163,* 195–205.
 
+Isler, K., & van Schaik, C. P. (2012). How our ancestors broke through the gray ceiling: Comparative evidence for cooperative breeding in early *Homo*. *Current Anthropology, 53*(S6), S453–S465.
+
 Jones, K. L., & Smith, D. W. (1973). Recognition of the fetal alcohol syndrome in early infancy. *The Lancet, 302,* 999–1001.
 
+Kaplan, H., Hill, K., Lancaster, J., & Hurtado, A. M. (2000). A theory of human life history evolution: Diet, intelligence, and longevity. *Evolutionary Anthropology, 9*(4), 156–185.
+
 Kohlberg, L. (1969). Stage and sequence: The cognitive-developmental approach to socialization. In D. A. Goslin (Ed.), *Handbook of socialization theory and research* (pp. 347–480). Chicago: Rand McNally.
+
+Kuzawa, C. W., Chugani, H. T., Grossman, L. I., Lipovich, L., Muzik, O., Hof, P. R., Wildman, D. E., Sherwood, C. C., Leonard, W. R., & Lange, N. (2014). Metabolic costs and evolutionary implications of human brain development. *Proceedings of the National Academy of Sciences, 111*(36), 13010–13015.
 
 Lucca, K., Yuen, F., Wang, Y., Alessandroni, N., Allison, O., Alvarez, M., … Hamlin, J. K. (2025). Infants' social evaluation of helpers and hinderers: A large-scale, multi-lab, coordinated replication study. *Developmental Science, 28*(1), Article e13581. https://doi.org/10.1111/desc.13581
 
 Main, M., & Solomon, J. (1986). Discovery of an insecure-disorganized/disoriented attachment pattern. In T. B. Brazelton & M. W. Yogman (Eds.), *Affective development in infancy* (pp. 95–124). Norwood, NJ: Ablex.
 
+Oxford, J., & Geary, D. C. (2019). Life history evolution in hominins. In T. B. Henley, M. Rossano, & E. P. Kardas (Eds.), *Handbook of cognitive archaeology: Psychology in prehistory* (pp. 36–57). New York: Routledge.
+
 Piaget, J. (1952). *The child's concept of number.* New York: Norton.
 
 Piaget, J. (1954). *The construction of reality in the child.* New York: Basic Books.
+
+Ponce de León, M. S., Golovanova, L., Doronichev, V., Romanova, G., Akazawa, T., Kondo, O., Ishida, H., & Zollikofer, C. P. E. (2008). Neanderthal brain size at birth provides insights into the evolution of human life history. *Proceedings of the National Academy of Sciences, 105*(37), 13764–13768.
 
 Siegler, R. (2026). Cognitive development in childhood. In R. Biswas-Diener & E. Diener (Eds.), *Noba textbook series: Psychology.* Champaign, IL: DEF Publishers. Retrieved from http://noba.to/8uv4fn9h
 
