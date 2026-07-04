@@ -43,13 +43,13 @@
     {
       title: 'Puzzle 4: Ignore the Distractor',
       type: 'Distractor puzzle',
-      instructions: 'One feature is noisy. Letter color changes, but it does not predict the missing piece.',
+      instructions: 'Two features change at once. Tracking only one relation gives a tempting wrong answer.',
       matrix: [['↑', '→', '↓'], ['↑•', '→•', '↓•'], ['↑••', '→••', '?']],
       choices: ['→••', '↓•', '↓••', '↑••'],
       labels: ['Right arrow with two dots', 'Down arrow with one dot', 'Down arrow with two dots', 'Up arrow with two dots'],
       correct: 2,
-      explanation: 'Across each row, arrow direction changes up → right → down. Down each column, dot count increases from zero to one to two. Color changes were irrelevant. The missing piece is a down arrow with two dots.',
-      ruleSummary: 'This is the blind spot: attention can compress the wrong feature and miss the rule that matters.'
+      explanation: 'Across each row, arrow direction changes up → right → down. Down each column, dot count increases from zero to one to two. Tracking only arrow direction or only dot count is not enough. The missing piece is a down arrow with two dots.',
+      ruleSummary: 'This is the blind spot: attention can compress only part of the pattern and miss the full rule that matters.'
     }
   ];
 
