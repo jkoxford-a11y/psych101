@@ -102,6 +102,8 @@ Seventy-five percent of naive participants conformed to the incorrect majority o
 
 The situation Asch created was unambiguous — the correct answer was obvious. That three of four people will override their own clear perception to avoid standing out against a unanimous group tells us something important about the social stakes of dissent.
 
+**Try it yourself:** [The Feed Is Not the World](../../docs/labs/ch11/feed-is-not-the-world.html) is a short interactive lab that puts you inside a version of this problem. You rate your own view on a low-stakes campus issue, scroll a simulated social media feed that adapts to your own clicks round by round, and then rate your view again — watching how confidence and perceived consensus can shift even when nobody presented a better argument.
+
 ---
 
 > **Classic Study Walkthrough: Milgram's Obedience Studies (1963, 1974)**

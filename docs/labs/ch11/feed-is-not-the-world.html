@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Feed Is Not the World - General Psychology</title>
+  <link rel="stylesheet" href="../../css/style.css" />
+  <link rel="stylesheet" href="../../css/labs.css" />
+</head>
+<body>
+<div class="layout">
+  <aside class="sidebar">
+    <div class="book-title">General Psychology</div>
+    <nav aria-label="Book navigation">
+      <ul>
+        <li><a href="../../index.html">Table of Contents</a></li>
+        <li><a href="../index.html">Learning Labs</a></li>
+        <li><a href="../../prologue.html">0 - Prologue: How to Actually Learn This Stuff</a></li>
+
+        <li class="pillar">Foundations</li>
+        <li><a href="../../chapters/01-history-approaches.html">1 - History &amp; Approaches</a></li>
+        <li><a href="../../chapters/02-research-methods.html">2 - Research Methods &amp; Statistics</a></li>
+
+        <li class="pillar">Biological</li>
+        <li><a href="../../chapters/03-neuroscience.html">3 - Neuroscience &amp; Biological Bases</a></li>
+        <li><a href="../../chapters/04-sensation-perception.html">4 - Sensation &amp; Perception</a></li>
+        <li><a href="../../chapters/05-consciousness.html">5 - Consciousness</a></li>
+        <li><a href="../../chapters/06-sleep.html">6 - Sleep</a></li>
+
+        <li class="pillar">Cognitive</li>
+        <li><a href="../../chapters/07-learning.html">7 - Learning</a></li>
+        <li><a href="../../chapters/08-memory.html">8 - Memory</a></li>
+        <li><a href="../../chapters/09-thinking-language-intelligence.html">9 - Thinking, Language &amp; Intelligence</a></li>
+
+        <li class="pillar">Developmental</li>
+        <li><a href="../../chapters/10-lifespan-development.html">10 - Lifespan Development</a></li>
+
+        <li class="pillar">Social &amp; Personality</li>
+        <li><a href="../../chapters/11-social-psychology.html" class="active">11 - Social Psychology</a></li>
+
+        <li class="pillar">Mental &amp; Physical Health</li>
+        <li><a href="../../chapters/12-emotion-stress-coping.html">12 - Emotion, Stress &amp; Coping</a></li>
+        <li><a href="../../chapters/13-disorders-therapy.html">13 - Psychological Disorders &amp; Therapy</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+  <main class="main lab-main">
+    <p class="chapter-meta">Learning Lab - Chapter 11</p>
+    <h1>The Feed Is Not the World</h1>
+    <hr class="chapter-divider" />
+
+    <p>A social media feed feels like a window onto what people think. It isn't — it's a sample, and the sample can change based on what you click. In this lab, you will rate your own view on a low-stakes campus issue, scroll a short simulated feed, and see how the feed responds to your own engagement before rating your view again.</p>
+
+    <div class="callout callout--note">
+      <div class="callout-title">Accessibility and Privacy</div>
+      <p>This lab runs entirely in your browser. It stores your prediction, ratings, feed progress, explanation, and transfer response in sessionStorage for this browser session only. It does not collect names, emails, IDs, analytics, or personally identifying information, and nothing is sent to a server.</p>
+    </div>
+
+    <section class="lab-panel" aria-labelledby="core-idea-heading">
+      <h2 id="core-idea-heading">Core Idea</h2>
+      <div class="concept-grid">
+        <article class="concept-card">
+          <h3>Perceived consensus</h3>
+          <p>How common you believe an opinion is — a judgment your brain forms from what it has been shown, not from an actual poll of everyone.</p>
+        </article>
+        <article class="concept-card">
+          <h3>Informational vs. normative influence</h3>
+          <p>Informational influence updates what you believe is true. Normative influence changes what you say or do without changing what you privately believe.</p>
+        </article>
+        <article class="concept-card">
+          <h3>Sample, not population</h3>
+          <p>A feed selects and repeats certain views. Repetition and visibility are not the same thing as evidence quality or majority opinion.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="lab-panel" aria-labelledby="predict-heading" id="prediction-panel">
+      <h2 id="predict-heading">Predict and Commit</h2>
+      <p>Riverton College is considering replacing Friday classes with a compressed four-day schedule. Before you see any posts about it, record your own view.</p>
+
+      <form id="prediction-form" novalidate>
+        <label class="text-label" for="mechanism-prediction">Prediction: if a feed shows you mostly one side of an issue like this, what do you think will change the most by the end of this lab — your actual opinion, your confidence in that opinion, or how common you think your opinion is among other students? Explain briefly.</label>
+        <textarea id="mechanism-prediction" rows="4" required placeholder="Example: I think my confidence will change more than my actual opinion, because..."></textarea>
+
+        <div class="rating-group">
+          <div class="rating-item">
+            <label class="text-label" for="baseline-position" id="baseline-position-label">Your position: how much do you support or oppose the four-day schedule?</label>
+            <input type="range" id="baseline-position" min="1" max="7" value="4" step="1" aria-describedby="baseline-position-scale" />
+            <div class="rating-scale-labels" id="baseline-position-scale">
+              <span>1 - Strongly oppose</span>
+              <output id="baseline-position-output" for="baseline-position">4</output>
+              <span>7 - Strongly support</span>
+            </div>
+          </div>
+
+          <div class="rating-item">
+            <label class="text-label" for="baseline-confidence" id="baseline-confidence-label">How confident are you in that view?</label>
+            <input type="range" id="baseline-confidence" min="1" max="7" value="4" step="1" aria-describedby="baseline-confidence-scale" />
+            <div class="rating-scale-labels" id="baseline-confidence-scale">
+              <span>1 - Not at all confident</span>
+              <output id="baseline-confidence-output" for="baseline-confidence">4</output>
+              <span>7 - Extremely confident</span>
+            </div>
+          </div>
+
+          <div class="rating-item">
+            <label class="text-label" for="baseline-consensus" id="baseline-consensus-label">What percentage of Riverton students do you think agree with your view?</label>
+            <input type="range" id="baseline-consensus" min="0" max="100" value="50" step="5" aria-describedby="baseline-consensus-scale" />
+            <div class="rating-scale-labels" id="baseline-consensus-scale">
+              <span>0%</span>
+              <output id="baseline-consensus-output" for="baseline-consensus">50%</output>
+              <span>100%</span>
+            </div>
+          </div>
+        </div>
+
+        <button class="lab-btn" type="button" id="commit-baseline">Commit prediction and ratings</button>
+      </form>
+      <p class="save-status" id="prediction-status" aria-live="polite"></p>
+    </section>
+
+    <section class="lab-panel" aria-labelledby="feed-heading" id="feed-panel" hidden>
+      <div class="lab-progress" aria-live="polite">
+        <span id="round-counter">Round 1 of 4</span>
+        <span id="feed-tally">Liked so far — favoring: 0, opposing: 0</span>
+      </div>
+
+      <p class="lab-kicker">Simulated feed</p>
+      <h2 id="feed-heading" tabindex="-1">Manipulate and Observe</h2>
+      <p id="feed-instructions">Scroll through this round's posts. Like the ones you'd stop to engage with on a real feed, or skip the ones you'd scroll past. You must respond to every post before the feed moves on.</p>
+
+      <div class="feed-meter" id="feed-meter" role="img" aria-labelledby="feed-meter-desc">
+        <div class="feed-meter-bar">
+          <div class="feed-meter-segment feed-meter-segment--pro" id="feed-meter-pro"></div>
+          <div class="feed-meter-segment feed-meter-segment--con" id="feed-meter-con"></div>
+        </div>
+        <p class="feed-meter-caption" id="feed-meter-desc">This round's feed composition, updated at the start of each round.</p>
+      </div>
+
+      <div id="post-list"></div>
+
+      <div class="lab-actions">
+        <button class="lab-btn" type="button" id="next-round" disabled>Respond to every post to continue</button>
+      </div>
+
+      <h3>Text Event Log</h3>
+      <div class="event-log" aria-live="polite">
+        <ol id="event-list"></ol>
+      </div>
+    </section>
+
+    <section class="lab-panel phase-panel" id="rating-panel" hidden aria-labelledby="rating-heading">
+      <h2 id="rating-heading" tabindex="-1">Rate Again</h2>
+      <p>You've reached the end of the simulated feed. Rate your view the same way you did at the start.</p>
+
+      <div class="rating-group">
+        <div class="rating-item">
+          <label class="text-label" for="post-position" id="post-position-label">Your position now: how much do you support or oppose the four-day schedule?</label>
+          <input type="range" id="post-position" min="1" max="7" value="4" step="1" aria-describedby="post-position-scale" />
+          <div class="rating-scale-labels" id="post-position-scale">
+            <span>1 - Strongly oppose</span>
+            <output id="post-position-output" for="post-position">4</output>
+            <span>7 - Strongly support</span>
+          </div>
+        </div>
+
+        <div class="rating-item">
+          <label class="text-label" for="post-confidence" id="post-confidence-label">How confident are you in that view now?</label>
+          <input type="range" id="post-confidence" min="1" max="7" value="4" step="1" aria-describedby="post-confidence-scale" />
+          <div class="rating-scale-labels" id="post-confidence-scale">
+            <span>1 - Not at all confident</span>
+            <output id="post-confidence-output" for="post-confidence">4</output>
+            <span>7 - Extremely confident</span>
+          </div>
+        </div>
+
+        <div class="rating-item">
+          <label class="text-label" for="post-consensus" id="post-consensus-label">Now what percentage of Riverton students do you think agree with your view?</label>
+          <input type="range" id="post-consensus" min="0" max="100" value="50" step="5" aria-describedby="post-consensus-scale" />
+          <div class="rating-scale-labels" id="post-consensus-scale">
+            <span>0%</span>
+            <output id="post-consensus-output" for="post-consensus">50%</output>
+            <span>100%</span>
+          </div>
+        </div>
+      </div>
+
+      <button class="lab-btn" type="button" id="submit-ratings">Submit ratings and see what happened</button>
+      <p class="save-status" id="rating-status" aria-live="polite"></p>
+    </section>
+
+    <section class="lab-panel phase-panel" id="reveal-panel" hidden aria-labelledby="reveal-heading">
+      <h2 id="reveal-heading" tabindex="-1">What Just Happened</h2>
+
+      <div class="table-wrap">
+        <table>
+          <caption>How the feed changed, round by round</caption>
+          <thead>
+            <tr><th scope="col">Round</th><th scope="col">Posts favoring the change</th><th scope="col">Posts opposing the change</th><th scope="col">Why</th></tr>
+          </thead>
+          <tbody id="composition-table-body"></tbody>
+        </table>
+      </div>
+
+      <div class="table-wrap">
+        <table>
+          <caption>Your ratings, before and after</caption>
+          <thead>
+            <tr><th scope="col">Measure</th><th scope="col">Before the feed</th><th scope="col">After the feed</th></tr>
+          </thead>
+          <tbody id="rating-comparison-body"></tbody>
+        </table>
+      </div>
+
+      <div class="callout callout--note">
+        <div class="callout-title">The reveal</div>
+        <p id="reveal-text"></p>
+      </div>
+    </section>
+
+    <section class="lab-panel phase-panel" id="explain-panel" hidden aria-labelledby="explain-heading">
+      <h2 id="explain-heading">Explain</h2>
+      <label class="text-label" for="explanation-response">Why might your perceived consensus change even when nobody presented better evidence for either side? Use the term <strong>informational influence</strong>, <strong>normative influence</strong>, or <strong>Asch's conformity study</strong> in your answer.</label>
+      <textarea id="explanation-response" rows="5"></textarea>
+      <button class="lab-btn" type="button" id="save-explanation">Save explanation locally</button>
+      <p class="save-status" id="explanation-status" aria-live="polite"></p>
+    </section>
+
+    <section class="lab-panel phase-panel" id="transfer-panel" hidden aria-labelledby="transfer-heading">
+      <h2 id="transfer-heading">Retrieve and Transfer</h2>
+      <p id="completion-summary"></p>
+      <label class="text-label" for="transfer-response">Transfer: think of a real feed you use (any platform). How could its ranking system make a belief feel more common, more obvious, or more socially rewarded than it actually is — without the platform ever telling you "these are the only opinions that exist"?</label>
+      <textarea id="transfer-response" rows="5"></textarea>
+      <div class="lab-actions">
+        <button class="lab-btn" type="button" id="save-transfer">Save transfer response locally</button>
+        <button class="lab-btn lab-btn--secondary" type="button" id="restart-lab">Restart lab</button>
+      </div>
+      <p class="save-status" id="transfer-status" aria-live="polite"></p>
+    </section>
+
+    <section class="callout callout--think-about-it">
+      <div class="callout-title">Instructor Note</div>
+      <p>Use this after covering conformity (Asch) and before or alongside stereotypes and social identity. The key discussion moment is the reveal panel: most students expect the feed to have been assigned to them; instead it adapted to their own clicks after a neutral first round. Debrief around "the feed is a sample, not the population," and be explicit that this simulation exaggerates, for teaching clarity, an effect that real platform research finds is genuine but usually much smaller — the 2020 Facebook/Instagram Election Study found algorithm changes shifted what people saw without producing a clear shift in measured political attitudes over three months, while a 2024 preregistered X/Twitter field experiment found a real but modest (about 2 points on a 100-point scale) causal shift in affective polarization from reranking exposure. The mechanism is real; the size of the effect in this lab is not a claim about how much any real platform moves anyone's beliefs.</p>
+    </section>
+  </main>
+</div>
+<script src="../../js/nav.js"></script>
+<script src="../../js/labs-feed-is-not-the-world.js"></script>
+</body>
+</html>
