@@ -1,5 +1,6 @@
 # Chapter 5: Consciousness — The Brain's Model of the World
 
+> Draft v0.3 — 2026-07-04 | Status: Revised per Jon's line-by-line review feedback (external reviewer pass). Changes: converted the Section 3 "Takeaway" bullet list into a Disruption Matrix table (System / Drug Class / Model Function / What Breaks) for quick-review study use; added a one-sentence metabolic trade-off line to the Section 1 sea squirt paragraph; named "automaticity" explicitly in the Attention vs. Consciousness Do Not Confuse box and added a matching Key Terms entry; added Clark (2016) to Further Reading (was already in References, missing from Further Reading); reworded the Review Question 11 rationale to stop reusing "salience-like" for CB1/cannabinoid effects, keeping salience weighting (dopamine/NE) and relevance assignment (CB1) terminologically distinct. Confirmed during this pass and left unchanged: the gap-filling paragraph in Section 2 is already split into perceptual vs. conceptual gap-filling (two paragraphs, not one); the Ch5/Ch6 chapter split is correctly reflected in source/visuals-inventory.md (reconciled Session 62) — an external reviewer's claim of a Ch5/Ch6 "inventory vs. text" mismatch was stale and did not apply to the current repo state; the postdiction (Eagleman/Sejnowski vs. Patel et al.) debate was kept as-is, a deliberate pedagogical judgment call rather than an error.
 > Draft v0.2 — 2026-07-02 | Status: Patched from v0.1 audit. Fixes: sea squirt biology softened (adult retains ganglion); GABA/ACh blackout claim replaced; Pessoa paragraph compressed to one sentence; dreams sentence replaced with Ch6 bridge; stimulants condensed to cocaine/Ritalin, Adderall removed; prediction error section expanded with gap-filling/illusions/metaphors paragraph (Rao & Ballard 1999, Kogo & Trengove 2015, Lakoff & Johnson 1980, Clark 2016); CBS prevalence added with Hamedani & Pelak 2021 citation; metabolic cost citation added (Raichle & Gusnard 2002); Eagleman Think About It simplified; typo fixed.
 > Word count target: 4,500–5,500 body words
 > Copyright note: all concepts instructor-original or canonical-common-knowledge. No book-adoption or needs-verification flags.
@@ -58,7 +59,7 @@ Consciousness is expensive. The human brain runs on roughly 20 percent of the bo
 
 Start with an organism that solved the same basic biological problems — eating, reproducing, surviving — without a brain.
 
-A sea squirt begins its life as a free-swimming larva. It has a primitive brain, photoreceptors, a notochord (the precursor to a vertebrate spine), and a tail for locomotion. It moves through the water, responds to light, navigates its environment. Then it finds a suitable surface, anchors itself permanently, and undergoes a dramatic transformation: the larval nervous system — the movement-control ganglion, the sensory structures, the neural machinery for navigating the world — is dramatically reduced and reorganized. The adult sea squirt is a sessile filter feeder. It draws seawater through its body and extracts nutrients. It does not move, pursue, avoid, or choose. A small simplified ganglion remains, suited to the adult's stationary life, but the elaborate prediction-and-navigation machinery of the larva is gone.
+A sea squirt begins its life as a free-swimming larva. It has a primitive brain, photoreceptors, a notochord (the precursor to a vertebrate spine), and a tail for locomotion. It moves through the water, responds to light, navigates its environment. Then it finds a suitable surface, anchors itself permanently, and undergoes a dramatic transformation: the larval nervous system — the movement-control ganglion, the sensory structures, the neural machinery for navigating the world — is dramatically reduced and reorganized. The adult sea squirt is a sessile filter feeder. It draws seawater through its body and extracts nutrients. It does not move, pursue, avoid, or choose. A small simplified ganglion remains, suited to the adult's stationary life, but the elaborate prediction-and-navigation machinery of the larva is gone. It trades the expensive luxury of a predictive mind for the metabolic efficiency of a stationary life.
 
 ![Figure 5.2 — The three life stages of a sea squirt: a free-swimming larva with an eyespot, a simple nervous system, and a tail for movement; settlement onto a surface; and a sessile filter-feeding adult whose nervous system has been dramatically reduced and reorganized.](../images/ch05/sea_squirt_life.png)
 *Figure 5.2. Brains are expensive. They are most valuable when a body must move, predict, and choose — and are reduced when it no longer needs to.*
@@ -95,7 +96,7 @@ The answer is **selective attention**: the process by which the brain actively a
 
 Attention is the filter. Consciousness is the model the filter feeds.
 
-You can direct attention without consciously monitoring everything your brain does with it — skilled, automated performance of a well-practiced task (typing, playing an instrument, driving a familiar route) involves attention in the sense of directed mental resources, but runs with minimal conscious deliberation precisely because it is well-practiced. And you can be conscious of things outside your current attentional focus — the dull ache you were not thinking about until this sentence mentioned it, the ambient sounds of the room you had not been tracking. The two are related but separable: attention helps determine what enters the conscious model, but they are distinct processes that can come apart.
+You can direct attention without consciously monitoring everything your brain does with it — skilled, automated performance of a well-practiced task (typing, playing an instrument, driving a familiar route) involves attention in the sense of directed mental resources, but runs with minimal conscious deliberation precisely because it is well-practiced. This is **automaticity**: the more a skill is practiced, the less conscious deliberation it needs to execute well, freeing conscious capacity for something else. And you can be conscious of things outside your current attentional focus — the dull ache you were not thinking about until this sentence mentioned it, the ambient sounds of the room you had not been tracking. The two are related but separable: attention helps determine what enters the conscious model, but they are distinct processes that can come apart.
 
 ![Figure 5.3 — Attention shown as a filter selecting which signals from the environment pass through to become part of the conscious model, illustrating that attention and consciousness are related but distinct processes.](../images/ch05/Attention_filter.png)
 *Figure 5.3. Attention is the filter; consciousness is the model the filter feeds.*
@@ -253,7 +254,15 @@ These are not five separate drug stories. They are one story about the architect
 - The **endocannabinoid system** contributes relevance assignment and temporal encoding — what gets marked as worth remembering and when
 - The **opioid system** modulates whether aversive signals are experienced as suffering
 
-When you understand what each system contributes to the intact model, you can predict what each drug class will do when it disrupts that system — rather than memorizing five lists of effects.
+When you understand what each system contributes to the intact model, you can predict what each drug class will do when it disrupts that system — rather than memorizing five lists of effects. The table below is the same information organized for quick review:
+
+| System | Drug Class | Model Function | What Breaks |
+|---|---|---|---|
+| GABA | Depressants (alcohol, benzodiazepines, barbiturates) | Arousal gating | The conditions for encoding and updating; at high doses, the model runs but nothing gets written to memory |
+| Dopamine / Norepinephrine | Stimulants (cocaine, methylphenidate) | Salience weighting | The signal flagging what's worth pursuing runs too hot, decoupled from actual outcomes |
+| 5-HT2A | Psychedelics (LSD, psilocybin, mescaline, DMT) | Precision-weighting | The model's confidence in its own predictions — including the self-model — loosens or destabilizes |
+| CB1 (endocannabinoid) | Cannabinoids (cannabis) | Relevance assignment & temporal encoding | The filter that marks what deserves attention and when things happened stops discriminating |
+| Mu-opioid | Opioids (morphine, oxycodone, fentanyl) | Suffering modulation | The aversive, felt quality of pain is suppressed while sensory detection stays intact |
 
 ---
 
@@ -411,7 +420,7 @@ b) salience weighting — making everything seem equally important
 c) relevance assignment and temporal encoding in the conscious model  
 d) the precision-weighting of predictions, destabilizing the self-model
 
-*Answer: c. The chapter maps each neurotransmitter system to a specific function: CB1/endocannabinoid disruption specifically impairs relevance assignment and temporal encoding. Why (b) is tempting: salience-like effects are mentioned (heightened appreciation of music/food), but the specific mechanism and the clearest disruptions point to relevance tagging and temporal order rather than a global salience amplification.*
+*Answer: c. The chapter maps each neurotransmitter system to a specific function: CB1/endocannabinoid disruption specifically impairs relevance assignment and temporal encoding. Why (b) is tempting: cannabis does heighten appreciation of ordinary stimuli like music or food, which can feel similar to the dopamine system's salience weighting — but that resemblance is surface-level. The clearest disruptions point to relevance tagging and temporal order, a distinct system from the salience weighting covered under dopamine/norepinephrine; don't let the superficial similarity blur the two.*
 
 ---
 
@@ -427,6 +436,8 @@ d) the problem of distinguishing conscious from unconscious processing in clinic
 ---
 
 ## Key Terms
+
+**Automaticity** — The capacity for a well-practiced skill to execute with minimal conscious deliberation, freeing attentional and conscious resources for other tasks; illustrates that attention can be engaged without full conscious monitoring.
 
 **Blindsight** — The ability to respond behaviorally to visual stimuli in a cortically blind visual field, demonstrating that visually guided behavior and conscious visual experience are dissociable.
 
@@ -466,6 +477,9 @@ The most accessible and current book-length treatment of the predictive processi
 **Chalmers, D. J. (1995). Facing up to the problem of consciousness.**
 *Journal of Consciousness Studies, 2*(3), 200–219.
 The paper that named the hard problem and distinguished it from the "easy problems" of explaining the functional mechanisms of consciousness. Brief, clear, and worth reading directly.
+
+**Clark, A. (2016). *Surfing Uncertainty: Prediction, Action, and the Embodied Mind.* Oxford University Press.**
+The book-length academic treatment behind this chapter's prediction-error framework — denser than Seth, but the direct source for the claim that perception, action, and cognition all run on the same predictive machinery. Best for students who want the full theoretical picture, not just the consciousness-specific application.
 
 **Sapolsky, R. (2011, February 15). *Dopamine jackpot!* [Video lecture]. California Academy of Sciences. https://www.youtube.com/watch?v=axrywDP9Ii0**
 The original public lecture behind this chapter's dopamine-as-anticipation framing — accessible, no neuroscience background required. Watch it now: it's the direct source for Chapter 7's full treatment of variable-ratio schedules and why uncertainty itself drives the strongest dopamine response, so watching here will make that chapter click faster when you get there.

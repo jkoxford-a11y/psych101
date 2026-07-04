@@ -1,6 +1,7 @@
 # Chapter 9: Thinking, Language & Intelligence
 
 <!-- v0.1 — first full draft (2026-06-23, Session 18) -->
+<!-- v0.2 — spine-alignment pass (Session 68, 2026-07-04): fronted the spine question ("why is one good concept worth more than a hundred memorized facts?") in Where This Fits; added the organizing formulation to Section 1 (a concept as a location + pattern of relations in a compressed semantic space, unifying prototypes/exemplars/hierarchy already in the text); added Huth et al. (2016) fMRI semantic-map evidence as convergent support, with explicit hedge against overclaiming; added a brief assimilation/accommodation bridge to Ch10's Piaget coverage (framed in prediction/model-revision terms, deliberately not re-teaching the stage theory Ch10 already owns); added a "Worked Example: Reinforcement" callout cross-referencing Ch7; named heuristics explicitly as the same compression logic applied to decisions (Algorithms and Heuristics); extended the AI Connection with Tang et al. (2023) LLM-brain alignment findings, hedged as correlational; added a closing spine-unifying line to the Chapter Summary. New Key Terms entry: Semantic space. Chapter was already well over the 3,500–5,000 word target other chapters were flagged for; this pass adds meaningfully to that overage — flagged, not trimmed, per Jon's request to see the full picture before deciding what to cut or offload to labs. -->
 <!-- Concepts covered: TLI-001 through TLI-015 (15 concepts total) -->
 <!-- Copyright handling: TLI-004 (Representativeness heuristic) and TLI-012 (Gardner's multiple intelligences) are flagged book-adoption. Both were drafted from Noba Project sources: Bazerman (2026) "Judgment and Decision Making" for TLI-004; Biswas-Diener (2026) "Intelligence" for TLI-012. All other 13 TLI-* concepts are instructor-original or canonical-common-knowledge and were drafted from course materials and verified primary literature. -->
 <!-- Citations: All independently verified via web search before inclusion. See References section. -->
@@ -21,7 +22,7 @@ This is not a character flaw. These patterns are the predictable products of a c
 
 ## Where This Fits
 
-Chapter 8 explored how memory works — how information is encoded, stored, and retrieved. This chapter asks what happens *after* retrieval: how we use information to form concepts, solve problems, make decisions, and communicate. These cognitive processes are among the most complex the human brain performs and are the subject of an entire field (cognitive psychology), of which this chapter gives a selective survey.
+**Why is one good concept worth more than a hundred memorized facts?** Chapter 8 explored how memory works — how information is encoded, stored, and retrieved. This chapter asks what happens *after* retrieval: how we use information to form concepts, solve problems, make decisions, and communicate. These cognitive processes are among the most complex the human brain performs and are the subject of an entire field (cognitive psychology), of which this chapter gives a selective survey.
 
 Language is introduced here because it is both a cognitive tool and the medium through which most of what we know was acquired. Intelligence follows because modern conceptions of intelligence are rooted in cognitive science — IQ tests are, at bottom, measures of certain cognitive abilities.
 
@@ -56,13 +57,22 @@ Alongside prototypes, people also use **exemplars** — specific remembered memb
 
 Concepts are organized hierarchically. "Animal" is a superordinate category containing "dog," which is a basic-level category containing "golden retriever" as a subordinate example. Most everyday thinking happens at the basic level — specific enough to be useful, general enough to be efficient.
 
+Put these three ideas together and a single picture emerges: a concept is not a definition or a checklist of defining features — it is a location in a compressed space of meaning, defined by its pattern of relations to everything else you know. "Apple" sits near fruit, food, sweetness, trees, red/green/yellow, seeds, pie, and school lunches — a region built up from repeated episodes and pruned down to whatever generalizes well, not a filing-cabinet entry with fixed boundaries. This is the same compression this book keeps finding at every level of the system: raw experience is too large and too specific to keep in full, so what survives is the structure that predicts — the prototype, the neighborhood of exemplars, the place in the hierarchy — while the rest is let go. That compression is exactly why concepts are useful (they let you recognize a dog you've never seen before) and exactly why they mislead in predictable ways (a penguin has to fight its way toward a prototype built mostly from robins and sparrows).
+
+There's now real neuroscience consistent with this "concept as location" picture, though it should be read carefully. Huth and colleagues (2016) had seven people simply listen to more than two hours of narrated stories in an fMRI scanner, then used the words in those stories to build a map of which brain regions responded to which kinds of meaning. They found roughly 140 distinct semantically selective areas spread across temporal, parietal, and prefrontal cortex, organized along consistent dimensions — the single largest axis of variation separated social, emotional, and violent content from perceptual, spatial, and numeric content — and the overall map looked remarkably similar across all seven listeners. This does not mean the brain literally stores concepts as coordinates the way a map stores locations; the semantic-space model is a tool that predicts brain activity well, not a description of the brain's actual code. But it is real evidence, at the level of measured brain activity, that meaning is organized geometrically and distributed across cortex rather than filed in discrete word-boxes — support for the same "location in a space of relations" picture built from purely behavioral evidence above.
+
+This location also keeps moving over development. Chapter 10 covers Piaget's stage theory in full; the spine-level version is worth naming here. Assimilation — using your current concept to interpret something new — is this book's prediction step. Accommodation — reshaping the concept when the new case doesn't fit — is prediction error forcing an update. A toddler's overextended "doggie" (applied to any four-legged animal) is a coarse, underdifferentiated region of semantic space; accommodation across repeated corrective episodes sharpens its boundaries into the adult concept. Expertise runs the same process well into adulthood — it doesn't replace prototypes and exemplars with something else, it makes the semantic neighborhood denser and more finely differentiated.
+
+> **Worked Example: How a Concept Gets Built — "Reinforcement"**
+> Most students' first mental model of *reinforcement* (Chapter 7) is a crude prototype: reward = reinforcement, and reinforcement is whatever feels good. That model handles the obvious cases fine — until it meets *negative reinforcement*, which removes something unpleasant rather than adding something pleasant, and doesn't fit the "feels good" prototype at all. The crude model mis-predicts, the mismatch registers, and the concept has to be rebuilt around what actually defines reinforcement: any consequence that makes a behavior *more likely to recur*, regardless of whether it works by adding or removing something. That rebuilt concept — sharper, less prototype-dependent — is what lets you correctly classify a case you have never seen before, which is the entire point of having a concept instead of a list of memorized examples.
+
 ### Algorithms and Heuristics
 
 When you face a problem, you can approach it in two fundamentally different ways.
 
 An **algorithm** is a step-by-step procedure that, if followed correctly, is guaranteed to produce the right answer. Long division is an algorithm. A recipe is an algorithm. The advantage is certainty; the disadvantage is that algorithms are slow and not always available. Searching every possible chess move before choosing is theoretically an algorithm, but the number of moves in a typical chess game is greater than the number of atoms in the observable universe — no human (or current computer playing in real time) uses this approach.
 
-A **heuristic** is a cognitive shortcut — a rule of thumb that usually produces a good answer quickly, without guaranteeing the best answer. "If it looks like a duck and quacks like a duck, treat it as a duck" is a heuristic for category assignment. Heuristics are how virtually all everyday human thinking works. They are not failures of rationality; they are the operating system that allows a three-pound brain to navigate a complex world in real time.
+A **heuristic** is a cognitive shortcut — a rule of thumb that usually produces a good answer quickly, without guaranteeing the best answer. "If it looks like a duck and quacks like a duck, treat it as a duck" is a heuristic for category assignment. Heuristics are how virtually all everyday human thinking works. They are not failures of rationality; they are the operating system that allows a three-pound brain to navigate a complex world in real time. Heuristics run on the same compression logic as the concepts in Section 1, just applied to decisions instead of categories: a heuristic keeps the piece of a judgment that predicts well most of the time and discards the rest — which is exactly why the discarded part occasionally turns out to matter. Section 2 catalogs when that trade-off breaks down in predictable ways.
 
 The study of when and why heuristics go wrong is one of the most productive areas in cognitive science — see Section 2.
 
@@ -169,6 +179,8 @@ Anchoring operates in salary negotiation (the first offer anchors subsequent cou
 > **The availability problem:** Students who have used AI tools and seen them produce accurate, useful outputs many times have built up a mental database of "AI was right." When they ask AI about a topic where it is actually unreliable — a niche historical event, a specific citation, a recent development — the availability heuristic (System 1 says: "I can easily remember it being right before") overcounts past successes and undercounts the specific risk for this kind of query.
 >
 > **Schemas and template-matching:** AI language models learn to produce output by detecting statistical patterns in large training corpora. When asked for an "explanation of the availability heuristic," the model produces text that matches the *template* of textbook explanations it has seen. This is not reasoning about the concept; it is very high-fidelity pattern completion — the same way that a human schema produces plausible-but-reconstructed memory. The critical difference: human schemas are revised through corrective feedback and embodied experience. Model weights do not self-correct through reasoning during a conversation.
+>
+> **A genuine point of convergence, carefully qualified:** Tang, LeBel, Jain, and Huth (2023) built a decoder that uses a language model's own semantic representations to reconstruct the gist of a story someone is hearing — purely from their fMRI activity while listening. That only works if human brains and language models represent meaning in ways similar enough to translate between. It is tempting to read this as proof that AI "thinks like a brain." Resist that reading: alignment here is a correlational fact about two systems both shaped by the statistical structure of human language, not evidence that they share an underlying mechanism. A model and a brain can converge on similar representations for entirely different reasons — the way two independently evolved wings both solve the aerodynamics of flight without sharing a skeleton.
 >
 > **The practical implication:** Apply this chapter's content to your use of AI. When you encounter AI output that *reads like* an authoritative source, that is exactly when to engage System 2: check the specific claim, look for the original source, ask whether the evidence is actually cited or just gestured at. Fluency is not accuracy. Confidence of tone is not a quality signal.
 >
@@ -291,6 +303,8 @@ A striking empirical puzzle is the **Flynn Effect** (Flynn, 1987): average IQ sc
 
 **Intelligence:** Spearman's *g* is a robust empirical finding — cognitive abilities correlate positively. Fluid intelligence (novel reasoning) and crystallized intelligence (accumulated knowledge) show different aging trajectories. Gardner's multiple intelligences and Sternberg's triarchic theory broaden the construct at the cost of reduced psychometric precision. IQ is reliable, valid for certain predictions, and responsive to environmental change (Flynn Effect) — which means it is neither arbitrary nor fixed.
 
+Across all three domains, the same logic recurs. Concepts, heuristics, grammar, and IQ scores are all compressed models built from partial experience — powerful because they generalize, and imperfect for exactly the same reason. Thinking well is not a matter of eliminating that compression; it isn't optional. It's a matter of knowing where it has probably cut a corner.
+
 ---
 
 ## Key Terms
@@ -316,6 +330,7 @@ A striking empirical puzzle is the **Flynn Effect** (Flynn, 1987): average IQ sc
 - **Phoneme** — the smallest unit of sound that distinguishes meaning in a language
 - **Prototype** — the most typical or representative member of a concept category
 - **Representativeness heuristic** — judging the probability of something by how well it matches a prototype
+- **Semantic space** — a way of describing meaning as a location defined by relationships to other concepts, rather than a fixed list of defining features
 - **Stereotype threat** — the impairment of performance that occurs when a person is aware of a negative group stereotype
 - **Syntax** — the rules governing how words are arranged into grammatical phrases and sentences
 - **System 1** — fast, automatic, associative, largely unconscious processing
@@ -400,6 +415,8 @@ Gardner, H. (1985). *Frames of mind: The theory of multiple intelligences*. Basi
 
 Horn, J. L., & Cattell, R. B. (1966). Refinement and test of the theory of fluid and crystallized general intelligences. *Journal of Educational Psychology*, *57*(5), 253–270.
 
+Huth, A. G., de Heer, W. A., Griffiths, T. L., Theunissen, F. E., & Gallant, J. L. (2016). Natural speech reveals the semantic maps that tile human cerebral cortex. *Nature*, *532*(7600), 453–458.
+
 Jung-Beeman, M., Bowden, E. M., Haberman, J., Frymiare, J. L., Arambel-Liu, S., Greenblatt, R., Reber, P. J., & Kounios, J. (2004). Neural activity when people solve verbal problems with insight. *PLOS Biology*, *2*(4), e97.
 
 Kahneman, D. (2011). *Thinking, fast and slow*. Farrar, Straus and Giroux.
@@ -423,6 +440,8 @@ Spencer, S. J., Steele, C. M., & Quinn, D. M. (1999). Stereotype threat and wome
 Sternberg, R. J. (1985). *Beyond IQ: A triarchic theory of human intelligence*. Cambridge University Press.
 
 Sternberg, R. J., Forsythe, G. B., Hedlund, J., Horvath, J. A., Wagner, R. K., Williams, W. M., Snook, S. A., & Grigorenko, E. L. (2000). *Practical intelligence in everyday life*. Cambridge University Press.
+
+Tang, J., LeBel, A., Jain, S., & Huth, A. G. (2023). Semantic reconstruction of continuous language from non-invasive brain recordings. *Nature Neuroscience*, *26*, 858–866.
 
 Tversky, A., & Kahneman, D. (1973). Availability: A heuristic for judging frequency and probability. *Cognitive Psychology*, *5*(2), 207–232.
 
