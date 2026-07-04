@@ -255,6 +255,8 @@ A major refinement to the single-*g* model comes from Horn and Cattell (1966), w
 
 A useful illustration: a 25-year-old computer science student typically outperforms a 65-year-old experienced programmer on puzzles involving novel algorithms (fluid); the experienced programmer typically outperforms the student on diagnosing a complex legacy codebase problem (crystallized).
 
+**Practice this in the lab:** Fluid intelligence is easiest to understand when you have to infer a rule yourself. Try the [Finding the Rule lab](../../docs/labs/ch09/fluid-intelligence-rule-finding.html), a matrix-style rule-finding exercise, then return here and explain why the task depends less on stored knowledge than on detecting structure in unfamiliar material.
+
 Gardner's and Sternberg's theories, discussed next, both make the same underlying point in different ways: any single IQ score is a lossy compression of cognitive performance, and both theories exist because something real gets left out of that compression. Where they run into trouble is turning that valid critique into a rival measurement model with comparable psychometric support.
 
 ### Gardner's Multiple Intelligences
