@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Finding the Rule - General Psychology</title>
+  <link rel="stylesheet" href="../../css/style.css" />
+  <link rel="stylesheet" href="../../css/labs.css" />
+</head>
+<body>
+<div class="layout">
+  <aside class="sidebar">
+    <div class="book-title">General Psychology</div>
+    <nav aria-label="Book navigation">
+      <ul>
+        <li><a href="../../index.html">Table of Contents</a></li>
+        <li><a href="../index.html">Learning Labs</a></li>
+        <li><a href="../../prologue.html">0 - Prologue: How to Actually Learn This Stuff</a></li>
+
+        <li class="pillar">Foundations</li>
+        <li><a href="../../chapters/01-history-approaches.html">1 - History &amp; Approaches</a></li>
+        <li><a href="../../chapters/02-research-methods.html">2 - Research Methods &amp; Statistics</a></li>
+
+        <li class="pillar">Biological</li>
+        <li><a href="../../chapters/03-neuroscience.html">3 - Neuroscience &amp; Biological Bases</a></li>
+        <li><a href="../../chapters/04-sensation-perception.html">4 - Sensation &amp; Perception</a></li>
+        <li><a href="../../chapters/05-consciousness.html">5 - Consciousness</a></li>
+        <li><a href="../../chapters/06-sleep.html">6 - Sleep</a></li>
+
+        <li class="pillar">Cognitive</li>
+        <li><a href="../../chapters/07-learning.html">7 - Learning</a></li>
+        <li><a href="../../chapters/08-memory.html">8 - Memory</a></li>
+        <li><a href="../../chapters/09-thinking-language-intelligence.html" class="active">9 - Thinking, Language &amp; Intelligence</a></li>
+
+        <li class="pillar">Developmental</li>
+        <li><a href="../../chapters/10-lifespan-development.html">10 - Lifespan Development</a></li>
+
+        <li class="pillar">Social &amp; Personality</li>
+        <li><a href="../../chapters/11-social-psychology.html">11 - Social Psychology</a></li>
+
+        <li class="pillar">Mental &amp; Physical Health</li>
+        <li><a href="../../chapters/12-emotion-stress-coping.html">12 - Emotion, Stress &amp; Coping</a></li>
+        <li><a href="../../chapters/13-disorders-therapy.html">13 - Psychological Disorders &amp; Therapy</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+  <main class="main lab-main">
+    <p class="chapter-meta">Learning Lab - Chapter 9</p>
+    <h1>Finding the Rule: Fluid Intelligence as Model-Building</h1>
+    <hr class="chapter-divider" />
+
+    <p>Fluid intelligence is easiest to understand when you have to use it. In this lab, you will infer rules from unfamiliar visual patterns, apply those rules to missing cases, and notice how errors happen when the wrong feature grabs your attention.</p>
+
+    <div class="callout callout--note">
+      <div class="callout-title">Accessibility and Privacy</div>
+      <p>This lab runs entirely in your browser. It stores your prediction, puzzle progress, explanation, and transfer response in sessionStorage for this browser session only. It does not collect names, emails, IDs, analytics, or personally identifying information.</p>
+    </div>
+
+    <section class="lab-panel" aria-labelledby="core-idea-heading">
+      <h2 id="core-idea-heading">Core Idea</h2>
+      <div class="concept-grid">
+        <article class="concept-card">
+          <h3>Fluid intelligence</h3>
+          <p>Reasoning through a novel problem when the rule is not already stored in memory.</p>
+        </article>
+        <article class="concept-card">
+          <h3>Compressed rule</h3>
+          <p>A simpler pattern extracted from several examples, such as "shape changes across rows."</p>
+        </article>
+        <article class="concept-card">
+          <h3>Blind spot</h3>
+          <p>A distracting feature can pull attention away from the rule that actually predicts the answer.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="lab-panel" aria-labelledby="predict-heading" id="prediction-panel">
+      <h2 id="predict-heading">Predict and Commit</h2>
+      <form id="prediction-form" novalidate>
+        <label class="text-label" for="difficulty-prediction">Before you see the puzzles: what do you think will make a novel pattern problem difficult?</label>
+        <textarea id="difficulty-prediction" rows="4" required placeholder="Example: I think it will be hardest when..."></textarea>
+
+        <label class="text-label" for="strategy-prediction">What strategy do you expect to use when the answer is not obvious?</label>
+        <textarea id="strategy-prediction" rows="4" required placeholder="Example: I will first look for..."></textarea>
+
+        <button class="lab-btn" type="button" id="commit-predictions">Commit predictions</button>
+      </form>
+      <p class="save-status" id="prediction-status" aria-live="polite"></p>
+    </section>
+
+    <section class="lab-panel" aria-labelledby="puzzle-heading" id="puzzle-panel" hidden>
+      <div class="lab-progress" aria-live="polite">
+        <span id="puzzle-counter">Puzzle 1 of 4</span>
+        <span id="score-status">Correct: 0</span>
+      </div>
+
+      <p class="lab-kicker" id="puzzle-type">Rule-finding puzzle</p>
+      <h2 id="puzzle-heading" tabindex="-1">Manipulate and Observe</h2>
+      <p id="puzzle-instructions">Choose the piece that completes the matrix.</p>
+
+      <div class="curve-wrap">
+        <svg class="curve-svg" id="matrix-svg" viewBox="0 0 720 520" role="img" aria-labelledby="matrix-title matrix-desc">
+          <title id="matrix-title">Matrix reasoning puzzle</title>
+          <desc id="matrix-desc">A visual pattern matrix with one missing cell. The same puzzle information is summarized below in text after an answer is checked.</desc>
+          <g id="matrix-layer"></g>
+        </svg>
+      </div>
+
+      <form id="answer-form" novalidate>
+        <fieldset class="lab-fieldset" id="answer-fieldset">
+          <legend id="answer-legend">Select the missing piece.</legend>
+          <div id="answer-options"></div>
+        </fieldset>
+        <button class="lab-btn" type="button" id="check-answer">Check answer</button>
+      </form>
+
+      <section class="feedback-panel" id="feedback-panel" hidden tabindex="-1" aria-live="polite">
+        <h3 id="feedback-heading"></h3>
+        <p id="feedback-text"></p>
+        <p id="rule-explanation"></p>
+        <div class="lab-actions">
+          <button class="lab-btn" type="button" id="next-puzzle">Next puzzle</button>
+        </div>
+      </section>
+
+      <h3>Text Event Log</h3>
+      <div class="event-log" aria-live="polite">
+        <ol id="event-list"></ol>
+      </div>
+    </section>
+
+    <section class="lab-panel phase-panel" id="explain-panel" hidden aria-labelledby="explain-heading">
+      <h2 id="explain-heading">Explain</h2>
+      <div class="callout callout--note">
+        <div class="callout-title">What the puzzles just showed you</div>
+        <p>These puzzles did not ask you to recall a fact. They asked you to compress visible examples into a rule, then apply that rule to a new case. That is the chapter's core idea for fluid intelligence: building a useful model from unfamiliar material under constraint.</p>
+      </div>
+      <label class="text-label" for="explanation-response">Which puzzle felt hardest, and what feature made it difficult? Use the terms <strong>rule</strong>, <strong>distraction</strong>, or <strong>novel problem</strong> in your answer.</label>
+      <textarea id="explanation-response" rows="5"></textarea>
+      <button class="lab-btn" type="button" id="save-explanation">Save explanation locally</button>
+      <p class="save-status" id="explanation-status" aria-live="polite"></p>
+    </section>
+
+    <section class="lab-panel phase-panel" id="transfer-panel" hidden aria-labelledby="transfer-heading">
+      <h2 id="transfer-heading">Retrieve and Transfer</h2>
+      <p id="completion-summary"></p>
+      <label class="text-label" for="transfer-response">Transfer: explain the difference between solving one of these unfamiliar rule puzzles and defining a term you already studied, such as <em>prototype</em> or <em>morpheme</em>. Which task depends more on fluid intelligence, which depends more on crystallized intelligence, and why?</label>
+      <textarea id="transfer-response" rows="5"></textarea>
+      <div class="lab-actions">
+        <button class="lab-btn" type="button" id="save-transfer">Save transfer response locally</button>
+        <button class="lab-btn lab-btn--secondary" type="button" id="restart-lab">Restart lab</button>
+      </div>
+      <p class="save-status" id="transfer-status" aria-live="polite"></p>
+    </section>
+
+    <section class="callout callout--think-about-it">
+      <div class="callout-title">Instructor Note</div>
+      <p>Use this lab before the intelligence section. Have students commit predictions, solve the first two puzzles individually, then compare strategies in pairs before the distractor puzzle. The key discussion moment is when students realize they were not retrieving an answer; they were extracting a compact rule from partial evidence.</p>
+    </section>
+  </main>
+</div>
+<script src="../../js/nav.js"></script>
+<script src="../../js/labs-fluid-intelligence-rule-finding.js"></script>
+</body>
+</html>
