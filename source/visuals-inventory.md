@@ -155,20 +155,21 @@ Note: v0.7 (Session 51) renumbered two figures not yet reflected above — ANS p
 ---
 
 ## Chapter 9 — Thinking, Language & Intelligence
-*(was "Chapter 8" in the old numbering)* 5 figures exist. 2–3 more would help.
+5 figures exist. 2–3 more would help. **None are currently wired into `ch09-thinking-language-intelligence.md`** — confirmed via grep (Session 68): the chapter markdown has zero image/figure references anywhere. These are built assets sitting unused, not a numbering problem.
 
 | # | Description | Status | Filename |
 |---|-------------|--------|----------|
-| 9.1 | Biases as question substitution table | ✅ | `ch09/ch08_bias_question_substitution_matrix.png/.svg` *(filename still carries old ch08 prefix — rename when convenient)* |
-| 9.2 | IQ standardization curve (mean=100, SD=15) | ✅ | `ch09/ch08_iq_standardization_curve.png/.svg` |
-| 9.3 | Linda conjunction fallacy / nested sets | ✅ | `ch09/ch08_linda_nested_set_conjunction_fallacy.png/.svg` |
-| 9.4 | Wason selection task (prompt) | ✅ | `ch09/ch08_wason_selection_task_prompt.png/.svg` |
-| 9.5 | Wason selection task (answer) | ✅ | `ch09/ch08_wason_selection_task_answer.png/.svg` |
+| 9.1 | Biases as question substitution table | ✅ built, not wired | `ch09/fig_bias_question_substitution.png/.svg` |
+| 9.2 | IQ standardization curve (mean=100, SD=15) | ✅ built, not wired | `ch09/fig_iq_bell_curve.png/.svg` |
+| 9.3 | Linda conjunction fallacy / nested sets | ✅ built, not wired | `ch09/fig_linda_conjunction_fallacy.png/.svg` |
+| 9.4 | Wason selection task (prompt) | ✅ built, not wired | `ch09/fig_wason_task_prompt.png/.svg` |
+| 9.5 | Wason selection task (answer) | ✅ built, not wired | `ch09/fig_wason_task_answer.png/.svg` |
 | 9.6 | System 1 vs. System 2 (dual-process) diagram | 🔲 | Optional — chapter discusses extensively but no figure yet; Ch5's amygdala/extinction section (Session 62) now also references this concept — cross-check |
 | 9.7 | Language acquisition timeline (babbling → words → two-word → grammar) | 🔲 | Optional — supports nativist vs. behaviorist section |
 | 9.8 | Multiple intelligences vs. g-factor comparison | 🔲 | Optional — Gardner/Spearman contrast |
+| 9.9 | Huth et al. (2016) semantic-map illustration (meaning distributed across cortex, not filed in word-boxes) | 🔲 | Optional — idea logged Session 68 during the Section 1 "concept as location" trim; no figure exists, don't reference one until built |
 
-**Note:** the `ch08/` image folder name and file prefixes on disk still reflect the old numbering — confirm with Jon whether to rename the folder to `ch09/` and files to `ch09_*` for consistency, or leave as legacy filenames or if unsure whether folder move is safe to do here.
+**Resolved (Session 68):** the image folder was actually still named `docs/images/ch08/` on disk (not `ch09/` as this inventory previously claimed) — renamed to `ch09/` this session, and it worked (unlike past delete attempts on this OneDrive mount). The filenames themselves were never prefixed with `ch08_` — that detail in the prior version of this note was inaccurate; corrected above to the real filenames. **Still open:** actually embedding figures 9.1–9.5 into the chapter markdown, which has never happened at any prior version.
 
 ---
 
@@ -252,6 +253,6 @@ No figures yet. Number unchanged from old numbering (this chapter's position was
 - Ch3: Confirm the three lecture-deck-sourced figures (3.3, 3.5, 3.7) are original
 - Ch4: Reconcile this inventory against the actual HTML (9 figures, 4.1–4.9) — this list is behind
 - Ch5: Confirm placement of the 7 unplaced images (next session)
-- Ch9: Rename `ch08/` image folder and filenames to `ch09/`/`ch09_*`, or leave as legacy names?
+- Ch9: folder rename resolved (Session 68); still need a decision on whether/where to embed the 5 existing figures in the chapter markdown
 - Ch11: Resolve the Personality-merge question — which figures (if any) survive into the Social chapter?
 - Prologue: Dunning-Kruger — redraw from actual data, or add caveat, or drop?

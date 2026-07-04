@@ -380,14 +380,15 @@ Group use: Divide class by condition; pool recall data; compare group averages.
 
 ---
 
-## Chapter 8 — Thinking, Language & Intelligence
+## Chapter 9 — Thinking, Language & Intelligence
+<!-- Renumbered from "Chapter 8" (Session 68, 2026-07-04) — this file was not part of the Session 61 renumbering sweep, which only covered source/chapters and docs/index.html. Only this chapter's section was corrected in this pass; other sections of this file may still carry stale pre-Session-61 numbering. -->
 
 ### Cognitive Reflection Test Timer 👥 ★ Priority #5
 Status: Draftable
 Type: timed quiz
 Core concepts: System 1, System 2, dual-process theory, intuitive errors
 Build priority: 5
-Lab path: `docs/labs/ch08/cognitive-reflection-test.html`
+Lab path: `docs/labs/ch09/cognitive-reflection-test.html`
 
 **Classroom version 👥:** Display one CRT item at a time with a 15-second timer. Students write first-instinct answer. After time expires: reveal the intuitive wrong answer and the correct answer with explanation. Pairs compare: did they catch the System 1 error before time ran out?
 
@@ -412,7 +413,7 @@ Type: interactive card flip
 Core concepts: confirmation bias, falsification, rule testing
 Demo sketch: Four cards on screen (E, K, 4, 7). Student selects which to flip; reveals whether choice was diagnostic. Feedback explains why 4 is tempting but non-diagnostic.
 Group use: Pairs commit to a selection before flipping; debrief common error patterns.
-Notes: Figure (`fig_wason_task_prompt/answer`) already exists in `docs/images/ch08/`. Low build complexity.
+Notes: Figure (`fig_wason_task_prompt/answer`) already exists in `docs/images/ch09/`. Low build complexity.
 
 ### Framing Effect Demo 👥
 Status: Draftable
@@ -426,7 +427,7 @@ Status: Draftable
 Type: step-by-step walkthrough
 Core concepts: representativeness heuristic, conjunction fallacy, base-rate neglect
 Demo sketch: Student reads Linda vignette, makes prediction, then interactive nested-set diagram reveals the set relationships.
-Notes: Figure (`fig_linda_conjunction_fallacy`) already exists in `docs/images/ch08/`.
+Notes: Figure (`fig_linda_conjunction_fallacy`) already exists in `docs/images/ch09/`.
 
 ### Availability Heuristic K-Word Demo
 Status: Draftable
@@ -434,6 +435,15 @@ Type: poll/timed generation
 Core concepts: availability heuristic, ease of recall as frequency proxy
 Demo sketch: Students generate 5 words starting with K, then 5 with K as 3rd letter. System times generation speed and plots class distribution. Ease of generation ≠ actual frequency.
 Notes: Already captured in activity-ideas.md. Widget version adds timing and class data pooling.
+
+**Classroom version 👥 (moved out of the student-facing chapter text, Session 68 — was previously embedded as a callout in `ch09-thinking-language-intelligence.md`, Section 2):**
+1. Students vote by hand or poll: "starts with *k*" vs. "*k* as third letter."
+2. Give 30 seconds to list examples of each type. Ask which list felt easier to build.
+3. Reveal the actual frequency ratio (~3:1 in favor of third-letter *k*).
+4. Ask: what does this tell us about how you make frequency estimates? Ease of generation ≠ actual frequency.
+5. *Then* introduce the term **availability heuristic** and name the mechanism.
+
+This predict → reveal the error → name the mechanism → transfer to a real-world case sequence is worth repeating across the chapter's other heuristics. Students who feel the heuristic first are far more likely to recognize it later than students who are simply told its definition.
 
 ---
 
