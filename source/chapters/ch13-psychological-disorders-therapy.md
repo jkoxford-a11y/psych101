@@ -1,4 +1,4 @@
-# Chapter 13: Psychological Disorders & Therapy
+# Chapter 13: Psychological Disorders & Therapy (v0.2)
 
 <!-- v0.1 — Full first draft. All 12 DIS-* concepts covered (verified below).
      Copyright: All concepts are canonical-common-knowledge with instructor-original origin
@@ -40,7 +40,48 @@
      No figures yet — same open question as other chapters.
      No demo placeholder — no existing demo covers diagnosis or therapy topics;
      flagged as a gap, not placeholded.
-     Not yet converted to HTML. -->
+     Not yet converted to HTML.
+
+     v0.2 — Spine-alignment pass (Session 73), following the audit-and-propose pattern
+     validated on Ch8/9/10/12. Grep confirmed zero prior spine vocabulary except one
+     incidental "prediction error" mention. Proposed edit set approved by Jon; applied:
+     (1) spine question ("When does a protective model become costly?") fronted in Where
+     This Fits, with the master loop named and the spine's "disorders are not a separate
+     category of human experience" framing (theoretical-spine.md §3) stated explicitly —
+     this had never appeared in the chapter despite being the clearest formulation of
+     Jon's own disorders framing (see HANDOFF session on differential susceptibility/
+     sickness behavior); (2) sickness-behavior mechanism added to the depression section —
+     a genuine content gap the spine's own Ch13 notes flag as central (Hart, 1988;
+     Dantzer & Kelley, 2007); (3) PTSD paragraph expanded from one thin paragraph into a
+     real mechanism — hippocampal contextualization failure, Brewin/Dalgleish/Joseph's
+     (1996) dual representation theory, the dysregulation paradox, and Nader/Schafe/
+     LeDoux's (2000) reconsolidation window as the mechanism behind EMDR/exposure
+     (Chen et al., 2014) — this also finally delivers on the Connections table's
+     PTSD-to-Ch8-Memory link, which the body text never actually developed before;
+     (4) just-world hypothesis (Lerner, 1980) added as the stigma mechanism, explicitly
+     cross-referencing Ch11 per the spine's own instruction that this "connects Ch. 11
+     directly to Ch. 13"; (5) closing spine-unifying line added to Chapter Summary.
+     Three new Key Terms (Sickness behavior, Just-world hypothesis, Memory
+     reconsolidation); two new Connections rows; one existing Connections row (PTSD/
+     memory) rewritten to match the new content; one existing row's chapter label
+     corrected ("Ch. 11 (Personality)" → "Ch. 11 (Social Psychology)", found in passing).
+     Six new citations, all verified via live search this session: Brewin, Dalgleish, &
+     Joseph (1996); Chen et al. (2014); Dantzer & Kelley (2007); Hart (1988); Lerner
+     (1980); Nader, Schafe, & LeDoux (2000).
+
+     SCOPE FLAG, not resolved this session: theoretical-spine.md's Ch13 Layer-3 notes
+     and theoretical-foundations.md §16 both develop a full mesolimbic-pathway/addiction-
+     mechanism section as content explicitly intended "for Ch13" — but substance use
+     disorders are not among the original DIS-001–012 concepts this chapter was built
+     from, and the chapter currently has zero addiction/SUD content. Jon's call this
+     session: skip it, flag the mismatch rather than add unilaterally. Open decision for
+     a future session — either add a compact SUD subsection or treat the spine's notes as
+     out of this chapter's intended scope.
+
+     Body word count now ~5,300 (est.) — was inside target at v0.1, now modestly over,
+     same flag-not-trim precedent as Ch9/Ch10/Ch12. Not yet converted to HTML; still
+     awaiting Jon's line-by-line review — this was a scoped spine-alignment pass, not a
+     fresh read-through. -->
 
 ---
 
@@ -55,6 +96,8 @@ When psychologist David Rosenhan (1973) sent healthy volunteers to psychiatric h
 ---
 
 ## Where This Fits
+
+**When does a protective model become costly?** Every mechanism this book has covered so far — prediction, learning, memory, stress, social calibration — exists because it usually works. Disorders are not a separate category of human experience, a different kind of mind running on different rules. They are what happens when those same ordinary processes become self-sustaining, rigid, and costly: a threat model that keeps firing after the threat has passed, a mood system stuck defending against a danger that never fully resolves, a self-model too rigid to update. The model is usually still working — it is miscalibrated, overgeneralized, or stuck to an ecology that no longer applies. Therapy, in turn, works largely through the same mechanisms that build ordinary learning and memory in the first place — prediction error, reconsolidation, extinction — now aimed at revising a model that got stuck.
 
 This chapter draws on almost every chapter in this book. The biological bases of behavior (Chapter 3) underlie every disorder here — neural circuits, neurotransmitters, and genetic vulnerabilities shape risk. Learning principles (Chapter 7) explain how phobias develop and why exposure therapy works. Memory and cognition (Chapters 8–9) illuminate PTSD, depressive schemas, and the heuristic failures that affect clinical diagnosis. The personality system (Chapter 11) is continuous with personality disorders, not separate from them. And the therapeutic alliance — the relationship between therapist and client — is one of the most robustly replicated predictors of treatment outcome in all of psychology (Flückiger et al., 2018).
 
@@ -101,6 +144,8 @@ No single factor determines whether someone develops a psychological disorder. T
 
 The **biopsychosocial model** adds social context explicitly: biological vulnerabilities, psychological factors (cognition, coping style, learning history), and social determinants (poverty, trauma, social support, stigma) all contribute simultaneously, not as competing explanations.
 
+One specific social mechanism is worth naming directly: the **just-world hypothesis** — the belief that the world is basically fair, so people generally get what they deserve (Lerner, 1980). Applied to mental illness, this generates victim-blaming ("they must have brought this on themselves") and self-stigma, when a person applies that same reasoning to themselves. This is a social-psychology mechanism, not a clinical one (Chapter 11) — but it is one of the primary routes by which stigma toward psychological disorders is generated and sustained, and it shapes whether people seek treatment at all.
+
 ### Classic Study Walkthrough: Rosenhan (1973), "On Being Sane in Insane Places"
 
 **Read this one carefully.** The Rosenhan study is one of the most cited in the history of abnormal psychology — and one of the most contested. Before looking at what it found, it is worth knowing that journalist Susannah Cahalan spent years investigating the study for her 2019 book *The Great Pretender* and found serious problems: Rosenhan's own unpublished notes contained discrepancies between his written accounts and what the records showed, and the identities and experiences of several described pseudopatients could not be independently verified. The study cannot be treated as clean experimental evidence. It is presented here because it shaped the field, influenced the DSM-III revision, and remains a useful frame — but reading it critically is the point, not incidental to it.
@@ -135,6 +180,10 @@ A useful distinction: **fear** is a response to a threat that exists *right now*
 
 **Post-Traumatic Stress Disorder (PTSD)**, now in the Trauma- and Stressor-Related Disorders chapter of the DSM, involves intrusion symptoms (flashbacks, nightmares), avoidance of trauma-related cues, negative alterations in cognition and mood, and hyperarousal, following exposure to actual or threatened death, serious injury, or sexual violence. Not everyone exposed to trauma develops PTSD — biological diathesis, severity of the trauma, and social support all moderate the response.
 
+Why do traumatic memories intrude as though the event is happening now, rather than being remembered as something past? Ordinary episodic memories get contextualized — tagged with when and where — a process that depends on the hippocampus (Chapter 8). Extreme threat arousal (high cortisol, amygdala dominance) disrupts that contextualizing function while the trauma is happening. Brewin, Dalgleish, and Joseph's (1996) dual representation theory frames the result as two memory systems out of sync: a vivid, poorly contextualized sensory trace — why flashbacks feel present-tense rather than remembered — alongside a comparatively thin verbal narrative of what happened. The threat response also widens the net of what counts as dangerous, a generalization that is adaptive immediately after a real threat but maladaptive once it persists into a safer, changed environment.
+
+This creates a genuine bind: revising the memory — recontextualizing it as past and safe to think about — requires prefrontal function that the threat response itself suppresses. The moment the memory is most active is the moment the person is least equipped to process it. Nader, Schafe, and LeDoux (2000) showed that a consolidated memory, once retrieved, briefly becomes labile again before restabilizing — a window in which it can be updated rather than simply re-stored unchanged. EMDR and exposure therapy are thought to work partly by opening that window, pairing the reactivated memory with a signal of safety before it restabilizes (Chen et al., 2014) — a different mechanism from simple extinction (Chapter 7), which builds a competing association alongside the original trace rather than revising the trace itself.
+
 ### Mood Disorders
 
 **Major Depressive Disorder (MDD)** requires at least five of nine symptoms — including depressed mood or loss of interest/pleasure (*anhedonia*) — for at least two weeks, with significant impairment. Other symptoms include changes in appetite and sleep, fatigue, difficulty concentrating, feelings of worthlessness, and recurrent thoughts of death or suicidal ideation.
@@ -144,6 +193,8 @@ Aaron Beck's **cognitive triad of depression** identifies three negative schemas
 The older "chemical imbalance" explanation — low serotonin causes depression — does not hold up under scrutiny. A 2022 umbrella review by Moncrieff and colleagues found no consistent evidence for reduced serotonin levels or activity in depression. This does not mean SSRIs are ineffective — the evidence for their efficacy is real — but it means we do not understand their mechanism as well as the popular story implied (Cipriani et al., 2018). Depression almost certainly involves HPA axis dysregulation, inflammatory processes, disrupted sleep, and circuit-level changes in prefrontal-limbic regulation.
 
 The Sapolsky/dopamine framing from Chapter 7 extends here: anhedonia in depression may reflect disrupted reward prediction error signaling. When dopamine anticipation signals fail — when nothing seems worth pursuing in advance — the motivational pull to initiate behavior collapses. This connects the phenomenology of depression (nothing seems worth doing) to disrupted dopaminergic anticipation circuitry in a way a serotonin story alone cannot.
+
+A third mechanism reframes anhedonia and withdrawal themselves rather than just explaining a symptom. The behavioral profile of depression — social withdrawal, fatigue, reduced appetite, slowed cognition, loss of pleasure — is also the behavioral profile of an animal fighting an infection. Hart (1988) proposed that this "sickness behavior" is not a breakdown but an evolved, centrally organized program: rest conserves energy for immune defense, withdrawal limits pathogen spread, reduced appetite redirects metabolic resources. The inflammatory cytokines that produce sickness behavior during infection (IL-1β, TNF-α, IL-6) also produce depression-like states in humans when administered directly, and chronic low-grade inflammation predicts later depression onset (Dantzer & Kelley, 2007). This does not mean all depression is inflammatory in origin — it is one contributing mechanism, most clearly implicated in a subset of cases — but it reframes depression's characteristic profile as the brain activating an ancient defensive shutdown program, appropriate for infection or acute social defeat, maladaptive when triggered chronically by psychosocial stress that never resolves.
 
 **Persistent Depressive Disorder (PDD)**, formerly dysthymia, involves chronically depressed mood lasting at least two years that does not meet full MDD criteria. People with PDD often describe the low mood as simply *how they are* — they have no memory of feeling otherwise.
 
@@ -285,6 +336,8 @@ Personality disorders represent inflexible trait patterns; ASPD and BPD are most
 
 Psychological treatments include psychodynamic therapy (insight and relational patterns), client-centered therapy (unconditional positive regard, empathy, congruence), and CBT — the most empirically supported approach, with specific evidence for anxiety, depression, OCD, and PTSD; DBT extends CBT for BPD. Biological treatments include SSRIs and other antidepressants (effective, mechanism partly unknown), antipsychotics (positive symptoms of schizophrenia), lithium (bipolar disorder), and ECT — an effective, often misunderstood treatment for severe treatment-resistant MDD. The therapeutic alliance is the most robust predictor of outcome across all forms of psychotherapy.
 
+Across every disorder in this chapter, the same underlying pattern holds: nothing here is a broken system running on different rules. Each is an ordinarily adaptive process — threat detection, mood regulation, memory consolidation, social calibration — that has become rigid, overgeneralized, or stuck to conditions that no longer apply, and treatment works largely by helping that same system revise, rather than replacing it with something else.
+
 ---
 
 ## Key Terms
@@ -310,6 +363,9 @@ Psychological treatments include psychodynamic therapy (insight and relational p
 - **Therapeutic alliance** — The collaborative, trusting relationship between therapist and client; the strongest cross-therapy predictor of outcome
 - **Electroconvulsive therapy (ECT)** — Biological treatment for severe, treatment-resistant MDD involving brief electrical stimulation of the brain under general anesthesia
 - **Dopamine hypothesis (schizophrenia)** — Theory that excess mesolimbic dopaminergic activity underlies positive symptoms; refined to include prefrontal dopamine deficits and glutamatergic involvement
+- **Sickness behavior** — An evolved, centrally organized behavioral program (withdrawal, fatigue, reduced appetite, anhedonia) that conserves resources for immune defense during infection; shares neuroimmune machinery with depression-like states
+- **Just-world hypothesis** — The belief that the world is basically fair and people generally get what they deserve; a social mechanism that generates victim-blaming and self-stigma around mental illness
+- **Memory reconsolidation** — The process by which a retrieved, consolidated memory briefly becomes labile before restabilizing, creating a window in which it can be updated rather than merely re-stored
 
 ---
 
@@ -348,10 +404,12 @@ Psychological treatments include psychodynamic therapy (insight and relational p
 | Diathesis-stress model | Ch. 3 (Neuroscience) | Biological vulnerabilities — amygdala reactivity, HPA axis, dopamine circuits — are the biological side of the diathesis |
 | Phobia development and maintenance | Ch. 7 (Learning) | Classical conditioning acquires the fear; negative reinforcement maintains avoidance; exposure therapy = extinction |
 | Anchoring and diagnostic errors | Ch. 9 (Thinking) | Diagnostic anchoring and premature closure are the same heuristic failures that affect human judgment generally |
-| PTSD and memory | Ch. 8 (Memory) | Intrusive memories, flashbulb-like re-experiencing, disrupted consolidation in trauma |
+| PTSD and memory | Ch. 8 (Memory) | Hippocampal contextualization failure under threat arousal; dual representation theory of intrusive memory; reconsolidation as the mechanism behind EMDR/exposure |
 | Dopamine and depression/ADHD | Ch. 7, Ch. 3 | Reward prediction error; dopaminergic mechanisms in motivation and attention |
+| Sickness behavior and depression | Ch. 3 (Neuroscience), Ch. 12 (Emotion, Stress & Coping) | Inflammatory cytokines (IL-1β, TNF-α, IL-6) connecting chronic stress/allostatic load to depression-like states |
 | Theory of Mind and ASD | Ch. 10 (Lifespan Development) | False belief task, social cognition development |
-| Therapeutic alliance | Ch. 11 (Personality) | Rogers's UPR already introduced; alliance as an interpersonal relationship |
+| Therapeutic alliance | Ch. 11 (Social Psychology) | Rogers's UPR already introduced; alliance as an interpersonal relationship |
+| Just-world hypothesis and stigma | Ch. 11 (Social Psychology) | Just-world hypothesis as the social mechanism generating and sustaining stigma and self-stigma toward mental illness |
 | ASPD and Phineas Gage | Ch. 3 (Neuroscience) | vmPFC damage and disrupted social-emotional regulation |
 | AI diagnostic tools / therapy chatbots | AI Connection (this chapter) | Heuristic failures in AI diagnostic systems; limits of restructuring-shaped language without a believing, feeling client |
 
@@ -369,15 +427,21 @@ Beck, A. T., Rush, A. J., Shaw, B. F., & Emery, G. (1979). *Cognitive therapy of
 
 Blumberg, M. S. (2010). Beyond dreams: Do sleep-related movements contribute to brain development? *Frontiers in Neurology*, *1*, 140. [*not independently verified this session — verify paper title, journal, and volume before publication]
 
+Brewin, C. R., Dalgleish, T., & Joseph, S. (1996). A dual representation theory of posttraumatic stress disorder. *Psychological Review*, *103*(4), 670–686.
+
 Cahalan, S. (2019). *The great pretender: The undercover mission that changed our understanding of madness*. Grand Central Publishing. [*not independently verified this session]
 
 Cardno, A. G., & Gottesman, I. I. (2000). Twin studies of schizophrenia: From bow-and-arrow concordances to Star Wars Mx and functional genomics. *American Journal of Medical Genetics*, *97*(1), 12–17.
+
+Chen, Y.-R., Hung, K.-W., Tsai, J.-C., Chu, H., Chung, M.-H., et al. (2014). Efficacy of eye-movement desensitization and reprocessing for patients with posttraumatic-stress disorder: A meta-analysis of randomized controlled trials. *PLoS ONE*, *9*(8), e103676.
 
 Cipriani, A., Furukawa, T. A., Salanti, G., Chaimani, A., Atkinson, L. Z., Ogawa, Y., … & Geddes, J. R. (2018). Comparative efficacy and acceptability of 21 antidepressant drugs for the acute treatment of adults with major depressive disorder. *The Lancet*, *391*(10128), 1357–1366. [*not independently verified this session]
 
 Cleckley, H. (1941). *The mask of sanity: An attempt to clarify some issues about the so-called psychopathic personality*. Mosby. [*not independently verified this session]
 
 Craddock, N., & Sklar, P. (2013). Genetics of bipolar disorder. *The Lancet*, *381*(9878), 1654–1662.
+
+Dantzer, R., & Kelley, K. W. (2007). Twenty years of research on cytokine-induced sickness behavior. *Brain, Behavior, and Immunity*, *21*(2), 153–160.
 
 Ellis, A. (1962). *Reason and emotion in psychotherapy*. Lyle Stuart. [*not independently verified this session]
 
@@ -387,13 +451,19 @@ Geddes, J., Carney, S., Cowen, P., Goodwin, G., Rogers, R., Dearness, K., … & 
 
 Hare, R. D. (1991). *The Hare Psychopathy Checklist–Revised*. Multi-Health Systems. [*not independently verified this session]
 
+Hart, B. L. (1988). Biological basis of the behavior of sick animals. *Neuroscience & Biobehavioral Reviews*, *12*(2), 123–137.
+
 Hofmann, S. G., Asnaani, A., Vonk, I. J., Sawyer, A. T., & Fang, A. (2012). The efficacy of cognitive behavioral therapy: A review of meta-analyses. *Cognitive Therapy and Research*, *36*(5), 427–440. [*not independently verified this session]
+
+Lerner, M. J. (1980). *The belief in a just world: A fundamental delusion*. Plenum Press.
 
 Linehan, M. M. (1993). *Cognitive-behavioral treatment of borderline personality disorder*. Guilford Press. [*not independently verified this session]
 
 Luborsky, L., Singer, B., & Luborsky, L. (1975). Comparative studies of psychotherapies: Is it true that "everyone has won and all must have prizes"? *Archives of General Psychiatry*, *32*(8), 995–1008. [*not independently verified this session]
 
 Moncrieff, J., Cooper, R. E., Stockmann, T., Amendola, S., Hengartner, M. P., & Horowitz, M. A. (2022). The serotonin theory of depression: A systematic umbrella review of the evidence. *Molecular Psychiatry*, *27*(8), 3369–3380.
+
+Nader, K., Schafe, G. E., & LeDoux, J. E. (2000). Fear memories require protein synthesis in the amygdala for reconsolidation after retrieval. *Nature*, *406*(6797), 722–726.
 
 Rogers, C. R. (1951). *Client-centered therapy: Its current practice, implications and theory*. Houghton Mifflin. [*not independently verified this session]
 
