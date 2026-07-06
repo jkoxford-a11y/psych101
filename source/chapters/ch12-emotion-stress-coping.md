@@ -1,5 +1,33 @@
 # Chapter 12: Emotion, Stress & Coping
 
+<!-- Version: 0.3, continued same session (2026-07-06) — density/consistency refinement after
+     Jon's review of the first pass. Jon flagged the chapter as too dense and asked whether images
+     could help, and separately flagged that cross-chapter wording felt inconsistent with how other
+     chapters do it. Checked the second concern against Ch7/8/9/10/11's actual Where This Fits and
+     Connections sections rather than assuming — confirmed real inconsistencies, both pre-existing
+     (three different Connections-table header/column conventions across the book; Ch3 called
+     "Neuroscience & Biological Bases" in one chapter's table and "Biological Bases" in others) and
+     introduced this session (Where This Fits used a new fifth structural variant not matching any
+     prior chapter; Ch13's title was shortened, dropping "Psychological"). Fixed: Where This Fits
+     tightened to match Ch9/Ch10's rhythm more closely; Ch3/Ch13 Connections-table labels corrected
+     to match majority usage; two Connections rows (Patient SM → Ch5, oxytocin → Ch10) that were
+     asserted in the table but never echoed in body prose now have an actual bridge sentence where
+     the concept appears. For density: GAS converted from four paragraphs of prose into a short
+     origin-story lead-in (Selye's formalin-control discovery, grounding the syndrome's defining
+     nonspecificity concretely rather than asserting it) plus a three-row table; added a Do Not
+     Confuse box for allostasis vs. stress (a real likely confusion, not previously addressed); the
+     hedonic treadmill subsection was boxed and tightened into a "Connection to Chapter 7" callout
+     rather than a full mainline subsection — Van Boven & Gilovich (2003) was cut in the process
+     (the sentence it supported no longer fit) and removed from References; softened "research
+     consistently finds" to "a growing body of research links" for the granularity claim; trimmed
+     the AI Connection's closing paragraph, cutting the open-empirical-question tail and keeping
+     the core distinction. One claim flagged but NOT added: a more vivid version of the Selye story
+     (that his own clumsy injection technique, not just the substances, contributed to the effect)
+     could not be confirmed from any source in this session's search — left out of the chapter,
+     noted inline as unconfirmed, pending either a citable source or Jon's own recollection of where
+     he heard it. Net effect on length: roughly neutral to slightly shorter, despite adding a table
+     and two boxes, because the GAS and hedonic-treadmill rewrites are shorter than what they
+     replaced. Word count not independently re-measured this pass. -->
 <!-- Version: 0.3 (2026-07-06) — spine-alignment pass (Ch9-13 backlog, Next Up #2c). Chapter was
      already substantively spine-consistent (built entirely on Barrett's predictive/constructionist
      framework) but had zero explicit spine vocabulary and two genuine content gaps the spine's Ch12
@@ -68,9 +96,9 @@ By the end of this chapter, you should be able to:
 
 ## Where This Fits
 
-**How does the body decide what matters?** Every system covered so far in this book runs some version of the same loop: partial input, compressed into a workable model, used to predict, acted on, and revised when the prediction fails. This chapter is about what that loop feels like from the inside. Emotion is the brain's running readout of what currently matters for the body's welfare — action, safety, resources, connection — and stress is what happens when the loop's predictions about demand and control keep coming back wrong.
+**How does the body decide what matters?** This chapter traces the same loop the last several chapters have each shown from a different angle — partial input, compressed into a model, used to predict, revised when the prediction fails — from the inside: emotion is that loop's live readout of what currently matters for the body's welfare, and stress is what happens when its predictions about demand and control keep coming back wrong.
 
-Chapter 3 established the biological machinery underlying stress and arousal — the sympathetic nervous system, the HPA axis, cortisol, and the orchid/dandelion framework for differential stress reactivity. Chapter 7 covered dopamine as a reward-prediction signal — a related but distinct mechanism from the appraisal and allostatic prediction covered here; they are separate links in the same broader chain (prediction error, meaning, emotion, possible mobilization), not the same signal under different names. This chapter builds on both: the body budget is the broader system within which the stress response operates, and emotions are the subjective experience of that system in action. Chapter 13 (Psychological Disorders & Therapy) picks up where this chapter ends — when stress is chronic and coping breaks down, the result can be clinical-level disruption of the very systems described here.
+Chapter 3 supplied the biological hardware this chapter puts to work — the sympathetic nervous system, the HPA axis, cortisol, and the orchid/dandelion account of why the same stressor lands differently on different nervous systems. Chapter 7's dopamine material is a related but separate signal: dopamine tracks reward prediction error, while this chapter's appraisal and body-budget prediction track demand, control, and welfare — two links in the same chain, not the same signal twice. Chapter 13 picks up where this one ends: when stress stops resolving and coping breaks down, the result is clinical-level disruption of the systems described here.
 
 ---
 
@@ -138,7 +166,7 @@ This has important implications. There are no dedicated "fear circuits" or "ange
 
 **The evidence:** Patient SM has rare bilateral amygdala damage from a genetic condition (Urbach-Wiethe disease). Early testing found she could not recognize fear from facial expressions, even though she recognized other emotions and personal identity normally (Adolphs, Tranel, Damasio, & Damasio, 1994). Later work went further: researchers exposed her directly to live snakes and spiders, took her through a haunted house, and showed her frightening films. She reported almost no fear on any of these occasions, despite a personal history that included real trauma (Feinstein, Adolphs, Tranel, & Damasio, 2011). Separately, she was found to lack an ordinary sense of personal space — standing uncomfortably close to strangers and rating an experimenter's nose-to-nose proximity as entirely comfortable, a situation in which healthy participants' amygdalae reliably activate (Kennedy, Gläscher, Tyszka, & Adolphs, 2009).
 
-**Why it matters:** SM can describe, in the abstract, that a snake or a stranger standing too close *should* be concerning. What she cannot do is generate the felt urgency — the affective prediction that something matters enough to act on. That is exactly the distinction this section has been building toward: the amygdala is not a fact-store and not a single "fear center." It is closer to a relevance-detector that helps convert a situation into an actionable, felt prediction. Take it out, and the facts survive; the mattering does not.
+**Why it matters:** SM can describe, in the abstract, that a snake or a stranger standing too close *should* be concerning. What she cannot do is generate the felt urgency — the affective prediction that something matters enough to act on. That is exactly the distinction this section has been building toward: the amygdala is not a fact-store and not a single "fear center." It is closer to a relevance-detector that helps convert a situation into an actionable, felt prediction. Take it out, and the facts survive; the mattering does not. Chapter 5 already introduced the amygdala as a fast, non-conscious relevance-tagging system for attention and threat; this case shows concretely what's lost when that tagging system is gone.
 
 *Some caution: SM is a single case, and researchers continue to debate how specific her deficit is to fear versus threat appraisal more broadly.*
 
@@ -156,7 +184,7 @@ This has important implications. There are no dedicated "fear circuits" or "ange
 
 This connects to the concept of **emotional granularity**: the degree to which a person makes fine-grained distinctions among their emotional states, rather than experiencing everything as broadly "good" or "bad" (Kashdan, Barrett, & McKnight, 2015). A person with high granularity distinguishes between being *anxious about a specific outcome*, *frustrated by an obstacle*, *disappointed by a person*, and *dreading an anticipated event* — all states that might collectively register as "feeling bad" to a low-granularity person.
 
-Research consistently finds that higher emotional granularity — particularly for negative emotions — predicts better coping with stressors, lower rates of depression and anxiety, less aggressive responding under provocation, and more effective use of emotion-regulation strategies (Kashdan et al., 2015). The mechanism is consistent with the constructionist account: more precise emotion concepts produce more accurate body-budget predictions, which enable more targeted regulatory responses. If you know you are *frustrated* rather than *threatened*, you know that the adaptive response is problem-solving, not defense — and you can act accordingly.
+A growing body of research links higher emotional granularity — particularly for negative emotions — to better coping with stressors, lower rates of depression and anxiety, less aggressive responding under provocation, and more effective use of emotion-regulation strategies (Kashdan et al., 2015). The mechanism is consistent with the constructionist account: more precise emotion concepts produce more accurate body-budget predictions, which enable more targeted regulatory responses. If you know you are *frustrated* rather than *threatened*, you know that the adaptive response is problem-solving, not defense — and you can act accordingly.
 
 Consider the practical difference. The label "I feel bad" gives the brain little guidance — every diffuse negative state calls for the same vague response. The label "I am disappointed because I expected support and did not receive it" points toward a specific situation, a specific person, and a specific range of possible responses (seek a conversation; adjust expectations; find support elsewhere) that are quite different from what "I am anxious because an important outcome is still uncertain" would call for (gather information; develop contingency plans; practice tolerating uncertainty). Granularity is not just emotional vocabulary — it is precision guidance for action.
 
@@ -173,6 +201,9 @@ Ekman's claim that there is a small set of universal, biologically fixed emotion
 
 ## Section 3: Stress — The Budget Under Pressure
 
+> **Do Not Confuse: Allostasis vs. Stress**
+> Allostasis is the ordinary, ongoing predictive system managing the body budget right now, with no stressor in sight. Stress isn't a separate system — it's what allostasis looks like when it's facing a demand that outstrips what it can predict or meet. Every stress response is allostasis at work; not every instance of allostasis is stress.
+
 ### What Is Stress?
 
 **Stress** is the state that arises when perceived demands exceed perceived coping resources (Lazarus & Folkman, 1984). A **stressor** is the event or condition that triggers this appraisal. As Chapter 3 established, the stress response is biological — it mobilizes the body's resources for meeting a demand. Under the body-budget framing, stress is what happens when the allostatic system faces demands it cannot easily predict or meet: unexpected threats, sustained high-demand, and chronically unresolved challenges all constitute body-budget emergencies.
@@ -187,21 +218,23 @@ This wider range of things that can matter to the organism *right now* — remem
 
 ### The General Adaptation Syndrome
 
-Hans Selye (1956), studying the physiological responses of laboratory animals to diverse stressors, described a remarkably consistent three-stage response he called the **General Adaptation Syndrome (GAS)**:
+Selye's actual discovery, in the 1930s, was an accident. Trying to isolate a new ovarian hormone, he injected rats with ovarian extract and found consistent damage — enlarged adrenal glands, shrunken thymus and lymph tissue, bleeding stomach ulcers. It looked like a hormone effect until he ran a control injection: formalin, a toxic preservative with no hormonal activity. The control rats showed the identical triad. Whatever produced this pattern wasn't specific to any substance — it was a generic response to *something noxious happening to the animal* (Selye, 1956). That result is why the syndrome he named is defined by nonspecificity: the body doesn't run a different stress response for every different threat. It runs one, whether the trigger is a predator, a toxin, or — this chapter's argument — a remembered failure.
 
-**Alarm** — the initial mobilization. The HPA axis activates, cortisol is released, the sympathetic nervous system engages, and the body marshals resources. Energy is redirected from long-term maintenance (digestion, immune function, reproduction) toward immediate action.
+Selye called the resulting three-stage pattern the **General Adaptation Syndrome (GAS)**:
 
-**Resistance** — sustained mobilization. If the stressor continues, the body stabilizes at an elevated stress-response level and attempts to cope. Stress mediators remain repeatedly engaged. Resources are being consumed.
+| Stage | What's happening | Cost |
+|---|---|---|
+| **Alarm** | HPA axis activates, cortisol releases, sympathetic nervous system engages; energy redirects from long-term maintenance (digestion, immune function, reproduction) to immediate action | Minimal, if brief |
+| **Resistance** | Body stabilizes at an elevated response level, keeps coping while the stressor continues | Resources consumed, not yet depleted |
+| **Exhaustion** | Reserves run out; the elevated response can no longer be sustained | Immune suppression, illness vulnerability; organ failure in extreme cases |
 
-**Exhaustion** — resource depletion. Prolonged resistance depletes physiological reserves. The body can no longer sustain the elevated response. Vulnerability to illness increases; immune function is suppressed; in extreme cases, organ systems begin to fail.
-
-Selye's framework is incomplete — it understates the role of psychological appraisal and was developed primarily from extreme physical stressors in rodents. But it captures the essential logic: the stress response is adaptive in the short run and costly in the long run, and the transition from useful to harmful depends on duration.
+Selye's framework is incomplete on its own — it understates psychological appraisal and was built primarily from extreme physical stressors in rodents. But the core logic holds: the stress response is adaptive in the short run and costly in the long run, and which one you get depends on duration.
 
 ### Fight-or-Flight and Tend-and-Befriend
 
 The **fight-or-flight response** is the sympathetic nervous system's acute mobilization to perceived threat — increased heart rate and blood pressure, epinephrine and norepinephrine release, blood diverted to muscles, airways dilated, digestion suppressed. Described by Cannon (1929) from studies of emotional arousal in cats, it is a genuinely adaptive acute response to physical threats. It is poorly matched to chronic psychological stressors — sustained activation of this system with no resolution is a primary driver of stress-related health costs.
 
-Taylor and colleagues (2000) noted that the fight-or-flight framework was built largely on research with male animals and may not fully characterize female stress responses. They proposed the **tend-and-befriend** model: particularly in females, acute stress elicits a pattern of nurturing behavior (tending offspring and close others) and social affiliation (seeking support and safety in numbers). This pattern appears to be mediated in part by **oxytocin** — a neuropeptide involved in social bonding and affiliation — whose effects may be enhanced by estrogen. The evolutionary logic is straightforward: for females with dependent offspring, fighting or fleeing is often not the most viable stress response; affiliating with trusted others and protecting young is. Sex differences in affiliative responses to stress are consistent in human and non-human animal research, though the difference is statistical, not categorical — males also show affiliative stress responses, and the full picture involves multiple hormonal and socialization factors.
+Taylor and colleagues (2000) noted that the fight-or-flight framework was built largely on research with male animals and may not fully characterize female stress responses. They proposed the **tend-and-befriend** model: particularly in females, acute stress elicits a pattern of nurturing behavior (tending offspring and close others) and social affiliation (seeking support and safety in numbers). This pattern appears to be mediated in part by **oxytocin** — a neuropeptide involved in social bonding and affiliation — whose effects may be enhanced by estrogen. The evolutionary logic is straightforward: for females with dependent offspring, fighting or fleeing is often not the most viable stress response; affiliating with trusted others and protecting young is. Sex differences in affiliative responses to stress are consistent in human and non-human animal research, though the difference is statistical, not categorical — males also show affiliative stress responses, and the full picture involves multiple hormonal and socialization factors. This is the same neuropeptide mechanism Chapter 10 described buffering caregiver-infant stress through biobehavioral synchrony — here it's doing comparable work between adults under acute stress.
 
 ### Allostatic Load: The Cost of Chronic Stress
 
@@ -240,13 +273,8 @@ Under the allostatic framework, this is not surprising. Social connection is not
 
 For college students, social isolation is a particularly significant body-budget risk. The transition to college involves losing established social networks, and many students underestimate the physiological cost of that isolation — experiencing what they interpret as laziness, difficulty concentrating, or vague unease that is actually, in part, a budget that is running low on social resources.
 
-### The Hedonic Treadmill: Why Achievements Don't Stay Satisfying
-
-A classic and still-cited study compared major lottery winners to matched controls and to accident victims living with paralysis. Lottery winners were not significantly happier than controls, and took less pleasure from ordinary daily events; the accident victims, while less happy than controls, were not nearly as unhappy as most people predict (Brickman, Coates, & Janoff-Bulman, 1978), consistent with Brickman and Campbell's (1971) broader argument that people adapt to both positive and negative life changes and drift back toward a baseline level of well-being — the **hedonic treadmill**.
-
-Chapter 7's dopamine material supplies the mechanism, not just the metaphor: dopamine tracks the *prediction error* around reward, firing hardest during anticipation of an uncertain outcome, not at the moment of consumption. Once a reward becomes the new, fully expected baseline — the raise, the acceptance letter, the relationship — there is no more prediction error left to signal, and the anticipatory dopamine response fades. The treadmill is not a character flaw or an ingratitude problem; it is what a well-functioning prediction system does once it has finished updating.
-
-What keeps a prediction-error signal alive, and so keeps feeling rewarding, is different from what most people chase: novelty within real competence, progress toward goals that still feel uncertain, and social connection — partly because other people, unlike possessions, remain genuinely unpredictable (Van Boven & Gilovich, 2003, found this is part of why experiences hold up better than purchases). None of this means external circumstances are irrelevant. Adaptation is real but incomplete — it is weaker or absent for some experiences, including chronic pain, unemployment, and bereavement, which can leave lasting effects below baseline (Lucas, Clark, Georgellis, & Diener, 2003). The treadmill describes a tendency built into the reward-prediction system, not an iron law that nothing external matters.
+> **Connection to Chapter 7: The Hedonic Treadmill**
+> Lottery winners weren't significantly happier than matched controls, and accident victims living with paralysis weren't nearly as unhappy as people predict (Brickman, Coates, & Janoff-Bulman, 1978) — people drift back toward a baseline level of well-being after both good and bad changes (Brickman & Campbell, 1971), the **hedonic treadmill**. Chapter 7's dopamine material supplies the mechanism: dopamine tracks reward *prediction error*, firing hardest during anticipation, not consumption. Once a reward becomes the expected baseline, there's no more error to signal, and the anticipatory response fades — not a character flaw, just a prediction system that finished updating. What keeps it alive: novelty within real competence, uncertain progress, and other people, who stay genuinely unpredictable. Adaptation is real but incomplete — weaker for chronic pain, unemployment, and bereavement (Lucas, Clark, Georgellis, & Diener, 2003).
 
 ### Upstream Coping: Body-Budget Deposits
 
@@ -276,7 +304,7 @@ Under Barrett's framework, emotions require three things working together: a bod
 
 This is a more precise version of the anthropomorphism problem raised in Chapter 11 (Social Psychology). We are primed to read intentional, emotional agents into behavior that matches the surface form of emotional behavior — it is the same mechanism that makes us see faces in clouds. AI produces emotion-*shaped* output (empathic language, expressions of enthusiasm, signals of distress) without the allostatic state that those outputs represent in a human. This matters practically: an AI system that produces distress-mirroring language does not share your distress — but because you process its output through the same social cognition systems you use for human interaction, you may experience it as socially real. This is a feature, not a bug, from a user-experience perspective; but this may matter when people turn to AI for emotional support in ways that replace rather than supplement genuine social connection — because social connection, unlike AI interaction, directly deposits into the body budget through the neuroendocrine mechanisms described above.
 
-The affect-labeling parallel is also telling. When an AI generates the sentence "It sounds like you're feeling overwhelmed and uncertain," it is producing a precise, well-formed emotion label — which, delivered by a human in a therapeutic context, would activate the affect-labeling regulatory mechanism in the recipient. Whether the same regulatory effect occurs when the speaker is known to be non-agentive is an open empirical question, but the mechanism on the human side is worth being aware of: the regulatory benefit of affect labeling comes from constructing a more accurate model of your own state, and a well-formed label can initiate that process regardless of source. AI-generated emotion labels may have some functional value for this reason — but they carry no information about the speaker's actual state, and should not be interpreted as evidence of AI experience.
+The affect-labeling parallel is also telling. When an AI generates "It sounds like you're feeling overwhelmed and uncertain," it produces a precise, well-formed emotion label — the same kind that would activate the affect-labeling mechanism in a human listener. But a well-formed label is not the same as a felt state behind it: the output carries no information about any actual state, because there is no allostatic system generating one. Useful as a mirror; not evidence of AI experience.
 
 ---
 
@@ -298,11 +326,11 @@ Underneath all of it is the point this book keeps returning to from different an
 
 | Topic in This Chapter | Connects To | Why |
 |---|---|---|
-| HPA axis, cortisol, orchid/dandelion stress reactivity | Ch. 3 (Neuroscience & Biological Bases) | Same biological machinery introduced there is what allostasis and the body budget operate through here |
+| HPA axis, cortisol, orchid/dandelion stress reactivity | Ch. 3 (Biological Bases) | Same biological machinery introduced there is what allostasis and the body budget operate through here |
 | Amygdala as relevance-detector (Patient SM) | Ch. 5 (Consciousness) | Ch. 5 introduces the amygdala's fast-tagging role in attention and salience; this chapter shows what is lost without it |
-| Dopamine as reward-prediction signal | Ch. 7 (Learning) | A related but distinct mechanism from the appraisal and body-budget prediction covered here — see Where This Fits and the hedonic treadmill section |
+| Dopamine as reward-prediction signal | Ch. 7 (Learning) | A related but distinct mechanism from the appraisal and body-budget prediction covered here — see Where This Fits and the hedonic treadmill box |
 | Oxytocin and biobehavioral synchrony | Ch. 10 (Lifespan Development) | The same neuropeptide mechanism supporting caregiver-infant synchrony in development also buffers the cortisol response to stress in adulthood |
-| Chronic stress and disorder | Ch. 13 (Disorders & Therapy) | When body-budget mismanagement or stress dysregulation becomes persistent and self-sustaining, it crosses into clinical territory |
+| Chronic stress and disorder | Ch. 13 (Psychological Disorders & Therapy) | When body-budget mismanagement or stress dysregulation becomes persistent and self-sustaining, it crosses into clinical territory |
 
 ---
 
@@ -489,8 +517,6 @@ Taylor, S. E., Klein, L. C., Lewis, B. P., Gruenewald, T. L., Gurung, R. A. R., 
 
 Torre, J. B., & Lieberman, M. D. (2018). Putting feelings into words: Affect labeling as implicit emotion regulation. *Emotion Review*, *10*, 116–124.
 
-Van Boven, L., & Gilovich, T. (2003). To do or to have? That is the question. *Journal of Personality and Social Psychology*, *85*, 1193–1202.
-
 ---
 
 ## Programmatic Concept Check
@@ -519,8 +545,12 @@ Van Boven, L., & Gilovich, T. (2003). To do or to have? That is the question. *J
      McEwen 1998a (NEJM) ✓ | McEwen 1998b (NYAS) ✓ | Mesquita 2001 ✓ |
      Russell 1980 ✓ | Sapolsky 2004 ✓ | Schachter & Singer 1962 ✓ | Schacter, Addis & Buckner 2007 ✓ |
      Selye 1956 ✓ | Sterling & Eyer 1988 ✓ | Suddendorf & Corballis 2007 ✓ |
-     Taylor et al. 2000 ✓ | Torre & Lieberman 2018 ✓ | Van Boven & Gilovich 2003 ✓
+     Taylor et al. 2000 ✓ | Torre & Lieberman 2018 ✓
      Removed (prior session): Damásio et al. 1994 (orphan), Lazarus 1991 (orphan)
+     Removed (this session, second pass): Van Boven & Gilovich 2003 — cut when the hedonic
+     treadmill section was tightened into a boxed "Connection to Chapter 7" callout per Jon's
+     density feedback; the sentence it supported (experiential vs. material purchases) was cut
+     for length, so the citation no longer had a claim to support. Confirm no orphan.
      Added this session (all verified via live search before inclusion, not from memory):
      Adolphs et al. 1994, Feinstein et al. 2011, and Kennedy et al. 2009 — three separate SM
      papers; note the spine's own Layer-3 note attributed the snake/personal-space behavioral
@@ -528,8 +558,9 @@ Van Boven, L., & Gilovich, T. (2003). To do or to have? That is the question. *J
      in facial expressions — the snake/haunted-house findings are Feinstein et al. 2011 and the
      personal-space finding is Kennedy et al. 2009. Corrected here rather than propagating the
      spine note's citation as written.
-     Brickman & Campbell 1971, Brickman, Coates & Janoff-Bulman 1978, Van Boven & Gilovich 2003,
-     and Lucas, Clark, Georgellis & Diener 2003 (hedonic treadmill + adaptation-is-incomplete caveat);
+     Brickman & Campbell 1971, Brickman, Coates & Janoff-Bulman 1978, and Lucas, Clark, Georgellis
+     & Diener 2003 (hedonic treadmill + adaptation-is-incomplete caveat; Van Boven & Gilovich 2003
+     was added then removed in the same session, see above);
      Suddendorf & Corballis 2007 and Schacter, Addis & Buckner 2007 (mental time travel / cognitive
      light cone); Sapolsky 2004 (already in Further Reading, now also cited in-text and added to
      References proper).
