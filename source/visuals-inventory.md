@@ -186,8 +186,8 @@ Note: v0.7 (Session 51) renumbered two figures not yet reflected above — ANS p
 
 ---
 
-## Chapter 11 — Social Psychology (Personality glossed within)
-*(was "Chapter 10" in the old numbering; the old standalone "Chapter 11 — Personality" is dissolved into this chapter, not a separate chapter — see note below)* No figures yet for the Social content.
+## Chapter 11 — Social Psychology (Personality merged in as Section 5, Session 71/72)
+*(was "Chapter 10" in the old numbering; the old standalone "Chapter 11 — Personality" holding-pen file, `ch11b-personality.md`, is now merged into this chapter as Section 5 — see `ch11-social-psychology.md`)* Still no figures for the Social content (Sections 1–4); Personality (Section 5) has both of its figures built and wired.
 
 | # | Description | Status | Notes |
 |---|-------------|--------|-------|
@@ -196,14 +196,11 @@ Note: v0.7 (Session 51) renumbered two figures not yet reflected above — ANS p
 | 11.3 | ELM dual-route diagram (central vs. peripheral route to persuasion) | 🔲 | Core |
 | 11.4 | Bystander effect: five-step decision model | 🔲 | Core — Darley & Latané model |
 | 11.5 | Social identity theory (in-group favoritism / out-group derogation) | 🔲 | Optional |
-
-**Personality figures (from the old standalone chapter, status unresolved):** `ch11-personality.md` is currently a holding-pen file (`ch11b-personality.md`) — content not yet merged into this chapter. Its two existing figures are built and may or may not survive the merge:
-
-| # | Description | Status | Filename |
-|---|-------------|--------|----------|
-| — | Trait signal aggregation (single act r≈.29 vs. aggregated r≈.72 scatter plots) | ✅ built, fate pending merge | `ch11/fig11-1-trait-signal-aggregation.png` |
-| — | Person × situation interaction (helping behavior across weak/strong situations) | ✅ built, fate pending merge | `ch11/fig11-2-person-situation-grid.png` |
+| 11.6 | Trait signal aggregation (single act r≈.29 vs. aggregated r≈.72 scatter plots) | ✅ built and wired | `ch11/fig_trait_signal_aggregation.png` |
+| 11.7 | Person × situation interaction (helping behavior across weak/strong situations) | ✅ built and wired | `ch11/fig_person_situation_grid.png` |
 | — | Big Five trait dimensions visual | 🔲 | Optional — chapter uses a table; figure would supplement |
+
+**Numbering note:** 11.6/11.7 (not 11.1/11.2, their numbers in the old standalone Personality file) because Personality now reads as Section 5 — after the four Social sections that would claim 11.1–11.5 once built. Filenames also corrected here: the two built files on disk are `fig_trait_signal_aggregation.png` and `fig_person_situation_grid.png` (descriptor-only, per the Session 32 naming convention), not the `fig11-1-...`/`fig11-2-...` names previously listed in this inventory.
 
 ---
 
@@ -254,5 +251,4 @@ No figures yet. Number unchanged from old numbering (this chapter's position was
 - Ch4: Reconcile this inventory against the actual HTML (9 figures, 4.1–4.9) — this list is behind
 - Ch5: Confirm placement of the 7 unplaced images (next session)
 - Ch9: folder rename resolved (Session 68); still need a decision on whether/where to embed the 5 existing figures in the chapter markdown
-- Ch11: Resolve the Personality-merge question — which figures (if any) survive into the Social chapter?
 - Prologue: Dunning-Kruger — redraw from actual data, or add caveat, or drop?
