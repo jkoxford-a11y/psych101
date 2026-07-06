@@ -1,5 +1,23 @@
 # Chapter 12: Emotion, Stress & Coping
 
+<!-- Version: 0.3 (2026-07-06) — spine-alignment pass (Ch9-13 backlog, Next Up #2c). Chapter was
+     already substantively spine-consistent (built entirely on Barrett's predictive/constructionist
+     framework) but had zero explicit spine vocabulary and two genuine content gaps the spine's Ch12
+     Layer-3 notes flag as central. Applied: (1) spine question ("How does the body decide what
+     matters?") fronted in Where This Fits, master loop named briefly, dopamine explicitly separated
+     from appraisal/stress prediction per spine's anti-collapse rule; (2) new Classic Study
+     Walkthrough on Patient SM (amygdala relevance-detection made concrete) in Section 2 — corrected
+     a citation-attribution issue in the spine's own note in the process (see Programmatic Concept
+     Check); (3) new "Why Human Stress Goes Chronic" / cognitive light cone subsection in Section 3,
+     fulfilling a promissory cross-reference Chapter 3 already makes to this chapter; (4) new hedonic
+     treadmill subsection in Section 4, tying Ch7's dopamine-prediction-error mechanism to why
+     achievements don't sustain well-being, feeding directly into the existing Upstream Coping
+     material; (5) closing spine-unifying line in Chapter Summary; (6) added a Connections table —
+     this chapter had none before, unlike every other chapter. Ten new citations, all verified via
+     live search before inclusion. Word count was already well over target (~8,000 words) before this
+     pass and is now higher still — flagged, not trimmed, per the same precedent as Ch8-10; Jon has
+     not yet been asked what to cut. Not yet converted to HTML; still awaiting Jon's line-by-line
+     review — this was a scoped spine-alignment pass, not a fresh read-through. -->
 <!-- Version: 0.2 (2026-06-24) — review corrections applied: Barrett framing softened,
      constructed≠chosen box added, classic theories table, reference cleanup (Damasio/Lazarus 1991
      removed, Ekman 1992 + Barrett et al. 2019 + Heinrichs et al. 2003 added), 2017a/2017b and
@@ -50,7 +68,9 @@ By the end of this chapter, you should be able to:
 
 ## Where This Fits
 
-Chapter 3 established the biological machinery underlying stress and arousal — the sympathetic nervous system, the HPA axis, cortisol, and the orchid/dandelion framework for differential stress reactivity. Chapter 7 covered dopamine as a reward prediction signal, which is one piece of the body's broader prediction architecture. This chapter builds on both: the body budget is the broader system within which the stress response operates, and emotions are the subjective experience of that system in action. Chapter 13 (Psychological Disorders & Therapy) picks up where this chapter ends — when stress is chronic and coping breaks down, the result can be clinical-level disruption of the very systems described here.
+**How does the body decide what matters?** Every system covered so far in this book runs some version of the same loop: partial input, compressed into a workable model, used to predict, acted on, and revised when the prediction fails. This chapter is about what that loop feels like from the inside. Emotion is the brain's running readout of what currently matters for the body's welfare — action, safety, resources, connection — and stress is what happens when the loop's predictions about demand and control keep coming back wrong.
+
+Chapter 3 established the biological machinery underlying stress and arousal — the sympathetic nervous system, the HPA axis, cortisol, and the orchid/dandelion framework for differential stress reactivity. Chapter 7 covered dopamine as a reward-prediction signal — a related but distinct mechanism from the appraisal and allostatic prediction covered here; they are separate links in the same broader chain (prediction error, meaning, emotion, possible mobilization), not the same signal under different names. This chapter builds on both: the body budget is the broader system within which the stress response operates, and emotions are the subjective experience of that system in action. Chapter 13 (Psychological Disorders & Therapy) picks up where this chapter ends — when stress is chronic and coping breaks down, the result can be clinical-level disruption of the very systems described here.
 
 ---
 
@@ -112,6 +132,16 @@ In concrete terms: when you encounter a situation your brain predicts as relevan
 
 This has important implications. There are no dedicated "fear circuits" or "anger circuits" in the brain in the way the older view implied — the amygdala, often called the brain's fear center, is better understood as a relevance-detection system that contributes to the construction of many emotion types, not just fear (LeDoux, 2012; Barrett, 2017b). The neural architecture of emotion is distributed and multipurpose, not modular and emotion-specific.
 
+### Classic Study Walkthrough: What the Amygdala Is For (Patient SM)
+
+**The question:** When the amygdala is destroyed, what actually breaks — the capacity to *know* a situation is dangerous, or the capacity to *feel* afraid of it?
+
+**The evidence:** Patient SM has rare bilateral amygdala damage from a genetic condition (Urbach-Wiethe disease). Early testing found she could not recognize fear from facial expressions, even though she recognized other emotions and personal identity normally (Adolphs, Tranel, Damasio, & Damasio, 1994). Later work went further: researchers exposed her directly to live snakes and spiders, took her through a haunted house, and showed her frightening films. She reported almost no fear on any of these occasions, despite a personal history that included real trauma (Feinstein, Adolphs, Tranel, & Damasio, 2011). Separately, she was found to lack an ordinary sense of personal space — standing uncomfortably close to strangers and rating an experimenter's nose-to-nose proximity as entirely comfortable, a situation in which healthy participants' amygdalae reliably activate (Kennedy, Gläscher, Tyszka, & Adolphs, 2009).
+
+**Why it matters:** SM can describe, in the abstract, that a snake or a stranger standing too close *should* be concerning. What she cannot do is generate the felt urgency — the affective prediction that something matters enough to act on. That is exactly the distinction this section has been building toward: the amygdala is not a fact-store and not a single "fear center." It is closer to a relevance-detector that helps convert a situation into an actionable, felt prediction. Take it out, and the facts survive; the mattering does not.
+
+*Some caution: SM is a single case, and researchers continue to debate how specific her deficit is to fear versus threat appraisal more broadly.*
+
 ### Classic Study Walkthrough: Affect Labeling and the Brain
 
 **The question:** Does putting an emotion into words change how intensely you experience it?
@@ -148,6 +178,12 @@ Ekman's claim that there is a small set of universal, biologically fixed emotion
 **Stress** is the state that arises when perceived demands exceed perceived coping resources (Lazarus & Folkman, 1984). A **stressor** is the event or condition that triggers this appraisal. As Chapter 3 established, the stress response is biological — it mobilizes the body's resources for meeting a demand. Under the body-budget framing, stress is what happens when the allostatic system faces demands it cannot easily predict or meet: unexpected threats, sustained high-demand, and chronically unresolved challenges all constitute body-budget emergencies.
 
 Whether a given event becomes a stressor depends substantially on appraisal — how you evaluate it. **Primary appraisal** asks: Is this relevant to my wellbeing? Is it threatening, harmful, or challenging? **Secondary appraisal** asks: Do I have the resources to cope? The interaction between these determines the magnitude of the stress response: high perceived demand + low perceived coping resources = high stress, independent of the objective severity of the situation. This explains why the same exam, the same presentation, the same confrontation is crushing for one person and manageable for another.
+
+### Why Human Stress Goes Chronic
+
+Chapter 3 introduced the contrast: a zebra's stress response mobilizes fully for the minute it takes to escape a lion, then shuts off completely once the threat is gone or the zebra is dead (Sapolsky, 2004). Humans run the same ancient mobilization machinery, but on a very different range of things that count as a threat. The same capacity that lets you plan, remember, and imagine — mental time travel into a past that no longer exists and a future that hasn't happened yet (Suddendorf & Corballis, 2007; Schacter, Addis, & Buckner, 2007) — also means a threat does not need to be physically present to activate the stress response. An imagined layoff, a remembered failure, a symbolic insult, an uncertain diagnosis, or someone else's opinion of you can all trigger appraisal and mobilization, and none of them resolve the way a chased-down zebra's threat does.
+
+This wider range of things that can matter to the organism *right now* — remembered pasts, imagined futures, other people's judgments, symbolic and financial threats, possible selves — is sometimes called the human **cognitive light cone**: not a technical term from neuroscience, but a useful description of everything the simulation-capable brain can treat as a live concern. It is the same predictive capacity that makes planning and foresight possible, running on a stress-response system built for acute physical emergencies, not sustained abstract ones. The exhaustion stage of the General Adaptation Syndrome, described next, is what that machinery looks like when it is left running against a threat that exists only in simulation.
 
 ### The General Adaptation Syndrome
 
@@ -204,6 +240,14 @@ Under the allostatic framework, this is not surprising. Social connection is not
 
 For college students, social isolation is a particularly significant body-budget risk. The transition to college involves losing established social networks, and many students underestimate the physiological cost of that isolation — experiencing what they interpret as laziness, difficulty concentrating, or vague unease that is actually, in part, a budget that is running low on social resources.
 
+### The Hedonic Treadmill: Why Achievements Don't Stay Satisfying
+
+A classic and still-cited study compared major lottery winners to matched controls and to accident victims living with paralysis. Lottery winners were not significantly happier than controls, and took less pleasure from ordinary daily events; the accident victims, while less happy than controls, were not nearly as unhappy as most people predict (Brickman, Coates, & Janoff-Bulman, 1978), consistent with Brickman and Campbell's (1971) broader argument that people adapt to both positive and negative life changes and drift back toward a baseline level of well-being — the **hedonic treadmill**.
+
+Chapter 7's dopamine material supplies the mechanism, not just the metaphor: dopamine tracks the *prediction error* around reward, firing hardest during anticipation of an uncertain outcome, not at the moment of consumption. Once a reward becomes the new, fully expected baseline — the raise, the acceptance letter, the relationship — there is no more prediction error left to signal, and the anticipatory dopamine response fades. The treadmill is not a character flaw or an ingratitude problem; it is what a well-functioning prediction system does once it has finished updating.
+
+What keeps a prediction-error signal alive, and so keeps feeling rewarding, is different from what most people chase: novelty within real competence, progress toward goals that still feel uncertain, and social connection — partly because other people, unlike possessions, remain genuinely unpredictable (Van Boven & Gilovich, 2003, found this is part of why experiences hold up better than purchases). None of this means external circumstances are irrelevant. Adaptation is real but incomplete — it is weaker or absent for some experiences, including chronic pain, unemployment, and bereavement, which can leave lasting effects below baseline (Lucas, Clark, Georgellis, & Diener, 2003). The treadmill describes a tendency built into the reward-prediction system, not an iron law that nothing external matters.
+
 ### Upstream Coping: Body-Budget Deposits
 
 Once you understand emotions as body-budget constructions, the most practical coping strategies become clear — not as generic wellness advice, but as direct deposits into the account that emotions are drawn from:
@@ -244,7 +288,21 @@ Emotions are not triggered reflexes but **constructed experiences**, generated b
 
 Stress arises when perceived demands exceed perceived coping resources. Selye's **General Adaptation Syndrome** describes the three-stage physiological response to sustained stressors: alarm, resistance, and exhaustion. The **fight-or-flight** response is the acute sympathetic mobilization; the **tend-and-befriend** response (Taylor et al., 2000) describes the affiliative stress pattern particularly evident in females. Chronic activation of stress physiology produces **allostatic load** — cumulative physiological wear that suppresses immune function, impairs memory, and increases cardiovascular risk.
 
-Coping involves **problem-focused strategies** (targeting the stressor directly, most effective when controllable) and **emotion-focused strategies** (managing the emotional response, most effective when the stressor is not controllable). **Social support** directly reduces allostatic load through biological as well as psychological mechanisms. The most impactful upstream coping strategies — sleep, movement, and nutritional regularity — are direct body-budget deposits that improve the raw material from which emotional experiences are constructed.
+Coping involves **problem-focused strategies** (targeting the stressor directly, most effective when controllable) and **emotion-focused strategies** (managing the emotional response, most effective when the stressor is not controllable). **Social support** directly reduces allostatic load through biological as well as psychological mechanisms. The most impactful upstream coping strategies — sleep, movement, and nutritional regularity — are direct body-budget deposits that improve the raw material from which emotional experiences are constructed. The **hedonic treadmill** shows the same prediction machinery at work in well-being itself: achievements stop feeling rewarding once they become the expected baseline, not because something is wrong with you, but because the prediction-error signal that made them feel good has nothing left to signal.
+
+Underneath all of it is the point this book keeps returning to from different angles: the body is not malfunctioning when it can't relax after finals or overreacts to a cutting remark. It is running an old, mostly excellent prediction system against a threat landscape — imagined, symbolic, chronic — that system was never quite built for.
+
+---
+
+## Connections
+
+| Topic in This Chapter | Connects To | Why |
+|---|---|---|
+| HPA axis, cortisol, orchid/dandelion stress reactivity | Ch. 3 (Neuroscience & Biological Bases) | Same biological machinery introduced there is what allostasis and the body budget operate through here |
+| Amygdala as relevance-detector (Patient SM) | Ch. 5 (Consciousness) | Ch. 5 introduces the amygdala's fast-tagging role in attention and salience; this chapter shows what is lost without it |
+| Dopamine as reward-prediction signal | Ch. 7 (Learning) | A related but distinct mechanism from the appraisal and body-budget prediction covered here — see Where This Fits and the hedonic treadmill section |
+| Oxytocin and biobehavioral synchrony | Ch. 10 (Lifespan Development) | The same neuropeptide mechanism supporting caregiver-infant synchrony in development also buffers the cortisol response to stress in adulthood |
+| Chronic stress and disorder | Ch. 13 (Disorders & Therapy) | When body-budget mismanagement or stress dysregulation becomes persistent and self-sustaining, it crosses into clinical territory |
 
 ---
 
@@ -260,6 +318,8 @@ Coping involves **problem-focused strategies** (targeting the stressor directly,
 
 **Cannon-Bard theory** — the proposal that physiological arousal and emotional experience occur simultaneously and independently
 
+**cognitive light cone** — a course-specific term (not standard neuroscience vocabulary) for the full range of things — remembered pasts, imagined futures, symbolic and social threats, possible selves — that a simulation-capable brain can treat as a live concern, explaining why human stress can go chronic without any present physical danger
+
 **core affect** — the background quality of experience defined by two dimensions: valence (pleasant/unpleasant) and arousal (activated/deactivated)
 
 **emotion-focused coping** — coping strategies that target the emotional response to a stressor rather than the stressor itself
@@ -269,6 +329,8 @@ Coping involves **problem-focused strategies** (targeting the stressor directly,
 **fight-or-flight response** — sympathetic nervous system mobilization to acute threat, involving epinephrine/norepinephrine release and cardiovascular-respiratory activation
 
 **General Adaptation Syndrome (GAS)** — Selye's three-stage model of physiological response to prolonged stressors: alarm, resistance, exhaustion
+
+**hedonic treadmill** — the tendency to adapt to positive and negative life changes and drift back toward a baseline level of well-being, driven in part by the fading of the dopamine prediction-error signal once a new state becomes fully expected
 
 **homeostasis** — the maintenance of stable internal conditions through reactive correction of deviations
 
@@ -361,11 +423,17 @@ They are not mutually exclusive — effective coping typically involves both typ
 
 ## References
 
+Adolphs, R., Tranel, D., Damasio, H., & Damasio, A. (1994). Impaired recognition of emotion in facial expressions following bilateral damage to the human amygdala. *Nature*, *372*, 669–672.
+
 Barrett, L. F. (2017a). *How Emotions Are Made: The Secret Life of the Brain*. Houghton Mifflin Harcourt.
 
 Barrett, L. F. (2017b). The theory of constructed emotion: An active inference account of interoception and categorization. *Social Cognitive and Affective Neuroscience*, *12*, 1–23.
 
 Barrett, L. F., Adolphs, R., Marsella, S., Martinez, A. M., & Pollak, S. D. (2019). Emotional expressions reconsidered: Challenges to inferring emotion from human facial movements. *Psychological Science in the Public Interest*, *20*, 1–68.
+
+Brickman, P., & Campbell, D. T. (1971). Hedonic relativism and planning the good society. In M. H. Appley (Ed.), *Adaptation-Level Theory* (pp. 287–302). Academic Press.
+
+Brickman, P., Coates, D., & Janoff-Bulman, R. (1978). Lottery winners and accident victims: Is happiness relative? *Journal of Personality and Social Psychology*, *36*, 917–927.
 
 Cannon, W. B. (1927). The James-Lange theory of emotions: A critical examination and an alternative theory. *American Journal of Psychology*, *39*, 106–124.
 
@@ -375,17 +443,23 @@ Cohen, S., & Wills, T. A. (1985). Stress, social support, and the buffering hypo
 
 Ekman, P. (1992). An argument for basic emotions. *Cognition and Emotion*, *6*, 169–200.
 
+Feinstein, J. S., Adolphs, R., Tranel, D., & Damasio, A. (2011). The human amygdala and the induction and experience of fear. *Current Biology*, *21*, 34–38.
+
 Heinrichs, M., Baumgartner, T., Kirschbaum, C., & Ehlert, U. (2003). Social support and oxytocin interact to suppress cortisol and subjective responses to psychosocial stress. *Biological Psychiatry*, *54*, 1389–1398.
 
 James, W. (1884). What is an emotion? *Mind*, *9*, 188–205.
 
 Kashdan, T. B., Barrett, L. F., & McKnight, P. E. (2015). Unpacking emotion differentiation: Transforming unpleasant experience by perceiving distinctions in negativity. *Current Directions in Psychological Science*, *24*, 10–16.
 
+Kennedy, D. P., Gläscher, J., Tyszka, J. M., & Adolphs, R. (2009). Personal space regulation by the human amygdala. *Nature Neuroscience*, *12*, 1226–1227.
+
 Lazarus, R. S., & Folkman, S. (1984). *Stress, Appraisal, and Coping*. Springer.
 
 LeDoux, J. (2012). Rethinking the emotional brain. *Neuron*, *73*, 653–676.
 
 Lieberman, M. D., Eisenberger, N. I., Crockett, M. J., Tom, S. M., Pfeifer, J. H., & Way, B. M. (2007). Putting feelings into words: Affect labeling disrupts amygdala activity in response to affective stimuli. *Psychological Science*, *18*, 421–428.
+
+Lucas, R. E., Clark, A. E., Georgellis, Y., & Diener, E. (2003). Reexamining adaptation and the set point model of happiness: Reactions to changes in marital status. *Journal of Personality and Social Psychology*, *84*, 527–539.
 
 Marshall, G. D., & Zimbardo, P. G. (1979). Affective consequences of inadequately explained physiological arousal. *Journal of Personality and Social Psychology*, *37*, 970–988.
 
@@ -399,15 +473,23 @@ Mesquita, B. (2001). Emotions in collectivist and individualist contexts. *Journ
 
 Russell, J. A. (1980). A circumplex model of affect. *Journal of Personality and Social Psychology*, *39*, 1161–1178.
 
+Sapolsky, R. M. (2004). *Why Zebras Don't Get Ulcers* (3rd ed.). Holt.
+
 Schachter, S., & Singer, J. E. (1962). Cognitive, social, and physiological determinants of emotional state. *Psychological Review*, *69*, 379–399.
+
+Schacter, D. L., Addis, D. R., & Buckner, R. L. (2007). Remembering the past to imagine the future: The prospective brain. *Nature Reviews Neuroscience*, *8*, 657–661.
 
 Selye, H. (1956). *The Stress of Life*. McGraw-Hill.
 
 Sterling, P., & Eyer, J. (1988). Allostasis: A new paradigm to explain arousal pathology. In S. Fisher & J. Reason (Eds.), *Handbook of Life Stress, Cognition and Health* (pp. 629–649). Wiley.
 
+Suddendorf, T., & Corballis, M. C. (2007). The evolution of foresight: What is mental time travel, and is it unique to humans? *Behavioral and Brain Sciences*, *30*, 299–313.
+
 Taylor, S. E., Klein, L. C., Lewis, B. P., Gruenewald, T. L., Gurung, R. A. R., & Updegraff, J. A. (2000). Biobehavioral responses to stress in females: Tend-and-befriend, not fight-or-flight. *Psychological Review*, *107*, 411–429.
 
 Torre, J. B., & Lieberman, M. D. (2018). Putting feelings into words: Affect labeling as implicit emotion regulation. *Emotion Review*, *10*, 116–124.
+
+Van Boven, L., & Gilovich, T. (2003). To do or to have? That is the question. *Journal of Personality and Social Psychology*, *85*, 1193–1202.
 
 ---
 
@@ -421,20 +503,37 @@ Torre, J. B., & Lieberman, M. D. (2018). Putting feelings into words: Affect lab
 <!-- MOT-001/002/003 (Maslow, intrinsic/extrinsic, SDT): dropped by design decision ✓ -->
 <!-- New content: allostasis/body budget, interoception, core affect, emotional granularity,
      affect labeling, allostatic load — all from primary literature, not CSV ✓ -->
+<!-- Session [spine-alignment pass, 2026-07-06] additions: cognitive light cone / chronic stress
+     mechanism (Section 3), Patient SM classic study walkthrough (Section 2), hedonic treadmill
+     (Section 4), spine question + master-loop framing (Where This Fits), closing spine-unifying
+     line (Chapter Summary), new Connections table (chapter previously had none) ✓ -->
 
 <!-- In-text citation keys (alphabetical):
-     Barrett 2017a (book) ✓ | Barrett 2017b (SCAN paper) ✓ | Barrett et al. 2019 ✓ |
+     Adolphs, Tranel, Damasio & Damasio 1994 ✓ | Barrett 2017a (book) ✓ | Barrett 2017b (SCAN paper) ✓ |
+     Barrett et al. 2019 ✓ | Brickman & Campbell 1971 ✓ | Brickman, Coates & Janoff-Bulman 1978 ✓ |
      Cannon 1927 ✓ | Cannon 1929 ✓ | Cohen & Wills 1985 ✓ | Ekman 1992 ✓ |
-     Heinrichs et al. 2003 ✓ | James 1884 ✓ | Kashdan, Barrett & McKnight 2015 ✓ |
-     Lazarus & Folkman 1984 ✓ | LeDoux 2012 ✓ | Lieberman et al. 2007 ✓ |
+     Feinstein, Adolphs, Tranel & Damasio 2011 ✓ | Heinrichs et al. 2003 ✓ | James 1884 ✓ |
+     Kashdan, Barrett & McKnight 2015 ✓ | Kennedy, Gläscher, Tyszka & Adolphs 2009 ✓ |
+     Lazarus & Folkman 1984 ✓ | LeDoux 2012 ✓ | Lieberman et al. 2007 ✓ | Lucas, Clark, Georgellis & Diener 2003 ✓ |
      Marshall & Zimbardo 1979 ✓ | Maslach 1979 ✓ |
      McEwen 1998a (NEJM) ✓ | McEwen 1998b (NYAS) ✓ | Mesquita 2001 ✓ |
-     Russell 1980 ✓ | Schachter & Singer 1962 ✓ | Selye 1956 ✓ |
-     Sterling & Eyer 1988 ✓ | Taylor et al. 2000 ✓ | Torre & Lieberman 2018 ✓
-     Removed: Damásio et al. 1994 (orphan), Lazarus 1991 (orphan)
-     Added: Barrett et al. 2019 (facial expression review), Ekman 1992 (basic emotions),
-            Heinrichs et al. 2003 (oxytocin + social support + cortisol)
-     All entries appear in References ✓ — no orphans -->
+     Russell 1980 ✓ | Sapolsky 2004 ✓ | Schachter & Singer 1962 ✓ | Schacter, Addis & Buckner 2007 ✓ |
+     Selye 1956 ✓ | Sterling & Eyer 1988 ✓ | Suddendorf & Corballis 2007 ✓ |
+     Taylor et al. 2000 ✓ | Torre & Lieberman 2018 ✓ | Van Boven & Gilovich 2003 ✓
+     Removed (prior session): Damásio et al. 1994 (orphan), Lazarus 1991 (orphan)
+     Added this session (all verified via live search before inclusion, not from memory):
+     Adolphs et al. 1994, Feinstein et al. 2011, and Kennedy et al. 2009 — three separate SM
+     papers; note the spine's own Layer-3 note attributed the snake/personal-space behavioral
+     details to "Adolphs et al., 1994," but that 1994 paper is specifically about fear recognition
+     in facial expressions — the snake/haunted-house findings are Feinstein et al. 2011 and the
+     personal-space finding is Kennedy et al. 2009. Corrected here rather than propagating the
+     spine note's citation as written.
+     Brickman & Campbell 1971, Brickman, Coates & Janoff-Bulman 1978, Van Boven & Gilovich 2003,
+     and Lucas, Clark, Georgellis & Diener 2003 (hedonic treadmill + adaptation-is-incomplete caveat);
+     Suddendorf & Corballis 2007 and Schacter, Addis & Buckner 2007 (mental time travel / cognitive
+     light cone); Sapolsky 2004 (already in Further Reading, now also cited in-text and added to
+     References proper).
+     All entries appear in References ✓ — no orphans, checked both directions -->
 
 <!-- Activity ideas (log, do not build):
      - Body-budget audit: students track sleep, meals, movement, social contact for one week alongside daily mood ratings; debrief against core-affect and body-budget predictions
