@@ -37,20 +37,20 @@
   <g transform="translate(75,190)">
     <g><circle cx="60" cy="30" r="26" fill="#e9f2f5" stroke="#456c86" stroke-width="4"/><rect x="35" y="60" width="50" height="90" rx="10" fill="#456c86"/><text class="label" x="60" y="195" text-anchor="middle">20s</text></g>
     <g transform="translate(190,0)"><circle cx="60" cy="30" r="26" fill="#e9f2f5" stroke="#456c86" stroke-width="4"/><rect x="35" y="60" width="50" height="90" rx="10" fill="#456c86" opacity="0.82"/><text class="label" x="60" y="195" text-anchor="middle">50s</text></g>
-    <g transform="translate(380,0)"><circle cx="60" cy="30" r="26" fill="#e9f2f5" stroke="#456c86" stroke-width="4"/><rect x="35" y="60" width="50" height="90" rx="10" fill="#456c86" opacity="0.65"/><path d="M95 86 L130 145" stroke="#8b6f42" stroke-width="6"/><text class="label" x="60" y="195" text-anchor="middle">80s</text></g>
+    <g transform="translate(380,0)"><circle cx="60" cy="30" r="26" fill="#e9f2f5" stroke="#456c86" stroke-width="4"/><rect x="35" y="60" width="50" height="90" rx="10" fill="#456c86" opacity="0.65"/><text class="label" x="60" y="195" text-anchor="middle">80s</text></g>
   </g>
   <rect x="72" y="440" width="250" height="56" rx="18" fill="#e9f2f5"/><text class="label" x="197" y="477" text-anchor="middle">Fast, cheap</text>
-  <rect x="342" y="412" width="280" height="110" rx="18" fill="#fff8ea" stroke="#dbc79b" stroke-width="2"/><text class="body" x="362" y="448">Flaw: age is tangled</text><text class="body" x="362" y="480">with cohort - different</text><text class="body" x="362" y="512">eras of childhood.</text>
+  <rect x="342" y="412" width="280" height="110" rx="18" fill="#fff8ea" stroke="#dbc79b" stroke-width="2"/><text class="body" x="362" y="448">Flaw: age is tangled</text><text class="body" x="362" y="480">with cohort — different</text><text class="body" x="362" y="512">eras of childhood.</text>
 </g>
 <g class="shadow" transform="translate(830,165)">
   <rect class="card" x="0" y="0" width="690" height="600" rx="30"/>
   <rect x="0" y="0" width="690" height="92" rx="30" fill="#5e7f4d"/><rect x="0" y="60" width="690" height="32" fill="#5e7f4d"/>
   <text class="white-title" x="36" y="42">Longitudinal</text><text class="white-small" x="36" y="72">same people, across years</text>
-  <path d="M115 275 L575 275" stroke="#7a8da0" stroke-width="5" marker-end="url(#arrowhead-soft)"/>
+  <path d="M115 275 L520 275" stroke="#7a8da0" stroke-width="5" marker-end="url(#arrowhead-soft)"/>
   <g transform="translate(70,180)">
     <g><circle cx="60" cy="30" r="26" fill="#eef5e8" stroke="#5e7f4d" stroke-width="4"/><rect x="35" y="60" width="50" height="90" rx="10" fill="#5e7f4d"/><text class="label" x="60" y="195" text-anchor="middle">2026</text></g>
     <g transform="translate(220,0)"><circle cx="60" cy="30" r="26" fill="#eef5e8" stroke="#5e7f4d" stroke-width="4"/><rect x="35" y="60" width="50" height="90" rx="10" fill="#5e7f4d" opacity="0.82"/><text class="label" x="60" y="195" text-anchor="middle">2041</text></g>
-    <g transform="translate(440,0)"><circle cx="60" cy="30" r="26" fill="#eef5e8" stroke="#5e7f4d" stroke-width="4"/><rect x="35" y="60" width="50" height="90" rx="10" fill="#5e7f4d" opacity="0.65"/><path d="M95 86 L130 145" stroke="#8b6f42" stroke-width="6"/><text class="label" x="60" y="195" text-anchor="middle">2056</text></g>
+    <g transform="translate(440,0)"><circle cx="60" cy="30" r="26" fill="#eef5e8" stroke="#5e7f4d" stroke-width="4"/><rect x="35" y="60" width="50" height="90" rx="10" fill="#5e7f4d" opacity="0.65"/><text class="label" x="60" y="195" text-anchor="middle">2056</text></g>
   </g>
   <rect x="72" y="425" width="275" height="82" rx="18" fill="#eef5e8"/><text class="body" x="92" y="460">Strength: tracks real</text><text class="body" x="92" y="492">change within people.</text>
   <rect x="370" y="402" width="250" height="128" rx="18" fill="#fff8ea" stroke="#dbc79b" stroke-width="2"/><text class="body" x="390" y="438">Flaw: slow, costly;</text><text class="body" x="390" y="470">participants drop out</text><text class="body" x="390" y="502">over time.</text>
