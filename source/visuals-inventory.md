@@ -167,7 +167,7 @@ All six completed SVGs wired into `ch08-memory.md` in Session 78.
 | 8.5 | Serial position curve | ✅ wired | `ch08_serial_position_curve.svg` — wired into Section 3. |
 | 8.6 | Reconstructive memory process | ✅ wired | `ch08_reconstructive_memory_process.svg` — wired into Section 4. |
 
-**Next action:** repair Ch11 Figs 11.6/11.7 as the next Tier 1 task.
+**Next action:** Ch8 complete; see Current completion plan for remaining work.
 
 ---
 
@@ -212,7 +212,7 @@ Genuinely zero figures. This is the main new-build chapter.
 
 ## Chapter 11 — Social Psychology (Personality merged in as Section 5)
 
-Five figures are wired for Sections 1–5. Two existing figure references are broken. The broken pair should be treated as spec-complete recovery work, not as fresh design ideation: the chapter embeds/comments already specify the intended contents.
+Seven figures are wired for Sections 1–5. Figures 11.6 and 11.7 were rebuilt as original programmatic figures in Session 78 to repair the missing files flagged in Session 75.
 
 | # | Description | Status | Notes |
 |---|-------------|--------|-------|
@@ -221,15 +221,15 @@ Five figures are wired for Sections 1–5. Two existing figure references are br
 | 11.3 | Milgram obedience physical setup | ✅ | `ch11/fig_milgram_obedience_setup.png` |
 | 11.4 | Stereotype / prejudice / discrimination triangle | ✅ | `ch11/fig_prejudice_stereotype_discrimination_triangle.png` |
 | 11.5 | Person and situation influence diagram | ✅ | `ch11/fig_person_situation_influence_diagram.png` |
-| 11.6 | Trait signal aggregation | ❌ | Broken reference: `../images/ch11/fig_trait_signal_aggregation.png` missing. Rebuild from existing spec/alt text: single act r≈.29 vs. aggregated r≈.72 scatter plots. |
-| 11.7 | Person × situation interaction | ❌ | Broken reference: `../images/ch11/fig_person_situation_grid.png` missing. Rebuild from existing spec/alt text: weak-situation spread ≈4.7 points vs. strong-situation compression ≈0.8 points. |
+| 11.6 | Trait signal aggregation | ✅ wired | `ch11/fig_trait_signal_aggregation.png` plus editable SVG source — rebuilt from existing spec/alt text; single act r≈.29 vs. aggregated r≈.72 scatter plots. |
+| 11.7 | Person × situation interaction | ✅ wired | `ch11/fig_person_situation_grid.png` plus editable SVG source — rebuilt from existing spec/alt text; weak-situation spread ≈4.7 points vs. strong-situation compression ≈0.8 points. |
 | — | Attribution theory | 🔲 | Optional/superseded planning idea. |
 | — | ELM dual-route diagram | 🔲 | Optional/superseded planning idea. |
 | — | Bystander effect five-step model | 🔲 | Optional/superseded planning idea. |
 | — | Social identity theory | 🔲 | Optional/superseded planning idea. |
 | — | Big Five trait dimensions visual | 🔲 | Optional; chapter already uses a table. |
 
-**Next action after Ch8 wiring:** rebuild 11.6/11.7 as original figures or remove the references. Rebuild is preferred because the chapter already expects them.
+**Next action:** verify Ch5 only during line review; Ch11's broken-reference repair is complete.
 
 ---
 
@@ -270,8 +270,7 @@ All 9 current figures are wired. Only the biopsychosocial triangle remains unbui
 ## Current completion plan
 
 ### Tier 1 — cheap execution / no fresh design debate
-1. **Repair Ch11 Figs 11.6 and 11.7** from the existing embedded specs/alt text; treat as recovery of broken references.
-2. **Verify Ch5 only during line review**; current evidence says all 8 figures are already wired, not unplaced.
+1. **Verify Ch5 only during line review**; current evidence says all 8 figures are already wired, not unplaced.
 
 ### Tier 2 — main new-build work
 1. **Build Ch10's core figure set:** extended development/life-history construction, Piaget stages, Vygotsky ZPD, attachment styles. Consider fluid/crystallized intelligence as a fifth if the chapter needs it.
