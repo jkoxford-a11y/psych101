@@ -17,15 +17,11 @@
       .note { font-family: Arial, Helvetica, sans-serif; font-size: 21px; fill: #5e6978; }
       .card { fill: #ffffff; stroke: #d8dddf; stroke-width: 2.5; }
       .soft-shadow { filter: drop-shadow(0 6px 10px rgba(35, 45, 60, 0.13)); }
-      .arrow { stroke: #49647e; stroke-width: 5; stroke-linecap: round; fill: none; marker-end: url(#arrowhead); }
-      .soft-arrow { stroke: #7a8da0; stroke-width: 3.5; stroke-linecap: round; fill: none; stroke-dasharray: 10 12; marker-end: url(#arrowhead-soft); }
+      .progress-line { stroke: #7a8da0; stroke-width: 5; stroke-linecap: round; fill: none; marker-end: url(#arrowhead-soft); }
     </style>
 
-    <marker id="arrowhead" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
-      <path d="M0,0 L12,6 L0,12 Z" fill="#49647e" />
-    </marker>
-    <marker id="arrowhead-soft" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
-      <path d="M0,0 L12,6 L0,12 Z" fill="#7a8da0" />
+    <marker id="arrowhead-soft" markerWidth="14" markerHeight="14" refX="12" refY="7" orient="auto">
+      <path d="M0,0 L14,7 L0,14 Z" fill="#7a8da0" />
     </marker>
 
     <linearGradient id="fuzzyBand" x1="0" x2="1" y1="0" y2="0">
@@ -45,10 +41,8 @@
   <text class="subtitle" x="82" y="125">Children actively build schemas, but modern evidence softens the timing and sharpness of the stages.</text>
 
   <rect x="100" y="176" width="1400" height="48" rx="24" fill="url(#fuzzyBand)"/>
-  <text class="note" x="138" y="207">approximate developmental progression — not a rigid staircase</text>
-  <path class="soft-arrow" d="M 515 200 C 560 185, 585 185, 630 200"/>
-  <path class="soft-arrow" d="M 870 200 C 915 185, 940 185, 985 200"/>
-  <path class="soft-arrow" d="M 1225 200 C 1270 185, 1295 185, 1340 200"/>
+  <path class="progress-line" d="M 245 200 L 1390 200"/>
+  <text class="note" x="138" y="207">approximate progression — not a rigid staircase</text>
 
   <!-- Stage 1 -->
   <g class="soft-shadow" transform="translate(80,250)">
@@ -118,10 +112,6 @@
     <text class="body" x="28" y="258">Key ability:</text>
     <text class="body-small" x="28" y="295">testing multiple possibilities</text>
   </g>
-
-  <path class="arrow" d="M 420 415 L 440 415"/>
-  <path class="arrow" d="M 785 415 L 805 415"/>
-  <path class="arrow" d="M 1150 415 L 1170 415"/>
 
   <g transform="translate(120,650)">
     <rect x="0" y="0" width="1360" height="148" rx="28" fill="#f2f5f6" stroke="#cfd7db" stroke-width="2.5"/>
