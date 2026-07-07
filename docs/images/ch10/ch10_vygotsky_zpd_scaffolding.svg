@@ -32,13 +32,13 @@
   <rect class="bg" x="0" y="0" width="1600" height="900"/>
 
   <text class="title" x="80" y="82">Vygotsky: learning happens in the zone</text>
-  <text class="subtitle" x="82" y="124">Good support does not replace the learner's work. It makes the next step reachable, then fades.</text>
+  <text class="subtitle" x="82" y="124">Good support makes the next step reachable, then fades.</text>
 
   <!-- Left target diagram -->
   <g class="shadow" transform="translate(80,172)">
     <rect class="card" x="0" y="0" width="705" height="588" rx="30"/>
     <text class="caption-title" x="36" y="58">Zone of proximal development</text>
-    <text class="small" x="36" y="93">The useful teaching zone sits between already mastered and not yet reachable.</text>
+    <text class="small" x="36" y="93">Between mastered and not yet reachable.</text>
 
     <circle cx="353" cy="332" r="210" fill="#eef0f2" stroke="#aeb7bf" stroke-width="4"/>
     <circle cx="353" cy="332" r="150" fill="#e8f2e4" stroke="#7a9a6a" stroke-width="5"/>
@@ -63,7 +63,7 @@
   <g class="shadow" transform="translate(835,172)">
     <rect class="card" x="0" y="0" width="685" height="588" rx="30"/>
     <text class="caption-title" x="36" y="58">Scaffolding over time</text>
-    <text class="small" x="36" y="93">Support is calibrated first, then gradually withdrawn.</text>
+    <text class="small" x="36" y="93">Support is calibrated first, then withdrawn.</text>
 
     <!-- Three columns -->
     <g transform="translate(52,145)">
@@ -99,16 +99,16 @@
 
     <rect x="65" y="452" width="555" height="62" rx="31" fill="url(#supportGrad)"/>
     <text class="support-label" x="342" y="477" text-anchor="middle">calibrated help → independent competence</text>
-    <text class="support-small" x="342" y="504" text-anchor="middle">the learner should be more capable after support is removed</text>
+    <text class="support-small" x="342" y="504" text-anchor="middle">support should leave the learner more capable</text>
   </g>
 
   <!-- Bottom contrast strip -->
   <g transform="translate(120,805)">
     <rect x="0" y="0" width="1360" height="54" rx="27" fill="#f2f5f6" stroke="#cfd7db" stroke-width="2"/>
-    <text class="caption" x="35" y="36">Too little help: no growth</text>
-    <path class="dash" d="M345 29 L500 29" stroke="#9aa8b4" stroke-width="4"/>
-    <text class="caption" x="535" y="36">Good scaffold: next step becomes reachable</text>
-    <path class="dash" d="M948 29 L1103 29" stroke="#9aa8b4" stroke-width="4"/>
-    <text class="caption" x="1138" y="36">Too much help: task is done, learner is not</text>
+    <text class="caption" x="55" y="36">Too little: no growth</text>
+    <path class="dash" d="M315 29 L460 29" stroke="#9aa8b4" stroke-width="4"/>
+    <text class="caption" x="510" y="36">Good scaffold: next step becomes reachable</text>
+    <path class="dash" d="M955 29 L1100 29" stroke="#9aa8b4" stroke-width="4"/>
+    <text class="caption" x="1145" y="36">Too much: performance without learning</text>
   </g>
 </svg>
