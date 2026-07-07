@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" role="img" aria-labelledby="title desc">
+  <title id="title">Cross-sectional and longitudinal research designs</title>
+  <desc id="desc">Two panels compare developmental research designs. Cross-sectional studies compare different age groups at one time and risk cohort confounds. Longitudinal studies follow the same people across time but are slow and subject to attrition.</desc>
+
+  <defs>
+    <style>
+      .bg { fill: #fbfbf8; }
+      .title { font-family: Arial, Helvetica, sans-serif; font-size: 48px; font-weight: 700; fill: #1f2f46; }
+      .subtitle { font-family: Arial, Helvetica, sans-serif; font-size: 27px; fill: #4d5a6b; }
+      .panel-title { font-family: Arial, Helvetica, sans-serif; font-size: 31px; font-weight: 700; fill: #1f2f46; }
+      .label { font-family: Arial, Helvetica, sans-serif; font-size: 25px; font-weight: 700; fill: #1f2f46; }
+      .body { font-family: Arial, Helvetica, sans-serif; font-size: 24px; fill: #1f2f46; }
+      .small { font-family: Arial, Helvetica, sans-serif; font-size: 21px; fill: #4d5a6b; }
+      .tiny { font-family: Arial, Helvetica, sans-serif; font-size: 18px; fill: #5e6978; }
+      .axis { stroke: #2f4058; stroke-width: 3; fill: none; }
+      .grid { stroke: #d8dddf; stroke-width: 2; fill: none; }
+      .dash { stroke-dasharray: 10 10; }
+      .card { fill: #ffffff; stroke: #d8dddf; stroke-width: 2.5; }
+      .shadow { filter: drop-shadow(0 6px 10px rgba(35, 45, 60, 0.13)); }
+      .takeaway { font-family: Arial, Helvetica, sans-serif; font-size: 24px; fill: #1f2f46; }
+      .white-title { font-family: Arial, Helvetica, sans-serif; font-size: 28px; font-weight: 700; fill: #ffffff; }
+      .white-small { font-family: Arial, Helvetica, sans-serif; font-size: 21px; fill: #ffffff; }
+    </style>
+    <marker id="arrowhead-soft" markerWidth="14" markerHeight="14" refX="12" refY="7" orient="auto">
+      <path d="M0,0 L14,7 L0,14 Z" fill="#7a8da0" />
+    </marker>
+  </defs>
+  <rect class="bg" x="0" y="0" width="1600" height="900"/>
+
+<text class="title" x="80" y="82">Two ways to study change with age</text>
+<text class="subtitle" x="82" y="124">Compare different people at one time, or follow the same people across time.</text>
+<g class="shadow" transform="translate(80,165)">
+  <rect class="card" x="0" y="0" width="690" height="600" rx="30"/>
+  <rect x="0" y="0" width="690" height="92" rx="30" fill="#456c86"/><rect x="0" y="60" width="690" height="32" fill="#456c86"/>
+  <text class="white-title" x="36" y="42">Cross-sectional</text><text class="white-small" x="36" y="72">different ages, same moment</text>
+  <text class="label" x="345" y="140" text-anchor="middle">tested in 2026</text>
+  <g transform="translate(75,190)">
+    <g><circle cx="60" cy="30" r="26" fill="#e9f2f5" stroke="#456c86" stroke-width="4"/><rect x="35" y="60" width="50" height="90" rx="10" fill="#456c86"/><text class="label" x="60" y="195" text-anchor="middle">20s</text></g>
+    <g transform="translate(190,0)"><circle cx="60" cy="30" r="26" fill="#e9f2f5" stroke="#456c86" stroke-width="4"/><rect x="35" y="60" width="50" height="90" rx="10" fill="#456c86" opacity="0.82"/><text class="label" x="60" y="195" text-anchor="middle">50s</text></g>
+    <g transform="translate(380,0)"><circle cx="60" cy="30" r="26" fill="#e9f2f5" stroke="#456c86" stroke-width="4"/><rect x="35" y="60" width="50" height="90" rx="10" fill="#456c86" opacity="0.65"/><path d="M95 86 L130 145" stroke="#8b6f42" stroke-width="6"/><text class="label" x="60" y="195" text-anchor="middle">80s</text></g>
+  </g>
+  <rect x="72" y="440" width="250" height="56" rx="18" fill="#e9f2f5"/><text class="label" x="197" y="477" text-anchor="middle">Fast, cheap</text>
+  <rect x="342" y="412" width="280" height="110" rx="18" fill="#fff8ea" stroke="#dbc79b" stroke-width="2"/><text class="body" x="362" y="448">Flaw: age is tangled</text><text class="body" x="362" y="480">with cohort - different</text><text class="body" x="362" y="512">eras of childhood.</text>
+</g>
+<g class="shadow" transform="translate(830,165)">
+  <rect class="card" x="0" y="0" width="690" height="600" rx="30"/>
+  <rect x="0" y="0" width="690" height="92" rx="30" fill="#5e7f4d"/><rect x="0" y="60" width="690" height="32" fill="#5e7f4d"/>
+  <text class="white-title" x="36" y="42">Longitudinal</text><text class="white-small" x="36" y="72">same people, across years</text>
+  <path d="M115 275 L575 275" stroke="#7a8da0" stroke-width="5" marker-end="url(#arrowhead-soft)"/>
+  <g transform="translate(70,180)">
+    <g><circle cx="60" cy="30" r="26" fill="#eef5e8" stroke="#5e7f4d" stroke-width="4"/><rect x="35" y="60" width="50" height="90" rx="10" fill="#5e7f4d"/><text class="label" x="60" y="195" text-anchor="middle">2026</text></g>
+    <g transform="translate(220,0)"><circle cx="60" cy="30" r="26" fill="#eef5e8" stroke="#5e7f4d" stroke-width="4"/><rect x="35" y="60" width="50" height="90" rx="10" fill="#5e7f4d" opacity="0.82"/><text class="label" x="60" y="195" text-anchor="middle">2041</text></g>
+    <g transform="translate(440,0)"><circle cx="60" cy="30" r="26" fill="#eef5e8" stroke="#5e7f4d" stroke-width="4"/><rect x="35" y="60" width="50" height="90" rx="10" fill="#5e7f4d" opacity="0.65"/><path d="M95 86 L130 145" stroke="#8b6f42" stroke-width="6"/><text class="label" x="60" y="195" text-anchor="middle">2056</text></g>
+  </g>
+  <rect x="72" y="425" width="275" height="82" rx="18" fill="#eef5e8"/><text class="body" x="92" y="460">Strength: tracks real</text><text class="body" x="92" y="492">change within people.</text>
+  <rect x="370" y="402" width="250" height="128" rx="18" fill="#fff8ea" stroke="#dbc79b" stroke-width="2"/><text class="body" x="390" y="438">Flaw: slow, costly;</text><text class="body" x="390" y="470">participants drop out</text><text class="body" x="390" y="502">over time.</text>
+</g>
+<g transform="translate(120,805)"><rect x="0" y="0" width="1360" height="54" rx="27" fill="#f2f5f6" stroke="#cfd7db" stroke-width="2"/><text class="takeaway" x="680" y="36" text-anchor="middle">Cross-sectional confounds age with generation; longitudinal avoids that but is slow and loses participants.</text></g>
+
+</svg>

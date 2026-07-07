@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" role="img" aria-labelledby="title desc">
+  <title id="title">Attachment styles reunion matrix</title>
+  <desc id="desc">A matrix compares secure, anxious-ambivalent, anxious-avoidant, and disorganized attachment patterns. The main diagnostic column describes behavior at reunion, alongside typical caregiving history and approximate shares.</desc>
+
+  <defs>
+    <style>
+      .bg { fill: #fbfbf8; }
+      .title { font-family: Arial, Helvetica, sans-serif; font-size: 48px; font-weight: 700; fill: #1f2f46; }
+      .subtitle { font-family: Arial, Helvetica, sans-serif; font-size: 27px; fill: #4d5a6b; }
+      .panel-title { font-family: Arial, Helvetica, sans-serif; font-size: 31px; font-weight: 700; fill: #1f2f46; }
+      .label { font-family: Arial, Helvetica, sans-serif; font-size: 25px; font-weight: 700; fill: #1f2f46; }
+      .body { font-family: Arial, Helvetica, sans-serif; font-size: 24px; fill: #1f2f46; }
+      .small { font-family: Arial, Helvetica, sans-serif; font-size: 21px; fill: #4d5a6b; }
+      .tiny { font-family: Arial, Helvetica, sans-serif; font-size: 18px; fill: #5e6978; }
+      .axis { stroke: #2f4058; stroke-width: 3; fill: none; }
+      .grid { stroke: #d8dddf; stroke-width: 2; fill: none; }
+      .dash { stroke-dasharray: 10 10; }
+      .card { fill: #ffffff; stroke: #d8dddf; stroke-width: 2.5; }
+      .shadow { filter: drop-shadow(0 6px 10px rgba(35, 45, 60, 0.13)); }
+      .takeaway { font-family: Arial, Helvetica, sans-serif; font-size: 24px; fill: #1f2f46; }
+      .white-title { font-family: Arial, Helvetica, sans-serif; font-size: 28px; font-weight: 700; fill: #ffffff; }
+      .white-small { font-family: Arial, Helvetica, sans-serif; font-size: 21px; fill: #ffffff; }
+    </style>
+    <marker id="arrowhead-soft" markerWidth="14" markerHeight="14" refX="12" refY="7" orient="auto">
+      <path d="M0,0 L14,7 L0,14 Z" fill="#7a8da0" />
+    </marker>
+  </defs>
+  <rect class="bg" x="0" y="0" width="1600" height="900"/>
+
+<text class="title" x="80" y="82">Three attachment patterns - read at the reunion</text>
+<text class="subtitle" x="82" y="124">The diagnostic moment is how the infant behaves when the caregiver returns.</text>
+<g class="shadow" transform="translate(90,155)">
+  <rect class="card" x="0" y="0" width="1420" height="650" rx="30"/>
+  <g transform="translate(72,72)">
+    <text class="label" x="0" y="34">Style</text>
+    <text class="label" x="240" y="34">Behavior at reunion</text>
+    <text class="label" x="750" y="34">Typical caregiving history</text>
+    <text class="label" x="1185" y="34">Approx. share</text>
+    <rect x="232" y="52" width="380" height="42" rx="21" fill="#f2f5f6" stroke="#cfd7db" stroke-width="2"/>
+    <text class="small" x="422" y="80" text-anchor="middle">Reunion, not separation, distinguishes them</text>
+  </g>
+  <g transform="translate(72,192)">
+    <rect x="0" y="0" width="1276" height="112" rx="18" fill="#ffffff" stroke="#d8dddf" stroke-width="2"/>
+    <rect x="0" y="0" width="205" height="112" rx="18" fill="#456c86"/><rect x="178" y="0" width="27" height="112" fill="#456c86"/>
+    <text class="white-title" x="24" y="63">Secure</text>
+    <text class="body" x="240" y="38">Seeks comfort; readily soothed;</text><text class="body" x="240" y="70">returns to exploring.</text>
+    <text class="body" x="750" y="38">Sensitive, consistently</text><text class="body" x="750" y="70">responsive.</text>
+    <text class="panel-title" x="1218" y="66" text-anchor="middle">60-65%</text>
+  </g>
+  <g transform="translate(72,326)">
+    <rect x="0" y="0" width="1276" height="112" rx="18" fill="#ffffff" stroke="#d8dddf" stroke-width="2"/>
+    <rect x="0" y="0" width="205" height="112" rx="18" fill="#8b6f42"/><rect x="178" y="0" width="27" height="112" fill="#8b6f42"/>
+    <text class="white-title" x="22" y="45">Anxious-</text><text class="white-title" x="22" y="78">ambivalent</text>
+    <text class="body" x="240" y="34">Very distressed; seeks and resists comfort;</text><text class="body" x="240" y="66">clings, pushes away; hard to soothe.</text>
+    <text class="body" x="750" y="38">Inconsistent - responsive</text><text class="body" x="750" y="70">sometimes, not others.</text>
+    <text class="panel-title" x="1218" y="66" text-anchor="middle">10-15%</text>
+  </g>
+  <g transform="translate(72,460)">
+    <rect x="0" y="0" width="1276" height="112" rx="18" fill="#ffffff" stroke="#d8dddf" stroke-width="2"/>
+    <rect x="0" y="0" width="205" height="112" rx="18" fill="#7b5b91"/><rect x="178" y="0" width="27" height="112" fill="#7b5b91"/>
+    <text class="white-title" x="22" y="45">Anxious-</text><text class="white-title" x="22" y="78">avoidant</text>
+    <text class="body" x="240" y="38">Ignores or avoids caregiver;</text><text class="body" x="240" y="70">little visible distress.</text>
+    <text class="body" x="750" y="38">Consistently rejecting</text><text class="body" x="750" y="70">of proximity-seeking.</text>
+    <text class="panel-title" x="1218" y="66" text-anchor="middle">20-25%</text>
+  </g>
+  <g transform="translate(72,600)">
+    <rect x="0" y="0" width="1276" height="64" rx="18" fill="#f2f5f6" stroke="#cfd7db" stroke-width="2"/>
+    <text class="label" x="26" y="42">Disorganized</text>
+    <text class="body" x="245" y="42">A fourth pattern linked to frightening or severely neglectful caregiving; outside the core three.</text>
+  </g>
+</g>
+
+</svg>
