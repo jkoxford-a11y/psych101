@@ -40,10 +40,10 @@
   </g>
   <path d="M120 190 C190 135, 270 120, 338 150 C520 230, 745 305, 895 360 C1040 414, 1160 462, 1245 488" fill="none" stroke="#456c86" stroke-width="9" stroke-linecap="round"/>
   <path d="M120 408 C310 325, 500 238, 700 188 C870 148, 1035 148, 1245 172" fill="none" stroke="#5e7f4d" stroke-width="9" stroke-linecap="round"/>
-  <text class="label" x="185" y="173" fill="#456c86">Fluid intelligence</text>
-  <text class="small" x="185" y="204">novel problems, speed, working memory</text>
-  <text class="label" x="750" y="156" fill="#5e7f4d">Crystallized intelligence</text>
-  <text class="small" x="750" y="187">knowledge, vocabulary, expertise</text>
+  <text class="label" x="185" y="98" fill="#456c86">Fluid intelligence</text>
+  <text class="small" x="185" y="127">novel problems, speed, working memory</text>
+  <text class="label" x="760" y="96" fill="#5e7f4d">Crystallized intelligence</text>
+  <text class="small" x="760" y="125">knowledge, vocabulary, expertise</text>
 </g>
 <g transform="translate(120,805)"><rect x="0" y="0" width="1360" height="54" rx="27" fill="#f2f5f6" stroke="#cfd7db" stroke-width="2"/><text class="takeaway" x="680" y="36" text-anchor="middle">The trade-off of aging: speed and flexibility fall; knowledge and expertise accumulate.</text></g>
 
