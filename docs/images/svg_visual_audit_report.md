@@ -236,6 +236,37 @@ Method:
 
 Note: "Render acceptably" here means no visible layout defect in the rendered preview. It does not mean the figure is necessarily wired, pedagogically necessary, legally cleared, or preferred over an existing PNG.
 
+## Embedded Figure Number Cleanup
+
+Changed files:
+
+- `docs/images/ch02/fig2-5-evidence-ladder.svg` - removed visible `Fig 2.5` prefix from the title.
+- `docs/images/ch02/fig2-5-sampling-vs-assignment.svg` - removed visible `Figure 2.5` prefix from the title.
+- `docs/images/ch02/fig2-6-random-sampling-vs-assignment.svg` - removed visible `Fig 2.6` prefix from the title.
+- `docs/images/ch02/fig2-7-operational-definition-reliability-validity.svg` - removed visible `Fig 2.7` prefix from the title.
+- `docs/images/ch02/fig2-8-type-i-type-ii-error-matrix-ai.svg` - removed visible `Fig 2.8` prefix from the title.
+- `docs/images/ch02/fig_reliability_validity_dartboard.svg` - removed visible `Figure 2.6` prefix from the converted-glyph title group and preserved the clean title text.
+- `docs/images/ch03/fig_stress_response_fast_slow.svg` - removed visible `Fig. 3.4` prefix from the title.
+- `docs/images/ch03/3 images not used/fig_action_potential_threshold.svg` - removed visible `Fig. 3.2` prefix from the title.
+- `docs/images/ch03/3 images not used/fig_brain_imaging_tradeoffs.svg` - removed visible `Fig. 3.5` prefix from the title.
+- `docs/images/ch03/3 images not used/fig_neuron_anatomy.svg` - removed visible `Fig. 3.1` prefix from the title.
+- `docs/images/ch03/3 images not used/fig_neurotransmitter_vs_hormone.svg` - removed visible `Fig. 3.3` prefix from the title.
+- `docs/images/ch03/3 images not used/fig_split_brain_logic.svg` - removed visible `Fig. 3.6` prefix from the title.
+- `docs/images/ch04/unused/fig_cochlea_pitch_theory.svg` - removed visible `Figure 4.5` prefix from the converted-glyph title group and preserved the clean title text.
+- `docs/images/ch04/unused/fig_gate_control_pain.svg` - removed visible `Figure 4.6` prefix from the converted-glyph title group and preserved the clean title text.
+- `docs/images/ch04/unused/fig_gestalt_principles.svg` - removed visible `Figure 4.4` prefix from the converted-glyph title group and preserved the clean title text.
+- `docs/images/ch04/unused/fig_retina_rods_cones.svg` - removed visible `Figure 4.3` prefix from the converted-glyph title group and preserved the clean title text.
+
+Verification:
+
+- Re-ran a repo-wide SVG grep for `Fig`, `Fig.`, and `Figure` followed by numeric figure labels; no embedded figure-number text remains under `docs/images/`.
+- Rendered all changed SVGs to 1600 x 900 PNG previews and inspected a contact sheet. No new text shift, clipping, or overlap was observed from the cleanup.
+
+Files still needing design judgment:
+
+- No remaining figure-number cleanup items need design judgment.
+- The broader layout/design issues listed above remain unchanged, especially the scaffold-only Chapter 2 figures and dense/converted-glyph unused Chapter 4 figures.
+
 ## Summary Counts
 
 - SVGs audited: 49
