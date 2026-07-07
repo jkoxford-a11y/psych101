@@ -151,16 +151,18 @@ Note: v0.7 (Session 51) renumbered two figures not yet reflected above — ANS p
 ---
 
 ## Chapter 8 — Memory
-*(was "Chapter 7" in the old numbering)* No figures yet. `docs/images/ch08/` does not exist.
+*(was "Chapter 7" in the old numbering)* No figures yet. `docs/images/ch08/` did not exist before Session 76.
+
+**Session 76 (2026-07-07): full spec file written, no images built yet.** Confirmed — by full file listing, not just filename search — that no Memory-related image exists anywhere in the repo. `Potential Images for Chapters Holding Space/8 Chapter/` looked like a candidate but is a **false lead**: md5-verified byte-identical to five images already wired into the current Ch9 (Thinking, Language & Intelligence) — it's a leftover from when that chapter was numbered "Chapter 8," pre-Session 59/61 renumbering. Do not re-check that folder for Memory content in a future session. Jon's direction: write specs precise enough for a coding agent (Codex) to batch-produce hand-coded SVGs directly, rather than DALL-E-style prompts (the Ch6 approach). Full specs, including the reverse-engineered SVG house style (viewBox, font, color palette, defs) pulled from Ch9/Ch13's already-wired figures, are in `docs/images/ch08/ch08_figure_specs.md`. Six figures specified below, each anchored to a specific paragraph in `ch08-memory.md` v0.3 — table below reflects the spec file's placements/filenames, not the earlier one-line guesses.
 
 | # | Description | Status | Notes |
 |---|-------------|--------|-------|
-| 8.1 | Three-box / Atkinson-Shiffrin model (sensory → STM → LTM with encoding/retrieval arrows) | 🔲 | Core |
-| 8.2 | Baddeley's working memory model (phonological loop, visuospatial sketchpad, episodic buffer, central executive) | 🔲 | Core |
-| 8.3 | Levels of processing (shallow → phonemic → semantic depth ladder) | 🔲 | Core |
-| 8.4 | Serial position effect curve (primacy + recency humps) | 🔲 | Core — simple line graph |
-| 8.5 | Explicit vs. implicit memory taxonomy tree | 🔲 | Core — episodic/semantic/procedural/priming branches |
-| 8.6 | Misinformation effect / reconstructive memory diagram | 🔲 | Optional but useful |
+| 8.1 | Three-box / Atkinson-Shiffrin model (sensory → STM → LTM, with attention/encoding/retrieval arrows and "lost" drop-offs at each stage) | 🔲 spec written | High priority — chapter's organizing figure. `ch08_atkinson_shiffrin_three_box_model.svg` |
+| 8.2 | Baddeley's working memory model (central executive, phonological loop, visuospatial sketchpad — **no episodic buffer**, chapter text only names three components) | 🔲 spec written | High priority. `ch08_baddeley_working_memory_model.svg` |
+| 8.3 | Levels of processing (shallow ↔ deep, two-level gradient — **not** a three-tier structural/phonemic/semantic taxonomy, since the chapter text doesn't teach that breakdown) | 🔲 spec written | High priority. `ch08_levels_of_processing_shallow_to_deep.svg` |
+| 8.4 | Serial position effect curve (primacy + recency humps, real plotted U-shape, positions 1–30) | 🔲 spec written | High priority — data viz, same construction pattern as Ch9's IQ bell curve. `ch08_serial_position_curve.svg` |
+| 8.5 | Explicit vs. implicit memory taxonomy tree (episodic/semantic under Explicit; procedural/priming under Implicit) | 🔲 spec written | High priority — previews the existing Section 2 table, doesn't duplicate its example/case-anchor columns. `ch08_memory_taxonomy_tree.svg` |
+| 8.6 | Reconstructive memory process (single shared mechanism: event → fragments → post-event info blends in → reconstructed memory) | 🔲 spec written | Optional/lower priority — Section 4's existing four-error table already distinguishes misinformation/false memory/source misattribution/confabulation; this figure deliberately does a different, non-overlapping job. `ch08_reconstructive_memory_process.svg` |
 
 ---
 
@@ -240,19 +242,20 @@ Note: v0.7 (Session 51) renumbered two figures not yet reflected above — ANS p
 ---
 
 ## Chapter 13 — Psychological Disorders & Therapy
-1 figure exists and is wired. **Two unwired images newly logged this session (2026-07-07), neither investigated in depth — flagging only, this session's task was Ch12:**
-- `df03186c-1d07-4330-9b6c-c707f471829d-_edit.png` — sitting in `docs/images/ch12/` [sic, actually `docs/images/ch13/`] since before this session; no prior HANDOFF entry mentions it, so it wasn't caught by the Session 74 audit (which covered Ch6/7/9/11/12 but apparently not Ch13). Content not reviewed.
-- `fig_adaptive_response_model_persists_cost_accumulates.png` — sent here from Ch12 this session (see above). Depicts a three-panel "Adaptive response → Model persists → Cost accumulates" arc with a "Therapy: update, regulate, relearn" tagline — a strong visual match for Ch13's own spine question ("when does a protective model become costly?"), not reviewed against the chapter's actual prose or placed anywhere yet.
+**All 9 figures now wired (Session 75, 2026-07-07).** Fig 13.1 (anxiety cycle) had been sitting "built" since an earlier session but was never actually wired into the chapter body — fixed this session. The unidentified `df03186c-1d07-4330-9b6c-c707f471829d-_edit.png` (flagged, not reviewed, at the end of the Ch12 pass) turned out to be a Deviance/Distress/Dysfunction 3D-criteria diagram — renamed and wired as 13.2. The adaptive-response arc sent over from Ch12 was matched to the "Where This Fits" spine paragraph and wired as 13.1. Six more figures came from a professionally captioned set found in `Potential Images for Chapters Holding Space/13 Chapter/` (Jon flagged this folder; all six viewed directly and matched against chapter prose, not assumed from filename — see that folder's own `README_captions_alt_text_attribution.md` for original captions/attribution). Renumbered throughout to match actual reading order, not the old planning-list order below. Two files in that holding folder were *not* used: `ChatGPT Image Jun 24, 2026, 10_57_40 AM.png` is a byte-identical duplicate of the already-built anxiety-cycle image; `3a7e88fc-5b96-45f7-93e0-4e976147a23b-1.png` is an earlier, rougher draft of the same anxiety-cycle concept. The holding folder's source originals were left in place (not deleted) — that folder is Jon's staging area, not the docs/images working tree, and may still hold unprocessed material for other chapters.
 
 | # | Description | Status | Filename |
 |---|-------------|--------|----------|
-| 13.1 | Anxiety maintenance cycle (trigger → anxiety rises → avoidance → relief → loop, with ERP break) | ✅ wired | `ch13/fig_anxiety_maintenance_cycle.png` — filename corrected here; this table previously listed it as `fig13_1_anxiety_maintenance_cycle.png`, which does not match the actual file on disk |
-| 13.2 | Diathesis-stress model (vulnerability × stressor interaction) | 🔲 not built | Core |
-| 13.3 | Biopsychosocial model triangle (biological / psychological / social contributors) | 🔲 not built | Core — chapter opens with this |
-| 13.4 | 3D criteria diagram (Distress / Dysfunction / Deviance) | 🔲 not built | Core — chapter's diagnostic framework |
-| 13.5 | Treatment comparison (disorder category × evidence-based therapy type) | 🔲 not built | Optional — Dodo Bird Verdict discussion |
-| — | Adaptive-response-becomes-costly arc (see above) | 🔲 not placed | New this session — strong candidate for the "protective model becomes costly" spine framing; not yet matched to a specific paragraph |
-| — | Unidentified image (`df03186c...`) | 🔲 not reviewed | New discovery this session — content unknown, not yet viewed |
+| 13.1 | Adaptive-response-becomes-costly arc — Where This Fits spine paragraph | ✅ wired | `ch13/fig_adaptive_response_model_persists_cost_accumulates.png` — sent here from Ch12 (Session 75) |
+| 13.2 | 3D criteria Venn diagram (Deviance / Distress / Dysfunction, with everyday examples and clinical-judgment factors) | ✅ wired | `ch13/fig_diagnostic_criteria_3d_model.png` — was the unidentified `df03186c...` file, renamed this session |
+| 13.3 | "Diagnosis is not a cause" flowchart (symptoms → DSM diagnosis → further causal/treatment questions, blocked mistaken-cause arrow) | ✅ wired | `ch13/fig_diagnosis_is_not_a_cause_flowchart.png` — from Potential Images/13 Chapter |
+| 13.4 | Diathesis-stress threshold model (high vs. low vulnerability bars crossing/not crossing threshold under same stressor) | ✅ wired | `ch13/fig_diathesis_stress_threshold_model.png` — from Potential Images/13 Chapter |
+| 13.5 | Anxiety maintenance cycle (trigger → anxiety rises → avoidance/compulsion → relief → loop, with exposure/extinction branch) | ✅ wired | `ch13/fig_anxiety_maintenance_cycle.png` — built earlier session, wired for the first time this session; filename previously miscited in this table as `fig13_1_anxiety_maintenance_cycle.png` |
+| 13.6 | Depression maintenance loop (low mood → withdrawal → fewer rewards → lower motivation, behavioral-activation exit arrow) | ✅ wired | `ch13/fig_depression_maintenance_loop.png` — from Potential Images/13 Chapter |
+| 13.7 | Schizophrenia positive vs. negative symptoms (two-column comparison) | ✅ wired | `ch13/fig_schizophrenia_positive_negative_symptoms.png` — from Potential Images/13 Chapter |
+| 13.8 | Therapy mechanisms map (common factors hub + technique-specific spokes: psychodynamic, client-centered, CBT, DBT, pharmacotherapy, ECT) | ✅ wired | `ch13/fig_therapy_mechanisms_map.png` — from Potential Images/13 Chapter |
+| 13.9 | AI vs. licensed therapist comparison ("Same Surface, Different Function") | ✅ wired | `ch13/fig_ai_vs_therapist_comparison.png` — from Potential Images/13 Chapter |
+| — | Biopsychosocial model triangle (biological / psychological / social contributors) | 🔲 not built | No candidate image found this session; still open |
 
 ---
 
@@ -268,7 +271,7 @@ Note: v0.7 (Session 51) renumbered two figures not yet reflected above — ANS p
 - **Ch5 (Consciousness):** Fig 5.1 done; 7 built-but-unplaced images awaiting section assignment (see Ch5 table above)
 - **Ch6 (Sleep):** all 5 core figures wired (Session 75) — only the two low/medium-priority optional figures remain unbuilt: dream theories comparison (6.7, on hold) and tolerance/withdrawal (6.6, reconsider fit post-split)
 - **Ch9 (Thinking, Language & Intelligence):** all 10 wirable figures done (Session 75); only two low-priority optional figures remain unbuilt (language acquisition timeline, multiple-intelligences-vs-g comparison) plus one held generic flowchart (9.11, Jon's call pending)
-- **Ch13 (Disorders):** Diathesis-stress (13.2), biopsychosocial (13.3), 3D criteria (13.4)
+- **Ch13 (Disorders):** all 9 figures wired (Session 75) — only the biopsychosocial-model triangle remains unbuilt, no candidate found yet
 
 ### Decisions needed from Jon:
 - Ch2: Which figure set to use (old vs. new numbering)? What are his own images?
