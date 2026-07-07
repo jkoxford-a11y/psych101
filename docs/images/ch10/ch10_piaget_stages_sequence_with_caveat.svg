@@ -8,6 +8,7 @@
       .title { font-family: Arial, Helvetica, sans-serif; font-size: 48px; font-weight: 700; fill: #1f2f46; }
       .subtitle { font-family: Arial, Helvetica, sans-serif; font-size: 27px; fill: #4d5a6b; }
       .stage-title { font-family: Arial, Helvetica, sans-serif; font-size: 32px; font-weight: 700; fill: #ffffff; }
+      .stage-title-small { font-family: Arial, Helvetica, sans-serif; font-size: 28px; font-weight: 700; fill: #ffffff; }
       .age { font-family: Arial, Helvetica, sans-serif; font-size: 24px; font-weight: 700; fill: #ffffff; opacity: 0.95; }
       .body { font-family: Arial, Helvetica, sans-serif; font-size: 26px; fill: #1f2f46; }
       .body-small { font-family: Arial, Helvetica, sans-serif; font-size: 23px; fill: #1f2f46; }
@@ -82,7 +83,7 @@
     <rect class="card" x="0" y="0" width="335" height="330" rx="24"/>
     <rect x="0" y="0" width="335" height="98" rx="24" fill="#5e7f4d"/>
     <rect x="0" y="64" width="335" height="34" fill="#5e7f4d"/>
-    <text class="stage-title" x="24" y="42">Concrete operational</text>
+    <text class="stage-title-small" x="24" y="42">Concrete operational</text>
     <text class="age" x="24" y="76">~7–12 years</text>
     <circle cx="70" cy="157" r="38" fill="#eef5e8" stroke="#5e7f4d" stroke-width="4"/>
     <rect x="52" y="139" width="36" height="36" rx="5" fill="none" stroke="#5e7f4d" stroke-width="5"/>
@@ -113,18 +114,11 @@
     <text class="body-small" x="28" y="295">testing multiple possibilities</text>
   </g>
 
-  <g transform="translate(120,650)">
-    <rect x="0" y="0" width="1360" height="148" rx="28" fill="#f2f5f6" stroke="#cfd7db" stroke-width="2.5"/>
-    <text class="caveat-title" x="38" y="50">Modern update</text>
-    <text class="caveat" x="38" y="92">Piaget was right that children actively construct models of the world.</text>
-    <text class="caveat" x="38" y="126">But the ages are approximate, boundaries are fuzzy, and infants start with more core knowledge than he assumed.</text>
-    <g transform="translate(1132,34)">
-      <circle cx="0" cy="0" r="16" fill="#456c86" opacity="0.9"/>
-      <circle cx="44" cy="0" r="16" fill="#8b6f42" opacity="0.9"/>
-      <circle cx="88" cy="0" r="16" fill="#5e7f4d" opacity="0.9"/>
-      <circle cx="132" cy="0" r="16" fill="#7b5b91" opacity="0.9"/>
-      <path d="M-22 52 C28 22, 78 82, 154 52" fill="none" stroke="#7a8da0" stroke-width="5" stroke-linecap="round"/>
-      <text class="note" x="-58" y="94">overlap, not hard walls</text>
-    </g>
+  <g transform="translate(120,640)">
+    <rect x="0" y="0" width="1360" height="174" rx="28" fill="#f2f5f6" stroke="#cfd7db" stroke-width="2.5"/>
+    <text class="caveat-title" x="38" y="48">Modern update</text>
+    <text class="caveat" x="38" y="88">Piaget was right that children actively construct models of the world.</text>
+    <text class="caveat" x="38" y="120">The sequence is useful, but ages are approximate and boundaries are fuzzy.</text>
+    <text class="caveat" x="38" y="152">Infants also start with more core knowledge than Piaget assumed.</text>
   </g>
 </svg>
