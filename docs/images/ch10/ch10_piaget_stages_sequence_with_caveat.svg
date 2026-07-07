@@ -1,0 +1,140 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" role="img" aria-labelledby="title desc">
+  <title id="title">Piaget's cognitive stages with approximate boundaries</title>
+  <desc id="desc">A horizontal four-stage diagram summarizes Piaget's sensorimotor, preoperational, concrete operational, and formal operational stages. Each stage includes an approximate age range and a key cognitive milestone. A bottom caveat emphasizes that Piaget's sequence remains useful, but stage boundaries are approximate and infants begin with more cognitive structure than Piaget assumed.</desc>
+
+  <defs>
+    <style>
+      .bg { fill: #fbfbf8; }
+      .title { font-family: Arial, Helvetica, sans-serif; font-size: 48px; font-weight: 700; fill: #1f2f46; }
+      .subtitle { font-family: Arial, Helvetica, sans-serif; font-size: 27px; fill: #4d5a6b; }
+      .stage-title { font-family: Arial, Helvetica, sans-serif; font-size: 32px; font-weight: 700; fill: #ffffff; }
+      .age { font-family: Arial, Helvetica, sans-serif; font-size: 24px; font-weight: 700; fill: #ffffff; opacity: 0.95; }
+      .body { font-family: Arial, Helvetica, sans-serif; font-size: 26px; fill: #1f2f46; }
+      .body-small { font-family: Arial, Helvetica, sans-serif; font-size: 23px; fill: #1f2f46; }
+      .label { font-family: Arial, Helvetica, sans-serif; font-size: 22px; font-weight: 700; fill: #2f4058; }
+      .caveat-title { font-family: Arial, Helvetica, sans-serif; font-size: 30px; font-weight: 700; fill: #1f2f46; }
+      .caveat { font-family: Arial, Helvetica, sans-serif; font-size: 25px; fill: #1f2f46; }
+      .note { font-family: Arial, Helvetica, sans-serif; font-size: 21px; fill: #5e6978; }
+      .card { fill: #ffffff; stroke: #d8dddf; stroke-width: 2.5; }
+      .soft-shadow { filter: drop-shadow(0 6px 10px rgba(35, 45, 60, 0.13)); }
+      .arrow { stroke: #49647e; stroke-width: 5; stroke-linecap: round; fill: none; marker-end: url(#arrowhead); }
+      .soft-arrow { stroke: #7a8da0; stroke-width: 3.5; stroke-linecap: round; fill: none; stroke-dasharray: 10 12; marker-end: url(#arrowhead-soft); }
+    </style>
+
+    <marker id="arrowhead" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0,0 L12,6 L0,12 Z" fill="#49647e" />
+    </marker>
+    <marker id="arrowhead-soft" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0,0 L12,6 L0,12 Z" fill="#7a8da0" />
+    </marker>
+
+    <linearGradient id="fuzzyBand" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0%" stop-color="#e9f2f5" stop-opacity="0.15"/>
+      <stop offset="14%" stop-color="#e9f2f5" stop-opacity="0.85"/>
+      <stop offset="36%" stop-color="#e9f2f5" stop-opacity="0.85"/>
+      <stop offset="50%" stop-color="#e9f2f5" stop-opacity="0.35"/>
+      <stop offset="64%" stop-color="#e9f2f5" stop-opacity="0.85"/>
+      <stop offset="86%" stop-color="#e9f2f5" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#e9f2f5" stop-opacity="0.15"/>
+    </linearGradient>
+  </defs>
+
+  <rect class="bg" x="0" y="0" width="1600" height="900"/>
+
+  <text class="title" x="80" y="82">Piaget's stages: useful sequence, fuzzy boundaries</text>
+  <text class="subtitle" x="82" y="125">Children actively build schemas, but modern evidence softens the timing and sharpness of the stages.</text>
+
+  <rect x="100" y="176" width="1400" height="48" rx="24" fill="url(#fuzzyBand)"/>
+  <text class="note" x="138" y="207">approximate developmental progression — not a rigid staircase</text>
+  <path class="soft-arrow" d="M 515 200 C 560 185, 585 185, 630 200"/>
+  <path class="soft-arrow" d="M 870 200 C 915 185, 940 185, 985 200"/>
+  <path class="soft-arrow" d="M 1225 200 C 1270 185, 1295 185, 1340 200"/>
+
+  <!-- Stage 1 -->
+  <g class="soft-shadow" transform="translate(80,250)">
+    <rect class="card" x="0" y="0" width="335" height="330" rx="24"/>
+    <rect x="0" y="0" width="335" height="98" rx="24" fill="#456c86"/>
+    <rect x="0" y="64" width="335" height="34" fill="#456c86"/>
+    <text class="stage-title" x="24" y="42">Sensorimotor</text>
+    <text class="age" x="24" y="76">birth–~2 years</text>
+    <circle cx="70" cy="157" r="38" fill="#e9f2f5" stroke="#456c86" stroke-width="4"/>
+    <path d="M51 162 C58 142, 80 137, 91 154 C94 167, 84 179, 70 181 C58 179, 50 172, 51 162Z" fill="none" stroke="#456c86" stroke-width="5" stroke-linecap="round"/>
+    <path d="M70 123 L70 141" stroke="#456c86" stroke-width="5" stroke-linecap="round"/>
+    <text class="label" x="125" y="149">thinking through</text>
+    <text class="label" x="125" y="179">perception + action</text>
+    <line x1="28" y1="218" x2="307" y2="218" stroke="#d8dddf" stroke-width="2"/>
+    <text class="body" x="28" y="258">Key milestone:</text>
+    <text class="body-small" x="28" y="295">object permanence</text>
+  </g>
+
+  <!-- Stage 2 -->
+  <g class="soft-shadow" transform="translate(445,250)">
+    <rect class="card" x="0" y="0" width="335" height="330" rx="24"/>
+    <rect x="0" y="0" width="335" height="98" rx="24" fill="#8b6f42"/>
+    <rect x="0" y="64" width="335" height="34" fill="#8b6f42"/>
+    <text class="stage-title" x="24" y="42">Preoperational</text>
+    <text class="age" x="24" y="76">~2–7 years</text>
+    <circle cx="70" cy="157" r="38" fill="#f5efe2" stroke="#8b6f42" stroke-width="4"/>
+    <text x="70" y="169" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="48" font-weight="700" fill="#8b6f42">A</text>
+    <text class="label" x="125" y="149">symbols, language,</text>
+    <text class="label" x="125" y="179">pretend play</text>
+    <line x1="28" y1="218" x2="307" y2="218" stroke="#d8dddf" stroke-width="2"/>
+    <text class="body" x="28" y="258">Limits:</text>
+    <text class="body-small" x="28" y="295">egocentrism; conservation errors</text>
+  </g>
+
+  <!-- Stage 3 -->
+  <g class="soft-shadow" transform="translate(810,250)">
+    <rect class="card" x="0" y="0" width="335" height="330" rx="24"/>
+    <rect x="0" y="0" width="335" height="98" rx="24" fill="#5e7f4d"/>
+    <rect x="0" y="64" width="335" height="34" fill="#5e7f4d"/>
+    <text class="stage-title" x="24" y="42">Concrete operational</text>
+    <text class="age" x="24" y="76">~7–12 years</text>
+    <circle cx="70" cy="157" r="38" fill="#eef5e8" stroke="#5e7f4d" stroke-width="4"/>
+    <rect x="52" y="139" width="36" height="36" rx="5" fill="none" stroke="#5e7f4d" stroke-width="5"/>
+    <path d="M49 178 L91 135" stroke="#5e7f4d" stroke-width="5" stroke-linecap="round"/>
+    <text class="label" x="125" y="149">logic for concrete,</text>
+    <text class="label" x="125" y="179">tangible situations</text>
+    <line x1="28" y1="218" x2="307" y2="218" stroke="#d8dddf" stroke-width="2"/>
+    <text class="body" x="28" y="258">Key abilities:</text>
+    <text class="body-small" x="28" y="295">conservation; reversibility</text>
+  </g>
+
+  <!-- Stage 4 -->
+  <g class="soft-shadow" transform="translate(1175,250)">
+    <rect class="card" x="0" y="0" width="335" height="330" rx="24"/>
+    <rect x="0" y="0" width="335" height="98" rx="24" fill="#7b5b91"/>
+    <rect x="0" y="64" width="335" height="34" fill="#7b5b91"/>
+    <text class="stage-title" x="24" y="42">Formal operational</text>
+    <text class="age" x="24" y="76">~12+ years</text>
+    <circle cx="70" cy="157" r="38" fill="#f0eaf4" stroke="#7b5b91" stroke-width="4"/>
+    <path d="M52 159 C62 139, 80 139, 90 159" fill="none" stroke="#7b5b91" stroke-width="5" stroke-linecap="round"/>
+    <circle cx="52" cy="159" r="5" fill="#7b5b91"/>
+    <circle cx="70" cy="133" r="5" fill="#7b5b91"/>
+    <circle cx="90" cy="159" r="5" fill="#7b5b91"/>
+    <text class="label" x="125" y="149">abstract +</text>
+    <text class="label" x="125" y="179">hypothetical reasoning</text>
+    <line x1="28" y1="218" x2="307" y2="218" stroke="#d8dddf" stroke-width="2"/>
+    <text class="body" x="28" y="258">Key ability:</text>
+    <text class="body-small" x="28" y="295">testing multiple possibilities</text>
+  </g>
+
+  <path class="arrow" d="M 420 415 L 440 415"/>
+  <path class="arrow" d="M 785 415 L 805 415"/>
+  <path class="arrow" d="M 1150 415 L 1170 415"/>
+
+  <g transform="translate(120,650)">
+    <rect x="0" y="0" width="1360" height="148" rx="28" fill="#f2f5f6" stroke="#cfd7db" stroke-width="2.5"/>
+    <text class="caveat-title" x="38" y="50">Modern update</text>
+    <text class="caveat" x="38" y="92">Piaget was right that children actively construct models of the world.</text>
+    <text class="caveat" x="38" y="126">But the ages are approximate, boundaries are fuzzy, and infants start with more core knowledge than he assumed.</text>
+    <g transform="translate(1132,34)">
+      <circle cx="0" cy="0" r="16" fill="#456c86" opacity="0.9"/>
+      <circle cx="44" cy="0" r="16" fill="#8b6f42" opacity="0.9"/>
+      <circle cx="88" cy="0" r="16" fill="#5e7f4d" opacity="0.9"/>
+      <circle cx="132" cy="0" r="16" fill="#7b5b91" opacity="0.9"/>
+      <path d="M-22 52 C28 22, 78 82, 154 52" fill="none" stroke="#7a8da0" stroke-width="5" stroke-linecap="round"/>
+      <text class="note" x="-58" y="94">overlap, not hard walls</text>
+    </g>
+  </g>
+</svg>
