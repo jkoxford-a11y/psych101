@@ -1,4 +1,4 @@
-# Chapter 13: Psychological Disorders & Therapy (v0.2)
+# Chapter 13: Psychological Disorders & Therapy (v0.3)
 
 <!-- v0.1 — Full first draft. All 12 DIS-* concepts covered (verified below).
      Copyright: All concepts are canonical-common-knowledge with instructor-original origin
@@ -114,7 +114,36 @@
      chapter-wide compression pass already queued alongside Ch9/Ch10/Ch12; no figure work
      was done (Fig 13.1, already built, is still not wired into the chapter body — flagged,
      not fixed); the addiction/SUD scope question remains open, unchanged from the v0.2
-     pass above. -->
+     pass above.
+
+     v0.3 — Figure wiring (Session 75), following the pattern established on Ch6/9/11/12.
+     Nine figures wired, all previously unwired or newly discovered. Fig 13.1 (anxiety
+     maintenance cycle, referenced as "already built" since v0.1) was found to have never
+     actually been wired — fixed here, and renumbered to 13.5 to match its position in
+     reading order (Anxiety Disorders), not its build order. Two images arrived via
+     unusual routes and are flagged for the record: (a) the adaptive-response arc (now
+     Fig 13.1, in Where This Fits) was originally built for Chapter 12 this session but
+     matched this chapter's spine paragraph more precisely and was moved here instead;
+     (b) the 3D-criteria Venn diagram (now Fig 13.2) was sitting unidentified in
+     docs/images/ch13/ as df03186c-1d07-4330-9b6c-c707f471829d-_edit.png, missed by the
+     Session 74 image audit (which covered Ch6/7/9/11/12 but not Ch13) — matched to the
+     3D Criteria subsection and renamed. The other six figures (13.3, 13.4, 13.6, 13.7,
+     13.8, 13.9) came from a professionally captioned set in
+     "Potential Images for Chapters Holding Space/13 Chapter/", discovered this session
+     when Jon asked whether that holding folder had reusable material; all six were
+     viewed directly, matched against chapter prose, and confirmed as genuine content-gap
+     fits rather than assumed from filename. One file in that folder,
+     "ChatGPT Image Jun 24, 2026, 10_57_40 AM.png," proved to be a byte-identical
+     duplicate of the already-built fig_anxiety_maintenance_cycle.png — not new content.
+     Another, 3a7e88fc-5b96-45f7-93e0-4e976147a23b-1.png, is an earlier/rougher draft of
+     the same anxiety-cycle concept (different visual style, smaller file) and was not
+     used. Source originals in the holding folder were left in place, not deleted —
+     unlike the docs/images/ch* orphan cleanups in other chapters, this is Jon's staging
+     area and may still hold unprocessed material for other chapters; deletion needs an
+     explicit decision, not an assumption. No figure was left unaddressed for this
+     chapter; no gaps remain against visuals-inventory.md's original Ch13 list except the
+     never-supplied biopsychosocial-model triangle (13.3 in the old inventory numbering),
+     which has no candidate image and remains not built. -->
 
 ---
 
@@ -135,6 +164,9 @@ When psychologist David Rosenhan (1973) sent healthy volunteers to psychiatric h
 This does not mean every disorder is simply normal experience turned up louder. Some involve developmental differences, psychotic-spectrum states, or biological disruptions substantial enough to require clinical care in their own right, not just a dial turned too high. The point is narrower and still worth making: even these draw on recognizable psychological and biological mechanisms — this chapter is not describing a different kind of mind, just a wider range of what these ordinary mechanisms can produce.
 
 This chapter draws on almost every chapter in this book. The biological bases of behavior (Chapter 3) underlie every disorder here — neural circuits, neurotransmitters, and genetic vulnerabilities shape risk. Learning principles (Chapter 7) explain how phobias develop and why exposure therapy works. Memory and cognition (Chapters 8–9) illuminate PTSD, depressive schemas, and the heuristic failures that affect clinical diagnosis. The personality system (Chapter 11) is continuous with personality disorders, not separate from them. And the therapeutic alliance — the relationship between therapist and client — is one of the most robustly replicated predictors of treatment outcome in all of psychology (Flückiger et al., 2018).
+
+![Figure 13.1: An adaptive model persists while it works and becomes costly as conditions change, shown as an arc from adaptive response through persistence to accumulating cost](../../docs/images/ch13/fig_adaptive_response_model_persists_cost_accumulates.png)
+*Figure 13.1. A protective model — a threat response, a mood system, a self-model — is not a broken system running on different rules. It is an ordinarily adaptive process that persists past the point where it still fits the situation, and the cost accumulates from there. Original figure.*
 
 ---
 
@@ -167,15 +199,24 @@ Psychology uses three overlapping criteria to define psychological disorder, som
 
 Clinicians apply all three and exercise judgment about degree. Psychological disorders are not binary — present or absent — but points on a continuum. What tips a pattern of worry into generalized anxiety disorder, or sadness into major depressive disorder, is severity, duration, and impairment, not a qualitatively different underlying state.
 
+![Figure 13.2: The 3D criteria — deviance, distress, and dysfunction — overlap in a Venn diagram, with everyday examples of experiences that are unusual, upsetting, or context-specific without meeting all three, and a reminder that clinical judgment weighs severity, duration, culture, and context across school, relationships, health, and daily routines](../../docs/images/ch13/fig_diagnostic_criteria_3d_model.png)
+*Figure 13.2. Diagnosis asks how unusual, how distressing, and how impairing an experience is — and in what context. An unconventional hobby, pre-exam nerves, or a culturally expected practice can satisfy one criterion without satisfying all three; clinical judgment is required where they overlap. Original figure.*
+
 ### The DSM-5-TR
 
 The **Diagnostic and Statistical Manual of Mental Disorders**, Fifth Edition with text revision (DSM-5-TR; American Psychiatric Association, 2022), is the primary diagnostic classification system used in the United States. It provides standardized criteria for each disorder: a list of symptoms, duration requirements, and exclusion criteria. A common misconception is that the DSM identifies the *cause* of disorders. It does not. It describes clusters of symptoms that tend to co-occur. The DSM is categorical — you either meet criteria or you don't — but the underlying conditions it describes are often dimensional. Many people meet criteria for more than one disorder, which makes sense if disorders share underlying mechanisms.
 
 The DSM is not static. Homosexuality was classified as a disorder until 1973. PTSD did not appear until 1980. Neither change happened in a vacuum: they reflect a mix of new research, clinical debate within the field, and — especially in the 1973 case — sustained social and political pressure, including organized activism that directly confronted the profession's own leadership. The DSM is a living document, revised through evidence, argument, and the social context in which psychiatry operates, not a fixed inventory of natural kinds.
 
+![Figure 13.3: A flowchart from symptoms through DSM diagnosis to further causal and treatment questions, with a red X blocking a mistaken arrow that loops directly from diagnosis back to "cause explained"](../../docs/images/ch13/fig_diagnosis_is_not_a_cause_flowchart.png)
+*Figure 13.3. A DSM diagnosis organizes a symptom pattern into a recognized category. It does not, by itself, explain why the symptoms occurred or determine what treatment will help — those require further questions about biological, psychological, and social factors. Original figure.*
+
 ### The Diathesis-Stress Model
 
 No single factor determines whether someone develops a psychological disorder. The **diathesis-stress model** proposes that a person inherits or develops a vulnerability (*diathesis*) — genetic, neurological, or psychological — and that environmental stressors interact with that vulnerability to trigger disorder. The same stressor produces different outcomes in different people because their diatheses differ. The same diathesis can remain latent without sufficient stress.
+
+![Figure 13.4: A diathesis-stress threshold model comparing high- and low-vulnerability bars under the same stressor — the high-vulnerability bar crosses the disorder threshold, the low-vulnerability bar does not](../../docs/images/ch13/fig_diathesis_stress_threshold_model.png)
+*Figure 13.4. The same stressor can push a high-vulnerability person across the disorder threshold while leaving a low-vulnerability person below it. Vulnerability functions as a baseline load, not a guarantee. Original figure.*
 
 The **biopsychosocial model** adds social context explicitly: biological vulnerabilities, psychological factors (cognition, coping style, learning history), and social determinants (poverty, trauma, social support, stigma) all contribute simultaneously, not as competing explanations.
 
@@ -213,6 +254,9 @@ A useful distinction: **fear** is a response to a threat that exists *right now*
 
 **Obsessive-Compulsive Disorder (OCD)**, now in its own DSM chapter, involves intrusive, unwanted obsessions (recurrent thoughts, urges, or images) and compulsions (repetitive behaviors or mental acts performed to reduce the anxiety the obsessions generate). The compulsions provide short-term relief but maintain the disorder by preventing habituation to the anxiety.
 
+![Figure 13.5: A four-step cycle — trigger, anxiety rises, avoidance or compulsion, short-term relief, back to trigger — with a side branch from avoidance or compulsion labeled "Exposure: short-term anxiety, long-term extinction"](../../docs/images/ch13/fig_anxiety_maintenance_cycle.png)
+*Figure 13.5. What maintains anxiety disorders is not the trigger itself but the loop: avoidance or compulsion buys short-term relief, which reinforces the avoidance and prevents the anxiety from extinguishing on its own. Exposure interrupts the loop at that step. Original figure.*
+
 **Post-Traumatic Stress Disorder (PTSD)**, now in the Trauma- and Stressor-Related Disorders chapter of the DSM, involves intrusion symptoms (flashbacks, nightmares), avoidance of trauma-related cues, negative alterations in cognition and mood, and hyperarousal, following exposure to actual or threatened death, serious injury, or sexual violence. Not everyone exposed to trauma develops PTSD — biological diathesis, severity of the trauma, and social support all moderate the response.
 
 Why do traumatic memories intrude as though the event is happening now, rather than being remembered as something past? Ordinary episodic memories get contextualized — tagged with when and where — a process that depends on the hippocampus (Chapter 8). Extreme threat arousal (high cortisol, amygdala dominance) disrupts that contextualizing function while the trauma is happening. Brewin, Dalgleish, and Joseph's (1996) dual representation theory frames the result as two memory systems out of sync: a vivid, poorly contextualized sensory trace — why flashbacks feel present-tense rather than remembered — alongside a comparatively thin verbal narrative of what happened. The threat response also widens the net of what counts as dangerous, a generalization that is adaptive immediately after a real threat but maladaptive once it persists into a safer, changed environment.
@@ -224,6 +268,9 @@ Trauma treatments are thought to work by getting the person to revisit the memor
 ### Mood Disorders
 
 **Major Depressive Disorder (MDD)** requires at least five of nine symptoms — including depressed mood or loss of interest/pleasure (*anhedonia*) — for at least two weeks, with significant impairment. Other symptoms include changes in appetite and sleep, fatigue, difficulty concentrating, feelings of worthlessness, and recurrent thoughts of death or suicidal ideation.
+
+![Figure 13.6: A circular loop connecting low mood, withdrawal and inactivity, fewer rewarding experiences, and lower motivation, with a teal arrow exiting the loop from withdrawal toward behavioral activation](../../docs/images/ch13/fig_depression_maintenance_loop.png)
+*Figure 13.6. Depression can be self-maintaining: low mood produces withdrawal, withdrawal produces fewer rewarding experiences, and fewer rewards lower motivation further. Behavioral activation (Section 4) interrupts the loop by scheduling activity before motivation returns. Original figure.*
 
 Aaron Beck's **cognitive triad of depression** identifies three negative schemas: views of the self (*I am worthless*), the world (*nothing ever goes right*), and the future (*it will always be this way*). These schemas filter incoming information to confirm the negative view — confirmation bias applied to self-evaluation (Chapter 9). Abramson, Seligman, and Teasdale (1978) extended this with a **depressogenic attributional style**: depressed individuals tend to attribute negative events to internal, stable, and global causes.
 
@@ -254,6 +301,9 @@ Schizophrenia has a lifetime prevalence of approximately 1% worldwide. Symptoms 
 - *Anhedonia*: reduced capacity for pleasure
 
 Positive symptoms are more responsive to antipsychotic medication; negative symptoms are harder to treat and more strongly predict long-term functional outcome.
+
+![Figure 13.7: A two-column comparison of schizophrenia symptoms — positive symptoms (experiences added): hallucinations, delusions, disorganized speech, disorganized behavior; negative symptoms (capacities reduced): flat affect, alogia, avolition, anhedonia, social withdrawal](../../docs/images/ch13/fig_schizophrenia_positive_negative_symptoms.png)
+*Figure 13.7. Positive symptoms are experiences added on top of normal functioning; negative symptoms are capacities reduced. Positive symptoms often respond better to antipsychotic medication — negative symptoms are usually harder to treat. Original figure.*
 
 The **dopamine hypothesis** proposes that excess dopaminergic activity in mesolimbic pathways underlies positive symptoms. Evidence: drugs that block D2 receptors reduce positive symptoms; drugs that increase dopamine (amphetamines, cocaine) can induce psychosis-like states in healthy individuals; antipsychotic drug potency correlates directly with D2 receptor affinity (Seeman et al., 1976). The hypothesis has been refined: reduced dopaminergic activity in the prefrontal cortex likely contributes to negative symptoms and cognitive deficits, alongside excess mesolimbic activity. Glutamate, particularly at NMDA receptors, is also implicated — the original hypothesis is almost certainly too simple.
 
@@ -300,6 +350,9 @@ The origins of ASD appear to lie in prenatal brain development rather than postn
 The psychotherapy literature contains a puzzle: hundreds of different therapeutic approaches exist, but when researchers compare them in controlled trials, most produce roughly similar outcomes for most disorders — a result sometimes called the **Dodo Bird Verdict** (Luborsky, Singer, & Luborsky, 1975), after Alice's declaration that "all have won and all must have prizes." The strongest predictor of outcome across approaches is not the specific technique the therapist uses but the quality of the **therapeutic alliance** — the collaborative, trusting relationship between therapist and client (Flückiger et al., 2018).
 
 This does not mean technique is irrelevant. For specific disorders — particularly anxiety disorders — particular approaches show distinctly better outcomes. The overall picture: common factors (alliance, empathy, warmth) account for a large portion of effectiveness across disorders; specific techniques matter most for specific conditions.
+
+![Figure 13.8: A hub-and-spoke diagram with common factors — therapeutic alliance, empathy, warmth, expectation of change — at the center, and spokes to psychodynamic therapy, client-centered therapy, CBT, DBT, pharmacotherapy, and ECT, each labeled with its technique-specific mechanism](../../docs/images/ch13/fig_therapy_mechanisms_map.png)
+*Figure 13.8. Psychotherapies share common relationship factors at the center while differing in the technique-specific mechanisms each approach targets. Original figure.*
 
 ### Psychoanalytic and Psychodynamic Therapies
 
@@ -350,6 +403,9 @@ ECT is used primarily for **severe, treatment-resistant MDD** — cases in which
 ## AI Connection: Diagnosis, Therapy, and What AI Cannot Replace
 
 **The parallel.** AI tools are increasingly applied in mental health contexts: chatbots for psychoeducation and support, symptom-pattern flagging systems, natural language processing of clinical notes. These applications borrow directly from clinical psychology — diagnostic reasoning, empathic responsiveness, cognitive restructuring. The parallels are real enough to be instructive about *both* AI's capabilities and psychology's actual mechanisms.
+
+![Figure 13.9: A two-column "Same Surface, Different Function" comparison of AI mental-health chatbots versus licensed therapists, contrasting availability, clinical continuity, nonverbal monitoring, accountability, confidentiality, and crisis response](../../docs/images/ch13/fig_ai_vs_therapist_comparison.png)
+*Figure 13.9. AI tools can generate therapy-shaped language, but they do not perform the same clinical function as a licensed therapist: no longitudinal relationship, no reliable reading of nonverbal cues, no risk assessment or referrals, no legal accountability or confidentiality obligations, no crisis response. Original figure.*
 
 **Diagnostic reasoning.** The same heuristic failures that affect human clinicians affect AI diagnostic tools. Anchoring — premature commitment to an initial diagnostic hypothesis — occurs when systems trained on symptom-label pairs learn to weight early input heavily. Premature closure — stopping the diagnostic search once a plausible explanation is found — follows. These are the heuristics from Chapter 9 operating at scale. An AI diagnostic tool is running something like System 1 inference over high-dimensional inputs; it is not immune to the biases that characterize fast thinking.
 
