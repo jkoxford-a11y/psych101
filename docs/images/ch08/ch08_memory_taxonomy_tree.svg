@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" role="img" aria-labelledby="title desc">
+  <title id="title">Explicit vs. Implicit Memory Taxonomy</title>
+  <desc id="desc">A tree diagram shows long-term memory branching into explicit and implicit memory, then into episodic, semantic, procedural, and priming branches.</desc>
+  <defs>
+    <filter id="softShadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="8" stdDeviation="9" flood-color="#102a43" flood-opacity="0.12"/>
+    </filter>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#52606d"/>
+    </marker>
+  </defs>
+  <rect width="1600" height="900" fill="#ffffff"/>
+  <rect x="52" y="54" width="1496" height="792" rx="24" fill="#f8fbfd" stroke="#dde7ee" stroke-width="2"/>
+  <text x="96" y="116" font-family="Aptos, Arial, sans-serif" font-size="42" font-weight="700" fill="#102a43">Long-Term Memory Taxonomy</text>
+  <text x="96" y="152" font-family="Aptos, Arial, sans-serif" font-size="22" fill="#52606d">This chapter organizes long-term memory by whether conscious recall is required.</text>
+
+  <g filter="url(#softShadow)" font-family="Aptos, Arial, sans-serif">
+    <rect x="560" y="205" width="480" height="96" rx="18" fill="#ffffff" stroke="#c9d6df" stroke-width="4"/>
+    <text x="800" y="265" text-anchor="middle" font-size="34" font-weight="700" fill="#102a43">Long-Term Memory</text>
+
+    <rect x="214" y="395" width="520" height="126" rx="18" fill="#eaf4f8" stroke="#2f5d7c" stroke-width="4"/>
+    <text x="474" y="451" text-anchor="middle" font-size="31" font-weight="700" fill="#102a43">Explicit / Declarative</text>
+    <text x="474" y="491" text-anchor="middle" font-size="24" font-weight="700" fill="#466b80">conscious recall required</text>
+
+    <rect x="866" y="395" width="520" height="126" rx="18" fill="#f7d5c2" stroke="#c65f4b" stroke-width="4"/>
+    <text x="1126" y="451" text-anchor="middle" font-size="31" font-weight="700" fill="#8f3d2e">Implicit / Nondeclarative</text>
+    <text x="1126" y="491" text-anchor="middle" font-size="24" font-weight="700" fill="#102a43">no conscious recall required</text>
+
+    <rect x="160" y="635" width="288" height="110" rx="18" fill="#ffffff" stroke="#c9d6df" stroke-width="3"/>
+    <text x="304" y="681" text-anchor="middle" font-size="28" font-weight="700" fill="#102a43">Episodic</text>
+    <text x="304" y="718" text-anchor="middle" font-size="20" fill="#52606d">personally experienced events</text>
+
+    <rect x="500" y="635" width="288" height="110" rx="18" fill="#ffffff" stroke="#c9d6df" stroke-width="3"/>
+    <text x="644" y="681" text-anchor="middle" font-size="28" font-weight="700" fill="#102a43">Semantic</text>
+    <text x="644" y="718" text-anchor="middle" font-size="21" fill="#52606d">general facts</text>
+
+    <rect x="812" y="635" width="300" height="110" rx="18" fill="#ffffff" stroke="#c9d6df" stroke-width="3"/>
+    <text x="962" y="681" text-anchor="middle" font-size="28" font-weight="700" fill="#102a43">Procedural</text>
+    <text x="962" y="718" text-anchor="middle" font-size="21" fill="#52606d">skills, motor sequences</text>
+
+    <rect x="1164" y="635" width="300" height="110" rx="18" fill="#ffffff" stroke="#c9d6df" stroke-width="3"/>
+    <text x="1314" y="681" text-anchor="middle" font-size="28" font-weight="700" fill="#102a43">Priming</text>
+    <text x="1314" y="718" text-anchor="middle" font-size="20" fill="#52606d">speeded recognition</text>
+    <text x="1314" y="742" text-anchor="middle" font-size="20" fill="#52606d">from prior exposure</text>
+  </g>
+
+  <g fill="none" stroke="#52606d" stroke-width="4" stroke-linecap="round">
+    <path d="M800 304 C720 340, 600 355, 474 385" marker-end="url(#arrow)"/>
+    <path d="M800 304 C880 340, 1000 355, 1126 385" marker-end="url(#arrow)"/>
+    <path d="M474 526 C430 572, 366 590, 304 625" marker-end="url(#arrow)"/>
+    <path d="M474 526 C525 572, 596 590, 644 625" marker-end="url(#arrow)"/>
+    <path d="M1126 526 C1078 572, 1010 590, 962 625" marker-end="url(#arrow)"/>
+    <path d="M1126 526 C1175 572, 1248 590, 1314 625" marker-end="url(#arrow)"/>
+  </g>
+
+  <rect x="355" y="786" width="890" height="46" rx="23" fill="#eaf4f8" stroke="#c9d6df" stroke-width="2"/>
+  <text x="800" y="817" text-anchor="middle" font-family="Aptos, Arial, sans-serif" font-size="22" font-weight="700" fill="#102a43">Different branches can be affected independently.</text>
+</svg>

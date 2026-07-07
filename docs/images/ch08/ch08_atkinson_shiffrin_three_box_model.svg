@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" role="img" aria-labelledby="title desc">
+  <title id="title">Atkinson-Shiffrin Three-Box Model</title>
+  <desc id="desc">A three-stage memory flow diagram showing sensory memory, short-term or working memory, and long-term memory, with attention, encoding, retrieval, and loss at each stage.</desc>
+  <defs>
+    <filter id="softShadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="8" stdDeviation="9" flood-color="#102a43" flood-opacity="0.12"/>
+    </filter>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#52606d"/>
+    </marker>
+    <marker id="smallArrow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#8fa4b3"/>
+    </marker>
+  </defs>
+  <rect width="1600" height="900" fill="#ffffff"/>
+  <rect x="52" y="54" width="1496" height="792" rx="24" fill="#f8fbfd" stroke="#dde7ee" stroke-width="2"/>
+  <text x="96" y="116" font-family="Aptos, Arial, sans-serif" font-size="42" font-weight="700" fill="#102a43">Atkinson-Shiffrin Three-Box Model</text>
+  <text x="96" y="152" font-family="Aptos, Arial, sans-serif" font-size="22" fill="#52606d">Memory stages differ in duration, capacity, and where information can be lost.</text>
+
+  <g filter="url(#softShadow)" font-family="Aptos, Arial, sans-serif">
+    <rect x="126" y="245" width="340" height="250" rx="18" fill="#eaf4f8" stroke="#2f5d7c" stroke-width="4"/>
+    <rect x="630" y="245" width="340" height="250" rx="18" fill="#eaf4f8" stroke="#2f5d7c" stroke-width="4"/>
+    <rect x="1134" y="245" width="340" height="250" rx="18" fill="#eaf4f8" stroke="#2f5d7c" stroke-width="4"/>
+
+    <text x="296" y="316" text-anchor="middle" font-size="31" font-weight="700" fill="#102a43">Sensory Memory</text>
+    <text x="296" y="371" text-anchor="middle" font-size="27" font-weight="700" fill="#466b80">high capacity</text>
+    <text x="296" y="418" text-anchor="middle" font-size="26" fill="#102a43">&lt; 1 second</text>
+
+    <text x="800" y="306" text-anchor="middle" font-size="29" font-weight="700" fill="#102a43">Short-Term /</text>
+    <text x="800" y="342" text-anchor="middle" font-size="29" font-weight="700" fill="#102a43">Working Memory</text>
+    <text x="800" y="397" text-anchor="middle" font-size="25" font-weight="700" fill="#466b80">~7 +/- 2 items</text>
+    <text x="800" y="432" text-anchor="middle" font-size="21" fill="#102a43">(or fewer larger chunks)</text>
+    <text x="800" y="470" text-anchor="middle" font-size="24" fill="#102a43">seconds to ~1 minute</text>
+
+    <text x="1304" y="316" text-anchor="middle" font-size="31" font-weight="700" fill="#102a43">Long-Term Memory</text>
+    <text x="1304" y="371" text-anchor="middle" font-size="27" font-weight="700" fill="#466b80">unlimited</text>
+    <text x="1304" y="418" text-anchor="middle" font-size="26" fill="#102a43">lifetime</text>
+  </g>
+
+  <g font-family="Aptos, Arial, sans-serif" fill="none" stroke="#52606d" stroke-width="5" stroke-linecap="round">
+    <line x1="488" y1="370" x2="606" y2="370" marker-end="url(#arrow)"/>
+    <line x1="992" y1="370" x2="1110" y2="370" marker-end="url(#arrow)"/>
+    <path d="M1280 240 C1190 178, 922 178, 830 236" stroke-width="3.5" marker-end="url(#arrow)"/>
+  </g>
+  <g font-family="Aptos, Arial, sans-serif" fill="#52606d" font-size="25" font-weight="700">
+    <text x="548" y="336" text-anchor="middle">Attention</text>
+    <text x="1052" y="336" text-anchor="middle">Encoding</text>
+    <text x="1052" y="190" text-anchor="middle">Retrieval</text>
+  </g>
+
+  <g font-family="Aptos, Arial, sans-serif" fill="#8fa4b3" stroke="#8fa4b3" stroke-width="3" stroke-dasharray="8 10" stroke-linecap="round">
+    <line x1="296" y1="515" x2="296" y2="610" marker-end="url(#smallArrow)"/>
+    <line x1="800" y1="515" x2="800" y2="610" marker-end="url(#smallArrow)"/>
+    <line x1="1304" y1="515" x2="1304" y2="590" marker-end="url(#smallArrow)" opacity="0.55"/>
+    <text x="296" y="650" text-anchor="middle" font-size="25" font-weight="700" stroke="none">lost</text>
+    <text x="800" y="650" text-anchor="middle" font-size="25" font-weight="700" stroke="none">lost</text>
+    <text x="1304" y="630" text-anchor="middle" font-size="22" font-weight="700" stroke="none" opacity="0.65">not retrieved</text>
+  </g>
+
+  <rect x="308" y="729" width="984" height="68" rx="34" fill="#eaf4f8" stroke="#c9d6df" stroke-width="2"/>
+  <text x="800" y="773" text-anchor="middle" font-family="Aptos, Arial, sans-serif" font-size="28" font-weight="700" fill="#102a43">Not three physical boxes - three functionally distinct stages.</text>
+</svg>
