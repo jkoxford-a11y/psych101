@@ -47,8 +47,8 @@
     <line class="grid" x1="760" y1="505" x2="760" y2="516"/><text x="760" y="542">11 yr</text>
     <line class="grid" x1="1250" y1="505" x2="1250" y2="516"/><text x="1250" y="542">Adult</text>
   </g>
-  <path d="M120 430 C170 250, 245 110, 305 138 C395 180, 510 255, 640 292 C840 312, 1075 296, 1250 292" fill="none" stroke="#456c86" stroke-width="8" stroke-linecap="round"/>
-  <path d="M120 440 C180 265, 270 126, 338 150 C438 190, 560 265, 700 292 C910 306, 1110 296, 1250 292" fill="none" stroke="#8b6f42" stroke-width="8" stroke-linecap="round"/>
+  <path d="M120 430 C170 240, 235 104, 300 132 C386 168, 510 244, 640 292 C820 292, 1060 292, 1250 292" fill="none" stroke="#456c86" stroke-width="8" stroke-linecap="round"/>
+  <path d="M120 440 C190 280, 300 142, 365 164 C468 198, 584 268, 705 292 C890 292, 1080 292, 1250 292" fill="none" stroke="#8b6f42" stroke-width="8" stroke-linecap="round"/>
   <path d="M120 462 C210 340, 350 175, 490 158 C650 138, 760 170, 845 218 C970 288, 1100 302, 1250 292" fill="none" stroke="#7b5b91" stroke-width="9" stroke-linecap="round"/>
   <g transform="translate(950,335)">
     <rect x="0" y="0" width="330" height="130" rx="18" fill="#ffffff" stroke="#d8dddf" stroke-width="2"/>
