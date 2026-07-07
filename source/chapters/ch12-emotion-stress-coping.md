@@ -1,5 +1,23 @@
 # Chapter 12: Emotion, Stress & Coping
 
+<!-- Version: 0.4 — figures wired (Session 75, 2026-07-07). 5 GPT-generated images sitting in
+     docs/images/ch12/ (Session 74 full-disk audit, zero wired) were reviewed directly against
+     chapter prose. 4 wired in reading order: Fig 12.1 body-budget deposits/withdrawals (Section 1,
+     right after "body budget" is introduced); Fig 12.2 the core-affect circumplex, i.e. Russell's
+     (1980) own model, already cited in-text but never illustrated (Section 1); Fig 12.3 the
+     cognitive light cone / HPA-axis pathway, showing simulated threats activating the same cortisol
+     cascade as physical danger (Section 3, right after the cognitive-light-cone paragraph the
+     Session 72 spine-alignment pass added); Fig 12.4 the three-stage GAS diagram with a functional-
+     capacity-over-time graph (Section 3, right after the existing GAS table). The 5th image
+     ("Adaptive response → Model persists → Cost accumulates," tagline "Therapy: update, regulate,
+     relearn") was NOT wired here — it reads as Ch13's own spine framing ("when does a protective
+     model become costly?"), not this chapter's GAS/allostatic-load content. Asked Jon directly;
+     his call was to send it to Ch13 rather than force it in here or leave it stranded in ch12/ —
+     copied to docs/images/ch13/fig_adaptive_response_model_persists_cost_accumulates.png, logged in
+     visuals-inventory.md's Ch13 entry for whoever works that chapter next. **Also discovered in
+     passing, unrelated to this session's task:** docs/images/ch13/ already contains its own unwired
+     UUID image (df03186c-1d07-4330-9b6c-c707f471829d-_edit.png) that no prior session had flagged —
+     not investigated or touched this session, just logged. -->
 <!-- Version: 0.3, continued same session (2026-07-06) — density/consistency refinement after
      Jon's review of the first pass. Jon flagged the chapter as too dense and asked whether images
      could help, and separately flagged that cross-chapter wording felt inconsistent with how other
@@ -114,6 +132,9 @@ The difference matters. Homeostasis is a thermostat that kicks on when the house
 
 Barrett (2017a) uses the term **body budget** to describe this allostatic management: the brain continuously tracks and predicts the body's expenditure and income of metabolic resources — glucose, oxygen, water, salt — as well as social and psychological resources. Every action you take, every experience you have, every relationship you maintain draws on or deposits into this budget. When the budget is well-managed, you feel well. When it is depleted or thrown into deficit, you feel bad — not bad in a specific emotional way necessarily, but in the background sense of everything being more effortful, more aversive, more threatening than it otherwise would be.
 
+![Figure 12.1: The body budget as deposits and withdrawals. Deposits — sleep, food and water, movement, social support, recovery time — replenish the budget. Withdrawals — chronic workload, uncertainty, isolation, skipped meals, poor sleep — deplete it. Allostasis is the body's process of achieving stability through change; interoception is how the brain senses, interprets, and integrates the internal signals that track the budget's state.](../../images/ch12/fig_body_budget_deposits_withdrawals.png)
+*Figure 12.1. The body budget: what deposits into it and what withdraws from it. Original figure.*
+
 ### Interoception: Reading the Budget
 
 How does the brain know the state of the budget? Through **interoception** — the ongoing sensory monitoring of internal body states. The brain receives a continuous stream of signals from the heart, lungs, gut, muscles, skin, and immune system. Heart rate, blood pressure, body temperature, muscle tension, gut motility, inflammatory markers — all of this feeds back to brain regions including the insula and anterior cingulate cortex, which integrate interoceptive signals with predictions and context.
@@ -128,6 +149,9 @@ Before any specific emotion is constructed, there is something more basic: a con
 - **Arousal** — whether your current state feels activated (energized, alert, agitated) or deactivated (calm, sluggish, tired)
 
 Every moment of waking life has some position in this two-dimensional space. Right now, reading this, you are somewhere on that map — perhaps mildly pleasant and moderately aroused; perhaps slightly unpleasant and low-arousal. Core affect is not an emotion. It is the raw material from which emotions are constructed.
+
+![Figure 12.2: The core affect circumplex. Valence (unpleasant to pleasant) and arousal (low to high) define a two-dimensional space. Anxious and angry states sit in the unpleasant/high-arousal quadrant; energized and excited in the pleasant/high-arousal quadrant; sad and fatigued in the unpleasant/low-arousal quadrant; calm and content in the pleasant/low-arousal quadrant. Core affect is not the same thing as emotion — it is the two-dimensional backdrop emotions are constructed against.](../../images/ch12/fig_core_affect_circumplex.png)
+*Figure 12.2. Russell's (1980) circumplex model of core affect. Original figure.*
 
 > **Stop & Retrieve:** What are the two dimensions of core affect? Why is core affect not the same thing as an emotion?
 
@@ -216,6 +240,9 @@ Chapter 3 introduced the contrast: a zebra's stress response mobilizes fully for
 
 This wider range of things that can matter to the organism *right now* — remembered pasts, imagined futures, other people's judgments, symbolic and financial threats, possible selves — is sometimes called the human **cognitive light cone**: not a technical term from neuroscience, but a useful description of everything the simulation-capable brain can treat as a live concern. It is the same predictive capacity that makes planning and foresight possible, running on a stress-response system built for acute physical emergencies, not sustained abstract ones. The exhaustion stage of the General Adaptation Syndrome, described next, is what that machinery looks like when it is left running against a threat that exists only in simulation.
 
+![Figure 12.3: The cognitive light cone activates the same HPA-axis pathway as present physical danger. A remembered failure, an imagined future, another person's judgment, or a money threat can each trigger the hypothalamus → pituitary → adrenal glands → cortisol → increased heart rate sequence — the identical pathway a present predator would trigger. Simulated threats can activate real stress physiology.](../../images/ch12/fig_cognitive_light_cone_hpa_axis.png)
+*Figure 12.3. The cognitive light cone: simulated and symbolic threats activate the same HPA-axis pathway as physical danger. Original figure.*
+
 ### The General Adaptation Syndrome
 
 Selye's actual discovery, in the 1930s, was an accident. Trying to isolate a new ovarian hormone, he injected rats with ovarian extract and found consistent damage — enlarged adrenal glands, shrunken thymus and lymph tissue, bleeding stomach ulcers. It looked like a hormone effect until he ran a control injection: formalin, a toxic preservative with no hormonal activity. The control rats showed the identical triad. Whatever produced this pattern wasn't specific to any substance — it was a generic response to *something noxious happening to the animal* (Selye, 1956). That result is why the syndrome he named is defined by nonspecificity: the body doesn't run a different stress response for every different threat. It runs one, whether the trigger is a predator, a toxin, or — this chapter's argument — a remembered failure.
@@ -227,6 +254,9 @@ Selye called the resulting three-stage pattern the **General Adaptation Syndrome
 | **Alarm** | HPA axis activates, cortisol releases, sympathetic nervous system engages; energy redirects from long-term maintenance (digestion, immune function, reproduction) to immediate action | Minimal, if brief |
 | **Resistance** | Body stabilizes at an elevated response level, keeps coping while the stressor continues | Resources consumed, not yet depleted |
 | **Exhaustion** | Reserves run out; the elevated response can no longer be sustained | Immune suppression, illness vulnerability; organ failure in extreme cases |
+
+![Figure 12.4: The three stages of Selye's General Adaptation Syndrome. Alarm: threat perceived, SAM and HPA systems activate, energy mobilizes (hypothalamus → pituitary → adrenal glands → rising cortisol). Resistance: the body maintains elevated activation under sustained demand — ongoing effort, coping continues, resources consumed. Exhaustion: the depleted body budget shows as reduced immune function and fatigue. The bottom graph plots available resources/functional capacity over time, dropping sharply through exhaustion to roughly 15–25% remaining. Useful in the short run; costly when left running.](../../images/ch12/fig_general_adaptation_syndrome.png)
+*Figure 12.4. Selye's three-stage General Adaptation Syndrome, with functional capacity over time. Original figure.*
 
 Selye's framework is incomplete on its own — it understates psychological appraisal and was built primarily from extreme physical stressors in rodents. But the core logic holds: the stress response is adaptive in the short run and costly in the long run, and which one you get depends on duration.
 

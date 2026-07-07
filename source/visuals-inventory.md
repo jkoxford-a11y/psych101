@@ -165,18 +165,23 @@ Note: v0.7 (Session 51) renumbered two figures not yet reflected above — ANS p
 ---
 
 ## Chapter 9 — Thinking, Language & Intelligence
-5 figures exist. 2–3 more would help. **None are currently wired into `ch09-thinking-language-intelligence.md`** — confirmed via grep (Session 68): the chapter markdown has zero image/figure references anywhere. These are built assets sitting unused, not a numbering problem.
+**All 10 wirable figures now wired (Session 75, 2026-07-07).** A batch of 6 new GPT-generated images had joined the 5 already-built-but-unwired figures logged since Session 68, for 11 total, all zero wired — confirmed via grep before this session and again after. Viewed every image directly against the chapter's actual prose before placing anything; renumbered to match reading order through the chapter (Sections 1, 2, then 4), which does not match the old inventory numbering below — treat this table as authoritative going forward.
 
 | # | Description | Status | Filename |
 |---|-------------|--------|----------|
-| 9.1 | Biases as question substitution table | ✅ built, not wired | `ch09/fig_bias_question_substitution.png/.svg` |
-| 9.2 | IQ standardization curve (mean=100, SD=15) | ✅ built, not wired | `ch09/fig_iq_bell_curve.png/.svg` |
-| 9.3 | Linda conjunction fallacy / nested sets | ✅ built, not wired | `ch09/fig_linda_conjunction_fallacy.png/.svg` |
-| 9.4 | Wason selection task (prompt) | ✅ built, not wired | `ch09/fig_wason_task_prompt.png/.svg` |
-| 9.5 | Wason selection task (answer) | ✅ built, not wired | `ch09/fig_wason_task_answer.png/.svg` |
-| 9.6 | System 1 vs. System 2 (dual-process) diagram | 🔲 | Optional — chapter discusses extensively but no figure yet; Ch5's amygdala/extinction section (Session 62) now also references this concept — cross-check |
-| 9.7 | Language acquisition timeline (babbling → words → two-word → grammar) | 🔲 | Optional — supports nativist vs. behaviorist section |
-| 9.8 | Multiple intelligences vs. g-factor comparison | 🔲 | Optional — Gardner/Spearman contrast |
+| 9.1 | Hierarchical category structure (superordinate → basic → subordinate, illustrated with birds) | ✅ wired | `ch09/fig_hierarchical_category_structure.png` — caption flags that the image uses a birds example, not the chapter's own dog example |
+| 9.2 | Prototype compression (episodic dog encounters → shared features → prototype → new-case recognition) | ✅ wired | `ch09/fig_prototype_compression_dogs.png` |
+| 9.3 | Luchins' water-jar mental-set demo | ✅ wired | `ch09/fig_luchins_water_jar_mental_set.png` |
+| 9.4 | Duncker's candle problem (functional fixedness) | ✅ wired | `ch09/fig_functional_fixedness_candle_problem.png` |
+| 9.5 | System 1 vs. System 2 dual-process diagram | ✅ wired | `ch09/fig_system1_system2_dual_process.png` — fills the previously-optional slot this table used to list at 9.6 |
+| 9.6 | Conjunction fallacy / nested sets (bank tellers ⊃ feminist bank tellers) | ✅ wired | `ch09/fig_linda_conjunction_fallacy.png` |
+| 9.7 | Wason selection task (prompt) | ✅ wired | `ch09/fig_wason_task_prompt.png` |
+| 9.8 | Wason selection task (answer) | ✅ wired | `ch09/fig_wason_task_answer.png` |
+| 9.9 | Biases as question substitution table (unifies availability/representativeness/confirmation/framing/anchoring) | ✅ wired | `ch09/fig_bias_question_substitution.png` — placed as a Section 2-closing synthesis figure, not tied to any single bias |
+| 9.10 | IQ standardization curve (mean=100, SD=15) | ✅ wired | `ch09/fig_iq_bell_curve.png` |
+| 9.11 | Generic "Start → Input Data → Process → Decision? → Output Result" flowchart | 🔲 held, open decision | Reviewed and judged too generic/decorative to teach anything chapter-specific (no algorithm/heuristic contrast). Asked Jon directly; his call was to hold rather than use or discard — revisit in a future session. UUID file `0bb01f45-5416-457b-b62e-f91860aad01b-1.png`, not yet renamed. |
+| — | Language acquisition timeline (babbling → words → two-word → grammar) | 🔲 not built | Optional — supports nativist vs. behaviorist section |
+| — | Multiple intelligences vs. g-factor comparison | 🔲 not built | Optional — Gardner/Spearman contrast |
 | 9.9 | Huth et al. (2016) semantic-map illustration (meaning distributed across cortex, not filed in word-boxes) | 🔲 | Optional — idea logged Session 68 during the Section 1 "concept as location" trim; no figure exists, don't reference one until built |
 
 **Resolved (Session 68):** the image folder was actually still named `docs/images/ch08/` on disk (not `ch09/` as this inventory previously claimed) — renamed to `ch09/` this session, and it worked (unlike past delete attempts on this OneDrive mount). The filenames themselves were never prefixed with `ch08_` — that detail in the prior version of this note was inaccurate; corrected above to the real filenames. **Still open:** actually embedding figures 9.1–9.5 into the chapter markdown, which has never happened at any prior version.
@@ -197,46 +202,57 @@ Note: v0.7 (Session 51) renumbered two figures not yet reflected above — ANS p
 ---
 
 ## Chapter 11 — Social Psychology (Personality merged in as Section 5, Session 71/72)
-*(was "Chapter 10" in the old numbering; the old standalone "Chapter 11 — Personality" holding-pen file, `ch11b-personality.md`, is now merged into this chapter as Section 5 — see `ch11-social-psychology.md`)* Still no figures for the Social content (Sections 1–4); Personality (Section 5) has both of its figures built and wired.
+*(was "Chapter 10" in the old numbering; the old standalone "Chapter 11 — Personality" holding-pen file, `ch11b-personality.md`, is now merged into this chapter as Section 5 — see `ch11-social-psychology.md`)* **5 new figures wired for Sections 1–4 (Session 75, 2026-07-07)** — these were not the specific topics this table had previously planned for 11.1–11.5 (see superseded list below); a Session 74 audit found 6 GPT-generated images already sitting in `docs/images/ch11/`, unplanned and unwired, and this session placed the 5 usable ones directly rather than waiting for the originally-planned topics to be built. **Also discovered this session: 11.6 and 11.7, previously listed here as "✅ built and wired," are not — both files are missing from disk entirely** (repo-wide search confirmed), despite HANDOFF's Session 23/28 log describing them as built. This table's own prior "✅ built and wired" status for both was wrong. Flagged in the chapter file itself with inline HTML comments; not fixed, per Jon's explicit call this session.
 
 | # | Description | Status | Notes |
 |---|-------------|--------|-------|
-| 11.1 | Attribution theory (dispositional vs. situational × self vs. other) | 🔲 | Core — FAE section |
-| 11.2 | Milgram obedience setup (learner/teacher/experimenter room diagram) | 🔲 | Core — Classic Study Walkthrough |
-| 11.3 | ELM dual-route diagram (central vs. peripheral route to persuasion) | 🔲 | Core |
-| 11.4 | Bystander effect: five-step decision model | 🔲 | Core — Darley & Latané model |
-| 11.5 | Social identity theory (in-group favoritism / out-group derogation) | 🔲 | Optional |
-| 11.6 | Trait signal aggregation (single act r≈.29 vs. aggregated r≈.72 scatter plots) | ✅ built and wired | `ch11/fig_trait_signal_aggregation.png` |
-| 11.7 | Person × situation interaction (helping behavior across weak/strong situations) | ✅ built and wired | `ch11/fig_person_situation_grid.png` |
-| — | Big Five trait dimensions visual | 🔲 | Optional — chapter uses a table; figure would supplement |
+| 11.1 | Festinger & Carlsmith (1959) $1/$20 dissonance study | ✅ wired | `ch11/fig_festinger_carlsmith_dissonance.png` — Section 1 |
+| 11.2 | Asch line-judgment conformity study | ✅ wired | `ch11/fig_asch_line_judgment_study.png` — Section 2 |
+| 11.3 | Milgram obedience physical setup (teacher/learner/experimenter rooms) | ✅ wired | `ch11/fig_milgram_obedience_setup.png` — Section 2, inside the Classic Study Walkthrough box. A second version with a baked-in title typo ("Studes") existed; Jon confirmed the clean version, typo version deleted. |
+| 11.4 | Stereotype / prejudice / discrimination triangle | ✅ wired | `ch11/fig_prejudice_stereotype_discrimination_triangle.png` — Section 3 |
+| 11.5 | Person and situation influence diagram (traits/goals/past learning vs. norms/authority/group pressure/stakes → behavior) | ✅ wired | `ch11/fig_person_situation_influence_diagram.png` — Section 5, ahead of the broken 11.6/11.7 pair below |
+| 11.6 | Trait signal aggregation (single act r≈.29 vs. aggregated r≈.72 scatter plots) | ❌ **broken — file missing** | Referenced in `ch11-social-psychology.md` as `../images/ch11/fig_trait_signal_aggregation.png`; file does not exist anywhere in the repo. HANDOFF Sessions 23/28 describe this as built for the old standalone Personality chapter — lost at some point, not this session. Flagged inline in the chapter; Jon's call is to leave flagged, not rebuild or remove yet. |
+| 11.7 | Person × situation interaction (helping behavior across weak/strong situations) | ❌ **broken — file missing** | Same issue as 11.6 — `fig_person_situation_grid.png` does not exist anywhere in the repo. Flagged inline in the chapter. |
+| — | Attribution theory (dispositional vs. situational × self vs. other) | 🔲 not built | Superseded planning idea, still open if wanted |
+| — | ELM dual-route diagram (central vs. peripheral route to persuasion) | 🔲 not built | Superseded planning idea, still open if wanted |
+| — | Bystander effect: five-step decision model | 🔲 not built | Superseded planning idea, still open if wanted |
+| — | Social identity theory (in-group favoritism / out-group derogation) | 🔲 not built | Superseded planning idea, still open if wanted |
+| — | Big Five trait dimensions visual | 🔲 not built | Optional — chapter uses a table; figure would supplement |
 
-**Numbering note:** 11.6/11.7 (not 11.1/11.2, their numbers in the old standalone Personality file) because Personality now reads as Section 5 — after the four Social sections that would claim 11.1–11.5 once built. Filenames also corrected here: the two built files on disk are `fig_trait_signal_aggregation.png` and `fig_person_situation_grid.png` (descriptor-only, per the Session 32 naming convention), not the `fig11-1-...`/`fig11-2-...` names previously listed in this inventory.
+**Numbering note:** 11.1–11.5 now match the chapter's actual reading order (Sections 1, 2, 2, 3, 5) — this replaces the old planned topic list above, which was never built. 11.6/11.7 keep their existing numbers (Personality is Section 5, after the four Social sections) but are broken, not built — see above.
 
 ---
 
 ## Chapter 12 — Emotion, Stress & Coping
-No figures yet. Number unchanged from old numbering (this chapter's position was already correct).
+**4 of 5 audited images wired (Session 75, 2026-07-07).** A Session 74 audit found 5 GPT-generated images sitting in `docs/images/ch12/`, unplanned relative to the topic list below but strong individual matches once viewed against the actual chapter prose.
 
 | # | Description | Status | Notes |
 |---|-------------|--------|-------|
-| 12.1 | Russell's circumplex of affect (valence × arousal 2D plane with emotion labels) | 🔲 | Core — Barrett's constructionist framework depends on this |
-| 12.2 | Emotion theories comparison (James-Lange / Cannon-Bard / Schachter-Singer / Constructed) | 🔲 | Optional — already a table in text; figure would reinforce |
-| 12.3 | GAS three stages (alarm / resistance / exhaustion) with cortisol/immune function curves | 🔲 | Core |
-| 12.4 | Body-budget / allostatic load diagram (deposits vs. withdrawals metaphor) | 🔲 | Core — central to Chapter 12's framing |
-| 12.5 | Coping strategy matrix (problem-focused vs. emotion-focused × high vs. low controllability) | 🔲 | Optional — text has a matching table |
+| 12.1 | Body-budget deposits/withdrawals diagram | ✅ wired | `ch12/fig_body_budget_deposits_withdrawals.png` — Section 1 |
+| 12.2 | Russell's (1980) circumplex of affect (valence × arousal 2D plane with emotion labels) | ✅ wired | `ch12/fig_core_affect_circumplex.png` — Section 1 |
+| 12.3 | Cognitive light cone / HPA-axis pathway (simulated vs. physical threats → same cortisol cascade) | ✅ wired | `ch12/fig_cognitive_light_cone_hpa_axis.png` — Section 3, new content added at the Session 72 spine-alignment pass, previously unillustrated |
+| 12.4 | GAS three stages (alarm / resistance / exhaustion) with functional-capacity-over-time curve | ✅ wired | `ch12/fig_general_adaptation_syndrome.png` — Section 3 |
+| — | Emotion theories comparison (James-Lange / Cannon-Bard / Schachter-Singer / Constructed) | 🔲 not built | Optional — already a table in text; figure would reinforce |
+| — | Coping strategy matrix (problem-focused vs. emotion-focused × high vs. low controllability) | 🔲 not built | Optional — text has a matching table |
+
+**Sent elsewhere, not wired here:** a 5th image in the same batch ("Adaptive response → Model persists → Cost accumulates," tagline "Therapy: update, regulate, relearn") reads as Ch13's own spine framing, not this chapter's content. Jon's call: send it to Ch13 rather than force it in or leave it stranded. Copied to `docs/images/ch13/fig_adaptive_response_model_persists_cost_accumulates.png` — see Ch13 entry below.
 
 ---
 
 ## Chapter 13 — Psychological Disorders & Therapy
-1 figure exists. 3–4 more needed. Number unchanged from old numbering (this chapter's position was already correct).
+1 figure exists and is wired. **Two unwired images newly logged this session (2026-07-07), neither investigated in depth — flagging only, this session's task was Ch12:**
+- `df03186c-1d07-4330-9b6c-c707f471829d-_edit.png` — sitting in `docs/images/ch12/` [sic, actually `docs/images/ch13/`] since before this session; no prior HANDOFF entry mentions it, so it wasn't caught by the Session 74 audit (which covered Ch6/7/9/11/12 but apparently not Ch13). Content not reviewed.
+- `fig_adaptive_response_model_persists_cost_accumulates.png` — sent here from Ch12 this session (see above). Depicts a three-panel "Adaptive response → Model persists → Cost accumulates" arc with a "Therapy: update, regulate, relearn" tagline — a strong visual match for Ch13's own spine question ("when does a protective model become costly?"), not reviewed against the chapter's actual prose or placed anywhere yet.
 
 | # | Description | Status | Filename |
 |---|-------------|--------|----------|
-| 13.1 | Anxiety maintenance cycle (trigger → anxiety rises → avoidance → relief → loop, with ERP break) | ✅ | `ch13/fig13_1_anxiety_maintenance_cycle.png` |
-| 13.2 | Diathesis-stress model (vulnerability × stressor interaction) | 🔲 | Core |
-| 13.3 | Biopsychosocial model triangle (biological / psychological / social contributors) | 🔲 | Core — chapter opens with this |
-| 13.4 | 3D criteria diagram (Distress / Dysfunction / Deviance) | 🔲 | Core — chapter's diagnostic framework |
-| 13.5 | Treatment comparison (disorder category × evidence-based therapy type) | 🔲 | Optional — Dodo Bird Verdict discussion |
+| 13.1 | Anxiety maintenance cycle (trigger → anxiety rises → avoidance → relief → loop, with ERP break) | ✅ wired | `ch13/fig_anxiety_maintenance_cycle.png` — filename corrected here; this table previously listed it as `fig13_1_anxiety_maintenance_cycle.png`, which does not match the actual file on disk |
+| 13.2 | Diathesis-stress model (vulnerability × stressor interaction) | 🔲 not built | Core |
+| 13.3 | Biopsychosocial model triangle (biological / psychological / social contributors) | 🔲 not built | Core — chapter opens with this |
+| 13.4 | 3D criteria diagram (Distress / Dysfunction / Deviance) | 🔲 not built | Core — chapter's diagnostic framework |
+| 13.5 | Treatment comparison (disorder category × evidence-based therapy type) | 🔲 not built | Optional — Dodo Bird Verdict discussion |
+| — | Adaptive-response-becomes-costly arc (see above) | 🔲 not placed | New this session — strong candidate for the "protective model becomes costly" spine framing; not yet matched to a specific paragraph |
+| — | Unidentified image (`df03186c...`) | 🔲 not reviewed | New discovery this session — content unknown, not yet viewed |
 
 ---
 
@@ -251,7 +267,7 @@ No figures yet. Number unchanged from old numbering (this chapter's position was
 ### Partially done — a few more needed:
 - **Ch5 (Consciousness):** Fig 5.1 done; 7 built-but-unplaced images awaiting section assignment (see Ch5 table above)
 - **Ch6 (Sleep):** all 5 core figures wired (Session 75) — only the two low/medium-priority optional figures remain unbuilt: dream theories comparison (6.7, on hold) and tolerance/withdrawal (6.6, reconsider fit post-split)
-- **Ch9 (Thinking, Language & Intelligence):** System 1/2 diagram (9.6) is optional but useful, and now has a direct tie-in to Ch5's amygdala/extinction material
+- **Ch9 (Thinking, Language & Intelligence):** all 10 wirable figures done (Session 75); only two low-priority optional figures remain unbuilt (language acquisition timeline, multiple-intelligences-vs-g comparison) plus one held generic flowchart (9.11, Jon's call pending)
 - **Ch13 (Disorders):** Diathesis-stress (13.2), biopsychosocial (13.3), 3D criteria (13.4)
 
 ### Decisions needed from Jon:

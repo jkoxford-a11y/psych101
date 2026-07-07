@@ -6,6 +6,8 @@
 <!-- Concepts covered: TLI-001 through TLI-015 (15 concepts total) -->
 <!-- Copyright handling: TLI-004 (Representativeness heuristic) and TLI-012 (Gardner's multiple intelligences) are flagged book-adoption. Both were drafted from Noba Project sources: Bazerman (2026) "Judgment and Decision Making" for TLI-004; Biswas-Diener (2026) "Intelligence" for TLI-012. All other 13 TLI-* concepts are instructor-original or canonical-common-knowledge and were drafted from course materials and verified primary literature. -->
 <!-- Citations: All independently verified via web search before inclusion. See References section. -->
+<!-- v0.4 — figures wired (Session 75, 2026-07-07): 10 of 11 GPT-generated images sitting in docs/images/ch09/ (a Session 74 full-disk audit had found and logged them, plus 5 already-named fig_ files from an earlier batch, all zero wired) placed in reading order across Sections 1, 2, and 4. Fig 9.1 hierarchical category tree (Section 1, after the superordinate/basic/subordinate paragraph — note the image uses a birds example, not the chapter's own dog example, so the caption makes that substitution explicit rather than silently implying they match); Fig 9.2 prototype-compression illustration (Section 1, after the "put these three ideas together" synthesis paragraph); Fig 9.3 Luchins' water-jar mental-set demo (Section 1, after the mental-set paragraph); Fig 9.4 Duncker's candle problem (Section 1, after the functional-fixedness paragraph); Fig 9.5 System 1/2 dual-process diagram (Section 2, after the Do Not Confuse box — fills the previously-optional slot noted in visuals-inventory.md); Fig 9.6 conjunction-fallacy nested-set diagram (Section 2, right where the term is defined, before the Classic Study Walkthrough); Figs 9.7–9.8 the Wason task as a before/after pair (Section 2 — prompt right where the task is posed, answer right where it's revealed), following the same two-images-one-concept precedent Ch5 and Ch7 set; Fig 9.9 the "biases as question substitution" table (Section 2, after Anchoring, before the AI Connection) — a genuine find: this one image unifies all five heuristics just covered (availability, representativeness, confirmation, framing, anchoring) as instances of the same attribute-substitution mechanism, so it was placed as a section-closing synthesis rather than tied to any single bias; Fig 9.10 the IQ standardization bell curve (Section 4, right where mean=100/SD=15 is introduced). **Not wired:** one image (a generic "Start → Input Data → Process → Decision? → Output Result" flowchart) was reviewed and judged too generic/decorative to teach anything chapter-specific — asked Jon directly rather than forcing a placement; his call was to hold it for a future session rather than use it or discard it. See visuals-inventory.md for its status. -->
+<!-- Figures: 10 in docs/images/ch09/, all wired — fig_hierarchical_category_structure.png (9.1), fig_prototype_compression_dogs.png (9.2), fig_luchins_water_jar_mental_set.png (9.3), fig_functional_fixedness_candle_problem.png (9.4), fig_system1_system2_dual_process.png (9.5), fig_linda_conjunction_fallacy.png (9.6), fig_wason_task_prompt.png (9.7), fig_wason_task_answer.png (9.8), fig_bias_question_substitution.png (9.9), fig_iq_bell_curve.png (9.10). One image held pending Jon's decision — see v0.4 note above. -->
 
 ---
 
@@ -58,7 +60,13 @@ Alongside prototypes, people also use **exemplars** — specific remembered memb
 
 Concepts are organized hierarchically. "Animal" is a superordinate category containing "dog," which is a basic-level category containing "golden retriever" as a subordinate example. Most everyday thinking happens at the basic level — specific enough to be useful, general enough to be efficient.
 
+![Figure 9.1: Hierarchical category structure, illustrated with birds. "Birds" is the superordinate category; "Raptors" and "Waterfowl" are basic-level categories; specific species (eagle, hawk, owl, vulture; swan, duck, goose) are subordinate examples. The same superordinate → basic-level → subordinate structure applies to any category, including the chapter's own "Animal → dog → golden retriever" example.](../../images/ch09/fig_hierarchical_category_structure.png)
+*Figure 9.1. Hierarchical category structure. Original figure.*
+
 Put these three ideas together and a single picture emerges: a concept is not a definition or a checklist of defining features — it is a location in a compressed space of meaning, defined by its pattern of relations to everything else you know. "Apple" sits near fruit, food, sweetness, trees, red/green/yellow, seeds, pie, and school lunches — a region built up from repeated episodes and pruned down to whatever generalizes well, not a filing-cabinet entry with fixed boundaries. This is the same compression this book keeps finding at every level of the system: raw experience is too large and too specific to keep in full, so what survives is the structure that predicts — the prototype, the neighborhood of exemplars, the place in the hierarchy — while the rest is let go. That compression is exactly why concepts are useful (they let you recognize a dog you've never seen before) and exactly why they mislead in predictable ways (a penguin has to fight its way toward a prototype built mostly from robins and sparrows).
+
+![Figure 9.2: From episodic memories to semantic knowledge. Many specific encounters with different dogs (neighbor's dog, childhood pet, a tiny dog, a working dog) are compared, their shared features extracted, and compressed into a prototype — the "average" dog. That prototype is then used to recognize a new case (a husky) that resembles none of the original encounters exactly.](../../images/ch09/fig_prototype_compression_dogs.png)
+*Figure 9.2. Prototype formation as compression from specific episodic encounters to general semantic knowledge. Original figure.*
 
 There's now real neuroscience consistent with this "concept as location" picture, though it should be read carefully. Huth and colleagues (2016) mapped which brain regions respond to which kinds of meaning while people listened to narrated stories in an fMRI scanner, and found that meaning is represented across a broad, continuous, geometrically organized swath of cortex rather than filed into discrete word-boxes. That doesn't mean the brain literally stores concepts as coordinates the way a map stores locations — the semantic-space model is a tool that predicts brain activity well, not a description of the brain's actual code — but it is real evidence, at the level of measured brain activity, for the same "location in a space of relations" picture built from behavior alone above.
 
@@ -85,7 +93,13 @@ Two classic obstacles block effective problem solving, and both are really a sin
 
 **Mental set** is the tendency to approach a new problem using a strategy that worked before, even when it does not apply. A solver who has just been given a series of water-jug problems requiring a complex three-step formula will often apply that formula to a later problem that could be solved much more simply — because the earlier strategy is primed and active (Luchins, 1942).
 
+![Figure 9.3: Luchins' water-jar problems. Previous problems all required the same three-step strategy (fill A, pour A into B twice, pour B into C) to reach a target amount. A later problem could be solved in one simple step (just fill B) — but solvers primed by the earlier strategy often apply the old three-step formula anyway, wasting time and adding unnecessary steps.](../../images/ch09/fig_luchins_water_jar_mental_set.png)
+*Figure 9.3. Mental set demonstrated with Luchins' (1942) water-jar problems. Original figure.*
+
 **Functional fixedness** is a specific form of mental set in which we see an object only in terms of its conventional use and fail to notice that it could serve another function. In Duncker's (1945) classic candle problem, participants are given a candle, a box of thumbtacks, and matches and asked to mount the candle on a wall so it burns without dripping on a table. Most people try to tack the candle directly to the wall or melt it onto the wall. The solution — tacking the box to the wall and using it as a platform — requires seeing the thumbtack box as a *shelf*, not just a container. Functional fixedness prevents this reframing.
+
+![Figure 9.4: Duncker's (1945) candle problem. Given a candle, a box of thumbtacks, and matches, most people try to tack the candle directly to the wall or melt it on. The solution requires reframing the thumbtack box itself — from a container to a shelf — emptying it, tacking it to the wall, and mounting the candle inside it.](../../images/ch09/fig_functional_fixedness_candle_problem.png)
+*Figure 9.4. Functional fixedness demonstrated with Duncker's candle problem. Original figure.*
 
 **Insight** is the sudden, often surprising shift in representation that unlocks a problem — the "aha" moment when the box becomes a shelf, or when two separately encoded pieces of information suddenly combine into a solution. Insight problems feel qualitatively different from analytical problems: they resist incremental progress, then resolve all at once, because what changes isn't the amount of information available but the compressed model organizing it (Jung-Beeman et al., 2004).
 
@@ -105,6 +119,9 @@ The critical point is that System 1 is not the "bad" system that we should try t
 
 > **Do Not Confuse: System 1 ≠ irrational; System 2 ≠ rational**
 > System 1 is fast and associative — not inherently flawed. System 2 is slow and deliberate — but it can also be used to rationalize bad decisions after the fact, or to construct logically valid arguments for false conclusions. The two systems are better understood as different processing *modes* than as a conflict between irrationality and rationality.
+
+![Figure 9.5: The dual-process model of thinking. System 1 (fast, automatic) handles reading a familiar word, recognizing a face, and catching yourself before stepping off a curb — speed, intuition, and unconscious processing. System 2 (slow, deliberate) handles working through a math problem, checking your reasoning for mistakes, and resisting an impulse — effort, rules, and conscious control. Both systems are useful; System 1 handles most of life correctly, while System 2 is the check that should catch its predictable errors.](../../images/ch09/fig_system1_system2_dual_process.png)
+*Figure 9.5. The System 1 / System 2 dual-process framework. Original figure.*
 
 ### The Availability Heuristic
 
@@ -130,6 +147,9 @@ When Tversky and Kahneman (1983) posed this question, roughly 85% of participant
 
 The error arises because the description of Linda fits our prototype of a feminist activist. Option B is more *representative* of Linda's description, so System 1 judges it as more probable — overriding the probability logic that would require Option A to win. Tversky and Kahneman (1983) called this the **conjunction fallacy**: treating the conjunction of two events as more probable than either event alone, when it cannot be.
 
+![Figure 9.6: The conjunction fallacy. "Bank tellers" is the larger, containing set; "Feminist bank tellers" is a smaller subset nested entirely inside it. A subset can never be more probable than the set that contains it — but a description that matches the subset's prototype well can still feel more probable, which is the conjunction fallacy in action.](../../images/ch09/fig_linda_conjunction_fallacy.png)
+*Figure 9.6. The conjunction fallacy illustrated as a nested-set relationship. Original figure.*
+
 > **Classic Study Walkthrough: The Linda Problem (Tversky & Kahneman, 1983)**
 >
 > **What they did:** Participants read a brief personality sketch of "Linda," constructed to fit the prototype of someone politically engaged and socially conscious. They were then given a list of statements about Linda and asked to rank them by probability.
@@ -144,7 +164,13 @@ Once we form a belief, we tend to seek out, interpret, and remember evidence tha
 
 Wason's (1968) selection task is the most studied demonstration. Participants are shown four cards, each with a letter on one side and a number on the other. The cards show: E, K, 4, 7. The rule to test is: "If a card has a vowel on one side, it must have an even number on the other side." Which cards must you turn over to check whether the rule is violated?
 
+![Figure 9.7: Wason's (1968) selection task. Four cards show E, K, 4, and 7. The rule to test: "If vowel, then even number." Which cards must be turned over to test whether the rule is being followed?](../../images/ch09/fig_wason_task_prompt.png)
+*Figure 9.7. The Wason selection task as originally posed. Original figure.*
+
 Most people turn over E (correct — checking whether the vowel has an even number) and 4 (incorrect — this would only confirm the rule, not test it). Few turn over 7 — yet 7 is the critical card: if 7 has a vowel on its back, the rule is violated. The error reveals confirmation bias in miniature: people test the rule by looking for confirming instances rather than by seeking the disconfirming case that would actually test it.
+
+![Figure 9.8: The Wason task, solved. E must be turned over (checks whether the vowel has an even number); K is irrelevant to the rule; 4 is tempting but not diagnostic (the rule doesn't require non-vowels to have odd numbers); 7 could falsify the rule if it has a vowel on the back — and it is the card most people skip.](../../images/ch09/fig_wason_task_answer.png)
+*Figure 9.8. The Wason selection task, with the diagnostic cards identified. Original figure.*
 
 Confirmation bias is robust across contexts from scientific reasoning to political belief formation. It is one reason two people can examine the same body of evidence and reach opposite conclusions — each is attending to different subsets of it.
 
@@ -159,6 +185,9 @@ The framing effect has documented consequences in medicine (how surgical risks a
 When making numerical estimates, people are heavily influenced by an initial number (the "anchor"), even when that number is arbitrary. In a well-known demonstration, participants who were first asked "Is the population of Chicago more or less than 2 million?" subsequently estimated a lower population than participants who were first asked "Is it more or less than 10 million?" — even though both groups knew the question was starting from an arbitrary anchor (Tversky & Kahneman, 1974).
 
 Anchoring operates in salary negotiation (the first offer anchors subsequent counteroffers), in medical diagnosis (the first diagnosis anchors subsequent interpretation of ambiguous symptoms), and in everyday estimation (an initial Google search result anchors follow-up searches).
+
+![Figure 9.9: Biases as question substitution. Each heuristic covered in this section can be described as System 1 quietly answering an easier "shortcut question" in place of the harder question actually being asked: availability substitutes "what comes to mind quickly?" for "how common is it?"; representativeness substitutes "what does it resemble?" for "how likely is this case?"; confirmation bias substitutes "what supports my first belief?" for "is this belief true?"; framing substitutes "does this sound like a gain or a loss?" for "what are the actual outcomes?"; anchoring substitutes "what number did I hear first?" for "what is a fair estimate?"](../../images/ch09/fig_bias_question_substitution.png)
+*Figure 9.9. The five heuristics covered in this section, unified as instances of attribute substitution — a hard question answered by a faster, related one. Original figure.*
 
 ### The AI Connection: Your System 2 Is Vulnerable to Polished Text
 
@@ -289,6 +318,9 @@ Sternberg's theory is valuable because it highlights that conventional IQ tests 
 ### IQ: Measurement, Standardization, and Limits
 
 Intelligence testing began with Alfred Binet, who developed the first practical intelligence test in 1905 to identify French schoolchildren who needed additional educational support. The concept of **IQ (intelligence quotient)** — originally a ratio of mental age to chronological age — was later reformulated as a **standardized score** with a mean of 100 and a standard deviation of 15 (for most modern tests). An IQ score is exactly what this chapter's argument would predict: a standardized compression of a much richer, messier reality — useful for exactly what standardization is good for (prediction, comparison, tracking change over time), blind to exactly what compression always drops.
+
+![Figure 9.10: IQ scores are standardized. Scores follow a bell curve with a mean of 100 and a standard deviation of 15 for most modern tests: roughly two-thirds of scores fall between 85 and 115, and the great majority fall between 70 and 130. Every score is interpreted relative to the norming sample, not as an absolute quantity of intelligence.](../../images/ch09/fig_iq_bell_curve.png)
+*Figure 9.10. The standardized normal distribution of IQ scores. Original figure.*
 
 Standardization means that scores are meaningful only relative to a reference population. An IQ of 115 means "one standard deviation above the mean of the reference sample" — not an absolute quantity of intelligence. Chapter 2 introduced the concepts of **reliability** (does the test give consistent results?) and **validity** (does it measure what it claims to measure?); both matter here. Modern IQ tests are highly reliable (test-retest correlations above .90) and show substantial criterion validity — they predict academic achievement, certain job outcomes, and health outcomes better than most other psychological measures (Deary, 2001). They do not, however, measure all of what we intuitively mean by "intelligence," as Gardner and Sternberg both argue.
 
