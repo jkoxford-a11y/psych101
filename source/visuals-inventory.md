@@ -112,17 +112,23 @@ Note: v0.7 (Session 51) renumbered two figures not yet reflected above — ANS p
 ---
 
 ## Chapter 6 — Sleep
-**New chapter, split from old combined Ch5 in Session 59.** Two figures already existed from the pre-split chapter and correctly now live here; SCN pathway also complete.
+**All 5 figures now wired (Session 75, 2026-07-07).** A batch of 6 GPT-generated UUID-named images plus a `hypnogram.mp4` had been sitting in `docs/images/ch06/` since Session 74's full-disk audit, alongside the chapter's own `ch06_figure_specs.md` planning file (created Session 63) — checked that spec first, then viewed all 6 images directly against both the spec and the actual chapter prose before placing anything. 5 of the 6 images matched planned figures closely; the 6th (`4a0790d5...`) was a duplicate/alternate draft of the opening-anchor concept and was not used (denser per-panel text than the project's figure-style guardrails call for). Two of the three previously-active figures (SCN pathway, hypnogram) are now superseded by richer versions with the same core content; the two-process model, retired from the chapter text since Session 58, is back — rebuilt as the practical lever diagram the spec's own decision note asked for, rather than a generic textbook curve.
 
 | # | Description | Status | Filename |
 |---|-------------|--------|----------|
-| 6.1 | Two-process sleep model (Process C circadian + Process S pressure) | ✅ | `ch06/fig_two_process_sleep_model.svg/.png` |
-| 6.2 | Sleep hypnogram (Wake/REM/N1/N2/N3 across 8 hrs) | ✅ | `ch06/fig_sleep_hypnogram.svg/.png` |
-| 6.3 | SCN circadian pathway (light → retina → SCN → pineal → melatonin) | ✅ | `ch06/fig_scn_pathway.svg/.png` |
-| 6.4 | Drug tolerance/withdrawal mechanism | 🔲 | Reconsider fit — Ch6 v0.2 moved most drug content to Ch5; confirm this still belongs here before building |
-| 6.5 | Dream theories comparison diagram | 🔲 | On hold |
+| 6.1 | Opening-anchor infographic: sleep as active maintenance across 5 jobs (timing, architecture, cleaning, consolidation, regulation) | ✅ wired | `ch06/fig_sleep_active_maintenance_system.png` |
+| 6.2 | SCN circadian pathway, richer version (light → retina → SCN → melatonin/cortisol/temperature/sleep-wake outputs) | ✅ wired | `ch06/fig_scn_circadian_clock_entrainment.png` — **supersedes** `fig_scn_pathway.png/.svg` (now orphaned) |
+| 6.3 | Two-process model as a lever diagram (Process C + Process S curves, keyed to the 5 interventions in the existing table) | ✅ wired | `ch06/fig_process_s_process_c_levers.png` — reinstates the concept retired since Session 58; **supersedes** `fig_two_process_sleep_model.png/.svg` (now orphaned) |
+| 6.4 | Sleep architecture hypnogram, richer version (5 ~90-min cycles + dominant maintenance function per part of night) | ✅ wired | `ch06/fig_sleep_architecture_cycles.png` — **supersedes** `fig_sleep_hypnogram.png/.svg` (now orphaned) |
+| 6.5 | Glymphatic clearance mechanism (CSF inflow → interstitial exchange → waste outflow, awake vs. deep sleep) | ✅ wired | `ch06/fig_glymphatic_clearance_deep_sleep.png` |
+| 6.6 | Drug tolerance/withdrawal mechanism | 🔲 not built | Reconsider fit — Ch6 v0.2 moved most drug content to Ch5; confirm this still belongs here before building |
+| 6.7 | Dream theories comparison diagram | 🔲 not built | On hold |
 
-**Open items for Jon:** Confirm the `psych101_awesome-sauce` "sleep" demo is fair to reuse or prologue-exclusive. Chapter awaiting Jon's line-by-line review.
+**Orphaned files awaiting deletion:** `fig_scn_pathway.png/.svg`, `fig_sleep_hypnogram.png/.svg`, `fig_two_process_sleep_model.png/.svg` (all superseded, confirmed unreferenced), the 5 UUID-named source files for the images above, and the unused duplicate opening-anchor draft (`4a0790d5-c1b7-4044-96fc-eda99e837559.png`) — see HANDOFF for deletion status.
+
+**Not wired, open decision for Jon:** `hypnogram.mp4` — a video asset in the same folder. Markdown chapters have no established video-embed convention, and content chapters are meant to link out to labs rather than carry embedded media, so this wasn't forced into either format; flagged rather than guessed at.
+
+**Open items for Jon:** Confirm the `psych101_awesome-sauce` "sleep" demo is fair to reuse or prologue-exclusive. Chapter awaiting Jon's line-by-line review. Decide fit/placement of `hypnogram.mp4`.
 
 ---
 
@@ -244,7 +250,7 @@ No figures yet. Number unchanged from old numbering (this chapter's position was
 
 ### Partially done — a few more needed:
 - **Ch5 (Consciousness):** Fig 5.1 done; 7 built-but-unplaced images awaiting section assignment (see Ch5 table above)
-- **Ch6 (Sleep):** dream theories comparison (6.5); reconsider whether tolerance/withdrawal (6.4) still fits post-split
+- **Ch6 (Sleep):** all 5 core figures wired (Session 75) — only the two low/medium-priority optional figures remain unbuilt: dream theories comparison (6.7, on hold) and tolerance/withdrawal (6.6, reconsider fit post-split)
 - **Ch9 (Thinking, Language & Intelligence):** System 1/2 diagram (9.6) is optional but useful, and now has a direct tie-in to Ch5's amygdala/extinction material
 - **Ch13 (Disorders):** Diathesis-stress (13.2), biopsychosocial (13.3), 3D criteria (13.4)
 
