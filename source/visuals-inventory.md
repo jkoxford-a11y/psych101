@@ -1,5 +1,6 @@
 # Visuals Inventory — Psych101 Textbook
-*Last updated: 2026-07-03 (Session 62) — reconciled to the locked 13-chapter map (HANDOFF Session 60–61). Previously stale: this file still had the pre-split, pre-renumbering structure (old Ch5 "States of Consciousness" containing sleep figures, old Ch6 "Learning") and was missed by the Session 61 renumbering sweep, which only covered `source/chapters/*.md` and `docs/index.html`. Caught by a GPT session flagging the mismatch.*
+*Last updated: 2026-07-06 (Session 74) — Ch7 fully reconciled and wired (see below). Full-disk figure audit this session also found substantial new built-but-unplaced image sets in `docs/images/ch06/` (6 images), `docs/images/ch09/` (6 images, on top of the 5 already logged), `docs/images/ch11/` (7 images, Social-section content — Milgram, Asch, dissonance, stereotype triangle, person×situation), and `docs/images/ch12/` (5 images, including near-exact matches for the circumplex, GAS, and body-budget figures already in this file's Ch12 table). Only Ch7 was wired this session per Jon's priority call; the Ch6/Ch9/Ch11/Ch12 entries below are NOT yet updated to reflect those new files — treat those four chapters' tables as stale until a dedicated pass reconciles them, same caution this file has needed before.*
+*Previously updated: 2026-07-03 (Session 62) — reconciled to the locked 13-chapter map (HANDOFF Session 60–61). Previously stale: this file still had the pre-split, pre-renumbering structure (old Ch5 "States of Consciousness" containing sleep figures, old Ch6 "Learning") and was missed by the Session 61 renumbering sweep, which only covered `source/chapters/*.md` and `docs/index.html`. Caught by a GPT session flagging the mismatch.*
 
 Status key: ✅ File exists in `docs/images/` | ⚠️ Exists but needs review/decision | 🔲 Still needed
 
@@ -104,7 +105,7 @@ Note: v0.7 (Session 51) renumbered two figures not yet reflected above — ANS p
 | 5.6 | Neuromodulatory systems — Section 3 opener (GABA, DA+NE, 5-HT2A, Endocannabinoid, Opioid, broadcast vs. local) | ✅ | `ch05/fig_neuromodulatory_systems_section3.png` — wired Session 62; renumbered 5.1→5.6 Session 63 now that earlier-appearing figures are wired |
 | 5.7 | Dopamine "better/worse than expected" illustration — Section 3, dopamine/stimulants | ✅ | `ch05/Dopamine_1.png` — wired Session 63 |
 | 5.8 | Classic Schultz et al. cue-conditioning reward-prediction-error paradigm — Section 3, immediately after Fig 5.7 | ✅ | `ch05/dopamine_error.png` — wired Session 63 |
-| ⚠️ | Cleanup note | pending manual deletion | `ch05/` folder still contains orphaned copies of the two-process model, hypnogram, and SCN pathway figures (now Ch6's) — same files exist correctly in `ch06/`; confirmed unused by any ch05 reference (grep-verified Session 63). Bash could not delete them (OneDrive permission restriction, same issue as Session 32) — Jon needs to delete `fig_scn_pathway.png/.svg`, `fig_sleep_hypnogram.png/.svg`, and `fig_two_process_sleep_model.png/.svg` from `docs/images/ch05/` manually in File Explorer. |
+| ✅ | Cleanup note — RESOLVED (Session 74) | done | The orphaned two-process-model and hypnogram copies were deleted by Jon (Session 66); the last two orphans, `fig_scn_pathway.png/.svg`, were deleted this session using `allow_cowork_file_delete` — the "OneDrive permission restriction" every session since Session 32 had treated as a hard block turned out to just be Cowork's standard delete-permission gate, unblockable with that tool. `ch05/` is now clean of Ch6-only figures. |
 
 **Open items for Jon:** Confirm placement of the seven unplaced images above (deferred to next session per Jon's request — after this inventory fix). Chapter awaiting full line-by-line review; all 11 [VOICE] tags filled as of Session 62.
 
@@ -126,17 +127,20 @@ Note: v0.7 (Session 51) renumbered two figures not yet reflected above — ANS p
 ---
 
 ## Chapter 7 — Learning
-*(was "Chapter 6" in the old numbering)* No figures yet. `docs/images/ch07/` does not exist.
+*(was "Chapter 6" in the old numbering)* **All 9 figures now wired (Session 74).** Found built-but-unplaced in `docs/images/ch07/` as GPT-generated UUID-named files; copied to descriptor filenames per the project naming convention and embedded into `ch07-learning.md` in reading order. The 9 UUID-named originals were successfully deleted the same session via `allow_cowork_file_delete` (the long-assumed "can't delete from this OneDrive mount" restriction turned out to be Cowork's standard delete-permission gate, not a hard block — see HANDOFF Session 74).
 
 | # | Description | Status | Notes |
 |---|-------------|--------|-------|
-| 7.1 | Classical conditioning diagram (UCS/UCR → CS/CR acquisition, extinction, recovery) — spine-flavored version: original CS→US association intact *underneath* a new inhibitory layer, with spontaneous recovery/renewal shown as the old layer resurfacing under stress/context change ("extinction is not erasure") | 🔲 | Core — needed. Framing per Session 65 spine work order §E.1 |
-| 7.2 | Operant conditioning 2×2 (positive/negative × reinforcement/punishment) | 🔲 | Core — needed; this trips up most students. Same grid the "Reinforcement vs. Punishment Classifier" demo (`docs/teaching/demo-ideas.md`) uses |
-| 7.3 | Reinforcement schedules comparison (FR/VR/FI/VI cumulative response curves) | 🔲 | Core — the classic staircase curves |
-| 7.4 | Dopamine prediction error / uncertainty diagram (Sapolsky/Schultz/Fiorillo framing) — three-panel: response to unexpected reward → shift to predictive cue → dip on omission | 🔲 | Important — this chapter "delivers in full" the dopamine mechanism Ch5 previews. Pairs with "Prediction Error / Dopamine Animator" demo |
-| 7.5 | Bobo doll / observational learning setup | 🔲 | Optional — original illustration needed (can't use photo) |
-| 7.6 | Learning's place in the master loop (highlight the "prediction error → updating or defense" arc) | 🔲 | New (Session 65 spine work order §E.4) — reuses the book's master-loop motif for cross-chapter consistency; check whether a book-wide master-loop graphic already exists before building a one-off |
-| 7.7 | Garcia & Koelling crossed associations (taste↔illness fast, audiovisual↔shock fast, diagonals weak) | 🔲 | New (Session 65 spine work order §E.5) |
+| 7.1 | Classical conditioning diagram (before/during/after conditioning, UCS/UCR/CS/CR) | ✅ wired | `ch07/fig_classical_conditioning_ucs_cs.png` |
+| 7.2 | "Extinction Is Not Erasure" — spine-flavored version: original CS→US association intact underneath new inhibitory learning, spontaneous recovery/renewal shown as the old layer resurfacing under stress/context change | ✅ wired | `ch07/fig_extinction_not_erasure.png` — this is the Session 65 spine work order §E.1 figure, built essentially exactly as specified |
+| 7.3 | Operant conditioning 2×2 (positive/negative × reinforcement/punishment) | ✅ wired | `ch07/fig_operant_conditioning_2x2.png` |
+| 7.4 | Reinforcement schedules comparison (FR/VR/FI/VI cumulative response curves) | ✅ wired | `ch07/fig_reinforcement_schedules.png` |
+| 7.5 | Garcia & Koelling crossed associations (taste↔illness fast, audiovisual↔shock fast, diagonals weak) | ✅ wired | `ch07/fig_garcia_koelling_preparedness.png` — note: the image's own on-image text cites "Garcia (1972)" separately from Koelling; chapter body/References correctly use Garcia & Koelling (1966) throughout, mismatch is only inside the image asset |
+| 7.6 | Bobo doll / observational learning setup | ✅ wired | `ch07/fig_bobo_doll_observational_learning.png` |
+| 7.7 | Tolman's cognitive map / cross-maze latent-learning demonstration | ✅ wired | `ch07/fig_tolman_cognitive_map.png` — not in this inventory's prior list; a bonus match found during Session 74's folder inventory |
+| 7.8 | Dopamine uncertainty curve (Fiorillo/Schultz framing — response scales with reward probability, peaks at 50%) | ✅ wired | `ch07/fig_dopamine_uncertainty_curve.png` — flagged: the image's own on-image caption ("Dopamine causes focus and attention") oversimplifies past this chapter's anticipation/motivation framing; the curve itself is accurate and citable, chapter caption does not repeat the on-image line |
+| 7.9 | Dopamine reward-prediction-error paradigm (Schultz classic cue-conditioning teaching-signal figure) | ✅ wired | `ch07/fig_dopamine_prediction_error_schultz.png` — placed immediately after 7.8, same two-dopamine-images-one-paragraph precedent as Ch5 |
+| — | Learning's place in the master loop (highlight "prediction error → updating or defense") | 🔲 | Still not built — Session 65 spine work order §E.4 idea; check for a book-wide master-loop graphic before building a one-off |
 
 ---
 
@@ -233,7 +237,6 @@ No figures yet. Number unchanged from old numbering (this chapter's position was
 ## Summary: What Still Needs to Be Made
 
 ### Highest priority (no figures at all yet):
-- **Ch7 (Learning):** 4–5 figures — conditioning diagrams, reinforcement schedules, dopamine PE/uncertainty
 - **Ch8 (Memory):** 5–6 figures — Atkinson-Shiffrin, Baddeley, levels-of-processing, serial position, memory taxonomy
 - **Ch10 (Lifespan):** 3–4 figures — Piaget stages, Ainsworth attachment, Vygotsky ZPD
 - **Ch11 (Social Psych):** 4–5 figures — Milgram setup, attribution model, ELM, bystander steps
