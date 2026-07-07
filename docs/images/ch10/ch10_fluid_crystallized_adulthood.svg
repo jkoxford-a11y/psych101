@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" role="img" aria-labelledby="title desc">
+  <title id="title">Fluid and crystallized intelligence across adulthood</title>
+  <desc id="desc">A line chart plots fluid intelligence and crystallized intelligence from age 20 to 80. Fluid ability peaks early and declines, while crystallized ability rises and remains high.</desc>
+
+  <defs>
+    <style>
+      .bg { fill: #fbfbf8; }
+      .title { font-family: Arial, Helvetica, sans-serif; font-size: 48px; font-weight: 700; fill: #1f2f46; }
+      .subtitle { font-family: Arial, Helvetica, sans-serif; font-size: 27px; fill: #4d5a6b; }
+      .panel-title { font-family: Arial, Helvetica, sans-serif; font-size: 31px; font-weight: 700; fill: #1f2f46; }
+      .label { font-family: Arial, Helvetica, sans-serif; font-size: 25px; font-weight: 700; fill: #1f2f46; }
+      .body { font-family: Arial, Helvetica, sans-serif; font-size: 24px; fill: #1f2f46; }
+      .small { font-family: Arial, Helvetica, sans-serif; font-size: 21px; fill: #4d5a6b; }
+      .tiny { font-family: Arial, Helvetica, sans-serif; font-size: 18px; fill: #5e6978; }
+      .axis { stroke: #2f4058; stroke-width: 3; fill: none; }
+      .grid { stroke: #d8dddf; stroke-width: 2; fill: none; }
+      .dash { stroke-dasharray: 10 10; }
+      .card { fill: #ffffff; stroke: #d8dddf; stroke-width: 2.5; }
+      .shadow { filter: drop-shadow(0 6px 10px rgba(35, 45, 60, 0.13)); }
+      .takeaway { font-family: Arial, Helvetica, sans-serif; font-size: 24px; fill: #1f2f46; }
+      .white-title { font-family: Arial, Helvetica, sans-serif; font-size: 28px; font-weight: 700; fill: #ffffff; }
+      .white-small { font-family: Arial, Helvetica, sans-serif; font-size: 21px; fill: #ffffff; }
+    </style>
+    <marker id="arrowhead-soft" markerWidth="14" markerHeight="14" refX="12" refY="7" orient="auto">
+      <path d="M0,0 L14,7 L0,14 Z" fill="#7a8da0" />
+    </marker>
+  </defs>
+  <rect class="bg" x="0" y="0" width="1600" height="900"/>
+
+<text class="title" x="80" y="82">Two kinds of intelligence age in opposite directions</text>
+<text class="subtitle" x="82" y="124">Fluid problem-solving declines with age; accumulated knowledge and expertise hold steady.</text>
+<g class="shadow" transform="translate(110,165)">
+  <rect class="card" x="0" y="0" width="1380" height="610" rx="30"/>
+  <path class="axis" d="M120 505 L1245 505 M120 505 L120 75"/>
+  <text class="label" x="685" y="570" text-anchor="middle">Age</text>
+  <text class="label" x="-286" y="50" transform="rotate(-90)">Ability level</text>
+  <g class="tiny" text-anchor="middle">
+    <text x="120" y="542">20</text><text x="308" y="542">30</text><text x="495" y="542">40</text><text x="682" y="542">50</text><text x="870" y="542">60</text><text x="1057" y="542">70</text><text x="1245" y="542">80</text>
+    <line class="grid" x1="120" y1="505" x2="120" y2="516"/><line class="grid" x1="308" y1="505" x2="308" y2="516"/><line class="grid" x1="495" y1="505" x2="495" y2="516"/><line class="grid" x1="682" y1="505" x2="682" y2="516"/><line class="grid" x1="870" y1="505" x2="870" y2="516"/><line class="grid" x1="1057" y1="505" x2="1057" y2="516"/><line class="grid" x1="1245" y1="505" x2="1245" y2="516"/>
+  </g>
+  <path d="M120 190 C190 135, 270 120, 338 150 C520 230, 745 305, 895 360 C1040 414, 1160 462, 1245 488" fill="none" stroke="#456c86" stroke-width="9" stroke-linecap="round"/>
+  <path d="M120 408 C310 325, 500 238, 700 188 C870 148, 1035 148, 1245 172" fill="none" stroke="#5e7f4d" stroke-width="9" stroke-linecap="round"/>
+  <text class="label" x="185" y="173" fill="#456c86">Fluid intelligence</text>
+  <text class="small" x="185" y="204">novel problems, speed, working memory</text>
+  <text class="label" x="750" y="156" fill="#5e7f4d">Crystallized intelligence</text>
+  <text class="small" x="750" y="187">knowledge, vocabulary, expertise</text>
+</g>
+<g transform="translate(120,805)"><rect x="0" y="0" width="1360" height="54" rx="27" fill="#f2f5f6" stroke="#cfd7db" stroke-width="2"/><text class="takeaway" x="680" y="36" text-anchor="middle">The trade-off of aging: speed and flexibility fall; knowledge and expertise accumulate.</text></g>
+
+</svg>

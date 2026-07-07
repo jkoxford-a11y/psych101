@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" role="img" aria-labelledby="title desc">
+  <title id="title">Adolescent dual systems crossover</title>
+  <desc id="desc">A line chart shows reward and sensation-seeking rising quickly and peaking in the mid-teens, while impulse control rises more gradually into the mid-twenties. The gap before the crossing is highlighted.</desc>
+
+  <defs>
+    <style>
+      .bg { fill: #fbfbf8; }
+      .title { font-family: Arial, Helvetica, sans-serif; font-size: 48px; font-weight: 700; fill: #1f2f46; }
+      .subtitle { font-family: Arial, Helvetica, sans-serif; font-size: 27px; fill: #4d5a6b; }
+      .panel-title { font-family: Arial, Helvetica, sans-serif; font-size: 31px; font-weight: 700; fill: #1f2f46; }
+      .label { font-family: Arial, Helvetica, sans-serif; font-size: 25px; font-weight: 700; fill: #1f2f46; }
+      .body { font-family: Arial, Helvetica, sans-serif; font-size: 24px; fill: #1f2f46; }
+      .small { font-family: Arial, Helvetica, sans-serif; font-size: 21px; fill: #4d5a6b; }
+      .tiny { font-family: Arial, Helvetica, sans-serif; font-size: 18px; fill: #5e6978; }
+      .axis { stroke: #2f4058; stroke-width: 3; fill: none; }
+      .grid { stroke: #d8dddf; stroke-width: 2; fill: none; }
+      .dash { stroke-dasharray: 10 10; }
+      .card { fill: #ffffff; stroke: #d8dddf; stroke-width: 2.5; }
+      .shadow { filter: drop-shadow(0 6px 10px rgba(35, 45, 60, 0.13)); }
+      .takeaway { font-family: Arial, Helvetica, sans-serif; font-size: 24px; fill: #1f2f46; }
+      .white-title { font-family: Arial, Helvetica, sans-serif; font-size: 28px; font-weight: 700; fill: #ffffff; }
+      .white-small { font-family: Arial, Helvetica, sans-serif; font-size: 21px; fill: #ffffff; }
+    </style>
+    <marker id="arrowhead-soft" markerWidth="14" markerHeight="14" refX="12" refY="7" orient="auto">
+      <path d="M0,0 L14,7 L0,14 Z" fill="#7a8da0" />
+    </marker>
+  </defs>
+  <rect class="bg" x="0" y="0" width="1600" height="900"/>
+
+<text class="title" x="80" y="82">In the teen brain, the gas pedal matures before the brakes</text>
+<text class="subtitle" x="82" y="124">Reward-seeking peaks in the mid-teens; impulse control keeps maturing into the mid-20s.</text>
+<g class="shadow" transform="translate(110,165)">
+  <rect class="card" x="0" y="0" width="1380" height="610" rx="30"/>
+  <rect x="330" y="80" width="420" height="425" rx="18" fill="#f5efe2" opacity="0.65"/>
+  <rect x="350" y="104" width="272" height="72" rx="14" fill="#ffffff" opacity="0.86"/>
+  <text class="small" x="370" y="132">widest gap:</text><text class="small" x="370" y="160">high drive, brakes still developing</text>
+  <path class="axis" d="M120 505 L1245 505 M120 505 L120 75"/>
+  <text class="label" x="685" y="570" text-anchor="middle">Age</text>
+  <text class="label" x="-306" y="50" transform="rotate(-90)">Relative strength</text>
+  <g class="tiny" text-anchor="middle">
+    <text x="120" y="542">10</text><text x="345" y="542">13</text><text x="570" y="542">16</text><text x="795" y="542">19</text><text x="1020" y="542">22</text><text x="1245" y="542">25</text>
+    <line class="grid" x1="120" y1="505" x2="120" y2="516"/><line class="grid" x1="345" y1="505" x2="345" y2="516"/><line class="grid" x1="570" y1="505" x2="570" y2="516"/><line class="grid" x1="795" y1="505" x2="795" y2="516"/><line class="grid" x1="1020" y1="505" x2="1020" y2="516"/><line class="grid" x1="1245" y1="505" x2="1245" y2="516"/>
+  </g>
+  <path d="M120 415 C260 250, 415 120, 560 118 C685 132, 850 205, 1245 300" fill="none" stroke="#c65f4b" stroke-width="9" stroke-linecap="round"/>
+  <path d="M120 455 C320 420, 500 360, 690 292 C875 225, 1060 175, 1245 140" fill="none" stroke="#456c86" stroke-width="9" stroke-linecap="round"/>
+  <rect x="805" y="94" width="395" height="78" rx="16" fill="#ffffff" opacity="0.88"/>
+  <text class="label" x="825" y="124" fill="#c65f4b">Reward / sensation-seeking</text>
+  <text class="small" x="825" y="153">ventral striatum, dopamine</text>
+  <rect x="895" y="238" width="290" height="76" rx="16" fill="#ffffff" opacity="0.88"/>
+  <text class="label" x="915" y="268" fill="#456c86">Impulse control</text>
+  <text class="small" x="915" y="297">prefrontal cortex</text>
+</g>
+<g transform="translate(120,805)"><rect x="0" y="0" width="1360" height="54" rx="27" fill="#f2f5f6" stroke="#cfd7db" stroke-width="2"/><text class="takeaway" x="680" y="36" text-anchor="middle">Not a broken brain - a timing mismatch between two systems on different clocks.</text></g>
+
+</svg>

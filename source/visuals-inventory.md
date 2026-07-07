@@ -196,17 +196,22 @@ All 10 wirable figures are wired. Only optional/held items remain.
 
 ## Chapter 10 — Lifespan Development
 
-Genuinely zero figures. This is the main new-build chapter.
+Main new-build chapter. Three figures now built-but-unwired on disk (10.1–10.3); a full spec/prompt file for eight more was written Session 78: **`docs/images/ch10/ch10_figure_specs.md`** (7 hand-coded SVGs + 1 GPT raster). See that file for house style, per-figure layout, captions/alt text, and accuracy constraints. Note: Ch10's own SVG lineage is Arial/`#1f2f46`/`#fbfbf8` (Piaget, Vygotsky), **not** the Ch8/Ch9 Aptos style.
 
-| # | Description | Status | Notes |
-|---|-------------|--------|-------|
-| 10.1 | Human extended development / life-history construction | 🔲 | Recommended new core figure: secondary altriciality, costly brain, cooperative breeding, plasticity. Matches v0.4 spine additions and chapter closing frame. |
-| 10.2 | Piaget's four stages | 🔲 | Core — age ranges, key achievement, sample task; include caveat that development is not a rigid staircase. |
-| 10.3 | Vygotsky ZPD / scaffolding | 🔲 | Core — can do alone / can do with support / not yet reachable. Good candidate for future AI-after-effort lab connection. |
-| 10.4 | Attachment styles / internal working models | 🔲 | Core — secure, avoidant, anxious/resistant, disorganized; avoid deterministic outcome language. |
-| 10.5 | Fluid vs. crystallized intelligence across adulthood | 🔲 | Recommended optional/possible 5th figure because it maps to an explicit learning objective. |
-| — | Full Erikson lifespan arc | 🔲 | Lower priority; chapter trims/hedges Erikson and should not over-visualize a weakly supported full-stage theory. |
-| — | PFC maturation / adolescent dual systems | 🔲 | Optional; build only if Section 4 needs visual support after core figures. |
+| # | Description | Method | Status | Notes |
+|---|-------------|--------|--------|-------|
+| 10.1 | Human extended development / life-history construction | GPT | 🟨 built, unwired | `ch10_human_extended_development_life_history.png` on disk; born-unfinished → flexible-mind infographic. |
+| 10.1b | Fast–slow life-history continuum (companion to 10.1) | GPT | 🔲 specced | Mouse↔elephant↔human trade-off axis; the "fast & slow" figure. Full image prompt in specs file. |
+| 10.2 | Piaget's four stages | SVG | 🟨 built, unwired | `ch10_piaget_stages_sequence_with_caveat.svg` on disk. |
+| 10.3 | Vygotsky ZPD / scaffolding | SVG | 🟨 built, unwired | `ch10_vygotsky_zpd_scaffolding.svg` on disk. Good candidate for future AI-after-effort lab connection. |
+| 10.4 | Attachment styles — reunion matrix | SVG | 🔲 specced | Secure/ambivalent/avoidant × reunion behavior × caregiving; disorganized set apart; NO deterministic outcomes. |
+| 10.5 | Fluid vs. crystallized intelligence across adulthood | SVG | 🔲 specced | Two diverging curves; maps to LO8. Replaces borrowed slide 74. |
+| 10.6 | Synaptogenesis + pruning (regional density curves) | SVG | 🔲 specced | Overproduce→prune, PFC last. Replaces borrowed slide 18. |
+| 10.7 | Adolescent dual systems crossover | SVG | 🔲 specced | Reward (ventral striatum, **not amygdala**) vs impulse control. Replaces borrowed slide 67. |
+| 10.8 | Orchid/dandelion differential susceptibility | SVG | 🔲 specced | Crossing lines — fixes the "orchid = fragile" misread. |
+| 10.9 | Secondary altriciality (brain % complete at birth) | SVG | 🔲 specced | Human ≈28% vs chimp ≈40% adult volume; immaturity buys plasticity. |
+| 10.10 | Cross-sectional vs longitudinal designs | SVG | 🔲 specced | Two-panel schematic + cohort/attrition confounds. |
+| — | Full Erikson lifespan arc | — | 🔲 | Lower priority; chapter trims/hedges Erikson and should not over-visualize a weakly supported full-stage theory. |
 
 ---
 
