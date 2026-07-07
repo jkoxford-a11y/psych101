@@ -27,7 +27,7 @@
   </defs>
   <rect class="bg" x="0" y="0" width="1600" height="900"/>
 
-<text class="title" x="80" y="82">Born unfinished - on purpose</text>
+<text class="title" x="80" y="82">Born unfinished — on purpose</text>
 <text class="subtitle" x="82" y="124">Humans arrive with a less complete brain, leaving more to be built by experience after birth.</text>
 <g class="shadow" transform="translate(120,170)">
   <rect class="card" x="0" y="0" width="1360" height="585" rx="30"/>
@@ -52,9 +52,9 @@
     <text class="small" x="260" y="336" text-anchor="middle">of adult brain volume at birth</text>
     <text class="body" x="260" y="388" text-anchor="middle">more built before birth</text>
   </g>
-  <path d="M1005 520 C790 566, 565 566, 355 520" fill="none" stroke="#7a8da0" stroke-width="5" marker-end="url(#arrowhead-soft)"/>
-  <rect x="388" y="486" width="584" height="48" rx="24" fill="#f2f5f6" stroke="#cfd7db" stroke-width="2"/>
-  <text class="label" x="680" y="518" text-anchor="middle">Born less finished = a longer, more plastic window</text>
+  <rect x="388" y="505" width="584" height="44" rx="22" fill="#f2f5f6" stroke="#cfd7db" stroke-width="2"/>
+  <text class="label" x="680" y="535" text-anchor="middle">Born less finished = a longer, more plastic window</text>
+  <path d="M1005 562 L355 562" fill="none" stroke="#7a8da0" stroke-width="5" marker-end="url(#arrowhead-soft)"/>
 </g>
 <g transform="translate(120,805)"><rect x="0" y="0" width="1360" height="54" rx="27" fill="#f2f5f6" stroke="#cfd7db" stroke-width="2"/><text class="takeaway" x="680" y="36" text-anchor="middle">Maximum immaturity at birth buys maximum postnatal plasticity.</text></g>
 
