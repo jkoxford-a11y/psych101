@@ -105,10 +105,10 @@
   <!-- Bottom contrast strip -->
   <g transform="translate(120,805)">
     <rect x="0" y="0" width="1360" height="54" rx="27" fill="#f2f5f6" stroke="#cfd7db" stroke-width="2"/>
-    <text class="caption" x="55" y="36">Too little: no growth</text>
-    <path class="dash" d="M315 29 L460 29" stroke="#9aa8b4" stroke-width="4"/>
-    <text class="caption" x="510" y="36">Good scaffold: next step becomes reachable</text>
-    <path class="dash" d="M955 29 L1100 29" stroke="#9aa8b4" stroke-width="4"/>
-    <text class="caption" x="1145" y="36">Too much: performance without learning</text>
+    <text class="caption" x="70" y="36">Too little: no growth</text>
+    <path class="dash" d="M330 29 L455 29" stroke="#9aa8b4" stroke-width="4"/>
+    <text class="caption" x="500" y="36">Good scaffold: reachable next step</text>
+    <path class="dash" d="M895 29 L1020 29" stroke="#9aa8b4" stroke-width="4"/>
+    <text class="caption" x="1065" y="36">Too much: performance only</text>
   </g>
 </svg>
