@@ -156,18 +156,18 @@ All 9 figures are wired.
 
 ## Chapter 8 — Memory
 
-All six Memory SVGs exist, were rendered/audited, and three rendering defects were fixed in Session 77. None are wired into `ch08-memory.md` yet. Use `docs/images/ch08/figure_metadata.md` for captions/alt text and `docs/images/ch08/ch08_figure_specs.md` for placement anchors.
+All six completed SVGs wired into `ch08-memory.md` in Session 78.
 
 | # | Description | Status | Filename / note |
 |---|-------------|--------|-----------------|
-| 8.1 | Atkinson-Shiffrin three-box model | 🧩 | `ch08_atkinson_shiffrin_three_box_model.svg` — built/audited; wire into Section 1. |
-| 8.2 | Baddeley's working memory model | 🧩 | `ch08_baddeley_working_memory_model.svg` — built/audited; no episodic buffer, matching chapter text. |
-| 8.3 | Levels of processing | 🧩 | `ch08_levels_of_processing_shallow_to_deep.svg` — built/audited; two-level gradient, not three-tier taxonomy. |
-| 8.4 | Serial position curve | 🧩 | `ch08_serial_position_curve.svg` — built/audited. |
-| 8.5 | Explicit vs. implicit memory taxonomy tree | 🧩 | `ch08_memory_taxonomy_tree.svg` — built/audited. |
-| 8.6 | Reconstructive memory process | 🧩 | `ch08_reconstructive_memory_process.svg` — built/audited; optional/lower priority but already built. |
+| 8.1 | Atkinson-Shiffrin three-box model | ✅ wired | `ch08_atkinson_shiffrin_three_box_model.svg` — wired into Section 1. |
+| 8.2 | Baddeley's working memory model | ✅ wired | `ch08_baddeley_working_memory_model.svg` — wired into Section 1; no episodic buffer, matching chapter text. |
+| 8.3 | Levels of processing | ✅ wired | `ch08_levels_of_processing_shallow_to_deep.svg` — wired into Section 1; two-level gradient, not three-tier taxonomy. |
+| 8.4 | Explicit vs. implicit memory taxonomy tree | ✅ wired | `ch08_memory_taxonomy_tree.svg` — wired before the memory systems table. |
+| 8.5 | Serial position curve | ✅ wired | `ch08_serial_position_curve.svg` — wired into Section 3. |
+| 8.6 | Reconstructive memory process | ✅ wired | `ch08_reconstructive_memory_process.svg` — wired into Section 4. |
 
-**Next action:** wire all six into `ch08-memory.md`, bump the chapter version header, update this table to ✅ wired, and render-check the page.
+**Next action:** repair Ch11 Figs 11.6/11.7 as the next Tier 1 task.
 
 ---
 
@@ -270,9 +270,8 @@ All 9 current figures are wired. Only the biopsychosocial triangle remains unbui
 ## Current completion plan
 
 ### Tier 1 — cheap execution / no fresh design debate
-1. **Wire Ch8's six completed SVGs** into `ch08-memory.md`; use `figure_metadata.md` for captions/alt text and `ch08_figure_specs.md` for placement anchors.
-2. **Repair Ch11 Figs 11.6 and 11.7** from the existing embedded specs/alt text; treat as recovery of broken references.
-3. **Verify Ch5 only during line review**; current evidence says all 8 figures are already wired, not unplaced.
+1. **Repair Ch11 Figs 11.6 and 11.7** from the existing embedded specs/alt text; treat as recovery of broken references.
+2. **Verify Ch5 only during line review**; current evidence says all 8 figures are already wired, not unplaced.
 
 ### Tier 2 — main new-build work
 1. **Build Ch10's core figure set:** extended development/life-history construction, Piaget stages, Vygotsky ZPD, attachment styles. Consider fluid/crystallized intelligence as a fifth if the chapter needs it.
