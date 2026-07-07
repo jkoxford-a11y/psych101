@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" role="img" aria-labelledby="title desc">
+  <title id="title">Serial Position Curve</title>
+  <desc id="desc">A line chart of percent recalled by serial position shows high recall for early and late list items and poorer recall in the middle.</desc>
+  <defs>
+    <filter id="softShadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="8" stdDeviation="9" flood-color="#102a43" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+  <rect width="1600" height="900" fill="#ffffff"/>
+  <rect x="52" y="54" width="1496" height="792" rx="24" fill="#f8fbfd" stroke="#dde7ee" stroke-width="2"/>
+  <text x="96" y="116" font-family="Aptos, Arial, sans-serif" font-size="42" font-weight="700" fill="#102a43">Serial Position Curve</text>
+  <text x="96" y="152" font-family="Aptos, Arial, sans-serif" font-size="22" fill="#52606d">Recall is best at the beginning and end of a list, and weakest in the middle.</text>
+
+  <g filter="url(#softShadow)" font-family="Aptos, Arial, sans-serif">
+    <rect x="164" y="205" width="1272" height="505" rx="18" fill="#ffffff" stroke="#c9d6df" stroke-width="2.5"/>
+    <rect x="265" y="255" width="169" height="350" fill="#eaf4f8" opacity="0.85"/>
+    <rect x="1115" y="255" width="169" height="350" fill="#f7d5c2" opacity="0.75"/>
+
+    <g stroke="#d9e3ea" stroke-width="2">
+      <line x1="265" y1="535" x2="1284" y2="535"/>
+      <line x1="265" y1="465" x2="1284" y2="465"/>
+      <line x1="265" y1="395" x2="1284" y2="395"/>
+      <line x1="265" y1="325" x2="1284" y2="325"/>
+    </g>
+    <line x1="265" y1="605" x2="1284" y2="605" stroke="#52606d" stroke-width="4"/>
+    <line x1="265" y1="605" x2="265" y2="255" stroke="#52606d" stroke-width="4"/>
+
+    <g stroke="#52606d" stroke-width="3">
+      <line x1="265" y1="605" x2="265" y2="616"/>
+      <line x1="406" y1="605" x2="406" y2="616"/>
+      <line x1="582" y1="605" x2="582" y2="616"/>
+      <line x1="758" y1="605" x2="758" y2="616"/>
+      <line x1="933" y1="605" x2="933" y2="616"/>
+      <line x1="1109" y1="605" x2="1109" y2="616"/>
+      <line x1="1284" y1="605" x2="1284" y2="616"/>
+    </g>
+    <g font-size="21" fill="#52606d">
+      <text x="265" y="646" text-anchor="middle">1</text>
+      <text x="406" y="646" text-anchor="middle">5</text>
+      <text x="582" y="646" text-anchor="middle">10</text>
+      <text x="758" y="646" text-anchor="middle">15</text>
+      <text x="933" y="646" text-anchor="middle">20</text>
+      <text x="1109" y="646" text-anchor="middle">25</text>
+      <text x="1284" y="646" text-anchor="middle">30</text>
+      <text x="775" y="689" text-anchor="middle" font-size="24" font-weight="700">Serial position in list</text>
+      <text x="219" y="612" text-anchor="end">0%</text>
+      <text x="219" y="469" text-anchor="end">40%</text>
+      <text x="219" y="329" text-anchor="end">80%</text>
+    </g>
+    <text x="150" y="440" text-anchor="middle" font-size="24" font-weight="700" fill="#52606d" transform="rotate(-90 150 440)">Percent recalled</text>
+
+    <path d="M265 300 C315 292, 366 315, 406 351 C500 433, 593 474, 687 478 C786 481, 880 468, 969 450 C1058 432, 1131 383, 1188 322 C1227 281, 1260 274, 1284 288" fill="none" stroke="#466b80" stroke-width="8" stroke-linecap="round"/>
+    <circle cx="265" cy="300" r="7" fill="#466b80"/>
+    <circle cx="687" cy="478" r="7" fill="#466b80"/>
+    <circle cx="1284" cy="288" r="7" fill="#466b80"/>
+
+    <text x="350" y="281" text-anchor="middle" font-size="28" font-weight="700" fill="#102a43">Primacy effect</text>
+    <text x="1200" y="259" text-anchor="middle" font-size="28" font-weight="700" fill="#8f3d2e">Recency effect</text>
+    <text x="748" y="524" text-anchor="middle" font-size="23" font-weight="700" fill="#52606d">poorest recall</text>
+  </g>
+
+  <rect x="208" y="764" width="1184" height="62" rx="31" fill="#eaf4f8" stroke="#c9d6df" stroke-width="2"/>
+  <text x="800" y="803" text-anchor="middle" font-family="Aptos, Arial, sans-serif" font-size="25" font-weight="700" fill="#102a43">Two effects, two systems: rehearsal into long-term memory vs. still active in short-term memory.</text>
+</svg>
