@@ -81,7 +81,40 @@
      Body word count now ~5,300 (est.) — was inside target at v0.1, now modestly over,
      same flag-not-trim precedent as Ch9/Ch10/Ch12. Not yet converted to HTML; still
      awaiting Jon's line-by-line review — this was a scoped spine-alignment pass, not a
-     fresh read-through. -->
+     fresh read-through.
+
+     v0.2 refinements (same session) — Jon ran the v0.2 draft past an external reviewer
+     (GPT) and relayed the feedback for discussion before any changes were made. Agreed
+     and applied: (1) added a caveat sentence after the Where This Fits spine paragraph,
+     and softened the Chapter Summary's closing line to match — the original "nothing
+     here is a broken system running on different rules" phrasing overclaimed relative to
+     the spine's own more hedged wording ("interact in ways that become..."), and read
+     poorly against this chapter's own ASD/schizophrenia content; (2) reframed the PTSD
+     reconsolidation material — the reviewer caught, and a re-read confirmed, that framing
+     reconsolidation as "a different mechanism from simple extinction" created a real
+     internal inconsistency with Section 4's pre-existing exposure-therapy paragraph,
+     which explains general exposure via extinction (per Chapter 7). Now presents
+     extinction and reconsolidation as two candidate mechanisms rather than reconsolidation
+     as a settled alternative; (3) reworded the DSM-history sentence ("Homosexuality was
+     classified as a disorder until 1973...") — the original "not merely shifting cultural
+     winds" undersold the real activism/political dimension of that specific change;
+     (4) fixed a prevalence/point-in-time conflation in the Misconception Opener — 12-month
+     SAMHSA prevalence was being equated with "meeting criteria right now," which
+     overstates what an annual figure means for an episodic condition; (5) tightened the
+     sickness-behavior paragraph in place (cut ~40% of its length, dropped the IL-1β/TNF-α/
+     IL-6 cytokine list from body prose) rather than converting it to a new box type —
+     checked docs/css/style.css first; this book's callout system (Misconception Opener,
+     Classic Study Walkthrough, Do Not Confuse, Stop & Retrieve, Think About It, AI
+     Connection) has no generic "sidebar" type, so a new box would have been a new pattern,
+     not a reuse of an existing one. Net word-count change from this refinement pass was
+     roughly neutral (+49 words total, per `wc -w`) — the trims and additions offset.
+     Deliberately NOT done this pass, by explicit choice: the ASD paragraph's density
+     (cortical lamination, brain overgrowth, synaptic pruning, three gene families, fetal
+     sleep, all in one block — also flagged by the reviewer) was left for the later
+     chapter-wide compression pass already queued alongside Ch9/Ch10/Ch12; no figure work
+     was done (Fig 13.1, already built, is still not wired into the chapter body — flagged,
+     not fixed); the addiction/SUD scope question remains open, unchanged from the v0.2
+     pass above. -->
 
 ---
 
@@ -89,7 +122,7 @@
 
 The word *crazy* does a lot of work in everyday language — and almost none of it maps onto how psychologists define or study psychological disorders. The folk intuition is that mental illness is obvious: you would recognize it if you saw it, it looks extreme, and it is categorically different from whatever you feel on a bad day. The research suggests otherwise on every count.
 
-Approximately one in five adults in the United States experiences a diagnosable psychological disorder in any given year (SAMHSA, 2022). That means the person sitting next to you in lecture has roughly a 20% chance of meeting diagnostic criteria for something right now — and neither of you might know it. Most psychological disorders exist on a continuum with normal experience. The difference between clinical anxiety and ordinary worry is not the presence of a qualitatively different brain state. It is intensity, duration, and how much it disrupts life.
+Approximately one in five adults in the United States meets criteria for a diagnosable psychological disorder at some point during a given year (SAMHSA, 2022). That is a 12-month figure, not a snapshot of this exact moment — many disorders are episodic, so it does not mean one in five people are symptomatic right now. But it does mean the person sitting next to you in lecture has a real, non-trivial chance of having already met criteria for something this year, or of developing something before it ends — and neither of you might know it. Most psychological disorders exist on a continuum with normal experience. The difference between clinical anxiety and ordinary worry is not the presence of a qualitatively different brain state. It is intensity, duration, and how much it disrupts life.
 
 When psychologist David Rosenhan (1973) sent healthy volunteers to psychiatric hospitals complaining of hearing a voice that said "thud," all were admitted and diagnosed with schizophrenia. Once inside, they behaved completely normally. Staff never detected them; only other patients grew suspicious. The study became a landmark in the history of abnormal psychology — and, as we will see below, one whose own data have been seriously questioned. What it illustrates nonetheless remains real: diagnosis is not a simple process of detecting an obvious thing that is clearly present or absent. Understanding what psychological disorders actually are — and how we define, diagnose, and treat them — requires leaving the folk intuition behind.
 
@@ -98,6 +131,8 @@ When psychologist David Rosenhan (1973) sent healthy volunteers to psychiatric h
 ## Where This Fits
 
 **When does a protective model become costly?** Every mechanism this book has covered so far — prediction, learning, memory, stress, social calibration — exists because it usually works. Disorders are not a separate category of human experience, a different kind of mind running on different rules. They are what happens when those same ordinary processes become self-sustaining, rigid, and costly: a threat model that keeps firing after the threat has passed, a mood system stuck defending against a danger that never fully resolves, a self-model too rigid to update. The model is usually still working — it is miscalibrated, overgeneralized, or stuck to an ecology that no longer applies. Therapy, in turn, works largely through the same mechanisms that build ordinary learning and memory in the first place — prediction error, reconsolidation, extinction — now aimed at revising a model that got stuck.
+
+This does not mean every disorder is simply normal experience turned up louder. Some involve developmental differences, psychotic-spectrum states, or biological disruptions substantial enough to require clinical care in their own right, not just a dial turned too high. The point is narrower and still worth making: even these draw on recognizable psychological and biological mechanisms — this chapter is not describing a different kind of mind, just a wider range of what these ordinary mechanisms can produce.
 
 This chapter draws on almost every chapter in this book. The biological bases of behavior (Chapter 3) underlie every disorder here — neural circuits, neurotransmitters, and genetic vulnerabilities shape risk. Learning principles (Chapter 7) explain how phobias develop and why exposure therapy works. Memory and cognition (Chapters 8–9) illuminate PTSD, depressive schemas, and the heuristic failures that affect clinical diagnosis. The personality system (Chapter 11) is continuous with personality disorders, not separate from them. And the therapeutic alliance — the relationship between therapist and client — is one of the most robustly replicated predictors of treatment outcome in all of psychology (Flückiger et al., 2018).
 
@@ -136,7 +171,7 @@ Clinicians apply all three and exercise judgment about degree. Psychological dis
 
 The **Diagnostic and Statistical Manual of Mental Disorders**, Fifth Edition with text revision (DSM-5-TR; American Psychiatric Association, 2022), is the primary diagnostic classification system used in the United States. It provides standardized criteria for each disorder: a list of symptoms, duration requirements, and exclusion criteria. A common misconception is that the DSM identifies the *cause* of disorders. It does not. It describes clusters of symptoms that tend to co-occur. The DSM is categorical — you either meet criteria or you don't — but the underlying conditions it describes are often dimensional. Many people meet criteria for more than one disorder, which makes sense if disorders share underlying mechanisms.
 
-The DSM is not static. Homosexuality was classified as a disorder until 1973. PTSD did not appear until 1980. These changes reflect evolving research, not merely shifting cultural winds.
+The DSM is not static. Homosexuality was classified as a disorder until 1973. PTSD did not appear until 1980. Neither change happened in a vacuum: they reflect a mix of new research, clinical debate within the field, and — especially in the 1973 case — sustained social and political pressure, including organized activism that directly confronted the profession's own leadership. The DSM is a living document, revised through evidence, argument, and the social context in which psychiatry operates, not a fixed inventory of natural kinds.
 
 ### The Diathesis-Stress Model
 
@@ -182,7 +217,9 @@ A useful distinction: **fear** is a response to a threat that exists *right now*
 
 Why do traumatic memories intrude as though the event is happening now, rather than being remembered as something past? Ordinary episodic memories get contextualized — tagged with when and where — a process that depends on the hippocampus (Chapter 8). Extreme threat arousal (high cortisol, amygdala dominance) disrupts that contextualizing function while the trauma is happening. Brewin, Dalgleish, and Joseph's (1996) dual representation theory frames the result as two memory systems out of sync: a vivid, poorly contextualized sensory trace — why flashbacks feel present-tense rather than remembered — alongside a comparatively thin verbal narrative of what happened. The threat response also widens the net of what counts as dangerous, a generalization that is adaptive immediately after a real threat but maladaptive once it persists into a safer, changed environment.
 
-This creates a genuine bind: revising the memory — recontextualizing it as past and safe to think about — requires prefrontal function that the threat response itself suppresses. The moment the memory is most active is the moment the person is least equipped to process it. Nader, Schafe, and LeDoux (2000) showed that a consolidated memory, once retrieved, briefly becomes labile again before restabilizing — a window in which it can be updated rather than simply re-stored unchanged. EMDR and exposure therapy are thought to work partly by opening that window, pairing the reactivated memory with a signal of safety before it restabilizes (Chen et al., 2014) — a different mechanism from simple extinction (Chapter 7), which builds a competing association alongside the original trace rather than revising the trace itself.
+This creates a genuine bind: revising the memory — recontextualizing it as past and safe to think about — requires prefrontal function that the threat response itself suppresses. The moment the memory is most active is the moment the person is least equipped to process it.
+
+Trauma treatments are thought to work by getting the person to revisit the memory under conditions of safety, in a state where the prefrontal system can actually do its job — but exactly which mechanism does the updating is still an open question, not a settled one. Standard exposure therapy (Chapter 7) is most often explained through extinction: repeated safe exposure builds a new, competing association that inhibits the original fear response without erasing it. Nader, Schafe, and LeDoux (2000) demonstrated a second, distinct possibility — a consolidated memory, once retrieved, briefly becomes labile again before restabilizing, opening a window in which the original trace itself could be updated rather than just re-stored unchanged. This reconsolidation window is one proposed account of how treatments like EMDR work (Chen et al., 2014), but it is a candidate mechanism, not an established replacement for extinction — the two may operate together, or apply more to some treatments than others. Either way, the clinical target is the same: get the memory active enough to revise, paired with a signal of safety, while the threat response isn't in full control.
 
 ### Mood Disorders
 
@@ -194,7 +231,7 @@ The older "chemical imbalance" explanation — low serotonin causes depression �
 
 The Sapolsky/dopamine framing from Chapter 7 extends here: anhedonia in depression may reflect disrupted reward prediction error signaling. When dopamine anticipation signals fail — when nothing seems worth pursuing in advance — the motivational pull to initiate behavior collapses. This connects the phenomenology of depression (nothing seems worth doing) to disrupted dopaminergic anticipation circuitry in a way a serotonin story alone cannot.
 
-A third mechanism reframes anhedonia and withdrawal themselves rather than just explaining a symptom. The behavioral profile of depression — social withdrawal, fatigue, reduced appetite, slowed cognition, loss of pleasure — is also the behavioral profile of an animal fighting an infection. Hart (1988) proposed that this "sickness behavior" is not a breakdown but an evolved, centrally organized program: rest conserves energy for immune defense, withdrawal limits pathogen spread, reduced appetite redirects metabolic resources. The inflammatory cytokines that produce sickness behavior during infection (IL-1β, TNF-α, IL-6) also produce depression-like states in humans when administered directly, and chronic low-grade inflammation predicts later depression onset (Dantzer & Kelley, 2007). This does not mean all depression is inflammatory in origin — it is one contributing mechanism, most clearly implicated in a subset of cases — but it reframes depression's characteristic profile as the brain activating an ancient defensive shutdown program, appropriate for infection or acute social defeat, maladaptive when triggered chronically by psychosocial stress that never resolves.
+A third mechanism reframes anhedonia and withdrawal themselves. The behavioral profile of depression — withdrawal, fatigue, reduced appetite, loss of pleasure — is also the behavioral profile of an animal fighting an infection. Hart (1988) proposed that this "sickness behavior" is an evolved, centrally organized program that conserves energy for immune defense, not a breakdown. The same inflammatory cytokines that produce it during infection also produce depression-like states in humans when administered directly, and chronic low-grade inflammation predicts later depression onset (Dantzer & Kelley, 2007). This is not the whole story — it is one contributing mechanism, clearest in a subset of cases — but it reframes depression's profile as an ancient defensive program firing in response to chronic psychosocial stress rather than infection.
 
 **Persistent Depressive Disorder (PDD)**, formerly dysthymia, involves chronically depressed mood lasting at least two years that does not meet full MDD criteria. People with PDD often describe the low mood as simply *how they are* — they have no memory of feeling otherwise.
 
@@ -336,7 +373,7 @@ Personality disorders represent inflexible trait patterns; ASPD and BPD are most
 
 Psychological treatments include psychodynamic therapy (insight and relational patterns), client-centered therapy (unconditional positive regard, empathy, congruence), and CBT — the most empirically supported approach, with specific evidence for anxiety, depression, OCD, and PTSD; DBT extends CBT for BPD. Biological treatments include SSRIs and other antidepressants (effective, mechanism partly unknown), antipsychotics (positive symptoms of schizophrenia), lithium (bipolar disorder), and ECT — an effective, often misunderstood treatment for severe treatment-resistant MDD. The therapeutic alliance is the most robust predictor of outcome across all forms of psychotherapy.
 
-Across every disorder in this chapter, the same underlying pattern holds: nothing here is a broken system running on different rules. Each is an ordinarily adaptive process — threat detection, mood regulation, memory consolidation, social calibration — that has become rigid, overgeneralized, or stuck to conditions that no longer apply, and treatment works largely by helping that same system revise, rather than replacing it with something else.
+A pattern recurs across most of the disorders in this chapter: an ordinarily adaptive process — threat detection, mood regulation, memory consolidation, social calibration — becomes rigid, overgeneralized, or stuck to conditions that no longer apply, and treatment works largely by helping that same system revise rather than replacing it with something else. This does not describe every condition in this chapter equally well — psychotic-spectrum and neurodevelopmental disorders involve more than a dial turned up on a normal process — but even there, the underlying mechanisms are recognizably psychological and biological, not evidence of a categorically different kind of mind.
 
 ---
 
