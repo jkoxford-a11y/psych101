@@ -31,8 +31,8 @@
       .tiny{font:400 17px Arial, Helvetica, sans-serif; fill:#111;}
       .step{font:700 22px Arial, Helvetica, sans-serif; fill:#fff;}
       .note{font:400 18px Arial, Helvetica, sans-serif; fill:#111;}
-      .pathBlue{fill:none; stroke:#1d5d93; stroke-width:20; stroke-linecap:round; marker-end:url(#arrowBlue);}
-      .pathGreen{fill:none; stroke:#3c7f34; stroke-width:10; stroke-linecap:round; marker-end:url(#arrowGreen);}
+      .pathBlue{fill:none; stroke:#1d5d93; stroke-width:16; stroke-linecap:round; marker-end:url(#arrowBlue);}
+      .pathGreen{fill:none; stroke:#3c7f34; stroke-width:8; stroke-linecap:round; marker-end:url(#arrowGreen);}
       .thin{fill:none; stroke:#222; stroke-width:3;}
       .soft{fill:#fff; stroke:#bfc7d1; stroke-width:3;}
     </style>
@@ -68,9 +68,8 @@
 
   <!-- RHT pathway -->
   <path d="M485 300 C570 318 610 242 700 267 C780 289 842 322 930 309" class="pathBlue"/>
-  <text x="587" y="408" class="label">Retinohypothalamic</text>
-  <text x="622" y="439" class="label">tract (RHT)</text>
-  <text x="580" y="470" class="small">light signal to the brain</text>
+  <text x="500" y="395" text-anchor="middle" class="label">RHT pathway</text>
+  <text x="500" y="426" text-anchor="middle" class="small">light signal to the brain</text>
 
   <!-- Large brain -->
   <path d="M725 168 C645 182 588 253 604 338 C621 424 716 470 816 449 C871 490 952 475 994 418 C1078 401 1119 327 1094 253 C1071 185 1005 147 928 156 C881 121 794 126 725 168 Z" fill="url(#brainGrad)" stroke="#8d5f4b" stroke-width="4"/>
@@ -80,30 +79,30 @@
   <path d="M804 448 C785 512 797 565 848 607" fill="#e6b391" stroke="#8d5f4b" stroke-width="4"/>
   <circle cx="817" cy="334" r="17" fill="#8b55c7" stroke="#563184" stroke-width="4"/>
   <rect x="782" y="298" width="70" height="70" fill="none" stroke="#111" stroke-width="4"/>
-  <line x1="817" y1="334" x2="752" y2="530" class="thin"/>
-  <text x="752" y="563" text-anchor="middle" class="label">SCN</text>
-  <text x="752" y="595" text-anchor="middle" class="small">master circadian clock</text>
+  <line x1="817" y1="334" x2="705" y2="532" class="thin"/>
+  <text x="705" y="565" text-anchor="middle" class="label">SCN</text>
+  <text x="705" y="596" text-anchor="middle" class="small">master circadian clock</text>
 
   <!-- sympathetic pathway -->
-  <path d="M910 374 C1000 430 1120 450 1210 425 C1285 403 1320 365 1370 320" class="pathGreen"/>
+  <path d="M910 374 C1005 425 1120 444 1208 420 C1270 403 1315 370 1356 330" class="pathGreen"/>
   <g fill="#6eaa58" stroke="#2f6d2e" stroke-width="3">
     <circle cx="978" cy="410" r="10"/><circle cx="1038" cy="432" r="10"/><circle cx="1106" cy="438" r="10"/><circle cx="1170" cy="424" r="10"/><circle cx="1253" cy="386" r="10"/>
   </g>
-  <text x="1100" y="517" class="label">Sympathetic pathway</text>
+  <text x="1110" y="500" text-anchor="middle" class="label">Sympathetic pathway</text>
 
   <!-- Smaller brain and pineal -->
   <path d="M1227 180 C1171 193 1133 242 1145 302 C1157 361 1224 392 1293 377 C1333 407 1392 396 1421 355 C1481 344 1511 292 1494 242 C1478 194 1428 167 1371 174 C1336 149 1276 151 1227 180 Z" fill="url(#brainGrad)" stroke="#8d5f4b" stroke-width="4"/>
   <path d="M1287 377 C1274 424 1283 466 1320 494" fill="#e6b391" stroke="#8d5f4b" stroke-width="4"/>
   <circle cx="1349" cy="300" r="15" fill="#8b55c7" stroke="#563184" stroke-width="4"/>
-  <text x="1378" y="150" class="label">Pineal gland</text>
-  <line x1="1362" y1="162" x2="1350" y2="286" class="thin"/>
+  <text x="1428" y="142" text-anchor="middle" class="label">Pineal gland</text>
+  <line x1="1410" y1="154" x2="1350" y2="286" class="thin"/>
   <path d="M1349 318 C1345 356 1346 385 1354 421" fill="none" stroke="#111" stroke-width="4" marker-end="url(#arrowGreen)"/>
   <g fill="#8b55c7" opacity="0.86">
     <circle cx="1300" cy="438" r="8"/><circle cx="1328" cy="420" r="9"/><circle cx="1360" cy="443" r="11"/><circle cx="1395" cy="424" r="8"/>
     <circle cx="1320" cy="470" r="7"/><circle cx="1375" cy="475" r="7"/><circle cx="1347" cy="505" r="10"/><circle cx="1416" cy="462" r="7"/>
   </g>
-  <text x="1437" y="440" class="label">Melatonin</text>
-  <text x="1437" y="473" class="small">rises in darkness</text>
+  <text x="1408" y="398" class="label">Melatonin</text>
+  <text x="1408" y="431" class="small">rises in darkness</text>
 
   <!-- Step list -->
   <g transform="translate(105,645)">
