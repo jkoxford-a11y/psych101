@@ -1,6 +1,6 @@
 # Visuals Inventory — Psych101 Textbook
 
-*Last reconciled: 2026-07-09 — Ch10 core replacement figures wired into `source/chapters/ch10-lifespan-development.md`; Ch10 inventory and completion plan updated. Treat the chapter-specific README/metadata files as authoritative for captions, alt text, licensing, and attribution when they exist.*
+*Last reconciled: 2026-07-09 — Final selected Ch10 figure set wired into `source/chapters/ch10-lifespan-development.md` and regenerated into live HTML; Ch10 inventory updated with skipped candidates. Treat the chapter-specific README/metadata files as authoritative for captions, alt text, licensing, and attribution when they exist.*
 
 Status key: ✅ wired/use now · 🧩 built/audited but not wired · ⚠️ exists but needs review/decision · 🔲 still needed/not built · ❌ broken reference/file missing
 
@@ -196,25 +196,25 @@ All 10 wirable figures are wired. Only optional/held items remain.
 
 ## Chapter 10 — Lifespan Development
 
-Core replacement set wired into `source/chapters/ch10-lifespan-development.md` on 2026-07-09. Metadata files exist in `docs/images/ch10/` for the four generated PNG figures. Remaining Ch10 assets should be reviewed separately before any additional wiring.
+Final selected set wired into `source/chapters/ch10-lifespan-development.md` on 2026-07-09 and regenerated into `docs/chapters/10-lifespan-development.html`. Do not add further Ch10 figures unless Jon reopens the selection.
 
 | # | Description | Method | Status | Filename / note |
 |---|-------------|--------|--------|-----------------|
-| 10.1 | Cross-sectional vs. longitudinal designs | GPT PNG | ✅ wired | `ch10_cross_sectional_vs_longitudinal.png` — two-panel schematic + cohort/attrition confounds. |
-| 10.2 | Piaget's four stages | GPT PNG | ✅ wired | `ch10_piaget_stages_sequence_with_caveat.png` — includes caveat that stages are a useful map, not a rigid calendar. |
-| 10.3 | Vygotsky ZPD / scaffolding | GPT PNG | ✅ wired | `ch10_vygotsky_zpd_scaffolding.png` — good candidate for future AI-after-effort lab connection. |
-| 10.4 | Attachment styles — reunion behavior | GPT PNG | ✅ wired | `ch10_attachment_styles_reunion_behavior.png` — corrected ambivalent range; no clinical-support footnote. |
-| — | Human extended development / life-history construction | GPT PNG | ⚠️ exists, not wired | `ch10_human_extended_development_life_history.png`; decide whether to place before/near life-history discussion. |
-| — | Fast–slow life-history continuum | GPT PNG | ⚠️ exists, not wired | `ch10_fast_slow_life_history_continuum.png`; consider only if regenerated/confirmed with reproductive-frequency dimension. |
-| — | Synaptic pruning / developmental tuning | GPT PNG | ⚠️ exists, not wired | `ch10_synaptic_pruning_developmental_tuning.png`; inspect readability before use. |
-| — | Synaptogenesis + pruning regional curves | SVG | ⚠️ exists, not wired | `ch10_synaptogenesis_pruning_regional.svg`; earlier audit noted curve refinements may be needed. |
-| — | Adolescent dual systems crossover | SVG | ⚠️ exists, not wired | `ch10_adolescent_dual_systems_crossover.svg`; earlier audit flagged label/curve placement issues. |
-| — | Fluid vs. crystallized intelligence across adulthood | SVG | ⚠️ exists, not wired | `ch10_fluid_crystallized_adulthood.svg`; earlier audit flagged label collisions. |
-| — | Orchid/dandelion differential susceptibility | — | 🔲 | Optional rebuild only if Section 3 needs a figure beyond prose. |
-| — | Secondary altriciality brain-completeness comparison | — | 🔲 | Optional rebuild only if life-history/secondary-altriciality section needs another visual. |
-| — | Full Erikson lifespan arc | — | 🔲 | Lower priority; chapter trims/hedges Erikson and should not over-visualize a weakly supported full-stage theory. |
+| 10.1 | Human extended development / life-history construction | GPT PNG | ? wired | `ch10_human_extended_development_life_history.png` — secondary altriciality + cooperative breeding as the mechanism behind long, plastic, expensive childhood. |
+| 10.2 | Cross-sectional vs. longitudinal designs | GPT PNG | ? wired | `ch10_cross_sectional_vs_longitudinal.png` — two-panel schematic + cohort/attrition confounds. |
+| 10.3 | Synaptic pruning / developmental tuning | GPT PNG | ? wired | `ch10_synaptic_pruning_developmental_tuning.png` — simpler overbuild/stabilize/prune figure selected over regional curve detail. |
+| 10.4 | Piaget's four stages | GPT PNG | ? wired | `ch10_piaget_stages_sequence_with_caveat.png` — includes caveat that stages are a useful map, not a rigid calendar. |
+| 10.5 | Vygotsky ZPD / scaffolding | GPT PNG | ? wired | `ch10_vygotsky_zpd_scaffolding.png` — good candidate for future AI-after-effort lab connection. |
+| 10.6 | Attachment styles — reunion behavior | GPT PNG | ? wired | `ch10_attachment_styles_reunion_behavior.png` — corrected ambivalent range; no clinical-support footnote. |
+| 10.7 | Adolescent dual systems crossover | SVG | ? wired | `ch10_adolescent_dual_systems_crossover.svg` — reward/novelty activation precedes fully mature prefrontal control. |
+| 10.8 | Fluid vs. crystallized intelligence across adulthood | SVG | ? wired | `ch10_fluid_crystallized_adulthood.svg` — adult cognitive aging as tradeoff, not simple decline. |
+| — | Fast—slow life-history continuum | GPT PNG | held/skipped | `ch10_fast_slow_life_history_continuum.png` — redundant with the human extended-development figure. |
+| — | Synaptogenesis + pruning regional curves | SVG | held/skipped | `ch10_synaptogenesis_pruning_regional.svg` — too detailed relative to the simpler pruning/tuning figure. |
+| — | Orchid/dandelion differential susceptibility | PNG | held/skipped | `ch10_orchid_dandelion_susceptibility.png` — prose currently sufficient; optional future rebuild only. |
+| — | Secondary altriciality brain-completeness comparison | — | held/skipped | Redundant if the human extended-development figure covers the mechanism. |
+| — | Full Erikson lifespan arc | — | held/skipped | Skip because the chapter treats Erikson cautiously and should not over-visualize the full stage theory. |
 
-**Next action:** browser-check Ch10 rendered page for image loading, caption width, mobile scaling, and on-image text readability. Then decide whether to add one life-history figure and/or prune remaining unwired Ch10 candidates.
+**Next action:** browser-check Ch10 rendered page for image loading, caption width, mobile scaling, and on-image text readability. No additional Ch10 figures are approved for wiring in the current final set.
 
 ---
 
@@ -279,11 +279,11 @@ All 9 current figures are wired. Only the biopsychosocial triangle remains unbui
 
 ### Tier 1 — cheap execution / no fresh design debate
 1. **Verify Ch5 only during line review**; current evidence says all 8 figures are already wired, not unplaced.
-2. **Browser-check Ch10** now that four core figures are wired: image loading, caption width, mobile scaling, on-image text readability.
+2. **Browser-check Ch10** now that the final eight-figure set is wired: image loading, caption width, mobile scaling, on-image text readability.
 
 ### Tier 2 — main remaining new-build work
 1. **Rebuild Prologue P.5** Human-AI alignment diagram if it remains artifacted.
-2. **Decide whether Ch10 needs one life-history figure** beyond the four newly wired core figures; do not wire additional Ch10 images until rendered readability and conceptual fit are reviewed.
+2. **Ch10 figure selection is closed for this pass**; do not wire additional Ch10 images unless Jon explicitly reopens the set.
 
 ### Tier 3 — chapter-specific decisions
 - Ch2: choose final image set and clean duplicate numbering before HTML conversion.
