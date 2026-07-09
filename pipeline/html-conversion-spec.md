@@ -17,7 +17,7 @@ Before converting, confirm:
 **Always check `docs/index.html` for the authoritative chapter order, number, filename, and pillar group** — do not derive these from the CSV.
 
 Output file location: `docs/chapters/NN-slug.html`  
-(e.g., `docs/chapters/06-learning.html`)
+(e.g., `docs/chapters/07-learning.html`)
 
 ---
 
@@ -57,6 +57,8 @@ Every chapter HTML file has this outer structure:
 
 The sidebar is **identical across all chapters**. The only change per chapter is adding `class="active"` to the link for the current chapter.
 
+> **This block must always be re-verified against `docs/index.html` before use** — it is a snapshot as of Session 79 (2026-07-09) and chapter numbering has changed twice already (Session 61 renumbering; Session 60 Personality dissolution). `docs/index.html` is the single source of truth; this file is a convenience copy that can drift.
+
 ```html
   <aside class="sidebar">
     <div class="book-title">General Psychology</div>
@@ -71,34 +73,35 @@ The sidebar is **identical across all chapters**. The only change per chapter is
         <li class="pillar">Biological</li>
         <li><a href="03-neuroscience.html">3 — Neuroscience &amp; Biological Bases</a></li>
         <li><a href="04-sensation-perception.html">4 — Sensation &amp; Perception</a></li>
-        <li><a href="05-consciousness.html">5 — States of Consciousness</a></li>
+        <li><a href="05-consciousness.html">5 — Consciousness</a></li>
+        <li class="pillar-note">6 — Sleep <span class="toc-pending">(coming soon)</span></li>
 
         <li class="pillar">Cognitive</li>
-        <li><a href="06-learning.html">6 — Learning</a></li>
-        <li><a href="07-memory.html">7 — Memory</a></li>
-        <li><a href="08-thinking-language-intelligence.html">8 — Thinking, Language &amp; Intelligence</a></li>
+        <li><a href="07-learning.html">7 — Learning</a></li>
+        <li><a href="08-memory.html">8 — Memory</a></li>
+        <li><a href="09-thinking-language-intelligence.html">9 — Thinking, Language &amp; Intelligence</a></li>
 
         <li class="pillar">Developmental</li>
-        <li><a href="09-lifespan-development.html">9 — Lifespan Development</a></li>
+        <li><a href="10-lifespan-development.html">10 — Lifespan Development</a></li>
 
         <li class="pillar">Social &amp; Personality</li>
-        <li><a href="10-social-psychology.html">10 — Social Psychology</a></li>
-        <li><a href="11-personality.html">11 — Personality</a></li>
+        <li><a href="11-social-psychology.html">11 — Social Psychology</a></li>
 
         <li class="pillar">Mental &amp; Physical Health</li>
-        <li><a href="12-motivation-emotion.html">12 — Motivation &amp; Emotion</a></li>
-        <li><a href="13-stress-health.html">13 — Stress &amp; Health</a></li>
-        <li><a href="14-disorders-therapy.html">14 — Psychological Disorders &amp; Therapy</a></li>
+        <li><a href="12-emotion-stress-coping.html">12 — Emotion, Stress &amp; Coping</a></li>
+        <li><a href="13-disorders-therapy.html">13 — Psychological Disorders &amp; Therapy</a></li>
       </ul>
     </nav>
   </aside>
 ```
 
-**To mark the current chapter active**, add `class="active"` to its `<a>` tag only. Example for Chapter 6:
+**To mark the current chapter active**, add `class="active"` to its `<a>` tag only. Example for Chapter 7:
 
 ```html
-<li><a href="06-learning.html" class="active">6 — Learning</a></li>
+<li><a href="07-learning.html" class="active">7 — Learning</a></li>
 ```
+
+Note: Chapter 6 (Sleep) has no HTML built yet, so it stays an unlinked `pillar-note` placeholder — do not link it until `docs/chapters/06-sleep.html` actually exists (avoids publishing a 404). Personality has no standalone chapter number; its content lives inside Chapter 11 Social Psychology.
 
 ---
 
@@ -112,13 +115,13 @@ Immediately inside `<main class="main">`, before any content:
 <hr class="chapter-divider" />
 ```
 
-**Pillar names** (from `docs/index.html`):
+**Pillar names** (from `docs/index.html` — re-verify before use, same caveat as §2):
 - Chapters 1–2: `Foundations`
-- Chapters 3–5: `Biological`
-- Chapters 6–8: `Cognitive`
-- Chapter 9: `Developmental`
-- Chapters 10–11: `Social &amp; Personality`
-- Chapters 12–14: `Mental &amp; Physical Health`
+- Chapters 3–5: `Biological` (Ch6 Sleep also belongs here once built)
+- Chapters 7–9: `Cognitive`
+- Chapter 10: `Developmental`
+- Chapter 11: `Social &amp; Personality`
+- Chapters 12–13: `Mental &amp; Physical Health`
 
 ---
 
