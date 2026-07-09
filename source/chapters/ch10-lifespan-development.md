@@ -73,6 +73,9 @@ Measuring development requires comparing people of different ages, which can be 
 
 A **longitudinal study** follows the same participants across years or decades, measuring the same people at multiple time points. It captures true change within individuals, but it is expensive, slow, and plagued by attrition: participants who drop out tend to be less healthy and less privileged, which can bias the picture of how the average person ages.
 
+![Figure 10.1 — A two-panel infographic compares cross-sectional and longitudinal research designs. The cross-sectional panel shows different age groups tested in one year. The longitudinal panel shows the same people followed across multiple testing years.](../images/ch10/ch10_cross_sectional_vs_longitudinal.png)
+*Figure 10.1. Cross-sectional studies compare different age groups at one moment, which is fast but vulnerable to cohort effects. Longitudinal studies follow the same people across time, which tracks real within-person change but is slower and vulnerable to attrition.*
+
 *Stop and retrieve: What is the key difference between cross-sectional and longitudinal designs, and what problem does each have that the other avoids?*
 
 ### Before birth: teratogens and the prenatal environment
@@ -115,6 +118,9 @@ Piaget proposed that children pass through four stages in a fixed sequence, each
 
 **Formal operational stage (~12 years onward).** Adolescents become capable of systematic, abstract, hypothetical reasoning — the kind required to ask "what would happen if...?" and to hold multiple hypotheses in mind simultaneously.
 
+![Figure 10.2 — A four-panel infographic summarizes Piaget's sensorimotor, preoperational, concrete operational, and formal operational stages. Each panel includes an age range, a simple illustration, and the main cognitive milestone.](../images/ch10/ch10_piaget_stages_sequence_with_caveat.png)
+*Figure 10.2. Piaget's stages are a useful map of broad changes in children's reasoning, not a rigid calendar. The model's enduring insight is that children's thinking can change qualitatively, while later research shows that many abilities emerge gradually, overlap across stages, and sometimes appear earlier than Piaget's original tasks suggested.*
+
 ### Where Piaget was right, and where he was not
 
 Piaget's framework generated decades of productive research, and its core claim — that children reason qualitatively differently at different ages — has held up well. Where subsequent research has complicated the picture is in the *timing* and the *sharpness* of the stage boundaries.
@@ -130,6 +136,9 @@ The pattern across these findings points to a conclusion Piaget's framework unde
 Piaget's child is largely a solo scientist, constructing knowledge through direct interaction with objects. Lev Vygotsky offered a complementary account in which cognitive development is fundamentally social: children develop higher mental functions through collaboration and instruction before they can perform those functions independently (Vygotsky, 1978).
 
 The centerpiece of Vygotsky's framework is the **zone of proximal development (ZPD)**: the gap between what a child can do independently and what she can do with guidance from a more capable partner — a parent, teacher, or more experienced peer. The zone is not a fixed quantity; it shifts as the child develops. Tasks that require scaffolding today become independent capabilities tomorrow. **Scaffolding** — the support structure that a more capable partner provides, calibrated to the child's current level and gradually withdrawn as competence grows — is the mechanism that drives development forward.
+
+![Figure 10.3 — A wide infographic shows three learning zones: tasks a learner can do alone, tasks in the zone of proximal development that can be done with guidance, and tasks that remain too hard even with help. A side panel shows scaffolding fading from strong support to independence.](../images/ch10/ch10_vygotsky_zpd_scaffolding.png)
+*Figure 10.3. The zone of proximal development is the instructional sweet spot: the task is just beyond what the learner can do alone, but achievable with calibrated support. Good scaffolding fades as competence grows, leaving the learner more capable after the support is removed.*
 
 Scaffolding is also, in a deeper sense, evolutionarily unusual. Csibra and Gergely (2011) argue that humans are the only species with **natural pedagogy**: communication specifically adapted for one individual to transmit generic, otherwise hard-to-observe knowledge to another, rather than simply modeling behavior for someone else to copy. Other animals learn a great deal by watching each other; almost none of them actively modify their own behavior to make learning easier for a naive observer the way human caregivers and teachers routinely do. A classroom, a worked example on a whiteboard, a parent narrating what she's doing while cooking, are all culturally elaborated versions of that basic teaching disposition. Scaffolding within the ZPD is Vygotsky's account of how that disposition actually moves a learner forward; natural pedagogy is the evolutionary claim for why humans bother teaching at all.
 
@@ -166,6 +175,9 @@ The infant's behavior during *reunion* — not during separation, which is less 
 **Anxious-avoidant attachment** (roughly 20–25%): The infant shows little visible distress at separation and avoids or ignores the caregiver on reunion. This can look like independence; closer examination reveals it to be a suppression of attachment behavior, likely developed in response to caregiving that consistently rejected or withdrew from proximity-seeking.
 
 Researchers have identified additional patterns beyond these three — including a disorganized category associated with frightening or severely neglectful caregiving (Main & Solomon, 1986) — but secure, ambivalent, and avoidant cover the core of what most students encounter in the literature.
+
+![Figure 10.4 — A table-style infographic compares attachment styles by reunion behavior, typical caregiving history, and approximate share in Western samples. It emphasizes that reunion behavior, not separation distress alone, is diagnostic.](../images/ch10/ch10_attachment_styles_reunion_behavior.png)
+*Figure 10.4. Ainsworth's attachment classifications are read most clearly during reunion. Secure infants seek comfort and are soothed; anxious-ambivalent infants both seek and resist comfort; anxious-avoidant infants suppress attachment behavior and appear distant; disorganized infants show contradictory or frightened behavior. These are probabilistic relationship patterns, not fixed destinies.*
 
 > **Classic Study: The Strange Situation (Ainsworth et al., 1978)**
 >
