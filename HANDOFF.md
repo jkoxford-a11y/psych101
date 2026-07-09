@@ -6,22 +6,36 @@
 
 ## Current Status
 
-**As of Session 79b (2026-07-09).** All 13 chapters + prologue have content-complete markdown drafts in `source/chapters/`; Ch6 Sleep is the newest (v0.6) and has no HTML built yet. `docs/chapters/*.html` for Ch1–5 is in sync with markdown; Ch7–13 HTML was stale (markdown revised, HTML not regenerated) as of this session — a Codex prompt to sync it was written and handed to Jon but not yet run (see Next Up). Site navigation bugs found and fixed this session: 5 pages (`prologue.html` + 4 lab pages) had a pre-renumbering sidebar causing live 404s on Ch6–10 links; a `?`-for-em-dash encoding corruption in 7 chapter HTML files (105 instances) was also fixed. `docs/chapters/11-personality.html` archived (content lives in Ch11 Social now); `pipeline/html-conversion-spec.md`'s own sidebar example was stale in the same way and has been corrected.
+**As of Session 80 (2026-07-09).** Sidebar TOC redesign implemented: the hardcoded ~30-line `<aside class="sidebar">` block that was duplicated across every page is now replaced everywhere with a shared `docs/js/sidebar.js` (single data source for the pillar/chapter list) plus a two-line placeholder + `<script data-dir data-active data-top>` tag per page. The sidebar now renders as an accordion — pillars collapse to headers, auto-expanding only the pillar containing the current chapter — and has a collapse/expand toggle whose state persists across page loads via `localStorage`. CSS for the accordion and collapse behavior was added to `docs/css/style.css` (existing rules, including the mobile breakpoint, untouched). Verified via a headless jsdom test across all directory depths (root, `chapters/`, `labs/`, `labs/chNN/`) that generated links exactly match the pre-change hrefs, active-link highlighting works, and the correct pillar auto-expands — not yet checked in an actual browser. Two files were deliberately left untouched: `chapters/_archive/11-personality.html` (archived) and `chapters/prologue.html`, a newly-noticed orphaned duplicate of `docs/prologue.html` that nothing links to (candidate for archiving later, not decided this session).
 
-**Repo hygiene:** `HANDOFF.md` was split (Session 79) into this file + `HANDOFF-ARCHIVE.md` (Sessions 1–59 verbatim). This Current Status section itself was just compressed (Session 79b) — the full uncompressed history of prior "Current Status" write-ups (Sessions 66–78b) was moved to `HANDOFF-ARCHIVE.md` rather than deleted; if something below seems to contradict older detail, the archive is the fuller record. Four superseded chapter drafts and two stray root-level files were archived into `_archive/` folders (nothing deleted).
+Also noticed while working: the repo has a large amount of pre-existing uncommitted working-tree diff noise (many files, e.g. `GPT_spine.md`, several SVGs, `.github/workflows/static.yml`) that turns out to be whitespace/line-ending only (`git diff -w` shows nothing) — not something this session touched or needs to fix, but worth a cleanup pass at some point so `git status` isn't misleading.
 
-**Caveat on this compression:** this is a first attempt at boiling ~13 sessions of status write-ups down to a few paragraphs. Older open items (e.g., specific per-chapter editorial-review states from Sessions 66–77) may not all be captured below — cross-check `HANDOFF-ARCHIVE.md` if a chapter's status seems out of date.
+Everything from Session 79b's status (Ch1–5 HTML in sync, Ch7–13 HTML stale pending Codex sync, Ch6 Sleep markdown-only, etc.) is still accurate and carries forward unchanged — see Next Up below.
 
 ## Next Up
 
+- **Sidebar redesign: browser check.** Load a chapter page and a lab page in an actual browser (or local server) and click through the accordion + collapse toggle before considering this done — only jsdom-verified so far.
 - **Run the Codex HTML-sync prompt** (Session 79) for Ch7–13 and report results back — nothing has been executed yet.
 - **Ch10 Lifespan figures:** 8 figures built (7 SVG + 1 GPT raster) but have real defects (label boxes overlapping plotted lines, etc.) — a fix list exists at `docs/images/ch10/ch10_figure_revisions.md`. Next: run the SVG fixes through Codex, regenerate the 10.1b raster, re-render and eyeball-verify, then wire into `ch10-lifespan-development.md` and update `visuals-inventory.md`. Nothing wired yet.
 - **Ch11 Social/Personality:** two broken figure references (Fig 11.6 trait-signal scatter, Fig 11.7 person-situation grid) exist in the chapter text but the files don't exist anywhere in the repo. Open decision for Jon: rebuild or remove.
 - **Ch6 Sleep → HTML:** no HTML built yet; needs a first build (not a sync) once Jon has reviewed the markdown, following `pipeline/html-conversion-spec.md`.
 - Most/all of Ch2–13 markdown drafts are content-complete but still awaiting Jon's full line-by-line editorial review — HTML-sync work happening in parallel does not mean review is done.
 - `source/visuals-inventory.md` is known to drift out of sync with per-chapter image state — cross-check per-chapter `docs/images/chXX/README*.md` files before trusting it.
+- **`chapters/prologue.html`** noticed this session — appears to be an orphaned duplicate of `docs/prologue.html`, unreferenced by any live link. Decide whether to archive it.
 
 ## Session Log
+
+### Session 80 (2026-07-09)
+
+**What happened:** Jon asked whether the sidebar TOC could collapse. Discussed options in chat first (manual collapse toggle with `localStorage` persistence vs. pillar accordion vs. icon rail vs. on-page mini-TOC), then built a clickable jsdom-free HTML mockup of the accordion approach via the visualize tool so Jon could see it before any real files were touched. Jon approved and asked to implement it.
+
+**What changed:** Added accordion + collapse CSS to `docs/css/style.css`. Created `docs/js/sidebar.js` as the single source of truth for the pillar/chapter list (previously duplicated as raw HTML in 18+ files — exactly the pattern that caused the Session 79b stale-sidebar 404 bug). Wrote a Python script to mechanically replace the `<aside class="sidebar">...</aside>` block in all 18 live, linked pages (12 chapters, `index.html`, `prologue.html`, `labs/index.html`, 5 lab pages) with a placeholder + one-line script tag carrying that page's directory depth, active chapter ID, and top-nav variant (chapters show "Table of Contents" only; index/prologue/labs show the fuller top nav, matching pre-existing per-page variation exactly).
+
+**Verification:** Built a headless jsdom test exercising all six directory depths, confirming generated hrefs exactly match the original hardcoded ones, active-link highlighting is correct, and the right pillar auto-expands. Confirmed via `git diff -w` that unrelated repo-wide diff noise (large stat changes in many unrelated files) is pre-existing whitespace/line-ending drift, not caused by this session's edits. Not yet checked in a real browser — flagged as a Next Up item.
+
+**Deliberately not touched:** `chapters/_archive/11-personality.html` (archived) and `chapters/prologue.html` — the latter newly identified as an orphaned, unlinked duplicate of `docs/prologue.html`; flagged in Next Up rather than acted on.
+
+**Files modified:** `docs/css/style.css`, `docs/js/sidebar.js` (new), and the sidebar block in all 18 files listed above. `HANDOFF.md` (this entry).
 
 ---
 
