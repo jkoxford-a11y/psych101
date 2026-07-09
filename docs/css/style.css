@@ -485,6 +485,37 @@ th {
   line-height: 1.5;
 }
 
+/* ── Chapter figures: in-place expand ──
+   Pilot pattern (Session 82/83 decision): bulky/dense figures start
+   capped at a thumbnail height so they don't dominate reading flow;
+   clicking grows the image to full width in place (no modal, no new
+   tab). The <a> wraps the <img> and points at the full-size image
+   file directly, so it degrades to "open the image" with JS off. */
+.chapter-figure.expandable .figure-expand-toggle {
+  display: block;
+}
+
+.chapter-figure.expandable img {
+  max-height: 340px;
+  width: auto;
+  margin: 0 auto;
+  cursor: zoom-in;
+  transition: max-height 0.25s ease;
+}
+
+.chapter-figure.expandable.is-expanded img {
+  max-height: none;
+  width: 100%;
+  cursor: zoom-out;
+}
+
+.chapter-figure .figure-expand-hint {
+  margin-top: 0.5rem;
+  font-family: var(--font-ui);
+  font-size: 0.78rem;
+  color: var(--color-muted);
+}
+
 /* ── Portrait strip (history section) ── */
 .portrait-strip {
   display: flex;
