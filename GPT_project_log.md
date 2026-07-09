@@ -15,11 +15,18 @@ Record only actions, decisions, files changed, validation, and remaining issues.
 
 ## Open Follow-ups
 
-- Ch9 figure sizing remains open after all figures were made wide.
 - Keep figure wiring separate from figure creation unless explicitly asked.
 - Continue validating generated HTML against actual content, not only structural tags.
+- CSS/JS pattern (`.expandable`, `figure-expand.js`) is Ch9-only so far; not yet applied to other chapters' wide figures.
 
 ## Log Entries
+
+### 2026-07-09 - Ch9 Figure Expand/Sizing Pattern (resolves prior open issue)
+
+- Resolved the Ch9 figure-sizing open issue: built a reusable "in-place expand" pattern instead of resizing figures individually. Added `docs/css/style.css` `.chapter-figure.expandable` / `.is-expanded` rules (thumbnail-height cap with click-to-grow, no modal/overlay) and `docs/js/figure-expand.js` (click handler, `<a href>` fallback to full image for no-JS).
+- Applied `expandable` class + toggle markup to all 10 Ch9 figures (previously all `wide`, uncapped height, which was the source of the oversized/awkward rendering). Figure numbers, captions, alt text, and attribution untouched.
+- Validated: HTML parses clean, `<figure>`/`</figure>` counts match (10/10), each figure has matching toggle link + hint text, no plain-`wide`-only figures remain in Ch9.
+- Note: this was done in a Claude/Cowork session working in `C:\GitHub\psych101` (repo relocated off OneDrive this session; old path was `C:\Users\oxfor\OneDrive\Docs\GitHub\psych101`).
 
 ### 2026-07-09 - Ch9 Figure Sizing Open Issue
 
