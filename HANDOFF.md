@@ -6,7 +6,11 @@
 
 ## Current Status
 
-**As of Session 80 (2026-07-09).** Sidebar TOC redesign implemented: the hardcoded ~30-line `<aside class="sidebar">` block that was duplicated across every page is now replaced everywhere with a shared `docs/js/sidebar.js` (single data source for the pillar/chapter list) plus a two-line placeholder + `<script data-dir data-active data-top>` tag per page. The sidebar now renders as an accordion — pillars collapse to headers, auto-expanding only the pillar containing the current chapter — and has a collapse/expand toggle whose state persists across page loads via `localStorage`. CSS for the accordion and collapse behavior was added to `docs/css/style.css` (existing rules, including the mobile breakpoint, untouched). Verified via a headless jsdom test across all directory depths (root, `chapters/`, `labs/`, `labs/chNN/`) that generated links exactly match the pre-change hrefs, active-link highlighting works, and the correct pillar auto-expands — not yet checked in an actual browser. Two files were deliberately left untouched: `chapters/_archive/11-personality.html` (archived) and `chapters/prologue.html`, a newly-noticed orphaned duplicate of `docs/prologue.html` that nothing links to (candidate for archiving later, not decided this session).
+**As of Session 80b (2026-07-09).** Sidebar TOC redesign implemented and now confirmed working live on GitHub Pages: the hardcoded ~30-line `<aside class="sidebar">` block that was duplicated across every page is replaced everywhere with a shared `docs/js/sidebar.js` (single data source for the pillar/chapter list) plus a two-line placeholder + `<script data-dir data-active data-top>` tag per page. The sidebar renders as an accordion — pillars collapse to headers, auto-expanding only the pillar containing the current chapter — and has a collapse/expand toggle whose state persists across page loads via `localStorage`. CSS for this lives in `docs/css/style.css` (existing rules, including the mobile breakpoint, untouched). Jon committed and pushed this (commit `8e32092`).
+
+**Bug found and diagnosed on live check, not yet fixed:** Jon reported the sidebar "wasn't working" after pushing. Using Claude in Chrome against the live Pages URL, confirmed the DOM/accordion/links all build correctly (accessibility tree showed full correct nav) — the actual issue was that `localStorage.psych101-sidebar-collapsed` had been set to `"1"` (from earlier testing) and every subsequent page load starts collapsed, with the only way back a small unlabeled 32px hamburger icon fixed at the top-left corner — easy to miss, so it reads as "the sidebar disappeared and is broken" rather than "it's one click away." Clicking that icon confirmed the toggle and accordion both work exactly as designed. Jon confirmed it's working now (after that click un-stuck his session) but has NOT yet decided whether to fix the discoverability problem — this is a real risk for any student who clicks collapse once. See Next Up.
+
+Two files were deliberately left untouched: `chapters/_archive/11-personality.html` (archived) and `chapters/prologue.html`, a newly-noticed orphaned duplicate of `docs/prologue.html` that nothing links to (candidate for archiving later, not decided this session).
 
 Also noticed while working: the repo has a large amount of pre-existing uncommitted working-tree diff noise (many files, e.g. `GPT_spine.md`, several SVGs, `.github/workflows/static.yml`) that turns out to be whitespace/line-ending only (`git diff -w` shows nothing) — not something this session touched or needs to fix, but worth a cleanup pass at some point so `git status` isn't misleading.
 
@@ -14,7 +18,7 @@ Everything from Session 79b's status (Ch1–5 HTML in sync, Ch7–13 HTML stale 
 
 ## Next Up
 
-- **Sidebar redesign: browser check.** Load a chapter page and a lab page in an actual browser (or local server) and click through the accordion + collapse toggle before considering this done — only jsdom-verified so far.
+- **Sidebar collapse discoverability (open decision for Jon).** When collapsed, the only way to reopen the sidebar is a small unlabeled hamburger icon fixed at the top-left corner — confirmed this reads as "broken" rather than "collapsed." Options discussed: (a) make the reopen icon much more visible/labeled, (b) drop `localStorage` persistence so every new chapter page loads with the sidebar open by default (simpler, can't get stuck, but re-collapses each navigation), or (c) leave as-is. Not yet decided — pick this up next session unless Jon resolves it first.
 - **Run the Codex HTML-sync prompt** (Session 79) for Ch7–13 and report results back — nothing has been executed yet.
 - **Ch10 Lifespan figures:** 8 figures built (7 SVG + 1 GPT raster) but have real defects (label boxes overlapping plotted lines, etc.) — a fix list exists at `docs/images/ch10/ch10_figure_revisions.md`. Next: run the SVG fixes through Codex, regenerate the 10.1b raster, re-render and eyeball-verify, then wire into `ch10-lifespan-development.md` and update `visuals-inventory.md`. Nothing wired yet.
 - **Ch11 Social/Personality:** two broken figure references (Fig 11.6 trait-signal scatter, Fig 11.7 person-situation grid) exist in the chapter text but the files don't exist anywhere in the repo. Open decision for Jon: rebuild or remove.
@@ -24,6 +28,14 @@ Everything from Session 79b's status (Ch1–5 HTML in sync, Ch7–13 HTML stale 
 - **`chapters/prologue.html`** noticed this session — appears to be an orphaned duplicate of `docs/prologue.html`, unreferenced by any live link. Decide whether to archive it.
 
 ## Session Log
+
+### Session 80b (2026-07-09, continuation of Session 80)
+
+**What happened:** Jon pushed the Session 80 sidebar changes, then reported it "wasn't working" on the live site. Used Claude in Chrome (blocked from `file://` pages by the extension's security model, so tested against the live GitHub Pages URL instead of a local file) to load `chapters/04-sensation-perception.html`, screenshot it, read the accessibility tree, and check console/network/localStorage via `javascript_tool`.
+
+**Diagnosis:** Not a code bug — the sidebar, accordion, and links all build correctly. `localStorage.psych101-sidebar-collapsed` was `"1"` from earlier testing, so the page loaded pre-collapsed with only a small unlabeled top-left icon as the way back. Clicking it confirmed full correct behavior (Biological pillar auto-expanded, Ch4 highlighted, links intact). Jon confirmed it's working now. Flagged the discoverability gap as an open design decision rather than fixing unilaterally — see Next Up.
+
+**Files modified:** `HANDOFF.md` only (this entry + Current Status/Next Up update). No code changes this continuation.
 
 ### Session 80 (2026-07-09)
 
