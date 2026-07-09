@@ -41,6 +41,7 @@ body {
   top: 0;
   height: 100vh;
   overflow-y: auto;
+  transition: width 0.2s ease, padding 0.2s ease;
 }
 
 .main {
@@ -100,6 +101,107 @@ body {
   padding: 0.4rem 0.7rem;
   font-size: 0.92rem;
   color: var(--color-muted);
+}
+
+/* ── Sidebar: pillar accordion ── */
+.sidebar nav .pillar-group {
+  margin-bottom: 0.1rem;
+}
+
+.sidebar nav .pillar-toggle {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.4rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: var(--font-ui);
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--color-muted);
+  margin: 1.25rem 0 0.4rem 0;
+  padding: 0.3rem 0.5rem;
+}
+
+.sidebar nav .pillar-toggle:hover {
+  color: var(--color-accent);
+}
+
+.sidebar nav .pillar-toggle .chevron {
+  display: inline-block;
+  font-size: 0.7rem;
+  transition: transform 0.15s ease;
+  transform: rotate(-90deg);
+}
+
+.sidebar nav .pillar-toggle[aria-expanded="true"] .chevron {
+  transform: rotate(0deg);
+}
+
+.sidebar nav .pillar-chapters {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.2s ease;
+}
+
+.sidebar nav .pillar-chapters.expanded {
+  max-height: 600px;
+}
+
+/* ── Sidebar: collapse toggle ── */
+.sidebar-toggle {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
+  cursor: pointer;
+  color: var(--color-muted);
+  font-family: var(--font-ui);
+  font-size: 1rem;
+  line-height: 1;
+  margin-bottom: 1.25rem;
+}
+
+.sidebar-toggle:hover {
+  color: var(--color-accent);
+  border-color: var(--color-accent);
+}
+
+.sidebar.collapsed {
+  width: 0;
+  padding: 2rem 0;
+  overflow: hidden;
+}
+
+.sidebar-toggle--float {
+  position: fixed;
+  top: 1.25rem;
+  left: 1.25rem;
+  z-index: 20;
+  background: var(--color-bg);
+  display: none;
+}
+
+body.sidebar-collapsed .sidebar-toggle--float {
+  display: flex;
+}
+
+.sidebar.collapsed .sidebar-inner {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.sidebar-inner {
+  white-space: nowrap;
+  min-width: 210px;
 }
 
 .toc-pending {
@@ -423,6 +525,7 @@ th {
 /* ── Responsive ── */
 @media (max-width: 700px) {
   .sidebar { display: none; }
+  .sidebar-toggle { display: none; }
   .main { padding: 2rem 1.25rem 4rem; }
   h1 { font-size: 1.6rem; }
 }
