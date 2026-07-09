@@ -1,6 +1,6 @@
 # HTML Conversion Spec — Psych101 Textbook
 
-> Use this document to convert a completed markdown chapter draft into the site's HTML format. Every chapter must match this spec exactly so that CSS, navigation, and pedagogy patterns are consistent across all 14 chapters.
+> Use this document to convert a completed markdown chapter draft into the site's HTML format. Every chapter must match this spec exactly so that CSS, navigation, and pedagogy patterns are consistent across all 13 chapters (Personality was dissolved into Ch11 Social Psychology per the Session 60 decision — there is no standalone Ch14).
 >
 > **Read this file in full before touching any chapter HTML.** The sidebar template alone will break the whole page if mis-copied.
 
