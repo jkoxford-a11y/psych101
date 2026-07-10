@@ -37,3 +37,21 @@ All six figures are original hand-coded SVGs for Oxford Psychology 101, 2026. Sa
 **Caption:** Memory retrieval does not replay a stored recording. It reconstructs a plausible account from encoded fragments, general knowledge, and expectation. Most of the time this reconstruction is close enough to accurate that it works well. But because anything encountered between the original event and the moment of recall can blend into that reconstruction, memory can drift from what actually happened without feeling wrong.
 
 **Alt text:** A four-stage left-to-right diagram shows an Original Event being reduced to Fragments Encoded, shown as scattered marks rather than a complete picture. Post-event information, other accounts, and expectations feed into reconstruction. The final Reconstructed Memory panel is visually similar to the original event but includes one changed detail and is labeled may not match the original event.
+
+## `ch08_memory_processes_systems_brain_support.png`
+
+**Caption:** Memory is not a single storage location. Sensory traces, working memory, declarative memory, nondeclarative learning, and reconstructive retrieval depend on partly distinct but interacting systems. The highlighted brain regions indicate major contributors—including prefrontal and parietal cortex, hippocampal and medial temporal structures, distributed cortex, basal ganglia, and cerebellum—not isolated memory centers.
+
+**Alt text:** Wide educational infographic titled “Memory: From Experience to Lasting Change.” Information moves from brief sensory traces to a limited working-memory workspace and then into long-term declarative and nondeclarative memory systems. Declarative memory is divided into episodic events and semantic knowledge; nondeclarative memory includes skills and habits, conditioned responses, and priming or automaticity. A lower panel shows retrieval reconstructing a usable memory from distributed pieces rather than replaying a recording. At right, a lateral brain diagram identifies prefrontal and parietal cortex, hippocampus and medial temporal lobe, widespread cortex, basal ganglia, and cerebellum as interacting contributors to these processes.
+
+**Source/creation method:** Original figure generated for Oxford Psychology 101 with ChatGPT image generation, 2026.
+
+**License:** Project-owned generated original; no external copyrighted image assets intentionally used.
+
+**Attribution:** Original figure generated for Oxford Psychology 101 with ChatGPT image generation, 2026. No external copyrighted image assets intentionally used.
+
+**Public-sharing status:** Safe for public sharing pending final anatomical and text-legibility review.
+
+**Use status:** Use now, provided the displayed image is large enough for all labels to remain readable.
+
+**Accuracy caveat:** The colored regions are broad functional contributors, not exclusive storage sites. Memory depends on distributed, interacting neural networks.
