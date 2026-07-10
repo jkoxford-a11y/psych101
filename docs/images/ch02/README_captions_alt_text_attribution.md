@@ -91,7 +91,7 @@ Four-panel target diagram comparing measurement accuracy and precision. The firs
 **Working title:** Placebo Response versus Placebo Effect: Objective and Subjective Outcomes in Asthma  
 **Proposed placement:** In the bias-controls section immediately after placebo and placebo effect are introduced.  
 **Proposed caption number:** Pending final chapter-wide renumbering.  
-**Status:** **Use now after the PNG is added to this folder and browser-checked.**  
+**Status:** **Candidate/reference — do not wire until the incorrect embedded source line is removed or replaced.**  
 **Recommended display:** `chapter-figure wide expandable` because the two-panel data comparison and definition strip contain labels that benefit from enlargement.
 
 ### Caption
@@ -106,14 +106,15 @@ Two-panel bar chart based on a four-condition asthma study comparing active albu
 
 - **Creation method:** Original educational infographic generated with ChatGPT image generation, July 2026, from project-specific direction and reported study values.
 - **Direction and curation:** Jonathan K. Oxford.
-- **Data source:** Wechsler, M. E., Kelley, J. M., Boyd, I. O., Dutile, S., Marigowda, G., Kirsch, I., Israel, E., & Kaptchuk, T. J. (2011). Active albuterol or placebo, sham acupuncture, or no intervention in asthma. *New England Journal of Medicine, 365*(2), 119–126.
+- **Data source:** Wechsler, M. E., Kelley, J. M., Boyd, I. O., Dutile, S., Marigowda, G., Kirsch, I., Israel, E., & Kaptchuk, T. J. (2011). Active albuterol or placebo, sham acupuncture, or no intervention in asthma. *New England Journal of Medicine, 365*(2), 119–126. https://doi.org/10.1056/NEJMoa1103319
 - **Attribution text:** Original visualization generated for Oxford Psychology 101 with ChatGPT image generation, 2026, using values reported by Wechsler et al. (2011). Directed and curated by Jonathan K. Oxford. No external copyrighted image assets intentionally used.
 - **External source assets:** None intentionally used; the chart is an original redraw rather than a reproduction of the published figure.
-- **License/public-sharing status:** Safe for public sharing pending final verification of plotted values, citation formatting, accessibility, and browser rendering.
+- **License/public-sharing status:** Not approved for public sharing until the incorrect embedded citation is corrected; otherwise suitable pending final accessibility and browser review.
 
 ### Accuracy and interpretation caveats
 
-- The plotted percentages are rounded teaching values based on the published study and should be checked once more against the article before final wiring.
+- The plotted teaching values are verified against the PubMed abstract: approximately 20% versus 7% for objective FEV1 improvement, and 50%, 45%, 46%, and 21% for subjective improvement.
+- **Production blocker:** the generated PNG's embedded source line names an incorrect author list. Replace it with “Wechsler et al. (2011)” or the verified citation above before use.
 - The figure contrasts an objective physiological outcome with subjective symptom reports in one asthma study. It does not imply that placebo effects are always subjective, clinically meaningless, or identical across conditions and disorders.
 - Improvement within a placebo group is a **placebo response**, not automatically evidence that the placebo caused the improvement. Natural symptom fluctuation, regression to the mean, reporting effects, and other changes over time may contribute.
 - Estimating a placebo effect requires an appropriate comparison condition. In this figure, the relevant conceptual comparison is placebo intervention versus no intervention.
@@ -125,5 +126,5 @@ Two-panel bar chart based on a four-condition asthma study comparing active albu
 - **Generated dimensions:** 1536 × 1024 pixels.
 - **Aspect ratio:** 3:2. Use the wide/expandable figure treatment rather than cropping.
 - **Embedded numbering:** The condition numbers 1–4 are conceptual labels, not chapter figure numbers.
-- **Embedded source line:** Retain if readable after browser testing; the full source should also appear in the chapter reference list and figure metadata.
+- **Embedded source line:** Incorrect in the current generated file. Remove it or replace it with “Source: Wechsler et al. (2011), doi:10.1056/NEJMoa1103319.”
 - **Final filename:** `ch02_placebo_response_vs_effect_asthma.png`
