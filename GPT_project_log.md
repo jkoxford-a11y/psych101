@@ -21,6 +21,15 @@ Record only actions, decisions, files changed, validation, and remaining issues.
 
 ## Log Entries
 
+### 2026-07-10 - Chapter 8 Interactive Imagery Learning Lab
+
+- Built `docs/labs/ch08/interactive-imagery.html` with `docs/js/labs-interactive-imagery.js` and added it to `docs/labs/index.html`.
+- Uses a fixed three-round teaching progression: students first use their natural strategy, then construct an ordinary interaction, then construct a bizarre interaction. Each round contains six unrelated concrete word pairs, a four-item odd/even distractor, and delayed cued recall.
+- Students report their spontaneous Round 1 strategy; Rounds 2–3 require brief scene descriptions. Results show all three scores plus the Round 1→2 interaction change and Round 2→3 bizarreness increment without treating either as a causal estimate.
+- Concept reveal distinguishes interactive imagery, relational binding, elaboration, retrieval cues, and distinctiveness. It explicitly treats a prediction-error account as suggestive rather than demonstrated and warns that bizarre imagery can distort the relationship being learned.
+- Privacy/accessibility: uses `sessionStorage` only, collects no identifiers or analytics, and permits verbal or spatial scene construction for students without vivid visual imagery.
+- Validation: JavaScript syntax checked; all JavaScript DOM IDs matched HTML IDs; no duplicate IDs or broken `aria-labelledby` targets; 18 pairs contain 36 nonoverlapping cue/target words. Manual browser interaction and visual pacing remain to be checked. The lab is not yet linked from `source/chapters/ch08-memory.md`.
+
 ### 2026-07-10 - Chapter 8 Memory Learning Labs
 
 - Built two standalone Chapter 8 labs following `docs/labs/lab-design-spec.md`: `docs/labs/ch08/levels-of-processing.html` with `docs/js/labs-levels-of-processing.js`, and `docs/labs/ch08/self-reference-effect.html` with `docs/js/labs-self-reference-effect.js`.
