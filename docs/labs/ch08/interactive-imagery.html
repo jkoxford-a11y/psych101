@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Can You Make Two Words Stick Together? - General Psychology</title>
+  <link rel="stylesheet" href="../../css/style.css" />
+  <link rel="stylesheet" href="../../css/labs.css" />
+</head>
+<body>
+<div class="layout">
+  <aside class="sidebar" id="app-sidebar"></aside>
+  <script src="../../js/sidebar.js" data-dir="labs/ch08" data-active="" data-top="full"></script>
+
+  <main class="main lab-main">
+    <p class="chapter-meta">Learning Lab - Chapter 8</p>
+    <h1>Can You Make Two Words Stick Together?</h1>
+    <hr class="chapter-divider" />
+
+    <p>In three rounds, you will study unrelated word pairs and then use the first word to recall its partner. The strategy changes one step at a time: first your usual approach, then an interaction, then a bizarre interaction.</p>
+    <p>This is a progressive teaching demonstration, not a controlled experiment or diagnostic assessment. The rounds occur in a fixed order and use different word lists, so your scores show what happened during this activity—not proof that one instruction caused the difference.</p>
+
+    <div class="callout callout--note">
+      <div class="callout-title">Accessibility and Privacy</div>
+      <p>This lab runs entirely in your browser. It stores your prediction, brief scene descriptions, task progress, explanation, and transfer response in <code>sessionStorage</code> for this browser session only. It collects no names, identifiers, or analytics and sends no data to a server. You do not need vivid mental pictures: a verbal or spatial description of one integrated event also works.</p>
+    </div>
+
+    <section class="lab-panel" aria-labelledby="predict-heading" id="prediction-panel">
+      <h2 id="predict-heading">Predict and Commit</h2>
+      <form id="prediction-form" novalidate>
+        <label class="text-label" for="prediction-count">Using your usual strategy, how many of six unrelated pairs do you predict you will recall?</label>
+        <select id="prediction-count" required>
+          <option value="">Choose 0–6</option>
+          <option value="0">0</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+        </select>
+
+        <label class="text-label" for="prediction-strategy">What strategy do you expect to use?</label>
+        <textarea id="prediction-strategy" rows="4" required placeholder="Example: repeat the pair, make a sentence, picture the items..."></textarea>
+
+        <button class="lab-btn" type="button" id="commit-prediction">Commit prediction</button>
+      </form>
+      <p class="save-status" id="prediction-status" aria-live="polite"></p>
+    </section>
+
+    <section class="lab-panel phase-panel" id="round-intro-panel" hidden aria-labelledby="round-intro-heading">
+      <p class="lab-kicker" id="round-kicker">Round 1 of 3</p>
+      <h2 id="round-intro-heading" tabindex="-1">Use Your Own Strategy</h2>
+      <div id="round-intro-text"></div>
+      <button class="lab-btn" type="button" id="start-round">Start this round</button>
+    </section>
+
+    <section class="lab-panel phase-panel" id="study-panel" hidden aria-labelledby="study-heading">
+      <div class="lab-progress" aria-live="polite">
+        <span id="study-round-status">Round 1: Your own strategy</span>
+        <span id="study-counter">Pair 1 of 6</span>
+      </div>
+      <h2 id="study-heading" tabindex="-1">Study the Pair</h2>
+      <p id="study-instruction">Study the pair so that the first word will later help you recall the second.</p>
+
+      <div class="curve-wrap" aria-live="polite" aria-atomic="true">
+        <h2><span id="cue-word">candle</span> — <span id="target-word">bicycle</span></h2>
+      </div>
+
+      <div id="scene-entry-wrap" hidden>
+        <label class="text-label" for="scene-entry" id="scene-entry-label">Describe the interaction in a few words.</label>
+        <textarea id="scene-entry" rows="3" placeholder="Example: a wave splashes an open book"></textarea>
+      </div>
+
+      <button class="lab-btn" type="button" id="next-study-pair">Next pair</button>
+      <p class="save-status" id="study-status" aria-live="polite"></p>
+    </section>
+
+    <section class="lab-panel phase-panel" id="distractor-panel" hidden aria-labelledby="distractor-heading">
+      <div class="lab-progress" aria-live="polite">
+        <span id="distractor-round-status">Round 1</span>
+        <span id="distractor-counter">Number 1 of 4</span>
+      </div>
+      <h2 id="distractor-heading" tabindex="-1">Clear the Workspace</h2>
+      <p>Classify each number as odd or even. This brief interruption reduces simple rehearsal before recall.</p>
+
+      <div class="curve-wrap" aria-live="polite" aria-atomic="true">
+        <h2 id="distractor-number">47</h2>
+        <p>Is this number odd or even?</p>
+      </div>
+
+      <div class="sim-controls" aria-label="Number classification responses">
+        <button class="lab-btn" type="button" id="distractor-odd">Odd</button>
+        <button class="lab-btn" type="button" id="distractor-even">Even</button>
+      </div>
+      <p class="save-status" id="distractor-status" aria-live="polite"></p>
+    </section>
+
+    <section class="lab-panel phase-panel" id="recall-panel" hidden aria-labelledby="recall-heading">
+      <div class="lab-progress" aria-live="polite">
+        <span id="recall-round-status">Round 1 recall</span>
+        <span id="recall-counter">Cue 1 of 6</span>
+      </div>
+      <h2 id="recall-heading" tabindex="-1">Recall the Partner</h2>
+      <p>Type the word that was paired with the cue. No correctness feedback appears until the round is complete.</p>
+
+      <div class="curve-wrap" aria-live="polite" aria-atomic="true">
+        <h2><span id="recall-cue">candle</span> — ?</h2>
+      </div>
+
+      <label class="text-label" for="recall-entry">Partner word</label>
+      <input id="recall-entry" type="text" autocomplete="off" />
+      <div class="lab-actions">
+        <button class="lab-btn" type="button" id="submit-recall">Submit response</button>
+        <button class="lab-btn lab-btn--secondary" type="button" id="dont-remember">I don’t remember</button>
+      </div>
+      <p class="save-status" id="recall-status" aria-live="polite"></p>
+    </section>
+
+    <section class="lab-panel phase-panel" id="round-summary-panel" hidden aria-labelledby="round-summary-heading">
+      <p class="lab-kicker" id="round-summary-kicker">Round 1 complete</p>
+      <h2 id="round-summary-heading" tabindex="-1">What Happened?</h2>
+      <p id="round-score-summary"></p>
+
+      <div id="baseline-strategy-wrap">
+        <fieldset class="lab-fieldset">
+          <legend>What did you actually do during the first round?</legend>
+          <label class="option-row"><input type="radio" name="baseline-strategy" value="repetition" /> Repeated the words</label>
+          <label class="option-row"><input type="radio" name="baseline-strategy" value="sentence" /> Made a sentence or verbal link</label>
+          <label class="option-row"><input type="radio" name="baseline-strategy" value="separate" /> Imagined the items separately</label>
+          <label class="option-row"><input type="radio" name="baseline-strategy" value="interaction" /> Imagined the items interacting</label>
+          <label class="option-row"><input type="radio" name="baseline-strategy" value="other" /> Used another strategy</label>
+        </fieldset>
+      </div>
+
+      <div id="round-reflection-wrap" hidden>
+        <label class="text-label" for="round-reflection">What felt different about this strategy compared with the previous round?</label>
+        <textarea id="round-reflection" rows="4"></textarea>
+      </div>
+
+      <button class="lab-btn" type="button" id="continue-after-round">Continue</button>
+      <p class="save-status" id="round-summary-status" aria-live="polite"></p>
+    </section>
+
+    <section class="lab-panel phase-panel" id="results-panel" hidden aria-labelledby="results-heading">
+      <h2 id="results-heading" tabindex="-1">Your Three-Round Pattern</h2>
+      <p id="results-summary"></p>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th scope="col">Round</th>
+              <th scope="col">Strategy</th>
+              <th scope="col">Partners recalled</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Your own strategy</td>
+              <td id="natural-score">0 of 6</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Interactive scene</td>
+              <td id="interaction-score">0 of 6</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>Bizarre interaction</td>
+              <td id="bizarre-score">0 of 6</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p id="difference-summary"></p>
+
+      <div class="callout callout--note">
+        <div class="callout-title">What the activity was designed to show</div>
+        <p><strong>Interactive imagery</strong> places both items into one event. That <strong>relational binding</strong> stores more than two isolated words: it stores who did what to what. Later, the cue can reactivate the event and provide a route to its partner. Constructing the event also adds elaboration and retrieval cues.</p>
+        <p>A bizarre interaction can add <strong>distinctiveness</strong> because it violates ordinary knowledge. But weirdness is not the essential step. An ordinary interaction may already bind the pair effectively, and bizarre imagery does not reliably improve every list or every person.</p>
+      </div>
+
+      <div class="callout callout--do-not-confuse">
+        <div class="callout-title">Do Not Confuse: Bizarreness with Measured Prediction Error</div>
+        <p>A bizarre scene violates expectations, so it may recruit some of the same attention-to-mismatch processes discussed under prediction error. This lab did not present an unexpected outcome or measure prediction-error signals, however. Its most direct explanations are relational binding, elaboration, imagery, and distinctiveness.</p>
+      </div>
+
+      <div class="callout callout--note">
+        <div class="callout-title">What your scores cannot establish</div>
+        <p>The rounds occurred in a fixed instructional sequence and used different pairs. Practice, attention, pair difficulty, and spontaneous strategy use can all affect the pattern. Treat your scores as evidence to reason about, not as a controlled causal test.</p>
+      </div>
+
+      <label class="text-label" for="explanation-response">Where did the largest improvement occur in your scores, and why? Use <strong>interactive imagery</strong>, <strong>relational binding</strong>, and <strong>retrieval cue</strong>. Then explain whether bizarreness added anything in your session.</label>
+      <textarea id="explanation-response" rows="6"></textarea>
+      <button class="lab-btn" type="button" id="save-explanation">Save explanation and continue</button>
+      <p class="save-status" id="explanation-status" aria-live="polite"></p>
+    </section>
+
+    <section class="lab-panel phase-panel" id="transfer-panel" hidden aria-labelledby="transfer-heading">
+      <h2 id="transfer-heading" tabindex="-1">Retrieve and Transfer</h2>
+      <p id="completion-summary"></p>
+      <label class="text-label" for="transfer-response">Choose a pair you genuinely need to remember—for example, a researcher and finding, a brain structure and function, or a concept and example. Create one ordinary interaction and one bizarre interaction. Which version preserves the correct relationship more clearly, and could either version distort what the pair actually means?</label>
+      <textarea id="transfer-response" rows="6"></textarea>
+      <div class="lab-actions">
+        <button class="lab-btn" type="button" id="save-transfer">Save transfer response locally</button>
+        <button class="lab-btn lab-btn--secondary" type="button" id="restart-lab">Restart lab</button>
+      </div>
+      <p class="save-status" id="transfer-status" aria-live="polite"></p>
+    </section>
+
+    <section class="callout callout--think-about-it">
+      <div class="callout-title">Instructor Note</div>
+      <p>Keep the fixed progression. It is the teaching mechanism: students first expose their default strategy, then add interaction, then add bizarreness. Debrief the class pattern without aggregating it as research data. Ask whether the largest change came from binding the pair or from making the already-bound scene strange.</p>
+    </section>
+
+    <section class="callout callout--note">
+      <div class="callout-title">Evidence Base</div>
+      <p>The design draws on paired-associate learning and interactive-imagery research. Its interpretation separates the robust benefit of constructing a relation between two items from the more conditional bizarreness effect.</p>
+    </section>
+  </main>
+</div>
+<script src="../../js/nav.js"></script>
+<script src="../../js/labs-interactive-imagery.js"></script>
+</body>
+</html>
