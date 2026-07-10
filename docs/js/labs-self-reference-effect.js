@@ -433,7 +433,9 @@
     const semanticRate = results.semantic.rate;
     let observedPattern = 'The two conditions produced the same recognition rate in this short session.';
 
-    if (selfRate > semanticRate) {
+    if (results.self.total === 0 || results.semantic.total === 0) {
+      observedPattern = 'At least one condition had no scored targets because all of its words were skipped, so the two conditions cannot be compared in this session.';
+    } else if (selfRate > semanticRate) {
       observedPattern = 'Self-referenced words produced the higher recognition rate in this short session.';
     } else if (semanticRate > selfRate) {
       observedPattern = 'General-semantic words produced the higher recognition rate in this short session.';
