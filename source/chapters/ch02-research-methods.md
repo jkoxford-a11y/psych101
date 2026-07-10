@@ -285,18 +285,7 @@ d) Both reliable and valid
 
 ---
 
-**4.** In an experiment testing whether a new study technique improves test scores, the independent variable is:
-
-a) the test scores
-b) whether participants use the new technique or not
-c) the participants' GPA before the study
-d) the statistical significance of the result
-
-*Answer: b. Test scores are measured in this study, which makes them the dependent variable — the outcome — not the manipulated variable.*
-
----
-
-**5.** Random assignment primarily supports which kind of validity, and why?
+**4.** Random assignment primarily supports which kind of validity, and why?
 
 a) External validity, because it makes the sample more representative of the population
 b) Internal validity, because it distributes unknown participant differences roughly equally across conditions, ruling them out as alternative explanations
@@ -307,7 +296,7 @@ d) Internal validity, because it eliminates the need for a control group
 
 ---
 
-**6.** A study gives one group a real pill and another a sugar pill, with neither participants nor administering researchers told which is which. This design controls for:
+**5.** A study gives one group a real pill and another a sugar pill, with neither participants nor administering researchers told which is which. This design controls for:
 
 a) random sampling error
 b) both participant expectation effects and researcher expectation effects
@@ -318,7 +307,7 @@ d) Type I error specifically
 
 ---
 
-**7.** Which statement most accurately describes the role of IRB review?
+**6.** Which statement most accurately describes the role of IRB review?
 
 a) Every human-participants study must undergo the same full review process with no exceptions
 b) Research involving human participants is normally submitted for IRB determination before it begins, though some minimal-risk projects may qualify for exempt or expedited review
@@ -329,7 +318,7 @@ d) Researchers are trusted to determine for themselves whether their own study i
 
 ---
 
-**8.** A *p*-value of .03 for a study result means:
+**7.** A *p*-value of .03 for a study result means:
 
 a) There is a 97% chance the finding is true
 b) The effect is large and practically important
@@ -340,7 +329,7 @@ d) The study has been successfully replicated
 
 ---
 
-**9.** A study finds a statistically significant effect (p < .05) in a sample of 50,000 participants, but the effect size is extremely small. The most accurate conclusion is:
+**8.** A study finds a statistically significant effect (p < .05) in a sample of 50,000 participants, but the effect size is extremely small. The most accurate conclusion is:
 
 a) The finding is definitely important because it reached significance
 b) Statistical significance and practical importance are not the same thing — a large enough sample can make even a trivial effect statistically significant
@@ -351,7 +340,7 @@ d) Effect size is irrelevant once significance is established
 
 ---
 
-**10.** A psychology study recruits participants entirely from introductory psychology students at one university. The most accurate criticism of this sample is that it:
+**9.** A psychology study recruits participants entirely from introductory psychology students at one university. The most accurate criticism of this sample is that it:
 
 a) is too large to analyze properly
 b) lacks random assignment
@@ -362,7 +351,7 @@ d) cannot produce a correlation coefficient
 
 ---
 
-**11.** You ask an AI assistant a factual question and receive a fluent, confident answer that happens to be wrong. Accepting it without checking is most analogous to which statistical error?
+**10.** You ask an AI assistant a factual question and receive a fluent, confident answer that happens to be wrong. Accepting it without checking is most analogous to which statistical error?
 
 a) Type I error — accepting a false claim as real
 b) Type II error — rejecting a true claim as false
@@ -373,7 +362,7 @@ d) The placebo effect
 
 ---
 
-**12.** Why does a single well-designed, statistically significant study not, by itself, establish that a finding will replicate?
+**11.** Why does a single well-designed, statistically significant study not, by itself, establish that a finding will replicate?
 
 a) Significance testing permits some false positives by design, and any individual study carries some chance of being one of them
 b) Single studies are always poorly designed
