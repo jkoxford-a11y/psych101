@@ -24,17 +24,14 @@ Markdown draft complete (v0.2). Awaiting Jon's line-by-line review. HTML convers
 
 ## Chapter 1 — History & Approaches
 
-Content edits from Session 90 landed in both source and HTML (behavior/mental-process definition, de-linearized history, split biological/evolutionary row, AI Connection box rewrite, depression-section and replication-crisis calibration, LO6, Key Terms). Three items still open — do not mark this chapter fully done until resolved:
-- Fig 1.1 was swapped from the old psychology scope map to a new "one behavior, many psychological questions" phone/notification figure — caption and alt text updated in both source and HTML, but attribution is not yet documented (need creator/generation method) and final placement (Section 1 vs. anchoring Section 3) is still an open decision.
-- Fig 1.2 (Maslow) sourcing is weak — attribution only says "Wikimedia Commons... widely reproduced as public domain," no creator/source page/license, unlike every other image in this chapter's attribution file. Fate (fix sourcing + add critical caption vs. remove) undecided.
-- Portrait strip fate (keep vs. retire) undecided.
+**Complete as of Session 91.** All previously open items resolved: Section 3 title kept as-is ("Seven Lenses, No Single Truth"); Fig 1.1 attribution documented (AI-generated via ChatGPT, directed/curated by Jon) and placement kept at Section 1 (considered anchoring to Section 3 instead, decided against for now — see README note); Fig 1.2 (Maslow) cut entirely due to weak sourcing, image moved to `ch01/_archive/`; portrait strip confirmed fine as-is, no changes. Review questions trimmed from 13 to 11 (cut Q2/Watson-manifesto as a duplicate of the dog/treat behaviorism question, and Q12/replication-crisis as the item least anchored to a stated Learning Objective), renumbered sequentially in both source and HTML. Linter passes clean (0 hard failures) on the rebuilt HTML.
 
 | # | Description | Status | Filename |
 |---|-------------|--------|----------|
-| 1.1 | One behavior, many psychological questions (phone/notification) | ⚠ needs attribution + placement decision | `ch01/fig_1_1_scope_map.png` |
-| 1.2 | Maslow hierarchy | ⚠ weak sourcing, fate undecided | `ch01/fig_1_2_maslow_hierarchy.png` |
+| 1.1 | One behavior, many psychological questions (phone/notification) | ✅ | `ch01/fig_1_1_scope_map.png` |
+| 1.2 | Maslow hierarchy — REMOVED Session 91 (weak sourcing) | archived | `ch01/_archive/fig_1_2_maslow_hierarchy.png` |
 | 1.3 | Skinner / Chomsky / LLM language diagram | ✅ | `ch01/fig_1_3_language_explanations.png` |
-| — | Portraits: Wundt, James, Watson, Freud, Skinner | ⚠ fate undecided | `ch01/portrait_*.jpg` |
+| — | Portraits: Wundt, James, Watson, Freud, Skinner | ✅ | `ch01/portrait_*.jpg` |
 
 ---
 

@@ -196,18 +196,7 @@ d) the philosophical investigation of consciousness and free will
 
 ---
 
-**2.** Watson's 1913 behaviorist manifesto argued that psychology should:
-
-a) use introspection to identify the elements of conscious experience  
-b) focus exclusively on observable behavior and abandon reference to internal mental states  
-c) study only abnormal behavior because normal behavior requires no explanation  
-d) integrate evolutionary theory with clinical observation  
-
-*Answer: b. Why (a) is tempting: introspection was the dominant method Watson was explicitly rejecting — knowing this distinction is the point. (d) describes the evolutionary perspective, which comes much later in the field's history and asks a different kind of question.*
-
----
-
-**3.** The primary methodological problem with Wundt's structuralism was:
+**2.** The primary methodological problem with Wundt's structuralism was:
 
 a) it focused too narrowly on clinical populations  
 b) it relied on evolutionary assumptions that could not be tested  
@@ -218,7 +207,7 @@ d) it ignored the role of unconscious processes
 
 ---
 
-**4.** A dog learns to sit reliably whenever it hears the word "sit" because sitting is consistently followed by a treat. Which school of thought provides the most complete explanation of this learning, without needing to make any claim about what the dog is thinking?
+**3.** A dog learns to sit reliably whenever it hears the word "sit" because sitting is consistently followed by a treat. Which school of thought provides the most complete explanation of this learning, without needing to make any claim about what the dog is thinking?
 
 a) Structuralism  
 b) Psychoanalysis  
@@ -229,7 +218,7 @@ d) Humanistic psychology
 
 ---
 
-**5.** Functionalism, as developed by William James, differed from structuralism in that functionalism:
+**4.** Functionalism, as developed by William James, differed from structuralism in that functionalism:
 
 a) rejected laboratory methods entirely  
 b) asked what the mind does and why it exists, not what it is made of  
@@ -240,7 +229,7 @@ d) limited its scope to observable behavior
 
 ---
 
-**6.** The cognitive revolution was triggered in part by behaviorism's inability to explain:
+**5.** The cognitive revolution was triggered in part by behaviorism's inability to explain:
 
 a) the effects of punishment on behavior  
 b) how classical conditioning works at the neural level  
@@ -251,7 +240,7 @@ d) individual differences in personality
 
 ---
 
-**7.** The biopsychosocial model holds that:
+**6.** The biopsychosocial model holds that:
 
 a) biological factors are the most fundamental determinants of behavior  
 b) psychological factors are primary, with biology and social context as secondary influences  
@@ -262,7 +251,7 @@ d) social and environmental factors override biological predispositions
 
 ---
 
-**8.** Hindsight bias is relevant to the scientific method because:
+**7.** Hindsight bias is relevant to the scientific method because:
 
 a) it causes researchers to design experiments that test only previously known findings  
 b) it makes any result feel like it was predictable, undermining our ability to judge whether we actually knew something before we were told it  
@@ -273,7 +262,7 @@ d) it biases participants toward extreme responses in survey research
 
 ---
 
-**9.** Freud's psychoanalysis was influential but scientifically problematic primarily because:
+**8.** Freud's psychoanalysis was influential but scientifically problematic primarily because:
 
 a) it focused exclusively on unconscious processes and ignored conscious experience  
 b) it made predictions that were too specific to generalize  
@@ -284,7 +273,7 @@ d) it relied on laboratory methods that could not be replicated
 
 ---
 
-**10.** A researcher studying how cultural norms shape what counts as "normal" grieving behavior is working primarily from which perspective?
+**9.** A researcher studying how cultural norms shape what counts as "normal" grieving behavior is working primarily from which perspective?
 
 a) Biological  
 b) Behavioral  
@@ -295,7 +284,7 @@ d) Sociocultural
 
 ---
 
-**11.** The evolutionary perspective in psychology asks primarily:
+**10.** The evolutionary perspective in psychology asks primarily:
 
 a) How does behavior change across an individual's lifespan?  
 b) What selection pressures shaped the psychological mechanisms we observe?  
@@ -306,18 +295,7 @@ d) What behavioral differences exist between humans and other animals?
 
 ---
 
-**12.** The replication crisis in psychology is best interpreted as:
-
-a) evidence that psychology is not a legitimate science  
-b) evidence that the field is self-correcting — problems were identified through scientific methods  
-c) proof that common sense is more reliable than experimental findings  
-d) a reason to prefer psychoanalytic theory over cognitive research  
-
-*Answer: b. Why (a) is tempting: that is the popular interpretation. But failed replications were discovered by researchers systematically attempting to replicate published work — which is the scientific process working correctly, even though the underlying incentive and methodological problems it exposed were real and serious. The interpretation that these problems disqualify psychology misses that self-correction, while not automatic, is exactly what happened here.*
-
----
-
-**13.** According to the humanistic perspective, the most important factor in successful therapy is often:
+**11.** According to the humanistic perspective, the most important factor in successful therapy is often:
 
 a) precise application of conditioning techniques  
 b) correct interpretation of unconscious conflict  

@@ -32,14 +32,13 @@
 ## Numbered Figures
 
 ### fig_1_1_scope_map.png — Figure 1.1
-**Caption:** Figure 1.1. Psychology is broader than therapy. The field spans basic research, clinical practice, applied science, and more — therapy is one corner of an enormous territory.
-**Alt text:** A radial map showing psychology at the center with subfields including clinical, cognitive, biological, developmental, social, educational, industrial-organizational, forensic, health, human factors, comparative, and performance psychology radiating outward.
-**Attribution:** Original figure by Jonathan K. Oxford. Licensed for use in this textbook.
+**Caption:** Figure 1.1. One behavior, many psychological questions. Different psychologists ask different questions about the same behavior — therapy is one application of psychology; the broader science asks why behavior happens, how it develops, and how context changes it.
+**Alt text:** A student is studying when a phone notification appears. Six boxes surround the scene: Biological (what brain and body systems redirect attention?), Cognitive (why does the notification interrupt working memory?), Learning (how has past experience trained this response?), Social (how do peers, norms, and expectations shape this behavior?), Developmental & Individual Differences (why are some people more distractible than others?), and Clinical & Applied (when does this behavior become impairing, and what might help?).
+**Attribution:** Generated via ChatGPT; directed and curated by Jonathan K. Oxford. Licensed for use in this textbook.
+**Placement note (Session 91):** Considered anchoring this figure to Section 3 (Modern Perspectives) instead, since the six-box breakdown previews that section's multiple-perspectives argument more directly than Section 1's breadth-of-field point. Decided to leave it at Section 1 for now — revisit if Section 3 ever needs its own visual anchor.
 
-### fig_1_2_maslow_hierarchy.png — Figure 1.2
-**Caption:** Figure 1.2. Maslow's hierarchy of needs. Humanistic psychology proposed that human motivation is structured around a progression from basic survival needs toward growth, meaning, and self-actualization. Source: Wikimedia Commons.
-**Alt text:** Maslow's hierarchy of needs shown as a pyramid with physiological needs at the base, followed by safety, love and belonging, esteem, and self-actualization at the top.
-**Attribution:** Wikimedia Commons. Original diagram; widely reproduced as public domain.
+### fig_1_2_maslow_hierarchy.png — Figure 1.2 (REMOVED, Session 91)
+Cut from the chapter — sourcing was too weak to keep ("Wikimedia Commons... widely reproduced as public domain," no creator/source page/license, unlike every other image in this file). Image file moved to `_archive/` rather than deleted. Figure numbering below has NOT been renumbered to fill the gap — there is no Figure 1.2 in this chapter; the next figure is still called Figure 1.3, matching the source markdown and built HTML.
 
 ### fig_1_3_language_explanations.png — Figure 1.3
 **Caption:** Figure 1.3. Three ways to explain fluent language. Skinner emphasized learned verbal behavior; Chomsky argued for generative internal structure; large language models produce fluency through statistical learning over text corpora. Fluent output alone does not settle which mechanism produced it. Original figure by Jonathan K. Oxford.
