@@ -16,13 +16,13 @@
       { id: 'a1', word: 'river', uppercase: true, rhymeCue: 'giver', rhymeAnswer: true, sentence: 'The bridge crossed the ___.', meaningAnswer: true },
       { id: 'a2', word: 'chair', uppercase: true, rhymeCue: 'bear', rhymeAnswer: true, sentence: 'She sat on the ___.', meaningAnswer: true },
       { id: 'a3', word: 'cloud', uppercase: true, rhymeCue: 'loud', rhymeAnswer: true, sentence: 'The mechanic repaired the ___.', meaningAnswer: false },
-      { id: 'a4', word: 'window', uppercase: true, rhymeCue: 'candle', rhymeAnswer: false, sentence: 'Sunlight came through the ___.', meaningAnswer: true },
+      { id: 'a4', word: 'window', uppercase: true, rhymeCue: 'garden', rhymeAnswer: false, sentence: 'Sunlight came through the ___.', meaningAnswer: true },
       { id: 'a5', word: 'candle', uppercase: true, rhymeCue: 'handle', rhymeAnswer: true, sentence: 'He wore the ___ on his foot.', meaningAnswer: false },
       { id: 'a6', word: 'doctor', uppercase: false, rhymeCue: 'faster', rhymeAnswer: false, sentence: 'The patient spoke with the ___.', meaningAnswer: true },
       { id: 'a7', word: 'pillow', uppercase: false, rhymeCue: 'yellow', rhymeAnswer: true, sentence: 'The chef chopped the ___ for dinner.', meaningAnswer: false },
-      { id: 'a8', word: 'basket', uppercase: false, rhymeCue: 'river', rhymeAnswer: false, sentence: 'She carried apples in the ___.', meaningAnswer: true },
-      { id: 'a9', word: 'engine', uppercase: false, rhymeCue: 'cloud', rhymeAnswer: false, sentence: 'The baby slept under the ___.', meaningAnswer: false },
-      { id: 'a10', word: 'forest', uppercase: false, rhymeCue: 'chair', rhymeAnswer: false, sentence: 'He mailed the letter in the ___.', meaningAnswer: false }
+      { id: 'a8', word: 'basket', uppercase: false, rhymeCue: 'tiger', rhymeAnswer: false, sentence: 'She carried apples in the ___.', meaningAnswer: true },
+      { id: 'a9', word: 'engine', uppercase: false, rhymeCue: 'sailor', rhymeAnswer: false, sentence: 'The baby slept under the ___.', meaningAnswer: false },
+      { id: 'a10', word: 'forest', uppercase: false, rhymeCue: 'orange', rhymeAnswer: false, sentence: 'He mailed the letter in the ___.', meaningAnswer: false }
     ],
     [
       { id: 'b1', word: 'train', uppercase: true, rhymeCue: 'rain', rhymeAnswer: true, sentence: 'Passengers boarded the ___.', meaningAnswer: true },
@@ -30,23 +30,23 @@
       { id: 'b3', word: 'book', uppercase: true, rhymeCue: 'cook', rhymeAnswer: true, sentence: 'She poured the ___ into a cup.', meaningAnswer: false },
       { id: 'b4', word: 'moon', uppercase: true, rhymeCue: 'spoon', rhymeAnswer: true, sentence: 'The ___ orbited Earth.', meaningAnswer: true },
       { id: 'b5', word: 'phone', uppercase: true, rhymeCue: 'stone', rhymeAnswer: true, sentence: 'He answered the ___.', meaningAnswer: true },
-      { id: 'b6', word: 'bread', uppercase: false, rhymeCue: 'cloud', rhymeAnswer: false, sentence: 'The carpenter measured the ___.', meaningAnswer: false },
-      { id: 'b7', word: 'horse', uppercase: false, rhymeCue: 'chair', rhymeAnswer: false, sentence: 'The rider mounted the ___.', meaningAnswer: true },
-      { id: 'b8', word: 'clock', uppercase: false, rhymeCue: 'lake', rhymeAnswer: false, sentence: 'The gardener watered the ___.', meaningAnswer: false },
-      { id: 'b9', word: 'lake', uppercase: false, rhymeCue: 'book', rhymeAnswer: false, sentence: 'She tied the ___ around her waist.', meaningAnswer: false },
-      { id: 'b10', word: 'shoe', uppercase: false, rhymeCue: 'train', rhymeAnswer: false, sentence: 'The pilot landed on the ___.', meaningAnswer: false }
+      { id: 'b6', word: 'bread', uppercase: false, rhymeCue: 'sailor', rhymeAnswer: false, sentence: 'The carpenter measured the ___.', meaningAnswer: false },
+      { id: 'b7', word: 'horse', uppercase: false, rhymeCue: 'orange', rhymeAnswer: false, sentence: 'The rider mounted the ___.', meaningAnswer: true },
+      { id: 'b8', word: 'clock', uppercase: false, rhymeCue: 'summer', rhymeAnswer: false, sentence: 'The gardener watered the ___.', meaningAnswer: false },
+      { id: 'b9', word: 'lake', uppercase: false, rhymeCue: 'cactus', rhymeAnswer: false, sentence: 'She tied the ___ around her waist.', meaningAnswer: false },
+      { id: 'b10', word: 'shoe', uppercase: false, rhymeCue: 'garden', rhymeAnswer: false, sentence: 'The pilot landed on the ___.', meaningAnswer: false }
     ],
     [
       { id: 'c1', word: 'star', uppercase: true, rhymeCue: 'car', rhymeAnswer: true, sentence: 'A bright ___ appeared in the night sky.', meaningAnswer: true },
-      { id: 'c2', word: 'cake', uppercase: true, rhymeCue: 'lake', rhymeAnswer: true, sentence: 'They served the birthday ___.', meaningAnswer: true },
+      { id: 'c2', word: 'cake', uppercase: true, rhymeCue: 'snake', rhymeAnswer: true, sentence: 'They served the birthday ___.', meaningAnswer: true },
       { id: 'c3', word: 'road', uppercase: true, rhymeCue: 'toad', rhymeAnswer: true, sentence: 'The boat sailed down the ___.', meaningAnswer: false },
       { id: 'c4', word: 'bell', uppercase: true, rhymeCue: 'shell', rhymeAnswer: true, sentence: 'The ___ rang at noon.', meaningAnswer: true },
       { id: 'c5', word: 'fish', uppercase: true, rhymeCue: 'dish', rhymeAnswer: true, sentence: 'The ___ swam through the water.', meaningAnswer: true },
-      { id: 'c6', word: 'door', uppercase: false, rhymeCue: 'star', rhymeAnswer: false, sentence: 'She opened the ___.', meaningAnswer: true },
-      { id: 'c7', word: 'coat', uppercase: false, rhymeCue: 'seed', rhymeAnswer: false, sentence: 'The farmer planted the ___.', meaningAnswer: false },
-      { id: 'c8', word: 'seed', uppercase: false, rhymeCue: 'lamp', rhymeAnswer: false, sentence: 'He hung the ___ from the ceiling.', meaningAnswer: false },
-      { id: 'c9', word: 'lamp', uppercase: false, rhymeCue: 'mountain', rhymeAnswer: false, sentence: 'They climbed the ___ to reach the summit.', meaningAnswer: false },
-      { id: 'c10', word: 'mountain', uppercase: false, rhymeCue: 'door', rhymeAnswer: false, sentence: 'She ate the ___ with a spoon.', meaningAnswer: false }
+      { id: 'c6', word: 'door', uppercase: false, rhymeCue: 'cloudy', rhymeAnswer: false, sentence: 'She opened the ___.', meaningAnswer: true },
+      { id: 'c7', word: 'coat', uppercase: false, rhymeCue: 'garden', rhymeAnswer: false, sentence: 'The farmer planted the ___.', meaningAnswer: false },
+      { id: 'c8', word: 'seed', uppercase: false, rhymeCue: 'table', rhymeAnswer: false, sentence: 'He hung the ___ from the ceiling.', meaningAnswer: false },
+      { id: 'c9', word: 'lamp', uppercase: false, rhymeCue: 'ocean', rhymeAnswer: false, sentence: 'They climbed the ___ to reach the summit.', meaningAnswer: false },
+      { id: 'c10', word: 'mountain', uppercase: false, rhymeCue: 'silver', rhymeAnswer: false, sentence: 'She ate the ___ with a spoon.', meaningAnswer: false }
     ]
   ];
 
