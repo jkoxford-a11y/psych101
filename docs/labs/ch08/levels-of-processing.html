@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>What Makes a Word Stick? - General Psychology</title>
+  <link rel="stylesheet" href="../../css/style.css" />
+  <link rel="stylesheet" href="../../css/labs.css" />
+</head>
+<body>
+<div class="layout">
+  <aside class="sidebar" id="app-sidebar"></aside>
+  <script src="../../js/sidebar.js" data-dir="labs/ch08" data-active="" data-top="full"></script>
+
+  <main class="main lab-main">
+    <p class="chapter-meta">Learning Lab - Chapter 8</p>
+    <h1>What Makes a Word Stick?</h1>
+    <hr class="chapter-divider" />
+
+    <p>You are about to make three kinds of judgments about words: what they look like, what they sound like, and what they mean. After a brief interruption, you will test which kind of processing produced the strongest memory.</p>
+    <p>This is a short instructional demonstration, not a diagnostic test of your memory and not a controlled experiment on you. With only a few words per condition, an individual result can differ from the usual group-level pattern by chance.</p>
+
+    <div class="callout callout--note">
+      <div class="callout-title">Accessibility and Privacy</div>
+      <p>This lab runs entirely in your browser. It stores your prediction, trial progress, explanation, and transfer response in <code>sessionStorage</code> for this browser session only. It does not collect names, emails, student IDs, analytics, or personally identifying information, and it sends no data to a server.</p>
+    </div>
+
+    <section class="lab-panel" aria-labelledby="core-idea-heading">
+      <h2 id="core-idea-heading">The Question</h2>
+      <div class="concept-grid">
+        <article class="concept-card">
+          <h3>Appearance</h3>
+          <p>Attend to a surface feature, such as whether the target word appears in uppercase letters.</p>
+        </article>
+        <article class="concept-card">
+          <h3>Sound</h3>
+          <p>Attend to the word's phonological form by deciding whether it rhymes with another word.</p>
+        </article>
+        <article class="concept-card">
+          <h3>Meaning</h3>
+          <p>Attend to what the word means by deciding whether it fits a sentence.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="lab-panel" aria-labelledby="predict-heading" id="prediction-panel">
+      <h2 id="predict-heading">Predict and Commit</h2>
+      <form id="prediction-form" novalidate>
+        <fieldset class="lab-fieldset">
+          <legend>Which judgment do you predict will produce the best later recognition?</legend>
+          <label class="option-row"><input type="radio" name="prediction-choice" value="appearance" /> Appearance</label>
+          <label class="option-row"><input type="radio" name="prediction-choice" value="sound" /> Sound</label>
+          <label class="option-row"><input type="radio" name="prediction-choice" value="meaning" /> Meaning</label>
+          <label class="option-row"><input type="radio" name="prediction-choice" value="same" /> About the same</label>
+        </fieldset>
+
+        <label class="text-label" for="prediction-reason">Why do you expect that pattern?</label>
+        <textarea id="prediction-reason" rows="4" required placeholder="Commit to a reason before seeing the words."></textarea>
+
+        <button class="lab-btn" type="button" id="commit-prediction">Commit prediction</button>
+      </form>
+      <p class="save-status" id="prediction-status" aria-live="polite"></p>
+    </section>
+
+    <section class="lab-panel phase-panel" aria-labelledby="encoding-heading" id="encoding-panel" hidden>
+      <div class="lab-progress" aria-live="polite">
+        <span id="encoding-counter">Judgment 1 of 30</span>
+        <span id="encoding-condition">Appearance judgment</span>
+      </div>
+      <h2 id="encoding-heading" tabindex="-1">Make the Judgment</h2>
+      <p>Answer the question about the large target word. Work steadily, but do not rush.</p>
+
+      <div class="curve-wrap" aria-live="polite" aria-atomic="true">
+        <p class="lab-kicker" id="processing-label">Appearance</p>
+        <h2 id="stimulus-word">RIVER</h2>
+        <p id="orienting-question">Is this word written in uppercase letters?</p>
+      </div>
+
+      <div class="sim-controls" aria-label="Judgment responses">
+        <button class="lab-btn" type="button" id="encoding-yes">Yes</button>
+        <button class="lab-btn" type="button" id="encoding-no">No</button>
+      </div>
+      <p class="save-status" id="encoding-status" aria-live="polite"></p>
+
+      <h3>Text Event Log</h3>
+      <div class="event-log" aria-live="polite">
+        <ol id="encoding-log"></ol>
+      </div>
+    </section>
+
+    <section class="lab-panel phase-panel" aria-labelledby="distractor-heading" id="distractor-panel" hidden>
+      <div class="lab-progress" aria-live="polite">
+        <span id="distractor-counter">Number 1 of 8</span>
+        <span>Brief interruption</span>
+      </div>
+      <h2 id="distractor-heading" tabindex="-1">Clear the Workspace</h2>
+      <p>Classify each number as odd or even. This short interruption prevents you from simply rehearsing the last few target words.</p>
+
+      <div class="curve-wrap" aria-live="polite" aria-atomic="true">
+        <h2 id="distractor-number">47</h2>
+        <p>Is this number odd or even?</p>
+      </div>
+
+      <div class="sim-controls" aria-label="Number classification responses">
+        <button class="lab-btn" type="button" id="distractor-odd">Odd</button>
+        <button class="lab-btn" type="button" id="distractor-even">Even</button>
+      </div>
+      <p class="save-status" id="distractor-status" aria-live="polite"></p>
+    </section>
+
+    <section class="lab-panel phase-panel" aria-labelledby="recognition-heading" id="recognition-panel" hidden>
+      <div class="lab-progress" aria-live="polite">
+        <span id="recognition-counter">Recognition item 1 of 60</span>
+        <span id="recognition-progress">0 responses recorded</span>
+      </div>
+      <h2 id="recognition-heading" tabindex="-1">Recognition Test</h2>
+      <p>Some words were the large target word on an earlier judgment trial; others are new. Ignore words that may have appeared only inside a question.</p>
+
+      <div class="curve-wrap" aria-live="polite" aria-atomic="true">
+        <h2 id="recognition-word">river</h2>
+        <p>Was this the large target word on an earlier judgment trial?</p>
+      </div>
+
+      <div class="sim-controls" aria-label="Recognition responses">
+        <button class="lab-btn" type="button" id="recognition-old">Old - I saw it as a target</button>
+        <button class="lab-btn" type="button" id="recognition-new">New - it was not a target</button>
+      </div>
+      <p class="save-status" id="recognition-status" aria-live="polite"></p>
+
+      <h3>Text Event Log</h3>
+      <div class="event-log" aria-live="polite">
+        <ol id="recognition-log"></ol>
+      </div>
+    </section>
+
+    <section class="lab-panel phase-panel" id="explain-panel" hidden aria-labelledby="explain-heading">
+      <h2 id="explain-heading" tabindex="-1">Results and Explanation</h2>
+      <p id="completion-summary"></p>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th scope="col">Encoding judgment</th>
+              <th scope="col">Targets recognized</th>
+              <th scope="col">Recognition rate</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Appearance</th>
+              <td id="appearance-count">0 of 10</td>
+              <td id="appearance-rate">0%</td>
+            </tr>
+            <tr>
+              <th scope="row">Sound</th>
+              <td id="sound-count">0 of 10</td>
+              <td id="sound-rate">0%</td>
+            </tr>
+            <tr>
+              <th scope="row">Meaning</th>
+              <td id="meaning-count">0 of 10</td>
+              <td id="meaning-rate">0%</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p id="false-alarm-summary"></p>
+
+      <div class="callout callout--note">
+        <div class="callout-title">What the activity was designed to show</div>
+        <p>All 30 targets appeared for one judgment. What changed was the mental operation you performed on each word. Appearance questions directed attention to a visual feature. Sound questions required phonological processing. Meaning questions connected the target to a semantic context, usually creating a richer and more broadly retrievable memory trace. Across groups, meaning-based judgments typically produce the strongest later memory.</p>
+      </div>
+
+      <div class="callout callout--do-not-confuse">
+        <div class="callout-title">Do Not Confuse: Deep Processing with a Particular Study Activity</div>
+        <p>Rereading is not automatically shallow, and semantic processing is not guaranteed to win on every possible test. A student can reread deeply by explaining, comparing, and generating examples. Memory also benefits when the operations used during encoding match the later retrieval task. The broader claim is that meaningful, elaborative processing usually produces memories that remain useful across more situations.</p>
+      </div>
+
+      <label class="text-label" for="explanation-response">Why could meaning-based processing create more routes back to a word later? Use the terms <strong>semantic processing</strong>, <strong>elaboration</strong>, and <strong>retrieval cue</strong>.</label>
+      <textarea id="explanation-response" rows="5"></textarea>
+      <button class="lab-btn" type="button" id="save-explanation">Save explanation and continue</button>
+      <p class="save-status" id="explanation-status" aria-live="polite"></p>
+    </section>
+
+    <section class="lab-panel phase-panel" id="transfer-panel" hidden aria-labelledby="transfer-heading">
+      <h2 id="transfer-heading" tabindex="-1">Retrieve and Transfer</h2>
+      <p id="transfer-summary"></p>
+      <label class="text-label" for="transfer-response">You need to remember the difference between negative reinforcement and punishment two weeks from now. Describe one shallow way and one deep way to study the distinction. Then explain why the deep strategy should create more useful retrieval cues.</label>
+      <textarea id="transfer-response" rows="5"></textarea>
+      <div class="lab-actions">
+        <button class="lab-btn" type="button" id="save-transfer">Save transfer response locally</button>
+        <button class="lab-btn lab-btn--secondary" type="button" id="restart-lab">Restart lab</button>
+      </div>
+      <p class="save-status" id="transfer-status" aria-live="polite"></p>
+    </section>
+
+    <section class="callout callout--think-about-it">
+      <div class="callout-title">Instructor Note</div>
+      <p>Use the prediction before students read the levels-of-processing section, or use the lab afterward as a study-strategy audit. Have students compare the class pattern rather than treating any one student's score as decisive. The key debrief is not merely that “meaning won,” but that exposure time was held roughly constant while the cognitive operation changed.</p>
+    </section>
+
+    <section class="callout callout--note">
+      <div class="callout-title">Evidence Base</div>
+      <p>The design adapts the orienting-task logic of Craik and Tulving's classic depth-of-processing studies. The interpretation is deliberately qualified by later work on transfer-appropriate processing: durable memory depends on what the learner does with information and on how that information will later be retrieved.</p>
+    </section>
+  </main>
+</div>
+<script src="../../js/nav.js"></script>
+<script src="../../js/labs-levels-of-processing.js"></script>
+</body>
+</html>
