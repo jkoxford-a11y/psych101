@@ -39,7 +39,6 @@ def process(path, apply):
     title_line = m_title.group(0).rstrip("\r")
     if ("<!--" not in front) and (not re.search(r"(?m)^>", front)):
         return ("skip-clean", 0)
-    # provenance = front minus the title line
     prov = (front[:m_title.start()] + front[m_title.end():]).strip()
     prov_bytes = len(prov.encode("utf-8"))
     if not apply:
@@ -53,7 +52,7 @@ def process(path, apply):
                f"> Drafting history & provenance: see "
                f"`_provenance/{path.stem}.md` (and git log).{nl}{nl}---{nl}{nl}")
     new_text = pointer + body
-    if not new_text.endswith(body):        # byte-identity guarantee
+    if not new_text.endswith(body):
         return ("FAIL-body-changed", prov_bytes)
     path.write_text(new_text, encoding="utf-8")
     return ("extracted", prov_bytes)
