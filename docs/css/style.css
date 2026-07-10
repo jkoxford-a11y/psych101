@@ -503,6 +503,11 @@ th {
   transition: max-height 0.25s ease;
 }
 
+.chapter-figure.expandable.is-expanded {
+  margin-left: clamp(-220px, -14vw, 0px);
+  margin-right: clamp(-220px, -14vw, 0px);
+}
+
 .chapter-figure.expandable.is-expanded img {
   max-height: none;
   width: 100%;
