@@ -76,6 +76,10 @@
     <p>An <strong>algorithm</strong> is a step-by-step procedure that, if followed correctly, is guaranteed to produce the right answer. Long division is an algorithm. A recipe is an algorithm. The advantage is certainty; the disadvantage is that algorithms are slow and not always available. Searching every possible chess move before choosing is theoretically an algorithm, but the number of moves in a typical chess game is greater than the number of atoms in the observable universe — no human (or current computer playing in real time) uses this approach.</p>
     <p>A <strong>heuristic</strong> is a cognitive shortcut — a rule of thumb that usually produces a good answer quickly, without guaranteeing the best answer. "If it looks like a duck and quacks like a duck, treat it as a duck" is a heuristic for category assignment. Heuristics are how virtually all everyday human thinking works. They are not failures of rationality; they are the operating system that allows a three-pound brain to navigate a complex world in real time. Heuristics run on the same compression logic as the concepts in Section 1, just applied to decisions instead of categories: a heuristic keeps the piece of a judgment that predicts well most of the time and discards the rest — which is exactly why the discarded part occasionally turns out to matter. Section 2 catalogs when that trade-off breaks down in predictable ways.</p>
     <p>The study of when and why heuristics go wrong is one of the most productive areas in cognitive science — see Section 2.</p>
+    <div class="callout callout--stop-retrieve">
+      <div class="callout-title">Stop and Retrieve</div>
+      <p>Before reading on — in your own words, why aren't heuristics just "lazy thinking"? What do they trade away, and what do they buy in return?</p>
+    </div>
     <h3 id="problem-solving-strategies-and-obstacles">Problem Solving: Strategies and Obstacles</h3>
     <p>Much of problem solving comes down to choosing a representation of the problem — working forward from the current state, working backward from the goal, or targeting the largest current gap between the two (means-ends analysis) — and the wrong representation creates the wrong search space no matter how hard you then search within it.</p>
     <p>Two classic obstacles block effective problem solving, and both are really a single failure mode: an old compressed model refusing to update for a new case.</p>
@@ -96,6 +100,10 @@
       <figcaption><strong>Figure 9.4.</strong> Functional fixedness demonstrated with Duncker's candle problem. Original figure.</figcaption>
     </figure>
     <p><strong>Insight</strong> is the sudden, often surprising shift in representation that unlocks a problem — the "aha" moment when the box becomes a shelf, or when two separately encoded pieces of information suddenly combine into a solution. Insight problems feel qualitatively different from analytical problems: they resist incremental progress, then resolve all at once, because what changes isn't the amount of information available but the compressed model organizing it (Jung-Beeman et al., 2004).</p>
+    <div class="callout callout--stop-retrieve">
+      <div class="callout-title">Stop and Retrieve</div>
+      <p>In your own words, how are mental set and functional fixedness the same underlying failure — an old compressed model refusing to update — applied to two different kinds of problems?</p>
+    </div>
     <h2 id="section-2-heuristics-biases-and-the-two-system-view">Section 2: Heuristics, Biases, and the Two-System View</h2>
     <h3 id="system-1-and-system-2">System 1 and System 2</h3>
     <p>The single most useful organizing framework for understanding reasoning errors comes from the psychologist Daniel Kahneman, summarized in his 2011 book <em>Thinking, Fast and Slow</em>. Kahneman distinguishes two modes of processing:</p>
@@ -171,6 +179,10 @@
       <p class="figure-expand-hint">Click to expand</p>
       <figcaption><strong>Figure 9.9.</strong> The five heuristics covered in this section, unified as instances of attribute substitution — a hard question answered by a faster, related one. Original figure.</figcaption>
     </figure>
+    <div class="callout callout--stop-retrieve">
+      <div class="callout-title">Stop and Retrieve</div>
+      <p>Before reading on — pick any one of the five heuristics from this section (availability, representativeness, confirmation bias, framing, anchoring) and explain, in your own words, what easier "shortcut question" it substitutes for the harder question actually being asked.</p>
+    </div>
     <div class="callout callout--ai-connection">
       <div class="callout-title">AI Connection: Your System 2 Is Vulnerable to Polished Text</div>
       <blockquote>
@@ -232,6 +244,10 @@
     <p>Noam Chomsky's (1965) response was that children aren't blank slates waiting for reinforced phrases — they arrive built to expect certain kinds of structure, a set of innate grammatical principles he called <strong>universal grammar</strong>, implemented through a hypothesized <strong>Language Acquisition Device (LAD)</strong>. This was a genuine, necessary correction to behaviorism, supported by cross-linguistic universals, a critical period for native-level mastery, and the fact that deaf children acquire sign language on the same developmental timetable as hearing children acquire speech — evidence against imitation of specific sounds as the whole engine of acquisition.</p>
     <p>Where the field has moved since is in how literally to take the specific machinery Chomsky proposed. A fully specified, dedicated grammar module is not treated as settled fact by most current researchers. What's replaced it is a more distributed picture: infants are remarkably sensitive statistical learners, able to segment words from continuous, run-together speech after just minutes of exposure to a novel artificial language (Saffran, Aslin, &amp; Newport, 1996). But statistics alone aren't sufficient either — infant phonetic learning depends on live social interaction specifically: American infants exposed to Mandarin through a real person in the room learned Mandarin phonetic contrasts; infants given the identical material through an audio or video recording learned nothing (Kuhl, Tsao, &amp; Liu, 2003). Modern language acquisition research treats reinforcement alone as insufficient, biological preparedness as real, statistical learning as doing much of the heavy lifting, and social interaction as a necessary ingredient statistics alone don't explain.</p>
     <p>This debate has taken on a new, current form — one this book is well positioned to engage directly. Large language models learn to produce fluent, grammatically well-formed text without anything resembling a dedicated grammar module built in, which Piantadosi (2023) has argued undercuts the strongest versions of the nativist case. Critics reply that this comparison proves less than it appears to: children acquire language from a few million words of noisy, incomplete input, while language models require many orders of magnitude more text to reach the same competence — Kodner, Payne, and Heinz (2023) put this sharply: humans manage language acquisition <em>despite</em> a poverty of the stimulus, while language models succeed <em>because of</em> a richness of it. That efficiency gap is arguably itself evidence for built-in structure in humans, not against it. There's a second, sharper reason to be cautious about reading LLM fluency as evidence about how children learn language at all: producing well-formed sentences and actually understanding or reasoning about the world are not the same skill. Mahowald, Ivanova, Blank, Kanwisher, Tenenbaum, and Fedorenko (2024) call these <strong>formal linguistic competence</strong> (knowledge of grammatical patterns) and <strong>functional linguistic competence</strong> (using language to reason, plan, and refer to the world) — in humans these draw on different neural systems, and language models are currently far better at the first than the second. In this book's own terms: fluent language is a compressed pattern, and a compressed pattern is not the same thing as the model-building it was compressed from.</p>
+    <div class="callout callout--stop-retrieve">
+      <div class="callout-title">Stop and Retrieve</div>
+      <p>In your own words, what does "poverty of the stimulus" mean, and why does the existence of fluent large language models complicate — without settling — the nativist argument that was originally built on it?</p>
+    </div>
     <h3 id="linguistic-relativity-granularity-not-determinism">Linguistic Relativity: Granularity, Not Determinism</h3>
     <p>If language is a compression of experience into shared symbols, a natural question follows: does the shape of that compression — which distinctions your language bothers to name — change how you experience the world? This is the <strong>linguistic relativity hypothesis</strong>, associated with Benjamin Lee Whorf, whose writings were compiled posthumously in <em>Language, Thought, and Reality</em> (Whorf, 1956).</p>
     <p>The <strong>strong version</strong> (linguistic determinism) holds that language doesn't just compress thought, it limits it — if your language lacks a word for something, you cannot think it. This is not supported: people routinely reason about, remember, and communicate concepts their language has no single word for.</p>
@@ -276,6 +292,10 @@
     <p><strong>Creative intelligence</strong> is the ability to generate novel ideas, combine existing knowledge in new ways, and deal with unfamiliar problems. When you adapt to a situation that requires you to apply knowledge in a new domain, you are using creative intelligence.</p>
     <p><strong>Practical intelligence</strong> is the ability to adapt to real-world environments — what is sometimes called "street smarts." It involves reading contexts, negotiating social dynamics, and knowing how to apply knowledge in messy real situations that don't come pre-labeled as "problems."</p>
     <p>Sternberg's theory is valuable because it highlights that conventional IQ tests measure only a slice of the cognitive capacities relevant to success in life. High analytic intelligence predicts academic performance well but is a weaker predictor of real-world adaptive success than triarchic theory would expect from IQ alone. Practical intelligence — notoriously hard to measure — shows predictive validity for job performance independent of conventional IQ in some studies (Sternberg et al., 2000). Like Gardner's, Sternberg's model identifies something IQ testing leaves out — it's a stronger critique of what <em>g</em>-based testing compresses away than it is a replacement measurement model of comparable rigor; Sternberg's triarchic framework remains more widely accepted in education than in cognitive neuroscience, where <em>g</em>-based hierarchical models retain stronger empirical support.</p>
+    <div class="callout callout--stop-retrieve">
+      <div class="callout-title">Stop and Retrieve</div>
+      <p>Before reading on — in your own words, what do Gardner's and Sternberg's theories get right as critiques of IQ testing, and why doesn't getting that right make either one a comparably validated replacement measurement model?</p>
+    </div>
     <h3 id="iq-measurement-standardization-and-limits">IQ: Measurement, Standardization, and Limits</h3>
     <p>Intelligence testing began with Alfred Binet, who developed the first practical intelligence test in 1905 to identify French schoolchildren who needed additional educational support. The concept of <strong>IQ (intelligence quotient)</strong> — originally a ratio of mental age to chronological age — was later reformulated as a <strong>standardized score</strong> with a mean of 100 and a standard deviation of 15 (for most modern tests). An IQ score is exactly what this chapter's argument would predict: a standardized compression of a much richer, messier reality — useful for exactly what standardization is good for (prediction, comparison, tracking change over time), blind to exactly what compression always drops.</p>
     <figure class="chapter-figure wide expandable">
@@ -354,7 +374,8 @@
       <dd>slow, deliberate, effortful, rule-governed processing</dd>
       <dt>Universal grammar</dt>
       <dd>Chomsky's proposed set of innate grammatical principles shared by all human languages</dd>
-    </dl>    <h2 id="stop-and-retrieve">Stop and Retrieve</h2>
+    </dl>
+    <h2 id="review-questions">Review Questions</h2>
     <div class="review-q">
       <p><strong>1.</strong> What is the difference between a concept and a prototype? Give an example of each.</p>
       <details>
