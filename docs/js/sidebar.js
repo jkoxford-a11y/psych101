@@ -3,7 +3,7 @@
 
   var TOP_ITEMS_FULL = [
     { id: "toc", label: "Table of Contents", path: "index.html" },
-    { id: "prologue", label: "0 — Prologue: How to Actually Learn This Stuff", path: "prologue.html" },
+    { id: "prologue", label: "0 — Prologue: How to Actually Learn This Stuff", path: "chapters/prologue.html" },
     { id: "labs", label: "Learning Labs", path: "labs/index.html" }
   ];
 
