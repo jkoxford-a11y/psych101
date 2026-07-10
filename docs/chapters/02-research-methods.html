@@ -47,9 +47,9 @@
       </ol>
     </div>
 
-    <!-- Evidence Ladder -->
-    <h2 id="evidence-ladder">A Map Before the Details: The Evidence Ladder</h2>
-    <p>Before the details accumulate, here is the shape of the whole chapter. Each method below answers a different kind of question, and — this is the part worth committing to memory before anything else — only one of them can establish that one thing causes another.</p>
+    <!-- Research Cycle -->
+    <h2 id="evidence-ladder">A Map Before the Details: The Research Cycle</h2>
+    <p>Before the details accumulate, here is the shape of the whole chapter — not a ladder to climb toward some superior method, but a cycle: <strong>Observe → Define → Relate → Test → Estimate → Replicate → Revise.</strong> Descriptive work observes and turns up a question worth asking; operational definitions make that question measurable; correlational work relates variables to each other; experiments test whether one actually causes another; statistics estimate how large an effect is and how confidently you can say so; replication checks whether the finding survives contact with a new sample; and a result that doesn't survive — or that raises a sharper question than it answers — sends you back to Observe with something better to look for. None of this is a hierarchy with experiments at the top. Each method below answers a different kind of question, and — this is the part worth committing to memory before anything else — only one of them can establish that one thing causes another.</p>
 
     <table>
       <thead>
@@ -122,7 +122,7 @@
       </tbody>
     </table>
 
-    <p>Keep this table in view as you read. The first five rows are <em>ways of collecting data</em>; the last two are <em>what you do once you have it</em>. Confusing those two categories — treating "it was statistically significant" as if it were a research method in its own right — is itself a common source of confusion, which is exactly why it gets its own section later in this chapter.</p>
+    <p>Keep this table in view as you read. The first five rows are <em>ways of collecting data</em> — they map onto Observe, Relate, and Test in the cycle above; the last two are <em>what you do once you have it</em> — Estimate and Replicate. Confusing those two categories — treating "it was statistically significant" as if it were a research method in its own right — is itself a common source of confusion, which is exactly why it gets its own section later in this chapter.</p>
 
     <!-- Section 1 -->
     <h2 id="section-1-asking-questions-without-touching-the-system">Section 1: Asking Questions Without Touching the System</h2>
@@ -136,6 +136,8 @@
     <p><strong>Naturalistic observation</strong> means watching behavior unfold in its normal environment without interfering. The strength is ecological validity: you are watching the real thing. The weakness is the same one above — no control over competing explanations, so a pattern you notice cannot yet be explained.</p>
 
     <p>The <strong>survey method</strong> asks large numbers of people to report on their own attitudes, experiences, or behavior. Surveys are efficient and can sample huge populations, but they depend entirely on people accurately knowing and honestly reporting their own internal states — a shakier assumption than it sounds. People misremember, round their answers toward what seems socially acceptable, and sometimes lack introspective access to the thing being asked about.</p>
+
+    <p>Descriptive methods are not merely what researchers use when they cannot run an experiment — they often determine what experiment should be run. A case study can reveal a phenomenon no one expected; naturalistic observation can show when and where it occurs; a survey can estimate how common it is and which experiences travel alongside it. When a similar pattern turns up across different samples and methods — what researchers call <strong>convergence</strong> — it becomes harder to dismiss as an accident, even though convergence still does not establish what caused it. Description frames the question. The methods in the rest of this chapter test the explanation.</p>
 
     <p>Whatever the method, descriptive research depends on a step that is easy to skip and expensive to skip badly: the <strong>operational definition</strong> — a precise, measurable specification of exactly what you mean by a concept. "Aggression" is not a usable scientific variable until you decide it means something concrete and measurable. Without that translation step, you cannot collect data, because you do not yet know what to count.</p>
 
@@ -173,7 +175,7 @@
 
     <p>Descriptive methods tell you what is happening. The next step is asking whether two things happen <em>together</em> in a reliable way — which is where this chapter's opening misconception lives.</p>
 
-    <p>A <strong>correlation</strong> describes the degree to which two variables change together. The <strong>correlation coefficient</strong> (symbolized <em>r</em>) ranges from −1.00 to +1.00. A positive correlation means the variables move in the same direction; a negative correlation means they move in opposite directions. The magnitude tells you how tight the relationship is; the sign tells you the direction. A correlation near 0 means the variables are essentially unrelated.</p>
+    <p>A <strong>correlation</strong> describes the degree to which two variables change together. The <strong>correlation coefficient</strong> (symbolized <em>r</em>) ranges from −1.00 to +1.00. A positive correlation means the variables move in the same direction; a negative correlation means they move in opposite directions. The magnitude tells you how tight the relationship is; the sign tells you the direction. A correlation near 0 means the variables show little or no <em>linear</em> relationship — a strong nonlinear pattern (for instance, a relationship that rises then falls) can still produce an r near zero, since r specifically measures straight-line association.</p>
 
     <figure class="chapter-figure">
       <img src="../images/ch02/fig_correlation_scatter.png" alt="Three scatterplots showing positive, negative, and near-zero correlation, each labeled with its actual r value." />
@@ -197,6 +199,8 @@
 
     <p><em><strong>Diagnostic question:</strong> A study finds that teenagers who play more violent video games report more aggressive behavior. A news article concludes that violent games cause aggression. What is at least one alternative explanation the article is ignoring?</em> (Reverse causation — already-aggressive teens may be drawn to violent games — or a third variable, such as family conflict or impulsivity, independently increasing both.)</p>
 
+    <p><strong>Try it yourself:</strong> the <a href="../labs/ch02/correlation-causation.html">Correlation vs. Causation Classifier</a> lets you practice sorting real headlines by whether they show direction, a third variable, or a genuine causal claim — a hands-on way to catch the pattern before it shows up again in a news feed.</p>
+
     <p>Two further problems concern <em>who</em> ends up in your sample.</p>
 
     <p><strong>Random sampling</strong> means every member of the population you are studying has an equal chance of being selected. This is what supports <strong>external validity</strong> — confidence that a sample's results generalize to the broader population. True random sampling is difficult and expensive, which is part of why so much psychology research has historically relied on whoever was willing and available. This pattern has been influentially summarized as the <strong>WEIRD</strong> problem: a large share of psychology's research base draws from people who are Western, Educated, Industrialized, Rich, and Democratic — a narrow and unusual slice of humanity to generalize claims about "human" behavior from (Henrich, Heine, &amp; Norenzayan, 2010).</p>
@@ -218,9 +222,9 @@
 
     <p>Correlational research can tell you that two things are related. Only one method can tell you that one thing <em>causes</em> another: the <strong>experiment</strong>.</p>
 
-    <p>An experiment works by deliberately manipulating one variable and measuring its effect on another, while holding everything else as constant as possible. The variable the researcher manipulates is the <strong>independent variable (IV)</strong> — the suspected cause. The variable the researcher measures afterward is the <strong>dependent variable (DV)</strong> — the suspected effect. Participants who receive the manipulation make up the <strong>experimental group</strong>; participants who do not make up the <strong>control group</strong>, which exists so the researcher has a baseline for comparison.</p>
+    <p>An experiment works by deliberately manipulating one variable and measuring its effect on another, while holding everything else as constant as possible. The variable the researcher manipulates is the <strong>independent variable (IV)</strong> — the suspected cause. The variable the researcher measures afterward is the <strong>dependent variable (DV)</strong> — the suspected effect. Participants who receive the manipulation make up the <strong>experimental group</strong>; the <strong>control group</strong> is the comparison condition evaluated against it — sometimes participants who receive no manipulation at all, sometimes participants who receive a placebo or an alternative treatment, whichever gives the researcher the baseline the question requires.</p>
 
-    <p>The feature that separates a true experiment from a correlational study is <strong>random assignment</strong>: participants are assigned to conditions entirely by chance, not by any characteristic of their own. If assignment is truly random, the experimental and control groups should be equivalent, on average, on every variable except the one the researcher deliberately manipulated. Any outcome difference between the groups can then be attributed to the manipulation. This is what supports <strong>internal validity</strong> — confidence that the manipulation, and not some other factor, caused the observed difference.</p>
+    <p>The feature that separates a true experiment from a correlational study is <strong>random assignment</strong>: participants are assigned to conditions entirely by chance, not by any characteristic of their own. If assignment is truly random, the experimental and control groups should be equivalent, on average, on every variable except the one the researcher deliberately manipulated. Any outcome difference between the groups can then be attributed to the manipulation, provided the study is otherwise well-conducted and analyzed — randomization balances groups in expectation, but it does not by itself fix problems like uneven dropout between conditions or contamination between groups. This is what supports <strong>internal validity</strong> — confidence that the manipulation, and not some other factor, caused the observed difference.</p>
 
     <p>Internal validity and external validity solve different problems at different stages of a study, even though both involve the word "random." Random <em>sampling</em> (Section 2) is about who gets <em>into</em> the study, and supports generalizing beyond it. Random <em>assignment</em> (here) is about how participants already in the study get <em>divided</em>, and supports a causal claim within it. A study can have one without the other — a perfectly randomized experiment run on an unrepresentative sample has strong internal validity and weak external validity, and vice versa.</p>
 
@@ -251,6 +255,8 @@
     <p>A randomized design rules out preexisting differences between groups, but two further sources of bias can still distort a clean experiment, and a separate set of ethical obligations constrains the whole enterprise regardless of how clean the design is.</p>
 
     <p>A <strong>placebo</strong> is an inactive treatment given to a control group so researchers can separate the effect of the actual treatment from the effect of believing you received treatment. The <strong>placebo effect</strong> itself is real but smaller and less universal than its popular reputation: an influential 1955 paper claimed roughly a third of patients improve on placebo alone (Beecher, 1955), but more rigorous later reviews comparing placebo against no treatment at all found little to no effect on objective outcomes, with a modest and inconsistent effect mainly on subjective, self-reported ones (Hróbjartsson &amp; Gøtzsche, 2001, 2010). Treat that contrast itself as a small case study in this chapter's argument: a single influential finding is not the same as a finding that has held up.</p>
+
+    <p>One well-designed study makes the same point more concretely, and adds a distinction worth keeping separate. Wechsler and colleagues (2011) randomly assigned asthma patients to an active albuterol inhaler, a placebo inhaler, sham acupuncture, or no intervention, then measured both objective lung function (forced expiratory volume, FEV&#8321;) and patients' own reported improvement. Only albuterol improved objective lung function — about 20%, versus roughly 7% for the other three conditions. But on self-reported improvement, albuterol, the placebo inhaler, and sham acupuncture were statistically indistinguishable from each other — about 50%, 45%, and 46% — and all three beat the no-intervention control's 21%. This separates the <strong>placebo response</strong> (everything that changes in a placebo group: expectation, natural recovery, reporting habits, and any genuine placebo effect, all mixed together) from the <strong>placebo effect</strong> specifically (the increment over no treatment at all) — which is why a no-intervention arm, not just a placebo arm, is what a study needs to isolate it. Patients here experienced real relief from the placebo conditions. Their airways did not actually open. Both of those things are true at once, and only the four-way comparison design tells you which one you are looking at. (This was a small pilot study — 46 patients randomized, 39 completed — so treat the specific numbers as illustrating the pattern rather than as a large, precisely estimated finding.)</p>
 
     <p>The <strong>double-blind procedure</strong> goes a step further: neither the participant nor the researcher interacting with them knows who is in which group. This guards against participants behaving differently because they know what they are "supposed" to feel, and against researchers unconsciously treating groups differently. That second risk is not hypothetical — it is named directly after a horse. Clever Hans appeared to solve arithmetic by tapping a hoof, until investigation revealed he was reading unconscious postural cues from his questioner, who unknowingly signaled the correct answer (Pfungst, 1965/1911). Blinding exists because researchers are not immune to doing the human equivalent without realizing it — a direct descendant of the confirmation bias discussed in Chapter 1.</p>
 
@@ -283,7 +289,7 @@
       </tbody>
     </table>
 
-    <p><strong>Informed consent</strong> means participants are told, before agreeing to take part, what the study involves and what risks are reasonably foreseeable. At colleges, universities, hospitals, and other research institutions, research involving human participants is normally submitted for <strong>Institutional Review Board (IRB)</strong> review before it begins — not because researchers cannot be trusted, but because an independent body, rather than the research team itself, is positioned to evaluate the design objectively. Some minimal-risk projects may qualify for an exempt or expedited review rather than full review, but the underlying principle holds regardless: researchers do not simply decide for themselves that a human-subjects study is ethically acceptable. The modern IRB system traces to the Belmont Report's three core principles — respect for persons, beneficence, and justice — formalized after historical research abuses that informed consent, on paper, had not prevented (National Commission for the Protection of Human Subjects, 1979).</p>
+    <p><strong>Informed consent</strong> means participants are told, before agreeing to take part, what the study involves and what risks are reasonably foreseeable. At colleges, universities, hospitals, and other research institutions, research involving human participants is normally submitted for <strong>Institutional Review Board (IRB)</strong> review before it begins — not because researchers cannot be trusted, but because an independent body, rather than the research team itself, is positioned to evaluate the design objectively. Some minimal-risk projects may qualify for an exempt or expedited review rather than full review, but the underlying principle holds regardless: researchers do not simply decide for themselves that a human-subjects study is ethically acceptable. Mandatory IRB review in the United States traces legally to the National Research Act of 1974, passed after historical research abuses — including the Tuskegee syphilis study — that informed consent, on paper, had not prevented. The Belmont Report then articulated the ethical framework IRBs still apply today: respect for persons, beneficence, and justice (National Commission for the Protection of Human Subjects, 1979). The Act created the oversight requirement; Belmont supplied the principles behind it.</p>
 
     <p>The hot sauce paradigm itself typically involves mild <strong>deception</strong> — participants are not always told the study concerns aggression, since knowing the real purpose would change how they behave — which is why a full <strong>debriefing</strong>, explaining the study's actual purpose and confirming no one was harmed, is a required part of the procedure once data collection ends.</p>
 
@@ -304,7 +310,7 @@
       <figcaption><strong>Figure 2.7.</strong> A <em>p</em>-value describes how unusual the observed data would be under the null model, assuming the model is appropriate. It does not tell whether the hypothesis is true, how large or important an effect is, or whether a finding will replicate. Original figure by Jonathan K. Oxford.</figcaption>
     </figure>
 
-    <p>This distinction underlies two kinds of mistakes a researcher can make. A <strong>Type I error</strong> is concluding an effect exists when it does not — a false positive. A <strong>Type II error</strong> is concluding no effect exists when one actually does — a false negative (Neyman &amp; Pearson, 1933). Every significance threshold is a deliberate trade-off between these two risks; demanding a smaller <em>p</em>-value to reduce Type I errors correspondingly increases the risk of Type II errors, and no single setting eliminates both.</p>
+    <p>This distinction underlies two kinds of mistakes a researcher can make. A <strong>Type I error</strong> is concluding an effect exists when it does not — a false positive. A <strong>Type II error</strong> is concluding no effect exists when one actually does — a false negative (Neyman &amp; Pearson, 1933). Every significance threshold is a deliberate trade-off between these two risks: holding the sample size and the study's statistical power fixed, demanding a smaller <em>p</em>-value to reduce Type I errors correspondingly increases the risk of Type II errors, and no single setting eliminates both. (Increasing power — for instance, by collecting a larger sample — can lower the Type II error rate without loosening the significance threshold at all.)</p>
 
     <p>It is tempting to read "5% false-positive rate" as "5% of published findings are false," but that is not quite right either. Under ideal conditions, a .05 threshold means some null effects will appear significant by chance alone, simply because thousands of studies are run every year. In the real published literature, that baseline problem can be amplified by small sample sizes, unreported analyses that never make it into the paper, publication bias toward positive results, and a habit of treating "statistically significant" as more definitive than the term was ever meant to claim.</p>
 
@@ -318,20 +324,10 @@
 
     <div class="callout callout--ai-connection">
       <div class="callout-title">AI Connection</div>
-      <p>Deciding whether to trust an AI-generated claim involves a version of the same two-sided error problem as significance testing. Accepting a fluent but false AI output as true functions like a Type I error; dismissing a correct AI output purely out of general skepticism functions like a Type II error. The real difference is calibration: a confidence interval at least tells you how precise an estimate is, under a stated statistical model, with a stated set of assumptions. A chatbot's fluent prose is not an uncertainty estimate — it tells you only that the model can produce fluent prose, with no equivalent signal attached for how likely the claim is to be correct.</p>
+      <p>Deciding whether to trust an AI-generated claim involves a version of the same two-sided error problem as significance testing — this is an analogy, not a literal instance of hypothesis testing, since there is no formal null hypothesis or decision rule involved in reading a chatbot's answer. Accepting a fluent but false AI output as true functions like a Type I error; dismissing a correct AI output purely out of general skepticism functions like a Type II error. The real difference is calibration: a confidence interval at least tells you how precise an estimate is, under a stated statistical model, with a stated set of assumptions. A chatbot's fluent prose is not an uncertainty estimate — it tells you only that the model can produce fluent prose, with no equivalent signal attached for how likely the claim is to be correct.</p>
     </div>
 
     <p>Even a well-designed, significant, properly randomized single study is not the end of the story. <strong>Replication</strong> — repeating a study, ideally with a new sample, to see whether the result holds up — is what actually builds confidence in a finding, not any individual result. Chapter 1 introduced the replication crisis: beginning around 2011, systematic attempts to replicate published psychological findings revealed that a substantial number did not hold up (Open Science Collaboration, 2015). The methods in this chapter are not a guarantee against that outcome. Replication is the check on that risk — not any single design feature, however careful.</p>
-
-    <figure class="chapter-figure">
-      <img src="../images/ch02/fig_central_limit_theorem.png" alt="Two histograms: a skewed population distribution of individual scores, and the resulting approximately normal sampling distribution of the mean from 10,000 repeated samples of size 30." />
-      <figcaption><strong>Figure 2.4.</strong> The Central Limit Theorem, shown with simulated data: skewed individual scores (left) versus the sampling distribution of the mean across 10,000 repeated samples of 30 (right). This is part of why inferential statistics work on real-world variables that are not themselves normally distributed. Original figure by Jonathan K. Oxford.</figcaption>
-    </figure>
-
-    <div class="callout callout--stop-retrieve">
-      <div class="callout-title">Demo — Coming Soon</div>
-      <p><em>[Placeholder — interactive sampling/CLT demo to be embedded here once live URL is available. Predict, before interacting: what should a sampling distribution of means look like if you draw repeated random samples from a skewed population? After interacting: was your prediction right?]</em></p>
-    </div>
 
     <div class="callout callout--think-about-it">
       <div class="callout-title">Think About It</div>
@@ -341,7 +337,7 @@
     <!-- Chapter Summary -->
     <h2 id="chapter-summary">Chapter Summary</h2>
 
-    <p>Psychology answers different kinds of questions with different methods, and matching the method to the question is the central skill of this chapter — summarized in the evidence-ladder table near the start. Descriptive methods describe what is happening but cannot identify causes, and depend on precise operational definitions to be usable at all. Once a concept is operationalized, it has to clear two further bars: reliability (consistency) and validity (actually capturing the intended concept), which are independent questions a measure can pass or fail separately.</p>
+    <p>Psychology answers different kinds of questions with different methods, and matching the method to the question is the central skill of this chapter — summarized in the research-cycle table near the start. Descriptive methods describe what is happening but cannot identify causes, and depend on precise operational definitions to be usable at all. Once a concept is operationalized, it has to clear two further bars: reliability (consistency) and validity (actually capturing the intended concept), which are independent questions a measure can pass or fail separately.</p>
 
     <p>Correlational research quantifies how strongly two variables move together but cannot distinguish among the three explanations for any correlation: X causes Y, Y causes X, or a third variable causes both. Random sampling supports external validity — generalizing beyond the sample — while volunteer bias and the broader WEIRD-sample problem can undermine it even in well-analyzed studies.</p>
 
@@ -584,7 +580,7 @@
     </div>
 
     <div class="review-q">
-      <p><strong>12.</strong> Why does a single well-designed, statistically significant study not, by itself, establish that a finding is reliable?</p>
+      <p><strong>12.</strong> Why does a single well-designed, statistically significant study not, by itself, establish that a finding will replicate?</p>
       <ol class="options" type="a">
         <li>Significance testing permits some false positives by design, and any individual study carries some chance of being one of them</li>
         <li>Single studies are always poorly designed</li>
@@ -610,7 +606,10 @@
       <dd>A range of plausible values for a true population effect, given the data and the statistical model used to estimate it.</dd>
 
       <dt>Control group</dt>
-      <dd>The group in an experiment that does not receive the manipulation, providing a baseline for comparison.</dd>
+      <dd>The comparison condition in an experiment against which the experimental condition is evaluated; depending on the design, this may mean no manipulation at all, a placebo, or an alternative treatment.</dd>
+
+      <dt>Convergence</dt>
+      <dd>When descriptive research turns up a similar pattern across different samples, methods, or contexts; convergence makes a phenomenon harder to dismiss as an accident, but does not by itself establish what causes it.</dd>
 
       <dt>Correlation coefficient</dt>
       <dd>A statistic, ranging from −1.00 to +1.00, describing the strength and direction of the relationship between two variables.</dd>
@@ -647,6 +646,9 @@
 
       <dt>Placebo / placebo effect</dt>
       <dd>An inactive treatment given to a control group; the placebo effect is improvement caused by the expectation of treatment, real but more modest and inconsistent than commonly believed.</dd>
+
+      <dt>Placebo response</dt>
+      <dd>Everything that changes in a group receiving a placebo, including natural recovery, altered reporting, and any genuine placebo effect, all combined; isolating the placebo effect specifically requires comparing against a no-treatment control.</dd>
 
       <dt>Random assignment</dt>
       <dd>Assigning participants to conditions purely by chance, supporting internal validity.</dd>
@@ -762,6 +764,8 @@
       <p>Sikora, J., Evans, M. D. R., &amp; Kelley, J. (2019). Scholarly culture: How books in adolescence enhance adult literacy, numeracy and technology skills in 31 societies. <em>Social Science Research, 77</em>, 1–15. https://doi.org/10.1016/j.ssresearch.2018.10.003</p>
 
       <p>Wasserstein, R. L., &amp; Lazar, N. A. (2016). The ASA's statement on p-values: Context, process, and purpose. <em>The American Statistician, 70</em>(2), 129–133. https://doi.org/10.1080/00031305.2016.1154108</p>
+
+      <p>Wechsler, M. E., Kelley, J. M., Boyd, I. O., Dutile, S., Marigowda, G., Kirsch, I., Israel, E., &amp; Kaptchuk, T. J. (2011). Active albuterol or placebo, sham acupuncture, or no intervention in asthma. <em>New England Journal of Medicine, 365</em>(2), 119–126. https://doi.org/10.1056/NEJMoa1103319</p>
 
       <p class="verify-note">Note on verification: DOIs above were checked against publisher/Crossref/PubMed records during drafting. The Ritter &amp; Eslea (2005) author order is confirmed via Crossref metadata. The Sikora et al. (2019) DOI was corrected via Crossref title search after a search-engine-reported DOI resolved to an unrelated paper — a reminder that a search-engine DOI is a claim, not a fact, until checked against the registry. The Noba module citation year (2026) reflects Noba's own "cite this module" convention at time of writing.</p>
     </div>
