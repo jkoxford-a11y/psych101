@@ -83,3 +83,47 @@ Four-panel target diagram comparing measurement accuracy and precision. The firs
 - **Aspect ratio:** 3:2. Use the wide/expandable figure treatment rather than cropping.
 - **Embedded numbering:** The panel numbers 1–4 are conceptual labels, not chapter figure numbers.
 - **Final filename:** `ch02_reliability_validity_accuracy_precision.png`
+
+---
+
+## `ch02_placebo_response_vs_effect_asthma.png`
+
+**Working title:** Placebo Response versus Placebo Effect: Objective and Subjective Outcomes in Asthma  
+**Proposed placement:** In the bias-controls section immediately after placebo and placebo effect are introduced.  
+**Proposed caption number:** Pending final chapter-wide renumbering.  
+**Status:** **Use now after the PNG is added to this folder and browser-checked.**  
+**Recommended display:** `chapter-figure wide expandable` because the two-panel data comparison and definition strip contain labels that benefit from enlargement.
+
+### Caption
+
+**Placebo response and placebo effect are not the same thing.** In this asthma study, active albuterol produced a substantial improvement in objectively measured lung function, whereas the placebo inhaler, sham acupuncture, and no-intervention conditions produced little objective change. Subjective reports differed: participants often reported feeling better after both active and placebo treatments. The placebo response includes all change observed in a placebo condition; the placebo effect is the additional change associated with receiving the placebo ritual or procedure compared with receiving no intervention.
+
+### Alt text
+
+Two-panel bar chart based on a four-condition asthma study comparing active albuterol, a placebo inhaler, sham acupuncture, and no intervention. The left panel shows objective improvement in lung function: active albuterol improves FEV1 by about 20 percent, while the other three conditions are each near 7 percent. The right panel shows subjective symptom improvement: about 50 percent report substantial improvement with albuterol, 45 percent with the placebo inhaler, 46 percent with sham acupuncture, and 21 percent with no intervention. A definition strip explains that placebo response includes all change in the placebo group, while placebo effect refers to the difference between placebo and no treatment.
+
+### Creation, source, and attribution
+
+- **Creation method:** Original educational infographic generated with ChatGPT image generation, July 2026, from project-specific direction and reported study values.
+- **Direction and curation:** Jonathan K. Oxford.
+- **Data source:** Wechsler, M. E., Kelley, J. M., Boyd, I. O., Dutile, S., Marigowda, G., Kirsch, I., Israel, E., & Kaptchuk, T. J. (2011). Active albuterol or placebo, sham acupuncture, or no intervention in asthma. *New England Journal of Medicine, 365*(2), 119–126.
+- **Attribution text:** Original visualization generated for Oxford Psychology 101 with ChatGPT image generation, 2026, using values reported by Wechsler et al. (2011). Directed and curated by Jonathan K. Oxford. No external copyrighted image assets intentionally used.
+- **External source assets:** None intentionally used; the chart is an original redraw rather than a reproduction of the published figure.
+- **License/public-sharing status:** Safe for public sharing pending final verification of plotted values, citation formatting, accessibility, and browser rendering.
+
+### Accuracy and interpretation caveats
+
+- The plotted percentages are rounded teaching values based on the published study and should be checked once more against the article before final wiring.
+- The figure contrasts an objective physiological outcome with subjective symptom reports in one asthma study. It does not imply that placebo effects are always subjective, clinically meaningless, or identical across conditions and disorders.
+- Improvement within a placebo group is a **placebo response**, not automatically evidence that the placebo caused the improvement. Natural symptom fluctuation, regression to the mean, reporting effects, and other changes over time may contribute.
+- Estimating a placebo effect requires an appropriate comparison condition. In this figure, the relevant conceptual comparison is placebo intervention versus no intervention.
+- Sham acupuncture and placebo inhaler are different treatment rituals and should not be assumed to produce identical expectations or mechanisms.
+- Active albuterol and placebo interventions may affect subjective and objective outcomes through different pathways; subjective relief should not be treated as fabricated simply because lung function did not change.
+
+### Asset notes
+
+- **Generated dimensions:** 1536 × 1024 pixels.
+- **Aspect ratio:** 3:2. Use the wide/expandable figure treatment rather than cropping.
+- **Embedded numbering:** The condition numbers 1–4 are conceptual labels, not chapter figure numbers.
+- **Embedded source line:** Retain if readable after browser testing; the full source should also appear in the chapter reference list and figure metadata.
+- **Final filename:** `ch02_placebo_response_vs_effect_asthma.png`
