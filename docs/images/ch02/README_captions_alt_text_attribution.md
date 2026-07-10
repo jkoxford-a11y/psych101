@@ -131,48 +131,44 @@ Two-panel bar chart based on a four-condition asthma study comparing active albu
 
 ---
 
-## `ch02_effect_size_confidence_intervals_magnitude_precision.png`
+## `ch02_effect_size_confidence_intervals_magnitude_uncertainty.png`
 
-**Working title:** Effect Size and Confidence Intervals: Magnitude and Precision  
+**Working title:** Effect Size and Confidence Intervals: Magnitude and Uncertainty  
 **Proposed placement:** In the statistics section immediately after effect size and confidence intervals are introduced.  
 **Proposed caption number:** Pending final chapter-wide renumbering.  
-**Status:** **Candidate/reference — make two wording corrections before final wiring.**  
-**Recommended display:** `chapter-figure wide expandable` because the three-study dot-and-whisker comparison contains explanatory text that benefits from enlargement.
+**Status:** **Use now after the PNG is added to this folder and browser-checked.**  
+**Recommended display:** `chapter-figure wide expandable` because the labels and dot-and-whisker examples benefit from enlargement, especially on mobile.
 
 ### Caption
 
-**Effect size asks how much; a confidence interval shows how uncertain the estimate is.** The dot marks the estimated direction and magnitude of an effect, while the horizontal line shows a range of values compatible with the data and statistical model. A precisely estimated effect can still be too small to matter, and a promising estimate with a wide interval may remain too uncertain to support a firm conclusion. Magnitude and precision therefore answer different questions that a p-value alone cannot resolve.
+**Effect size tells us how much; a confidence interval shows how uncertain the estimate is.** The dot marks the estimated direction and magnitude of an effect, while the horizontal line shows a range of values compatible with the data and statistical model. A narrow interval can precisely estimate a very small effect. A wide interval can leave negative, zero, and positive effects compatible with the data. Magnitude and uncertainty therefore answer different questions.
 
 ### Alt text
 
-Educational dot-and-whisker plot comparing three fictional studies of a training program. Study A estimates a very small positive effect of 0.10 with a narrow confidence interval from 0.05 to 0.15, illustrating a tiny but precise result. Study B estimates a moderate positive effect of 0.30 with a wide interval from negative 0.20 to positive 0.80, illustrating a potentially meaningful but highly uncertain result. Study C estimates a moderate positive effect of 0.50 with a narrower interval from 0.25 to 0.75, illustrating a larger and more precise estimate. A vertical dashed line marks zero, or no effect. The figure emphasizes that the dot represents estimated magnitude and the line represents uncertainty.
+Three-row dot-and-whisker diagram using fictional training-program results. The first row, Tiny and precise, shows a small positive dot with a short horizontal interval. The second row, Promising but uncertain, shows a positive dot with a very wide interval extending across the vertical zero line into negative and positive values. The third row, Moderate and precise, shows a larger positive dot with a narrower interval entirely to the positive side of zero. A legend states that the dot is the estimated effect size and the line is the confidence interval.
 
 ### Creation and attribution
 
-- **Creation method:** Original simulated educational infographic generated with ChatGPT image generation, July 2026, from project-specific direction and fictional study values.
+- **Creation method:** Original simulated educational infographic generated with ChatGPT image generation, July 2026, from project-specific direction and fictional examples.
 - **Direction and curation:** Jonathan K. Oxford.
 - **Attribution text:** Original simulated figure generated for Oxford Psychology 101 with ChatGPT image generation, 2026. Directed and curated by Jonathan K. Oxford. No external copyrighted image assets intentionally used.
 - **External source assets:** None intentionally used.
-- **License/public-sharing status:** Safe for public sharing after the wording corrections below and final accessibility/browser review.
+- **License/public-sharing status:** Safe for public sharing pending final accessibility and browser-render review.
 
 ### Accuracy and interpretation caveats
 
-- The three studies and numerical values are fictional teaching examples, not results from an actual training experiment.
-- A confidence interval is model-dependent. It does not assign a probability that the true effect lies inside this specific realized interval under the usual frequentist interpretation.
-- Whether an interval includes zero should not be treated as a binary truth test or as proof that an effect is or is not “real.”
-- Statistical evidence and practical importance are separate. An interval excluding zero does not by itself establish that an effect is educationally or clinically meaningful.
-- A narrow interval indicates greater precision relative to a wider interval on the same scale; it does not guarantee freedom from bias, model misspecification, or poor measurement.
-- Effect sizes require context. A value that is trivial in one domain may matter in another, and standardized effects such as Cohen's *d* depend on the variability of the measured outcome.
-
-### Required wording corrections before wiring
-
-- In Study C, replace **“More likely to be both real and meaningful”** with wording that does not equate exclusion of zero with truth or practical importance, such as: **“The data are compatible with a moderate positive effect under this model.”**
-- In the key-takeaway box, replace **“A statistically significant result only tells us the result is unlikely if there were truly no effect”** with: **“A small p-value indicates that the observed data are relatively incompatible with the specified null model, assuming the model and its assumptions are appropriate.”**
-- Preserve the main takeaway that a p-value does not show how large, important, or precisely estimated an effect is.
+- The three examples are fictional teaching cases, not results from an actual training study.
+- The confidence interval is model-dependent and should not be treated as a binary truth test.
+- An interval that excludes zero does not prove the effect is real, unbiased, or practically important.
+- The figure uses a training-program context in which positive values mean better test-score improvement. Positive and negative effects are not inherently good or bad outside that stated context.
+- “Moderate” and “meaningful” require substantive context. A standardized effect that matters in one setting may be trivial in another.
+- A narrow interval indicates greater precision on the same scale; it does not protect against systematic bias, poor measurement, or model misspecification.
+- Color supports the distinctions but does not carry them alone; labels and positions preserve meaning in grayscale.
 
 ### Asset notes
 
 - **Generated dimensions:** 1536 × 1024 pixels.
 - **Aspect ratio:** 3:2. Use the wide/expandable figure treatment rather than cropping.
-- **Embedded numbering:** The labels A–C identify fictional studies, not chapter figure numbers.
-- **Final filename:** `ch02_effect_size_confidence_intervals_magnitude_precision.png`
+- **Embedded numbering:** The labels A–C identify fictional examples, not chapter figure numbers.
+- **Supersedes:** `ch02_effect_size_confidence_intervals_magnitude_precision.png`, which was too text-dense and contained less carefully calibrated wording.
+- **Final filename:** `ch02_effect_size_confidence_intervals_magnitude_uncertainty.png`
