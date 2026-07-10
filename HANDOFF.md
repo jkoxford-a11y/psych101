@@ -42,6 +42,16 @@ Sidebar TOC redesign (Session 80/80b) remains in place and confirmed working liv
 
 ## Session Log
 
+### Session 84 (2026-07-10)
+
+**What happened:** Jon flagged two prologue issues: the review-question rationale label "Why the wrong answer is tempting" doesn't fit the prologue's open-ended short-answer format (that phrasing is accurate elsewhere, where questions are MC with lettered distractors — confirmed via Ch4/Ch7). Relabeled all 8 instances to "Common misconception:". Separately, extended the Ch9 in-place figure-expand pattern (shipped Session 83) to the prologue's 4 figures — same markup, reused existing CSS/JS.
+
+**Process failure:** Claude made both edits first in a stale OneDrive copy of the repo that Session 83 had explicitly moved off of — a leftover connected folder Claude didn't check against the repo Jon was actually viewing. Jon caught it when he reported seeing no change. The stale copy's HANDOFF.md was itself out of date (didn't reflect Session 83's real outcome), compounding the confusion. Redid both edits correctly in `C:\GitHub\psych101\docs\prologue.html`, verified via grep. Standing rule added above: confirm the connected-folder path matches the live repo before trusting any context read from it.
+
+**Verification:** grep counts on the correct file — 8 "Common misconception:" labels, 0 old phrasing, 4 expandable figures with toggle/hint markup, 1 `figure-expand.js` script tag. Not yet checked in an actual browser; not yet committed.
+
+**Files modified:** `docs/prologue.html`, `HANDOFF.md` (in `C:\GitHub\psych101`). The earlier edits to the OneDrive copy are stale/irrelevant and were not carried forward.
+
 ### Session 83 (2026-07-09)
 
 **What happened:** Jon asked to build the Ch9 figure "in-place expand" pattern that Session 82 had only designed. Built `.chapter-figure.expandable`/`.is-expanded` CSS (thumbnail-height cap, click grows in place, no modal) and `docs/js/figure-expand.js`, piloted on the System 1/2 figure. While piloting, `09-thinking-language-intelligence.html` appeared truncated again via bash — investigation initially treated this as a real recurrence of the Session 81/82 corruption, so it was rebuilt from git HEAD (which turned out to already be correct) plus the pilot edit.
