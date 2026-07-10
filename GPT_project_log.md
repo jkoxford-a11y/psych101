@@ -21,6 +21,15 @@ Record only actions, decisions, files changed, validation, and remaining issues.
 
 ## Log Entries
 
+### 2026-07-10 - Chapter 8 Memory Learning Labs
+
+- Built two standalone Chapter 8 labs following `docs/labs/lab-design-spec.md`: `docs/labs/ch08/levels-of-processing.html` with `docs/js/labs-levels-of-processing.js`, and `docs/labs/ch08/self-reference-effect.html` with `docs/js/labs-self-reference-effect.js`.
+- Levels-of-processing lab compares appearance, sound, and meaning judgments using counterbalanced word sets, a distractor task, old/new recognition, false-alarm reporting, explanation gating, and a study-strategy transfer task.
+- Self-reference lab isolates self-reference from ordinary semantic processing using two counterbalanced trait-word sets. It does not store yes/no trait endorsements, includes a per-item skip option, excludes skipped targets from condition scores, reports false alarms, and explicitly rejects personality-test interpretation.
+- Updated `docs/labs/index.html` with both Chapter 8 labs.
+- Validation: JavaScript syntax checked; all JavaScript DOM IDs matched HTML IDs; target/lure sets contain no duplicates or overlap; condition assignment rotates across sessions; lab state uses `sessionStorage`; no server submission or analytics added.
+- Remaining issue: both labs still need a manual browser interaction/visual pass and are not yet linked from `source/chapters/ch08-memory.md`.
+
 ### 2026-07-09 - Ch9 Figure Expand/Sizing Pattern (resolves prior open issue)
 
 - Resolved the Ch9 figure-sizing open issue: built a reusable "in-place expand" pattern instead of resizing figures individually. Added `docs/css/style.css` `.chapter-figure.expandable` / `.is-expanded` rules (thumbnail-height cap with click-to-grow, no modal/overlay) and `docs/js/figure-expand.js` (click handler, `<a href>` fallback to full image for no-JS).
