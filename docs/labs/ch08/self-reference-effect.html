@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Why Does “About Me” Stick? - General Psychology</title>
+  <link rel="stylesheet" href="../../css/style.css" />
+  <link rel="stylesheet" href="../../css/labs.css" />
+</head>
+<body>
+<div class="layout">
+  <aside class="sidebar" id="app-sidebar"></aside>
+  <script src="../../js/sidebar.js" data-dir="labs/ch08" data-active="" data-top="full"></script>
+
+  <main class="main lab-main">
+    <p class="chapter-meta">Learning Lab - Chapter 8</p>
+    <h1>Why Does “About Me” Stick?</h1>
+    <hr class="chapter-divider" />
+
+    <p>You are about to make two kinds of meaningful judgments about trait words. Some judgments ask what the word means in general. Others ask whether the word could describe you in at least some situations. After a brief interruption, you will compare what you remember.</p>
+    <p>This is a memory demonstration, not a personality test, diagnostic assessment, or controlled experiment on you. A short individual result can differ from the usual group-level pattern by chance.</p>
+
+    <div class="callout callout--note">
+      <div class="callout-title">Accessibility and Privacy</div>
+      <p>This lab runs entirely in your browser. It stores your prediction, trial progress, recognition responses, explanation, and transfer response in <code>sessionStorage</code> for this browser session only. It does <strong>not</strong> store which traits you endorsed, calculate a personality profile, collect names or identifiers, use analytics, or send data to a server. You may skip any trait judgment.</p>
+    </div>
+
+    <section class="lab-panel" aria-labelledby="core-idea-heading">
+      <h2 id="core-idea-heading">The Question</h2>
+      <div class="concept-grid">
+        <article class="concept-card">
+          <h3>General semantic judgment</h3>
+          <p>Think about what a trait means by deciding whether it is usually helpful in a group project.</p>
+        </article>
+        <article class="concept-card">
+          <h3>Self-reference judgment</h3>
+          <p>Connect the same kind of trait word to your existing knowledge about yourself.</p>
+        </article>
+        <article class="concept-card">
+          <h3>Critical comparison</h3>
+          <p>Both conditions involve meaning. The difference is whether the word is linked to the self.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="lab-panel" aria-labelledby="predict-heading" id="prediction-panel">
+      <h2 id="predict-heading">Predict and Commit</h2>
+      <form id="prediction-form" novalidate>
+        <fieldset class="lab-fieldset">
+          <legend>Which judgment do you predict will produce better later recognition?</legend>
+          <label class="option-row"><input type="radio" name="prediction-choice" value="self" /> Self-reference judgments</label>
+          <label class="option-row"><input type="radio" name="prediction-choice" value="semantic" /> General semantic judgments</label>
+          <label class="option-row"><input type="radio" name="prediction-choice" value="same" /> About the same</label>
+        </fieldset>
+
+        <label class="text-label" for="prediction-reason">Both judgments involve meaning. Why might connecting a word to yourself still change later memory?</label>
+        <textarea id="prediction-reason" rows="4" required placeholder="Commit to a reason before seeing the words."></textarea>
+
+        <button class="lab-btn" type="button" id="commit-prediction">Commit prediction</button>
+      </form>
+      <p class="save-status" id="prediction-status" aria-live="polite"></p>
+    </section>
+
+    <section class="lab-panel phase-panel" aria-labelledby="encoding-heading" id="encoding-panel" hidden>
+      <div class="lab-progress" aria-live="polite">
+        <span id="encoding-counter">Judgment 1 of 24</span>
+        <span id="encoding-condition">Self-reference judgment</span>
+      </div>
+      <h2 id="encoding-heading" tabindex="-1">Make the Judgment</h2>
+      <p>Answer the question about the large trait word. There is no correct personality answer, and your yes/no choice is not stored.</p>
+
+      <div class="curve-wrap" aria-live="polite" aria-atomic="true">
+        <p class="lab-kicker" id="processing-label">Self-reference</p>
+        <h2 id="stimulus-word">CURIOUS</h2>
+        <p id="orienting-question">Could this trait describe you in at least some situations?</p>
+      </div>
+
+      <div class="sim-controls" aria-label="Trait judgment responses">
+        <button class="lab-btn" type="button" id="encoding-yes">Yes</button>
+        <button class="lab-btn" type="button" id="encoding-no">No</button>
+        <button class="lab-btn lab-btn--secondary" type="button" id="encoding-skip">Skip this word</button>
+      </div>
+      <p class="save-status" id="encoding-status" aria-live="polite"></p>
+
+      <h3>Text Event Log</h3>
+      <div class="event-log" aria-live="polite">
+        <ol id="encoding-log"></ol>
+      </div>
+    </section>
+
+    <section class="lab-panel phase-panel" aria-labelledby="distractor-heading" id="distractor-panel" hidden>
+      <div class="lab-progress" aria-live="polite">
+        <span id="distractor-counter">Number 1 of 8</span>
+        <span>Brief interruption</span>
+      </div>
+      <h2 id="distractor-heading" tabindex="-1">Clear the Workspace</h2>
+      <p>Classify each number as odd or even. This short interruption reduces simple rehearsal before the memory test.</p>
+
+      <div class="curve-wrap" aria-live="polite" aria-atomic="true">
+        <h2 id="distractor-number">47</h2>
+        <p>Is this number odd or even?</p>
+      </div>
+
+      <div class="sim-controls" aria-label="Number classification responses">
+        <button class="lab-btn" type="button" id="distractor-odd">Odd</button>
+        <button class="lab-btn" type="button" id="distractor-even">Even</button>
+      </div>
+      <p class="save-status" id="distractor-status" aria-live="polite"></p>
+    </section>
+
+    <section class="lab-panel phase-panel" aria-labelledby="recognition-heading" id="recognition-panel" hidden>
+      <div class="lab-progress" aria-live="polite">
+        <span id="recognition-counter">Recognition item 1 of 48</span>
+        <span id="recognition-progress">0 responses recorded</span>
+      </div>
+      <h2 id="recognition-heading" tabindex="-1">Recognition Test</h2>
+      <p>Some words were targets in the earlier judgment task; others are new.</p>
+
+      <div class="curve-wrap" aria-live="polite" aria-atomic="true">
+        <h2 id="recognition-word">curious</h2>
+        <p>Was this a target word in the earlier judgment task?</p>
+      </div>
+
+      <div class="sim-controls" aria-label="Recognition responses">
+        <button class="lab-btn" type="button" id="recognition-old">Old - I saw it earlier</button>
+        <button class="lab-btn" type="button" id="recognition-new">New - I did not see it</button>
+      </div>
+      <p class="save-status" id="recognition-status" aria-live="polite"></p>
+
+      <h3>Text Event Log</h3>
+      <div class="event-log" aria-live="polite">
+        <ol id="recognition-log"></ol>
+      </div>
+    </section>
+
+    <section class="lab-panel phase-panel" id="explain-panel" hidden aria-labelledby="explain-heading">
+      <h2 id="explain-heading" tabindex="-1">Results and Explanation</h2>
+      <p id="completion-summary"></p>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th scope="col">Encoding judgment</th>
+              <th scope="col">Targets recognized</th>
+              <th scope="col">Recognition rate</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">General semantic</th>
+              <td id="semantic-count">0 of 12</td>
+              <td id="semantic-rate">0%</td>
+            </tr>
+            <tr>
+              <th scope="row">Self-reference</th>
+              <td id="self-count">0 of 12</td>
+              <td id="self-rate">0%</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p id="false-alarm-summary"></p>
+
+      <div class="callout callout--note">
+        <div class="callout-title">What the activity was designed to show</div>
+        <p>Both conditions required semantic processing. Self-reference added a connection to a large, familiar, and organized body of knowledge: what you know about yourself. Psychologists call that organized knowledge a <strong>self-schema</strong>. Connecting a word to the self-schema can elaborate it and create additional retrieval cues. Across groups, information processed in relation to the self is often remembered better than information given a general semantic judgment. This pattern is called the <strong>self-reference effect</strong>.</p>
+      </div>
+
+      <div class="callout callout--do-not-confuse">
+        <div class="callout-title">Do Not Confuse: A Memory Effect with a Personality Test</div>
+        <p>The activity does not infer anything about your personality from the traits you endorsed. It also cannot determine why self-reference sometimes improves memory. Researchers have proposed elaboration, organization, and the exceptional familiarity of self-knowledge as overlapping explanations. A single short demonstration cannot distinguish among them or prove that the self is a unique memory system.</p>
+      </div>
+
+      <label class="text-label" for="explanation-response">Both conditions involved meaning. Why might self-reference still improve memory? Use the terms <strong>self-schema</strong>, <strong>elaboration</strong>, and <strong>retrieval cue</strong>.</label>
+      <textarea id="explanation-response" rows="5"></textarea>
+      <button class="lab-btn" type="button" id="save-explanation">Save explanation and continue</button>
+      <p class="save-status" id="explanation-status" aria-live="polite"></p>
+    </section>
+
+    <section class="lab-panel phase-panel" id="transfer-panel" hidden aria-labelledby="transfer-heading">
+      <h2 id="transfer-heading" tabindex="-1">Retrieve and Transfer</h2>
+      <p id="transfer-summary"></p>
+      <label class="text-label" for="transfer-response">Choose one concept from this chapter, such as proactive interference, episodic memory, or the serial-position effect. Create an accurate example from your own experience. Then explain how that personal connection could aid retrieval without replacing the formal definition.</label>
+      <textarea id="transfer-response" rows="5"></textarea>
+      <div class="lab-actions">
+        <button class="lab-btn" type="button" id="save-transfer">Save transfer response locally</button>
+        <button class="lab-btn lab-btn--secondary" type="button" id="restart-lab">Restart lab</button>
+      </div>
+      <p class="save-status" id="transfer-status" aria-live="polite"></p>
+    </section>
+
+    <section class="callout callout--think-about-it">
+      <div class="callout-title">Instructor Note</div>
+      <p>Use this after the levels-of-processing lab or as a separate demonstration of elaboration and self-schema. Compare the class-level pattern rather than treating one student's result as decisive. The key debrief question is: if both conditions required meaning, what additional cognitive work did self-reference require?</p>
+    </section>
+
+    <section class="callout callout--note">
+      <div class="callout-title">Evidence Base</div>
+      <p>The design adapts the trait-judgment logic introduced by Rogers, Kuiper, and Kirker (1977) and the broader self-reference-effect literature. Later syntheses support a reliable memory advantage while leaving room for several overlapping mechanisms, especially elaboration and organization.</p>
+    </section>
+  </main>
+</div>
+<script src="../../js/nav.js"></script>
+<script src="../../js/labs-self-reference-effect.js"></script>
+</body>
+</html>
