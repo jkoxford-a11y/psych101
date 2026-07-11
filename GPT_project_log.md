@@ -29,6 +29,7 @@ Record only actions, decisions, files changed, validation, and remaining issues.
 - Enabled the existing shared in-place expansion pattern for Figures 3.1 and 3.4–3.10. Excluded the two Pressbooks JPEGs, Figures 3.2 and 3.3, because their 770×391 and 487×352 native resolutions make expansion unhelpful. No shared CSS or JavaScript changes were necessary.
 - Validation: confirmed every image path exists; source and HTML numbering both resolve to 1–10; all image alt text is non-empty with no leading dash; internal anchors resolve; all 12 review questions retain paired `<details>/<summary>` markup; no bad ` ? ` separator mojibake; Chapter 3 linter passed with 0 failures and 0 warnings.
 - Remaining issue: attempted desktop, portrait-mobile, and landscape-mobile interaction inspection through the in-app browser, but its isolated browser environment could not reach the repository-local preview server. Static responsive rules and markup were verified, but a live visual interaction pass remains outstanding.
+- Caption follow-up: shortened Figure 3.6's student-facing attribution in source and HTML to the standard one-sentence credit; administrative public-sharing statements remain in the figure metadata and Chapter 3 image inventory.
 
 ### 2026-07-11 - Chapters 5, 7, and 8 Anchor/Heading Render Repair
 
