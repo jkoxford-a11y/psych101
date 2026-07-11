@@ -2334,3 +2334,41 @@ Jon is opening a new chat to finalize Ch5 edits; next session on this thread sho
 **Files modified:** all 14 `source/chapters/*.md`; new `source/chapters/_provenance/*.md`; new `pipeline/{sonnet5-improvement-plan.md, context_budget.py, extract_provenance.py, context-hygiene-prompt.md}`; `HANDOFF.md`.
 
 ---
+
+## Archived Session Log (Sessions 88–90) — archived 2026-07-11 (Session 98)
+
+> Moved from HANDOFF.md's Session Log to keep it within the 10-entry archival trigger (11 entries present, Sessions 88–98; trimmed down to 8 remaining, Sessions 91–98). Nothing was deleted — this is the verbatim Session Log content for Sessions 88 through 90, newest first, exactly as it read in HANDOFF.md before this cleanup. Sessions 85–87 were already archived separately (see "Archived Session Log (Sessions 85–87)" above) — the two archive sections are not currently merged, but both live in this file.
+
+### Session 90 (2026-07-10)
+
+**What happened:** Opened on the standing briefing ritual; hit the sandbox-mount staleness bug again immediately (fresh session, still stale). Rather than routing around it again, actually diagnosed it: proved via a bash heredoc rewrite of `context_budget.py` that bash's mount only reflects writes it performs itself, never Edit/Write-tool or external (GitHub Desktop) changes — confirmed against `HANDOFF.md` and Ch9's HTML both showing hours-stale content. Found two matching public bug reports on `anthropics/claude-code` (#55877, #38993) via web search, verified both by fetching the actual pages rather than trusting search snippets. Also discovered Jon had already pushed Session 89's work via GitHub Desktop (`05bde8c`). Wrote the finding into HANDOFF's standing briefing as a permanent caution.
+
+**Ch1 line-by-line pass:** Jon brought a large batch of GPT-authored editorial comments, explicitly framed as "not endorsed — find where we agree." Verified each claim against the real files before responding (stated confidence levels throughout, per standing instruction). Most held up under checking; applied to both source and HTML: behavior/mental-process definition fix, de-linearized history section, Wundt/structuralism reconciliation, biological vs. evolutionary split into two rows, AI Connection box rewrite (co-developed with GPT across several rounds — landed on "Behavior Is Evidence, Not Mechanism"), depression-section and biopsychosocial calibration, replication-crisis and hindsight-bias calibration, LO6 replacement, three new Key Terms, and a numbering-drift release-blocker (source still said Ch. 6 for Learning; fixed against the locked chapter map). Caught and corrected one of my own edits that missed the Skinner-Chomsky transition paragraph before moving on.
+
+**Separately, designed (not yet built) a book-wide "weight-bearing claims" typography convention** — soft amber `<mark>` for load-bearing propositions, distinct from bold-for-terms — after a multi-round discussion with GPT that included me correcting my own initial citation (von Restorff was the wrong mechanism; text-signaling/Mayer's signaling principle is the better fit).
+
+**Files modified:** `source/chapters/ch01-history-approaches.md`, `docs/chapters/01-history-approaches.html`, `source/visuals-inventory.md`, `pipeline/context_budget_log.csv` (new), `HANDOFF.md`. Nothing committed. Three Ch1 items deferred to next session: Section 3 title, figure decisions, review-question trim.
+
+### Session 89 (2026-07-10)
+
+**What happened:** Opened by briefing Jon on Session 88's status per the standing start-of-session ritual. Jon confirmed he'd pushed everything via GitHub Desktop; verified via `git log`/`git diff --stat`/`git show HEAD:pipeline/lint_chapters.py` that the commit landed cleanly (`b732a6a`, in sync with `origin/main`), despite `git status` simultaneously showing a large false diff across dozens of unrelated files — flagged as the mount-staleness bug at a new scale, not real drift.
+
+**Fixed Ch9 (Next Up item from Session 88), which turned out bigger than expected:** the "just add a missing id" description undersold it — the `id="stop-and-retrieve"` heading was mislabeling the actual Review Questions section, and Ch9 had zero genuine Stop & Retrieve callouts anywhere, unlike Ch8's 5 inline ones. Surfaced this to Jon via `AskUserQuestion` (rename-only vs. rename-plus-write-callouts); he chose the fuller fix. Renamed the heading and added 5 new inline `callout--stop-retrieve` boxes across all four sections, matching Ch8's format, tied to concepts just covered. Verified complete via direct `Read` after the bash-run linter falsely reported it as truncated (same staleness bug, confirmed by cross-check).
+
+**Built `--log` mode for `pipeline/context_budget.py`** per Jon's request to track token bloat across sessions rather than just snapshot it — appends a dated per-category row to a new `pipeline/context_budget_log.csv`. Added as step 2 of the start-of-session briefing. Could not actually run it this session: bash reported a syntax error from a truncated read of the file immediately after `Write`, confirmed via `Read` to be a stale-mount false positive (first time this bug has hit a fresh `Write`, not just `Edit`); an 8s retry didn't help. Left for a fresh session to run cleanly.
+
+**Files modified:** `docs/chapters/09-thinking-language-intelligence.html`, `pipeline/context_budget.py`, `HANDOFF.md`. Nothing committed. Ended the session here; Jon has Chapter 1 line-by-line editorial comments to bring in next, likely in a new chat.
+
+### Session 88 (2026-07-10)
+
+**What happened:** Jon asked what's in `pipeline/` and whether the two scripts there run automatically; explained they're on-demand tools, not session-start defaults. He then asked what `pipeline/sonnet5-improvement-plan.md` does, and after a walkthrough of its 7 tasks said "ok" to starting with Task 0 (the linter), which HANDOFF's Next Up already pointed to.
+
+**Built `pipeline/lint_chapters.py`:** stdlib-only, checks all `docs/chapters/*.html`. Read `chapter-spec.md` and grepped real chapter markup (08-memory.html as the clean reference, 11-social-psychology.html for contrast) before writing rules, rather than coding purely from the plan doc's description — this mattered, because Ch11's actual current state doesn't match the plan's Task 1 description (see below). Checks: truncation (`</html>` ending), balanced body/main/figure/table/details tags, required `<h2 id>` sections (with prologue exempted from `where-this-fits`), review-question count (8–12) and `<details>`/`<summary>` markup, Stop&Retrieve density (including a fallback detector for Ch9/Ch11's alternate standalone-section format), Connections-table row count, broken internal anchors, title mojibake, and empty alt text. Hard fails drive a nonzero exit code; count/density issues are warn-only. Verified with a deliberately truncated copy of `08-memory.html` (11 hard fails, nonzero exit, as the plan's acceptance criteria requires).
+
+**Found and reproduced the sandbox-mount staleness bug on demand.** Linting `prologue.html` (edited last session) via the bash-mounted path falsely reported truncation + 3 missing sections; direct `Read` showed the real file is 526 lines, complete, and correct. A `sleep 5` retry didn't fix it. This confirms the "recurring, escalating" issue flagged in Session 86/87's Next Up, now with a clean before/after repro — worth a dedicated fix rather than routing around it again.
+
+**Other findings surfaced by the first real lint run:** Ch11's Task 1 (per the plan doc) is stale — Further Reading, References, and collapsible review-q markup are already present; only the Connections table is actually missing. Ch9 has review questions but no wrapping `id="review-questions"`. Ch10's review questions aren't collapsible. Ch1/Ch4 exceed the 12-question ceiling. Broken internal anchors found in Ch5/Ch7/Ch8 (dash-count mismatches). All logged in Next Up.
+
+**Files modified:** `pipeline/lint_chapters.py` (new), `HANDOFF.md`. Not committed — left for Jon via GitHub Desktop per standing sandbox-git caution.
+
+---
