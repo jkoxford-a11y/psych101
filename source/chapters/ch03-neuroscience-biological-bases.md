@@ -51,8 +51,6 @@ A **neuron** is a cell specialized for receiving, processing, and transmitting i
 ![Figure 3.2 — Labeled neuron anatomy showing dendrites, nucleus, axon, Schwann cells, myelin sheath, nodes of Ranvier, and axon terminals](../images/ch03/fig3_1_neuron_anatomy_pressbooks.jpeg)
 *Figure 3.2. Dendrites receive input, the soma contains the nucleus, and the axon carries signals toward terminals — myelin helps signals travel efficiently.*
 
-There are, by a widely used estimate, roughly 86 billion neurons in an adult human brain (Herculano-Houzel, 2009) — though you will also encounter the older figure of 100 billion in many textbooks (Williams & Herrup, 1988); the revision happened because a better counting method (literally dissolving brain tissue into a uniform "soup" and counting nuclei) came along decades after the original estimate. That revision is worth sitting with for a moment: even a number this basic, about an organ humans have been dissecting for centuries, was wrong by a meaningful margin until fifteen years ago. Psychological and biological science revises its facts as better methods become available (APA IPI Theme 1) — that is a feature of the enterprise, not an embarrassment.
-
 > **Stop and Retrieve:** Before reading on — name the three main parts of a neuron and state, in one sentence each, what each one does.
 
 Neurons are not the only cells in the brain. **Glial cells** are present in roughly similar numbers to neurons and perform the support functions that make neural signaling possible: forming and maintaining myelin sheaths, clearing metabolic waste and dead cells, regulating the chemical environment around neurons, providing structural scaffolding, and serving as the brain's immune sentinels. For decades, glia were dismissed as mere "packing material" — a framing that more recent research has substantially revised, though it would overstate the current evidence to claim they "think" the way neurons do.
@@ -163,7 +161,7 @@ You can now see why delivery route matters. Neuromodulators remain part of neura
 
 The **endocrine system** is the body's network of glands — including the pituitary, thyroid, adrenal glands, and gonads — that secrete hormones directly into the bloodstream. Where the nervous system specializes in fast, precise, point-to-point signaling, the endocrine system specializes in slower, broader, longer-lasting coordination — adjusting growth, metabolism, reproduction, and the body's overall state over a timescale of minutes to weeks rather than milliseconds.
 
-**Cortisol**, released by the adrenal glands in response to stress, is the clearest example of why this matters for psychology specifically. In a genuine emergency, a surge of cortisol mobilizes stored energy, sharpens certain kinds of attention, and temporarily suppresses functions — digestion, long-term tissue repair, parts of the immune response — that are not useful in the next sixty seconds. This is adaptive and necessary for short bursts. If you happen to wear a continuous glucose monitor, you may have noticed your blood glucose rising before or during a stressful event without eating anything — that is cortisol doing exactly its job, mobilizing stored energy in anticipation of demand. (The effect is clearest and most reliably studied in people with diabetes or insulin resistance; individual responses in healthy adults vary.) The trouble, as Robert Sapolsky's *Why Zebras Don't Get Ulcers* (2004) puts it, is that a zebra's stress response activates for the genuine emergency of being chased by a lion and then switches off once the lion is gone or the zebra is dead — the system was built for acute, time-limited threats. Humans, by contrast, can keep the same stress-response machinery running for weeks over a conflict with a coworker, a worry about money, or a relationship that is not going anywhere — chronic activation of a system built for sprints, not marathons. Chronically elevated cortisol is linked to impaired memory, suppressed immune function, and increased risk for several physical and psychological disorders. Chapter 12 develops the full picture of chronic stress; for now, the evolutionary point is the one worth holding onto.
+**Cortisol**, released by the adrenal glands in response to stress, is the clearest example of why this matters for psychology specifically. In a genuine emergency, a surge of cortisol mobilizes stored energy, sharpens certain kinds of attention, and temporarily suppresses functions — digestion, long-term tissue repair, parts of the immune response — that would be a poor use of resources while a threat is active. This is adaptive and necessary for short bursts. If you happen to wear a continuous glucose monitor, you may have noticed your blood glucose rising before or during a stressful event without eating anything — that is cortisol doing exactly its job, mobilizing stored energy in anticipation of demand. (The effect is clearest and most reliably studied in people with diabetes or insulin resistance; individual responses in healthy adults vary.) The trouble, as Robert Sapolsky's *Why Zebras Don't Get Ulcers* (2004) puts it, is that a zebra's stress response activates for the genuine emergency of being chased by a lion and then switches off once the lion is gone or the zebra is dead — the system was built for acute, time-limited threats. Humans, by contrast, can keep the same stress-response machinery running for weeks over a conflict with a coworker, a worry about money, or a relationship that is not going anywhere — chronic activation of a system built for sprints, not marathons. Chronically elevated cortisol is linked to impaired memory, suppressed immune function, and increased risk for several physical and psychological disorders. Chapter 12 develops the full picture of chronic stress; for now, the evolutionary point is the one worth holding onto.
 
 **Oxytocin** complicates the categories above, because the same molecule can act as a neurotransmitter or neuromodulator within the nervous system and as a hormone once it reaches the bloodstream. It is synthesized in the hypothalamus and released in two ways: centrally within the brain, where it acts as a neuromodulator, and into the bloodstream from the posterior pituitary, where it acts as a hormone. Chemicals that work at both scales are more precisely called **neuropeptides** — a class distinct from classical fast-acting neurotransmitters and from circulating hormones, which the brain uses for longer-range, more sustained coordination of behavioral state.
 
@@ -416,14 +414,14 @@ d) squid neurons and human neurons are visually identical under a microscope
 
 ---
 
-**12.** Suppose a future study finds that the actual proportion of resting metabolic energy consumed by the human brain differs somewhat from the commonly cited 20% figure (Raichle & Gusnard, 2002). Which APA integrative theme does this scenario best illustrate?
+**12.** A student argues: "SSRIs are also prescribed for anxiety disorders, and many patients report reduced anxiety after starting them. This proves anxiety, like depression, is caused by low serotonin." Based on the "Chemical Influence vs. Chemical Cause" box, what is the strongest problem with this reasoning?
 
-a) psychology values diversity, equity, and inclusion  
-b) psychological science relies on empirical evidence and adapts as new evidence emerges  
-c) ethical principles guide psychological study and application  
-d) our perceptions and biases can be inaccurate  
+a) SSRIs are not actually effective for treating anxiety disorders  
+b) a drug's effectiveness for a condition does not establish that the condition was caused by a deficit in the neurotransmitter system the drug acts on  
+c) anxiety and depression cannot share any common biological mechanisms  
+d) serotonin has no real role in either depression or anxiety  
 
-*Answer: b. Why (d) is tempting: this theme is also genuinely relevant elsewhere in this chapter (the left-brain/right-brain myth, the 10% brain myth), and revising a biological fact does involve correcting an inaccurate prior belief — but the scenario as described is specifically about a finding being updated by new evidence, which is the more precise match for Theme 1.*
+*Answer: b. Why (a) is tempting: it would be a tidy way to dismiss the argument, but SSRIs having real anxiolytic effects for many patients is not in dispute — the flaw is not in whether the drug works, it is in treating that effectiveness as proof of cause, the same aspirin/headache logic the chapter applies to depression. Why (d) is tempting: the chapter is careful to say a serotonin *deficiency* is not established as the cause of depression, which can be misread as "serotonin is irrelevant" — but ruling out the deficit model is not the same as ruling out serotonin's involvement in the circuit altogether.*
 
 ---
 
@@ -550,8 +548,6 @@ Harlow, J. M. (1848). Passage of an iron rod through the head. *Boston Medical a
 
 Harlow, J. M. (1868). Recovery from the passage of an iron bar through the head. *Publications of the Massachusetts Medical Society, 2*(3), 327–347.
 
-Herculano-Houzel, S. (2009). The human brain in numbers: A linearly scaled-up primate brain. *Frontiers in Human Neuroscience, 3*, 31.
-
 Hodgkin, A. L., & Huxley, A. F. (1952). A quantitative description of membrane current and its application to conduction and excitation in nerve. *Journal of Physiology, 117*(4), 500–544.
 
 Kuzawa, C. W., Chugani, H. T., Grossman, L. I., Lipovich, L., Muzik, O., Hof, P. R., Wildman, D. E., Sherwood, C. C., Leonard, W. R., & Lange, N. (2014). Metabolic costs and evolutionary implications of human brain development. *Proceedings of the National Academy of Sciences, 111*(36), 13010–13015.
@@ -573,5 +569,3 @@ Schultz, W. (1998). Predictive reward signal of dopamine neurons. *Journal of Ne
 Scoville, W. B., & Milner, B. (1957). Loss of recent memory after bilateral hippocampal lesions. *Journal of Neurology, Neurosurgery, and Psychiatry, 20*(1), 11–21.
 
 Sperry, R. W. (1968). Hemisphere deconnection and unity in conscious awareness. *American Psychologist, 23*(10), 723–733.
-
-Williams, R. W., & Herrup, K. (1988). The control of neuron number. *Annual Review of Neuroscience, 11*, 423–453.

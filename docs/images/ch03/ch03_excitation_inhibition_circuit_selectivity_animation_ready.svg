@@ -1,0 +1,175 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <title>Excitation, inhibition, and circuit selectivity</title>
+  <desc>Animation-ready three-panel educational diagram with semantically grouped SVG elements for excitatory input, inhibitory input, and circuit-level selection.</desc>
+
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="5" stdDeviation="7" flood-opacity="0.16"/>
+    </filter>
+    <marker id="arrowBlue" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0,0 L12,6 L0,12 z" fill="#2f6f9f"/>
+    </marker>
+    <marker id="arrowOrange" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0,0 L12,6 L0,12 z" fill="#c56f2a"/>
+    </marker>
+    <marker id="arrowGray" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0,0 L12,6 L0,12 z" fill="#4f5b66"/>
+    </marker>
+    <style>
+      .title{font-family:Arial,Helvetica,sans-serif;font-size:54px;font-weight:700;fill:#17324d}
+      .panel-title{font-family:Arial,Helvetica,sans-serif;font-size:34px;font-weight:700;fill:#17324d}
+      .label{font-family:Arial,Helvetica,sans-serif;font-size:24px;fill:#213547}
+      .small{font-family:Arial,Helvetica,sans-serif;font-size:20px;fill:#415466}
+      .key{font-family:Arial,Helvetica,sans-serif;font-size:25px;font-weight:700;fill:#17324d}
+      .panel{fill:#ffffff;stroke:#cbd7e3;stroke-width:3}
+      .membrane{fill:#e5f0e7;stroke:#52765b;stroke-width:4}
+      .axon{fill:#dfeef9;stroke:#47769b;stroke-width:4}
+      .threshold{stroke:#7c8793;stroke-width:3;stroke-dasharray:12 10}
+      .baseline{stroke:#9aa7b4;stroke-width:3}
+    </style>
+  </defs>
+
+  <g id="background">
+    <rect width="1600" height="900" fill="#f7fafc"/>
+    <text x="800" y="72" text-anchor="middle" class="title">Excitation, Inhibition, and Circuit Selectivity</text>
+    <rect x="55" y="120" width="465" height="690" rx="26" class="panel" filter="url(#shadow)"/>
+    <rect x="568" y="120" width="465" height="690" rx="26" class="panel" filter="url(#shadow)"/>
+    <rect x="1080" y="120" width="465" height="690" rx="26" class="panel" filter="url(#shadow)"/>
+  </g>
+
+  <g id="panel_excitation_static">
+    <text x="288" y="170" text-anchor="middle" class="panel-title">Excitatory Input</text>
+    <rect x="115" y="250" width="345" height="88" rx="44" class="axon"/>
+    <text x="288" y="305" text-anchor="middle" class="label">Presynaptic terminal</text>
+
+    <rect x="120" y="482" width="335" height="95" rx="38" class="membrane"/>
+    <text x="288" y="620" text-anchor="middle" class="small">Postsynaptic neuron</text>
+
+    <g id="excitation_receptors">
+      <path d="M180 482 v-30 h28 v30" fill="#7f9fc2" stroke="#43688e" stroke-width="4"/>
+      <path d="M268 482 v-30 h28 v30" fill="#7f9fc2" stroke="#43688e" stroke-width="4"/>
+      <path d="M356 482 v-30 h28 v30" fill="#7f9fc2" stroke="#43688e" stroke-width="4"/>
+    </g>
+
+    <g id="excitation_graph">
+      <line x1="145" y1="718" x2="425" y2="718" class="baseline"/>
+      <line x1="145" y1="668" x2="425" y2="668" class="threshold"/>
+      <text x="140" y="660" text-anchor="end" class="small">Threshold</text>
+      <text x="140" y="726" text-anchor="end" class="small">Resting</text>
+    </g>
+
+    <text x="288" y="776" text-anchor="middle" class="key">More likely to fire</text>
+  </g>
+
+  <g id="excitation_input">
+    <path id="excitation_input_path" d="M75 294 H122" fill="none" stroke="#2f6f9f" stroke-width="12" marker-end="url(#arrowBlue)"/>
+    <circle cx="150" cy="390" r="11" fill="#6b4ba1"/>
+    <circle cx="220" cy="405" r="11" fill="#6b4ba1"/>
+    <circle cx="290" cy="388" r="11" fill="#6b4ba1"/>
+    <circle cx="360" cy="406" r="11" fill="#6b4ba1"/>
+    <circle cx="420" cy="390" r="11" fill="#6b4ba1"/>
+  </g>
+
+  <g id="excitation_ion_flow">
+    <circle cx="194" cy="525" r="9" fill="#4f8ec6"/>
+    <circle cx="282" cy="540" r="9" fill="#4f8ec6"/>
+    <circle cx="370" cy="525" r="9" fill="#4f8ec6"/>
+    <path d="M194 500 v42 M282 500 v56 M370 500 v42" stroke="#2f6f9f" stroke-width="5" marker-end="url(#arrowBlue)"/>
+  </g>
+
+  <g id="excitation_threshold_marker">
+    <path id="excitation_trace" d="M150 718 C220 716, 250 708, 285 690 S350 670, 420 672" fill="none" stroke="#2f6f9f" stroke-width="8"/>
+    <circle id="excitation_marker" cx="420" cy="672" r="12" fill="#2f6f9f"/>
+  </g>
+
+  <g id="panel_inhibition_static">
+    <text x="800" y="170" text-anchor="middle" class="panel-title">Inhibitory Input</text>
+    <rect x="628" y="250" width="345" height="88" rx="44" class="axon"/>
+    <text x="800" y="305" text-anchor="middle" class="label">Presynaptic terminal</text>
+
+    <rect x="633" y="482" width="335" height="95" rx="38" class="membrane"/>
+    <text x="800" y="620" text-anchor="middle" class="small">Postsynaptic neuron</text>
+
+    <g id="inhibition_receptors">
+      <path d="M693 482 v-30 h28 v30" fill="#d6a06e" stroke="#a35d25" stroke-width="4"/>
+      <path d="M781 482 v-30 h28 v30" fill="#d6a06e" stroke="#a35d25" stroke-width="4"/>
+      <path d="M869 482 v-30 h28 v30" fill="#d6a06e" stroke="#a35d25" stroke-width="4"/>
+    </g>
+
+    <g id="inhibition_graph">
+      <line x1="658" y1="718" x2="938" y2="718" class="baseline"/>
+      <line x1="658" y1="668" x2="938" y2="668" class="threshold"/>
+      <text x="653" y="660" text-anchor="end" class="small">Threshold</text>
+      <text x="653" y="726" text-anchor="end" class="small">Resting</text>
+    </g>
+
+    <text x="800" y="776" text-anchor="middle" class="key">Less likely to fire</text>
+  </g>
+
+  <g id="inhibition_input">
+    <path id="inhibition_input_path" d="M588 294 H635" fill="none" stroke="#c56f2a" stroke-width="12" marker-end="url(#arrowOrange)"/>
+    <circle cx="663" cy="390" r="11" fill="#6b4ba1"/>
+    <circle cx="733" cy="405" r="11" fill="#6b4ba1"/>
+    <circle cx="803" cy="388" r="11" fill="#6b4ba1"/>
+    <circle cx="873" cy="406" r="11" fill="#6b4ba1"/>
+    <circle cx="933" cy="390" r="11" fill="#6b4ba1"/>
+  </g>
+
+  <g id="inhibition_ion_flow">
+    <circle cx="707" cy="540" r="9" fill="#c56f2a"/>
+    <circle cx="795" cy="525" r="9" fill="#c56f2a"/>
+    <circle cx="883" cy="540" r="9" fill="#c56f2a"/>
+    <path d="M707 555 v-42 M795 555 v-56 M883 555 v-42" stroke="#c56f2a" stroke-width="5" marker-end="url(#arrowOrange)"/>
+  </g>
+
+  <g id="inhibition_threshold_marker">
+    <path id="inhibition_trace" d="M663 718 C725 720, 760 730, 800 742 S875 752, 935 750" fill="none" stroke="#c56f2a" stroke-width="8"/>
+    <circle id="inhibition_marker" cx="935" cy="750" r="12" fill="#c56f2a"/>
+  </g>
+
+  <g id="panel_circuit_static">
+    <text x="1313" y="170" text-anchor="middle" class="panel-title">Circuit Effect</text>
+    <text x="1313" y="205" text-anchor="middle" class="small">Inhibition suppresses competing activity</text>
+
+    <circle cx="1165" cy="330" r="48" fill="#dfeef9" stroke="#47769b" stroke-width="4"/>
+    <circle cx="1165" cy="500" r="48" fill="#dfeef9" stroke="#47769b" stroke-width="4"/>
+    <circle cx="1165" cy="670" r="48" fill="#dfeef9" stroke="#47769b" stroke-width="4"/>
+
+    <circle cx="1320" cy="500" r="48" fill="#f7e6d7" stroke="#a35d25" stroke-width="4"/>
+    <text x="1320" y="507" text-anchor="middle" class="small">Inhibitory</text>
+    <text x="1320" y="532" text-anchor="middle" class="small">interneuron</text>
+
+    <circle cx="1480" cy="500" r="56" fill="#e5f0e7" stroke="#52765b" stroke-width="4"/>
+    <text x="1480" y="494" text-anchor="middle" class="small">Selected</text>
+    <text x="1480" y="520" text-anchor="middle" class="small">output</text>
+
+    <text x="1165" y="270" text-anchor="middle" class="small">Competing inputs</text>
+  </g>
+
+  <g id="competing_pathways">
+    <path d="M1213 330 C1280 330, 1360 420, 1425 470" fill="none" stroke="#91a1ad" stroke-width="9" marker-end="url(#arrowGray)"/>
+    <path d="M1213 500 H1420" fill="none" stroke="#2f6f9f" stroke-width="12" marker-end="url(#arrowBlue)"/>
+    <path d="M1213 670 C1280 670, 1360 580, 1425 530" fill="none" stroke="#91a1ad" stroke-width="9" marker-end="url(#arrowGray)"/>
+  </g>
+
+  <g id="inhibitory_interneuron">
+    <path d="M1272 500 H1220" fill="none" stroke="#c56f2a" stroke-width="10"/>
+    <line x1="1218" y1="475" x2="1218" y2="525" stroke="#c56f2a" stroke-width="10"/>
+  </g>
+
+  <g id="suppressed_pathways">
+    <line x1="1300" y1="356" x2="1345" y2="401" stroke="#c56f2a" stroke-width="8"/>
+    <line x1="1345" y1="356" x2="1300" y2="401" stroke="#c56f2a" stroke-width="8"/>
+    <line x1="1300" y1="599" x2="1345" y2="644" stroke="#c56f2a" stroke-width="8"/>
+    <line x1="1345" y1="599" x2="1300" y2="644" stroke="#c56f2a" stroke-width="8"/>
+  </g>
+
+  <g id="selected_pathway">
+    <path d="M1213 500 H1420" fill="none" stroke="#2f6f9f" stroke-width="12" marker-end="url(#arrowBlue)"/>
+    <circle cx="1480" cy="500" r="68" fill="none" stroke="#2f6f9f" stroke-width="6" opacity="0.5"/>
+  </g>
+
+  <g id="animation_notes" display="none">
+    <text x="80" y="850" class="small">Suggested animation order: excitation_input → excitation_ion_flow → excitation_threshold_marker; inhibition_input → inhibition_ion_flow → inhibition_threshold_marker; competing_pathways → inhibitory_interneuron → suppressed_pathways → selected_pathway.</text>
+  </g>
+</svg>
