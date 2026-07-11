@@ -467,7 +467,8 @@ th {
   max-width: 100%;
 }
 
-.chapter-figure img {
+.chapter-figure img,
+.chapter-figure video {
   max-width: 100%;
   height: auto;
   border-radius: 4px;
