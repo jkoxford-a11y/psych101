@@ -47,10 +47,11 @@
     ['prediction-panel', 'prediction-form', 'commit-prediction', 'prediction-status', 'trial-panel',
       'trial-counter', 'trial-stage', 'trial-name', 'trial-scenario', 'trial-prediction-form',
       'reveal-trial', 'trial-status', 'trial-result', 'plain-relation', 'stat-cue', 'stat-reward',
-      'stat-expected', 'stat-actual', 'stat-error', 'cue-marker', 'outcome-marker', 'signal-trace',
-      'visual-equivalent', 'next-trial', 'event-log', 'concept-panel', 'explain-panel',
-      'explain-response', 'save-explanation', 'explain-status', 'transfer-panel', 'completion-summary',
-      'transfer-response', 'save-transfer', 'restart-lab', 'transfer-status'].forEach(function (id) {
+      'stat-expected', 'stat-actual', 'stat-error', 'cue-marker', 'cue-label', 'outcome-marker',
+      'cue-signal-trace', 'outcome-signal-trace', 'visual-equivalent', 'next-trial', 'event-log',
+      'concept-panel', 'explain-panel', 'explain-response', 'save-explanation', 'explain-status',
+      'transfer-panel', 'completion-summary', 'transfer-response', 'save-transfer', 'restart-lab',
+      'transfer-status'].forEach(function (id) {
       elements[toCamel(id)] = document.getElementById(id);
     });
   }
@@ -100,6 +101,7 @@
     const trial = trials[state.currentIndex];
     const response = state.responses[state.currentIndex];
     elements.trialCounter.textContent = `Trial ${state.currentIndex + 1} of ${trials.length}`;
+    elements.trialStage.textContent = 'Predict before revealing';
     elements.trialName.textContent = trial.name;
     elements.trialScenario.textContent = trial.scenario;
     elements.trialPredictionForm.reset();
@@ -158,17 +160,32 @@
   }
 
   function renderSignal(trial) {
-    elements.cueMarker.style.visibility = trial.cue === 'No predictive cue' ? 'hidden' : 'visible';
+    const hasCue = trial.cue !== 'No predictive cue';
+    elements.cueMarker.style.visibility = hasCue ? 'visible' : 'hidden';
+    elements.cueLabel.textContent = hasCue ? 'Cue time' : 'No cue';
+    elements.cueLabel.setAttribute('x', hasCue ? '220' : '205');
     elements.outcomeMarker.setAttribute('class', trial.reward.indexOf('Omitted') === 0 ? 'timeline-omission' : 'timeline-event');
-    const paths = {
-      'outcome-positive': 'M65 155 L480 155 C500 155 505 70 520 55 C535 70 540 155 565 155 L690 155',
-      'cue-small-outcome-positive': 'M65 155 L220 155 C235 155 240 120 250 110 C260 120 265 155 285 155 L480 155 C500 155 505 90 520 75 C535 90 540 155 565 155 L690 155',
-      'cue-positive-outcome-zero': 'M65 155 L210 155 C230 155 235 70 250 55 C265 70 270 155 295 155 L690 155',
-      'cue-positive-outcome-negative': 'M65 155 L210 155 C230 155 235 70 250 55 C265 70 270 155 295 155 L480 155 C500 155 505 230 520 245 C535 230 540 155 565 155 L690 155',
-      'cue-small-outcome-negative-small': 'M65 155 L215 155 C232 155 238 120 250 108 C262 120 268 155 290 155 L485 155 C502 155 508 195 520 205 C532 195 538 155 560 155 L690 155'
+
+    const cuePaths = {
+      'outcome-positive': 'M65 155 L65 155',
+      'cue-small-outcome-positive': 'M65 155 L220 155 C235 155 240 120 250 110 C260 120 265 155 285 155',
+      'cue-positive-outcome-zero': 'M65 155 L210 155 C230 155 235 70 250 55 C265 70 270 155 295 155',
+      'cue-positive-outcome-negative': 'M65 155 L210 155 C230 155 235 70 250 55 C265 70 270 155 295 155',
+      'cue-small-outcome-negative-small': 'M65 155 L215 155 C232 155 238 120 250 108 C262 120 268 155 290 155'
     };
-    elements.signalTrace.setAttribute('d', paths[trial.pattern]);
-    elements.signalTrace.setAttribute('class', trial.error === 'positive' ? 'signal-positive' : (trial.error === 'negative' ? 'signal-negative' : 'signal-zero'));
+    const outcomePaths = {
+      'outcome-positive': 'M430 155 L480 155 C500 155 505 70 520 55 C535 70 540 155 565 155 L690 155',
+      'cue-small-outcome-positive': 'M430 155 L480 155 C500 155 505 90 520 75 C535 90 540 155 565 155 L690 155',
+      'cue-positive-outcome-zero': 'M430 155 L690 155',
+      'cue-positive-outcome-negative': 'M430 155 L480 155 C500 155 505 230 520 245 C535 230 540 155 565 155 L690 155',
+      'cue-small-outcome-negative-small': 'M430 155 L485 155 C502 155 508 195 520 205 C532 195 538 155 560 155 L690 155'
+    };
+
+    elements.cueSignalTrace.style.visibility = hasCue ? 'visible' : 'hidden';
+    elements.cueSignalTrace.setAttribute('d', cuePaths[trial.pattern]);
+    elements.cueSignalTrace.setAttribute('class', 'signal-positive');
+    elements.outcomeSignalTrace.setAttribute('d', outcomePaths[trial.pattern]);
+    elements.outcomeSignalTrace.setAttribute('class', trial.error === 'positive' ? 'signal-positive' : (trial.error === 'negative' ? 'signal-negative' : 'signal-zero'));
   }
 
   function buildVisualEquivalent(trial) {
