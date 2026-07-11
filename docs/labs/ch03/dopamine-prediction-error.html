@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dopamine Prediction Error - General Psychology</title>
+  <link rel="stylesheet" href="../../css/style.css" />
+  <link rel="stylesheet" href="../../css/labs.css" />
+</head>
+<body>
+<div class="layout">
+  <aside class="sidebar" id="app-sidebar"></aside>
+  <script src="../../js/sidebar.js" data-dir="labs/ch03" data-active="" data-top="full"></script>
+
+  <main class="main lab-main">
+    <p class="chapter-meta">Learning Lab - Chapter 3</p>
+    <h1>Dopamine Prediction Error</h1>
+    <hr class="chapter-divider" />
+
+    <p>Popular accounts often reduce dopamine to pleasure. That story is memorable—and too simple. In this 10–20 minute lab, you will test a simplified reward-prediction-error model one trial at a time.</p>
+
+    <div class="callout callout--note">
+      <div class="callout-title">Accessibility and Privacy</div>
+      <p>This lab stores your predictions, trial progress, explanation, and transfer response only in sessionStorage for this browser tab. It collects no names, emails, student IDs, analytics, cookies, or personal information, and it sends nothing to a server. Every visual trial result also appears in a plain-text event log.</p>
+    </div>
+
+    <section class="lab-panel phase-panel" id="prediction-panel" aria-labelledby="prediction-heading">
+      <h2 id="prediction-heading" tabindex="-1">1. Prediction</h2>
+      <form id="prediction-form" novalidate>
+        <fieldset class="lab-fieldset">
+          <legend>A cue perfectly predicts that a reward is coming. When the expected reward arrives, what prediction error should the model show?</legend>
+          <label class="option-row"><input type="radio" name="prediction" value="positive" /><span>A large positive prediction error</span></label>
+          <label class="option-row"><input type="radio" name="prediction" value="zero" /><span>A small or approximately zero prediction error</span></label>
+          <label class="option-row"><input type="radio" name="prediction" value="negative" /><span>A negative prediction error</span></label>
+        </fieldset>
+        <button class="lab-btn" type="button" id="commit-prediction">Commit prediction</button>
+      </form>
+      <p class="save-status" id="prediction-status" aria-live="polite"></p>
+    </section>
+
+    <section class="lab-panel phase-panel" id="trial-panel" hidden aria-labelledby="trial-heading">
+      <div class="lab-progress" aria-live="polite"><span id="trial-counter">Trial 1 of 5</span><span id="trial-stage">Predict before revealing</span></div>
+      <h2 id="trial-heading" tabindex="-1">2. Advance Through the Trials</h2>
+      <article class="classifier-item">
+        <p class="lab-kicker" id="trial-name">Trial</p>
+        <h3 id="trial-scenario"></h3>
+        <form id="trial-prediction-form" novalidate>
+          <fieldset class="lab-fieldset">
+            <legend>At the outcome time, what prediction-error direction do you expect?</legend>
+            <label class="option-row"><input type="radio" name="trialPrediction" value="positive" /><span>Positive: actual outcome is better than expected</span></label>
+            <label class="option-row"><input type="radio" name="trialPrediction" value="zero" /><span>Approximately zero: actual outcome matches expectation</span></label>
+            <label class="option-row"><input type="radio" name="trialPrediction" value="negative" /><span>Negative: actual outcome is worse than expected</span></label>
+          </fieldset>
+          <button class="lab-btn" type="button" id="reveal-trial">Commit and reveal this trial</button>
+        </form>
+        <p class="save-status" id="trial-status" aria-live="polite"></p>
+
+        <section class="observe-panel" id="trial-result" hidden tabindex="-1" aria-labelledby="result-heading">
+          <h3 id="result-heading">Trial Result</h3>
+          <p><code>prediction error = actual outcome − expected outcome</code></p>
+          <p id="plain-relation"></p>
+          <dl class="sim-stats">
+            <div class="sim-stat"><dt>Cue timing</dt><dd id="stat-cue">—</dd></div>
+            <div class="sim-stat"><dt>Reward</dt><dd id="stat-reward">—</dd></div>
+            <div class="sim-stat"><dt>Expected outcome</dt><dd id="stat-expected">—</dd></div>
+            <div class="sim-stat"><dt>Actual outcome</dt><dd id="stat-actual">—</dd></div>
+            <div class="sim-stat"><dt>Prediction error</dt><dd id="stat-error">—</dd></div>
+          </dl>
+
+          <div class="curve-wrap">
+            <svg class="curve-svg" viewBox="0 0 720 300" role="img" aria-labelledby="signal-title signal-desc">
+              <title id="signal-title">Simplified reward-prediction teaching-model signal</title>
+              <desc id="signal-desc">A schematic timeline marks cue time, outcome time, and positive, zero, or negative prediction-error changes. The same result is stated in text below.</desc>
+              <line class="curve-axis" x1="65" y1="155" x2="690" y2="155"></line>
+              <line class="timeline-event" id="cue-marker" x1="245" y1="70" x2="245" y2="235"></line>
+              <line class="timeline-event" id="outcome-marker" x1="520" y1="70" x2="520" y2="235"></line>
+              <text class="curve-label" x="220" y="55">Cue time</text>
+              <text class="curve-label" x="480" y="55">Outcome time</text>
+              <text class="curve-label" x="540" y="285">Time (schematic)</text>
+              <text class="curve-label" x="8" y="28">Teaching-model signal</text>
+              <path id="signal-trace" class="signal-zero" d="M65 155 L690 155"></path>
+            </svg>
+          </div>
+          <p class="trial-result" id="visual-equivalent" aria-live="polite"></p>
+          <div class="lab-actions"><button class="lab-btn" type="button" id="next-trial">Next trial</button></div>
+        </section>
+      </article>
+
+      <h3>Plain-text event log</h3>
+      <div class="event-log" id="event-log" tabindex="0" aria-live="polite"><ol></ol></div>
+    </section>
+
+    <section class="lab-panel phase-panel" id="concept-panel" hidden aria-labelledby="concept-heading">
+      <h2 id="concept-heading" tabindex="-1">3. What the Pattern Means</h2>
+      <div class="callout callout--note">
+        <div class="callout-title">Concept Reveal</div>
+        <p><strong>Dopamine-related reward-prediction signals are strongest when outcomes differ from expectations.</strong> After learning, the predictive cue carries information that used to arrive with the reward. The psychological meaning depends on pathway, target circuit, receptor context, and current task—not on the chemical alone.</p>
+        <p>This visualization uses normalized teaching-model signal units, not measured dopamine firing rates or concentrations. The classical reward-prediction-error model is powerful but incomplete: different dopamine pathways also contribute to movement, salience, novelty, learning, and action vigor.</p>
+      </div>
+    </section>
+
+    <section class="lab-panel phase-panel" id="explain-panel" hidden aria-labelledby="explain-heading">
+      <h2 id="explain-heading" tabindex="-1">4. Explain</h2>
+      <label class="text-label" for="explain-response">Why did the response shift from the reward to the cue after learning?</label>
+      <textarea id="explain-response" rows="5"></textarea>
+      <div class="lab-actions"><button class="lab-btn" type="button" id="save-explanation">Save explanation</button></div>
+      <p class="save-status" id="explain-status" aria-live="polite"></p>
+    </section>
+
+    <section class="lab-panel phase-panel" id="transfer-panel" hidden aria-labelledby="transfer-heading">
+      <h2 id="transfer-heading" tabindex="-1">5. Summary and Transfer</h2>
+      <p id="completion-summary"></p>
+      <label class="text-label" for="transfer-response">A notification sound has repeatedly predicted a socially rewarding message. Explain what the prediction-error model expects when the sound occurs, when the message arrives as expected, and when no message appears.</label>
+      <p class="term-reminder">Use <strong>cue</strong>, <strong>expectation</strong>, and <strong>prediction error</strong>.</p>
+      <textarea id="transfer-response" rows="6"></textarea>
+      <div class="lab-actions">
+        <button class="lab-btn" type="button" id="save-transfer">Save transfer response</button>
+        <button class="lab-btn lab-btn--secondary" type="button" id="restart-lab">Restart lab</button>
+      </div>
+      <p class="save-status" id="transfer-status" aria-live="polite"></p>
+    </section>
+
+    <section class="callout callout--think-about-it" aria-labelledby="instructor-note-heading">
+      <div class="callout-title" id="instructor-note-heading">Instructor Note</div>
+      <p>Pause after the well-learned cue–reward trial and compare predictions in pairs. The key discussion moment is that an expected reward can still be pleasant while producing little new prediction error at delivery.</p>
+    </section>
+  </main>
+</div>
+<script src="../../js/nav.js"></script>
+<script src="../../js/labs-dopamine-prediction-error.js"></script>
+</body>
+</html>

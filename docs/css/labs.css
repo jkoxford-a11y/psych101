@@ -349,6 +349,66 @@ textarea {
   margin-top: 1rem;
 }
 
+.trial-result {
+  margin: 1rem 0;
+  padding: 0.85rem 1rem;
+  border: 1px solid var(--color-border);
+  border-radius: 6px;
+  background: #f9fafb;
+}
+
+.trial-result strong {
+  font-family: var(--font-ui);
+}
+
+.threshold-line {
+  stroke: #7c3aed;
+  stroke-width: 2;
+  stroke-dasharray: 6 4;
+}
+
+.trace-subthreshold {
+  fill: none;
+  stroke: #64748b;
+  stroke-width: 3;
+}
+
+.trace-spike,
+.signal-positive {
+  fill: none;
+  stroke: #15803d;
+  stroke-width: 4;
+}
+
+.signal-zero {
+  fill: none;
+  stroke: #475569;
+  stroke-width: 4;
+}
+
+.signal-negative {
+  fill: none;
+  stroke: #b45309;
+  stroke-width: 4;
+}
+
+.timeline-event {
+  stroke: var(--color-accent);
+  stroke-width: 3;
+}
+
+.timeline-omission {
+  stroke: #b45309;
+  stroke-width: 3;
+  stroke-dasharray: 5 4;
+}
+
+.term-reminder {
+  font-family: var(--font-ui);
+  font-size: 0.88rem;
+  color: var(--color-muted);
+}
+
 /* Neutral informational callout — used for privacy/accessibility notices in labs */
 .callout--note {
   border-left-color: var(--color-muted);

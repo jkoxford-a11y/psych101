@@ -81,7 +81,7 @@ Myelin matters here because of speed. On an unmyelinated axon, the action potent
 
 > **Think About It:** Neural tissue is extraordinarily metabolically demanding — it needs a continuous supply of oxygen and glucose to maintain the ion gradients that make signaling possible. What happens when that supply is briefly interrupted? You have probably had a hand or foot "fall asleep" after sitting or leaning on it awkwardly. Sustained pressure compresses the nerve and cuts off its blood supply, disrupting normal signaling — numbness. When the pressure is released, signaling returns unevenly — pins and needles.
 
-> *Practice this in the lab when available.* **Predict, before interacting:** if you reduce the strength of a stimulus to a neuron, will the resulting action potential be smaller, or will it simply fail to occur at all? After interacting: was your prediction correct, and can you explain why in terms of the all-or-nothing principle?
+> *[Try the Action Potential Threshold and All-or-Nothing Learning Lab.](../../docs/labs/ch03/action-potential-threshold.html)* **Predict, before interacting:** if you reduce the strength of a stimulus to a neuron, will the resulting action potential be smaller, or will it simply fail to occur at all? After interacting: was your prediction correct, and can you explain why in terms of the all-or-nothing principle?
 
 ---
 
@@ -153,7 +153,7 @@ This does not mean antidepressants do not work. Their efficacy for some people i
 
 > *[Lab link — Chemical Imbalance Claim-Check: [Practice classifying claims about serotonin, antidepressants, and "chemical imbalance" as supported, overstated, or wrong/incomplete.](../../docs/labs/ch03/chemical-imbalance-claim-check.html)]*
 
-> *[Interactive Demo — Dopamine Prediction Error Demo coming soon: students predict dopamine responses across cue/reward trials — unexpected reward, predicted reward, omitted reward, extinction, novelty, and action requirement.]* **Predict, before interacting:** if a reward is delivered but was fully predicted by a cue, does dopamine fire more, less, or the same as when no cue preceded it? After interacting: did the result match the Schultz prediction-error model?
+> *[Try the Dopamine Prediction Error Learning Lab.](../../docs/labs/ch03/dopamine-prediction-error.html)* **Predict, before interacting:** if a reward is delivered but was fully predicted by a cue, does the reward produce more, less, or the same dopamine-related prediction error as when no cue preceded it? After interacting: did the result match the simplified Schultz prediction-error model?
 
 ### Changing the Whole Body
 
@@ -193,8 +193,10 @@ These two branches are best understood as a coordinated push-pull system rather 
 
 The evolutionary logic of the sympathetic branch is direct: an organism that detects a threat and does not rapidly redirect resources toward escape or confrontation is at a survival disadvantage relative to one that does. The same logic that makes the acute cortisol response useful for a genuine emergency, and poorly matched to a six-week conflict at work, applies here. A racing heart and dry mouth before a public-speaking assignment are your sympathetic nervous system doing exactly what it evolved to do, deployed against a target — social evaluation rather than physical danger — that it was never built to distinguish from a real threat.
 
+Fight-or-flight is not the only strategy stress produces, and the alternative traces back to a molecule this chapter already introduced. Shelley Taylor and colleagues proposed **tend-and-befriend** as a second biobehavioral stress response: rather than escalating toward fight or flight, an organism protects itself by caring for dependent offspring ("tend") and strengthening bonds with others who can help ("befriend") (Taylor et al., 2000). The proposed mechanism runs through oxytocin — the same neuropeptide described in Section 2 as attenuating HPA-axis stress responses and promoting affiliation in safe contexts. Tend-and-befriend does not replace fight-or-flight; it is advantageous specifically when fighting or fleeing would mean abandoning offspring or a protective group — one more case where the "right" stress response depends on the problem the organism is actually solving, not a single fixed reflex.
+
 ![Figure 3.9 — Infographic showing sympathetic and parasympathetic branches as a push-pull autonomic balance system. The sympathetic side shows increased heart rate, widened pupils, faster breathing, reduced digestion, and stress-hormone mobilization. The parasympathetic side shows decreased heart rate, narrowed pupils, slower breathing, increased digestion, and recovery. A bottom row lists behavioral stress responses: fight, flight, freeze, and tend-and-befriend.](../images/ch03/ch03_autonomic_balance_push_pull.png)
-*Figure 3.9. The sympathetic and parasympathetic branches operate as a coordinated push-pull system. Stress behavior can take several forms — fight, flight, freeze, or tend-and-befriend — depending on the problem the organism is trying to solve.*
+*Figure 3.9. The sympathetic and parasympathetic branches operate as a coordinated push-pull system. Stress behavior can take more than one form — fight-or-flight and tend-and-befriend among them — depending on the problem the organism is trying to solve.*
 
 > **Think About It:** Think of the last time you felt your heart race or your stomach drop before something — a test, a conversation, a performance. Looking back, was the situation an actual physical threat, or was your sympathetic nervous system responding to something else (social evaluation, uncertainty, anticipated failure) as though it were one?
 
@@ -251,6 +253,8 @@ This genuine finding spawned a much less accurate popular idea: that ordinary pe
 
 *Diagnostic question:* a friend tells you they are "definitely a right-brain person" because they are creative rather than analytical. What does the genuine split-brain research actually show, and why does it not support your friend's claim?
 
+It is worth connecting this pattern to a concept already covered: the amygdala's association with fear works the same way. Calling the amygdala "the brain's fear center" is a defensible shorthand — the amygdala is heavily involved in fear and threat processing — but more recent work argues this oversimplifies a structure that contributes to several distinct functions, and is itself only one node in a larger, distributed circuit for emotional processing, not a single dedicated "fear organ" (LeDoux, 2012). Localization of function in the brain is real, but it is closer to "this region is heavily involved in and necessary for this function" than to "this region is solely responsible for this function and nothing else" — a distinction worth holding onto for the rest of this course.
+
 > **Think About It:** Before this section, did you believe some version of the left-brain/right-brain personality idea? If so, where do you think you picked it up — a teacher, a quiz, a piece of pop psychology? Now that you have seen the actual split-brain evidence and what it does and does not support, how would you explain the difference to someone who still believes the popular version?
 
 ---
@@ -278,13 +282,13 @@ The brain's major structures show real functional specialization. Phineas Gage i
 | Concept from this chapter | Reappears in | Why it matters there |
 |---|---|---|
 | [Dopamine and reward prediction](#section-2-chemical-messengers--neurotransmitters-and-hormones) | Ch. 7 — Learning | Dopamine's predictive-error signal is the chemical mechanism underlying reinforcement learning; the Sapolsky framing introduced here becomes a working model |
-| [Agonist/antagonist; glutamate/GABA](#section-2-chemical-messengers--neurotransmitters-and-hormones) | Ch. 5 — Consciousness; Ch. 13 — Disorders & Therapy | Drug mechanisms (alcohol → GABA, opioid antagonists) and pharmacological treatments for disorders |
+| [Agonist/antagonist; glutamate/GABA](#section-2-chemical-messengers--neurotransmitters-and-hormones) | Ch. 5 — Consciousness; Ch. 13 — Psychological Disorders & Therapy | Drug mechanisms (alcohol → GABA, opioid antagonists) and pharmacological treatments for disorders |
 | [Hypothalamus and circadian regulation](#section-4-the-brain--structure-localization-and-its-limits) | Ch. 6 — Sleep | The suprachiasmatic nucleus (SCN) introduced here is the brain's primary circadian clock; sleep-wake regulation builds directly on this |
 | [Amygdala and emotional memory](#section-4-the-brain--structure-localization-and-its-limits) | Ch. 12 — Emotion, Stress & Coping | The amygdala's role in threat appraisal and emotional weighting of memory is developed fully when emotion theory is covered |
 | [Hippocampus / H.M.](#section-4-the-brain--structure-localization-and-its-limits) | Ch. 8 — Memory | H.M.'s case establishes the hippocampus's specific role in forming (not storing) new memories — and directly sets up the "memory is not a video camera" reframing Chapter 8 builds on |
 | [Cortisol and the stress response](#section-3-the-bodys-stress-response--the-autonomic-nervous-system) | Ch. 12 — Emotion, Stress & Coping | The acute-versus-chronic mismatch introduced here is the organizing framework for the full stress and health section |
 | [Oxytocin / neuropeptides](#section-2-chemical-messengers--neurotransmitters-and-hormones) | Ch. 10 — Lifespan Development; Ch. 12 — Emotion, Stress & Coping | Oxytocin's role in biobehavioral synchrony grounds the biology of early attachment (Ch. 10) and stress regulation (Ch. 12) |
-| [Prefrontal cortex / Phineas Gage](#section-4-the-brain--structure-localization-and-its-limits) | Ch. 11 — Personality; Ch. 13 — Psychological Disorders & Therapy | Frontal-lobe damage reshaping personality directly foreshadows risk factors for antisocial personality disorder |
+| [Prefrontal cortex / Phineas Gage](#section-4-the-brain--structure-localization-and-its-limits) | Ch. 11 — Social Psychology; Ch. 13 — Psychological Disorders & Therapy | Frontal-lobe damage reshaping personality directly foreshadows risk factors for antisocial personality disorder |
 | [Evolutionary / comparative framing](#section-1-how-neurons-talk--structure-and-the-action-potential) | Ch. 10 — Lifespan Development | The orchid/dandelion framing in Ch. 10 extends the same comparative logic to individual differences in developmental plasticity |
 | [Sensory neuron basics](#section-1-how-neurons-talk--structure-and-the-action-potential) | Ch. 4 — Sensation & Perception | The action potential mechanism covered here is reused without modification to explain how sensory receptors convert physical stimuli into neural signals |
 | [Split-brain / hemispheric specialization](#section-4-the-brain--structure-localization-and-its-limits) | Ch. 9 — Thinking, Language & Intelligence | Left-hemisphere language dominance, introduced here through the split-brain evidence, becomes directly relevant when language processing is covered |
@@ -443,6 +447,8 @@ d) serotonin has no real role in either depression or anxiety
 
 **Cephalization** — The evolutionary tendency for nervous systems to become more elaborate at the anterior (front) end of the organism, where sensory tissue concentrates and action-selection is centralized; favored by directional movement.
 
+**Cerebral cortex** — The wrinkled outer layer of the brain, conventionally divided into four lobes per hemisphere; the structure most people picture when they picture "the brain."
+
 **Corpus callosum** — The thick band of nerve fibers connecting the brain's two hemispheres.
 
 **Cortisol** — A hormone released by the adrenal glands during stress that mobilizes energy and temporarily suppresses non-urgent functions; chronic elevation is linked to several negative health outcomes.
@@ -455,7 +461,11 @@ d) serotonin has no real role in either depression or anxiety
 
 **Enteric nervous system** — The extensive neural network embedded in the gut wall, containing over 100 million neurons, that communicates bidirectionally with the brain via the vagus nerve and other pathways.
 
+**Frontal lobe** — The lobe at the front of the cerebral cortex, responsible for planning, decision-making, and voluntary movement; contains the prefrontal cortex.
+
 **GABA** (gamma-aminobutyric acid) — The brain's primary inhibitory neurotransmitter; drugs that enhance GABA activity (alcohol, benzodiazepines) produce sedation.
+
+**Glial cells** — Support cells, present in roughly similar numbers to neurons, that form and maintain myelin, clear metabolic waste, regulate the chemical environment around neurons, and serve as the brain's immune sentinels.
 
 **Glutamate** — The brain's primary excitatory neurotransmitter, involved in nearly all rapid excitatory signaling and central to synaptic plasticity and learning.
 
@@ -464,6 +474,8 @@ d) serotonin has no real role in either depression or anxiety
 **Hormone** — A chemical messenger released by an endocrine gland into the bloodstream, acting on distant target cells over a longer timescale than a neurotransmitter.
 
 **Hypothalamus** — A regulatory hub below the thalamus that coordinates basic drives (hunger, thirst, temperature, reproduction), integrates autonomic responses, and controls the endocrine system through the pituitary gland; its suprachiasmatic nucleus (SCN) is the brain's primary circadian clock.
+
+**Limbic system** — A set of interconnected structures, including the hippocampus and amygdala, most associated with emotion, motivation, and memory; more a useful functional grouping than a single sharply bounded anatomical unit.
 
 **Myelin** — A fatty insulating sheath around many axons, produced by glial cells, that increases the speed of signal conduction via saltatory conduction.
 
@@ -475,7 +487,11 @@ d) serotonin has no real role in either depression or anxiety
 
 **Neurotransmitter** — A chemical messenger released by a neuron into the synapse that excites or inhibits the next cell.
 
+**Occipital lobe** — The lobe at the back of the cerebral cortex, dedicated almost entirely to visual processing.
+
 **Parasympathetic nervous system** — The "rest-and-digest" branch of the autonomic nervous system that slows heart rate and supports recovery and digestion.
+
+**Parietal lobe** — The lobe toward the top and back of the cerebral cortex that integrates sensory information and supports spatial processing.
 
 **Prefrontal cortex** — The frontal-lobe region most associated with executive function, including impulse control and emotional regulation.
 
@@ -487,11 +503,15 @@ d) serotonin has no real role in either depression or anxiety
 
 **Serotonin** — A neuromodulatory neurotransmitter often involved in behavioral inhibition, patience, and sustaining a course of action when waiting is adaptive; not accurately described as "the happiness chemical." Its role in depression is more complex than the popular "low serotonin" model implies.
 
+**Soma** — The cell body of a neuron; contains the nucleus and the machinery that keeps the cell alive.
+
 **Split-brain** — A condition, typically surgically induced to treat severe epilepsy, in which the corpus callosum connecting the two cerebral hemispheres is severed.
 
 **Sympathetic nervous system** — The "fight-or-flight" branch of the autonomic nervous system that accelerates heart rate and redirects resources toward rapid action.
 
 **Synapse** — The junction between two neurons, across which communication switches from electrical (action potential) to chemical (neurotransmitter release and receptor binding).
+
+**Temporal lobe** — The lobe roughly at ear level, heavily involved in auditory processing, language comprehension, and memory.
 
 ---
 
@@ -530,10 +550,6 @@ The direct empirical test of the left-brain/right-brain personality myth discuss
 
 *Full citations for factual claims made in this chapter, for instructors or students who want to verify or go deeper. Distinct from Further Reading above, which is curated for student exploration rather than completeness.*
 
-Beyerstein, B. L. (1999). Whence cometh the myth that we only use 10% of our brains? In S. Della Sala (Ed.), *Mind myths: Exploring popular assumptions about the mind and brain* (pp. 3–24). Wiley.
-
-Carter, C. S. (2014). Oxytocin pathways and the evolution of human behavior. *Annual Review of Psychology, 65*, 17–39.
-
 Cryan, J. F., O'Riordan, K. J., Cowan, C. S. M., Sandhu, K. V., Bastiaanssen, T. F. S., Boehme, M., Codagnone, M. G., Cussotto, S., Fulling, C., Golubeva, A. V., Guzzetta, K. E., Jaggar, M., Long-Smith, C. M., Lyte, J. M., Martin, J. A., Molinero-Perez, A., Moloney, G., Morelli, E., Morillas, E., … Dinan, T. G. (2019). The microbiota-gut-brain axis. *Physiological Reviews, 99*(4), 1877–2013.
 
 Corkin, S. (2013). *Permanent present tense: The unforgettable life of the amnesic patient H.M.* Basic Books.
@@ -569,3 +585,5 @@ Schultz, W. (1998). Predictive reward signal of dopamine neurons. *Journal of Ne
 Scoville, W. B., & Milner, B. (1957). Loss of recent memory after bilateral hippocampal lesions. *Journal of Neurology, Neurosurgery, and Psychiatry, 20*(1), 11–21.
 
 Sperry, R. W. (1968). Hemisphere deconnection and unity in conscious awareness. *American Psychologist, 23*(10), 723–733.
+
+Taylor, S. E., Klein, L. C., Lewis, B. P., Gruenewald, T. L., Gurung, R. A. R., & Updegraff, J. A. (2000). Biobehavioral responses to stress in females: Tend-and-befriend, not fight-or-flight. *Psychological Review, 107*(3), 411–429.

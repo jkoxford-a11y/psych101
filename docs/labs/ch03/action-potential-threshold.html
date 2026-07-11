@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Action Potential Threshold and All-or-Nothing - General Psychology</title>
+  <link rel="stylesheet" href="../../css/style.css" />
+  <link rel="stylesheet" href="../../css/labs.css" />
+</head>
+<body>
+<div class="layout">
+  <aside class="sidebar" id="app-sidebar"></aside>
+  <script src="../../js/sidebar.js" data-dir="labs/ch03" data-active="" data-top="full"></script>
+
+  <main class="main lab-main">
+    <p class="chapter-meta">Learning Lab - Chapter 3</p>
+    <h1>Action Potential Threshold and All-or-Nothing</h1>
+    <hr class="chapter-divider" />
+
+    <p>A stronger sensation feels bigger. Does that mean each action potential becomes taller? Commit to an answer, then test a deliberately simplified neuron one stimulus at a time. Plan on about 10–15 minutes.</p>
+
+    <div class="callout callout--note">
+      <div class="callout-title">Accessibility and Privacy</div>
+      <p>This lab stores your prediction, trials, explanation, and transfer response only in sessionStorage for this browser tab. It collects no names, emails, student IDs, analytics, cookies, or health information, and it sends nothing to a server. Every graph update also appears in the plain-text event log.</p>
+    </div>
+
+    <section class="lab-panel phase-panel" id="prediction-panel" aria-labelledby="prediction-heading">
+      <h2 id="prediction-heading" tabindex="-1">1. Prediction</h2>
+      <form id="prediction-form" novalidate>
+        <fieldset class="lab-fieldset">
+          <legend>If a stronger stimulus reaches a neuron, what will happen to an individual action potential?</legend>
+          <label class="option-row"><input type="radio" name="prediction" value="taller" /><span>It will produce a taller action potential.</span></label>
+          <label class="option-row"><input type="radio" name="prediction" value="same" /><span>Once threshold is crossed, it will produce approximately the same-sized action potential.</span></label>
+          <label class="option-row"><input type="radio" name="prediction" value="unpredictable" /><span>There is no predictable relationship.</span></label>
+        </fieldset>
+        <button class="lab-btn" type="button" id="commit-prediction">Commit prediction</button>
+      </form>
+      <p class="save-status" id="prediction-status" aria-live="polite"></p>
+    </section>
+
+    <section class="lab-panel phase-panel" id="threshold-panel" hidden aria-labelledby="threshold-heading">
+      <div class="lab-progress"><span id="threshold-progress">Threshold trials</span><span>Threshold = 50 normalized input units</span></div>
+      <h2 id="threshold-heading" tabindex="-1">2. Test the Threshold</h2>
+      <p>Apply one stimulus at a time. Try input below and above the marked threshold; each value can be tested once.</p>
+      <div class="sim-controls" id="stimulus-controls">
+        <button class="lab-btn lab-btn--secondary" type="button" data-stimulus="30">Apply 30 units</button>
+        <button class="lab-btn lab-btn--secondary" type="button" data-stimulus="45">Apply 45 units</button>
+        <button class="lab-btn lab-btn--secondary" type="button" data-stimulus="49">Apply 49 units</button>
+        <button class="lab-btn lab-btn--secondary" type="button" data-stimulus="50">Apply 50 units</button>
+        <button class="lab-btn lab-btn--secondary" type="button" data-stimulus="65">Apply 65 units</button>
+        <button class="lab-btn lab-btn--secondary" type="button" data-stimulus="85">Apply 85 units</button>
+      </div>
+
+      <div class="curve-wrap">
+        <svg class="curve-svg" id="voltage-chart" viewBox="0 0 720 300" role="img" aria-labelledby="voltage-title voltage-desc">
+          <title id="voltage-title">Schematic membrane-voltage trace</title>
+          <desc id="voltage-desc">The trace updates after each trial. A text equivalent is provided below and in the event log.</desc>
+          <line class="curve-axis" x1="70" y1="250" x2="690" y2="250"></line>
+          <line class="curve-axis" x1="70" y1="35" x2="70" y2="250"></line>
+          <line class="threshold-line" x1="70" y1="155" x2="690" y2="155"></line>
+          <text class="curve-label" x="78" y="148">Threshold</text>
+          <text class="curve-label" x="570" y="285">Time (schematic)</text>
+          <text class="curve-label" x="8" y="28">Membrane voltage</text>
+          <path id="voltage-trace" class="trace-subthreshold" d="M70 225 L690 225"></path>
+        </svg>
+      </div>
+
+      <div class="trial-result" id="trial-result" aria-live="polite">No trial has been run yet.</div>
+      <dl class="sim-stats">
+        <div class="sim-stat"><dt>Stimulus</dt><dd id="stat-stimulus">—</dd></div>
+        <div class="sim-stat"><dt>Threshold crossed?</dt><dd id="stat-threshold">—</dd></div>
+        <div class="sim-stat"><dt>Action potential?</dt><dd id="stat-spike">—</dd></div>
+        <div class="sim-stat"><dt>Peak</dt><dd id="stat-peak">—</dd></div>
+      </dl>
+
+      <h3>Plain-text event log</h3>
+      <div class="event-log" id="threshold-log" tabindex="0" aria-live="polite"><ol></ol></div>
+    </section>
+
+    <section class="lab-panel phase-panel" id="frequency-panel" hidden aria-labelledby="frequency-heading">
+      <h2 id="frequency-heading" tabindex="-1">3. Extension: Strength Across Time</h2>
+      <p>Now compare two sustained inputs. Run each one separately.</p>
+      <div class="sim-controls">
+        <button class="lab-btn lab-btn--secondary" type="button" id="run-weaker">Run weaker sustained input</button>
+        <button class="lab-btn lab-btn--secondary" type="button" id="run-stronger">Run stronger sustained input</button>
+      </div>
+      <div class="trial-result" id="frequency-result" aria-live="polite">No sustained-input trial has been run yet.</div>
+      <div class="event-log" id="frequency-log" tabindex="0" aria-live="polite"><ol></ol></div>
+    </section>
+
+    <section class="lab-panel phase-panel" id="concept-panel" hidden aria-labelledby="concept-heading">
+      <h2 id="concept-heading" tabindex="-1">4. What the Pattern Means</h2>
+      <div class="callout callout--note">
+        <div class="callout-title">Concept Reveal</div>
+        <p><strong>Input below threshold produces no action potential. Once threshold is crossed, the neuron produces a stereotyped spike.</strong> Stimulus strength is usually represented by how frequently neurons fire and how many neurons participate—not by making each spike proportionally larger.</p>
+        <p>This is a foundational teaching model. Real spikes vary somewhat across cells and biological conditions; “all-or-nothing” does not mean every spike in nature is mathematically identical.</p>
+      </div>
+    </section>
+
+    <section class="lab-panel phase-panel" id="explain-panel" hidden aria-labelledby="explain-heading">
+      <h2 id="explain-heading" tabindex="-1">5. Explain</h2>
+      <label class="text-label" for="explain-response">Why did increasing the stimulus above threshold fail to make each action potential much taller?</label>
+      <textarea id="explain-response" rows="5"></textarea>
+      <div class="lab-actions"><button class="lab-btn" type="button" id="save-explanation">Save explanation</button></div>
+      <p class="save-status" id="explain-status" aria-live="polite"></p>
+    </section>
+
+    <section class="lab-panel phase-panel" id="transfer-panel" hidden aria-labelledby="transfer-heading">
+      <h2 id="transfer-heading" tabindex="-1">6. Summary and Transfer</h2>
+      <p id="completion-summary"></p>
+      <label class="text-label" for="transfer-response">Pressing harder on your skin feels stronger. Using the all-or-nothing principle, explain how the nervous system can represent that stronger pressure even though individual action potentials do not simply become taller.</label>
+      <p class="term-reminder">Use <strong>threshold</strong>, <strong>action potential</strong>, and either <strong>firing rate</strong> or <strong>neural recruitment</strong>.</p>
+      <textarea id="transfer-response" rows="6"></textarea>
+      <div class="lab-actions">
+        <button class="lab-btn" type="button" id="save-transfer">Save transfer response</button>
+        <button class="lab-btn lab-btn--secondary" type="button" id="restart-lab">Restart lab</button>
+      </div>
+      <p class="save-status" id="transfer-status" aria-live="polite"></p>
+    </section>
+
+    <section class="callout callout--think-about-it" aria-labelledby="instructor-note-heading">
+      <div class="callout-title" id="instructor-note-heading">Instructor Note</div>
+      <p>Have pairs compare their original predictions before running trials. The useful debrief moment is the first time two different suprathreshold inputs produce the same schematic peak but the sustained-input extension produces different firing rates.</p>
+    </section>
+  </main>
+</div>
+<script src="../../js/nav.js"></script>
+<script src="../../js/labs-action-potential-threshold.js"></script>
+</body>
+</html>
