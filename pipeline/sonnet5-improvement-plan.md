@@ -61,18 +61,19 @@
 
 ---
 
-## Task 1 — Bring Chapter 11 (Social Psychology) to structural parity
+## Task 1 — Bring Chapter 11 (Social Psychology) to structural parity — DONE (Session 93, 2026-07-11)
 
-**Why:** Ch11 is the clear outlier (rebuilt separately). Audit confirms it has **no Connections table, no Further Reading, no References section, 0 Stop&Retrieve prompts, and review questions in a non-collapsible `<p>Question:</p>` + `<ol>` format** unlike every other chapter's `review-q`/`<details>` pattern.
+**Why:** Ch11 was the clear outlier (rebuilt separately). Original audit found no Connections table, no Further Reading, no References section, 0 Stop&Retrieve prompts, and review questions in a non-collapsible `<p>Question:</p>` + `<ol>` format, unlike every other chapter's `review-q`/`<details>` pattern.
 
-**Steps (validate after each):**
-1. Convert Ch11's review questions to the standard `review-q` + `<details><summary>` collapsible pattern used in Ch8 (copy the exact markup shape). Preserve the existing question content and wrong-answer rationales.
-2. Add a **Connections** table (spec §4, 4–8 rows, hyperlinked, ≥1 non-obvious link). Source candidate links from `source/concept_lineage_revised.csv` and the Ch11 markdown. **Open item:** the Ch11 markdown has no `## Connections` section — draft the table from concept lineage, but flag in the commit that these connections are newly authored and need Jon's review. Do not fabricate cross-references to sections that don't exist.
-3. Add **Further Reading** (3–6 annotated links, Noba/APA IPI style) and a **References** section, matching Ch4/Ch12 format.
-4. Add **Stop and Retrieve** prompts — 1 per major section — with self-referential framing (spec §3a).
-5. Resolve the two standing Ch11 questions: (a) the missing `## Connections` in source markdown, (b) the "Stop & Retrieve" section vs. inline-callout format (Ch12 distributes retrieval prompts inline). Match the established sibling pattern; flag the choice rather than deciding silently if ambiguous.
+**Status:** Steps 1, 3, and 4 below (review-q markup, Further Reading, References) had already been completed in an earlier, undocumented pass before Session 93 started — confirmed via linter and direct grep rather than assumed. Only steps 2 and 5 were actually outstanding, and both were finished Session 93:
 
-**Acceptance criteria:** `lint_chapters.py` passes Ch11 on all required-section and review-q-markup rules; Ch11 visually matches a sibling chapter; commit flags author-review items.
+1. ~~Convert Ch11's review questions to the standard `review-q` + `<details><summary>` collapsible pattern.~~ Already done pre-Session-93.
+2. **Added a Connections table** (6 rows) to both `source/chapters/ch11-social-psychology.md` and `docs/chapters/11-social-psychology.html`, placed before Key Terms. All 6 rows are grounded in genuine in-text cross-references already present in the chapter (aggression neuroscience → Ch3, Rorschach reliability/validity → Ch2, Bandura observational learning → Ch7, stereotype threat → Ch9, temperament → Ch10, social judgment setting up emotion/stress → Ch12) — none fabricated. Follows the plain-text `<td>` convention used by every sibling chapter (Ch4/Ch7/Ch8/Ch9/Ch10/Ch12/Ch13); none of them actually use hyperlinked cells despite this doc's original "hyperlinked" instruction, so plain text was chosen to match established practice over the stale plan text.
+3. ~~Add Further Reading and References.~~ Already done pre-Session-93.
+4. ~~Add Stop and Retrieve prompts.~~ Already done pre-Session-93 in the sense that Further Reading/References/review-q existed, but Stop & Retrieve itself was still in the old standalone-section format — see step 5.
+5. **Resolved the Stop & Retrieve format decision.** Checked actual current HTML for every sibling chapter that has Stop & Retrieve content: the inline `callout--stop-retrieve` pattern (one per major section, placed at natural pause points) is now the unanimous convention — including Ch9, which a stale HANDOFF note had implied still used the standalone-section format but had actually been converted in Session 89. Converted Ch11 from its standalone 8-item numbered-list section to 5 inline callouts matching Ch8's clean source+HTML-synced reference implementation, placed at natural section-pause points (dissonance routes, SPE limits, groupthink, bystander cost-benefit, person-situation). Removed the old standalone section entirely from both source and HTML.
+
+**Acceptance criteria — met:** `lint_chapters.py` passes Ch11 with 0 fails, 0 warns (verified Session 93) — Connections row count and Stop&Retrieve density both clear the linter's minimums with no leftover standalone-format warning. Ch11 now structurally matches sibling chapters. Not yet committed/pushed as of end of Session 93 — pending Jon's editorial review of the new Connections table content (six newly-authored rows) and the Stop & Retrieve callout placement/wording.
 
 ---
 
