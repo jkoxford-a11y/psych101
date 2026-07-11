@@ -2296,3 +2296,41 @@ Jon is opening a new chat to finalize Ch5 edits; next session on this thread sho
 **Not done:** the work-order itself is not yet applied to `ch06-learning.md` (awaiting the execution pass / Jon's go-ahead). The spine §6 map still needs reconciling to the 13-ch order. Personality→Social dissolution not started.
 
 ---
+
+## Archived Session Log (Sessions 85–87) — archived 2026-07-11 (Session 95)
+
+> Moved from HANDOFF.md's Session Log to keep it within the 10-entry archival trigger (11 entries present, Sessions 85–95; trimmed down to 8 remaining, Sessions 88–95). Nothing was deleted — this is the verbatim Session Log content for Sessions 85 through 87, newest first, exactly as it read in HANDOFF.md before this cleanup.
+
+### Session 87 (2026-07-10)
+
+**What happened:** Jon described a mnemonic technique he uses — imagining a strange, vivid interaction between two paired items (his example: a book functioning as an island, waves crashing against its pages, for "book–ocean") — and asked what the cognitive-psychology term for this is and whether it relates to prediction error. Discussed interactive imagery, dual coding, unitization, and the bizarreness effect; flagged that lab evidence (Wollen, Weber, & Lowry, 1972) attributes most of the recall benefit to interaction, not bizarreness per se, and that a prediction-error framing is plausible but not established for this specific mnemonic. Jon then generated an illustration of his exact book–ocean scene and asked to add it to the Prologue.
+
+**Access hiccup:** the project's default connected folder only had the extraction CSVs, not the live repo. Requested `C:\Users\oxfor\OneDrive\Docs\GitHub\psych101` first — Jon declined (per the standing stale-OneDrive-copy warning) — then Jon supplied the correct path, `C:\GitHub\psych101`, directly.
+
+**Content work:** added a new paragraph, Figure P.5 (renamed image file), a "Do Not Confuse" callout, a Key Terms entry, a References citation, and a Chapter Summary tweak to Prologue Section 2 — see Current Status for detail.
+
+**Files modified:** `docs/chapters/prologue.html`, `docs/images/prologue/fig_interactive_imagery_book_ocean.png` (new, renamed from generated filename), `HANDOFF.md`. Nothing committed/pushed.
+
+### Session 86 (2026-07-10)
+
+**What happened:** Jon asked to finish the Prologue update. Confirmed Session 84's restructuring was already committed/pushed and verified it live (sidebar highlight, figure-expand, 8 misconception labels). While checking, found `docs/index.html` had been truncated since the Session 80 sidebar-swap script — missing `</div><script src=js/nav.js></body></html>` — broken in every commit since and never caught. Also found 3 lab HTML files each missing a trailing `>` on `</html`, same script's fingerprint. Fixed all four via Edit tool, verified via Read/Grep (bypasses sandbox mount).
+
+**Content work from Jon's live feedback:** increased the expandable-figure breakout margin (`docs/css/style.css`) beyond the `.wide` class's allowance — figures now expand to ~1061px vs. the old 716px cap. Added a "Try it yourself" link to the new `docs/labs/ch08/levels-of-processing.html` lab in Prologue Section 2. Added a concrete worked-example AI prompt in Section 8 ("I am a psych 101 student studying levels of processing...") after Jon flagged the existing prompt-builder templates as too abstract — the example models predict-first-then-critique explicitly and links the lab.
+
+**Tooling problem, resolved but not fixed:** sandbox's bash/git view showed stale/truncated content for freshly-edited files (worse than Session 83/84 — spliced new edits onto stale bases, truncating tails) even after long waits. Did not commit through the sandbox. Had Jon pull and commit/push directly via GitHub Desktop (`6fcd7e7`, merged `70892be`). Verified the push landed correctly via `git log`/`git show` and a cache-busted live-site check.
+
+**Files modified:** `docs/index.html`, `docs/labs/ch02/correlation-causation.html`, `docs/labs/ch03/chemical-imbalance-claim-check.html`, `docs/labs/ch07/classical-conditioning.html`, `docs/chapters/prologue.html`, `docs/css/style.css`, `HANDOFF.md`.
+
+### Session 85 (2026-07-10)
+
+**What happened:** A token-efficiency / context-hygiene session (no chapter content changed). Re-instated, in the canonical repo, the context-optimization work that an earlier chat had mistakenly performed against the now-retired `old_psych101` OneDrive copy. Confirmed the divergence directly (this repo's `ch13` still carried its full `<!-- v0.1 -->` header; `pipeline/` lacked the new files).
+
+**Done + verified:** Ran `pipeline/extract_provenance.py` on all 14 chapter md files — moved ~16,845 tokens of version-history headers into `source/chapters/_provenance/` sidecars, each chapter left with a one-line pointer. Snapshotted first and independently verified every body (first `## ` onward) byte-identical to the snapshot; ch10 normalized CRLF→LF (only CRLF file). Added `pipeline/context_budget.py` (token meter — measured: HANDOFF full ~29K vs intended read ~3.3K; two CSVs ~21K whole; two theory specs ~47K; each HTML chapter ~20–25K), `pipeline/extract_provenance.py`, `pipeline/context-hygiene-prompt.md` (reusable port prompt), and `pipeline/sonnet5-improvement-plan.md`. Added a start-of-session briefing directive to the top of HANDOFF that doubles as a stale-copy guard.
+
+**Also (earlier in the same chat):** updated the Notion case study "The Handoff File That Grew to 476KB" with a follow-up section (the bloat was fractal — provenance headers were the same pattern on the hot path) and a "we built a meter instead of asking the AI" section.
+
+**Not done:** nothing committed/pushed. Pre-existing tree drift untouched.
+
+**Files modified:** all 14 `source/chapters/*.md`; new `source/chapters/_provenance/*.md`; new `pipeline/{sonnet5-improvement-plan.md, context_budget.py, extract_provenance.py, context-hygiene-prompt.md}`; `HANDOFF.md`.
+
+---

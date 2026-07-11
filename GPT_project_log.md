@@ -21,6 +21,14 @@ Record only actions, decisions, files changed, validation, and remaining issues.
 
 ## Log Entries
 
+### 2026-07-11 - Chapters 5, 7, and 8 Anchor/Heading Render Repair
+
+- Corrected every broken Connections-table internal target in Chapters 5, 7, and 8, including the Ch5 circadian subsection link and all accidental em-dash-derived double hyphens.
+- Added `id="circadian-rhythms-and-sleep-pressure"` to the existing Ch5 `<h3>` without changing its text.
+- Converted all eight Ch7 and all six Ch8 source-backed literal `<p>#### ...</p>` artifacts to semantic `<h4>` headings with stable, punctuation-normalized IDs; exact source wording, order, and parent-section hierarchy were preserved.
+- No checked-in converter was found. Added a narrow hard-fail regression guard to `pipeline/lint_chapters.py` for Markdown heading markers rendered as paragraph text.
+- Validation: Ch5/7/8 each pass with 0 failures and 0 warnings; all 20 internal links resolve to exactly one ID; no duplicate IDs or consecutive-hyphen targets; repository-wide search found no remaining literal paragraph headings. Full lint remains 12/13 hard-clean solely because of Ch10's pre-existing review-question markup failure, with unrelated existing warnings unchanged.
+
 ### 2026-07-10 - Chapter 2 Image Wiring and Manifest Reconciliation
 
 - **Scope:** Executed `docs/images/ch02/CH02_IMAGE_WIRING_HANDOFF.md` as a focused image-wiring pass. Read all prerequisite files (`AGENTS.md`, `pipeline/voice-brief.md`, `docs/images/psych101_figure_style_guide.md`, `pipeline/html-conversion-spec.md`, Ch2 source/HTML, Ch2 README manifest, `source/visuals-inventory.md`) before editing. No chapter prose was rewritten and no approved figure concepts were redesigned.

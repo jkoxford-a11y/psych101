@@ -75,6 +75,12 @@ Myelin matters here because of speed. On an unmyelinated axon, the action potent
 ![Figure 3.4 — Two-panel diagram comparing unmyelinated and myelinated axons. The unmyelinated axon shows continuous conduction along the membrane; the myelinated axon shows signal regeneration at nodes of Ranvier with current spreading under the myelin.](../images/ch03/ch03_myelin_saltatory_conduction_speed_efficiency.png)
 *Figure 3.4. Myelin speeds neural signaling by insulating the axon and concentrating action-potential regeneration at the nodes of Ranvier. Saltatory conduction is both faster and more energy efficient than continuous conduction.*
 
+<video controls preload="metadata" poster="../images/ch03/ch03_myelin_saltatory_conduction_speed_efficiency.png">
+  <source src="../images/ch03/ch03_saltatory_conduction_demo.mp4" type="video/mp4" />
+  Your browser does not support embedded video. <a href="../images/ch03/ch03_saltatory_conduction_demo.mp4">Download the saltatory conduction video</a>.
+</video>
+*Video 3.1. Saltatory conduction along a myelinated axon: the action potential regenerates at each node of Ranvier while current spreads passively under the insulating myelin between nodes, producing faster and more energy-efficient conduction than continuous, unmyelinated signaling. Generated for Oxford Psychology 101 with Google AI video generation, 2026.*
+
 > **Think About It:** Neural tissue is extraordinarily metabolically demanding — it needs a continuous supply of oxygen and glucose to maintain the ion gradients that make signaling possible. What happens when that supply is briefly interrupted? You have almost certainly experienced it: sustained pressure on a limb cuts off circulation, the sodium-potassium pump runs low on fuel, and neurons can no longer maintain normal signaling — numbness. As pressure is relieved and circulation returns, ions rush back in a temporarily disorganized way before normal gradients are restored — pins and needles. The metabolic cost of the action potential is the reason this happens.
 
 > *Practice this in the lab when available.* **Predict, before interacting:** if you reduce the strength of a stimulus to a neuron, will the resulting action potential be smaller, or will it simply fail to occur at all? After interacting: was your prediction correct, and can you explain why in terms of the all-or-nothing principle?

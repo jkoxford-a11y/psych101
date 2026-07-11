@@ -104,6 +104,14 @@ def lint_file(path):
         if opens != closes:
             r.fail("well-formed", f"<{tag}> open={opens} close={closes}")
 
+    # --- Markdown headings rendered as paragraph text ---
+    literal_headings = re.findall(r"<p\b[^>]*>\s*#{1,6}\s+[^<]+</p>", raw, re.I)
+    if literal_headings:
+        r.fail(
+            "literal-markdown-heading",
+            f"{len(literal_headings)} paragraph(s) begin with Markdown heading markers",
+        )
+
     # --- Required sections ---
     ids_present = set(re.findall(r'<h2\s+id="([^"]+)"', raw))
     required = [i for i in REQUIRED_IDS if not (is_prologue and i in PROLOGUE_EXEMPT_IDS)]
