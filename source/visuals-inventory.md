@@ -59,21 +59,22 @@ Markdown draft complete (v0.2). Awaiting Jon's line-by-line review. HTML convers
 
 ## Chapter 3 — Neuroscience & Biological Bases
 
-All 9 listed figures exist. Awaiting Jon's line-by-line review before HTML conversion.
+Chapter 3 HTML is built. All 10 active figures are wired in both the source markdown and rendered HTML; the generated PNG figures are expandable in Chapter 3.
 
 | # | Description | Status | Filename / note |
 |---|-------------|--------|-----------------|
-| 3.1 | Neuron anatomy / signal direction | ✅ | `ch03/fig3_1_neuron_anatomy_signal_direction.png/.svg` |
-| 3.2 | Action potential / threshold graph | ✅ | `ch03/fig3_2_action_potential_threshold.png/.svg` |
-| 3.3 | Misconception card: stimulus strength vs. firing rate | ⚠️ | `ch03/fig3_3_misconception_action_potential_lecture.jpg` — from lecture slides; needs Jon originality sign-off. |
-| 3.4 | Neurotransmitter vs. hormone (synapse vs. bloodstream) | ✅ | `ch03/fig3_4_neurotransmitter_vs_hormone.png/.svg` |
-| 3.5 | Agonist/antagonist diagram | ⚠️ | `ch03/fig3_5_agonist_antagonist_lecture.jpg` — from lecture slides; needs Jon originality sign-off. |
-| 3.6 | Fast (SAM) / slow (HPA) stress response pathways | ✅ | `ch03/fig3_6_stress_response_fast_slow.png/.svg` |
-| 3.7 | ANS balance (sympathetic vs. parasympathetic) | ⚠️ | `ch03/fig3_7_ans_balance_lecture.jpg` — from lecture slides; needs Jon originality sign-off. |
-| 3.8 | Brain imaging tradeoffs (fMRI/EEG/PET spatial-temporal grid) | ✅ | `ch03/fig3_8_brain_imaging_tradeoffs.png/.svg` |
-| 3.9 | Split-brain logic diagram | ✅ | `ch03/fig3_9_split_brain_logic.png/.svg` |
+| 3.1 | Nervous system centralization across body plans | ✅ wired / use now | `ch03/ch03_nervous_system_centralization_hybrid.png` |
+| 3.2 | Neuron anatomy and signal direction | ✅ wired / use now | `ch03/fig3_1_neuron_anatomy_pressbooks.jpeg` |
+| 3.3 | Action potential: threshold, spike, and refractory period | ✅ wired / use now | `ch03/fig3_2_action_potential_pressbooks.jpeg` |
+| 3.4 | Myelin and saltatory conduction | ✅ wired / use now | `ch03/ch03_myelin_saltatory_conduction_speed_efficiency.png` |
+| 3.5 | Chemical messengers: wired and focal vs. broadcast | ✅ wired / use now | `ch03/ch03_chemical_messengers_wired_focal_vs_broadcast.png` |
+| 3.6 | Synaptic transmission: release, receptor effects, and clearance | ✅ wired / use now | `ch03/ch03_synaptic_transmission_release_receptors_clearance.png` |
+| 3.7 | Excitation, inhibition, and circuit selectivity | ✅ wired / use now | `ch03/ch03_excitation_inhibition_circuit_selectivity.png` |
+| 3.8 | Dopamine and serotonin projection systems | ✅ wired / use now | `ch03/ch03_neuromodulator_projection_systems_dopamine_serotonin.png` |
+| 3.9 | Sympathetic and parasympathetic push-pull balance | ✅ wired / use now | `ch03/ch03_autonomic_balance_push_pull.png` |
+| 3.10 | Lateral brain lobes | ✅ wired / use now | `ch03/ch03_lateral_brain_lobes_minimal_labels.png` |
 
-**Open items for Jon:** confirm the three lecture-deck-sourced figures (3.3, 3.5, 3.7) are original or rebuild equivalents as clean originals. Reconcile any v0.7 renumbering notes against `ch03-neuroscience-biological-bases.md` before HTML sync.
+**Expandable figures:** 3.1 and 3.4–3.10. Figures 3.2 and 3.3 remain non-expandable because their Pressbooks JPEGs are only 770×391 and 487×352 pixels, so enlargement would not reveal useful additional detail.
 
 ---
 

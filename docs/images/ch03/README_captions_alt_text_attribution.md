@@ -1,6 +1,6 @@
 # Chapter 3 Image Inventory and Visual Plan
 
-> Last updated: 2026-07-11 (Session 95). Figure numbers below now match the live book (`docs/chapters/03-neuroscience.html`) — the prior "provisional" numbering (Session 50) was off by one for Figs 3.1–3.7 because the centralization figure was inserted at the front as Figure 3.1 without renumbering everything after it. All figures listed below are confirmed wired into both `source/chapters/ch03-neuroscience-biological-bases.md` and the HTML, with matching alt text (linter: 0 fails, 0 warns).
+> Last updated: 2026-07-11. Figure numbers below match the live book (`docs/chapters/03-neuroscience.html`). All 10 figures listed below are wired into both `source/chapters/ch03-neuroscience-biological-bases.md` and the HTML, with matching alt text.
 
 ---
 
@@ -72,13 +72,16 @@
 
 ---
 
-### [Gap — no figure] Synapse mechanism / reuptake / SSRIs paragraph
-**Source location:** `source/chapters/ch03-neuroscience-biological-bases.md`, the paragraph beginning "When an action potential reaches the axon terminal..." (vesicle release, synaptic cleft, receptors, reuptake vs. enzymatic degradation, SSRI mechanism).
-**Status (Session 95):** Jon reviewed two retired candidates for this spot — a Pressbooks CC BY `Reuptake.jpeg` and an original `neuron_synapse_signal_transfer.png` (the latter already flagged by this README as "good candidate for synapse-bridge paragraph" since Session 50) — and declined both. **He wants a new figure generated to his own spec for this paragraph rather than reusing either retired asset.** Not yet started — flagged in HANDOFF Next Up.
+### Figure 3.6 — Synaptic transmission: release, receptor effects, and clearance
+**Filename:** `ch03_synaptic_transmission_release_receptors_clearance.png`
+**Placement:** Section 2, immediately after the paragraph beginning "When an action potential reaches the axon terminal..." and before the agonist/antagonist paragraph
+**Caption:** "Synaptic transmission is a short-lived chemical conversation. An arriving action potential triggers neurotransmitter release from the presynaptic terminal. Neurotransmitter molecules cross the synaptic cleft and bind to receptors, changing ion flow and making the postsynaptic neuron more or less likely to fire. One way the signal ends is reuptake into the presynaptic terminal. Neurotransmitter that remains in the cleft may instead be broken down by enzymes."
+**Alt text:** "Two-panel educational infographic showing how a chemical synaptic signal is sent and cleared. In the left panel, an action potential reaches a blue presynaptic terminal, neurotransmitter molecules are released into the synaptic cleft, and the molecules bind to receptors on a green postsynaptic neuron. Receptor opening changes sodium or potassium ion movement, altering the postsynaptic neuron’s likelihood of firing. In the right panel, one route of clearance is reuptake through transporter proteins in the presynaptic membrane. The other route shows neurotransmitter molecules that remain in the cleft being broken into inactive pieces by enzymes."
+**Attribution:** Original figure generated for Oxford Psychology 101 with ChatGPT image generation, 2026. No external copyrighted image assets intentionally used. Safe for public sharing pending final biological accuracy review.
 
 ---
 
-### Figure 3.6 — Excitation, inhibition, and circuit selectivity
+### Figure 3.7 — Excitation, inhibition, and circuit selectivity
 **Filename:** `ch03_excitation_inhibition_circuit_selectivity.png`
 **Placement:** Section 2, before dopamine worked example
 **Caption:** "Excitatory inputs make a postsynaptic neuron more likely to fire; inhibitory inputs make it less likely to fire. Inhibition is not a failure of signaling. It sharpens timing, suppresses noise, and helps circuits select one response over competing alternatives."
@@ -87,7 +90,7 @@
 
 ---
 
-### Figure 3.7 — Dopamine and serotonin projection systems
+### Figure 3.8 — Dopamine and serotonin projection systems
 **Filename:** `ch03_neuromodulator_projection_systems_dopamine_serotonin.png`
 **Placement:** Section 2, after neuromodulator paragraph and before dopamine worked example
 **Caption:** "Neuromodulators act through projection systems. Small nuclei send long-range axons into different target circuits, so the same chemical family can have different behavioral effects depending on which pathway is active."
@@ -105,7 +108,7 @@
 
 ---
 
-### Figure 3.8 — Sympathetic and parasympathetic: push-pull balance
+### Figure 3.9 — Sympathetic and parasympathetic: push-pull balance
 **Filename:** `ch03_autonomic_balance_push_pull.png`
 **Placement:** Section 3, after push-pull paragraph
 **Replaces:** old `fig_ans_balance.jpg` (retired, see below)
@@ -115,7 +118,7 @@
 
 ---
 
-### Figure 3.9 — Lateral brain lobes
+### Figure 3.10 — Lateral brain lobes
 **Filename:** `ch03_lateral_brain_lobes_minimal_labels.png`
 **Placement:** Section 4, before "Cortex, Lobes, and the Limbic System"
 **Caption:** "The cerebral cortex is often divided into four lobes with different specializations, but behavior is not produced by one region acting alone. Each lobe contributes to larger networks."
@@ -131,16 +134,16 @@
 |---|---|
 | `fig3_3_action_potential_firing_rate.png/svg` | Firing-rate point covered in prose and Fig 3.3; redundant as standalone figure |
 | `fig_neurotransmitter_vs_hormone.png/svg` | Replaced by Figure 3.5 |
-| `fig_ans_balance.jpg` | Replaced by Figure 3.8 |
+| `fig_ans_balance.jpg` | Replaced by Figure 3.9 |
 | `fig_split_brain_logic.png/svg` | Split-brain section shrinking to Do Not Confuse box; image may not be needed |
-| `neuron_synapse_signal_transfer.png/svg` | Considered for the synapse/reuptake gap (see above), declined by Jon Session 95 — he wants a new figure generated instead |
+| `neuron_synapse_signal_transfer.png/svg` | Declined in favor of the completed Figure 3.6 synaptic-transmission figure |
 | `fig_agonist_antagonist.jpg` | Agonist/antagonist section removed from chapter flow in v0.3; slides only |
 | `fig_brain_imaging_tradeoffs.png/svg` | Brain imaging section condensed; table too detailed for current chapter scope |
 | `fig_action_potential_threshold.png/svg` | Superseded by Pressbooks Figure 3.3 |
 | `fig_neuron_anatomy.png/svg` | Superseded by Pressbooks Figure 3.2 |
 | `fig_action_potential_misconception.jpg` | Not currently used |
 | `a_wide_educational_infographic_science_diagram_o.png` | Painterly B version of centralization figure; slides only |
-| `Pressbooks images/Reuptake.jpeg` | Considered for the synapse/reuptake gap (see above), declined by Jon Session 95 |
+| `Pressbooks images/Reuptake.jpeg` | Declined in favor of the completed Figure 3.6 synaptic-transmission figure |
 | `Pressbooks images/action potential.jpeg`, `Pressbooks images/neuron.jpeg` | Source copies of Figures 3.2/3.3 before rename |
 
 ---

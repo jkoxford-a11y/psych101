@@ -17,9 +17,18 @@ Record only actions, decisions, files changed, validation, and remaining issues.
 
 - Keep figure wiring separate from figure creation unless explicitly asked.
 - Continue validating generated HTML against actual content, not only structural tags.
-- CSS/JS pattern (`.expandable`, `figure-expand.js`) is Ch9-only so far; not yet applied to other chapters' wide figures.
+- Reusable figure expansion uses the shared `.expandable` CSS and `figure-expand.js`; it is enabled only in chapters explicitly wired for it.
 
 ## Log Entries
+
+### 2026-07-11 - Chapter 3 Synaptic Figure Wiring and Expandable Figures
+
+- Scope: Chapter 3 mechanical figure work only; no Chapter 3 prose or image pixels changed.
+- Files changed: `source/chapters/ch03-neuroscience-biological-bases.md`, `docs/chapters/03-neuroscience.html`, `docs/images/ch03/README_captions_alt_text_attribution.md`, `source/visuals-inventory.md`, `GPT_project_log.md`, plus the required session-start update to `pipeline/context_budget_log.csv`.
+- Wired `ch03_synaptic_transmission_release_receptors_clearance.png` immediately after the synaptic-transmission paragraph as Figure 3.6. Renumbered all later figures so Chapter 3 now runs sequentially from Figure 3.1 through Figure 3.10 in source, HTML, captions, and inventory records.
+- Enabled the existing shared in-place expansion pattern for Figures 3.1 and 3.4–3.10. Excluded the two Pressbooks JPEGs, Figures 3.2 and 3.3, because their 770×391 and 487×352 native resolutions make expansion unhelpful. No shared CSS or JavaScript changes were necessary.
+- Validation: confirmed every image path exists; source and HTML numbering both resolve to 1–10; all image alt text is non-empty with no leading dash; internal anchors resolve; all 12 review questions retain paired `<details>/<summary>` markup; no bad ` ? ` separator mojibake; Chapter 3 linter passed with 0 failures and 0 warnings.
+- Remaining issue: attempted desktop, portrait-mobile, and landscape-mobile interaction inspection through the in-app browser, but its isolated browser environment could not reach the repository-local preview server. Static responsive rules and markup were verified, but a live visual interaction pass remains outstanding.
 
 ### 2026-07-11 - Chapters 5, 7, and 8 Anchor/Heading Render Repair
 
