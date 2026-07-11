@@ -74,11 +74,12 @@
               <line class="curve-axis" x1="65" y1="155" x2="690" y2="155"></line>
               <line class="timeline-event" id="cue-marker" x1="245" y1="70" x2="245" y2="235"></line>
               <line class="timeline-event" id="outcome-marker" x1="520" y1="70" x2="520" y2="235"></line>
-              <text class="curve-label" x="220" y="55">Cue time</text>
+              <text class="curve-label" id="cue-label" x="220" y="55">Cue time</text>
               <text class="curve-label" x="480" y="55">Outcome time</text>
               <text class="curve-label" x="540" y="285">Time (schematic)</text>
               <text class="curve-label" x="8" y="28">Teaching-model signal</text>
-              <path id="signal-trace" class="signal-zero" d="M65 155 L690 155"></path>
+              <path id="cue-signal-trace" class="signal-zero" d="M65 155 L65 155"></path>
+              <path id="outcome-signal-trace" class="signal-zero" d="M430 155 L690 155"></path>
             </svg>
           </div>
           <p class="trial-result" id="visual-equivalent" aria-live="polite"></p>
