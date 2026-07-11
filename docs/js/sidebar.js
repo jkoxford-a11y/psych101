@@ -190,7 +190,19 @@
     } catch (e) {
       stored = null;
     }
-    if (stored === "1") setCollapsed(true);
+    // Keep this query string in sync with the one in docs/css/style.css's
+    // "Responsive" block — width-only misses landscape phones, which is
+    // why this also checks for a touch/no-hover device.
+    var MOBILE_QUERY = "(max-width: 700px), (hover: none) and (pointer: coarse)";
+    if (stored === "1") {
+      setCollapsed(true);
+    } else if (stored === null && window.matchMedia && window.matchMedia(MOBILE_QUERY).matches) {
+      // First visit on a narrow or touch screen: default to collapsed so
+      // the sidebar doesn't cover the whole viewport on load. Only applies
+      // when the user has no saved preference yet; an explicit "0"
+      // (expanded) from a prior visit is still respected.
+      setCollapsed(true);
+    }
   }
 
   function init() {
