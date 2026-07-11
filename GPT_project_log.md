@@ -21,6 +21,16 @@ Record only actions, decisions, files changed, validation, and remaining issues.
 
 ## Log Entries
 
+### 2026-07-11 - Chapter 3 Action-Potential and Dopamine Learning Labs
+
+- Built two standalone Chapter 3 Learning Labs: `docs/labs/ch03/action-potential-threshold.html` with `docs/js/labs-action-potential-threshold.js`, and `docs/labs/ch03/dopamine-prediction-error.html` with `docs/js/labs-dopamine-prediction-error.js`.
+- The action-potential lab requires a frozen prediction, separate subthreshold/suprathreshold trials, and separate weaker/stronger sustained-input trials. It teaches that the simplified spike peak remains at 100 normalized units above threshold while stronger sustained input changes firing rate; it explicitly qualifies all-or-nothing as a foundational model rather than mathematical identity across biology.
+- The dopamine lab requires a frozen opening prediction plus a prediction before each of five sequential trials: unexpected reward, early learning, learned cue plus expected reward, omission, and repeated omission/extinction. It displays cue/reward timing, expected and actual outcomes, positive/approximately-zero/negative prediction error, a schematic teaching-model signal, and an equivalent text log. It explicitly rejects a one-chemical pleasure account and labels the classical prediction-error model as powerful but incomplete.
+- Wired both labs into `docs/labs/index.html`, the authoritative Chapter 3 markdown, and the synchronized rendered HTML. No checked-in chapter generator exists, so the narrow HTML repair followed the repository conversion specification. Existing figures, captions, review questions, references, and unrelated callouts were left intact.
+- Accessibility/privacy: native keyboard controls, focus movement after phase changes, disabled unavailable controls, `aria-labelledby`, polite live regions, SVG titles/descriptions, text equivalents, reduced-motion behavior, unique `sessionStorage` keys, and restart limited to each lab's own key. No identifiers, analytics, cookies, network calls, frameworks, or external libraries.
+- Validation: both JavaScript files pass syntax checks; no duplicate IDs or broken `aria-labelledby` targets; all SVGs have accessible names/descriptions; chapter/index links resolve; no bad ` ? ` separator mojibake; Chapter 3 linter passes with 0 failures and 0 warnings. Static model checks confirm suprathreshold spikes never scale with stimulus and dopamine trials include positive, zero, and negative errors. Live browser rendering remains unverified because the in-app browser cannot reach this repository's local preview server from its isolated environment.
+- Specification drift noted but not changed: the older Chemical Imbalance Claim-Check predates the current six-phase lab spec and does not have a separate saved Explain phase or a distinct concept-reveal phase.
+
 ### 2026-07-11 - Chapter 3 Synaptic Figure Wiring and Expandable Figures
 
 - Scope: Chapter 3 mechanical figure work only; no Chapter 3 prose or image pixels changed.
