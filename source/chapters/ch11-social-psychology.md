@@ -78,6 +78,8 @@ This is the opposite of what simple learning theory would predict. The $20 group
 
 People reduce cognitive dissonance through at least three routes: changing one of the dissonant cognitions (revising a belief to be consistent with a behavior), adding a consonant cognition (finding a reason the inconsistency doesn't matter), or trivializing the dissonance (deciding the conflicting elements aren't very important). All three routes involve moving the belief system toward consistency, but none necessarily involves facing the truth.
 
+> **Stop and Retrieve:** Before reading on — in your own words, why did the $1 group end up finding the boring task more enjoyable than the $20 group? What does this reveal about how dissonance actually gets resolved?
+
 ### Attitudes and Persuasion: The Elaboration Likelihood Model
 
 Cognitive dissonance shows that attitudes and behavior are not independent — behavior can shape attitude. But attitude change is also driven by persuasion, and the route matters. Petty and Cacioppo (1986) proposed the **Elaboration Likelihood Model (ELM)** to explain when attitude change is durable and when it is superficial.
@@ -150,6 +152,8 @@ This interpretation should be treated with caution. In a detailed archival analy
 
 What can we take from the SPE? The *situationist insight it was designed to illustrate is genuine and well-supported by other evidence*: roles shape behavior; group norms influence how individuals treat others; institutional structures can elicit behavior that individuals would reject in the abstract. But the SPE itself, as a scientific demonstration, has serious methodological problems and should be described as a dramatic, flawed illustration of a real phenomenon — not as compelling experimental evidence.
 
+> **Stop and Retrieve:** Before reading on — in your own words, what did Le Texier's (2019) archival analysis find that undermines the Stanford Prison Experiment's status as clean experimental evidence?
+
 ### Social Facilitation and Social Loafing
 
 The mere presence of others affects performance, and the direction depends on the task. Norman Triplett (1898) — in what's often cited as the first social psychology experiment, though a later re-analysis suggests the effect was weaker than reported (Stroebe, 2012) — noticed cyclists raced faster with a pacemaker than alone. Robert Zajonc (1965) explained why: others' presence produces arousal, which enhances performance on *simple* or *well-learned* tasks (**social facilitation**) while impairing performance on *complex* or *novel* ones — the same mechanism, opposite direction. A related but distinct effect, **social loafing**, emerges when individual contribution becomes anonymous: Latané, Williams, and Harkins (1979) found per-person effort dropped as group size increased even when participants were told to give maximum effort — diffusion of effort, the social counterpart to diffusion of responsibility.
@@ -179,6 +183,8 @@ When a highly cohesive group is under pressure and insulated from outside opinio
 Forsyth (2014/2026) identifies the conditions that foster groupthink: high group cohesiveness, isolation from outside information, directive leadership that signals a preferred outcome, and high-stakes pressure. The symptoms include an illusion of invulnerability, collective rationalization of warning signs, belief in the group's inherent morality, stereotyping of outsiders as weak or evil, pressure on dissenters to fall in line, self-censorship of doubts, an illusion of unanimity, and the emergence of self-appointed "mindguards" who filter out inconvenient information.
 
 Prevention requires structural countermeasures: explicitly assigning someone to argue against the emerging consensus, bringing in outside experts, having subgroups deliberate separately before reconvening, and creating explicit permission for members to raise concerns without social penalty.
+
+> **Stop and Retrieve:** Before reading on — in your own words, how do group polarization and groupthink differ, and what conditions tend to produce each?
 
 ### Prejudice, Stereotypes, and Discrimination
 
@@ -218,6 +224,8 @@ Latané and Darley described a **five-step decision model** for why bystanders f
 5. **Decide to act** — **evaluation apprehension**: in an uncertain situation, people fear being embarrassed if they overreact or intervene incorrectly.
 
 Each step is a point at which the intervention chain can fail. Poepsel and Schroeder (in Noba) emphasize a third mechanism beyond pluralistic ignorance and diffusion of responsibility: even when a bystander has correctly interpreted the situation and accepts some personal responsibility, they still weigh the **costs and benefits** of helping — time, physical risk, emotional distress, embarrassment from overreacting — against the benefit to the victim. High perceived costs suppress intervention even in people who care. The practical implication: if you need help, making the situation less ambiguous and singling out a specific individual ("You, in the blue jacket — call 911") counteracts diffusion of responsibility directly and reduces the perceived cost of acting.
+
+> **Stop and Retrieve:** Before reading on — in your own words, what is pluralistic ignorance, and at which step of the bystander decision model does it operate?
 
 ### Altruism
 
@@ -289,6 +297,8 @@ Traits show up most clearly in **weak situations** (ambiguous, few norms) and le
 
 This is the same lesson Section 2 draws from Milgram and Asch, applied to self-judgment instead of judgment of others: situational force is easy to underestimate, whether you're explaining someone else's behavior (FAE) or predicting your own from a trait label.
 
+> **Stop and Retrieve:** Before reading on — in your own words, why isn't a personality-trait correlation of r ≈ .30 the same thing as "traits don't matter"? Give both reasons the chapter offers.
+
 ### Self-Concept and Development
 
 The **self-concept** — a person's compressed model of who they are — is built from memory, feedback from others, and social comparison, and it resists revision once formed, for the same reason any well-established model resists revision: overturning it is costly. Personality itself develops from **temperament** (early, biologically rooted variation in reactivity and self-regulation) interacting with ecology (family, culture, life events) — not fixed at birth, not purely learned (see Chapter 10).
@@ -328,6 +338,19 @@ Prosocial behavior is explained evolutionarily by kin selection and reciprocal a
 Personality asks what stable individual differences are and where they come from. The psychoanalytic (Freud) and humanistic (Rogers) traditions contributed the self-concept and the idea of unconscious, motivated self-protection, though their specific mechanisms haven't held up well empirically. The trait tradition identifies the Big Five as reliable, heritable dimensions that replicate across cultures. Mischel's person-situation debate resolves into an interactionist view: traits predict behavior best when aggregated across many situations, and more so in weak than strong situations. Personality develops from temperament interacting with ecology, not fixed at birth.
 
 In the AI Connection, five mechanisms map onto AI interaction: FAE → anthropomorphism; conformity → confident consensus-of-one; ELM → fluency-based credulity; bystander effect → diffusion of responsibility; social desirability → sycophancy. The breakdown point is Theory of Mind — these phenomena require entities with mental states, and whether AI systems possess anything like one remains an open, actively debated question, not a settled no.
+
+---
+
+## Connections
+
+| Topic in This Chapter | Connects To | Why |
+|---|---|---|
+| Testosterone, serotonin, and amygdala circuitry in aggression | Ch. 3 (Neuroscience & Biological Bases) | Chapter 3 introduces these same neurotransmitter systems and brain regions; this chapter shows how they modulate — without single-handedly causing — aggressive behavior |
+| Reliability and validity applied to the Rorschach | Ch. 2 (Research Methods & Statistics) | Chapter 2 defines reliability and validity in the abstract; this chapter applies both concepts to a specific, often-misused real-world assessment tool |
+| Observational learning of aggression (Bandura's Bobo doll) | Ch. 7 (Learning) | The same observational-learning mechanism from Chapter 7 explains how aggressive behavior can be acquired by watching a model, not only through direct reinforcement |
+| Stereotype threat and intelligence-test performance | Ch. 9 (Thinking, Language & Intelligence) | Chapter 9 covers stereotype threat in the context of IQ testing and group score differences; this chapter explains the social mechanism — a negative stereotype made salient — that produces it |
+| Temperament interacting with ecology to shape personality | Ch. 10 (Lifespan Development) | Chapter 10 introduces temperament as the biologically rooted starting point for individual differences; this chapter's Personality section picks up where that leaves off |
+| Social judgment and behavior as inputs to affective and stress responses | Ch. 12 (Emotion, Stress & Coping) | This chapter's account of how people judge, influence, and treat one another sets up the next chapter's coverage of the emotional and physiological consequences of those experiences |
 
 ---
 
@@ -406,19 +429,6 @@ In the AI Connection, five mechanisms map onto AI interaction: FAE → anthropom
 **Strong situation** — A situation with clear norms and significant behavioral constraints; minimizes expression of individual trait differences.
 
 **Temperament** — Biologically rooted, early-appearing variation in reactivity, self-regulation, and approach/avoidance that forms the initial basis for later personality.
-
----
-
-## Stop & Retrieve
-
-1. What is the fundamental attribution error? Give one example from everyday life.
-2. In Festinger and Carlsmith's (1959) experiment, who expressed more positive attitudes toward the boring task — the $1 group or the $20 group — and why?
-3. What two variables in Milgram's obedience studies most strongly reduced compliance?
-4. What methodological problem did Le Texier (2019) identify with the Stanford Prison Experiment?
-5. Explain the difference between group polarization and groupthink. What conditions produce each?
-6. Distinguish prejudice, stereotype, and discrimination.
-7. According to the five-step bystander model, what is pluralistic ignorance and at which step does it operate?
-8. Why is a personality trait correlation of r = .30 not the same thing as "traits don't matter"? Give both reasons from the chapter.
 
 ---
 
