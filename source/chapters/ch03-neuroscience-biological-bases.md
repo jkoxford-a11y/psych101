@@ -81,7 +81,7 @@ Myelin matters here because of speed. On an unmyelinated axon, the action potent
 </video>
 *Video 3.1. Saltatory conduction along a myelinated axon: the action potential regenerates at each node of Ranvier while current spreads passively under the insulating myelin between nodes, producing faster and more energy-efficient conduction than continuous, unmyelinated signaling. Generated for Oxford Psychology 101 with Google AI video generation, 2026.*
 
-> **Think About It:** Neural tissue is extraordinarily metabolically demanding — it needs a continuous supply of oxygen and glucose to maintain the ion gradients that make signaling possible. What happens when that supply is briefly interrupted? You have almost certainly experienced it: sustained pressure on a limb cuts off circulation, the sodium-potassium pump runs low on fuel, and neurons can no longer maintain normal signaling — numbness. As pressure is relieved and circulation returns, ions rush back in a temporarily disorganized way before normal gradients are restored — pins and needles. The metabolic cost of the action potential is the reason this happens.
+> **Think About It:** Neural tissue is extraordinarily metabolically demanding — it needs a continuous supply of oxygen and glucose to maintain the ion gradients that make signaling possible. What happens when that supply is briefly interrupted? You have probably had a hand or foot "fall asleep" after sitting or leaning on it awkwardly. Sustained pressure compresses the nerve and cuts off its blood supply, disrupting normal signaling — numbness. When the pressure is released, signaling returns unevenly — pins and needles.
 
 > *Practice this in the lab when available.* **Predict, before interacting:** if you reduce the strength of a stimulus to a neuron, will the resulting action potential be smaller, or will it simply fail to occur at all? After interacting: was your prediction correct, and can you explain why in terms of the all-or-nothing principle?
 
@@ -90,6 +90,10 @@ Myelin matters here because of speed. On an unmyelinated axon, the action potent
 ## Section 2: Chemical Messengers — Neurotransmitters and Hormones
 
 The action potential gets a signal to the end of an axon. What happens next — how that signal crosses the synaptic gap to influence the next cell, or how the body coordinates a response across organs that have no direct neural connection to each other — is a chemistry problem, not an electrical one.
+
+That "what happens next" question has four different answers, depending on scale: crossing the gap to another cell, changing whether that cell fires, adjusting how a neural circuit responds, or coordinating activity across the body. This section works outward through those levels.
+
+### Crossing the Synapse
 
 #### Do Not Confuse: Neurotransmitter vs. Hormone
 
@@ -102,7 +106,7 @@ A **neurotransmitter** is released by a neuron into a synapse and acts on a spec
 ![Figure 3.5 — Two-panel infographic comparing neurotransmitters and hormones. The neurotransmitter panel shows an electrical signal traveling down an axon, neurotransmitter release at an axon terminal, and receptors on a specific postsynaptic target cell. The hormone panel shows an endocrine gland releasing hormones into the bloodstream, where receptor-bearing cells respond and cells without receptors do not.](../images/ch03/ch03_chemical_messengers_wired_focal_vs_broadcast.png)
 *Figure 3.5. Neurotransmitters and hormones are both chemical messengers, but they differ in delivery route, distance, and timescale. Neurons use wired axons and focal synapses; hormones use bloodstream broadcast.*
 
-### Neurotransmitters
+Start with the wired-and-focal side of that distinction: what actually happens at a synapse.
 
 The nervous system uses dozens of different **neurotransmitters**, chemical messengers released from the presynaptic terminal that cross the synaptic gap and bind to receptors on the next cell. Before getting to what specific neurotransmitters do, it is worth understanding how the synapse actually works — because this is where most psychiatric drugs act.
 
@@ -113,12 +117,20 @@ When an action potential reaches the axon terminal, vesicles containing neurotra
 
 An **agonist** is a drug or molecule that binds to a receptor and activates it, mimicking the natural neurotransmitter. An **antagonist** binds to the receptor but does not activate it, blocking the natural neurotransmitter from binding. Antagonist does not mean harmful — naloxone is a lifesaving opioid antagonist that displaces opioids from their receptors and reverses overdose. These two concepts — agonist and antagonist — are the basis for understanding how most drugs that affect the brain work, and they reappear in Chapter 5 (consciousness and drugs) and Chapter 13 (pharmacological treatments).
 
+### Changing the Next Cell
+
+Binding a receptor is only half the story — the other half is what that binding does to the receiving neuron's odds of firing.
+
 Among the dozens of neurotransmitters, two deserve special mention as the main workhorses of fast signaling in the brain. **Glutamate** is the brain's primary excitatory neurotransmitter — it is involved in nearly all rapid excitatory signaling throughout the cortex and is central to synaptic plasticity and learning. **GABA** (gamma-aminobutyric acid) is the primary inhibitory neurotransmitter — it is the main brake on neural excitability. Alcohol, benzodiazepines, and barbiturates all enhance GABA's inhibitory effects, producing sedation; respiratory suppression is especially dangerous when alcohol or barbiturates are involved, or when depressants are combined. Understanding glutamate and GABA as the main excitatory/inhibitory pair sets up the drug mechanisms in Chapter 5 and the circuit logic that runs throughout the book.
 
 At the most basic level of effect, neurotransmitters are directional: some are **excitatory**, pushing the receiving neuron closer to firing; others are **inhibitory**, pushing it further away. Inhibition is not "bad" — unchecked excitation produces seizures, and coordinated inhibition is what gives neural circuits their selectivity and timing.
 
 ![Figure 3.7 — Three-panel infographic showing excitatory input, inhibitory input, and circuit effect. The excitatory panel shows neurotransmitter release moving the postsynaptic membrane closer to threshold. The inhibitory panel shows it moving the membrane farther from threshold. The circuit panel shows an inhibitory interneuron suppressing competing signals so the main pathway is cleaner.](../images/ch03/ch03_excitation_inhibition_circuit_selectivity.png)
 *Figure 3.7. Excitatory inputs make a postsynaptic neuron more likely to fire; inhibitory inputs make it less likely. Inhibition sharpens timing, suppresses noise, and helps circuits select one response over competing alternatives.*
+
+Some chemicals change how an entire neural circuit responds rather than simply pushing one cell toward or away from firing. Others leave the nervous system through the bloodstream and coordinate changes across the body. Those are two different ways of scaling chemical communication beyond a single synapse.
+
+### Changing a Circuit
 
 But many neurotransmitters do something subtler than simply flipping a cell on or off. Some function primarily as **neuromodulators** — chemicals that adjust how entire circuits respond, changing their sensitivity, signal-to-noise ratio, or readiness for learning and action. Neuromodulators are typically produced by small, specialized nuclei whose axons project widely throughout the brain. The key point is that the same molecule can produce different effects in different brain regions, depending on what receptors are present, what circuit is active, and what the organism is currently trying to do. The circuit, not the molecule alone, gives the signal its psychological meaning. "Chemical X causes feeling Y" is almost never an accurate description of how these systems work.
 
@@ -145,13 +157,15 @@ This does not mean antidepressants do not work. Their efficacy for some people i
 
 > *[Interactive Demo — Dopamine Prediction Error Demo coming soon: students predict dopamine responses across cue/reward trials — unexpected reward, predicted reward, omitted reward, extinction, novelty, and action requirement.]* **Predict, before interacting:** if a reward is delivered but was fully predicted by a cue, does dopamine fire more, less, or the same as when no cue preceded it? After interacting: did the result match the Schultz prediction-error model?
 
-### Hormones, Neuropeptides, and Bodily State
+### Changing the Whole Body
+
+You can now see why delivery route matters. Neuromodulators remain part of neural signaling; hormones enter the bloodstream and coordinate distant tissues.
 
 The **endocrine system** is the body's network of glands — including the pituitary, thyroid, adrenal glands, and gonads — that secrete hormones directly into the bloodstream. Where the nervous system specializes in fast, precise, point-to-point signaling, the endocrine system specializes in slower, broader, longer-lasting coordination — adjusting growth, metabolism, reproduction, and the body's overall state over a timescale of minutes to weeks rather than milliseconds.
 
 **Cortisol**, released by the adrenal glands in response to stress, is the clearest example of why this matters for psychology specifically. In a genuine emergency, a surge of cortisol mobilizes stored energy, sharpens certain kinds of attention, and temporarily suppresses functions — digestion, long-term tissue repair, parts of the immune response — that are not useful in the next sixty seconds. This is adaptive and necessary for short bursts. If you happen to wear a continuous glucose monitor, you may have noticed your blood glucose rising before or during a stressful event without eating anything — that is cortisol doing exactly its job, mobilizing stored energy in anticipation of demand. (The effect is clearest and most reliably studied in people with diabetes or insulin resistance; individual responses in healthy adults vary.) The trouble, as Robert Sapolsky's *Why Zebras Don't Get Ulcers* (2004) puts it, is that a zebra's stress response activates for the genuine emergency of being chased by a lion and then switches off once the lion is gone or the zebra is dead — the system was built for acute, time-limited threats. Humans, by contrast, can keep the same stress-response machinery running for weeks over a conflict with a coworker, a worry about money, or a relationship that is not going anywhere — chronic activation of a system built for sprints, not marathons. Chronically elevated cortisol is linked to impaired memory, suppressed immune function, and increased risk for several physical and psychological disorders. Chapter 12 develops the full picture of chronic stress; for now, the evolutionary point is the one worth holding onto.
 
-**Oxytocin** illustrates a third category of chemical messenger worth introducing here, because it blurs the line between neurotransmitter and hormone in an instructive way. It is synthesized in the hypothalamus, released into the bloodstream from the posterior pituitary like a hormone, and also released centrally within the brain where it acts as a neuromodulator. Chemicals that work at both scales are more precisely called **neuropeptides** — a class distinct from classical fast-acting neurotransmitters and from circulating hormones, which the brain uses for longer-range, more sustained coordination of behavioral state.
+**Oxytocin** complicates the categories above, because the same molecule can act as a neurotransmitter or neuromodulator within the nervous system and as a hormone once it reaches the bloodstream. It is synthesized in the hypothalamus and released in two ways: centrally within the brain, where it acts as a neuromodulator, and into the bloodstream from the posterior pituitary, where it acts as a hormone. Chemicals that work at both scales are more precisely called **neuropeptides** — a class distinct from classical fast-acting neurotransmitters and from circulating hormones, which the brain uses for longer-range, more sustained coordination of behavioral state.
 
 Oxytocin's effects are context-dependent, which is the key point. It facilitates social recognition, affiliation, and coordinated caregiving in familiar and safe contexts; in threatening or unfamiliar contexts it can promote vigilance and outgroup wariness. "The love hormone" — a popular label — misses this context-dependence entirely and implies a uniformly positive effect the evidence does not support. What the evidence does support is that oxytocin is part of the brain's system for regulating social behavior and attenuating HPA-axis (cortisol) stress responses. That connection pays forward directly to Chapter 10, where oxytocin's role in mother-infant biobehavioral synchrony grounds the biology of early attachment, and to Chapter 12, where stress regulation returns in the context of allostatic load.
 
