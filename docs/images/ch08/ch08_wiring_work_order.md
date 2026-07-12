@@ -54,8 +54,8 @@ Also add a new status line after the v0.3 line:
 **Insert:**
 
 ```markdown
-![Figure 8.2 — A hub-and-spoke diagram shows the Central Executive at the top, with arrows connecting it to two subsystems below: the Phonological Loop, labeled as holding verbal and acoustic information, and the Visuospatial Sketchpad, labeled as holding visual and spatial information. The arrows indicate active coordination between the executive and both subsystems.](../images/ch08/ch08_baddeley_working_memory_model.svg)
-*Figure 8.2. Baddeley and Hitch's working memory model replaces a single passive short-term store with an active system: a central executive that allocates attention and coordinates the rest of the system, a phonological loop that holds verbal and acoustic information, and a visuospatial sketchpad that holds visual and spatial information. This chapter's text uses only these three components.*
+![Figure 8.2 — A cognitive-architecture diagram shows the Central Executive at the top coordinating three components below: the Phonological Loop for verbal and acoustic information, the Episodic Buffer as a temporary binding workspace, and the Visuospatial Sketchpad for visual and spatial information. Bidirectional arrows connect the components. Long-Term Memory appears below the episodic buffer, showing that relevant stored knowledge can be incorporated into a temporary integrated representation.](../images/ch08/ch08_baddeley_working_memory_model.svg)
+*Figure 8.2. Baddeley's working-memory model replaces a single passive short-term store with an active system. The central executive coordinates attention; the phonological loop maintains verbal and acoustic information; the visuospatial sketchpad maintains visual and spatial information; and the episodic buffer temporarily binds those contents with relevant long-term knowledge into a coherent representation. The episodic buffer is not the same as episodic long-term memory.*
 ```
 
 ---
