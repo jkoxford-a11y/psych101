@@ -21,6 +21,16 @@ Record only actions, decisions, files changed, validation, and remaining issues.
 
 ## Log Entries
 
+### 2026-07-12 - Chapter 6 Lab Links (Process S/C, Sleep-State Detective)
+
+- Scope: link two new Chapter 6 Learning Labs from PR #1 / branch `agent/ch06-learning-labs-2` (`docs/labs/ch06/process-s-process-c.html`, `docs/labs/ch06/sleep-state-detective.html`) into the authoritative source prose. No chapter prose, figures, references, or the Learning Labs index touched. No generated HTML edited — `docs/chapters/06-sleep.html` does not exist yet; Ch6 still awaits its first HTML build (see HANDOFF Next Up).
+- Files changed: `source/chapters/ch06-sleep.md` only (plus this log entry).
+- Added a "Try it yourself" paragraph after Figure 6.3/caption, before the Section 2 divider, linking the Process S/C lab and reinforcing masking-vs-reducing sleep pressure and the circadian-timing distinction from the adjacent intervention table.
+- Added a second "Try it yourself" paragraph immediately after the existing sentence that resolves the NREM-parasomnia-vs-REM-behavior-disorder misconception, linking the Sleep-State Detective lab and reinforcing that movement alone doesn't identify sleep stage, that ordinary sleepwalking is deep-NREM, that REM sleep behavior disorder is a failure of REM atonia, and that the lab's cases are simplified/non-diagnostic.
+- Decision: linked from `source/chapters/ch06-sleep.md` per the source-of-truth rule (AGENTS.md), matching the existing "Try it yourself" pattern already used in `source/chapters/ch07-learning.md` for its Classical Conditioning lab.
+- Validation: both relative links (`../../docs/labs/ch06/process-s-process-c.html`, `../../docs/labs/ch06/sleep-state-detective.html`) match the file-naming pattern in `docs/labs/lab-design-spec.md` and the working link style in `ch07-learning.md`; both target lab files were confirmed to exist on `origin/agent/ch06-learning-labs-2` (not yet on `main`) via `git show`. `git diff` against the working tree was cross-checked against a direct Read-tool pass of the full file — this repo has a known sandbox-mount staleness bug (see HANDOFF.md) that made `git diff` appear to truncate the unrelated References section; the Read tool confirmed the file is intact and only the two intended paragraphs were added. Each paragraph lands at its requested conceptual location; no headings, callouts, or learning objectives were added; no unrelated prose changed. Nothing committed — commits go through Jon via GitHub Desktop.
+- Outstanding: generated Chapter 6 HTML still needs to be built through the normal conversion workflow once source is reviewed; PR #1's lab branch still needs to be merged (or these source changes reapplied there) before the links resolve on `main`.
+
 ### 2026-07-11 - Chapter 3 Action-Potential and Dopamine Learning Labs
 
 - Built two standalone Chapter 3 Learning Labs: `docs/labs/ch03/action-potential-threshold.html` with `docs/js/labs-action-potential-threshold.js`, and `docs/labs/ch03/dopamine-prediction-error.html` with `docs/js/labs-dopamine-prediction-error.js`.

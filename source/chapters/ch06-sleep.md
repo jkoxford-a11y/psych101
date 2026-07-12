@@ -64,6 +64,8 @@ That two-system split is also where the practical levers act — and because eac
 ![Figure 6.3: Process C and Process S across a 24-hour day, with the five levers from the table above marked by which process each one acts on. Caffeine masks Process S without clearing it; morning light and evening light shift Process C earlier or later; melatonin signals Process C that biological night has arrived; a nap partially discharges Process S. Sleep works best when the two curves line up.](../../images/ch06/fig_process_s_process_c_levers.png)
 *Figure 6.3. The two-process model as a set of practical levers, keyed to which process each intervention actually acts on. Original figure.*
 
+**Try it yourself:** the [When Will You Feel Sleepy? lab](../../docs/labs/ch06/process-s-process-c.html) lets you test how time awake, caffeine, a nap, light, and travel move Process S and Process C separately. The lab is worth doing precisely because the table above collapses a distinction students tend to blur: caffeine masks sleep pressure without reducing it, a well-timed nap actually discharges some of it, and light or melatonin act on circadian timing instead, not sleep pressure at all — three different mechanisms that can look identical from the outside as "feeling more awake."
+
 ---
 
 ## Section 2: Sleep — Architecture, Function, and Dreams
@@ -146,6 +148,8 @@ When the systems described above break down, the result is a sleep disorder.
 | **REM sleep behavior disorder** | Failure of REM atonia | The sleeper physically enacts dream content — the disorder that actually matches "acting out a dream" |
 
 Two of these carry conceptual weight beyond the clinical detail. Narcolepsy is a clean demonstration of why wakefulness must be *actively stabilized*: the arousal system (introduced in Chapter 5 as the norepinephrine-driven salience system) does not stay on by default, so removing orexin's stabilizing signal lets a jolt of emotion drop someone straight into REM atonia. And the parasomnia split resolves the chapter's running misconception — "sleepwalkers are acting out a dream" actually describes REM sleep behavior disorder, not ordinary NREM sleepwalking.
+
+**Try it yourself:** the [Sleep-State Detective lab](../../docs/labs/ch06/sleep-state-detective.html) asks you to classify simplified sleep cases using EEG, eye movement, muscle tone, behavior, and time of night — the same evidence base this table draws on — and work out for yourself why movement alone never identifies the sleep stage: ordinary sleepwalking comes out of deep NREM sleep, while REM sleep behavior disorder is a specific failure of REM atonia. The cases are simplified educational examples, not a diagnostic tool.
 
 #### Do Not Confuse: Strong Sleep Science vs. Sleep Hype
 

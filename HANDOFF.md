@@ -19,9 +19,13 @@ Detailed chronological GPT/Codex work history now lives in `GPT_project_log.md`.
 
 ## Current Status
 
-**As of Session 101 (2026-07-12).** Chapter 7's four bounded HTML/lab defects are repaired and verified: the Classical Conditioning lab now identifies Chapter 7 and uses the Chapter 7 session-storage key; the Bandura Further Reading entry uses proper HTML emphasis; and the shipped `[FLAG for Jon]` sentence has been removed without replacement. The targeted chapter linter passes with **0 failures and 0 warnings**, and repository-wide scoped searches find no stale `ch06-classical-conditioning` key, Chapter 6 label in the Chapter 7 lab, literal `**` in the Chapter 7 HTML, or remaining flag.
+**As of Session 102 (2026-07-12).** Chapter 7's full audit-reconciliation pass is complete in both `source/chapters/ch07-learning.md` and `docs/chapters/07-learning.html`. Session 101 (Work) fixed four mechanical defects (Chapter 7 lab label/storage key, Bandura Further Reading markup, `[FLAG for Jon]` bracket removed from HTML) and regenerated Figures 7.5, 7.7, and 7.8 — Figure 7.5 now attributes the crossed-association study jointly to Garcia & Koelling (1966), Figure 7.8 limits its claim to the sustained reward-uncertainty response, and Figure 7.7 is now the Tolman & Honzik delayed-reward graph matching the adjacent prose. Session 102 verified all of that directly against the live files (confirmed correct, with 7.7 and 7.8 exceeding the original spec) and found one gap: the FLAG/Process S sentence also existed in source markdown, not just HTML — removed there too.
 
-Figures 7.5, 7.7, and 7.8 were regenerated and replaced in place. Figure 7.5 now attributes the crossed-association study jointly to Garcia & Koelling (1966); Figure 7.8 limits its claim to the sustained dopamine-neuron uncertainty response; Figure 7.7 is now the Tolman & Honzik delayed-reward error graph that matches the adjacent prose. Figure 7.7's source alt text, HTML alt text, and figcaption match exactly. All three PNGs decode successfully and resolve from the chapter HTML. The image-generation attribution is: original figures generated for Oxford Psychology 101 with OpenAI image generation, 2026; no external copyrighted image assets intentionally used; safe for public sharing pending Jon's final accuracy review. Nothing committed or pushed.
+Session 102 then completed the rest of the editorial pass: cut Little Albert's unsupported "lasting" claim; replaced the involuntary/voluntary classical-vs-operant criterion with elicited/emitted across four touchpoints; separated preparedness's demonstrated selectivity from its evolutionary interpretation; added Bandura's incentive-phase evidence; softened Tolman's "only available explanation"; corrected nine dopamine touchpoints (LO7, topic sentence, Stop & Retrieve, Chapter Summary, Connections, Key Terms, Review Q10) to stop misattributing primary findings to Sapolsky and add the missing pathway/receptor-context caveat; converted Mirror Neurons to a boxed Do Not Confuse sidebar; compressed the AI Connection from three paragraphs plus a Think About It box to one tight callout; replaced Review Q9, removed Q12; and added one consolidated Schedule of Reinforcement glossary entry, removing the now-untested Mirror Neurons entry. Review questions now run 1–11; Key Terms holds at 28.
+
+Also found and fixed, independent of the original audit: Chapter 7's two Do Not Confuse sections and its AI Connection section had never actually been built as the site's colored callout divs — they were plain headings the whole time, unlike every other chapter (confirmed against Ch1 and Ch4). All three now use the correct callout classes.
+
+Separately, found and repaired real data loss in this file: Sessions 91–93 had silently vanished from the Session Log, most likely during Work's Session 101 edit. Recovered verbatim into `HANDOFF-ARCHIVE.md` — see the pointer above the Session Log. Nothing from this session is committed or pushed.
 
 ## Next Up
 
@@ -30,7 +34,9 @@ Figures 7.5, 7.7, and 7.8 were regenerated and replaced in place. Figure 7.5 now
 - **Build the size-weight illusion lab** (or drop the placeholder) — still says "when available" in both files; no such lab exists in `docs/labs/ch04/`.
 - **Live-test both Chapter 3 labs** in a real browser at desktop, portrait-mobile, and landscape-mobile widths: complete each lab, reload mid-session, verify focus/state restoration, restart behavior, labels, and cue/outcome trace rendering.
 - **Ch3 full line-by-line editorial pass** — Sections 3–4 and the back matter still haven't had the same review Section 1/2 just got.
-- **Review and commit Session 101's Chapter 7 repairs and regenerated figures** — includes the Chapter 7 lab label/storage key, Bandura Further Reading markup, RLHF flag removal, regenerated Figures 7.5/7.7/7.8, Figure 7.7 source/HTML parity, and visuals-inventory cleanup. Linter passes 0 failures/0 warnings; nothing committed yet.
+- **Review and commit the full Chapter 7 audit-reconciliation pass (Sessions 101–102)** — mechanical repairs, three regenerated figures, and the complete editorial pass (Little Albert, the classical/operant elicited/emitted diagnostic, preparedness, Bandura's incentive phase, Tolman's hedged phrasing, the full dopamine touchpoint correction, Mirror Neurons sidebar conversion, AI Connection compression, Review Q9/Q12 changes, and the Schedule of Reinforcement glossary entry) across `source/chapters/ch07-learning.md` and `docs/chapters/07-learning.html`. Nothing committed yet.
+- **Browser-check Chapter 7 live** — the Do Not Confuse and AI Connection callout-div conversions, the new Figure 7.7 graph, and the compressed AI Connection box have only been verified via the Read tool, never rendered in an actual browser.
+- **Optional: confirm root cause of the Session 91–93 HANDOFF.md data loss** (recovery is done and verified; this is forensics only, same low-priority call Session 93 made for a similar earlier loss) — likely Work's Session 101 edit to this file, not confirmed.
 - **Resolve the "Chapter 6" cross-references in Ch07 and Ch08's Connections tables** — both point at a "Ch. 6 — Sleep" that doesn't exist as built HTML; sleep content currently lives in Ch05 (Consciousness). Likely just needs the links retargeted to Ch05, but worth confirming against the intended final chapter map first.
 - **Commit and push the Ch5/7/8 anchor/heading repair** (`docs/chapters/05-consciousness.html`, `07-learning.html`, `08-memory.html`, `pipeline/lint_chapters.py`) once the two items above are resolved — linter-clean (0 fails, 0 warns on all three) but not yet reviewed line-by-line by Jon.
 - **Review and commit Ch11's Connections table + Stop & Retrieve conversion** (`source/chapters/ch11-social-psychology.md`, `docs/chapters/11-social-psychology.html`) — content is linter-clean (0 fails, 0 warns) but the 6 Connections rows and 5 callout prompts are newly authored and haven't had Jon's editorial pass yet.
@@ -52,6 +58,16 @@ Figures 7.5, 7.7, and 7.8 were regenerated and replaced in place. Figure 7.5 now
 - `source/visuals-inventory.md` is known to drift out of sync with per-chapter image state — cross-check per-chapter `docs/images/chXX/README*.md` files before trusting it.
 
 ## Session Log
+
+### Session 102 (2026-07-12)
+
+**What happened:** Verified Session 101's (Work) four mechanical Ch7 fixes and three regenerated figures directly against the live files — all confirmed correct, with Figures 7.7 and 7.8 exceeding the original spec's accuracy bar. Found one gap in Work's scope: the FLAG for Jon/Process S sentence also existed in source markdown, not just HTML as assumed when scoping the handoff — removed it there too.
+
+Completed the rest of the discussion-memo audit reconciliation in source and HTML together: cut Little Albert's unsupported "lasting" claim; replaced the involuntary/voluntary classical-vs-operant criterion with elicited/emitted across four touchpoints; separated preparedness's demonstrated selectivity from its evolutionary interpretation; added Bandura's incentive-phase evidence; softened Tolman's "only available explanation"; corrected nine dopamine touchpoints to stop misattributing primary findings to Sapolsky and add the missing pathway-variability caveat; converted Mirror Neurons to a boxed Do Not Confuse sidebar; compressed the AI Connection to one callout; replaced Review Q9, removed Q12; added a consolidated Schedule of Reinforcement glossary entry, removed the now-untested Mirror Neurons entry. Also found and fixed, independent of the audit: Ch7's Do Not Confuse and AI Connection sections were never actually built as colored callout divs, unlike every other chapter — corrected all three.
+
+**Also found and fixed:** Sessions 91–93 had silently vanished from this file's Session Log, likely during Work's Session 101 edit. Recovered verbatim into `HANDOFF-ARCHIVE.md`.
+
+**Files modified:** `source/chapters/ch07-learning.md`, `docs/chapters/07-learning.html`, `HANDOFF.md`, `HANDOFF-ARCHIVE.md`. Nothing committed.
 
 ### Session 101 (2026-07-12)
 
@@ -144,6 +160,10 @@ Two things not caught by Codex's own repair report: a leftover `[FLAG for Jon: .
 Also built `pipeline/codex-task-template.md` at Jon's request — a reusable, fill-in-the-blank version of the prompt that produced this clean a repair, intended to make future narrow/mechanical Codex handoffs faster and keep Claude's own token usage focused on judgment calls rather than routine repair verification.
 
 **Files modified (addendum):** `pipeline/codex-task-template.md` (new). `HANDOFF.md` (Current Status, Next Up, this entry). Nothing committed.
+
+### Sessions 91–93 — recovered and archived (Session 102)
+
+Sessions 91–93 were found genuinely missing from this Session Log during Session 102 — Session 94 was sitting directly above the "Sessions 85–90 — archived" pointer below, with no trace of 91–93 anywhere in this file or in `HANDOFF-ARCHIVE.md`. Confirmed via the Read tool, not a bash-mount artifact. Root cause unconfirmed, but the timing points at Work's own Session 101 edit to this file as the likely point of loss. Recovered verbatim (not reconstructed) from Session 102's own conversation context and appended to `HANDOFF-ARCHIVE.md` under "Archived Session Log (Sessions 91–93)" — see that section for the full entries and recovery note. Nothing else in this file was affected.
 
 ### Sessions 85–90 — archived
 
