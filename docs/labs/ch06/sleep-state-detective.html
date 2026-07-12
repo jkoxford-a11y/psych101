@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sleep-State Detective - General Psychology</title>
+  <link rel="stylesheet" href="../../css/style.css" />
+  <link rel="stylesheet" href="../../css/labs.css" />
+</head>
+<body>
+<div class="layout">
+  <aside class="sidebar" id="app-sidebar"></aside>
+  <script src="../../js/sidebar.js" data-dir="labs/ch06" data-active="" data-top="full"></script>
+
+  <main class="main lab-main">
+    <p class="chapter-meta">Learning Lab - Chapter 6</p>
+    <h1>Sleep-State Detective</h1>
+    <hr class="chapter-divider" />
+
+    <p>A sleeper moves, shouts, or reports a vivid dream. Those observations are not enough by themselves to identify the sleep state. In this 10–20 minute lab, you will combine EEG, eye movement, muscle activity, time of night, and behavior.</p>
+
+    <div class="callout callout--note">
+      <div class="callout-title">Accessibility, Privacy, and Scope</div>
+      <p>This lab runs entirely in your browser. It stores your prediction, classifications, explanation, and transfer response in <code>sessionStorage</code> for this browser session only. It collects no names, email addresses, student IDs, analytics, or other identifiers, and it sends nothing to a server. All cases and recordings are simplified fictional teaching examples; they cannot diagnose a sleep disorder. Every schematic trace is described in text.</p>
+    </div>
+
+    <section class="lab-panel phase-panel" id="prediction-panel" aria-labelledby="prediction-heading">
+      <h2 id="prediction-heading" tabindex="-1">1. Predict and Commit</h2>
+      <form id="prediction-form" novalidate>
+        <fieldset class="lab-fieldset">
+          <legend>“Sleepwalkers are moving because they are acting out a dream.”</legend>
+          <label class="option-row"><input type="radio" name="opening-prediction" value="agree" /><span>Agree</span></label>
+          <label class="option-row"><input type="radio" name="opening-prediction" value="disagree" /><span>Disagree</span></label>
+          <label class="option-row"><input type="radio" name="opening-prediction" value="unsure" /><span>Unsure</span></label>
+        </fieldset>
+        <label class="text-label" for="prediction-reason">What physiological evidence would you need before deciding?</label>
+        <textarea id="prediction-reason" rows="4" required></textarea>
+        <button class="lab-btn" type="button" id="commit-prediction">Commit prediction</button>
+      </form>
+      <p class="save-status" id="prediction-status" aria-live="polite"></p>
+    </section>
+
+    <section class="lab-panel phase-panel" id="case-panel" hidden aria-labelledby="case-heading">
+      <div class="lab-progress" aria-live="polite"><span id="case-counter"></span><span id="case-status"></span></div>
+      <h2 id="case-heading" tabindex="-1">2. Classify the Sleep Evidence</h2>
+      <article class="classifier-item">
+        <p class="lab-kicker" id="case-name"></p>
+        <h3 id="case-title"></h3>
+        <p id="case-description"></p>
+
+        <dl class="sim-stats" aria-live="polite">
+          <div class="sim-stat"><dt>EEG</dt><dd id="stat-eeg">—</dd></div>
+          <div class="sim-stat"><dt>Eye movement</dt><dd id="stat-eog">—</dd></div>
+          <div class="sim-stat"><dt>Muscle activity</dt><dd id="stat-emg">—</dd></div>
+          <div class="sim-stat"><dt>Timing / behavior</dt><dd id="stat-context">—</dd></div>
+        </dl>
+
+        <div class="curve-wrap">
+          <svg class="curve-svg" viewBox="0 0 760 360" role="img" aria-labelledby="trace-title trace-desc">
+            <title id="trace-title">Simplified polysomnography traces</title>
+            <desc id="trace-desc">Three labeled schematic traces represent EEG, eye movement, and muscle activity. The same evidence appears in text above.</desc>
+            <line class="curve-grid" x1="100" y1="105" x2="720" y2="105"></line>
+            <line class="curve-grid" x1="100" y1="205" x2="720" y2="205"></line>
+            <line class="curve-grid" x1="100" y1="305" x2="720" y2="305"></line>
+            <text class="curve-label" x="25" y="80">EEG</text>
+            <text class="curve-label" x="25" y="180">EOG</text>
+            <text class="curve-label" x="25" y="280">EMG</text>
+            <text class="curve-label" x="650" y="345">Time</text>
+            <path id="eeg-trace" class="signal-zero" d="M100 105 L720 105"></path>
+            <path id="eog-trace" class="signal-positive" d="M100 205 L720 205"></path>
+            <path id="emg-trace" class="signal-negative" d="M100 305 L720 305"></path>
+          </svg>
+        </div>
+
+        <form id="case-form" novalidate>
+          <fieldset class="lab-fieldset">
+            <legend>What is the best classification?</legend>
+            <label class="option-row"><input type="radio" name="classification" value="n1" /><span>NREM 1</span></label>
+            <label class="option-row"><input type="radio" name="classification" value="n2" /><span>NREM 2</span></label>
+            <label class="option-row"><input type="radio" name="classification" value="n3" /><span>NREM 3</span></label>
+            <label class="option-row"><input type="radio" name="classification" value="rem" /><span>Ordinary REM sleep</span></label>
+            <label class="option-row"><input type="radio" name="classification" value="nrem-parasomnia" /><span>NREM arousal parasomnia</span></label>
+            <label class="option-row"><input type="radio" name="classification" value="rbd" /><span>REM sleep behavior disorder</span></label>
+            <label class="option-row"><input type="radio" name="classification" value="cataplexy" /><span>Cataplexy: REM atonia intruding into wakefulness</span></label>
+          </fieldset>
+          <button class="lab-btn" type="button" id="check-case">Check classification</button>
+        </form>
+
+        <section class="feedback-panel" id="feedback-panel" hidden tabindex="-1" aria-live="polite">
+          <h3 id="feedback-heading"></h3>
+          <p id="feedback-text"></p>
+          <p id="tempting-text"></p>
+          <button class="lab-btn" type="button" id="next-case">Next case</button>
+        </section>
+      </article>
+
+      <h3>Plain-text event log</h3>
+      <div class="event-log" id="event-log" tabindex="0" aria-live="polite"><ol></ol></div>
+    </section>
+
+    <section class="lab-panel phase-panel" id="concept-panel" hidden aria-labelledby="concept-heading">
+      <h2 id="concept-heading" tabindex="-1">3. What the Pattern Means</h2>
+      <div class="callout callout--note">
+        <div class="callout-title">Movement Is Not a Sleep Stage</div>
+        <p><strong>Polysomnography</strong> combines EEG, eye movement, and muscle activity. No single outward behavior is sufficient. Ordinary sleepwalking and night terrors emerge from deep NREM sleep, usually early in the night. Ordinary REM combines wake-like EEG activity and rapid eye movements with <strong>REM atonia</strong>.</p>
+        <p>Actual dream enactment requires a different pattern: REM physiology plus a failure of normal atonia. Cataplexy reverses the boundary in another direction—REM-like muscle atonia intrudes while the person is awake and conscious.</p>
+      </div>
+    </section>
+
+    <section class="lab-panel phase-panel" id="explain-panel" hidden aria-labelledby="explain-heading">
+      <h2 id="explain-heading" tabindex="-1">4. Explain</h2>
+      <label class="text-label" for="explanation-response">Why is “the sleeper moved, so they must have been acting out a dream” scientifically inadequate? Use <strong>sleep stage</strong>, <strong>REM atonia</strong>, and at least one physiological measurement.</label>
+      <textarea id="explanation-response" rows="6"></textarea>
+      <button class="lab-btn" type="button" id="save-explanation">Save explanation and continue</button>
+      <p class="save-status" id="explanation-status" aria-live="polite"></p>
+    </section>
+
+    <section class="lab-panel phase-panel" id="transfer-panel" hidden aria-labelledby="transfer-heading">
+      <h2 id="transfer-heading" tabindex="-1">5. Summary and Transfer</h2>
+      <p id="completion-summary"></p>
+      <label class="text-label" for="transfer-response"><strong>Case A:</strong> A child walks into the hallway at 1:00 a.m., seems confused, and recalls no dream. <strong>Case B:</strong> An adult begins kicking at 5:00 a.m., awakens quickly, and reports fighting an attacker in a vivid dream. Classify each case and identify the evidence that matters most. What physiological recording would strengthen each classification?</label>
+      <p class="term-reminder">Use <strong>NREM 3</strong>, <strong>REM</strong>, <strong>REM atonia</strong>, <strong>EEG</strong>, <strong>EOG</strong>, or <strong>EMG</strong>.</p>
+      <textarea id="transfer-response" rows="8"></textarea>
+      <div class="lab-actions">
+        <button class="lab-btn" type="button" id="save-transfer">Save transfer response</button>
+        <button class="lab-btn lab-btn--secondary" type="button" id="restart-lab">Restart lab</button>
+      </div>
+      <p class="save-status" id="transfer-status" aria-live="polite"></p>
+    </section>
+
+    <section class="callout callout--think-about-it" aria-labelledby="instructor-note-heading">
+      <div class="callout-title" id="instructor-note-heading">6. Instructor Note</div>
+      <p>The key comparison is the sleepwalking case versus the REM sleep behavior disorder case. Ask students to name the outward similarity first, then identify the physiological evidence that reverses the classification. This makes the difference between describing behavior and identifying the underlying state visible.</p>
+    </section>
+  </main>
+</div>
+<script src="../../js/nav.js"></script>
+<script src="../../js/labs-sleep-state-detective.js"></script>
+</body>
+</html>
