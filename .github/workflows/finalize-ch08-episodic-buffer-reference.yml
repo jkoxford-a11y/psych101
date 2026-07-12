@@ -1,0 +1,50 @@
+name: Finalize Chapter 8 episodic-buffer reference
+
+on:
+  push:
+    branches:
+      - agent/ch08-figure-8-2-episodic-buffer
+    paths:
+      - tools/finalize_ch08_episodic_buffer_reference.py
+      - .github/workflows/finalize-ch08-episodic-buffer-reference.yml
+
+permissions:
+  contents: write
+
+jobs:
+  finalize:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out branch
+        uses: actions/checkout@v4
+        with:
+          ref: agent/ch08-figure-8-2-episodic-buffer
+          fetch-depth: 0
+
+      - name: Add reference and glossary updates
+        run: python tools/finalize_ch08_episodic_buffer_reference.py
+
+      - name: Lint Chapter 8 HTML
+        run: python pipeline/lint_chapters.py docs/chapters/08-memory.html
+
+      - name: Validate reference and glossary
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          text = Path('docs/chapters/08-memory.html').read_text(encoding='utf-8')
+          assert text.count('Baddeley, A. D. (2000)') == 1
+          assert text.count('<dt>Episodic buffer</dt>') == 1
+          assert 'Baddeley later added the episodic buffer.' in text
+          assert text.rstrip().endswith('</html>')
+          print('Reference and glossary checks passed.')
+          PY
+
+      - name: Commit final Chapter 8 updates
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git diff --cached --check
+          git commit -m "Finalize Chapter 8 episodic-buffer reference"
+          git push origin HEAD:agent/ch08-figure-8-2-episodic-buffer
