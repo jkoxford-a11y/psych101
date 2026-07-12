@@ -1,6 +1,6 @@
 # Psych101 — Current Handoff
 
-**Last updated:** 2026-07-12 (Session 102)
+**Last updated:** 2026-07-12 (Session 103)
 **Canonical repository:** `C:\GitHub\psych101` — see `pipeline/claude-work-environment.md` for the stale-copy caution and other Claude/Cowork-specific environment notes.
 **Current branch or PR:** `main`, up to date with `origin/main`. One open branch not yet merged: `agent/ch06-learning-labs-2` (PR #1, adds two Ch6 labs).
 
@@ -14,25 +14,27 @@ This file is overwritten each session, not appended to. For process rules (which
 - Ch5/Ch7/Ch8 anchor and heading repairs (literal `####` paragraphs converted to real `<h4>` elements, broken internal Connections links fixed) all lint clean (0 fails, 0 warnings) but haven't had Jon's line-by-line review.
 - A real data-loss incident (Sessions 91–93 vanishing from this file's Session Log) was found and repaired this session — recovered verbatim into `HANDOFF-ARCHIVE.md`.
 - Nothing described above is committed or pushed yet.
+- Chapter 6's generated HTML is now complete at `docs/chapters/06-sleep.html`, with all five figures and both learning-lab links wired. The shared sidebar and table of contents now link it; chapter lint reports 0 fails and 0 warnings.
 
 ## Active work
 
 - Chapter 7 audit-reconciliation pass (Sessions 101–102) — complete, awaiting Jon's review and a GitHub Desktop commit.
 - Chapter 4 Key Terms/lab-wiring pass (Session 99–100) — complete, awaiting commit.
 - Ch5/7/8 anchor/heading repair (Session 94) — complete, blocked on the Ch06 cross-reference question below before committing.
+- Chapter 6 HTML conversion and navigation activation (Session 103) — complete, staged for Jon's review.
 
 ## Next actions
 
 1. **Commit and push the Chapter 7 audit-reconciliation pass** (`source/chapters/ch07-learning.md`, `docs/chapters/07-learning.html`) via Jon's GitHub Desktop workflow.
 2. **Commit and push the verified Chapter 4 work** (`source/chapters/ch04-sensation-perception.md`, `docs/chapters/04-sensation-perception.html`).
-3. **Resolve the "Chapter 6" cross-references in Ch07 and Ch08's Connections tables** — both currently point at a "Ch. 6 — Sleep" that doesn't exist as built HTML; sleep content currently lives in Ch05 (Consciousness). Likely just needs retargeting to Ch05, but confirm against the intended final chapter map first.
-4. **Commit and push the Ch5/7/8 anchor/heading repair** (`docs/chapters/05-consciousness.html`, `07-learning.html`, `08-memory.html`, `pipeline/lint_chapters.py`) once #3 above is resolved.
-5. **Browser-check Chapter 7 live** — the Do Not Confuse/AI Connection callout-div conversions and the new Figure 7.7 graph have only been verified via the Read tool, never rendered in an actual browser.
+3. **Review and commit the Chapter 6 HTML conversion/navigation activation** (`docs/chapters/06-sleep.html`, `docs/index.html`, `docs/js/sidebar.js`).
+4. **Commit and push the Ch5/7/8 anchor/heading repair** (`docs/chapters/05-consciousness.html`, `07-learning.html`, `08-memory.html`, `pipeline/lint_chapters.py`); the Chapter 6 reference blocker is resolved by the new built chapter.
+5. **Browser-check Chapters 6 and 7 live** — Chapter 6 has passed structural/content validation but still needs Jon's visual pass; Chapter 7's callout conversions and new Figure 7.7 likewise have not been rendered in a browser.
 
 ## Decisions needed from Jon
 
 - **Sidebar collapse discoverability.** The small unlabeled hamburger icon is currently the only way to reopen a collapsed sidebar — is this acceptable, or does it need a label/affordance?
-- **Merge or reapply `agent/ch06-learning-labs-2` (PR #1)?** It links two new Chapter 6 labs into `source/chapters/ch06-sleep.md` but isn't on `main` yet, and Ch6 has no built HTML at all so far.
+- **Close or otherwise reconcile `agent/ch06-learning-labs-2` (PR #1)?** Equivalent Chapter 6 lab files are already tracked on `main` and now linked from the built chapter, although the named branch itself is not an ancestor of `main`.
 
 ## Validation and known risks
 
@@ -44,6 +46,7 @@ This file is overwritten each session, not appended to. For process rules (which
 
 - `source/chapters/ch07-learning.md`, `docs/chapters/07-learning.html` — Chapter 7, pending commit.
 - `source/chapters/ch04-sensation-perception.md`, `docs/chapters/04-sensation-perception.html` — Chapter 4, pending commit.
+- `docs/chapters/06-sleep.html`, `docs/index.html`, `docs/js/sidebar.js` — Chapter 6 conversion/navigation activation, staged for review.
 - `docs/chapters/05-consciousness.html`, `07-learning.html`, `08-memory.html`, `pipeline/lint_chapters.py` — anchor/heading repair, pending commit.
 - `AGENTS.md` — permanent routing and operating rules.
 - `PROJECT_BACKLOG.md` — durable deferred work (editorial review, labs, figures, HTML/rendering, repository/workflow, open decisions).
