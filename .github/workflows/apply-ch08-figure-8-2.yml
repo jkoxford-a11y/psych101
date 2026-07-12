@@ -1,0 +1,72 @@
+name: Apply Chapter 8 Figure 8.2 synchronization
+
+on:
+  push:
+    branches:
+      - agent/ch08-figure-8-2-episodic-buffer
+    paths:
+      - tools/apply_ch08_figure_8_2_update.py
+      - .github/workflows/apply-ch08-figure-8-2.yml
+
+permissions:
+  contents: write
+
+jobs:
+  synchronize:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out branch
+        uses: actions/checkout@v4
+        with:
+          ref: agent/ch08-figure-8-2-episodic-buffer
+          fetch-depth: 0
+
+      - name: Apply source, HTML, and metadata updates
+        run: python tools/apply_ch08_figure_8_2_update.py
+
+      - name: Lint Chapter 8 HTML
+        run: python pipeline/lint_chapters.py docs/chapters/08-memory.html
+
+      - name: Validate Figure 8.2 synchronization
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+
+          paths = [
+              Path('source/chapters/ch08-memory.md'),
+              Path('docs/chapters/08-memory.html'),
+              Path('docs/images/ch08/ch08_figure_specs.md'),
+              Path('docs/images/ch08/figure_metadata.md'),
+              Path('docs/images/ch08/ch08_wiring_work_order.md'),
+              Path('source/visuals-inventory.md'),
+              Path('docs/images/ch08/ch08_baddeley_working_memory_model.svg'),
+          ]
+          for path in paths:
+              text = path.read_text(encoding='utf-8')
+              assert 'episodic buffer' in text.lower(), f'{path}: episodic buffer missing'
+
+          combined = '\n'.join(p.read_text(encoding='utf-8') for p in paths[:-1])
+          stale = [
+              "This chapter's text uses only these three components",
+              'no episodic buffer, matching chapter text',
+              'Keep exactly three components — no episodic buffer',
+              'Do not add an "episodic buffer" component',
+          ]
+          for phrase in stale:
+              assert phrase not in combined, f'stale phrase remains: {phrase}'
+
+          html = Path('docs/chapters/08-memory.html').read_text(encoding='utf-8')
+          assert html.rstrip().endswith('</html>')
+          assert 'alt="A cognitive-architecture diagram shows the Central Executive' in html
+          print('Figure 8.2 synchronization checks passed.')
+          PY
+
+      - name: Commit synchronized files
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git diff --cached --check
+          git commit -m "Synchronize Chapter 8 episodic-buffer model"
+          git push origin HEAD:agent/ch08-figure-8-2-episodic-buffer
