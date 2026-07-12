@@ -123,15 +123,15 @@ All 8 figures are wired in `ch05-consciousness.md` per the current chapter heade
 
 ## Chapter 6 — Sleep
 
-All 5 core figures are wired. Optional figures remain unbuilt/on hold.
+All 5 core figures are wired, but an editorial audit-reconciliation pass (2026-07-12) found three overstate their underlying evidence and flagged them as needing revision before they can be called public-ready — see `ch06-sleep.md`'s provenance note and `GPT_project_log.md` for the reasoning. Captions/alt text in `ch06-sleep.md` were softened around all four affected figures to reduce overstatement in the surrounding text; no image binaries were touched. Optional figures remain unbuilt/on hold.
 
 | # | Description | Status | Filename / note |
 |---|-------------|--------|-----------------|
-| 6.1 | Sleep as active maintenance system | ✅ | `ch06/fig_sleep_active_maintenance_system.png` |
-| 6.2 | SCN circadian pathway | ✅ | `ch06/fig_scn_circadian_clock_entrainment.png` — supersedes old SCN pathway files. |
-| 6.3 | Two-process model as practical lever diagram | ✅ | `ch06/fig_process_s_process_c_levers.png` |
-| 6.4 | Sleep architecture hypnogram | ✅ | `ch06/fig_sleep_architecture_cycles.png` |
-| 6.5 | Glymphatic clearance mechanism | ✅ | `ch06/fig_glymphatic_clearance_deep_sleep.png` |
+| 6.1 | Sleep as active maintenance system | ⚠️ wired, flagged | `ch06/fig_sleep_active_maintenance_system.png` — kept provisionally; the image's literal five-panel framing is in tension with the chapter's revised central argument (overlapping processes, not five discrete jobs). Caption/alt text softened around it; image itself flagged for a future simplification redesign. |
+| 6.2 | SCN circadian pathway | ⚠️ needs revision | `ch06/fig_scn_circadian_clock_entrainment.png` — SCN's anatomical location in the image is incorrect; not public-ready until redrawn. Melatonin wording in the surrounding caption checked and left as-is. |
+| 6.3 | Two-process model as practical lever diagram | ✅ use now | `ch06/fig_process_s_process_c_levers.png` — labels and melatonin wording checked against the revised chapter text, no issues found. |
+| 6.4 | Sleep architecture hypnogram | ⚠️ needs revision | `ch06/fig_sleep_architecture_cycles.png` — the fixed early/middle/late-night functional assignment (restoration → consolidation → emotional processing) is misleading and overstates how cleanly those processes map onto specific hours; not public-ready until redrawn without that timetable. Caption/alt text in `ch06-sleep.md` already removed the fixed mapping. |
+| 6.5 | Glymphatic clearance mechanism | ⚠️ needs revision | `ch06/fig_glymphatic_clearance_deep_sleep.png` — mechanism is depicted with more certainty than the human evidence supports (strong in animal studies, indirect/developing in humans); not public-ready until the diagram itself signals that gap. Caption/alt text hedged in the chapter text as an interim measure. |
 | 6.6 | Drug tolerance/withdrawal mechanism | 🔲 | Reconsider fit; most drug content moved to Ch5. |
 | 6.7 | Dream theories comparison diagram | 🔲 | On hold. |
 | — | `hypnogram.mp4` | ⚠️ | Not wired. Decide whether videos belong in markdown chapters or lab pages. |

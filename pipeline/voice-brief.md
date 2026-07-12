@@ -34,6 +34,16 @@ Sampled from Ch. 1 (reviewed twice). A draft sounds like Jon when it does these 
 
 **Confidence rule (Jon's standing instruction, non-negotiable):** never overstate. Flag contested or weakly-supported claims explicitly, distinguish strong from weak evidence, and don't smooth over uncertainty to make a cleaner story. (Example from Ch. 6: naming the "broken mirror neuron theory of autism" as not well supported, and separating strong monkey single-neuron data from weaker human fMRI evidence.)
 
+**Calibration rule — claim-level, not clause-level:** State the best-supported conclusion directly and let it serve as the paragraph's payoff. Add one boundary sentence only when omitting it would leave students with a materially false takeaway — defined as: a student who read only that sentence would either (a) believe something the next study or a well-known finding contradicts, or (b) overgeneralize the claim to a population, context, or timescale the evidence doesn't cover. If avoiding the misconception requires expert-level nuance, it isn't material — skip it.
+
+Do not repeat the same caveat across the prose, caption, retrieval prompt, summary, and review questions. Place it once, at the point that prevents the misconception most efficiently. When two locations seem equally efficient, prefer prose over caption, and caption over retrieval prompt/summary/review — the boundary should live where the claim is first made, not where it's later recalled.
+
+Treat studies as evidence that may need one scope clause. Applications need no defense unless they introduce a new claim beyond what's already been hedged. Clearly labeled analogies, artistic parallels, and mnemonic examples need only enough boundary to prevent literal misreading (e.g., "Tesla Vision" is a teaching device, not a claim about how S&P actually works) — not empirical hedging.
+
+When a call is genuinely close, default to stating the conclusion. Overqualification is the more common failure in academic writing and the one this rule exists to correct; err toward trusting the student with the direct claim.
+
+Calibration fails in both directions: overstatement gives the evidence too much certainty; overqualification gives uncertainty too much prominence. The chapter must remain accurate, clear, and memorable.
+
 ---
 
 ## 3. Signature analogies — reach for these first
@@ -121,5 +131,6 @@ Always verify citations against a live search before finalizing a References sec
 - [ ] Comparative/sequential content in a table, not paragraphs?
 - [ ] Stop-and-Retrieve / Think-About-It / Do-Not-Confuse boxes seeded through the sections?
 - [ ] Every contested claim flagged; strong vs. weak evidence distinguished (never overstate)?
+- [ ] Calibration checked at claim level: conclusion stated directly, one boundary clause only if omitting it is materially misleading, not repeated across prose/caption/retrieval/summary/review?
 - [ ] Flagged concepts sourced from Noba/APA, not Wade/King/Myers?
 - [ ] Persona used as light seasoning, not laid on thick?
