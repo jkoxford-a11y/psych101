@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>When Will You Feel Sleepy? - General Psychology</title>
+  <link rel="stylesheet" href="../../css/style.css" />
+  <link rel="stylesheet" href="../../css/labs.css" />
+</head>
+<body>
+<div class="layout">
+  <aside class="sidebar" id="app-sidebar"></aside>
+  <script src="../../js/sidebar.js" data-dir="labs/ch06" data-active="" data-top="full"></script>
+
+  <main class="main lab-main">
+    <p class="chapter-meta">Learning Lab - Chapter 6</p>
+    <h1>When Will You Feel Sleepy?</h1>
+    <hr class="chapter-divider" />
+
+    <p>Sleepiness is not one signal. In this 10–20 minute lab, you will separate homeostatic sleep pressure from circadian timing, then test what caffeine, a nap, travel, and light actually change.</p>
+
+    <div class="callout callout--note">
+      <div class="callout-title">Accessibility, Privacy, and Scope</div>
+      <p>This lab runs entirely in your browser. It stores your prediction, scenario choices, explanation, and transfer response in <code>sessionStorage</code> for this browser session only. It collects no names, email addresses, student IDs, analytics, or other identifiers, and it sends nothing to a server. The curves are simplified teaching models, not individualized sleep forecasts or medical advice; every visual result is also stated in text.</p>
+    </div>
+
+    <section class="lab-panel phase-panel" id="prediction-panel" aria-labelledby="prediction-heading">
+      <h2 id="prediction-heading" tabindex="-1">1. Predict and Commit</h2>
+      <form id="prediction-form" novalidate>
+        <fieldset class="lab-fieldset">
+          <legend>You have been awake for 22 hours. Caffeine makes you feel more alert. What happened to the underlying sleep pressure?</legend>
+          <label class="option-row"><input type="radio" name="opening-prediction" value="eliminated" /><span>It was eliminated.</span></label>
+          <label class="option-row"><input type="radio" name="opening-prediction" value="reduced" /><span>It was substantially reduced.</span></label>
+          <label class="option-row"><input type="radio" name="opening-prediction" value="masked" /><span>It remained high, but its subjective effects were partly masked.</span></label>
+          <label class="option-row"><input type="radio" name="opening-prediction" value="reset" /><span>The circadian clock immediately reset.</span></label>
+        </fieldset>
+        <label class="text-label" for="prediction-reason">Briefly explain your prediction.</label>
+        <textarea id="prediction-reason" rows="4" required></textarea>
+        <button class="lab-btn" type="button" id="commit-prediction">Commit prediction</button>
+      </form>
+      <p class="save-status" id="prediction-status" aria-live="polite"></p>
+    </section>
+
+    <section class="lab-panel phase-panel" id="scenario-panel" hidden aria-labelledby="scenario-heading">
+      <div class="lab-progress" aria-live="polite"><span id="scenario-counter"></span><span id="scenario-status"></span></div>
+      <h2 id="scenario-heading" tabindex="-1">2. Test Four Situations</h2>
+      <article class="classifier-item">
+        <p class="lab-kicker" id="scenario-name"></p>
+        <h3 id="scenario-title"></h3>
+        <p id="scenario-description"></p>
+
+        <form id="scenario-form" novalidate>
+          <fieldset class="lab-fieldset">
+            <legend>Which underlying curve is reduced, increased, or shifted by the intervention?</legend>
+            <label class="option-row"><input type="radio" name="process-choice" value="s" /><span><strong>Process S</strong> — homeostatic sleep pressure</span></label>
+            <label class="option-row"><input type="radio" name="process-choice" value="c" /><span><strong>Process C</strong> — circadian timing or alerting</span></label>
+            <label class="option-row"><input type="radio" name="process-choice" value="both" /><span>Both Process S and Process C directly</span></label>
+            <label class="option-row"><input type="radio" name="process-choice" value="neither" /><span>Neither underlying process directly</span></label>
+          </fieldset>
+          <fieldset class="lab-fieldset">
+            <legend id="outcome-question">What outcome should you expect?</legend>
+            <div id="outcome-options"></div>
+          </fieldset>
+          <button class="lab-btn" type="button" id="check-scenario">Commit and reveal</button>
+        </form>
+
+        <section class="observe-panel" id="scenario-result" hidden tabindex="-1" aria-labelledby="result-heading">
+          <h3 id="result-heading">Scenario Result</h3>
+          <dl class="sim-stats" aria-live="polite">
+            <div class="sim-stat"><dt>Process S</dt><dd id="stat-s">—</dd></div>
+            <div class="sim-stat"><dt>Process C</dt><dd id="stat-c">—</dd></div>
+            <div class="sim-stat"><dt>Likely experience</dt><dd id="stat-experience">—</dd></div>
+          </dl>
+          <div class="curve-wrap">
+            <svg class="curve-svg" viewBox="0 0 760 340" role="img" aria-labelledby="curve-title curve-desc">
+              <title id="curve-title">Simplified Process S and Process C teaching model</title>
+              <desc id="curve-desc">Two labeled schematic curves show homeostatic sleep pressure and circadian alerting across a day. The scenario result is also provided in text.</desc>
+              <line class="curve-axis" x1="70" y1="275" x2="715" y2="275"></line>
+              <line class="curve-axis" x1="70" y1="55" x2="70" y2="275"></line>
+              <text class="curve-label" x="12" y="40">Relative strength</text>
+              <text class="curve-label" x="640" y="320">Time (schematic)</text>
+              <text class="curve-label" x="85" y="305">Wake</text>
+              <text class="curve-label" x="620" y="305">Bedtime</text>
+              <path id="process-s-path" class="signal-negative" d="M70 255 L715 90"></path>
+              <path id="process-c-path" class="signal-positive" d="M70 205 C220 110 390 90 520 145 C610 185 665 225 715 245"></path>
+              <text class="curve-label" id="process-s-label" x="545" y="92">Process S: sleep pressure</text>
+              <text class="curve-label" id="process-c-label" x="250" y="90">Process C: circadian alerting</text>
+              <line class="phase-marker" id="intervention-marker" x1="500" y1="55" x2="500" y2="275"></line>
+              <text class="curve-label" id="intervention-label" x="475" y="42">Intervention</text>
+            </svg>
+          </div>
+          <p class="trial-result" id="visual-equivalent" aria-live="polite"></p>
+          <section class="feedback-panel" id="feedback-panel" aria-live="polite">
+            <h3 id="feedback-heading"></h3>
+            <p id="feedback-text"></p>
+            <p id="distinction-text"></p>
+          </section>
+          <div class="lab-actions"><button class="lab-btn" type="button" id="next-scenario">Next scenario</button></div>
+        </section>
+      </article>
+
+      <h3>Plain-text event log</h3>
+      <div class="event-log" id="event-log" tabindex="0" aria-live="polite"><ol></ol></div>
+    </section>
+
+    <section class="lab-panel phase-panel" id="concept-panel" hidden aria-labelledby="concept-heading">
+      <h2 id="concept-heading" tabindex="-1">3. What the Pattern Means</h2>
+      <div class="callout callout--note">
+        <div class="callout-title">Two Signals, Different Levers</div>
+        <p><strong>Process S</strong> is homeostatic sleep pressure: it rises with time awake and falls during sleep. <strong>Process C</strong> is circadian timing: it changes the biological tendency toward alertness or sleep across the day. The two usually cooperate, but jet lag, shift work, naps, and caffeine can pull them apart.</p>
+        <p>Caffeine blocks adenosine receptors and therefore masks part of the experienced pressure without clearing it. A nap discharges some Process S. Light shifts circadian timing rather than replacing sleep. The curves in this lab show conceptual relationships, not exact values for a particular person.</p>
+      </div>
+    </section>
+
+    <section class="lab-panel phase-panel" id="explain-panel" hidden aria-labelledby="explain-heading">
+      <h2 id="explain-heading" tabindex="-1">4. Explain</h2>
+      <label class="text-label" for="explanation-response">Why can a person feel temporarily more alert after caffeine while still being substantially sleep deprived? Use <strong>Process S</strong>, <strong>adenosine</strong>, and <strong>masking</strong>.</label>
+      <textarea id="explanation-response" rows="6"></textarea>
+      <button class="lab-btn" type="button" id="save-explanation">Save explanation and continue</button>
+      <p class="save-status" id="explanation-status" aria-live="polite"></p>
+    </section>
+
+    <section class="lab-panel phase-panel" id="transfer-panel" hidden aria-labelledby="transfer-heading">
+      <h2 id="transfer-heading" tabindex="-1">5. Summary and Transfer</h2>
+      <p id="completion-summary"></p>
+      <label class="text-label" for="transfer-response">A student sleeps from 6:00 to 7:30 p.m. after an exhausting day and then cannot fall asleep at midnight. The student concludes that the circadian clock must have shifted. Evaluate that explanation. State what probably happened to Process S and what probably did not happen to Process C.</label>
+      <p class="term-reminder">Use <strong>Process S</strong>, <strong>Process C</strong>, <strong>sleep pressure</strong>, and <strong>circadian timing</strong>.</p>
+      <textarea id="transfer-response" rows="7"></textarea>
+      <div class="lab-actions">
+        <button class="lab-btn" type="button" id="save-transfer">Save transfer response</button>
+        <button class="lab-btn lab-btn--secondary" type="button" id="restart-lab">Restart lab</button>
+      </div>
+      <p class="save-status" id="transfer-status" aria-live="polite"></p>
+    </section>
+
+    <section class="callout callout--think-about-it" aria-labelledby="instructor-note-heading">
+      <div class="callout-title" id="instructor-note-heading">6. Instructor Note</div>
+      <p>Have pairs commit each prediction before revealing the model. The key debrief is the caffeine scenario: feeling more alert is not evidence that the accumulated need for sleep has disappeared. A second useful comparison is late caffeine versus a late nap—one masks pressure, while the other actually reduces some Process S.</p>
+    </section>
+  </main>
+</div>
+<script src="../../js/nav.js"></script>
+<script src="../../js/labs-process-s-process-c.js"></script>
+</body>
+</html>

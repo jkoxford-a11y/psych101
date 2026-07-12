@@ -1,6 +1,6 @@
 # Learning Labs — Design Specification
 
-> Applies to all standalone labs in `docs/labs/`. Read this before building or modifying any lab. Updated after the Ch6 Classical Conditioning Simulator audit (Session 40).
+> Applies to all standalone labs in `docs/labs/`. Read this before building or modifying any lab. Updated after the Ch7 Classical Conditioning Simulator audit (Session 40).
 
 ---
 
@@ -145,6 +145,10 @@ docs/labs/
   ch02/
     correlation-causation.html
   ch06/
+    index.html
+    process-s-process-c.html
+    sleep-state-detective.html
+  ch07/
     classical-conditioning.html
 ```
 
