@@ -164,7 +164,7 @@ All six completed SVGs wired into `ch08-memory.md` in Session 78.
 | # | Description | Status | Filename / note |
 |---|-------------|--------|-----------------|
 | 8.1 | Atkinson-Shiffrin three-box model | ✅ wired | `ch08_atkinson_shiffrin_three_box_model.svg` — wired into Section 1. |
-| 8.2 | Baddeley's working memory model | ✅ wired | `ch08_baddeley_working_memory_model.svg` — wired into Section 1; no episodic buffer, matching chapter text. |
+| 8.2 | Baddeley's working memory model | ✅ wired — revised | `ch08_baddeley_working_memory_model.svg` — four-component model with episodic buffer and long-term-memory connection; source, HTML, caption, alt text, and metadata synchronized. |
 | 8.3 | Levels of processing | ✅ wired | `ch08_levels_of_processing_shallow_to_deep.svg` — wired into Section 1; two-level gradient, not three-tier taxonomy. |
 | 8.4 | Explicit vs. implicit memory taxonomy tree | ✅ wired | `ch08_memory_taxonomy_tree.svg` — wired before the memory systems table. |
 | 8.5 | Serial position curve | ✅ wired | `ch08_serial_position_curve.svg` — wired into Section 3. |
