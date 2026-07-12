@@ -164,7 +164,7 @@ Repository rules and conventions live in `AGENTS.md`, not here. Current state an
 
 ### 2026-07-12 - Chapter 6 Sleep HTML Conversion
 
-- Converted `source/chapters/ch06-sleep.md` into `docs/chapters/06-sleep.html` following `pipeline/html-conversion-spec.md`, including all five available figures, exact callout variants, review/details markup, glossary, Further Reading separation, and references.
+- Converted `source/chapters/ch06-sleep.md` into `docs/chapters/06-sleep.html` following `pipeline/html-conversion-spec.md`, including all five available figures, exact callout variants, review/details markup, glossary, Further Reading separation, and references. Applied the documented click-to-expand pattern to all five detail-heavy figures.
 - Linked both Chapter 6 learning labs because their tracked `main` versions match `origin/agent/ch06-learning-labs-2`; no demo or figure placeholders were needed.
 - Activated Chapter 6 in the shared generated sidebar (`docs/js/sidebar.js`) and table of contents (`docs/index.html`). Confirmed Chapter 8's Connections-table reference to “Ch. 6 — Sleep (review)” is now valid; Chapter 7's current built HTML has its Chapter 6 bridge in “Where This Fits,” not in the Connections table.
 - Validation: `pipeline/lint_chapters.py docs/chapters/06-sleep.html` reports 0 fails and 0 warnings. Changes left staged for Jon's review; no commit created.

@@ -14,7 +14,7 @@ This file is overwritten each session, not appended to. For process rules (which
 - Ch5/Ch7/Ch8 anchor and heading repairs (literal `####` paragraphs converted to real `<h4>` elements, broken internal Connections links fixed) all lint clean (0 fails, 0 warnings) but haven't had Jon's line-by-line review.
 - A real data-loss incident (Sessions 91–93 vanishing from this file's Session Log) was found and repaired this session — recovered verbatim into `HANDOFF-ARCHIVE.md`.
 - Nothing described above is committed or pushed yet.
-- Chapter 6's generated HTML is now complete at `docs/chapters/06-sleep.html`, with all five figures and both learning-lab links wired. The shared sidebar and table of contents now link it; chapter lint reports 0 fails and 0 warnings.
+- Chapter 6's generated HTML is now complete at `docs/chapters/06-sleep.html`, with all five figures (all using the documented click-to-expand pattern) and both learning-lab links wired. The shared sidebar and table of contents now link it; chapter lint reports 0 fails and 0 warnings.
 
 ## Active work
 
