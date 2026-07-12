@@ -321,6 +321,8 @@ Portrait strip (Ch1-specific, not needed for other chapters):
 <!-- FIGURE PLACEHOLDER: Figure N.N — [description of what figure will show] — file not yet available -->
 ```
 
+**Expandable figures:** reusable click-to-expand behavior uses the shared `.expandable` CSS and `docs/js/figure-expand.js`. It is opt-in per chapter — add the `expandable`/`figure-expand-toggle` classes to a figure's markup *and* include `<script src="../js/figure-expand.js"></script>` before `</body>` in that chapter's HTML. Both pieces are required; a chapter with the classes but no script include will appear to expand but never collapse (confirmed failure mode — see Ch2, Session 92 in `GPT_project_log.md`).
+
 ---
 
 ## 10. Interactive Demo Embeds

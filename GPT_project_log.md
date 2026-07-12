@@ -1,25 +1,35 @@
 # GPT/Codex Project Log
 
-This is the chronological, append-only operational log for GPT/Codex-assisted work on the Psych 101 textbook repository.
+This is the chronological, append-only operational log for GPT/Codex/Claude/Cowork-assisted work on the Psych 101 textbook repository.
 
 Record only actions, decisions, files changed, validation, and remaining issues. Do not include private chain-of-thought.
 
-## Current Conventions
-
-- Chapter prose/content changes belong in `source/chapters/*.md`.
-- Generated chapter HTML lives in `docs/chapters/*.html`.
-- Do not patch generated chapter HTML directly unless explicitly asked or no checked-in generator exists.
-- `pipeline/html-conversion-spec.md` defines HTML/render expectations.
-- `source/visuals-inventory.md` tracks figure status.
-- `HANDOFF.md` should stay concise and current-state oriented.
-
-## Open Follow-ups
-
-- Keep figure wiring separate from figure creation unless explicitly asked.
-- Continue validating generated HTML against actual content, not only structural tags.
-- Reusable figure expansion uses the shared `.expandable` CSS and `figure-expand.js`; it is enabled only in chapters explicitly wired for it.
+Repository rules and conventions live in `AGENTS.md`, not here. Current state and immediate next actions live in `HANDOFF.md`. Durable deferred work lives in `PROJECT_BACKLOG.md`.
 
 ## Log Entries
+
+### 2026-07-12 - Project-State File Reorganization, Follow-up: GPT_project_log.md Header Cleanup
+
+- Scope: Jon asked to go further than the previous entry's "noted but not fixed" call — remove the duplicated `Current Conventions` section from this file's header and relocate the three `Open Follow-ups` items to wherever they actually belong.
+- **`Current Conventions` removed**, replaced with a three-line pointer to `AGENTS.md` (rules/conventions), `HANDOFF.md` (current state), and `PROJECT_BACKLOG.md` (deferred work). This file now contains only its purpose statement, the pointers, and `## Log Entries`.
+- **Relocated the three `Open Follow-ups` items:**
+  - Figure-creation-vs-wiring rule → folded into `AGENTS.md`'s existing "Figures" section (it already had "Do not wire figures unless explicitly asked" — tightened the wording to name creation and wiring as separate steps explicitly, since that was the nuance being lost).
+  - HTML-content-validation rule → folded into `AGENTS.md`'s existing "Validation" section (already had "Check content, not just tag existence" — added a clause naming generated chapter HTML specifically, since that was the log version's added specificity).
+  - Expandable-figure implementation note (`.expandable` CSS / `figure-expand.js`, opt-in per chapter, requires both the CSS classes and the script include) → new paragraph in `pipeline/html-conversion-spec.md` §9 (Figures), since that's the file `AGENTS.md` already points agents to for HTML/render expectations. Cited the Ch2 Session 92 missing-script-include failure mode from this file's own history as the reason both pieces are required, not just the classes.
+- **Validation:** confirmed both target `AGENTS.md` rules were genuinely near-duplicates before merging (not distinct rules that happened to share wording) by reading both sections in full first. Confirmed `pipeline/html-conversion-spec.md` had no existing expandable-figure documentation before adding it (would have been a second duplication otherwise). Re-read this file end to end after the edit to confirm all prior dated Log Entries are unchanged and the file now ends the header at `## Log Entries` with no orphaned content above it.
+- Files changed: `GPT_project_log.md` (header rewrite, this entry), `AGENTS.md` (Figures and Validation sections tightened), `pipeline/html-conversion-spec.md` (Figures section, new expandable-figures paragraph).
+
+### 2026-07-12 - Project-State File Reorganization
+
+- Scope: repository-management only, reorganizing project-state files so each has one clear purpose. No chapter, lab, figure, or generated-content files touched.
+- **New roles:** `AGENTS.md` is now the permanent routing/operating-rules file for all agents (GPT, Codex, Claude, Cowork) — added a "Project-state files" section and a start-of-session read order. `HANDOFF.md` is now present-state-only, overwritten each session (no more append-only Session Log) — rebuilt to the target structure (current state / active work / next actions / decisions needed / validation and risks / important files), trimmed from ~5,300 words to ~670. `GPT_project_log.md` keeps its existing role as the chronological append-only record (this entry). `HANDOFF-ARCHIVE.md` is now the frozen historical record — no longer expected to receive new entries going forward, since HANDOFF's Session Log convention is retired.
+- **Created `pipeline/claude-work-environment.md`** — no equivalent file existed. Moved the sandbox-mount staleness bug (root cause, workarounds, GitHub issue references), the canonical-repo-path caution, the commit-via-GitHub-Desktop convention, and other Claude/Cowork-specific limitations (blocked local `file:` navigation, CRLF/LF diff noise) out of `HANDOFF.md` into this dedicated file. `AGENTS.md` now points Claude/Cowork agents at it explicitly; other agents aren't required to load it.
+- **Created `PROJECT_BACKLOG.md`** — no established GitHub Issues workflow or other maintained backlog was found in this repository (checked `.github/`, searched for prior "backlog" files — only casual mentions inside unrelated docs). Moved the ~18 durable/deferred items out of `HANDOFF.md`'s Next Up into six categories (Editorial review, Labs and demonstrations, Figures and visual assets, HTML and rendering, Repository and workflow, Deferred decisions). The 5 most immediate, currently-blocking actions stayed in `HANDOFF.md`'s Next Actions instead.
+- **Archived Sessions 94–102** (9 entries, previously live in `HANDOFF.md`'s Session Log but never yet moved to the archive) into `HANDOFF-ARCHIVE.md` verbatim, under a new "Archived Session Log (Sessions 94–102)" section, before stripping the Session Log convention from `HANDOFF.md` entirely.
+- **Validation performed:** confirmed via `git branch`/`git remote` that `main` is current and up to date with `origin/main` before writing HANDOFF's branch field. Confirmed no established issue tracker exists before creating `PROJECT_BACKLOG.md` (per the task's decision rule — don't create both a Markdown backlog and duplicate GitHub Issues). Verified Sessions 94–102 weren't already present in `HANDOFF-ARCHIVE.md` before appending (grepped for each session heading) to avoid duplication. Confirmed the edit set touched only project-state/workflow files (`AGENTS.md`, `HANDOFF.md`, `HANDOFF-ARCHIVE.md`, `GPT_project_log.md`, `pipeline/claude-work-environment.md`, `PROJECT_BACKLOG.md`) — no `source/chapters/`, `docs/chapters/`, `docs/labs/`, `docs/images/`, or generated output touched.
+- **Noted but not fixed (pre-existing, out of this task's scope):** `HANDOFF-ARCHIVE.md` already contained a duplicate copy of the Sessions 91–93 archive block (two "Archived Session Log (Sessions 91–93)" sections with near-identical content, likely from the same recovery effort landing twice) — left as-is since de-duplicating archived history wasn't part of this reorganization's scope, but flagged here for whoever next touches that file. `GPT_project_log.md`'s own "Current Conventions" section duplicates a few lines from `AGENTS.md`'s "Source of Truth" section — also left untouched, since this log is meant to be legible on its own without requiring `AGENTS.md` to be open.
+- **Unresolved decision:** whether `PROJECT_BACKLOG.md` should eventually be replaced by GitHub Issues if the project's workflow matures — documented in `AGENTS.md` as the default for now (no issue-tracking workflow currently in active use).
+- Files changed/created: `AGENTS.md`, `HANDOFF.md`, `HANDOFF-ARCHIVE.md`, `PROJECT_BACKLOG.md` (new), `pipeline/claude-work-environment.md` (new), `GPT_project_log.md` (this entry).
 
 ### 2026-07-12 - Chapter 6 Lab Links (Process S/C, Sleep-State Detective)
 
