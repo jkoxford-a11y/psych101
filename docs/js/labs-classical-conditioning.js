@@ -3,7 +3,7 @@
 (function () {
   'use strict';
 
-  const STORAGE_KEY = 'psych101-lab-ch06-classical-conditioning';
+  const STORAGE_KEY = 'psych101-lab-ch07-classical-conditioning';
 
   const simulationConfig = {
     acquisitionTrialsRequired: 8,

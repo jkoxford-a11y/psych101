@@ -148,10 +148,10 @@ All 9 figures are wired.
 | 7.2 | Extinction is not erasure | ✅ | `ch07/fig_extinction_not_erasure.png` |
 | 7.3 | Operant conditioning 2×2 | ✅ | `ch07/fig_operant_conditioning_2x2.png` |
 | 7.4 | Reinforcement schedules comparison | ✅ | `ch07/fig_reinforcement_schedules.png` |
-| 7.5 | Garcia & Koelling preparedness | ✅ | `ch07/fig_garcia_koelling_preparedness.png` — on-image Garcia date/citation wording is imperfect; chapter references are correct. |
+| 7.5 | Garcia & Koelling preparedness | ✅ | `ch07/fig_garcia_koelling_preparedness.png` |
 | 7.6 | Bobo doll / observational learning setup | ✅ | `ch07/fig_bobo_doll_observational_learning.png` |
-| 7.7 | Tolman's cognitive map / cross-maze latent-learning demo | ✅ | `ch07/fig_tolman_cognitive_map.png` |
-| 7.8 | Dopamine uncertainty curve | ✅ | `ch07/fig_dopamine_uncertainty_curve.png` — on-image tagline oversimplifies; chapter caption handles nuance. |
+| 7.7 | Tolman & Honzik delayed-reward latent-learning graph | ✅ | `ch07/fig_tolman_cognitive_map.png` |
+| 7.8 | Dopamine uncertainty curve | ✅ | `ch07/fig_dopamine_uncertainty_curve.png` |
 | 7.9 | Dopamine reward-prediction-error paradigm | ✅ | `ch07/fig_dopamine_prediction_error_schultz.png` |
 | — | Learning's place in the master loop | 🔲 | Do not build a one-off until a book-wide master-loop asset convention is decided. |
 
