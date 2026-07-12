@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>What Does the Evidence Actually Show? - General Psychology</title>
+  <link rel="stylesheet" href="../../css/style.css" />
+  <link rel="stylesheet" href="../../css/labs.css" />
+</head>
+<body>
+<div class="layout">
+  <aside class="sidebar" id="app-sidebar"></aside>
+  <script src="../../js/sidebar.js" data-dir="labs/ch05" data-active="" data-top="full"></script>
+  <main class="main lab-main">
+    <p class="chapter-meta">Learning Lab - Chapter 5</p>
+    <h1>What Does the Evidence Actually Show?</h1>
+    <hr class="chapter-divider" />
+    <p>Consciousness research often begins with striking cases. The difficult step is deciding what each case actually demonstrates—and what would be an inference beyond the evidence.</p>
+
+    <div class="callout callout--note">
+      <div class="callout-title">Accessibility and Privacy</div>
+      <p>This lab runs entirely in your browser. It stores your prediction, case choices, explanation, and transfer response in <code>sessionStorage</code> for this browser session only, so they disappear when the session closes. It does not collect names, email addresses, student IDs, analytics, or other identifiers, and it does not send data to a server.</p>
+    </div>
+
+    <section class="lab-panel" id="prediction-panel" aria-labelledby="prediction-heading">
+      <h2 id="prediction-heading" tabindex="-1">1. Predict and Commit</h2>
+      <form id="prediction-form" novalidate>
+        <fieldset class="lab-fieldset">
+          <legend>When a finding fits a theory, does that usually mean the finding proves the theory?</legend>
+          <label class="option-row"><input type="radio" name="theory-proof" value="yes" /> <span>Yes</span></label>
+          <label class="option-row"><input type="radio" name="theory-proof" value="no" /> <span>No</span></label>
+          <label class="option-row"><input type="radio" name="theory-proof" value="depends" /> <span>It depends</span></label>
+        </fieldset>
+        <fieldset class="lab-fieldset">
+          <legend>Which distinction do you expect to be hardest?</legend>
+          <label class="option-row"><input type="radio" name="hardest" value="processing-awareness" /> <span>Processing versus conscious awareness</span></label>
+          <label class="option-row"><input type="radio" name="hardest" value="attention-consciousness" /> <span>Attention versus consciousness</span></label>
+          <label class="option-row"><input type="radio" name="hardest" value="consistent-proof" /> <span>Evidence consistent with a theory versus evidence proving a theory</span></label>
+        </fieldset>
+        <label class="text-label" for="prediction-reason">Briefly explain your prediction.</label>
+        <textarea id="prediction-reason" rows="4" required></textarea>
+        <button class="lab-btn" type="button" id="commit-prediction">Commit prediction</button>
+      </form>
+      <p class="save-status" id="prediction-status" aria-live="polite"></p>
+    </section>
+
+    <section class="lab-panel phase-panel" id="case-panel" hidden aria-labelledby="case-heading">
+      <div class="lab-progress" aria-live="polite"><span id="case-counter"></span><span id="case-progress"></span></div>
+      <h2 id="case-heading" tabindex="-1">2. Classify the Evidence</h2>
+      <article class="classifier-item">
+        <p class="lab-kicker" id="case-topic"></p>
+        <h3>Evidence</h3><p id="evidence-text"></p>
+        <h3>Claim</h3><p id="claim-text"></p>
+        <form id="case-form" novalidate>
+          <fieldset class="lab-fieldset">
+            <legend>What does the evidence justify?</legend>
+            <label class="option-row"><input type="radio" name="classification" value="direct" /> <span><strong>Directly demonstrated</strong> — the evidence directly supports this limited claim.</span></label>
+            <label class="option-row"><input type="radio" name="classification" value="consistent" /> <span><strong>Consistent, but not uniquely established</strong> — the finding fits the claim, but other explanations also fit.</span></label>
+            <label class="option-row"><input type="radio" name="classification" value="overclaimed" /> <span><strong>Overclaimed or unsupported</strong> — the conclusion goes beyond what this evidence can establish.</span></label>
+          </fieldset>
+          <button class="lab-btn" type="button" id="check-answer">Check classification</button>
+        </form>
+        <section class="feedback-panel" id="feedback-panel" hidden tabindex="-1" aria-live="polite">
+          <h3 id="feedback-heading"></h3><p id="feedback-text"></p><p id="tempting-text"></p>
+          <button class="lab-btn" type="button" id="next-case">Next case</button>
+        </section>
+      </article>
+      <h3>Text Event Log</h3>
+      <div class="event-log" aria-live="polite"><ol id="event-log"></ol></div>
+    </section>
+
+    <section class="lab-panel phase-panel" id="explain-panel" hidden aria-labelledby="explain-heading">
+      <h2 id="explain-heading" tabindex="-1">3–4. Explain the Pattern</h2>
+      <div class="callout callout--note">
+        <div class="callout-title">A Dissociation Is Not a Complete Theory</div>
+        <p>A finding can establish a dissociation without identifying the complete mechanism. It can also fit several competing theories. <strong>Consistent with</strong> is weaker than <strong>uniquely predicted by</strong>, and neither means <strong>proved</strong>.</p>
+        <p><strong>Processing</strong> means a system responded to information. <strong>Attention</strong> prioritizes information or tasks. <strong>Conscious access or report</strong> means information is available for deliberate use or communication. <strong>Subjective experience</strong> is what a state feels like from the inside. They interact, but they are not synonyms.</p>
+      </div>
+      <label class="text-label" for="explanation-response">Why does Charles Bonnet syndrome provide useful evidence about constructive perception without, by itself, proving predictive processing as the correct theory of consciousness?</label>
+      <textarea id="explanation-response" rows="6"></textarea>
+      <button class="lab-btn" type="button" id="save-explanation">Save explanation and continue</button>
+      <p class="save-status" id="explanation-status" aria-live="polite"></p>
+    </section>
+
+    <section class="lab-panel phase-panel" id="transfer-panel" hidden aria-labelledby="transfer-heading">
+      <h2 id="transfer-heading" tabindex="-1">5. Retrieve and Transfer</h2>
+      <p id="completion-summary"></p><p id="error-summary"></p>
+      <div class="table-wrap"><table><thead><tr><th scope="col">Evidence category</th><th scope="col">Cases</th><th scope="col">Correct</th></tr></thead><tbody id="category-summary"></tbody></table></div>
+      <label class="text-label" for="transfer-response">A social-media post says: “Psychedelics disrupt prediction, so scientists have now proved that consciousness is the brain’s predictive model.” Evaluate the claim. State what the drug evidence can support, what it cannot establish, and what additional comparison or evidence would be needed.</label>
+      <p class="term-reminder">Useful vocabulary: <strong>dissociation</strong>, <strong>consistent with</strong>, <strong>uniquely diagnostic</strong>, <strong>conscious access</strong>, <strong>predictive processing</strong>. Use at least one term; the lab does not mechanically grade your wording.</p>
+      <textarea id="transfer-response" rows="7"></textarea>
+      <div class="lab-actions"><button class="lab-btn" type="button" id="save-transfer">Save transfer response locally</button><button class="lab-btn lab-btn--secondary" type="button" id="restart-lab">Restart lab</button></div>
+      <p class="save-status" id="transfer-status" aria-live="polite"></p>
+    </section>
+
+    <section class="callout callout--think-about-it" aria-labelledby="instructor-note">
+      <div class="callout-title" id="instructor-note">6. Instructor Note</div>
+      <p>The central debrief is the difference among observing a phenomenon, identifying a mechanism, and selecting among competing theories. Have pairs discuss the Charles Bonnet and psychedelic cases before revealing feedback; those cases make the difference between “consistent with” and “uniquely diagnostic” especially visible.</p>
+    </section>
+  </main>
+</div>
+<script src="../../js/nav.js"></script>
+<script src="../../js/labs-consciousness-evidence-claim-check.js"></script>
+</body>
+</html>
