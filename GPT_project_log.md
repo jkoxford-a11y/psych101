@@ -161,3 +161,10 @@ Repository rules and conventions live in `AGENTS.md`, not here. Current state an
 - Preserved existing local work. The five Chapter 6-specific files match the remote branch exactly; the two shared files were integrated selectively so newer unrelated lab-index content remained intact. Added only the Chapter 6 card and corrected the specification's stale Chapter 6/Chapter 7 file-tree example.
 - Confirmed both Chapter 6 source links were already present and left the substantially revised `source/chapters/ch06-sleep.md` untouched. Validation covered JavaScript syntax, HTML parsing and balanced structure, unique IDs, `aria-labelledby` targets, accessible instructional SVGs, JavaScript-to-HTML ID references, `sessionStorage` use, absence of network/analytics calls, local link targets, index/spec corrections, and unchanged generated chapter HTML.
 - PR #1 remains open pending Jon's local review and normal GitHub Desktop commit/push workflow.
+
+### 2026-07-12 - Chapter 6 Sleep HTML Conversion
+
+- Converted `source/chapters/ch06-sleep.md` into `docs/chapters/06-sleep.html` following `pipeline/html-conversion-spec.md`, including all five available figures, exact callout variants, review/details markup, glossary, Further Reading separation, and references.
+- Linked both Chapter 6 learning labs because their tracked `main` versions match `origin/agent/ch06-learning-labs-2`; no demo or figure placeholders were needed.
+- Activated Chapter 6 in the shared generated sidebar (`docs/js/sidebar.js`) and table of contents (`docs/index.html`). Confirmed Chapter 8's Connections-table reference to “Ch. 6 — Sleep (review)” is now valid; Chapter 7's current built HTML has its Chapter 6 bridge in “Where This Fits,” not in the Connections table.
+- Validation: `pipeline/lint_chapters.py docs/chapters/06-sleep.html` reports 0 fails and 0 warnings. Changes left staged for Jon's review; no commit created.

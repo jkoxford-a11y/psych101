@@ -25,7 +25,7 @@
         { id: "03", label: "3 — Neuroscience & Biological Bases", path: "chapters/03-neuroscience.html" },
         { id: "04", label: "4 — Sensation & Perception", path: "chapters/04-sensation-perception.html" },
         { id: "05", label: "5 — Consciousness", path: "chapters/05-consciousness.html" },
-        { id: "06", label: "6 — Sleep", path: null, pending: "(coming soon)" }
+        { id: "06", label: "6 — Sleep", path: "chapters/06-sleep.html" }
       ]
     },
     {
