@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Change the Situation, Change the Probability - General Psychology</title>
+  <link rel="icon" href="data:," />
+  <link rel="stylesheet" href="../../css/style.css" />
+  <link rel="stylesheet" href="../../css/labs.css" />
+</head>
+<body>
+<div class="layout">
+  <aside class="sidebar" id="app-sidebar"></aside>
+  <script src="../../js/sidebar.js" data-dir="labs/ch11" data-active="" data-top="full"></script>
+
+  <main class="main lab-main">
+    <p class="chapter-meta">Learning Lab - Chapter 11</p>
+    <h1>Change the Situation, Change the Probability</h1>
+    <hr class="chapter-divider" />
+
+    <p>Situations are not fog surrounding a person. They contain identifiable variables. In this lab, you will predict published group results, change one structural feature at a time, and watch the probability of behavior move.</p>
+    <p>Allow about 15 minutes. You are interpreting past research—not reenacting it and not being assessed.</p>
+
+    <div class="callout callout--note">
+      <div class="callout-title">Accessibility and Privacy</div>
+      <p>This lab runs entirely in your browser. It stores only your predictions, progress, explanation, classifications, and transfer response in <code>sessionStorage</code> for this browser session. It stores no names, emails, IDs, analytics, or tracking data, and nothing is sent to a server.</p>
+      <button class="lab-btn lab-btn--secondary" type="button" id="reset-lab">Reset this lab</button>
+      <p class="save-status" id="reset-status" aria-live="polite"></p>
+    </div>
+
+    <section class="lab-panel" id="prediction-panel" aria-labelledby="prediction-heading">
+      <p class="lab-kicker">Phase 1 of 6</p>
+      <h2 id="prediction-heading" tabindex="-1">Predict and Commit</h2>
+      <p>Predict the percentage of participant responses or participants meeting the stated outcome in each condition. These are predictions about groups—not questions about what you would do.</p>
+
+      <form id="prediction-form" novalidate>
+        <fieldset class="lab-fieldset prediction-set">
+          <legend>Asch: percentage of critical-trial judgments matching the incorrect majority</legend>
+          <div class="number-grid">
+            <label>Unanimous incorrect majority <span><input id="predict-asch-unanimous" type="number" min="0" max="100" inputmode="decimal" required />%</span></label>
+            <label>One correct ally breaks unanimity <span><input id="predict-asch-ally" type="number" min="0" max="100" inputmode="decimal" required />%</span></label>
+          </div>
+        </fieldset>
+
+        <fieldset class="lab-fieldset prediction-set">
+          <legend>Milgram: percentage of participants reaching the 450-volt endpoint</legend>
+          <div class="number-grid">
+            <label>Standard condition <span><input id="predict-milgram-standard" type="number" min="0" max="100" inputmode="decimal" required />%</span></label>
+            <label>Touch-proximity condition <span><input id="predict-milgram-touch" type="number" min="0" max="100" inputmode="decimal" required />%</span></label>
+            <label>Experimenter gives instructions remotely <span><input id="predict-milgram-remote" type="number" min="0" max="100" inputmode="decimal" required />%</span></label>
+          </div>
+        </fieldset>
+
+        <fieldset class="lab-fieldset prediction-set">
+          <legend>Darley–Latané: percentage reporting the emergency before the staged fit ended</legend>
+          <div class="number-grid">
+            <label>Believes they alone can help <span><input id="predict-bystander-alone" type="number" min="0" max="100" inputmode="decimal" required />%</span></label>
+            <label>Believes four other listeners are present <span><input id="predict-bystander-group" type="number" min="0" max="100" inputmode="decimal" required />%</span></label>
+          </div>
+        </fieldset>
+
+        <label class="text-label" for="prediction-explanation">What pattern do you expect across the three studies, and why?</label>
+        <textarea id="prediction-explanation" rows="5" required></textarea>
+        <p class="term-reminder">Complete every percentage and write a brief explanation. Your predictions will freeze after commitment.</p>
+        <button class="lab-btn" type="button" id="commit-predictions">Commit all predictions</button>
+      </form>
+      <p class="save-status" id="prediction-status" aria-live="polite"></p>
+    </section>
+
+    <section class="lab-panel phase-panel" id="asch-panel" hidden aria-labelledby="asch-heading">
+      <p class="lab-kicker">Phase 2A - Asch</p>
+      <h2 id="asch-heading" tabindex="-1">Change Unanimity</h2>
+      <p>In the baseline condition, a participant publicly judged line lengths after a unanimous majority gave the same plainly incorrect answer. In the comparison condition, one person answered correctly before the participant, breaking unanimity.</p>
+      <p id="asch-prediction-reminder" class="prediction-reminder"></p>
+      <button class="lab-btn" type="button" id="reveal-asch">Reveal Asch's group results</button>
+      <p class="save-status" id="asch-status" aria-live="polite"></p>
+
+      <div id="asch-result" hidden tabindex="-1">
+        <div class="comparison-chart" role="img" aria-labelledby="asch-chart-title asch-chart-desc">
+          <h3 id="asch-chart-title">Incorrect majority matches across critical trials</h3>
+          <p class="chart-desc" id="asch-chart-desc">The unanimous-majority condition produced 32 percent incorrect-majority matches. With one correct ally, the rate was 5.5 percent.</p>
+          <div class="comparison-row"><span class="comparison-label">Unanimous majority</span><span class="comparison-track"><span class="comparison-bar comparison-bar--baseline" style="width:32%"></span></span><strong>32%</strong></div>
+          <div class="comparison-row"><span class="comparison-label">One correct ally</span><span class="comparison-track"><span class="comparison-bar comparison-bar--changed" style="width:5.5%"></span></span><strong>5.5%</strong></div>
+        </div>
+        <p class="text-result"><strong>Text result:</strong> Responses matched the incorrect majority on 32% of critical trials under unanimous pressure and 5.5% with one correct ally.</p>
+        <div class="callout callout--note">
+          <div class="callout-title">What changed</div>
+          <p><strong>Unanimity</strong> was the manipulated situational variable. One ally changed the social structure of dissent: the participant no longer stood alone. The study does not show that everyone conforms or that participants could not see the correct line—68% of critical judgments remained correct even under unanimous pressure.</p>
+        </div>
+        <fieldset class="lab-fieldset" id="asch-check">
+          <legend>Identify the study's structure</legend>
+          <label class="text-label" for="asch-variable">Manipulated variable</label>
+          <select id="asch-variable"><option value="">Choose one</option><option value="unanimity">Whether the incorrect majority was unanimous</option><option value="line">The length of the standard line</option><option value="personality">The participant's personality</option></select>
+          <label class="text-label" for="asch-behavior">Measured behavior</label>
+          <select id="asch-behavior"><option value="">Choose one</option><option value="judgments">Critical-trial judgments matching the incorrect majority</option><option value="vision">Visual acuity</option><option value="belief">Private belief after one year</option></select>
+          <label class="text-label" for="asch-mechanism">Most relevant mechanism</label>
+          <select id="asch-mechanism"><option value="">Choose one</option><option value="dissent">Unanimity and the social structure of dissent</option><option value="responsibility">Diffusion of responsibility</option><option value="authority">Authority distance</option></select>
+          <button class="lab-btn" type="button" id="check-asch">Check identification and continue</button>
+          <p class="save-status" id="asch-check-status" aria-live="polite"></p>
+        </fieldset>
+      </div>
+    </section>
+
+    <section class="lab-panel phase-panel" id="milgram-panel" hidden aria-labelledby="milgram-heading">
+      <p class="lab-kicker">Phase 2B - Milgram</p>
+      <h2 id="milgram-heading" tabindex="-1">Change Relationships and Proximity</h2>
+      <p>Participants believed an experiment required increasingly severe shocks after a learner's errors. Compare the standard condition with two structural changes: the participant had to press the learner's hand onto a shock plate, or the experimenter left and communicated remotely.</p>
+      <p id="milgram-prediction-reminder" class="prediction-reminder"></p>
+      <button class="lab-btn" type="button" id="reveal-milgram">Reveal Milgram's group results</button>
+      <p class="save-status" id="milgram-status" aria-live="polite"></p>
+
+      <div id="milgram-result" hidden tabindex="-1">
+        <div class="comparison-chart" role="img" aria-labelledby="milgram-chart-title milgram-chart-desc">
+          <h3 id="milgram-chart-title">Participants reaching the 450-volt endpoint</h3>
+          <p class="chart-desc" id="milgram-chart-desc">The standard condition produced 65 percent continuation to 450 volts. Touch proximity produced 30 percent, and remote experimenter instructions produced 20.5 percent.</p>
+          <div class="comparison-row"><span class="comparison-label">Standard condition</span><span class="comparison-track"><span class="comparison-bar comparison-bar--baseline" style="width:65%"></span></span><strong>65%</strong></div>
+          <div class="comparison-row"><span class="comparison-label">Touch proximity</span><span class="comparison-track"><span class="comparison-bar comparison-bar--changed" style="width:30%"></span></span><strong>30%</strong></div>
+          <div class="comparison-row"><span class="comparison-label">Experimenter remote</span><span class="comparison-track"><span class="comparison-bar comparison-bar--changed" style="width:20.5%"></span></span><strong>20.5%</strong></div>
+        </div>
+        <p class="text-result"><strong>Text result:</strong> 65% reached 450 V in the published baseline, compared with 30% in touch proximity and 20.5% when the experimenter gave instructions remotely.</p>
+        <div class="callout callout--note">
+          <div class="callout-title">What changed</div>
+          <p>Continuation changed when the <strong>authority relationship</strong> and physical <strong>proximity</strong> changed. The results do not show that participants were evil or lacked moral conflict, and they should not be reduced to compliance with one explicit order. The precise mechanism remains contested; identification with the scientific project and appeals to its importance may have mattered.</p>
+        </div>
+        <fieldset class="lab-fieldset" id="milgram-check">
+          <legend>Identify the study's structure</legend>
+          <label class="text-label" for="milgram-variable">Manipulated variables</label>
+          <select id="milgram-variable"><option value="">Choose one</option><option value="relationships">Learner proximity and experimenter–participant distance</option><option value="voltage">The maximum voltage printed on the machine</option><option value="morality">Participants' morality</option></select>
+          <label class="text-label" for="milgram-behavior">Measured behavior</label>
+          <select id="milgram-behavior"><option value="">Choose one</option><option value="endpoint">Reaching the experiment's 450-volt endpoint</option><option value="distress">Whether a participant felt any distress</option><option value="belief">Belief that science is important</option></select>
+          <label class="text-label" for="milgram-mechanism">Most relevant mechanism</label>
+          <select id="milgram-mechanism"><option value="">Choose one</option><option value="structure">A structured authority relationship plus physical and relational proximity</option><option value="unanimity">A unanimous peer majority</option><option value="apathy">Lack of concern for others</option></select>
+          <button class="lab-btn" type="button" id="check-milgram">Check identification and continue</button>
+          <p class="save-status" id="milgram-check-status" aria-live="polite"></p>
+        </fieldset>
+      </div>
+    </section>
+
+    <section class="lab-panel phase-panel" id="bystander-panel" hidden aria-labelledby="bystander-heading">
+      <p class="lab-kicker">Phase 2C - Darley and Latané</p>
+      <h2 id="bystander-heading" tabindex="-1">Change Apparent Responsibility</h2>
+      <p>During an intercom discussion, a participant heard another supposed participant experience a seizure. Some believed they alone heard it. Others believed four additional listeners were also present, while nobody could tell what the others were doing.</p>
+      <p id="bystander-prediction-reminder" class="prediction-reminder"></p>
+      <button class="lab-btn" type="button" id="reveal-bystander">Reveal Darley–Latané's group results</button>
+      <p class="save-status" id="bystander-status" aria-live="polite"></p>
+
+      <div id="bystander-result" hidden tabindex="-1">
+        <div class="comparison-chart" role="img" aria-labelledby="bystander-chart-title bystander-chart-desc">
+          <h3 id="bystander-chart-title">Participants reporting before the staged fit ended</h3>
+          <p class="chart-desc" id="bystander-chart-desc">When participants believed they alone could hear the emergency, 85 percent reported it before the fit ended. When they believed four other listeners were present, 31 percent did.</p>
+          <div class="comparison-row"><span class="comparison-label">Only available helper</span><span class="comparison-track"><span class="comparison-bar comparison-bar--baseline" style="width:85%"></span></span><strong>85%</strong></div>
+          <div class="comparison-row"><span class="comparison-label">Four others present</span><span class="comparison-track"><span class="comparison-bar comparison-bar--changed" style="width:31%"></span></span><strong>31%</strong></div>
+        </div>
+        <p class="text-result"><strong>Text result:</strong> 85% reported the emergency before the staged fit ended when they believed they alone could help, compared with 31% when they believed four other listeners were present.</p>
+        <div class="callout callout--note">
+          <div class="callout-title">What changed</div>
+          <p>The number of apparent bystanders changed felt personal responsibility. <strong>Diffusion of responsibility</strong> is not evidence that people simply do not care: nonresponders often showed distress. It is one possible interruption in a larger chain that also includes noticing, interpreting, knowing what to do, and acting.</p>
+        </div>
+        <fieldset class="lab-fieldset" id="bystander-check">
+          <legend>Identify the study's structure</legend>
+          <label class="text-label" for="bystander-variable">Manipulated variable</label>
+          <select id="bystander-variable"><option value="">Choose one</option><option value="number">Number of other listeners believed to be present</option><option value="severity">Severity of the staged emergency</option><option value="caring">How much participants cared</option></select>
+          <label class="text-label" for="bystander-behavior">Measured behavior</label>
+          <select id="bystander-behavior"><option value="">Choose one</option><option value="report">Whether and how quickly the participant reported the emergency</option><option value="emotion">Whether the participant felt concern</option><option value="diagnosis">Whether the participant diagnosed a seizure</option></select>
+          <label class="text-label" for="bystander-mechanism">Most relevant mechanism</label>
+          <select id="bystander-mechanism"><option value="">Choose one</option><option value="diffusion">Diffusion of responsibility</option><option value="authority">Authority proximity</option><option value="conformity">Public conformity to a line judgment</option></select>
+          <button class="lab-btn" type="button" id="check-bystander">Check identification and continue</button>
+          <p class="save-status" id="bystander-check-status" aria-live="polite"></p>
+        </fieldset>
+      </div>
+    </section>
+
+    <section class="lab-panel phase-panel" id="teaching-panel" hidden aria-labelledby="teaching-heading">
+      <p class="lab-kicker">Phase 3 of 6</p>
+      <h2 id="teaching-heading" tabindex="-1">What the Comparisons Demonstrate</h2>
+      <div class="callout callout--note">
+        <div class="callout-title">The situation has parts</div>
+        <p>Across the three cases, researchers changed unanimity, proximity within an authority relationship, or the number of apparent bystanders. Changing one structural feature changed the probability of behavior without changing the kinds of people in the study. A probability shift is not a behavioral guarantee.</p>
+      </div>
+      <button class="lab-btn" type="button" id="continue-explanation">Continue to your explanation</button>
+    </section>
+
+    <section class="lab-panel phase-panel" id="explanation-panel" hidden aria-labelledby="explanation-heading">
+      <p class="lab-kicker">Phase 4 of 6</p>
+      <h2 id="explanation-heading" tabindex="-1">Explain the Pattern</h2>
+      <label class="text-label" for="explanation-response">Across these studies, what does it mean to say that a situation contains variables? Use at least two of these terms: <strong>unanimity</strong>, <strong>authority relationship</strong>, <strong>proximity</strong>, <strong>diffusion of responsibility</strong>, <strong>situational constraint</strong>.</label>
+      <textarea id="explanation-response" rows="6"></textarea>
+      <button class="lab-btn" type="button" id="save-explanation">Save explanation and reveal transfer</button>
+      <p class="save-status" id="explanation-status" aria-live="polite"></p>
+    </section>
+
+    <section class="lab-panel phase-panel" id="transfer-panel" hidden aria-labelledby="transfer-heading">
+      <p class="lab-kicker">Phase 5 of 6</p>
+      <h2 id="transfer-heading" tabindex="-1">Transfer the Idea</h2>
+      <div class="callout callout--do-not-confuse">
+        <div class="callout-title">Scenario</div>
+        <p>Several students notice a possible safety problem in a laboratory. Everyone else appears calm, no individual has been assigned responsibility, and a respected supervisor says the issue can wait. Change one structural feature of this situation to make speaking up or acting more likely.</p>
+      </div>
+      <label class="text-label" for="transfer-variable">1. Identify one situational variable.</label>
+      <textarea id="transfer-variable" rows="2"></textarea>
+      <label class="text-label" for="transfer-change">2. Describe the structural change you would make.</label>
+      <textarea id="transfer-change" rows="3"></textarea>
+      <label class="text-label" for="transfer-mechanism">3. Name the mechanism your change targets.</label>
+      <select id="transfer-mechanism"><option value="">Choose one</option><option value="unanimity">Unanimity / social support for dissent</option><option value="authority">Authority relationship</option><option value="proximity">Proximity</option><option value="diffusion">Diffusion of responsibility</option><option value="constraint">Situational constraint</option></select>
+      <label class="text-label" for="transfer-direction">4. Predict the directional effect.</label>
+      <select id="transfer-direction"><option value="">Choose one</option><option value="increase">Speaking up or acting should become more likely</option><option value="decrease">Speaking up or acting should become less likely</option></select>
+      <label class="text-label" for="transfer-reasoning">5. Explain why the intervention should work.</label>
+      <textarea id="transfer-reasoning" rows="4"></textarea>
+      <label class="option-row"><input id="transfer-boundary" type="checkbox" /> <span>I acknowledge that this intervention changes a probability; it does not guarantee behavior.</span></label>
+      <button class="lab-btn" type="button" id="submit-transfer">Save transfer response and finish</button>
+      <p class="save-status" id="transfer-status" aria-live="polite"></p>
+    </section>
+
+    <section class="lab-panel phase-panel" id="summary-panel" hidden aria-labelledby="summary-heading">
+      <p class="lab-kicker">Phase 6 of 6</p>
+      <h2 id="summary-heading" tabindex="-1">Completion Summary</h2>
+      <div id="completion-summary"></div>
+      <div class="callout callout--note">
+        <div class="callout-title">What to carry forward</div>
+        <p>Situational variables alter constraints, relationships, information, and responsibility. Changing them can shift the probability of behavior without making any outcome inevitable.</p>
+        <p><strong>This activity compares your predictions with published group results. It does not diagnose how you personally would behave.</strong></p>
+      </div>
+    </section>
+
+    <section class="callout callout--think-about-it" aria-labelledby="instructor-note-heading">
+      <div class="callout-title" id="instructor-note-heading">Instructor Note</div>
+      <p>Have students predict individually, then compare errors in pairs before discussing mechanisms. The key moment is not which famous percentage they remembered. It is whether they can name the structural variable, the measured behavior, and a defensible boundary on the inference. For transfer, compare interventions that break unanimity, assign one named person responsibility, or change the authority relationship.</p>
+    </section>
+
+    <section class="lab-panel" aria-labelledby="sources-heading">
+      <h2 id="sources-heading">Sources and Measure Notes</h2>
+      <p class="term-reminder">Asch values are the percentage of critical-trial judgments that followed the incorrect majority, not the percentage of people who ever conformed. Milgram values are the percentage who reached the 450-volt endpoint in each condition. Darley–Latané values are the percentage who reported the emergency before the staged fit ended.</p>
+      <div class="references">
+        <p>Asch, S. E. (1951). Effects of group pressure upon the modification and distortion of judgments. In H. Guetzkow (Ed.), <em>Groups, leadership and men</em> (pp. 177–190). Carnegie Press.</p>
+        <p>Darley, J. M., &amp; Latané, B. (1968). Bystander intervention in emergencies: Diffusion of responsibility. <em>Journal of Personality and Social Psychology, 8</em>(4), 377–383. <a href="https://doi.org/10.1037/h0025589">https://doi.org/10.1037/h0025589</a></p>
+        <p>Haslam, N., Loughnan, S., &amp; Perry, G. (2014). Meta-Milgram: An empirical synthesis of the obedience experiments. <em>PLoS ONE, 9</em>(4), e93927. <a href="https://doi.org/10.1371/journal.pone.0093927">https://doi.org/10.1371/journal.pone.0093927</a></p>
+        <p>Haslam, S. A., Reicher, S. D., &amp; Birney, M. E. (2014). Nothing by mere authority: Evidence that in an experimental analogue of the Milgram paradigm participants are motivated not by orders but by appeals to science. <em>Journal of Social Issues, 70</em>(3), 473–488. <a href="https://doi.org/10.1111/josi.12072">https://doi.org/10.1111/josi.12072</a></p>
+        <p>Milgram, S. (1963). Behavioral study of obedience. <em>Journal of Abnormal and Social Psychology, 67</em>(4), 371–378. <a href="https://doi.org/10.1037/h0040525">https://doi.org/10.1037/h0040525</a></p>
+        <p>Milgram, S. (1974). <em>Obedience to authority: An experimental view</em>. Harper &amp; Row.</p>
+      </div>
+    </section>
+  </main>
+</div>
+<script src="../../js/nav.js"></script>
+<script src="../../js/labs-change-the-situation.js"></script>
+</body>
+</html>
