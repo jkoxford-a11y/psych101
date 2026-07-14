@@ -264,6 +264,8 @@ The practical lesson is concrete. Reduce ambiguity and assign responsibility dir
 
 > **Stop and Retrieve:** At which steps do pluralistic ignorance and diffusion of responsibility operate? Why are they not simply evidence that bystanders do not care?
 
+**Learning Lab:** [Change the Situation, Change the Probability](../../docs/labs/ch11/change-the-situation.html) asks you to predict how behavior changes when researchers alter unanimity, authority proximity, and the number of apparent bystanders. The activity compares your predictions with published group results; it does not claim to measure what you personally would do.
+
 ### Why Help at All?
 
 Helping has explanations at different levels. Do not force them into competition when they answer different questions.
