@@ -1,6 +1,6 @@
-# Chapter 9 Comparison Draft — Figure and Conjunction Follow-up
+# Chapter 9 Comparison Draft — Figure Follow-up
 
-Apply these edits only to `source/chapters/09-thinking-language-intelligence-2.md`. Do not modify the authoritative `ch09-thinking-language-intelligence.md` or generated HTML yet.
+Apply these edits only to `source/chapters/09-thinking-language-intelligence-2.md`. Do not modify the authoritative `ch09-thinking-language-intelligence.md` until Jon approves promotion. Update generated HTML only after the comparison source is settled.
 
 ## 1. Restore Figure 9.1
 
@@ -11,33 +11,19 @@ Replace the temporary HTML comment after the category-hierarchy paragraph with:
 *Figure 9.1. Category hierarchy from superordinate to basic-level to subordinate categories. The basic level is often the everyday naming default. Original figure.*
 ```
 
-## 2. Replace the Linda/bank-teller material
+## 2. Retain the Linda conjunction-fallacy example
 
-Replace the entire passage beginning `The best-known demonstration is the Linda problem:` and ending with the current Linda walkthrough with:
+Keep the Linda/bank-teller passage and its nested-set figure. The example comes from Tversky and Kahneman's published research paradigm, not from commercial textbook copy. It is appropriate to retain as a clearly labeled classic study with the primary-source citation.
+
+Do not replace Linda with the Jordan campus-library/sustainability-club scenario. Do not wire `ch09_conjunction_fallacy_nested_sets.svg` into the chapter. That SVG may remain in the repository as an unused candidate/reference asset, but it is not part of the approved Chapter 9 figure set.
+
+Retain the existing Figure 9.6 path:
 
 ```markdown
-Try an original campus version:
-
-> **Stop and Decide**
->
-> Jordan carries a reusable water bottle, bikes to class, volunteers at campus cleanups, and regularly argues that the college should reduce its carbon emissions.
->
-> Which is more probable?
->
-> **A.** Jordan works in the campus library.
->
-> **B.** Jordan works in the campus library and belongs to the campus sustainability club.
-
-Option B fits the description better. That feeling of fit is representativeness. But every library worker who belongs to the sustainability club is still a library worker. B describes a smaller subset of A, so it cannot be more probable. Adding a plausible detail can make a story feel better while making it mathematically less likely. This is the **conjunction fallacy** (Tversky & Kahneman, 1983).
-
-![Figure 9.6: A large set labeled All campus library workers contains a smaller nested subset labeled Library workers who also belong to the sustainability club. The diagram shows that every member of Option B is also included in Option A, so the probability of the conjunction cannot exceed the probability of the larger category.](../../images/ch09/ch09_conjunction_fallacy_nested_sets.svg)
-*Figure 9.6. A conjunction describes a subset of a larger category. The extra detail may increase representativeness, but it cannot increase probability beyond the containing set. Original figure.*
-
-> **Classic Finding, New Example**
-> Tversky and Kahneman's conjunction studies showed that people can rank a detailed, representative conjunction above a broader category that necessarily contains it. The campus case above preserves the logical structure without reusing the familiar published scenario. Frequency and diagrammatic formats often reduce the error (Gigerenzer, 1991), showing that reasoning depends partly on how a problem is represented.
+../../images/ch09/fig_linda_conjunction_fallacy.png
 ```
 
-Validation: the comparison draft should contain no `Linda`, `bank teller`, or `fig_linda_conjunction_fallacy` strings.
+Before final promotion, verify that the Linda wording is a concise description of the research task rather than copied commercial-text wording, and retain the Tversky and Kahneman (1983) citation.
 
 ## 3. Do not restore the former Figure 9.9
 
@@ -50,15 +36,18 @@ Because the old Figure 9.9 remains omitted, renumber the IQ standardization figu
 Revise the Chapter 9 summary and rows to state:
 
 - Figure 9.1: corrected hierarchy, `ch09/ch09_category_hierarchy_superordinate_basic_subordinate.svg`, wired in comparison draft only.
-- Figure 9.6: original campus conjunction nested-set diagram, `ch09/ch09_conjunction_fallacy_nested_sets.svg`, wired in comparison draft only.
+- Figure 9.6: Linda conjunction-fallacy nested-set diagram, `ch09/fig_linda_conjunction_fallacy.png`, retained as the classic research example.
+- `ch09/ch09_conjunction_fallacy_nested_sets.svg`: unused candidate/reference; not approved for chapter wiring.
 - Former question-substitution figure: held/not approved; replaced by the bias comparison table.
 - IQ standardization becomes Figure 9.9 in the comparison draft.
-- The authoritative chapter and generated HTML remain unchanged pending approval of the comparison draft.
+- The authoritative source remains unchanged pending approval of the comparison draft.
 
 ## 5. Validation
 
-- Confirm both new SVG paths exist.
-- Confirm non-empty alt text and captions.
+- Confirm the new Figure 9.1 SVG path exists.
+- Confirm Figure 9.1 and all retained figures have non-empty alt text and captions.
+- Confirm the comparison draft retains the Linda passage, the Tversky and Kahneman (1983) citation, and `fig_linda_conjunction_fallacy.png`.
+- Confirm no Jordan campus example or `ch09_conjunction_fallacy_nested_sets.svg` reference is wired into the chapter.
 - Confirm the comparison draft has sequential figure labels 9.1 through 9.9.
-- Confirm the original chapter and generated HTML were not modified.
-- Do not update `GPT_project_log.md` until the comparison draft is approved or promoted.
+- Confirm the authoritative chapter is not modified before promotion is approved.
+- Rebuild or patch generated HTML only after the comparison source is finalized, then rerun structural and content validation.
