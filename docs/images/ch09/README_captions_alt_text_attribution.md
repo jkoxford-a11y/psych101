@@ -14,17 +14,17 @@ This file records the figures added or revised during the Chapter 9 comparison-d
 - **Public-sharing status:** Use now, pending final browser rendering check.
 - **Caveat:** The hierarchy illustrates one common everyday basic level. Basic-level naming can vary with expertise, culture, and task.
 
-## Conjunction fallacy nested sets
+## Campus conjunction-fallacy nested sets — unused candidate
 
-- **Suggested filename:** `ch09_conjunction_fallacy_nested_sets.svg`
-- **Proposed caption number:** Figure 9.6
+- **Filename:** `ch09_conjunction_fallacy_nested_sets.svg`
+- **Former proposed caption number:** Figure 9.6
 - **Caption:** A conjunction describes a subset of a larger category. The extra detail may increase representativeness, but it cannot increase probability beyond the containing set.
 - **Alt text:** A large set labeled All campus library workers contains a smaller nested subset labeled Library workers who also belong to the sustainability club. The diagram shows that every member of Option B is also included in Option A, so the probability of the conjunction cannot exceed the probability of the larger category.
 - **Creation method:** Original programmatic SVG created for Oxford Psychology 101, 2026.
 - **License/source:** Original work; no external copyrighted image assets used.
 - **Attribution:** Original figure generated for Oxford Psychology 101 with ChatGPT-assisted programmatic drawing, 2026.
-- **Public-sharing status:** Use now, pending final browser rendering check.
-- **Caveat:** The campus scenario is an original teaching example. Tversky and Kahneman (1983) remain the research source for the conjunction fallacy.
+- **Public-sharing status:** Candidate/reference; do not wire into Chapter 9.
+- **Decision:** Jon chose to retain the classic Linda/bank-teller research example and its existing nested-set figure. The Linda task comes from Tversky and Kahneman (1983), not from commercial textbook material. This campus version remains available only as an original alternative teaching asset.
 
 ## Figure 9.9 decision
 

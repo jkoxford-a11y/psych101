@@ -1,6 +1,6 @@
-# Chapter 9 Comparison Draft — Figure and Conjunction Follow-up
+# Chapter 9 Comparison Draft — Figure Follow-up
 
-Apply these edits only to `source/chapters/09-thinking-language-intelligence-2.md`. Do not modify the authoritative `ch09-thinking-language-intelligence.md` or generated HTML yet.
+Apply these edits only to `source/chapters/09-thinking-language-intelligence-2.md`. Do not modify the authoritative `ch09-thinking-language-intelligence.md` until Jon approves promotion. Update generated HTML only after the comparison source is settled.
 
 ## 1. Restore Figure 9.1
 
@@ -21,25 +21,7 @@ The Jordan example and its purpose-built figure remain specified below for the r
 <summary>Superseded Jordan replacement (do not apply)</summary>
 
 ```markdown
-Try an original campus version:
-
-> **Stop and Decide**
->
-> Jordan carries a reusable water bottle, bikes to class, volunteers at campus cleanups, and regularly argues that the college should reduce its carbon emissions.
->
-> Which is more probable?
->
-> **A.** Jordan works in the campus library.
->
-> **B.** Jordan works in the campus library and belongs to the campus sustainability club.
-
-Option B fits the description better. That feeling of fit is representativeness. But every library worker who belongs to the sustainability club is still a library worker. B describes a smaller subset of A, so it cannot be more probable. Adding a plausible detail can make a story feel better while making it mathematically less likely. This is the **conjunction fallacy** (Tversky & Kahneman, 1983).
-
-![Figure 9.6: A large set labeled All campus library workers contains a smaller nested subset labeled Library workers who also belong to the sustainability club. The diagram shows that every member of Option B is also included in Option A, so the probability of the conjunction cannot exceed the probability of the larger category.](../../images/ch09/ch09_conjunction_fallacy_nested_sets.svg)
-*Figure 9.6. A conjunction describes a subset of a larger category. The extra detail may increase representativeness, but it cannot increase probability beyond the containing set. Original figure.*
-
-> **Classic Finding, New Example**
-> Tversky and Kahneman's conjunction studies showed that people can rank a detailed, representative conjunction above a broader category that necessarily contains it. The campus case above preserves the logical structure without reusing the familiar published scenario. Frequency and diagrammatic formats often reduce the error (Gigerenzer, 1991), showing that reasoning depends partly on how a problem is represented.
+../../images/ch09/fig_linda_conjunction_fallacy.png
 ```
 
 </details>
@@ -63,7 +45,7 @@ Revise the Chapter 9 summary and rows to state:
 - `ch09_conjunction_fallacy_nested_sets.svg`: original campus-library/sustainability-club nested-set diagram, built for a since-superseded Linda replacement (see §2). Not used in Chapter 9. Record as an available, unused original asset — not a defect, not pending work.
 - Former question-substitution figure: held/not approved; replaced by the bias comparison table.
 - IQ standardization becomes Figure 9.9 in the comparison draft.
-- The authoritative chapter and generated HTML remain unchanged pending approval of the comparison draft.
+- The authoritative source remains unchanged pending approval of the comparison draft.
 
 ## 5. Validation
 
