@@ -40,6 +40,14 @@ The revision was committed directly to `main` in commit `d4f156f73405ac31121257e
 
 A standalone Chapter 10 learning lab is now ready for instructor review at `docs/labs/ch10/zpd-fading-support.html`, with its script at `docs/js/labs-zpd-fading-support.js` and navigation through `docs/labs/ch10/index.html` and the main labs index. It contrasts complete-answer support, graduated hints, and faded-support transfer without scoring or assessing the student. It is not wired into Chapter 10; chapter wiring remains a separate approval step.
 
+### HTML/CSS body-prose formatting spec (new this session)
+
+Jon felt already-built chapters read as visually homogenous — long unbroken paragraph blocks, and callout boxes distinguishable only by a thin border color. Several mockups were built and compared (h3 subheadings, paragraph-length discipline, "chip"/underlined key terms, drop-cap/badge visual rhythm), then the choice was grounded in learning-science literature rather than aesthetic preference: Mayer's segmenting principle (chunked, learner-paced content, d≈0.98) and signaling/cueing principle (descriptive headings expose structure, d≈0.52) support chunking; working-memory chunk limits (~4 items, Cowan 2001) argue against stacking multiple term definitions in one paragraph; the seductive-details-effect meta-analyses argue against decoration that carries no structural signal; Dunlosky et al. (2013) rated highlighting/underlining low-utility as a standalone memory technique, which argues against chip/underline styling for key terms.
+
+**Confirmed pattern:** every numbered content section gets 2–4 descriptively-titled `<h3>` subsections (styled with a left accent rule, no background tint, so they stay visually distinct from tinted `.callout` boxes), plus a per-section `.in-section-nav` block labeled "In this section" (not "on this page" — chapters are single scrolling documents, not paginated) linking only to that section's own subheadings, not a chapter-wide table of contents. Key terms stay plain `<strong>` — no chip or underline styling. No drop caps, numbered badges, or repeated eyebrow labels on figures.
+
+**Implemented:** `pipeline/html-conversion-spec.md` §5a documents the pattern, example markup, and full rationale; `docs/css/style.css` has the new `h3` accent-rule (applies automatically to all already-built chapters — several already use bare `<h3>`) and `.in-section-nav` styles. No chapter content was edited — the `.in-section-nav` markup and any new subsection chunking require per-chapter editing and have not been retrofitted into any built chapter yet.
+
 ## Next actions
 
 1. **Jon: review `source/chapters/ch10-lifespan-development-2.md`.** Decide whether it should replace the current canonical Chapter 10 source.
@@ -53,6 +61,8 @@ A standalone Chapter 10 learning lab is now ready for instructor review at `docs
 4. **Complete the Chapter 9 patch list** in `pipeline/audits/ch09-comparison-figure-followup.md`, then review the comparison draft for promotion and rebuild its HTML.
 5. After Chapter 10 source approval and figure repair, regenerate `docs/chapters/10-lifespan-development.html` from the approved source rather than patching generated HTML.
 6. Run `pipeline/lint_chapters.py`, source/HTML parity checks, figure-path and alt-text validation, and desktop/narrow-mobile visual QA for the eventual final builds.
+7. Browser-check the new `h3` accent-rule CSS against a live chapter that already uses bare `<h3>` (e.g. Chapter 3 or Chapter 10) to confirm it renders as intended before more chapters ship with it silently applied.
+8. When Jon schedules it, retrofit already-built chapters with `.in-section-nav` blocks and, where a numbered section isn't already subsectioned, add descriptive `<h3>` chunking — this is content-authoring work per chapter, not a CSS-only change.
 
 ## Decisions needed from Jon
 
@@ -61,8 +71,9 @@ A standalone Chapter 10 learning lab is now ready for instructor review at `docs
 - Whether Figure 10.3 should be simplified for the textbook with the current dense asset retained for slides.
 - Whether Chapters 9 and 10 should keep open-response review questions with hidden model answers or later receive authored diagnostic multiple-choice items.
 - Whether to promote the completed Chapter 9 comparison draft after its remaining figure wiring and renumbering patches.
+- Timing/method for retrofitting already-built chapters with the new `.in-section-nav` + `<h3>` chunking pattern (batch pass vs. per-chapter as each is next touched).
 
-No further decision is needed on Linda or the former Chapter 9 Figure 9.9.
+No further decision is needed on Linda or the former Chapter 9 Figure 9.9. No further decision is needed on the h3/in-section-nav pattern itself — only on when to retrofit it.
 
 ## Validation and known risks
 
@@ -74,6 +85,7 @@ No further decision is needed on Linda or the former Chapter 9 Figure 9.9.
 - `source/visuals-inventory.md` is known to drift out of sync with actual per-chapter image state; cross-check per-chapter metadata.
 - CRLF/LF line-ending drift can make `git status` report large whitespace-only changes; use `git diff -w` before treating those as content drift.
 - Multiple recent commits went directly to `main` through the GitHub connector rather than Jon's usual GitHub Desktop review step.
+- The new `h3`/`.in-section-nav` CSS was built and eyeballed only in a standalone mockup file (outside the repo, real site CSS values copied in), not yet checked against a live chapter page in a browser — see Next action 7.
 
 ## Important files
 
@@ -88,5 +100,7 @@ No further decision is needed on Linda or the former Chapter 9 Figure 9.9.
 - `docs/chapters/09-thinking-language-intelligence.html` — structurally valid working build from unpatched comparison source.
 - `pipeline/voice-brief.md` — authoritative prose voice.
 - `docs/images/psych101_figure_style_guide.md` — figure standard.
+- `pipeline/html-conversion-spec.md` §5a — new h3-subsection/in-section-nav pattern, markup example, and evidence-based rationale.
+- `docs/css/style.css` — `h3` accent-rule and `.in-section-nav` styles added this session.
 - `AGENTS.md` — permanent routing and operating rules.
 - `PROJECT_BACKLOG.md` — durable deferred work.
