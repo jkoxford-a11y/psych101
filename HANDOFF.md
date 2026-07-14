@@ -1,6 +1,6 @@
 # Psych101 — Current Handoff
 
-**Last updated:** 2026-07-14 (Session 109)
+**Last updated:** 2026-07-14 (Session 110)
 **Canonical repository:** `C:\GitHub\psych101`
 **Current branch or PR:** `main`. Recent Chapter 9 and Chapter 10 comparison-draft work was committed directly to `main` through the GitHub connector.
 
@@ -55,7 +55,7 @@ Jon felt already-built chapters read as visually homogenous — long unbroken pa
 3. **Revise Chapter 10 figures before HTML regeneration:**
    - Figure 10.1: show interacting contributors rather than a settled causal equation or sequence.
    - Figure 10.3: simplify to selective stabilization/developmental tuning; remove optimization and exact-looking windows.
-   - Figure 10.6: retain observable reunion behavior; remove adult-style trait labels and deterministic caregiving histories.
+   - Figure 10.6: approved replacement selected. Uses observable reunion behavior, retains caregiver sensitivity as a probabilistic correlate, and avoids fixed-trait or deterministic caregiving claims. Only final rendered-page review remains.
    - Figure 10.7: identify dual systems as a schematic average model and add peers/context/opportunity.
    - Figure 10.8: label curves as schematic group averages and soften the “opposite directions” title.
 4. **Complete the Chapter 9 patch list** in `pipeline/audits/ch09-comparison-figure-followup.md`, then review the comparison draft for promotion and rebuild its HTML.
@@ -79,7 +79,7 @@ No further decision is needed on Linda or the former Chapter 9 Figure 9.9. No fu
 
 - The Chapter 10 comparison draft has been structurally inspected in source form; HTML has not been regenerated or linted.
 - The Chapter 10 lab passed full browser completion, three refresh/restore checkpoints, reset, console, desktop/mobile, state/privacy, and semantic accessibility checks. The browser driver did not synthesize Enter/Space activation, so keyboard readiness was verified from native controls, focus transitions, and DOM order rather than a complete automated keyboard-only run.
-- Five current Chapter 10 figure assets still encode claims that revised captions alone cannot fully repair. The source contains explicit revision comments so they are not silently carried into a rebuild.
+- Four current Chapter 10 figure assets still encode claims that revised captions alone cannot fully repair. Figure 10.6 has an approved replacement at the canonical path; only its final rendered-page accessibility and readability review remains. The comparison source retains its historical revision comment because chapter files were outside the scope of the image-replacement task.
 - Chapter 10 reference metadata was selectively repaired, but a final live bibliographic verification pass should occur before publication.
 - The current Chapter 9 HTML passed structural checks but was built from unpatched source; treat it as a working build, not final.
 - `source/visuals-inventory.md` is known to drift out of sync with actual per-chapter image state; cross-check per-chapter metadata.

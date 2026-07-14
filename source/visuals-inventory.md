@@ -208,7 +208,7 @@ Final selected set wired into `source/chapters/ch10-lifespan-development.md` on 
 | 10.3 | Synaptic pruning / developmental tuning | GPT PNG | ? wired | `ch10_synaptic_pruning_developmental_tuning.png` — simpler overbuild/stabilize/prune figure selected over regional curve detail. |
 | 10.4 | Piaget's four stages | GPT PNG | ? wired | `ch10_piaget_stages_sequence_with_caveat.png` — includes caveat that stages are a useful map, not a rigid calendar. |
 | 10.5 | Vygotsky ZPD / scaffolding | GPT PNG | ? wired | `ch10_vygotsky_zpd_scaffolding.png` — good candidate for future AI-after-effort lab connection. |
-| 10.6 | Attachment styles — reunion behavior | GPT PNG | ? wired | `ch10_attachment_styles_reunion_behavior.png` — corrected ambivalent range; no clinical-support footnote. |
+| 10.6 | Attachment classifications — observable reunion behavior | GPT PNG + local text revision | ✅ approved replacement / wired | `ch10_attachment_styles_reunion_behavior.png` — observable reunion behavior only; caregiver sensitivity framed as a probabilistic correlate, not a deterministic history. No further conceptual redesign required; final rendered-page accessibility and readability review pending. |
 | 10.7 | Adolescent dual systems crossover | SVG | ? wired | `ch10_adolescent_dual_systems_crossover.svg` — reward/novelty activation precedes fully mature prefrontal control. |
 | 10.8 | Fluid vs. crystallized intelligence across adulthood | SVG | ? wired | `ch10_fluid_crystallized_adulthood.svg` — adult cognitive aging as tradeoff, not simple decline. |
 | — | Fast—slow life-history continuum | GPT PNG | held/skipped | `ch10_fast_slow_life_history_continuum.png` — redundant with the human extended-development figure. |
