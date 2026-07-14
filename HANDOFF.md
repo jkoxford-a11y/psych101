@@ -2,15 +2,15 @@
 
 **Last updated:** 2026-07-14
 **Canonical repository:** `C:\GitHub\psych101`
-**Current branch or PR:** `main`. The audit, comparison draft, two new figure SVGs, figure metadata, and follow-up spec are already committed directly to `main` via the GitHub connector (`7c1848c`, `ebd06a2`, `882f8f4`, `cb08a71`, `6a872f0`). The subsequent HTML rebuild and both project-state files are current, uncommitted working-tree changes awaiting Jon's review — nothing from today has been pushed beyond those five commits.
+**Current branch or PR:** `main`. Chapter 9 audit, comparison-draft, figure, metadata, and decision updates have been committed directly to `main` through the GitHub connector.
 
 This file is current-state only and is overwritten rather than appended. See `GPT_project_log.md` for chronological history and `PROJECT_BACKLOG.md` for durable deferred work.
 
 ## Current state
 
-Chapter 9 is the active editorial task. A pre-review audit (`pipeline/audits/ch09-pre-review-audit.md`) identified several root problems — heuristics collapsed into one mechanism, language-acquisition claims exceeding their evidence, an overly categorical group-differences paragraph, length/load overage, and figure errors. A non-authoritative comparison revision addressing most of this now exists at `source/chapters/09-thinking-language-intelligence-2.md`. **The authoritative chapter and source of truth remains `source/chapters/ch09-thinking-language-intelligence.md`, unchanged.**
+Chapter 9 is the active editorial task. A pre-review audit at `pipeline/audits/ch09-pre-review-audit.md` identified several root problems: heterogeneous heuristics were being pulled toward one mechanism, some language-acquisition and intelligence claims exceeded their evidence, a brief group-differences section carried too much causal weight, the chapter was overloaded, and several figures needed reconsideration.
 
-The comparison draft is not yet finished and should not be promoted as-is:
+A non-authoritative comparison revision addressing most of those issues exists at `source/chapters/09-thinking-language-intelligence-2.md`. The authoritative source remains `source/chapters/ch09-thinking-language-intelligence.md` until Jon explicitly approves promotion.
 
 - **Decision (2026-07-14): keep the Linda/bank-teller passage — do not replace it.** Jon's earlier agreement to swap in a Jordan campus-library/sustainability-club example was reversed once it was noted that Linda is Tversky and Kahneman's own original research example (1983), not publisher/commercial-textbook material — so the copyright-driven replacement rationale that applies elsewhere in this chapter doesn't apply here. The existing `fig_linda_conjunction_fallacy.svg` is already correctly labeled and needs no change.
 - One new original figure is committed and ready but **not wired into the draft**: `docs/images/ch09/ch09_category_hierarchy_superordinate_basic_subordinate.svg` (metadata at `docs/images/ch09/README_captions_alt_text_attribution.md`).
@@ -18,7 +18,7 @@ The comparison draft is not yet finished and should not be promoted as-is:
 - The former bias/question-substitution Figure 9.9 should remain omitted (the existing bias-comparison table is more accurate), but the IQ figure still needs renumbering from 9.10 to 9.9 to close the gap.
 - The exact patch list is specified at `pipeline/audits/ch09-comparison-figure-followup.md` (updated to reflect the Linda reversal).
 
-**Since the audit/draft/figure work above, a separate structural-conversion pass already rebuilt `docs/chapters/09-thinking-language-intelligence.html` directly from the comparison draft — in its current, unpatched state.** The conversion itself is structurally clean: `pipeline/lint_chapters.py` reports 0 HARD failures and 0 WARN items, a full source-parity check passed, all `<h2>` IDs are valid, all links and eight image paths resolve, alt text is populated, only allowed callout variants appear, and no mojibake/unescaped-ampersand/broken-image/iframe issues were found. Copyright-lineage review also found no Chapter 9 `needs-verification` rows; the two `book-adoption`-flagged concepts (TLI-004 representativeness heuristic, TLI-012 Gardner's multiple intelligences) use original, source-supported prose with no apparent commercial-text copying.
+### Confirmed editorial and figure decisions
 
 But because the conversion ran on unpatched input, **it faithfully carried the draft's unfinished content into the built HTML**: the live build correctly keeps the Linda/bank-teller passage and its figure (that's now confirmed correct, not a defect), but it still references the old placeholder for the hierarchy figure (`fig_prototype_compression_dogs.png`) instead of the new category-hierarchy SVG, and still captions the IQ figure as Figure 9.10. Structural validity is not the same as content readiness — **this build should not be committed or published as final.**
 
@@ -35,9 +35,10 @@ But because the conversion ran on unpatched input, **it faithfully carried the d
 
 ## Decisions needed from Jon
 
-- Whether to promote the comparison draft (after patching) to the authoritative chapter source, or keep iterating on it separately.
-- Open-response vs. authored multiple-choice for Chapter 9's ten review questions.
-- No decision needed on Figure 9.9 — confirmed omitted in favor of the bias-comparison table.
+- Whether to promote the completed comparison draft to the authoritative Chapter 9 source.
+- Whether Chapter 9's review questions should remain open response or become authored multiple choice.
+
+No further decision is needed on Linda or the former Figure 9.9.
 
 ## Validation and known risks
 
