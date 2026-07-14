@@ -2,59 +2,60 @@
 
 **Last updated:** 2026-07-14
 **Canonical repository:** `C:\GitHub\psych101`
-**Current branch or PR:** `main`. The audit, comparison draft, two new figure SVGs, figure metadata, and follow-up spec are already committed directly to `main` via the GitHub connector (`7c1848c`, `ebd06a2`, `882f8f4`, `cb08a71`, `6a872f0`). The subsequent HTML rebuild and both project-state files are current, uncommitted working-tree changes awaiting Jon's review — nothing from today has been pushed beyond those five commits.
+**Current branch or PR:** `main`. Chapter 9 audit, comparison-draft, figure, metadata, and decision updates have been committed directly to `main` through the GitHub connector.
 
 This file is current-state only and is overwritten rather than appended. See `GPT_project_log.md` for chronological history and `PROJECT_BACKLOG.md` for durable deferred work.
 
 ## Current state
 
-Chapter 9 is the active editorial task. A pre-review audit (`pipeline/audits/ch09-pre-review-audit.md`) identified several root problems — heuristics collapsed into one mechanism, language-acquisition claims exceeding their evidence, an overly categorical group-differences paragraph, length/load overage, and figure errors. A non-authoritative comparison revision addressing most of this now exists at `source/chapters/09-thinking-language-intelligence-2.md`. **The authoritative chapter and source of truth remains `source/chapters/ch09-thinking-language-intelligence.md`, unchanged.**
+Chapter 9 is the active editorial task. A pre-review audit at `pipeline/audits/ch09-pre-review-audit.md` identified several root problems: heterogeneous heuristics were being pulled toward one mechanism, some language-acquisition and intelligence claims exceeded their evidence, a brief group-differences section carried too much causal weight, the chapter was overloaded, and several figures needed reconsideration.
 
-The comparison draft is not yet finished and should not be promoted as-is:
+A non-authoritative comparison revision addressing most of those issues exists at `source/chapters/09-thinking-language-intelligence-2.md`. The authoritative source remains `source/chapters/ch09-thinking-language-intelligence.md` until Jon explicitly approves promotion.
 
-- It still contains the original Linda/bank-teller conjunction-fallacy passage. Jon agreed this should be replaced — it derives from publisher/classic-source material — with an original example (Jordan, a campus-library worker who belongs to the sustainability club), but that replacement hasn't been written into the draft yet.
-- Two new original figures are committed and ready but **not wired into the draft**: `docs/images/ch09/ch09_category_hierarchy_superordinate_basic_subordinate.svg` and `docs/images/ch09/ch09_conjunction_fallacy_nested_sets.svg`, with metadata at `docs/images/ch09/README_captions_alt_text_attribution.md`.
-- The former bias/question-substitution Figure 9.9 should remain omitted (the existing bias-comparison table is more accurate), but the IQ figure still needs renumbering from 9.10 to 9.9 to close the gap.
-- The exact patch list is specified at `pipeline/audits/ch09-comparison-figure-followup.md`.
+The current Chapter 9 HTML at `docs/chapters/09-thinking-language-intelligence.html` was built from the comparison draft and is live. It is structurally valid but not yet the final approved build.
 
-**Since the audit/draft/figure work above, a separate structural-conversion pass already rebuilt `docs/chapters/09-thinking-language-intelligence.html` directly from the comparison draft — in its current, unpatched state.** The conversion itself is structurally clean: `pipeline/lint_chapters.py` reports 0 HARD failures and 0 WARN items, a full source-parity check passed, all `<h2>` IDs are valid, all links and eight image paths resolve, alt text is populated, only allowed callout variants appear, and no mojibake/unescaped-ampersand/broken-image/iframe issues were found. Copyright-lineage review also found no Chapter 9 `needs-verification` rows; the two `book-adoption`-flagged concepts (TLI-004 representativeness heuristic, TLI-012 Gardner's multiple intelligences) use original, source-supported prose with no apparent commercial-text copying.
+### Confirmed editorial and figure decisions
 
-But because the conversion ran on unpatched input, **it faithfully carried the draft's unfinished content into the built HTML**: the live build still shows the Linda/bank-teller passage, still references the old figure files (`fig_linda_conjunction_fallacy.png`, `fig_prototype_compression_dogs.png`) instead of the two new SVGs above, and still captions the IQ figure as Figure 9.10. Structural validity is not the same as content readiness — **this build should not be committed or published as final.**
+- **Keep the Linda/bank-teller conjunction-fallacy example.** It comes from Tversky and Kahneman's 1983 research paradigm, not from commercial textbook material. Retain it as a clearly labeled classic study with the primary-source citation.
+- Retain the existing Linda nested-set figure, `docs/images/ch09/fig_linda_conjunction_fallacy.png`, as Figure 9.6.
+- Do not wire the Jordan campus-library/sustainability-club alternative. `docs/images/ch09/ch09_conjunction_fallacy_nested_sets.svg` remains an unused candidate/reference asset only.
+- Wire the corrected category hierarchy, `docs/images/ch09/ch09_category_hierarchy_superordinate_basic_subordinate.svg`, as Figure 9.1. The current HTML still has a Figure 9.1 placeholder.
+- Keep the former bias/question-substitution Figure 9.9 omitted. The comparison table is more accurate because the biases need not share one mechanism.
+- Renumber the IQ standardization figure from Figure 9.10 to Figure 9.9 after the omission.
+
+The revised implementation instructions are at `pipeline/audits/ch09-comparison-figure-followup.md`. Figure metadata and sharing status are at `docs/images/ch09/README_captions_alt_text_attribution.md`.
 
 ## Next actions
 
-1. **Apply the patches in `pipeline/audits/ch09-comparison-figure-followup.md`** to `source/chapters/09-thinking-language-intelligence-2.md`: replace the Linda passage with the Jordan example, wire both new SVGs, keep Figure 9.9 absent, renumber the IQ figure to Figure 9.9.
-2. **Update `source/visuals-inventory.md`'s Chapter 9 rows** to match the patched draft.
-3. **Read the patched comparison draft end to end** and decide whether to promote it to the authoritative `ch09-thinking-language-intelligence.md`.
-4. **Only after that decision, reconvert `docs/chapters/09-thinking-language-intelligence.html`** so the live build reflects the patched content — the current build needs a second pass; do not treat it as final.
-5. **Decide on the ten review questions:** the supplied draft uses open-response prompts, not authored a–d choices. The current HTML preserves them exactly with `<details>/<summary>` rationales rather than fabricating `<ol class="options" type="a">` content — decide whether a later editorial pass should author MCQs instead.
-6. **Revise Figure 9.1's asset** so its hierarchy matches the novice-level `Animal → bird/dog → robin/golden retriever` structure described in the prose (the current bird-only image doesn't match), then wire it separately from the two figures above.
-7. **Browser-check Chapters 6, 7, and the eventual final Chapter 9 build** — still outstanding from earlier sessions.
-8. Low priority: `pipeline/html-conversion-spec.md` §2 still documents an obsolete static sidebar block; current chapters (including this Ch9 build) use the dynamic `docs/js/sidebar.js` loader instead — the spec doc needs updating to match.
+1. Apply the revised follow-up to `source/chapters/09-thinking-language-intelligence-2.md`: wire the corrected Figure 9.1, retain Linda and the existing Figure 9.6, keep the former bias figure absent, and renumber the IQ figure to 9.9.
+2. Update the Chapter 9 section of `source/visuals-inventory.md`, including the Jordan SVG's candidate/reference status.
+3. Read the completed comparison draft end to end for argument, cognitive load, voice, citation alignment, figure sequence, and stale references.
+4. Decide whether to promote the comparison draft to `source/chapters/ch09-thinking-language-intelligence.md`.
+5. After promotion or final source approval, rebuild or patch `docs/chapters/09-thinking-language-intelligence.html` and rerun structural and content validation.
+6. Decide whether the ten review questions should remain open-response prompts or be rewritten as authored multiple-choice questions.
+7. Browser-check Chapters 6, 7, and the eventual final Chapter 9 build.
 
 ## Decisions needed from Jon
 
-- Whether to promote the comparison draft (after patching) to the authoritative chapter source, or keep iterating on it separately.
-- Open-response vs. authored multiple-choice for Chapter 9's ten review questions.
-- No decision needed on Figure 9.9 — confirmed omitted in favor of the bias-comparison table.
+- Whether to promote the completed comparison draft to the authoritative Chapter 9 source.
+- Whether Chapter 9's review questions should remain open response or become authored multiple choice.
+
+No further decision is needed on Linda or the former Figure 9.9.
 
 ## Validation and known risks
 
-- **The current `docs/chapters/09-thinking-language-intelligence.html` build passed all structural/lint checks but was built from unpatched source** (Linda example, old figure files, IQ figure still labeled 9.10) — treat it as a working draft build, not commit-ready, until reconverted after the patches above.
-- **Sandbox-mount staleness bug** (Claude/Cowork only): bash reads, `git status`/`git diff`, and bash-run scripts can show stale, truncated, or (as observed this session) transiently inaccessible content for files recently changed via Edit/Write or externally. `git show HEAD:<path>` and the Read tool are ground truth, though this session briefly saw the reverse (a working-tree read glitch coinciding with two now-superseded test commits, `7ea449c`/`2d26802`, "Test/Remove connector local file handling") — resolved on its own with no data loss, confirmed via `git show HEAD:<path>`.
-- `source/visuals-inventory.md` is known to drift out of sync with actual per-chapter image state — cross-check per-chapter `docs/images/chXX/README*.md` files before trusting it. Chapter 9's rows specifically need updating per item 2 above.
-- CRLF/LF line-ending drift on this repo can make `git status` report large numbers of "modified" files that are actually whitespace-only — use `git diff -w` before treating that as real content drift.
-- Claude has no push or `gh`-API credentials in this sandbox — commits and pushes need to go through Jon's usual workflow.
-- Five of today's Chapter 9 commits went directly to `main` via the GitHub connector rather than Jon's usual GitHub Desktop review step — worth confirming that's the intended commit path going forward.
+- The live Chapter 9 HTML currently retains Linda, which is now the approved content decision. Its remaining known content defects are the Figure 9.1 placeholder and the IQ figure still labeled 9.10.
+- The generated HTML must be validated for content, not only tag structure: image paths, non-empty alt text, captions, sequential figure numbering, review/details structure, key terms, references, Further Reading separation, navigation, and mojibake.
+- `source/visuals-inventory.md` is known to drift out of sync with chapter-specific metadata; use the Chapter 9 README as the figure-status authority until inventory reconciliation is complete.
+- Claude/Cowork sessions must account for the sandbox-mount staleness and CRLF/LF issues documented in `pipeline/claude-work-environment.md`.
 
 ## Important files
 
-- `pipeline/audits/ch09-pre-review-audit.md` — full Chapter 9 audit (executive judgment, confirmed defects, figure/lab decisions, author decisions needed).
-- `source/chapters/09-thinking-language-intelligence-2.md` — non-authoritative comparison draft; still needs the Linda/figure patches above.
-- `pipeline/audits/ch09-comparison-figure-followup.md` — exact patch spec for the comparison draft.
-- `docs/images/ch09/ch09_category_hierarchy_superordinate_basic_subordinate.svg`, `docs/images/ch09/ch09_conjunction_fallacy_nested_sets.svg`, `docs/images/ch09/README_captions_alt_text_attribution.md` — new figures and metadata; committed, not yet wired.
-- `docs/chapters/09-thinking-language-intelligence.html` — freshly rebuilt from the unpatched comparison draft; structurally valid but content-incomplete; needs a second rebuild after patching.
-- `source/chapters/ch09-thinking-language-intelligence.md` — authoritative chapter; unchanged.
-- `AGENTS.md` — permanent routing and operating rules.
-- `PROJECT_BACKLOG.md` — durable deferred work.
-- `pipeline/claude-work-environment.md` — Claude/Cowork sandbox cautions.
+- `pipeline/audits/ch09-pre-review-audit.md` — full Chapter 9 audit.
+- `source/chapters/09-thinking-language-intelligence-2.md` — non-authoritative comparison draft.
+- `pipeline/audits/ch09-comparison-figure-followup.md` — revised implementation instructions; Linda retained.
+- `docs/images/ch09/ch09_category_hierarchy_superordinate_basic_subordinate.svg` — approved replacement for Figure 9.1.
+- `docs/images/ch09/ch09_conjunction_fallacy_nested_sets.svg` — unused candidate/reference only.
+- `docs/images/ch09/README_captions_alt_text_attribution.md` — Chapter 9 figure metadata and decisions.
+- `docs/chapters/09-thinking-language-intelligence.html` — current comparison-draft build; structurally valid but not final.
+- `source/chapters/ch09-thinking-language-intelligence.md` — authoritative chapter; unchanged pending promotion.
