@@ -1,6 +1,6 @@
 # Psych101 — Current Handoff
 
-**Last updated:** 2026-07-14 (Session 108)
+**Last updated:** 2026-07-14 (Session 109)
 **Canonical repository:** `C:\GitHub\psych101`
 **Current branch or PR:** `main`. Recent Chapter 9 and Chapter 10 comparison-draft work was committed directly to `main` through the GitHub connector.
 
@@ -38,23 +38,26 @@ The comparison draft:
 
 The revision was committed directly to `main` in commit `d4f156f73405ac31121257ed61b0b8f35a8ec57f`.
 
+A standalone Chapter 10 learning lab is now ready for instructor review at `docs/labs/ch10/zpd-fading-support.html`, with its script at `docs/js/labs-zpd-fading-support.js` and navigation through `docs/labs/ch10/index.html` and the main labs index. It contrasts complete-answer support, graduated hints, and faded-support transfer without scoring or assessing the student. It is not wired into Chapter 10; chapter wiring remains a separate approval step.
+
 ## Next actions
 
 1. **Jon: review `source/chapters/ch10-lifespan-development-2.md`.** Decide whether it should replace the current canonical Chapter 10 source.
-2. **Revise Chapter 10 figures before HTML regeneration:**
+2. **Jon: review the Chapter 10 ZPD/scaffolding lab.** Decide whether to approve it and, separately, whether to wire it into the eventual Chapter 10 build.
+3. **Revise Chapter 10 figures before HTML regeneration:**
    - Figure 10.1: show interacting contributors rather than a settled causal equation or sequence.
    - Figure 10.3: simplify to selective stabilization/developmental tuning; remove optimization and exact-looking windows.
    - Figure 10.6: retain observable reunion behavior; remove adult-style trait labels and deterministic caregiving histories.
    - Figure 10.7: identify dual systems as a schematic average model and add peers/context/opportunity.
    - Figure 10.8: label curves as schematic group averages and soften the “opposite directions” title.
-3. **Complete the Chapter 9 patch list** in `pipeline/audits/ch09-comparison-figure-followup.md`, then review the comparison draft for promotion and rebuild its HTML.
-4. After Chapter 10 source approval and figure repair, regenerate `docs/chapters/10-lifespan-development.html` from the approved source rather than patching generated HTML.
-5. Run `pipeline/lint_chapters.py`, source/HTML parity checks, figure-path and alt-text validation, and desktop/narrow-mobile visual QA for the eventual final builds.
-6. Append a concise Session 108 entry to `GPT_project_log.md` when the Chapter 10 source/figure decision is finalized.
+4. **Complete the Chapter 9 patch list** in `pipeline/audits/ch09-comparison-figure-followup.md`, then review the comparison draft for promotion and rebuild its HTML.
+5. After Chapter 10 source approval and figure repair, regenerate `docs/chapters/10-lifespan-development.html` from the approved source rather than patching generated HTML.
+6. Run `pipeline/lint_chapters.py`, source/HTML parity checks, figure-path and alt-text validation, and desktop/narrow-mobile visual QA for the eventual final builds.
 
 ## Decisions needed from Jon
 
 - Whether to promote the Chapter 10 comparison draft to the authoritative source, request targeted changes, or retain the current source.
+- Whether to approve the Chapter 10 ZPD/scaffolding lab and later wire it into the approved Chapter 10 build.
 - Whether Figure 10.3 should be simplified for the textbook with the current dense asset retained for slides.
 - Whether Chapters 9 and 10 should keep open-response review questions with hidden model answers or later receive authored diagnostic multiple-choice items.
 - Whether to promote the completed Chapter 9 comparison draft after its remaining figure wiring and renumbering patches.
@@ -64,6 +67,7 @@ No further decision is needed on Linda or the former Chapter 9 Figure 9.9.
 ## Validation and known risks
 
 - The Chapter 10 comparison draft has been structurally inspected in source form; HTML has not been regenerated or linted.
+- The Chapter 10 lab passed full browser completion, three refresh/restore checkpoints, reset, console, desktop/mobile, state/privacy, and semantic accessibility checks. The browser driver did not synthesize Enter/Space activation, so keyboard readiness was verified from native controls, focus transitions, and DOM order rather than a complete automated keyboard-only run.
 - Five current Chapter 10 figure assets still encode claims that revised captions alone cannot fully repair. The source contains explicit revision comments so they are not silently carried into a rebuild.
 - Chapter 10 reference metadata was selectively repaired, but a final live bibliographic verification pass should occur before publication.
 - The current Chapter 9 HTML passed structural checks but was built from unpatched source; treat it as a working build, not final.
@@ -78,6 +82,7 @@ No further decision is needed on Linda or the former Chapter 9 Figure 9.9.
 - `pipeline/audits/ch10-pre-review-audit.md` — Chapter 10 Work audit.
 - `docs/chapters/10-lifespan-development.html` — current generated Chapter 10; unchanged.
 - `docs/images/ch10/` — active Chapter 10 figures and metadata.
+- `docs/labs/ch10/zpd-fading-support.html` and `docs/js/labs-zpd-fading-support.js` — standalone ZPD/scaffolding lab; not chapter-wired.
 - `source/chapters/09-thinking-language-intelligence-2.md` — non-authoritative Chapter 9 comparison draft.
 - `pipeline/audits/ch09-comparison-figure-followup.md` — remaining Chapter 9 patch specification.
 - `docs/chapters/09-thinking-language-intelligence.html` — structurally valid working build from unpatched comparison source.

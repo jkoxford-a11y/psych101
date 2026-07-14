@@ -48,6 +48,10 @@
   margin-top: 0.25rem;
 }
 
+.lab-panel h2[tabindex="-1"] {
+  scroll-margin-top: 4rem;
+}
+
 .lab-progress {
   display: flex;
   justify-content: space-between;
