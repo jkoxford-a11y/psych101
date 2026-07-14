@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Scaffold or Substitute? - General Psychology</title>
+  <link rel="stylesheet" href="../../css/style.css" />
+  <link rel="stylesheet" href="../../css/labs.css" />
+</head>
+<body>
+<div class="layout">
+  <aside class="sidebar" id="app-sidebar"></aside>
+  <script src="../../js/sidebar.js" data-dir="labs/ch10" data-active="" data-top="full"></script>
+
+  <main class="main lab-main">
+    <p class="chapter-meta">Learning Lab - Chapter 10</p>
+    <h1>Scaffold or Substitute? Testing What Remains After Help Fades</h1>
+    <hr class="chapter-divider" />
+
+    <p>A polished answer can hide an important difference. Did the help change only the answer in front of you, or did it leave you more capable when the help disappeared? This lab makes that distinction visible across four short reasoning problems.</p>
+    <p>Allow about 10-15 minutes. This is a conceptual demonstration and learning activity, not an assessment of your intelligence, learning capacity, or preferred way of learning.</p>
+
+    <div class="callout callout--note">
+      <div class="callout-title">Accessibility and Privacy</div>
+      <p>This lab runs entirely in your browser. It stores only your prediction, phase progress, responses, hint use, and completion state in <code>sessionStorage</code> for this browser session. It stores no names, emails, IDs, analytics, or tracking data, and nothing is sent to a server.</p>
+      <button class="lab-btn lab-btn--secondary" type="button" id="reset-lab">Reset this lab</button>
+      <p class="save-status" id="reset-status" aria-live="polite"></p>
+    </div>
+
+    <section class="lab-panel" id="prediction-panel" aria-labelledby="prediction-heading">
+      <p class="lab-kicker">Phase 1 of 6</p>
+      <h2 id="prediction-heading" tabindex="-1">Predict and Commit</h2>
+      <p>Two students are stuck on a reasoning problem. Student A receives the complete answer and explanation. Student B receives a sequence of hints and must complete each step.</p>
+      <label class="text-label" for="prediction-response">Which student will probably perform better immediately? Which student will be more likely to solve a related problem independently later? Explain your prediction.</label>
+      <textarea id="prediction-response" rows="5" required aria-describedby="prediction-instructions"></textarea>
+      <p class="term-reminder" id="prediction-instructions">Write at least one sentence. You will not be able to edit your prediction after committing it.</p>
+      <button class="lab-btn" type="button" id="commit-prediction">Commit prediction</button>
+      <p class="save-status" id="prediction-status" aria-live="polite"></p>
+    </section>
+
+    <section class="lab-panel phase-panel" id="baseline-panel" hidden aria-labelledby="baseline-heading">
+      <p class="lab-kicker">Phase 2A - Baseline rule discovery</p>
+      <h2 id="baseline-heading" tabindex="-1">Try a Rule Without Help</h2>
+      <p>Botanists are tracking whether fictional <em>luma plants</em> produce a silver seedpod. Study the cases, then infer the rule.</p>
+      <div class="table-wrap">
+        <table>
+          <caption>Luma plant observations</caption>
+          <thead><tr><th scope="col">Case</th><th scope="col">Striped leaf</th><th scope="col">Hollow stem</th><th scope="col">Silver seedpod</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">1</th><td>Yes</td><td>No</td><td>Yes</td></tr>
+            <tr><th scope="row">2</th><td>No</td><td>Yes</td><td>Yes</td></tr>
+            <tr><th scope="row">3</th><td>Yes</td><td>Yes</td><td>No</td></tr>
+            <tr><th scope="row">4</th><td>No</td><td>No</td><td>No</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <label class="text-label" for="baseline-rule">State the rule in your own words.</label>
+      <textarea id="baseline-rule" rows="3"></textarea>
+      <fieldset class="lab-fieldset">
+        <legend>A new plant has a striped leaf and no hollow stem. Will it produce a silver seedpod?</legend>
+        <label class="option-row"><input type="radio" name="baseline-classification" value="yes" /> <span>Yes</span></label>
+        <label class="option-row"><input type="radio" name="baseline-classification" value="no" /> <span>No</span></label>
+      </fieldset>
+      <button class="lab-btn" type="button" id="commit-baseline">Commit baseline attempt</button>
+      <p class="save-status" id="baseline-status" aria-live="polite"></p>
+      <div class="feedback-panel" id="baseline-feedback" hidden tabindex="-1" aria-live="polite">
+        <h3>Baseline recorded</h3>
+        <p id="baseline-feedback-text"></p>
+      </div>
+    </section>
+
+    <section class="lab-panel phase-panel" id="complete-answer-panel" hidden aria-labelledby="complete-answer-heading">
+      <p class="lab-kicker">Phase 2B - Complete-answer support</p>
+      <h2 id="complete-answer-heading" tabindex="-1">Try, Then Receive the Completed Answer</h2>
+      <p>Engineers are tracking whether fictional <em>nori machines</em> emit a blue signal.</p>
+      <div class="table-wrap">
+        <table>
+          <caption>Nori machine observations</caption>
+          <thead><tr><th scope="col">Case</th><th scope="col">Ceramic gear</th><th scope="col">Pulse switch</th><th scope="col">Blue signal</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">1</th><td>Yes</td><td>No</td><td>Yes</td></tr>
+            <tr><th scope="row">2</th><td>No</td><td>Yes</td><td>Yes</td></tr>
+            <tr><th scope="row">3</th><td>Yes</td><td>Yes</td><td>No</td></tr>
+            <tr><th scope="row">4</th><td>No</td><td>No</td><td>No</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <label class="text-label" for="complete-answer-rule">Make an initial attempt at the rule.</label>
+      <textarea id="complete-answer-rule" rows="3"></textarea>
+      <fieldset class="lab-fieldset">
+        <legend>A new machine has both a ceramic gear and a pulse switch. Will it emit a blue signal?</legend>
+        <label class="option-row"><input type="radio" name="complete-answer-classification" value="yes" /> <span>Yes</span></label>
+        <label class="option-row"><input type="radio" name="complete-answer-classification" value="no" /> <span>No</span></label>
+      </fieldset>
+      <button class="lab-btn" type="button" id="commit-complete-answer">Commit attempt and receive complete-answer support</button>
+      <p class="save-status" id="complete-answer-status" aria-live="polite"></p>
+
+      <div class="callout callout--note" id="complete-answer-reveal" hidden tabindex="-1">
+        <div class="callout-title">Complete rule and worked answer</div>
+        <p>The machine emits a blue signal when <strong>exactly one</strong> of the two features is present—not when both are present and not when neither is present.</p>
+        <p>The new machine has both features. Both is not exactly one, so the worked classification is <strong>No</strong>.</p>
+      </div>
+      <div id="complete-answer-reflection-wrap" hidden>
+        <label class="text-label" for="complete-answer-reflection">What work did the completed answer do for you, and what work did you still have to do yourself?</label>
+        <textarea id="complete-answer-reflection" rows="4"></textarea>
+        <button class="lab-btn" type="button" id="save-complete-answer-reflection">Save reflection and continue</button>
+        <p class="save-status" id="complete-answer-reflection-status" aria-live="polite"></p>
+      </div>
+    </section>
+
+    <section class="lab-panel phase-panel" id="scaffold-panel" hidden aria-labelledby="scaffold-heading">
+      <p class="lab-kicker">Phase 2C - Graduated scaffolding</p>
+      <h2 id="scaffold-heading" tabindex="-1">Request Only the Help You Need</h2>
+      <p>Marine biologists are tracking whether fictional <em>tavi organisms</em> release a glow.</p>
+      <div class="table-wrap">
+        <table>
+          <caption>Tavi organism observations</caption>
+          <thead><tr><th scope="col">Case</th><th scope="col">Ringed shell</th><th scope="col">Forked fin</th><th scope="col">Glow released</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">1</th><td>Yes</td><td>No</td><td>Yes</td></tr>
+            <tr><th scope="row">2</th><td>No</td><td>Yes</td><td>Yes</td></tr>
+            <tr><th scope="row">3</th><td>Yes</td><td>Yes</td><td>No</td></tr>
+            <tr><th scope="row">4</th><td>No</td><td>No</td><td>No</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="lab-actions">
+        <button class="lab-btn lab-btn--secondary" type="button" id="request-hint">Request hint 1</button>
+      </div>
+      <ol id="hint-list" aria-live="polite"></ol>
+
+      <label class="text-label" for="scaffold-rule">State the rule. You may answer after any hint.</label>
+      <textarea id="scaffold-rule" rows="3"></textarea>
+      <fieldset class="lab-fieldset">
+        <legend>A new organism has both a ringed shell and a forked fin. Will it release a glow?</legend>
+        <label class="option-row"><input type="radio" name="scaffold-classification" value="yes" /> <span>Yes</span></label>
+        <label class="option-row"><input type="radio" name="scaffold-classification" value="no" /> <span>No</span></label>
+      </fieldset>
+      <button class="lab-btn" type="button" id="check-scaffold-answer">Check answer</button>
+      <p class="save-status" id="scaffold-status" aria-live="polite"></p>
+      <div class="feedback-panel" id="scaffold-feedback" hidden tabindex="-1" aria-live="polite">
+        <h3 id="scaffold-feedback-heading"></h3>
+        <p id="scaffold-feedback-text"></p>
+      </div>
+
+      <h3>Hint Event Log</h3>
+      <div class="event-log" aria-live="polite">
+        <ol id="hint-event-list"></ol>
+      </div>
+    </section>
+
+    <section class="lab-panel phase-panel" id="transfer-panel" hidden aria-labelledby="transfer-heading">
+      <p class="lab-kicker">Phase 2D - Faded-support transfer</p>
+      <h2 id="transfer-heading" tabindex="-1">Try a New Context Without Hints</h2>
+      <p>A museum uses two security markers to determine whether an artifact enters manual review.</p>
+      <div class="table-wrap">
+        <table>
+          <caption>Museum screening records</caption>
+          <thead><tr><th scope="col">Case</th><th scope="col">Reflective seal</th><th scope="col">Numeric lock</th><th scope="col">Manual review</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">1</th><td>Yes</td><td>No</td><td>Yes</td></tr>
+            <tr><th scope="row">2</th><td>No</td><td>Yes</td><td>Yes</td></tr>
+            <tr><th scope="row">3</th><td>Yes</td><td>Yes</td><td>No</td></tr>
+            <tr><th scope="row">4</th><td>No</td><td>No</td><td>No</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <label class="text-label" for="transfer-rule">State the museum's rule.</label>
+      <textarea id="transfer-rule" rows="3"></textarea>
+      <fieldset class="lab-fieldset">
+        <legend>New case A: reflective seal = Yes; numeric lock = No. Manual review?</legend>
+        <label class="option-row"><input type="radio" name="transfer-a" value="yes" /> <span>Yes</span></label>
+        <label class="option-row"><input type="radio" name="transfer-a" value="no" /> <span>No</span></label>
+      </fieldset>
+      <fieldset class="lab-fieldset">
+        <legend>New case B: reflective seal = Yes; numeric lock = Yes. Manual review?</legend>
+        <label class="option-row"><input type="radio" name="transfer-b" value="yes" /> <span>Yes</span></label>
+        <label class="option-row"><input type="radio" name="transfer-b" value="no" /> <span>No</span></label>
+      </fieldset>
+      <label class="text-label" for="transfer-reasoning">Explain how the rule produced both classifications.</label>
+      <textarea id="transfer-reasoning" rows="4"></textarea>
+      <button class="lab-btn" type="button" id="commit-transfer">Commit initial transfer attempt</button>
+      <p class="save-status" id="transfer-status" aria-live="polite"></p>
+
+      <div id="post-transfer-actions" hidden>
+        <p><strong>Your initial attempt is now preserved.</strong> You may continue without help or reveal one optional hint.</p>
+        <div class="lab-actions">
+          <button class="lab-btn lab-btn--secondary" type="button" id="show-transfer-hint">Show optional transfer hint</button>
+          <button class="lab-btn" type="button" id="continue-concept">Continue to the concept explanation</button>
+        </div>
+        <div class="callout callout--note" id="transfer-hint" hidden tabindex="-1" aria-live="polite">
+          <div class="callout-title">Optional hint</div>
+          <p>Count how many of the two markers are present in each new case. Compare that count with the records that enter manual review.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="lab-panel phase-panel" id="concept-panel" hidden aria-labelledby="concept-heading">
+      <p class="lab-kicker">Phase 3 of 6</p>
+      <h2 id="concept-heading" tabindex="-1">What the Sequence Demonstrates</h2>
+      <div class="callout callout--note">
+        <div class="callout-title">A completed product is not the same as a changed learner.</div>
+        <p>The <strong>zone of proximal development</strong> is the range in which a task is beyond what a learner can currently do alone but achievable with effective guidance. <strong>Scaffolding</strong> provides temporary, calibrated support within that range. Good scaffolding fades. The strongest evidence of learning is not the quality of the assisted answer but what the learner can reconstruct and apply after the support is removed.</p>
+      </div>
+      <div class="callout callout--do-not-confuse">
+        <div class="callout-title">Evidence boundary: this is not a psychological assessment</div>
+        <p>This brief activity does not measure your intelligence or prove that one form of help always works better. You completed different tasks in a fixed sequence, not a controlled experiment. The activity demonstrates the logic of scaffolding and transfer.</p>
+      </div>
+      <button class="lab-btn" type="button" id="continue-explanation">Continue to your explanation</button>
+    </section>
+
+    <section class="lab-panel phase-panel" id="explanation-panel" hidden aria-labelledby="explanation-heading">
+      <p class="lab-kicker">Phase 4 of 6</p>
+      <h2 id="explanation-heading" tabindex="-1">Explain the Distinction</h2>
+      <label class="text-label" for="explanation-response">Compare complete-answer support with graduated hints. What evidence would distinguish assistance from learning? Use the terms <strong>zone of proximal development</strong>, <strong>scaffolding</strong>, <strong>assisted performance</strong>, and <strong>independent transfer</strong>.</label>
+      <textarea id="explanation-response" rows="6"></textarea>
+      <button class="lab-btn" type="button" id="save-explanation">Save explanation and continue</button>
+      <p class="save-status" id="explanation-status" aria-live="polite"></p>
+    </section>
+
+    <section class="lab-panel phase-panel" id="ai-panel" hidden aria-labelledby="ai-heading">
+      <p class="lab-kicker">Phase 5 of 6</p>
+      <h2 id="ai-heading" tabindex="-1">Transfer the Idea to AI</h2>
+      <div class="callout callout--ai-connection">
+        <div class="callout-title">Scenario</div>
+        <p>A student asks an AI, “Write my comparison of Piaget and Vygotsky.” The AI produces an excellent paragraph.</p>
+      </div>
+      <p>Redesign the interaction so the AI functions as a scaffold rather than a substitute. Complete every part.</p>
+      <label class="text-label" for="ai-attempt">1. What does the student attempt before using AI?</label>
+      <textarea id="ai-attempt" rows="3"></textarea>
+      <label class="text-label" for="ai-hint">2. What kind of hint does the AI provide?</label>
+      <textarea id="ai-hint" rows="3"></textarea>
+      <label class="text-label" for="ai-withhold">3. What does the AI withhold?</label>
+      <textarea id="ai-withhold" rows="3"></textarea>
+      <label class="text-label" for="ai-fade">4. How does support fade?</label>
+      <textarea id="ai-fade" rows="3"></textarea>
+      <label class="text-label" for="ai-transfer">5. What new task tests independent transfer?</label>
+      <textarea id="ai-transfer" rows="3"></textarea>
+      <button class="lab-btn" type="button" id="submit-ai-design">Check design criteria</button>
+      <p class="save-status" id="ai-status" aria-live="polite"></p>
+      <div class="feedback-panel" id="ai-feedback" hidden tabindex="-1" aria-live="polite">
+        <h3>Feedback criteria</h3>
+        <p>A strong design includes student effort before assistance, calibrated hints, withholding of the finished product, fading support, and a new unsupported transfer task. These criteria evaluate the design of the interaction; they do not provide a paragraph for the student to copy.</p>
+        <button class="lab-btn" type="button" id="finish-lab">View completion summary</button>
+      </div>
+    </section>
+
+    <section class="lab-panel phase-panel" id="summary-panel" hidden aria-labelledby="summary-heading">
+      <p class="lab-kicker">Phase 6 of 6</p>
+      <h2 id="summary-heading" tabindex="-1">Completion Summary</h2>
+      <dl>
+        <dt><strong>Original prediction</strong></dt><dd id="summary-prediction"></dd>
+        <dt><strong>Baseline rule</strong></dt><dd id="summary-baseline"></dd>
+        <dt><strong>Complete-answer support</strong></dt><dd id="summary-complete-answer"></dd>
+        <dt><strong>Graduated scaffolding</strong></dt><dd id="summary-hints"></dd>
+        <dt><strong>Transfer answer</strong></dt><dd id="summary-transfer"></dd>
+        <dt><strong>Optional transfer hint</strong></dt><dd id="summary-transfer-hint"></dd>
+        <dt><strong>Explanation</strong></dt><dd id="summary-explanation"></dd>
+        <dt><strong>AI scaffold design</strong></dt><dd><ol id="summary-ai"></ol></dd>
+      </dl>
+      <div class="callout callout--note">
+        <div class="callout-title">What to carry forward</div>
+        <p>The key evidence is not how polished an answer became while help was available. It is what the learner could reconstruct, explain, and apply after the help faded.</p>
+      </div>
+    </section>
+
+    <section class="callout callout--think-about-it" aria-labelledby="instructor-note-heading">
+      <div class="callout-title" id="instructor-note-heading">Instructor Note</div>
+      <p>Use the lab individually, then have pairs compare what the completed answer did with what the graduated hints required them to do. The key discussion moment is the unsupported museum task: transfer is evidence relevant to learning, not infallible proof that learning occurred. Ask students to redesign one real AI interaction by naming what the system should withhold and how its support should fade.</p>
+    </section>
+  </main>
+</div>
+<script src="../../js/nav.js"></script>
+<script src="../../js/labs-zpd-fading-support.js"></script>
+</body>
+</html>
