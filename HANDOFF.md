@@ -1,71 +1,45 @@
 # Psych101 — Current Handoff
 
-**Last updated:** 2026-07-14 (Chapter 9 audit/revision session)  
-**Canonical repository:** `C:\GitHub\psych101` — see `pipeline/claude-work-environment.md` for Claude/Cowork environment cautions.  
-**Current branch:** `main`. The Chapter 9 comparison draft, two replacement SVGs, figure metadata, and follow-up specification are committed on the remote.
+**Last updated:** 2026-07-14 (Session 107)
+**Canonical repository:** `C:\GitHub\psych101`
+**Current branch or PR:** `main`; no commit or push was made in this session.
 
-This file is overwritten with present state. Permanent rules live in `AGENTS.md`; chronological history lives in `GPT_project_log.md`; durable deferred work lives in `PROJECT_BACKLOG.md`.
+This file is current-state only and is overwritten rather than appended. See `GPT_project_log.md` for chronological history and `PROJECT_BACKLOG.md` for durable deferred work.
 
 ## Current state
 
-Chapter 9 has been audited for conceptual accuracy, cognitive load, organization, figures, labs, and teachability. A non-authoritative comparison revision now exists at:
+Chapter 9's HTML was rebuilt from Jon's clarified comparison draft, `source/chapters/09-thinking-language-intelligence-2.md`, and written to `docs/chapters/09-thinking-language-intelligence.html`. This was a structural conversion only: the revised prose, examples, claims, and citations were preserved. Neither Chapter 9 source draft was edited.
 
-- `source/chapters/09-thinking-language-intelligence-2.md`
+The build includes the current dynamic sidebar loader with `data-active="09"`, the `Chapter 9 · Cognitive` header, all four numbered content sections, allowed callout variants, tables, Chapter Summary, ten open-response review blocks with hidden rationales, alphabetized Key Terms, anchored Connections, Further Reading, and References with the standard verification note. The Finding the Rule lab is linked out to `../labs/ch09/fluid-intelligence-rule-finding.html`; no iframe or demo placeholder was added.
 
-The authoritative source and rendered page remain unchanged:
+Eight confirmed images were wired: Figures 9.2–9.8 and 9.10. Figure 9.1 remains an HTML placeholder because the comparison draft explicitly says the existing bird hierarchy must be revised before reuse. The revised source has no Figure 9.9; its bias comparison is a table, so no placeholder was invented.
 
-- `source/chapters/ch09-thinking-language-intelligence.md`
-- `docs/chapters/09-thinking-language-intelligence.html`
+Validation is clean: `pipeline/lint_chapters.py` reports 0 HARD failures and 0 WARN items. A separate source-parity/structure check confirmed all source text is present, all `<h2>` IDs and document IDs are valid, all image and local link paths resolve, alt text is populated with no leading-dash artifacts, Further Reading has three separate items, review/details structure is intact, only allowed callout classes appear, ampersands are escaped, and no bad ` ? ` separator mojibake exists.
 
-Agreed editorial decisions in the comparison revision:
+Copyright-lineage review found no Chapter 9 `needs-verification` rows. TLI-004 (representativeness heuristic) and TLI-012 (Gardner's multiple intelligences) are marked `wording_change_driver = book-adoption`; the comparison draft uses original prose supported by primary/critical sources and does not appear copied from Wade, King, or Myers.
 
-- Keep **compression** as a learning metaphor connecting cognitive constraint to Chapter 8, with one explicit boundary that it is not a single literal mechanism.
-- Keep a shorter AI connection centered on **fluency is not accuracy**.
-- Remove the group-differences paragraph from the textbook chapter; handle the topic in class.
-- Treat System 1/System 2 as processing modes, not literal modules.
-- Do not force availability, representativeness, confirmation bias, framing, and anchoring into one mechanism.
-- Tighten language-acquisition and intelligence claims without flattening the chapter's vivid teaching examples.
+## Next actions
 
-Two replacement original figures are committed:
+1. **Jon: review and commit the Chapter 9 conversion** through GitHub Desktop when satisfied. The intended review set is `docs/chapters/09-thinking-language-intelligence.html`, `HANDOFF.md`, and `GPT_project_log.md`.
+2. **Decide how to handle the end-of-chapter questions.** The supplied draft contains open-response prompts, not authored a–d choices. The HTML preserves them exactly with `<details>/<summary>` rationales; creating `<ol class="options" type="a">` lists would require an editorial/source-writing pass.
+3. **Revise Figure 9.1** so its hierarchy matches the novice-level `Animal → bird/dog → robin/golden retriever` structure described in the source, then wire it in a separate figure task.
+4. **Update `pipeline/html-conversion-spec.md` sidebar guidance** in a future workflow task: §2 still documents an obsolete static sidebar block, while `docs/index.html` and current chapters now use `docs/js/sidebar.js`.
+5. **Browser-check Chapters 6, 7, and the new Chapter 9 build** when convenient; the earlier Ch6/Ch7 live visual check remains outstanding.
 
-- `docs/images/ch09/ch09_category_hierarchy_superordinate_basic_subordinate.svg`
-- `docs/images/ch09/ch09_conjunction_fallacy_nested_sets.svg`
+## Decisions needed from Jon
 
-Their caption, alt-text, attribution, public-sharing, and caveat records are in:
-
-- `docs/images/ch09/README_captions_alt_text_attribution.md`
-
-Figure decision: do **not** rebuild the old bias/question-substitution Figure 9.9. The revised comparison table is more accurate. After rewiring, the IQ curve should be numbered Figure 9.9.
-
-## Immediate next actions
-
-1. Patch `source/chapters/09-thinking-language-intelligence-2.md`:
-   - wire the corrected category-hierarchy SVG;
-   - replace the Linda/bank-teller passage with the original Jordan campus-library/sustainability-club conjunction example;
-   - wire the new nested-set SVG;
-   - keep the former bias Figure 9.9 omitted;
-   - renumber the IQ curve from Figure 9.10 to Figure 9.9.
-2. Reconcile the Chapter 9 section of `source/visuals-inventory.md`.
-3. Read the complete comparison draft end to end and decide whether it should replace the authoritative Chapter 9 source.
-4. Only after approval, rebuild/reconcile `docs/chapters/09-thinking-language-intelligence.html` and browser-check the figures and lab link.
-
-The exact narrow patch specification is in:
-
-- `pipeline/audits/ch09-comparison-figure-followup.md`
+- Should Chapter 9 keep its ten open-response retrieval questions, or should the source later be revised into authored multiple-choice questions to satisfy the spec's `options` pattern literally?
+- Figure 9.1 needs a revised asset before it can be restored. No decision is needed about Figure 9.9 unless Jon wants a visual in addition to the new table.
 
 ## Validation and known risks
 
-- The new SVGs are original, use light backgrounds and large labels, contain no embedded figure numbers, and have complete accessibility/attribution metadata.
-- The comparison markdown still contains the Linda example and has not yet wired the two replacement SVGs.
-- `source/visuals-inventory.md` is stale for Chapter 9 until the source wiring is completed.
-- No generated HTML has been changed for this revision.
-- The existing Chapter 9 fluid-intelligence rule-finding lab remains the preferred full Learning Lab; no second standalone lab is currently justified.
-- Chapter 6 and Chapter 7 live browser checks remain outstanding unless completed in a later unlogged session.
+- The current dynamic sidebar makes the older “byte-identical static sidebar except one active class” check impossible as written. Chapter 9 instead matches the current Chapter 8/9 loader scaffold; `data-active="09"` is the runtime active marker and the shared loader adds `class="active"` only to Chapter 9.
+- Reference details were carried over from the supplied draft and were not independently web-verified during this structural conversion; the HTML verification note says so.
+- `pipeline/context_budget_log.csv` was already modified outside this task and remains untouched by the Chapter 9 work.
 
 ## Important files
 
-- `source/chapters/09-thinking-language-intelligence-2.md` — comparison revision under review.
-- `pipeline/audits/ch09-comparison-figure-followup.md` — exact remaining wiring and inventory changes.
-- `docs/images/ch09/README_captions_alt_text_attribution.md` — Chapter 9 replacement-figure metadata.
-- `source/visuals-inventory.md` — must be reconciled after the comparison source is patched.
-- `GPT_project_log.md` — chronological record of the Chapter 9 audit and decisions.
+- `source/chapters/09-thinking-language-intelligence-2.md` — authoritative input used for this build; unchanged.
+- `docs/chapters/09-thinking-language-intelligence.html` — fresh Chapter 9 HTML build, pending Jon's review/commit.
+- `pipeline/html-conversion-spec.md` — conversion rules; sidebar section is stale relative to the current dynamic implementation.
+- `GPT_project_log.md` — full Session 107 conversion and validation record.
