@@ -8,6 +8,14 @@ Repository rules and conventions live in `AGENTS.md`, not here. Current state an
 
 ## Log Entries
 
+### 2026-07-14 - Evidence-based h3/in-section-nav pattern for body-prose chunking
+
+- **Scope:** Jon felt already-built chapters read as visually homogenous — long unbroken paragraphs and callout boxes distinguishable only by border color. Discussed via conversational back-and-forth in Cowork (no chapter content edited). Built and compared several HTML mockups (against a real Ch7 excerpt, using the site's actual CSS values) covering h3 subheadings, paragraph-length discipline, key-term "chip"/underline styling, and decorative visual rhythm (drop caps, numbered badges).
+- **Decision process:** rather than pick by eye, grounded the choice in learning-science literature via web search: Mayer's segmenting principle (d≈0.98) and signaling/cueing principle (d≈0.52) support descriptive h3 chunking; Cowan's working-memory chunk limits (~4 items) argue against stacking multiple term definitions in one paragraph; the seductive-details-effect meta-analyses argue against unearned decoration; Dunlosky et al. (2013) rated highlighting/underlining low-utility, arguing against chip/underline key-term styling. Stop and Retrieve callouts (testing effect) remain the strongest existing device and weren't touched.
+- **Confirmed pattern:** 2-4 descriptively-titled `<h3>` per numbered section (left accent rule, no background, kept visually distinct from tinted `.callout` boxes); per-section `.in-section-nav` labeled "In this section" (chapters are single scrolling pages, not paginated); key terms stay plain `<strong>`; no drop caps/badges/eyebrow labels.
+- **Files changed:** `pipeline/html-conversion-spec.md` (new §5a with markup example, common-errors rows, checklist item), `docs/css/style.css` (`h3` accent-rule — applies retroactively to all built chapters; new `.in-section-nav` styles), `HANDOFF.md`.
+- **Not done:** no chapter content retrofitted yet (Jon's call, timing TBD); new CSS not browser-checked against a live chapter page.
+
 ### 2026-07-14 - Chapter 9 HTML Conversion from Comparison Draft
 
 - **Scope:** replaced the existing `docs/chapters/09-thinking-language-intelligence.html` with a fresh structural conversion of Jon's clarified source file, `source/chapters/09-thinking-language-intelligence-2.md`. Preserved the revised draft's prose, examples, citations, and ordering within content sections; no source chapter, other chapter HTML, CSS, JavaScript, lab, or image file was edited.
