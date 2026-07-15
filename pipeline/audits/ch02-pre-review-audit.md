@@ -1,7 +1,7 @@
 # Chapter 2 Pre-Review Audit — Research Methods and Statistics
 
 **Audit date:** 2026-07-15  
-**Status:** Editorial decisions discussed and approved; ready for canonical revision.  
+**Status:** **Implemented and validated** in canonical revision commit `947a05d6bf0aec079e04d906d9e201143cb8acd2`. No further Chapter 2 editorial action is required; optional unused-image cleanup remains in `PROJECT_BACKLOG.md`.  
 **Audit framework:** `pipeline/audits/chapter-pre-review-audit-prompt-v3.md`
 
 ## Repository authority and current state
@@ -11,10 +11,10 @@
 - **Chapter figure manifest:** `docs/images/ch02/README_captions_alt_text_attribution.md`
 - **Learning Lab:** `docs/labs/ch02/correlation-causation.html`
 - **Lab script:** `docs/js/labs-correlation-causation.js`
-- The source and HTML are substantially aligned, and nine figures were reconciled on 2026-07-10.
-- The HTML still contains the stale anchor ID `evidence-ladder` for the Research Cycle section.
-- The figure manifest contains a stale placebo public-sharing blocker even though the citation repair is recorded as complete.
-- No earlier `ch02-pre-review-audit.md` was present on `main`; this file restores the missing durable audit record.
+- The source and regenerated HTML are aligned, and all nine figures were reconciled during the canonical revision.
+- The Research Cycle uses the current descriptive HTML anchor.
+- The resolved placebo citation repair and public-sharing status are reconciled in the figure manifest.
+- No earlier `ch02-pre-review-audit.md` was present on `main`; this file restored the missing durable audit record and now records implementation status.
 
 ## Core argument
 
