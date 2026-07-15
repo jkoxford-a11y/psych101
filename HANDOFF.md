@@ -1,8 +1,8 @@
 # Psych101 — Current Handoff
 
-**Last updated:** 2026-07-15 (Chapter 12 cognitive-light-cone correction)
+**Last updated:** 2026-07-15 (Chapter 12 final visual correction)
 **Canonical repository:** `C:\GitHub\psych101`
-**Current branch:** `main`; Chapter 12 work is uncommitted for Jon's normal review and commit workflow.
+**Current branch:** `main`; the Chapter 12 correction is pushed and current.
 
 This file records current state only. See `GPT_project_log.md` for completed-work history and `PROJECT_BACKLOG.md` for durable deferred work.
 
@@ -16,9 +16,9 @@ The canonical research-methods source, generated HTML, nine-figure set, and corr
 
 The former comparison-draft workflow is over. Chapter 9 is canonical at `source/chapters/09-thinking-language-intelligence.md`; Chapter 10 is canonical at `source/chapters/ch10-lifespan-development.md`; Chapter 11 is canonical at `source/chapters/ch11-social-psychology.md`. Their approved source cleanup, figure repairs, lab links, metadata/inventory reconciliation, HTML regeneration, and validation were completed on 2026-07-15. Do not reopen those chapters unless Jon identifies a specific rendered-page or editorial issue.
 
-### Chapter 12 — canonical revision complete; awaiting Jon's visual review
+### Chapter 12 — canonical revision complete
 
-The authoritative source `source/chapters/ch12-emotion-stress-coping.md` now reflects the settled audit decisions and has been regenerated into `docs/chapters/12-emotion-stress-coping.html`.
+The authoritative source `source/chapters/ch12-emotion-stress-coping.md` reflects the settled audit decisions and has been regenerated into `docs/chapters/12-emotion-stress-coping.html`.
 
 Key decisions now implemented:
 
@@ -28,13 +28,13 @@ Key decisions now implemented:
 - Patient S.M.'s faces, snakes/spiders, haunted-house, frightening-film, and personal-space findings remain, with the decisive CO₂ fear/panic boundary added.
 - SAM and HPA timing and functions are separated; chronic stress is described as multisystem dysregulation; GAS remains a historical heuristic while allostatic load supplies the contemporary cumulative-cost account.
 - Affect labeling, emotional granularity, oxytocin/social support, sleep, movement, nutrition, and hedonic adaptation claims are narrowed to the evidence actually retained.
-- Coping is organized around controllability, arousal, timing, resources, and flexibility. The review now contains nine open-response questions with hidden model answers.
+- Coping is organized around controllability, arousal, timing, resources, and flexibility. The review contains nine open-response questions with hidden model answers.
 
-All four figures are original programmatic SVG/PNG diagrams documented in `docs/images/ch12/README_captions_alt_text_attribution.md`. Figure 12.1 removes the literal tank; Figure 12.2 uses a model-neutral circumplex takeaway; corrected Figure 12.3 now represents Michael Levin's cognitive light cone as the spatial and temporal scale of goals, with the Chapter 12 stress-appraisal application kept secondary; Figure 12.4 removes the fictional depletion curve and contrasts historical GAS with recovery and allostatic load. The former combined cognitive-light-cone/SAM/HPA artwork is retired and unwired. Status is use now pending Jon's final visual judgment.
+All four figures are original programmatic SVG/PNG diagrams documented in `docs/images/ch12/README_captions_alt_text_attribution.md`. Figure 12.1 removes the literal tank; Figure 12.2 uses a model-neutral circumplex takeaway; Figure 12.3 represents Michael Levin's cognitive light cone as a spatial and temporal goal horizon, now explicitly noting that goal scale is not sensory range alone and that memory extends temporal reach into the past; Figure 12.4 removes the fictional depletion curve and contrasts historical GAS with recovery and allostatic load. The former combined cognitive-light-cone/SAM/HPA artwork is retired and unwired. All four figures are approved for use.
 
 The standalone coping-fit lab is complete at `docs/labs/ch12/coping-fit.html` with `docs/js/labs-coping-fit.js`. It requires prediction, four scenario classifications, immediate mechanism feedback, an explanation gate, transfer to a nonclinical scenario, and a completion reflection distinguishing response regulation from stressor change. It uses one session-only storage key, no diagnostic score, no identifiers, analytics, or network submission. It is linked from the source, generated chapter, and labs index.
 
-The checked-in converter now includes Chapter 12, removes author-only HTML comments before conversion, separates Markdown Further Reading entries correctly, and emits link-based expandable controls so full-size images remain available without JavaScript. Chapter 12 passes the repository linter with zero failures and zero warnings. Static validation found no broken local links, image failures, empty/leading-dash alt text, author-note leakage, mojibake, or missing ARIA targets. Browser checks at desktop and 390-pixel widths found no page overflow; all four figures loaded and completed open/close cycles with synchronized ARIA state, visible captions, and valid fallback image links. The full lab sequence, session restoration behavior, explanation/transfer gates, and reset were also exercised. Jon should still inspect final figure label size and the live/actual-device rendering after publication.
+The checked-in converter includes Chapter 12, removes author-only HTML comments before conversion, separates Markdown Further Reading entries correctly, and emits link-based expandable controls so full-size images remain available without JavaScript. Chapter 12 passes the repository linter with zero failures and zero warnings. Static validation found no broken local links, image failures, empty/leading-dash alt text, author-note leakage, mojibake, or missing ARIA targets. Browser checks at desktop and 390-pixel widths found no page overflow; all four figures loaded and completed open/close cycles with synchronized ARIA state, visible captions, and valid fallback image links. The full lab sequence, session restoration behavior, explanation/transfer gates, and reset were also exercised. Treat Chapter 12 as closed unless the live page exposes a specific new issue.
 
 ### Chapter 13 — audit exists; discussion and revision are next
 
@@ -42,16 +42,15 @@ The Chapter 13 pre-review audit already exists. Do not repeat the audit. The nex
 
 ## Immediate next actions
 
-1. Jon reviews the final Chapter 12 page and Figures 12.1–12.4, especially label readability and visual hierarchy.
-2. Discuss the existing Chapter 13 pre-review audit and settle the revision decisions.
-3. Execute and validate the canonical Chapter 13 revision.
-4. After Chapter 13 is stable, run the planned repository-wide lint, source/HTML parity, links/figures/alt-text, live Pages, and actual-phone checks.
+1. Discuss the existing Chapter 13 pre-review audit and settle the revision decisions.
+2. Execute and validate the canonical Chapter 13 revision.
+3. After Chapter 13 is stable, run the planned repository-wide lint, source/HTML parity, links/figures/alt-text, live Pages, and actual-phone checks.
 
 ## Important files
 
+- `pipeline/audits/ch13-pre-review-audit.md`
 - `source/chapters/ch12-emotion-stress-coping.md`
 - `docs/chapters/12-emotion-stress-coping.html`
 - `docs/images/ch12/README_captions_alt_text_attribution.md`
 - `docs/labs/ch12/coping-fit.html`
-- `pipeline/audits/ch13-pre-review-audit.md`
 - `PROJECT_BACKLOG.md`
