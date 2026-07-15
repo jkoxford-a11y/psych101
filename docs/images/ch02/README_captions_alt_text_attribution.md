@@ -2,7 +2,7 @@
 
 This file is the chapter-specific visual manifest for Chapter 2, **Research Methods and Statistics**. It should be reconciled with `source/chapters/ch02-research-methods.md`, the generated HTML, and `source/visuals-inventory.md` before the chapter is frozen.
 
-**Reconciled 2026-07-10** per `CH02_IMAGE_WIRING_HANDOFF.md`: all five new/replacement figures below are wired into both the source markdown and generated HTML, renumbered sequentially by order of appearance (Figures 2.1–2.9). Three existing figures are retained unchanged (random sampling vs. assignment = Fig. 2.5, experiment flowchart = Fig. 2.6, p-value misconceptions = Fig. 2.8). The third-variable PNG was renamed from its UUID filename to `ch02_third_variable_age_shoe_size_reading.png`. The placebo PNG's incorrect embedded citation line was repaired. See `GPT_project_log.md` for the full change log.
+**Reconciled 2026-07-15** during the canonical Chapter 2 revision: all nine figures are wired into the canonical source and regenerated HTML in order (Figures 2.1–2.9). Figure 2.2 received a wording-only raster repair so the target analogy no longer equates validity with literal accuracy or labels the imprecise panel “high validity.” Figure 2.5 now uses the existing no-number SVG rather than the stale PNG that embedded an incorrect figure number. The placebo asset's repaired citation was rechecked and its stale public-sharing blocker removed. See `GPT_project_log.md` for the full change log.
 
 ---
 
@@ -11,7 +11,7 @@ This file is the chapter-specific visual manifest for Chapter 2, **Research Meth
 **Working title:** The Research Process in Psychology: A Cycle of Discovery and Refinement  
 **Placement:** Near the beginning of the chapter under “A Map Before the Details: The Research Cycle,” replacing the former evidence-ladder framing.  
 **Caption number:** Figure 2.1 (wired 2026-07-10).  
-**Status:** **Wired — use now.** Pending browser/mobile-width check.  
+**Status:** **Wired — use now.** Accuracy, accessibility, expansion, and desktop/mobile-width review completed 2026-07-15.
 **Recommended display:** `chapter-figure wide expandable` because the figure contains seven linked stages and explanatory text.
 
 ### Caption
@@ -28,7 +28,7 @@ Circular infographic showing seven recurring stages of psychological research: O
 - **Direction and curation:** Jonathan K. Oxford.
 - **Attribution text:** Original figure generated for Oxford Psychology 101 with ChatGPT image generation, 2026. Directed and curated by Jonathan K. Oxford. No external copyrighted image assets intentionally used.
 - **External source assets:** None intentionally used.
-- **License/public-sharing status:** Safe for public sharing pending final accuracy, accessibility, and browser-render review.
+- **License/public-sharing status:** Safe for public sharing; accuracy, accessibility, and browser-render review completed for the canonical revision.
 
 ### Accuracy and interpretation caveats
 
@@ -52,29 +52,29 @@ Circular infographic showing seven recurring stages of psychological research: O
 **Working title:** Reliability and Validity: Four Measurement Outcomes  
 **Placement:** In Section 1, "Two More Questions Every Measure Has to Answer," immediately after reliability and validity are introduced. Replaced `fig_reliability_validity_dartboard.svg` and `fig2-6-reliability-validity-targets.svg`.  
 **Caption number:** Figure 2.2 (wired 2026-07-10).  
-**Status:** **Wired — use now.** Pending browser/mobile-width check.  
+**Status:** **Wired — use now.** Wording repaired and accuracy, accessibility, expansion, and desktop/mobile-width review completed 2026-07-15.
 **Recommended display:** `chapter-figure wide expandable` because the four-panel comparison contains explanatory labels that benefit from enlargement.
 
 ### Caption
 
-**Reliability and validity answer different measurement questions.** Reliability concerns the consistency or precision of observed scores; validity concerns whether the evidence supports interpreting those scores as measurements of the intended construct. A measure may be consistent but systematically wrong. A set of observations can also center on the correct value while varying too widely to support dependable conclusions about an individual. Strong validity claims generally require adequate reliability, but reliability alone does not establish validity.
+**The target analogy is a useful first approximation, not a definition of psychometric validity.** Reliability concerns the consistency or precision of observed scores under specified conditions; validity concerns whether evidence and theory support an intended interpretation and use. A measure may be consistent but systematically wrong. Observations may also center on the correct value on average while varying too widely for dependable individual interpretation. Inadequate reliability limits strong validity claims, but reliability alone does not establish validity.
 
 ### Alt text
 
-Four-panel target diagram comparing measurement accuracy and precision. The first panel shows darts tightly clustered at the center, representing high reliability and high validity. The second shows darts tightly clustered away from the center, representing consistent but systematically biased scores. The third shows darts widely dispersed around the center, representing observations that are accurate on average but too imprecise for dependable individual interpretation. The fourth shows darts scattered away from the center, representing scores that are neither consistent nor accurate. A note below states that adequate reliability is generally necessary for strong validity claims.
+Four-panel target diagram comparing measurement accuracy and precision. The first panel shows darts tightly clustered at the center, labeled accurate on average and high reliability. The second shows darts tightly clustered away from the center, labeled biased on average and high reliability. The third shows darts widely dispersed around the center, labeled accurate on average and low reliability, representing observations too imprecise for dependable individual interpretation. The fourth shows darts scattered away from the center, labeled biased on average and low reliability. A note explains that the target analogy is only a first approximation and that validity concerns evidence and theory supporting an intended score interpretation and use.
 
 ### Creation and attribution
 
-- **Creation method:** Original educational infographic generated with ChatGPT image generation, July 2026, from project-specific direction and content.
+- **Creation method:** Original educational infographic generated with ChatGPT image generation, July 2026, from project-specific direction and content; wording-only repair generated 2026-07-15 from the existing asset, preserving the panel layout, target/dart positions, palette, and visual hierarchy.
 - **Direction and curation:** Jonathan K. Oxford.
 - **Attribution text:** Original figure generated for Oxford Psychology 101 with ChatGPT image generation, 2026. Directed and curated by Jonathan K. Oxford. No external copyrighted image assets intentionally used.
 - **External source assets:** None intentionally used.
-- **License/public-sharing status:** Safe for public sharing pending final accuracy, accessibility, and browser-render review.
+- **License/public-sharing status:** Safe for public sharing; accuracy, accessibility, and browser-render review completed for the canonical revision.
 
 ### Accuracy and interpretation caveats
 
-- The target analogy treats **precision** as a visual stand-in for reliability and **accuracy** as a simplified stand-in for validity. In psychometrics, validity is broader than literal accuracy: it concerns whether evidence and theory support the intended interpretation and use of scores.
-- The third panel should not be read as showing a strongly “valid but unreliable” test. It illustrates observations that are unbiased on average but too inconsistent for dependable individual-level interpretation.
+- The target analogy treats **precision** as a visual stand-in for reliability and **accuracy** as a simplified visual comparison, not as a synonym for psychometric validity. The repaired image states that validity concerns whether evidence and theory support an intended interpretation and use of scores.
+- The third panel is labeled “accurate on average” and “low reliability,” not “valid but unreliable.” It illustrates observations that are unbiased on average but too inconsistent for dependable individual-level interpretation.
 - Adequate reliability is generally necessary for strong validity claims because excessive measurement error limits what can be inferred from scores.
 - Reliability is not a single property. Test–retest stability, internal consistency, inter-rater agreement, and other forms answer different consistency questions.
 - A measure can be highly reliable while systematically measuring the wrong construct or producing biased scores.
@@ -111,7 +111,7 @@ Two-panel bar chart based on a four-condition asthma study comparing active albu
 - **Data source:** Wechsler, M. E., Kelley, J. M., Boyd, I. O., Dutile, S., Marigowda, G., Kirsch, I., Israel, E., & Kaptchuk, T. J. (2011). Active albuterol or placebo, sham acupuncture, or no intervention in asthma. *New England Journal of Medicine, 365*(2), 119–126. https://doi.org/10.1056/NEJMoa1103319
 - **Attribution text:** Original visualization generated for Oxford Psychology 101 with ChatGPT image generation, 2026, using values reported by Wechsler et al. (2011). Directed and curated by Jonathan K. Oxford. No external copyrighted image assets intentionally used.
 - **External source assets:** None intentionally used; the chart is an original redraw rather than a reproduction of the published figure.
-- **License/public-sharing status:** Not approved for public sharing until the incorrect embedded citation is corrected; otherwise suitable pending final accessibility and browser review.
+- **License/public-sharing status:** Safe for public sharing; the incorrect embedded citation was repaired 2026-07-10 and the repaired asset passed final accessibility and browser review during the 2026-07-15 canonical revision.
 
 ### Accuracy and interpretation caveats
 
@@ -140,7 +140,7 @@ Two-panel bar chart based on a four-condition asthma study comparing active albu
 **Replaces:** `fig_third_variable_problem.png` / `.svg`.  
 **Placement:** Section 2, "Do Not Confuse: Correlation vs. Causation," after the shoe-size/reading example.  
 **Caption number:** Figure 2.4 (wired 2026-07-10).  
-**Status:** **Wired — use now.** Pending browser/mobile-width check.  
+**Status:** **Wired — use now.** Accuracy, accessibility, and desktop/mobile-width review completed 2026-07-15.
 **Recommended display:** `chapter-figure` (ordinary, not wide/expandable) — the diagram is a simple three-box structure with large bold labels, legible at text-column width in the same way the book's other similarly simple diagrams (e.g., the random-sampling-vs-assignment flow figure) already render at ordinary width.
 
 ### Caption
@@ -156,7 +156,7 @@ Diagram showing Age as a third variable with arrows pointing to both Shoe Size a
 - **Creation method:** Original educational diagram generated with ChatGPT image generation, July 2026, from project-specific direction; selected by Jonathan K. Oxford as the replacement for the previous third-variable figure.
 - **Direction and curation:** Jonathan K. Oxford.
 - **Attribution text:** Original figure generated for Oxford Psychology 101 with ChatGPT image generation, 2026. Directed and curated by Jonathan K. Oxford. No external copyrighted image assets intentionally used.
-- **License/public-sharing status:** Safe for public sharing pending final accessibility and browser-render review.
+- **License/public-sharing status:** Safe for public sharing; accessibility and browser-render review completed for the canonical revision.
 
 ### Accuracy and interpretation caveats
 
@@ -179,7 +179,7 @@ Diagram showing Age as a third variable with arrows pointing to both Shoe Size a
 **Working title:** Effect Size and Confidence Intervals: Magnitude and Uncertainty  
 **Placement:** In Section 5, "Beyond Significance: Effect Size and Confidence Intervals," immediately after effect size and confidence intervals are introduced.  
 **Caption number:** Figure 2.9 (wired 2026-07-10).  
-**Status:** **Wired — use now.** Pending browser/mobile-width check.  
+**Status:** **Wired — use now.** Accuracy, accessibility, expansion, and desktop/mobile-width review completed 2026-07-15.
 **Recommended display:** `chapter-figure wide expandable` because the labels and dot-and-whisker examples benefit from enlargement, especially on mobile.
 
 ### Caption
@@ -196,7 +196,7 @@ Three-row dot-and-whisker diagram using fictional training-program results. The 
 - **Direction and curation:** Jonathan K. Oxford.
 - **Attribution text:** Original simulated figure generated for Oxford Psychology 101 with ChatGPT image generation, 2026. Directed and curated by Jonathan K. Oxford. No external copyrighted image assets intentionally used.
 - **External source assets:** None intentionally used.
-- **License/public-sharing status:** Safe for public sharing pending final accessibility and browser-render review.
+- **License/public-sharing status:** Safe for public sharing; accessibility and browser-render review completed for the canonical revision.
 
 ### Accuracy and interpretation caveats
 
@@ -223,7 +223,7 @@ Three-row dot-and-whisker diagram using fictional training-program results. The 
 **Working title:** Correlation: Direction and Strength  
 **Placement:** In Section 2 immediately after the paragraph introducing the correlation coefficient. Replaced `fig_correlation_scatter.png`.  
 **Caption number:** Figure 2.3 (wired 2026-07-10).  
-**Status:** **Wired — use now.** Pending browser/mobile-width check.  
+**Status:** **Wired — use now.** Accuracy, accessibility, expansion, and desktop/mobile-width review completed 2026-07-15.
 **Recommended display:** `chapter-figure wide expandable` because the five scatterplots and labels benefit from enlargement on smaller screens.
 
 ### Caption
@@ -240,7 +240,7 @@ Five side-by-side scatterplots illustrate correlations ranging from strong posit
 - **Direction and curation:** Jonathan K. Oxford.
 - **Attribution text:** Original simulated figure generated for Oxford Psychology 101 with ChatGPT image generation, 2026. Directed and curated by Jonathan K. Oxford. No external copyrighted image assets intentionally used.
 - **External source assets:** None intentionally used.
-- **License/public-sharing status:** Safe for public sharing pending final accessibility, numerical, and browser-render review.
+- **License/public-sharing status:** Safe for public sharing; accessibility, numerical, and browser-render review completed for the canonical revision.
 
 ### Accuracy and interpretation caveats
 
@@ -258,3 +258,57 @@ Five side-by-side scatterplots illustrate correlations ranging from strong posit
 - **Embedded numbering:** None.
 - **Supersedes:** `fig_correlation_scatter.png`, which is visually inconsistent with the revised Chapter 2 figure set.
 - **Final filename:** `ch02_correlation_direction_strength.png`
+
+---
+
+## Retained project-native figures
+
+### `fig2-5-random-sampling-vs-assignment.svg`
+
+**Working title:** Random Sampling versus Random Assignment
+**Placement:** Section 3, after the prose distinguishing who enters a study from how enrolled participants enter conditions.
+**Caption number:** Figure 2.5.
+**Status:** **Wired — use now.** The canonical revision replaced the stale `fig_random_sampling_vs_assignment.png`, which embedded “Fig 2.6,” with this existing no-number SVG.
+**Recommended display:** `chapter-figure expandable`.
+
+**Caption:** **Random sampling and random assignment answer different research-design questions.** Random sampling determines who gets into the study and supports population representativeness, one component of external validity. Random assignment determines who goes into which condition, balances participant characteristics in expectation, and strengthens causal inference within the study.
+
+**Alt text:** Flow diagram showing a population leading through random sampling to a study sample, then through random assignment to an experimental group and a control group. Labels distinguish who enters the study from who enters each condition.
+
+**Creation and attribution:** Original project-native SVG created for Oxford Psychology 101 in June 2026. No external copyrighted image assets used. Safe for public sharing.
+
+**Accuracy caveats:** Random sampling supports population representativeness but does not create every form of external validity. Random assignment balances participant characteristics in expectation; it does not guarantee perfectly equivalent realized groups or repair attrition, contamination, poor measurement, or other design failures.
+
+**Supersedes for chapter use:** `fig_random_sampling_vs_assignment.png`, retained as an unused legacy asset.
+
+### `fig_experiment_flowchart.svg`
+
+**Working title:** Anatomy of a Randomized Experiment — Hot Sauce Paradigm
+**Placement:** Section 3, after the hot-sauce worked example.
+**Caption number:** Figure 2.6.
+**Status:** **Wired — use now.**
+**Recommended display:** `chapter-figure expandable`.
+
+**Caption:** **The logic of a randomized experiment, mapped onto the hot sauce paradigm.** Participants enter conditions by chance; the researcher manipulates the prompt and measures hot sauce allocation in both groups. Randomization strengthens the causal comparison but does not substitute for sound measurement, implementation, or analysis.
+
+**Alt text:** Flowchart showing a sample of participants moving through random assignment into an experimental group receiving a mortality-reminder prompt and a control group receiving a neutral prompt. Both groups then complete the dependent measure, the amount of hot sauce allocated.
+
+**Creation and attribution:** Original project-native SVG created for Oxford Psychology 101 in June 2026. The no-number version was regenerated on 2026-06-26. No external copyrighted image assets used. Safe for public sharing.
+
+**Accuracy caveats:** The diagram presents the central randomized-experiment logic, not every validity requirement. Random assignment makes systematic preexisting differences unlikely in expectation; it does not guarantee equivalent groups or fix later design failures.
+
+### `fig_p_value_misconceptions.svg`
+
+**Working title:** What a p-Value Does and Does Not Tell You
+**Placement:** Section 5, immediately after the p-value definition.
+**Caption number:** Figure 2.8.
+**Status:** **Wired — use now.**
+**Recommended display:** `chapter-figure expandable`.
+
+**Caption:** **A p-value describes how unusual the observed data would be under the null model, assuming the model is appropriate.** It does not tell whether the hypothesis is true, how large or important an effect is, or whether a finding will replicate.
+
+**Alt text:** Two-panel diagram titled “What a p-value does — and does not — tell you.” The left panel gives the supported interpretation: how unusual the observed data are under the null model, assuming the model is appropriate. The right panel marks four unsupported interpretations: the probability the hypothesis is true, effect size, practical importance, and whether the finding will replicate.
+
+**Creation and attribution:** Original project-native SVG created for Oxford Psychology 101 in June 2026. No external copyrighted image assets used. Safe for public sharing.
+
+**Accuracy caveats:** The interpretation is conditional on the specified statistical model and its assumptions. The figure deliberately does not treat p-values as binary truth tests or as measures of magnitude, importance, or replicability.

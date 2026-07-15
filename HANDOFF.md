@@ -1,12 +1,18 @@
 # Psych101 — Current Handoff
 
-**Last updated:** 2026-07-15 (Session 111)
+**Last updated:** 2026-07-15 (Session 112)
 **Canonical repository:** `C:\GitHub\psych101`
 **Current branch or PR:** `main`. Jon manually backed up the prior Chapter 9 and Chapter 10 sources and renamed the revised chapters into their canonical source paths before this reconciliation. Chapter 9–11 finalization work is currently in progress and uncommitted pending Jon's review.
 
 This file records current state only. See `GPT_project_log.md` for completed-work history and `PROJECT_BACKLOG.md` for durable deferred work.
 
 ## Current state
+
+### Chapter 2 — canonical revision complete
+
+The settled Chapter 2 audit has been implemented directly in `source/chapters/ch02-research-methods.md`; no comparison draft or `-2` chapter exists. The chapter now calibrates causal inference, random sampling/assignment, modern reliability/validity, placebo interpretation, animal-research ethics, and introductory statistics consistently across prose and back matter. Figure 2.2's embedded measurement wording was repaired, Figure 2.5 now uses the no-number SVG, and all nine figures and their metadata are reconciled. The correlation/causation lab now scores causal support, reverse-direction plausibility, and third-variable plausibility independently and includes explanation and transfer stages. The canonical HTML was regenerated and passed structural, content, image, responsive-layout, and interaction validation.
+
+**Next Chapter 2 action:** none required for the canonical revision. The only remaining Chapter 2 item is optional cleanup of unused/duplicate image files already recorded in `PROJECT_BACKLOG.md`; active work remains the Chapters 9–13 sequence below.
 
 ### Canonical source decisions
 
