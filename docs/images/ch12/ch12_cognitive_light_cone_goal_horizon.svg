@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1000" viewBox="0 0 1200 1000" role="img" aria-labelledby="title desc">
   <title id="title">Cognitive light cone as increasingly broad goal horizons across space and time</title>
-  <desc id="desc">A space-time diagram centered on Here and Now shows three nested goal horizons: immediate bodily and local regulation; nearby organisms, learned routes, and short-term outcomes; and future self, distant relationships, institutions, abstract commitments, and long-term collective outcomes. The diagram distinguishes goal scale from sensory range and connects distant goals to present appraisal.</desc>
+  <desc id="desc">A space-time diagram centered on Here and Now shows three nested goal horizons: immediate bodily and local regulation; nearby organisms, learned routes, and short-term outcomes; and future self, distant relationships, institutions, abstract commitments, and long-term collective outcomes. A past and memory cue extends below the present. The diagram emphasizes that goal scale is not sensory range alone and connects distant goals to present appraisal.</desc>
   <defs>
     <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
       <path d="M0 0 L12 6 L0 12 Z" fill="#334155"/>
@@ -13,10 +13,12 @@
 
   <line x1="95" y1="780" x2="1110" y2="780" stroke="#334155" stroke-width="4" marker-end="url(#arrow)"/>
   <line x1="600" y1="820" x2="600" y2="150" stroke="#334155" stroke-width="4" marker-end="url(#arrow)"/>
+  <line x1="600" y1="837" x2="600" y2="858" stroke="#334155" stroke-width="3" stroke-dasharray="7 6" marker-end="url(#arrow)"/>
   <text x="1090" y="820" text-anchor="end" font-family="Arial, sans-serif" font-size="25" font-weight="700" fill="#334155">DISTANT SPACE</text>
   <text x="110" y="820" font-family="Arial, sans-serif" font-size="25" font-weight="700" fill="#334155">NEAR SPACE</text>
   <text x="630" y="175" font-family="Arial, sans-serif" font-size="25" font-weight="700" fill="#334155">FUTURE</text>
   <text x="630" y="765" font-family="Arial, sans-serif" font-size="23" fill="#475569">PRESENT</text>
+  <text x="630" y="858" font-family="Arial, sans-serif" font-size="22" font-weight="700" fill="#475569">PAST / MEMORY</text>
 
   <path d="M145 780 Q600 135 1055 780 Z" fill="#e9f1fb" stroke="#315b8a" stroke-width="5"/>
   <path d="M305 780 Q600 315 895 780 Z" fill="#edf7ef" stroke="#2f6f49" stroke-width="5"/>
@@ -36,11 +38,11 @@
   <text x="600" y="255" text-anchor="middle" font-family="Arial, sans-serif" font-size="25" fill="#334155">future self · distant others · institutions</text>
   <text x="600" y="292" text-anchor="middle" font-family="Arial, sans-serif" font-size="25" fill="#334155">abstract commitments · collective outcomes</text>
 
-  <rect x="805" y="495" width="330" height="116" rx="20" fill="#ffffff" stroke="#64748b" stroke-width="3" stroke-dasharray="10 8"/>
-  <text x="970" y="542" text-anchor="middle" font-family="Arial, sans-serif" font-size="27" font-weight="700" fill="#17365d">GOAL SCALE</text>
-  <text x="970" y="580" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" fill="#475569">not sensory range</text>
+  <rect x="785" y="495" width="350" height="116" rx="20" fill="#ffffff" stroke="#64748b" stroke-width="3" stroke-dasharray="10 8"/>
+  <text x="960" y="542" text-anchor="middle" font-family="Arial, sans-serif" font-size="27" font-weight="700" fill="#17365d">GOAL SCALE</text>
+  <text x="960" y="580" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" fill="#475569">not sensory range alone</text>
 
-  <rect x="70" y="865" width="1060" height="100" rx="22" fill="#eef4fb" stroke="#5b7ca3" stroke-width="3"/>
-  <text x="600" y="907" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#17365d">A broader goal horizon lets distant outcomes guide present action.</text>
-  <text x="600" y="945" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" fill="#475569">Chapter 12: threats to distant goals can therefore matter now.</text>
+  <rect x="70" y="875" width="1060" height="95" rx="22" fill="#eef4fb" stroke="#5b7ca3" stroke-width="3"/>
+  <text x="600" y="914" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#17365d">A broader goal horizon lets distant outcomes guide present action.</text>
+  <text x="600" y="951" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" fill="#475569">Chapter 12: threats to distant goals can therefore matter now.</text>
 </svg>
