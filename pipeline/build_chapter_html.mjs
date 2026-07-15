@@ -30,6 +30,12 @@ const chapters = {
     title: "Social Psychology",
     pillar: "Social & Personality",
   },
+  "12": {
+    source: "source/chapters/ch12-emotion-stress-coping.md",
+    output: "docs/chapters/12-emotion-stress-coping.html",
+    title: "Emotion, Stress & Coping",
+    pillar: "Mental & Physical Health",
+  },
 };
 
 const selected = process.argv.slice(2);
@@ -58,6 +64,8 @@ function renderDetails(raw) {
 
 function preprocess(markdown) {
   let text = markdown.replace(/^# .+\r?\n/, "");
+  // Author-only notes and multiline work comments must never reach student HTML.
+  text = text.replace(/<!--[\s\S]*?-->/g, "");
   text = text.replace(
     /^\s*>\s*(?:Canonical revised source\.|Drafting history (?:and|&) provenance:)[^\n]*(?:\r?\n|$)\s*(?:---\s*(?:\r?\n|$))?/,
     "",
@@ -105,8 +113,11 @@ function preprocess(markdown) {
   text = text.replace(
     /(## Further Reading\s*\n)([\s\S]*?)(?=\n---\s*\n\s*## References)/,
     (_all, heading, body) => {
-      const blocks = body.trim().split(/\n\s*\n(?=\*\*)/);
-      const items = blocks.map((block) => `<div class="fr-item">\n${marked.parse(block.trim())}</div>`);
+      const blocks = body.trim().split(/\n\s*\n(?=(?:-\s*)?\*\*)/);
+      const items = blocks.map((block) => {
+        const normalized = block.trim().replace(/^-\s*/, "");
+        return `<div class="fr-item">\n${marked.parse(normalized)}</div>`;
+      });
       return `${heading}\n<div class="further-reading">\n${items.join("\n")}\n</div>\n`;
     },
   );

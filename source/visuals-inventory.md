@@ -1,6 +1,6 @@
 # Visuals Inventory — Psych101 Textbook
 
-*Last reconciled: 2026-07-15 — Chapters 9–11 finalized: Chapter 9 hierarchy wired and IQ figure renumbered; Chapter 10 conceptual figures revised and ZPD lab linked; Chapter 11 Asch, aggregation, and situation-strength figures replaced. Treat chapter-specific README/metadata files as authoritative for captions, alt text, licensing, and attribution.*
+*Last reconciled: 2026-07-15 — Chapters 9–12 finalized through canonical regeneration. Chapter 12's four conceptual figures were rebuilt and documented; treat chapter-specific README/metadata files as authoritative for captions, alt text, licensing, and attribution.*
 
 Status key: ✅ wired/use now · 🧩 built/audited but not wired · ⚠️ exists but needs review/decision · 🔲 still needed/not built · ❌ broken reference/file missing
 
@@ -247,14 +247,14 @@ Seven figures are wired for Sections 1–5. Figures 11.6 and 11.7 were rebuilt a
 
 ## Chapter 12 — Emotion, Stress & Coping
 
-Four core images are wired. Optional table-like figures remain unbuilt.
+Four original explanatory diagrams are wired in the canonical source and regenerated HTML. `docs/images/ch12/README_captions_alt_text_attribution.md` is authoritative for captions, alt text, creation method, attribution, licensing, public-sharing status, and caveats. Final status is use now pending Jon's visual review.
 
 | # | Description | Status | Notes |
 |---|-------------|--------|-------|
-| 12.1 | Body-budget deposits/withdrawals diagram | ✅ | `ch12/fig_body_budget_deposits_withdrawals.png` |
-| 12.2 | Russell core-affect circumplex | ✅ | `ch12/fig_core_affect_circumplex.png` |
-| 12.3 | Cognitive light cone / HPA-axis pathway | ✅ | `ch12/fig_cognitive_light_cone_hpa_axis.png` |
-| 12.4 | GAS three stages with functional-capacity curve | ✅ | `ch12/fig_general_adaptation_syndrome.png` |
+| 12.1 | Body-budget supports/demands framework; explicitly metaphorical | ✅ wired/use now, Jon review | `ch12/fig_body_budget_deposits_withdrawals.svg/.png` |
+| 12.2 | Russell core-affect circumplex; model-neutral takeaway | ✅ wired/use now, Jon review | `ch12/fig_core_affect_circumplex.svg/.png` |
+| 12.3 | Cognitive light cone with separate fast SAM and slower HPA routes | ✅ wired/use now, Jon review | `ch12/fig_cognitive_light_cone_hpa_axis.svg/.png` |
+| 12.4 | Historical GAS contrasted with recovery and multisystem allostatic load | ✅ wired/use now, Jon review | `ch12/fig_general_adaptation_syndrome.svg/.png` |
 | — | Emotion theories comparison | 🔲 | Optional; already a table in text. |
 | — | Coping strategy matrix | 🔲 | Optional; text has a matching table. |
 
