@@ -1,57 +1,22 @@
-# Chapter 9 Comparison Draft — Figure Follow-up
+# Chapter 9 Figure Follow-up — Completed and Superseded
 
-Apply these edits only to `source/chapters/09-thinking-language-intelligence-2.md`. Do not modify the authoritative `ch09-thinking-language-intelligence.md` until Jon approves promotion. Update generated HTML only after the comparison source is settled.
+**Status:** Completed 2026-07-15. This file is retained as a historical decision record only. It must not be used as an active work order.
 
-## 1. Restore Figure 9.1
+The comparison draft was promoted manually. The canonical source is now:
 
-Replace the temporary HTML comment after the category-hierarchy paragraph with:
+`source/chapters/09-thinking-language-intelligence.md`
 
-```markdown
-![Figure 9.1: A category hierarchy begins with the broad superordinate category Animal, branches to the basic-level categories Dog, Bird, and Fish, and then narrows to the subordinate categories Golden retriever, Robin, and Salmon. The basic-level row is emphasized as the everyday naming default: specific enough to guide action, but broad enough to generalize.](../../images/ch09/ch09_category_hierarchy_superordinate_basic_subordinate.svg)
-*Figure 9.1. Category hierarchy from superordinate to basic-level to subordinate categories. The basic level is often the everyday naming default. Original figure.*
-```
+The former `-2.md` and `ch09-...` active paths no longer exist and must not be recreated. The pre-revision source is preserved at `source/chapters/_archive/ch09-thinking-language-intelligence.md`, with provenance at `source/chapters/_provenance/ch09-thinking-language-intelligence.md`.
 
-## 2. Keep the Linda/bank-teller material — superseded, do not replace
+## Executed decisions
 
-**Decision reversed 2026-07-14:** Jon decided to keep the Linda/bank-teller conjunction-fallacy passage as-is. Unlike the group-differences or figure issues, Linda is not publisher/commercial-textbook material — it is Tversky and Kahneman's own original research example (1983) — so the copyright-driven replacement rationale doesn't apply here. Do not write the Jordan campus-library/sustainability-club material into `09-thinking-language-intelligence-2.md`. The existing `fig_linda_conjunction_fallacy.svg`/`.png` is already correctly labeled for Linda and needs no replacement; leave Figure 9.6 as originally wired.
+- Figure 9.1 now uses `docs/images/ch09/ch09_category_hierarchy_superordinate_basic_subordinate.svg`. It shows Animal as the superordinate category; Dog, Bird, and Fish as basic-level categories; and Golden retriever, Robin, and Salmon as subordinate categories. The basic level is identified as the usual everyday naming level.
+- The Linda/bank-teller passage and its existing nested-set Figure 9.6 remain in the chapter. Linda is Tversky and Kahneman's original research example, not publisher-derived wording.
+- `docs/images/ch09/ch09_conjunction_fallacy_nested_sets.svg` remains an unused original campus-library/sustainability-club asset. It is not pending work.
+- The former question-substitution figure remains omitted because the bias comparison table is more accurate. Do not restore `fig_bias_question_substitution.png` to the chapter.
+- The IQ standardization figure is now Figure 9.9 student-facing; its filename remains `fig_iq_bell_curve.png`.
+- Chapter 9 HTML was regenerated from the canonical source after these source and metadata changes.
 
-The Jordan example and its purpose-built figure remain specified below for the record, but are **not to be applied**:
+## Settled preservation rule
 
-<details>
-<summary>Superseded Jordan replacement (do not apply)</summary>
-
-```markdown
-../../images/ch09/fig_linda_conjunction_fallacy.png
-```
-
-</details>
-
-**`ch09_conjunction_fallacy_nested_sets.svg` disposition:** the "campus library workers" / "sustainability club" labels are baked directly into this SVG's text elements — it cannot be relabeled for Linda without redrawing. Jon's call: leave the file and its metadata entry in the repo, unused. It is not wired into Chapter 9 and should not be treated as pending work; it's simply an available original asset if a campus-library/sustainability-club example is wanted somewhere else later.
-
-Validation: the comparison draft should still contain the Linda/bank-teller passage unchanged, and should still reference `fig_linda_conjunction_fallacy` — do not strip these.
-
-## 3. Do not restore the former Figure 9.9
-
-Keep the bias comparison as a Markdown table. Do not wire `fig_bias_question_substitution.png`; it misleadingly implies one shared mechanism.
-
-Because the old Figure 9.9 remains omitted, renumber the IQ standardization figure and caption from Figure 9.10 to Figure 9.9. The existing filename `fig_iq_bell_curve.png` may remain unchanged.
-
-## 4. Update `source/visuals-inventory.md`
-
-Revise the Chapter 9 summary and rows to state:
-
-- Figure 9.1: corrected hierarchy, `ch09/ch09_category_hierarchy_superordinate_basic_subordinate.svg`, wired in comparison draft only.
-- Figure 9.6: unchanged — the existing Linda/bank-teller nested-set diagram, `ch09/fig_linda_conjunction_fallacy.svg`, stays as originally wired. Not a pending item.
-- `ch09_conjunction_fallacy_nested_sets.svg`: original campus-library/sustainability-club nested-set diagram, built for a since-superseded Linda replacement (see §2). Not used in Chapter 9. Record as an available, unused original asset — not a defect, not pending work.
-- Former question-substitution figure: held/not approved; replaced by the bias comparison table.
-- IQ standardization becomes Figure 9.9 in the comparison draft.
-- The authoritative source remains unchanged pending approval of the comparison draft.
-
-## 5. Validation
-
-- Confirm the category-hierarchy SVG path exists and is wired at Figure 9.1.
-- Confirm non-empty alt text and captions.
-- Confirm the comparison draft has sequential figure labels 9.1 through 9.9, with Figure 9.6 unchanged (Linda/bank-teller).
-- Confirm the comparison draft still contains the Linda/bank-teller passage and `fig_linda_conjunction_fallacy` reference — these are not defects to remove.
-- Confirm the original chapter and generated HTML were not modified.
-- Do not update `GPT_project_log.md` until the comparison draft is approved or promoted.
+Do not replace the Linda example, restore the former question-substitution figure, or treat the unused campus conjunction asset as a defect. Any future Chapter 9 work begins from the canonical source named above, not from paths mentioned in older audit history.

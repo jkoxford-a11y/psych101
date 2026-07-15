@@ -6,7 +6,7 @@
 
 ## Status
 
-Approved for textbook use, pending final rendered-page accessibility and readability review.
+Use now. Final rendered-page accessibility, footer-legibility, and narrow-screen review completed 2026-07-15.
 
 ## Figure type
 
@@ -41,11 +41,11 @@ A four-row educational infographic compares infant attachment classifications us
 
 ## Attribution
 
-Original educational infographic generated for Oxford Psychology 101, revised locally for conceptual accuracy and readable text, 2026. No external copyrighted image assets intentionally used. Safe for public sharing pending final rendered-page review.
+Original educational infographic generated for Oxford Psychology 101, revised locally for conceptual accuracy and readable text, 2026. No external copyrighted image assets intentionally used. Safe for public sharing.
 
 ## Public-sharing status
 
-Approved for textbook use, pending final rendered-page accessibility and readability review.
+Safe for public sharing; use now.
 
 ## Accuracy notes
 
@@ -53,8 +53,8 @@ Approved for textbook use, pending final rendered-page accessibility and readabi
 - The comparison rows describe observable behavior rather than adult-style traits or deterministic caregiving histories.
 - Avoidant attachment is presented as minimized visible attachment behavior, not absence of attachment.
 - Caregiver sensitivity is presented as a probabilistic correlate; temperament, stress, culture, and context also matter.
-- No further conceptual redesign is required. Final rendered-page accessibility and readability review remains pending.
+- Final rendered-page accessibility and readability review confirmed large labels, a legible footer, probabilistic caregiver-sensitivity language, no fixed adult-trait framing, and no clipping.
 
 ## Source alignment
 
-Matches the Chapter 10 comparison draft’s treatment of attachment classifications as relationship-specific reunion patterns rather than fixed traits or destinies.
+Matches the canonical Chapter 10 source’s treatment of attachment classifications as relationship-specific reunion patterns rather than fixed traits or destinies.

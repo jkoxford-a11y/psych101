@@ -2,7 +2,7 @@
 <title id="title">How categories form a hierarchy</title>
 <desc id="desc">A category hierarchy begins with Animal as the superordinate category, branches to Dog, Bird, and Fish as basic-level categories, and then narrows to Golden retriever, Robin, and Salmon as subordinate categories. The basic-level row is emphasized as the everyday naming default.</desc>
 <style>
-text{font-family:Arial,Helvetica,sans-serif;fill:#172033}.title{font-size:54px;font-weight:700}.sub{font-size:28px;fill:#526070}.tier{font-size:27px;font-weight:700}.box{font-size:36px;font-weight:700}.small{font-size:23px}.line{stroke:#5A6B7D;stroke-width:7;fill:none}.arrow{fill:#5A6B7D}
+text{font-family:Arial,Helvetica,sans-serif;fill:#172033}.title{font-size:54px;font-weight:700}.sub{font-size:28px;fill:#526070}.tier{font-size:22px;font-weight:700}.box{font-size:36px;font-weight:700}.small{font-size:23px}.line{stroke:#5A6B7D;stroke-width:7;fill:none}.arrow{fill:#5A6B7D}
 </style>
 <rect width="1600" height="900" fill="#FAFBFC"/>
 <text x="80" y="105" class="title">How categories form a hierarchy</text>

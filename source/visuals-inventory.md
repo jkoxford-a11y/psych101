@@ -1,6 +1,6 @@
 # Visuals Inventory — Psych101 Textbook
 
-*Last reconciled: 2026-07-10 — Final nine-figure Ch2 set wired into `source/chapters/ch02-research-methods.md` and `docs/chapters/02-research-methods.html`, renumbered by order of appearance; placebo PNG citation repaired; third-variable UUID asset renamed. Treat the chapter-specific README/metadata files as authoritative for captions, alt text, licensing, and attribution when they exist.*
+*Last reconciled: 2026-07-15 — Chapters 9–11 finalized: Chapter 9 hierarchy wired and IQ figure renumbered; Chapter 10 conceptual figures revised and ZPD lab linked; Chapter 11 Asch, aggregation, and situation-strength figures replaced. Treat chapter-specific README/metadata files as authoritative for captions, alt text, licensing, and attribution.*
 
 Status key: ✅ wired/use now · 🧩 built/audited but not wired · ⚠️ exists but needs review/decision · 🔲 still needed/not built · ❌ broken reference/file missing
 
@@ -176,11 +176,11 @@ All six completed SVGs wired into `ch08-memory.md` in Session 78.
 
 ## Chapter 9 — Thinking, Language & Intelligence
 
-All 10 wirable figures are wired. Only optional/held items remain.
+Final nine-figure set wired in the canonical source and regenerated HTML.
 
 | # | Description | Status | Filename / note |
 |---|-------------|--------|-----------------|
-| 9.1 | Hierarchical category structure | ✅ | `ch09/fig_hierarchical_category_structure.png` |
+| 9.1 | Hierarchical category structure | ✅ wired/use now | `ch09/ch09_category_hierarchy_superordinate_basic_subordinate.svg` — Animal → Dog/Bird/Fish → Golden retriever/Robin/Salmon; basic row is the everyday naming level. |
 | 9.2 | Prototype compression | ✅ | `ch09/fig_prototype_compression_dogs.png` |
 | 9.3 | Luchins water-jar mental-set demo | ✅ | `ch09/fig_luchins_water_jar_mental_set.png` |
 | 9.4 | Duncker candle problem | ✅ | `ch09/fig_functional_fixedness_candle_problem.png` |
@@ -188,8 +188,9 @@ All 10 wirable figures are wired. Only optional/held items remain.
 | 9.6 | Linda conjunction fallacy / nested sets | ✅ | `ch09/fig_linda_conjunction_fallacy.png` |
 | 9.7 | Wason selection task prompt | ✅ | `ch09/fig_wason_task_prompt.png` |
 | 9.8 | Wason selection task answer | ✅ | `ch09/fig_wason_task_answer.png` |
-| 9.9 | Biases as question substitution | ✅ | `ch09/fig_bias_question_substitution.png` |
-| 9.10 | IQ standardization curve | ✅ | `ch09/fig_iq_bell_curve.png` |
+| held | Biases as question substitution | held/not approved | `ch09/fig_bias_question_substitution.png` — omitted; the bias comparison remains a table because the biases do not require one shared mechanism. |
+| 9.9 | IQ standardization curve | ✅ wired/use now | `ch09/fig_iq_bell_curve.png` — renumbered from former 9.10 student-facing. |
+| — | Campus conjunction-fallacy nested sets | unused original | `ch09/ch09_conjunction_fallacy_nested_sets.svg` — built for a superseded Linda replacement; retained but not wired or pending. |
 | 9.11 | Generic start/process/decision/output flowchart | ⚠️ | Held; judged too generic/decorative. UUID file `0bb01f45-5416-457b-b62e-f91860aad01b-1.png`, not renamed. |
 | — | Language acquisition timeline | 🔲 | Optional. |
 | — | Multiple intelligences vs. g-factor comparison | 🔲 | Optional. |
@@ -203,14 +204,14 @@ Final selected set wired into `source/chapters/ch10-lifespan-development.md` on 
 
 | # | Description | Method | Status | Filename / note |
 |---|-------------|--------|--------|-----------------|
-| 10.1 | Human extended development / life-history construction | GPT PNG | ? wired | `ch10_human_extended_development_life_history.png` — secondary altriciality + cooperative breeding as the mechanism behind long, plastic, expensive childhood. |
+| 10.1 | Human extended development / interacting contributors | Programmatic SVG + PNG | ✅ wired/use now | `ch10_human_extended_development_life_history.svg/.png` — reciprocal contributor network; explicitly a model, not a complete origin story. |
 | 10.2 | Cross-sectional vs. longitudinal designs | GPT PNG | ? wired | `ch10_cross_sectional_vs_longitudinal.png` — two-panel schematic + cohort/attrition confounds. |
-| 10.3 | Synaptic pruning / developmental tuning | GPT PNG | ? wired | `ch10_synaptic_pruning_developmental_tuning.png` — simpler overbuild/stabilize/prune figure selected over regional curve detail. |
+| 10.3 | Selective stabilization / developmental tuning | Programmatic SVG + PNG | ✅ wired/use now | `ch10_synaptic_pruning_developmental_tuning.svg/.png` — three-stage one-idea sequence; no exact windows, optimization, or experience-only mechanism. |
 | 10.4 | Piaget's four stages | GPT PNG | ? wired | `ch10_piaget_stages_sequence_with_caveat.png` — includes caveat that stages are a useful map, not a rigid calendar. |
 | 10.5 | Vygotsky ZPD / scaffolding | GPT PNG | ? wired | `ch10_vygotsky_zpd_scaffolding.png` — good candidate for future AI-after-effort lab connection. |
-| 10.6 | Attachment classifications — observable reunion behavior | GPT PNG + local text revision | ✅ approved replacement / wired | `ch10_attachment_styles_reunion_behavior.png` — observable reunion behavior only; caregiver sensitivity framed as a probabilistic correlate, not a deterministic history. No further conceptual redesign required; final rendered-page accessibility and readability review pending. |
-| 10.7 | Adolescent dual systems crossover | SVG | ? wired | `ch10_adolescent_dual_systems_crossover.svg` — reward/novelty activation precedes fully mature prefrontal control. |
-| 10.8 | Fluid vs. crystallized intelligence across adulthood | SVG | ? wired | `ch10_fluid_crystallized_adulthood.svg` — adult cognitive aging as tradeoff, not simple decline. |
+| 10.6 | Attachment classifications — observable reunion behavior | GPT PNG + local text revision | ✅ wired/use now | `ch10_attachment_styles_reunion_behavior.png` — final rendered-page check passed; observable behavior and probabilistic caregiver-sensitivity footer remain legible. |
+| 10.7 | Adolescent development schematic | Programmatic SVG | ✅ wired/use now | `ch10_adolescent_dual_systems_crossover.svg` — average tendencies with variation bands plus peers, stakes, context, and opportunity; no single finish age. |
+| 10.8 | Cognitive abilities across adulthood | Programmatic SVG | ✅ wired/use now | `ch10_fluid_crystallized_adulthood.svg` — schematic group averages, overlapping age groups, individual variation, and dementia/ordinary-aging distinction. |
 | — | Fast—slow life-history continuum | GPT PNG | held/skipped | `ch10_fast_slow_life_history_continuum.png` — redundant with the human extended-development figure. |
 | — | Synaptogenesis + pruning regional curves | SVG | held/skipped | `ch10_synaptogenesis_pruning_regional.svg` — too detailed relative to the simpler pruning/tuning figure. |
 | — | Orchid/dandelion differential susceptibility | PNG | held/skipped | `ch10_orchid_dandelion_susceptibility.png` — prose currently sufficient; optional future rebuild only. |
@@ -228,12 +229,12 @@ Seven figures are wired for Sections 1–5. Figures 11.6 and 11.7 were rebuilt a
 | # | Description | Status | Notes |
 |---|-------------|--------|-------|
 | 11.1 | Festinger & Carlsmith (1959) $1/$20 dissonance study | ✅ | `ch11/fig_festinger_carlsmith_dissonance.png` |
-| 11.2 | Asch line-judgment conformity study | ✅ | `ch11/fig_asch_line_judgment_study.png` |
+| 11.2 | Asch line-judgment conformity study | ✅ revised/wired | `ch11/fig_asch_line_judgment_study.svg/.png` — B visibly matches the standard; unanimous majority chooses A; ally panel breaks unanimity. |
 | 11.3 | Milgram obedience physical setup | ✅ | `ch11/fig_milgram_obedience_setup.png` |
 | 11.4 | Stereotype / prejudice / discrimination triangle | ✅ | `ch11/fig_prejudice_stereotype_discrimination_triangle.png` |
 | 11.5 | Person and situation influence diagram | ✅ | `ch11/fig_person_situation_influence_diagram.png` |
-| 11.6 | Trait signal aggregation | ✅ wired | `ch11/fig_trait_signal_aggregation.png` plus editable SVG source — rebuilt from existing spec/alt text; single act r≈.29 vs. aggregated r≈.72 scatter plots. |
-| 11.7 | Person × situation interaction | ✅ wired | `ch11/fig_person_situation_grid.png` plus editable SVG source — rebuilt from existing spec/alt text; weak-situation spread ≈4.7 points vs. strong-situation compression ≈0.8 points. |
+| 11.6 | Trait signal aggregation | ✅ revised/wired | `ch11/fig_trait_signal_aggregation.svg/.png` — data-free single-observation versus aggregated-observations comparison; no correlations or synthetic statistics. |
+| 11.7 | Weak and strong situations | ✅ revised/wired | `ch11/fig_person_situation_grid.svg/.png` — same individuals in both panels; conceptual compression without scores or effect sizes. |
 | — | Attribution theory | 🔲 | Optional/superseded planning idea. |
 | — | ELM dual-route diagram | 🔲 | Optional/superseded planning idea. |
 | — | Bystander effect five-step model | 🔲 | Optional/superseded planning idea. |

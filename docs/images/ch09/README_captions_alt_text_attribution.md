@@ -1,6 +1,6 @@
 # Chapter 9 Figure Metadata
 
-This file records the figures added or revised during the Chapter 9 comparison-draft audit. Existing Chapter 9 assets not listed here retain their prior status and still require a separate provenance reconciliation before final public release.
+Reconciled 2026-07-15 after promotion and final HTML regeneration. The category hierarchy is active Figure 9.1. The campus conjunction diagram remains an unused candidate, and the former bias-question-substitution figure remains omitted.
 
 ## Category hierarchy
 
@@ -11,7 +11,7 @@ This file records the figures added or revised during the Chapter 9 comparison-d
 - **Creation method:** Original programmatic SVG created for Oxford Psychology 101, 2026.
 - **License/source:** Original work; no external copyrighted image assets used.
 - **Attribution:** Original figure generated for Oxford Psychology 101 with ChatGPT-assisted programmatic drawing, 2026.
-- **Public-sharing status:** Use now, pending final browser rendering check.
+- **Public-sharing status:** Use now; final desktop and narrow-screen rendering check completed.
 - **Caveat:** The hierarchy illustrates one common everyday basic level. Basic-level naming can vary with expertise, culture, and task.
 
 ## Campus conjunction-fallacy nested sets — unused candidate
@@ -26,6 +26,15 @@ This file records the figures added or revised during the Chapter 9 comparison-d
 - **Public-sharing status:** Candidate/reference; do not wire into Chapter 9.
 - **Decision:** Jon chose to retain the classic Linda/bank-teller research example and its existing nested-set figure. The Linda task comes from Tversky and Kahneman (1983), not from commercial textbook material. This campus version remains available only as an original alternative teaching asset.
 
-## Figure 9.9 decision
+## Figure 9.9 — IQ standardization
 
-The former bias-question-substitution figure is not approved for the comparison draft. The replacement comparison table is more accurate because availability, representativeness, confirmation bias, framing, and anchoring do not need to arise from one common mechanism. The IQ standardization figure should become Figure 9.9 when the comparison draft is promoted.
+- **Filename:** `fig_iq_bell_curve.png`
+- **Caption:** The standardized distribution used to interpret modern IQ scores. Scores are meaningful relative to a norming sample; the graph does not imply that intelligence exists as an absolute quantity with natural 15-point units.
+- **Alt text:** Modern IQ scores are normed so that the reference sample approximates a bell-shaped distribution with a mean of 100 and a standard deviation of 15. Roughly two-thirds of standardized scores fall between 85 and 115. The graph describes the score scale and reference sample, not a natural unit of intelligence.
+- **Creation method:** Existing original project figure; editable source `fig_iq_bell_curve.svg` retained alongside the canonical PNG.
+- **Attribution:** Original programmatic figure for Oxford Psychology 101, 2026.
+- **License:** Project-created original.
+- **Public-sharing status:** Safe for public sharing; use now.
+- **Accuracy caveat:** The curve describes a standardized score distribution in a norming sample, not a natural unit or complete measure of a person.
+
+The former bias-question-substitution figure is not approved. The replacement comparison table is more accurate because availability, representativeness, confirmation bias, framing, and anchoring do not need to arise from one common mechanism.
