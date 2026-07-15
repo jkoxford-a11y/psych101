@@ -1,7 +1,7 @@
 # Chapter 12 Figure Metadata
 
 **Last reconciled:** 2026-07-15  
-**Status:** Four original explanatory diagrams are wired in the canonical source and regenerated Chapter 12 HTML. Final status is **use now pending Jon's visual review**.
+**Status:** Four original explanatory diagrams are wired in the canonical source and regenerated Chapter 12 HTML. Final status is **use now**.
 
 ## Figure 12.1 — Body-budget framework
 
@@ -12,7 +12,7 @@
 - **Creation method:** Original programmatic SVG authored for Oxford Psychology 101 and rasterized locally to PNG.
 - **Attribution:** Original figure for Oxford Psychology 101, 2026. No external image assets used.
 - **License:** Repository-authored original; safe for public sharing under the textbook's project license.
-- **Public-sharing status:** Use now pending Jon's final visual review.
+- **Public-sharing status:** Use now.
 - **Caveat:** “Body budget” is a metaphor/framework, not a validated single scale or one interchangeable physiological account.
 
 ## Figure 12.2 — Core-affect circumplex
@@ -24,7 +24,7 @@
 - **Creation method:** Original programmatic SVG authored for Oxford Psychology 101 and rasterized locally to PNG.
 - **Attribution:** Original figure for Oxford Psychology 101, 2026. No external image assets used.
 - **License:** Repository-authored original; safe for public sharing under the textbook's project license.
-- **Public-sharing status:** Use now pending Jon's final visual review.
+- **Public-sharing status:** Use now.
 - **Caveat:** The circumplex is model-neutral here; it does not claim that core affect is the established substrate from which every emotion is constructed.
 
 ## Figure 12.3 — Cognitive light cone as a goal horizon
@@ -32,12 +32,12 @@
 - **File:** `ch12_cognitive_light_cone_goal_horizon.svg`
 - **Teaching job:** Show that a cognitive light cone concerns the spatial and temporal scale of goals an agent can represent and work toward.
 - **Caption:** A cognitive light cone represents the spatial and temporal scale of goals an agent can represent and work toward—not merely what it can sense or physically reach. Humans can organize present action around distant relationships, future outcomes, institutions, and abstract commitments. That expanded goal horizon supports planning and cooperation, while also allowing absent threats to enter present stress appraisal. Original explanatory figure based on the framework developed by Levin (2019).
-- **Alt text:** Space-time diagram centered on Here and Now. The horizontal dimension runs from near to distant space, and the vertical dimension runs from the present toward the future. Three increasingly broad goal horizons surround the center: immediate bodily and local regulation; nearby organisms, learned routes, and short-term outcomes; and future self, distant relationships, institutions, abstract commitments, and long-term collective outcomes. A note distinguishes goal scale from sensory range. The takeaway says that a broader goal horizon lets distant outcomes guide present action, so threats to distant goals can enter present appraisal now.
+- **Alt text:** Space-time diagram centered on Here and Now. The horizontal dimension runs from near to distant space. The temporal dimension reaches from a past/memory cue through the present toward the future. Three increasingly broad goal horizons surround the center: immediate bodily and local regulation; nearby organisms, learned routes, and short-term outcomes; and future self, distant relationships, institutions, abstract commitments, and long-term collective outcomes. A note states that goal scale is not sensory range alone. The takeaway says that a broader goal horizon lets distant outcomes guide present action, so threats to distant goals can enter present appraisal now.
 - **Creation method:** Original programmatic SVG authored for Oxford Psychology 101; no published Levin figure was copied.
 - **Attribution:** Original explanatory figure for Oxford Psychology 101, 2026, based on Levin (2019). No external image assets used.
 - **License:** Repository-authored original; safe for public sharing under the textbook's project license.
-- **Public-sharing status:** Use now pending Jon's final visual review.
-- **Caveat:** The nested horizons are a teaching schematic, not a rigid evolutionary ladder or a claim that an agent's cognition reduces to one measurable cone. Human symbolic stress is an application of the framework, not its definition.
+- **Public-sharing status:** Use now.
+- **Caveat:** The nested horizons are a teaching schematic, not a rigid evolutionary ladder or a claim that an agent's cognition reduces to one measurable cone. The past/memory cue indicates temporal reach through retained information; human symbolic stress is an application of the framework, not its definition.
 - **Retired artwork:** `fig_cognitive_light_cone_hpa_axis.svg/.png` is no longer wired. The corrected SAM/HPA prose is sufficient, so the combined pathway artwork was not retained as a separate figure.
 
 ## Figure 12.4 — GAS and allostatic load
@@ -49,5 +49,5 @@
 - **Creation method:** Original programmatic SVG authored for Oxford Psychology 101 and rasterized locally to PNG.
 - **Attribution:** Original figure for Oxford Psychology 101, 2026. No external image assets used.
 - **License:** Repository-authored original; safe for public sharing under the textbook's project license.
-- **Public-sharing status:** Use now pending Jon's final visual review.
+- **Public-sharing status:** Use now.
 - **Caveat:** GAS is a historical heuristic, not a universal fixed-stage trajectory. Allostatic load is conceptual and multisystem, not a single remaining-capacity percentage.
