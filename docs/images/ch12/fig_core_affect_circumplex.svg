@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1000" viewBox="0 0 1200 1000" role="img" aria-labelledby="title desc">
+  <title id="title">Core affect circumplex</title><desc id="desc">Arousal runs vertically from low to high and valence horizontally from unpleasant to pleasant. Example states occupy four quadrants. Core affect is not a specific emotion.</desc>
+  <defs><marker id="a" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#263548"/></marker></defs>
+  <rect width="1200" height="1000" fill="#fbfcfe"/>
+  <text x="600" y="58" text-anchor="middle" font-family="Arial, sans-serif" font-size="42" font-weight="700" fill="#17365d">RUSSELL'S CORE-AFFECT CIRCUMPLEX</text>
+  <rect x="120" y="105" width="480" height="385" fill="#fff0ec"/><rect x="600" y="105" width="480" height="385" fill="#fff7dc"/>
+  <rect x="120" y="490" width="480" height="385" fill="#f0effa"/><rect x="600" y="490" width="480" height="385" fill="#edf7ef"/>
+  <line x1="120" y1="490" x2="1080" y2="490" stroke="#263548" stroke-width="5" marker-end="url(#a)"/>
+  <line x1="1080" y1="490" x2="120" y2="490" stroke="#263548" stroke-width="5" marker-end="url(#a)"/>
+  <line x1="600" y1="875" x2="600" y2="105" stroke="#263548" stroke-width="5" marker-end="url(#a)"/>
+  <line x1="600" y1="105" x2="600" y2="875" stroke="#263548" stroke-width="5" marker-end="url(#a)"/>
+  <g font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#263548"><text x="600" y="98" text-anchor="middle">HIGH AROUSAL</text><text x="600" y="920" text-anchor="middle">LOW AROUSAL</text><text x="68" y="500" text-anchor="middle" transform="rotate(-90 68 500)">UNPLEASANT</text><text x="1130" y="500" text-anchor="middle" transform="rotate(90 1130 500)">PLEASANT</text></g>
+  <g font-family="Arial, sans-serif" font-size="36" font-weight="600" fill="#17365d">
+    <circle cx="300" cy="255" r="12" fill="#9b2d30"/><text x="330" y="267">Anxious</text><circle cx="255" cy="375" r="12" fill="#9b2d30"/><text x="285" y="387">Angry</text>
+    <circle cx="770" cy="255" r="12" fill="#b87900"/><text x="800" y="267">Energized</text><circle cx="830" cy="375" r="12" fill="#b87900"/><text x="860" y="387">Excited</text>
+    <circle cx="275" cy="625" r="12" fill="#5547a3"/><text x="305" y="637">Sad</text><circle cx="335" cy="755" r="12" fill="#5547a3"/><text x="365" y="767">Fatigued</text>
+    <circle cx="790" cy="625" r="12" fill="#2f7d45"/><text x="820" y="637">Calm</text><circle cx="735" cy="755" r="12" fill="#2f7d45"/><text x="765" y="767">Content</text>
+  </g>
+  <circle cx="600" cy="490" r="96" fill="#fff" stroke="#315b8a" stroke-width="5"/><text x="600" y="475" text-anchor="middle" font-family="Arial, sans-serif" font-size="31" font-weight="700" fill="#17365d">CORE</text><text x="600" y="512" text-anchor="middle" font-family="Arial, sans-serif" font-size="31" font-weight="700" fill="#17365d">AFFECT</text><text x="600" y="548" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" fill="#475569">not a specific emotion</text>
+  <text x="600" y="974" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#17365d">Valence and arousal describe broad dimensions of current feeling.</text>
+</svg>

@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Body budget as a framework for interacting supports and demands</title>
+  <desc id="desc">Supportive conditions and added demands converge on present bodily condition and regulatory demand. The diagram states that body budget is a metaphor, not one measurable account.</desc>
+  <defs><marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0 0 L12 6 L0 12 Z" fill="#334155"/></marker></defs>
+  <rect width="1600" height="900" fill="#fbfcfe"/>
+  <text x="800" y="70" text-anchor="middle" font-family="Arial, sans-serif" font-size="46" font-weight="700" fill="#17365d">BODY BUDGET IS A METAPHOR</text>
+  <text x="800" y="112" text-anchor="middle" font-family="Arial, sans-serif" font-size="25" fill="#475569">A framework for conditions that can support regulation or add demand</text>
+  <rect x="80" y="165" width="520" height="570" rx="26" fill="#edf7f0" stroke="#2f6f49" stroke-width="4"/>
+  <text x="340" y="220" text-anchor="middle" font-family="Arial, sans-serif" font-size="34" font-weight="700" fill="#215b3b">SUPPORTIVE CONDITIONS</text>
+  <g font-family="Arial, sans-serif" font-size="29" font-weight="600" fill="#17365d">
+    <rect x="130" y="270" width="420" height="62" rx="14" fill="#fff" stroke="#7da88b" stroke-width="3"/><text x="340" y="311" text-anchor="middle">Sleep</text>
+    <rect x="130" y="355" width="420" height="62" rx="14" fill="#fff" stroke="#7da88b" stroke-width="3"/><text x="340" y="396" text-anchor="middle">Food + water</text>
+    <rect x="130" y="440" width="420" height="62" rx="14" fill="#fff" stroke="#7da88b" stroke-width="3"/><text x="340" y="481" text-anchor="middle">Movement</text>
+    <rect x="130" y="525" width="420" height="62" rx="14" fill="#fff" stroke="#7da88b" stroke-width="3"/><text x="340" y="566" text-anchor="middle">Social support</text>
+    <rect x="130" y="610" width="420" height="62" rx="14" fill="#fff" stroke="#7da88b" stroke-width="3"/><text x="340" y="651" text-anchor="middle">Recovery time</text>
+  </g>
+  <rect x="1000" y="165" width="520" height="570" rx="26" fill="#fff3ed" stroke="#a9472b" stroke-width="4"/>
+  <text x="1260" y="220" text-anchor="middle" font-family="Arial, sans-serif" font-size="34" font-weight="700" fill="#8c351f">ADDED DEMANDS</text>
+  <g font-family="Arial, sans-serif" font-size="29" font-weight="600" fill="#17365d">
+    <rect x="1050" y="270" width="420" height="62" rx="14" fill="#fff" stroke="#c98b78" stroke-width="3"/><text x="1260" y="311" text-anchor="middle">Sustained workload</text>
+    <rect x="1050" y="355" width="420" height="62" rx="14" fill="#fff" stroke="#c98b78" stroke-width="3"/><text x="1260" y="396" text-anchor="middle">Uncertainty</text>
+    <rect x="1050" y="440" width="420" height="62" rx="14" fill="#fff" stroke="#c98b78" stroke-width="3"/><text x="1260" y="481" text-anchor="middle">Isolation</text>
+    <rect x="1050" y="525" width="420" height="62" rx="14" fill="#fff" stroke="#c98b78" stroke-width="3"/><text x="1260" y="566" text-anchor="middle">Missed meals</text>
+    <rect x="1050" y="610" width="420" height="62" rx="14" fill="#fff" stroke="#c98b78" stroke-width="3"/><text x="1260" y="651" text-anchor="middle">Poor sleep</text>
+  </g>
+  <path d="M610 450 H720" stroke="#334155" stroke-width="7" marker-end="url(#arrow)"/><path d="M990 450 H880" stroke="#334155" stroke-width="7" marker-end="url(#arrow)"/>
+  <rect x="690" y="275" width="220" height="350" rx="28" fill="#eaf1fb" stroke="#315b8a" stroke-width="5"/>
+  <circle cx="800" cy="365" r="46" fill="#fff" stroke="#315b8a" stroke-width="4"/>
+  <path d="M770 365 H830 M800 335 V395" stroke="#315b8a" stroke-width="8"/>
+  <text x="800" y="460" text-anchor="middle" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#17365d">PRESENT</text>
+  <text x="800" y="500" text-anchor="middle" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#17365d">BODILY</text>
+  <text x="800" y="540" text-anchor="middle" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#17365d">CONDITION</text>
+  <text x="800" y="585" text-anchor="middle" font-family="Arial, sans-serif" font-size="23" fill="#475569">+ regulatory demand</text>
+  <rect x="185" y="775" width="1230" height="82" rx="20" fill="#fff" stroke="#94a3b8" stroke-width="3"/>
+  <text x="800" y="810" text-anchor="middle" font-family="Arial, sans-serif" font-size="25" font-weight="700" fill="#17365d">These influences interact; they are not one literal tank or measurable account.</text>
+  <text x="800" y="842" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" fill="#475569">Bodily condition can influence affective experience and the demands of regulation.</text>
+</svg>
