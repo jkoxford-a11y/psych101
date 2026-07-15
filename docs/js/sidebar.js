@@ -52,7 +52,7 @@
       name: "Mental & Physical Health",
       chapters: [
         { id: "12", label: "12 — Emotion, Stress & Coping", path: "chapters/12-emotion-stress-coping.html" },
-        { id: "13", label: "13 — Disorders & Therapy", path: "chapters/13-disorders-therapy.html" }
+        { id: "13", label: "13 — Psychological Disorders & Therapy", path: "chapters/13-disorders-therapy.html" }
       ]
     }
   ];
@@ -71,6 +71,15 @@
     var prefix = "";
     for (var j = 0; j < ups; j++) prefix += "../";
     return prefix + remainder.join("/");
+  }
+
+  function ensureSharedFigureStyles(currentDir) {
+    if (document.querySelector('link[data-psych101-mobile-figure-fix]')) return;
+    var link = document.createElement("link");
+    link.rel = "stylesheet";
+    link.href = resolveHref(currentDir, "css/mobile-figure-fix.css");
+    link.setAttribute("data-psych101-mobile-figure-fix", "true");
+    document.head.appendChild(link);
   }
 
   function el(tag, attrs, text) {
@@ -209,8 +218,10 @@
     var script = document.currentScript;
     var root = document.getElementById("app-sidebar");
     if (!root || !script) return;
+    var currentDir = script.getAttribute("data-dir") || "";
+    ensureSharedFigureStyles(currentDir);
     render(root, {
-      dir: script.getAttribute("data-dir") || "",
+      dir: currentDir,
       active: script.getAttribute("data-active") || "",
       top: script.getAttribute("data-top") || "full"
     });

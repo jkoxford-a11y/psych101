@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="840" viewBox="0 0 1400 840" role="img" aria-labelledby="title desc">
+<title id="title">Treatment selection is an evidence and context decision</title>
+<desc id="desc">Four evidence streams—condition and target, comparative evidence, risks and burdens, and client context—converge on a shared treatment decision. Psychotherapy, medication, and somatic treatment remain separate options rather than passing through one mechanism.</desc>
+<rect width="1400" height="840" fill="#fbfcfe"/>
+<text x="700" y="68" text-anchor="middle" font-family="Arial" font-size="44" font-weight="700" fill="#1a1a2e">Treatment selection is a matching problem</text>
+<text x="700" y="112" text-anchor="middle" font-family="Arial" font-size="24" fill="#4b5563">No single ranking applies to every condition or person</text>
+<defs><marker id="arr" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0,0 L12,6 L0,12 z" fill="#4a6fa5"/></marker></defs>
+<rect x="90" y="185" width="360" height="130" rx="22" fill="#eef4fb" stroke="#4a6fa5" stroke-width="4"/>
+<text x="270" y="235" text-anchor="middle" font-family="Arial" font-size="28" font-weight="700">Condition and target</text>
+<text x="270" y="275" text-anchor="middle" font-family="Arial" font-size="22">What problem is being treated?</text>
+<rect x="950" y="185" width="360" height="130" rx="22" fill="#f5f3ff" stroke="#7c3aed" stroke-width="4"/>
+<text x="1130" y="235" text-anchor="middle" font-family="Arial" font-size="28" font-weight="700">Comparative evidence</text>
+<text x="1130" y="275" text-anchor="middle" font-family="Arial" font-size="22">Against which alternative?</text>
+<rect x="90" y="500" width="360" height="130" rx="22" fill="#fff7ed" stroke="#b45309" stroke-width="4"/>
+<text x="270" y="550" text-anchor="middle" font-family="Arial" font-size="28" font-weight="700">Risks and burdens</text>
+<text x="270" y="590" text-anchor="middle" font-family="Arial" font-size="22">Adverse effects, time, access</text>
+<rect x="950" y="500" width="360" height="130" rx="22" fill="#f0fdf4" stroke="#15803d" stroke-width="4"/>
+<text x="1130" y="550" text-anchor="middle" font-family="Arial" font-size="28" font-weight="700">Client context</text>
+<text x="1130" y="590" text-anchor="middle" font-family="Arial" font-size="22">Goals, preferences, history</text>
+<rect x="500" y="310" width="400" height="200" rx="30" fill="#ffffff" stroke="#1a1a2e" stroke-width="5"/>
+<text x="700" y="370" text-anchor="middle" font-family="Arial" font-size="32" font-weight="700">Shared treatment decision</text>
+<text x="700" y="420" text-anchor="middle" font-family="Arial" font-size="25">psychotherapy • medication</text>
+<text x="700" y="458" text-anchor="middle" font-family="Arial" font-size="25">somatic treatment • combined care</text>
+<line x1="455" y1="285" x2="510" y2="335" stroke="#4a6fa5" stroke-width="7" marker-end="url(#arr)"/>
+<line x1="945" y1="285" x2="890" y2="335" stroke="#4a6fa5" stroke-width="7" marker-end="url(#arr)"/>
+<line x1="455" y1="535" x2="510" y2="485" stroke="#4a6fa5" stroke-width="7" marker-end="url(#arr)"/>
+<line x1="945" y1="535" x2="890" y2="485" stroke="#4a6fa5" stroke-width="7" marker-end="url(#arr)"/>
+<rect x="240" y="700" width="920" height="80" rx="18" fill="#fdf2f8" stroke="#be185d" stroke-width="3"/>
+<text x="700" y="735" text-anchor="middle" font-family="Arial" font-size="24" font-weight="700">Alliance matters in psychotherapy</text>
+<text x="700" y="768" text-anchor="middle" font-family="Arial" font-size="22">It does not erase condition-specific technique or biological tradeoffs</text>
+</svg>

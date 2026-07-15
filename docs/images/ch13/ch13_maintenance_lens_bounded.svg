@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="860" viewBox="0 0 1400 860" role="img" aria-labelledby="title desc">
+<title id="title">A bounded maintenance lens</title>
+<desc id="desc">A three-stage loop shows a trigger leading to a protective response and immediate relief, with feedback that can preserve the problem over time. A separate boundary panel states that this lens fits some symptoms, not all disorders.</desc>
+<rect width="1400" height="860" fill="#fbfcfe"/>
+<text x="700" y="72" text-anchor="middle" font-family="Arial, sans-serif" font-size="44" font-weight="700" fill="#1a1a2e">A bounded maintenance lens</text>
+<text x="700" y="116" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" fill="#4b5563">A response can help now and still preserve a problem later</text>
+<defs><marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0,0 L12,6 L0,12 z" fill="#4a6fa5"/></marker></defs>
+<rect x="90" y="230" width="310" height="180" rx="24" fill="#eef4fb" stroke="#4a6fa5" stroke-width="4"/>
+<text x="245" y="300" text-anchor="middle" font-family="Arial" font-size="30" font-weight="700" fill="#1a1a2e">Trigger or demand</text>
+<text x="245" y="345" text-anchor="middle" font-family="Arial" font-size="23" fill="#374151">Threat cue, distress,</text>
+<text x="245" y="377" text-anchor="middle" font-family="Arial" font-size="23" fill="#374151">low mood, uncertainty</text>
+<rect x="545" y="230" width="310" height="180" rx="24" fill="#fff7ed" stroke="#b45309" stroke-width="4"/>
+<text x="700" y="300" text-anchor="middle" font-family="Arial" font-size="30" font-weight="700" fill="#1a1a2e">Protective response</text>
+<text x="700" y="345" text-anchor="middle" font-family="Arial" font-size="23" fill="#374151">Avoid, withdraw, check,</text>
+<text x="700" y="377" text-anchor="middle" font-family="Arial" font-size="23" fill="#374151">seek immediate relief</text>
+<rect x="1000" y="230" width="310" height="180" rx="24" fill="#f0fdf4" stroke="#15803d" stroke-width="4"/>
+<text x="1155" y="300" text-anchor="middle" font-family="Arial" font-size="30" font-weight="700" fill="#1a1a2e">Short-term payoff</text>
+<text x="1155" y="345" text-anchor="middle" font-family="Arial" font-size="23" fill="#374151">Relief, reduced effort,</text>
+<text x="1155" y="377" text-anchor="middle" font-family="Arial" font-size="23" fill="#374151">or restored control</text>
+<line x1="405" y1="320" x2="530" y2="320" stroke="#4a6fa5" stroke-width="8" marker-end="url(#arrow)"/>
+<line x1="860" y1="320" x2="985" y2="320" stroke="#4a6fa5" stroke-width="8" marker-end="url(#arrow)"/>
+<path d="M1155 430 C1155 595, 245 595, 245 430" fill="none" stroke="#4a6fa5" stroke-width="8" marker-end="url(#arrow)"/>
+<rect x="250" y="565" width="900" height="54" rx="12" fill="#fbfcfe"/>
+<text x="700" y="602" text-anchor="middle" font-family="Arial" font-size="27" font-weight="700" fill="#4a6fa5">The payoff can reinforce the response and limit corrective experience</text>
+<rect x="210" y="680" width="980" height="130" rx="18" fill="#fdf2f8" stroke="#be185d" stroke-width="3"/>
+<text x="700" y="725" text-anchor="middle" font-family="Arial" font-size="27" font-weight="700" fill="#8b164e">Boundary</text>
+<text x="700" y="770" text-anchor="middle" font-family="Arial" font-size="24" fill="#374151">Useful for selected maintenance loops—not an origin story for every disorder</text>
+</svg>
