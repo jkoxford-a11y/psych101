@@ -1,6 +1,6 @@
 # Chapter 9: Thinking, Language & Intelligence
 
-> Comparison revision. The current chapter remains at `source/chapters/ch09-thinking-language-intelligence.md`. Drafting history and provenance for the original chapter are in `_provenance/ch09-thinking-language-intelligence.md`.
+> Canonical revised source. The pre-revision chapter is preserved in `_archive/ch09-thinking-language-intelligence.md`; drafting history and provenance are in `_provenance/ch09-thinking-language-intelligence.md`.
 
 ---
 
@@ -53,11 +53,12 @@ People also use **exemplars**: specific remembered members of a category. An unu
 
 Concepts can also be organized hierarchically. “Animal” is a **superordinate** category, “dog” is a **basic-level** category, and “golden retriever” is a **subordinate** category. The basic level is often the default in everyday naming: specific enough to guide action, but broad enough to generalize.
 
-<!-- Figure 9.1 is intentionally omitted from this comparison draft. The current bird hierarchy labels Birds as superordinate and Raptors/Waterfowl as basic-level categories. Revise the image before restoring it so the visual matches the novice-level Animal → bird/dog → robin/golden retriever hierarchy taught in the prose. -->
+![Figure 9.1: A category hierarchy begins with the broad superordinate category Animal, branches to the basic-level categories Dog, Bird, and Fish, and then narrows to the subordinate categories Golden retriever, Robin, and Salmon. The basic-level row is emphasized as the usual everyday naming level.](../../docs/images/ch09/ch09_category_hierarchy_superordinate_basic_subordinate.svg)
+*Figure 9.1. Categories can be organized from broad superordinate groups to everyday basic-level names and more specific subordinate groups. The basic level is often the everyday naming default. Original figure.*
 
 The compression metaphor helps connect these ideas to Chapter 8. Repeated encounters leave behind regularities: what usually predicts category membership, which examples are typical, and where one category sits relative to others. “Apple” becomes connected with fruit, food, sweetness, trees, seeds, pie, and many specific episodes. The resulting concept is useful because it preserves structure across experiences. It can also mislead because whatever was common enough to shape the representation may be a poor guide to an unusual case.
 
-![Figure 9.2: From episodic memories to semantic knowledge. Several encounters with different dogs contribute overlapping information to a general representation of dogs. That representation is then used to recognize a new case, such as a husky, that is not identical to any earlier encounter. The diagram is a teaching model: category learning may draw on prototypes, exemplars, rules, and context rather than a single literal average.](../../images/ch09/fig_prototype_compression_dogs.png)
+![Figure 9.2: From episodic memories to semantic knowledge. Several encounters with different dogs contribute overlapping information to a general representation of dogs. That representation is then used to recognize a new case, such as a husky, that is not identical to any earlier encounter. The diagram is a teaching model: category learning may draw on prototypes, exemplars, rules, and context rather than a single literal average.](../../docs/images/ch09/fig_prototype_compression_dogs.png)
 *Figure 9.2. From specific episodic encounters to general semantic knowledge. The “average dog” is a teaching shorthand, not a claim that every concept is stored as one literal prototype. Original figure.*
 
 Huth and colleagues (2016) found that related meanings produce organized patterns across broad regions of cortex. This supports a relational model of semantic representation, not the claim that concepts are stored as literal coordinates.
@@ -83,12 +84,12 @@ Problem solving often depends on how the problem is represented. You might work 
 
 A **mental set** is the tendency to use a strategy that worked before even when a new problem permits a better one. In Luchins' (1942) water-jar studies, people first solved several problems with the same multi-step formula. Many then applied that formula to a later problem that could be solved in one simple step. Prior success had made the old strategy easier to retrieve than the new structure was to see.
 
-![Figure 9.3: Luchins' water-jar problems. Earlier problems require the same multi-step strategy. A later problem can be solved directly, but solvers primed by the earlier method often repeat the unnecessary steps.](../../images/ch09/fig_luchins_water_jar_mental_set.png)
+![Figure 9.3: Luchins' water-jar problems. Earlier problems require the same multi-step strategy. A later problem can be solved directly, but solvers primed by the earlier method often repeat the unnecessary steps.](../../docs/images/ch09/fig_luchins_water_jar_mental_set.png)
 *Figure 9.3. Mental set demonstrated with Luchins' (1942) water-jar problems. Original figure.*
 
 **Functional fixedness** is a related failure to see an object outside its conventional use. In Duncker's (1945) candle problem, participants receive a candle, matches, and a box of thumbtacks and must mount the candle on a wall without dripping wax on the table. The solution is to empty the box, tack it to the wall, and use it as a platform. The difficult step is not finding a hidden object. It is seeing the box as something other than a container.
 
-![Figure 9.4: Duncker's candle problem. The solution requires emptying the thumbtack box, attaching it to the wall, and using it as a shelf for the candle.](../../images/ch09/fig_functional_fixedness_candle_problem.png)
+![Figure 9.4: Duncker's candle problem. The solution requires emptying the thumbtack box, attaching it to the wall, and using it as a shelf for the candle.](../../docs/images/ch09/fig_functional_fixedness_candle_problem.png)
 *Figure 9.4. Functional fixedness demonstrated with Duncker's candle problem. Original figure.*
 
 **Insight** is a sudden shift in representation—the “aha” moment when the box becomes a shelf or two previously separate pieces of information combine into a solution. Insight can feel instantaneous, but the important change is in how the problem is organized, not in the sudden appearance of information that was never there (Jung-Beeman et al., 2004).
@@ -108,7 +109,7 @@ These labels are summaries, not two literal brain structures or a complete theor
 > **Do Not Confuse: System 1 ≠ Irrational; System 2 ≠ Rational**
 > System 1 is fast and associative, not inherently defective. It recognizes a friend's face, reads a familiar word, and detects many patterns accurately. System 2 is slow and deliberate, but it can rationalize a preferred conclusion or apply the wrong rule with great care. Treat the distinction as two processing modes, not as a good system fighting a bad one.
 
-![Figure 9.5: The dual-process framework contrasts fast, automatic processing with slower, deliberate processing. The diagram presents two useful modes of cognition, not two isolated brain modules or a simple irrational-versus-rational split.](../../images/ch09/fig_system1_system2_dual_process.png)
+![Figure 9.5: The dual-process framework contrasts fast, automatic processing with slower, deliberate processing. The diagram presents two useful modes of cognition, not two isolated brain modules or a simple irrational-versus-rational split.](../../docs/images/ch09/fig_system1_system2_dual_process.png)
 *Figure 9.5. The System 1/System 2 framework as a distinction between processing modes. Original figure.*
 
 ### The Availability Heuristic
@@ -135,7 +136,7 @@ The best-known demonstration is the Linda problem:
 
 Many participants choose B. The description makes “feminist” feel representative of Linda. But every feminist bank teller is also a bank teller, so the conjunction can never be more probable than the larger category that contains it. This is the **conjunction fallacy** (Tversky & Kahneman, 1983).
 
-![Figure 9.6: The set of bank tellers contains the smaller subset of feminist bank tellers. A subset cannot be more probable than the set that contains it, even when the description resembles the subset more strongly.](../../images/ch09/fig_linda_conjunction_fallacy.png)
+![Figure 9.6: The set of bank tellers contains the smaller subset of feminist bank tellers. A subset cannot be more probable than the set that contains it, even when the description resembles the subset more strongly.](../../docs/images/ch09/fig_linda_conjunction_fallacy.png)
 *Figure 9.6. The conjunction fallacy shown as a nested-set relationship. Original figure.*
 
 > **Classic Study Walkthrough: The Linda Problem**
@@ -147,12 +148,12 @@ Many participants choose B. The description makes “feminist” feel representa
 
 Wason's (1968) selection task shows how difficult it can be to test a rule by searching for what would prove it false. Four cards display E, K, 4, and 7. Each has a letter on one side and a number on the other. The rule is: “If a card has a vowel on one side, it must have an even number on the other.” Which cards must be turned over to test the rule?
 
-![Figure 9.7: Wason's selection task. Four cards show E, K, 4, and 7. The rule is: If a card has a vowel on one side, it must have an even number on the other.](../../images/ch09/fig_wason_task_prompt.png)
+![Figure 9.7: Wason's selection task. Four cards show E, K, 4, and 7. The rule is: If a card has a vowel on one side, it must have an even number on the other.](../../docs/images/ch09/fig_wason_task_prompt.png)
 *Figure 9.7. The Wason selection task. Original figure.*
 
 E must be checked: an odd number behind it would violate the rule. The 7 must also be checked: a vowel behind it would violate the rule. The 4 is tempting, but an even number is allowed to have either a vowel or consonant behind it. The rule says “if vowel, then even,” not “if and only if vowel, then even.”
 
-![Figure 9.8: The Wason task solved. E and 7 are diagnostic because either could reveal a violation. K is irrelevant, and 4 can confirm a permitted case but cannot establish that the conditional rule is true.](../../images/ch09/fig_wason_task_answer.png)
+![Figure 9.8: The Wason task solved. E and 7 are diagnostic because either could reveal a violation. K is irrelevant, and 4 can confirm a permitted case but cannot establish that the conditional rule is true.](../../docs/images/ch09/fig_wason_task_answer.png)
 *Figure 9.8. The diagnostic cards in the Wason selection task. Original figure.*
 
 The task is often taught as confirmation bias because people choose a card that could support the rule and omit one that could falsify it. That interpretation is useful but incomplete: wording, content, and simple matching also affect performance. The task shows difficulty identifying diagnostic evidence, not one pure mechanism (Klayman & Ha, 1987).
@@ -313,8 +314,8 @@ The theory highlights a real limitation: structured test performance is not iden
 
 Alfred Binet developed an early practical intelligence test in 1905 to identify French schoolchildren who needed additional educational support. The original **intelligence quotient** compared mental age with chronological age. Modern IQ tests instead report **standardized scores**, usually scaled to a mean of 100 and a standard deviation of 15 in the norming sample.
 
-![Figure 9.10: Modern IQ scores are normed so that the reference sample approximates a bell-shaped distribution with a mean of 100 and a standard deviation of 15. Roughly two-thirds of standardized scores fall between 85 and 115. The graph describes the score scale and reference sample, not a natural unit of intelligence.](../../images/ch09/fig_iq_bell_curve.png)
-*Figure 9.10. The standardized distribution used to interpret modern IQ scores. Scores are meaningful relative to a norming sample; the graph does not imply that intelligence exists as an absolute quantity with natural 15-point units. Original figure.*
+![Figure 9.9: Modern IQ scores are normed so that the reference sample approximates a bell-shaped distribution with a mean of 100 and a standard deviation of 15. Roughly two-thirds of standardized scores fall between 85 and 115. The graph describes the score scale and reference sample, not a natural unit of intelligence.](../../docs/images/ch09/fig_iq_bell_curve.png)
+*Figure 9.9. The standardized distribution used to interpret modern IQ scores. Scores are meaningful relative to a norming sample; the graph does not imply that intelligence exists as an absolute quantity with natural 15-point units. Original figure.*
 
 **Standardization** makes an individual's performance interpretable relative to a reference group tested under comparable conditions. An IQ of 115 means approximately one standard deviation above the mean of the relevant norming sample. It does not mean that the person possesses 15 more units of an underlying substance than someone scoring 100.
 
@@ -369,7 +370,7 @@ Across the chapter, compression remains a learning tool. A concept preserves reg
 
 ---
 
-## Stop and Retrieve
+## Review Questions
 
 **1.** Distinguish a concept, a prototype, and an exemplar using one category of your own.
 

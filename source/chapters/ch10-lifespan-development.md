@@ -1,6 +1,6 @@
 # Chapter 10: Lifespan Development
 
-> Revision draft based on the Chapter 10 pre-review audit and instructor decisions. Drafting history and provenance remain in `_provenance/ch10-lifespan-development.md`.
+> Canonical revised source. The pre-revision chapter is preserved in `_archive/ch10-lifespan-development.md`; drafting history and provenance remain in `_provenance/ch10-lifespan-development.md`.
 
 ---
 
@@ -54,9 +54,7 @@ Human childhood is long, plastic, and expensive. Around ages four to five, the d
 
 That long construction period also creates a provisioning problem. Human children require food, protection, teaching, and supervision for years. **Cooperative breeding**—care and provisioning supplied by fathers, grandparents, siblings, and other helpers—offers one important model for how ancestral human groups could support those costs (Isler & van Schaik, 2012). Secondary altriciality, cooperative care, social learning, diet, and brain expansion likely co-evolved. None is established as the single first cause.
 
-<!-- FIGURE REVISION REQUIRED before HTML regeneration: Figure 10.1 should show interacting contributors rather than a settled causal equation or sequence. -->
-
-![Figure 10.1 — Human childhood is long, plastic, and expensive. Extended postnatal development, social learning, and shared caregiving are interacting features of a coevolved human life-history pattern.](../images/ch10/ch10_human_extended_development_life_history.png)
+![Figure 10.1 — A network places extended human development at the center, connected reciprocally with extended postnatal brain development, secondary altriciality, social learning and culture, shared caregiving and provisioning, and diet, ecology, and the energetic costs of brain growth. The diagram is labeled as a model of interacting contributors rather than a complete origin story.](../../docs/images/ch10/ch10_human_extended_development_life_history.png)
 
 *Figure 10.1. Human childhood is long, plastic, and expensive. Extended postnatal brain development creates opportunities for learning, while shared caregiving helps support a long period of dependence. The figure summarizes a supported coevolutionary model, not a complete or uniquely established origin story.*
 
@@ -66,7 +64,7 @@ A **cross-sectional study** compares people of different ages at one point in ti
 
 A **longitudinal study** follows the same people across years or decades. It measures actual within-person change, but it is slow and expensive. It also faces **attrition**: participants who remain in a decades-long study are often healthier and more advantaged than those who leave. Repeated testing can produce practice effects, so later performance reflects both development and familiarity with the task.
 
-![Figure 10.2 — A two-panel infographic compares cross-sectional and longitudinal research designs. The cross-sectional panel shows different age groups tested in one year. The longitudinal panel shows the same people followed across multiple testing years.](../images/ch10/ch10_cross_sectional_vs_longitudinal.png)
+![Figure 10.2 — A two-panel infographic compares cross-sectional and longitudinal research designs. The cross-sectional panel shows different age groups tested in one year. The longitudinal panel shows the same people followed across multiple testing years.](../../docs/images/ch10/ch10_cross_sectional_vs_longitudinal.png)
 
 *Figure 10.2. Cross-sectional studies compare different age groups at one moment, which is efficient but vulnerable to cohort effects. Longitudinal studies follow the same people across time, which measures within-person change but is slower and vulnerable to attrition and repeated-testing effects.*
 
@@ -88,9 +86,7 @@ The classroom shorthand is *use it or lose it*. Keep the shorthand, but do not t
 
 Specialization also has a cost. A system that becomes more efficient at processing familiar input may become less flexible with unfamiliar input. Development is not merely adding capacity. It is also committing resources.
 
-<!-- FIGURE REVISION REQUIRED before HTML regeneration: simplify Figure 10.3 to selective stabilization/tuning; remove exact-looking windows and optimization language. -->
-
-![Figure 10.3 — Early development produces many neural connections, then biological maturation and patterns of activity selectively stabilize some pathways while others weaken.](../images/ch10/ch10_synaptic_pruning_developmental_tuning.png)
+![Figure 10.3 — A three-stage sequence begins with many initial neural connections. Patterns of activity together with biological maturation then stabilize some pathways. In the final panel, stabilized pathways remain prominent while less-stabilized connections weaken, producing a more tuned network.](../../docs/images/ch10/ch10_synaptic_pruning_developmental_tuning.png)
 
 *Figure 10.3. Development includes both growth and selective stabilization. Activity helps strengthen some pathways, while biological maturation and local cellular processes also shape pruning. Greater specialization can improve efficiency while reducing some forms of plasticity.*
 
@@ -119,7 +115,7 @@ Piaget proposed four broad stages:
 | **Concrete operational** | 7–12 | Logical operations become reliable for concrete problems; conservation and reversibility improve | Competence is not equally general across every domain |
 | **Formal operational** | About 12 onward | Systematic hypothetical and abstract reasoning becomes possible | Not every adolescent or adult uses formal reasoning consistently in every context |
 
-![Figure 10.4 — A four-panel infographic summarizes Piaget's sensorimotor, preoperational, concrete operational, and formal operational stages. Each panel includes an age range, a simple illustration, and the main cognitive milestone.](../images/ch10/ch10_piaget_stages_sequence_with_caveat.png)
+![Figure 10.4 — A four-panel infographic summarizes Piaget's sensorimotor, preoperational, concrete operational, and formal operational stages. Each panel includes an age range, a simple illustration, and the main cognitive milestone.](../../docs/images/ch10/ch10_piaget_stages_sequence_with_caveat.png)
 
 *Figure 10.4. Piaget's stages are a useful map of broad changes in children's reasoning, not a rigid calendar. Abilities emerge at different rates, overlap across stages, and can appear earlier when tasks reduce memory, language, or motor demands.*
 
@@ -135,7 +131,7 @@ Piaget's child often appears as a solo scientist. Lev Vygotsky placed social int
 
 The **zone of proximal development (ZPD)** is the range between what a learner can do alone and what the learner can do with well-calibrated help. **Scaffolding** is the temporary support that makes performance within that zone possible and then fades as competence grows. The term *scaffolding* was introduced later by Wood, Bruner, and Ross (1976), but it fits Vygotsky's account of socially supported development.
 
-![Figure 10.5 — A wide infographic shows three learning zones: tasks a learner can do alone, tasks in the zone of proximal development that can be done with guidance, and tasks that remain too hard even with help. A side panel shows scaffolding fading from strong support to independence.](../images/ch10/ch10_vygotsky_zpd_scaffolding.png)
+![Figure 10.5 — A wide infographic shows three learning zones: tasks a learner can do alone, tasks in the zone of proximal development that can be done with guidance, and tasks that remain too hard even with help. A side panel shows scaffolding fading from strong support to independence.](../../docs/images/ch10/ch10_vygotsky_zpd_scaffolding.png)
 
 *Figure 10.5. The ZPD is the instructional sweet spot: the task is just beyond what the learner can do alone but achievable with calibrated support. Effective scaffolding fades, leaving the learner more capable after the support disappears.*
 
@@ -144,6 +140,8 @@ Humans appear unusually adapted for **natural pedagogy**—actively signaling in
 Vygotsky also treated private speech as a cognitive tool. A child narrating “first this piece, then that one” is not merely talking to herself. She is internalizing the social dialogue that previously organized the task. What begins between people becomes part of the learner's own control system.
 
 > **AI Connection:** An AI system becomes a scaffold only when it responds to the learner's demonstrated understanding, withholds unnecessary steps, and fades support. Producing the finished essay or proof may improve the product while leaving the learner unchanged. The test is what happens after the support is removed. Can you now solve a new problem without it?
+
+**Try it yourself:** [Compare complete-answer support, graduated hints, and performance after support fades](../../docs/labs/ch10/zpd-fading-support.html). The activity illustrates different forms of support; it does not diagnose or measure you.
 
 > **Stop and Retrieve:** Piaget and Vygotsky both describe an active learner. Where does each place the main engine of development, and what would count as evidence that scaffolding actually worked?
 
@@ -166,9 +164,7 @@ These classifications describe behavior in a particular relationship and procedu
 
 Caregiver sensitivity is associated with attachment security, but the average association is modest and variable across studies and contexts. Temperament, stress, family resources, culture, and changes in caregiving also matter. Early attachment predicts later functioning probabilistically—not as destiny. Even physiological coordination between caregivers and infants, sometimes called **biobehavioral synchrony**, is best treated as one possible mechanism within a larger relational system, not a biological proof of a fixed bond (Feldman, 2007).
 
-<!-- FIGURE REVISION REQUIRED before HTML regeneration: Figure 10.6 must use observable reunion behavior and present caregiving sensitivity/later outcomes only as probabilistic correlates. Remove adult-style trait labels. -->
-
-![Figure 10.6 — A table-style infographic compares attachment classifications by observable reunion behavior and emphasizes that the classifications describe relationship patterns, not fixed child traits.](../images/ch10/ch10_attachment_styles_reunion_behavior.png)
+![Figure 10.6 — A table-style infographic compares attachment classifications by observable reunion behavior and emphasizes that the classifications describe relationship patterns, not fixed child traits. A footer describes caregiver sensitivity as a probabilistic correlate alongside temperament, stress, culture, and context.](../../docs/images/ch10/ch10_attachment_styles_reunion_behavior.png)
 
 *Figure 10.6. Strange Situation classifications are read most clearly at reunion. Secure infants seek comfort and are soothed; anxious-ambivalent infants both seek and resist comfort; anxious-avoidant infants minimize visible attachment behavior; disorganized infants show contradictory or frightened behavior. These are probabilistic relationship patterns whose distribution and meaning vary with culture and context.*
 
@@ -235,9 +231,7 @@ Increased exploration is not simply a design flaw. Leaving childhood roles requi
 
 This is also where an everyday observation becomes useful. Car-insurance premiums often fall through the early-to-mid twenties, sometimes noticeably around 25. Insurers are not scanning prefrontal cortices; they are pricing actuarial patterns in crashes and claims. Continuing brain development may contribute to the age trend, but so do driving experience, exposure, legal restrictions, and self-selection. The example works because the behavioral pattern and developmental timing overlap—not because insurance rates prove a neural mechanism.
 
-<!-- FIGURE REVISION REQUIRED before HTML regeneration: revise Figure 10.7 title/on-image text. Label curves as schematic average tendencies; remove literal gas/brakes completion claim; add peers/context/opportunity. -->
-
-![Figure 10.7 — One schematic model of adolescent risk compares average changes in reward and novelty responsiveness with the development of regulatory control, while emphasizing the role of peers and context.](../images/ch10/ch10_adolescent_dual_systems_crossover.svg)
+![Figure 10.7 — A schematic chart shows reward and novelty sensitivity changing earlier on average while regulatory coordination develops over a longer period. Broad shaded bands indicate individual variation. A second panel shows peers, stakes, context, and opportunity shaping whether motivation becomes exploration, learning, or risk, and a note states that there is no single age when the brain becomes finished.](../../docs/images/ch10/ch10_adolescent_dual_systems_crossover.svg)
 
 *Figure 10.7. One influential model proposes a temporary mismatch between highly responsive motivational systems and still-developing regulatory control. The curves are schematic averages, not biological deadlines. Peers, incentives, stress, sleep, experience, and opportunity help determine whether heightened exploration becomes learning or danger.*
 
@@ -249,11 +243,9 @@ Physical strength, reaction time, and sensory acuity show average decline across
 
 The distinction between **fluid intelligence** and **crystallized intelligence** makes the tradeoff visible. Fluid abilities—processing speed, working memory, and solving unfamiliar problems—tend to decline across adulthood. Crystallized abilities—vocabulary, accumulated knowledge, and expertise—remain stable longer and may continue growing. An older expert may respond more slowly to a novel puzzle while seeing the structure of a familiar professional problem immediately.
 
-<!-- FIGURE REVISION REQUIRED before HTML regeneration: revise Figure 10.8 title to different average trajectories and label both curves schematic group averages. -->
+![Figure 10.8 — A schematic chart shows some speeded novel-problem abilities declining earlier on average, while accumulated knowledge and expertise often remain stable or increase longer. Wide overlapping bands indicate substantial individual variation and overlap among age groups. Notes emphasize that aging is a tradeoff and that dementia is not ordinary aging.](../../docs/images/ch10/ch10_fluid_crystallized_adulthood.svg)
 
-![Figure 10.8 — Fluid and crystallized abilities show different average trajectories across adulthood.](../images/ch10/ch10_fluid_crystallized_adulthood.svg)
-
-*Figure 10.8. Fluid abilities tend to decline earlier, while crystallized knowledge and expertise remain stable longer. These curves are schematic group averages; individuals do not age along identical paths.*
+*Figure 10.8. Some speeded novel-problem abilities tend to decline earlier on average, while accumulated knowledge and expertise often remain stable or increase longer. These are schematic group averages with substantial individual variation and overlap among age groups. Aging is a tradeoff, not one uniform decline, and dementia is not ordinary aging.*
 
 Memory follows a similarly uneven pattern. Free recall of recent events is often more vulnerable than recognition, habits, vocabulary, or well-practiced expertise. Forgetting a name and remembering it later is common. Dementia is not ordinary aging turned up slightly; it involves decline severe enough to interfere with independent functioning.
 

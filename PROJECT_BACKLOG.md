@@ -18,17 +18,14 @@ Durable future and deferred work that isn't part of the immediately active task.
 ## Figures and visual assets
 
 - **Optional Ch2 image-folder cleanup** — `docs/images/ch02/` still has pre-existing orphaned/duplicate files not part of a prior pass's explicit archive list (e.g. `fig2-5-sampling-vs-assignment.png/.svg`, `fig_evidence_ladder.png`, `fig_double_blind_placebo.png`, `fig_operational_definition_reliability_validity.png`, `fig_type_i_type_ii_error_matrix.png`) — not yet authorized.
-- **Ch10 Lifespan figures:** 8 figures built but have real defects (label boxes overlapping plotted lines) — fix list at `docs/images/ch10/ch10_figure_revisions.md`. Nothing wired yet.
 - `source/visuals-inventory.md` is known to drift out of sync with per-chapter image state — cross-check per-chapter `docs/images/chXX/README*.md` files before trusting it.
 
 ## HTML and rendering
 
 - **Verify the two mobile fixes on an actual phone, both orientations** (`docs/css/style.css`, `docs/js/sidebar.js`) — sidebar visibility/reopen and expanded-figure clipping. Logic-tested in a jsdom simulation only; no real device or browser confirmation yet.
 - **Ch2 expandable figures (2.1, 2.2, 2.3, 2.7, 2.9):** expand/collapse mechanic works; mobile-clipping fix is pending device verification (see above). Caption legibility on mobile still not specifically checked.
-- **Ch10 review-q markup:** convert its 12 review questions to the `<details>/<summary>` collapsible pattern (currently non-collapsible, confirmed by linter) — also add Stop & Retrieve (currently 0, same gap Ch9 had before its fix).
 - **Commit and push Session 87's Prologue edit** (`docs/chapters/prologue.html`, new image `docs/images/prologue/fig_interactive_imagery_book_ocean.png`) and verify Figure P.5 renders/expands correctly on the live site — not yet checked in a browser.
 - **Verify the live GitHub Pages site** for the six previously-restored chapters (07, 08, 09, 10, 12, 13) plus the Ch9 figure-expand feature — still not checked against the deployed site.
-- **Ch6 Sleep → HTML:** no HTML built yet; needs a first build once Jon has reviewed the markdown.
 
 ## Repository and workflow
 
@@ -40,5 +37,5 @@ Durable future and deferred work that isn't part of the immediately active task.
 ## Deferred decisions
 
 - **Sidebar collapse discoverability.** Small unlabeled hamburger icon is the only way to reopen a collapsed sidebar — open UX decision for Jon.
-- **Roll out the expandable-figure pattern further?** (e.g. Ch10 Lifespan, Ch12 Emotion) — only Ch9 and the prologue use it so far, and the breakout margin recently got bigger; worth a fresh look at whether Ch9's figures now look too wide before extending the pattern.
+- **Roll out the expandable-figure pattern further?** Chapters 9–11 and the prologue now use it. Decide per chapter whether later builds (starting with Chapter 12) benefit from expansion rather than applying it automatically.
 - **Optional: confirm root cause of the Session 91–93 HANDOFF.md data loss** (recovery is done and verified in `HANDOFF-ARCHIVE.md`; this is forensics only, low priority — same call made for a similar earlier loss).

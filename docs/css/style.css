@@ -623,8 +623,21 @@ th {
   .sidebar.collapsed {
     box-shadow: none;
   }
-  .main { padding: 2rem 1.25rem 4rem; }
+  .main {
+    min-width: 0;
+    padding: 2rem 1.25rem 4rem;
+  }
+  .chapter-meta { padding-left: 3rem; }
   h1 { font-size: 1.6rem; }
+
+  /* Keep wide comparison tables inside the reading column. The table itself
+     remains available at full width through horizontal scrolling without
+     forcing the entire chapter page wider than the viewport. */
+  table {
+    display: block;
+    max-width: 100%;
+    overflow-x: auto;
+  }
 
   /* Expanded figures: hard-cap to the true viewport width instead of the
      desktop clamp(-220px, -14vw, 0) breakout math, which assumes room that

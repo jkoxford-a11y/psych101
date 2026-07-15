@@ -80,7 +80,7 @@ The $1 group. Not the $20 group.
 
 The $20 group had a strong external justification: *I said it because I was paid well.* That explanation produced relatively little dissonance. The $1 group had weak external justification. To make the behavior coherent, some participants shifted their attitude: *Maybe the task was not so bad.*
 
-![Figure 11.1: The Festinger and Carlsmith study. In the twenty-dollar condition, a strong external justification produces relatively little dissonance and little need to change the attitude. In the one-dollar condition, weak external justification produces greater dissonance, which can be reduced by deciding the task was somewhat interesting.](../images/ch11/fig_festinger_carlsmith_dissonance.png)
+![Figure 11.1: The Festinger and Carlsmith study. In the twenty-dollar condition, a strong external justification produces relatively little dissonance and little need to change the attitude. In the one-dollar condition, weak external justification produces greater dissonance, which can be reduced by deciding the task was somewhat interesting.](../../docs/images/ch11/fig_festinger_carlsmith_dissonance.png)
 
 *Figure 11.1. Weak external justification can create more attitude change than strong external justification. The twenty-dollar condition involves less dissonance, not literally none.*
 
@@ -120,9 +120,7 @@ About 75% of participants conformed at least once, although conformity across al
 
 One ally did not need to be persuasive. The ally changed the social structure of dissent.
 
-<!-- FIGURE REVISION REQUIRED before HTML regeneration: the majority answer in Figure 11.2 must be visibly incorrect. -->
-
-![Figure 11.2: Asch line-judgment setup. One participant answers after several confederates unanimously choose an obviously incorrect comparison line. A second panel shows that one dissenter breaks unanimity and substantially reduces conformity.](../images/ch11/fig_asch_line_judgment_study.png)
+![Figure 11.2: Two panels show the same line-judgment task. In both, comparison line B clearly matches the standard. In the first panel, four majority members unanimously select the visibly shorter line A while the participant must answer alone. In the second panel, one ally selects the correct line B, breaking unanimity.](../../docs/images/ch11/fig_asch_line_judgment_study.png)
 
 *Figure 11.2. Asch’s study isolated the effect of a unanimous majority. The most important manipulation was not simply adding more people; it was whether the participant had to stand completely alone.*
 
@@ -138,7 +136,7 @@ One ally did not need to be persuasive. The ally changed the social structure of
 >
 > At 300 volts, the learner pounded on the wall. At 315 volts, another pound. Then silence. When participants hesitated, the experimenter used a sequence of prods ranging from “Please continue” to “You have no other choice; you must go on.”
 >
-> ![Figure 11.3: The Milgram setup. The participant sits with the experimenter at a shock generator while the learner is heard but not seen in another room.](../images/ch11/fig_milgram_obedience_setup.png)
+> ![Figure 11.3: The Milgram setup. The participant sits with the experimenter at a shock generator while the learner is heard but not seen in another room.](../../docs/images/ch11/fig_milgram_obedience_setup.png)
 >
 > *Figure 11.3. The physical arrangement separated the participant from the learner while keeping the experimenter nearby.*
 >
@@ -214,7 +212,7 @@ These terms are related, but they are not synonyms.
 
 A stereotype can be statistically accurate at a group level and still be a poor basis for judging an individual. Group averages overlap, circumstances vary, and the person in front of you may not resemble the average. Categories compress information. Compression is useful—and lossy.
 
-![Figure 11.4: Triangle showing stereotype as belief, prejudice as feeling, and discrimination as behavior. Arrows indicate that the three can influence one another but are not interchangeable.](../images/ch11/fig_prejudice_stereotype_discrimination_triangle.png)
+![Figure 11.4: Triangle showing stereotype as belief, prejudice as feeling, and discrimination as behavior. Arrows indicate that the three can influence one another but are not interchangeable.](../../docs/images/ch11/fig_prejudice_stereotype_discrimination_triangle.png)
 
 *Figure 11.4. Stereotype, prejudice, and discrimination describe belief, feeling, and behavior. They often occur together, but each can occur without the other two.*
 
@@ -341,13 +339,13 @@ Knowing that Missouri has hot summers does not tell you the temperature at 2:00 
 
 This is **aggregation**: averaging behavior across multiple observations reduces the influence of unusual circumstances and reveals the more stable signal (Funder & Ozer, 1983, 2019).
 
-![Figure 11.5: Person factors such as traits, goals, and learning interact with situation factors such as norms, authority, stakes, and opportunity to produce behavior.](../images/ch11/fig_person_situation_influence_diagram.png)
+![Figure 11.5: Person factors such as traits, goals, and learning interact with situation factors such as norms, authority, stakes, and opportunity to produce behavior.](../../docs/images/ch11/fig_person_situation_influence_diagram.png)
 
 *Figure 11.5. Behavior is produced by a person in a situation. Neither side is a complete explanation by itself.*
 
-<!-- FIGURE REVISION REQUIRED before HTML regeneration: replace Figure 11.6's exact synthetic correlations with a data-free single-observation versus aggregated-observations design. -->
+![Figure 11.6: The same five people are shown in two conceptual panels. One observation per person is widely scattered because immediate circumstances and chance strongly affect a single act. Repeated observations and a large average marker for each person show that averaging reduces incidental variation and makes the stable ordering easier to detect. No empirical values are displayed.](../../docs/images/ch11/fig_trait_signal_aggregation.png)
 
-<!-- FIGURE REVISION REQUIRED before HTML regeneration: replace Figure 11.7's invented helping scores with a conceptual strong-situation versus weak-situation diagram. -->
+*Figure 11.6. A single act mixes a trait signal with immediate circumstances and chance. Averaging behavior across many situations reduces incidental variation and makes a stable pattern easier to detect. Conceptual illustration; no empirical values are shown.*
 
 ### Strong and Weak Situations
 
@@ -356,6 +354,10 @@ Traits are more visible in **weak situations**, where rules are ambiguous and pe
 A normally talkative person may become quiet at a funeral. That does not prove the person was never extraverted. The situation compressed the possible behaviors.
 
 Strong situations rarely erase individual differences completely. They reduce their expression. Weak situations give traits more room to appear.
+
+![Figure 11.7: Two panels track the same five color-coded individuals. Under ambiguous norms and substantial latitude, their expressed behavior is widely spread. Under clear norms, constraints, or incentives, the same individuals cluster more tightly. Individual differences are compressed rather than erased.](../../docs/images/ch11/fig_person_situation_grid.png)
+
+*Figure 11.7. Weak situations allow wider behavioral expression across individuals. Strong situations narrow the range of expressed behavior, reducing—but not erasing—individual differences. Conceptual illustration; no empirical scores or effect sizes are shown.*
 
 > **Stop and Retrieve:** Why is a modest correlation between a trait and one act not evidence that traits are meaningless? Give the climate–weather answer and the aggregation answer.
 
@@ -412,9 +414,9 @@ Personality traits are real dimensions, not fixed types. They predict patterns b
 
 ## Key Terms
 
-**Aggression** — Behavior intended to harm a person who is motivated to avoid the harm.
-
 **Aggregation** — Combining behavior across multiple observations so stable patterns become easier to detect.
+
+**Aggression** — Behavior intended to harm a person who is motivated to avoid the harm.
 
 **Big Five** — Five broad personality dimensions: openness, conscientiousness, extraversion, agreeableness, and neuroticism.
 
