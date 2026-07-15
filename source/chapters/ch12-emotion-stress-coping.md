@@ -134,7 +134,16 @@ Journaling, friendship, and therapy can involve emotion language, but their bene
 
 The same exam can feel manageable when you have time, a plan, and sleep, but overwhelming when you feel unprepared and trapped. The event matters; so does the person–situation relationship.
 
-Humans can remember a failure, anticipate a layoff, represent debt, imagine a future conversation, or react to social evaluation. This chapter calls that range of present concerns the **cognitive light cone**. It is a course metaphor, not standard neuroscience vocabulary. Mental time travel makes planning possible, and it also allows absent threats to recruit genuine present physiology (Schacter et al., 2007; Suddendorf & Corballis, 2007).
+Michael Levin uses **cognitive light cone** for the spatial and temporal scale of the goals an agent can represent and work toward (Levin, 2019). At a small scale, action may regulate an immediate local condition. A broader horizon can include nearby places and short-term outcomes. Human goals can extend to a distant family member, next year's education, the future of an institution, or an abstract commitment. This is a comparison of goal horizons, not a rigid ladder or one score that captures an organism's entire cognition.
+
+A broader cognitive light cone is an achievement. It supports planning, cooperation, delayed action, long-term commitments, care for distant others, and collective or abstract goals. The boundary is not merely what an agent can sense or physically reach. It is what can matter enough to organize action.
+
+Here is the Chapter 12 application: because humans can organize present action around distant, anticipated, social, and symbolic goals, threats to those goals can enter present appraisal even when no immediate physical danger is present. Remembering the past and imagining the future help make that reach possible (Schacter et al., 2007; Suddendorf & Corballis, 2007). Those appraisals can recruit genuine present stress responses.
+
+Keep the levels separate. In Levin's broad cybernetic framework, discrepancy means a gap between a represented goal and a current state. Lazarus and Folkman's psychological account asks how a person appraises demands and coping resources. SAM and HPA describe physiological response routes. The ideas can connect without becoming one mechanism.
+
+![Space-time diagram centered on Here and Now. The horizontal dimension runs from near to distant space, and the vertical dimension runs from the present toward the future. Three increasingly broad goal horizons surround the center: immediate bodily and local regulation; nearby organisms, learned routes, and short-term outcomes; and future self, distant relationships, institutions, abstract commitments, and long-term collective outcomes. A note distinguishes goal scale from sensory range. The takeaway says that a broader goal horizon lets distant outcomes guide present action, so threats to distant goals can enter present appraisal now.](../../docs/images/ch12/ch12_cognitive_light_cone_goal_horizon.svg)
+*Figure 12.3. A cognitive light cone represents the spatial and temporal scale of goals an agent can represent and work toward—not merely what it can sense or physically reach. Humans can organize present action around distant relationships, future outcomes, institutions, and abstract commitments. That expanded goal horizon supports planning and cooperation, while also allowing absent threats to enter present stress appraisal. Original explanatory figure based on the framework developed by Levin (2019).*
 
 ### Fast SAM, slower HPA, interacting consequences
 
@@ -145,9 +154,6 @@ The acute stress response is not one hormone traveling down one line.
 - Immune, metabolic, cardiovascular, and behavioral effects interact across different timescales. Their pattern varies with the stressor, appraisal, duration, prior experience, health, and opportunity for recovery (Russell & Lightman, 2019).
 
 Remembered, anticipated, symbolic, socially evaluated, and immediate physical threats can recruit overlapping stress systems. "Overlapping" matters. They do not produce an identical response in every person or context, and cortisol is not the direct cause of the immediate increase in heart rate.
-
-![Concept diagram with remembered, anticipated, symbolic, social-evaluative, and immediate threats pointing toward appraisal in the present. Appraisal branches into a fast SAM route labeled sympathetic nerves and catecholamines with immediate cardiovascular mobilization, and a slower HPA route labeled hypothalamus, pituitary, adrenal cortex, and cortisol. The routes converge on interacting immune, metabolic, cardiovascular, and behavioral effects.](../../docs/images/ch12/fig_cognitive_light_cone_hpa_axis.png)
-*Figure 12.3. The cognitive light cone includes absent and symbolic threats that can recruit present stress physiology. SAM and HPA routes overlap and interact, but differ in timing and downstream effects. Original figure.*
 
 ### GAS as history; allostatic load as the contemporary frame
 
@@ -339,7 +345,7 @@ Use emotion-focused coping for the irreversible missed deadline: acknowledge dis
 
 **body budget** — a metaphor for interacting conditions that support regulation or add regulatory demand, not a literal measurable account
 
-**cognitive light cone** — a course metaphor for remembered, anticipated, symbolic, and socially evaluated concerns that can matter to the present body
+**cognitive light cone** — the spatial and temporal scale of goals an agent can represent and work toward
 
 **core affect** — broad feeling described along valence and arousal dimensions
 
@@ -418,6 +424,8 @@ James, W. (1884). What is an emotion? *Mind, 9*, 188–205.
 Kennedy, D. P., Gläscher, J., Tyszka, J. M., & Adolphs, R. (2009). Personal space regulation by the human amygdala. *Nature Neuroscience, 12*, 1226–1227. https://doi.org/10.1038/nn.2381
 
 Lazarus, R. S., & Folkman, S. (1984). *Stress, Appraisal, and Coping*. Springer.
+
+Levin, M. (2019). The computational boundary of a “self”: Developmental bioelectricity drives multicellularity and scale-free cognition. *Frontiers in Psychology, 10*, 2688. https://doi.org/10.3389/fpsyg.2019.02688
 
 Lieberman, M. D., Eisenberger, N. I., Crockett, M. J., Tom, S. M., Pfeifer, J. H., & Way, B. M. (2007). Putting feelings into words: Affect labeling disrupts amygdala activity in response to affective stimuli. *Psychological Science, 18*, 421–428. https://doi.org/10.1111/j.1467-9280.2007.01916.x
 

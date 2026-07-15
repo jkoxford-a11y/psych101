@@ -27,17 +27,18 @@
 - **Public-sharing status:** Use now pending Jon's final visual review.
 - **Caveat:** The circumplex is model-neutral here; it does not claim that core affect is the established substrate from which every emotion is constructed.
 
-## Figure 12.3 — Cognitive light cone and stress routes
+## Figure 12.3 — Cognitive light cone as a goal horizon
 
-- **Files:** `fig_cognitive_light_cone_hpa_axis.svg`, `fig_cognitive_light_cone_hpa_axis.png`
-- **Teaching job:** Show how absent and present threats can recruit current stress physiology while distinguishing rapid SAM from slower HPA activation.
-- **Caption:** The cognitive light cone includes absent and symbolic threats that can recruit present stress physiology. SAM and HPA routes overlap and interact, but differ in timing and downstream effects.
-- **Alt text:** Concept diagram with remembered, anticipated, symbolic, social-evaluative, and immediate threats pointing toward appraisal in the present. Appraisal branches into a fast SAM route labeled sympathetic nerves and catecholamines with immediate cardiovascular mobilization, and a slower HPA route labeled hypothalamus, pituitary, adrenal cortex, and cortisol. The routes converge on interacting immune, metabolic, cardiovascular, and behavioral effects.
-- **Creation method:** Original programmatic SVG authored for Oxford Psychology 101 and rasterized locally to PNG.
-- **Attribution:** Original figure for Oxford Psychology 101, 2026. No external image assets used.
+- **File:** `ch12_cognitive_light_cone_goal_horizon.svg`
+- **Teaching job:** Show that a cognitive light cone concerns the spatial and temporal scale of goals an agent can represent and work toward.
+- **Caption:** A cognitive light cone represents the spatial and temporal scale of goals an agent can represent and work toward—not merely what it can sense or physically reach. Humans can organize present action around distant relationships, future outcomes, institutions, and abstract commitments. That expanded goal horizon supports planning and cooperation, while also allowing absent threats to enter present stress appraisal. Original explanatory figure based on the framework developed by Levin (2019).
+- **Alt text:** Space-time diagram centered on Here and Now. The horizontal dimension runs from near to distant space, and the vertical dimension runs from the present toward the future. Three increasingly broad goal horizons surround the center: immediate bodily and local regulation; nearby organisms, learned routes, and short-term outcomes; and future self, distant relationships, institutions, abstract commitments, and long-term collective outcomes. A note distinguishes goal scale from sensory range. The takeaway says that a broader goal horizon lets distant outcomes guide present action, so threats to distant goals can enter present appraisal now.
+- **Creation method:** Original programmatic SVG authored for Oxford Psychology 101; no published Levin figure was copied.
+- **Attribution:** Original explanatory figure for Oxford Psychology 101, 2026, based on Levin (2019). No external image assets used.
 - **License:** Repository-authored original; safe for public sharing under the textbook's project license.
 - **Public-sharing status:** Use now pending Jon's final visual review.
-- **Caveat:** Cognitive light cone is a course metaphor. Stressors recruit overlapping, context-dependent systems; the figure does not depict cortisol as the direct cause of immediate heart-rate change.
+- **Caveat:** The nested horizons are a teaching schematic, not a rigid evolutionary ladder or a claim that an agent's cognition reduces to one measurable cone. Human symbolic stress is an application of the framework, not its definition.
+- **Retired artwork:** `fig_cognitive_light_cone_hpa_axis.svg/.png` is no longer wired. The corrected SAM/HPA prose is sufficient, so the combined pathway artwork was not retained as a separate figure.
 
 ## Figure 12.4 — GAS and allostatic load
 

@@ -570,6 +570,15 @@ th {
   cursor: zoom-out;
 }
 
+/* On laptop-width screens, the fixed sidebar leaves too little room for the
+   desktop breakout margins and can push an expanded figure past the viewport. */
+@media (max-width: 1400px) {
+  .chapter-figure.expandable.is-expanded {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
 .chapter-figure .figure-expand-hint {
   margin-top: 0.5rem;
   font-family: var(--font-ui);
@@ -651,18 +660,14 @@ th {
     overflow-x: auto;
   }
 
-  /* Expanded figures: hard-cap to the true viewport width instead of the
-     desktop clamp(-220px, -14vw, 0) breakout math, which assumes room that
-     isn't there once a touch device is this narrow (and was computing the
-     breakout against the full viewport width even when the old fixed-width
-     sidebar was still eating part of it in landscape) — that mismatch is
-     what caused the image to overflow past the screen edge with no way to
-     scroll back to the clipped part. */
+  /* Expanded figures stay inside the mobile content column. Using 100vw here
+     includes the browser's vertical scrollbar in some engines, which creates
+     a small but real page-level horizontal overflow. */
   .chapter-figure.expandable.is-expanded {
-    width: 100vw;
-    max-width: 100vw;
-    margin-left: calc(50% - 50vw);
-    margin-right: calc(50% - 50vw);
+    width: 100%;
+    max-width: 100%;
+    margin-left: 0;
+    margin-right: 0;
   }
   .chapter-figure.expandable.is-expanded img {
     width: 100%;

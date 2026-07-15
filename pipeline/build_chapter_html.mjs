@@ -140,7 +140,7 @@ function convertFigures(html) {
         .replace(/^\.\.\/images\//, "../images/")
         .replace(/^\.\.\/\.\.\/images\//, "../images/");
       const cap = caption.replace(/^(Figure \d+\.\d+)\.\s*/, "<strong>$1.</strong> ");
-      return `<figure class="chapter-figure expandable"><button class="figure-expand-toggle" type="button" aria-label="Expand figure"><img src="${normalized}" alt="${alt}" /></button><figcaption>${cap}</figcaption></figure>`;
+      return `<figure class="chapter-figure expandable"><a class="figure-expand-toggle" href="${normalized}" aria-label="Expand figure"><img src="${normalized}" alt="${alt}" /></a><figcaption>${cap}</figcaption></figure>`;
     },
   );
   return html.replace(
@@ -151,7 +151,7 @@ function convertFigures(html) {
         .replace(/^\.\.\/images\//, "../images/")
         .replace(/^\.\.\/\.\.\/images\//, "../images/");
       const cap = caption.replace(/^(Figure \d+\.\d+)\.\s*/, "<strong>$1.</strong> ");
-      return `<figure class="chapter-figure expandable"><button class="figure-expand-toggle" type="button" aria-label="Expand figure"><img src="${normalized}" alt="${alt}" /></button><figcaption>${cap}</figcaption></figure>`;
+      return `<figure class="chapter-figure expandable"><a class="figure-expand-toggle" href="${normalized}" aria-label="Expand figure"><img src="${normalized}" alt="${alt}" /></a><figcaption>${cap}</figcaption></figure>`;
     },
   );
 }

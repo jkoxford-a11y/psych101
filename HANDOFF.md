@@ -1,6 +1,6 @@
 # Psych101 — Current Handoff
 
-**Last updated:** 2026-07-15 (Chapter 12 canonical revision)
+**Last updated:** 2026-07-15 (Chapter 12 cognitive-light-cone correction)
 **Canonical repository:** `C:\GitHub\psych101`
 **Current branch:** `main`; Chapter 12 work is uncommitted for Jon's normal review and commit workflow.
 
@@ -30,11 +30,11 @@ Key decisions now implemented:
 - Affect labeling, emotional granularity, oxytocin/social support, sleep, movement, nutrition, and hedonic adaptation claims are narrowed to the evidence actually retained.
 - Coping is organized around controllability, arousal, timing, resources, and flexibility. The review now contains nine open-response questions with hidden model answers.
 
-All four figures were replaced with original programmatic SVG/PNG diagrams and documented in `docs/images/ch12/README_captions_alt_text_attribution.md`. Figure 12.1 removes the literal tank; Figure 12.2 uses a model-neutral circumplex takeaway; Figure 12.3 separates fast SAM and slower HPA routes; Figure 12.4 removes the fictional depletion curve and contrasts historical GAS with recovery and allostatic load. Status is use now pending Jon's final visual judgment.
+All four figures are original programmatic SVG/PNG diagrams documented in `docs/images/ch12/README_captions_alt_text_attribution.md`. Figure 12.1 removes the literal tank; Figure 12.2 uses a model-neutral circumplex takeaway; corrected Figure 12.3 now represents Michael Levin's cognitive light cone as the spatial and temporal scale of goals, with the Chapter 12 stress-appraisal application kept secondary; Figure 12.4 removes the fictional depletion curve and contrasts historical GAS with recovery and allostatic load. The former combined cognitive-light-cone/SAM/HPA artwork is retired and unwired. Status is use now pending Jon's final visual judgment.
 
 The standalone coping-fit lab is complete at `docs/labs/ch12/coping-fit.html` with `docs/js/labs-coping-fit.js`. It requires prediction, four scenario classifications, immediate mechanism feedback, an explanation gate, transfer to a nonclinical scenario, and a completion reflection distinguishing response regulation from stressor change. It uses one session-only storage key, no diagnostic score, no identifiers, analytics, or network submission. It is linked from the source, generated chapter, and labs index.
 
-The checked-in converter now includes Chapter 12, removes author-only HTML comments before conversion, and separates Markdown Further Reading entries correctly. Chapter 12 passes the repository linter with zero failures and zero warnings. Static validation found no broken local links, image failures, empty/leading-dash alt text, author-note leakage, mojibake, or missing ARIA targets. Browser checks at desktop and 390-pixel widths found no page overflow or console errors; the full lab sequence, session restoration behavior, explanation/transfer gates, and reset were exercised. Jon should still inspect final figure label size and the live/actual-device rendering after publication.
+The checked-in converter now includes Chapter 12, removes author-only HTML comments before conversion, separates Markdown Further Reading entries correctly, and emits link-based expandable controls so full-size images remain available without JavaScript. Chapter 12 passes the repository linter with zero failures and zero warnings. Static validation found no broken local links, image failures, empty/leading-dash alt text, author-note leakage, mojibake, or missing ARIA targets. Browser checks at desktop and 390-pixel widths found no page overflow; all four figures loaded and completed open/close cycles with synchronized ARIA state, visible captions, and valid fallback image links. The full lab sequence, session restoration behavior, explanation/transfer gates, and reset were also exercised. Jon should still inspect final figure label size and the live/actual-device rendering after publication.
 
 ### Chapter 13 — audit exists; discussion and revision are next
 
