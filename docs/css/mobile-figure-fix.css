@@ -1,0 +1,19 @@
+/* Shared narrow-screen repair for wide chapter figures.
+   Keeps deliberate desktop breakouts from creating page-level horizontal overflow
+   on phones and touch devices. */
+@media (max-width: 700px), (hover: none) and (pointer: coarse) {
+  .chapter-figure.wide,
+  .chapter-figure.expandable.is-expanded {
+    width: 100%;
+    max-width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .chapter-figure.wide img,
+  .chapter-figure.expandable.is-expanded img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+}
