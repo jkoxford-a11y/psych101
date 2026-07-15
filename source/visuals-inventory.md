@@ -253,7 +253,7 @@ Four original explanatory diagrams are wired in the canonical source and regener
 |---|-------------|--------|-------|
 | 12.1 | Body-budget supports/demands framework; explicitly metaphorical | ✅ wired/use now, Jon review | `ch12/fig_body_budget_deposits_withdrawals.svg/.png` |
 | 12.2 | Russell core-affect circumplex; model-neutral takeaway | ✅ wired/use now, Jon review | `ch12/fig_core_affect_circumplex.svg/.png` |
-| 12.3 | Cognitive light cone with separate fast SAM and slower HPA routes | ✅ wired/use now, Jon review | `ch12/fig_cognitive_light_cone_hpa_axis.svg/.png` |
+| 12.3 | Cognitive light cone as nested spatial and temporal goal horizons; stress-appraisal application kept secondary | ✅ wired/use now, Jon review | `ch12/ch12_cognitive_light_cone_goal_horizon.svg` |
 | 12.4 | Historical GAS contrasted with recovery and multisystem allostatic load | ✅ wired/use now, Jon review | `ch12/fig_general_adaptation_syndrome.svg/.png` |
 | — | Emotion theories comparison | 🔲 | Optional; already a table in text. |
 | — | Coping strategy matrix | 🔲 | Optional; text has a matching table. |

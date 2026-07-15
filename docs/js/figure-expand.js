@@ -6,7 +6,10 @@
   function setState(figure, expanded) {
     figure.classList.toggle('is-expanded', expanded);
     var link = figure.querySelector('.figure-expand-toggle');
-    if (link) link.setAttribute('aria-expanded', String(expanded));
+    if (link) {
+      link.setAttribute('aria-expanded', String(expanded));
+      link.setAttribute('aria-label', expanded ? 'Collapse figure' : 'Expand figure');
+    }
     var hint = figure.querySelector('.figure-expand-hint');
     if (hint) hint.textContent = expanded ? 'Click to collapse' : 'Click to expand';
   }
