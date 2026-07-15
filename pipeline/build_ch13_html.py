@@ -34,7 +34,8 @@ def build() -> None:
 
     used_ids: set[str] = set()
     for heading in soup.find_all(["h2", "h3"]):
-        base = slugify(heading.get_text(" ", strip=True))
+        heading_text = heading.get_text(" ", strip=True)
+        base = "connections" if heading_text == "Connections to Other Chapters" else slugify(heading_text)
         ident = base
         count = 2
         while ident in used_ids:
@@ -166,7 +167,7 @@ def build() -> None:
                 nav.append(separator)
         section.insert_after(nav)
 
-    connections = soup.find("h2", id="connections-to-other-chapters")
+    connections = soup.find("h2", id="connections")
     chapter_links = {
         "Chapter 2": "02-research-methods.html",
         "Chapter 3": "03-neuroscience.html",

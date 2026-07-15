@@ -262,20 +262,21 @@ Four original explanatory diagrams are wired in the canonical source and regener
 
 ## Chapter 13 — Psychological Disorders & Therapy
 
-All 9 current figures are wired. Only the biopsychosocial triangle remains unbuilt.
+Eight figures are wired in the canonical source and regenerated HTML. `docs/images/ch13/README_captions_alt_text_attribution.md` is authoritative for captions, alt text, creation method, attribution, licensing, public-sharing status, caveats, and retired assets. The former binary AI-versus-therapist figure is replaced by a product-type/governance table in the chapter.
 
 | # | Description | Status | Filename / note |
 |---|-------------|--------|-----------------|
-| 13.1 | Adaptive-response-becomes-costly arc | ✅ | `ch13/fig_adaptive_response_model_persists_cost_accumulates.png` |
-| 13.2 | 3D criteria Venn diagram | ✅ | `ch13/fig_diagnostic_criteria_3d_model.png` |
-| 13.3 | Diagnosis is not a cause flowchart | ✅ | `ch13/fig_diagnosis_is_not_a_cause_flowchart.png` |
-| 13.4 | Diathesis-stress threshold model | ✅ | `ch13/fig_diathesis_stress_threshold_model.png` |
-| 13.5 | Anxiety maintenance cycle | ✅ | `ch13/fig_anxiety_maintenance_cycle.png` |
-| 13.6 | Depression maintenance loop | ✅ | `ch13/fig_depression_maintenance_loop.png` |
-| 13.7 | Schizophrenia positive vs. negative symptoms | ✅ | `ch13/fig_schizophrenia_positive_negative_symptoms.png` |
-| 13.8 | Therapy mechanisms map | ✅ | `ch13/fig_therapy_mechanisms_map.png` |
-| 13.9 | AI vs. licensed therapist comparison | ✅ | `ch13/fig_ai_vs_therapist_comparison.png` |
-| — | Biopsychosocial model triangle | 🔲 | No candidate image found; build only if it adds more than prose/table. |
+| 13.1 | Bounded maintenance lens for selected avoidance, compulsion, trauma-learning, and withdrawal loops | ✅ wired/use now | `ch13/ch13_maintenance_lens_bounded.svg` |
+| 13.2 | Diagnostic evidence questions; 3Ds as introductory heuristic rather than required intersection | ✅ wired/use now | `ch13/ch13_diagnostic_evidence_questions.svg` |
+| 13.3 | Diagnosis is not a cause flowchart | ✅ wired/use now | `ch13/fig_diagnosis_is_not_a_cause_flowchart.png` |
+| 13.4 | Vulnerability, stress, supports, and changing probability | ✅ wired/use now | `ch13/ch13_vulnerability_context_probabilistic.svg` |
+| 13.5 | Avoidance, immediate relief, and corrective learning | ✅ wired/use now | `ch13/ch13_anxiety_avoidance_learning_loop.svg` |
+| 13.6 | Behavioral-withdrawal maintenance loop in depression | ✅ wired/use now | `ch13/fig_depression_maintenance_loop.png` |
+| 13.7 | Schizophrenia positive versus negative symptoms | ✅ wired/use now | `ch13/fig_schizophrenia_positive_negative_symptoms.png` |
+| 13.8 | Treatment selection by condition, evidence, risks, and client context | ✅ wired/use now | `ch13/ch13_treatment_selection_evidence_context.svg` |
+| — | Mental-health AI product types, evidence, privacy, and governance | ✅ prose/table | No figure; `fig_ai_vs_therapist_comparison.png` is retired and unwired |
+
+The older adaptive-response arc, 3D Venn, fixed diathesis threshold, anxiety-extinction loop, psychotherapy-centered treatment map, and AI-versus-therapist comparison remain only as provenance assets. They are not approved or wired.
 
 ---
 
@@ -293,7 +294,7 @@ All 9 current figures are wired. Only the biopsychosocial triangle remains unbui
 - Ch2: closed 2026-07-10 — final set wired, browser-check still open (see Ch2 table above).
 - Ch3: obtain originality sign-off for three lecture-slide-derived figures or rebuild them.
 - Ch4: browser-check live rendering, confirm Webvision non-commercial license fit, and decide whether a depth-cues figure is still needed.
-- Ch6/7/9/12/13: optional figures only; do not block core completion.
+- Ch6/7/9/12: optional figures only; do not block core completion. Ch13 is closed pending whole-book release checks.
 
 ### Tier 4 — release-readiness audit
 Run a whole-book check for broken image links, missing captions/alt text, missing attribution/license/public-sharing status, noncommercial/share-alike assets, stale UUID files, unreferenced image files, and any artwork with embedded figure numbers.
