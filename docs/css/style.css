@@ -389,6 +389,18 @@ a { color: var(--color-accent); }
   color: var(--color-text);
 }
 
+/* Long DOI and resource URLs must wrap inside the reading column on narrow screens. */
+.further-reading,
+.references {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+.further-reading a,
+.references a {
+  word-break: break-all;
+}
+
 /* ── Tables (history table, connections table, etc.) ── */
 table {
   width: 100%;

@@ -6,6 +6,12 @@ const require = createRequire(import.meta.url);
 const { marked } = require("marked");
 
 const chapters = {
+  "2": {
+    source: "source/chapters/ch02-research-methods.md",
+    output: "docs/chapters/02-research-methods.html",
+    title: "Research Methods & Statistics",
+    pillar: "Foundations",
+  },
   "9": {
     source: "source/chapters/09-thinking-language-intelligence.md",
     output: "docs/chapters/09-thinking-language-intelligence.html",
@@ -53,7 +59,7 @@ function renderDetails(raw) {
 function preprocess(markdown) {
   let text = markdown.replace(/^# .+\r?\n/, "");
   text = text.replace(
-    /^\s*>\s*(?:Canonical revised source\.|Drafting history and provenance:)[^\n]*(?:\r?\n|$)\s*(?:---\s*(?:\r?\n|$))?/,
+    /^\s*>\s*(?:Canonical revised source\.|Drafting history (?:and|&) provenance:)[^\n]*(?:\r?\n|$)\s*(?:---\s*(?:\r?\n|$))?/,
     "",
   );
   text = text.replace(/^## Stop and Retrieve$/m, "## Review Questions");
@@ -71,7 +77,7 @@ function preprocess(markdown) {
   );
 
   text = text.replace(
-    /(## Review Questions\s*\n)([\s\S]*?)(?=\n---\s*\n|\n## )/,
+    /(## Review Questions\s*\n)([\s\S]*?)(?=\n## )/,
     (_all, heading, body) => {
       const questions = [];
       const pattern = /(?:^|\n)\s*(?:\*\*(\d+)\.\*\*|(\d+)\.)\s+([^\n]+)\s*\n\s*(<details>[\s\S]*?<\/details>)/g;
@@ -80,7 +86,28 @@ function preprocess(markdown) {
         const number = match[1] || match[2];
         questions.push(`<div class="review-q">\n<p><strong>${number}.</strong> ${marked.parseInline(match[3].trim())}</p>\n${renderDetails(match[4])}\n</div>`);
       }
+
+      if (!questions.length) {
+        for (const block of body.split(/\n---\s*\n/)) {
+          const question = block.match(/^\s*\*\*(\d+)\.\*\*\s+([^\n]+)/);
+          const answer = block.match(/^\*Answer:\s*([\s\S]*?)\*\s*$/m);
+          if (!question || !answer) continue;
+          const options = [...block.matchAll(/^[a-d]\)\s+(.+)$/gm)];
+          if (!options.length) continue;
+          const optionHtml = options.map((option) => `<li>${marked.parseInline(option[1].trim())}</li>`).join("\n");
+          questions.push(`<div class="review-q">\n<p><strong>${question[1]}.</strong> ${marked.parseInline(question[2].trim())}</p>\n<ol class="options" type="a">\n${optionHtml}\n</ol>\n<details>\n<summary>Show answer &amp; rationale</summary>\n<div class="answer"><p><strong>Answer:</strong> ${marked.parseInline(answer[1].trim())}</p></div>\n</details>\n</div>`);
+        }
+      }
       return `${heading}\n${questions.join("\n")}\n`;
+    },
+  );
+
+  text = text.replace(
+    /(## Further Reading\s*\n)([\s\S]*?)(?=\n---\s*\n\s*## References)/,
+    (_all, heading, body) => {
+      const blocks = body.trim().split(/\n\s*\n(?=\*\*)/);
+      const items = blocks.map((block) => `<div class="fr-item">\n${marked.parse(block.trim())}</div>`);
+      return `${heading}\n<div class="further-reading">\n${items.join("\n")}\n</div>\n`;
     },
   );
 

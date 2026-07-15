@@ -1,8 +1,10 @@
 # Chapter 2 Image Wiring Handoff
 
-**Date:** 2026-07-10  
+**Date:** 2026-07-10; completed and reconciled 2026-07-15
 **Repository:** `jkoxford-a11y/psych101`  
 **Scope:** Finish Chapter 2 image cleanup, metadata reconciliation, source wiring, generated-HTML synchronization, and validation. Do not redesign approved figures or broadly rewrite chapter prose.
+
+**Completion status:** This handoff is complete. The 2026-07-15 canonical revision rechecked the nine-figure sequence, repaired Figure 2.2's embedded measurement wording, replaced the stale numbered sampling/assignment PNG in chapter use with `fig2-5-random-sampling-vs-assignment.svg`, removed the resolved placebo sharing blocker, regenerated the HTML, and completed desktop/mobile visual review. Current metadata lives in `README_captions_alt_text_attribution.md` and `source/visuals-inventory.md`; the instructions below are retained as the historical execution record.
 
 ## Read first
 
@@ -83,13 +85,11 @@ Accuracy caveats:
 - Asset: `docs/images/ch02/ch02_placebo_response_vs_effect_asthma.png`
 - Placement: After the new prose describing Wechsler et al. (2011).
 - Display: `chapter-figure wide expandable`.
-- **BLOCKER:** The PNG contains an incorrect embedded author list in the bottom source line.
-- Do not wire the current PNG as final public content until that line is removed or replaced with:
+- **Resolved 2026-07-10:** The PNG originally contained an incorrect embedded author list in the bottom source line. The line was replaced with:
 
   `Source: Wechsler et al. (2011), doi:10.1056/NEJMoa1103319`
 
-- Preferred repair: edit only the bottom source line while preserving all other pixels and chart values. Do not regenerate the entire figure unless precise editing fails.
-- After correction, update the main manifest status from candidate/reference to use now and remove the production-blocker language.
+- The repair changed only the bottom source line while preserving all other pixels and chart values. The canonical revision rechecked the repaired asset and removed the stale public-sharing blocker from the manifest.
 - Verified teaching values:
   - Objective FEV1 improvement: approximately 20% for albuterol and approximately 7% for placebo inhaler, sham acupuncture, and no intervention.
   - Subjective improvement: approximately 50%, 45%, 46%, and 21%, respectively.

@@ -26,7 +26,6 @@ Durable future and deferred work that is not part of the immediately active task
 ## HTML and rendering
 
 - **Verify the two mobile fixes on an actual phone in both orientations** (`docs/css/style.css`, `docs/js/sidebar.js`): sidebar visibility/reopen and expanded-figure clipping.
-- **Chapter 2 expandable figures:** verify expansion and caption legibility on mobile after the shared clipping fix.
 - **Verify the live GitHub Pages site** after the current Chapter 9–13 sequence is rebuilt, including links, figures, labs, expandable assets, sidebar state, and narrow-screen behavior.
 - **Browser-check the new `h3` accent rule** against live chapter pages before systematic rollout.
 - **Retrofit `.in-section-nav` and descriptive `<h3>` chunking** chapter by chapter after the active audit/revision sequence. This is content-structure work, not merely a CSS pass.

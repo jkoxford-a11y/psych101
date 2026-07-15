@@ -37,15 +37,15 @@ Markdown draft complete (v0.2). Awaiting Jon's line-by-line review. HTML convers
 
 ## Chapter 2 — Research Methods & Statistics
 
-**Wired 2026-07-10** per `docs/images/ch02/CH02_IMAGE_WIRING_HANDOFF.md`. Final nine-figure set is wired into both `source/chapters/ch02-research-methods.md` and `docs/chapters/02-research-methods.html`, renumbered sequentially by order of appearance. `docs/images/ch02/README_captions_alt_text_attribution.md` is the authoritative Ch2 image manifest — consult it for captions, alt text, and attribution.
+**Reconciled 2026-07-15** per `docs/images/ch02/CH02_IMAGE_WIRING_HANDOFF.md`. The final nine-figure set is wired into both `source/chapters/ch02-research-methods.md` and regenerated `docs/chapters/02-research-methods.html`, numbered sequentially by order of appearance. Desktop/mobile loading, caption legibility, and expandable behavior were checked. `docs/images/ch02/README_captions_alt_text_attribution.md` is the authoritative Ch2 image manifest — consult it for captions, alt text, attribution, public-sharing status, and interpretation caveats.
 
 | # | Description | Status | Filename / note |
 |---|-------------|--------|-----------------|
 | 2.1 | Research process cycle (Observe→Define→Relate→Test→Estimate→Replicate→Revise) | ✅ wired | `ch02/ch02_research_process_cycle.png` — replaces the former evidence-ladder framing |
-| 2.2 | Reliability/validity four-panel target diagram | ✅ wired | `ch02/ch02_reliability_validity_accuracy_precision.png` — replaces `fig_reliability_validity_dartboard.svg` and `fig2-6-reliability-validity-targets.svg` |
+| 2.2 | Accuracy/precision target analogy with modern reliability/validity caveat | ✅ wired; wording repaired | `ch02/ch02_reliability_validity_accuracy_precision.png` — no longer equates accuracy with psychometric validity or labels imprecise scores “high validity”; replaces `fig_reliability_validity_dartboard.svg` and `fig2-6-reliability-validity-targets.svg` |
 | 2.3 | Correlation direction/strength (five scatterplots) | ✅ wired | `ch02/ch02_correlation_direction_strength.png` — replaces `fig_correlation_scatter.png` |
 | 2.4 | Third-variable problem (Age → Shoe size / Reading ability) | ✅ wired | `ch02/ch02_third_variable_age_shoe_size_reading.png` — renamed from user-selected UUID asset `40af6fe3-f8d2-4d0a-a7f5-17022b340904-_edit.png`; replaces `fig_third_variable_problem.png/.svg` |
-| 2.5 | Random sampling vs. random assignment | ✅ | `ch02/fig2-5-random-sampling-vs-assignment.svg` — retained unchanged |
+| 2.5 | Random sampling vs. random assignment | ✅ wired | `ch02/fig2-5-random-sampling-vs-assignment.svg` — retained no-number SVG; supersedes the stale numbered PNG for chapter use |
 | 2.6 | Experiment flowchart (hot sauce paradigm, IV/DV/control) | ✅ | `ch02/fig_experiment_flowchart.svg` — retained unchanged |
 | 2.7 | Placebo response vs. placebo effect (Wechsler et al. 2011 asthma study) | ✅ wired | `ch02/ch02_placebo_response_vs_effect_asthma.png` — incorrect embedded source-citation line repaired in place (targeted pixel edit; all chart values/pixels otherwise preserved) before wiring |
 | 2.8 | p-value misconceptions | ✅ | `ch02/fig_p_value_misconceptions.svg` — retained unchanged |
@@ -53,7 +53,7 @@ Markdown draft complete (v0.2). Awaiting Jon's line-by-line review. HTML convers
 
 **Superseded assets archived to `ch02/_archive/`:** `fig_correlation_scatter.png/.svg`, `fig_reliability_validity_dartboard.png/.svg`, `fig2-6-reliability-validity-targets.svg`, `fig_third_variable_problem.png/.svg`. (`ch02_effect_size_confidence_intervals_magnitude_precision.png`, named in the handoff as a possible supersession target, was never actually present in the folder — no action needed. No standalone `ch02_correlation_direction_strength.md` metadata file existed either — that cleanup step was already moot.)
 
-**Next action:** browser-check the live rendered page for image loading, wide/expandable behavior, mobile width, and caption legibility — no further Ch2 figure decisions are open.
+**Next action:** none for the canonical Chapter 2 figure set. Optional cleanup of pre-existing unused/duplicate files remains in `PROJECT_BACKLOG.md`; it does not affect chapter rendering or publication status.
 
 ---
 
