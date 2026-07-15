@@ -1,106 +1,120 @@
 # Psych101 — Current Handoff
 
-**Last updated:** 2026-07-14 (Session 110)
+**Last updated:** 2026-07-15 (Session 111)
 **Canonical repository:** `C:\GitHub\psych101`
-**Current branch or PR:** `main`. Recent Chapter 9 and Chapter 10 comparison-draft work was committed directly to `main` through the GitHub connector.
+**Current branch or PR:** `main`. Jon manually backed up the prior Chapter 9 and Chapter 10 sources and renamed the revised chapters into their canonical source paths before this reconciliation.
 
 This file is current-state only and is overwritten rather than appended. See `GPT_project_log.md` for chronological history and `PROJECT_BACKLOG.md` for durable deferred work.
 
 ## Current state
 
-### Chapter 9
+### Canonical source decisions
 
-A pre-review audit at `pipeline/audits/ch09-pre-review-audit.md` identified several root problems: heterogeneous heuristics were being pulled toward one mechanism, some language-acquisition and intelligence claims exceeded their evidence, a brief group-differences section carried too much causal weight, the chapter was overloaded, and several figures needed reconsideration.
+The former comparison-draft workflow for Chapters 9 and 10 is over.
 
-A non-authoritative comparison revision exists at `source/chapters/09-thinking-language-intelligence-2.md`. The authoritative source remains `source/chapters/ch09-thinking-language-intelligence.md` until Jon explicitly approves promotion.
+- **Chapter 9 canonical source:** `source/chapters/09-thinking-language-intelligence.md`
+- **Chapter 9 backup:** `source/chapters/_archive/ch09-thinking-language-intelligence.md`
+- **Chapter 10 canonical source:** `source/chapters/ch10-lifespan-development.md`
+- **Chapter 10 backup:** `source/chapters/_archive/ch10-lifespan-development.md`
+- The former `09-thinking-language-intelligence-2.md`, `ch09-thinking-language-intelligence.md`, and `ch10-lifespan-development-2.md` paths are absent from `main`.
 
-- **Confirmed decision: keep the Linda/bank-teller passage and Figure 9.6.** Linda is Tversky and Kahneman's original research example, not publisher-derived wording.
-- `docs/images/ch09/ch09_category_hierarchy_superordinate_basic_subordinate.svg` exists but still needs to be wired at Figure 9.1.
-- `docs/images/ch09/ch09_conjunction_fallacy_nested_sets.svg` was built for the superseded Jordan example and remains in the repo as an unused original asset.
-- The former bias/question-substitution Figure 9.9 remains omitted; the IQ figure should be renumbered from 9.10 to 9.9.
-- The exact patch list is in `pipeline/audits/ch09-comparison-figure-followup.md`.
-- The current generated Chapter 9 HTML is structurally valid but was built before those source patches and is not final.
+Do not treat either chapter as awaiting promotion. Some source comments and old work-order language still describe the superseded comparison-draft state and should be cleaned during finalization.
 
-### Chapter 10
+### Chapter 9 — canonical revision, finalization incomplete
 
-A full non-authoritative comparison revision was added at `source/chapters/ch10-lifespan-development-2.md` following independent review and the Work pre-review audit. The original `source/chapters/ch10-lifespan-development.md` and generated HTML remain unchanged.
+The revised prose is now the authoritative source. Its conceptual decisions are settled:
 
-The comparison draft:
+- compression remains an explicitly labeled teaching metaphor tied to cognitive constraint and Chapter 8;
+- heterogeneous heuristics are not reduced to one mechanism;
+- the underdeveloped group-differences passage remains removed;
+- language-acquisition, linguistic-relativity, intelligence, Gardner, Sternberg, and Flynn-effect claims remain calibrated;
+- the Linda/bank-teller passage and Figure 9.6 remain;
+- the Jordan/campus-library SVG remains an unused original asset;
+- the former question-substitution Figure 9.9 remains omitted and the bias comparison stays a table.
 
-- retains the long, plastic, expensive human-development spine while treating secondary altriciality and cooperative breeding as parts of a supported coevolutionary model rather than a complete causal story;
-- reconstructs the opener so Piaget's stage account is introduced as a theory rather than installed as the corrective fact;
-- reduces the instructional body to approximately 4,100 words, with seven objectives, ten open-response questions with hidden model answers, twenty alphabetized key terms, and eight linked Connections rows;
-- preserves one sentence on natural pedagogy, the AI/ZPD application, the moral helper-hinderer replication, orchid/dandelion, and the aging tradeoff;
-- recalibrates synaptic pruning, attachment, parenting styles, early object knowledge, and adolescent dual-systems claims;
-- states that many regulatory-development trajectories approach adult-like plateaus around the mid-twenties without claiming that the brain becomes complete at one age;
-- retains the age-25 car-insurance illustration as an actuarial parallel rather than evidence of a neural mechanism;
-- adds socioemotional selectivity and a normal-aging-versus-dementia distinction to improve lifespan balance.
+Remaining work:
 
-The revision was committed directly to `main` in commit `d4f156f73405ac31121257ed61b0b8f35a8ec57f`.
+1. Remove stale “comparison revision” language and references to nonexistent source paths.
+2. Wire `docs/images/ch09/ch09_category_hierarchy_superordinate_basic_subordinate.svg` as Figure 9.1.
+3. Renumber the IQ standardization figure from 9.10 to 9.9.
+4. Update `source/visuals-inventory.md` and Chapter 9 figure metadata/status records.
+5. Regenerate `docs/chapters/09-thinking-language-intelligence.html` from the canonical source and validate full source/HTML parity.
 
-A standalone Chapter 10 learning lab is now ready for instructor review at `docs/labs/ch10/zpd-fading-support.html`, with its script at `docs/js/labs-zpd-fading-support.js` and navigation through `docs/labs/ch10/index.html` and the main labs index. It contrasts complete-answer support, graduated hints, and faded-support transfer without scoring or assessing the student. It is not wired into Chapter 10; chapter wiring remains a separate approval step.
+### Chapter 10 — canonical revision, figures and final build incomplete
 
-### HTML/CSS body-prose formatting spec (new this session)
+The revised lifespan chapter is now the authoritative source at `source/chapters/ch10-lifespan-development.md`. It retains the long, plastic, expensive human-development spine while treating secondary altriciality, cooperative care, social learning, diet, and brain expansion as interacting contributors rather than one settled causal sequence. Attachment, parenting, pruning, object knowledge, adolescence, and aging are already recalibrated in the source.
 
-Jon felt already-built chapters read as visually homogenous — long unbroken paragraph blocks, and callout boxes distinguishable only by a thin border color. Several mockups were built and compared (h3 subheadings, paragraph-length discipline, "chip"/underlined key terms, drop-cap/badge visual rhythm), then the choice was grounded in learning-science literature rather than aesthetic preference: Mayer's segmenting principle (chunked, learner-paced content, d≈0.98) and signaling/cueing principle (descriptive headings expose structure, d≈0.52) support chunking; working-memory chunk limits (~4 items, Cowan 2001) argue against stacking multiple term definitions in one paragraph; the seductive-details-effect meta-analyses argue against decoration that carries no structural signal; Dunlosky et al. (2013) rated highlighting/underlining low-utility as a standalone memory technique, which argues against chip/underline styling for key terms.
+The standalone ZPD/fading-support lab exists at `docs/labs/ch10/zpd-fading-support.html` with script `docs/js/labs-zpd-fading-support.js`. It has passed browser, state/privacy, responsive-layout, and semantic-accessibility checks. It should be linked from the final Chapter 10 source and HTML as part of the finalization pass.
 
-**Confirmed pattern:** every numbered content section gets 2–4 descriptively-titled `<h3>` subsections (styled with a left accent rule, no background tint, so they stay visually distinct from tinted `.callout` boxes), plus a per-section `.in-section-nav` block labeled "In this section" (not "on this page" — chapters are single scrolling documents, not paginated) linking only to that section's own subheadings, not a chapter-wide table of contents. Key terms stay plain `<strong>` — no chip or underline styling. No drop caps, numbered badges, or repeated eyebrow labels on figures.
+Remaining figure work:
 
-**Implemented:** `pipeline/html-conversion-spec.md` §5a documents the pattern, example markup, and full rationale; `docs/css/style.css` has the new `h3` accent-rule (applies automatically to all already-built chapters — several already use bare `<h3>`) and `.in-section-nav` styles. No chapter content was edited — the `.in-section-nav` markup and any new subsection chunking require per-chapter editing and have not been retrofitted into any built chapter yet.
+- **Figure 10.1:** replace the causal-equation/sequence implication with a model of interacting contributors.
+- **Figure 10.3:** narrow to selective stabilization/developmental tuning; remove optimization language and exact-looking developmental windows.
+- **Figure 10.6:** approved canonical replacement is in place; perform final rendered-page readability and accessibility review only.
+- **Figure 10.7:** label the dual-systems account as a schematic average model and include peers, context, and opportunity.
+- **Figure 10.8:** identify curves as schematic group averages and soften the “opposite directions” framing.
 
-## Next actions
+After those repairs, regenerate `docs/chapters/10-lifespan-development.html` from the canonical source rather than patching the old generated page.
 
-1. **Jon: review `source/chapters/ch10-lifespan-development-2.md`.** Decide whether it should replace the current canonical Chapter 10 source.
-2. **Jon: review the Chapter 10 ZPD/scaffolding lab.** Decide whether to approve it and, separately, whether to wire it into the eventual Chapter 10 build.
-3. **Revise Chapter 10 figures before HTML regeneration:**
-   - Figure 10.1: show interacting contributors rather than a settled causal equation or sequence.
-   - Figure 10.3: simplify to selective stabilization/developmental tuning; remove optimization and exact-looking windows.
-   - Figure 10.6: approved replacement selected. Uses observable reunion behavior, retains caregiver sensitivity as a probabilistic correlate, and avoids fixed-trait or deterministic caregiving claims. Only final rendered-page review remains.
-   - Figure 10.7: identify dual systems as a schematic average model and add peers/context/opportunity.
-   - Figure 10.8: label curves as schematic group averages and soften the “opposite directions” title.
-4. **Complete the Chapter 9 patch list** in `pipeline/audits/ch09-comparison-figure-followup.md`, then review the comparison draft for promotion and rebuild its HTML.
-5. After Chapter 10 source approval and figure repair, regenerate `docs/chapters/10-lifespan-development.html` from the approved source rather than patching generated HTML.
-6. Run `pipeline/lint_chapters.py`, source/HTML parity checks, figure-path and alt-text validation, and desktop/narrow-mobile visual QA for the eventual final builds.
-7. Browser-check the new `h3` accent-rule CSS against a live chapter that already uses bare `<h3>` (e.g. Chapter 3 or Chapter 10) to confirm it renders as intended before more chapters ship with it silently applied.
-8. When Jon schedules it, retrofit already-built chapters with `.in-section-nav` blocks and, where a numbered section isn't already subsectioned, add descriptive `<h3>` chunking — this is content-authoring work per chapter, not a CSS-only change.
+### Chapter 11 — canonical source revised; generated HTML stale
 
-## Decisions needed from Jon
+The authoritative source `source/chapters/ch11-social-psychology.md` has already been revised after the pre-review audit. The replacement Learning Lab, `docs/labs/ch11/change-the-situation.html`, is complete and linked from the source and labs index.
 
-- Whether to promote the Chapter 10 comparison draft to the authoritative source, request targeted changes, or retain the current source.
-- Whether to approve the Chapter 10 ZPD/scaffolding lab and later wire it into the approved Chapter 10 build.
-- Whether Figure 10.3 should be simplified for the textbook with the current dense asset retained for slides.
-- Whether Chapters 9 and 10 should keep open-response review questions with hidden model answers or later receive authored diagnostic multiple-choice items.
-- Whether to promote the completed Chapter 9 comparison draft after its remaining figure wiring and renumbering patches.
-- Timing/method for retrofitting already-built chapters with the new `.in-section-nav` + `<h3>` chunking pattern (batch pass vs. per-chapter as each is next touched).
+Remaining work:
 
-No further decision is needed on Linda or the former Chapter 9 Figure 9.9. No further decision is needed on the h3/in-section-nav pattern itself — only on when to retrofit it.
+- revise Figure 11.2 so the unanimous Asch majority is visibly incorrect;
+- replace Figure 11.6’s exact synthetic correlations with a data-free single-observation versus aggregated-observations design;
+- replace Figure 11.7’s invented helping scores with a conceptual weak-situation versus strong-situation diagram;
+- complete/update Chapter 11 figure metadata and `source/visuals-inventory.md`;
+- regenerate `docs/chapters/11-social-psychology.html` from the canonical source;
+- confirm the generated page links to `change-the-situation.html` and contains no reference to the deleted “Feed Is Not the World” lab.
+
+### Up next after the Work pass
+
+- **Chapter 12:** revise the canonical source from `pipeline/audits/ch12-pre-review-audit.md`, preserving the body-budget, cognitive-light-cone, coping-fit, and AI-embodiment teaching strengths while correcting constructionism overreach, Patient S.M., stress physiology/GAS figures, and unsupported practical mechanisms.
+- **Chapter 13:** run the same pre-review audit sequence, discuss the findings, revise the canonical source, repair figures/labs as needed, and regenerate HTML.
+
+## Immediate next actions
+
+1. Give Work the consolidated Chapters 9–11 finalization prompt and have it complete source cleanup, figure repair, metadata/inventory reconciliation, HTML regeneration, and validation within the stated scope.
+2. Review Work’s revised figures and live/rendered Chapter 9–11 pages before treating those chapters as final.
+3. Revise Chapter 12 from its completed pre-review audit.
+4. Audit Chapter 13, discuss the audit, then produce and validate the canonical revision.
+5. After Chapters 9–13 are stable, run repository-wide lint, source/HTML parity, figure-path/alt-text checks, and desktop/narrow-mobile visual QA.
+
+## Decisions still deferred
+
+- Whether open-response review questions with hidden model answers should remain the default in revised chapters or later be replaced with authored diagnostic multiple-choice items.
+- When to retrofit already-built chapters with the new per-section `.in-section-nav` and descriptive `<h3>` chunking pattern.
+- Whether to extend the expandable-figure pattern beyond its current chapters after live-page review.
+
+No further promotion decision is needed for Chapter 9 or Chapter 10. No further decision is needed on Linda, the former Chapter 9 question-substitution figure, or the Chapter 10 attachment replacement.
 
 ## Validation and known risks
 
-- The Chapter 10 comparison draft has been structurally inspected in source form; HTML has not been regenerated or linted.
-- The Chapter 10 lab passed full browser completion, three refresh/restore checkpoints, reset, console, desktop/mobile, state/privacy, and semantic accessibility checks. The browser driver did not synthesize Enter/Space activation, so keyboard readiness was verified from native controls, focus transitions, and DOM order rather than a complete automated keyboard-only run.
-- Four current Chapter 10 figure assets still encode claims that revised captions alone cannot fully repair. Figure 10.6 has an approved replacement at the canonical path; only its final rendered-page accessibility and readability review remains. The comparison source retains its historical revision comment because chapter files were outside the scope of the image-replacement task.
-- Chapter 10 reference metadata was selectively repaired, but a final live bibliographic verification pass should occur before publication.
-- The current Chapter 9 HTML passed structural checks but was built from unpatched source; treat it as a working build, not final.
-- `source/visuals-inventory.md` is known to drift out of sync with actual per-chapter image state; cross-check per-chapter metadata.
-- CRLF/LF line-ending drift can make `git status` report large whitespace-only changes; use `git diff -w` before treating those as content drift.
-- Multiple recent commits went directly to `main` through the GitHub connector rather than Jon's usual GitHub Desktop review step.
-- The new `h3`/`.in-section-nav` CSS was built and eyeballed only in a standalone mockup file (outside the repo, real site CSS values copied in), not yet checked against a live chapter page in a browser — see Next action 7.
+- The canonical Chapter 9 source still contains stale header/work-order language from its former comparison status; Work must remove it without altering the approved argument.
+- The current Chapter 9 and Chapter 10 HTML files predate final source/figure cleanup and are not authoritative.
+- The current Chapter 11 HTML predates the revised source and replacement lab and is known to contain the obsolete lab link.
+- `source/visuals-inventory.md` is known to drift; cross-check per-chapter metadata and actual files before updating it.
+- Chapter 10 reference metadata received selective repair but still needs a final live bibliographic verification before publication.
+- The new `h3`/`.in-section-nav` CSS remains deferred and has not been systematically retrofitted or browser-checked across chapters.
+- CRLF/LF drift can create misleading broad diffs; use content-aware comparison before treating line-ending changes as substantive.
 
 ## Important files
 
-- `source/chapters/ch10-lifespan-development-2.md` — revised Chapter 10 comparison draft.
-- `source/chapters/ch10-lifespan-development.md` — current authoritative Chapter 10 source; unchanged.
-- `pipeline/audits/ch10-pre-review-audit.md` — Chapter 10 Work audit.
-- `docs/chapters/10-lifespan-development.html` — current generated Chapter 10; unchanged.
-- `docs/images/ch10/` — active Chapter 10 figures and metadata.
-- `docs/labs/ch10/zpd-fading-support.html` and `docs/js/labs-zpd-fading-support.js` — standalone ZPD/scaffolding lab; not chapter-wired.
-- `source/chapters/09-thinking-language-intelligence-2.md` — non-authoritative Chapter 9 comparison draft.
-- `pipeline/audits/ch09-comparison-figure-followup.md` — remaining Chapter 9 patch specification.
-- `docs/chapters/09-thinking-language-intelligence.html` — structurally valid working build from unpatched comparison source.
-- `pipeline/voice-brief.md` — authoritative prose voice.
-- `docs/images/psych101_figure_style_guide.md` — figure standard.
-- `pipeline/html-conversion-spec.md` §5a — new h3-subsection/in-section-nav pattern, markup example, and evidence-based rationale.
-- `docs/css/style.css` — `h3` accent-rule and `.in-section-nav` styles added this session.
-- `AGENTS.md` — permanent routing and operating rules.
-- `PROJECT_BACKLOG.md` — durable deferred work.
+- `source/chapters/09-thinking-language-intelligence.md`
+- `pipeline/audits/ch09-pre-review-audit.md`
+- `pipeline/audits/ch09-comparison-figure-followup.md` — historically useful but contains stale comparison-path instructions; update or mark completed during finalization
+- `source/chapters/ch10-lifespan-development.md`
+- `pipeline/audits/ch10-pre-review-audit.md`
+- `docs/labs/ch10/zpd-fading-support.html`
+- `source/chapters/ch11-social-psychology.md`
+- `pipeline/audits/ch11-pre-review-audit.md`
+- `docs/labs/ch11/change-the-situation.html`
+- `pipeline/audits/ch12-pre-review-audit.md`
+- `pipeline/html-conversion-spec.md`
+- `pipeline/voice-brief.md`
+- `docs/images/psych101_figure_style_guide.md`
+- `source/visuals-inventory.md`
+- `PROJECT_BACKLOG.md`
+- `AGENTS.md`
