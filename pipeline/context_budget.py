@@ -14,7 +14,6 @@ import argparse
 import csv
 import datetime
 import pathlib
-import re
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 LOG_PATH = ROOT / "pipeline" / "context_budget_log.csv"
@@ -29,14 +28,11 @@ def size(p):
     return p.stat().st_size if p.exists() else 0
 
 
-def handoff_split():
+def handoff_size():
     p = ROOT / "HANDOFF.md"
     if not p.exists():
-        return (0, 0)
-    raw = p.read_text(encoding="utf-8", errors="replace")
-    m = re.search(r"(?m)^## Session Log", raw)
-    start = raw[:m.start()] if m else raw
-    return (len(start.encode()), len(raw.encode()))
+        return 0
+    return p.stat().st_size
 
 
 def section(title, rows):
@@ -51,6 +47,9 @@ def section(title, rows):
 
 
 def append_log(totals):
+    # Keep both legacy handoff columns so existing logs and downstream readers retain
+    # their schema. Under the concise whole-file architecture, both record the same
+    # complete HANDOFF.md cost; handoff_start_tok remains the intended-read measure.
     fieldnames = [
         "date",
         "handoff_start_tok",
@@ -93,12 +92,11 @@ def main():
 
     totals = {}
 
-    start_b, full_b = handoff_split()
-    totals["handoff_start"] = start_b
-    totals["handoff_full"] = full_b
+    handoff_b = handoff_size()
+    totals["handoff_start"] = handoff_b
+    totals["handoff_full"] = handoff_b
     section("Session-start read (mandatory per project rules)", [
-        ("HANDOFF.md — Current Status + Next Up (intended read)", start_b),
-        ("HANDOFF.md — full file (if over-read)", full_b),
+        ("HANDOFF.md — complete concise current-state file", handoff_b),
     ])
 
     ref_rows = [
