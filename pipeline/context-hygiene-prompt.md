@@ -40,10 +40,11 @@ PHASE 1 — AUDIT (read-only, report back before changing anything)
       a large CSV/spreadsheet, or one section out of a big spec).
 
 PHASE 2 — FIX (only after I approve the audit; one safe change at a time)
-- Orient/status file: keep only a compact, genuinely-overwritten "Current
-  Status" + a bullet "Next Up" as the mandatory read. Move the append-only
-  history to a separate archive file. Rewrite the standing instruction to say
-  "overwrite, don't append," and to read only Status + Next Up at session start.
+- Orient/status file: make the complete file compact and genuinely overwritten,
+  containing only the current state and immediate actions needed at session start.
+  Move durable chronological history to a separate project log and preserve
+  superseded handoff history in a frozen archive. Rewrite the standing instruction
+  to say "overwrite, don't append," and read the complete concise file at session start.
 - Provenance headers: move each working file's version-history block into a
   sidecar (e.g. a _provenance/ folder), leave a one-line pointer at the top, and
   establish the rule: drafting/version notes go in the sidecar or the commit

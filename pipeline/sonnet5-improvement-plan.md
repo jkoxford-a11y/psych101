@@ -8,7 +8,7 @@
 
 ## How to use this file (Sonnet 5, read first)
 
-1. Read `HANDOFF.md` Current Status + Next Up (per project rules), then this file. Confirm you are in `C:\GitHub\psych101`, not a stale copy.
+1. Read the complete concise `HANDOFF.md` (per project rules), then this file. Confirm you are in `C:\GitHub\psych101`, not a stale copy.
 2. Work **one unit at a time** (one chapter, or one feature) → **validate** → **commit** → move on. Never batch-edit many files with one regex without running the validator afterward. The Session 80 sidebar script silently truncated six chapters precisely because it bulk-edited without post-edit validation. Do not repeat that pattern.
 3. Build the linter (Task 0) **before** anything else, so every later task is checked by a script rather than by eyeballing.
 4. Prefer editing the **HTML** in `docs/chapters/` for structural/reading fixes (that's what ships). Only touch `source/chapters/*.md` when the fix is a content change the author will want mirrored. Note in the commit which side you edited.
@@ -44,7 +44,7 @@
 
 ## Task 0.5 — Context hygiene (reduce per-read token cost)
 
-**Why:** The deepest efficiency lever isn't compressing prose — it's reducing how much context each action *requires*. Two ways: **locality** (read a slice, not a file) and **determinism** (move checks a script can do out of the model's token budget). Measured baselines from `pipeline/context_budget.py`: the full HANDOFF is ~29K tokens if over-read; the two CSVs are ~21K read whole; `theoretical-foundations.md` + `theoretical-spine.md` are ~47K; each built HTML chapter is ~20–25K.
+**Why:** The deepest efficiency lever isn't compressing prose — it's reducing how much context each action *requires*. Two ways: **locality** (read a slice, not a file) and **determinism** (move checks a script can do out of the model's token budget). `HANDOFF.md` is now a concise overwrite-in-place current-state document and should be read in full. Other measured baselines from `pipeline/context_budget.py`: the two CSVs are ~21K tokens read whole; `theoretical-foundations.md` + `theoretical-spine.md` are ~47K; each built HTML chapter is ~20–25K.
 
 **Already done (2026-07-10, verified) — see `pipeline/`:**
 - **Provenance extracted from chapter markdown.** `pipeline/extract_provenance.py` moved ~16.8K tokens of per-chapter version-history headers into `source/chapters/_provenance/chNN.md`; each chapter now opens with a one-line pointer. Body content verified byte-identical against a snapshot (ch10 additionally normalized CRLF→LF; it was the only CRLF file). Re-run with `--check` to confirm clean; `--apply` to process any newly-headered chapter (e.g. Ch6's HTML build, or future drafts). **Rule going forward: drafting notes go in the sidecar or the commit message, not the top of the chapter file.**
@@ -54,10 +54,10 @@
 **Still to do (Sonnet, deterministic):**
 1. **Grep the CSVs, don't Read them whole.** When editing chapter N, pull only that chapter's rows: `grep -i "^<prefix>" source/concept_lineage_revised.csv` (MEM- for Ch8, etc.) rather than loading all 183/130 rows (~21K tokens). Add this as a note in `chapter-spec.md` §10 (Drafting Sequence steps 1–3).
 2. **Split specs into draft-time vs archival.** `theoretical-foundations.md` (~26K tok) and `theoretical-spine.md` (~22K tok) are the two heaviest files in `pipeline/` and are almost certainly *reference*, not needed in full for a routine edit. Add a one-line header to each marking it "archival — read only when doing foundational/theory work," and note in `chapter-spec.md` that routine drafting needs only `chapter-spec.md` + `voice-brief.md` + the relevant CSV rows.
-3. **Cap the Session Log mechanically.** Keep the last ~5 sessions in `HANDOFF.md`; auto-flush older entries to `HANDOFF-ARCHIVE.md` so the file an agent might over-read stays bounded (it's ~29K tokens today and grows every session). A ~30-line script (`pipeline/roll_session_log.py`) can do this; run it at session end.
+3. **Session Log capping/rollover — SUPERSEDED by the current architecture.** `HANDOFF.md` is a concise current-state document that is overwritten in place. Durable chronological history belongs in `GPT_project_log.md`; `HANDOFF-ARCHIVE.md` contains frozen superseded handoff history. Do not reconstruct or append a Session Log in `HANDOFF.md`.
 4. **Read chapter HTML by slice.** The most expensive recurring op is "read a whole 20–25K-token HTML chapter to make a small edit." Once the linter (Task 0) reports defects by line/section, read only that region (`Read` with offset/limit, or `grep -n` to locate), not the whole file. Template extraction (Task 6) compounds this.
 
-**Acceptance criteria:** `context_budget.py` runs clean; `extract_provenance.py --check` reports all chapters `skip-clean`; CSV-grep and spec-split notes are in `chapter-spec.md`; Session Log in HANDOFF holds ≤ ~5 sessions.
+**Acceptance criteria:** `context_budget.py` runs clean; `extract_provenance.py --check` reports all chapters `skip-clean`; CSV-grep and spec-split notes are in `chapter-spec.md`; `HANDOFF.md` remains a concise current-state file with chronological history kept in `GPT_project_log.md`.
 
 ---
 
@@ -171,4 +171,4 @@ Chapters run large — Ch3 and Ch4 are the heaviest, and Ch8's ~5,940 body words
 7. **Task 6** (template extraction) — last; fully linter-gated.
 8. **§P** polish only if budget remains. **§L** length: never executed — notes for Jon.
 
-**Per-unit loop for all tasks:** read only the flagged region → edit → `python pipeline/lint_chapters.py <file>` → `git diff` → commit noting which side (HTML/MD) changed and any author-review flags. Update `HANDOFF.md` + prepend a Session Log entry at session end, per project rules.
+**Per-unit loop for all tasks:** read only the flagged region → edit → `python pipeline/lint_chapters.py <file>` → `git diff` → commit noting which side (HTML/MD) changed and any author-review flags. Overwrite `HANDOFF.md` with concise current state as needed, and append major completed work to `GPT_project_log.md`; never add a Session Log to `HANDOFF.md`.

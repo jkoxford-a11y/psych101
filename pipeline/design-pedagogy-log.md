@@ -33,7 +33,9 @@ This is not a rigid rule. It is a practical orientation so future sessions can f
 
 ## Key files to check
 
-- `HANDOFF.md` — current production status, next-up items, append-only session log
+- `HANDOFF.md` — concise current production state and immediate next actions; overwrite in place, do not append history
+- `GPT_project_log.md` — durable chronological record of major completed work
+- `HANDOFF-ARCHIVE.md` — frozen superseded handoff history
 - `GPT_spine.md` — compressed philosophy / durable orientation
 - `pipeline/theoretical-spine.md` — operational framework for chapter review and drafting; Claude is currently preparing a v2
 - `pipeline/concepts-semanticization-log.md` — rough theory-development log on concepts, schemas, semanticization, lossy compression, and emotions-as-mattering
