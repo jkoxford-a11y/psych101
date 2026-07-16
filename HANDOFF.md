@@ -1,6 +1,6 @@
 # Psych101 — Current Handoff
 
-**Last updated:** 2026-07-16 (Chapter 2 alignment repair complete; Chapter 7 figure work paused)
+**Last updated:** 2026-07-16 (Chapter 3 regenerated; final live overflow check deferred to tomorrow)
 **Canonical repository:** `C:\GitHub\psych101`
 
 This file records current state only. See `GPT_project_log.md` for completed-work history and `PROJECT_BACKLOG.md` for durable deferred work.
@@ -20,6 +20,16 @@ Current authoritative surfaces:
 - lab script: `docs/js/labs-correlation-causation.js`
 
 The Chapter 2 post-revision verification is complete. Do not reopen the settled architecture, examples, figures, citations, or seven major editorial decisions unless Jon identifies a new specific defect.
+
+### Chapter 3 — Neuroscience and Biological Bases of Behavior
+
+Chapter 3 has been added to the shared converter and regenerated from `source/chapters/ch03-neuroscience-biological-bases.md`. Structural validation passed for section order, callouts, figures, internal anchors, review items, glossary, labs, video asset, and generated scientific framing. The durable record is `pipeline/audits/ch03-post-revision-validation.md`.
+
+Figure 3.9 is approved after direct visual inspection. Its sympathetic and parasympathetic systems remain the two primary columns; fight, flight, freeze, and tend-and-befriend appear in a separate behavioral-response band rather than as autonomic branches.
+
+The remaining Chapter 3 issue is narrow: browser diagnostics found horizontal page overflow caused by the saltatory-conduction video retaining its 1536-pixel intrinsic width. Commit `7d27cc9` adds a runtime width constraint through `docs/js/figure-expand.js`, but a post-fix three-viewport Playwright rerun was not completed because GitHub Actions did not execute reliably and the local container could not reach GitHub.
+
+Tomorrow's first task is to rerun the live Chapter 3 page at 1440×900, 390×844, and 844×390; confirm zero horizontal overflow; then move the responsive-video rule into shared CSS and remove the JavaScript fallback if the CSS path is verified.
 
 ### Chapters 9–13
 
@@ -49,8 +59,9 @@ The current `docs/images/ch07/README_captions_alt_text_attribution.md` is incomp
 
 ## Immediate next actions
 
-1. When returning to Chapter 7, finalize Figure 7.6, then Figure 7.8, reinspect Figure 7.5, and directly inspect Figures 7.1, 7.2, 7.3, 7.7, and 7.9.
-2. After all nine Chapter 7 figures are approved, complete the metadata manifest, reconcile `source/visuals-inventory.md`, synchronize source captions/alt text, regenerate the full HTML, and run desktop/mobile/content validation.
+1. Tomorrow, complete the Chapter 3 live overflow verification and replace the JavaScript video-width fallback with shared CSS if the CSS fix passes all three viewports.
+2. When returning to Chapter 7, finalize Figure 7.6, then Figure 7.8, reinspect Figure 7.5, and directly inspect Figures 7.1, 7.2, 7.3, 7.7, and 7.9.
+3. After all nine Chapter 7 figures are approved, complete the metadata manifest, reconcile `source/visuals-inventory.md`, synchronize source captions/alt text, regenerate the full HTML, and run desktop/mobile/content validation.
 
 ## Important files
 
@@ -63,6 +74,15 @@ The current `docs/images/ch07/README_captions_alt_text_attribution.md` is incomp
 - `docs/images/ch02/README_captions_alt_text_attribution.md`
 - `docs/labs/ch02/correlation-causation.html`
 - `docs/js/labs-correlation-causation.js`
+
+### Chapter 3
+
+- `pipeline/audits/ch03-pre-review-audit.md`
+- `pipeline/audits/ch03-post-revision-validation.md`
+- `source/chapters/ch03-neuroscience-biological-bases.md`
+- `docs/chapters/03-neuroscience.html`
+- `docs/images/ch03/README_captions_alt_text_attribution.md`
+- `docs/js/figure-expand.js`
 
 ### Chapter 7
 
