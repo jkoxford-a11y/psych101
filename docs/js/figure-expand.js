@@ -22,4 +22,13 @@
       setState(figure, !figure.classList.contains('is-expanded'));
     });
   });
+
+  // Generated chapter videos may retain large intrinsic dimensions. Constrain
+  // them to the reading column so they cannot create page-level overflow.
+  document.querySelectorAll('.chapter-video video').forEach(function (video) {
+    video.style.display = 'block';
+    video.style.width = '100%';
+    video.style.maxWidth = '100%';
+    video.style.height = 'auto';
+  });
 })();
