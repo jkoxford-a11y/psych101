@@ -1,4 +1,4 @@
-name: Diagnose final Chapter 3 build
+name: Inspect Chapter 3 callout IDs
 
 on:
   push:
@@ -9,7 +9,7 @@ permissions:
   contents: write
 
 jobs:
-  diagnose:
+  inspect:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -19,107 +19,67 @@ jobs:
         with:
           node-version: "22"
 
-      - name: Patch
-        id: patch
-        continue-on-error: true
+      - name: Patch, build, and inspect
         shell: bash
         run: |
-          python - <<'PY' > /tmp/patch.log 2>&1
+          python - <<'PY' > /tmp/inspect.log 2>&1
           from pathlib import Path
+          import re
+
           converter = Path("pipeline/build_chapter_html.mjs")
           text = converter.read_text(encoding="utf-8")
           start = text.index("function convertStructuredCallouts(html) {")
           head, tail = text[:start], text[start:]
           old = 'return `<div class="callout callout--${variant}"><div class="callout-title">${title}</div>${body.trim()}</div>`;'
           new = 'return `<div class="callout callout--${variant}" id="${slugify(title)}"><div class="callout-title">${title}</div>${body.trim()}</div>`;'
-          print("old wrapper count in tail:", tail.count(old))
-          print("new wrapper count in tail:", tail.count(new))
-          if old in tail:
-              tail = tail.replace(old, new, 1)
+          tail = tail.replace(old, new, 1)
           old_b = '(?=<h4>|<div class="callout callout--stop-retrieve">|<h[23]|$)'
           new_b = '(?=<h4>|<div class="callout callout--stop-retrieve">|<div class="callout callout--do-not-confuse">|<h[23]|$)'
-          print("old boundary count:", tail.count(old_b))
-          print("new boundary count:", tail.count(new_b))
-          if old_b in tail:
-              tail = tail.replace(old_b, new_b, 1)
-          converter.write_text(head + tail, encoding="utf-8")
+          tail = tail.replace(old_b, new_b, 1)
+          patched = head + tail
+          converter.write_text(patched, encoding="utf-8")
+          print("POST-PATCH WRAP LINES")
+          for line in patched.splitlines():
+              if 'body.trim()' in line or 'Classic Study:' in line and 'h4' in line:
+                  print(repr(line))
+
           source = Path("source/chapters/ch03-neuroscience-biological-bases.md")
           chapter = source.read_text(encoding="utf-8")
-          for old_anchor, new_anchor in {
-              "#section-4-the-bodys-stress-response--fast-and-slow-coordination": "#section-4-the-bodys-stress-response-fast-and-slow-coordination",
-              "#section-1-how-neurons-talk--structure-and-the-action-potential": "#section-1-how-neurons-talk-structure-and-the-action-potential",
-          }.items():
-              print(old_anchor, chapter.count(old_anchor), new_anchor, chapter.count(new_anchor))
-              chapter = chapter.replace(old_anchor, new_anchor)
+          chapter = chapter.replace("#section-4-the-bodys-stress-response--fast-and-slow-coordination", "#section-4-the-bodys-stress-response-fast-and-slow-coordination")
+          chapter = chapter.replace("#section-1-how-neurons-talk--structure-and-the-action-potential", "#section-1-how-neurons-talk-structure-and-the-action-potential")
           source.write_text(chapter, encoding="utf-8")
           PY
 
-      - name: Install
-        id: install
-        continue-on-error: true
-        shell: bash
-        run: |
-          (npm init -y >/dev/null 2>&1 && npm install --no-save marked@12.0.2) > /tmp/install.log 2>&1
+          npm init -y >/dev/null 2>&1
+          npm install --no-save marked@12.0.2 >/dev/null 2>&1
+          node pipeline/build_chapter_html.mjs 3 >> /tmp/inspect.log 2>&1
 
-      - name: Build
-        id: build
-        continue-on-error: true
-        shell: bash
-        run: node pipeline/build_chapter_html.mjs 3 > /tmp/build.log 2>&1
-
-      - name: Validate
-        id: validate
-        continue-on-error: true
-        shell: bash
-        run: |
-          python - <<'PY' > /tmp/validate.log 2>&1
+          python - <<'PY' >> /tmp/inspect.log 2>&1
           from pathlib import Path
           import re
           text = Path("docs/chapters/03-neuroscience.html").read_text(encoding="utf-8")
-          checks = {
-              "hm id": 'id="classic-study-henry-molaison-hm-and-medial-temporal-memory-systems"' in text,
-              "split id": 'id="do-not-confuse-hemispheric-specialization-vs-the-left-brainright-brain-personality-myth"' in text,
-              "sidebar": 'data-active="03"' in text,
-              "do-not-confuse count": text.count('callout--do-not-confuse') == 3,
-              "classic count": text.count('callout--classic-study') == 2,
-              "figures": text.count('<figure class="chapter-figure expandable">') == 10,
-              "questions": text.count('<div class="review-q">') == 12,
-          }
-          for label, passed in checks.items():
-              print(label, passed)
-          failed = [label for label, passed in checks.items() if not passed]
-          ids = set(re.findall(r'\bid="([^"]+)"', text))
-          missing = sorted({target for target in re.findall(r'href="#([^"]+)"', text) if target not in ids})
-          print("missing anchors:", missing)
-          if failed or missing:
-              raise RuntimeError(f"failed checks={failed}; missing={missing}")
-          print("diagnostic validation passed")
+          print("GENERATED CALLOUT OPENINGS")
+          for tag in re.findall(r'<div class="callout callout--(?:classic-study|do-not-confuse)"[^>]*>', text):
+              print(repr(tag))
+          print("CONNECTION ANCHORS")
+          for target in re.findall(r'href="#([^"]+)"', text):
+              if "classic-study" in target or "do-not-confuse" in target:
+                  print(repr(target))
           PY
 
-      - name: Commit diagnostic
+      - name: Commit inspection report only
         if: always()
-        shell: bash
         run: |
           git reset --hard HEAD
-          mkdir -p pipeline/audits
           {
-            echo "# Temporary Chapter 3 Final-Build Diagnostic"
-            echo
-            echo "- patch: ${{ steps.patch.outcome }}"
-            echo "- install: ${{ steps.install.outcome }}"
-            echo "- build: ${{ steps.build.outcome }}"
-            echo "- validate: ${{ steps.validate.outcome }}"
-            for f in patch install build validate; do
-              echo
-              echo "## ${f}"
-              echo '```'
-              cat "/tmp/${f}.log" 2>/dev/null || true
-              echo '```'
-            done
-          } > pipeline/audits/_tmp_ch03_final_diagnostic.md
+            echo "# Temporary Chapter 3 Callout-ID Inspection"
+            echo '```'
+            cat /tmp/inspect.log 2>/dev/null || true
+            echo '```'
+          } > pipeline/audits/_tmp_ch03_callout_id_inspection.md
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add pipeline/audits/_tmp_ch03_final_diagnostic.md
-          git commit -m "Record fresh Chapter 3 build diagnostic"
+          git add pipeline/audits/_tmp_ch03_callout_id_inspection.md
+          git commit -m "Record Chapter 3 callout ID inspection"
           git pull --rebase origin main
           git push origin HEAD:main
