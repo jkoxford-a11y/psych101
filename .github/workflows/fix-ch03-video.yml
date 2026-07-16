@@ -1,0 +1,61 @@
+name: Apply Chapter 3 responsive video fix
+
+on:
+  push:
+    paths:
+      - ".github/workflows/fix-ch03-video.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  fix:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Patch chapter-video CSS
+        shell: python
+        run: |
+          from pathlib import Path
+          path = Path('docs/css/style.css')
+          text = path.read_text(encoding='utf-8')
+          block = '''
+
+/* ── Chapter videos ── */
+.chapter-video {
+  margin: 2rem 0;
+}
+
+.chapter-video video {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.10);
+}
+
+.chapter-video figcaption {
+  margin: 0.75rem auto 0;
+  max-width: 90%;
+  font-family: var(--font-ui);
+  font-size: 0.85rem;
+  line-height: 1.5;
+  color: var(--color-muted);
+  text-align: center;
+}
+'''
+          if '/* ── Chapter videos ── */' not in text:
+              marker = '/* ── Chapter figures ── */'
+              text = text.replace(marker, block + '\n' + marker, 1)
+          path.write_text(text, encoding='utf-8')
+      - name: Commit fix
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/css/style.css
+          git commit -m "Make chapter videos responsive"
+          git pull --rebase origin main
+          git push origin HEAD:main
