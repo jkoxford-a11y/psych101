@@ -6,26 +6,28 @@
 
 ## Why Do We Have a Brain?
 
-Most people, if asked, would say the brain exists so we can think, or be conscious, or reason. Those answers describe what a brain can do, not the problem it evolved to solve.
+Most people, if asked, would say the brain exists so we can think, or be conscious, or reason. Those answers describe what a brain can do, not the problem a nervous system helps an organism solve.
 
-Here is a more useful starting point. An organism with a bilateral body plan — a front end, a back end, a committed direction of movement — faces a problem that organisms with less directional body plans face in differently organized ways. The front end encounters the environment first. There is time and metabolic budget to process only so much of what arrives. Something must decide: move toward, move away, stop, persist, act, wait. That is the **action-selection problem**, and nervous systems evolved to solve it — faster, and across more complex bodies, than simple chemical gradients can manage. Directional movement favored concentrating sensory processing at the anterior end and centralizing action-selection close to where information arrives. This is the basic logic of **cephalization**, the evolutionary tendency for nervous systems to become more elaborate toward the front of the organism. (The full evolutionary history of centralized nervous systems is complex and not completely settled — but the connection between directional locomotion, anterior sensory concentration, and nervous-system centralization is well supported.)
+Here is a more useful starting point. An organism with a bilateral body plan — a front end, a back end, a committed direction of movement — encounters the environment unevenly. The front arrives first. There is time and metabolic budget to process only so much of what arrives. Something must coordinate the next move: approach, withdraw, stop, persist, act, wait. That is the **action-selection problem**.
+
+Directional movement helps explain why sensory structures and neural processing often concentrate toward the anterior end, a pattern called **cephalization**. Centralized nervous systems can integrate information from across the body and coordinate responses faster than each part acting locally. Treat that as a functional account, not a settled one-event history: the origins and repeated elaboration of centralized nervous systems remain actively debated (Arendt et al., 2008).
 
 ![Figure 3.1 — Four-panel comparative diagram showing a hydra-like cnidarian with a diffuse nerve net, a sea-star-like echinoderm with a nerve ring and radial nerves, a planarian-like flatworm with central ganglia and paired nerve cords, and a fish-like vertebrate with a brain, spinal cord, and peripheral nerves.](../images/ch03/ch03_nervous_system_centralization_hybrid.png)
-*Figure 3.1. Nervous systems vary from diffuse nerve nets to increasingly centralized command systems. The point is not a ladder of "more evolved" animals, but a comparison of how body plans and behavior create different information-processing problems.*
+*Figure 3.1. Nervous systems vary from diffuse nerve nets to increasingly centralized coordination systems. The point is not a ladder of “more evolved” animals, but a comparison of how body plans and behavior create different information-processing problems.*
 
-That framing matters for this entire chapter. A brain is not, first and foremost, a "thinking organ." It is a centralized action-selection system that coordinates sensing, prediction, memory, and bodily state so an organism can act effectively. Human brains extended that machinery into imagined futures, social reasoning, and language — but the underlying problem they solve is the same one a worm's nervous system is solving, scaled up enormously in capacity and complexity.
+That framing matters for this entire chapter. A brain is not, first and foremost, a “thinking organ.” It is a centralized coordination system that links sensing, prediction, memory, bodily state, and action. Human brains extend that machinery into imagined futures, social reasoning, and language — but thought remains embedded in a biological system built to regulate a living body and guide behavior.
 
 *Chapter question to carry through:* **What does the biology of the brain tell us about behavior — and what does it leave out?**
 
-> **A note on a popular myth:** *"We only use 10% of our brains."* This is false, and demonstrably so. Brain imaging shows activity distributed broadly across the brain, and clinical evidence shows that damage to large or functionally dense regions reliably produces detectable behavioral change — an organ with 90% spare capacity would not work that way. Evolution would not have tolerated the cost of a mostly idle organ: the adult human brain consumes roughly 20% of your resting energy budget while accounting for only about 2% of your body weight (Raichle & Gusnard, 2002). If 90% were doing nothing, evolution would have found a way to shrink it. The myth survives because it implies a reservoir of untapped potential; the more accurate picture is that your brain is active broadly and continuously, though not every region is equally active at all times.
+> **A note on a popular myth:** *“We only use 10% of our brains.”* This is false, and demonstrably so. Brain imaging shows activity distributed broadly across the brain, and clinical evidence shows that damage to functionally important tissue reliably changes behavior — an organ with 90% spare capacity would not work that way. The adult human brain consumes roughly 20% of your resting energy budget while accounting for only about 2% of your body weight (Raichle & Gusnard, 2002). If most of it were idle, that would be an astonishingly expensive design. The more accurate picture is that your brain is active broadly and continuously, though not every region is equally active at every moment.
 
-This chapter is about that machinery — what it is built from, how it signals, and how structures, chemicals, circuits, and bodies constrain the full range of what you think, feel, and do.
+This chapter is about that machinery — what it is built from, how it signals, and how cells, chemicals, circuits, and bodies constrain what you think, feel, and do.
 
 ---
 
 ## Where This Fits
 
-This chapter is where the physical mechanism of behavior actually gets explained, and where the question "what problem did this solve?" gets applied to real anatomy and real chemistry. Everything later in this book leans on what is built here. Sensation and perception (Chapter 4) is what sensory neurons do with incoming information; learning (Chapter 7) is partly the story of dopamine and synaptic change; memory (Chapter 8) is largely a hippocampal story; consciousness (Chapter 5) returns to the neurons and neuromodulators introduced here; emotion, stress, and coping (Chapter 12) draw on the amygdala, cortisol, and the autonomic nervous system covered here. If this chapter feels like vocabulary-heavy infrastructure, that is because it is — but it is infrastructure you will use in every chapter that follows.
+This chapter is where the physical mechanism of behavior gets explained, and where the question “what problem might this solve?” gets applied to anatomy and chemistry. Everything later in this book leans on what is built here. Sensation and perception (Chapter 4) begins when receptors convert physical energy into neural signals. Consciousness and drugs (Chapter 5) depend on the signaling mechanisms introduced here. Learning (Chapter 7) returns to synaptic change and dopamine. Memory (Chapter 8) returns to medial-temporal systems. Development, emotion, stress, and psychological treatment all depend on the interaction of nervous systems, endocrine systems, and experience. If this chapter feels like infrastructure, that is because it is — but it is infrastructure you will reuse.
 
 ---
 
@@ -33,247 +35,249 @@ This chapter is where the physical mechanism of behavior actually gets explained
 
 By the end of this chapter, you should be able to:
 
-1. Describe the structure of a neuron and explain how the action potential is generated and propagated.
-2. Distinguish neurotransmitters from hormones, and explain how neuromodulatory systems — using dopamine as the primary example — change how circuits operate rather than simply causing specific feelings or behaviors directly.
-3. Identify the major structures of the brain covered in this chapter and describe what each contributes to behavior — while explaining why "structure X does function Y" is an oversimplification psychological science keeps having to correct (APA IPI Theme 5: our perceptions and biases, including about how the brain works, can be inaccurate).
-4. Explain how the sympathetic and parasympathetic nervous systems coordinate the body's stress response, and connect that response to its evolutionary function (APA IPI Theme 3: biological, psychological, and social factors interact to shape behavior).
-5. Evaluate the Phineas Gage and H.M. cases as evidence for localization of function, and explain what the split-brain research does and does not show about hemispheric specialization in ordinary intact brains.
-6. Apply the evolutionary/comparative lens to explain why a specific neural or hormonal mechanism exists, not just how it operates.
+1. Describe the structure of a neuron and explain how a typical action potential is generated and propagated.
+2. Distinguish neurotransmitters from hormones by delivery route, and explain why receptor and circuit context matter more than one-chemical psychological labels.
+3. Explain how excitation, inhibition, and neuromodulation change the probability and pattern of neural activity.
+4. Distinguish fast autonomic and slower endocrine components of stress regulation, and explain why repeated or prolonged activation can become costly (APA IPI Theme 3: biological, psychological, and social factors interact to shape behavior).
+5. Relate selected brain structures to the operations they contribute to, and explain why psychological functions emerge from networks rather than isolated regions (APA IPI Theme 5: our perceptions and biases, including beliefs about the brain, can be inaccurate).
+6. Evaluate the Phineas Gage and H.M. cases as evidence about frontal and medial-temporal systems, and explain what split-brain research does and does not show about ordinary intact brains.
+7. Generate a functional hypothesis for a neural or hormonal mechanism and distinguish that hypothesis from evidence about its immediate mechanism or evolutionary history.
 
 ---
 
 ## Section 1: How Neurons Talk — Structure and the Action Potential
 
-In 1848, a 25-year-old railroad foreman named Phineas Gage was tamping explosive powder into a hole in the rock with a 13-pound iron rod when the powder detonated. The rod shot upward through his left cheek, behind his eye, and out through the top of his skull, landing some 80 feet away (Harlow, 1848). He did not lose consciousness. He sat up in the cart that carried him back to town and, by most accounts, was talking within minutes. We return to what happened to Gage's personality later in this chapter — for now, the case makes a useful opening point. Why did Gage survive? The iron damaged frontal parts of the cerebrum but spared the brainstem — the structures most directly responsible for breathing, heart regulation, and basic arousal. The injury was devastating, but it did not destroy the machinery required to keep him alive. That distinction — between damage that threatens survival and damage that reshapes who you are — starts at the level of a single cell. Here is what a neuron actually is and how it works.
+In 1848, a 25-year-old railroad foreman named Phineas Gage was tamping explosive powder into a hole in rock with a 13-pound iron rod when the powder detonated. The rod shot upward through his left cheek, behind his eye, and out through the top of his skull, landing some 80 feet away (Harlow, 1848). He survived. We return later to what may have changed in his behavior. For now, the case makes a simpler point: the consequences of brain injury depend on what tissue and connections are disrupted.
 
-A **neuron** is a cell specialized for receiving, processing, and transmitting information through electrochemical signals. Three parts matter most for our purposes. **Dendrites** are the branching extensions that receive input from other neurons — think of them as the receiving antennae, typically numerous and richly branched, since a single neuron can receive signals from thousands of others. The **soma**, or cell body, contains the nucleus and the machinery that keeps the cell alive. The **axon** is the single long output fiber that carries the neuron's signal away from the soma toward the next cell in the chain, sometimes for a distance of more than a meter, as in the neurons running from your spinal cord to your toes. Many axons are wrapped in **myelin**, a fatty insulating sheath produced by support cells called glia; myelin is interrupted at regular gaps called nodes of Ranvier, and this matters for speed, which we get to shortly. Where the end of one neuron's axon meets the next neuron — typically at a dendrite — there is a tiny gap called the **synapse**, across which communication switches from electrical to chemical.
+A **neuron** is a cell specialized for receiving, processing, and transmitting information through electrochemical signals. Three parts matter most for our purposes. **Dendrites** are branching extensions that receive input from other cells. The **soma**, or cell body, contains the nucleus and much of the machinery that keeps the cell alive. The **axon** is the output fiber that carries a signal away from the soma toward other cells, sometimes across a substantial distance. Many axons are wrapped in **myelin**, a fatty insulating sheath produced by glial cells and interrupted by gaps called nodes of Ranvier. Where one neuron communicates with another cell is a **synapse**; in the chemical synapses emphasized here, an electrical signal in the first neuron triggers chemical communication across a tiny gap.
 
 ![Figure 3.2 — Labeled neuron anatomy showing dendrites, nucleus, axon, Schwann cells, myelin sheath, nodes of Ranvier, and axon terminals](../images/ch03/fig3_1_neuron_anatomy_pressbooks.jpeg)
-*Figure 3.2. Dendrites receive input, the soma contains the nucleus, and the axon carries signals toward terminals — myelin helps signals travel efficiently.*
+*Figure 3.2. Dendrites receive input, the soma contains the nucleus, and the axon carries signals toward terminals. Myelin helps many axons conduct signals efficiently. The labeled Schwann cells are the myelinating cells of the peripheral nervous system; other glial cells form myelin in the brain and spinal cord.*
 
-> **Stop and Retrieve:** Before reading on — name the three main parts of a neuron and state, in one sentence each, what each one does.
+> **Stop and Retrieve:** Name the three main parts of a neuron and state, in one sentence each, what each one does.
 
-Neurons are not the only cells in the brain. **Glial cells** are present in roughly similar numbers to neurons and perform the support functions that make neural signaling possible: forming and maintaining myelin sheaths, clearing metabolic waste and dead cells, regulating the chemical environment around neurons, providing structural scaffolding, and serving as the brain's immune sentinels. For decades, glia were dismissed as mere "packing material" — a framing that more recent research has substantially revised, though it would overstate the current evidence to claim they "think" the way neurons do.
+Neurons are not the only important cells in the nervous system. **Glial cells** occur in roughly similar numbers and make neural signaling possible: they form and maintain myelin, regulate the chemical environment around neurons, support immune responses, remove debris, and contribute to metabolic support. For decades, glia were treated as mere packing material. That was wrong. It would be equally premature, however, to replace that mistake with the claim that glia “think” in the same way neurons do.
 
 ### The Action Potential
 
-Here is the question those structures exist to answer: how does a signal actually move down a neuron and jump to the next one?
+Here is the question those structures exist to answer: how does a signal move down an axon?
 
-At rest, a neuron maintains a voltage difference across its cell membrane of about −70 millivolts (the inside is negative relative to the outside) — the **resting potential**. This is maintained through the unequal distribution of charged particles (ions) — chiefly sodium and potassium — held in place by selectively permeable channels in the membrane and an energy-consuming sodium-potassium pump that continuously corrects the imbalance.
+At rest, a typical neuron maintains a voltage difference across its membrane of about −70 millivolts — the **resting potential**. The exact value varies by cell. What matters is the separation of charged ions across a selectively permeable membrane, maintained by ion channels and energy-consuming pumps.
 
-When a neuron receives enough excitatory input from other neurons to push that voltage up past a threshold (roughly −55 mV), something dramatic and very fast happens: voltage-gated sodium channels snap open, sodium rushes into the cell, and the voltage spikes rapidly upward — this rapid depolarization, followed by a return to resting potential as potassium flows back out, is the **action potential**. The key working principle of our foundational understanding of this process, the **all-or-nothing principle**, is that an action potential either fires at full strength or does not fire at all — there is no such thing as a weak action potential, the way there is no such thing as half of a binary digit. Strength of stimulation changes how *often* a neuron fires, not how *big* any individual spike is. Immediately after firing, the neuron enters a brief **refractory period** during which it cannot fire again, which is part of why signals travel down the axon in one direction rather than sloshing back and forth.
+When input pushes the membrane past threshold — often illustrated near −55 mV — voltage-gated channels produce a rapid regenerative change in voltage called an **action potential**. Sodium entry drives depolarization; potassium movement helps return the membrane toward rest. The foundational **all-or-nothing principle** is that a suprathreshold spike is a stereotyped event rather than a miniature copy of stimulus strength. Stronger stimulation is represented mainly by firing patterns and the recruitment of additional neurons, not by making every spike proportionally taller. A brief **refractory period** after firing also helps limit firing rate and supports one-way propagation.
 
-Our basic model of this entire process comes from work that, on its face, has nothing to do with human psychology: Alan Hodgkin and Andrew Huxley's experiments on the giant axon of the squid, conducted using equipment built largely from spare parts in the years around World War II (Hodgkin & Huxley, 1952). The squid's giant axon is roughly 100 times the diameter of an axon in the mammalian brain — easy to see and to thread an electrode into, and responsible for the squid's defensive jet-propulsion escape from predators. Hodgkin and Huxley were not asking "how do humans think" — they were asking how this one cell does what it does. They won a Nobel Prize for the answer, and the principles they described turn out to apply, with only minor modification, to every neuron in your body. This is the **comparative method** at its most direct: a mechanism studied in one species, chosen because it happened to make the mechanism easy to see, turning out to generalize across an enormous evolutionary distance. You will see this pattern again throughout this chapter — the prairie vole, the lab rat, even the squid, are not stand-ins for "simpler" versions of humans; they are organisms in which evolution happened to build a particularly legible version of a mechanism we share.
+Our basic model comes from work that, on its face, had little to do with human psychology: Alan Hodgkin and Andrew Huxley’s experiments on the giant axon of the squid (Hodgkin & Huxley, 1952). The squid’s unusually large axon controls a rapid escape response and was large enough for the electrodes available at the time. Hodgkin and Huxley were not asking how humans think. They were asking how an excitable membrane produces a signal. The membrane principles they identified are widely conserved across animal nervous systems. This is the **comparative method** at its best: choose an organism in which evolution made a shared mechanism unusually legible.
 
 ![Figure 3.3 — Line graph of membrane voltage over time showing threshold of excitation, peak action potential, repolarization, hyperpolarization, and resting potential](../images/ch03/fig3_2_action_potential_pressbooks.jpeg)
-*Figure 3.3. Once threshold is crossed, the action potential rises rapidly, repolarizes, briefly hyperpolarizes, and returns toward resting potential.*
+*Figure 3.3. In this typical teaching trace, crossing threshold initiates a rapid action potential, followed by repolarization, brief hyperpolarization, and return toward resting potential. Exact voltages and timing vary across neurons.*
 
-Myelin matters here because of speed. On an unmyelinated axon, the action potential must regenerate, point by point, along the entire membrane — slow, and metabolically expensive. On a myelinated axon, the insulated stretches cannot fire at all, so the signal effectively skips from node to node, a process called **saltatory conduction** (from the Latin for "to leap"). This is faster and cheaper, which is one reason the disease multiple sclerosis, which destroys myelin, produces such a wide range of motor and sensory disruption: it does not destroy the neurons, but it badly degrades the speed and reliability of the signal traveling through them.
+Myelin matters because it changes how the signal propagates. On an unmyelinated axon, the action potential is regenerated along successive stretches of membrane. On a myelinated axon, electrical current spreads passively under the insulating myelin and the action potential is regenerated mainly at the nodes of Ranvier. This pattern is called **saltatory conduction** (from the Latin for “to leap”). The signal does not literally jump through empty space; insulation allows current to travel farther before the next regeneration. The result is faster and more energy-efficient conduction. Multiple sclerosis shows what happens when myelin is damaged: signaling becomes slower and less reliable across affected pathways.
 
 ![Figure 3.4 — Two-panel diagram comparing unmyelinated and myelinated axons. The unmyelinated axon shows continuous conduction along the membrane; the myelinated axon shows signal regeneration at nodes of Ranvier with current spreading under the myelin.](../images/ch03/ch03_myelin_saltatory_conduction_speed_efficiency.png)
-*Figure 3.4. Myelin speeds neural signaling by insulating the axon and concentrating action-potential regeneration at the nodes of Ranvier. Saltatory conduction is both faster and more energy efficient than continuous conduction.*
+*Figure 3.4. Myelin speeds neural signaling by insulating the axon. Current spreads under the myelin, and the action potential is regenerated at nodes of Ranvier.*
 
 <video controls preload="metadata" poster="../images/ch03/ch03_myelin_saltatory_conduction_speed_efficiency.png">
   <source src="../images/ch03/ch03_saltatory_conduction_demo.mp4" type="video/mp4" />
   Your browser does not support embedded video. <a href="../images/ch03/ch03_saltatory_conduction_demo.mp4">Download the saltatory conduction video</a>.
 </video>
-*Video 3.1. Saltatory conduction along a myelinated axon: the action potential regenerates at each node of Ranvier while current spreads passively under the insulating myelin between nodes, producing faster and more energy-efficient conduction than continuous, unmyelinated signaling. Generated for Oxford Psychology 101 with Google AI video generation, 2026.*
+*Video 3.1. Saltatory conduction along a myelinated axon: the action potential regenerates at each node of Ranvier while current spreads passively under the insulating myelin between nodes. Generated for Oxford Psychology 101 with Google AI video generation, 2026.*
 
-> **Think About It:** Neural tissue is extraordinarily metabolically demanding — it needs a continuous supply of oxygen and glucose to maintain the ion gradients that make signaling possible. What happens when that supply is briefly interrupted? You have probably had a hand or foot "fall asleep" after sitting or leaning on it awkwardly. Sustained pressure compresses the nerve and cuts off its blood supply, disrupting normal signaling — numbness. When the pressure is released, signaling returns unevenly — pins and needles.
+> **Think About It:** Neural tissue needs a continuous supply of oxygen and glucose to maintain the ion gradients that make signaling possible. You have probably had a hand or foot “fall asleep” after leaning on it awkwardly. Pressure can compress a peripheral nerve and its blood supply, disrupting normal signaling. When the pressure is released, signaling returns unevenly — pins and needles.
 
-> *[Try the Action Potential Threshold and All-or-Nothing Learning Lab.](../../docs/labs/ch03/action-potential-threshold.html)* **Predict, before interacting:** if you reduce the strength of a stimulus to a neuron, will the resulting action potential be smaller, or will it simply fail to occur at all? After interacting: was your prediction correct, and can you explain why in terms of the all-or-nothing principle?
+> *[Try the Action Potential Threshold and All-or-Nothing Learning Lab.](../../docs/labs/ch03/action-potential-threshold.html)* **Predict first:** if you reduce stimulus strength, will an individual action potential become proportionally smaller, or will the neuron eventually fail to fire? After interacting, explain how the nervous system can still represent stronger pressure.
 
 ---
 
-## Section 2: Chemical Messengers — Neurotransmitters and Hormones
+## Section 2: From Synapses to Circuits
 
-The action potential gets a signal to the end of an axon. What happens next — how that signal crosses the synaptic gap to influence the next cell, or how the body coordinates a response across organs that have no direct neural connection to each other — is a chemistry problem, not an electrical one.
-
-That "what happens next" question has four different answers, depending on scale: crossing the gap to another cell, changing whether that cell fires, adjusting how a neural circuit responds, or coordinating activity across the body. This section works outward through those levels.
+An action potential gets a signal to the end of an axon. What happens next is not simply “more electricity.” The signal must cross a synapse, alter another cell, and sometimes change the operating state of an entire circuit.
 
 ### Crossing the Synapse
 
 #### Do Not Confuse: Neurotransmitter vs. Hormone
 
-Both are chemical messengers, and the same molecule (dopamine and norepinephrine are good examples) can sometimes act as either one depending on where it is released. The distinction is about delivery route, distance, and timescale.
+Both are chemical messengers. The primary distinction is delivery route.
 
-A **neurotransmitter** is released by a neuron into a synapse and acts on a specific target cell immediately across that tiny gap. The delivery is *wired and focal*: an electrical signal travels down the axon and triggers neurotransmitter release precisely at the axon terminal, onto a specific postsynaptic target. A **hormone** is released by an endocrine gland into the bloodstream — a *broadcast* that travels throughout the body and acts wherever the right receptor is present, over a timescale of seconds to hours rather than milliseconds.
+A **neurotransmitter** is released by a neuron onto a nearby target cell, usually across a synapse. The delivery is *wired and focal*: an electrical signal travels down a particular axon and triggers chemical release from its terminal. A **hormone** is released into the bloodstream and circulates broadly, affecting cells that have the appropriate receptor. Hormonal effects are often slower and longer-lasting than synaptic effects, but distance and timescale are consequences of the delivery route rather than exceptionless definitions. The same molecule can sometimes function in more than one category depending on where and how it is released.
 
-*Diagnostic question:* a person's adrenal glands release a chemical into their bloodstream during a stressful event, and that chemical's effects are still measurable twenty minutes later, in organs throughout the body. Neurotransmitter or hormone? (This is exactly the cortisol mechanism described later in this section — a hormone, by both the distance and the duration criteria.)
+*Diagnostic question:* an adrenal gland releases a chemical into the bloodstream, and receptor-bearing tissues across the body respond. Neurotransmitter or hormone? The route makes it a hormone.
 
 ![Figure 3.5 — Two-panel infographic comparing neurotransmitters and hormones. The neurotransmitter panel shows an electrical signal traveling down an axon, neurotransmitter release at an axon terminal, and receptors on a specific postsynaptic target cell. The hormone panel shows an endocrine gland releasing hormones into the bloodstream, where receptor-bearing cells respond and cells without receptors do not.](../images/ch03/ch03_chemical_messengers_wired_focal_vs_broadcast.png)
-*Figure 3.5. Neurotransmitters and hormones are both chemical messengers, but they differ in delivery route, distance, and timescale. Neurons use wired axons and focal synapses; hormones use bloodstream broadcast.*
+*Figure 3.5. Neurotransmitters and hormones are both chemical messengers. Neurons use wired axons and focal release onto selected targets; hormones circulate through the bloodstream and act where matching receptors are present.*
 
-Start with the wired-and-focal side of that distinction: what actually happens at a synapse.
+When an action potential reaches an axon terminal, vesicles fuse with the presynaptic membrane and release neurotransmitter molecules into the **synaptic cleft**. The molecules bind to **receptors** on the target cell. Receptors are not passive locks. Different receptor types activate different cellular processes, so the name of a neurotransmitter alone does not tell you what the next cell will do.
 
-The nervous system uses dozens of different **neurotransmitters**, chemical messengers released from the presynaptic terminal that cross the synaptic gap and bind to receptors on the next cell. Before getting to what specific neurotransmitters do, it is worth understanding how the synapse actually works — because this is where most psychiatric drugs act.
-
-When an action potential reaches the axon terminal, vesicles containing neurotransmitter molecules fuse with the presynaptic membrane and release their contents into the **synaptic cleft**. Neurotransmitters diffuse across and bind to **receptors** on the postsynaptic neuron — proteins shaped to fit a specific molecule, like a lock and a key. Binding changes the receptor's shape in a way that opens or closes ion channels, making the postsynaptic neuron more or less likely to fire. Signaling ends through two main routes: **reuptake**, in which transporter proteins pull neurotransmitter molecules back into the presynaptic terminal for reuse, and **enzymatic degradation**, in which enzymes in the cleft break the molecule down. (SSRIs — selective serotonin reuptake inhibitors — block the serotonin transporter, leaving serotonin in the cleft longer. That is the mechanism, whether or not the "chemical imbalance" model of depression is correct — more on that below.)
+A synaptic signal must also end. Two important routes are **reuptake**, in which transporters move neurotransmitter out of the cleft, and **enzymatic degradation**, in which enzymes break it down. Diffusion and uptake by surrounding cells also matter for some transmitters. Selective serotonin reuptake inhibitors (SSRIs), for example, block a serotonin transporter. That describes an immediate pharmacological action; it does not by itself explain why clinical effects take time or prove that depression began as a serotonin deficit.
 
 ![Figure 3.6 — Two-panel educational infographic showing how a chemical synaptic signal is sent and cleared. In the left panel, an action potential reaches a blue presynaptic terminal, neurotransmitter molecules are released into the synaptic cleft, and the molecules bind to receptors on a green postsynaptic neuron. Receptor opening changes sodium or potassium ion movement, altering the postsynaptic neuron’s likelihood of firing. In the right panel, one route of clearance is reuptake through transporter proteins in the presynaptic membrane. The other route shows neurotransmitter molecules that remain in the cleft being broken into inactive pieces by enzymes.](../images/ch03/ch03_synaptic_transmission_release_receptors_clearance.png)
-*Figure 3.6. Synaptic transmission is a short-lived chemical conversation. An arriving action potential triggers neurotransmitter release from the presynaptic terminal. Neurotransmitter molecules cross the synaptic cleft and bind to receptors, changing ion flow and making the postsynaptic neuron more or less likely to fire. One way the signal ends is reuptake into the presynaptic terminal. Neurotransmitter that remains in the cleft may instead be broken down by enzymes. Original figure generated for Oxford Psychology 101 with ChatGPT image generation, 2026.*
+*Figure 3.6. Synaptic transmission is a short-lived chemical conversation. An arriving action potential triggers release; receptors translate that chemical message into a cellular effect. Reuptake and enzymatic degradation are two important ways the signal can end.*
 
-An **agonist** is a drug or molecule that binds to a receptor and activates it, mimicking the natural neurotransmitter. An **antagonist** binds to the receptor but does not activate it, blocking the natural neurotransmitter from binding. Antagonist does not mean harmful — naloxone is a lifesaving opioid antagonist that displaces opioids from their receptors and reverses overdose. These two concepts — agonist and antagonist — are the basis for understanding how most drugs that affect the brain work, and they reappear in Chapter 5 (consciousness and drugs) and Chapter 13 (pharmacological treatments).
+An **agonist** binds to a receptor and activates it. An **antagonist** binds without activating the receptor and blocks or reduces activation by another molecule. Antagonist does not mean harmful: naloxone is an opioid-receptor antagonist that can reverse an opioid overdose. Agonists and antagonists return in Chapter 5 when we examine psychoactive drugs and in Chapter 13 when we examine treatment.
 
-### Changing the Next Cell
+### Excitation and Inhibition
 
-Binding a receptor is only half the story — the other half is what that binding does to the receiving neuron's odds of firing.
+Binding a receptor changes the receiving cell’s activity. In the adult brain, **glutamate** is the major transmitter for fast excitatory signaling and **GABA** is the major transmitter for fast inhibitory signaling. “Excitatory” means an input makes a target neuron more likely to fire; “inhibitory” means it makes firing less likely or stabilizes activity away from threshold. The receptor and target cell matter. A chemical does not carry one universal psychological instruction.
 
-Among the dozens of neurotransmitters, two deserve special mention as the main workhorses of fast signaling in the brain. **Glutamate** is the brain's primary excitatory neurotransmitter — it is involved in nearly all rapid excitatory signaling throughout the cortex and is central to synaptic plasticity and learning. **GABA** (gamma-aminobutyric acid) is the primary inhibitory neurotransmitter — it is the main brake on neural excitability. Alcohol, benzodiazepines, and barbiturates all enhance GABA's inhibitory effects, producing sedation; respiratory suppression is especially dangerous when alcohol or barbiturates are involved, or when depressants are combined. Understanding glutamate and GABA as the main excitatory/inhibitory pair sets up the drug mechanisms in Chapter 5 and the circuit logic that runs throughout the book.
-
-At the most basic level of effect, neurotransmitters are directional: some are **excitatory**, pushing the receiving neuron closer to firing; others are **inhibitory**, pushing it further away. Inhibition is not "bad" — unchecked excitation produces seizures, and coordinated inhibition is what gives neural circuits their selectivity and timing.
+Inhibition is not a failure of signaling. Without coordinated inhibition, neural activity becomes noisy and unstable; extreme loss of inhibitory control can contribute to seizures. Inhibition sharpens timing, suppresses competing activity, and helps a circuit select one response rather than activating everything at once.
 
 ![Figure 3.7 — Three-panel infographic showing excitatory input, inhibitory input, and circuit effect. The excitatory panel shows neurotransmitter release moving the postsynaptic membrane closer to threshold. The inhibitory panel shows it moving the membrane farther from threshold. The circuit panel shows an inhibitory interneuron suppressing competing signals so the main pathway is cleaner.](../images/ch03/ch03_excitation_inhibition_circuit_selectivity.png)
-*Figure 3.7. Excitatory inputs make a postsynaptic neuron more likely to fire; inhibitory inputs make it less likely. Inhibition sharpens timing, suppresses noise, and helps circuits select one response over competing alternatives.*
+*Figure 3.7. Excitatory inputs make a target neuron more likely to fire; inhibitory inputs make it less likely. At the circuit level, inhibition improves timing, stability, and selection.*
 
-Some chemicals change how an entire neural circuit responds rather than simply pushing one cell toward or away from firing. Others leave the nervous system through the bloodstream and coordinate changes across the body. Those are two different ways of scaling chemical communication beyond a single synapse.
+> **Stop and Retrieve:** Does the chemical name alone tell you whether the next cell will be excited, inhibited, or modulated? What additional information do you need?
 
 ### Changing a Circuit
 
-But many neurotransmitters do something subtler than simply flipping a cell on or off. Some function primarily as **neuromodulators** — chemicals that adjust how entire circuits respond, changing their sensitivity, signal-to-noise ratio, or readiness for learning and action. Neuromodulators are typically produced by small, specialized nuclei whose axons project widely throughout the brain. The key point is that the same molecule can produce different effects in different brain regions, depending on what receptors are present, what circuit is active, and what the organism is currently trying to do. The circuit, not the molecule alone, gives the signal its psychological meaning. "Chemical X causes feeling Y" is almost never an accurate description of how these systems work.
+Some chemical signals do more than push one target cell toward or away from threshold. **Neuromodulators** change how groups of neurons respond — altering sensitivity, learning rate, signal-to-noise ratio, motivation, or readiness for action. Many neuromodulatory systems arise from relatively small nuclei whose axons project widely. The same molecule can therefore have different effects in different targets. Pathway, receptor, circuit, timing, and current task give the signal its psychological meaning.
 
 ![Figure 3.8 — Semi-realistic sagittal brain diagram comparing dopamine and serotonin projection systems. Dopamine pathways project from the ventral tegmental area and substantia nigra toward prefrontal cortex, nucleus accumbens, and dorsal striatum. Serotonin pathways project from raphe nuclei toward cortex, hippocampal and amygdala regions, hypothalamus, and spinal cord.](../images/ch03/ch03_neuromodulator_projection_systems_dopamine_serotonin.png)
-*Figure 3.8. Neuromodulators act through projection systems. Small nuclei send long-range axons into different target circuits, so the same chemical can have different behavioral effects depending on which pathway is active.*
+*Figure 3.8. Neuromodulators act through projection systems. Small nuclei send long-range axons into multiple target circuits, so a molecule’s effect depends on where and when it acts.*
 
-**Dopamine** is the clearest example of why this matters, and the most commonly mis-taught. It is almost universally described in popular accounts as the "pleasure chemical" — and that description is wrong in an instructive way. Careful neural recording in behaving animals found that dopamine neurons fire most strongly not at the moment a reward is consumed, but at the moment a reward is *predicted* — and they fire even more strongly when a reward arrives unexpectedly, or fire less when an expected reward fails to arrive (Schultz, 1998). This is a **prediction error signal**, not a pleasure signal. As Robert Sapolsky has put it: imagine a light that reliably signals that a lever-press will be rewarded. After training, the dopamine surge moves from the reward to the light — dopamine encodes the *anticipation and pursuit* of reward, and it signals when expectations are violated (Sapolsky, 2011). You will see exactly why this matters in Chapter 7, where that predictive error signal becomes the chemical basis of operant conditioning and reinforcement learning.
+**Dopamine** is the clearest example of why this matters, and one of the most commonly mistaught. Popular accounts call it the “pleasure chemical.” That label confuses pleasure, learning, motivation, movement, and pursuit.
 
-Dopamine projections from the ventral tegmental area (VTA) and substantia nigra reach the prefrontal cortex, nucleus accumbens, and dorsal striatum, and their effects depend on the target circuit. Different dopamine pathways also contribute to salience, novelty, movement, action vigor, and action selection — a 2024 *Nature Neuroscience* perspective argues that a complete account must move beyond the classical prediction-error interpretation (Gershman et al., 2024). The teaching value is the *principle* (expected outcome ≠ actual outcome → update the model), not a claim that one molecule runs one computation throughout the brain.
+In well-studied reward-learning tasks, phasic activity in a subset of midbrain dopamine neurons often resembles a **reward-prediction error** signal. An unexpected reward produces a positive response. After learning, a cue that predicts the reward can produce the response instead. If the expected reward fails to appear, activity can dip at the expected outcome time (Schultz, 1998). As Robert Sapolsky puts the teaching example: once a light reliably predicts reward, the important signal moves toward the light. The system is tracking what the organism should update and pursue, not simply measuring how pleasant the reward feels (Sapolsky, 2011).
 
-That framing explains two phenomena that otherwise look unrelated. First, it explains why dopamine is so central to addiction: drugs of abuse hijack the same prediction and anticipation circuitry, making the cue that signals drug availability trigger the same kind of pursuit that natural rewards do. Second, it provides one framework for understanding why stimulant medications help many people with ADHD: they affect dopamine and norepinephrine signaling in prefrontal-striatal circuits, supporting the signals that sustain goal-directed attention. This is not the same as saying ADHD is caused by "low dopamine" — the full account involves multiple systems and the mechanism of stimulant effectiveness is still being worked out.
+That classical pattern is powerful, but it is not a complete definition of dopamine. Dopamine pathways also contribute to movement, salience, novelty, action vigor, and action selection. Even within phasic signaling, recent work documents heterogeneity that requires models beyond one scalar reward-error broadcast (Gershman et al., 2024). The useful principle is stable: expected outcome and actual outcome can be compared to update behavior. The overreach would be turning that principle into “dopamine does one computation everywhere.”
 
-**Serotonin** is worth a brief contrast, precisely because it is the most commonly confused example. In popular accounts it is often called the "happiness chemical" — a claim that suffers from the same problem as "dopamine = pleasure." Serotonin projections from the raphe nuclei reach broadly throughout the cortex, hippocampus, amygdala, hypothalamus, and spinal cord. It is often involved in behavioral inhibition, patience, and waiting when persistence is adaptive. In that limited sense, it can be contrasted with dopamine's role in prediction, pursuit, and updating — but this is a teaching contrast, not a one-molecule summary of either system. What serotonin does in any given circuit depends on receptor type, circuit context, and what the organism is currently doing.
+**Serotonin** supplies a parallel correction. It is not the “happiness chemical.” Serotonin neurons project broadly, and their effects vary across receptor types, circuits, body states, and tasks. For this chapter, that is the point worth retaining. A catalog of alleged one-word functions would recreate the misconception the section is trying to remove.
 
 #### Do Not Confuse: Chemical Influence vs. Chemical Cause
 
-**The claim:** Depression is caused by low serotonin; antidepressants work by correcting a chemical imbalance.
+**The claim:** Depression is caused by low serotonin, and antidepressants work by correcting that deficiency.
 
-**The problem:** A 2022 umbrella review of the major lines of evidence found no consistent evidence that people with depression have lower serotonin levels or reduced serotonin activity compared to people without depression (Moncrieff et al., 2022). The serotonin-deficiency model became widely familiar through drug advertising and simplified public explanations in the 1990s, not through scientific consensus.
+**The problem:** The simple serotonin-deficiency model is not supported as a general explanation of depression. One influential umbrella review found no consistent evidence that depression is characterized by a straightforward serotonin deficit, while also noting limitations and variation across the underlying evidence (Moncrieff et al., 2023).
 
-This does not mean antidepressants do not work. Their efficacy for some people is real. But efficacy does not prove mechanism: a drug that acts on a neurotransmitter system and reduces symptoms does not prove that the disorder was caused by a deficit in that neurotransmitter — any more than aspirin's effect on headaches proves that headaches are caused by low aspirin. The more defensible framing is the one this section has already described: neurotransmitter systems are components of circuits; their role in mood and behavior is defined by which circuits they are in, what those circuits are doing, and what the organism's current situation is — not by absolute levels. "Chemical imbalance" is a metaphor, not a mechanism.
+This does not mean serotonin is irrelevant, and it does not mean antidepressants cannot help. It means efficacy does not prove original cause. Aspirin can reduce a headache; headaches are not caused by low aspirin. In the same way, a drug’s action on a transmitter system does not establish that a disorder began as a shortage of that transmitter. Involvement is not the same as deficiency. Treatment mechanism is not automatically disorder cause.
 
-> *[Lab link — Chemical Imbalance Claim-Check: [Practice classifying claims about serotonin, antidepressants, and "chemical imbalance" as supported, overstated, or wrong/incomplete.](../../docs/labs/ch03/chemical-imbalance-claim-check.html)]*
+> *[Practice the Chemical Imbalance Claim-Check.](../../docs/labs/ch03/chemical-imbalance-claim-check.html)* Classify claims as supported, overstated, or wrong/incomplete, then explain why medication efficacy cannot establish a one-chemical cause.
 
-> *[Try the Dopamine Prediction Error Learning Lab.](../../docs/labs/ch03/dopamine-prediction-error.html)* **Predict, before interacting:** if a reward is delivered but was fully predicted by a cue, does the reward produce more, less, or the same dopamine-related prediction error as when no cue preceded it? After interacting: did the result match the simplified Schultz prediction-error model?
+> *[Try the Dopamine Prediction Error Learning Lab.](../../docs/labs/ch03/dopamine-prediction-error.html)* **Predict first:** if a reward is fully predicted by a cue, what should a simplified reward-prediction-error model show when the reward arrives? After interacting, identify where the model helps and where it stops.
 
-### Changing the Whole Body
-
-You can now see why delivery route matters. Neuromodulators remain part of neural signaling; hormones enter the bloodstream and coordinate distant tissues.
-
-The **endocrine system** is the body's network of glands — including the pituitary, thyroid, adrenal glands, and gonads — that secrete hormones directly into the bloodstream. Where the nervous system specializes in fast, precise, point-to-point signaling, the endocrine system specializes in slower, broader, longer-lasting coordination — adjusting growth, metabolism, reproduction, and the body's overall state over a timescale of minutes to weeks rather than milliseconds.
-
-**Cortisol**, released by the adrenal glands in response to stress, is the clearest example of why this matters for psychology specifically. In a genuine emergency, a surge of cortisol mobilizes stored energy, sharpens certain kinds of attention, and temporarily suppresses functions — digestion, long-term tissue repair, parts of the immune response — that would be a poor use of resources while a threat is active. This is adaptive and necessary for short bursts. If you happen to wear a continuous glucose monitor, you may have noticed your blood glucose rising before or during a stressful event without eating anything — that is cortisol doing exactly its job, mobilizing stored energy in anticipation of demand. (The effect is clearest and most reliably studied in people with diabetes or insulin resistance; individual responses in healthy adults vary.) The trouble, as Robert Sapolsky's *Why Zebras Don't Get Ulcers* (2004) puts it, is that a zebra's stress response activates for the genuine emergency of being chased by a lion and then switches off once the lion is gone or the zebra is dead — the system was built for acute, time-limited threats. Humans, by contrast, can keep the same stress-response machinery running for weeks over a conflict with a coworker, a worry about money, or a relationship that is not going anywhere — chronic activation of a system built for sprints, not marathons. Chronically elevated cortisol is linked to impaired memory, suppressed immune function, and increased risk for several physical and psychological disorders. Chapter 12 develops the full picture of chronic stress; for now, the evolutionary point is the one worth holding onto.
-
-**Oxytocin** complicates the categories above, because the same molecule can act as a neurotransmitter or neuromodulator within the nervous system and as a hormone once it reaches the bloodstream. It is synthesized in the hypothalamus and released in two ways: centrally within the brain, where it acts as a neuromodulator, and into the bloodstream from the posterior pituitary, where it acts as a hormone. Chemicals that work at both scales are more precisely called **neuropeptides** — a class distinct from classical fast-acting neurotransmitters and from circulating hormones, which the brain uses for longer-range, more sustained coordination of behavioral state.
-
-Oxytocin's effects are context-dependent, which is the key point. It facilitates social recognition, affiliation, and coordinated caregiving in familiar and safe contexts; in threatening or unfamiliar contexts it can promote vigilance and outgroup wariness. "The love hormone" — a popular label — misses this context-dependence entirely and implies a uniformly positive effect the evidence does not support. What the evidence does support is that oxytocin is part of the brain's system for regulating social behavior and attenuating HPA-axis (cortisol) stress responses. That connection pays forward directly to Chapter 10, where oxytocin's role in mother-infant biobehavioral synchrony grounds the biology of early attachment, and to Chapter 12, where stress regulation returns in the context of allostatic load.
-
-> **Stop and Retrieve:** In your own words — what is the key difference between how a neurotransmitter and a hormone deliver their message? Use the wired/focal vs. broadcast comparison or come up with your own.
-
-#### AI Connection
-
-Artificial neural networks — the architecture behind most modern AI systems, including large language models — borrow their name and core inspiration from biological neurons. Understanding what was worth borrowing, and what had to be engineered differently, tells you something about both.
-
-**What was borrowed:** The foundational idea is that complex behavior could emerge from many simple connected units that process weighted inputs and adjust their connections based on experience. Each artificial "neuron" receives inputs, weights them, sums them, and produces an output if some threshold is crossed — a stripped-down version of the dendrite/soma/axon logic. Connection strengths (weights) can be strengthened or weakened through learning, inspired loosely by the idea that synaptic connections change with experience. And processing is organized in stages — input, intermediate (hidden) layers, output — partly inspired by the hierarchical organization of sensory cortex, where information is processed through successive stages of increasing abstraction.
-
-**What was engineered differently:** Artificial units produce continuously varying numbers, not all-or-nothing spikes — this makes the mathematics of training tractable. Standard architectures use primarily feedforward connections between discrete layers rather than the massive recurrence and lateral connectivity of real neural circuits, which makes the system buildable and trainable at scale. There is no chemistry, no timing code, no metabolic cost, and no neuromodulation. These are not failures of the model — they are deliberate choices that made the engineering work.
-
-**The breakdown point:** The neurons you have been reading about in this chapter communicate through chemically distinct neurotransmitters with different excitatory, inhibitory, and modulatory effects; their signals carry information in precise timing patterns; they run on ATP and are embedded in a body with a stress response, a sleep cycle, and an evolutionary history. None of that is in an artificial network. The borrowed parts were enough to build something powerful — but what was left behind is exactly what makes biological neural circuits do what they do in a living organism.
+> **AI Connection — Predict first:** Before reading further, list three features of biological neurons that a simple artificial “neuron” probably leaves out.
+>
+> Artificial neural networks borrowed an important abstraction: many connected units combine weighted inputs, produce outputs, and alter connection strengths through learning. That was enough to build powerful systems. But an artificial unit is not a tiny biological neuron. Standard artificial networks do not reproduce action potentials, transmitter chemistry, receptor diversity, metabolic constraints, endocrine regulation, development, or embodiment. The comparison is useful precisely because it reveals the abstraction. Engineers borrowed selected computational ideas and omitted most of the living machinery.
 
 ---
 
-## Section 3: The Body's Stress Response — The Autonomic Nervous System
+## Section 3: Hormones and Whole-Body Signaling
 
-Cortisol does not act alone. It is one half of a coordinated, whole-body stress response, and the other half is wired rather than chemical: the **autonomic nervous system**, the division of the peripheral nervous system that controls involuntary functions like heart rate, digestion, and breathing rate, without requiring any conscious effort on your part.
+Neural communication can be fast and targeted. Some coordination problems require a message to reach many tissues at once and last longer. That is the domain of the **endocrine system** — glands that release hormones into the bloodstream.
 
-For this chapter, we focus on two major branches of the autonomic nervous system. The **sympathetic nervous system** is the "fight-or-flight" branch: it accelerates heart rate, dilates pupils, redirects blood flow toward large muscles, and suppresses digestion — the same general profile of changes that cortisol produces over a slower timescale, but achieved through direct nerve signaling that can take effect in a second or two rather than minutes. The **parasympathetic nervous system** is the "rest-and-digest" branch: it slows heart rate, constricts pupils, and supports digestion and recovery — the state your body defaults toward once a threat has passed.
+Hormones regulate growth, metabolism, reproduction, stress, and many other body-wide processes. They circulate broadly, but they do not affect every cell equally. Only cells with the relevant receptors respond. A bloodstream broadcast still requires a receiver.
 
-These two branches are best understood as a coordinated push-pull system rather than an on/off switch — at any given moment, both are exerting some influence, and what you experience as "calm" or "keyed up" reflects the balance between them. This matters practically: most relaxation and anxiety-management techniques you will encounter, in this course or in a clinical setting, work by deliberately activating the parasympathetic branch — slow, deep breathing is the most direct example, since the rate and depth of breathing has a measurable, fairly fast effect on which branch is currently dominant.
+**Cortisol**, released from the adrenal cortex as part of the hypothalamic–pituitary–adrenal (HPA) axis, helps mobilize energy and reorganize priorities during challenge. It acts more slowly than the immediate sympathetic response and participates in a coordinated system that also includes catecholamines, glucagon, insulin, immune signaling, appraisal, and behavior. Cortisol is therefore neither “the stress chemical” nor simply toxic. Acute regulation can be useful. Repeated or prolonged dysregulation can carry costs.
 
-"Rest and digest" is more literal than it might sound. The **enteric nervous system** — the network of neurons embedded in the walls of the gut — contains over 100 million neurons (Furness, 2006) and communicates bidirectionally with the brain via the vagus nerve, immune signaling, and metabolites produced by gut microbiota (Cryan et al., 2019). Sympathetic activation suppresses gut motility and alters gut permeability; parasympathetic activity supports it. This is the defensible foundation for the observation that stress reliably affects GI function — not a simple "eat this → feel better" pipeline, but genuine two-way communication between brain and gut whose full behavioral implications are still being worked out.
+**Neuropeptides** are signaling molecules made from short chains of amino acids and synthesized as larger precursor proteins. Neurons often package them in dense-core vesicles and use them for relatively slow, longer-lasting modulation (van den Pol, 2012). The category is defined by chemistry and cellular production — not by a requirement that a molecule be released both in the brain and into the bloodstream.
 
-The evolutionary logic of the sympathetic branch is direct: an organism that detects a threat and does not rapidly redirect resources toward escape or confrontation is at a survival disadvantage relative to one that does. The same logic that makes the acute cortisol response useful for a genuine emergency, and poorly matched to a six-week conflict at work, applies here. A racing heart and dry mouth before a public-speaking assignment are your sympathetic nervous system doing exactly what it evolved to do, deployed against a target — social evaluation rather than physical danger — that it was never built to distinguish from a real threat.
+**Oxytocin** is a useful example because it can operate at more than one signaling scale. It is synthesized in hypothalamic neurons, released centrally within the nervous system, and also released into the bloodstream from the posterior pituitary. Its social effects are not uniformly warm or prosocial. They vary with person, context, relationship, and task; findings in humans are often smaller and less consistent than the “love hormone” label implies (Bartz et al., 2011). The defensible lesson is that oxytocin participates in context-dependent regulation of social and bodily processes. Chapter 10 returns to attachment and caregiving; Chapter 12 returns to stress regulation.
 
-Fight-or-flight is not the only strategy stress produces, and the alternative traces back to a molecule this chapter already introduced. Shelley Taylor and colleagues proposed **tend-and-befriend** as a second biobehavioral stress response: rather than escalating toward fight or flight, an organism protects itself by caring for dependent offspring ("tend") and strengthening bonds with others who can help ("befriend") (Taylor et al., 2000). The proposed mechanism runs through oxytocin — the same neuropeptide described in Section 2 as attenuating HPA-axis stress responses and promoting affiliation in safe contexts. Tend-and-befriend does not replace fight-or-flight; it is advantageous specifically when fighting or fleeing would mean abandoning offspring or a protective group — one more case where the "right" stress response depends on the problem the organism is actually solving, not a single fixed reflex.
-
-![Figure 3.9 — Infographic showing sympathetic and parasympathetic branches as a push-pull autonomic balance system. The sympathetic side shows increased heart rate, widened pupils, faster breathing, reduced digestion, and stress-hormone mobilization. The parasympathetic side shows decreased heart rate, narrowed pupils, slower breathing, increased digestion, and recovery. A bottom row lists behavioral stress responses: fight, flight, freeze, and tend-and-befriend.](../images/ch03/ch03_autonomic_balance_push_pull.png)
-*Figure 3.9. The sympathetic and parasympathetic branches operate as a coordinated push-pull system. Stress behavior can take more than one form — fight-or-flight and tend-and-befriend among them — depending on the problem the organism is trying to solve.*
-
-> **Think About It:** Think of the last time you felt your heart race or your stomach drop before something — a test, a conversation, a performance. Looking back, was the situation an actual physical threat, or was your sympathetic nervous system responding to something else (social evaluation, uncertainty, anticipated failure) as though it were one?
+> **Stop and Retrieve:** A neuron releases a messenger onto a nearby target. An adrenal gland releases a messenger into blood. A hypothalamic neuron releases a peptide centrally and from the posterior pituitary. Classify the routes, then explain why the molecule’s name alone is not enough.
 
 ---
 
-## Section 4: The Brain — Structure, Localization, and Its Limits
+## Section 4: The Body’s Stress Response — Fast and Slow Coordination
 
-We now have the building blocks: the neuron, the action potential, the chemical messengers. This section turns to where those building blocks are organized into the large-scale structures that produce the things this course is actually about — memory, emotion, personality, language, decision-making.
+Cortisol does not act alone. A stress response is coordinated across neural, endocrine, immune, cognitive, and behavioral systems. For Psych 101, the cleanest first distinction is speed and route.
+
+The **autonomic nervous system** controls functions such as heart rate, vascular tone, digestion, and pupil size without requiring continuous conscious direction. Its **sympathetic** branch generally shifts organs toward mobilization: heart rate can rise, pupils can widen, and digestion can be deprioritized. Its **parasympathetic** branch generally supports maintenance, digestion, and recovery. “Fight-or-flight” and “rest-and-digest” are useful labels, but they become misleading if treated as two master switches.
+
+Both branches exert ongoing, organ-specific influence. Their effects shift with breathing, posture, activity, digestion, temperature, and context. Slow breathing can alter cardiorespiratory coupling and heart-rate variability and thereby influence autonomic regulation, but it does not simply turn the sympathetic system off and the parasympathetic system on (Zaccaro et al., 2018).
+
+“Rest and digest” is more literal than it sounds. The **enteric nervous system** — neurons embedded in the gut wall — contains more than 100 million neurons and communicates bidirectionally with the brain through neural, immune, endocrine, and microbial pathways (Furness, 2006; Cryan et al., 2019). This supports the ordinary observation that stress affects digestion. It does not support every commercial claim about a single food, supplement, or microbe controlling mood.
+
+A functional hypothesis helps organize the system: rapid mobilization can improve the odds of responding effectively to danger, competition, uncertainty, or demanding action. But social evaluation is not biologically meaningless or evolutionarily novel. The sharper distinction is duration and controllability. A response that is useful for minutes can become costly when it is repeatedly triggered, remains unresolved, or cannot shut down. Sapolsky’s “sprints, not marathons” image captures that tradeoff without requiring the claim that stress systems evolved only for brief physical threats (Sapolsky, 2004).
+
+Taylor and colleagues proposed **tend-and-befriend** as an influential biobehavioral framework: under some conditions, caregiving and affiliation may be part of coping with threat rather than alternatives outside the stress response (Taylor et al., 2000). Oxytocin was proposed as one contributor. The framework is not a third autonomic branch, and its mechanism is not settled. Its teaching value is narrower: organisms have more than one behavioral strategy, and the strategy depends on the problem, relationships, and available options.
+
+![Figure 3.9 — Infographic comparing sympathetic and parasympathetic influences on organs. The sympathetic side shows increased heart rate, widened pupils, faster breathing, and reduced digestion. The parasympathetic side shows decreased heart rate, narrowed pupils, slower breathing, increased digestion, and recovery. A bottom row lists fight, flight, freeze, and tend-and-befriend as possible behavioral strategies, not autonomic branches.](../images/ch03/ch03_autonomic_balance_push_pull.png)
+*Figure 3.9. Sympathetic and parasympathetic influences form a shifting, organ-specific push-pull system rather than an on/off switch. Fight, flight, freeze, and tend-and-befriend are possible behavioral strategies; they are not separate autonomic branches.*
+
+> **Stop and Retrieve:** A sudden noise raises heart rate within seconds; a slower hormonal response helps mobilize energy over the following minutes. Which part is primarily neural, and which is endocrine?
+
+> **Think About It:** Think of the last time your heart raced before a test, conversation, or performance. The response was real even if no physical attack was coming. What information was your body using — uncertainty, social evaluation, anticipated effort, possible loss? A functional explanation begins with the problem the organism is responding to. It does not assume that one explanation is the evolutionary history.
+
+---
+
+## Section 5: The Brain — Specialization Without Lego-Brain Thinking
+
+We now have the building blocks: electrical signaling, chemical transmission, circuit modulation, and body-wide regulation. This section scales back up. How do those mechanisms become memory, language, emotion, planning, and action?
 
 ### Studying the Brain
 
-Before describing what specific structures do, it is worth being honest about how we know what we claim to know — because the methods carry real trade-offs that affect how confidently any particular claim can be made.
+**fMRI** (functional magnetic resonance imaging) tracks changes in blood oxygenation related to neural activity. It offers useful spatial localization, but the hemodynamic response unfolds over seconds and typically peaks several seconds after neural activity begins (Polimeni & Lewis, 2021). An activation map usually represents a comparison between conditions, not a photograph of a thought. It does not by itself establish causation.
 
-**fMRI** (functional magnetic resonance imaging) tracks blood-flow changes as a proxy for neural activity. It offers good spatial resolution — millimeter-scale — but poor temporal precision: blood flow lags the neural event by a second or more. More importantly, fMRI shows which regions had *relatively greater* blood flow during one condition compared to another. An activation map does not show what the brain is doing in any direct sense; it does not establish causation, and it does not reveal what the person was thinking. Other methods — EEG for timing, PET for receptor systems, lesion and animal studies for causal inference — each answer different questions with different trade-offs. When a headline claims scientists found "the brain region responsible for X," the method used to generate that claim is always worth asking about.
+Other methods answer different questions. EEG records electrical activity with excellent timing but coarse localization. PET can track metabolism or receptor-related processes using radioactive tracers. Lesions can provide causal evidence about what a damaged system was necessary for, but naturally occurring injuries are rarely clean experiments. Animal studies allow manipulations that would be impossible in humans, while raising questions about generalization. Good neuroscience converges across methods.
 
-### Cortex, Lobes, and the Limbic System
+### A Compact Map of Selected Structures
 
 ![Figure 3.10 — Semi-realistic lateral view of the human brain with color-coded frontal, parietal, temporal, and occipital lobes, plus cerebellum and brainstem. Labels identify broad functions such as planning, spatial awareness, hearing and memory, vision, coordination, and vital functions.](../images/ch03/ch03_lateral_brain_lobes_minimal_labels.png)
 *Figure 3.10. The cerebral cortex is often divided into four lobes with different specializations, but behavior is not produced by one region acting alone. Each lobe contributes to larger networks.*
 
-The **cerebral cortex** is the wrinkled outer layer of the brain most people picture when they picture "the brain" — and it is conventionally divided into four **lobes** per hemisphere. The **frontal lobe**, at the front, handles planning, decision-making, and voluntary movement, and contains the **prefrontal cortex**, the region most associated with executive function — impulse control, weighing long-term consequences, and regulating emotional responses generated elsewhere in the brain. The **parietal lobe**, toward the top and back, integrates sensory information and supports spatial processing. The **temporal lobe**, roughly at ear level, is heavily involved in auditory processing, language comprehension, and — critically for the next subsection — memory. The **occipital lobe**, at the very back, is dedicated almost entirely to visual processing, a topic Chapter 4 develops at length.
-
-Beneath the cortex sits the **limbic system**, a set of interconnected structures most associated with emotion, motivation, and memory — not a single, sharply bounded anatomical unit so much as a useful grouping of structures that tend to work together on these problems. The **hippocampus**, shaped (and named) for its resemblance to a seahorse, is essential for forming new long-term memories, particularly the conversion of short-term experience into lasting storage. The **amygdala** is most associated with processing fear and threat-related emotion, and with attaching emotional weight to memories — which is a large part of why frightening or threatening experiences tend to be remembered more vividly than mundane ones.
-
-The **hypothalamus**, sitting just below the thalamus, is one of the brain's key regulatory hubs. It coordinates basic drives — hunger, thirst, body temperature, sexual behavior — integrates autonomic responses, and acts as the master controller of the endocrine system through its connections to the pituitary gland. You will encounter it again in Chapter 6, where its suprachiasmatic nucleus (SCN) serves as the brain's primary circadian clock.
+| Structure | Major contribution emphasized here | Do not reduce it to |
+|---|---|---|
+| Frontal lobe and prefrontal cortex | Planning, action selection, voluntary movement, regulation, and goal maintenance | “The personality center” or a single executive module |
+| Parietal lobe | Integrating sensory information and supporting spatial representation and action | A passive touch map |
+| Temporal lobe | Auditory processing, language-related processing, and medial-temporal memory systems | “The memory lobe” |
+| Occipital lobe | Visual processing through multiple interacting pathways | A camera screen |
+| Hippocampus and surrounding medial-temporal structures | Supporting new declarative learning and relational memory | A storage bin that contains all memories |
+| Amygdala | Learning about biologically relevant events, including threat, and influencing attention and memory | A dedicated fear organ |
+| Hypothalamus | Coordinating homeostasis, motivated behavior, autonomic control, and endocrine signaling | One drive center |
+| Brainstem and cerebellum | Vital regulation, arousal, movement coordination, prediction, and learning | Merely “primitive” support hardware |
 
 ### Brain Regions Are Specialized, but Behavior Is Networked
 
-Before examining the case studies, it is worth stating the organizing principle explicitly. The question is not whether different brain regions do different things — they do, and the evidence is strong and comes from multiple converging methods. The question is what kind of specialization is actually there.
+Different regions do contribute different operations. Localization is real. The common mistake is **Lego-brain thinking**: one region for fear, one for memory, one for morality, each working alone.
 
-A common student model is what might be called Lego-brain thinking: this region does fear, that one does memory, another does language, and you could in principle label every function onto a map. The more accurate model is that regions contribute specific computational operations to functions that are distributed across circuits. The amygdala is heavily involved in threat detection and emotional memory — but it is one node in a circuit that also includes sensory cortex, prefrontal cortex, and hippocampus. The prefrontal cortex is essential for impulse control — but its behavioral influence depends on its connections to the limbic structures it modulates. Damage to one node disrupts the circuit; that is why lesion evidence (like Gage's case below) can tell you what a region *contributes* without proving it acts alone or that the function belongs exclusively to it.
+The more accurate model is networked specialization. The amygdala contributes to detecting and learning about biologically significant events, but its effects depend on sensory pathways, hippocampal context, prefrontal regulation, body state, and action systems. The prefrontal cortex contributes to planning and regulation, but only through its interactions with other systems. Damage to one node or connection can disrupt a function without proving that the entire function lived inside that tissue.
 
 #### Classic Study: Phineas Gage and the Limits of Localization
 
-Return to Gage, from the opening of this chapter. He survived the accident, recovered physically within weeks, and lived another twelve years — but according to his physician, John Martyn Harlow, the accident changed who he was. Harlow's 1848 report documented the acute injury; it was his 1868 follow-up, written twenty years later, that contained the personality-change description that entered the textbooks: a man who had been regarded as responsible, shrewd, and capable, and who afterward became impulsive, profane, unable to settle on or follow through with plans, and generally unrecognizable in temperament to people who had known him before (Harlow, 1868).
+Return to Gage. Harlow’s 1848 report documented the injury. His 1868 follow-up contained the behavioral description that entered psychology textbooks: people who had known Gage reportedly regarded him as less reliable, less restrained, and less able to pursue plans after the accident (Harlow, 1868).
 
-For more than a century, the Gage case was treated mostly as folklore — vivid, often retold, and only loosely connected to precise anatomy, since nobody in 1848 could image a living brain. That changed in 1994, when researchers used measurements from Gage's actual skull (preserved at Harvard's Warren Anatomical Museum) combined with modern neuroimaging techniques to reconstruct, with far more precision than had previously been possible, exactly which brain regions the iron rod most likely destroyed: substantial damage to the left and right prefrontal cortex, the region this section just described as central to executive function and emotional regulation (Damasio et al., 1994).
+Modern researchers have used Gage’s preserved skull to estimate the rod’s path. Damasio and colleagues’ 1994 reconstruction emphasized prefrontal damage. A later reconstruction estimated substantial left frontal damage and widespread disruption of white-matter connections, while also showing why no reconstruction can recover the missing brain tissue with certainty (Damasio et al., 1994; Van Horn et al., 2012).
 
-The case is a genuinely good piece of evidence that prefrontal damage can selectively disrupt personality, impulse control, and emotional regulation while sparing memory, language, perception, and most other capacities — a strong demonstration that the brain has at least some functional specialization by region, rather than operating as an undifferentiated whole. It is a much weaker piece of evidence for any precise claim about exactly *which* prefrontal subregion does exactly *what*, because Gage's injury was not a clean, surgical lesion of one well-defined area — it was a chaotic path of destruction through several adjacent regions, observed in a single patient, reconstructed retrospectively from a 146-year-old skull and a doctor's prose description. Single dramatic case studies like Gage's are extraordinarily good for generating hypotheses and for making an abstract idea vivid and memorable. They are much weaker for testing those hypotheses with precision.
+What does the case support? It is consistent with frontal and connected networks contributing to planning, inhibition, social regulation, and stable goal pursuit. What does it not establish? It does not provide a clean lesion of one precisely known region, a complete premorbid personality measure, or controlled evidence that every reported change came from one damaged structure. The case is memorable because it makes localization plausible. It is scientifically useful because it also teaches why a vivid case is not a surgical experiment.
 
-> **Stop and Retrieve:** What can the Phineas Gage case establish about brain function, and what can it not establish? Try to state the limitation in your own words before reading further.
+> **Stop and Retrieve:** What does the Gage case make plausible about frontal networks? What remains uncertain because the tissue, behavioral baseline, and lesion path cannot be reconstructed perfectly?
 
-#### Classic Study: Henry Molaison (H.M.) and the Hippocampus
+#### Classic Study: Henry Molaison (H.M.) and Medial-Temporal Memory Systems
 
-A second case reinforces the same localization logic from a different angle. In 1953, a 27-year-old man known in the literature as H.M. — his full name, Henry Molaison, was not disclosed publicly until after his death in 2008 — underwent surgery to treat severe, intractable epilepsy. The surgeon removed most of both hippocampi along with surrounding medial temporal tissue. The seizures improved. But something nobody had anticipated happened: H.M. lost the ability to form new long-term declarative memories. He could hold a conversation, remember his past, and perform normally on IQ tests — but within minutes of meeting someone, he would forget the encounter entirely. He could learn new motor skills but had no memory of practicing them. He lived the same present moment, over and over, for fifty-five years (Scoville & Milner, 1957; Corkin, 2013).
+In 1953, a 27-year-old man later known publicly as Henry Molaison underwent surgery for severe epilepsy. The operation removed tissue bilaterally from the medial temporal lobes, including much of the entorhinal region, amygdala, and portions of the hippocampal formation. Afterward, H.M. developed profound difficulty forming new declarative memories. He could carry on a conversation and acquire some new motor skills, yet later have no conscious memory of the practice (Scoville & Milner, 1957).
 
-H.M.'s case is one of the clearest single pieces of evidence that the hippocampus is specifically necessary for *converting* new experiences into lasting long-term declarative memory — not for storing old memories (those remained largely intact) and not for all forms of learning (motor skill learning was preserved). The logic is the same as Gage's: a targeted deficit following a specific lesion, in a single patient, cannot establish exactly which subregion does what or prove that a function belongs exclusively to one structure. But as a demonstration that removing the hippocampus specifically disrupts new declarative memory formation while leaving other capacities largely intact, H.M. is hard to argue with — and the finding has been replicated in subsequent patients with similar lesions. Chapter 8 develops the memory implications fully.
+That dissociation changed memory science. It showed that declarative memory depends critically on medial-temporal systems and that procedural learning can remain relatively intact when declarative learning is devastated. It did not show that H.M. had a pure hippocampal lesion. Postmortem reconstruction found substantial residual hippocampal tissue along with severe entorhinal disconnection and other pathology (Annese et al., 2014). Nor did the case prove a simple rule that the hippocampus forms memories but never participates in their later representation. Chapter 8 develops the more complete systems account.
 
-#### Do Not Confuse: Hemispheric Specialization vs. the "Left-Brain/Right-Brain Personality" Myth
+The strong conclusion is still strong: memory is not one faculty stored in one place. Different forms of learning depend on partly separable systems.
 
-The cerebral cortex is split into two hemispheres connected by a thick band of fibers called the **corpus callosum**. In a small number of patients with severe epilepsy, surgeons have cut the corpus callosum to prevent seizures from spreading between hemispheres — producing what is called a **split-brain** patient. Roger Sperry and Michael Gazzaniga's studies of these patients in the 1960s showed that the two hemispheres really can process information somewhat independently when the connection is severed: a split-brain patient shown a word only in their left visual field might be unable to say what they saw while still being able to select it with their left hand — because language production is concentrated in the left hemisphere, and the visual information reached only the right hemisphere, which cannot produce speech (Sperry, 1968).
+#### Do Not Confuse: Hemispheric Specialization vs. the “Left-Brain/Right-Brain Personality” Myth
 
-This genuine finding spawned a much less accurate popular idea: that ordinary people with intact corpus callosums are "left-brained" (logical, analytical) or "right-brained" (creative, intuitive) as a stable personality type. This has been directly tested and does not hold up. A 2013 study of over 1,000 individuals found no evidence that strongly lateralized brain networks cluster together in a way that would group people into two personality types (Nielsen et al., 2013). The split-brain findings show real hemispheric differences under unusual surgical conditions — they say nothing about personality differences in ordinary intact brains.
+The two cerebral hemispheres communicate through the **corpus callosum** and other pathways. In a small number of patients with severe epilepsy, surgeons severed major callosal connections to reduce seizure spread. Studies of these **split-brain** patients showed that information presented to one hemisphere could sometimes guide behavior without being available to the other hemisphere’s language system. That is genuine hemispheric specialization under unusual surgical conditions (Sperry, 1968).
 
-*Diagnostic question:* a friend tells you they are "definitely a right-brain person" because they are creative rather than analytical. What does the genuine split-brain research actually show, and why does it not support your friend's claim?
+It does not follow that ordinary people are “left-brained” logical types or “right-brained” creative types. Large-scale imaging found no evidence for two global personality classes defined by one hemisphere consistently dominating across networks (Nielsen et al., 2013). Specialized processing is real. The personality quiz is not.
 
-It is worth connecting this pattern to a concept already covered: the amygdala's association with fear works the same way. Calling the amygdala "the brain's fear center" is a defensible shorthand — the amygdala is heavily involved in fear and threat processing — but more recent work argues this oversimplifies a structure that contributes to several distinct functions, and is itself only one node in a larger, distributed circuit for emotional processing, not a single dedicated "fear organ" (LeDoux, 2012). Localization of function in the brain is real, but it is closer to "this region is heavily involved in and necessary for this function" than to "this region is solely responsible for this function and nothing else" — a distinction worth holding onto for the rest of this course.
+*Diagnostic question:* a friend says they are “definitely right-brained” because they are creative. What did split-brain research actually test, and what unsupported step did the personality claim add?
 
-> **Think About It:** Before this section, did you believe some version of the left-brain/right-brain personality idea? If so, where do you think you picked it up — a teacher, a quiz, a piece of pop psychology? Now that you have seen the actual split-brain evidence and what it does and does not support, how would you explain the difference to someone who still believes the popular version?
+Calling the amygdala a “fear center” makes the same kind of mistake. It is a useful first-pass locator only if students immediately learn the correction: the amygdala contributes to threat-related learning and other biologically significant processing within a wider network. It is not a dedicated organ containing fear (LeDoux, 2012).
+
+> **Think About It:** When a headline says scientists found “the brain region responsible for” a political belief, moral judgment, or personality trait, ask three questions: What method was used? What comparison produced the result? What larger network and behavior were required for the task?
 
 ---
 
 ## Chapter Summary
 
-The chapter question — *what does the biology of the brain tell us about behavior, and what does it leave out?* — runs through every section. The biology is most informative about mechanism and substrate; it is less informative about meaning, context, and what the organism is trying to do in its actual ecology.
+The chapter question was: *what does the biology of the brain tell us about behavior, and what does it leave out?* Biology is especially powerful for explaining substrate, signaling, constraints, and causal contribution. It is less complete as an explanation of meaning, context, and what an organism is trying to accomplish in a particular situation.
 
-Nervous systems exist because directional movement produces an action-selection problem. Cephalization — the concentration of sensory processing and action-selection at the anterior end — evolved to solve that problem faster than chemical gradients alone can manage. A brain is a centralized action-selection system, not primarily a "thinking organ." Human brains extended the same machinery into memory, prediction, social reasoning, and imagined futures — and run that machinery at enormous metabolic cost, consuming roughly 20% of adult resting energy and about 66% in developing children (Kuzawa et al., 2014), which is itself evidence against the 10% myth and evidence for how much the brain is actually doing.
+Directional movement and limited processing capacity make action selection a useful functional starting point for understanding cephalization and nervous-system centralization. The exact evolutionary history remains debated. The durable idea is that nervous systems integrate information and coordinate action across a body.
 
-Neurons communicate through an electrochemical process: dendrites receive input, the soma integrates it, and if accumulated input crosses threshold, an all-or-nothing action potential fires down the axon, accelerated where the axon is myelinated. Glial cells support this process in essential ways — forming myelin, clearing waste, regulating the chemical environment. The action potential mechanism, established through work on the squid giant axon, generalizes across an enormous evolutionary range.
+Neurons receive input, integrate it, and communicate through electrochemical events. A typical suprathreshold action potential is regenerative and stereotyped; stronger stimulation is represented mainly by firing patterns and neural recruitment. Myelin allows current to spread efficiently between nodes where the spike is regenerated. Glial cells are essential participants in maintaining that signaling environment.
 
-Chemical messengers operate at multiple scales. Neurotransmitters signal focally across the synapse through wired axon delivery; hormones broadcast through the bloodstream. At the synapse, neurotransmitters bind to receptors, and signaling ends through reuptake or degradation — the mechanism most psychiatric drugs target. Glutamate and GABA are the main excitatory and inhibitory neurotransmitters for fast signaling; drugs that enhance GABA (alcohol, benzodiazepines, barbiturates) produce sedation; respiratory suppression is especially dangerous with alcohol or barbiturates or when depressants are combined. Agonists activate receptors; antagonists block them. Neuromodulators like dopamine and serotonin act through long-range projection systems, and their effects are defined by circuit and context, not by the molecule alone. Dopamine's primary role in reward circuits is encoding prediction error — signaling the gap between expected and actual outcome. The popular claim that depression is caused by low serotonin is not supported by the evidence; a 2022 umbrella review found no consistent deficit (Moncrieff et al., 2022), and antidepressant efficacy does not prove the deficit model.
+Chemical signaling operates at several scales. Neurotransmitters use wired neural delivery and focal release; hormones travel through the bloodstream and act where receptors are present. At synapses, receptor type determines what a chemical message does. Excitation and inhibition work together to produce stable, selective circuits. Neuromodulators adjust circuit state. In selected reward-learning tasks, phasic activity in some midbrain dopamine neurons resembles reward-prediction error, but dopamine is not simply pleasure and is not reducible to one computation. The simple low-serotonin theory of depression is unsupported; antidepressant efficacy does not establish a deficiency cause.
 
-Hormones coordinate whole-body responses more slowly through the bloodstream. Cortisol mobilizes energy during stress — something that can be made visible through a continuous glucose monitor. Chronic elevation carries real costs. The sympathetic and parasympathetic branches of the autonomic nervous system provide the fast, wired counterpart. The enteric nervous system adds another layer: "rest and digest" is literal, with over 100 million gut neurons communicating bidirectionally with the brain. The recurring evolutionary point is that these mechanisms were shaped for acute, time-limited demands, and much of their cost in modern life comes from chronic deployment of a system built for sprints.
+Hormones coordinate body-wide processes. Cortisol participates in energy mobilization and longer-timescale stress regulation. Neuropeptides are peptide signaling molecules, not chemicals defined by dual central and peripheral release. Oxytocin illustrates how one molecule can act at multiple scales and produce context-dependent effects.
 
-The brain's major structures show real functional specialization. Phineas Gage illustrates what prefrontal damage can do to personality and executive function, and the limits of what a single dramatic case can establish. H.M. illustrates what hippocampal removal does to the formation of new declarative memories, and what it does not do to motor learning or stored memories. The split-brain evidence shows genuine hemispheric differences under unusual surgical conditions; it does not support the popular claim that ordinary people are "left-brained" or "right-brained." The right conclusion is calibrated: regions are heavily involved in specific functions, and any claim that becomes a clean personality quiz should be treated with extra suspicion.
+Stress regulation combines fast autonomic and slower endocrine processes. Sympathetic and parasympathetic branches exert simultaneous, shifting, organ-specific influence. Acute mobilization can be useful; repeated or prolonged activation can become costly. Tend-and-befriend is a proposed behavioral framework, not a third autonomic branch.
 
-*The biology tells us a great deal about the substrate, the mechanisms, and the constraints. It tells us less about meaning, context, and what the organism is trying to do in its actual world — which is where the rest of this course begins to fill in.*
+Brain regions are specialized contributors within networks. Gage is consistent with frontal-network contributions to planning and regulation, but the anatomy and behavioral record are uncertain. H.M. established the critical role of medial-temporal systems and the dissociation between declarative and procedural learning, not a simple hippocampus-only rule. Split-brain research demonstrates hemispheric specialization under unusual conditions; it does not divide ordinary people into two personality types.
+
+*The brain is biological all the way down. Behavior is not explained until that biology is connected to circuits, bodies, environments, histories, and the problem the organism is trying to solve.*
 
 ---
 
@@ -281,17 +285,14 @@ The brain's major structures show real functional specialization. Phineas Gage i
 
 | Concept from this chapter | Reappears in | Why it matters there |
 |---|---|---|
-| [Dopamine and reward prediction](#section-2-chemical-messengers--neurotransmitters-and-hormones) | Ch. 7 — Learning | Dopamine's predictive-error signal is the chemical mechanism underlying reinforcement learning; the Sapolsky framing introduced here becomes a working model |
-| [Agonist/antagonist; glutamate/GABA](#section-2-chemical-messengers--neurotransmitters-and-hormones) | Ch. 5 — Consciousness; Ch. 13 — Psychological Disorders & Therapy | Drug mechanisms (alcohol → GABA, opioid antagonists) and pharmacological treatments for disorders |
-| [Hypothalamus and circadian regulation](#section-4-the-brain--structure-localization-and-its-limits) | Ch. 6 — Sleep | The suprachiasmatic nucleus (SCN) introduced here is the brain's primary circadian clock; sleep-wake regulation builds directly on this |
-| [Amygdala and emotional memory](#section-4-the-brain--structure-localization-and-its-limits) | Ch. 12 — Emotion, Stress & Coping | The amygdala's role in threat appraisal and emotional weighting of memory is developed fully when emotion theory is covered |
-| [Hippocampus / H.M.](#section-4-the-brain--structure-localization-and-its-limits) | Ch. 8 — Memory | H.M.'s case establishes the hippocampus's specific role in forming (not storing) new memories — and directly sets up the "memory is not a video camera" reframing Chapter 8 builds on |
-| [Cortisol and the stress response](#section-3-the-bodys-stress-response--the-autonomic-nervous-system) | Ch. 12 — Emotion, Stress & Coping | The acute-versus-chronic mismatch introduced here is the organizing framework for the full stress and health section |
-| [Oxytocin / neuropeptides](#section-2-chemical-messengers--neurotransmitters-and-hormones) | Ch. 10 — Lifespan Development; Ch. 12 — Emotion, Stress & Coping | Oxytocin's role in biobehavioral synchrony grounds the biology of early attachment (Ch. 10) and stress regulation (Ch. 12) |
-| [Prefrontal cortex / Phineas Gage](#section-4-the-brain--structure-localization-and-its-limits) | Ch. 11 — Social Psychology; Ch. 13 — Psychological Disorders & Therapy | Frontal-lobe damage reshaping personality directly foreshadows risk factors for antisocial personality disorder |
-| [Evolutionary / comparative framing](#section-1-how-neurons-talk--structure-and-the-action-potential) | Ch. 10 — Lifespan Development | The orchid/dandelion framing in Ch. 10 extends the same comparative logic to individual differences in developmental plasticity |
-| [Sensory neuron basics](#section-1-how-neurons-talk--structure-and-the-action-potential) | Ch. 4 — Sensation & Perception | The action potential mechanism covered here is reused without modification to explain how sensory receptors convert physical stimuli into neural signals |
-| [Split-brain / hemispheric specialization](#section-4-the-brain--structure-localization-and-its-limits) | Ch. 9 — Thinking, Language & Intelligence | Left-hemisphere language dominance, introduced here through the split-brain evidence, becomes directly relevant when language processing is covered |
+| [Reward-prediction error and dopamine](#changing-a-circuit) | Ch. 7 — Learning | A restricted dopamine teaching model helps explain how unexpected outcomes can update future behavior |
+| [Agonists, antagonists, excitation, and inhibition](#excitation-and-inhibition) | Ch. 5 — Consciousness; Ch. 13 — Psychological Disorders & Therapy | Drug effects depend on receptor action and circuit context, not simply on a drug being a “stimulant” or “depressant” |
+| [Hypothalamic regulation](#a-compact-map-of-selected-structures) | Ch. 6 — Sleep | The suprachiasmatic nucleus is a hypothalamic clock that helps organize circadian timing |
+| [Medial-temporal memory systems and H.M.](#classic-study-henry-molaison-hm-and-medial-temporal-memory-systems) | Ch. 8 — Memory | H.M. demonstrates separable memory systems and helps dismantle the video-camera model of memory |
+| [Autonomic and endocrine stress regulation](#section-4-the-bodys-stress-response--fast-and-slow-coordination) | Ch. 12 — Emotion, Stress & Coping | Acute mobilization, prolonged activation, appraisal, and recovery become the foundation for allostatic-load reasoning |
+| [Oxytocin as a context-dependent neuropeptide](#section-3-hormones-and-whole-body-signaling) | Ch. 10 — Lifespan Development; Ch. 12 — Emotion, Stress & Coping | The same signaling system can contribute differently across attachment, caregiving, affiliation, and stress contexts |
+| [Action potentials and receptors](#section-1-how-neurons-talk--structure-and-the-action-potential) | Ch. 4 — Sensation & Perception | Sensory receptors convert environmental energy into the neural signals introduced here |
+| [Split-brain research](#do-not-confuse-hemispheric-specialization-vs-the-left-brainright-brain-personality-myth) | Ch. 9 — Thinking, Language & Intelligence | Hemispheric specialization matters for language without creating two global personality types |
 
 ---
 
@@ -299,266 +300,232 @@ The brain's major structures show real functional specialization. Phineas Gage i
 
 **1.** The all-or-nothing principle of the action potential means that:
 
-a) stronger stimuli produce larger action potentials  
-b) an action potential either fires at full strength or does not fire at all, regardless of stimulus strength above threshold  
-c) neurons can only fire once in their lifetime  
-d) action potentials only occur in myelinated axons  
+a) stronger stimuli always produce proportionally taller action potentials  
+b) once threshold is crossed, a typical action potential is a stereotyped regenerative event  
+c) neurons can fire only once  
+d) action potentials occur only in myelinated axons
 
-*Answer: b. Why (a) is tempting: it seems intuitive that a stronger stimulus should produce a "bigger" response, but stimulus strength is instead encoded in how frequently a neuron fires, not in the size of any single spike. (d) is tempting because myelination is discussed alongside the action potential, but unmyelinated axons fire action potentials too — myelin affects speed, not whether firing is all-or-nothing.*
-
----
-
-**2.** Which best distinguishes a neurotransmitter from a hormone?
-
-a) hormones are always inhibitory, neurotransmitters are always excitatory  
-b) neurotransmitters are delivered focally via wired axons and act across the synapse within milliseconds; hormones broadcast through the bloodstream to distant targets over a longer timescale  
-c) neurotransmitters are produced only in the brain, hormones only in the body  
-d) hormones are involved in emotion, neurotransmitters are involved only in movement  
-
-*Answer: b. Why (c) is tempting: it sounds like a clean anatomical rule, but several molecules (dopamine, norepinephrine) function as both, depending on where they are released — the distinction is about delivery route and distance, not where in the body the molecule originates.*
+*Answer: b. Why (a) is tempting: stronger stimulation does produce a stronger experience, but nervous systems represent that intensity mainly through firing patterns and recruitment, not by scaling every spike’s height.*
 
 ---
 
-**3.** Research on dopamine and reward (Schultz, 1998) found that dopamine neurons fire most strongly:
+**2.** Which feature most directly distinguishes a neurotransmitter from a hormone?
 
-a) at the exact moment a reward is consumed  
-b) in response to predictive cues, and especially to unexpected rewards or unexpected reward omissions  
-c) only during sleep  
-d) exclusively in response to social rewards, not physical ones  
+a) whether it produces emotion  
+b) whether it is excitatory or inhibitory  
+c) its delivery route — neural release onto selected targets versus circulation through blood  
+d) whether it is produced above or below the neck
 
-*Answer: b. Why (a) is tempting: the "pleasure chemical" framing implies dopamine should track the reward itself, but the actual neural recording data shows the strongest signal tied to prediction and prediction error, not consumption.*
-
----
-
-**4.** A news headline reads: "Brain scans reveal the region responsible for political opinions." Based on what this chapter says about fMRI, what is the most important limitation to keep in mind?
-
-a) fMRI cannot detect any brain activity at all  
-b) fMRI shows relative blood-flow differences between conditions, not direct evidence that a region causes a behavior  
-c) fMRI only works on non-human animals  
-d) fMRI provides excellent timing information but poor spatial information  
-
-*Answer: b. Why (d) is tempting: it reverses fMRI's actual trade-off — fMRI has good spatial resolution but poor temporal resolution because blood flow lags the neural event by a second or more. The deeper limitation is that "more active during condition X" does not establish causation or tell you what the person was thinking.*
+*Answer: c. Distance and timescale often differ because the routes differ, but the primary distinction is how the message is delivered.*
 
 ---
 
-**5.** The sympathetic and parasympathetic nervous systems are best understood as:
+**3.** A transmitter binds to two receptor types in two different circuits and produces opposite effects. What principle does this demonstrate?
 
-a) two systems that are never active at the same time  
-b) a coordinated push-pull system in which both exert continuous, balanced influence  
-c) systems found only in the brain, not the rest of the body  
-d) the same system under two different names  
+a) every transmitter has one fixed function  
+b) receptor and circuit context help determine a chemical signal’s effect  
+c) hormones never require receptors  
+d) inhibitory signaling is a failure of communication
 
-*Answer: b. Why (a) is tempting: "fight-or-flight" versus "rest-and-digest" sounds like an on/off switch, but in reality both branches are always exerting some influence, and subjective states like "calm" or "anxious" reflect the balance between them rather than one being fully off.*
-
----
-
-**6.** According to the evolutionary mismatch argument applied to cortisol and the stress response in this chapter, the central problem with chronic stress in modern humans is that:
-
-a) cortisol itself is a uniquely harmful and poorly designed hormone  
-b) the stress response evolved for brief, acute threats, but modern stressors often activate it for weeks at a time  
-c) humans evolved to have a weaker stress response than other animals  
-d) the parasympathetic nervous system no longer functions in modern humans  
-
-*Answer: b. Why (a) is tempting: it can feel like cortisol is "the problem," especially given how often chronic stress is discussed in negative terms — but the acute version of the response is adaptive and necessary; the problem this chapter identifies is the mismatch between the threat duration the system evolved for and the duration it is now often deployed for.*
+*Answer: b. The molecule is part of the message, not the complete psychological instruction.*
 
 ---
 
-**7.** What did the Damasio et al. (1994) re-analysis of the Phineas Gage case add to the original 1848 case report?
+**4.** In the classical reward-learning pattern discussed in this chapter, which statement is most accurate?
 
-a) it was the first evidence that brain damage could change personality at all  
-b) it used skull measurements and modern neuroimaging to identify, with more precision, that the injury involved the prefrontal cortex  
-c) it proved that all personality differences are caused by frontal lobe damage  
-d) it discredited Harlow's original observations as inaccurate  
+a) all dopamine activity everywhere measures pleasure  
+b) phasic activity in some midbrain dopamine neurons can resemble reward-prediction error in particular tasks  
+c) dopamine responds only when reward is consumed  
+d) prediction error is unrelated to learning
 
-*Answer: b. Why (c) is tempting: it is easy to overgeneralize a vivid single case into a universal claim, but the chapter explicitly cautions against this — Gage's case shows that prefrontal damage *can* disrupt personality, not that *all* personality variation has this cause.*
-
----
-
-**8.** What is the key thing that H.M.'s case established about the hippocampus?
-
-a) the hippocampus stores all long-term memories  
-b) the hippocampus is specifically necessary for converting new experiences into long-term declarative memory, but not for storing old memories or all forms of learning  
-c) the hippocampus controls motor skill learning  
-d) removing the hippocampus eliminates all memory function  
-
-*Answer: b. Why (a) is tempting: it would be simpler if the hippocampus "stored" memories, but H.M. retained his memories from before the surgery — the deficit was specific to forming *new* ones. Why (d) is tempting: the case sounds dramatic, but H.M. retained motor skill learning and old memories, which is precisely what makes the case informative about hippocampal function.*
+*Answer: b. Why (a) is tempting: “pleasure chemical” is memorable. The evidence supports a restricted and powerful prediction-error pattern, not a universal definition of dopamine.*
 
 ---
 
-**9.** The popular "left-brain/right-brain personality" claim differs from Sperry and Gazzaniga's actual split-brain research in that:
+**5.** A headline says, “fMRI reveals the brain region that causes political opinions.” What is the strongest immediate objection?
 
-a) the popular claim applies to people with an intact corpus callosum, generalizing findings from a specific surgical population to the general population in a way the original research does not support  
-b) the popular claim is simply a more detailed and accurate restatement of the original findings  
-c) the original research never involved any human patients  
-d) the original research was specifically about personality types, and the popular version waters it down  
+a) fMRI records no physiological signal  
+b) fMRI usually measures condition-related hemodynamic differences and does not by itself establish causation  
+c) fMRI has perfect millisecond timing  
+d) fMRI works only in nonhuman animals
 
-*Answer: a. Why (d) is tempting: it reverses the actual relationship — the original split-brain research was about functional differences in an unusual clinical population under unusual experimental conditions, not about personality, and the popularized version is the one that introduced the (unsupported) personality claim.*
-
----
-
-**10.** Calling the amygdala "the brain's fear center" is best described in this chapter as:
-
-a) completely accurate and uncontroversial  
-b) a defensible shorthand that risks oversimplifying a structure involved in several functions within a larger distributed circuit  
-c) entirely false — the amygdala has no relationship to fear processing  
-d) only true in non-human animals, not in humans  
-
-*Answer: b. Why (c) is tempting: pointing out that a popular claim oversimplifies something can read as a claim that it's simply wrong, but the amygdala's involvement in fear and threat processing is real and well-supported — the correction here is about precision (one node in a circuit, with several functions) rather than a wholesale rejection of the amygdala-fear connection.*
+*Answer: b. The BOLD response unfolds over seconds, and an activation difference does not establish that one region caused the behavior or acted alone.*
 
 ---
 
-**11.** Why does the Hodgkin and Huxley research on the squid giant axon generalize to human neurons?
+**6.** Which pairing correctly distinguishes two components of stress regulation?
 
-a) squid and humans are evolutionarily very close relatives  
-b) the basic electrochemical mechanism of the action potential is conserved across a very wide range of species, even ones that are not closely related  
-c) it does not actually generalize, and is only included here for historical interest  
-d) squid neurons and human neurons are visually identical under a microscope  
+a) sympathetic nerve signaling is generally fast; HPA-axis cortisol effects unfold more slowly  
+b) cortisol is electrical; sympathetic signaling travels through blood  
+c) both are the same pathway under different names  
+d) the endocrine response always happens before sensory detection
 
-*Answer: b. Why (a) is tempting: it would be a tidier story if squid and humans were closely related, but they are not — cephalopods and vertebrates diverged hundreds of millions of years ago. The generalization works specifically because the action potential mechanism is deeply conserved, not because of close evolutionary relationship.*
+*Answer: a. Stress regulation coordinates fast neural and slower endocrine routes rather than relying on one “stress chemical.”*
 
 ---
 
-**12.** A student argues: "SSRIs are also prescribed for anxiety disorders, and many patients report reduced anxiety after starting them. This proves anxiety, like depression, is caused by low serotonin." Based on the "Chemical Influence vs. Chemical Cause" box, what is the strongest problem with this reasoning?
+**7.** Why can a useful stress response become costly?
 
-a) SSRIs are not actually effective for treating anxiety disorders  
-b) a drug's effectiveness for a condition does not establish that the condition was caused by a deficit in the neurotransmitter system the drug acts on  
-c) anxiety and depression cannot share any common biological mechanisms  
-d) serotonin has no real role in either depression or anxiety  
+a) sympathetic and endocrine responses are always harmful  
+b) repeated, prolonged, or poorly terminated activation can impose physiological and behavioral costs  
+c) parasympathetic influence disappears permanently during stress  
+d) social evaluation cannot activate biological stress systems
 
-*Answer: b. Why (a) is tempting: it would be a tidy way to dismiss the argument, but SSRIs having real anxiolytic effects for many patients is not in dispute — the flaw is not in whether the drug works, it is in treating that effectiveness as proof of cause, the same aspirin/headache logic the chapter applies to depression. Why (d) is tempting: the chapter is careful to say a serotonin *deficiency* is not established as the cause of depression, which can be misread as "serotonin is irrelevant" — but ruling out the deficit model is not the same as ruling out serotonin's involvement in the circuit altogether.*
+*Answer: b. The key distinction is not “physical threat good, modern stress fake.” It is how strongly, how long, and how controllably regulatory systems remain engaged.*
+
+---
+
+**8.** What do modern reconstructions add to the Phineas Gage case?
+
+a) certainty about every destroyed cell and every behavioral consequence  
+b) estimates of frontal and white-matter network damage, while preserving substantial uncertainty  
+c) proof that one prefrontal location contains personality  
+d) evidence that Harlow invented the injury
+
+*Answer: b. The skull constrains possible paths, but the brain tissue is gone and the behavioral record is sparse. The case supports a network contribution, not a clean one-region experiment.*
+
+---
+
+**9.** What is the strongest conclusion from H.M.’s case?
+
+a) all memory is stored in the hippocampus  
+b) bilateral medial-temporal damage can devastate declarative learning while sparing some procedural learning  
+c) removing the hippocampus eliminates every old memory  
+d) procedural learning and declarative memory are the same system
+
+*Answer: b. H.M.’s surgery involved multiple medial-temporal structures, and postmortem analysis found residual hippocampal tissue. The declarative–procedural dissociation is the clean teaching result.*
+
+---
+
+**10.** Why does split-brain research not support “left-brained” and “right-brained” personality types?
+
+a) the hemispheres have no specialized processing  
+b) the original findings came from unusual surgical conditions and did not test global personality classes in intact brains  
+c) corpus-callosum surgery increases creativity  
+d) language is equally distributed in every person
+
+*Answer: b. Real lateralization does not imply that one hemisphere globally defines an ordinary person’s character.*
+
+---
+
+**11.** Why did Hodgkin and Huxley’s squid-axon work matter for human neuroscience?
+
+a) squid and humans are close relatives  
+b) conserved membrane mechanisms can be studied in an organism where the mechanism is unusually accessible  
+c) squid neurons are miniature human brains  
+d) the findings apply only to jet propulsion
+
+*Answer: b. The comparative method uses a tractable organism to reveal a widely conserved mechanism without treating that species as a simpler human.*
+
+---
+
+**12.** A medication reduces symptoms by altering serotonin signaling. What does that result establish?
+
+a) the disorder was caused by low serotonin  
+b) serotonin is irrelevant to the disorder  
+c) altering that system can affect symptoms, but efficacy alone does not prove the disorder’s original cause  
+d) the medication must work immediately
+
+*Answer: c. This is the aspirin-and-headache distinction: treatment action and disorder cause are different inferential questions.*
 
 ---
 
 ## Key Terms
 
-**Action potential** — The rapid, all-or-nothing electrical signal that travels down a neuron's axon when accumulated input crosses a threshold voltage.
+**Action potential** — A rapid regenerative electrical event that travels along an axon after membrane voltage crosses threshold.
 
-**Agonist** — A drug or molecule that binds to a receptor and activates it, mimicking the natural neurotransmitter.
+**All-or-nothing principle** — The teaching rule that a typical suprathreshold action potential is a stereotyped event rather than a signal whose height scales directly with stimulus strength.
 
-**All-or-nothing principle** — The rule that an action potential fires at full strength or not at all; stimulus strength is encoded in firing frequency, not spike size.
+**Autonomic nervous system** — Peripheral neural pathways that regulate organs such as the heart, blood vessels, pupils, and digestive tract through sympathetic and parasympathetic influences.
 
-**Amygdala** — A limbic structure heavily involved in processing fear and threat, and in attaching emotional significance to memories; part of a larger distributed emotional circuit rather than a sole "fear center."
+**Cephalization** — Concentration of sensory and neural processing toward an organism’s anterior end, often associated with directional movement.
 
-**Antagonist** — A drug or molecule that binds to a receptor without activating it, blocking the natural neurotransmitter from binding.
+**Cortisol** — A steroid hormone released through the HPA axis that participates in energy mobilization and longer-timescale stress regulation.
 
-**Autonomic nervous system** — The division of the peripheral nervous system controlling involuntary functions (heart rate, digestion, breathing) through its sympathetic and parasympathetic branches.
+**Dopamine** — A neuromodulator involved in multiple functions; in selected reward-learning tasks, phasic activity in some midbrain dopamine neurons resembles reward-prediction error.
 
-**Axon** — The long output fiber of a neuron that carries its signal toward the next cell.
+**Endocrine system** — Glands and tissues that release hormones into the bloodstream to coordinate processes across the body.
 
-**Cephalization** — The evolutionary tendency for nervous systems to become more elaborate at the anterior (front) end of the organism, where sensory tissue concentrates and action-selection is centralized; favored by directional movement.
+**Excitation and inhibition** — Neural influences that increase or decrease a target cell’s probability of firing and jointly shape circuit timing, stability, and selection.
 
-**Cerebral cortex** — The wrinkled outer layer of the brain, conventionally divided into four lobes per hemisphere; the structure most people picture when they picture "the brain."
+**Glial cells** — Non-neuronal nervous-system cells that support signaling through myelination, chemical regulation, immune functions, debris removal, and metabolic support.
 
-**Corpus callosum** — The thick band of nerve fibers connecting the brain's two hemispheres.
+**Hormone** — A chemical messenger released into the bloodstream that acts on cells with matching receptors.
 
-**Cortisol** — A hormone released by the adrenal glands during stress that mobilizes energy and temporarily suppresses non-urgent functions; chronic elevation is linked to several negative health outcomes.
+**Medial temporal lobe** — A set of interconnected structures, including hippocampal and surrounding cortical regions, critical for declarative learning and memory.
 
-**Dendrite** — The branching extension of a neuron that receives input from other neurons.
+**Myelin** — Insulating material around many axons that allows current to spread efficiently between nodes where action potentials are regenerated.
 
-**Dopamine** — A neuromodulatory neurotransmitter whose primary role in well-studied reward circuits is encoding prediction error — signaling when outcomes differ from expectation — making it central to goal-directed behavior and reinforcement learning. Different dopamine pathways also contribute to salience, novelty, movement, and action selection.
+**Neuron** — A cell specialized for receiving, integrating, and transmitting electrochemical signals.
 
-**Endocrine system** — The body's network of glands that secrete hormones directly into the bloodstream to coordinate slower, body-wide responses.
+**Neuromodulator** — A chemical signal that alters how neurons or circuits respond, rather than carrying one fixed excitatory, inhibitory, or psychological instruction.
 
-**Enteric nervous system** — The extensive neural network embedded in the gut wall, containing over 100 million neurons, that communicates bidirectionally with the brain via the vagus nerve and other pathways.
+**Neuropeptide** — A peptide signaling molecule synthesized as a precursor protein and often used by neurons for slower, longer-lasting modulation.
 
-**Frontal lobe** — The lobe at the front of the cerebral cortex, responsible for planning, decision-making, and voluntary movement; contains the prefrontal cortex.
+**Neurotransmitter** — A chemical messenger released by a neuron onto a target cell, commonly across a synapse.
 
-**GABA** (gamma-aminobutyric acid) — The brain's primary inhibitory neurotransmitter; drugs that enhance GABA activity (alcohol, benzodiazepines) produce sedation.
+**Parasympathetic nervous system** — Autonomic pathways that generally support maintenance, digestion, and recovery, with effects that vary by organ and context.
 
-**Glial cells** — Support cells, present in roughly similar numbers to neurons, that form and maintain myelin, clear metabolic waste, regulate the chemical environment around neurons, and serve as the brain's immune sentinels.
+**Prefrontal cortex** — Frontal cortical regions that contribute to planning, goal maintenance, regulation, and flexible action through distributed networks.
 
-**Glutamate** — The brain's primary excitatory neurotransmitter, involved in nearly all rapid excitatory signaling and central to synaptic plasticity and learning.
+**Receptor** — A protein that detects a signaling molecule and converts binding into a cellular effect.
 
-**Hippocampus** — A limbic structure essential for forming new long-term declarative memories, as demonstrated by the H.M. case.
+**Reuptake** — Removal of a neurotransmitter from extracellular space by transporter proteins, often into the releasing cell or nearby cells.
 
-**Hormone** — A chemical messenger released by an endocrine gland into the bloodstream, acting on distant target cells over a longer timescale than a neurotransmitter.
+**Split-brain** — A condition created by severing major connections between the cerebral hemispheres, usually to reduce severe seizure spread.
 
-**Hypothalamus** — A regulatory hub below the thalamus that coordinates basic drives (hunger, thirst, temperature, reproduction), integrates autonomic responses, and controls the endocrine system through the pituitary gland; its suprachiasmatic nucleus (SCN) is the brain's primary circadian clock.
+**Sympathetic nervous system** — Autonomic pathways that generally shift organs toward mobilization and action.
 
-**Limbic system** — A set of interconnected structures, including the hippocampus and amygdala, most associated with emotion, motivation, and memory; more a useful functional grouping than a single sharply bounded anatomical unit.
-
-**Myelin** — A fatty insulating sheath around many axons, produced by glial cells, that increases the speed of signal conduction via saltatory conduction.
-
-**Neuron** — A cell specialized for receiving, processing, and transmitting information through electrochemical signals.
-
-**Neuromodulator** — A neurotransmitter that adjusts the sensitivity or responsiveness of broader neural circuits rather than directly exciting or inhibiting a single cell; its effect depends on receptor type, circuit context, and what the organism is currently doing.
-
-**Neuropeptide** — A class of chemical messenger (including oxytocin) synthesized in the brain and released both centrally (as a neuromodulator) and into the bloodstream (like a hormone); neuropeptides blur the line between the nervous and endocrine systems and typically produce context-dependent behavioral effects.
-
-**Neurotransmitter** — A chemical messenger released by a neuron into the synapse that excites or inhibits the next cell.
-
-**Occipital lobe** — The lobe at the back of the cerebral cortex, dedicated almost entirely to visual processing.
-
-**Parasympathetic nervous system** — The "rest-and-digest" branch of the autonomic nervous system that slows heart rate and supports recovery and digestion.
-
-**Parietal lobe** — The lobe toward the top and back of the cerebral cortex that integrates sensory information and supports spatial processing.
-
-**Prefrontal cortex** — The frontal-lobe region most associated with executive function, including impulse control and emotional regulation.
-
-**Refractory period** — The brief period immediately following an action potential during which a neuron cannot fire again.
-
-**Resting potential** — The stable voltage difference (about −70 mV) across a neuron's membrane when it is not firing.
-
-**Reuptake** — The process by which neurotransmitter molecules are pulled back into the presynaptic terminal by transporter proteins, ending their action at the synapse; the mechanism targeted by SSRIs and many other psychiatric drugs.
-
-**Serotonin** — A neuromodulatory neurotransmitter often involved in behavioral inhibition, patience, and sustaining a course of action when waiting is adaptive; not accurately described as "the happiness chemical." Its role in depression is more complex than the popular "low serotonin" model implies.
-
-**Soma** — The cell body of a neuron; contains the nucleus and the machinery that keeps the cell alive.
-
-**Split-brain** — A condition, typically surgically induced to treat severe epilepsy, in which the corpus callosum connecting the two cerebral hemispheres is severed.
-
-**Sympathetic nervous system** — The "fight-or-flight" branch of the autonomic nervous system that accelerates heart rate and redirects resources toward rapid action.
-
-**Synapse** — The junction between two neurons, across which communication switches from electrical (action potential) to chemical (neurotransmitter release and receptor binding).
-
-**Temporal lobe** — The lobe roughly at ear level, heavily involved in auditory processing, language comprehension, and memory.
+**Synapse** — A junction where one cell communicates with another; in a chemical synapse, transmitter release bridges the gap between cells.
 
 ---
 
 ## Further Reading
 
-**Noba Project — Neurons** (Furtak)  
+**Noba Project — Neurons**  
 https://nobaproject.com/modules/neurons  
-A detailed, peer-reviewed treatment of neuron structure and the action potential, including the ionic mechanisms only briefly summarized in this chapter.
+A peer-reviewed open overview of neuron structure, action potentials, and synaptic communication.
 
 **Noba Project — Hormones & Behavior**  
 https://nobaproject.com/modules/hormones-behavior  
-Open-access overview of behavioral endocrinology, including hormone-behavior relationships beyond the stress response covered here.
+A behavioral-endocrinology overview that extends beyond the stress examples used here.
 
-**Noba Project — The Brain and Nervous System** (Biswas-Diener)  
+**Noba Project — The Brain and Nervous System**  
 https://nobaproject.com/modules/the-brain-and-nervous-system  
-A broader anatomical overview that complements this chapter's focus on a smaller set of structures.
+A broader anatomical reference for students who want more region-level detail.
 
 **Harlow, J. M. (1848). Passage of an iron rod through the head.**  
 *Boston Medical and Surgical Journal, 39*(20), 389–393.  
-The original acute case report on Phineas Gage — short, vivid, and worth reading before any secondhand retelling, including this one.
+The original acute report of Gage’s injury.
 
 **Harlow, J. M. (1868). Recovery from the passage of an iron bar through the head.**  
 *Publications of the Massachusetts Medical Society, 2*(3), 327–347.  
-The follow-up report, written twenty years later, containing the personality-change description that became the basis of the modern Gage narrative. The contrast between the 1848 and 1868 accounts is itself instructive about how case studies accumulate interpretation over time.
+The later report containing the behavioral description that shaped the textbook narrative.
 
-**Sapolsky, R. M. (2004). *Why Zebras Don't Get Ulcers* (3rd ed.). Holt.**  
-A widely accessible, full-length treatment of the stress response and its evolutionary mismatch with modern chronic stressors, written by one of the field's most prominent researchers.
-
-**Nielsen, J. A., Zielinski, B. A., Ferguson, M. A., Lainhart, J. E., & Anderson, J. S. (2013). An evaluation of the left-brain vs. right-brain hypothesis with resting state functional connectivity magnetic resonance imaging.**  
-*PLOS ONE, 8*(8), e71275.  
-The direct empirical test of the left-brain/right-brain personality myth discussed in this chapter; the abstract and discussion are accessible without a neuroimaging background.
+**Sapolsky, R. M. (2004). *Why Zebras Don’t Get Ulcers* (3rd ed.). Holt.**  
+An accessible extended treatment of stress physiology, appraisal, and the costs of prolonged activation.
 
 ---
 
 ## References
 
-*Full citations for factual claims made in this chapter, for instructors or students who want to verify or go deeper. Distinct from Further Reading above, which is curated for student exploration rather than completeness.*
+*Full citations for factual claims made in this chapter. Further Reading above is curated for student exploration; this list supports verification.*
 
-Cryan, J. F., O'Riordan, K. J., Cowan, C. S. M., Sandhu, K. V., Bastiaanssen, T. F. S., Boehme, M., Codagnone, M. G., Cussotto, S., Fulling, C., Golubeva, A. V., Guzzetta, K. E., Jaggar, M., Long-Smith, C. M., Lyte, J. M., Martin, J. A., Molinero-Perez, A., Moloney, G., Morelli, E., Morillas, E., … Dinan, T. G. (2019). The microbiota-gut-brain axis. *Physiological Reviews, 99*(4), 1877–2013.
+Annese, J., Schenker-Ahmed, N. M., Bartsch, H., Maechler, P., Sheh, C., Thomas, N., Kayano, J., Ghatan, A., Bresler, N., Frosch, M. P., Klaming, R., & Corkin, S. (2014). Postmortem examination of patient H.M.’s brain based on histological sectioning and digital 3D reconstruction. *Nature Communications, 5*, 3122. https://doi.org/10.1038/ncomms4122
+
+Arendt, D., Denes, A. S., Jékely, G., & Tessmar-Raible, K. (2008). The evolution of nervous system centralization. *Philosophical Transactions of the Royal Society B: Biological Sciences, 363*(1496), 1523–1528. https://doi.org/10.1098/rstb.2007.2242
+
+Bartz, J. A., Zaki, J., Bolger, N., & Ochsner, K. N. (2011). Social effects of oxytocin in humans: Context and person matter. *Trends in Cognitive Sciences, 15*(7), 301–309. https://doi.org/10.1016/j.tics.2011.05.002
 
 Corkin, S. (2013). *Permanent present tense: The unforgettable life of the amnesic patient H.M.* Basic Books.
+
+Cryan, J. F., O’Riordan, K. J., Cowan, C. S. M., Sandhu, K. V., Bastiaanssen, T. F. S., Boehme, M., Codagnone, M. G., Cussotto, S., Fulling, C., Golubeva, A. V., Guzzetta, K. E., Jaggar, M., Long-Smith, C. M., Lyte, J. M., Martin, J. A., Molinero-Perez, A., Moloney, G., Morelli, E., Morillas, E., … Dinan, T. G. (2019). The microbiota–gut–brain axis. *Physiological Reviews, 99*(4), 1877–2013.
 
 Damasio, H., Grabowski, T., Frank, R., Galaburda, A. M., & Damasio, A. R. (1994). The return of Phineas Gage: Clues about the brain from the skull of a famous patient. *Science, 264*(5162), 1102–1105.
 
 Furness, J. B. (2006). *The enteric nervous system*. Blackwell Publishing.
 
-Gershman, S. J., Assad, J. A., Datta, S. R., Linderman, S. W., Sabatini, B. L., Uchida, N., & Wilbrecht, L. (2024). Explaining dopamine through prediction errors and beyond. *Nature Neuroscience*. https://doi.org/10.1038/s41593-024-01705-4
+Gershman, S. J., Assad, J. A., Datta, S. R., Linderman, S. W., Sabatini, B. L., Uchida, N., & Wilbrecht, L. (2024). Explaining dopamine through prediction errors and beyond. *Nature Neuroscience, 27*, 1645–1655. https://doi.org/10.1038/s41593-024-01705-4
 
 Harlow, J. M. (1848). Passage of an iron rod through the head. *Boston Medical and Surgical Journal, 39*(20), 389–393.
 
@@ -566,19 +533,19 @@ Harlow, J. M. (1868). Recovery from the passage of an iron bar through the head.
 
 Hodgkin, A. L., & Huxley, A. F. (1952). A quantitative description of membrane current and its application to conduction and excitation in nerve. *Journal of Physiology, 117*(4), 500–544.
 
-Kuzawa, C. W., Chugani, H. T., Grossman, L. I., Lipovich, L., Muzik, O., Hof, P. R., Wildman, D. E., Sherwood, C. C., Leonard, W. R., & Lange, N. (2014). Metabolic costs and evolutionary implications of human brain development. *Proceedings of the National Academy of Sciences, 111*(36), 13010–13015.
-
 LeDoux, J. (2012). Rethinking the emotional brain. *Neuron, 73*(4), 653–676.
 
-Moncrieff, J., Cooper, R. E., Stockmann, T., Amendola, S., Hengartner, M. P., & Horowitz, M. A. (2022). The serotonin theory of depression: A systematic umbrella review of the evidence. *Molecular Psychiatry, 28*, 3243–3256.
+Moncrieff, J., Cooper, R. E., Stockmann, T., Amendola, S., Hengartner, M. P., & Horowitz, M. A. (2023). The serotonin theory of depression: A systematic umbrella review of the evidence. *Molecular Psychiatry, 28*, 3243–3256. https://doi.org/10.1038/s41380-022-01661-0
 
 Nielsen, J. A., Zielinski, B. A., Ferguson, M. A., Lainhart, J. E., & Anderson, J. S. (2013). An evaluation of the left-brain vs. right-brain hypothesis with resting state functional connectivity magnetic resonance imaging. *PLOS ONE, 8*(8), e71275.
 
-Raichle, M. E., & Gusnard, D. A. (2002). Appraising the brain's energy budget. *Proceedings of the National Academy of Sciences, 99*(16), 10237–10239.
+Polimeni, J. R., & Lewis, L. D. (2021). Imaging faster neural dynamics with fast fMRI: A need for updated models of the hemodynamic response. *Progress in Neurobiology, 207*, 102174. https://doi.org/10.1016/j.pneurobio.2021.102174
 
-Sapolsky, R. M. (2004). *Why zebras don't get ulcers* (3rd ed.). Holt.
+Raichle, M. E., & Gusnard, D. A. (2002). Appraising the brain’s energy budget. *Proceedings of the National Academy of Sciences, 99*(16), 10237–10239.
 
-Sapolsky, R. M. (2011, February 15). *Dopamine jackpot! Sapolsky on the science of pleasure* [Pritzker Lecture]. California Academy of Sciences, San Francisco, CA. https://www.youtube.com/watch?v=axrywDP9Ii0
+Sapolsky, R. M. (2004). *Why zebras don’t get ulcers* (3rd ed.). Holt.
+
+Sapolsky, R. M. (2011, February 15). *Dopamine jackpot! Sapolsky on the science of pleasure* [Pritzker Lecture]. California Academy of Sciences.
 
 Schultz, W. (1998). Predictive reward signal of dopamine neurons. *Journal of Neurophysiology, 80*(1), 1–27.
 
@@ -587,3 +554,9 @@ Scoville, W. B., & Milner, B. (1957). Loss of recent memory after bilateral hipp
 Sperry, R. W. (1968). Hemisphere deconnection and unity in conscious awareness. *American Psychologist, 23*(10), 723–733.
 
 Taylor, S. E., Klein, L. C., Lewis, B. P., Gruenewald, T. L., Gurung, R. A. R., & Updegraff, J. A. (2000). Biobehavioral responses to stress in females: Tend-and-befriend, not fight-or-flight. *Psychological Review, 107*(3), 411–429.
+
+van den Pol, A. N. (2012). Neuropeptide transmission in brain circuits. *Neuron, 76*(1), 98–115. https://doi.org/10.1016/j.neuron.2012.09.014
+
+Van Horn, J. D., Irimia, A., Torgerson, C. M., Chambers, M. C., Kikinis, R., & Toga, A. W. (2012). Mapping connectivity damage in the case of Phineas Gage. *PLOS ONE, 7*(5), e37454. https://doi.org/10.1371/journal.pone.0037454
+
+Zaccaro, A., Piarulli, A., Laurino, M., Garbella, E., Menicucci, D., Neri, B., & Gemignani, A. (2018). How breath-control can change your life: A systematic review on psycho-physiological correlates of slow breathing. *Frontiers in Human Neuroscience, 12*, 353. https://doi.org/10.3389/fnhum.2018.00353
