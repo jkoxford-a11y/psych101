@@ -212,7 +212,7 @@ function convertCallouts(html) {
 
 function convertStructuredCallouts(html) {
   const wrap = (variant, title, body) => {
-    return `<div class="callout callout--${variant}"><div class="callout-title">${title}</div>${body.trim()}</div>`;
+    return `<div class="callout callout--${variant}" id="${slugify(title)}"><div class="callout-title">${title}</div>${body.trim()}</div>`;
   };
 
   html = html.replace(
@@ -228,7 +228,7 @@ function convertStructuredCallouts(html) {
     (_all, title, body) => wrap("do-not-confuse", title, body),
   );
   html = html.replace(
-    /<h4>(Classic Study:[\s\S]*?)<\/h4>([\s\S]*?)(?=<h4>|<div class="callout callout--stop-retrieve">|<h[23]|$)/g,
+    /<h4>(Classic Study:[\s\S]*?)<\/h4>([\s\S]*?)(?=<h4>|<div class="callout callout--stop-retrieve">|<div class="callout callout--do-not-confuse">|<h[23]|$)/g,
     (_all, title, body) => wrap("classic-study", title, body),
   );
   html = html.replace(
