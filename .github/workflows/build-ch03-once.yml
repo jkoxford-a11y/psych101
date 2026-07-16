@@ -163,9 +163,9 @@ jobs:
 
           hm_start = text.index('id="classic-study-henry-molaison-hm-and-medial-temporal-memory-systems"')
           split_start = text.index('id="do-not-confuse-hemispheric-specialization-vs-the-left-brainright-brain-personality-myth"')
-          hm_segment = text[hm_start:split_start]
-          if 'callout--do-not-confuse' in hm_segment or 'callout--think-about-it' in hm_segment:
-              raise SystemExit("H.M. Classic Study improperly contains later callouts")
+          hm_close = text.index('</div>', hm_start)
+          if hm_close > split_start:
+              raise SystemExit("H.M. Classic Study improperly contains the split-brain panel")
 
           ids = set(re.findall(r'\bid="([^"]+)"', text))
           internal_links = re.findall(r'href="#([^"]+)"', text)
