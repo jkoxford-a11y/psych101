@@ -166,3 +166,122 @@ Figure 7.5 has no required scientific revision from this inspection and is provi
 3. Produce a corrected Figure 7.8 candidate.
 4. Verify Figure 7.7’s plotted values and resolve the smallest corrections identified for Figures 7.1, 7.2, 7.3, and 7.9; revisit Figure 7.5 only if review identifies a specific defect.
 5. Only after all nine figures are approved: complete metadata, reconcile the visual inventory, synchronize source captions/alt text, regenerate Chapter 7 HTML, and validate the rendered page.
+
+## 6. Candidate revision and Figure 7.8 production addendum
+
+### Figure 7.6 revision
+
+- **Paths:** `docs/images/ch07/candidates/fig_bobo_doll_observational_learning_candidate.svg` and `docs/images/ch07/candidates/fig_bobo_doll_observational_learning_candidate.png`.
+- **Dimensions:** 2400 × 1350.
+- **Corrections made:** The consequence card now uses the same Rewarded → No consequence → Punished order as both test cards. “No response” was replaced by “No consequence follows.” Exact-length horizontal marks were removed from both tests. The initial test now uses labeled up/down icons for more imitation, more imitation, and less imitation; the incentive test uses labeled upward icons for increases, increases, and a substantial increase, followed by “Differences narrow.” The 1965 five-stage sequence and the original conclusion were preserved.
+- **Scientific rationale:** Word-and-icon categories communicate the learning–performance pattern without suggesting reconstructed effect sizes. The visual still distinguishes lower initial expression after model punishment from the later increase after every child receives a direct incentive.
+- **Known limitations:** The simplified figures are teaching symbols, not reconstructions of participants or apparatus. “More,” “less,” and “substantially” are deliberately qualitative and do not describe exact between-group effects.
+- **Direct inspection:** The SVG and PNG were opened directly. Condition order is consistent; text is spelled correctly and unclipped; arrows and icons are distinguishable without color; there are no bars, axes, ticks, numerical findings, external assets, figure number, watermark, or branding.
+- **Status:** **candidate awaiting Jon/ChatGPT approval**.
+
+#### Revised Figure 7.6 exact embedded text
+
+Text appears in SVG order; adjacent lines may form one visual label:
+
+```text
+Bandura (1965): Learning versus performance
+Observed consequences changed whether learned actions were expressed.
+1
+Same observation
+All children watch one model
+show the same aggressive actions.
+One shared demonstration
+2
+Observed consequence
+The model receives one outcome.
+Rewarded
+Model praised
+No consequence
+No consequence
+follows
+Punished
+Model scolded
+Three observation conditions
+3
+Initial test
+No direct incentive for the child
+Rewarded
+More imitation
+No consequence
+More imitation
+Punished
+Less imitation
+Punished-model group imitates less
+Rewarded and no-consequence groups
+are broadly similar.
+Qualitative categories — no effect sizes shown
+4
+Direct incentive
+Every child is offered
+an incentive to reproduce
+the observed actions.
+Same offer for all groups
+5
+Incentive test
+Imitation rises; differences narrow.
+Rewarded
+Imitation increases
+No consequence
+Imitation increases
+Punished
+Increases substantially
+Previously hidden learning
+becomes visible in performance.
+Differences narrow
+Observed consequences changed initial performance
+more clearly than acquisition.
+```
+
+### Figure 7.8 candidate
+
+- **Editable source:** `docs/images/ch07/candidates/fig_dopamine_uncertainty_task_candidate.svg`.
+- **Rendered candidate:** `docs/images/ch07/candidates/fig_dopamine_uncertainty_task_candidate.png`.
+- **Dimensions:** 2400 × 1350.
+- **Layout:** An original simplified monkey appears beside three parallel task timelines. Distinct circle, rounded-square, and diamond cues signal 0%, 50%, and 100% reward probability. Every row uses the same clock symbol and “Same delay” label. Outcomes are no reward, reward-or-no-reward, and reward. Dot clusters labeled Low, Strongest, and Lower than 50% show qualitative sustained delay-period activity without traces, axes, or firing-rate values.
+- **Scientific rationale:** The task-first structure makes clear that learned cues signal probability, while the delay duration and reward time are fixed. It isolates the sustained delay-period comparison and explicitly distinguishes it from the brief cue/outcome responses summarized in Figure 7.9 without claiming categorical independence from prediction-error computation or generalizing to dopamine everywhere.
+- **Known limitations:** The monkey, cues, clock, reward, and activity dots are teaching symbols rather than a reconstruction of the laboratory display, apparatus, or neural recordings. The three qualitative activity labels show only the required ordinal pattern, not measured magnitudes.
+- **Direct inspection:** The SVG and PNG were opened directly. The monkey, learned cues, 0%/50%/100% conditions, identical delay clocks, known reward time, possible outcomes, and strongest 50% sustained activity are all visible. Text and icon order are correct and unclipped. Meaning is redundant across shape, label, and color. No empirical-looking trace, numerical firing value, external asset, embedded Figure 7.8 number, watermark, or branding is present.
+- **Status:** **candidate awaiting Jon/ChatGPT approval**.
+
+#### Figure 7.8 exact embedded text
+
+```text
+Learned reward probability during a fixed delay
+A task-first schematic of one primate delayed-reward paradigm
+Experimental subject
+Monkey
+learns which cue
+signals each probability
+Reward time is known
+Learned cue
+Fixed delay
+Reward outcome
+Sustained activity
+0%
+Cue signals no reward
+Same delay
+No reward
+Low
+Qualitative level
+50%
+Cue signals possible reward
+Same delay
+or
+Reward may or may not occur
+Strongest
+100%
+Cue signals certain reward
+Same delay
+Reward occurs
+Lower than 50%
+Qualitative level
+Sustained activity during the delay was strongest near 50% reward probability.
+This sustained delay signal is distinct from the brief cue and outcome responses shown in Figure 7.9.
+```
+
+This new Figure 7.8 candidate supersedes the production recommendation to create a corrected candidate; it does not change the earlier assessment that the currently wired Figure 7.8 asset should be replaced. No promotion, approval, wiring, metadata completion, or HTML work occurred.
