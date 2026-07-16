@@ -6,6 +6,12 @@ const require = createRequire(import.meta.url);
 const { marked } = require("marked");
 
 const chapters = {
+  "3": {
+  source: "source/chapters/ch03-neuroscience-biological-bases.md",
+  output: "docs/chapters/03-neuroscience.html",
+  title: "Neuroscience & Biological Bases of Behavior",
+  pillar: "Biological",
+},
   "2": {
     source: "source/chapters/ch02-research-methods.md",
     output: "docs/chapters/02-research-methods.html",
