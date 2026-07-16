@@ -72,6 +72,23 @@ jobs:
 
           path.write_text(text, encoding="utf-8")
 
+      - name: Repair canonical Chapter 3 anchors
+        shell: python
+        run: |
+          from pathlib import Path
+
+          path = Path("source/chapters/ch03-neuroscience-biological-bases.md")
+          text = path.read_text(encoding="utf-8")
+          replacements = {
+              "#section-4-the-bodys-stress-response--fast-and-slow-coordination": "#section-4-the-bodys-stress-response-fast-and-slow-coordination",
+              "#section-1-how-neurons-talk--structure-and-the-action-potential": "#section-1-how-neurons-talk-structure-and-the-action-potential",
+          }
+          for old, new in replacements.items():
+              if old not in text:
+                  raise SystemExit(f"Expected stale anchor not found: {old}")
+              text = text.replace(old, new)
+          path.write_text(text, encoding="utf-8")
+
       - name: Install isolated converter dependency
         run: |
           npm init -y >/dev/null 2>&1
@@ -180,15 +197,15 @@ jobs:
       - name: Remove temporary npm files
         run: rm -rf node_modules package.json package-lock.json
 
-      - name: Commit converter and generated HTML
+      - name: Commit converter, source, and generated HTML
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add pipeline/build_chapter_html.mjs docs/chapters/03-neuroscience.html
+          git add pipeline/build_chapter_html.mjs source/chapters/ch03-neuroscience-biological-bases.md docs/chapters/03-neuroscience.html
           if git diff --cached --quiet; then
             echo "No generated changes to commit"
             exit 0
           fi
-          git commit -m "Fix Chapter 3 generated callout boundaries"
+          git commit -m "Fix Chapter 3 anchors and callout boundaries"
           git pull --rebase origin main
           git push origin HEAD:main
