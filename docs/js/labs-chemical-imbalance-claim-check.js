@@ -12,9 +12,9 @@
   };
 
   const predictionLabels = {
-    medication: 'Medication efficacy claims',
-    serotonin: 'Serotonin claims',
-    'brain-chemistry': 'General brain-chemistry claims'
+    proves: 'A helpful medication reveals the original cause.',
+    'does-not-prove': 'Treatment efficacy and original cause are different claims.',
+    unsure: 'Not sure yet.'
   };
 
   const claims = [
@@ -36,15 +36,15 @@
       topic: 'Serotonin',
       claim: 'Serotonin signaling can affect mood and behavior.',
       correct: 'supported',
-      feedback: '"Can affect" is defensible; "is the single cause" is not.',
-      tempting: 'A careful verb like "can affect" matters because it does not claim a complete explanation.'
+      feedback: '“Can affect” is defensible; “is the single cause” is not.',
+      tempting: 'A careful verb like “can affect” matters because it does not claim a complete explanation.'
     },
     {
       topic: 'Medication and cause',
       claim: 'If a medication helps, that proves the disorder was caused by whatever the medication changes.',
       correct: 'wrong-incomplete',
       feedback: 'A treatment effect does not automatically reveal the original cause.',
-      tempting: 'This feels logical because treatments change symptoms, but symptom change is not the same as cause discovery.'
+      tempting: 'This feels logical because treatments change symptoms, but symptom change is not cause discovery.'
     },
     {
       topic: 'Brain chemistry',
@@ -57,22 +57,22 @@
       topic: 'Chemical imbalance',
       claim: 'Chemical imbalance is a complete explanation for depression.',
       correct: 'overstated',
-      feedback: 'It hides circuits, development, cognition, stress, social context, and individual differences.',
-      tempting: 'The phrase is memorable, but memorable explanations can leave out important mechanisms.'
+      feedback: 'The phrase hides receptors, circuits, development, cognition, stress, social context, and individual differences.',
+      tempting: 'The phrase is memorable, but memorable explanations can leave out the mechanism.'
     },
     {
       topic: 'Medication context',
       claim: 'Medication effects depend on receptors, circuits, time course, prior state, and person-level differences.',
       correct: 'supported',
       feedback: 'This is the better Chapter 3 principle: chemistry acts in context.',
-      tempting: 'The list may sound complicated, but the complexity is part of the point.'
+      tempting: 'The list sounds less tidy than one missing chemical, but the complexity is part of the point.'
     },
     {
       topic: 'SSRI time course',
       claim: 'SSRIs work by immediately making people happy.',
       correct: 'wrong-incomplete',
-      feedback: 'Acute synaptic effects and clinical improvement over time are not the same thing.',
-      tempting: 'The word "immediately" is the problem because treatment effects unfold across different time scales.'
+      feedback: 'Acute transporter effects and clinical improvement over time are not the same thing.',
+      tempting: 'The immediate synaptic action is easy to confuse with the slower clinical response.'
     },
     {
       topic: 'Serotonin and explanation',
@@ -83,10 +83,10 @@
     },
     {
       topic: 'Better explanations',
-      claim: 'A better explanation usually asks what circuit, receptor system, body state, and environment are involved.',
+      claim: 'A stronger explanation asks what receptor, circuit, body state, development, and environment are involved.',
       correct: 'supported',
-      feedback: 'This is the reasoning habit the lab is trying to build.',
-      tempting: 'This wording is broad, but it is broad in the careful direction: it asks for mechanisms and context.'
+      feedback: 'This is the reasoning habit the lab is designed to build.',
+      tempting: 'The claim is broad, but it is broad in the careful direction: it asks what evidence and mechanism are missing.'
     }
   ];
 
@@ -94,6 +94,7 @@
     prediction: '',
     currentIndex: 0,
     responses: [],
+    explanationResponse: '',
     transferResponse: ''
   };
 
@@ -111,6 +112,7 @@
     elements.predictionForm = document.getElementById('prediction-form');
     elements.commitPrediction = document.getElementById('commit-prediction');
     elements.predictionStatus = document.getElementById('prediction-status');
+
     elements.claimPanel = document.getElementById('claim-panel');
     elements.itemCounter = document.getElementById('item-counter');
     elements.progressStatus = document.getElementById('progress-status');
@@ -123,10 +125,18 @@
     elements.feedbackText = document.getElementById('feedback-text');
     elements.temptingText = document.getElementById('tempting-text');
     elements.nextItem = document.getElementById('next-item');
+
+    elements.conceptPanel = document.getElementById('concept-panel');
+    elements.explainPanel = document.getElementById('explain-panel');
+    elements.explainResponse = document.getElementById('explain-response');
+    elements.saveExplanation = document.getElementById('save-explanation');
+    elements.explainStatus = document.getElementById('explain-status');
+
     elements.summaryPanel = document.getElementById('summary-panel');
-    elements.summaryHeading = document.getElementById('summary-heading');
-    elements.summaryScore = document.getElementById('summary-score');
+    elements.completionSummary = document.getElementById('completion-summary');
     elements.summaryTableBody = document.getElementById('summary-table-body');
+
+    elements.transferPanel = document.getElementById('transfer-panel');
     elements.transferResponse = document.getElementById('transfer-response');
     elements.saveTransfer = document.getElementById('save-transfer');
     elements.restartLab = document.getElementById('restart-lab');
@@ -137,6 +147,7 @@
     elements.commitPrediction.addEventListener('click', commitPrediction);
     elements.checkAnswer.addEventListener('click', checkAnswer);
     elements.nextItem.addEventListener('click', goToNextItem);
+    elements.saveExplanation.addEventListener('click', saveExplanationResponse);
     elements.saveTransfer.addEventListener('click', saveTransferResponse);
     elements.restartLab.addEventListener('click', restartLab);
   }
@@ -144,34 +155,51 @@
   function renderAll() {
     renderPrediction();
 
-    if (!state.prediction) {
-      elements.claimPanel.hidden = true;
-      elements.summaryPanel.hidden = true;
+    const hasPrediction = Boolean(state.prediction);
+    const claimsComplete = hasPrediction && allClaimsAnswered();
+    const explanationComplete = Boolean(state.explanationResponse.trim());
+
+    elements.claimPanel.hidden = !hasPrediction || claimsComplete;
+    elements.conceptPanel.hidden = !claimsComplete;
+    elements.explainPanel.hidden = !claimsComplete;
+    elements.summaryPanel.hidden = !claimsComplete || !explanationComplete;
+    elements.transferPanel.hidden = !claimsComplete || !explanationComplete;
+
+    if (!hasPrediction) {
       return;
     }
 
-    if (allClaimsAnswered()) {
-      showSummary();
-    } else {
-      elements.claimPanel.hidden = false;
-      elements.summaryPanel.hidden = true;
+    if (!claimsComplete) {
       renderCurrentClaim();
+      return;
+    }
+
+    elements.explainResponse.value = state.explanationResponse;
+    elements.explainStatus.textContent = explanationComplete
+      ? 'Explanation saved in this browser session.'
+      : '';
+
+    if (explanationComplete) {
+      renderSummary();
+      elements.transferResponse.value = state.transferResponse;
     }
   }
 
   function renderPrediction() {
-    setCheckedValue(elements.predictionForm, 'hardestClaim', state.prediction);
+    setCheckedValue(elements.predictionForm, 'prediction', state.prediction);
     setPredictionControlsDisabled(Boolean(state.prediction));
     elements.commitPrediction.disabled = Boolean(state.prediction);
-    elements.predictionStatus.textContent = state.prediction ? `Prediction committed: ${predictionLabels[state.prediction]}.` : '';
+    elements.predictionStatus.textContent = state.prediction
+      ? `Prediction committed: ${predictionLabels[state.prediction]}`
+      : '';
   }
 
   function commitPrediction() {
-    const prediction = getCheckedValue(elements.predictionForm, 'hardestClaim');
+    const prediction = getCheckedValue(elements.predictionForm, 'prediction');
 
     if (!prediction) {
       elements.predictionStatus.textContent = 'Choose one prediction before continuing.';
-      focusFirstInput(elements.predictionForm, 'hardestClaim');
+      focusFirstInput(elements.predictionForm, 'prediction');
       return;
     }
 
@@ -216,6 +244,7 @@
       choice,
       correct: choice === claim.correct
     };
+
     saveState();
     renderCurrentClaim();
     elements.feedbackPanel.focus();
@@ -233,7 +262,9 @@
     elements.progressStatus.textContent = 'Feedback available.';
     elements.checkAnswer.disabled = true;
     setClassificationControlsDisabled(true);
-    elements.nextItem.textContent = state.currentIndex === claims.length - 1 ? 'Show summary' : 'Next claim';
+    elements.nextItem.textContent = state.currentIndex === claims.length - 1
+      ? 'Show concept explanation'
+      : 'Next claim';
   }
 
   function buildFeedbackText(claim, response) {
@@ -248,27 +279,50 @@
   }
 
   function goToNextItem() {
-    if (state.currentIndex >= claims.length - 1) {
-      showSummary();
-      saveState();
+    if (!state.responses[state.currentIndex]) {
+      elements.progressStatus.textContent = 'Check your classification before continuing.';
       return;
     }
 
-    state.currentIndex += 1;
+    if (state.currentIndex < claims.length - 1) {
+      state.currentIndex += 1;
+      saveState();
+      renderAll();
+      focusSectionHeading('claim-heading');
+      scrollToTop();
+      return;
+    }
+
     saveState();
-    renderCurrentClaim();
-    focusSectionHeading('claim-heading');
-    scrollToTop();
+    renderAll();
+    focusSectionHeading('concept-heading');
+    elements.conceptPanel.scrollIntoView({ behavior: getScrollBehavior(), block: 'start' });
   }
 
-  function showSummary() {
+  function saveExplanationResponse() {
+    const response = elements.explainResponse.value.trim();
+
+    if (!response) {
+      elements.explainStatus.textContent = 'Write an explanation before continuing.';
+      elements.explainResponse.focus();
+      return;
+    }
+
+    state.explanationResponse = response;
+    saveState();
+    renderAll();
+    focusSectionHeading('summary-heading');
+    elements.summaryPanel.scrollIntoView({ behavior: getScrollBehavior(), block: 'start' });
+  }
+
+  function renderSummary() {
     const correctCount = state.responses.filter(function (response) {
       return response && response.correct;
     }).length;
 
-    elements.claimPanel.hidden = true;
-    elements.summaryPanel.hidden = false;
-    elements.summaryScore.textContent = `You classified ${correctCount} of ${claims.length} claims correctly. No grade is stored or sent anywhere.`;
+    elements.completionSummary.textContent =
+      `You classified ${correctCount} of ${claims.length} claims correctly. The conceptual result is more important than the score: changing a chemical system can change symptoms without proving that a pre-existing deficiency in that system caused the disorder. No grade or response is sent anywhere.`;
+
     elements.summaryTableBody.innerHTML = '';
 
     claims.forEach(function (claim, index) {
@@ -279,16 +333,14 @@
       row.appendChild(makeTableCell(classificationLabels[claim.correct]));
       elements.summaryTableBody.appendChild(row);
     });
-
-    elements.transferResponse.value = state.transferResponse || '';
-    focusSectionHeading('summary-heading');
-    elements.summaryPanel.scrollIntoView({ behavior: getScrollBehavior(), block: 'start' });
   }
 
   function saveTransferResponse() {
     state.transferResponse = elements.transferResponse.value.trim();
     saveState();
-    elements.transferStatus.textContent = state.transferResponse ? 'Transfer response saved in this browser session.' : 'Transfer response cleared.';
+    elements.transferStatus.textContent = state.transferResponse
+      ? 'Transfer response saved in this browser session.'
+      : 'Transfer response cleared.';
   }
 
   function restartLab() {
@@ -296,10 +348,17 @@
     state.prediction = '';
     state.currentIndex = 0;
     state.responses = [];
+    state.explanationResponse = '';
     state.transferResponse = '';
+
+    elements.predictionStatus.textContent = '';
+    elements.explainStatus.textContent = '';
     elements.transferStatus.textContent = '';
     elements.predictionForm.reset();
     elements.claimForm.reset();
+    elements.explainResponse.value = '';
+    elements.transferResponse.value = '';
+
     renderAll();
     focusSectionHeading('prediction-heading');
     scrollToTop();
@@ -309,7 +368,8 @@
     try {
       sessionStorage.setItem(STORAGE_KEY, JSON.stringify(state));
     } catch (error) {
-      elements.progressStatus.textContent = 'Progress is available on this page but could not be saved for refresh.';
+      const target = elements.progressStatus || elements.predictionStatus;
+      target.textContent = 'Progress is available on this page but could not be saved for refresh.';
     }
   }
 
@@ -320,7 +380,8 @@
       if (saved && Array.isArray(saved.responses)) {
         state.prediction = saved.prediction || '';
         state.currentIndex = Math.min(Number(saved.currentIndex) || 0, claims.length - 1);
-        state.responses = saved.responses;
+        state.responses = saved.responses.slice(0, claims.length);
+        state.explanationResponse = saved.explanationResponse || '';
         state.transferResponse = saved.transferResponse || '';
       }
     } catch (error) {
@@ -340,15 +401,18 @@
   }
 
   function setCheckedValue(form, name, value) {
-    const input = form.querySelector(`input[name="${name}"][value="${value}"]`);
+    if (!value) {
+      return;
+    }
 
+    const input = form.querySelector(`input[name="${name}"][value="${value}"]`);
     if (input) {
       input.checked = true;
     }
   }
 
   function setPredictionControlsDisabled(disabled) {
-    elements.predictionForm.querySelectorAll('input[name="hardestClaim"]').forEach(function (input) {
+    elements.predictionForm.querySelectorAll('input[name="prediction"]').forEach(function (input) {
       input.disabled = disabled;
     });
   }
@@ -361,7 +425,6 @@
 
   function focusFirstInput(form, name) {
     const input = form.querySelector(`input[name="${name}"]`);
-
     if (input) {
       input.focus();
     }
@@ -369,7 +432,6 @@
 
   function focusSectionHeading(id) {
     const heading = document.getElementById(id);
-
     if (heading) {
       heading.focus();
     }
@@ -380,11 +442,7 @@
   }
 
   function getScrollBehavior() {
-    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-      return 'auto';
-    }
-
-    return 'smooth';
+    return window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth';
   }
 
   function makeTableCell(text) {
