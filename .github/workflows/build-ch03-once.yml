@@ -22,26 +22,145 @@ jobs:
         with:
           node-version: "22"
 
-      - name: Add Chapter 3 to shared converter
+      - name: Improve shared converter for Chapter 3 structures
         shell: python
         run: |
           from pathlib import Path
 
           path = Path("pipeline/build_chapter_html.mjs")
           text = path.read_text(encoding="utf-8")
-          entry = '''  "3": {
+
+          old_entry = '''  "3": {
+          source: "source/chapters/ch03-neuroscience-biological-bases.md",
+          output: "docs/chapters/03-neuroscience.html",
+          title: "Neuroscience & Biological Bases of Behavior",
+          pillar: "Biological",
+          },
+          '''
+          new_entry = '''  "3": {
             source: "source/chapters/ch03-neuroscience-biological-bases.md",
             output: "docs/chapters/03-neuroscience.html",
             title: "Neuroscience & Biological Bases of Behavior",
             pillar: "Biological",
           },
           '''
-          if '  "3": {' not in text:
-              marker = "const chapters = {\n"
+          text = text.replace(old_entry, new_entry)
+
+          heading_anchor = r'''function addHeadingIds(html) {
+            return html.replace(/<h([23])>([\s\S]*?)<\/h\1>/g, (_all, level, label) => {
+              return `<h${level} id="${slugify(label)}">${label}</h${level}>`;
+            });
+          }
+          '''
+          if "function cleanFigureAlt" not in text:
+              addition = r'''
+          function cleanFigureAlt(value) {
+            return value.replace(/^Figure \d+\.\d+\s*[—-]\s*/, "").trim();
+          }
+          '''
+              if heading_anchor not in text:
+                  raise SystemExit("Could not find heading helper anchor")
+              text = text.replace(heading_anchor, heading_anchor + addition, 1)
+
+          if "const cleanAlt = cleanFigureAlt(alt);" not in text:
+              cap_line = '      const cap = caption.replace(/^(Figure \\d+\\.\\d+)\\.\\s*/, "<strong>$1.</strong> ");'
+              replacement = '      const cleanAlt = cleanFigureAlt(alt);\n' + cap_line
+              if text.count(cap_line) != 2:
+                  raise SystemExit("Expected two figure-caption conversion sites")
+              text = text.replace(cap_line, replacement)
+              text = text.replace('alt="${alt}"', 'alt="${cleanAlt}"')
+
+          if "function convertVideoBlocks" not in text:
+              marker = "\nfunction convertCallouts(html) {"
+              addition = r'''
+          function convertVideoBlocks(html) {
+            return html.replace(
+              /(<video[\s\S]*?<\/video>)\s*\*Video (\d+\.\d+)\. ([\s\S]*?)\*(?=\s*<)/g,
+              (_all, video, number, caption) => {
+                return `<figure class="chapter-video">\n${video}\n<figcaption><strong>Video ${number}.</strong> ${caption.trim()}</figcaption>\n</figure>`;
+              },
+            );
+          }
+          '''
               if marker not in text:
-                  raise SystemExit("Could not find chapters configuration marker")
-              text = text.replace(marker, marker + entry, 1)
-              path.write_text(text, encoding="utf-8")
+                  raise SystemExit("Could not find callout conversion marker")
+              text = text.replace(marker, addition + marker, 1)
+
+          if '["A note on a popular myth", "misconception"]' not in text:
+              class_marker = "  const classes = [\n"
+              text = text.replace(
+                  class_marker,
+                  class_marker + '    ["A note on a popular myth", "misconception"],\n',
+                  1,
+              )
+
+          if "function convertStructuredCallouts" not in text:
+              marker = "\nfunction wrapSpecialSections(html) {"
+              addition = r'''
+          function convertStructuredCallouts(html) {
+            const wrap = (variant, title, body) => {
+              return `<div class="callout callout--${variant}"><div class="callout-title">${title}</div>${body.trim()}</div>`;
+            };
+
+            html = html.replace(
+              /<h4>(Do Not Confuse: Neurotransmitter vs\. Hormone)<\/h4>([\s\S]*?)(?=<figure class="chapter-figure expandable">)/,
+              (_all, title, body) => wrap("do-not-confuse", title, body),
+            );
+            html = html.replace(
+              /<h4>(Do Not Confuse: Chemical Influence vs\. Chemical Cause)<\/h4>([\s\S]*?)(?=<blockquote>)/,
+              (_all, title, body) => wrap("do-not-confuse", title, body),
+            );
+            html = html.replace(
+              /<h4>(Do Not Confuse: Hemispheric Specialization[\s\S]*?Personality[^<]*?)<\/h4>([\s\S]*?)(?=<p>Calling the amygdala)/,
+              (_all, title, body) => wrap("do-not-confuse", title, body),
+            );
+            html = html.replace(
+              /<h4>(Classic Study:[\s\S]*?)<\/h4>([\s\S]*?)(?=<h4>|<div class="callout callout--stop-retrieve">|<h[23]|$)/g,
+              (_all, title, body) => wrap("classic-study", title, body),
+            );
+            html = html.replace(
+              '<div class="callout callout--misconception">',
+              '<div class="callout callout--misconception" id="misconception-opener">',
+            );
+            return html;
+          }
+          '''
+              if marker not in text:
+                  raise SystemExit("Could not find special-section marker")
+              text = text.replace(marker, addition + marker, 1)
+
+          old_objectives = r'''    (_all, heading, content) => `${heading}<div class="callout callout--objectives"><div class="callout-title">By the end of this chapter, you should be able to:</div>${content}</div>`,
+          '''
+          new_objectives = r'''    (_all, heading, content) => {
+              const cleaned = content.replace(/^\s*<p>By the end of this chapter, you should be able to:<\/p>\s*/, "");
+              return `${heading}<div class="callout callout--objectives"><div class="callout-title">By the end of this chapter, you should be able to:</div>${cleaned}</div>`;
+            },
+          '''
+          if old_objectives in text:
+              text = text.replace(old_objectives, new_objectives, 1)
+
+          if "body = convertVideoBlocks(body);" not in text:
+              text = text.replace(
+                  "  body = convertFigures(body);\n",
+                  "  body = convertFigures(body);\n  body = convertVideoBlocks(body);\n",
+                  1,
+              )
+          if "body = convertStructuredCallouts(body);" not in text:
+              text = text.replace(
+                  "  body = convertCallouts(body);\n",
+                  "  body = convertCallouts(body);\n  body = convertStructuredCallouts(body);\n",
+                  1,
+              )
+
+          if 'const activeId = number.padStart(2, "0");' not in text:
+              text = text.replace(
+                  '  const pillarEscaped = config.pillar.replace(/&/g, "&amp;");\n',
+                  '  const pillarEscaped = config.pillar.replace(/&/g, "&amp;");\n  const activeId = number.padStart(2, "0");\n',
+                  1,
+              )
+          text = text.replace('data-active="${number}"', 'data-active="${activeId}"')
+
+          path.write_text(text, encoding="utf-8")
 
       - name: Install isolated converter dependency
         run: |
@@ -71,6 +190,9 @@ jobs:
               "Chemical Imbalance Claim-Check",
               "figure-expand.js",
               '<dl class="key-terms">',
+              '<figure class="chapter-video">',
+              '<div class="callout callout--misconception" id="misconception-opener">',
+              'data-active="03"',
           ]
           for item in required:
               if item not in text:
@@ -85,6 +207,11 @@ jobs:
               "â€”",
               "â€™",
               "Â",
+              '*Video 3.1.',
+              'alt="Figure 3.',
+              '<h4>Do Not Confuse:',
+              '<h4>Classic Study:',
+              '<p>By the end of this chapter, you should be able to:</p>',
           ]
           lowered = text.lower()
           for item in forbidden:
@@ -99,6 +226,11 @@ jobs:
           if len(images) != 10 or any(not alt.strip() for alt in images):
               raise SystemExit(f"Expected 10 figures with non-empty alt text; found {len(images)}")
 
+          if text.count('callout--do-not-confuse') != 3:
+              raise SystemExit("Expected three Do Not Confuse callouts")
+          if text.count('callout--classic-study') != 2:
+              raise SystemExit("Expected two Classic Study callouts")
+
           questions = re.findall(r'<div class="review-q">', text)
           if len(questions) != 12:
               raise SystemExit(f"Expected 12 review questions, found {len(questions)}")
@@ -107,12 +239,13 @@ jobs:
           if not (20 <= len(terms) <= 24):
               raise SystemExit(f"Expected 20–24 key terms, found {len(terms)}")
 
-          if "../labs/ch03/action-potential-threshold.html" not in text:
-              raise SystemExit("Action-potential lab link was not normalized")
-          if "../labs/ch03/chemical-imbalance-claim-check.html" not in text:
-              raise SystemExit("Chemical-imbalance lab link was not normalized")
-          if "../labs/ch03/dopamine-prediction-error.html" not in text:
-              raise SystemExit("Dopamine lab link was not normalized")
+          for lab in [
+              "../labs/ch03/action-potential-threshold.html",
+              "../labs/ch03/chemical-imbalance-claim-check.html",
+              "../labs/ch03/dopamine-prediction-error.html",
+          ]:
+              if lab not in text:
+                  raise SystemExit(f"Lab link was not normalized: {lab}")
 
           order = [
               text.index('id="chapter-summary"'),
@@ -130,7 +263,7 @@ jobs:
       - name: Remove temporary npm files
         run: rm -rf node_modules package.json package-lock.json
 
-      - name: Commit generated source and HTML
+      - name: Commit converter and generated HTML
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -139,6 +272,6 @@ jobs:
             echo "No generated changes to commit"
             exit 0
           fi
-          git commit -m "Regenerate Chapter 3 HTML"
+          git commit -m "Repair Chapter 3 generated structure"
           git pull --rebase origin main
           git push origin HEAD:main
