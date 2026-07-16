@@ -1,4 +1,4 @@
-name: Capture Chapter 3 browser results
+name: Locate Chapter 3 overflow sources
 
 on:
   push:
@@ -9,7 +9,7 @@ permissions:
   contents: write
 
 jobs:
-  capture:
+  inspect:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -18,104 +18,99 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: "22"
-
       - name: Install browser
         run: |
           npm init -y >/dev/null 2>&1
           npm install --no-save playwright@1.52.0 >/dev/null 2>&1
           npx playwright install --with-deps chromium >/dev/null 2>&1
-
-      - name: Capture all viewport checks
-        continue-on-error: true
+      - name: Inspect overflow
         run: |
           python3 -m http.server 8000 --directory docs >/tmp/ch03-server.log 2>&1 &
-          cat > ch03-browser-capture.mjs <<'JS'
+          cat > ch03-overflow-inspect.mjs <<'JS'
           import fs from 'node:fs';
           import { chromium } from 'playwright';
-          const viewports = [
-            { name: 'desktop', width: 1440, height: 900 },
-            { name: 'portrait-mobile', width: 390, height: 844 },
-            { name: 'landscape-mobile', width: 844, height: 390 },
-          ];
-          const results = [];
-          const browser = await chromium.launch({ headless: true });
-          for (const viewport of viewports) {
-            const page = await browser.newPage({ viewport });
-            const consoleErrors = [];
-            const pageErrors = [];
-            const failedResponses = [];
-            page.on('console', msg => { if (msg.type() === 'error') consoleErrors.push(msg.text()); });
-            page.on('pageerror', err => pageErrors.push(String(err)));
-            page.on('response', response => {
-              if (response.status() >= 400 && response.url().startsWith('http://127.0.0.1:8000/')) failedResponses.push(`${response.status()} ${response.url()}`);
-            });
-            await page.goto('http://127.0.0.1:8000/chapters/03-neuroscience.html', { waitUntil: 'networkidle' });
-            await page.waitForTimeout(500);
-            const structural = await page.evaluate(async () => {
-              const images = [...document.querySelectorAll('.chapter-figure img')];
-              const labs = [...document.querySelectorAll('a[href*="../labs/ch03/"]')];
-              const labLinks = await Promise.all(labs.map(async link => {
-                const response = await fetch(link.href);
-                return { href: link.getAttribute('href'), status: response.status };
-              }));
-              const videoSource = document.querySelector('.chapter-video video source')?.getAttribute('src') || '';
-              let videoStatus = null;
-              if (videoSource) videoStatus = (await fetch(new URL(videoSource, document.baseURI))).status;
-              return {
-                documentOverflow: document.documentElement.scrollWidth - window.innerWidth,
-                bodyOverflow: document.body.scrollWidth - window.innerWidth,
-                activeSidebar: Boolean(document.querySelector('.sidebar a.active')),
-                activeSidebarText: document.querySelector('.sidebar a.active')?.textContent?.trim() || null,
-                figureCount: document.querySelectorAll('.chapter-figure.expandable').length,
-                imageCount: images.length,
-                brokenImages: images.filter(img => !img.complete || img.naturalWidth === 0).map(img => img.getAttribute('src')),
-                labLinks,
-                videoCount: document.querySelectorAll('.chapter-video video').length,
-                videoStatus,
-                detailsCount: document.querySelectorAll('.review-q details').length,
-              };
-            });
-            let expanded = null;
-            let collapsed = null;
-            try {
-              const toggle = page.locator('.chapter-figure.expandable .figure-expand-toggle').first();
-              await toggle.click();
-              expanded = await page.locator('.chapter-figure.expandable').first().evaluate(el => ({classExpanded: el.classList.contains('is-expanded'), ariaExpanded: el.querySelector('.figure-expand-toggle')?.getAttribute('aria-expanded')}));
-              await toggle.click();
-              collapsed = await page.locator('.chapter-figure.expandable').first().evaluate(el => ({classExpanded: el.classList.contains('is-expanded'), ariaExpanded: el.querySelector('.figure-expand-toggle')?.getAttribute('aria-expanded')}));
-            } catch (error) {
-              pageErrors.push(`toggle check: ${String(error)}`);
+
+          function selector(el) {
+            if (el.id) return `#${el.id}`;
+            const parts = [];
+            let node = el;
+            while (node && node.nodeType === 1 && parts.length < 5) {
+              let part = node.tagName.toLowerCase();
+              if (node.classList.length) part += '.' + [...node.classList].slice(0, 3).join('.');
+              if (node.parentElement) {
+                const siblings = [...node.parentElement.children].filter(x => x.tagName === node.tagName);
+                if (siblings.length > 1) part += `:nth-of-type(${siblings.indexOf(node) + 1})`;
+              }
+              parts.unshift(part);
+              node = node.parentElement;
             }
-            const assertions = {
-              documentOverflow: structural.documentOverflow <= 2,
-              bodyOverflow: structural.bodyOverflow <= 2,
-              activeSidebar: structural.activeSidebar,
-              figures: structural.figureCount === 10,
-              images: structural.imageCount === 10 && structural.brokenImages.length === 0,
-              labs: structural.labLinks.length === 3 && structural.labLinks.every(item => item.status === 200),
-              video: structural.videoCount === 1 && structural.videoStatus === 200,
-              details: structural.detailsCount === 12,
-              expand: expanded?.classExpanded === true && expanded?.ariaExpanded === 'true',
-              collapse: collapsed?.classExpanded === false && collapsed?.ariaExpanded === 'false',
-              console: consoleErrors.length === 0,
-              pageErrors: pageErrors.length === 0,
-              responses: failedResponses.length === 0,
-            };
-            results.push({viewport, structural, expanded, collapsed, assertions, consoleErrors, pageErrors, failedResponses, passed: Object.values(assertions).every(Boolean)});
+            return parts.join(' > ');
+          }
+
+          const browser = await chromium.launch({ headless: true });
+          const outputs = [];
+          for (const viewport of [
+            {name:'desktop',width:1440,height:900},
+            {name:'portrait-mobile',width:390,height:844},
+            {name:'landscape-mobile',width:844,height:390},
+          ]) {
+            const page = await browser.newPage({viewport});
+            await page.goto('http://127.0.0.1:8000/chapters/03-neuroscience.html', {waitUntil:'networkidle'});
+            await page.waitForTimeout(300);
+            const data = await page.evaluate((viewport) => {
+              function selector(el) {
+                if (el.id) return `#${el.id}`;
+                const parts=[]; let node=el;
+                while(node && node.nodeType===1 && parts.length<5){
+                  let part=node.tagName.toLowerCase();
+                  if(node.classList.length) part+='.'+[...node.classList].slice(0,3).join('.');
+                  if(node.parentElement){const sib=[...node.parentElement.children].filter(x=>x.tagName===node.tagName); if(sib.length>1) part+=`:nth-of-type(${sib.indexOf(node)+1})`;}
+                  parts.unshift(part); node=node.parentElement;
+                }
+                return parts.join(' > ');
+              }
+              const offenders=[];
+              for(const el of document.querySelectorAll('body *')){
+                const rect=el.getBoundingClientRect();
+                const cs=getComputedStyle(el);
+                const rightOverflow=Math.max(0, rect.right-window.innerWidth);
+                const ownOverflow=Math.max(0, el.scrollWidth-el.clientWidth);
+                if(rightOverflow>2 || ownOverflow>2){
+                  offenders.push({
+                    selector:selector(el), tag:el.tagName, classes:el.className,
+                    text:(el.textContent||'').trim().slice(0,140),
+                    rect:{left:Math.round(rect.left),right:Math.round(rect.right),width:Math.round(rect.width)},
+                    clientWidth:el.clientWidth, scrollWidth:el.scrollWidth,
+                    rightOverflow:Math.round(rightOverflow), ownOverflow,
+                    display:cs.display, position:cs.position, width:cs.width, minWidth:cs.minWidth,
+                    maxWidth:cs.maxWidth, whiteSpace:cs.whiteSpace, overflowX:cs.overflowX,
+                  });
+                }
+              }
+              offenders.sort((a,b)=>Math.max(b.rightOverflow,b.ownOverflow)-Math.max(a.rightOverflow,a.ownOverflow));
+              return {
+                viewport,
+                document:{scrollWidth:document.documentElement.scrollWidth,clientWidth:document.documentElement.clientWidth},
+                body:{scrollWidth:document.body.scrollWidth,clientWidth:document.body.clientWidth},
+                layout:document.querySelector('.layout')?.getBoundingClientRect().toJSON(),
+                main:document.querySelector('.main')?.getBoundingClientRect().toJSON(),
+                sidebar:document.querySelector('.sidebar')?.getBoundingClientRect().toJSON(),
+                offenders:offenders.slice(0,30),
+              };
+            }, viewport);
+            outputs.push(data);
             await page.close();
           }
           await browser.close();
-          fs.writeFileSync('pipeline/audits/_tmp_ch03_browser_results.json', JSON.stringify(results, null, 2));
+          fs.writeFileSync('pipeline/audits/_tmp_ch03_overflow_sources.json', JSON.stringify(outputs,null,2));
           JS
-          node ch03-browser-capture.mjs
-
-      - name: Commit result object
-        if: always()
+          node ch03-overflow-inspect.mjs
+      - name: Commit overflow diagnostic
         run: |
-          rm -rf node_modules package.json package-lock.json ch03-browser-capture.mjs
+          rm -rf node_modules package.json package-lock.json ch03-overflow-inspect.mjs
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add pipeline/audits/_tmp_ch03_browser_results.json
-          git commit -m "Capture Chapter 3 browser results"
+          git add pipeline/audits/_tmp_ch03_overflow_sources.json
+          git commit -m "Locate Chapter 3 overflow sources"
           git pull --rebase origin main
           git push origin HEAD:main
