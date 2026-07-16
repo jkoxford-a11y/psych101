@@ -137,6 +137,10 @@ function addHeadingIds(html) {
   });
 }
 
+function cleanFigureAlt(value) {
+  return value.replace(/^Figure \d+\.\d+\s*[—-]\s*/, "").trim();
+}
+
 function convertFigures(html) {
   html = html.replace(
     /<p><img src="([^"]+)" alt="([^"]*)"\s*><\/p>\s*<p><em>(Figure [\s\S]*?)<\/em><\/p>/g,
@@ -145,8 +149,9 @@ function convertFigures(html) {
         .replace(/^\.\.\/\.\.\/docs\/images\//, "../images/")
         .replace(/^\.\.\/images\//, "../images/")
         .replace(/^\.\.\/\.\.\/images\//, "../images/");
+      const cleanAlt = cleanFigureAlt(alt);
       const cap = caption.replace(/^(Figure \d+\.\d+)\.\s*/, "<strong>$1.</strong> ");
-      return `<figure class="chapter-figure expandable"><a class="figure-expand-toggle" href="${normalized}" aria-label="Expand figure"><img src="${normalized}" alt="${alt}" /></a><figcaption>${cap}</figcaption></figure>`;
+      return `<figure class="chapter-figure expandable"><a class="figure-expand-toggle" href="${normalized}" aria-label="Expand figure"><img src="${normalized}" alt="${cleanAlt}" /></a><figcaption>${cap}</figcaption></figure>`;
     },
   );
   return html.replace(
@@ -156,14 +161,25 @@ function convertFigures(html) {
         .replace(/^\.\.\/\.\.\/docs\/images\//, "../images/")
         .replace(/^\.\.\/images\//, "../images/")
         .replace(/^\.\.\/\.\.\/images\//, "../images/");
+      const cleanAlt = cleanFigureAlt(alt);
       const cap = caption.replace(/^(Figure \d+\.\d+)\.\s*/, "<strong>$1.</strong> ");
-      return `<figure class="chapter-figure expandable"><a class="figure-expand-toggle" href="${normalized}" aria-label="Expand figure"><img src="${normalized}" alt="${alt}" /></a><figcaption>${cap}</figcaption></figure>`;
+      return `<figure class="chapter-figure expandable"><a class="figure-expand-toggle" href="${normalized}" aria-label="Expand figure"><img src="${normalized}" alt="${cleanAlt}" /></a><figcaption>${cap}</figcaption></figure>`;
+    },
+  );
+}
+
+function convertVideoBlocks(html) {
+  return html.replace(
+    /(<video[\s\S]*?<\/video>)\s*\*Video (\d+\.\d+)\. ([\s\S]*?)\*(?=\s*<)/g,
+    (_all, video, number, caption) => {
+      return `<figure class="chapter-video">\n${video}\n<figcaption><strong>Video ${number}.</strong> ${caption.trim()}</figcaption>\n</figure>`;
     },
   );
 }
 
 function convertCallouts(html) {
   const classes = [
+    ["A note on a popular myth", "misconception"],
     ["Stop and Retrieve", "stop-retrieve"],
     ["Stop and Predict", "stop-retrieve"],
     ["Think About It", "think-about-it"],
@@ -194,6 +210,34 @@ function convertCallouts(html) {
   );
 }
 
+function convertStructuredCallouts(html) {
+  const wrap = (variant, title, body) => {
+    return `<div class="callout callout--${variant}"><div class="callout-title">${title}</div>${body.trim()}</div>`;
+  };
+
+  html = html.replace(
+    /<h4>(Do Not Confuse: Neurotransmitter vs\. Hormone)<\/h4>([\s\S]*?)(?=<figure class="chapter-figure expandable">)/,
+    (_all, title, body) => wrap("do-not-confuse", title, body),
+  );
+  html = html.replace(
+    /<h4>(Do Not Confuse: Chemical Influence vs\. Chemical Cause)<\/h4>([\s\S]*?)(?=<blockquote>)/,
+    (_all, title, body) => wrap("do-not-confuse", title, body),
+  );
+  html = html.replace(
+    /<h4>(Do Not Confuse: Hemispheric Specialization[\s\S]*?Personality[^<]*?)<\/h4>([\s\S]*?)(?=<p>Calling the amygdala)/,
+    (_all, title, body) => wrap("do-not-confuse", title, body),
+  );
+  html = html.replace(
+    /<h4>(Classic Study:[\s\S]*?)<\/h4>([\s\S]*?)(?=<h4>|<div class="callout callout--stop-retrieve">|<h[23]|$)/g,
+    (_all, title, body) => wrap("classic-study", title, body),
+  );
+  html = html.replace(
+    '<div class="callout callout--misconception">',
+    '<div class="callout callout--misconception" id="misconception-opener">',
+  );
+  return html;
+}
+
 function wrapSpecialSections(html) {
   html = html.replace(
     /<h2 id="misconception-opener[^\"]*">[\s\S]*?<\/h2>([\s\S]*?)(?=<h2 )/,
@@ -201,7 +245,10 @@ function wrapSpecialSections(html) {
   );
   html = html.replace(
     /(<h2 id="learning-objectives">Learning Objectives<\/h2>)([\s\S]*?)(?=<h2 )/,
-    (_all, heading, content) => `${heading}<div class="callout callout--objectives"><div class="callout-title">By the end of this chapter, you should be able to:</div>${content}</div>`,
+    (_all, heading, content) => {
+    const cleaned = content.replace(/^\s*<p>By the end of this chapter, you should be able to:<\/p>\s*/, "");
+    return `${heading}<div class="callout callout--objectives"><div class="callout-title">By the end of this chapter, you should be able to:</div>${cleaned}</div>`;
+  },
   );
   html = html.replace(
     /(<h2 id="where-this-fits">Where This Fits<\/h2>)\s*<p>/,
@@ -242,13 +289,16 @@ function build(number) {
   body = body.replace(/\.\.\/\.\.\/docs\/labs\//g, "../labs/");
   body = addHeadingIds(body);
   body = convertFigures(body);
+  body = convertVideoBlocks(body);
   body = convertCallouts(body);
+  body = convertStructuredCallouts(body);
   body = wrapSpecialSections(body);
   body = addSectionNav(body);
   body = wrapEndingSections(body);
 
   const titleEscaped = config.title.replace(/&/g, "&amp;");
   const pillarEscaped = config.pillar.replace(/&/g, "&amp;");
+  const activeId = number.padStart(2, "0");
   const page = `<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -260,7 +310,7 @@ function build(number) {
 <body>
 <div class="layout">
   <aside class="sidebar" id="app-sidebar"></aside>
-  <script src="../js/sidebar.js" data-dir="chapters" data-active="${number}" data-top="toc-only"></script>
+  <script src="../js/sidebar.js" data-dir="chapters" data-active="${activeId}" data-top="toc-only"></script>
   <main class="main">
     <p class="chapter-meta">Chapter ${number} · ${pillarEscaped}</p>
     <h1>${titleEscaped}</h1>
