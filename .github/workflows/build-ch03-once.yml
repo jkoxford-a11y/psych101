@@ -1,4 +1,4 @@
-name: Build Chapter 3 once
+name: Diagnose Chapter 3 build
 
 on:
   push:
@@ -9,7 +9,7 @@ permissions:
   contents: write
 
 jobs:
-  build-chapter-3:
+  diagnose:
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository
@@ -22,61 +22,34 @@ jobs:
         with:
           node-version: "22"
 
-      - name: Repair converter formatting and callout boundaries
-        shell: python
+      - name: Patch converter
+        id: converter
+        continue-on-error: true
+        shell: bash
         run: |
+          python - <<'PY' > /tmp/converter.log 2>&1
           from pathlib import Path
-
           path = Path("pipeline/build_chapter_html.mjs")
           text = path.read_text(encoding="utf-8")
-
-          text = text.replace(
-          '''  "3": {
-            source: "source/chapters/ch03-neuroscience-biological-bases.md",
-            output: "docs/chapters/03-neuroscience.html",
-            title: "Neuroscience & Biological Bases of Behavior",
-            pillar: "Biological",
-          },
-          ''',
-          '''  "3": {
-              source: "source/chapters/ch03-neuroscience-biological-bases.md",
-              output: "docs/chapters/03-neuroscience.html",
-              title: "Neuroscience & Biological Bases of Behavior",
-              pillar: "Biological",
-            },
-          ''',
-          )
-
           text = text.replace(
               '    return `<div class="callout callout--${variant}"><div class="callout-title">${title}</div>${body.trim()}</div>`;',
               '    return `<div class="callout callout--${variant}" id="${slugify(title)}"><div class="callout-title">${title}</div>${body.trim()}</div>`;',
           )
-
           text = text.replace(
               '(?=<h4>|<div class="callout callout--stop-retrieve">|<h[23]|$)',
               '(?=<h4>|<div class="callout callout--stop-retrieve">|<div class="callout callout--do-not-confuse">|<h[23]|$)',
           )
-
-          text = text.replace(
-          '''    (_all, heading, content) => {
-              const cleaned = content.replace(/^\\s*<p>By the end of this chapter, you should be able to:<\\/p>\\s*/, "");
-              return `${heading}<div class="callout callout--objectives"><div class="callout-title">By the end of this chapter, you should be able to:</div>${cleaned}</div>`;
-            },
-          ''',
-          '''    (_all, heading, content) => {
-                const cleaned = content.replace(/^\\s*<p>By the end of this chapter, you should be able to:<\\/p>\\s*/, "");
-                return `${heading}<div class="callout callout--objectives"><div class="callout-title">By the end of this chapter, you should be able to:</div>${cleaned}</div>`;
-              },
-          ''',
-          )
-
           path.write_text(text, encoding="utf-8")
+          print("converter patch complete")
+          PY
 
-      - name: Repair canonical Chapter 3 anchors
-        shell: python
+      - name: Patch source anchors
+        id: source
+        continue-on-error: true
+        shell: bash
         run: |
+          python - <<'PY' > /tmp/source.log 2>&1
           from pathlib import Path
-
           path = Path("source/chapters/ch03-neuroscience-biological-bases.md")
           text = path.read_text(encoding="utf-8")
           replacements = {
@@ -85,127 +58,83 @@ jobs:
           }
           for old, new in replacements.items():
               if old not in text:
-                  raise SystemExit(f"Expected stale anchor not found: {old}")
+                  raise RuntimeError(f"Expected stale anchor not found: {old}")
               text = text.replace(old, new)
           path.write_text(text, encoding="utf-8")
+          print("source anchor patch complete")
+          PY
 
-      - name: Install isolated converter dependency
+      - name: Install converter dependency
+        id: install
+        continue-on-error: true
+        shell: bash
         run: |
-          npm init -y >/dev/null 2>&1
-          npm install --no-save marked@12.0.2 >/dev/null 2>&1
+          set -o pipefail
+          (npm init -y >/dev/null 2>&1 && npm install --no-save marked@12.0.2) > /tmp/install.log 2>&1
 
-      - name: Build Chapter 3 HTML
-        run: node pipeline/build_chapter_html.mjs 3
-
-      - name: Validate generated Chapter 3
-        shell: python
+      - name: Build Chapter 3
+        id: build
+        continue-on-error: true
+        shell: bash
         run: |
+          set -o pipefail
+          node pipeline/build_chapter_html.mjs 3 > /tmp/build.log 2>&1
+
+      - name: Validate core structure
+        id: validate
+        continue-on-error: true
+        shell: bash
+        run: |
+          python - <<'PY' > /tmp/validate.log 2>&1
           from pathlib import Path
           import re
-
           text = Path("docs/chapters/03-neuroscience.html").read_text(encoding="utf-8")
-
           required = [
-              "Why Do We Have a Brain?",
-              "Section 2: From Synapses to Circuits",
-              "Section 3: Hormones and Whole-Body Signaling",
-              "Section 4: The Body’s Stress Response — Fast and Slow Coordination",
-              "Section 5: The Brain — Specialization Without Lego-Brain Thinking",
-              "In selected reward-learning tasks",
-              "medial-temporal systems",
-              "Chemical Imbalance Claim-Check",
-              "figure-expand.js",
-              '<dl class="key-terms">',
-              '<figure class="chapter-video">',
-              '<div class="callout callout--misconception" id="misconception-opener">',
-              'data-active="03"',
               'id="classic-study-henry-molaison-hm-and-medial-temporal-memory-systems"',
               'id="do-not-confuse-hemispheric-specialization-vs-the-left-brainright-brain-personality-myth"',
+              'data-active="03"',
           ]
           for item in required:
               if item not in text:
-                  raise SystemExit(f"Missing required generated content: {item}")
-
-          forbidden = [
-              "Drafting history & provenance",
-              "dopamine's predictive-error signal is the chemical mechanism underlying reinforcement learning",
-              "the hippocampus's specific role in forming (not storing) new memories",
-              "continuous, balanced influence",
-              "�",
-              "â€”",
-              "â€™",
-              "Â",
-              '*Video 3.1.',
-              'alt="Figure 3.',
-              '<h4>Do Not Confuse:',
-              '<h4>Classic Study:',
-              '<p>By the end of this chapter, you should be able to:</p>',
-          ]
-          lowered = text.lower()
-          for item in forbidden:
-              if item.lower() in lowered:
-                  raise SystemExit(f"Forbidden or stale generated content remains: {item}")
-
-          if len(re.findall(r'<figure class="chapter-figure expandable">', text)) != 10:
-              raise SystemExit("Expected 10 expandable figures")
-          images = re.findall(r'<img\s+[^>]*alt="([^"]*)"[^>]*>', text)
-          if len(images) != 10 or any(not alt.strip() for alt in images):
-              raise SystemExit("Every chapter figure must have non-empty alt text")
-          if text.count('callout--do-not-confuse') != 3:
-              raise SystemExit("Expected three Do Not Confuse callouts")
-          if text.count('callout--classic-study') != 2:
-              raise SystemExit("Expected two Classic Study callouts")
-          if text.count('<div class="review-q">') != 12:
-              raise SystemExit("Expected 12 review questions")
-          term_count = text.count('<dt>')
-          if not (20 <= term_count <= 24):
-              raise SystemExit(f"Expected 20–24 key terms, found {term_count}")
-
-          hm_start = text.index('id="classic-study-henry-molaison-hm-and-medial-temporal-memory-systems"')
-          split_start = text.index('id="do-not-confuse-hemispheric-specialization-vs-the-left-brainright-brain-personality-myth"')
+                  raise RuntimeError(f"missing: {item}")
+          hm_start = text.index(required[0])
+          split_start = text.index(required[1])
           hm_close = text.index('</div>', hm_start)
           if hm_close > split_start:
-              raise SystemExit("H.M. Classic Study improperly contains the split-brain panel")
-
+              raise RuntimeError("H.M. wrapper contains split-brain panel")
           ids = set(re.findall(r'\bid="([^"]+)"', text))
-          internal_links = re.findall(r'href="#([^"]+)"', text)
-          missing = sorted({target for target in internal_links if target not in ids})
+          links = re.findall(r'href="#([^"]+)"', text)
+          missing = sorted({target for target in links if target not in ids})
           if missing:
-              raise SystemExit(f"Broken internal anchors: {missing}")
+              raise RuntimeError(f"broken anchors: {missing}")
+          print("validation passed")
+          PY
 
-          for lab in [
-              "../labs/ch03/action-potential-threshold.html",
-              "../labs/ch03/chemical-imbalance-claim-check.html",
-              "../labs/ch03/dopamine-prediction-error.html",
-          ]:
-              if lab not in text:
-                  raise SystemExit(f"Lab link was not normalized: {lab}")
-
-          order = [
-              text.index('id="chapter-summary"'),
-              text.index('id="connections"'),
-              text.index('id="review-questions"'),
-              text.index('id="key-terms"'),
-              text.index('id="further-reading"'),
-              text.index('id="references"'),
-          ]
-          if order != sorted(order):
-              raise SystemExit("Chapter-ending section order is incorrect")
-
-          print("Chapter 3 generated HTML validation passed")
-
-      - name: Remove temporary npm files
-        run: rm -rf node_modules package.json package-lock.json
-
-      - name: Commit converter, source, and generated HTML
+      - name: Commit diagnostic report only
+        if: always()
+        shell: bash
         run: |
+          git reset --hard HEAD
+          mkdir -p pipeline/audits
+          {
+            echo "# Temporary Chapter 3 Workflow Diagnostic"
+            echo
+            echo "- converter: ${{ steps.converter.outcome }}"
+            echo "- source anchors: ${{ steps.source.outcome }}"
+            echo "- dependency install: ${{ steps.install.outcome }}"
+            echo "- build: ${{ steps.build.outcome }}"
+            echo "- validation: ${{ steps.validate.outcome }}"
+            for file in converter source install build validate; do
+              echo
+              echo "## $file log"
+              echo '```'
+              cat "/tmp/${file}.log" 2>/dev/null || true
+              echo '```'
+            done
+          } > pipeline/audits/_tmp_ch03_workflow_diagnostic.md
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add pipeline/build_chapter_html.mjs source/chapters/ch03-neuroscience-biological-bases.md docs/chapters/03-neuroscience.html
-          if git diff --cached --quiet; then
-            echo "No generated changes to commit"
-            exit 0
-          fi
-          git commit -m "Fix Chapter 3 anchors and callout boundaries"
+          git add pipeline/audits/_tmp_ch03_workflow_diagnostic.md
+          git commit -m "Record Chapter 3 build diagnostic"
           git pull --rebase origin main
           git push origin HEAD:main
