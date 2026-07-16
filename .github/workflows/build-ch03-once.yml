@@ -1,0 +1,144 @@
+name: Build Chapter 3 once
+
+on:
+  push:
+    paths:
+      - ".github/workflows/build-ch03-once.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  build-chapter-3:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Add Chapter 3 to shared converter
+        shell: python
+        run: |
+          from pathlib import Path
+
+          path = Path("pipeline/build_chapter_html.mjs")
+          text = path.read_text(encoding="utf-8")
+          entry = '''  "3": {
+            source: "source/chapters/ch03-neuroscience-biological-bases.md",
+            output: "docs/chapters/03-neuroscience.html",
+            title: "Neuroscience & Biological Bases of Behavior",
+            pillar: "Biological",
+          },
+          '''
+          if '  "3": {' not in text:
+              marker = "const chapters = {\n"
+              if marker not in text:
+                  raise SystemExit("Could not find chapters configuration marker")
+              text = text.replace(marker, marker + entry, 1)
+              path.write_text(text, encoding="utf-8")
+
+      - name: Install isolated converter dependency
+        run: |
+          npm init -y >/dev/null 2>&1
+          npm install --no-save marked@12.0.2 >/dev/null 2>&1
+
+      - name: Build Chapter 3 HTML
+        run: node pipeline/build_chapter_html.mjs 3
+
+      - name: Validate generated Chapter 3
+        shell: python
+        run: |
+          from pathlib import Path
+          import re
+
+          html_path = Path("docs/chapters/03-neuroscience.html")
+          text = html_path.read_text(encoding="utf-8")
+
+          required = [
+              "Why Do We Have a Brain?",
+              "Section 2: From Synapses to Circuits",
+              "Section 3: Hormones and Whole-Body Signaling",
+              "Section 4: The Body’s Stress Response — Fast and Slow Coordination",
+              "Section 5: The Brain — Specialization Without Lego-Brain Thinking",
+              "In selected reward-learning tasks",
+              "medial-temporal systems",
+              "Chemical Imbalance Claim-Check",
+              "figure-expand.js",
+              '<dl class="key-terms">',
+          ]
+          for item in required:
+              if item not in text:
+                  raise SystemExit(f"Missing required generated content: {item}")
+
+          forbidden = [
+              "Drafting history & provenance",
+              "dopamine's predictive-error signal is the chemical mechanism underlying reinforcement learning",
+              "the hippocampus's specific role in forming (not storing) new memories",
+              "continuous, balanced influence",
+              "�",
+              "â€”",
+              "â€™",
+              "Â",
+          ]
+          lowered = text.lower()
+          for item in forbidden:
+              if item.lower() in lowered:
+                  raise SystemExit(f"Forbidden or stale generated content remains: {item}")
+
+          figures = re.findall(r'<figure class="chapter-figure expandable">', text)
+          if len(figures) != 10:
+              raise SystemExit(f"Expected 10 expandable figures, found {len(figures)}")
+
+          images = re.findall(r'<img\s+[^>]*alt="([^"]*)"[^>]*>', text)
+          if len(images) != 10 or any(not alt.strip() for alt in images):
+              raise SystemExit(f"Expected 10 figures with non-empty alt text; found {len(images)}")
+
+          questions = re.findall(r'<div class="review-q">', text)
+          if len(questions) != 12:
+              raise SystemExit(f"Expected 12 review questions, found {len(questions)}")
+
+          terms = re.findall(r'<dt>', text)
+          if not (20 <= len(terms) <= 24):
+              raise SystemExit(f"Expected 20–24 key terms, found {len(terms)}")
+
+          if "../labs/ch03/action-potential-threshold.html" not in text:
+              raise SystemExit("Action-potential lab link was not normalized")
+          if "../labs/ch03/chemical-imbalance-claim-check.html" not in text:
+              raise SystemExit("Chemical-imbalance lab link was not normalized")
+          if "../labs/ch03/dopamine-prediction-error.html" not in text:
+              raise SystemExit("Dopamine lab link was not normalized")
+
+          order = [
+              text.index('id="chapter-summary"'),
+              text.index('id="connections"'),
+              text.index('id="review-questions"'),
+              text.index('id="key-terms"'),
+              text.index('id="further-reading"'),
+              text.index('id="references"'),
+          ]
+          if order != sorted(order):
+              raise SystemExit("Chapter-ending section order is incorrect")
+
+          print("Chapter 3 generated HTML validation passed")
+
+      - name: Remove temporary npm files
+        run: rm -rf node_modules package.json package-lock.json
+
+      - name: Commit generated source and HTML
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add pipeline/build_chapter_html.mjs docs/chapters/03-neuroscience.html
+          if git diff --cached --quiet; then
+            echo "No generated changes to commit"
+            exit 0
+          fi
+          git commit -m "Regenerate Chapter 3 HTML"
+          git pull --rebase origin main
+          git push origin HEAD:main
