@@ -1,0 +1,182 @@
+[
+  {
+    "viewport": {
+      "name": "desktop",
+      "width": 1440,
+      "height": 900
+    },
+    "structural": {
+      "documentOverflow": 588,
+      "bodyOverflow": 588,
+      "activeSidebar": true,
+      "activeSidebarText": "3 — Neuroscience & Biological Bases",
+      "figureCount": 10,
+      "imageCount": 10,
+      "brokenImages": [],
+      "labLinks": [
+        {
+          "href": "../labs/ch03/action-potential-threshold.html",
+          "status": 200
+        },
+        {
+          "href": "../labs/ch03/chemical-imbalance-claim-check.html",
+          "status": 200
+        },
+        {
+          "href": "../labs/ch03/dopamine-prediction-error.html",
+          "status": 200
+        }
+      ],
+      "videoCount": 1,
+      "videoStatus": 200,
+      "detailsCount": 12
+    },
+    "expanded": {
+      "classExpanded": true,
+      "ariaExpanded": "true"
+    },
+    "collapsed": {
+      "classExpanded": false,
+      "ariaExpanded": "false"
+    },
+    "assertions": {
+      "documentOverflow": false,
+      "bodyOverflow": false,
+      "activeSidebar": true,
+      "figures": true,
+      "images": true,
+      "labs": true,
+      "video": true,
+      "details": true,
+      "expand": true,
+      "collapse": true,
+      "console": true,
+      "pageErrors": true,
+      "responses": true
+    },
+    "consoleErrors": [],
+    "pageErrors": [],
+    "failedResponses": [],
+    "passed": false
+  },
+  {
+    "viewport": {
+      "name": "portrait-mobile",
+      "width": 390,
+      "height": 844
+    },
+    "structural": {
+      "documentOverflow": 1166,
+      "bodyOverflow": 1166,
+      "activeSidebar": true,
+      "activeSidebarText": "3 — Neuroscience & Biological Bases",
+      "figureCount": 10,
+      "imageCount": 10,
+      "brokenImages": [],
+      "labLinks": [
+        {
+          "href": "../labs/ch03/action-potential-threshold.html",
+          "status": 200
+        },
+        {
+          "href": "../labs/ch03/chemical-imbalance-claim-check.html",
+          "status": 200
+        },
+        {
+          "href": "../labs/ch03/dopamine-prediction-error.html",
+          "status": 200
+        }
+      ],
+      "videoCount": 1,
+      "videoStatus": 200,
+      "detailsCount": 12
+    },
+    "expanded": {
+      "classExpanded": true,
+      "ariaExpanded": "true"
+    },
+    "collapsed": {
+      "classExpanded": false,
+      "ariaExpanded": "false"
+    },
+    "assertions": {
+      "documentOverflow": false,
+      "bodyOverflow": false,
+      "activeSidebar": true,
+      "figures": true,
+      "images": true,
+      "labs": true,
+      "video": true,
+      "details": true,
+      "expand": true,
+      "collapse": true,
+      "console": true,
+      "pageErrors": true,
+      "responses": true
+    },
+    "consoleErrors": [],
+    "pageErrors": [],
+    "failedResponses": [],
+    "passed": false
+  },
+  {
+    "viewport": {
+      "name": "landscape-mobile",
+      "width": 844,
+      "height": 390
+    },
+    "structural": {
+      "documentOverflow": 984,
+      "bodyOverflow": 984,
+      "activeSidebar": true,
+      "activeSidebarText": "3 — Neuroscience & Biological Bases",
+      "figureCount": 10,
+      "imageCount": 10,
+      "brokenImages": [],
+      "labLinks": [
+        {
+          "href": "../labs/ch03/action-potential-threshold.html",
+          "status": 200
+        },
+        {
+          "href": "../labs/ch03/chemical-imbalance-claim-check.html",
+          "status": 200
+        },
+        {
+          "href": "../labs/ch03/dopamine-prediction-error.html",
+          "status": 200
+        }
+      ],
+      "videoCount": 1,
+      "videoStatus": 200,
+      "detailsCount": 12
+    },
+    "expanded": {
+      "classExpanded": true,
+      "ariaExpanded": "true"
+    },
+    "collapsed": {
+      "classExpanded": false,
+      "ariaExpanded": "false"
+    },
+    "assertions": {
+      "documentOverflow": false,
+      "bodyOverflow": false,
+      "activeSidebar": true,
+      "figures": true,
+      "images": true,
+      "labs": true,
+      "video": true,
+      "details": true,
+      "expand": true,
+      "collapse": true,
+      "console": true,
+      "pageErrors": true,
+      "responses": true
+    },
+    "consoleErrors": [],
+    "pageErrors": [],
+    "failedResponses": [],
+    "passed": false
+  }
+]
