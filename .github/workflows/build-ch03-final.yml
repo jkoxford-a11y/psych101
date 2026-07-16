@@ -1,4 +1,4 @@
-name: Locate Chapter 3 overflow sources
+name: Fix and validate Chapter 3 rendering
 
 on:
   push:
@@ -9,7 +9,7 @@ permissions:
   contents: write
 
 jobs:
-  inspect:
+  validate:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -18,99 +18,202 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: "22"
+
+      - name: Add responsive chapter-video styles
+        shell: python
+        run: |
+          from pathlib import Path
+          path = Path('docs/css/style.css')
+          text = path.read_text(encoding='utf-8')
+          block = '''
+
+/* ── Chapter videos ── */
+.chapter-video {
+  margin: 2rem 0;
+}
+
+.chapter-video video {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.10);
+}
+
+.chapter-video figcaption {
+  margin: 0.75rem auto 0;
+  max-width: 90%;
+  font-family: var(--font-ui);
+  font-size: 0.85rem;
+  line-height: 1.5;
+  color: var(--color-muted);
+  text-align: center;
+}
+'''
+          if '/* ── Chapter videos ── */' not in text:
+              marker = '/* ── Chapter figures ── */'
+              if marker not in text:
+                  raise SystemExit('Chapter figure CSS marker not found')
+              text = text.replace(marker, block + '\n' + marker, 1)
+          path.write_text(text, encoding='utf-8')
+
       - name: Install browser
         run: |
           npm init -y >/dev/null 2>&1
           npm install --no-save playwright@1.52.0 >/dev/null 2>&1
           npx playwright install --with-deps chromium >/dev/null 2>&1
-      - name: Inspect overflow
+
+      - name: Run final browser validation
         run: |
           python3 -m http.server 8000 --directory docs >/tmp/ch03-server.log 2>&1 &
-          cat > ch03-overflow-inspect.mjs <<'JS'
+          cat > ch03-final-browser-check.mjs <<'JS'
           import fs from 'node:fs';
           import { chromium } from 'playwright';
 
-          function selector(el) {
-            if (el.id) return `#${el.id}`;
-            const parts = [];
-            let node = el;
-            while (node && node.nodeType === 1 && parts.length < 5) {
-              let part = node.tagName.toLowerCase();
-              if (node.classList.length) part += '.' + [...node.classList].slice(0, 3).join('.');
-              if (node.parentElement) {
-                const siblings = [...node.parentElement.children].filter(x => x.tagName === node.tagName);
-                if (siblings.length > 1) part += `:nth-of-type(${siblings.indexOf(node) + 1})`;
-              }
-              parts.unshift(part);
-              node = node.parentElement;
-            }
-            return parts.join(' > ');
-          }
-
+          const viewports = [
+            { name: 'desktop', width: 1440, height: 900 },
+            { name: 'portrait-mobile', width: 390, height: 844 },
+            { name: 'landscape-mobile', width: 844, height: 390 },
+          ];
+          const results = [];
           const browser = await chromium.launch({ headless: true });
-          const outputs = [];
-          for (const viewport of [
-            {name:'desktop',width:1440,height:900},
-            {name:'portrait-mobile',width:390,height:844},
-            {name:'landscape-mobile',width:844,height:390},
-          ]) {
-            const page = await browser.newPage({viewport});
-            await page.goto('http://127.0.0.1:8000/chapters/03-neuroscience.html', {waitUntil:'networkidle'});
-            await page.waitForTimeout(300);
-            const data = await page.evaluate((viewport) => {
-              function selector(el) {
-                if (el.id) return `#${el.id}`;
-                const parts=[]; let node=el;
-                while(node && node.nodeType===1 && parts.length<5){
-                  let part=node.tagName.toLowerCase();
-                  if(node.classList.length) part+='.'+[...node.classList].slice(0,3).join('.');
-                  if(node.parentElement){const sib=[...node.parentElement.children].filter(x=>x.tagName===node.tagName); if(sib.length>1) part+=`:nth-of-type(${sib.indexOf(node)+1})`;}
-                  parts.unshift(part); node=node.parentElement;
-                }
-                return parts.join(' > ');
-              }
-              const offenders=[];
-              for(const el of document.querySelectorAll('body *')){
-                const rect=el.getBoundingClientRect();
-                const cs=getComputedStyle(el);
-                const rightOverflow=Math.max(0, rect.right-window.innerWidth);
-                const ownOverflow=Math.max(0, el.scrollWidth-el.clientWidth);
-                if(rightOverflow>2 || ownOverflow>2){
-                  offenders.push({
-                    selector:selector(el), tag:el.tagName, classes:el.className,
-                    text:(el.textContent||'').trim().slice(0,140),
-                    rect:{left:Math.round(rect.left),right:Math.round(rect.right),width:Math.round(rect.width)},
-                    clientWidth:el.clientWidth, scrollWidth:el.scrollWidth,
-                    rightOverflow:Math.round(rightOverflow), ownOverflow,
-                    display:cs.display, position:cs.position, width:cs.width, minWidth:cs.minWidth,
-                    maxWidth:cs.maxWidth, whiteSpace:cs.whiteSpace, overflowX:cs.overflowX,
-                  });
-                }
-              }
-              offenders.sort((a,b)=>Math.max(b.rightOverflow,b.ownOverflow)-Math.max(a.rightOverflow,a.ownOverflow));
+
+          for (const viewport of viewports) {
+            const page = await browser.newPage({ viewport });
+            const consoleErrors = [];
+            const pageErrors = [];
+            const failedResponses = [];
+            page.on('console', msg => { if (msg.type() === 'error') consoleErrors.push(msg.text()); });
+            page.on('pageerror', err => pageErrors.push(String(err)));
+            page.on('response', response => {
+              if (response.status() >= 400 && response.url().startsWith('http://127.0.0.1:8000/')) failedResponses.push(`${response.status()} ${response.url()}`);
+            });
+
+            await page.goto('http://127.0.0.1:8000/chapters/03-neuroscience.html', { waitUntil: 'networkidle' });
+            await page.waitForTimeout(500);
+
+            const structural = await page.evaluate(async () => {
+              const images = [...document.querySelectorAll('.chapter-figure img')];
+              const labs = [...document.querySelectorAll('a[href*="../labs/ch03/"]')];
+              const labLinks = await Promise.all(labs.map(async link => ({
+                href: link.getAttribute('href'),
+                status: (await fetch(link.href)).status,
+              })));
+              const video = document.querySelector('.chapter-video video');
+              const source = video?.querySelector('source')?.getAttribute('src') || '';
+              const videoStatus = source ? (await fetch(new URL(source, document.baseURI))).status : null;
+              const videoRect = video?.getBoundingClientRect();
               return {
-                viewport,
-                document:{scrollWidth:document.documentElement.scrollWidth,clientWidth:document.documentElement.clientWidth},
-                body:{scrollWidth:document.body.scrollWidth,clientWidth:document.body.clientWidth},
-                layout:document.querySelector('.layout')?.getBoundingClientRect().toJSON(),
-                main:document.querySelector('.main')?.getBoundingClientRect().toJSON(),
-                sidebar:document.querySelector('.sidebar')?.getBoundingClientRect().toJSON(),
-                offenders:offenders.slice(0,30),
+                documentOverflow: document.documentElement.scrollWidth - window.innerWidth,
+                bodyOverflow: document.body.scrollWidth - window.innerWidth,
+                activeSidebar: Boolean(document.querySelector('.sidebar a.active')),
+                activeSidebarText: document.querySelector('.sidebar a.active')?.textContent?.trim() || null,
+                figureCount: document.querySelectorAll('.chapter-figure.expandable').length,
+                imageCount: images.length,
+                brokenImages: images.filter(img => !img.complete || img.naturalWidth === 0).map(img => img.getAttribute('src')),
+                labLinks,
+                videoCount: document.querySelectorAll('.chapter-video video').length,
+                videoStatus,
+                videoWidth: videoRect ? Math.round(videoRect.width) : null,
+                mainWidth: Math.round(document.querySelector('.main').getBoundingClientRect().width),
+                detailsCount: document.querySelectorAll('.review-q details').length,
               };
-            }, viewport);
-            outputs.push(data);
+            });
+
+            const toggle = page.locator('.chapter-figure.expandable .figure-expand-toggle').first();
+            await toggle.click();
+            const expanded = await page.locator('.chapter-figure.expandable').first().evaluate(el => ({
+              classExpanded: el.classList.contains('is-expanded'),
+              ariaExpanded: el.querySelector('.figure-expand-toggle')?.getAttribute('aria-expanded'),
+            }));
+            await toggle.click();
+            const collapsed = await page.locator('.chapter-figure.expandable').first().evaluate(el => ({
+              classExpanded: el.classList.contains('is-expanded'),
+              ariaExpanded: el.querySelector('.figure-expand-toggle')?.getAttribute('aria-expanded'),
+            }));
+
+            const assertions = {
+              overflow: structural.documentOverflow <= 2 && structural.bodyOverflow <= 2,
+              activeSidebar: structural.activeSidebar,
+              figures: structural.figureCount === 10,
+              images: structural.imageCount === 10 && structural.brokenImages.length === 0,
+              labs: structural.labLinks.length === 3 && structural.labLinks.every(item => item.status === 200),
+              video: structural.videoCount === 1 && structural.videoStatus === 200 && structural.videoWidth <= structural.mainWidth,
+              details: structural.detailsCount === 12,
+              expand: expanded.classExpanded && expanded.ariaExpanded === 'true',
+              collapse: !collapsed.classExpanded && collapsed.ariaExpanded === 'false',
+              runtime: consoleErrors.length === 0 && pageErrors.length === 0 && failedResponses.length === 0,
+            };
+            const passed = Object.values(assertions).every(Boolean);
+            results.push({ viewport, structural, expanded, collapsed, assertions, consoleErrors, pageErrors, failedResponses, passed });
             await page.close();
           }
+
           await browser.close();
-          fs.writeFileSync('pipeline/audits/_tmp_ch03_overflow_sources.json', JSON.stringify(outputs,null,2));
+          fs.writeFileSync('/tmp/ch03-final-browser-results.json', JSON.stringify(results, null, 2));
+          if (results.some(result => !result.passed)) process.exit(1);
           JS
-          node ch03-overflow-inspect.mjs
-      - name: Commit overflow diagnostic
+          node ch03-final-browser-check.mjs
+
+      - name: Write durable validation report
+        shell: python
         run: |
-          rm -rf node_modules package.json package-lock.json ch03-overflow-inspect.mjs
+          from pathlib import Path
+          import json
+
+          results = json.loads(Path('/tmp/ch03-final-browser-results.json').read_text(encoding='utf-8'))
+          lines = [
+              '# Chapter 3 Post-Revision Validation',
+              '',
+              '**Date:** 2026-07-16',
+              '**Authoritative source:** `source/chapters/ch03-neuroscience-biological-bases.md`',
+              '**Generated page:** `docs/chapters/03-neuroscience.html`',
+              '',
+              '## Browser validation',
+              '',
+              '| Viewport | Result | Page overflow | Video width / main width | Figures | Labs | Review disclosures |',
+              '|---|---|---:|---:|---:|---:|---:|',
+          ]
+          for result in results:
+              s = result['structural']
+              overflow = max(s['documentOverflow'], s['bodyOverflow'])
+              lines.append(
+                  f"| {result['viewport']['name']} ({result['viewport']['width']}×{result['viewport']['height']}) "
+                  f"| {'PASS' if result['passed'] else 'FAIL'} | {overflow} px "
+                  f"| {s['videoWidth']} / {s['mainWidth']} px "
+                  f"| {s['imageCount'] - len(s['brokenImages'])}/{s['imageCount']} "
+                  f"| {sum(1 for item in s['labLinks'] if item['status'] == 200)}/{len(s['labLinks'])} "
+                  f"| {s['detailsCount']}/12 |"
+              )
+          lines += [
+              '',
+              '## Validated behavior',
+              '',
+              '- Chapter 3 is active in the sidebar.',
+              '- All ten figures load and the expandable-figure control updates both visual state and `aria-expanded`.',
+              '- All three Chapter 3 Learning Lab links return HTTP 200.',
+              '- The saltatory-conduction video returns HTTP 200 and remains within the reading column.',
+              '- All twelve review-question disclosure controls are present.',
+              '- No console errors, page errors, failed local responses, or material horizontal overflow occur at the tested widths.',
+              '',
+              '## Result',
+              '',
+              '**Automated structural and render validation passed at desktop, portrait-mobile, and landscape-mobile widths.**',
+              '',
+              'Figure 3.9 remains subject to the separate direct visual-content inspection recorded in its image manifest.',
+          ]
+          Path('pipeline/audits/ch03-post-revision-validation.md').write_text('\n'.join(lines) + '\n', encoding='utf-8')
+
+      - name: Clean and commit
+        run: |
+          rm -rf node_modules package.json package-lock.json ch03-final-browser-check.mjs
+          rm -f pipeline/audits/_tmp_ch03_browser_results.json
+          rm -f pipeline/audits/_tmp_ch03_overflow_sources.json
+          rm -f pipeline/audits/_tmp_ch03_browser_diagnostic.md
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add pipeline/audits/_tmp_ch03_overflow_sources.json
-          git commit -m "Locate Chapter 3 overflow sources"
+          git add -A docs/css/style.css pipeline/audits/ch03-post-revision-validation.md pipeline/audits/_tmp_ch03_browser_results.json pipeline/audits/_tmp_ch03_overflow_sources.json pipeline/audits/_tmp_ch03_browser_diagnostic.md
+          git commit -m "Fix and validate Chapter 3 responsive video"
           git pull --rebase origin main
           git push origin HEAD:main
