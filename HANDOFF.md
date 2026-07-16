@@ -1,6 +1,6 @@
 # Psych101 — Current Handoff
 
-**Last updated:** 2026-07-16 (Chapter 7 figure work paused; Chapter 2 audit requested next)
+**Last updated:** 2026-07-16 (Chapter 2 alignment repair complete; Chapter 7 figure work paused)
 **Canonical repository:** `C:\GitHub\psych101`
 
 This file records current state only. See `GPT_project_log.md` for completed-work history and `PROJECT_BACKLOG.md` for durable deferred work.
@@ -9,7 +9,7 @@ This file records current state only. See `GPT_project_log.md` for completed-wor
 
 ### Chapter 2 — Research Methods and Statistics
 
-Chapter 2 completed its canonical audit/revision cycle on 2026-07-15. The durable audit at `pipeline/audits/ch02-pre-review-audit.md` is marked **implemented and validated** in canonical revision commit `947a05d6bf0aec079e04d906d9e201143cb8acd2`.
+Chapter 2 completed its canonical audit/revision cycle on 2026-07-15. The durable audit at `pipeline/audits/ch02-pre-review-audit.md` is marked **implemented and validated** in canonical revision commit `947a05d6bf0aec079e04d906d9e201143cb8acd2`. A narrow post-revision verification and alignment repair was completed on 2026-07-16: Review Question 3 now uses interpretation-and-use validity framing, the lab records but does not score prereveal headline predictions, and the chapter accurately describes the lab's fictional headlines and separate causal judgments.
 
 Current authoritative surfaces:
 
@@ -19,7 +19,7 @@ Current authoritative surfaces:
 - lab: `docs/labs/ch02/correlation-causation.html`
 - lab script: `docs/js/labs-correlation-causation.js`
 
-Jon requested that the next chat work on a Chapter 2 audit. Treat that as a **post-revision verification audit** unless Jon explicitly says he intended a different chapter. Do not assume the July 15 revision failed or reopen settled prose mechanically. First compare the live source, HTML, figures, lab, manifest, prior audit, canonical work order, and commit history.
+The Chapter 2 post-revision verification is complete. Do not reopen the settled architecture, examples, figures, citations, or seven major editorial decisions unless Jon identifies a new specific defect.
 
 ### Chapters 9–13
 
@@ -49,10 +49,8 @@ The current `docs/images/ch07/README_captions_alt_text_attribution.md` is incomp
 
 ## Immediate next actions
 
-1. Begin the requested Chapter 2 post-revision audit by reading `AGENTS.md`, this handoff, `pipeline/audits/ch02-pre-review-audit.md`, `pipeline/work-orders/ch02-canonical-revision.md`, the live Chapter 2 source/HTML, lab, figure manifest, visuals inventory, conversion spec, and relevant commit history.
-2. Verify whether any live Chapter 2 defect remains after commit `947a05d`; report discrepancies before proposing edits.
-3. When returning to Chapter 7, finalize Figure 7.6, then Figure 7.8, reinspect Figure 7.5, and directly inspect Figures 7.1, 7.2, 7.3, 7.7, and 7.9.
-4. After all nine Chapter 7 figures are approved, complete the metadata manifest, reconcile `source/visuals-inventory.md`, synchronize source captions/alt text, regenerate the full HTML, and run desktop/mobile/content validation.
+1. When returning to Chapter 7, finalize Figure 7.6, then Figure 7.8, reinspect Figure 7.5, and directly inspect Figures 7.1, 7.2, 7.3, 7.7, and 7.9.
+2. After all nine Chapter 7 figures are approved, complete the metadata manifest, reconcile `source/visuals-inventory.md`, synchronize source captions/alt text, regenerate the full HTML, and run desktop/mobile/content validation.
 
 ## Important files
 
