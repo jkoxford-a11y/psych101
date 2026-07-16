@@ -1,6 +1,6 @@
 # Chapter 3 Image Inventory and Visual Plan
 
-> Last updated: 2026-07-16. Figure numbers match the canonical Chapter 3 source. All 10 figures remain wired in the source; generated HTML must be regenerated after the current source revision. Captions and alt text below reflect the revised scientific framing.
+> Last updated: 2026-07-16. Figure numbers match the canonical Chapter 3 source. All 10 figures are wired in the authoritative source and regenerated HTML. Captions and alt text below reflect the revised scientific framing.
 
 ---
 
@@ -63,7 +63,7 @@
 **Placement:** Section 1, immediately after Figure 3.4
 **Caption:** “Saltatory conduction along a myelinated axon: the action potential regenerates at each node of Ranvier while current spreads passively under the insulating myelin between nodes.”
 **Attribution:** Generated for Oxford Psychology 101 with Google AI video generation, 2026.
-**Status:** Embedded; live desktop/mobile playback test still required.
+**Status:** Embedded and asset-tested. Responsive width is enforced through the loaded chapter media script; the video returned HTTP 200 during browser validation.
 
 ---
 
@@ -124,7 +124,7 @@
 **Caption:** “Sympathetic and parasympathetic influences form a shifting, organ-specific push-pull system rather than an on/off switch. Fight, flight, freeze, and tend-and-befriend are possible behavioral strategies; they are not separate autonomic branches.”
 **Alt text:** “Infographic comparing sympathetic and parasympathetic influences on organs. The sympathetic side shows increased heart rate, widened pupils, faster breathing, and reduced digestion. The parasympathetic side shows decreased heart rate, narrowed pupils, slower breathing, increased digestion, and recovery. A bottom row lists fight, flight, freeze, and tend-and-befriend as possible behavioral strategies, not autonomic branches.”
 **Attribution:** Original figure generated for Oxford Psychology 101 with ChatGPT image generation, 2026.
-**Status:** **Revise or approve only after direct binary inspection.** If the artwork visually presents tend-and-befriend as a third autonomic branch or as equally settled with fight/flight/freeze, make the minimum visual repair while preserving the organ-level push-pull comparison.
+**Status:** **Approved after direct visual inspection, 2026-07-16.** The sympathetic and parasympathetic systems occupy the two primary columns. Fight, flight, freeze, and tend-and-befriend appear in a separate full-width band labeled as behavioral response options, so tend-and-befriend is not depicted as a third autonomic branch.
 
 ---
 
