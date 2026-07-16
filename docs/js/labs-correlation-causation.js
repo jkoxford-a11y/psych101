@@ -3,7 +3,7 @@
 (function () {
   'use strict';
 
-  const STORAGE_KEY = 'psych101-lab-ch02-correlation-causation-v2';
+  const STORAGE_KEY = 'psych101-lab-ch02-correlation-causation-v3';
 
   const items = [
     {
@@ -240,7 +240,6 @@
       reverseCausation,
       thirdVariable,
       strengthening,
-      predictionCorrect: prediction === yesNo(item.supportsCausation),
       causalCorrect: causalSupport === yesNo(item.supportsCausation),
       reverseCorrect: reverseCausation === yesNo(item.reversePlausible),
       thirdCorrect: thirdVariable === yesNo(item.thirdPlausible)
@@ -258,14 +257,15 @@
 
   function showFeedback(item, response) {
     const correctCount = [response.causalCorrect, response.reverseCorrect, response.thirdCorrect].filter(Boolean).length;
-    const fullyCorrect = response.predictionCorrect && correctCount === 3;
+    const fullyCorrect = correctCount === 3;
     const correctJudgments = `Causal support: ${formatYesNo(item.supportsCausation)}. Reverse causation plausible: ${formatYesNo(item.reversePlausible)}. Third variable plausible: ${formatYesNo(item.thirdPlausible)}.`;
 
     elements.feedbackPanel.hidden = false;
     elements.feedbackPanel.classList.toggle('is-correct', fullyCorrect);
     elements.feedbackPanel.classList.toggle('is-incorrect', !fullyCorrect);
     elements.feedbackHeading.textContent = fullyCorrect ? 'Reasoning aligned' : 'Compare and revise';
-    elements.feedbackText.textContent = `Your initial prediction ${response.predictionCorrect ? 'matched' : 'did not match'} the revealed design. You matched ${correctCount} of 3 post-reveal judgments. ${correctJudgments}`;
+    const predictionMatched = response.prediction === yesNo(item.supportsCausation);
+    elements.feedbackText.textContent = `Your initial prediction ${predictionMatched ? 'matched' : 'differed from'} what the revealed design permits. That prediction was recorded for comparison, not scored. You matched ${correctCount} of 3 post-reveal judgments. ${correctJudgments}`;
     elements.modelExplanation.textContent = item.feedback;
     elements.strengtheningExample.textContent = item.strengthen;
     elements.progressStatus.textContent = 'Feedback available.';
@@ -289,8 +289,8 @@
   }
 
   function showSummary() {
-    const predictionCorrectCount = state.responses.filter(function (response) {
-      return response && response.predictionCorrect;
+    const predictedSupportCount = state.responses.filter(function (response) {
+      return response && response.prediction === 'yes';
     }).length;
     const judgmentCorrectCount = state.responses.reduce(function (total, response) {
       if (!response) return total;
@@ -300,7 +300,7 @@
     document.getElementById('classifier-item').hidden = true;
     elements.progressStatus.textContent = 'Lab complete.';
     elements.summaryPanel.hidden = false;
-    elements.summaryScore.textContent = `You matched ${predictionCorrectCount} of ${items.length} initial predictions and ${judgmentCorrectCount} of ${items.length * 3} post-reveal judgments.`;
+    elements.summaryScore.textContent = `Before seeing the designs, you predicted that ${predictedSupportCount} of ${items.length} headlines might have evidence supporting the causal claim. Initial predictions were not scored. You matched ${judgmentCorrectCount} of ${items.length * 3} post-reveal judgments.`;
     elements.summaryConcept.textContent = 'The design—not the headline—determines what can be inferred. Reverse causation and third variables are separate questions, and observational evidence may leave both concerns at once.';
     elements.summaryTableBody.innerHTML = '';
 

@@ -122,7 +122,7 @@ Causal alternatives for a correlation include X causing Y, Y causing X, and one 
 
 *Diagnostic question:* A study finds that teenagers who play more violent video games report more aggressive behavior. A news article concludes that violent games cause aggression. What is at least one alternative explanation the article is ignoring? *(Reverse causation — already-aggressive teens may be drawn to violent games — or a third variable, such as family conflict or impulsivity, independently increasing both.)*
 
-**Try it yourself:** the [Correlation vs. Causation Classifier](../labs/ch02/correlation-causation.html) lets you practice sorting real headlines by whether they show direction, a third variable, or a genuine causal claim — a hands-on way to catch the pattern before it shows up again in a news feed.
+**Try it yourself:** the [Correlation vs. Causation Classifier](../labs/ch02/correlation-causation.html) lets you examine fictional headlines, reveal the underlying study designs, and judge causal support, reverse causation, and third-variable alternatives separately.
 
 ---
 
@@ -288,14 +288,14 @@ d) A double-blind survey
 
 ---
 
-**3.** A researcher develops a new questionnaire to measure "test anxiety." Students who retake the questionnaire a week later get nearly identical scores each time, but follow-up interviews suggest the questionnaire is actually capturing general nervousness rather than anything specific to testing. This measure is:
+**3.** A researcher develops a new questionnaire to measure "test anxiety." Students who retake the questionnaire a week later get nearly identical scores each time, but follow-up interviews suggest the questionnaire is actually capturing general nervousness rather than anything specific to testing. Which conclusion best fits the evidence?
 
-a) Reliable but not valid
-b) Valid but not reliable
-c) Neither reliable nor valid
-d) Both reliable and valid
+a) The scores appear consistent across occasions, but the evidence does not support interpreting them specifically as scores of test anxiety.
+b) The scores appear inconsistent across occasions, but the evidence supports interpreting them specifically as scores of test anxiety.
+c) The scores appear consistent across occasions, and consistency alone supports interpreting them specifically as scores of test anxiety.
+d) The scores appear inconsistent across occasions, and the interviews show that they measure neither anxiety nor nervousness.
 
-*Answer: a. Why (b) is tempting: it reverses the two terms — consistent scores across retakes is the definition of reliability, not validity; the interview finding is what calls validity into question here.*
+*Answer: a. Nearly identical scores across retakes are evidence of reliability, or consistency under these conditions. But validity concerns whether evidence and theory support a particular interpretation and use of scores. Here, the interviews do not support the intended interpretation of these scores as specifically measuring test anxiety.*
 
 ---
 
