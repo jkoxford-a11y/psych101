@@ -288,11 +288,11 @@ Brain regions are specialized contributors within networks. Gage is consistent w
 | [Reward-prediction error and dopamine](#changing-a-circuit) | Ch. 7 — Learning | A restricted dopamine teaching model helps explain how unexpected outcomes can update future behavior |
 | [Agonists, antagonists, excitation, and inhibition](#excitation-and-inhibition) | Ch. 5 — Consciousness; Ch. 13 — Psychological Disorders & Therapy | Drug effects depend on receptor action and circuit context, not simply on a drug being a “stimulant” or “depressant” |
 | [Hypothalamic regulation](#a-compact-map-of-selected-structures) | Ch. 6 — Sleep | The suprachiasmatic nucleus is a hypothalamic clock that helps organize circadian timing |
-| [Medial-temporal memory systems and H.M.](#classic-study-henry-molaison-hm-and-medial-temporal-memory-systems) | Ch. 8 — Memory | H.M. demonstrates separable memory systems and helps dismantle the video-camera model of memory |
-| [Autonomic and endocrine stress regulation](#section-4-the-bodys-stress-response--fast-and-slow-coordination) | Ch. 12 — Emotion, Stress & Coping | Acute mobilization, prolonged activation, appraisal, and recovery become the foundation for allostatic-load reasoning |
+| [Medial-temporal memory systems and H.M.](#classic-study-henry-molaison-h-m-and-medial-temporal-memory-systems) | Ch. 8 — Memory | H.M. demonstrates separable memory systems and helps dismantle the video-camera model of memory |
+| [Autonomic and endocrine stress regulation](#section-4-the-bodys-stress-response-fast-and-slow-coordination) | Ch. 12 — Emotion, Stress & Coping | Acute mobilization, prolonged activation, appraisal, and recovery become the foundation for allostatic-load reasoning |
 | [Oxytocin as a context-dependent neuropeptide](#section-3-hormones-and-whole-body-signaling) | Ch. 10 — Lifespan Development; Ch. 12 — Emotion, Stress & Coping | The same signaling system can contribute differently across attachment, caregiving, affiliation, and stress contexts |
-| [Action potentials and receptors](#section-1-how-neurons-talk--structure-and-the-action-potential) | Ch. 4 — Sensation & Perception | Sensory receptors convert environmental energy into the neural signals introduced here |
-| [Split-brain research](#do-not-confuse-hemispheric-specialization-vs-the-left-brainright-brain-personality-myth) | Ch. 9 — Thinking, Language & Intelligence | Hemispheric specialization matters for language without creating two global personality types |
+| [Action potentials and receptors](#section-1-how-neurons-talk-structure-and-the-action-potential) | Ch. 4 — Sensation & Perception | Sensory receptors convert environmental energy into the neural signals introduced here |
+| [Split-brain research](#do-not-confuse-hemispheric-specialization-vs-the-left-brain-right-brain-personality-myth) | Ch. 9 — Thinking, Language & Intelligence | Hemispheric specialization matters for language without creating two global personality types |
 
 ---
 
