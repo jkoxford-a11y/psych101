@@ -1,0 +1,37 @@
+name: Export Chapter 3 Figure 3.9 thumbnail
+
+on:
+  push:
+    paths:
+      - ".github/workflows/export-ch03-fig39.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  export:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Create encoded thumbnail
+        run: |
+          python -m pip install --quiet pillow
+          python - <<'PY'
+          from PIL import Image
+          from pathlib import Path
+          import base64
+          src = Path('docs/images/ch03/ch03_autonomic_balance_push_pull.png')
+          image = Image.open(src).convert('RGB')
+          image.thumbnail((700, 700))
+          out = Path('/tmp/ch03_fig39.jpg')
+          image.save(out, 'JPEG', quality=65, optimize=True)
+          Path('pipeline/audits/_tmp_ch03_fig39_thumbnail.b64.txt').write_text(base64.b64encode(out.read_bytes()).decode('ascii'), encoding='ascii')
+          PY
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add pipeline/audits/_tmp_ch03_fig39_thumbnail.b64.txt
+          git commit -m "Export temporary Chapter 3 Figure 3.9 thumbnail"
+          git pull --rebase origin main
+          git push origin HEAD:main
