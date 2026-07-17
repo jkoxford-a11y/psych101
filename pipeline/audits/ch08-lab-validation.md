@@ -8,7 +8,7 @@
 
 Levels of Processing and Interactive Imagery passed the exercised functional, state-restoration, feedback, focus-transition, navigation-path, console, and responsive-layout checks at 1440 × 900, 390 × 844, and 844 × 390. Live testing exposed and repaired rapid double-submission in both labs. Interactive Imagery also had one malformed Round 1 score sentence, which was repaired.
 
-The browser controller could not synthesize Tab/Enter/Space navigation reliably: Tab remained on the same radio control, and the available Chrome control surface was not connected. Native controls, semantic grouping, labels, button states, visible focus after every scripted phase transition, and logical programmatic focus movement were verified in the live pages, but a human keyboard-only pass remains required before closing the accessibility validation item.
+The automated browser controller could not synthesize Tab/Enter/Space navigation reliably. Native controls, semantic grouping, labels, button states, visible focus after every scripted phase transition, and logical programmatic focus movement were verified in the live pages. Jonathan K. Oxford subsequently completed the required human keyboard-only pass for both wired labs, including Tab/Shift+Tab navigation and Enter/Space activation, and reported that both labs worked correctly. The accessibility validation item is therefore closed.
 
 ## Files inspected
 
@@ -32,7 +32,7 @@ The browser controller could not synthesize Tab/Enter/Space navigation reliably:
 
 ## Live test matrix
 
-### Levels of Processing — pass with keyboard-only limitation noted above
+### Levels of Processing — pass
 
 | Check | 1440 × 900 | 390 × 844 | 844 × 390 |
 |---|---|---|---|
@@ -46,8 +46,9 @@ The browser controller could not synthesize Tab/Enter/Space navigation reliably:
 | Rapid double-click | Reproduced two-step skip before repair; one step after repair | Repaired code exercised | Repaired code exercised |
 | Page-level horizontal overflow | None | None; results table scrolls inside `.table-wrap` | None |
 | Console errors/warnings | None | None observed | None |
+| Human keyboard-only operation | Pass | Pass | Pass |
 
-### Interactive Imagery — pass with keyboard-only limitation noted above
+### Interactive Imagery — pass
 
 | Check | 1440 × 900 | 390 × 844 | 844 × 390 |
 |---|---|---|---|
@@ -63,6 +64,7 @@ The browser controller could not synthesize Tab/Enter/Space navigation reliably:
 | Rapid double-click | Reproduced two-pair skip before repair; one pair after repair | Repaired code exercised | Repaired code exercised |
 | Page-level horizontal overflow | None | None; results table scrolls inside `.table-wrap` | None |
 | Console errors/warnings | None | None observed | None |
+| Human keyboard-only operation | Pass | Pass | Pass |
 
 ## Defects and repairs
 
@@ -89,7 +91,8 @@ No chapter prose, generated chapter HTML, shared CSS/JavaScript, figures, or oth
 - No bad ` ? ` separator mojibake found in the scoped Chapter 8 files.
 - `git diff --check` passed.
 - Final diff review found only the two lab-specific repairs, this validation record, and the narrowed Chapter 8 backlog item.
+- Human keyboard-only testing passed for both wired labs.
 
-## Unresolved validation item
+## Final status
 
-- Perform one human keyboard-only run of each wired lab, including Tab/Shift+Tab order, radio/select operation, Enter/Space activation, and visible focus. This is a validation limitation, not a reproduced product defect. No placement or design decision from Jon is required.
+**Complete and validated.** No unresolved Chapter 8 lab defect or placement decision remains. Levels of Processing and Interactive Imagery remain wired in Chapter 8; Self-Reference Effect remains index-only.
