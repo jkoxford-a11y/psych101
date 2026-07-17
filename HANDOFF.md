@@ -1,6 +1,6 @@
 # Psych101 — Current Handoff
 
-**Last updated:** 2026-07-17 (Chapter 3 closed; Chapter 7 figure review active)  
+**Last updated:** 2026-07-17 (Chapter 3 closed; Chapter 7 figure corrections active)  
 **Canonical repository:** `C:\GitHub\psych101`
 
 This file records current state only. See `GPT_project_log.md` for completed-work history and `PROJECT_BACKLOG.md` for durable deferred work.
@@ -45,22 +45,22 @@ A full canonical regeneration of `docs/chapters/07-learning.html` is still defer
 
 Wiring does not imply approval. Chat-generated images are not repository assets unless explicitly saved and promoted.
 
-- **7.1 Classical conditioning:** provisionally retain; direct binary inspection and metadata still required. Confirm that the image does not reduce conditioning to repetition alone.
-- **7.2 Extinction is not erasure:** likely retain; inspect embedded wording for CS–UCS versus CS–CR language and avoid a literal inhibitory-decay mechanism.
-- **7.3 Operant conditioning 2×2:** likely retain; confirm that categories are defined by observed behavior change plus added/removed consequence.
-- **7.4 Reinforcement schedules:** Work completed the deterministic SVG/PNG rebuild. The actual SVG was inspected. It correctly distinguishes fixed-ratio break-and-run responding, variable-ratio high steady responding, fixed-interval scalloping, and variable-interval steady moderate responding. Its extinction panel is normalized to each history's own baseline, is explicitly illustrative, and does not depict acquisition speed. Treat it as scientifically acceptable/provisionally retained pending final batch reconciliation. Work also prematurely created a Chapter 7 manifest containing only Figure 7.4 and narrowly edited the generated HTML; complete both surfaces only after the full figure set is approved.
-- **7.5 Garcia–Koelling:** repository candidate remains unapproved. Reinspect the actual binary. Preserve the crossed result—taste→illness and audiovisual cues→shock—and keep the evolutionary account in a separate leading-interpretation layer.
-- **7.6 Bandura:** approved and promoted on 2026-07-17. The production SVG/PNG now use the five-stage 1965 learning-versus-performance design: same modeled behavior, rewarded/no-consequence/punished observation conditions, lower initial imitation after model punishment, a common direct incentive, and narrowed differences afterward. The figure uses qualitative icons rather than bars, axes, numerical effects, or a 1961 aggressive-versus-nonaggressive comparison. The previous wired PNG is preserved in `docs/images/ch07/candidates/fig_bobo_doll_observational_learning_previous.png`.
-- **7.7 Tolman and Honzik:** likely retain; direct binary inspection and metadata still required. Preserve the inference boundary that rapid improvement after reward suggests prior learning but does not uniquely establish representational format.
-- **7.8 Dopamine uncertainty:** unresolved and now the immediate figure task. A corrected task-first SVG/PNG candidate exists in `docs/images/ch07/candidates/`. It shows a monkey, learned 0%/50%/100% probability cues, the same fixed delay, known reward time, and strongest sustained delay activity near 50%, without firing-rate traces or numerical values. It still requires final direct review and explicit approval before promotion.
-- **7.9 Reward prediction error:** likely retain; inspect directly and add the scope boundary that it represents a classic pattern in a studied subset of midbrain dopamine neurons under specific reward-learning tasks, not all dopamine activity.
+- **7.1 Classical conditioning:** requires revision. Replace repetition-centered acquisition wording with reliable predictive contingency; clarify that the CR is defined by learning history and need not be physically identical to the UCR; reduce the embedded glossary and repeated prose.
+- **7.2 Extinction is not erasure:** requires revision. Preserve return of responding and competing/context-sensitive learning while avoiding literal hidden-strength curves, a uniquely established inhibitory-storage mechanism, and generic stress-as-trigger wording.
+- **7.3 Operant conditioning 2×2:** requires revision. Define cells by added/removed consequence plus measured increase/decrease in behavior, not intrinsic pleasantness; shorten the examples and replace the distracting cat-spraying example.
+- **7.4 Reinforcement schedules:** scientifically approved/provisionally retained. The deterministic SVG/PNG correctly distinguish fixed-ratio break-and-run responding, variable-ratio high steady responding, fixed-interval scalloping, and variable-interval steady moderate responding. Its extinction panel is normalized to each history's own baseline, is explicitly illustrative, and does not depict acquisition speed. The manifest remains incomplete until the nine-figure batch is reconciled.
+- **7.5 Garcia–Koelling:** scientifically approved/provisionally retained after direct binary inspection. It shows the crossed taste→illness and audiovisual→shock result, labels its mini-curves illustrative, and separates the observed selective-learning pattern from the leading evolutionary interpretation. Source/license/alt/public-sharing records still belong in the final metadata batch.
+- **7.6 Bandura:** approved and promoted on 2026-07-17. The production SVG/PNG use the five-stage 1965 learning-versus-performance design: same modeled behavior, rewarded/no-consequence/punished observation conditions, lower initial imitation after model punishment, a common direct incentive, and narrowed differences afterward. The figure uses qualitative icons rather than bars, axes, numerical effects, or a 1961 aggressive-versus-nonaggressive comparison. The previous wired PNG is preserved in `docs/images/ch07/candidates/fig_bobo_doll_observational_learning_previous.png`.
+- **7.7 Tolman and Honzik:** visually readable and conceptually bounded, but its empirical-looking plotted points lack resolved provenance. Verify them against a documented reproduction of the Tolman–Honzik error data; if exact correspondence cannot be established, redraw the same qualitative pattern as an explicitly schematic trajectory. Preserve the inference boundary that rapid improvement after reward suggests prior learning but does not uniquely establish representational format.
+- **7.8 Dopamine uncertainty:** approved and promoted on 2026-07-17. The task-first production SVG/PNG show a monkey, learned 0%/50%/100% reward-probability cues, the same fixed delay and known potential reward time, and qualitative sustained activity strongest near 50%. They avoid firing-rate traces, numerical values, and the claim that reward probability was unknown to the animal. The previous wired PNG is preserved in `docs/images/ch07/candidates/fig_dopamine_uncertainty_curve_previous.png`.
+- **7.9 Reward prediction error:** requires revision. Preserve the four-event sequence but narrow the figure to a well-studied subset of midbrain dopamine neurons in particular reward-learning tasks, soften “drives learning” to “can support learning,” and reduce repeated explanatory prose.
 
 The current `docs/images/ch07/README_captions_alt_text_attribution.md` is incomplete and premature because it contains only Figure 7.4. Final metadata remains a nine-figure batch task.
 
 ## Immediate next actions
 
-1. Review and finalize Figure 7.8.
-2. Reinspect Figure 7.5, then directly inspect Figures 7.1, 7.2, 7.3, 7.7, and 7.9.
+1. Rebuild Figures 7.1, 7.2, 7.3, and 7.9 as clean, original, concept-first SVG/PNG figures using the constraints above.
+2. Resolve Figure 7.7 by verifying its plotted values or replacing it with an explicitly schematic original.
 3. After all nine Chapter 7 figures are approved, complete the metadata manifest, reconcile `source/visuals-inventory.md`, synchronize source captions/alt text, regenerate the full HTML, and run desktop/mobile/content validation.
 
 ## Important files
