@@ -24,14 +24,14 @@ Markdown draft complete (v0.2). Awaiting Jon's line-by-line review. HTML convers
 
 ## Chapter 1 — History & Approaches
 
-**Complete as of Session 91.** All previously open items resolved: Section 3 title kept as-is ("Seven Lenses, No Single Truth"); Fig 1.1 attribution documented (AI-generated via ChatGPT, directed/curated by Jon) and placement kept at Section 1 (considered anchoring to Section 3 instead, decided against for now — see README note); Fig 1.2 (Maslow) cut entirely due to weak sourcing, image moved to `ch01/_archive/`; portrait strip confirmed fine as-is, no changes. Review questions trimmed from 13 to 11 (cut Q2/Watson-manifesto as a duplicate of the dog/treat behaviorism question, and Q12/replication-crisis as the item least anchored to a stated Learning Objective), renumbered sequentially in both source and HTML. Linter passes clean (0 hard failures) on the rebuilt HTML.
+**Canonical revision completed 2026-07-17.** Active figures were opened and inspected. Visible numbering is sequential (1.1, 1.2); the language figure retains its legacy `fig_1_3` filename without exposing 1.3 to readers. The portrait strip remains active, and complete provenance, license, modification, attribution, sharing-status, and caveat records are in the Chapter 1 image manifest. The removed Maslow image remains archived and unapproved for reuse.
 
 | # | Description | Status | Filename |
 |---|-------------|--------|----------|
 | 1.1 | One behavior, many psychological questions (phone/notification) | ✅ | `ch01/fig_1_1_scope_map.png` |
-| 1.2 | Maslow hierarchy — REMOVED Session 91 (weak sourcing) | archived | `ch01/_archive/fig_1_2_maslow_hierarchy.png` |
-| 1.3 | Skinner / Chomsky / LLM language diagram | ✅ | `ch01/fig_1_3_language_explanations.png` |
-| — | Portraits: Wundt, James, Watson, Freud, Skinner | ✅ | `ch01/portrait_*.jpg` |
+| 1.2 | Skinner / Chomsky / LLM language diagram (legacy filename retained) | ✅ inspected; metadata complete | `ch01/fig_1_3_language_explanations.png` |
+| archived (former 1.2) | Maslow hierarchy — removed Session 91 (weak sourcing; not approved for reuse) | archived | `ch01/_archive/fig_1_2_maslow_hierarchy.png` |
+| — | Portraits: Wundt, James, Watson, Freud, Skinner | ✅ inspected; metadata complete (Watson has non-U.S. rights caveat) | `ch01/portrait_*.jpg` |
 
 ---
 
