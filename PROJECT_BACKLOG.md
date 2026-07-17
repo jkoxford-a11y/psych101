@@ -13,7 +13,7 @@ Durable future and deferred work that is not part of the immediately active task
 - **Live-test the four Chapter 4 labs** in a real browser: Signal Detection, Weber’s Law, Blind-Spot Filling-In, and Context-and-Ambiguous-Perception.
 - **Build the size–weight illusion lab or remove the placeholder** — both Chapter 4 files still say “when available,” but no such lab exists in `docs/labs/ch04/`.
 - **Live-test both Chapter 3 labs** at desktop, portrait-mobile, and landscape-mobile widths, including completion, mid-session reload, focus/state restoration, reset, labels, and cue/outcome traces.
-- **Live-test the Chapter 8 Learning Labs** and decide where each should be linked from the canonical Chapter 8 source.
+- **Finish the Chapter 8 keyboard-only spot-check** — functional, state, feedback, focus-transition, navigation-path, console, and responsive browser testing is recorded in `pipeline/audits/ch08-lab-validation.md`; a human Tab/Shift+Tab and Enter/Space pass remains because the available browser controller could not synthesize keyboard navigation reliably.
 - **Review standalone labs before broad chapter wiring** where wiring has not already been explicitly approved; preserve the project distinction between building a lab and placing it in a chapter.
 
 ## Figures and visual assets

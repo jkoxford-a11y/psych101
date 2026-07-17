@@ -68,6 +68,7 @@
   ];
 
   let state = createInitialState();
+  let interactionLocked = false;
   const elements = {};
 
   function createInitialState() {
@@ -259,6 +260,10 @@
       round.sceneNotes[pair.cue] = note;
     }
 
+    if (!beginInteraction()) {
+      return;
+    }
+
     state.studyIndex += 1;
     state.lastStudyStatus = `Pair ${state.studyIndex} studied.`;
 
@@ -278,7 +283,7 @@
   }
 
   function completeDistractorItem() {
-    if (state.phase !== 'distractor') {
+    if (state.phase !== 'distractor' || !beginInteraction()) {
       return;
     }
 
@@ -311,6 +316,10 @@
     if (!dontRemember && !response) {
       elements.recallStatus.textContent = 'Type a partner word or choose “I don’t remember.”';
       elements.recallEntry.focus();
+      return;
+    }
+
+    if (!beginInteraction()) {
       return;
     }
 
@@ -453,7 +462,7 @@
   function renderStudy() {
     const visible = state.phase === 'study';
     elements.studyPanel.hidden = !visible;
-    elements.nextStudyPair.disabled = !visible;
+    elements.nextStudyPair.disabled = !visible || interactionLocked;
     elements.studyStatus.textContent = state.lastStudyStatus;
 
     if (!visible) {
@@ -477,8 +486,8 @@
   function renderDistractor() {
     const visible = state.phase === 'distractor';
     elements.distractorPanel.hidden = !visible;
-    elements.distractorOdd.disabled = !visible;
-    elements.distractorEven.disabled = !visible;
+    elements.distractorOdd.disabled = !visible || interactionLocked;
+    elements.distractorEven.disabled = !visible || interactionLocked;
     elements.distractorStatus.textContent = state.lastDistractorStatus;
 
     if (!visible) {
@@ -494,8 +503,8 @@
   function renderRecall() {
     const visible = state.phase === 'recall';
     elements.recallPanel.hidden = !visible;
-    elements.submitRecall.disabled = !visible;
-    elements.dontRemember.disabled = !visible;
+    elements.submitRecall.disabled = !visible || interactionLocked;
+    elements.dontRemember.disabled = !visible || interactionLocked;
     elements.recallStatus.textContent = state.lastRecallStatus;
 
     if (!visible) {
@@ -521,8 +530,9 @@
     }
 
     const round = currentRound();
+    const roundLabel = state.roundIndex === 0 ? 'your own-strategy' : `the ${currentConfig().label.toLowerCase()}`;
     elements.roundSummaryKicker.textContent = `Round ${state.roundIndex + 1} complete`;
-    elements.roundScoreSummary.textContent = `You recalled ${round.score} of ${PAIR_SETS[state.roundIndex].length} partner words in the ${currentConfig().label.toLowerCase()} round.`;
+    elements.roundScoreSummary.textContent = `You recalled ${round.score} of ${PAIR_SETS[state.roundIndex].length} partner words in ${roundLabel} round.`;
     elements.baselineStrategyWrap.hidden = state.roundIndex !== 0;
     elements.roundReflectionWrap.hidden = state.roundIndex !== 1;
     elements.roundReflection.value = round.reflection;
@@ -660,6 +670,19 @@
 
   function reducedMotion() {
     return window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  }
+
+  function beginInteraction() {
+    if (interactionLocked) {
+      return false;
+    }
+
+    interactionLocked = true;
+    window.setTimeout(function () {
+      interactionLocked = false;
+      renderAll();
+    }, 300);
+    return true;
   }
 
   document.addEventListener('DOMContentLoaded', initializeLab);
