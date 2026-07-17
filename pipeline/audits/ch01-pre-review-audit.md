@@ -1,8 +1,18 @@
 # Chapter 1 Pre-Review Audit — History and Approaches to Psychology
 
 **Audit date:** 2026-07-17  
-**Status:** Read-only diagnostic audit; discussion required before any revision  
+**Status:** Implemented and validated — canonical revision commit `86e807e`
 **Audit framework:** `pipeline/audits/chapter-pre-review-audit-prompt-v3.md`
+
+## Implementation record — 2026-07-17
+
+The approved work order in `pipeline/work-orders/ch01-canonical-revision.md` was implemented in canonical revision commit `86e807e` (`Revise Chapter 1 canonical content`). The authoritative source was revised first, followed by a narrow manual rebuild of the Chapter 1 HTML because the checked-in converter has no Chapter 1 configuration. No shared CSS, JavaScript, generator, lab, or non-Chapter-1 content was changed.
+
+The revision preserved the full must-preserve ledger while repairing the audit's root causes: historical traditions are overlapping arguments rather than a forced relay race; Wundt/voluntarism is distinguished from Titchener/structuralism; Watson's methodological behaviorism is distinguished from Skinner's radical behaviorism; therapeutic-alliance evidence is described as a reliable modest association without a uniquely established causal mechanism; the depression example separates historical influence from evidentiary support; evolutionary and gene–environment claims are calibrated; and the biopsychosocial model remains an organizer rather than a diagnostic or completed causal explanation. Objectives, retrieval prompts, summary, Connections, review questions, glossary, and references were aligned with those decisions.
+
+Visible figure numbering is now sequential (1.1 and 1.2). The language figure retains its legacy `fig_1_3_language_explanations.png` filename but is synchronized as visible Figure 1.2 across source, HTML, caption, alt text, manifest, provenance, and inventory. All seven active image binaries were opened and inspected. The image manifest now records source/creator, license, modifications, attribution text, public-sharing status, and caveats for every active image; it also corrects the Skinner portrait from public-domain wording to CC BY 3.0. The Watson source record establishes U.S. public-domain status but leaves non-U.S. status uncertain, and that caveat is preserved explicitly in the manifest.
+
+Validation passed: source/HTML semantic and critical-claim parity checks; 175 structural/content checks covering IDs, anchors, local links, image paths, alt text, subsection navigation, 11 closed `<details>` answers, 17 alphabetized key terms, figure numbering, Connections, Further Reading separation, manifest fields, mojibake, and ampersands; the repository chapter linter with 14/14 pages clean and zero failures or warnings; `git diff --check`; and live browser checks at 1440×900, 390×844, and 844×390. Tables, portrait strip, figures, captions, navigation, and disclosure controls rendered without page-level horizontal overflow or console errors. No deferred Chapter 1 visual or browser defect remains.
 
 ## A. Executive judgment
 
