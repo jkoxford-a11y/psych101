@@ -1,6 +1,6 @@
 # Psych101 — Current Handoff
 
-**Last updated:** 2026-07-17 (Chapter 3 closed; Chapter 7 figure corrections active)  
+**Last updated:** 2026-07-17 (Chapter 7 candidates ready; Chapter 8 labs wired; Chapter 6 figure work queued)  
 **Canonical repository:** `C:\GitHub\psych101`
 
 This file records current state only. See `GPT_project_log.md` for completed-work history and `PROJECT_BACKLOG.md` for durable deferred work.
@@ -41,62 +41,81 @@ The prose architecture and Classical Conditioning Lab revisions are complete. Th
 
 A full canonical regeneration of `docs/chapters/07-learning.html` is still deferred until the nine-figure set is approved. Work narrowly synchronized the Figure 7.4 block and enabled expansion, so the current HTML is a mixed interim artifact rather than a final regenerated page.
 
-## Chapter 7 figure stopping point
+#### Chapter 7 figure stopping point
 
-Review candidates for Figures 7.1, 7.2, 7.3, 7.7, and 7.9 are ready under `docs/images/ch07/candidates/`; validation and the Figure 7.7 schematic/provenance decision are recorded in `pipeline/audits/ch07-remaining-figure-candidate-review.md`. All remain unapproved candidates. Nothing was promoted, wired, or regenerated.
+Review candidates for Figures 7.1, 7.2, 7.3, 7.7, and 7.9 are ready under `docs/images/ch07/candidates/`; validation and the Figure 7.7 schematic/provenance decision are recorded in `pipeline/audits/ch07-remaining-figure-candidate-review.md`. All remain unapproved candidates. Nothing in this five-figure batch was promoted, wired, or regenerated.
 
 Wiring does not imply approval. Chat-generated images are not repository assets unless explicitly saved and promoted.
 
-- **7.1 Classical conditioning:** requires revision. Replace repetition-centered acquisition wording with reliable predictive contingency; clarify that the CR is defined by learning history and need not be physically identical to the UCR; reduce the embedded glossary and repeated prose.
-- **7.2 Extinction is not erasure:** requires revision. Preserve return of responding and competing/context-sensitive learning while avoiding literal hidden-strength curves, a uniquely established inhibitory-storage mechanism, and generic stress-as-trigger wording.
-- **7.3 Operant conditioning 2×2:** requires revision. Define cells by added/removed consequence plus measured increase/decrease in behavior, not intrinsic pleasantness; shorten the examples and replace the distracting cat-spraying example.
-- **7.4 Reinforcement schedules:** scientifically approved/provisionally retained. The deterministic SVG/PNG correctly distinguish fixed-ratio break-and-run responding, variable-ratio high steady responding, fixed-interval scalloping, and variable-interval steady moderate responding. Its extinction panel is normalized to each history's own baseline, is explicitly illustrative, and does not depict acquisition speed. The manifest remains incomplete until the nine-figure batch is reconciled.
-- **7.5 Garcia–Koelling:** scientifically approved/provisionally retained after direct binary inspection. It shows the crossed taste→illness and audiovisual→shock result, labels its mini-curves illustrative, and separates the observed selective-learning pattern from the leading evolutionary interpretation. Source/license/alt/public-sharing records still belong in the final metadata batch.
-- **7.6 Bandura:** approved and promoted on 2026-07-17. The production SVG/PNG use the five-stage 1965 learning-versus-performance design: same modeled behavior, rewarded/no-consequence/punished observation conditions, lower initial imitation after model punishment, a common direct incentive, and narrowed differences afterward. The figure uses qualitative icons rather than bars, axes, numerical effects, or a 1961 aggressive-versus-nonaggressive comparison. The previous wired PNG is preserved in `docs/images/ch07/candidates/fig_bobo_doll_observational_learning_previous.png`.
-- **7.7 Tolman and Honzik:** visually readable and conceptually bounded, but its empirical-looking plotted points lack resolved provenance. Verify them against a documented reproduction of the Tolman–Honzik error data; if exact correspondence cannot be established, redraw the same qualitative pattern as an explicitly schematic trajectory. Preserve the inference boundary that rapid improvement after reward suggests prior learning but does not uniquely establish representational format.
-- **7.8 Dopamine uncertainty:** approved and promoted on 2026-07-17. The task-first production SVG/PNG show a monkey, learned 0%/50%/100% reward-probability cues, the same fixed delay and known potential reward time, and qualitative sustained activity strongest near 50%. They avoid firing-rate traces, numerical values, and the claim that reward probability was unknown to the animal. The previous wired PNG is preserved in `docs/images/ch07/candidates/fig_dopamine_uncertainty_curve_previous.png`.
-- **7.9 Reward prediction error:** requires revision. Preserve the four-event sequence but narrow the figure to a well-studied subset of midbrain dopamine neurons in particular reward-learning tasks, soften “drives learning” to “can support learning,” and reduce repeated explanatory prose.
+- **7.1 Classical conditioning:** candidate now emphasizes predictive contingency rather than repetition and distinguishes UCR from CR by learning history. Needs direct visual review.
+- **7.2 Extinction is not erasure:** candidate now presents return of responding and context-sensitive competing learning without literal hidden-strength curves. Needs direct visual review.
+- **7.3 Operant conditioning 2×2:** candidate now defines cells by added/removed consequence plus measured increase/decrease in behavior. Needs direct visual review.
+- **7.4 Reinforcement schedules:** scientifically approved/provisionally retained. The deterministic SVG/PNG correctly distinguish fixed-ratio break-and-run responding, variable-ratio high steady responding, fixed-interval scalloping, and variable-interval steady moderate responding. Its extinction panel is normalized to each history's own baseline, is explicitly illustrative, and does not depict acquisition speed.
+- **7.5 Garcia–Koelling:** scientifically approved/provisionally retained after direct binary inspection. It shows the crossed taste→illness and audiovisual→shock result, labels its mini-curves illustrative, and separates the observed selective-learning pattern from the leading evolutionary interpretation.
+- **7.6 Bandura:** approved and promoted on 2026-07-17. The production SVG/PNG use the five-stage 1965 learning-versus-performance design.
+- **7.7 Tolman and Honzik:** the new candidate uses the explicitly schematic, point-free fallback because exact correspondence between the prior empirical-looking points and documented primary values could not be established. Reward begins between Days 10 and 11. Needs direct visual review.
+- **7.8 Dopamine uncertainty:** approved and promoted on 2026-07-17. The task-first production SVG/PNG show learned 0%/50%/100% reward-probability cues, the same fixed delay and known possible reward time, and qualitative sustained activity strongest near 50%.
+- **7.9 Reward prediction error:** candidate narrows the claim to a studied subset of midbrain dopamine neurons in particular reward-learning tasks and uses “can support learning.” Needs direct visual review.
 
 The current `docs/images/ch07/README_captions_alt_text_attribution.md` is incomplete and premature because it contains only Figure 7.4. Final metadata remains a nine-figure batch task.
 
+### Chapter 8 — Memory labs
+
+The two approved lab links are now present in both `source/chapters/ch08-memory.md` and `docs/chapters/08-memory.html`:
+
+- `docs/labs/ch08/levels-of-processing.html` appears immediately after Figure 8.3 and its retrieval prompt.
+- `docs/labs/ch08/interactive-imagery.html` appears after the spacing/retrieval-practice paragraph as an applied elaboration activity.
+- `docs/labs/ch08/self-reference-effect.html` remains index-only because wiring it prominently would introduce self-schema into an already overloaded Section 1.
+
+The source and generated HTML link text are synchronized. The required end-to-end browser validation was not documented, so Chapter 8 lab integration is **wired but not yet closed**. Live-test both linked labs at desktop, portrait-mobile, and landscape-mobile widths; verify completion, reload/state behavior, reset, keyboard/focus behavior, text logs, results, privacy wording, and return navigation. Keep the Chapter 8 lab item in `PROJECT_BACKLOG.md` until that validation passes.
+
+### Chapter 6 — Flagged figure candidates queued
+
+A candidate-only work order is ready at `pipeline/work-orders/ch06-flagged-figure-candidates.md`. It has not been executed.
+
+The order requires direct inspection of the current production binaries, candidate SVG/PNG rebuilds for Figures 6.2, 6.4, and 6.5, and a retain/simplify decision for Figure 6.1. It forbids production promotion, source/HTML changes, metadata changes, inventory changes, and `HANDOFF.md` edits.
+
+- **6.1:** decision-only review of whether the five-panel opener works as a loose overview or falsely implies discrete sleep jobs.
+- **6.2:** correct the SCN pathway and anatomical placement above the optic chiasm in the anterior hypothalamus.
+- **6.4:** rebuild as an explicitly schematic hypnogram without assigning fixed biological jobs to early/middle/late blocks.
+- **6.5:** distinguish strong animal mechanistic evidence from more indirect, developing human glymphatic evidence.
+
 ## Immediate next actions
 
-1. Review the unapproved candidate batch for Figures 7.1, 7.2, 7.3, 7.7, and 7.9 against `pipeline/audits/ch07-remaining-figure-candidate-review.md`.
-2. Revise candidates as requested or record explicit figure-by-figure approval; do not infer approval from existence or wiring.
-3. After all nine Chapter 7 figures are approved, complete the metadata manifest, reconcile `source/visuals-inventory.md`, synchronize source captions/alt text, regenerate the full HTML, and run desktop/mobile/content validation.
+1. Review Chapter 7 candidates one at a time against `pipeline/audits/ch07-remaining-figure-candidate-review.md`: 7.1 → 7.2 → 7.3 → 7.7 → 7.9. Record explicit approval or requested revision for each.
+2. Complete Chapter 8 end-to-end browser validation. Do not mark the lab integration complete merely because the links exist.
+3. When a separate Work lane is available, execute `pipeline/work-orders/ch06-flagged-figure-candidates.md` exactly as a candidate-only task.
+4. After all nine Chapter 7 figures are approved, complete the metadata manifest, reconcile `source/visuals-inventory.md`, synchronize source captions/alt text, regenerate the full HTML, and run desktop/mobile/content validation.
 
 ## Important files
-
-### Chapter 2
-
-- `pipeline/audits/ch02-pre-review-audit.md`
-- `pipeline/work-orders/ch02-canonical-revision.md`
-- `source/chapters/ch02-research-methods.md`
-- `docs/chapters/02-research-methods.html`
-- `docs/images/ch02/README_captions_alt_text_attribution.md`
-- `docs/labs/ch02/correlation-causation.html`
-- `docs/js/labs-correlation-causation.js`
-
-### Chapter 3
-
-- `pipeline/audits/ch03-pre-review-audit.md`
-- `pipeline/audits/ch03-post-revision-validation.md`
-- `source/chapters/ch03-neuroscience-biological-bases.md`
-- `docs/chapters/03-neuroscience.html`
-- `docs/images/ch03/README_captions_alt_text_attribution.md`
-- `docs/css/mobile-figure-fix.css`
-- `docs/js/figure-expand.js`
 
 ### Chapter 7
 
 - `pipeline/audits/ch07-pre-review-audit.md`
 - `pipeline/audits/ch07-work-figure-review-package-2026-07-16.md`
+- `pipeline/audits/ch07-remaining-figure-candidate-review.md`
+- `pipeline/work-orders/ch07-remaining-figure-candidates.md`
 - `source/chapters/ch07-learning.md`
 - `docs/chapters/07-learning.html`
 - `docs/images/ch07/`
 - `docs/images/ch07/README_captions_alt_text_attribution.md`
-- `docs/labs/ch07/classical-conditioning.html`
-- `docs/js/labs-classical-conditioning.js`
+
+### Chapter 8
+
+- `pipeline/audits/ch08-pre-review-audit.md`
+- `pipeline/work-orders/ch08-lab-integration.md`
+- `source/chapters/ch08-memory.md`
+- `docs/chapters/08-memory.html`
+- `docs/labs/ch08/levels-of-processing.html`
+- `docs/labs/ch08/interactive-imagery.html`
+- `docs/labs/ch08/self-reference-effect.html`
+
+### Chapter 6
+
+- `pipeline/work-orders/ch06-flagged-figure-candidates.md`
+- `source/chapters/ch06-sleep.md`
+- `docs/chapters/06-sleep.html`
+- `docs/images/ch06/`
 
 ### Shared
 
