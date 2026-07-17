@@ -50,19 +50,18 @@ Wiring does not imply approval. Chat-generated images are not repository assets 
 - **7.3 Operant conditioning 2×2:** likely retain; confirm that categories are defined by observed behavior change plus added/removed consequence.
 - **7.4 Reinforcement schedules:** Work completed the deterministic SVG/PNG rebuild. The actual SVG was inspected. It correctly distinguishes fixed-ratio break-and-run responding, variable-ratio high steady responding, fixed-interval scalloping, and variable-interval steady moderate responding. Its extinction panel is normalized to each history's own baseline, is explicitly illustrative, and does not depict acquisition speed. Treat it as scientifically acceptable/provisionally retained pending final batch reconciliation. Work also prematurely created a Chapter 7 manifest containing only Figure 7.4 and narrowly edited the generated HTML; complete both surfaces only after the full figure set is approved.
 - **7.5 Garcia–Koelling:** repository candidate remains unapproved. Reinspect the actual binary. Preserve the crossed result—taste→illness and audiovisual cues→shock—and keep the evolutionary account in a separate leading-interpretation layer.
-- **7.6 Bandura:** unresolved and now the immediate figure task. The repository's promoted candidate must not be accepted merely because it is wired. Two corrected 1965-design candidates were generated in chat but were not saved or promoted. The cleaner candidate shows the correct sequence but still needs a final simplification pass: no invented numerical bars, no 1961 aggressive-versus-nonaggressive comparison, no implication of expected personal punishment, and no claim stronger than learning being revealed when direct incentives raised imitation and narrowed differences.
+- **7.6 Bandura:** approved and promoted on 2026-07-17. The production SVG/PNG now use the five-stage 1965 learning-versus-performance design: same modeled behavior, rewarded/no-consequence/punished observation conditions, lower initial imitation after model punishment, a common direct incentive, and narrowed differences afterward. The figure uses qualitative icons rather than bars, axes, numerical effects, or a 1961 aggressive-versus-nonaggressive comparison. The previous wired PNG is preserved in `docs/images/ch07/candidates/fig_bobo_doll_observational_learning_previous.png`.
 - **7.7 Tolman and Honzik:** likely retain; direct binary inspection and metadata still required. Preserve the inference boundary that rapid improvement after reward suggests prior learning but does not uniquely establish representational format.
-- **7.8 Dopamine uncertainty:** unresolved. Three chat candidates were generated and none was promoted. The latest is a useful design candidate: monkey cue → fixed delay → possible reward, with strongest sustained delay activity near 50% reward probability. It still requires two corrections before final production: the learned cue signaled reward probability, so probability was not simply “unknown to the monkey”; and the figure should say sustained delay activity is distinct from the brief phasic cue/outcome prediction-error responses in Figure 7.9, not categorically “not prediction error.” Avoid fabricated empirical-looking firing-rate values.
+- **7.8 Dopamine uncertainty:** unresolved and now the immediate figure task. A corrected task-first SVG/PNG candidate exists in `docs/images/ch07/candidates/`. It shows a monkey, learned 0%/50%/100% probability cues, the same fixed delay, known reward time, and strongest sustained delay activity near 50%, without firing-rate traces or numerical values. It still requires final direct review and explicit approval before promotion.
 - **7.9 Reward prediction error:** likely retain; inspect directly and add the scope boundary that it represents a classic pattern in a studied subset of midbrain dopamine neurons under specific reward-learning tasks, not all dopamine activity.
 
 The current `docs/images/ch07/README_captions_alt_text_attribution.md` is incomplete and premature because it contains only Figure 7.4. Final metadata remains a nine-figure batch task.
 
 ## Immediate next actions
 
-1. Finalize Figure 7.6 using the 1965 acquisition-versus-performance design and the constraints above.
-2. Correct and finalize Figure 7.8.
-3. Reinspect Figure 7.5, then directly inspect Figures 7.1, 7.2, 7.3, 7.7, and 7.9.
-4. After all nine Chapter 7 figures are approved, complete the metadata manifest, reconcile `source/visuals-inventory.md`, synchronize source captions/alt text, regenerate the full HTML, and run desktop/mobile/content validation.
+1. Review and finalize Figure 7.8.
+2. Reinspect Figure 7.5, then directly inspect Figures 7.1, 7.2, 7.3, 7.7, and 7.9.
+3. After all nine Chapter 7 figures are approved, complete the metadata manifest, reconcile `source/visuals-inventory.md`, synchronize source captions/alt text, regenerate the full HTML, and run desktop/mobile/content validation.
 
 ## Important files
 
@@ -89,6 +88,7 @@ The current `docs/images/ch07/README_captions_alt_text_attribution.md` is incomp
 ### Chapter 7
 
 - `pipeline/audits/ch07-pre-review-audit.md`
+- `pipeline/audits/ch07-work-figure-review-package-2026-07-16.md`
 - `source/chapters/ch07-learning.md`
 - `docs/chapters/07-learning.html`
 - `docs/images/ch07/`
