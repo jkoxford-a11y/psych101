@@ -8,6 +8,13 @@ Repository rules and conventions live in `AGENTS.md`, not here. Current state an
 
 ## Log Entries
 
+### 2026-07-17 - Chapter 7 Remaining Figure Review Candidates
+
+- **Scope:** Executed `pipeline/work-orders/ch07-remaining-figure-candidates.md` as candidate-only work. Created original programmatic SVGs and deterministic 2400×1350 PNGs for Figures 7.1, 7.2, 7.3, 7.7, and 7.9 under `docs/images/ch07/candidates/`; recorded the full review and validation evidence in `pipeline/audits/ch07-remaining-figure-candidate-review.md`.
+- **Figure 7.7 decision:** Exact correspondence between the current production raster’s empirical-looking points and documented primary values could not be established. Used the required explicitly schematic, point-free three-trajectory fallback and marked reward introduction between Days 10 and 11.
+- **Validation:** XML parsing, 2400×1350 SVG/PNG dimensions, deterministic SVG-to-PNG rendering, direct original-size and 1200-pixel-wide visual inspection, spelling/clipping, color-independent interpretation, `<title>`/`<desc>`, external-reference, forbidden-file, production-byte-stability, and `git diff --check` checks passed.
+- **Not done:** No candidate was approved or promoted; Chapter 7 source, generated HTML, production figures, manifest, inventory, labs, shared CSS, and shared JavaScript were not changed or regenerated.
+
 ### 2026-07-15 - Chapter 13 Canonical Revision
 
 - **Scope:** Completed the canonical Chapter 13 revision from `pipeline/audits/ch13-pre-review-audit.md` after Jon settled the five architectural decisions. Revised the authoritative Markdown, regenerated the chapter HTML through a checked-in narrow generator, rebuilt the figure set, added a standalone clinical-reasoning lab, repaired shared mobile figure overflow, and reconciled project state.

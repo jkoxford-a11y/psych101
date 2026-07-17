@@ -43,6 +43,8 @@ A full canonical regeneration of `docs/chapters/07-learning.html` is still defer
 
 ## Chapter 7 figure stopping point
 
+Review candidates for Figures 7.1, 7.2, 7.3, 7.7, and 7.9 are ready under `docs/images/ch07/candidates/`; validation and the Figure 7.7 schematic/provenance decision are recorded in `pipeline/audits/ch07-remaining-figure-candidate-review.md`. All remain unapproved candidates. Nothing was promoted, wired, or regenerated.
+
 Wiring does not imply approval. Chat-generated images are not repository assets unless explicitly saved and promoted.
 
 - **7.1 Classical conditioning:** requires revision. Replace repetition-centered acquisition wording with reliable predictive contingency; clarify that the CR is defined by learning history and need not be physically identical to the UCR; reduce the embedded glossary and repeated prose.
@@ -59,8 +61,8 @@ The current `docs/images/ch07/README_captions_alt_text_attribution.md` is incomp
 
 ## Immediate next actions
 
-1. Rebuild Figures 7.1, 7.2, 7.3, and 7.9 as clean, original, concept-first SVG/PNG figures using the constraints above.
-2. Resolve Figure 7.7 by verifying its plotted values or replacing it with an explicitly schematic original.
+1. Review the unapproved candidate batch for Figures 7.1, 7.2, 7.3, 7.7, and 7.9 against `pipeline/audits/ch07-remaining-figure-candidate-review.md`.
+2. Revise candidates as requested or record explicit figure-by-figure approval; do not infer approval from existence or wiring.
 3. After all nine Chapter 7 figures are approved, complete the metadata manifest, reconcile `source/visuals-inventory.md`, synchronize source captions/alt text, regenerate the full HTML, and run desktop/mobile/content validation.
 
 ## Important files
