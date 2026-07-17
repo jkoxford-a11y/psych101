@@ -1,7 +1,7 @@
 # Chapter 2 Pre-Review Audit — Research Methods and Statistics
 
 **Audit date:** 2026-07-15  
-**Status:** **Implemented and validated** in canonical revision commit `947a05d6bf0aec079e04d906d9e201143cb8acd2`. No further Chapter 2 editorial action is required; optional unused-image cleanup remains in `PROJECT_BACKLOG.md`.  
+**Status:** **Implemented and validated** in canonical revision commit `947a05d6bf0aec079e04d906d9e201143cb8acd2`, with the author's completed line edits implemented and validated on 2026-07-17 in the addendum below. Optional unused-image cleanup remains in `PROJECT_BACKLOG.md`.
 **Audit framework:** `pipeline/audits/chapter-pre-review-audit-prompt-v3.md`
 
 ## Repository authority and current state
@@ -234,3 +234,9 @@ Before declaring Chapter 2 complete:
 ## Editorial decision
 
 Revise rather than rebuild. The chapter already has its argument, voice, vivid examples, figures, and central lab. The revision must correct conceptual overreach and assessment alignment without genericizing the prose or expanding the chapter into an advanced methods course.
+
+## Author line-edit addendum — 2026-07-17
+
+Implemented the author's completed Chapter 2 line edits as a narrow editorial pass. The research-cycle and experiment-definition passages now use compact instructional lists; the asthma/placebo and human-research ethics explanations are compressed; the informal p-value continuation, publication-bias paragraph, and statistical-power definition/glossary entry are removed; and Review Question 6 now tests the purpose of independent IRB review. Added the reusable `.logic-emphasis` convention and applied it only to the specified load-bearing phrases.
+
+Regenerated `docs/chapters/02-research-methods.html` from the authoritative Markdown with `node pipeline/build_chapter_html.mjs 2`. Chapter lint and targeted content checks passed: nine figures with valid paths, alt text, and captions; four source/rendered tables; 11 review questions with hidden answers; 29 key terms; separated Further Reading and References; correctly rendered seven-item and four-item lists; no statistical-power or exempt/expedited/full-board prose; no raw span markup or bad separator mojibake. Browser checks at 1440 × 900, 390 × 844, and 844 × 390 found no page-level overflow, unloaded images, or console errors; logic emphasis rendered dark teal and bold without underlining, while prose links remained blue and underlined.

@@ -109,6 +109,8 @@ Chapters follow a consistent shape (from Ch. 1, and the pattern the drafts share
 
 **Formatting preferences:** Jon prefers **tables over long prose for sequential/comparative content** (schools of thought, reinforcement schedules, trait comparisons) — a Question / Contribution / Limitation table beats three paragraphs. Bold key terms on first use. Concrete daily-life examples (2–3 per chapter): the flinch, notification-dread, phone-checking.
 
+**Logic emphasis:** Use `<span class="logic-emphasis">...</span>` for the smallest phrase that carries a conceptual operation, contrast, inferential boundary, or necessary qualification. Use no more than one or two emphasis groups in an ordinary paragraph. Do not use it merely because a word is important, and do not use it for whole conclusions, links, technical terms already adequately introduced in bold, or every hedge. The test is whether emphasizing the phrase helps a novice reconstruct the concept correctly.
+
 **Body length target:** 3,500–5,000 words. Over-target chapters are *flagged, not silently cut* — that's Jon's call.
 
 ---

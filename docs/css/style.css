@@ -326,6 +326,11 @@ a { color: var(--color-accent); }
   color: var(--color-accent);
 }
 
+.logic-emphasis {
+  color: #0f5c5e;
+  font-weight: 700;
+}
+
 /* ── TOC page ── */
 .toc-pillar {
   margin: 2rem 0 0.5rem;
