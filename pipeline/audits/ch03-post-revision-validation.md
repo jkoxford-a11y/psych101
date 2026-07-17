@@ -1,16 +1,16 @@
 # Chapter 3 Post-Revision Validation
 
-**Date:** 2026-07-16  
+**Date:** 2026-07-17  
 **Authoritative source:** `source/chapters/ch03-neuroscience-biological-bases.md`  
 **Generated page:** `docs/chapters/03-neuroscience.html`
 
 ## Result
 
-Chapter 3 passed canonical-source, converter, generated-structure, asset, interaction, and direct Figure 3.9 review. The revised source and regenerated HTML are aligned, all internal anchors resolve, and the chapter’s learning assets are present and reachable.
+Chapter 3 passed canonical-source, converter, generated-structure, asset, interaction, direct Figure 3.9 review, and live multi-viewport review. The revised source and regenerated HTML are aligned, all internal anchors resolve, and the chapter’s learning assets are present and reachable.
 
-The initial three-viewport browser run found one rendering defect: the saltatory-conduction `<video>` retained its 1536-pixel intrinsic width and caused page-level horizontal overflow. Diagnostics isolated that video as the only element extending past the reading column. Commit `7d27cc9` then constrained generated chapter videos to `width: 100%; max-width: 100%; height: auto` through the chapter media script loaded by the page.
+The initial three-viewport browser run found one rendering defect: the saltatory-conduction `<video>` retained its 1536-pixel intrinsic width and caused page-level horizontal overflow. Diagnostics isolated that video as the only element extending past the reading column. Commit `7d27cc9` first constrained generated chapter videos through `docs/js/figure-expand.js`.
 
-A second automated Playwright run after that final responsive constraint could not be completed because the subsequent GitHub Actions workflows did not execute reliably, and the local container could not resolve GitHub. The corrective mechanism directly targets the measured overflow source; no other failed browser assertions were present before the fix. This limitation is recorded rather than treating an inferred pass as a measured one.
+On 2026-07-17, Jon confirmed that the corrected live page worked at desktop, portrait-mobile, and landscape-mobile resolutions. The same `display: block; width: 100%; max-width: 100%; height: auto` declarations were then moved into the shared `docs/css/mobile-figure-fix.css` stylesheet, which `docs/js/sidebar.js` loads across generated chapter pages. The temporary video-sizing block was removed from `docs/js/figure-expand.js`, returning that script to figure expansion only. Static inspection confirmed declaration equivalence and the shared stylesheet load path. A post-migration automated browser rerun was not available; the whole-book release audit should exercise the shared rule as a routine regression check rather than an open Chapter 3 blocker.
 
 ## Structural validation completed
 
@@ -27,7 +27,7 @@ A second automated Playwright run after that final responsive constraint could n
 - No stale pre-revision dopamine, H.M., stress, or autonomic claims remain in generated output.
 - No replacement-character or common UTF-8 mojibake strings were detected.
 
-## Browser and asset checks completed before responsive correction
+## Browser and asset checks
 
 The page was exercised at:
 
@@ -43,14 +43,15 @@ At all three widths:
 - the saltatory-conduction video source returned HTTP 200;
 - all twelve review-question disclosure controls were present;
 - figure expansion and collapse updated both visual state and `aria-expanded`;
-- no console errors, page errors, or failed local asset responses occurred.
+- no console errors, page errors, or failed local asset responses occurred;
+- after the responsive correction, Jon confirmed the page worked across the tested resolutions.
 
-The only failed assertion was horizontal overflow, subsequently traced specifically to the video’s intrinsic width and corrected in `docs/js/figure-expand.js`.
+The only original failed assertion was horizontal overflow, traced specifically to the video’s intrinsic width. The correction now resides in shared CSS rather than runtime element styling.
 
 ## Figure 3.9 visual review
 
 **Approved.** The sympathetic and parasympathetic systems occupy the two primary columns. Fight, flight, freeze, and tend-and-befriend appear in a separate full-width band labeled as behavioral response options. The artwork therefore does not depict tend-and-befriend as a third autonomic branch.
 
-## Remaining publication check
+## Disposition
 
-On the next routine live-site validation pass, confirm that page-level horizontal overflow is zero at the three tested widths after the committed responsive-video constraint. No additional Chapter 3 content, figure, or lab revision is indicated unless that check exposes a new issue.
+Chapter 3 is complete. Do not reopen its prose, figures, labs, or chapter-specific rendering unless a later whole-book regression check exposes a concrete defect.
