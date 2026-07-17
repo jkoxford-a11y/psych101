@@ -1,35 +1,19 @@
 # Psych101 — Current Handoff
 
-**Last updated:** 2026-07-17 (Chapter 7 production/candidate identity reconciled; Figure 7.7 provenance decision remains; Chapter 8 labs wired; Chapter 6 figure work queued)  
+**Last updated:** 2026-07-17 (Chapter 7 image work paused; Chapter 1 audit is the active non-image lane)  
 **Canonical repository:** `C:\GitHub\psych101`
 
-This file records current state only. See `GPT_project_log.md` for completed-work history and `PROJECT_BACKLOG.md` for durable deferred work.
+This file records current state only. See `GPT_project_log.md` for completed-work history, `PROJECT_BACKLOG.md` for durable deferred work, and `pipeline/audits/ch07-image-work-pause-2026-07-17.md` for the Chapter 7 stopping point.
 
 ## Current state
 
 ### Chapter 2 — Research Methods and Statistics
 
-Chapter 2 completed its canonical audit/revision cycle on 2026-07-15. The durable audit at `pipeline/audits/ch02-pre-review-audit.md` is marked **implemented and validated** in canonical revision commit `947a05d6bf0aec079e04d906d9e201143cb8acd2`. A narrow post-revision verification and alignment repair was completed on 2026-07-16: Review Question 3 now uses interpretation-and-use validity framing, the lab records but does not score prereveal headline predictions, and the chapter accurately describes the lab's fictional headlines and separate causal judgments.
-
-Current authoritative surfaces:
-
-- source: `source/chapters/ch02-research-methods.md`
-- generated HTML: `docs/chapters/02-research-methods.html`
-- figure manifest: `docs/images/ch02/README_captions_alt_text_attribution.md`
-- lab: `docs/labs/ch02/correlation-causation.html`
-- lab script: `docs/js/labs-correlation-causation.js`
-
-The Chapter 2 post-revision verification is complete. Do not reopen the settled architecture, examples, figures, citations, or seven major editorial decisions unless Jon identifies a new specific defect.
+Chapter 2 completed its canonical audit/revision cycle and post-revision verification. The durable audit is `pipeline/audits/ch02-pre-review-audit.md`; the current source, generated HTML, figure manifest, and lab are aligned. Do not reopen settled Chapter 2 decisions unless Jon identifies a specific defect.
 
 ### Chapter 3 — Neuroscience and Biological Bases of Behavior
 
-Chapter 3 is complete. It was regenerated from `source/chapters/ch03-neuroscience-biological-bases.md`, and structural validation passed for section order, callouts, figures, internal anchors, review items, glossary, labs, video asset, and scientific framing. The durable record is `pipeline/audits/ch03-post-revision-validation.md`.
-
-Figure 3.9 is approved after direct visual inspection. Its sympathetic and parasympathetic systems remain the two primary columns; fight, flight, freeze, and tend-and-befriend appear in a separate behavioral-response band rather than as autonomic branches.
-
-The final rendering defect was the saltatory-conduction video retaining its 1536-pixel intrinsic width. Jon confirmed the corrected live page worked at desktop, portrait-mobile, and landscape-mobile resolutions. The responsive declarations now live in shared `docs/css/mobile-figure-fix.css`; the temporary runtime sizing block has been removed from `docs/js/figure-expand.js`. The next whole-book release audit should regression-test the shared rule, but Chapter 3 has no remaining chapter-specific blocker.
-
-Do not reopen Chapter 3 unless a later whole-book regression check exposes a concrete defect.
+Chapter 3 is complete and validated. The durable record is `pipeline/audits/ch03-post-revision-validation.md`. The saltatory-conduction video now behaves responsively at desktop, portrait-mobile, and landscape-mobile widths. Do not reopen Chapter 3 absent a concrete regression.
 
 ### Chapters 9–13
 
@@ -39,87 +23,79 @@ Canonical revision work is complete. Do not reopen these chapters unless Jon ide
 
 The prose architecture and Classical Conditioning Lab revisions are complete. The authoritative source remains `source/chapters/ch07-learning.md`.
 
-A full canonical regeneration of `docs/chapters/07-learning.html` is still deferred until the nine-figure set is approved. Work narrowly synchronized the Figure 7.4 block and enabled expansion, so the current HTML is a mixed interim artifact rather than a final regenerated page.
+A full canonical regeneration of `docs/chapters/07-learning.html` remains deferred until the nine-figure set is approved. The current HTML is a mixed interim artifact.
 
-#### Chapter 7 figure stopping point
+#### Production-versus-candidate selections
 
-The production-versus-candidate reconciliation is recorded in `pipeline/audits/ch07-remaining-figure-candidate-review.md`. The word **production** means the asset currently wired at `docs/images/ch07/fig_*.png`; **candidate** means an alternative under `docs/images/ch07/candidates/`. Candidate defects must not be described as defects in the live chapter figure.
+- **7.1 Classical conditioning:** retain production; candidate not selected.
+- **7.2 Extinction is not erasure:** candidate approved for later controlled promotion.
+- **7.3 Operant conditioning 2×2:** retain production; candidate not selected.
+- **7.4 Reinforcement schedules:** scientifically approved/provisionally retained.
+- **7.5 Garcia–Koelling:** scientifically approved/provisionally retained.
+- **7.6 Bandura:** approved and promoted.
+- **7.7 Tolman and Honzik:** unresolved and image work paused.
+- **7.8 Dopamine uncertainty:** approved and promoted.
+- **7.9 Reward prediction error:** candidate approved for later controlled promotion.
 
-- **7.1 Classical conditioning — retain production.** Jon inspected the live figure and did not see the response-symbol ambiguity attributed to the candidate. The production figure remains selected; the candidate is not selected and should not be revised.
-- **7.2 Extinction is not erasure — candidate approved for later controlled promotion.** The schematic plots observable responding, preserves return after time or context change, and does not present hidden storage traces as literal mechanisms.
-- **7.3 Operant conditioning 2×2 — retain production.** The awkward title and full-width plus-glyph portability issue belong to the candidate, not the live figure. The production figure remains selected; the candidate is not selected and should not be revised.
-- **7.4 Reinforcement schedules — scientifically approved/provisionally retained.** The deterministic SVG/PNG correctly distinguish fixed-ratio break-and-run responding, variable-ratio high steady responding, fixed-interval scalloping, and variable-interval steady moderate responding. Its extinction panel is normalized to each history's own baseline, is explicitly illustrative, and does not depict acquisition speed.
-- **7.5 Garcia–Koelling — scientifically approved/provisionally retained.** It shows the crossed taste→illness and audiovisual→shock result, labels its mini-curves illustrative, and separates the observed selective-learning pattern from the leading evolutionary interpretation.
-- **7.6 Bandura — approved and promoted on 2026-07-17.** The production SVG/PNG use the five-stage 1965 learning-versus-performance design.
-- **7.7 Tolman and Honzik — one decision remains.** The live production graph is visually clear and has no axis-direction defect, but the exact daily plotted points are not tied to a documented local value table or verified reconstruction. The schematic candidate avoids undocumented values but has a minor rotated-axis-label problem. Do not revise the candidate unless the schematic route is selected. Final release requires either documenting the production values or selecting and repairing the schematic fallback.
-- **7.8 Dopamine uncertainty — approved and promoted on 2026-07-17.** The task-first production SVG/PNG show learned 0%/50%/100% reward-probability cues, the same fixed delay and known possible reward time, and qualitative sustained activity strongest near 50%.
-- **7.9 Reward prediction error — candidate approved for later controlled promotion.** The four-panel schematic limits the claim to a studied subset of midbrain dopamine neurons in particular tasks, uses “can support learning,” and distinguishes phasic prediction error from sustained uncertainty-related activity.
+#### Figure 7.7 stopping point
 
-Nothing from the remaining-candidate batch has been promoted or wired. The current `docs/images/ch07/README_captions_alt_text_attribution.md` is incomplete and premature because it contains only Figure 7.4. Final metadata remains a nine-figure batch task.
+The current production graph remains wired and visually readable, but its precise empirical-looking daily points are not tied to a documented value table or verified reconstruction. Jon selected the schematic route in principle. The candidate axis label was changed to neutral `Maze errors` in commit `8007fb2`, but the revised render contains overlapping elements and is **not approved**.
+
+Do not treat the Figure 7.7 candidate as ready for promotion. Resume from direct inspection of the actual SVG and PNG, identify the overlaps, and reassess the layout at full size and chapter width. The durable pause record is `pipeline/audits/ch07-image-work-pause-2026-07-17.md`.
+
+No Chapter 7 candidates should be promoted, no full HTML regeneration should occur, and the nine-figure metadata batch should remain deferred until Figure 7.7 is resolved.
 
 ### Chapter 8 — Memory labs
 
-The two approved lab links are now present in both `source/chapters/ch08-memory.md` and `docs/chapters/08-memory.html`:
+The levels-of-processing and interactive-imagery labs are wired in both source and generated HTML. The self-reference lab remains index-only. End-to-end browser validation is still undocumented; completion, reload/state behavior, reset, keyboard/focus behavior, logs/results, privacy wording, and return navigation remain to be tested at desktop, portrait-mobile, and landscape-mobile widths.
 
-- `docs/labs/ch08/levels-of-processing.html` appears immediately after Figure 8.3 and its retrieval prompt.
-- `docs/labs/ch08/interactive-imagery.html` appears after the spacing/retrieval-practice paragraph as an applied elaboration activity.
-- `docs/labs/ch08/self-reference-effect.html` remains index-only because wiring it prominently would introduce self-schema into an already overloaded Section 1.
+### Chapter 6 — Flagged figure candidates
 
-The source and generated HTML link text are synchronized. The required end-to-end browser validation was not documented, so Chapter 8 lab integration is **wired but not yet closed**. Live-test both linked labs at desktop, portrait-mobile, and landscape-mobile widths; verify completion, reload/state behavior, reset, keyboard/focus behavior, text logs, results, privacy wording, and return navigation. Keep the Chapter 8 lab item in `PROJECT_BACKLOG.md` until that validation passes.
+The candidate-only work order at `pipeline/work-orders/ch06-flagged-figure-candidates.md` has not been executed. Because the active lane is intentionally moving away from image work, leave this queued.
 
-### Chapter 6 — Flagged figure candidates queued
+### Chapter 1 — History and Approaches
 
-A candidate-only work order is ready at `pipeline/work-orders/ch06-flagged-figure-candidates.md`. It has not been executed.
+This is the active non-image lane. Begin with a read-only pre-review audit of:
 
-The order requires direct inspection of the current production binaries, candidate SVG/PNG rebuilds for Figures 6.2, 6.4, and 6.5, and a retain/simplify decision for Figure 6.1. It forbids production promotion, source/HTML changes, metadata changes, inventory changes, and `HANDOFF.md` edits.
+- `source/chapters/ch01-history-approaches.md`
+- `docs/chapters/01-history-approaches.html`
+- `source/chapters/_provenance/ch01-history-approaches.md`
+- relevant chapter-spec, voice, figure inventory, and conversion files
 
-- **6.1:** decision-only review of whether the five-panel opener works as a loose overview or falsely implies discrete sleep jobs.
-- **6.2:** correct the SCN pathway and anatomical placement above the optic chiasm in the anterior hypothalamus.
-- **6.4:** rebuild as an explicitly schematic hypnogram without assigning fixed biological jobs to early/middle/late blocks.
-- **6.5:** distinguish strong animal mechanistic evidence from more indirect, developing human glymphatic evidence.
+The audit should address the chapter’s core argument, two-week takeaways, cognitive load, organization, accuracy, references, teachability, figures already present, chatbot prompts, and possible Learning Labs. Do not revise the source or HTML during the audit.
 
 ## Immediate next actions
 
-1. Resolve Figure 7.7 by either documenting the production graph's plotted values or explicitly selecting the schematic fallback; revise the candidate's axis label only if the schematic route is chosen.
-2. After the Figure 7.7 route is settled, perform one controlled Chapter 7 figure step for approved candidates 7.2 and 7.9 plus any selected 7.7 replacement. Do not alter production Figures 7.1 or 7.3.
-3. Complete Chapter 8 end-to-end browser validation. Do not mark the lab integration complete merely because the links exist.
-4. When a separate Work lane is available, execute `pipeline/work-orders/ch06-flagged-figure-candidates.md` exactly as a candidate-only task, with explicit production-versus-candidate selection outcomes.
-5. After all nine Chapter 7 figures are approved, complete the metadata manifest, reconcile `source/visuals-inventory.md`, synchronize source captions/alt text, regenerate the full HTML, and run desktop/mobile/content validation.
+1. Run the Chapter 1 read-only pre-review audit and save it under `pipeline/audits/`.
+2. Discuss the audit with Jon before drafting or implementing revisions.
+3. Keep Chapter 7 image work paused until Jon explicitly reopens it.
+4. Complete Chapter 8 live lab validation when a browser-testing session is available.
+5. Leave Chapter 6 image candidates queued while the project is deliberately working in a non-image lane.
 
 ## Important files
 
-### Chapter 7
+### Active Chapter 1 lane
 
-- `pipeline/audits/ch07-pre-review-audit.md`
-- `pipeline/audits/ch07-work-figure-review-package-2026-07-16.md`
+- `source/chapters/ch01-history-approaches.md`
+- `docs/chapters/01-history-approaches.html`
+- `source/chapters/_provenance/ch01-history-approaches.md`
+- `pipeline/chapter-spec.md`
+- `pipeline/html-conversion-spec.md`
+- `pipeline/voice-brief.md`
+- `source/visuals-inventory.md`
+
+### Paused Chapter 7 lane
+
+- `pipeline/audits/ch07-image-work-pause-2026-07-17.md`
 - `pipeline/audits/ch07-remaining-figure-candidate-review.md`
-- `pipeline/work-orders/ch07-remaining-figure-candidates.md`
+- `pipeline/audits/ch07-pre-review-audit.md`
 - `source/chapters/ch07-learning.md`
 - `docs/chapters/07-learning.html`
 - `docs/images/ch07/`
-- `docs/images/ch07/README_captions_alt_text_attribution.md`
-
-### Chapter 8
-
-- `pipeline/audits/ch08-pre-review-audit.md`
-- `pipeline/work-orders/ch08-lab-integration.md`
-- `source/chapters/ch08-memory.md`
-- `docs/chapters/08-memory.html`
-- `docs/labs/ch08/levels-of-processing.html`
-- `docs/labs/ch08/interactive-imagery.html`
-- `docs/labs/ch08/self-reference-effect.html`
-
-### Chapter 6
-
-- `pipeline/work-orders/ch06-flagged-figure-candidates.md`
-- `source/chapters/ch06-sleep.md`
-- `docs/chapters/06-sleep.html`
-- `docs/images/ch06/`
 
 ### Shared
 
-- `docs/images/psych101_figure_style_guide.md`
-- `source/visuals-inventory.md`
-- `pipeline/html-conversion-spec.md`
+- `AGENTS.md`
 - `GPT_project_log.md`
 - `PROJECT_BACKLOG.md`
+- `docs/images/psych101_figure_style_guide.md`
