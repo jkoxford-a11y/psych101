@@ -1,6 +1,6 @@
 # Psych101 — Current Handoff
 
-**Last updated:** 2026-07-17 (Chapter 8 lab validation complete; Chapter 4 lab validation is the next non-image action)  
+**Last updated:** 2026-07-17 (Chapter 4 automated lab validation complete; deployed-page keyboard/storage spot check remains)  
 **Canonical repository:** `C:\GitHub\psych101`
 
 This file records current state only. See `GPT_project_log.md` for completed-work history, `PROJECT_BACKLOG.md` for durable deferred work, and `pipeline/audits/ch07-image-work-pause-2026-07-17.md` for the Chapter 7 stopping point.
@@ -19,7 +19,7 @@ Chapter 2 completed its canonical audit/revision cycle and post-revision verific
 
 ### Chapter 3 — Neuroscience and Biological Bases of Behavior
 
-Chapter 3 is complete and validated. The durable record is `pipeline/audits/ch03-post-revision-validation.md`. The saltatory-conduction video is responsive at desktop, portrait-mobile, and landscape-mobile widths.
+Chapter 3 is complete and validated. The durable record is `pipeline/audits/ch03-post-revision-validation.md`. The saltatory-conduction video is responsive at desktop, portrait-mobile, and landscape-mobile widths. Two standalone Chapter 3 labs still require live end-to-end browser validation.
 
 ### Chapters 9–13
 
@@ -45,18 +45,22 @@ The candidate-only work order at `pipeline/work-orders/ch06-flagged-figure-candi
 
 ### Chapter 4 — Learning Labs
 
-Four standalone Chapter 4 labs exist: Signal Detection, Weber’s Law, Blind-Spot Filling-In, and Context-and-Ambiguous-Perception. They still need live end-to-end browser validation. The size–weight illusion placeholder also needs a later build-or-remove decision, but that decision is separate from validating the four existing labs.
+Automated functional and responsive validation is complete for Signal Detection, Weber’s Law, Blind-Spot Filling-In, and Context-and-Ambiguous-Perception. All four passed the exercised completion, validation, feedback, focus, save/restore, reset, privacy/accessibility, and overflow checks at 1440 × 900, 390 × 844, and 844 × 390.
+
+The validation found and repaired stale status/reset state in all four labs, a null-focus error when Weber’s Law lacked its second prediction, and double-mirrored target geometry in the Blind-Spot lab. The durable record is `pipeline/audits/ch04-lab-validation.md`. The remaining closure step is a deployed-page human keyboard-only pass plus one real-browser sessionStorage reload/restore check. The size–weight illusion placeholder remains a separate build-or-remove decision.
 
 ## Immediate next actions
 
-1. Complete live end-to-end browser validation of the four existing Chapter 4 labs and record concrete defects without broadening into Chapter 4 image work.
-2. Keep Chapter 7 image work paused until Jon explicitly reopens it; if reopened, resume with Figure 7.7 direct inspection and overlap repair.
-3. Leave Chapter 6 candidate-only image work queued while the project is deliberately avoiding a new image lane.
-4. Do not reopen completed Chapters 1–3, Chapter 8, or Chapters 9–13 without a specific regression or editorial request.
+1. Complete the deployed-page human keyboard and real-sessionStorage spot check for the four Chapter 4 labs; then mark `pipeline/audits/ch04-lab-validation.md` complete.
+2. After Chapter 4 closes, live-test the two standalone Chapter 3 labs at desktop, portrait-mobile, and landscape-mobile widths.
+3. Keep Chapter 7 image work paused until Jon explicitly reopens it; if reopened, resume with Figure 7.7 direct inspection and overlap repair.
+4. Leave Chapter 6 candidate-only image work queued while the project is deliberately avoiding a new image lane.
+5. Do not reopen completed Chapters 1–2, Chapter 8, or Chapters 9–13 without a specific regression or editorial request.
 
 ## Important files
 
+- Chapter 4 validation: `pipeline/audits/ch04-lab-validation.md`, `docs/labs/ch04/`, `docs/labs/ch04/index.html`, `docs/labs/index.html`
 - Chapter 8 validation: `pipeline/audits/ch08-lab-validation.md`, `docs/labs/ch08/`, `docs/js/labs-levels-of-processing.js`, `docs/js/labs-interactive-imagery.js`
-- Next non-image lane: `docs/labs/ch04/`, `docs/js/` Chapter 4 lab scripts, `docs/labs/ch04/index.html`, `docs/labs/index.html`
+- Next non-image lane after Chapter 4 closure: Chapter 3 lab HTML/JavaScript and `PROJECT_BACKLOG.md`
 - Paused Chapter 7 lane: `pipeline/audits/ch07-image-work-pause-2026-07-17.md`, `source/chapters/ch07-learning.md`, `docs/chapters/07-learning.html`, `docs/images/ch07/`
 - Shared state: `AGENTS.md`, `GPT_project_log.md`, `PROJECT_BACKLOG.md`, `source/visuals-inventory.md`
