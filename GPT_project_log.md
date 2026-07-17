@@ -8,6 +8,16 @@ Repository rules and conventions live in `AGENTS.md`, not here. Current state an
 
 ## Log Entries
 
+### 2026-07-17 - Chapter 8 Learning Lab Validation
+
+- **Scope:** Completed end-to-end validation of the two Chapter 8 labs wired into the authoritative source and generated HTML: Levels of Processing and Interactive Imagery. Reviewed the Self-Reference Effect lab and retained it as index-only optional enrichment.
+- **Defects repaired:** Fixed rapid double-submission that could skip trials in both wired labs by adding lab-local interaction locks. Corrected the malformed Interactive Imagery Round 1 feedback sentence, “in the your own strategy round.”
+- **Validation:** Both wired labs passed complete functional runs, reload and `sessionStorage` restoration, restart/reset, prediction and explanation gating, feedback, event-log/results behavior, focus transitions, navigation, privacy wording, console checks, and responsive-layout testing at 1440 × 900, 390 × 844, and 844 × 390. JavaScript syntax, Chapter 8 linting, local links/assets, source/HTML wiring, mojibake checks, and `git diff --check` also passed.
+- **Keyboard accessibility:** The automated browser controller could not reliably synthesize keyboard navigation. Jonathan K. Oxford subsequently completed human keyboard-only testing of both wired labs, including Tab/Shift+Tab navigation and Enter/Space activation, and reported that both worked correctly. Chapter 8 lab accessibility validation is closed.
+- **Self-Reference Effect decision:** Keep index-only. The lab is responsibly designed, but it introduces self-schema without filling a current Chapter 8 instructional gap.
+- **Files and commits:** Implementation and automated validation were recorded in commit `95588eb`; the completed keyboard pass was added to `pipeline/audits/ch08-lab-validation.md` in `882f725`; the obsolete backlog item was removed in `45a6c4e`; and `HANDOFF.md` was reconciled in `9e7ab3f`.
+- **Final status:** Chapter 8 Learning Lab validation is complete. No unresolved Chapter 8 lab defect or placement decision remains.
+
 ### 2026-07-17 - Chapter 7 Remaining Figure Review Candidates
 
 - **Scope:** Executed `pipeline/work-orders/ch07-remaining-figure-candidates.md` as candidate-only work. Created original programmatic SVGs and deterministic 2400×1350 PNGs for Figures 7.1, 7.2, 7.3, 7.7, and 7.9 under `docs/images/ch07/candidates/`; recorded the full review and validation evidence in `pipeline/audits/ch07-remaining-figure-candidate-review.md`.
