@@ -1,6 +1,6 @@
 # Psych101 — Current Handoff
 
-**Last updated:** 2026-07-17 (Chapter 1 canonical revision complete; Chapter 8 lab validation is the next non-image action)
+**Last updated:** 2026-07-17 (Chapter 8 lab validation complete; Chapter 4 lab validation is the next non-image action)  
 **Canonical repository:** `C:\GitHub\psych101`
 
 This file records current state only. See `GPT_project_log.md` for completed-work history, `PROJECT_BACKLOG.md` for durable deferred work, and `pipeline/audits/ch07-image-work-pause-2026-07-17.md` for the Chapter 7 stopping point.
@@ -33,22 +33,30 @@ Production/candidate decisions remain: retain production 7.1 and 7.3; later prom
 
 ### Chapter 8 — Memory labs
 
-The levels-of-processing and interactive-imagery labs are wired in source and generated HTML. The self-reference lab remains index-only. End-to-end browser validation is still undocumented: complete both wired labs and verify reload/state behavior, reset, keyboard/focus behavior, logs/results, privacy wording, return navigation, and desktop/portrait-mobile/landscape-mobile rendering.
+Chapter 8 lab validation is complete. Levels of Processing and Interactive Imagery remain wired in both the authoritative source and generated HTML. Work repaired rapid double-submission in both labs and one malformed Interactive Imagery score sentence in commit `95588eb`.
+
+Functional completion, reload/state restoration, reset, feedback, focus transitions, navigation paths, event logs/results, privacy wording, console behavior, and responsive layouts passed at 1440 × 900, 390 × 844, and 844 × 390. Jon completed the remaining human keyboard-only pass, including Tab/Shift+Tab navigation and Enter/Space activation, and reported that both labs worked correctly. The durable validation record is `pipeline/audits/ch08-lab-validation.md`.
+
+Self-Reference Effect remains index-only. Its design is sound, but it introduces self-schema without filling a current Chapter 8 instructional gap; do not wire it into the chapter absent a new editorial decision.
 
 ### Chapter 6 — Flagged figure candidates
 
 The candidate-only work order at `pipeline/work-orders/ch06-flagged-figure-candidates.md` remains queued. Leave it untouched while the project stays in a non-image lane.
 
+### Chapter 4 — Learning Labs
+
+Four standalone Chapter 4 labs exist: Signal Detection, Weber’s Law, Blind-Spot Filling-In, and Context-and-Ambiguous-Perception. They still need live end-to-end browser validation. The size–weight illusion placeholder also needs a later build-or-remove decision, but that decision is separate from validating the four existing labs.
+
 ## Immediate next actions
 
-1. Complete live end-to-end browser validation of the two wired Chapter 8 labs and record any concrete defects.
+1. Complete live end-to-end browser validation of the four existing Chapter 4 labs and record concrete defects without broadening into Chapter 4 image work.
 2. Keep Chapter 7 image work paused until Jon explicitly reopens it; if reopened, resume with Figure 7.7 direct inspection and overlap repair.
 3. Leave Chapter 6 candidate-only image work queued while the project is deliberately avoiding a new image lane.
-4. Do not reopen completed Chapters 1–3 or 9–13 without a specific regression or editorial request.
+4. Do not reopen completed Chapters 1–3, Chapter 8, or Chapters 9–13 without a specific regression or editorial request.
 
 ## Important files
 
-- Chapter 1 record: `pipeline/audits/ch01-pre-review-audit.md`, `pipeline/work-orders/ch01-canonical-revision.md`
-- Next non-image lane: Chapter 8 source/HTML and `docs/labs/ch08/`
+- Chapter 8 validation: `pipeline/audits/ch08-lab-validation.md`, `docs/labs/ch08/`, `docs/js/labs-levels-of-processing.js`, `docs/js/labs-interactive-imagery.js`
+- Next non-image lane: `docs/labs/ch04/`, `docs/js/` Chapter 4 lab scripts, `docs/labs/ch04/index.html`, `docs/labs/index.html`
 - Paused Chapter 7 lane: `pipeline/audits/ch07-image-work-pause-2026-07-17.md`, `source/chapters/ch07-learning.md`, `docs/chapters/07-learning.html`, `docs/images/ch07/`
 - Shared state: `AGENTS.md`, `GPT_project_log.md`, `PROJECT_BACKLOG.md`, `source/visuals-inventory.md`
