@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2400" height="1350" viewBox="0 0 2400 1350" role="img" aria-labelledby="title desc">
+  <title id="title">Learned reward probability and sustained delay-period activity</title>
+  <desc id="desc">A monkey performs three learned-cue conditions. Distinct cues signal zero, fifty, or one hundred percent reward probability. Every condition has the same fixed delay and known reward time. Sustained delay-period activity is low at zero percent, strongest near fifty percent, and lower again at one hundred percent. This qualitative sustained signal is distinguished from brief cue and outcome responses.</desc>
+  <defs>
+    <style>
+      text { font-family: Arial, Helvetica, sans-serif; fill: #132441; }
+      .title { font-size: 58px; font-weight: 700; }
+      .subtitle { font-size: 28px; }
+      .head { font-size: 31px; font-weight: 700; }
+      .label { font-size: 29px; font-weight: 700; }
+      .body { font-size: 25px; }
+      .small { font-size: 21px; }
+      .row { fill: #fff; stroke: #b8c8dc; stroke-width: 3; }
+      .flow { stroke: #547394; stroke-width: 8; fill: none; stroke-linecap: round; }
+    </style>
+    <marker id="arrow" markerUnits="userSpaceOnUse" markerWidth="28" markerHeight="28" refX="25" refY="14" orient="auto"><path d="M0 0 L27 14 L0 28 Z" fill="#547394"/></marker>
+  </defs>
+  <rect width="2400" height="1350" fill="#f6f9fc"/>
+  <text x="1200" y="78" text-anchor="middle" class="title">Learned reward probability during a fixed delay</text>
+  <text x="1200" y="125" text-anchor="middle" class="subtitle">A task-first schematic of one primate delayed-reward paradigm</text>
+
+  <!-- Original simplified monkey subject -->
+  <rect x="55" y="175" width="335" height="950" rx="28" fill="#eaf1f8" stroke="#9bb4cd" stroke-width="3"/>
+  <text x="222" y="225" text-anchor="middle" class="head">Experimental subject</text>
+  <circle cx="222" cy="410" r="115" fill="#9b6641" stroke="#503724" stroke-width="6"/>
+  <circle cx="112" cy="405" r="48" fill="#b97d53" stroke="#503724" stroke-width="5"/><circle cx="332" cy="405" r="48" fill="#b97d53" stroke="#503724" stroke-width="5"/>
+  <ellipse cx="222" cy="430" rx="80" ry="72" fill="#d6a47a"/>
+  <path d="M133 358 Q222 255 311 358 Q270 326 222 342 Q174 326 133 358" fill="#503724"/>
+  <circle cx="190" cy="395" r="7"/><circle cx="254" cy="395" r="7"/><ellipse cx="222" cy="435" rx="15" ry="11" fill="#503724"/>
+  <path d="M190 470 Q222 492 254 470" stroke="#503724" stroke-width="6" fill="none"/>
+  <path d="M150 545 Q222 505 294 545 L320 805 Q222 860 124 805 Z" fill="#9b6641" stroke="#503724" stroke-width="6"/>
+  <path d="M140 610 Q55 680 115 760 M304 610 Q370 660 330 745" stroke="#503724" stroke-width="28" fill="none" stroke-linecap="round"/>
+  <text x="222" y="915" text-anchor="middle" class="label">Monkey</text>
+  <text x="222" y="955" text-anchor="middle" class="body">learns which cue</text><text x="222" y="990" text-anchor="middle" class="body">signals each probability</text>
+  <rect x="85" y="1020" width="275" height="70" rx="20" fill="#fff" stroke="#7896b5" stroke-width="3"/>
+  <text x="222" y="1065" text-anchor="middle" class="label">Reward time is known</text>
+
+  <!-- Column headings -->
+  <text x="610" y="220" text-anchor="middle" class="head">Learned cue</text>
+  <text x="1080" y="220" text-anchor="middle" class="head">Fixed delay</text>
+  <text x="1570" y="220" text-anchor="middle" class="head">Reward outcome</text>
+  <text x="2050" y="220" text-anchor="middle" class="head">Sustained activity</text>
+
+  <!-- 0 percent row -->
+  <rect x="430" y="255" width="1915" height="250" rx="28" class="row"/>
+  <circle cx="610" cy="365" r="73" fill="#dce8f5" stroke="#315f8f" stroke-width="6"/><text x="610" y="377" text-anchor="middle" font-size="40" font-weight="700">0%</text>
+  <text x="610" y="465" text-anchor="middle" class="body">Cue signals no reward</text>
+  <path d="M715 380 H840" class="flow" marker-end="url(#arrow)"/>
+  <circle cx="1080" cy="365" r="58" fill="#fff" stroke="#547394" stroke-width="6"/><path d="M1080 365 L1080 327 M1080 365 L1112 383" stroke="#547394" stroke-width="7" stroke-linecap="round"/><text x="1080" y="465" text-anchor="middle" class="body">Same delay</text>
+  <path d="M1200 380 H1325" class="flow" marker-end="url(#arrow)"/>
+  <circle cx="1570" cy="365" r="66" fill="#eef1f4" stroke="#6d7b88" stroke-width="5" stroke-dasharray="12 9"/><path d="M1532 365 H1608" stroke="#6d7b88" stroke-width="10"/>
+  <text x="1570" y="465" text-anchor="middle" class="label">No reward</text>
+  <path d="M1690 380 H1815" class="flow" marker-end="url(#arrow)"/>
+  <g fill="#52779d"><circle cx="2010" cy="360" r="15"/><circle cx="2060" cy="360" r="15"/></g>
+  <text x="2050" y="430" text-anchor="middle" class="label">Low</text><text x="2050" y="465" text-anchor="middle" class="small">Qualitative level</text>
+
+  <!-- 50 percent row -->
+  <rect x="430" y="535" width="1915" height="250" rx="28" class="row"/>
+  <rect x="537" y="580" width="146" height="146" rx="26" fill="#fff0cc" stroke="#b27612" stroke-width="6"/><text x="610" y="666" text-anchor="middle" font-size="40" font-weight="700">50%</text>
+  <text x="610" y="750" text-anchor="middle" class="body">Cue signals possible reward</text>
+  <path d="M715 660 H840" class="flow" marker-end="url(#arrow)"/>
+  <circle cx="1080" cy="645" r="58" fill="#fff" stroke="#547394" stroke-width="6"/><path d="M1080 645 L1080 607 M1080 645 L1112 663" stroke="#547394" stroke-width="7" stroke-linecap="round"/><text x="1080" y="745" text-anchor="middle" class="body">Same delay</text>
+  <path d="M1200 660 H1325" class="flow" marker-end="url(#arrow)"/>
+  <circle cx="1510" cy="645" r="58" fill="#f7c94a" stroke="#9a7114" stroke-width="5"/><path d="M1490 645 Q1510 615 1530 645 Q1510 680 1490 645" fill="#fff4c9"/>
+  <text x="1575" y="650" class="label">or</text>
+  <circle cx="1660" cy="645" r="58" fill="#eef1f4" stroke="#6d7b88" stroke-width="5" stroke-dasharray="12 9"/><path d="M1627 645 H1693" stroke="#6d7b88" stroke-width="10"/>
+  <text x="1570" y="745" text-anchor="middle" class="label">Reward may or may not occur</text>
+  <path d="M1735 660 H1815" class="flow" marker-end="url(#arrow)"/>
+  <g fill="#b27612"><circle cx="1950" cy="625" r="18"/><circle cx="2000" cy="665" r="18"/><circle cx="2050" cy="615" r="18"/><circle cx="2100" cy="665" r="18"/><circle cx="2150" cy="625" r="18"/><circle cx="2050" cy="690" r="18"/></g>
+  <text x="2050" y="745" text-anchor="middle" class="label">Strongest</text>
+
+  <!-- 100 percent row -->
+  <rect x="430" y="815" width="1915" height="250" rx="28" class="row"/>
+  <path d="M610 855 L690 925 L610 995 L530 925 Z" fill="#e8e1f3" stroke="#6f55a0" stroke-width="6"/><text x="610" y="937" text-anchor="middle" font-size="40" font-weight="700">100%</text>
+  <text x="610" y="1030" text-anchor="middle" class="body">Cue signals certain reward</text>
+  <path d="M715 940 H840" class="flow" marker-end="url(#arrow)"/>
+  <circle cx="1080" cy="925" r="58" fill="#fff" stroke="#547394" stroke-width="6"/><path d="M1080 925 L1080 887 M1080 925 L1112 943" stroke="#547394" stroke-width="7" stroke-linecap="round"/><text x="1080" y="1025" text-anchor="middle" class="body">Same delay</text>
+  <path d="M1200 940 H1325" class="flow" marker-end="url(#arrow)"/>
+  <circle cx="1570" cy="925" r="66" fill="#f7c94a" stroke="#9a7114" stroke-width="5"/><path d="M1545 925 Q1570 890 1595 925 Q1570 966 1545 925" fill="#fff4c9"/>
+  <text x="1570" y="1025" text-anchor="middle" class="label">Reward occurs</text>
+  <path d="M1690 940 H1815" class="flow" marker-end="url(#arrow)"/>
+  <g fill="#6f55a0"><circle cx="1980" cy="915" r="16"/><circle cx="2030" cy="945" r="16"/><circle cx="2080" cy="905" r="16"/><circle cx="2130" cy="940" r="16"/></g>
+  <text x="2050" y="1000" text-anchor="middle" class="label">Lower than 50%</text><text x="2050" y="1035" text-anchor="middle" class="small">Qualitative level</text>
+
+  <rect x="175" y="1155" width="2050" height="145" rx="30" fill="#e7f0fa" stroke="#326aa3" stroke-width="4"/>
+  <text x="1200" y="1215" text-anchor="middle" font-size="36" font-weight="700">Sustained activity during the delay was strongest near 50% reward probability.</text>
+  <text x="1200" y="1265" text-anchor="middle" class="body">This sustained delay signal is distinct from the brief cue and outcome responses shown in Figure 7.9.</text>
+</svg>
