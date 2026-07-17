@@ -1,6 +1,6 @@
 # Psych101 — Current Handoff
 
-**Last updated:** 2026-07-17 (Chapter 7 candidate review complete; three revisions remain; Chapter 8 labs wired; Chapter 6 figure work queued)  
+**Last updated:** 2026-07-17 (Chapter 7 production/candidate identity reconciled; Figure 7.7 provenance decision remains; Chapter 8 labs wired; Chapter 6 figure work queued)  
 **Canonical repository:** `C:\GitHub\psych101`
 
 This file records current state only. See `GPT_project_log.md` for completed-work history and `PROJECT_BACKLOG.md` for durable deferred work.
@@ -43,21 +43,19 @@ A full canonical regeneration of `docs/chapters/07-learning.html` is still defer
 
 #### Chapter 7 figure stopping point
 
-The direct candidate review for Figures 7.1, 7.2, 7.3, 7.7, and 7.9 is recorded in `pipeline/audits/ch07-remaining-figure-candidate-review.md`. Figures 7.2 and 7.9 are explicitly approved for later promotion. Figures 7.1, 7.3, and 7.7 require narrow revisions and another direct review. Nothing in this five-figure batch has been promoted, wired, or included in a full regeneration.
+The production-versus-candidate reconciliation is recorded in `pipeline/audits/ch07-remaining-figure-candidate-review.md`. The word **production** means the asset currently wired at `docs/images/ch07/fig_*.png`; **candidate** means an alternative under `docs/images/ch07/candidates/`. Candidate defects must not be described as defects in the live chapter figure.
 
-Wiring does not imply approval. Chat-generated images are not repository assets unless explicitly saved and promoted.
+- **7.1 Classical conditioning — retain production.** Jon inspected the live figure and did not see the response-symbol ambiguity attributed to the candidate. The production figure remains selected; the candidate is not selected and should not be revised.
+- **7.2 Extinction is not erasure — candidate approved for later controlled promotion.** The schematic plots observable responding, preserves return after time or context change, and does not present hidden storage traces as literal mechanisms.
+- **7.3 Operant conditioning 2×2 — retain production.** The awkward title and full-width plus-glyph portability issue belong to the candidate, not the live figure. The production figure remains selected; the candidate is not selected and should not be revised.
+- **7.4 Reinforcement schedules — scientifically approved/provisionally retained.** The deterministic SVG/PNG correctly distinguish fixed-ratio break-and-run responding, variable-ratio high steady responding, fixed-interval scalloping, and variable-interval steady moderate responding. Its extinction panel is normalized to each history's own baseline, is explicitly illustrative, and does not depict acquisition speed.
+- **7.5 Garcia–Koelling — scientifically approved/provisionally retained.** It shows the crossed taste→illness and audiovisual→shock result, labels its mini-curves illustrative, and separates the observed selective-learning pattern from the leading evolutionary interpretation.
+- **7.6 Bandura — approved and promoted on 2026-07-17.** The production SVG/PNG use the five-stage 1965 learning-versus-performance design.
+- **7.7 Tolman and Honzik — one decision remains.** The live production graph is visually clear and has no axis-direction defect, but the exact daily plotted points are not tied to a documented local value table or verified reconstruction. The schematic candidate avoids undocumented values but has a minor rotated-axis-label problem. Do not revise the candidate unless the schematic route is selected. Final release requires either documenting the production values or selecting and repairing the schematic fallback.
+- **7.8 Dopamine uncertainty — approved and promoted on 2026-07-17.** The task-first production SVG/PNG show learned 0%/50%/100% reward-probability cues, the same fixed delay and known possible reward time, and qualitative sustained activity strongest near 50%.
+- **7.9 Reward prediction error — candidate approved for later controlled promotion.** The four-panel schematic limits the claim to a studied subset of midbrain dopamine neurons in particular tasks, uses “can support learning,” and distinguishes phasic prediction error from sustained uncertainty-related activity.
 
-- **7.1 Classical conditioning:** revision required. The predictive-contingency structure is scientifically correct, but the UCR and CR symbols resemble sound waves and visually confuse salivation with the auditory tone. Replace both response symbols with an unmistakable response representation.
-- **7.2 Extinction is not erasure:** approved on 2026-07-17 for later promotion. The schematic plots only observable responding, preserves return after time or context change, and does not present hidden storage traces as literal mechanisms.
-- **7.3 Operant conditioning 2×2:** revision required. Change “two measured changes” to “two questions” or “two dimensions,” because added/removed describes the consequence operation while later behavioral change is the measured functional effect. Replace the full-width plus glyph while revising to reduce renderer portability risk.
-- **7.4 Reinforcement schedules:** scientifically approved/provisionally retained. The deterministic SVG/PNG correctly distinguish fixed-ratio break-and-run responding, variable-ratio high steady responding, fixed-interval scalloping, and variable-interval steady moderate responding. Its extinction panel is normalized to each history's own baseline, is explicitly illustrative, and does not depict acquisition speed.
-- **7.5 Garcia–Koelling:** scientifically approved/provisionally retained after direct binary inspection. It shows the crossed taste→illness and audiovisual→shock result, labels its mini-curves illustrative, and separates the observed selective-learning pattern from the leading evolutionary interpretation.
-- **7.6 Bandura:** approved and promoted on 2026-07-17. The production SVG/PNG use the five-stage 1965 learning-versus-performance design.
-- **7.7 Tolman and Honzik:** revision required. The explicitly schematic, point-free fallback and reward boundary are appropriate, but the “Fewer maze errors →” axis arrow points toward the region labeled “more errors.” Use neutral “Maze errors” or an unambiguous downward indicator.
-- **7.8 Dopamine uncertainty:** approved and promoted on 2026-07-17. The task-first production SVG/PNG show learned 0%/50%/100% reward-probability cues, the same fixed delay and known possible reward time, and qualitative sustained activity strongest near 50%.
-- **7.9 Reward prediction error:** approved on 2026-07-17 for later promotion. The four-panel schematic limits the claim to a studied subset of midbrain dopamine neurons in particular tasks, uses “can support learning,” and distinguishes phasic prediction error from sustained uncertainty-related activity.
-
-The current `docs/images/ch07/README_captions_alt_text_attribution.md` is incomplete and premature because it contains only Figure 7.4. Final metadata remains a nine-figure batch task.
+Nothing from the remaining-candidate batch has been promoted or wired. The current `docs/images/ch07/README_captions_alt_text_attribution.md` is incomplete and premature because it contains only Figure 7.4. Final metadata remains a nine-figure batch task.
 
 ### Chapter 8 — Memory labs
 
@@ -82,10 +80,10 @@ The order requires direct inspection of the current production binaries, candida
 
 ## Immediate next actions
 
-1. Revise Chapter 7 candidates 7.1, 7.3, and 7.7 exactly as recorded in `pipeline/audits/ch07-remaining-figure-candidate-review.md`, then inspect the revised SVG and PNG for each before approval.
-2. Promote Figures 7.2 and 7.9 only as part of a controlled Chapter 7 figure step; their approval does not authorize HTML regeneration or the metadata batch while three figures remain unresolved.
+1. Resolve Figure 7.7 by either documenting the production graph's plotted values or explicitly selecting the schematic fallback; revise the candidate's axis label only if the schematic route is chosen.
+2. After the Figure 7.7 route is settled, perform one controlled Chapter 7 figure step for approved candidates 7.2 and 7.9 plus any selected 7.7 replacement. Do not alter production Figures 7.1 or 7.3.
 3. Complete Chapter 8 end-to-end browser validation. Do not mark the lab integration complete merely because the links exist.
-4. When a separate Work lane is available, execute `pipeline/work-orders/ch06-flagged-figure-candidates.md` exactly as a candidate-only task.
+4. When a separate Work lane is available, execute `pipeline/work-orders/ch06-flagged-figure-candidates.md` exactly as a candidate-only task, with explicit production-versus-candidate selection outcomes.
 5. After all nine Chapter 7 figures are approved, complete the metadata manifest, reconcile `source/visuals-inventory.md`, synchronize source captions/alt text, regenerate the full HTML, and run desktop/mobile/content validation.
 
 ## Important files
