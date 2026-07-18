@@ -45,7 +45,7 @@ The honest answer is no. The more useful answer is that if you could, it would n
 
 ### Behavior Is Evidence About Mental Process
 
-"Behavior" means anything an organism does that is <mark class="logic-emphasis">observable and measurable</mark> — talking, running, eating, avoiding, crying, sleeping. "Mental processes" means the <mark class="logic-emphasis">internal events</mark> that drive behavior: perceiving, thinking, remembering, deciding, feeling, wanting. The discipline studies both because you cannot fully understand either without the other. Mental processes cannot be observed directly — they are <mark class="logic-emphasis">inferred</mark> from behavior, self-report, physiology, and neural activity. A single behavior may be consistent with several different internal processes; psychology uses evidence to distinguish among them. Psychology needs both.
+"Behavior" means anything an organism does that is <span class="logic-emphasis">observable and measurable</span> — talking, running, eating, avoiding, crying, sleeping. "Mental processes" means the <span class="logic-emphasis">internal events</span> that drive behavior: perceiving, thinking, remembering, deciding, feeling, wanting. The discipline studies both because you cannot fully understand either without the other. Mental processes cannot be observed directly — they are <span class="logic-emphasis">inferred</span> from behavior, self-report, physiology, and neural activity. A single behavior may be consistent with several different internal processes; psychology uses evidence to distinguish among them. Psychology needs both.
 
 Notice what that definition does *not* say. It does not say "treatment of mental illness." It does not say "analysis of dreams and childhood." It does not say "helping people feel better." Some psychologists do those things. Most do not. The field spans basic research (how does attention work?), applied science (how do we design cockpits so pilots do not miss critical warnings?), clinical and counseling work, educational practice, forensic consultation, sports performance, health behavior, human factors engineering, and organizational behavior. The stereotype of the therapist on the couch is one corner of an enormous territory.
 
@@ -53,7 +53,7 @@ A concrete example of the behavior/mental-process distinction: you flinch at a s
 
 ### What Makes the Study Scientific
 
-"Scientific" is doing a lot of work in "scientific study of behavior and mental processes." Science is distinguished less by what it studies than by <mark class="logic-emphasis">how it tests explanations</mark> — through systematic observation, testable hypotheses, data collected through controlled procedures, and conclusions revised when evidence demands it. Psychology adopted that method. That is the claim, and the rest of this chapter is the story of how it happened and what it cost.
+"Scientific" is doing a lot of work in "scientific study of behavior and mental processes." Science is distinguished less by what it studies than by <span class="logic-emphasis">how</span> it tests explanations — through systematic observation, testable hypotheses, data collected through controlled procedures, and conclusions revised when evidence demands it. Psychology adopted that method. That is the claim, and the rest of this chapter is the story of how it happened and what it cost.
 
 > **Stop and Retrieve:** Before reading on — in your own words, what is the difference between a "behavior" and a "mental process" in psychology? Give an example of each that is not from this chapter.
 
@@ -68,7 +68,7 @@ A concrete example of the behavior/mental-process distinction: you flinch at a s
 
 ### Competing Questions, Overlapping Traditions
 
-My own academic background is in animal behavioral ecology and developmental psychology — fields built on asking *why* a behavior exists, not just *<mark class="logic-emphasis">how</mark>* it works. That habit of mind shows up throughout this course, especially once we reach the biological basis of behavior in Chapter 3. For now, here is the short version of a much older argument: a set of long-running disagreements about what the right question for psychology even is.
+My own academic background is in animal behavioral ecology and developmental psychology — fields built on asking *why* a behavior exists, not just *<span class="logic-emphasis">how</span>* it works. That habit of mind shows up throughout this course, especially once we reach the biological basis of behavior in Chapter 3. For now, here is the short version of a much older argument: a set of long-running disagreements about what the right question for psychology even is.
 
 This is not a neat timeline in which one school defeated another. These traditions overlapped, competed, and sometimes ignored one another. Later approaches responded to unresolved problems without simply replacing what came before. The table below organizes them by the problems they emphasized, not by a simple march of progress.
 
@@ -139,7 +139,7 @@ Performance tells us what a system can do. By itself, it does not tell us how th
 
 ---
 
-The biological and evolutionary rows are the ones we return to most often in this course — carefully. Chapter 3 covers the mechanisms in depth. One framing you will hear constantly, in this course and outside it, is **nature versus nurture**: are we shaped more by genes or by environment? Treat that framing as a starting question, not an answer. Most traits studied in psychology reflect development <mark class="logic-emphasis">within environments</mark>, often including genetic differences; genes and environments are not competing causes, and their effects unfold through ongoing transactions. Chapter 10 covers that process in depth. The working rule for the rest of this book: it is always fair to ask what a mechanism might be *for*, but any specific story about why it evolved needs to clear the same evidentiary bar as any other scientific claim. Evolutionary hypotheses are tested by deriving predictions that can be examined using comparative, developmental, cross-cultural, genetic, and ecological evidence. A plausible story is only the beginning.
+The biological and evolutionary rows are the ones we return to most often in this course — carefully. Chapter 3 covers the mechanisms in depth. One framing you will hear constantly, in this course and outside it, is **nature versus nurture**: are we shaped more by genes or by environment? Treat that framing as a starting question, not an answer. Most traits studied in psychology reflect development <span class="logic-emphasis">within</span> environments, often including genetic differences; genes and environments are not competing causes, and their effects unfold through ongoing transactions. Chapter 10 covers that process in depth. The working rule for the rest of this book: it is always fair to ask what a mechanism might be *for*, but any specific story about why it evolved needs to clear the same evidentiary bar as any other scientific claim. Evolutionary hypotheses are tested by deriving predictions that can be examined using comparative, developmental, cross-cultural, genetic, and ecological evidence. A plausible story is only the beginning.
 
 ---
 
@@ -163,13 +163,25 @@ A few of these are worth one more sentence. The biological perspective gets a fu
 
 ### One Behavior, Several Questions
 
-No perspective is sufficient alone. Here is an everyday example: why did you check your phone three times in the last ten minutes? The behavioral perspective points to a reinforcement history — checking sometimes produces a rewarding notification, and unpredictable rewards are especially good at sustaining a behavior. The cognitive perspective points to the discomfort of an unresolved question ("did they respond?") competing for your attention until you resolve it. The sociocultural perspective points to a social environment that treats constant availability as normal. The evolutionary perspective asks why a brain would be built to find social information so hard to ignore in the first place — and points to the cost of missing socially relevant information for a species that depends on group cooperation to survive. None of these four answers has to contradict the others. Each is answering a different question about the same five seconds of behavior, and evidence determines how much weight each answer deserves.
+No perspective is sufficient alone. Here is an everyday example: why did you check your phone three times in the last ten minutes?
+
+- The behavioral perspective points to a reinforcement history — checking sometimes produces a rewarding notification, and unpredictable rewards are especially good at sustaining a behavior.
+- The cognitive perspective points to the discomfort of an unresolved question ("did they respond?") competing for your attention until you resolve it.
+- The sociocultural perspective points to a social environment that treats constant availability as normal.
+- The evolutionary perspective asks why a brain would be built to find social information so hard to ignore in the first place — and points to the cost of missing socially relevant information for a species that depends on group cooperation to survive.
+
+None of these four answers has to contradict the others. Each is answering a different question about the same five seconds of behavior, and evidence determines how much weight each answer deserves.
 
 ### Depression and Unequal Evidence
 
-A more serious example makes the weighting problem visible. Consider depression. The biological perspective examines genetic risk, stress physiology, sleep, inflammation, and neurotransmitter systems associated with depression — an active research area where the older, simpler "chemical imbalance" story has not held up and should not be treated as a settled, single cause (Moncrieff et al., 2023). The behavioral perspective notes reinforcement withdrawal and social avoidance spirals. The cognitive perspective examines patterns such as negative views of self, world, and future. The sociocultural perspective points to poverty, discrimination, and social isolation as risk amplifiers. These are evidence-informed levels of analysis, not a claim that every factor is present in every case.
+A more serious example makes the weighting problem visible. Consider depression.
 
-Historically, psychodynamic accounts emphasized loss, early attachment disruption, and internalized anger. Those ideas influenced clinical thought, but they are less strongly supported as a general causal account of depression than the risk and maintenance processes above. The point here is to show that perspectives generate candidates; evidence assigns weight.
+- The biological perspective examines genetic risk, stress physiology, sleep, inflammation, and neurotransmitter systems associated with depression — an active research area where the older, simpler "chemical imbalance" story has not held up and should not be treated as a settled, single cause (Moncrieff et al., 2023).
+- The behavioral perspective notes reinforcement withdrawal and social avoidance spirals.
+- The cognitive perspective examines patterns such as negative views of self, world, and future. The sociocultural perspective points to poverty, discrimination, and social isolation as risk amplifiers. These are evidence-informed levels of analysis, not a claim that every factor is present in every case.
+- Historically, psychodynamic accounts emphasized loss, early attachment disruption, and internalized anger. Those ideas influenced clinical thought, but they are less strongly supported as a general causal account of depression than the risk and maintenance processes above.
+
+The point here is to show that perspectives generate candidates; evidence assigns weight.
 
 ### The Biopsychosocial Model Organizes; It Does Not Finish the Explanation
 
