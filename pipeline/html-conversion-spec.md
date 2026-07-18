@@ -294,6 +294,10 @@ Give every `<h3>` a lowercase, hyphenated `id` slug, same convention as `<h2>`. 
 - Inline cross-chapter cues in parentheses: just prose, no special tag.
 - `&amp;` for `&` throughout, `&mdash;` or `—` for em dash (UTF-8 direct is fine).
 
+### 7a. Logic Emphasis and Paragraph Fidelity
+
+Preserve source `<mark class="logic-emphasis">...</mark>` as the same semantic HTML. Use it only for the smallest phrase carrying an important logical distinction; it is not a substitute for bold key terms and must not mark whole paragraphs, full bullets, or decorative highlights. Underlining remains reserved for links. Presentation-layer subsection headings and `.in-section-nav` blocks may expose structure, but they must not split or rewrite an approved source paragraph.
+
 ---
 
 ## 8. Tables
