@@ -289,14 +289,14 @@ Give every `<h3>` a lowercase, hyphenated `id` slug, same convention as `<h2>`. 
 
 ## 7. Body Prose
 
-- All body prose uses plain `<p>` tags — no bullets inside sections.
+- Paragraphs remain the default for body prose. Unordered lists are allowed when the authoritative source uses parallel examples, categories, contrasts, or steps that are clearer as a list. Do not mechanically convert ordinary prose into bullets, and preserve explicit authorial list structure from reviewed source materials. Lists should normally have an introductory paragraph and, when needed, a synthesis paragraph afterward.
 - First use of each key term: `<strong>term</strong>` (bold in body), not a separate span.
 - Inline cross-chapter cues in parentheses: just prose, no special tag.
 - `&amp;` for `&` throughout, `&mdash;` or `—` for em dash (UTF-8 direct is fine).
 
 ### 7a. Logic Emphasis and Paragraph Fidelity
 
-Preserve source `<mark class="logic-emphasis">...</mark>` as the same semantic HTML. Use it only for the smallest phrase carrying an important logical distinction; it is not a substitute for bold key terms and must not mark whole paragraphs, full bullets, or decorative highlights. Underlining remains reserved for links. Presentation-layer subsection headings and `.in-section-nav` blocks may expose structure, but they must not split or rewrite an approved source paragraph.
+Preserve source `<span class="logic-emphasis">...</span>` as the same HTML. Logic emphasis is colored textual emphasis for the author's exact selected word or phrase: it is not a key term, marker-style highlighting, or a substitute for bold key-term treatment. It must use dark teal text with bold weight, no background, and no underline; underlining remains reserved for links. Preserve the exact selected span rather than widening it during conversion, including any surrounding italic style. Presentation-layer subsection headings and `.in-section-nav` blocks may expose structure, but they must not split or rewrite an approved source paragraph.
 
 ---
 

@@ -1,16 +1,16 @@
 # Chapter 1 Pre-Review Audit — History and Approaches to Psychology
 
 **Audit date:** 2026-07-17  
-**Status:** Implemented and validated — canonical revision commit `86e807e`; author line-edit reconciliation validated 2026-07-18 (uncommitted)
+**Status:** Canonical revision implemented in `86e807e`; faulty line-edit conversion in `e27360a` repaired and validated 2026-07-18 (uncommitted)
 **Audit framework:** `pipeline/audits/chapter-pre-review-audit-prompt-v3.md`
 
-## Author line-edit implementation record — 2026-07-18
+## Author line-edit conversion correction — 2026-07-18
 
-The reviewed Word line edits were reconciled into the authoritative Markdown and then synchronized manually into Chapter 1 HTML without revising the approved prose. The update preserves the existing chapter structure, adds the Anthropic (2023) citation and reference used by the revised AI passage, removes the source-deleted repeated evolutionary paragraph, and carries the six source `<mark class="logic-emphasis">` spans into semantic HTML. Two emphasis boundaries were narrowed as markup-only corrections—`how` became `how it tests explanations`, and `within` became `within environments`—without changing any words.
+Commit `e27360ac7d18eee3d89f6857257a9bba907acd0a` correctly carried the reviewed textual decisions into source and HTML, but its line-edit conversion was not complete: it flattened two authored four-item lists, widened two selected emphasis spans, rendered colored textual emphasis as amber marker-style highlighting, and codified those mistakes in the HTML conversion specification.
 
-Shared presentation now renders `.logic-emphasis` as compact, flat, soft-amber inline emphasis with inherited text color and weight, no underline, and wrapping/print support. `pipeline/html-conversion-spec.md` now requires preservation of the semantic mark, smallest-logical-phrase placement, link-only underlining, and paragraph fidelity when presentation-layer subsections are introduced.
+The targeted repair restores the DOCX's exact six selections as `<span class="logic-emphasis">` elements—`observable and measurable`, `internal events`, `inferred`, `how`, `how`, and `within`—with the italic `how` still italicized. Shared CSS now renders them as bold dark-teal text with a transparent background and no underline. Section 3 again contains the four phone-example bullets and four depression-example bullets, with their introductory and synthesis paragraphs outside the lists. The conversion specification now preserves explicit authorial list structure and defines logic emphasis as exact-span colored text rather than highlighting.
 
-Validation passed exact parity for all 28 approved prose paragraphs in Sections 1–4 and all six emphasis spans; unique IDs and internal anchors; 11 four-option reviews with hidden rationales; 17 populated, alphabetized key terms; four separated Further Reading items and 21 references; seven valid image paths with nonempty alt text; citation/reference presence; encoding checks; the Chapter 1 linter with zero failures or warnings; and `git diff --check`. Live browser checks at 1440×900, 390×844, and 844×390 confirmed the amber emphasis, two-line mobile wrapping, no page-level horizontal overflow, and no console warnings or errors. No unresolved Chapter 1 implementation or visual issue remains from this line-edit pass.
+Direct OOXML inspection accounted for all 58 `w:numPr` paragraphs: six objectives, eight Section 3 bullets, and 44 review-answer choices. The six formatted runs, six comments, and one tracked replacement were inspected; the already reconciled AI, evolutionary-redundancy, confirmation-bias, Clever Hans, and synthesis decisions remain present. Source/HTML parity passed for 37 Section 1–4 semantic units (29 paragraphs and eight list items), along with tables, callouts, figures, portrait strip, headings, links, disclosures, glossary, Further Reading, References, images, and encoding. The Chapter 1 linter passed with zero failures or warnings. Browser checks at 1440×900, 390×844, and 844×390 confirmed computed `rgb(15, 92, 94)`, weight `700`, transparent background, no decoration, preserved italics, visible bullets, no page overflow, and no console warnings or errors.
 
 ## Implementation record — 2026-07-17
 
