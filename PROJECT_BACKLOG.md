@@ -10,7 +10,7 @@ Durable future and deferred work that is not part of the immediately active task
 
 ## Labs and demonstrations
 
-- **Complete the deployed-page human keyboard and storage spot check for the four Chapter 4 labs** — automated functional and responsive validation is complete; use Tab/Shift+Tab, Enter/Space, native slider keys, one real reload/restore, restart, sidebar navigation, and the “Back to Chapter 4 labs” links. See `pipeline/audits/ch04-lab-validation.md`.
+- **Complete the deployed-page human Learning Lab state/restoration spot check** — the repository-wide automated audit is complete. On deployed pages, verify the relocated Start over control with Tab/Shift+Tab and Enter/Space, one real same-tab reload/restore and completed-state restart, sidebar/return navigation, and the Signal Detection mask behavior. See `pipeline/audits/learning-lab-state-restoration-audit.md` and `pipeline/audits/ch04-lab-validation.md`.
 - **Build the size–weight illusion lab or remove the placeholder** — both Chapter 4 files still say “when available,” but no such lab exists in `docs/labs/ch04/`.
 - **Live-test both Chapter 3 labs** at desktop, portrait-mobile, and landscape-mobile widths, including completion, mid-session reload, focus/state restoration, reset, labels, and cue/outcome traces.
 - **Review standalone labs before broad chapter wiring** where wiring has not already been explicitly approved; preserve the project distinction between building a lab and placing it in a chapter.
