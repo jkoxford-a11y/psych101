@@ -45,7 +45,7 @@ The honest answer is no. The more useful answer is that if you could, it would n
 
 ### Behavior Is Evidence About Mental Process
 
-"Behavior" means anything an organism does that is observable and measurable — talking, running, eating, avoiding, crying, sleeping. "Mental processes" means the internal events that drive behavior: perceiving, thinking, remembering, deciding, feeling, wanting. The discipline studies both because you cannot fully understand either without the other. Mental processes cannot be observed directly — they are inferred from behavior, self-report, physiology, and neural activity. A single behavior may be consistent with several different internal processes; psychology uses evidence to distinguish among them. Psychology needs both.
+"Behavior" means anything an organism does that is <mark class="logic-emphasis">observable and measurable</mark> — talking, running, eating, avoiding, crying, sleeping. "Mental processes" means the <mark class="logic-emphasis">internal events</mark> that drive behavior: perceiving, thinking, remembering, deciding, feeling, wanting. The discipline studies both because you cannot fully understand either without the other. Mental processes cannot be observed directly — they are <mark class="logic-emphasis">inferred</mark> from behavior, self-report, physiology, and neural activity. A single behavior may be consistent with several different internal processes; psychology uses evidence to distinguish among them. Psychology needs both.
 
 Notice what that definition does *not* say. It does not say "treatment of mental illness." It does not say "analysis of dreams and childhood." It does not say "helping people feel better." Some psychologists do those things. Most do not. The field spans basic research (how does attention work?), applied science (how do we design cockpits so pilots do not miss critical warnings?), clinical and counseling work, educational practice, forensic consultation, sports performance, health behavior, human factors engineering, and organizational behavior. The stereotype of the therapist on the couch is one corner of an enormous territory.
 
@@ -53,7 +53,7 @@ A concrete example of the behavior/mental-process distinction: you flinch at a s
 
 ### What Makes the Study Scientific
 
-"Scientific" is doing a lot of work in "scientific study of behavior and mental processes." Science is distinguished less by what it studies than by how it tests explanations — through systematic observation, testable hypotheses, data collected through controlled procedures, and conclusions revised when evidence demands it. Psychology adopted that method. That is the claim, and the rest of this chapter is the story of how it happened and what it cost.
+"Scientific" is doing a lot of work in "scientific study of behavior and mental processes." Science is distinguished less by what it studies than by <mark class="logic-emphasis">how it tests explanations</mark> — through systematic observation, testable hypotheses, data collected through controlled procedures, and conclusions revised when evidence demands it. Psychology adopted that method. That is the claim, and the rest of this chapter is the story of how it happened and what it cost.
 
 > **Stop and Retrieve:** Before reading on — in your own words, what is the difference between a "behavior" and a "mental process" in psychology? Give an example of each that is not from this chapter.
 
@@ -68,7 +68,7 @@ A concrete example of the behavior/mental-process distinction: you flinch at a s
 
 ### Competing Questions, Overlapping Traditions
 
-My own academic background is in animal behavioral ecology and developmental psychology — fields built on asking *why* a behavior exists, not just *how* it works. That habit of mind shows up throughout this course, especially once we reach the biological basis of behavior in Chapter 3. For now, here is the short version of a much older argument: a set of long-running disagreements about what the right question for psychology even is.
+My own academic background is in animal behavioral ecology and developmental psychology — fields built on asking *why* a behavior exists, not just *<mark class="logic-emphasis">how</mark>* it works. That habit of mind shows up throughout this course, especially once we reach the biological basis of behavior in Chapter 3. For now, here is the short version of a much older argument: a set of long-running disagreements about what the right question for psychology even is.
 
 This is not a neat timeline in which one school defeated another. These traditions overlapped, competed, and sometimes ignored one another. Later approaches responded to unresolved problems without simply replacing what came before. The table below organizes them by the problems they emphasized, not by a simple march of progress.
 
@@ -128,7 +128,7 @@ The pressure that behaviorism placed on cognitive questions is worth a closer lo
 
 In 1950, Alan Turing proposed evaluating machine intelligence through observable performance: could a machine sustain a conversation that a human judge could not reliably distinguish from a person's? That was not the same dispute Skinner and Chomsky were having, but the questions intersect. Both force us to ask what successful language behavior can tell us about the process that produced it.
 
-A language model can generate a convincing answer. The answer is observable output. The mechanism behind it is not. Psychologists face the same problem when studying people: thoughts, intentions, and other mental processes must be inferred from behavior and converging evidence.
+A language model can generate a convincing answer. It can even produce the sentence "I am conscious." That fluent self-report is observable output, not evidence of subjective consciousness. Developers know the model's architecture, training process, and mathematics; what remains incomplete is the causal explanation for why those operations produced a particular response (Anthropic, 2023). Psychologists face the same problem when studying people: thoughts, intentions, and other mental processes must be inferred from behavior and converging evidence.
 
 Performance tells us what a system can do. By itself, it does not tell us how the system did it — or whether its internal processes resemble ours.
 
@@ -139,7 +139,7 @@ Performance tells us what a system can do. By itself, it does not tell us how th
 
 ---
 
-The biological and evolutionary rows are the ones we return to most often in this course — carefully. Chapter 3 covers the mechanisms in depth. One framing you will hear constantly, in this course and outside it, is **nature versus nurture**: are we shaped more by genes or by environment? Treat that framing as a starting question, not an answer. Most traits studied in psychology reflect development within environments, often including genetic differences; genes and environments are not competing causes, and their effects unfold through ongoing transactions. Chapter 10 covers that process in depth. The working rule for the rest of this book: it is always fair to ask what a mechanism might be *for*, but any specific story about why it evolved needs to clear the same evidentiary bar as any other scientific claim. Evolutionary hypotheses are tested by deriving predictions that can be examined using comparative, developmental, cross-cultural, genetic, and ecological evidence. A plausible story is only the beginning.
+The biological and evolutionary rows are the ones we return to most often in this course — carefully. Chapter 3 covers the mechanisms in depth. One framing you will hear constantly, in this course and outside it, is **nature versus nurture**: are we shaped more by genes or by environment? Treat that framing as a starting question, not an answer. Most traits studied in psychology reflect development <mark class="logic-emphasis">within environments</mark>, often including genetic differences; genes and environments are not competing causes, and their effects unfold through ongoing transactions. Chapter 10 covers that process in depth. The working rule for the rest of this book: it is always fair to ask what a mechanism might be *for*, but any specific story about why it evolved needs to clear the same evidentiary bar as any other scientific claim. Evolutionary hypotheses are tested by deriving predictions that can be examined using comparative, developmental, cross-cultural, genetic, and ecological evidence. A plausible story is only the beginning.
 
 ---
 
@@ -161,8 +161,6 @@ The historical schools are still alive, though they have changed shape. Today's 
 
 A few of these are worth one more sentence. The biological perspective gets a full chapter of its own — Chapter 3 is entirely about this level of analysis. Behavioral approaches have produced some of clinical psychology's clearest treatment tools, especially exposure-based treatments for anxiety and phobias. Other behavioral interventions, including applied behavior analysis, have a substantial evidence base but also require careful ethical discussion about goals, consent, and quality of life. The cognitive perspective is one of the most productive research perspectives in the field, though hardly the only candidate for that title. The sociocultural perspective gets its own extended treatment in Chapter 11.
 
-The **evolutionary perspective** asks why a psychological mechanism exists — what problem it might have solved over evolutionary time, rather than just how it works in the moment. It is a useful question to ask in nearly every chapter of this book. Use this lens to generate testable questions about function, then hold any specific answer to the same evidentiary standard you would hold any other scientific claim. Comparative, developmental, cross-cultural, genetic, and ecological evidence can distinguish some hypotheses from plausible-sounding stories (Gould & Lewontin, 1979).
-
 ### One Behavior, Several Questions
 
 No perspective is sufficient alone. Here is an everyday example: why did you check your phone three times in the last ten minutes? The behavioral perspective points to a reinforcement history — checking sometimes produces a rewarding notification, and unpredictable rewards are especially good at sustaining a behavior. The cognitive perspective points to the discomfort of an unresolved question ("did they respond?") competing for your attention until you resolve it. The sociocultural perspective points to a social environment that treats constant availability as normal. The evolutionary perspective asks why a brain would be built to find social information so hard to ignore in the first place — and points to the cost of missing socially relevant information for a species that depends on group cooperation to survive. None of these four answers has to contradict the others. Each is answering a different question about the same five seconds of behavior, and evidence determines how much weight each answer deserves.
@@ -171,7 +169,7 @@ No perspective is sufficient alone. Here is an everyday example: why did you che
 
 A more serious example makes the weighting problem visible. Consider depression. The biological perspective examines genetic risk, stress physiology, sleep, inflammation, and neurotransmitter systems associated with depression — an active research area where the older, simpler "chemical imbalance" story has not held up and should not be treated as a settled, single cause (Moncrieff et al., 2023). The behavioral perspective notes reinforcement withdrawal and social avoidance spirals. The cognitive perspective examines patterns such as negative views of self, world, and future. The sociocultural perspective points to poverty, discrimination, and social isolation as risk amplifiers. These are evidence-informed levels of analysis, not a claim that every factor is present in every case.
 
-Historically, psychodynamic accounts emphasized loss, early attachment disruption, and internalized anger. Those ideas influenced clinical thought, but they are less strongly supported as a general causal account of depression than the risk and maintenance processes above. The point is not to turn one paragraph into an exhaustive review. It is to show that perspectives generate candidates; evidence assigns weight.
+Historically, psychodynamic accounts emphasized loss, early attachment disruption, and internalized anger. Those ideas influenced clinical thought, but they are less strongly supported as a general causal account of depression than the risk and maintenance processes above. The point here is to show that perspectives generate candidates; evidence assigns weight.
 
 ### The Biopsychosocial Model Organizes; It Does Not Finish the Explanation
 
@@ -195,13 +193,13 @@ The answer is: mostly you cannot, without systematic data. Here is why.
 
 ### Confirmation Protects Our Theories
 
-Related is **confirmation bias**: the tendency to seek out, interpret, and remember information that confirms existing beliefs, and to discount information that challenges them (Nickerson, 1998). Our informal theories of human behavior are protected from disconfirmation by the same cognitive machinery that builds them. The brain is not an objective theory-tester. It is a theory-preserver.
+Related is **confirmation bias**: the tendency to seek out, interpret, and remember information that confirms existing beliefs, and to discount information that challenges them (Nickerson, 1998). Selective attention makes confirming evidence easier to notice, interpretation bends ambiguous evidence toward the theory, and memory makes supporting cases easier to retrieve. The brain is not an objective theory-tester. It is a theory-preserver.
 
 ### Self-Correction Takes Institutions
 
 Science is a set of procedures designed to work around these biases: pre-registration of hypotheses before data collection, control conditions, blinded review, systematic replication, public data. None of these is magic. Science gets things wrong — sometimes spectacularly, sometimes for extended periods. Psychology has faced a genuine reckoning with this over the past decade: beginning around 2011, researchers began systematically attempting to replicate published findings and discovered that a substantial number did not hold up — the **replication crisis** (Open Science Collaboration, 2015).
 
-The replication crisis is not a reason to dismiss psychology. It revealed serious weaknesses in research incentives, statistical practices, publication systems, and evidential standards — the failures were real, and in some subfields substantial. It also demonstrated that organized replication, transparency, and statistical criticism can expose those weaknesses: bad findings get caught more often than bad intuitions do, not because psychologists are exceptionally honest, but because the field has built mechanisms that do not depend on anyone being exceptionally honest. Self-correction is possible, not automatic — it took deliberate reform, not a guarantee built into doing science. Chapter 2 covers research methods in full. For now, the point is simple: common sense about human behavior is unreliable, systematic observation is better, and even systematic observation needs institutional checks to stay honest.
+The replication crisis is not a reason to dismiss psychology. It revealed serious weaknesses in research incentives, statistical practices, publication systems, and evidential standards — the failures were real, and in some subfields substantial. Biased inference does not require deliberate fraud or conscious misconduct: expectations can shape what researchers notice and how they interpret ambiguous evidence without anyone deciding to do bad science, a problem we revisit with Clever Hans in Chapter 2. Organized replication, transparency, and statistical criticism can expose those weaknesses: bad findings get caught more often than bad intuitions do, not because psychologists are exceptionally honest, but because the field has built mechanisms that do not depend on anyone being exceptionally honest. Self-correction is possible, not automatic — it took deliberate reform, not a guarantee built into doing science. Chapter 2 covers research methods in full. For now, the point is simple: common sense about human behavior is unreliable, systematic observation is better, and even systematic observation needs institutional checks to stay honest.
 
 > **Think About It:** Think of a belief you hold about human nature — something you take for granted about why people do what they do. What would it take to convince you that you are wrong? If your answer is "I cannot imagine evidence that would change my mind," that is worth noticing.
 
@@ -433,6 +431,8 @@ The paper that launched the modern conversation about replication in psychology.
 ## References
 
 *Full citations for factual claims made in this chapter, for instructors or students who want to verify or go deeper. Distinct from Further Reading above, which is curated for student exploration rather than completeness.*
+
+Anthropic. (2023). *Decomposing language models into understandable components*. https://www.anthropic.com/research/decomposing-language-models-into-understandable-components
 
 Chomsky, N. (1959). Review of *Verbal Behavior*, by B. F. Skinner. *Language, 35*(1), 26–58.
 

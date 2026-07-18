@@ -9,6 +9,7 @@
   --color-border: #e5e7eb;
   --color-callout-bg: #f0f4ff;
   --color-callout-border: #4a6fa5;
+  --color-logic-emphasis-bg: #fce8b2;
   --font-body: 'Georgia', 'Times New Roman', serif;
   --font-ui: 'Segoe UI', system-ui, sans-serif;
   --max-width: 780px;
@@ -327,8 +328,21 @@ a { color: var(--color-accent); }
 }
 
 .logic-emphasis {
-  color: #0f5c5e;
-  font-weight: 700;
+  background-color: var(--color-logic-emphasis-bg);
+  color: inherit;
+  font-weight: inherit;
+  text-decoration: none;
+  padding: 0 0.08em;
+  border-radius: 0;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+
+@media print {
+  .logic-emphasis {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
 }
 
 /* ── TOC page ── */

@@ -1,8 +1,16 @@
 # Chapter 1 Pre-Review Audit — History and Approaches to Psychology
 
 **Audit date:** 2026-07-17  
-**Status:** Implemented and validated — canonical revision commit `86e807e`
+**Status:** Implemented and validated — canonical revision commit `86e807e`; author line-edit reconciliation validated 2026-07-18 (uncommitted)
 **Audit framework:** `pipeline/audits/chapter-pre-review-audit-prompt-v3.md`
+
+## Author line-edit implementation record — 2026-07-18
+
+The reviewed Word line edits were reconciled into the authoritative Markdown and then synchronized manually into Chapter 1 HTML without revising the approved prose. The update preserves the existing chapter structure, adds the Anthropic (2023) citation and reference used by the revised AI passage, removes the source-deleted repeated evolutionary paragraph, and carries the six source `<mark class="logic-emphasis">` spans into semantic HTML. Two emphasis boundaries were narrowed as markup-only corrections—`how` became `how it tests explanations`, and `within` became `within environments`—without changing any words.
+
+Shared presentation now renders `.logic-emphasis` as compact, flat, soft-amber inline emphasis with inherited text color and weight, no underline, and wrapping/print support. `pipeline/html-conversion-spec.md` now requires preservation of the semantic mark, smallest-logical-phrase placement, link-only underlining, and paragraph fidelity when presentation-layer subsections are introduced.
+
+Validation passed exact parity for all 28 approved prose paragraphs in Sections 1–4 and all six emphasis spans; unique IDs and internal anchors; 11 four-option reviews with hidden rationales; 17 populated, alphabetized key terms; four separated Further Reading items and 21 references; seven valid image paths with nonempty alt text; citation/reference presence; encoding checks; the Chapter 1 linter with zero failures or warnings; and `git diff --check`. Live browser checks at 1440×900, 390×844, and 844×390 confirmed the amber emphasis, two-line mobile wrapping, no page-level horizontal overflow, and no console warnings or errors. No unresolved Chapter 1 implementation or visual issue remains from this line-edit pass.
 
 ## Implementation record — 2026-07-17
 
