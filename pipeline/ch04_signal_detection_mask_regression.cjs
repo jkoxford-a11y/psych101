@@ -56,29 +56,82 @@ function chromeExecutable() {
   return executable;
 }
 
-async function maskState(page) {
+async function stageState(page) {
   return page.locator('#stimulus-stage').evaluate(stage => {
     const mask = stage.querySelector('#stimulus-mask');
-    const noise = stage.querySelector('.noise-field');
-    const target = stage.querySelector('#signal-target');
+    const canvas = stage.querySelector('#signal-canvas');
+    const showButton = stage.querySelector('#show-trial');
+    const presentButton = document.querySelector('#answer-present');
+    const absentButton = document.querySelector('#answer-absent');
     const stageBox = stage.getBoundingClientRect();
-    const targetBox = target.getBoundingClientRect();
-    const noisePointX = Math.min(stageBox.right - 4, Math.max(stageBox.left + 4, 4));
-    const noisePointY = Math.min(stageBox.bottom - 4, Math.max(stageBox.top + 4, 4));
-    const stageTopElement = document.elementFromPoint(noisePointX, noisePointY);
-    const targetTopElement = targetBox.width && targetBox.height
-      ? document.elementFromPoint(targetBox.left + targetBox.width / 2, targetBox.top + targetBox.height / 2)
-      : null;
+    const sampleX = stageBox.left + stageBox.width / 2;
+    const sampleY = stageBox.top + stageBox.height / 2;
+    const topElement = document.elementFromPoint(sampleX, sampleY);
 
     return {
       maskDisplay: getComputedStyle(mask).display,
       maskHidden: mask.hidden,
-      noiseDisplay: getComputedStyle(noise).display,
-      noiseExposed: stageTopElement === noise,
-      targetDisplay: getComputedStyle(target).display,
-      targetHidden: target.hidden,
-      targetExposed: targetTopElement === target,
+      canvasDisplay: getComputedStyle(canvas).display,
+      canvasExposed: topElement === canvas,
+      showHidden: showButton.hidden,
+      showDisabled: showButton.disabled,
+      presentDisabled: presentButton.disabled,
+      absentDisabled: absentButton.disabled,
+      maskMessage: stage.querySelector('#stimulus-mask-message').textContent.trim(),
     };
+  });
+}
+
+async function installCycleObserver(page) {
+  await page.evaluate(() => {
+    const mask = document.querySelector('#stimulus-mask');
+    const canvas = document.querySelector('#signal-canvas');
+    const presentButton = document.querySelector('#answer-present');
+    const absentButton = document.querySelector('#answer-absent');
+    const exposureMs = Number(document.querySelector('#stimulus-stage').dataset.exposureMs);
+
+    window.__signalDetectionCycle = new Promise((resolve, reject) => {
+      let exposedAt = null;
+      let exposureState = null;
+      const timeout = window.setTimeout(() => {
+        observer.disconnect();
+        reject(new Error('Timed out waiting for automatic stimulus remasking.'));
+      }, 2500);
+
+      const observer = new MutationObserver(() => {
+        if (mask.hidden && exposedAt === null) {
+          exposedAt = performance.now();
+          const box = canvas.getBoundingClientRect();
+          const topElement = document.elementFromPoint(box.left + box.width / 2, box.top + box.height / 2);
+          const pixels = canvas.getContext('2d').getImageData(0, 0, canvas.width, canvas.height).data;
+          let minimum = 255;
+          let maximum = 0;
+          for (let index = 0; index < pixels.length; index += 1600) {
+            minimum = Math.min(minimum, pixels[index]);
+            maximum = Math.max(maximum, pixels[index]);
+          }
+          exposureState = {
+            canvasExposed: topElement === canvas,
+            pixelRange: maximum - minimum,
+            presentDisabled: presentButton.disabled,
+            absentDisabled: absentButton.disabled,
+          };
+          return;
+        }
+
+        if (!mask.hidden && exposedAt !== null && !presentButton.disabled && !absentButton.disabled) {
+          window.clearTimeout(timeout);
+          observer.disconnect();
+          resolve({
+            nominalExposureMs: exposureMs,
+            measuredExposureMs: performance.now() - exposedAt,
+            exposureState,
+          });
+        }
+      });
+
+      observer.observe(mask, { attributes: true, attributeFilter: ['hidden'] });
+    });
   });
 }
 
@@ -96,49 +149,64 @@ async function runViewport(browser, baseUrl, viewport) {
     await page.evaluate(() => sessionStorage.clear());
     await page.reload({ waitUntil: 'load' });
 
+    const stageSettings = await page.locator('#stimulus-stage').evaluate(stage => ({ ...stage.dataset }));
+    assert.equal(stageSettings.fixationMs, '450', `${viewport.name}: fixation must remain 450 ms`);
+    assert.equal(stageSettings.exposureMs, '100', `${viewport.name}: approved exposure must be 100 ms`);
+    assert.equal(stageSettings.targetContrast, '0.10', `${viewport.name}: approved target contrast must be 10%`);
+    assert.equal(stageSettings.targetSigma, '20', `${viewport.name}: approved target sigma must be 20`);
+    assert.equal(stageSettings.noiseSd, '25', `${viewport.name}: noise standard deviation must be 25`);
+    assert.equal(await page.locator('#signal-target').count(), 0, `${viewport.name}: no outlined target element may remain`);
+    assert.equal(await page.locator('.noise-field').count(), 0, `${viewport.name}: the stimulus must use a generated canvas, not the old static noise layer`);
+    assert.equal(await page.locator('#signal-canvas').count(), 1, `${viewport.name}: one stimulus canvas must exist`);
+
     await page.locator('input[name="prediction"][value="liberal"]').check();
     await page.locator('#commit-prediction').click();
 
-    const initial = await maskState(page);
+    const initial = await stageState(page);
     assert.notEqual(initial.maskDisplay, 'none', `${viewport.name}: mask must be visible before a trial`);
     assert.equal(initial.maskHidden, false, `${viewport.name}: mask must not be hidden before a trial`);
-    assert.equal(initial.noiseExposed, false, `${viewport.name}: mask must cover the noise field before a trial`);
+    assert.equal(initial.canvasExposed, false, `${viewport.name}: mask must cover the canvas before a trial`);
+    assert.equal(initial.presentDisabled, true, `${viewport.name}: present response must be disabled before a trial`);
+    assert.equal(initial.absentDisabled, true, `${viewport.name}: absent response must be disabled before a trial`);
 
-    let presentTrials = 0;
-    let absentTrials = 0;
     for (let trial = 1; trial <= 24; trial += 1) {
+      await installCycleObserver(page);
       await page.locator('#show-trial').click();
-      if (await page.locator('#signal-target').evaluate(target => !target.hidden)) {
-        await page.locator('#signal-target').scrollIntoViewIfNeeded();
-      }
-      const exposed = await maskState(page);
-      assert.equal(exposed.maskHidden, true, `${viewport.name} trial ${trial}: mask DOM state must be hidden`);
-      assert.equal(exposed.maskDisplay, 'none', `${viewport.name} trial ${trial}: mask computed display must be none`);
-      assert.notEqual(exposed.noiseDisplay, 'none', `${viewport.name} trial ${trial}: noise field must render`);
-      assert.equal(exposed.noiseExposed, true, `${viewport.name} trial ${trial}: noise field must be exposed`);
 
-      const signalPresent = !exposed.targetHidden;
-      if (signalPresent) {
-        presentTrials += 1;
-        assert.notEqual(exposed.targetDisplay, 'none', `${viewport.name} trial ${trial}: present target must render`);
-        assert.equal(exposed.targetExposed, true, `${viewport.name} trial ${trial}: present target must be exposed`);
-        await page.locator('#answer-present').click();
-      } else {
-        absentTrials += 1;
-        assert.equal(exposed.targetDisplay, 'none', `${viewport.name} trial ${trial}: absent target must not render`);
-        assert.equal(exposed.targetExposed, false, `${viewport.name} trial ${trial}: absent target must not be exposed`);
-        await page.locator('#answer-absent').click();
-      }
+      const fixation = await stageState(page);
+      assert.equal(fixation.maskHidden, false, `${viewport.name} trial ${trial}: mask must remain visible during fixation`);
+      assert.notEqual(fixation.maskDisplay, 'none', `${viewport.name} trial ${trial}: fixation mask must render`);
+      assert.equal(fixation.maskMessage, '+', `${viewport.name} trial ${trial}: fixation marker must replace the start button`);
+      assert.equal(fixation.showHidden, true, `${viewport.name} trial ${trial}: Show next trial must hide during fixation`);
+      assert.equal(fixation.presentDisabled, true, `${viewport.name} trial ${trial}: present response must stay disabled during fixation`);
+      assert.equal(fixation.absentDisabled, true, `${viewport.name} trial ${trial}: absent response must stay disabled during fixation`);
 
-      const covered = await maskState(page);
-      assert.notEqual(covered.maskDisplay, 'none', `${viewport.name} trial ${trial}: mask must return after the response`);
-      assert.equal(covered.maskHidden, false, `${viewport.name} trial ${trial}: returned mask must not be hidden`);
-      assert.equal(covered.noiseExposed, false, `${viewport.name} trial ${trial}: returned mask must cover the noise field`);
+      const cycle = await page.evaluate(() => window.__signalDetectionCycle);
+      assert.equal(cycle.nominalExposureMs, 100, `${viewport.name} trial ${trial}: cycle must use the approved 100-ms exposure`);
+      assert.ok(cycle.measuredExposureMs >= 70, `${viewport.name} trial ${trial}: measured exposure ${cycle.measuredExposureMs} ms ended too early`);
+      assert.ok(cycle.measuredExposureMs <= 400, `${viewport.name} trial ${trial}: measured exposure ${cycle.measuredExposureMs} ms was not brief`);
+      assert.equal(cycle.exposureState.canvasExposed, true, `${viewport.name} trial ${trial}: generated canvas must be exposed during the flash`);
+      assert.ok(cycle.exposureState.pixelRange >= 20, `${viewport.name} trial ${trial}: generated visual noise must contain luminance variation`);
+      assert.equal(cycle.exposureState.presentDisabled, true, `${viewport.name} trial ${trial}: present response must be disabled during exposure`);
+      assert.equal(cycle.exposureState.absentDisabled, true, `${viewport.name} trial ${trial}: absent response must be disabled during exposure`);
+
+      const remasked = await stageState(page);
+      assert.equal(remasked.maskHidden, false, `${viewport.name} trial ${trial}: mask must return automatically before response`);
+      assert.notEqual(remasked.maskDisplay, 'none', `${viewport.name} trial ${trial}: returned mask must render`);
+      assert.equal(remasked.canvasExposed, false, `${viewport.name} trial ${trial}: returned mask must cover the generated canvas`);
+      assert.equal(remasked.maskMessage, 'Respond below.', `${viewport.name} trial ${trial}: response prompt must appear after the flash`);
+      assert.equal(remasked.presentDisabled, false, `${viewport.name} trial ${trial}: present response must enable only after remasking`);
+      assert.equal(remasked.absentDisabled, false, `${viewport.name} trial ${trial}: absent response must enable only after remasking`);
+
+      await page.locator('#answer-present').click();
+      const covered = await stageState(page);
+      assert.equal(covered.maskHidden, false, `${viewport.name} trial ${trial}: mask must remain after the response`);
+      assert.equal(covered.canvasExposed, false, `${viewport.name} trial ${trial}: canvas must remain covered after the response`);
     }
 
-    assert.equal(presentTrials, 12, `${viewport.name}: both conditions must include 12 signal-present trials total`);
-    assert.equal(absentTrials, 12, `${viewport.name}: both conditions must include 12 signal-absent trials total`);
     assert.equal(await page.locator('#event-log li').count(), 24, `${viewport.name}: event log must contain all 24 trials`);
+    assert.equal(await page.locator('#event-log li').filter({ hasText: 'signal present' }).count(), 12, `${viewport.name}: both conditions must include 12 signal-present trials total`);
+    assert.equal(await page.locator('#event-log li').filter({ hasText: 'signal absent' }).count(), 12, `${viewport.name}: both conditions must include 12 signal-absent trials total`);
     assert.equal(await page.locator('#event-log li').filter({ hasText: 'Neutral condition' }).count(), 12, `${viewport.name}: neutral condition must complete 12 trials`);
     assert.equal(await page.locator('#event-log li').filter({ hasText: 'Miss-costly condition' }).count(), 12, `${viewport.name}: miss-costly condition must complete 12 trials`);
     assert.equal(await page.locator('#trial-progress').textContent(), '12 of 12 trials', `${viewport.name}: second condition must finish at 12 of 12`);
