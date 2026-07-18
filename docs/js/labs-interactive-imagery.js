@@ -418,6 +418,7 @@
     elements.explanationStatus.textContent = '';
     elements.transferStatus.textContent = '';
     renderAll();
+    elements.predictionCount.focus();
     window.scrollTo({ top: 0, behavior: reducedMotion() ? 'auto' : 'smooth' });
   }
 

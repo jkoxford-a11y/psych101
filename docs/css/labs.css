@@ -362,7 +362,17 @@ select {
   margin-bottom: 0.45rem;
 }
 
-.phase-panel[hidden] {
+[hidden] {
+  display: none !important;
+}
+
+.lab-session-controls {
+  margin-top: 1rem;
+  padding-top: 0.9rem;
+  border-top: 1px solid var(--color-border);
+}
+
+.lab-session-controls .save-status:empty {
   display: none;
 }
 

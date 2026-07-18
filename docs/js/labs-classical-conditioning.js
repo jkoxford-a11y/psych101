@@ -184,6 +184,7 @@
     elements.explanationStatus.textContent = '';
     elements.transferStatus.textContent = '';
     renderAll();
+    elements.acquisitionPrediction.focus();
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
 

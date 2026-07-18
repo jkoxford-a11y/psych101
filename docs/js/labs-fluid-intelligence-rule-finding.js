@@ -176,6 +176,7 @@
     elements.explanationStatus.textContent = '';
     elements.transferStatus.textContent = '';
     renderAll();
+    elements.difficultyPrediction.focus();
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
 

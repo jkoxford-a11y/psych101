@@ -370,6 +370,7 @@
     elements.explanationStatus.textContent = '';
     elements.transferStatus.textContent = '';
     renderAll();
+    elements.predictionChoices[0].focus();
     window.scrollTo({ top: 0, behavior: prefersReducedMotion() ? 'auto' : 'smooth' });
   }
 
