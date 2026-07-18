@@ -64,6 +64,8 @@
   text-align: center;
 }
 
+.stimulus-mask[hidden] { display: none !important; }
+
 .comparison-wrap { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; align-items: center; }
 .comparison-box { min-height: 150px; display: grid; place-items: center; border: 1px solid var(--color-border); border-radius: 6px; background: #f9fafb; }
 .comparison-line { height: 18px; border: 2px solid #243447; border-radius: 3px; background: #8fb6d9; }

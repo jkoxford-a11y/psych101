@@ -1,6 +1,6 @@
 # Psych101 — Current Handoff
 
-**Last updated:** 2026-07-17 (Chapter 4 automated lab validation complete; deployed-page keyboard/storage spot check remains)  
+**Last updated:** 2026-07-18 (Signal Detection mask repair validated locally; deployed retest remains)
 **Canonical repository:** `C:\GitHub\psych101`
 
 This file records current state only. See `GPT_project_log.md` for completed-work history, `PROJECT_BACKLOG.md` for durable deferred work, and `pipeline/audits/ch07-image-work-pause-2026-07-17.md` for the Chapter 7 stopping point.
@@ -47,11 +47,13 @@ The candidate-only work order at `pipeline/work-orders/ch06-flagged-figure-candi
 
 Automated functional and responsive validation is complete for Signal Detection, Weber’s Law, Blind-Spot Filling-In, and Context-and-Ambiguous-Perception. All four passed the exercised completion, validation, feedback, focus, save/restore, reset, privacy/accessibility, and overflow checks at 1440 × 900, 390 × 844, and 844 × 390.
 
-The validation found and repaired stale status/reset state in all four labs, a null-focus error when Weber’s Law lacked its second prediction, and double-mirrored target geometry in the Blind-Spot lab. The durable record is `pipeline/audits/ch04-lab-validation.md`. The remaining closure step is a deployed-page human keyboard-only pass plus one real-browser sessionStorage reload/restore check. The size–weight illusion placeholder remains a separate build-or-remove decision.
+The validation found and repaired stale status/reset state in all four labs, a null-focus error when Weber’s Law lacked its second prediction, and double-mirrored target geometry in the Blind-Spot lab. A deployed human check then found that Signal Detection's white stimulus mask remained rendered over active trials because `.stimulus-mask { display: grid; }` overrode the element's `hidden` state. The narrow CSS repair now has a computed-style and hit-testing regression check that passes all 24 trials at all three viewport sizes. The durable record is `pipeline/audits/ch04-lab-validation.md`.
+
+Chapter 4 is not closed. After deployment, Jon must retest that “Show next trial” removes the white mask and exposes the dark noise field/faint target as appropriate, either response restores the mask, and both 12-trial conditions complete. Any unfinished keyboard-only, real-sessionStorage, and navigation checks also remain. The size–weight illusion placeholder remains a separate build-or-remove decision.
 
 ## Immediate next actions
 
-1. Complete the deployed-page human keyboard and real-sessionStorage spot check for the four Chapter 4 labs; then mark `pipeline/audits/ch04-lab-validation.md` complete.
+1. Deploy and retest the repaired Signal Detection mask behavior, then finish any remaining Chapter 4 keyboard, real-sessionStorage, and navigation checks before marking `pipeline/audits/ch04-lab-validation.md` complete.
 2. After Chapter 4 closes, live-test the two standalone Chapter 3 labs at desktop, portrait-mobile, and landscape-mobile widths.
 3. Keep Chapter 7 image work paused until Jon explicitly reopens it; if reopened, resume with Figure 7.7 direct inspection and overlap repair.
 4. Leave Chapter 6 candidate-only image work queued while the project is deliberately avoiding a new image lane.
