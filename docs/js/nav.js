@@ -27,8 +27,36 @@
     });
   }
 
+  // Chapter 1 predates the shared figure converter. Enhance its dense language
+  // comparison with the same in-place expand behavior used by generated figures.
+  function enableChapterOneLanguageFigureExpansion() {
+    const image = document.querySelector(
+      '.chapter-figure > img[src$="fig_1_3_language_explanations.png"]'
+    );
+    if (!image) return;
+
+    const figure = image.closest('.chapter-figure');
+    if (!figure || figure.classList.contains('expandable')) return;
+
+    const link = document.createElement('a');
+    link.className = 'figure-expand-toggle';
+    link.href = image.getAttribute('src') || image.currentSrc;
+    link.setAttribute('aria-label', 'Expand figure');
+
+    figure.insertBefore(link, image);
+    link.appendChild(image);
+    figure.classList.add('expandable');
+
+    if (!document.querySelector('script[src$="figure-expand.js"]')) {
+      const script = document.createElement('script');
+      script.src = '../js/figure-expand.js';
+      document.body.appendChild(script);
+    }
+  }
+
   document.addEventListener('DOMContentLoaded', function () {
     setActiveNav();
     smoothAnchors();
+    enableChapterOneLanguageFigureExpansion();
   });
 })();
