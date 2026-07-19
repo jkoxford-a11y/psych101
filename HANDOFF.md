@@ -1,17 +1,23 @@
 # Psych101 — Current Handoff
 
-**Last updated:** 2026-07-18 (Signal Detection timed-flash revision implemented; browser regression and deployed human checks remain)
+**Last updated:** 2026-07-19 (repository-wide figure expansion repaired; figure, Signal Detection timed-flash, and Learning Lab local regressions pass; deployed human checks remain)
 **Canonical repository:** `C:\GitHub\psych101`
 
 This file records current state only. See `GPT_project_log.md` for completed-work history, `PROJECT_BACKLOG.md` for durable deferred work, `pipeline/audits/learning-lab-state-restoration-audit.md` for the repository-wide lab audit, `pipeline/audits/ch04-signal-detection-timed-flash-2026-07-18.md` for the current Signal Detection revision, and `pipeline/audits/ch07-image-work-pause-2026-07-17.md` for the paused Chapter 7 image lane.
 
 ## Current state
 
+### Repository-wide figure expansion
+
+The Prologue and Chapters 1–13 were audited. There are 80 explicit expandable figures, two low-resolution Chapter 3 figures marked `.no-expand`, and no active `.wide` figures. Chapters 1, 4, and 8 gained missing figure-expansion script wiring.
+
+Expanded width is capped at 1100px and accounts for the open sidebar and safe gutters; captions remain capped at 716px. `pipeline/figure_expansion_regression.cjs` passes all 14 pages at 1440×900, 1280×800, 1024×768, 390×844, and 844×390. A deployed human spot check remains for one desktop figure with the sidebar open and for phone portrait and landscape.
+
 ### Repository-wide Learning Labs
 
 All 20 stateful standalone labs completed the automated state-restoration and restart-access audit. The repaired system preserves within-run prediction commitment, provides one conditional **Start over** action beside prediction after meaningful progress, restores visible saved values, announces genuine restoration once, clears only the lab-specific storage key, and returns focus to prediction.
 
-`pipeline/learning_lab_state_regression.cjs` previously passed all 20 labs at 1440 × 900, 390 × 844, and 844 × 390 for fresh state, commitment, restoration, restart, storage removal, focus, computed visibility, overflow, completion, and no-duplication behavior. The Signal Detection revision changes only that lab's stimulus presentation, but the repository-wide regression should be rerun before closure.
+After integration with the Signal Detection and figure-expansion work, `pipeline/learning_lab_state_regression.cjs` passes all 20 labs at 1440 × 900, 390 × 844, and 844 × 390 for fresh state, commitment, restoration, restart, storage removal, focus, computed visibility, overflow, completion, and no-duplication behavior.
 
 Deployment still requires human spot checks of real-origin sessionStorage, keyboard operation, completed-state restart, and navigation.
 
@@ -21,7 +27,7 @@ The old outlined target remained visible until response and was pedagogically to
 
 The lab now uses one canvas rather than a static CSS noise layer plus separate circular target. Responses remain disabled during fixation and exposure. The mask returns before responses enable, and tab loss cancels the unfinished trial without recording it. Trial balance, criterion conditions, outcome logic, event log, session state, explanation, and transfer remain unchanged.
 
-Static checks and JavaScript syntax pass. `pipeline/ch04_signal_detection_mask_regression.cjs` was rewritten to test the timed flash, generated canvas, response lockout, automatic remasking, exact calibration, balanced trials, and all three standard viewport sizes. That Playwright regression has not yet been executed in the current ChatGPT environment and must not be marked passed from static inspection alone.
+Static checks and JavaScript syntax pass. `pipeline/ch04_signal_detection_mask_regression.cjs` also passes its timed-flash, generated-canvas, response-lockout, automatic-remasking, exact-calibration, balanced-trial, and three-standard-viewport checks after integration.
 
 Weber's Law, Blind-Spot Filling-In, and Context and Ambiguous Perception retain their prior automated pass status. The size–weight illusion placeholder remains a separate build-or-remove decision.
 
@@ -35,11 +41,9 @@ Chapter 7 prose and Classical Conditioning work are complete, but full HTML rege
 
 ## Immediate next actions
 
-1. Run `node pipeline/ch04_signal_detection_mask_regression.cjs` in the canonical repository and repair any failure before deployment.
-2. Rerun `pipeline/learning_lab_state_regression.cjs` to confirm the shared restoration/restart system still passes.
-3. Deploy and visually test the approved Signal Detection calibration: brief uncertain target, automatic remask before response, and both 12-trial conditions complete.
-4. Finish the deployed keyboard, real-sessionStorage, completed-restart, and navigation spot checks; then close the overlapping Chapter 4 and repository-wide lab audit items if all pass.
-5. Keep Chapter 7 and Chapter 6 image work paused unless Jon explicitly changes lanes.
+1. Deploy and spot-check figure expansion: one desktop figure with the sidebar open, plus phone portrait and landscape.
+2. Deploy and visually test the approved Signal Detection calibration—a brief uncertain target, automatic remask before response, and both 12-trial conditions complete—and finish the deployed Learning Lab keyboard, real-sessionStorage, completed-restart, and navigation spot checks. Local automation does not close these checks; do not close either lane until all required human verification passes.
+3. Keep the Chapter 6 and Chapter 7 image lanes paused unless Jon explicitly changes lanes.
 
 ## Important files
 

@@ -354,7 +354,25 @@ Portrait strip (Ch1-specific, not needed for other chapters):
 <!-- FIGURE PLACEHOLDER: Figure N.N — [description of what figure will show] — file not yet available -->
 ```
 
-**Expandable figures:** reusable click-to-expand behavior uses the shared `.expandable` CSS and `docs/js/figure-expand.js`. It is opt-in per chapter — add the `expandable`/`figure-expand-toggle` classes to a figure's markup *and* include `<script src="../js/figure-expand.js"></script>` before `</body>` in that chapter's HTML. Both pieces are required; a chapter with the classes but no script include will appear to expand but never collapse (confirmed failure mode — see Ch2, Session 92 in `GPT_project_log.md`).
+**Expandable figures:** reusable click-to-expand behavior uses the shared `.expandable` CSS and `docs/js/figure-expand.js`. Use this markup for dense explanatory diagrams that benefit from a larger reading surface:
+
+```html
+<figure class="chapter-figure expandable">
+  <a class="figure-expand-toggle"
+     href="../images/chNN/fig-slug.png"
+     aria-label="Expand figure"
+     aria-expanded="false">
+    <img src="../images/chNN/fig-slug.png" alt="[Descriptive alt text.]" />
+  </a>
+  <figcaption><strong>Figure N.N.</strong> Caption text.</figcaption>
+</figure>
+```
+
+The link must point directly to the image so the full-size-file fallback remains available without JavaScript. Include `<script src="../js/figure-expand.js"></script>` exactly once before `</body>` in every chapter that contains `.expandable` or legacy `.wide` figures. Mouse, touch, and Enter activation toggle the in-flow state; do not add a modal, new-tab script, or chapter-specific behavior in `nav.js`.
+
+Collapsed images retain a 340px height cap. On desktop, expanded figures are centered in the workspace left after the 260px sidebar, use 32px safe gutters, and stop at 1100px. With the sidebar collapsed, the same gutters and cap apply to the full viewport. At the mobile/touch breakpoint, expanded means the full available main-content width. Expanded captions remain capped at the effective 716px prose width. Raster images are not enlarged past intrinsic width; SVGs may fill the available workspace.
+
+Legacy `.chapter-figure.wide` markup is normalized by the shared script. New or regenerated markup should use `.expandable` rather than adding `.wide`. Add `.no-expand` only when an otherwise legacy or generated figure is unsuitable for enlargement (for example, a low-resolution raster); `.no-expand` takes precedence. Portrait strips, videos, and decorative media must not receive expandable markup.
 
 ---
 

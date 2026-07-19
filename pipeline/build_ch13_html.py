@@ -115,7 +115,12 @@ def build() -> None:
         figure = soup.new_tag("figure", attrs={"class": "chapter-figure expandable"})
         toggle = soup.new_tag(
             "a",
-            attrs={"class": "figure-expand-toggle", "href": image_src, "aria-label": "Expand figure"},
+            attrs={
+                "class": "figure-expand-toggle",
+                "href": image_src,
+                "aria-label": "Expand figure",
+                "aria-expanded": "false",
+            },
         )
         image.extract()
         toggle.append(image)
@@ -264,7 +269,6 @@ def build() -> None:
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Chapter 13: Psychological Disorders &amp; Therapy — General Psychology</title>
   <link rel="stylesheet" href="../css/style.css" />
-  <link rel="stylesheet" href="../css/mobile-figure-fix.css" />
 </head>
 <body>
 <div class="layout">
