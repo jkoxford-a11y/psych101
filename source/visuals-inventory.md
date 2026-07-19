@@ -1,6 +1,6 @@
 # Visuals Inventory — Psych101 Textbook
 
-*Last reconciled: 2026-07-10 — Final nine-figure Ch2 set wired into `source/chapters/ch02-research-methods.md` and `docs/chapters/02-research-methods.html`, renumbered by order of appearance; placebo PNG citation repaired; third-variable UUID asset renamed. Treat the chapter-specific README/metadata files as authoritative for captions, alt text, licensing, and attribution when they exist.*
+*Last reconciled: 2026-07-15 — Chapters 9–12 finalized through canonical regeneration. Chapter 12's four conceptual figures were rebuilt and documented; treat chapter-specific README/metadata files as authoritative for captions, alt text, licensing, and attribution.*
 
 Status key: ✅ wired/use now · 🧩 built/audited but not wired · ⚠️ exists but needs review/decision · 🔲 still needed/not built · ❌ broken reference/file missing
 
@@ -24,28 +24,28 @@ Markdown draft complete (v0.2). Awaiting Jon's line-by-line review. HTML convers
 
 ## Chapter 1 — History & Approaches
 
-**Complete as of Session 91.** All previously open items resolved: Section 3 title kept as-is ("Seven Lenses, No Single Truth"); Fig 1.1 attribution documented (AI-generated via ChatGPT, directed/curated by Jon) and placement kept at Section 1 (considered anchoring to Section 3 instead, decided against for now — see README note); Fig 1.2 (Maslow) cut entirely due to weak sourcing, image moved to `ch01/_archive/`; portrait strip confirmed fine as-is, no changes. Review questions trimmed from 13 to 11 (cut Q2/Watson-manifesto as a duplicate of the dog/treat behaviorism question, and Q12/replication-crisis as the item least anchored to a stated Learning Objective), renumbered sequentially in both source and HTML. Linter passes clean (0 hard failures) on the rebuilt HTML.
+**Canonical revision completed 2026-07-17.** Active figures were opened and inspected. Visible numbering is sequential (1.1, 1.2); the language figure retains its legacy `fig_1_3` filename without exposing 1.3 to readers. The portrait strip remains active, and complete provenance, license, modification, attribution, sharing-status, and caveat records are in the Chapter 1 image manifest. The removed Maslow image remains archived and unapproved for reuse.
 
 | # | Description | Status | Filename |
 |---|-------------|--------|----------|
 | 1.1 | One behavior, many psychological questions (phone/notification) | ✅ | `ch01/fig_1_1_scope_map.png` |
-| 1.2 | Maslow hierarchy — REMOVED Session 91 (weak sourcing) | archived | `ch01/_archive/fig_1_2_maslow_hierarchy.png` |
-| 1.3 | Skinner / Chomsky / LLM language diagram | ✅ | `ch01/fig_1_3_language_explanations.png` |
-| — | Portraits: Wundt, James, Watson, Freud, Skinner | ✅ | `ch01/portrait_*.jpg` |
+| 1.2 | Skinner / Chomsky / LLM language diagram (legacy filename retained) | ✅ inspected; metadata complete | `ch01/fig_1_3_language_explanations.png` |
+| archived (former 1.2) | Maslow hierarchy — removed Session 91 (weak sourcing; not approved for reuse) | archived | `ch01/_archive/fig_1_2_maslow_hierarchy.png` |
+| — | Portraits: Wundt, James, Watson, Freud, Skinner | ✅ inspected; metadata complete (Watson has non-U.S. rights caveat) | `ch01/portrait_*.jpg` |
 
 ---
 
 ## Chapter 2 — Research Methods & Statistics
 
-**Wired 2026-07-10** per `docs/images/ch02/CH02_IMAGE_WIRING_HANDOFF.md`. Final nine-figure set is wired into both `source/chapters/ch02-research-methods.md` and `docs/chapters/02-research-methods.html`, renumbered sequentially by order of appearance. `docs/images/ch02/README_captions_alt_text_attribution.md` is the authoritative Ch2 image manifest — consult it for captions, alt text, and attribution.
+**Reconciled 2026-07-15** per `docs/images/ch02/CH02_IMAGE_WIRING_HANDOFF.md`. The final nine-figure set is wired into both `source/chapters/ch02-research-methods.md` and regenerated `docs/chapters/02-research-methods.html`, numbered sequentially by order of appearance. Desktop/mobile loading, caption legibility, and expandable behavior were checked. `docs/images/ch02/README_captions_alt_text_attribution.md` is the authoritative Ch2 image manifest — consult it for captions, alt text, attribution, public-sharing status, and interpretation caveats.
 
 | # | Description | Status | Filename / note |
 |---|-------------|--------|-----------------|
 | 2.1 | Research process cycle (Observe→Define→Relate→Test→Estimate→Replicate→Revise) | ✅ wired | `ch02/ch02_research_process_cycle.png` — replaces the former evidence-ladder framing |
-| 2.2 | Reliability/validity four-panel target diagram | ✅ wired | `ch02/ch02_reliability_validity_accuracy_precision.png` — replaces `fig_reliability_validity_dartboard.svg` and `fig2-6-reliability-validity-targets.svg` |
+| 2.2 | Accuracy/precision target analogy with modern reliability/validity caveat | ✅ wired; wording repaired | `ch02/ch02_reliability_validity_accuracy_precision.png` — no longer equates accuracy with psychometric validity or labels imprecise scores “high validity”; replaces `fig_reliability_validity_dartboard.svg` and `fig2-6-reliability-validity-targets.svg` |
 | 2.3 | Correlation direction/strength (five scatterplots) | ✅ wired | `ch02/ch02_correlation_direction_strength.png` — replaces `fig_correlation_scatter.png` |
 | 2.4 | Third-variable problem (Age → Shoe size / Reading ability) | ✅ wired | `ch02/ch02_third_variable_age_shoe_size_reading.png` — renamed from user-selected UUID asset `40af6fe3-f8d2-4d0a-a7f5-17022b340904-_edit.png`; replaces `fig_third_variable_problem.png/.svg` |
-| 2.5 | Random sampling vs. random assignment | ✅ | `ch02/fig2-5-random-sampling-vs-assignment.svg` — retained unchanged |
+| 2.5 | Random sampling vs. random assignment | ✅ wired | `ch02/fig2-5-random-sampling-vs-assignment.svg` — retained no-number SVG; supersedes the stale numbered PNG for chapter use |
 | 2.6 | Experiment flowchart (hot sauce paradigm, IV/DV/control) | ✅ | `ch02/fig_experiment_flowchart.svg` — retained unchanged |
 | 2.7 | Placebo response vs. placebo effect (Wechsler et al. 2011 asthma study) | ✅ wired | `ch02/ch02_placebo_response_vs_effect_asthma.png` — incorrect embedded source-citation line repaired in place (targeted pixel edit; all chart values/pixels otherwise preserved) before wiring |
 | 2.8 | p-value misconceptions | ✅ | `ch02/fig_p_value_misconceptions.svg` — retained unchanged |
@@ -53,7 +53,7 @@ Markdown draft complete (v0.2). Awaiting Jon's line-by-line review. HTML convers
 
 **Superseded assets archived to `ch02/_archive/`:** `fig_correlation_scatter.png/.svg`, `fig_reliability_validity_dartboard.png/.svg`, `fig2-6-reliability-validity-targets.svg`, `fig_third_variable_problem.png/.svg`. (`ch02_effect_size_confidence_intervals_magnitude_precision.png`, named in the handoff as a possible supersession target, was never actually present in the folder — no action needed. No standalone `ch02_correlation_direction_strength.md` metadata file existed either — that cleanup step was already moot.)
 
-**Next action:** browser-check the live rendered page for image loading, wide/expandable behavior, mobile width, and caption legibility — no further Ch2 figure decisions are open.
+**Next action:** none for the canonical Chapter 2 figure set. Optional cleanup of pre-existing unused/duplicate files remains in `PROJECT_BACKLOG.md`; it does not affect chapter rendering or publication status.
 
 ---
 
@@ -123,15 +123,15 @@ All 8 figures are wired in `ch05-consciousness.md` per the current chapter heade
 
 ## Chapter 6 — Sleep
 
-All 5 core figures are wired. Optional figures remain unbuilt/on hold.
+All 5 core figures are wired, but an editorial audit-reconciliation pass (2026-07-12) found three overstate their underlying evidence and flagged them as needing revision before they can be called public-ready — see `ch06-sleep.md`'s provenance note and `GPT_project_log.md` for the reasoning. Captions/alt text in `ch06-sleep.md` were softened around all four affected figures to reduce overstatement in the surrounding text; no image binaries were touched. Optional figures remain unbuilt/on hold.
 
 | # | Description | Status | Filename / note |
 |---|-------------|--------|-----------------|
-| 6.1 | Sleep as active maintenance system | ✅ | `ch06/fig_sleep_active_maintenance_system.png` |
-| 6.2 | SCN circadian pathway | ✅ | `ch06/fig_scn_circadian_clock_entrainment.png` — supersedes old SCN pathway files. |
-| 6.3 | Two-process model as practical lever diagram | ✅ | `ch06/fig_process_s_process_c_levers.png` |
-| 6.4 | Sleep architecture hypnogram | ✅ | `ch06/fig_sleep_architecture_cycles.png` |
-| 6.5 | Glymphatic clearance mechanism | ✅ | `ch06/fig_glymphatic_clearance_deep_sleep.png` |
+| 6.1 | Sleep as active maintenance system | ⚠️ wired, flagged | `ch06/fig_sleep_active_maintenance_system.png` — kept provisionally; the image's literal five-panel framing is in tension with the chapter's revised central argument (overlapping processes, not five discrete jobs). Caption/alt text softened around it; image itself flagged for a future simplification redesign. |
+| 6.2 | SCN circadian pathway | ⚠️ needs revision | `ch06/fig_scn_circadian_clock_entrainment.png` — SCN's anatomical location in the image is incorrect; not public-ready until redrawn. Melatonin wording in the surrounding caption checked and left as-is. |
+| 6.3 | Two-process model as practical lever diagram | ✅ use now | `ch06/fig_process_s_process_c_levers.png` — labels and melatonin wording checked against the revised chapter text, no issues found. |
+| 6.4 | Sleep architecture hypnogram | ⚠️ needs revision | `ch06/fig_sleep_architecture_cycles.png` — the fixed early/middle/late-night functional assignment (restoration → consolidation → emotional processing) is misleading and overstates how cleanly those processes map onto specific hours; not public-ready until redrawn without that timetable. Caption/alt text in `ch06-sleep.md` already removed the fixed mapping. |
+| 6.5 | Glymphatic clearance mechanism | ⚠️ needs revision | `ch06/fig_glymphatic_clearance_deep_sleep.png` — mechanism is depicted with more certainty than the human evidence supports (strong in animal studies, indirect/developing in humans); not public-ready until the diagram itself signals that gap. Caption/alt text hedged in the chapter text as an interim measure. |
 | 6.6 | Drug tolerance/withdrawal mechanism | 🔲 | Reconsider fit; most drug content moved to Ch5. |
 | 6.7 | Dream theories comparison diagram | 🔲 | On hold. |
 | — | `hypnogram.mp4` | ⚠️ | Not wired. Decide whether videos belong in markdown chapters or lab pages. |
@@ -164,7 +164,7 @@ All six completed SVGs wired into `ch08-memory.md` in Session 78.
 | # | Description | Status | Filename / note |
 |---|-------------|--------|-----------------|
 | 8.1 | Atkinson-Shiffrin three-box model | ✅ wired | `ch08_atkinson_shiffrin_three_box_model.svg` — wired into Section 1. |
-| 8.2 | Baddeley's working memory model | ✅ wired | `ch08_baddeley_working_memory_model.svg` — wired into Section 1; no episodic buffer, matching chapter text. |
+| 8.2 | Baddeley's working memory model | ✅ wired — revised | `ch08_baddeley_working_memory_model.svg` — four-component model with episodic buffer and long-term-memory connection; source, HTML, caption, alt text, and metadata synchronized. |
 | 8.3 | Levels of processing | ✅ wired | `ch08_levels_of_processing_shallow_to_deep.svg` — wired into Section 1; two-level gradient, not three-tier taxonomy. |
 | 8.4 | Explicit vs. implicit memory taxonomy tree | ✅ wired | `ch08_memory_taxonomy_tree.svg` — wired before the memory systems table. |
 | 8.5 | Serial position curve | ✅ wired | `ch08_serial_position_curve.svg` — wired into Section 3. |
@@ -176,11 +176,11 @@ All six completed SVGs wired into `ch08-memory.md` in Session 78.
 
 ## Chapter 9 — Thinking, Language & Intelligence
 
-All 10 wirable figures are wired. Only optional/held items remain.
+Final nine-figure set wired in the canonical source and regenerated HTML.
 
 | # | Description | Status | Filename / note |
 |---|-------------|--------|-----------------|
-| 9.1 | Hierarchical category structure | ✅ | `ch09/fig_hierarchical_category_structure.png` |
+| 9.1 | Hierarchical category structure | ✅ wired/use now | `ch09/ch09_category_hierarchy_superordinate_basic_subordinate.svg` — Animal → Dog/Bird/Fish → Golden retriever/Robin/Salmon; basic row is the everyday naming level. |
 | 9.2 | Prototype compression | ✅ | `ch09/fig_prototype_compression_dogs.png` |
 | 9.3 | Luchins water-jar mental-set demo | ✅ | `ch09/fig_luchins_water_jar_mental_set.png` |
 | 9.4 | Duncker candle problem | ✅ | `ch09/fig_functional_fixedness_candle_problem.png` |
@@ -188,8 +188,9 @@ All 10 wirable figures are wired. Only optional/held items remain.
 | 9.6 | Linda conjunction fallacy / nested sets | ✅ | `ch09/fig_linda_conjunction_fallacy.png` |
 | 9.7 | Wason selection task prompt | ✅ | `ch09/fig_wason_task_prompt.png` |
 | 9.8 | Wason selection task answer | ✅ | `ch09/fig_wason_task_answer.png` |
-| 9.9 | Biases as question substitution | ✅ | `ch09/fig_bias_question_substitution.png` |
-| 9.10 | IQ standardization curve | ✅ | `ch09/fig_iq_bell_curve.png` |
+| held | Biases as question substitution | held/not approved | `ch09/fig_bias_question_substitution.png` — omitted; the bias comparison remains a table because the biases do not require one shared mechanism. |
+| 9.9 | IQ standardization curve | ✅ wired/use now | `ch09/fig_iq_bell_curve.png` — renumbered from former 9.10 student-facing. |
+| — | Campus conjunction-fallacy nested sets | unused original | `ch09/ch09_conjunction_fallacy_nested_sets.svg` — built for a superseded Linda replacement; retained but not wired or pending. |
 | 9.11 | Generic start/process/decision/output flowchart | ⚠️ | Held; judged too generic/decorative. UUID file `0bb01f45-5416-457b-b62e-f91860aad01b-1.png`, not renamed. |
 | — | Language acquisition timeline | 🔲 | Optional. |
 | — | Multiple intelligences vs. g-factor comparison | 🔲 | Optional. |
@@ -203,14 +204,14 @@ Final selected set wired into `source/chapters/ch10-lifespan-development.md` on 
 
 | # | Description | Method | Status | Filename / note |
 |---|-------------|--------|--------|-----------------|
-| 10.1 | Human extended development / life-history construction | GPT PNG | ? wired | `ch10_human_extended_development_life_history.png` — secondary altriciality + cooperative breeding as the mechanism behind long, plastic, expensive childhood. |
+| 10.1 | Human extended development / interacting contributors | Programmatic SVG + PNG | ✅ wired/use now | `ch10_human_extended_development_life_history.svg/.png` — reciprocal contributor network; explicitly a model, not a complete origin story. |
 | 10.2 | Cross-sectional vs. longitudinal designs | GPT PNG | ? wired | `ch10_cross_sectional_vs_longitudinal.png` — two-panel schematic + cohort/attrition confounds. |
-| 10.3 | Synaptic pruning / developmental tuning | GPT PNG | ? wired | `ch10_synaptic_pruning_developmental_tuning.png` — simpler overbuild/stabilize/prune figure selected over regional curve detail. |
+| 10.3 | Selective stabilization / developmental tuning | Programmatic SVG + PNG | ✅ wired/use now | `ch10_synaptic_pruning_developmental_tuning.svg/.png` — three-stage one-idea sequence; no exact windows, optimization, or experience-only mechanism. |
 | 10.4 | Piaget's four stages | GPT PNG | ? wired | `ch10_piaget_stages_sequence_with_caveat.png` — includes caveat that stages are a useful map, not a rigid calendar. |
 | 10.5 | Vygotsky ZPD / scaffolding | GPT PNG | ? wired | `ch10_vygotsky_zpd_scaffolding.png` — good candidate for future AI-after-effort lab connection. |
-| 10.6 | Attachment styles — reunion behavior | GPT PNG | ? wired | `ch10_attachment_styles_reunion_behavior.png` — corrected ambivalent range; no clinical-support footnote. |
-| 10.7 | Adolescent dual systems crossover | SVG | ? wired | `ch10_adolescent_dual_systems_crossover.svg` — reward/novelty activation precedes fully mature prefrontal control. |
-| 10.8 | Fluid vs. crystallized intelligence across adulthood | SVG | ? wired | `ch10_fluid_crystallized_adulthood.svg` — adult cognitive aging as tradeoff, not simple decline. |
+| 10.6 | Attachment classifications — observable reunion behavior | GPT PNG + local text revision | ✅ wired/use now | `ch10_attachment_styles_reunion_behavior.png` — final rendered-page check passed; observable behavior and probabilistic caregiver-sensitivity footer remain legible. |
+| 10.7 | Adolescent development schematic | Programmatic SVG | ✅ wired/use now | `ch10_adolescent_dual_systems_crossover.svg` — average tendencies with variation bands plus peers, stakes, context, and opportunity; no single finish age. |
+| 10.8 | Cognitive abilities across adulthood | Programmatic SVG | ✅ wired/use now | `ch10_fluid_crystallized_adulthood.svg` — schematic group averages, overlapping age groups, individual variation, and dementia/ordinary-aging distinction. |
 | — | Fast—slow life-history continuum | GPT PNG | held/skipped | `ch10_fast_slow_life_history_continuum.png` — redundant with the human extended-development figure. |
 | — | Synaptogenesis + pruning regional curves | SVG | held/skipped | `ch10_synaptogenesis_pruning_regional.svg` — too detailed relative to the simpler pruning/tuning figure. |
 | — | Orchid/dandelion differential susceptibility | PNG | held/skipped | `ch10_orchid_dandelion_susceptibility.png` — prose currently sufficient; optional future rebuild only. |
@@ -228,12 +229,12 @@ Seven figures are wired for Sections 1–5. Figures 11.6 and 11.7 were rebuilt a
 | # | Description | Status | Notes |
 |---|-------------|--------|-------|
 | 11.1 | Festinger & Carlsmith (1959) $1/$20 dissonance study | ✅ | `ch11/fig_festinger_carlsmith_dissonance.png` |
-| 11.2 | Asch line-judgment conformity study | ✅ | `ch11/fig_asch_line_judgment_study.png` |
+| 11.2 | Asch line-judgment conformity study | ✅ revised/wired | `ch11/fig_asch_line_judgment_study.svg/.png` — B visibly matches the standard; unanimous majority chooses A; ally panel breaks unanimity. |
 | 11.3 | Milgram obedience physical setup | ✅ | `ch11/fig_milgram_obedience_setup.png` |
 | 11.4 | Stereotype / prejudice / discrimination triangle | ✅ | `ch11/fig_prejudice_stereotype_discrimination_triangle.png` |
 | 11.5 | Person and situation influence diagram | ✅ | `ch11/fig_person_situation_influence_diagram.png` |
-| 11.6 | Trait signal aggregation | ✅ wired | `ch11/fig_trait_signal_aggregation.png` plus editable SVG source — rebuilt from existing spec/alt text; single act r≈.29 vs. aggregated r≈.72 scatter plots. |
-| 11.7 | Person × situation interaction | ✅ wired | `ch11/fig_person_situation_grid.png` plus editable SVG source — rebuilt from existing spec/alt text; weak-situation spread ≈4.7 points vs. strong-situation compression ≈0.8 points. |
+| 11.6 | Trait signal aggregation | ✅ revised/wired | `ch11/fig_trait_signal_aggregation.svg/.png` — data-free single-observation versus aggregated-observations comparison; no correlations or synthetic statistics. |
+| 11.7 | Weak and strong situations | ✅ revised/wired | `ch11/fig_person_situation_grid.svg/.png` — same individuals in both panels; conceptual compression without scores or effect sizes. |
 | — | Attribution theory | 🔲 | Optional/superseded planning idea. |
 | — | ELM dual-route diagram | 🔲 | Optional/superseded planning idea. |
 | — | Bystander effect five-step model | 🔲 | Optional/superseded planning idea. |
@@ -246,14 +247,14 @@ Seven figures are wired for Sections 1–5. Figures 11.6 and 11.7 were rebuilt a
 
 ## Chapter 12 — Emotion, Stress & Coping
 
-Four core images are wired. Optional table-like figures remain unbuilt.
+Four original explanatory diagrams are wired in the canonical source and regenerated HTML. `docs/images/ch12/README_captions_alt_text_attribution.md` is authoritative for captions, alt text, creation method, attribution, licensing, public-sharing status, and caveats. Final status is use now pending Jon's visual review.
 
 | # | Description | Status | Notes |
 |---|-------------|--------|-------|
-| 12.1 | Body-budget deposits/withdrawals diagram | ✅ | `ch12/fig_body_budget_deposits_withdrawals.png` |
-| 12.2 | Russell core-affect circumplex | ✅ | `ch12/fig_core_affect_circumplex.png` |
-| 12.3 | Cognitive light cone / HPA-axis pathway | ✅ | `ch12/fig_cognitive_light_cone_hpa_axis.png` |
-| 12.4 | GAS three stages with functional-capacity curve | ✅ | `ch12/fig_general_adaptation_syndrome.png` |
+| 12.1 | Body-budget supports/demands framework; explicitly metaphorical | ✅ wired/use now, Jon review | `ch12/fig_body_budget_deposits_withdrawals.svg/.png` |
+| 12.2 | Russell core-affect circumplex; model-neutral takeaway | ✅ wired/use now, Jon review | `ch12/fig_core_affect_circumplex.svg/.png` |
+| 12.3 | Cognitive light cone as nested spatial and temporal goal horizons; stress-appraisal application kept secondary | ✅ wired/use now, Jon review | `ch12/ch12_cognitive_light_cone_goal_horizon.svg` |
+| 12.4 | Historical GAS contrasted with recovery and multisystem allostatic load | ✅ wired/use now, Jon review | `ch12/fig_general_adaptation_syndrome.svg/.png` |
 | — | Emotion theories comparison | 🔲 | Optional; already a table in text. |
 | — | Coping strategy matrix | 🔲 | Optional; text has a matching table. |
 
@@ -261,20 +262,21 @@ Four core images are wired. Optional table-like figures remain unbuilt.
 
 ## Chapter 13 — Psychological Disorders & Therapy
 
-All 9 current figures are wired. Only the biopsychosocial triangle remains unbuilt.
+Eight figures are wired in the canonical source and regenerated HTML. `docs/images/ch13/README_captions_alt_text_attribution.md` is authoritative for captions, alt text, creation method, attribution, licensing, public-sharing status, caveats, and retired assets. The former binary AI-versus-therapist figure is replaced by a product-type/governance table in the chapter.
 
 | # | Description | Status | Filename / note |
 |---|-------------|--------|-----------------|
-| 13.1 | Adaptive-response-becomes-costly arc | ✅ | `ch13/fig_adaptive_response_model_persists_cost_accumulates.png` |
-| 13.2 | 3D criteria Venn diagram | ✅ | `ch13/fig_diagnostic_criteria_3d_model.png` |
-| 13.3 | Diagnosis is not a cause flowchart | ✅ | `ch13/fig_diagnosis_is_not_a_cause_flowchart.png` |
-| 13.4 | Diathesis-stress threshold model | ✅ | `ch13/fig_diathesis_stress_threshold_model.png` |
-| 13.5 | Anxiety maintenance cycle | ✅ | `ch13/fig_anxiety_maintenance_cycle.png` |
-| 13.6 | Depression maintenance loop | ✅ | `ch13/fig_depression_maintenance_loop.png` |
-| 13.7 | Schizophrenia positive vs. negative symptoms | ✅ | `ch13/fig_schizophrenia_positive_negative_symptoms.png` |
-| 13.8 | Therapy mechanisms map | ✅ | `ch13/fig_therapy_mechanisms_map.png` |
-| 13.9 | AI vs. licensed therapist comparison | ✅ | `ch13/fig_ai_vs_therapist_comparison.png` |
-| — | Biopsychosocial model triangle | 🔲 | No candidate image found; build only if it adds more than prose/table. |
+| 13.1 | Bounded maintenance lens for selected avoidance, compulsion, trauma-learning, and withdrawal loops | ✅ wired/use now | `ch13/ch13_maintenance_lens_bounded.svg` |
+| 13.2 | Diagnostic evidence questions; 3Ds as introductory heuristic rather than required intersection | ✅ wired/use now | `ch13/ch13_diagnostic_evidence_questions.svg` |
+| 13.3 | Diagnosis is not a cause flowchart | ✅ wired/use now | `ch13/fig_diagnosis_is_not_a_cause_flowchart.png` |
+| 13.4 | Vulnerability, stress, supports, and changing probability | ✅ wired/use now | `ch13/ch13_vulnerability_context_probabilistic.svg` |
+| 13.5 | Avoidance, immediate relief, and corrective learning | ✅ wired/use now | `ch13/ch13_anxiety_avoidance_learning_loop.svg` |
+| 13.6 | Behavioral-withdrawal maintenance loop in depression | ✅ wired/use now | `ch13/fig_depression_maintenance_loop.png` |
+| 13.7 | Schizophrenia positive versus negative symptoms | ✅ wired/use now | `ch13/fig_schizophrenia_positive_negative_symptoms.png` |
+| 13.8 | Treatment selection by condition, evidence, risks, and client context | ✅ wired/use now | `ch13/ch13_treatment_selection_evidence_context.svg` |
+| — | Mental-health AI product types, evidence, privacy, and governance | ✅ prose/table | No figure; `fig_ai_vs_therapist_comparison.png` is retired and unwired |
+
+The older adaptive-response arc, 3D Venn, fixed diathesis threshold, anxiety-extinction loop, psychotherapy-centered treatment map, and AI-versus-therapist comparison remain only as provenance assets. They are not approved or wired.
 
 ---
 
@@ -292,7 +294,7 @@ All 9 current figures are wired. Only the biopsychosocial triangle remains unbui
 - Ch2: closed 2026-07-10 — final set wired, browser-check still open (see Ch2 table above).
 - Ch3: obtain originality sign-off for three lecture-slide-derived figures or rebuild them.
 - Ch4: browser-check live rendering, confirm Webvision non-commercial license fit, and decide whether a depth-cues figure is still needed.
-- Ch6/7/9/12/13: optional figures only; do not block core completion.
+- Ch6/7/9/12: optional figures only; do not block core completion. Ch13 is closed pending whole-book release checks.
 
 ### Tier 4 — release-readiness audit
 Run a whole-book check for broken image links, missing captions/alt text, missing attribution/license/public-sharing status, noncommercial/share-alike assets, stale UUID files, unreferenced image files, and any artwork with embedded figure numbers.

@@ -143,37 +143,49 @@ Original figure, hand-coded SVG for Oxford Psychology 101, 2026. Safe for public
 `ch08_baddeley_working_memory_model.svg`
 
 ## Placement
-Section 1, immediately after the Baddeley & Hitch paragraph ending: *"...a phonological loop that holds verbal/acoustic information, and a visuospatial sketchpad that holds visual and spatial information (Baddeley & Hitch, 1974)."*
+Section 1, immediately after the revised working-memory discussion ending: *"...individual differences in working memory capacity turn out to predict a surprisingly wide range of cognitive abilities, a connection Chapter 9 picks up directly."*
 
 ## Core teaching idea
-Working memory is not one passive storage box — it's an active system with a coordinating executive directing two content-specific subsystems.
+Working memory is not one passive storage box. It is an active system in which specialized components maintain verbal and visual-spatial information, while the episodic buffer temporarily binds those contents with relevant long-term knowledge into one coherent representation.
 
 ## Layout
-Hub-and-spoke: **Central Executive** as a top-center panel (orange/red accent — it's the coordinating, active component), with two arrows pointing downward to two subsystem panels side by side below it (light blue accent, matched pair):
+Use a layered hub-and-component diagram rather than the earlier three-spoke version:
 
-- Left: **Phonological Loop** — holds verbal/acoustic information (small label: "inner voice," e.g. rehearsing a phone number).
-- Right: **Visuospatial Sketchpad** — holds visual/spatial information (small label: "inner eye," e.g. picturing a route).
+1. **Central Executive** at top center (orange/red accent) — allocates attention and coordinates the system.
+2. Middle row, left to right:
+   - **Phonological Loop** (light blue) — verbal/acoustic information; rehearsing words or sounds.
+   - **Episodic Buffer** (neutral white with orange/red outline) — temporary binding workspace; combines words, images, and relevant long-term knowledge.
+   - **Visuospatial Sketchpad** (light blue) — visual/spatial information; picturing objects or routes.
+3. **Long-Term Memory** below the episodic buffer (neutral white) — relevant stored knowledge.
 
-Arrows from Central Executive to each subsystem should read as bidirectional coordination (allocating attention to / receiving from each), not one-way delivery — use a double-headed arrow or two thin opposite-direction arrows if that reads more clearly than a single line with two arrowheads.
+Use bidirectional arrows from the central executive to all three working-memory components. Connect the episodic buffer bidirectionally to the phonological loop, visuospatial sketchpad, and long-term memory. The figure should show coordination and binding, not a one-way processing pipeline.
 
 ## Required labels
-- Central Executive — "allocates attention, coordinates the system"
+- Central Executive — "allocates attention; coordinates the system"
 - Phonological Loop — "verbal / acoustic information"
+- Episodic Buffer — "temporary binding workspace"
 - Visuospatial Sketchpad — "visual / spatial information"
+- Long-Term Memory — "relevant stored knowledge"
+- Bottom key-idea pill: **"The episodic buffer binds information temporarily; it is not the same as episodic long-term memory."**
 
 ## Text to avoid
-- Do not add an "episodic buffer" component. Baddeley's later (2000) model includes one, but **this chapter's text names only three components** (central executive, phonological loop, visuospatial sketchpad) — adding a fourth would show students something the chapter itself doesn't teach and create a mismatch they'd have to reconcile on their own.
+- Do not subdivide the phonological loop into a phonological store and articulatory rehearsal process.
+- Do not subdivide the visuospatial sketchpad into a visual cache and inner scribe.
+- Do not equate the episodic buffer with episodic long-term memory.
+- Do not label boxes as brain regions or add a brain outline.
 
 ## Accuracy constraints
-- Keep exactly three components — no episodic buffer, no additional subsystems.
-- Do not depict the phonological loop or visuospatial sketchpad as operating independently of the executive — the arrows should make clear the executive is actively coordinating both, not just sitting above two self-running boxes.
-- Do not make this look like a brain-anatomy diagram (no brain outline) — this is a cognitive-architecture diagram, parallel in style to Figure 8.1, not a neuroanatomy figure (that distinction matters given Section 2 separately covers actual hippocampal biology).
+- Present the episodic buffer as a later addition to Baddeley's model, not as part of the original 1974 Baddeley-Hitch proposal.
+- Show the buffer integrating information from the specialized systems and relevant long-term memory; do not depict it as a permanent store.
+- Keep all major relationships bidirectional. The central executive coordinates activity; the other components are not simply passive destinations for one-way commands.
+- Keep the figure cognitive rather than anatomical. Section 2 separately covers hippocampal and systems-level biology.
+- Preserve one hard idea: specialized maintenance plus temporary binding. Do not add further subcomponents.
 
 ## Caption draft
-Baddeley and Hitch's working memory model replaces a single passive short-term store with an active system: a central executive that allocates attention and coordinates the rest of the system, a phonological loop that holds verbal and acoustic information, and a visuospatial sketchpad that holds visual and spatial information. This chapter's text uses only these three components — a later version of the model adds a fourth (the episodic buffer), which is not covered here.
+Baddeley's working-memory model replaces a single passive short-term store with an active system. The central executive coordinates attention; the phonological loop maintains verbal and acoustic information; the visuospatial sketchpad maintains visual and spatial information; and the episodic buffer temporarily binds those contents with relevant long-term knowledge into a coherent representation. The episodic buffer is not the same as episodic long-term memory.
 
 ## Alt text draft
-A hub-and-spoke diagram shows the Central Executive at the top, with arrows connecting it to two subsystems below: the Phonological Loop, labeled as holding verbal and acoustic information, and the Visuospatial Sketchpad, labeled as holding visual and spatial information. The arrows indicate active coordination between the executive and both subsystems, not one-way delivery.
+A cognitive-architecture diagram shows the Central Executive at the top coordinating three components below: the Phonological Loop for verbal and acoustic information, the Episodic Buffer as a temporary binding workspace, and the Visuospatial Sketchpad for visual and spatial information. Bidirectional arrows connect the components. Long-Term Memory appears below the episodic buffer, showing that relevant stored knowledge can be incorporated into a temporary integrated representation.
 
 ## Attribution
 Original figure, hand-coded SVG for Oxford Psychology 101, 2026. Safe for public sharing.

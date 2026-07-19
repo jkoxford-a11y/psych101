@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+<title id="title">How categories form a hierarchy</title>
+<desc id="desc">A category hierarchy begins with Animal as the superordinate category, branches to Dog, Bird, and Fish as basic-level categories, and then narrows to Golden retriever, Robin, and Salmon as subordinate categories. The basic-level row is emphasized as the everyday naming default.</desc>
+<style>
+text{font-family:Arial,Helvetica,sans-serif;fill:#172033}.title{font-size:54px;font-weight:700}.sub{font-size:28px;fill:#526070}.tier{font-size:22px;font-weight:700}.box{font-size:36px;font-weight:700}.small{font-size:23px}.line{stroke:#5A6B7D;stroke-width:7;fill:none}.arrow{fill:#5A6B7D}
+</style>
+<rect width="1600" height="900" fill="#FAFBFC"/>
+<text x="80" y="105" class="title">How categories form a hierarchy</text>
+<text x="82" y="155" class="sub">The basic level is usually the everyday name you reach for first.</text>
+<text x="95" y="270" class="tier" fill="#526070">SUPERORDINATE</text>
+<text x="95" y="465" class="tier" fill="#274C77">BASIC LEVEL</text>
+<text x="95" y="685" class="tier" fill="#526070">SUBORDINATE</text>
+<rect x="640" y="205" width="320" height="130" rx="24" fill="#DDEBD5" stroke="#274C77" stroke-width="3"/>
+<text x="800" y="265" text-anchor="middle" class="box">Animal</text>
+<text x="800" y="307" text-anchor="middle" class="small" fill="#526070">broad category</text>
+<path d="M800 335 V375 H430 M800 375 H1170" class="line"/>
+<path d="M430 375 V395 M800 375 V395 M1170 375 V395" class="line"/>
+<polygon points="430,405 412,387 448,387" class="arrow"/><polygon points="800,405 782,387 818,387" class="arrow"/><polygon points="1170,405 1152,387 1188,387" class="arrow"/>
+<g>
+<rect x="275" y="405" width="310" height="140" rx="24" fill="#DCEAF8" stroke="#274C77" stroke-width="4"/>
+<text x="430" y="468" text-anchor="middle" class="box">Dog</text><text x="430" y="512" text-anchor="middle" class="small" fill="#274C77">everyday default</text>
+<rect x="645" y="405" width="310" height="140" rx="24" fill="#DCEAF8" stroke="#274C77" stroke-width="4"/>
+<text x="800" y="468" text-anchor="middle" class="box">Bird</text><text x="800" y="512" text-anchor="middle" class="small" fill="#274C77">everyday default</text>
+<rect x="1015" y="405" width="310" height="140" rx="24" fill="#DCEAF8" stroke="#274C77" stroke-width="4"/>
+<text x="1170" y="468" text-anchor="middle" class="box">Fish</text><text x="1170" y="512" text-anchor="middle" class="small" fill="#274C77">everyday default</text>
+</g>
+<path d="M430 545 V625 M800 545 V625 M1170 545 V625" class="line"/>
+<polygon points="430,635 412,617 448,617" class="arrow"/><polygon points="800,635 782,617 818,617" class="arrow"/><polygon points="1170,635 1152,617 1188,617" class="arrow"/>
+<g>
+<rect x="275" y="635" width="310" height="150" rx="24" fill="#F9E5C8" stroke="#B8782F" stroke-width="3"/>
+<text x="430" y="700" text-anchor="middle" class="box">Golden retriever</text><text x="430" y="750" text-anchor="middle" class="small" fill="#526070">more specific category</text>
+<rect x="645" y="635" width="310" height="150" rx="24" fill="#F9E5C8" stroke="#B8782F" stroke-width="3"/>
+<text x="800" y="700" text-anchor="middle" class="box">Robin</text><text x="800" y="750" text-anchor="middle" class="small" fill="#526070">more specific category</text>
+<rect x="1015" y="635" width="310" height="150" rx="24" fill="#F9E5C8" stroke="#B8782F" stroke-width="3"/>
+<text x="1170" y="700" text-anchor="middle" class="box">Salmon</text><text x="1170" y="750" text-anchor="middle" class="small" fill="#526070">more specific category</text>
+</g>
+<rect x="1335" y="395" width="190" height="205" rx="20" fill="#FFFFFF" stroke="#B7C3D0" stroke-width="3"/>
+<text x="1430" y="440" text-anchor="middle" font-size="28" font-weight="700" fill="#274C77">Why basic?</text>
+<text x="1430" y="485" text-anchor="middle" font-size="24">Specific enough</text><text x="1430" y="520" text-anchor="middle" font-size="24">to guide action,</text>
+<text x="1430" y="555" text-anchor="middle" font-size="24">broad enough</text><text x="1430" y="590" text-anchor="middle" font-size="24">to generalize.</text>
+<line x1="1335" y1="500" x2="1285" y2="500" stroke="#274C77" stroke-width="5"/><polygon points="1285,500 1305,488 1305,512" fill="#274C77"/>
+<line x1="80" y1="825" x2="1520" y2="825" stroke="#D6DDE5" stroke-width="2"/>
+<text x="80" y="865" class="sub">Animal → dog → golden retriever: each step narrows the category while preserving the relationship.</text>
+</svg>

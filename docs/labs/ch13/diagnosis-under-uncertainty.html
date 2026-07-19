@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Diagnosis Under Uncertainty - General Psychology</title>
+  <link rel="icon" href="data:," />
+  <link rel="stylesheet" href="../../css/style.css" />
+  <link rel="stylesheet" href="../../css/labs.css" />
+  <link rel="stylesheet" href="../../css/mobile-figure-fix.css" />
+</head>
+<body data-lab-storage-key="psych101-ch13-diagnosis-uncertainty-v1">
+<div class="layout">
+  <aside class="sidebar" id="app-sidebar"></aside>
+  <script src="../../js/sidebar.js" data-dir="labs/ch13" data-active="" data-top="full"></script>
+  <main class="main lab-main">
+    <p class="chapter-meta">Learning Lab - Chapter 13</p>
+    <h1>Diagnosis Under Uncertainty</h1>
+    <hr class="chapter-divider" />
+
+    <p>A symptom description is the beginning of clinical reasoning, not the end. In this lab, you will update an evidential judgment as information arrives.</p>
+    <p>Allow about 10–15 minutes. All people and situations are fictional composites. You are classifying the <em>strength of the evidence</em>, not diagnosing a real person.</p>
+
+    <div class="callout callout--note">
+      <div class="callout-title">Privacy and Boundaries</div>
+      <p>This lab runs entirely in your browser. It stores only your prediction, progress, evidence judgments, explanation, and transfer response in <code>sessionStorage</code> for this browser session. It stores no names, emails, IDs, personal health information, analytics, or tracking data, and nothing is sent to a server. Do not enter information about yourself or another real person.</p>
+      <button class="lab-btn lab-btn--secondary" type="button" id="reset-lab">Reset this lab</button>
+      <p class="save-status" id="reset-status" aria-live="polite"></p>
+    </div>
+
+    <section class="lab-panel" id="prediction-panel" aria-labelledby="prediction-heading">
+      <p class="lab-kicker">Phase 1 of 6 - Prediction</p>
+      <h2 id="prediction-heading" tabindex="-1">Predict and Commit</h2>
+      <div class="case-card">
+        <h3>Initial report: Morgan</h3>
+        <p>Morgan has missed several classes, sleeps much longer than usual, and has stopped attending a club they previously enjoyed.</p>
+      </div>
+      <label class="text-label" for="prediction">What can reasonably be concluded from this report, and what information would you need next?</label>
+      <textarea id="prediction" rows="5" required></textarea>
+      <div class="lab-actions"><button class="lab-btn" type="button" id="commit-prediction">Commit prediction</button></div>
+      <p class="save-status" id="prediction-status" aria-live="polite"></p>
+    </section>
+
+    <section class="lab-panel" id="evidence-panel" aria-labelledby="evidence-heading" tabindex="-1" hidden>
+      <p class="lab-kicker">Phase 2 of 6 - Progressive Disclosure</p>
+      <h2 id="evidence-heading">Update the Evidence Judgment</h2>
+      <p class="prediction-reminder" id="prediction-reminder"></p>
+      <article class="classifier-item" aria-labelledby="disclosure-title">
+        <p id="disclosure-progress" class="lab-kicker"></p>
+        <h3 id="disclosure-title"></h3>
+        <p id="disclosure-text"></p>
+        <label for="evidence-status">What does the evidence support <em>at this point</em>?</label>
+        <select id="evidence-status">
+          <option value="">Choose one</option>
+          <option value="insufficient">Too little information for a diagnostic conclusion</option>
+          <option value="assessment">Concern warrants further assessment</option>
+          <option value="consistent">Evidence is consistent with the named diagnosis after criteria and exclusions</option>
+        </select>
+        <button class="lab-btn" type="button" id="check-evidence">Check this judgment</button>
+        <div class="feedback-panel" id="evidence-feedback" aria-live="polite" hidden></div>
+        <div class="lab-actions"><button class="lab-btn" type="button" id="next-disclosure" hidden>Next disclosure</button></div>
+      </article>
+      <div class="event-log" aria-label="Evidence update log"><ol id="event-log" aria-live="polite"></ol></div>
+    </section>
+
+    <section class="lab-panel" id="teaching-panel" aria-labelledby="teaching-heading" tabindex="-1" hidden>
+      <p class="lab-kicker">Phase 3 of 6 - Concept Reveal</p>
+      <h2 id="teaching-heading">What the Sequence Shows</h2>
+      <div class="callout callout--note">
+        <div class="callout-title">Classification under uncertainty</div>
+        <p>Early symptoms can justify concern without supporting a diagnosis. Duration, impairment, context, associated symptoms, medical and substance exclusions, and differential evidence change the strength of the inference. Even after a diagnosis is supported, the label does not establish cause or select one treatment automatically.</p>
+      </div>
+      <button class="lab-btn" type="button" id="continue-explanation">Explain the reasoning</button>
+    </section>
+
+    <section class="lab-panel" id="explanation-panel" aria-labelledby="explanation-heading" tabindex="-1" hidden>
+      <p class="lab-kicker">Phase 4 of 6 - Explain</p>
+      <h2 id="explanation-heading">Explain Why the Judgment Changed</h2>
+      <label class="text-label" for="explanation">Explain why the initial report warranted concern but not a diagnosis. Name at least two later disclosures that strengthened or narrowed the inference, and explain why the final label still does not establish cause or treatment.</label>
+      <textarea id="explanation" rows="6"></textarea>
+      <button class="lab-btn" type="button" id="save-explanation">Save explanation</button>
+      <p class="save-status" id="explanation-status" aria-live="polite"></p>
+    </section>
+
+    <section class="lab-panel" id="transfer-panel" aria-labelledby="transfer-heading" tabindex="-1" hidden>
+      <p class="lab-kicker">Phase 5 of 6 - Transfer</p>
+      <h2 id="transfer-heading">Apply the Rule to a New Fictional Case</h2>
+      <div class="case-card">
+        <h3>Luis</h3>
+        <p>Luis experienced a racing heart, trembling, dizziness, and fear during two late-night study sessions. Both episodes followed several energy drinks. No information is yet available about unexpected episodes at other times, persistent concern, medical causes, or changes in behavior.</p>
+      </div>
+      <label for="transfer-status-select">What does this evidence support?</label>
+      <select id="transfer-status-select">
+        <option value="">Choose one</option>
+        <option value="insufficient">Too little information for a diagnostic conclusion</option>
+        <option value="assessment">Concern warrants further assessment</option>
+        <option value="consistent">Evidence is consistent with panic disorder after criteria and exclusions</option>
+      </select>
+      <label class="text-label" for="transfer-reason">Explain what is supported and identify two questions or exclusions that matter next. Use the distinction between symptoms and diagnosis.</label>
+      <textarea id="transfer-reason" rows="5"></textarea>
+      <label class="option-row"><input type="checkbox" id="transfer-boundary" /> My answer does not diagnose a real person and does not treat a label as a cause.</label>
+      <button class="lab-btn" type="button" id="save-transfer">Complete lab</button>
+      <p class="save-status" id="transfer-status" aria-live="polite"></p>
+    </section>
+
+    <section class="lab-panel" id="summary-panel" aria-labelledby="summary-heading" tabindex="-1" hidden>
+      <p class="lab-kicker">Phase 6 of 6 - Completion Summary</p>
+      <h2 id="summary-heading">What You Practiced</h2>
+      <div id="completion-summary" aria-live="polite"></div>
+      <div class="callout callout--think-about-it">
+        <div class="callout-title">Instructor Note</div>
+        <p>Have pairs compare the point at which they felt tempted to name a diagnosis. Debrief the distinction between a justified referral for assessment and evidence sufficient for classification. The key moment is realizing that more symptoms are not the only missing information—context, duration, exclusions, and differential evidence also matter.</p>
+      </div>
+    </section>
+  </main>
+</div>
+<script src="../../js/labs-diagnosis-under-uncertainty.js"></script>
+<script src="../../js/lab-session-controls.js"></script>
+<script src="../../js/nav.js"></script>
+</body>
+</html>

@@ -1,168 +1,180 @@
 # Chapter 11: Social Psychology
 
-> Drafting history & provenance: see `_provenance/ch11-social-psychology.md` (and git log).
+> Drafting history and provenance: see `_provenance/ch11-social-psychology.md` and git history.
+
+---
+
+## Misconception Opener: “I Would Never Do That”
+
+In 1963, Stanley Milgram recruited adults for what they believed was a study of memory and learning at Yale University. Each participant became the “teacher.” Every time the learner in the next room made an error, the teacher was instructed to press a switch delivering a stronger electric shock. The shocks were fake, the learner was a confederate, and the cries of pain were recorded. The participants did not know that.
+
+Sixty-five percent continued to the final 450-volt switch. Before the study, Milgram asked psychiatrists to predict how many people would go that far. Their average prediction was about one person in a thousand.
+
+Most people hear this result and say some version of the same thing: *I would never do that.*
+
+Perhaps. But social psychology begins with the possibility that you do not know exactly what you would do until you know the situation. We are good at explaining behavior by character and much worse at noticing how authority, unanimity, roles, ambiguity, distance, and responsibility alter the probability of an action. Situations do not erase the person. They change what the person is likely to do.
 
 ---
 
 ## Where This Fits
 
-Social psychology bridges the gap between the individual and the social world. This chapter builds directly on attribution and dual-process reasoning from Chapters 1 and 9, conditioning and observational learning from Chapter 7, and memory reconstruction from Chapter 8. Everything here — how we judge others, how we yield to or resist social pressure, how groups make decisions, how we help or harm — connects to personality, covered in Section 5 below (Personality does not have its own chapter; per Jon's Session 60 decision, it is folded in here), and forward to emotion, stress, and coping (Chapter 12).
+The previous chapters built an individual mind: a nervous system that senses, learns, remembers, reasons, and develops. This chapter puts that mind in a room with other people. Social psychology asks how our judgments and actions change when other people are present, imagined, or implied.
+
+The chapter returns to personality at the end. That is not an unrelated topic added to social psychology. It is the chapter’s payoff. If situations matter so much, does personality matter at all? The answer is yes—but traits predict patterns across time better than they predict one isolated act. Psychology needs the person and the situation.
 
 ---
 
 ## Learning Objectives
 
-By the end of this chapter you should be able to:
+By the end of this chapter, you should be able to:
 
-1. Explain the fundamental attribution error and self-serving bias, and distinguish the direction of each.
-2. Describe cognitive dissonance and identify at least three ways people reduce it.
-3. Explain what Asch's conformity study and Milgram's obedience study each demonstrated, and how they differ.
-4. Apply the situationist insight to real-world behavior while accurately representing what the Stanford Prison Experiment does and does not show.
-5. Define group polarization and groupthink, and describe the conditions that foster each.
-6. Distinguish prejudice, stereotypes, and discrimination, and explain social identity theory.
-7. Explain the bystander effect's five-step model and summarize the empathy-altruism model and the frustration-aggression hypothesis.
-8. Describe the four major traditions in personality psychology (psychoanalytic, humanistic, trait, interactionist), evaluate the evidence for the Big Five, and explain how the person-situation debate is resolved by an interactionist view.
-
----
-
-## Misconception Opener: "I Would Never Do That"
-
-In 1963, Stanley Milgram ran an advertisement asking for volunteers to participate in a "study of memory and learning" at Yale University. Participants were assigned the role of "teacher" and told to administer electric shocks to a "learner" in an adjacent room every time the learner made a mistake — increasing the voltage with each error. The shocks were fake, the learner was a confederate, and the screams of pain that came through the wall were a recording. But the participants didn't know that.
-
-Sixty-five percent of participants delivered what they believed were the maximum 450-volt shocks, labeled "Danger: Severe Shock" on the control panel — not simply because a researcher said "Please continue," but because the entire situation was engineered to make continuing feel expected, legitimate, and incremental, one step at a time. Before running the study, Milgram asked a panel of 39 psychiatrists to predict how many participants would reach the maximum. Their consensus: about 1 in 1,000.
-
-When people hear about the Milgram study, the near-universal response is: "I would never do that." Social psychology is, in large part, the scientific study of that gap — the space between who we believe ourselves to be and what our situations actually make us do. We are convinced that our judgments of others are fair, that our own choices are autonomous, and that group membership doesn't warp our thinking. The evidence suggests otherwise, systematically and predictably.
+1. Explain the fundamental attribution error and self-serving bias and distinguish their directions.
+2. Explain cognitive dissonance and distinguish central-route from peripheral-route persuasion.
+3. Distinguish conformity from obedience and identify situational variables that change each.
+4. Distinguish group polarization, groupthink, stereotypes, prejudice, and discrimination.
+5. Use the bystander decision model and explain why helping and aggression require multiple levels of explanation.
+6. Describe the Big Five as dimensions rather than types.
+7. Explain how aggregation and situation strength resolve the person–situation debate.
 
 ---
 
-## Section 1: Social Cognition — How We Think About Others
+## Section 1: Social Cognition—How We Explain Other People
 
-### Attribution: Explaining Behavior
+### Attribution: Finding a Cause
 
-Every day we watch other people act and try to figure out why. Attribution theory describes how we explain the causes of behavior, and our explanations fall into two broad categories. A **dispositional attribution** locates the cause inside the person — their personality, ability, or attitude. A **situational attribution** locates it in the environment — the circumstances, roles, or pressures they faced.
+You watch another person act, and your mind immediately begins explaining. A **dispositional attribution** places the cause inside the person: ability, motives, attitudes, or personality. A **situational attribution** places the cause in the surrounding conditions: incentives, constraints, roles, norms, or bad luck.
 
-Neither is inherently wrong, but our default leans heavily toward disposition, and this lean is systematic enough to have a name.
+Neither kind of explanation is automatically correct. The problem is that we do not weigh them evenly.
 
 ### The Fundamental Attribution Error
 
-The **fundamental attribution error** (FAE) is the tendency to overestimate dispositional factors and underestimate situational ones when explaining *other people's* behavior. When a driver cuts you off, your first thought is probably that they're rude or aggressive — not that they're racing to the hospital. When a student does poorly on an exam, we are inclined to attribute it to low ability or poor effort rather than ask whether the test conditions were fair, the student was ill, or the topic was genuinely difficult.
+The **fundamental attribution error** (FAE) is the tendency to overestimate dispositional causes and underestimate situational causes when explaining *other people’s* behavior.
 
-The FAE is robust across many laboratory paradigms. In a classic demonstration, participants read pro- or anti-Castro essays and were told explicitly that the writer had been *assigned* that position — no choice involved. Even with that information available, participants still rated the writer as personally holding the view expressed (Jones & Harris, 1967). The situational constraint was right in front of them; they simply discounted it.
+When a driver cuts you off, “reckless jerk” arrives faster than “person rushing someone to the hospital.” When a classmate misses a deadline, “lazy” arrives faster than “working two jobs and caring for a sick parent.” The dispositional explanation is not impossible. It is simply accepted before the situation has been investigated.
 
-Cross-cultural research suggests the FAE is not universal to the same degree: it is more pronounced in individualistic cultures (which emphasize personal agency) than in collectivist cultures (which tend to frame behavior in relational context). This is itself an important reminder that "basic" social-psychological tendencies are not culture-free (Choi, Nisbett, & Norenzayan, 1999).
+Jones and Harris (1967) demonstrated the problem directly. Participants read essays supporting or opposing Fidel Castro. Some were told that the writers had freely chosen their positions. Others were explicitly told that the writers had been assigned a position. Even when the situational constraint was obvious, readers still inferred that the essay reflected the writer’s true attitude.
+
+The FAE is not equally strong everywhere. Cultural systems that emphasize individual agency tend to encourage more dispositional explanation than systems that emphasize relationships and context (Choi, Nisbett, & Norenzayan, 1999). Even a “basic” cognitive tendency develops inside a culture.
 
 ### Self-Serving Bias
 
-The **self-serving bias** runs in the opposite direction — not toward others but toward ourselves. We tend to attribute our successes to internal causes ("I earned that A") and our failures to external ones ("That test was unfair"). This is not simple dishonesty; it serves real motivational functions, protecting self-esteem and maintaining the sense that we are competent agents in the world.
+The **self-serving bias** concerns explanations of our own outcomes. We tend to explain success internally—“I earned that grade”—and failure externally—“the test was unfair.”
 
----
+This is not always a deliberate excuse. Protecting a competent, coherent self-image can happen before conscious reflection. The result is an efficient moral accounting system: full credit for success, limited liability for failure.
 
 > **Do Not Confuse: FAE vs. Self-Serving Bias**
 >
-> Both involve attribution errors, but they point in opposite directions. The FAE is about how we explain **other people's** behavior — we over-attribute it to their character. The self-serving bias is about how we explain **our own** behavior — we take credit for success and deflect blame for failure. You can hold both biases at the same time: blame yourself for nothing, and attribute everything bad about others to who they are.
+> The FAE concerns how we explain **other people’s behavior**: too much person, too little situation. The self-serving bias concerns how we explain **our own outcomes**: internal credit for success, external blame for failure. You can show both biases in the same five-minute conversation.
 
----
+### Cognitive Dissonance: When Behavior Changes Belief
 
-### Cognitive Dissonance
+We usually assume that beliefs cause behavior. Leon Festinger proposed that the arrow also runs backward.
 
-When two of our cognitions — beliefs, attitudes, or known behaviors — are in conflict, we experience psychological discomfort. Leon Festinger (1957) called this **cognitive dissonance**, and his core insight was that people are motivated to *reduce* it, often by distorting their beliefs rather than their behavior.
+**Cognitive dissonance** is the psychological discomfort produced by inconsistency among beliefs, attitudes, and known behavior. Because inconsistency is uncomfortable, people are motivated to reduce it. Sometimes they change their behavior. Sometimes they change the story they tell about the behavior.
 
-The clearest experimental demonstration came from a study Festinger ran with James Carlsmith (Festinger & Carlsmith, 1959). Participants performed genuinely boring laboratory tasks — turning pegs, moving spools — for an hour. They were then paid either $1 or $20 to tell the next participant (a confederate) that the tasks had been interesting and enjoyable. Which group later reported finding the tasks more enjoyable?
+Festinger and Carlsmith (1959) asked participants to spend an hour performing genuinely boring tasks—turning pegs and moving spools. Participants were then asked to tell the next person that the task had been interesting. Some received $20 for lying. Others received $1.
+
+Which group later rated the task as more enjoyable?
 
 The $1 group. Not the $20 group.
 
-This is the opposite of what simple learning theory would predict. The $20 group had adequate external justification for lying — they were well paid — so they felt no dissonance. The $1 group had almost no external justification, so their only way to make sense of having lied was to convince themselves the tasks were actually interesting. They changed their attitude to match their behavior.
+The $20 group had a strong external justification: *I said it because I was paid well.* That explanation produced relatively little dissonance. The $1 group had weak external justification. To make the behavior coherent, some participants shifted their attitude: *Maybe the task was not so bad.*
 
-![Figure 11.1: The Festinger and Carlsmith (1959) dissonance study. In the $20 condition, "I lied" plus a strong external reason produces low dissonance — no attitude change needed. In the $1 condition, "I lied" plus a weak external reason produces high dissonance, resolved by shifting the attitude itself: "Maybe it was interesting."](../../images/ch11/fig_festinger_carlsmith_dissonance.png)
-*Figure 11.1. Cognitive dissonance and attitude change in the $1 vs. $20 conditions. Original figure.*
+![Figure 11.1: The Festinger and Carlsmith study. In the twenty-dollar condition, a strong external justification produces relatively little dissonance and little need to change the attitude. In the one-dollar condition, weak external justification produces greater dissonance, which can be reduced by deciding the task was somewhat interesting.](../../docs/images/ch11/fig_festinger_carlsmith_dissonance.png)
 
-People reduce cognitive dissonance through at least three routes: changing one of the dissonant cognitions (revising a belief to be consistent with a behavior), adding a consonant cognition (finding a reason the inconsistency doesn't matter), or trivializing the dissonance (deciding the conflicting elements aren't very important). All three routes involve moving the belief system toward consistency, but none necessarily involves facing the truth.
+*Figure 11.1. Weak external justification can create more attitude change than strong external justification. The twenty-dollar condition involves less dissonance, not literally none.*
 
-> **Stop and Retrieve:** Before reading on — in your own words, why did the $1 group end up finding the boring task more enjoyable than the $20 group? What does this reveal about how dissonance actually gets resolved?
+People can reduce dissonance by changing a belief, changing a behavior, adding a new justification, or deciding that the inconsistency does not matter. Dissonance reduction restores coherence. It does not guarantee truth.
 
-### Attitudes and Persuasion: The Elaboration Likelihood Model
+> **Stop and Retrieve:** Why did the $1 group change its attitude more than the $20 group? Explain the result without using the phrase “because they got less money.”
 
-Cognitive dissonance shows that attitudes and behavior are not independent — behavior can shape attitude. But attitude change is also driven by persuasion, and the route matters. Petty and Cacioppo (1986) proposed the **Elaboration Likelihood Model (ELM)** to explain when attitude change is durable and when it is superficial.
+### Persuasion: How Carefully Are You Processing?
 
-The **central route** to persuasion occurs when the audience is motivated and able to think carefully about the message. In this case, argument quality is decisive: strong arguments produce lasting attitude change. The **peripheral route** occurs when motivation or capacity to process is low. Under these conditions, people rely on surface cues — the speaker's attractiveness, confidence, or fluency — rather than the actual strength of the arguments.
+The **elaboration likelihood model** (ELM) distinguishes two broad routes to persuasion (Petty & Cacioppo, 1986).
 
-The ELM predicts that peripheral-route persuasion produces attitude change that is fragile and easily reversed. This distinction will matter again when we consider AI output at the end of the chapter.
+The **central route** occurs when a person has both the motivation and the ability to evaluate an argument carefully. Evidence quality matters. Attitude change produced through this route tends to be more durable and resistant to counterargument.
+
+The **peripheral route** occurs when motivation or ability is low. The person relies more heavily on surface cues: confidence, attractiveness, familiarity, repetition, or fluent wording. Peripheral cues are not always misleading. A credible source sometimes deserves more weight. The mistake is treating a cue as if it were the argument.
+
+> **Think About It:** Recall a claim you accepted because the speaker sounded confident. What evidence would you need before accepting the same claim through the central route?
 
 ---
 
-## Section 2: Social Influence — Conformity, Obedience, and the Power of Situation
+## Section 2: Social Influence—Peers, Authority, and Situation
 
 ### Why We Conform
 
-Even when no one is threatening us, we adjust our behavior to match those around us. **Conformity** is a change in belief or behavior in response to perceived group norms. Two distinct mechanisms drive it.
+**Conformity** is a change in belief or behavior in response to a perceived group norm.
 
-**Informational social influence** occurs when we conform because we genuinely believe the group knows something we don't. If you smell smoke and aren't sure whether it's dangerous, you look around: if everyone else is calmly continuing their conversation, you probably stay put. You treat others as an information source.
+**Informational social influence** occurs when you treat other people as evidence about reality. You smell smoke in a crowded room, notice that nobody else looks concerned, and infer that the smell is probably harmless.
 
-**Normative social influence** occurs when we conform not because we've updated our beliefs but because we fear the social consequences of deviation — disapproval, exclusion, or ridicule. We go along while privately thinking otherwise.
+**Normative social influence** occurs when you go along to avoid rejection, embarrassment, or conflict. You may privately disagree while publicly matching the group.
 
-### Asch's Line-Judgment Study
+The same outward behavior can therefore reflect different internal processes. A person who copies a group’s answer may believe the group is correct, may fear standing alone, or may experience both.
 
-Solomon Asch designed a study to isolate normative influence in its purest form. A single naive participant was seated among what appeared to be seven other participants, but the others were confederates. The group viewed cards showing a standard line alongside three comparison lines and had to say aloud which comparison line matched the standard. The answer was always obvious. But on critical trials, the confederates unanimously gave the wrong answer.
+### Asch and the Power of Unanimity
 
-Seventy-five percent of naive participants conformed to the incorrect majority on at least one trial; averaged across all critical trials, participants went along with the false consensus about a third of the time (Asch, 1955). Several variables modulated conformity: it peaked at a group size of three or four and did not increase beyond that; it dropped sharply if even one confederate gave the correct answer (breaking unanimity was more powerful than group size); and conformity was higher when participants had to respond publicly than privately.
+Solomon Asch placed one naive participant among several confederates. The group viewed a standard line and three comparison lines. The correct match was obvious. On critical trials, every confederate gave the same incorrect answer aloud.
 
-The situation Asch created was unambiguous — the correct answer was obvious. That roughly three of four people conformed to a unanimous group at least once, even with their own clear perception available to them, tells us something important about the social stakes of dissent.
+About 75% of participants conformed at least once, although conformity across all critical trials was closer to one-third (Asch, 1955). The more instructive result came from the variations. Conformity rose as the majority grew to about three or four people, then leveled off. It dropped sharply when even one confederate broke unanimity.
 
-![Figure 11.2: Asch's line-judgment study. The naive participant (shown in blue, seated among confederates) compares a standard line to three comparison lines, A, B, and C. When every confederate unanimously — and incorrectly — calls out the same wrong answer, 75% of naive participants conformed on at least one trial. Conformity peaked with 3–4 confederates and dropped sharply when even one confederate broke unanimity by giving the correct answer.](../../images/ch11/fig_asch_line_judgment_study.png)
-*Figure 11.2. Asch's line-judgment conformity study. Original figure.*
+One ally did not need to be persuasive. The ally changed the social structure of dissent.
 
-**Try it yourself:** [The Feed Is Not the World](../../docs/labs/ch11/feed-is-not-the-world.html) is a short interactive lab that puts you inside a version of this problem. You rate your own view on a low-stakes campus issue, scroll a simulated social media feed that adapts to your own clicks round by round, and then rate your view again — watching how confidence and perceived consensus can shift even when nobody presented a better argument.
+![Figure 11.2: Two panels show the same line-judgment task. In both, comparison line B clearly matches the standard. In the first panel, four majority members unanimously select the visibly shorter line A while the participant must answer alone. In the second panel, one ally selects the correct line B, breaking unanimity.](../../docs/images/ch11/fig_asch_line_judgment_study.png)
 
----
+*Figure 11.2. Asch’s study isolated the effect of a unanimous majority. The most important manipulation was not simply adding more people; it was whether the participant had to stand completely alone.*
 
-> **Classic Study Walkthrough: Milgram's Obedience Studies (1963, 1974)**
+> **Stop and Retrieve:** Why did one ally reduce conformity so much even when the ally did not provide new evidence?
+
+### Milgram: Harmful Continuation in an Authority Relationship
+
+> **Classic Study Walkthrough: Milgram’s Obedience Studies**
 >
-> **Question:** How far will an ordinary person go in following orders from a legitimate authority figure?
+> **Question:** Under what conditions will people continue an action they believe is harming another person?
 >
-> **Setup:** Participants were recruited through a newspaper advertisement. In the lab, they were introduced to the "learner" (a confederate) and told they would be the "teacher." They watched the learner get strapped into a chair with electrodes attached. The teacher's job: read word pairs, test the learner's memory, and deliver an electric shock for each wrong answer. The shock machine had 30 switches ranging from 15 to 450 volts, labeled in groups from "Slight Shock" to "Danger: Severe Shock" to a final pair marked only "XXX."
+> **Setup:** Participants believed they were helping study punishment and learning. The “teacher” sat at a shock generator with 30 switches from 15 to 450 volts. The learner, actually a confederate, answered questions from another room. Each error required a stronger shock.
 >
-> At 300 volts, the learner pounded on the wall and stopped responding. At 315 volts, another wall-pound. After that: silence. If participants hesitated or refused, the experimenter — seated nearby in a gray lab coat — delivered one of four prods: "Please continue," "The experiment requires that you continue," "It is absolutely essential that you continue," and "You have no other choice, you must go on."
+> At 300 volts, the learner pounded on the wall. At 315 volts, another pound. Then silence. When participants hesitated, the experimenter used a sequence of prods ranging from “Please continue” to “You have no other choice; you must go on.”
 >
-> ![Figure 11.3: The Milgram obedience setup. The teacher (participant) sits in one room at a shock control panel ranging from 15V ("Slight Shock") to 450V ("Danger: Severe Shock / XXX"), with the experimenter present. The learner (confederate) sits in a separate room, connected only by sound — no visual contact between teacher and learner.](../../images/ch11/fig_milgram_obedience_setup.png)
-> *Figure 11.3. The physical setup of Milgram's obedience studies. Original figure.*
+> ![Figure 11.3: The Milgram setup. The participant sits with the experimenter at a shock generator while the learner is heard but not seen in another room.](../../docs/images/ch11/fig_milgram_obedience_setup.png)
 >
-> **Results:** As already noted, 65% of participants reached the maximum shock level. Every participant showed distress — trembling, sweating, nervous laughter — but most continued anyway.
+> *Figure 11.3. The physical arrangement separated the participant from the learner while keeping the experimenter nearby.*
 >
-> **Variations:** Milgram ran 14 different versions. When the learner was in the same room (visible, not just audible), compliance dropped to 40%. When the experimenter gave instructions by telephone rather than in person, it dropped to 20%. Institutional prestige mattered less than commonly assumed: running the study out of a run-down commercial building in Bridgeport (no Yale affiliation) reduced compliance only modestly. The most powerful variable was proximity to the authority, not legitimacy per se.
+> **Results:** In the best-known condition, 65% reached the final switch. Participants commonly showed visible distress—sweating, trembling, protesting, or laughing nervously—while continuing.
 >
-> **What it means:** Milgram's work does not show that people are sadistic or that evil is banal in the sense of being thoughtless. What it shows is that the *structure of the situation* — incremental escalation, legitimate authority, physical distance from the victim, an ongoing relationship with the experimenter — systematically increased the probability of harmful compliance in ordinary people who were clearly distressed by what they were doing. The lesson is not "people are bad" but "this situation made good people do something bad."
+> **Variations:** Continuation decreased when the learner was physically closer and when the experimenter was farther away. Institutional setting also mattered, although less dramatically than proximity and the ongoing relationship with the experimenter.
 >
-> **Ethical aftermath:** The study could not be replicated with full deception under contemporary IRB standards. Burger (2009) conducted a partial replication stopping at 150 volts (just before the learner's first demand to be released) and found similar compliance rates, suggesting the Milgram effect has not disappeared.
-
----
+> **What it means:** Milgram demonstrated that harmful behavior can be produced by a structured social relationship: legitimate scientific purpose, incremental escalation, divided responsibility, distance from the learner, and repeated appeals to continue. The exact mechanism remains contested. Later work suggests that identification with the scientific project and appeals to its importance may explain continuation better than simple submission to direct orders; the most order-like prod was often the least effective (Haslam, Reicher, & Birney, 2014).
+>
+> The experiment therefore does not prove that people are evil, that authority always wins, or that participants lacked moral conflict. It shows that situational structure can substantially alter the probability of harmful continuation.
+>
+> **Ethical aftermath:** A full replication would not meet contemporary ethical standards. Burger’s (2009) partial replication stopped at 150 volts and still found substantial continuation.
 
 > **Do Not Confuse: Conformity vs. Obedience**
 >
-> Both are forms of social influence, but they differ in structure. **Conformity** involves adjusting behavior to match *peers* — your equals, not authorities — and is often implicit (no one explicitly tells you to go along). **Obedience** involves compliance with an *authority figure's* explicit instruction. Asch's participants were being influenced by a unanimous peer group; Milgram's participants were being ordered by a researcher in a position of authority. A student who changes their essay answer after hearing classmates disagree is conforming; a student who falsifies data because a supervisor instructs them to is obeying.
+> **Conformity** involves aligning with peers or a group norm. **Obedience** involves responding to an authority relationship. Authority influence can include commands, but it need not operate through a single explicit order. Asch manipulated unanimity among equals. Milgram manipulated the participant’s relationship to an experimenter, a scientific institution, and a gradually escalating task.
 
----
+### The Stanford Prison Experiment—and Its Limits
 
-### The Stanford Prison Experiment — and Its Limits
+In 1971, Philip Zimbardo and colleagues assigned 24 volunteers to play guards or prisoners in a simulated prison. The study was planned for two weeks and stopped after six days. Guards humiliated prisoners; prisoners became distressed and passive; Zimbardo, acting as superintendent, became part of the system he was supposed to observe.
 
-In 1971, Philip Zimbardo and colleagues created a simulated prison in the basement of Stanford's psychology building. Twenty-four volunteers were randomly assigned to be prisoners or guards. Guards were given uniforms and told to maintain order; prisoners were arrested at home by real police, processed, and assigned numbers. The study was planned for two weeks. It was stopped after six days (Haney, Banks, & Zimbardo, 1973).
+For years, the study was taught as a clean demonstration that assigned roles transformed normal people. Archival work later showed that guards received substantial direction from the research team and that the investigators actively shaped the behavior they later described as spontaneous (Le Texier, 2019).
 
-By day two, guards were imposing arbitrary punishments, using humiliation, and forcing prisoners to perform degrading tasks. Prisoners became increasingly passive and distressed. Zimbardo, who played the role of "prison superintendent," reportedly had difficulty maintaining scientific objectivity. The standard teaching interpretation: normal, well-adjusted people rapidly adopted the behaviors associated with their assigned roles, demonstrating the power of situation over personality.
+The broader situationist insight remains well supported: roles, norms, incentives, leadership, and institutions influence behavior. The Stanford Prison Experiment is a dramatic illustration of that claim, but not clean evidence for it. Psychology should keep the lesson and correct the evidence.
 
-This interpretation should be treated with caution. In a detailed archival analysis of audio recordings, field notes, and interviews with participants, Le Texier (2019) documented that guards were explicitly coached on how to behave by Zimbardo's research team; that Zimbardo himself, in his role as superintendent, actively shaped events rather than observing them; and that several guard behaviors cited as spontaneous were responses to instructions. The study was not the clean role-assignment experiment it is described as in most textbooks.
+### The Presence of Other People
 
-What can we take from the SPE? The *situationist insight it was designed to illustrate is genuine and well-supported by other evidence*: roles shape behavior; group norms influence how individuals treat others; institutional structures can elicit behavior that individuals would reject in the abstract. But the SPE itself, as a scientific demonstration, has serious methodological problems and should be described as a dramatic, flawed illustration of a real phenomenon — not as compelling experimental evidence.
+Other people can alter performance even without giving instructions.
 
-> **Stop and Retrieve:** Before reading on — in your own words, what did Le Texier's (2019) archival analysis find that undermines the Stanford Prison Experiment's status as clean experimental evidence?
+**Social facilitation** refers to improved performance on simple or well-practiced tasks in the presence of others and impaired performance on difficult or unfamiliar tasks. Zajonc’s explanation was arousal: arousal strengthens the dominant response. That helps when the dominant response is correct and hurts when it is not.
 
-### Social Facilitation and Social Loafing
+**Social loafing** is reduced individual effort when contributions are difficult to identify. A six-person rope-pulling team may produce more force than one person, but less force per person. Anonymity changes the incentive structure.
 
-The mere presence of others affects performance, and the direction depends on the task. Norman Triplett (1898) — in what's often cited as the first social psychology experiment, though a later re-analysis suggests the effect was weaker than reported (Stroebe, 2012) — noticed cyclists raced faster with a pacemaker than alone. Robert Zajonc (1965) explained why: others' presence produces arousal, which enhances performance on *simple* or *well-learned* tasks (**social facilitation**) while impairing performance on *complex* or *novel* ones — the same mechanism, opposite direction. A related but distinct effect, **social loafing**, emerges when individual contribution becomes anonymous: Latané, Williams, and Harkins (1979) found per-person effort dropped as group size increased even when participants were told to give maximum effort — diffusion of effort, the social counterpart to diffusion of responsibility.
-
-| The presence of others... | When? | Example |
+| Social condition | Likely effect | Example |
 |---|---|---|
-| Improves performance (social facilitation) | Task is simple or well-learned | Running faster with a pacemaker present |
-| Impairs performance (same arousal mechanism) | Task is complex or novel | Struggling more on an unfamiliar task while being watched |
-| Reduces individual effort (social loafing) | Individual contribution is anonymous | A group project where no one's specific input can be identified |
+| Others present; task well practiced | Better performance | Running a familiar sprint in competition |
+| Others present; task unfamiliar | Worse performance | Solving a new problem while being watched |
+| Individual contribution hidden | Less effort | A group project with no identifiable responsibilities |
 
 ---
 
@@ -170,174 +182,220 @@ The mere presence of others affects performance, and the direction depends on th
 
 ### Group Polarization
 
-When like-minded people discuss an issue among themselves, they tend to leave the discussion holding a more extreme version of whatever view they entered with. Moscovici and Zavalloni (1969) called this **group polarization**: groups amplify initial attitude positions, they do not average them.
+**Group polarization** is the tendency for discussion among like-minded people to move the group toward a more extreme version of its initial position.
 
-Two mechanisms drive it. First, **persuasive arguments**: in a group of people who all lean in the same direction, the conversation generates more arguments favoring that position than opposing it, and members hear reasons they hadn't already considered that push them further. Second, **social comparison**: as people discover that others in the group hold even more extreme positions than they do, they shift to stay within or ahead of the group's normative position.
+Two mechanisms help produce the shift. First, group members hear additional arguments supporting the direction they already favored. Second, they compare themselves with the group norm and may move slightly beyond it to remain a good representative of the group.
 
-Group polarization helps explain the dynamic of online communities that sort people by like-mindedness: echo chambers can push moderately held views toward extreme positions not through exposure to radical external content but simply through the reinforcing logic of in-group discussion.
+The result is not simple averaging. A group of mildly cautious people can become very cautious. A group of mildly punitive people can become more punitive. Sorting people into like-minded communities can therefore change attitudes even when nobody introduces a radically new idea.
 
 ### Groupthink
 
-When a highly cohesive group is under pressure and insulated from outside opinions, a different dysfunction can emerge: members suppress doubt and converge prematurely on a course of action that none of them would have endorsed on independent reflection. Irving Janis (1982) developed the concept of **groupthink** — defining it as the failure mode in cohesive groups where the desire for unanimity becomes stronger than the motivation to realistically evaluate alternatives — through historical case studies including the Kennedy administration's Bay of Pigs invasion and the Johnson administration's Vietnam escalation decisions. Later researchers applied the groupthink framework to other high-profile failures, including NASA managers' decision to launch the *Challenger* space shuttle in 1986 despite engineers' explicit warnings about the O-ring seals.
+**Groupthink** is a failure of decision making in which pressure for agreement suppresses realistic evaluation of alternatives. It is most likely when a cohesive group is insulated from outside information, faces high pressure, and has a directive leader signaling the preferred conclusion (Janis, 1982).
 
-Forsyth (2014/2026) identifies the conditions that foster groupthink: high group cohesiveness, isolation from outside information, directive leadership that signals a preferred outcome, and high-stakes pressure. The symptoms include an illusion of invulnerability, collective rationalization of warning signs, belief in the group's inherent morality, stereotyping of outsiders as weak or evil, pressure on dissenters to fall in line, self-censorship of doubts, an illusion of unanimity, and the emergence of self-appointed "mindguards" who filter out inconvenient information.
+Symptoms include self-censorship, pressure on dissenters, collective rationalization, an illusion of unanimity, and “mindguards” who protect the group from inconvenient information.
 
-Prevention requires structural countermeasures: explicitly assigning someone to argue against the emerging consensus, bringing in outside experts, having subgroups deliberate separately before reconvening, and creating explicit permission for members to raise concerns without social penalty.
+The remedy is structural, not motivational. Telling people to “think independently” is weak protection. Better protections include independent initial judgments, outside review, leaders withholding their preferences, separate subgroups, and a formally assigned critic.
 
-> **Stop and Retrieve:** Before reading on — in your own words, how do group polarization and groupthink differ, and what conditions tend to produce each?
+> **Do Not Confuse: Polarization vs. Groupthink**
+>
+> Group polarization changes the **extremity** of an existing tendency after discussion. Groupthink reduces the **quality of evaluation** because disagreement is suppressed. A group can show either, both, or neither.
 
-### Prejudice, Stereotypes, and Discrimination
+### Stereotypes, Prejudice, and Discrimination
 
-These three terms are often used interchangeably, but they describe distinct phenomena. A **stereotype** is a cognitive generalization about a social group's traits — categorical, and accurate or inaccurate in a statistical sense, but always an oversimplification when applied to an individual. **Prejudice** is the *affective* counterpart: a feeling of like or dislike toward group members, typically negative. **Discrimination** is the *behavioral* counterpart: differential treatment based on group membership. All three can occur independently of one another — stereotyping without prejudice, prejudice without acting on it, discrimination driven by implicit associations the decision-maker doesn't consciously endorse — though in practice they are often linked.
+These terms are related, but they are not synonyms.
 
-| Term | Type | Example |
+| Construct | Psychological form | Example |
 |---|---|---|
-| Stereotype | Belief (cognitive) | "Members of group X are good at Y" |
-| Prejudice | Feeling (affective) | Disliking members of group X |
-| Discrimination | Action (behavioral) | Treating someone differently because of that belief or feeling |
+| **Stereotype** | Belief or generalization | “Members of this group are good at mathematics.” |
+| **Prejudice** | Feeling or evaluation | Disliking members of the group |
+| **Discrimination** | Behavior | Treating someone differently because of group membership |
 
-![Figure 11.4: Stereotype, prejudice, and discrimination as related but distinct responses to a social group — a belief (stereotype), a feeling (prejudice), and a behavior (discrimination), connected but not interchangeable.](../../images/ch11/fig_prejudice_stereotype_discrimination_triangle.png)
-*Figure 11.4. The stereotype–prejudice–discrimination triangle. Original figure.*
+A stereotype can be statistically accurate at a group level and still be a poor basis for judging an individual. Group averages overlap, circumstances vary, and the person in front of you may not resemble the average. Categories compress information. Compression is useful—and lossy.
 
-**Social identity theory** (Tajfel & Turner, 1979) provides the most influential account of why groups generate prejudice and discrimination. People categorize themselves and others into social groups; they identify with their own group (the *in-group*); and they engage in social comparison that favors the in-group over out-groups, because doing so bolsters self-esteem. Tajfel's minimal group paradigm showed that even arbitrary, meaningless group distinctions — being told you over- or under-estimate the number of dots in a display — are sufficient to produce in-group favoritism in the allocation of resources. The need to belong to a group with positive distinctiveness is powerful enough to generate bias without any real history of competition or conflict.
+![Figure 11.4: Triangle showing stereotype as belief, prejudice as feeling, and discrimination as behavior. Arrows indicate that the three can influence one another but are not interchangeable.](../../docs/images/ch11/fig_prejudice_stereotype_discrimination_triangle.png)
 
-Stereotypes affect their targets directly through **stereotype threat** — the risk of confirming a negative stereotype about one's group that, when made salient, can impair performance (Steele & Aronson, 1995). This was covered in Chapter 9 in the context of intelligence testing and group score differences, and applies equally here.
+*Figure 11.4. Stereotype, prejudice, and discrimination describe belief, feeling, and behavior. They often occur together, but each can occur without the other two.*
 
-What reduces prejudice? Allport (1954) proposed the **contact hypothesis**: intergroup contact is most likely to reduce prejudice when it involves equal status between the groups, cooperative interdependence (working toward a shared goal), institutional support or authority sanction, and sustained rather than brief interaction. These conditions are facilitating rather than strictly required — a meta-analysis of 515 studies found that contact reduces prejudice across a wide range of conditions, not only when all four are present (Pettigrew & Tropp, 2006) — but contact that is brief, unequal, unsupported, or competitive is less likely to help and can sometimes increase hostility.
+### Social Identity
+
+**Social identity theory** begins with categorization. People classify themselves and others into groups, identify with some of those groups, and compare groups in ways that can produce **positive distinctiveness** for the in-group (Tajfel & Turner, 1979).
+
+Tajfel’s minimal-group studies showed that arbitrary group labels can produce in-group favoritism even without a history of conflict. The important lesson is not that all group membership creates hostility. It is that categorization can reorganize allocation and judgment surprisingly quickly.
+
+Early formulations gave self-esteem a major causal role. Evidence for a simple universal self-esteem mechanism is mixed (Rubin & Hewstone, 1998). Belonging, norms, identity meaning, competition, status, and uncertainty reduction can all matter. Social identity is a framework, not a one-motive machine.
+
+**Stereotype threat** refers to performance pressure created when a negative group stereotype becomes relevant to a task (Steele & Aronson, 1995). The effect is context-sensitive, and estimates are generally smaller in operational settings than in the laboratory (Shewach, Sackett, & Quint, 2019). That boundary does not make the mechanism imaginary. It prevents a conditional effect from becoming a universal explanation.
+
+### Contact Between Groups
+
+Allport’s **contact hypothesis** proposed that intergroup contact is especially likely to reduce prejudice when groups have equal status, cooperate toward shared goals, receive institutional support, and interact repeatedly rather than superficially.
+
+Later meta-analysis found that contact often helps even when every condition is not fully present (Pettigrew & Tropp, 2006). The conditions are best understood as facilitators. Contact is not magic. Unequal, hostile, coercive, or competitive contact can reinforce the very categories it was supposed to weaken.
 
 ---
 
-## Section 4: Prosocial and Antisocial Behavior
+## Section 4: Helping and Harming
 
 ### The Bystander Effect
 
-In 1964, Kitty Genovese was attacked outside her apartment building in New York City. Newspaper accounts, widely repeated and taught for decades, claimed that 38 neighbors watched the attack and did nothing. More careful subsequent journalism and scholarship revealed that the number of actual witnesses was much smaller, that some did attempt to intervene or call police, and that the attack was more fragmented and less publicly visible than reported (Manning, Levine, & Collins, 2007). The bystander effect is real — but the Genovese case as traditionally told is not an accurate representation of it.
+The famous story of Kitty Genovese claimed that 38 witnesses watched her murder and did nothing. That account was substantially inaccurate. The attack was not continuously visible to dozens of passive observers, and some people attempted to help (Manning, Levine, & Collins, 2007).
 
-The experimental evidence is more reliable. Darley and Latané (1968) invited participants to discuss personal problems with other students via intercom, then staged one "student" appearing to have a seizure. When participants believed they were the only other person on the call, 85% left to get help within 60 seconds. When they believed four others were also on the call, only 31% responded within the same window. The probability of any individual helping decreased as the apparent group size increased.
+The **bystander effect**, however, is supported by experiments.
 
-Latané and Darley described a **five-step decision model** for why bystanders fail to help:
+Darley and Latané (1968) had participants communicate by intercom and then hear another supposed participant experience a seizure. When participants believed they were the only witness, 85% sought help within 60 seconds. When they believed four other people were also listening, only 31% did so within that period.
 
-1. **Notice the event** — crowds generate visual and noise distraction.
-2. **Interpret it as an emergency** — ambiguous events are interpreted through **pluralistic ignorance**: each bystander looks at others who also look calm (because they are also suppressing visible concern) and incorrectly concludes that others are not alarmed, and therefore nothing is wrong.
-3. **Accept personal responsibility** — **diffusion of responsibility** means each bystander feels less personally obligated to act as the number of others who *could* act increases.
-4. **Know what to do** — some bystanders don't know how to help even when they want to.
-5. **Decide to act** — **evaluation apprehension**: in an uncertain situation, people fear being embarrassed if they overreact or intervene incorrectly.
+Latané and Darley described helping as a five-step decision chain:
 
-Each step is a point at which the intervention chain can fail. Poepsel and Schroeder (in Noba) emphasize a third mechanism beyond pluralistic ignorance and diffusion of responsibility: even when a bystander has correctly interpreted the situation and accepts some personal responsibility, they still weigh the **costs and benefits** of helping — time, physical risk, emotional distress, embarrassment from overreacting — against the benefit to the victim. High perceived costs suppress intervention even in people who care. The practical implication: if you need help, making the situation less ambiguous and singling out a specific individual ("You, in the blue jacket — call 911") counteracts diffusion of responsibility directly and reduces the perceived cost of acting.
+1. **Notice the event.**
+2. **Interpret it as an emergency.**
+3. **Accept personal responsibility.**
+4. **Know what action to take.**
+5. **Choose to act.**
 
-> **Stop and Retrieve:** Before reading on — in your own words, what is pluralistic ignorance, and at which step of the bystander decision model does it operate?
+Failure at any step stops the chain.
 
-### Altruism
+**Pluralistic ignorance** often disrupts interpretation. Everyone looks at everyone else, sees controlled expressions, and concludes that nobody else thinks the situation is serious.
 
-Why do people ever help strangers at cost to themselves? Three explanations operate at different levels. Hamilton (1964) showed that **kin selection** — captured in the equation *rb > c* (Hamilton's rule): a cost to the helper (*c*) is still favored by selection if the benefit to the recipient (*b*), weighted by relatedness (*r*), is large enough — explains self-sacrifice among family members, but not help given to strangers. Trivers (1971) proposed **reciprocal altruism** as the extension to non-relatives: in groups with repeated interactions, helping now can pay off later, provided defectors are remembered and punished. Both are evolutionary accounts of why prosocial capacities exist at all — neither determines whether a given individual actually helps in a given moment. At the psychological level, Batson (2011) proposed the **empathy-altruism model**: genuine **empathic concern** for a person in need produces altruistic motivation aimed at their welfare, not at relieving the helper's own distress — contested by egoistic accounts that treat all helping as ultimately self-interested, but empathic concern appears to be a functionally distinct motivational state.
+**Diffusion of responsibility** disrupts personal responsibility. As the number of possible helpers grows, each person feels less uniquely responsible.
 
-| Level of explanation | Mechanism | Explains | Doesn't explain |
+The practical lesson is concrete. Reduce ambiguity and assign responsibility directly: “You in the blue jacket—call 911.” A named person is no longer one interchangeable member of a crowd.
+
+> **Stop and Retrieve:** At which steps do pluralistic ignorance and diffusion of responsibility operate? Why are they not simply evidence that bystanders do not care?
+
+**Learning Lab:** [Change the Situation, Change the Probability](../../docs/labs/ch11/change-the-situation.html) asks you to predict how behavior changes when researchers alter unanimity, authority proximity, and the number of apparent bystanders. The activity compares your predictions with published group results; it does not claim to measure what you personally would do.
+
+### Why Help at All?
+
+Helping has explanations at different levels. Do not force them into competition when they answer different questions.
+
+| Level | Mechanism | What it explains | Boundary |
 |---|---|---|---|
-| Evolutionary — kin selection | Hamilton's rule (*rb > c*) | Self-sacrifice for genetic relatives | Helping unrelated strangers |
-| Evolutionary — reciprocal altruism | Repeated interaction, reputation tracking | Cooperation among non-relatives over time | One-shot help to strangers never seen again |
-| Psychological — empathy-altruism | Empathic concern for the person in need | Genuinely other-focused motivation in the moment | Why the capacity for empathy evolved in the first place |
+| Evolutionary | **Kin selection** | Costly help to genetic relatives | Does not explain all help to nonrelatives |
+| Evolutionary | **Reciprocal altruism** | Cooperation when partners meet repeatedly | Weak explanation for anonymous one-time help |
+| Psychological | **Empathy–altruism** | Immediate motivation focused on another person’s welfare | Does not explain why empathic capacities evolved |
 
-### Aggression
+Hamilton’s rule, *rb > c*, describes when helping relatives can increase inclusive fitness: the benefit to the recipient (*b*), weighted by genetic relatedness (*r*), exceeds the cost to the helper (*c*) (Hamilton, 1964).
 
-**Aggression** is behavior intended to harm another person who is motivated to avoid the harm. The qualifier "intended" matters: a surgeon who causes pain is not being aggressive; an insult delivered with a smile is. Aggression is not produced by any single mechanism — it emerges from the convergence of aversive states, learned scripts, status dynamics, impulse control, and group context, each covered below.
+Trivers (1971) extended evolutionary analysis to repeated interactions among nonrelatives. Helping can be favored when partners meet again, remember previous behavior, and respond to defection.
 
-The oldest psychological account of human aggression proposed that frustration is the proximal cause: whenever goal-directed behavior is blocked, aggression is the automatic result. Dollard, Miller, Doob, Mowrer, and Sears (1939) stated this as an invariant hypothesis: frustration always leads to some form of aggression, and aggression is always caused by frustration. Berkowitz (1989) reformulated the hypothesis with important qualifications: frustration *increases the probability* of aggression but is neither necessary nor sufficient. Many frustrated people do not aggress, and many acts of aggression occur without identifiable preceding frustration. Berkowitz proposed that frustration produces aversive arousal, and it is the aversive arousal — not frustration per se — that primes aggression. Any aversive state (pain, heat, unpleasant odors) can have the same priming effect.
+Batson’s **empathy–altruism model** addresses a different question: what motivates helping in the moment? The model proposes that empathic concern can produce genuinely other-focused motivation (Batson, 2011). Whether every apparent case of altruism is completely free of self-interest remains debated. The important distinction is between the evolutionary function of a capacity and the immediate motivation of the actor.
 
-As documented in Chapter 7's Bobo doll coverage, Bandura's classic study showed that aggression can also be acquired through **observational learning**: children who watched an adult behave aggressively toward a large inflatable doll later imitated the specific aggressive acts they had witnessed (Bandura, Ross, & Ross, 1961). Social learning of aggression has implications for how exposure to aggressive models — in media, in the home, in peer groups — shapes behavioral repertoires, though the relationship between media violence exposure and real-world aggression is modest in effect size and methodologically complex to disentangle.
+### Aggression: No Single Cause
 
-Biological systems modulate aggression rather than simply causing it. Testosterone is more consistently linked to dominance, status competition, and aggression under some social conditions than to aggression in general — and the relationship is bidirectional, with winning raising testosterone rather than high testosterone straightforwardly causing aggression. Serotonergic functioning has been associated with impulse control, and low serotonergic activity is often linked to impulsive aggression. The amygdala contributes to threat detection within a broader network involving prefrontal regulation, rather than acting as a simple "aggression center." These patterns parallel what Chapter 3 covered about neurotransmitters and brain regions: they set conditions for behavior without determining it.
+**Aggression** is behavior intended to harm someone who is motivated to avoid that harm. Intention matters. A surgeon can cause pain without aggression; a smiling insult can be aggressive.
 
-**Deindividuation** — the loss of individual self-awareness in groups or crowds — can increase aggression by reducing the normal inhibitory function of self-monitoring. Anonymity, arousal, and diffuse responsibility contribute to deindividuation; together they help explain mob behavior, online harassment, and crowd violence.
+The original frustration–aggression hypothesis claimed that frustration always produces aggression. That was too strong. Berkowitz (1989) reformulated the claim: frustration and other aversive states increase the probability of aggression, but they are neither necessary nor sufficient.
+
+Aggression can also be learned. In Bandura’s Bobo doll studies, children reproduced aggressive actions modeled by adults (Bandura, Ross, & Ross, 1961). Observation expands the behavioral repertoire. It does not compel the behavior every time an opportunity appears.
+
+Biological systems alter sensitivity to threat, status, provocation, and impulse control. They do not function as aggression switches. Testosterone is more consistently related to status competition under particular social conditions than to indiscriminate violence. The amygdala participates in threat-learning networks rather than serving as an aggression center. Prefrontal systems contribute to regulation but do not simply “turn off” aggression.
+
+Classical accounts of **deindividuation** proposed that anonymity produces a loss of self-awareness and therefore antisocial behavior. The evidence supports a more precise conclusion: anonymity can increase conformity to whatever group norm is salient (Postmes & Spears, 1998). In a cruel group, anonymity may facilitate cruelty. In a prosocial group, it can facilitate cooperation. The group supplies the direction.
+
+> **Think About It:** Choose one aggressive act from a film, news story, or personal observation. List one situational, one learned, and one biological contribution. Which explanation would become misleading if presented as the complete cause?
 
 ---
 
-## Section 5: Personality
+## Section 5: Personality—The Person Returns
 
-Attribution errors like the FAE reveal something people otherwise take for granted: that personality is real, but not in the way intuition assumes. If the FAE means we systematically over-explain other people's behavior by their character, that raises an obvious question: is personality itself just another attribution error — something we imagine rather than something real? The answer is no, but the reason why is exactly what this section teaches: personality is real, just in a more limited, statistical sense than everyday trait language assumes. This section asks what stable individual differences actually are, where they come from, and how much they predict.
+The chapter began with a warning: do not explain behavior entirely by character. That warning can be overlearned. If situations matter, are traits imaginary?
 
-### Four Traditions, One Question
+No. Personality is real, but it is statistical. A trait predicts a distribution of behavior across time and situations better than it predicts one isolated act.
 
-| Approach | Main question | What survives today | Main limitation |
+### Four Traditions, One Problem
+
+| Approach | Central question | Durable contribution | Main limitation |
 |---|---|---|---|
-| **Psychoanalytic** | What hidden motives shape behavior? | Unconscious, motivated self-protection is real | Poor testability; specific stage theory unsupported |
-| **Humanistic** | How does self-concept develop? | Relationship variables (acceptance, empathy) predict therapy outcomes | Optimistic; constructs hard to falsify |
-| **Trait** | What stable dimensions describe people? | Big Five: heritable, cross-culturally replicable, predictive | Weak for single acts; limited in strong situations |
-| **Interactionist** | When do traits matter? | Traits × situation × aggregation | More complex than a label; harder to apply moment to moment |
+| Psychoanalytic | What motives operate outside awareness? | Motivated, unconscious self-protection | Specific structures and stages are difficult to test and poorly supported |
+| Humanistic | How does the self develop in relationships? | Self-concept, empathy, acceptance | Broad growth claims are difficult to falsify |
+| Trait | What stable dimensions describe people? | Big Five dimensions and predictive individual differences | Limited prediction of single acts |
+| Interactionist | When do traits matter? | Person × situation and aggregation | More complex than assigning a type |
 
-Sigmund Freud proposed that personality is organized around conflict among the **id** (unconscious, pleasure-seeking), **ego** (reality-testing), and **superego** (internalized standards) (Freud, 1923), managed through unconscious **defense mechanisms** — repression, projection, rationalization, and others. The specific architecture, and especially the psychosexual stage sequence, has not held up empirically; what has held up is the more general finding that people routinely engage in motivated, self-protective distortion of their own experience outside awareness (Baumeister, Dale, & Sommer, 1998) — the same territory Section 1's cognitive dissonance and self-serving bias occupy from a different angle.
+Freud proposed conflict among the **id**, **ego**, and **superego**, managed through **defense mechanisms**. His psychosexual stages and specific mental architecture have not held up well. The broader idea that people protect themselves through motivated processes outside awareness has survived in more testable forms (Baumeister, Dale, & Sommer, 1998).
 
-Carl Rogers argued instead that people are growth-oriented, organized around a **self-concept** that develops well or poorly depending on whether the people around them offer **unconditional positive regard** or attach **conditions of worth** to their approval (Rogers, 1961). The empirically durable finding here is narrower than Rogers's full theory: therapist positive regard and empathy each show a small-to-moderate, reliable relationship with treatment outcome (Farber, Suzuki, & Lynch, 2018; Elliott, Bohart, Watson, & Murphy, 2018) — evidence for the relational ingredient, not the whole architecture.
+Carl Rogers emphasized the **self-concept**, empathy, and **unconditional positive regard**. Evidence does not validate every part of Rogers’s theory, but therapist empathy and positive regard reliably predict better therapy outcomes (Elliott et al., 2018; Farber, Suzuki, & Lynch, 2018). The relational ingredient survived better than the complete theoretical system.
 
-### Traits: The Big Five
+### The Big Five
 
-The most empirically robust description of personality structure is the **Big Five** — five broad dimensions that emerge consistently from factor-analytic studies of trait language and behavior (Goldberg, 1990; Costa & McCrae, 1992):
+The **Big Five** are broad dimensions that repeatedly emerge from analyses of trait language and personality ratings (Goldberg, 1990; Costa & McCrae, 1992).
 
-| Trait | High pole | Low pole |
+| Trait | Higher scores | Lower scores |
 |---|---|---|
-| **Openness** | Curious, imaginative | Conventional, concrete |
-| **Conscientiousness** | Organized, disciplined | Impulsive, disorganized |
-| **Extraversion** | Sociable, assertive | Reserved, solitary |
-| **Agreeableness** | Cooperative, trusting | Competitive, critical |
-| **Neuroticism** | Anxious, reactive | Calm, stable |
+| **Openness** | Curious, imaginative, receptive to novelty | Conventional, concrete, preference for familiarity |
+| **Conscientiousness** | Organized, persistent, planful | Less organized, more spontaneous |
+| **Extraversion** | Sociable, assertive, reward-seeking | Reserved, lower social stimulation preference |
+| **Agreeableness** | Cooperative, trusting, compassionate | Competitive, skeptical, blunt |
+| **Neuroticism** | Emotionally reactive, prone to distress | Emotionally stable, less reactive |
 
-Each trait is a **dimension**, not a type — there is no box you fall into, only a position on a continuum. The Big Five replicates across measurement methods, rater perspectives, and (with some variation) cultures; it is moderately heritable (roughly 40–60% across factors); and it predicts real outcomes — conscientiousness for academic and job performance, neuroticism for mental health vulnerability, extraversion for relationship quality and leadership emergence.
+These are dimensions, not types. A person does not “have” extraversion in the way a person has a blood type. They fall somewhere on a continuum, and their behavior still varies with goals and context.
 
-### Person and Situation
+### Climate, Weather, and Aggregation
 
-Walter Mischel's (1968) review found that trait measures predict single behavioral observations at about r = .30 — modest, and easy to misread as "traits don't matter." Two corrections matter. First, this is roughly the same size as effect sizes from famous situationist experiments (Milgram, Darley & Latané) once converted to correlations (Funder & Ozer, 1983) — a trait correlation of .30 is not obviously weaker than a "situationist" one. Second, small correlations compound into practically important predictions once aggregated across many situations — a semester's attendance record, not one Tuesday (Funder & Ozer, 2019). A trait is more like climate than weather: knowing someone is conscientious doesn't tell you whether they'll show up on any single Tuesday, any more than knowing a region's climate tells you whether it will rain at 2:00 p.m. next Tuesday — but both climate and traits predict real patterns over time.
+Walter Mischel’s critique of trait psychology emphasized that trait measures often correlate only modestly with one behavioral observation. A correlation around .30 is useful, but it leaves enormous room for situation and measurement error.
 
-![Figure 11.5: Behavior emerges from both person factors (traits, goals, past learning) and situation factors (norms, authority, group pressure, stakes) acting together — not just who you are, but also where you are.](../../images/ch11/fig_person_situation_influence_diagram.png)
-*Figure 11.5. Person and situation factors jointly determining behavior. Original figure.*
+The mistake is expecting climate to predict weather.
 
-![Figure 11.6. Left panel shows a scatter plot of trait score vs. single behavioral observation with r ≈ .29 — wide dispersion. Right panel shows trait score vs. behavior averaged across 20 situations with r ≈ .72 — much tighter relationship. Caption: Traits predict single behavioral acts with limited accuracy (r ≈ .30). When behavior is averaged across many situations, the trait signal becomes much clearer.](../../docs/images/ch11/fig_trait_signal_aggregation.png)
+Knowing that Missouri has hot summers does not tell you the temperature at 2:00 p.m. next Tuesday. It does predict a pattern across many days. In the same way, conscientiousness may not tell you whether someone will be late once. It predicts patterns better when you observe many deadlines, classes, jobs, and obligations.
 
-Traits show up most clearly in **weak situations** (ambiguous, few norms) and least in **strong situations** (clear norms, real stakes) — which is why a normally assertive person goes quiet at a funeral.
+This is **aggregation**: averaging behavior across multiple observations reduces the influence of unusual circumstances and reveals the more stable signal (Funder & Ozer, 1983, 2019).
 
-![Figure 11.7. Bar chart showing helping behavior (0–10) across low, medium, and high conscientiousness under two conditions. In the weak situation (blue bars), behavior ranges widely (≈4.7 pts) across trait levels. In the strong situation (orange bars), behavior is compressed into a narrow range (≈0.8 pts) regardless of trait. Caption: In weak situations, personality traits produce a wide spread of behavior. In strong situations, situational pressure compresses behavior regardless of trait level.](../../docs/images/ch11/fig_person_situation_grid.png)
+![Figure 11.5: Person factors such as traits, goals, and learning interact with situation factors such as norms, authority, stakes, and opportunity to produce behavior.](../../docs/images/ch11/fig_person_situation_influence_diagram.png)
 
-This is the same lesson Section 2 draws from Milgram and Asch, applied to self-judgment instead of judgment of others: situational force is easy to underestimate, whether you're explaining someone else's behavior (FAE) or predicting your own from a trait label.
+*Figure 11.5. Behavior is produced by a person in a situation. Neither side is a complete explanation by itself.*
 
-> **Stop and Retrieve:** Before reading on — in your own words, why isn't a personality-trait correlation of r ≈ .30 the same thing as "traits don't matter"? Give both reasons the chapter offers.
+![Figure 11.6: The same five people are shown in two conceptual panels. One observation per person is widely scattered because immediate circumstances and chance strongly affect a single act. Repeated observations and a large average marker for each person show that averaging reduces incidental variation and makes the stable ordering easier to detect. No empirical values are displayed.](../../docs/images/ch11/fig_trait_signal_aggregation.png)
 
-### Self-Concept and Development
+*Figure 11.6. A single act mixes a trait signal with immediate circumstances and chance. Averaging behavior across many situations reduces incidental variation and makes a stable pattern easier to detect. Conceptual illustration; no empirical values are shown.*
 
-The **self-concept** — a person's compressed model of who they are — is built from memory, feedback from others, and social comparison, and it resists revision once formed, for the same reason any well-established model resists revision: overturning it is costly. Personality itself develops from **temperament** (early, biologically rooted variation in reactivity and self-regulation) interacting with ecology (family, culture, life events) — not fixed at birth, not purely learned (see Chapter 10).
+### Strong and Weak Situations
 
-Formal assessment of these differences ranges from well-validated self-report instruments (the NEO-PI-R, built directly on the Big Five) to more contested tools like the Rorschach, whose validity depends heavily on which specific score is being used and for what purpose (Mihura, Meyer, Dumitrascu, & Bombel, 2013) — an illustration of reliability and validity, covered in Chapter 2, applied to a specific and often-misused case.
+Traits are more visible in **weak situations**, where rules are ambiguous and people have latitude. Traits are less visible in **strong situations**, where norms, incentives, or physical constraints narrow the range of acceptable behavior.
+
+A normally talkative person may become quiet at a funeral. That does not prove the person was never extraverted. The situation compressed the possible behaviors.
+
+Strong situations rarely erase individual differences completely. They reduce their expression. Weak situations give traits more room to appear.
+
+![Figure 11.7: Two panels track the same five color-coded individuals. Under ambiguous norms and substantial latitude, their expressed behavior is widely spread. Under clear norms, constraints, or incentives, the same individuals cluster more tightly. Individual differences are compressed rather than erased.](../../docs/images/ch11/fig_person_situation_grid.png)
+
+*Figure 11.7. Weak situations allow wider behavioral expression across individuals. Strong situations narrow the range of expressed behavior, reducing—but not erasing—individual differences. Conceptual illustration; no empirical scores or effect sizes are shown.*
+
+> **Stop and Retrieve:** Why is a modest correlation between a trait and one act not evidence that traits are meaningless? Give the climate–weather answer and the aggregation answer.
+
+### Development and Assessment
+
+Personality develops from **temperament** interacting with relationships, culture, learning, and life events. Temperament supplies early differences in reactivity and self-regulation. It is a starting condition, not a finished personality.
+
+Personality assessment ranges from carefully validated inventories to tools that produce compelling stories with weak evidence. The NEO inventories were built to measure Big Five dimensions. The Rorschach is more complicated: some scores have evidence for particular uses, while many popular interpretations do not (Mihura et al., 2013).
+
+A result can feel personally accurate and still be a poor measurement instrument. That is not the same as knowing you.
 
 ---
 
-> ## AI Connection: Social Psychology in the Mirror
->
-> The chapter spec notes that Social Psychology is the chapter where the most accessible AI ethics discussion lives. That is because the mechanisms that cause errors in social judgment — attributing mental states, yielding to social pressure, taking peripheral cues as evidence — are exactly the mechanisms activated when people interact with AI systems.
->
-> **Attribution → Anthropomorphism.** When an AI system uses natural language confidently and appropriately, people spontaneously attribute to it intentions, emotions, personality, and goals. This is not a new cognitive mechanism — it is the same tendency we saw in Section 1 applied to a new object. FAE leads us to attribute a person's behavior to their character rather than their situation; applied to AI, it leads us to attribute a system's output to its "thinking" or "wanting" rather than to the statistical properties of its training distribution. The breakdown is the same as with FAE: the attribution is to an entity, not to a situation (in this case, the training data and architecture that produced the output).
->
-> **Informational Social Influence → AI as a Confident Consensus of One.** In Asch's study, the power of conformity came from a unanimous group. When we receive information from an AI system, we receive confident output from what feels like a single authoritative source — but we do not receive the dissenting minority view that, in Asch's studies, was sufficient on its own to halve conformity rates. There is no devil's advocate built into the output. No competing voice says "actually, I've seen this go wrong." The informational social influence of a fluent, confident AI response operates without any of the checks that social environments normally provide.
->
-> **The ELM Peripheral Route → Accepting AI Output on Fluency.** When motivation or ability to carefully evaluate a message is low — when a student is tired, pressed for time, or working on an unfamiliar topic — the ELM predicts that peripheral cues drive attitude change rather than argument quality. Fluency is the most powerful peripheral cue: text that reads smoothly and confidently triggers the attribution that the author knows what they are talking about (Reber & Schwarz, 1999). AI-generated text is optimized to be fluent. This means AI errors are most likely to slip through exactly when the stakes of missing them are highest — when the reader lacks the domain knowledge to evaluate the argument on its merits.
->
-> **The Bystander Effect → Diffusion of Responsibility for AI Output.** When AI-generated content causes harm — a hallucinated citation, dangerous advice, a biased decision — diffusion of responsibility operates across every link in the chain. The AI "just generated" the output. The user "just passed it along." The recipient "should have checked." Nobody in particular feels they did the harmful thing. The same five-step failure model from Darley and Latané applies: each actor in the chain fails to notice, interpret, accept responsibility, know how to intervene, or act. Understanding bystander dynamics is prerequisite to understanding why AI-mediated harm is difficult to attribute and therefore to prevent.
->
-> **Social Desirability Bias → Sycophancy.** AI systems trained through human preference feedback can develop response patterns that over-agree with users, because agreeable responses are often rewarded by raters. This resembles social desirability pressure — respondents shade self-reports toward what seems socially approved rather than accurate — though the mechanism in AI is optimization rather than a human motive for approval. The result is sycophancy: a tendency to validate the user's existing position rather than challenge it, regardless of accuracy.
->
-> **The Precise Breakdown: Theory of Mind.** Every mechanism above — FAE, conformity via informational influence, ELM peripheral processing, bystander dynamics, social desirability — presupposes an entity that has mental states: intentions, beliefs, desires, social concerns, the experience of what it feels like to be evaluated. **Theory of Mind** — the capacity to attribute mental states to others and to reason about what they believe, want, and intend — is the cognitive foundation of social psychology. It is what social psychology's phenomena are *about*. AI systems process tokens based on statistical patterns over training data. Some systems can perform impressively on theory-of-mind-style tasks — Kosinski (2023) reported large language models solving false-belief tests at roughly the level of six-year-olds — but task performance is not the same as possessing the thing being tested: Ullman (2023) found that trivial, logically irrelevant rewordings of the same tasks collapse model performance, evidence favoring pattern-matching over genuine mental-state representation, though this remains an active empirical debate rather than a settled one. The anthropomorphism that FAE generates is an error in attribution, not a recognition. The danger is not that AI is secretly a social animal. The danger is that we are.
+## AI Connection: Fluency, Mind Perception, and Responsibility
+
+AI systems produce language that activates human social cognition. The relevant psychological mechanisms are mostly in the person reading the output.
+
+**Fluent language invites mind perception.** When a system uses “I,” responds appropriately, remembers context, or appears sympathetic, people readily infer understanding, intention, and personality. This is anthropomorphism, not the fundamental attribution error. The FAE concerns choosing a dispositional explanation over a situational one for human behavior. Anthropomorphism concerns treating a nonhuman system as if it possessed a humanlike mind.
+
+**Fluency can become a peripheral cue.** The ELM predicts that readers rely more heavily on confidence and smooth wording when they lack the knowledge or time needed to evaluate the argument centrally. AI text is often fluent even when it is wrong. The practical defense is not suspicion of every sentence. It is switching routes: identify the claim, inspect the evidence, and verify the source.
+
+**Responsibility can become distributed.** In an AI-mediated workflow, the developer, institution, user, reviewer, and recipient may each assume that someone else checked the output. This resembles diffusion of responsibility, but it is not literally the bystander experiment. The useful application is organizational: assign a named person responsibility for verification and correction.
+
+These comparisons have limits. An AI system need not experience social pressure for its output to trigger conformity, persuasion, or anthropomorphism in a human reader. The psychology is real. The analogy should not be mistaken for identity.
 
 ---
 
 ## Chapter Summary
 
-Social psychology studies how people's thoughts, feelings, and behaviors are shaped by others' actual, imagined, or implied presence. The fundamental attribution error leads us to over-attribute others' behavior to character; the self-serving bias does the same for our own successes and failures, in opposite directions. Cognitive dissonance motivates belief change to match behavior, even when behavior was the easier variable to change. The elaboration likelihood model distinguishes a central route (argument quality) from a peripheral route (surface cues) to attitude change.
+Social psychology studies how people think about, influence, and respond to other people. The fundamental attribution error leads us to overestimate character and underestimate situation when explaining others. The self-serving bias protects our own self-image. Cognitive dissonance shows that behavior can reshape belief, while the elaboration likelihood model distinguishes careful argument evaluation from reliance on peripheral cues.
 
-Social influence covers conformity (peer norms), obedience (authority commands), and the broader situationist insight that context shapes behavior more than we intuitively believe — most strikingly in Milgram's finding that 65% of ordinary participants delivered what they believed were maximum electric shocks. The Stanford Prison Experiment illustrates the same claim but has serious methodological problems and shouldn't be treated as clean evidence. Social facilitation and social loafing show that others' mere presence can enhance or impair performance and effort depending on task difficulty and anonymity.
+Conformity is influence from peers and group norms; obedience is influence embedded in an authority relationship. Asch showed the power of unanimity and the protective effect of one ally. Milgram showed that incremental escalation, authority relationships, distance, and scientific purpose could produce harmful continuation, although the exact mechanism remains contested. The Stanford Prison Experiment remains a flawed illustration rather than clean evidence.
 
-Group polarization amplifies initial attitudes through one-sided arguments and social comparison; groupthink — driven by cohesion, isolation, and stress — produces premature consensus and suppressed dissent. Prejudice (feeling), stereotypes (belief), and discrimination (behavior) are distinct but linked, and social identity theory explains in-group favoritism as a consequence of the need to belong to groups with positive distinctiveness.
+Groups can polarize initial attitudes or suppress dissent through groupthink. Stereotypes are beliefs, prejudice is evaluation, and discrimination is behavior. Social identity can produce in-group favoritism even from arbitrary categories, but it should not be reduced to a single self-esteem motive.
 
-Prosocial behavior is explained evolutionarily by kin selection and reciprocal altruism, and psychologically by Batson's empathy-altruism model. The bystander effect results from diffusion of responsibility, pluralistic ignorance, cost-benefit calculation, and evaluation apprehension across a five-step decision process. Aggression is shaped by aversive arousal, social learning, biological factors, and deindividuation — not any single mechanism.
+Helping depends on noticing, interpreting, accepting responsibility, knowing what to do, and acting. Pluralistic ignorance and diffusion of responsibility can interrupt that chain. Helping and aggression each require multiple levels of explanation: evolutionary history, immediate motivation, learning, biology, and situation answer different questions.
 
-Personality asks what stable individual differences are and where they come from. The psychoanalytic (Freud) and humanistic (Rogers) traditions contributed the self-concept and the idea of unconscious, motivated self-protection, though their specific mechanisms haven't held up well empirically. The trait tradition identifies the Big Five as reliable, heritable dimensions that replicate across cultures. Mischel's person-situation debate resolves into an interactionist view: traits predict behavior best when aggregated across many situations, and more so in weak than strong situations. Personality develops from temperament interacting with ecology, not fixed at birth.
-
-In the AI Connection, five mechanisms map onto AI interaction: FAE → anthropomorphism; conformity → confident consensus-of-one; ELM → fluency-based credulity; bystander effect → diffusion of responsibility; social desirability → sycophancy. The breakdown point is Theory of Mind — these phenomena require entities with mental states, and whether AI systems possess anything like one remains an open, actively debated question, not a settled no.
+Personality traits are real dimensions, not fixed types. They predict patterns better than isolated acts. Aggregation reveals stable tendencies, while strong situations compress their expression. The final answer to person versus situation is not one or the other. Behavior is a person acting in a situation.
 
 ---
 
@@ -345,251 +403,207 @@ In the AI Connection, five mechanisms map onto AI interaction: FAE → anthropom
 
 | Topic in This Chapter | Connects To | Why |
 |---|---|---|
-| Testosterone, serotonin, and amygdala circuitry in aggression | Ch. 3 (Neuroscience & Biological Bases) | Chapter 3 introduces these same neurotransmitter systems and brain regions; this chapter shows how they modulate — without single-handedly causing — aggressive behavior |
-| Reliability and validity applied to the Rorschach | Ch. 2 (Research Methods & Statistics) | Chapter 2 defines reliability and validity in the abstract; this chapter applies both concepts to a specific, often-misused real-world assessment tool |
-| Observational learning of aggression (Bandura's Bobo doll) | Ch. 7 (Learning) | The same observational-learning mechanism from Chapter 7 explains how aggressive behavior can be acquired by watching a model, not only through direct reinforcement |
-| Stereotype threat and intelligence-test performance | Ch. 9 (Thinking, Language & Intelligence) | Chapter 9 covers stereotype threat in the context of IQ testing and group score differences; this chapter explains the social mechanism — a negative stereotype made salient — that produces it |
-| Temperament interacting with ecology to shape personality | Ch. 10 (Lifespan Development) | Chapter 10 introduces temperament as the biologically rooted starting point for individual differences; this chapter's Personality section picks up where that leaves off |
-| Social judgment and behavior as inputs to affective and stress responses | Ch. 12 (Emotion, Stress & Coping) | This chapter's account of how people judge, influence, and treat one another sets up the next chapter's coverage of the emotional and physiological consequences of those experiences |
+| Biological modulation of aggression | [Chapter 3: Neuroscience and Biological Bases](03-neuroscience.html) | Neural and endocrine systems alter probabilities rather than functioning as behavior switches |
+| Reliability and validity in personality assessment | [Chapter 2: Research Methods and Statistics](02-research-methods.html) | Personality tests provide a concrete case for evaluating measurement claims |
+| Observational learning of aggression | [Chapter 7: Learning](07-learning.html) | The Bobo doll study applies observational learning to social behavior |
+| Cognitive dissonance and reconstruction | [Chapter 8: Memory](08-memory.html) | Coherent self-explanation depends partly on reconstructing why we acted |
+| Temperament and personality development | [Chapter 10: Lifespan Development](10-lifespan-development.html) | Early reactivity becomes personality through development and ecology |
+| Social appraisal and stress | [Chapter 12: Emotion, Stress, and Coping](12-emotion-stress-coping.html) | Social judgment, exclusion, conflict, and support become inputs to emotional and physiological regulation |
 
 ---
 
 ## Key Terms
 
-**Attribution** — Explaining the cause of a behavior as either dispositional (internal, about the person) or situational (external, about the context).
+**Aggregation** — Combining behavior across multiple observations so stable patterns become easier to detect.
 
-**Fundamental attribution error (FAE)** — The tendency to over-attribute others' behavior to their character and under-attribute it to their situation.
+**Aggression** — Behavior intended to harm a person who is motivated to avoid the harm.
 
-**Self-serving bias** — The tendency to attribute one's own successes to internal factors and one's failures to external factors.
+**Big Five** — Five broad personality dimensions: openness, conscientiousness, extraversion, agreeableness, and neuroticism.
 
-**Cognitive dissonance** — The psychological discomfort that arises when two cognitions are in conflict, motivating attitude or behavior change to restore consistency.
+**Bystander effect** — Reduced likelihood of helping when other potential helpers are present.
 
-**Elaboration likelihood model (ELM)** — A model of persuasion distinguishing a central route (careful evaluation of argument quality) from a peripheral route (reliance on surface cues).
+**Central route** — Persuasion through careful evaluation of argument quality.
 
-**Conformity** — Adjusting beliefs or behavior to match perceived group norms.
+**Cognitive dissonance** — Discomfort produced by inconsistency among beliefs, attitudes, or known behavior.
 
-**Informational social influence** — Conformity driven by the belief that others have accurate information.
+**Conformity** — Changing belief or behavior in response to a perceived group norm.
 
-**Normative social influence** — Conformity driven by the desire to be liked or avoid social disapproval.
+**Deindividuation** — Reduced personal identifiability in a group; its effects depend substantially on salient group norms.
 
-**Obedience** — Compliance with an explicit instruction from an authority figure.
+**Diffusion of responsibility** — Reduced personal obligation when responsibility is shared among multiple possible actors.
 
-**Social facilitation** — Enhanced performance on simple or well-learned tasks in the presence of others, due to increased arousal.
+**Discrimination** — Differential behavior based on group membership.
 
-**Social loafing** — Reduced individual effort in a group, occurring when individual contributions are anonymous and unidentifiable.
+**Dispositional attribution** — Explaining behavior through characteristics of the person.
 
-**Group polarization** — The tendency for group discussion among like-minded individuals to push initial attitude positions toward more extreme versions of themselves.
+**Elaboration likelihood model** — A model distinguishing central and peripheral routes to persuasion.
 
-**Groupthink** — A pattern of premature consensus in highly cohesive, insulated groups under pressure, marked by suppression of dissent and failure to critically evaluate alternatives.
+**Empathy–altruism model** — The proposal that empathic concern can produce motivation focused on another person’s welfare.
 
-**Stereotype** — A cognitive generalization about the traits of members of a social group.
+**Fundamental attribution error** — Overestimating disposition and underestimating situation when explaining others.
 
-**Prejudice** — An affective attitude — typically negative — toward members of a social group.
+**Group polarization** — Movement toward a more extreme version of a group’s initial tendency after discussion.
 
-**Discrimination** — Differential behavior toward individuals based on their group membership.
+**Groupthink** — Poor group decision making caused by suppressed dissent and premature consensus.
 
-**Social identity theory** — The theory that people categorize themselves into social groups, identify with their in-group, and engage in social comparison that favors the in-group to maintain positive self-esteem.
+**Informational social influence** — Conformity based on treating other people as evidence about reality.
 
-**Bystander effect** — The finding that individuals are less likely to offer help in an emergency when other bystanders are present.
+**Normative social influence** — Conformity motivated by acceptance or avoidance of rejection.
 
-**Diffusion of responsibility** — The reduction in felt personal obligation to act as the number of other potential helpers increases.
+**Obedience** — Behavioral influence occurring within an authority relationship.
 
-**Pluralistic ignorance** — A situation in which each individual privately doubts a social norm but believes others endorse it, because all are suppressing their doubt.
+**Peripheral route** — Persuasion through cues other than careful evaluation of argument quality.
 
-**Empathy-altruism model** — Batson's proposal that empathic concern for a person in need produces genuinely altruistic motivation — helping aimed at the other's welfare, not at the helper's own distress-relief.
+**Pluralistic ignorance** — Misreading a group norm because everyone privately doubts it while publicly appearing to accept it.
 
-**Kin selection** — The evolutionary mechanism by which behaviors that reduce the individual's own reproductive success can evolve if they sufficiently increase the reproductive success of genetic relatives.
+**Prejudice** — A positive or negative evaluation of people based on group membership.
 
-**Reciprocal altruism** — Cooperation between non-relatives that can evolve when the probability of future return-help is sufficiently high.
+**Self-serving bias** — Taking internal credit for success and assigning failure to external causes.
 
-**Frustration-aggression hypothesis** — The proposal (Dollard et al., 1939; reformulated by Berkowitz, 1989) that frustration (or, more precisely, aversive arousal) increases the probability of aggression.
+**Situational attribution** — Explaining behavior through surrounding conditions or constraints.
 
-**Deindividuation** — Reduced self-awareness and self-monitoring in crowds or anonymous groups, often associated with increased aggression and norm violations.
+**Social identity theory** — A framework explaining how self-categorization and group comparison shape judgment and behavior.
 
-**Id** — The entirely unconscious component of personality operating on the pleasure principle, seeking immediate gratification of drives.
+**Social loafing** — Reduced individual effort when personal contribution is difficult to identify.
 
-**Ego** — The component of personality operating on the reality principle, mediating between the id's demands and external reality.
+**Stereotype** — A generalized belief about members of a social category.
 
-**Superego** — The component of personality representing internalized moral standards; generates guilt and pride.
+**Strong situation** — A context with clear norms or constraints that narrows behavioral variation.
 
-**Defense mechanisms** — Largely unconscious ego strategies (e.g., repression, projection, rationalization) that distort or deny threatening material to reduce anxiety.
+**Trait** — A relatively stable dimension of individual difference.
 
-**Self-concept** — The organized set of perceptions, beliefs, and values that define who a person thinks they are.
-
-**Conditions of worth** — Internalized standards derived from significant others' contingent approval that shape self-concept development.
-
-**Unconditional positive regard** — Acceptance not contingent on the recipient's behavior or performance.
-
-**Big Five (OCEAN)** — Five broad, empirically derived personality trait dimensions: Openness, Conscientiousness, Extraversion, Agreeableness, Neuroticism.
-
-**Personality coefficient** — Mischel's term for the approximately .30 correlation typically found between trait measures and single behavioral observations.
-
-**Weak situation** — An ambiguous, unstructured situation without clear norms; allows individual trait differences to express.
-
-**Strong situation** — A situation with clear norms and significant behavioral constraints; minimizes expression of individual trait differences.
-
-**Temperament** — Biologically rooted, early-appearing variation in reactivity, self-regulation, and approach/avoidance that forms the initial basis for later personality.
+**Weak situation** — A context with ambiguous norms and substantial behavioral latitude.
 
 ---
 
 ## Review Questions
 
-1. A manager who knows an employee was given an impossible deadline still concludes the employee "just doesn't care about quality" when the project is late. Which attribution error best describes this and why?
+1. A supervisor knows an employee was given an impossible deadline but concludes that the late work proves the employee is lazy. What error is operating, and what evidence is being underweighted?
 
-   <details><summary>Rationale</summary>This is the fundamental attribution error: the manager is attributing the late project to the employee's character (not caring) rather than to the situation (an impossible deadline), even though the situational explanation is available and plausible. The FAE is defined as over-weighting disposition and under-weighting situation when explaining others' behavior.</details>
+   <details><summary>Model answer</summary>The supervisor is showing the fundamental attribution error by treating lateness as evidence of character while underweighting the impossible deadline.</details>
 
-2. How does the ELM help explain why students are more vulnerable to AI misinformation when they are unfamiliar with a topic?
+2. Why did the $1 participants in Festinger and Carlsmith’s study change their attitudes more than the $20 participants?
 
-   <details><summary>Rationale</summary>When students lack the prior knowledge to evaluate argument quality on its merits (low ability to process via the central route), they are more likely to use the peripheral route — relying on cues like fluency, confidence, and apparent authority. AI-generated text is optimized for fluency, so unfamiliar topics are exactly the conditions under which peripheral-route processing makes AI output most persuasive and most dangerous.</details>
+   <details><summary>Model answer</summary>The $20 payment supplied a strong external justification for lying. The $1 payment supplied weak justification, creating greater dissonance. Changing the attitude helped make the behavior feel coherent.</details>
 
-3. Why did conformity drop so sharply in Asch's studies when just one confederate gave the correct answer?
+3. A fluent AI answer contains weak evidence. Explain how central-route and peripheral-route processing would produce different responses.
 
-   <details><summary>Rationale</summary>The power of Asch's manipulation came from unanimity, which maximized normative social influence — the cost of dissenting against *everyone*. A single ally reduced the social cost of dissent dramatically, making it possible for the naive participant to disagree with the group without standing completely alone. Unanimity turns out to matter more than group size.</details>
+   <details><summary>Model answer</summary>Peripheral processing may accept the answer because it sounds confident and polished. Central processing identifies the claim, evaluates the reasoning, and verifies the evidence regardless of fluency.</details>
 
-4. "The Milgram experiments show that people are fundamentally evil." Evaluate this claim using the chapter content.
+4. Why did one ally sharply reduce conformity in Asch’s studies?
 
-   <details><summary>Rationale</summary>This is an incorrect characterization. Milgram's situationist interpretation specifically argues against attribution to character. Participants showed visible distress — they did not enjoy what they were doing. The high compliance rate was produced by structural features of the situation: incremental escalation, legitimate authority, physical distance from the victim, and the ongoing social relationship with the experimenter. The lesson is about the power of situational forces, not about the character of participants.</details>
+   <details><summary>Model answer</summary>The ally broke unanimity and reduced the social cost of dissent. The ally changed the participant’s relationship to the group even without adding better evidence.</details>
 
-5. What four conditions make intergroup contact especially likely to reduce prejudice, according to Allport?
+5. What conclusion should be drawn from Milgram’s studies, and what conclusion would overreach the evidence?
 
-   <details><summary>Rationale</summary>Equal-status contact between groups, cooperative interdependence (working toward a shared goal rather than competing), institutional sanction or authority support for the contact, and sustained (not brief) interaction. These conditions are facilitating rather than strictly necessary — later meta-analytic research shows contact often reduces prejudice even when not all four are present — but contact that lacks them (especially equal status and cooperation) is less likely to help and can worsen hostility.</details>
+   <details><summary>Model answer</summary>The supported conclusion is that a structured authority relationship, incremental escalation, distance, and appeals to scientific purpose increased harmful continuation. It would overreach to conclude that people are inherently evil or that direct orders alone explain the result.</details>
 
-6. An employee is afraid to tell their supervisor that a proposed plan has serious flaws, because all their colleagues have enthusiastically endorsed it. What social-psychological phenomenon best describes this situation? What symptom of groupthink might emerge from it?
+6. Why is the Stanford Prison Experiment better described as a flawed illustration than as clean experimental evidence?
 
-   <details><summary>Rationale</summary>The employee is experiencing normative social influence combined with self-censorship — one of Janis's eight groupthink symptoms. The broader situation has the hallmarks of groupthink: a cohesive group converging on a plan, with dissent suppressed by social pressure. If the supervisor is also signaling a preferred outcome, the isolation from critical analysis and the illusion of unanimity could both emerge.</details>
+   <details><summary>Model answer</summary>Investigators coached guards and actively shaped the environment, so the behavior was not simply a spontaneous result of random role assignment. Other evidence supports situational influence, but this study does not isolate it cleanly.</details>
 
-7. Explain why the bystander effect is not simply about people not caring. Use at least two steps of the Darley–Latané decision model.
+7. Distinguish group polarization from groupthink using one sentence for each.
 
-   <details><summary>Rationale</summary>The bystander effect arises from specific cognitive and social processes that operate even in people who do care. Pluralistic ignorance (step 2): each bystander looks at others who appear calm and incorrectly infers there is no emergency, even though all are suppressing visible concern. Diffusion of responsibility (step 3): the presence of others reduces each individual's felt personal obligation to act. These are not apathy — they are identifiable, well-documented psychological mechanisms that prevent action in people who would help if they were alone.</details>
+   <details><summary>Model answer</summary>Group polarization moves a group toward a more extreme version of its initial tendency. Groupthink suppresses critical evaluation because pressure for agreement discourages dissent.</details>
 
-8. "Reciprocal altruism explains all human prosocial behavior." Evaluate this claim.
+8. A hiring manager believes a stereotype about a group but deliberately applies the same criteria to every applicant. Which of stereotype, prejudice, and discrimination is clearly present, and which are not established?
 
-   <details><summary>Rationale</summary>Reciprocal altruism (Trivers, 1971) explains cooperation among non-relatives in repeated interactions where defection can be detected and punished. But it cannot fully explain helping strangers one will never encounter again (where no return help is possible), donations to anonymous recipients, or behavior in one-shot interactions. Kin selection complements it for interactions with relatives. Batson's empathy-altruism model addresses the psychological motivation level, where empathic concern appears to produce genuine altruistic motivation beyond self-interest. No single mechanism accounts for the full range of prosocial behavior.</details>
+   <details><summary>Model answer</summary>A stereotype is present because the manager holds a generalized belief. Prejudice is not established without evidence of an evaluative feeling, and discrimination is not established if behavior is genuinely equal.</details>
 
-9. A professor at a highly selective university believes strongly in academic integrity. After a student is caught plagiarizing and apologizes sincerely, the professor still reports the violation to the academic integrity board, even though it causes the student serious consequences. Is this a case of prejudice, discrimination, or neither? Explain.
+9. Why is “social identity exists to raise self-esteem” too narrow?
 
-   <details><summary>Rationale</summary>Neither, by the chapter's definitions. Discrimination is differential behavior based on group membership. If the professor applies the same standard to all students regardless of group membership — that is, acts consistently according to a stated rule rather than on the basis of the student's social group — then this is not discrimination. It might be considered harsh or inflexible, but those are not the same concept. Prejudice is an affective attitude toward a group. Treating this as discrimination would require evidence that the professor applies the rule differently to different social groups.</details>
+   <details><summary>Model answer</summary>Positive distinctiveness can matter, but group behavior also reflects norms, belonging, status, competition, identity meaning, and uncertainty reduction. Evidence does not support self-esteem as one universal mechanism.</details>
 
-10. How does social identity theory explain in-group favoritism even in the absence of any competition for resources?
+10. Explain why the bystander effect is not simply evidence that people do not care.
 
-    <details><summary>Rationale</summary>Tajfel and Turner (1979) proposed that group membership is inherently motivating because belonging to a positively valued group enhances self-esteem. In minimal group paradigm studies, people favored their in-group in resource allocation even when the groups were arbitrary and meaningless — there was no history of competition, no real stakes, no rational reason to favor the in-group. The motivation is the esteem derived from group distinctiveness, not the material payoff of winning. This is why social identity-based prejudice can persist even in the absence of realistic group conflict.</details>
+    <details><summary>Model answer</summary>People can fail to notice an event, misinterpret it through pluralistic ignorance, diffuse responsibility across others, lack the relevant skill, or fear acting incorrectly. These mechanisms can block helping even when concern is present.</details>
 
-11. A friend takes an online personality quiz, gets sorted into a four-letter "type," and concludes their personality is now fully explained. What does the chapter's trait-vs-type distinction say is wrong with this conclusion?
+11. Why is aggression poorly explained by a single biological, learned, or situational cause?
 
-    <details><summary>Rationale</summary>The Big Five (and mainstream trait psychology generally) describes personality as continuous dimensions, not discrete types — a person doesn't fall into a box, they fall somewhere on a spectrum for each trait, and their position still leaves room for situational variation. Sorting someone into a fixed "type" implies a categorical boundary and a false sense of completeness that the actual dimensional evidence doesn't support.</details>
+    <details><summary>Model answer</summary>Biology alters sensitivity and regulation, learning supplies scripts and responses, and situations provide provocation, norms, opportunities, and constraints. Each contributes, but none determines aggression alone.</details>
 
-12. A hiring manager reads a candidate's résumé, sees they were "shy" in a single reference letter, and rejects them as unsuited for a client-facing role. Using both the fundamental attribution error and the person-situation debate, explain two separate problems with this reasoning.
+12. Use the climate–weather analogy to explain why a trait can be real while predicting one act only modestly.
 
-    <details><summary>Rationale</summary>First, this is close to the fundamental attribution error: a single secondhand observation is being treated as a fixed dispositional label with no consideration of the situation that reference letter described. Second, even taking the trait label at face value, the person-situation debate shows that a single behavioral data point (or a single person's impression) predicts an individual's behavior only weakly (r ≈ .30) — trait labels are much more predictive when averaged across many situations than when applied to one remembered instance, and a client-facing role is a different situation than whatever generated the "shy" impression in the first place.</details>
-
----
-
-## References
-
-Allport, G. W. (1954). *The Nature of Prejudice*. Addison-Wesley.
-
-Asch, S. E. (1955). Opinions and social pressure. *Scientific American*, 193(5), 31–35.
-
-Bandura, A., Ross, D., & Ross, S. A. (1961). Transmission of aggression through imitation of aggressive models. *Journal of Abnormal and Social Psychology*, 63(3), 575–582.
-
-Batson, C. D. (2011). *Altruism in Humans*. Oxford University Press.
-
-Baumeister, R. F., Dale, K., & Sommer, K. L. (1998). Freudian defense mechanisms and empirical findings in modern social psychology: Reaction formation, projection, displacement, undoing, isolation, sublimation, and denial. *Journal of Personality*, 66(6), 1081–1124.
-
-Berkowitz, L. (1989). Frustration-aggression hypothesis: Examination and reformulation. *Psychological Bulletin*, 106, 59–73.
-
-Burger, J. M. (2009). Replicating Milgram: Would people still obey today? *American Psychologist*, 64, 1–11.
-
-Choi, I., Nisbett, R. E., & Norenzayan, A. (1999). Causal attribution across cultures: Variation and universality. *Psychological Bulletin*, 125, 47–63.
-
-Costa, P. T., Jr., & McCrae, R. R. (1992). *Revised NEO Personality Inventory (NEO-PI-R) and NEO Five-Factor Inventory (NEO-FFI) professional manual*. Psychological Assessment Resources.
-
-Darley, J. M., & Latané, B. (1968). Bystander intervention in emergencies: Diffusion of responsibility. *Journal of Personality and Social Psychology*, 8(4), 377–383.
-
-Dollard, J., Miller, N. E., Doob, L. W., Mowrer, O. H., & Sears, R. R. (1939). *Frustration and Aggression*. Yale University Press.
-
-Elliott, R., Bohart, A. C., Watson, J. C., & Murphy, D. (2018). Therapist empathy and client outcome: An updated meta-analysis. *Psychotherapy*, 55(4), 399–410.
-
-Farber, B. A., Suzuki, J. Y., & Lynch, D. A. (2018). Positive regard and psychotherapy outcome: A meta-analytic review. *Psychotherapy*, 55(4), 411–423.
-
-Festinger, L. (1957). *A Theory of Cognitive Dissonance*. Stanford University Press.
-
-Festinger, L., & Carlsmith, J. M. (1959). Cognitive consequences of forced compliance. *Journal of Abnormal and Social Psychology*, 58(2), 203–210.
-
-Forsyth, D. R. (2014/2026). The psychology of groups. In R. Biswas-Diener & E. Diener (Eds.), *Noba Textbook Series: Psychology*. DEF Publishers.
-
-Freud, S. (1923). The ego and the id. In J. Strachey (Ed. & Trans.), *The Standard Edition of the Complete Psychological Works of Sigmund Freud* (Vol. 19, pp. 1–66). Hogarth Press.
-
-Poepsel, D. L., & Schroeder, D. A. (2014/2026). Helping and prosocial behavior. In R. Biswas-Diener & E. Diener (Eds.), *Noba Textbook Series: Psychology*. DEF Publishers.
-
-Goldberg, L. R. (1990). An alternative "description of personality": The Big-Five factor structure. *Journal of Personality and Social Psychology*, 59(6), 1216–1229.
-
-Funder, D. C., & Ozer, D. J. (1983). Behavior as a function of the situation. *Journal of Personality and Social Psychology*, 44(1), 107–112.
-
-Funder, D. C., & Ozer, D. J. (2019). Evaluating effect size in psychological research: Sense and nonsense. *Advances in Methods and Practices in Psychological Science*, 2(2), 156–168.
-
-Hamilton, W. D. (1964). The genetical evolution of social behaviour. I & II. *Journal of Theoretical Biology*, 7, 1–16, 17–52.
-
-Haney, C., Banks, W., & Zimbardo, P. (1973). Interpersonal dynamics in a simulated prison. *International Journal of Criminology and Penology*, 1, 69–97.
-
-Janis, I. L. (1982). *Groupthink: Psychological Studies of Policy Decisions and Fiascoes* (2nd ed.). Houghton Mifflin.
-
-Kosinski, M. (2023). Theory of mind may have spontaneously emerged in large language models. *arXiv preprint* arXiv:2302.02083.
-
-Latané, B., Williams, K., & Harkins, S. (1979). Many hands make light the work: Causes and consequences of social loafing. *Journal of Personality and Social Psychology*, 37, 822–832.
-
-Le Texier, T. (2019). Debunking the Stanford Prison Experiment. *American Psychologist*, 74, 823–839.
-
-Mihura, J. L., Meyer, G. J., Dumitrascu, N., & Bombel, G. (2013). The validity of individual Rorschach variables: Systematic reviews and meta-analyses of the comprehensive system. *Psychological Bulletin*, 139(3), 548–605.
-
-Milgram, S. (1963). Behavioral study of obedience. *Journal of Abnormal and Social Psychology*, 67, 371–378.
-
-Milgram, S. (1974). *Obedience to Authority: An Experimental View*. Harper & Row.
-
-Mischel, W. (1968). *Personality and Assessment*. Wiley.
-
-Moscovici, S., & Zavalloni, M. (1969). The group as a polarizer of attitudes. *Journal of Personality and Social Psychology*, 12, 125–135.
-
-Pettigrew, T. F., & Tropp, L. R. (2006). A meta-analytic test of intergroup contact theory. *Journal of Personality and Social Psychology*, 90(5), 751–783.
-
-Petty, R. E., & Cacioppo, J. T. (1986). The elaboration likelihood model of persuasion. *Advances in Experimental Social Psychology*, 19, 123–205.
-
-Reber, R., & Schwarz, N. (1999). Effects of perceptual fluency on judgments of truth. *Consciousness and Cognition*, 8, 338–342.
-
-Rogers, C. R. (1961). *On Becoming a Person: A Therapist's View of Psychotherapy*. Houghton Mifflin.
-
-Jones, E. E., & Harris, V. A. (1967). The attribution of attitudes. *Journal of Experimental Social Psychology*, 3, 1–24.
-
-Manning, R., Levine, M., & Collins, A. (2007). The Kitty Genovese murder and the social psychology of helping: The parable of the 38 witnesses. *American Psychologist*, 62(6), 555–562.
-
-Steele, C. M., & Aronson, J. (1995). Stereotype threat and the intellectual test performance of African Americans. *Journal of Personality and Social Psychology*, 69(5), 797–811.
-
-Stroebe, W. (2012). The truth about Triplett (1898), but nobody seems to care. *Perspectives on Psychological Science*, 7, 54–57.
-
-Tajfel, H., & Turner, J. C. (1979). An integrative theory of intergroup conflict. In W. G. Austin & S. Worchel (Eds.), *The Social Psychology of Intergroup Relations* (pp. 33–47). Brooks/Cole.
-
-Trivers, R. L. (1971). The evolution of reciprocal altruism. *Quarterly Review of Biology*, 46, 35–57.
-
-Triplett, N. (1898). The dynamogenic factors in pacemaking and competition. *American Journal of Psychology*, 9, 507–533.
-
-Ullman, T. (2023). Large language models fail on trivial alterations to theory-of-mind tasks. *arXiv preprint* arXiv:2302.08399.
-
-Zajonc, R. B. (1965). Social facilitation. *Science*, 149, 269–274.
+    <details><summary>Model answer</summary>Climate predicts patterns across many days better than weather at one precise moment. Likewise, traits predict aggregated behavior across situations better than one isolated act, which is strongly affected by immediate context.</details>
 
 ---
 
 ## Further Reading
 
-Cialdini, R. B. (2007). *Influence: The Psychology of Persuasion* (Rev. ed.). Harper Business. — The most accessible account of social influence principles in everyday commercial and interpersonal contexts.
+- **Asch, S. E. (1955). “Opinions and social pressure.”** A concise original account of the conformity studies and the importance of unanimity.
+- **Haslam, S. A., Reicher, S. D., & Birney, M. E. (2014). “Nothing by mere authority.”** A modern challenge to the simple direct-orders interpretation of Milgram.
+- **Le Texier, T. (2019). “Debunking the Stanford Prison Experiment.”** The archival basis for treating the study as flawed evidence.
+- **Pettigrew, T. F., & Tropp, L. R. (2006). “A meta-analytic test of intergroup contact theory.”** A large synthesis of when contact reduces prejudice.
+- **Funder, D. C., & Ozer, D. J. (2019). “Evaluating effect size in psychological research.”** A useful correction to the idea that modest correlations are automatically trivial.
 
-Milgram, S. (1974). *Obedience to Authority: An Experimental View*. Harper & Row. — Milgram's own extended account of the obedience studies, including the variations and his interpretation.
+---
 
-Tajfel, H. (1981). *Human Groups and Social Categories: Studies in Social Psychology*. Cambridge University Press. — The theoretical foundation of social identity theory, including the minimal group paradigm experiments.
+## References
 
-Van Bavel, J. J., & Packer, D. J. (2021). *The Power of Us: Harnessing Our Shared Identities to Improve Performance, Increase Cooperation, and Promote Social Harmony*. Little, Brown Spark. — A contemporary account of how shared social identity can be used constructively, directly engaging social identity theory's implications.
+Allport, G. W. (1954). *The nature of prejudice*. Addison-Wesley.
 
-Zimbardo, P. (2007). *The Lucifer Effect: Understanding How Good People Turn Evil*. Random House. — Zimbardo's own retrospective account of the Stanford Prison Experiment. Should be read alongside Le Texier (2019).
+Asch, S. E. (1955). Opinions and social pressure. *Scientific American, 193*(5), 31–35.
 
-Mischel, W. (2014). *The Marshmallow Test: Mastering Self-Control*. Little, Brown and Company. — A more accessible account of Mischel's person-situation work and its implications for self-regulation.
+Bandura, A., Ross, D., & Ross, S. A. (1961). Transmission of aggression through imitation of aggressive models. *Journal of Abnormal and Social Psychology, 63*(3), 575–582.
 
-Nettle, D. (2007). *Personality: What Makes You the Way You Are*. Oxford University Press. — A concise, evidence-based introduction to the Big Five from an evolutionary behavioral perspective.
+Batson, C. D. (2011). *Altruism in humans*. Oxford University Press.
+
+Baumeister, R. F., Dale, K., & Sommer, K. L. (1998). Freudian defense mechanisms and empirical findings in modern social psychology. *Journal of Personality, 66*(6), 1081–1124.
+
+Berkowitz, L. (1989). Frustration-aggression hypothesis: Examination and reformulation. *Psychological Bulletin, 106*(1), 59–73.
+
+Burger, J. M. (2009). Replicating Milgram: Would people still obey today? *American Psychologist, 64*(1), 1–11.
+
+Choi, I., Nisbett, R. E., & Norenzayan, A. (1999). Causal attribution across cultures: Variation and universality. *Psychological Bulletin, 125*(1), 47–63.
+
+Costa, P. T., Jr., & McCrae, R. R. (1992). *Revised NEO Personality Inventory and NEO Five-Factor Inventory professional manual*. Psychological Assessment Resources.
+
+Darley, J. M., & Latané, B. (1968). Bystander intervention in emergencies: Diffusion of responsibility. *Journal of Personality and Social Psychology, 8*(4), 377–383.
+
+Elliott, R., Bohart, A. C., Watson, J. C., & Murphy, D. (2018). Therapist empathy and client outcome: An updated meta-analysis. *Psychotherapy, 55*(4), 399–410.
+
+Farber, B. A., Suzuki, J. Y., & Lynch, D. A. (2018). Positive regard and psychotherapy outcome: A meta-analytic review. *Psychotherapy, 55*(4), 411–423.
+
+Festinger, L. (1957). *A theory of cognitive dissonance*. Stanford University Press.
+
+Festinger, L., & Carlsmith, J. M. (1959). Cognitive consequences of forced compliance. *Journal of Abnormal and Social Psychology, 58*(2), 203–210.
+
+Funder, D. C., & Ozer, D. J. (1983). Behavior as a function of the situation. *Journal of Personality and Social Psychology, 44*(1), 107–112.
+
+Funder, D. C., & Ozer, D. J. (2019). Evaluating effect size in psychological research: Sense and nonsense. *Advances in Methods and Practices in Psychological Science, 2*(2), 156–168.
+
+Goldberg, L. R. (1990). An alternative “description of personality”: The Big-Five factor structure. *Journal of Personality and Social Psychology, 59*(6), 1216–1229.
+
+Hamilton, W. D. (1964). The genetical evolution of social behaviour I and II. *Journal of Theoretical Biology, 7*, 1–52.
+
+Haslam, S. A., Reicher, S. D., & Birney, M. E. (2014). Nothing by mere authority: Evidence that in an experimental analogue of the Milgram paradigm participants are motivated not by orders but by appeals to science. *Journal of Social Issues, 70*(3), 473–488.
+
+Janis, I. L. (1982). *Groupthink* (2nd ed.). Houghton Mifflin.
+
+Jones, E. E., & Harris, V. A. (1967). The attribution of attitudes. *Journal of Experimental Social Psychology, 3*(1), 1–24.
+
+Le Texier, T. (2019). Debunking the Stanford Prison Experiment. *American Psychologist, 74*(7), 823–839.
+
+Manning, R., Levine, M., & Collins, A. (2007). The Kitty Genovese murder and the social psychology of helping. *American Psychologist, 62*(6), 555–562.
+
+Mihura, J. L., Meyer, G. J., Dumitrascu, N., & Bombel, G. (2013). The validity of individual Rorschach variables. *Psychological Bulletin, 139*(3), 548–605.
+
+Milgram, S. (1963). Behavioral study of obedience. *Journal of Abnormal and Social Psychology, 67*(4), 371–378.
+
+Pettigrew, T. F., & Tropp, L. R. (2006). A meta-analytic test of intergroup contact theory. *Journal of Personality and Social Psychology, 90*(5), 751–783.
+
+Petty, R. E., & Cacioppo, J. T. (1986). The elaboration likelihood model of persuasion. *Advances in Experimental Social Psychology, 19*, 123–205.
+
+Postmes, T., & Spears, R. (1998). Deindividuation and antinormative behavior: A meta-analysis. *Psychological Bulletin, 123*(3), 238–259.
+
+Rubin, M., & Hewstone, M. (1998). Social identity theory’s self-esteem hypothesis: A review and some suggestions for clarification. *Personality and Social Psychology Review, 2*(1), 40–62.
+
+Shewach, O. R., Sackett, P. R., & Quint, S. (2019). Stereotype threat effects in settings with features likely versus unlikely in operational test settings: A meta-analysis. *Journal of Applied Psychology, 104*(12), 1514–1534.
+
+Steele, C. M., & Aronson, J. (1995). Stereotype threat and the intellectual test performance of African Americans. *Journal of Personality and Social Psychology, 69*(5), 797–811.
+
+Tajfel, H., & Turner, J. C. (1979). An integrative theory of intergroup conflict. In W. G. Austin & S. Worchel (Eds.), *The social psychology of intergroup relations* (pp. 33–47). Brooks/Cole.
+
+Trivers, R. L. (1971). The evolution of reciprocal altruism. *Quarterly Review of Biology, 46*(1), 35–57.
+
+Zajonc, R. B. (1965). Social facilitation. *Science, 149*(3681), 269–274.

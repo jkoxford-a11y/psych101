@@ -1,29 +1,33 @@
-# Chapter 13: Psychological Disorders & Therapy (v0.3)
+# Chapter 13: Psychological Disorders & Therapy
 
-> Drafting history & provenance: see `_provenance/ch13-psychological-disorders-therapy.md` (and git log).
+> Drafting history and provenance: see `_provenance/ch13-psychological-disorders-therapy.md` and the git log.
 
 ---
 
 ## Misconception Opener
 
-The word *crazy* does a lot of work in everyday language — and almost none of it maps onto how psychologists define or study psychological disorders. The folk intuition is that mental illness is obvious: you would recognize it if you saw it, it looks extreme, and it is categorically different from whatever you feel on a bad day. The research suggests otherwise on every count.
+*“You can usually tell what disorder someone has from a short description of the symptoms.”*
 
-Approximately one in five adults in the United States meets criteria for a diagnosable psychological disorder at some point during a given year (SAMHSA, 2022). That is a 12-month figure, not a snapshot of this exact moment — many disorders are episodic, so it does not mean one in five people are symptomatic right now. But it does mean the person sitting next to you in lecture has a real, non-trivial chance of having already met criteria for something this year, or of developing something before it ends — and neither of you might know it. Most psychological disorders exist on a continuum with normal experience. The difference between clinical anxiety and ordinary worry is not the presence of a qualitatively different brain state. It is intensity, duration, and how much it disrupts life.
+A student—call them Casey—has stopped attending class, sleeps at odd hours, and has not answered friends for two weeks. You might already be forming a diagnosis. Hold it.
 
-When psychologist David Rosenhan (1973) sent healthy volunteers to psychiatric hospitals complaining of hearing a voice that said "thud," all were admitted and diagnosed with schizophrenia. Once inside, they behaved completely normally. Staff never detected them; only other patients grew suspicious. The study became a landmark in the history of abnormal psychology — and, as we will see below, one whose own data have been seriously questioned. What it illustrates nonetheless remains real: diagnosis is not a simple process of detecting an obvious thing that is clearly present or absent. Understanding what psychological disorders actually are — and how we define, diagnose, and treat them — requires leaving the folk intuition behind.
+Now add information. Casey is working overnight shifts because a parent is recovering from surgery. The withdrawal began after the schedule changed. Casey reports exhaustion but not persistent sadness, loss of pleasure, elevated mood, hallucinations, or thoughts of self-harm. A medical appointment later identifies anemia.
+
+The first description justified concern. It did not establish a diagnosis. The later information changed the causal possibilities, the urgency, and the appropriate response. That is the central discipline of this chapter: **symptoms are evidence, not verdicts**.
+
+Roughly one in five U.S. adults lives with a mental illness in a given year, although prevalence estimates depend on definitions and survey methods (National Institute of Mental Health [NIMH], 2024). Psychological disorders are common, consequential, and often treatable. They are also easy to discuss badly—by turning distress into a label, a label into a cause, or a treatment response into proof of a simple biological defect.
 
 ---
 
 ## Where This Fits
 
-**When does a protective model become costly?** Every mechanism this book has covered so far — prediction, learning, memory, stress, social calibration — exists because it usually works. Disorders are not a separate category of human experience, a different kind of mind running on different rules. They are what happens when those same ordinary processes become self-sustaining, rigid, and costly: a threat model that keeps firing after the threat has passed, a mood system stuck defending against a danger that never fully resolves, a self-model too rigid to update. The model is usually still working — it is miscalibrated, overgeneralized, or stuck to an ecology that no longer applies. Therapy, in turn, works largely through the same mechanisms that build ordinary learning and memory in the first place — prediction error, reconsolidation, extinction — now aimed at revising a model that got stuck.
+Chapter 3 introduced genes, neural systems, and chemical signaling without reducing behavior to one brain region or one neurotransmitter. Chapter 7 showed how short-term consequences can maintain behavior. Chapters 8 and 9 showed that memory and judgment are constructive, not recordings. Chapter 10 emphasized development, and Chapter 11 emphasized situations and social interpretation. Chapter 12 showed that stress responses can be adaptive in one context and costly when demands persist.
 
-This does not mean every disorder is simply normal experience turned up louder. Some involve developmental differences, psychotic-spectrum states, or biological disruptions substantial enough to require clinical care in their own right, not just a dial turned too high. The point is narrower and still worth making: even these draw on recognizable psychological and biological mechanisms — this chapter is not describing a different kind of mind, just a wider range of what these ordinary mechanisms can produce.
+This chapter brings those levels together. A diagnosis organizes a clinically significant pattern. It does not, by itself, explain where that pattern came from. Biological vulnerability, development, learning, cognition, relationships, culture, opportunity, and stress can interact differently in different people who receive the same diagnosis.
 
-This chapter draws on almost every chapter in this book. The biological bases of behavior (Chapter 3) underlie every disorder here — neural circuits, neurotransmitters, and genetic vulnerabilities shape risk. Learning principles (Chapter 7) explain how phobias develop and why exposure therapy works. Memory and cognition (Chapters 8–9) illuminate PTSD, depressive schemas, and the heuristic failures that affect clinical diagnosis. The personality system (Chapter 11) is continuous with personality disorders, not separate from them. And the therapeutic alliance — the relationship between therapist and client — is one of the most robustly replicated predictors of treatment outcome in all of psychology (Flückiger et al., 2018).
+One recurring lens remains useful: an ordinary process can become rigid or poorly matched to present conditions. Avoidance can reduce anxiety now while preserving it later. Withdrawal can conserve effort today while shrinking access to reward tomorrow. A compulsion can buy relief while strengthening the next compulsion. This is a **maintenance lens**, not a general theory of psychopathology. It fits some problems better than others, and it does not explain the origins of every disorder.
 
-![Figure 13.1: An adaptive model persists while it works and becomes costly as conditions change, shown as an arc from adaptive response through persistence to accumulating cost](../../docs/images/ch13/fig_adaptive_response_model_persists_cost_accumulates.png)
-*Figure 13.1. A protective model — a threat response, a mood system, a self-model — is not a broken system running on different rules. It is an ordinarily adaptive process that persists past the point where it still fits the situation, and the cost accumulates from there. Original figure.*
+![Figure 13.1: A bounded maintenance lens showing a short-term protective response, immediate relief, and a feedback path that can preserve a problem over time, alongside a boundary note that the lens applies to some symptoms rather than all disorders](../../docs/images/ch13/ch13_maintenance_lens_bounded.svg)
+*Figure 13.1. A response can make sense in the short term yet help maintain a problem over time. This lens is especially useful for avoidance, compulsions, trauma-related threat learning, and behavioral withdrawal; it is not a universal architecture of psychological disorder. Original figure.*
 
 ---
 
@@ -31,319 +35,242 @@ This chapter draws on almost every chapter in this book. The biological bases of
 
 By the end of this chapter, you should be able to:
 
-1. Define psychological disorder using the 3D criteria and explain what the DSM-5-TR does and does not claim.
-2. Describe the diathesis-stress model and biopsychosocial framework for understanding disorder.
-3. Distinguish the major anxiety disorders by their focus of fear or worry.
-4. Compare major depressive disorder, persistent depressive disorder, and bipolar disorder.
-5. Describe the positive and negative symptoms of schizophrenia and evaluate the dopamine hypothesis.
-6. Identify the three clusters of personality disorders and describe ASPD and BPD in more depth.
-7. Distinguish ADHD and autism spectrum disorder as neurodevelopmental conditions.
-8. Compare psychological therapies (psychoanalytic, humanistic, CBT) and evaluate the evidence for drug therapies and ECT.
+1. Explain what diagnosis does and does not establish, using duration, impairment, context, exclusions, and differential evidence.
+2. Apply diathesis-stress and biopsychosocial reasoning without treating either framework as a single cause or literal score.
+3. Distinguish representative anxiety, mood, psychotic, substance-use, personality, and neurodevelopmental patterns while calibrating mechanistic claims.
+4. Explain how avoidance, compulsions, and behavioral withdrawal can maintain selected problems without treating maintenance as origin.
+5. Evaluate psychological, medication, and somatic treatments by indication, evidence, risks, client preferences, access, and clinical context.
 
 ---
 
-## Section 1: Defining and Diagnosing Psychological Disorders
+## Section 1: Diagnosis Is Classification Under Uncertainty
 
-### The 3D Criteria
+### The 3Ds Are a Heuristic, Not a Diagnostic Rule
 
-Ask students to generate examples of psychological disorders and they quickly reach for dramatic cases: someone who hears voices, believes they are being followed, or cannot leave their home. These are real disorders — but they leave out the quietly suffering graduate student who hasn't slept properly in four months, the teenager whose checking rituals consume two hours of every morning, and the person who has felt mildly but persistently low for three years and can no longer remember feeling otherwise.
+Introductory courses often begin with three questions:
 
-Psychology uses three overlapping criteria to define psychological disorder, sometimes called the **3D criteria**:
+- Is the pattern **distressing**?
+- Is it **dysfunctional**, meaning that it interferes with important areas of life?
+- Is it **deviant**, meaning unusual relative to cultural expectations?
 
-- **Deviant**: The behavior or experience departs markedly from cultural norms. But deviance alone is not sufficient — nonconformity and eccentricity are not disorders.
-- **Distressing**: The person experiences significant personal suffering. Note that some disorders (notably antisocial personality disorder) cause far more distress to *others* than to the person diagnosed.
-- **Dysfunctional**: The pattern impairs functioning in social, occupational, or other important domains.
+These “3Ds” are useful because they interrupt a common mistake: unusual does not mean disordered. A culturally expected ritual, an unconventional identity, or an eccentric hobby may be statistically uncommon without being pathological. Distress also matters, but it is not universally required; some conditions produce limited subjective distress while causing serious harm or impairment. Dysfunction is often central, but clinicians still need to ask what is causing it.
 
-Clinicians apply all three and exercise judgment about degree. Psychological disorders are not binary — present or absent — but points on a continuum. What tips a pattern of worry into generalized anxiety disorder, or sadness into major depressive disorder, is severity, duration, and impairment, not a qualitatively different underlying state.
+The 3Ds therefore open an inquiry. They do not close one. Diagnosis also requires disorder-specific symptoms, duration, severity, developmental and cultural context, exclusion of medical or substance-related explanations, and comparison with plausible alternatives.
 
-![Figure 13.2: The 3D criteria — deviance, distress, and dysfunction — overlap in a Venn diagram, with everyday examples of experiences that are unusual, upsetting, or context-specific without meeting all three, and a reminder that clinical judgment weighs severity, duration, culture, and context across school, relationships, health, and daily routines](../../docs/images/ch13/fig_diagnostic_criteria_3d_model.png)
-*Figure 13.2. Diagnosis asks how unusual, how distressing, and how impairing an experience is — and in what context. An unconventional hobby, pre-exam nerves, or a culturally expected practice can satisfy one criterion without satisfying all three; clinical judgment is required where they overlap. Original figure.*
+![Figure 13.2: Diagnostic concern begins with distress, impairment, or unusual experience, then proceeds through duration, development and culture, medical or substance exclusions, differential diagnosis, and clinical judgment; the 3Ds are labeled as preliminary questions rather than required intersecting criteria](../../docs/images/ch13/ch13_diagnostic_evidence_questions.svg)
+*Figure 13.2. The 3Ds are preliminary questions that can identify concern. A diagnosis requires substantially more: disorder-specific criteria, duration, context, exclusions, differential diagnosis, and trained clinical judgment. Original figure.*
 
-### The DSM-5-TR
+> **Do Not Confuse: Distress, disorder, and diagnosis.** Distress can be severe without meeting criteria for a disorder, and a disorder can be present even when the person reports little distress. A diagnosis is a clinical classification based on a pattern of evidence—not a synonym for suffering.
 
-The **Diagnostic and Statistical Manual of Mental Disorders**, Fifth Edition with text revision (DSM-5-TR; American Psychiatric Association, 2022), is the primary diagnostic classification system used in the United States. It provides standardized criteria for each disorder: a list of symptoms, duration requirements, and exclusion criteria. A common misconception is that the DSM identifies the *cause* of disorders. It does not. It describes clusters of symptoms that tend to co-occur. The DSM is categorical — you either meet criteria or you don't — but the underlying conditions it describes are often dimensional. Many people meet criteria for more than one disorder, which makes sense if disorders share underlying mechanisms.
+### What the DSM Does
 
-The DSM is not static. Homosexuality was classified as a disorder until 1973. PTSD did not appear until 1980. Neither change happened in a vacuum: they reflect a mix of new research, clinical debate within the field, and — especially in the 1973 case — sustained social and political pressure, including organized activism that directly confronted the profession's own leadership. The DSM is a living document, revised through evidence, argument, and the social context in which psychiatry operates, not a fixed inventory of natural kinds.
+The **Diagnostic and Statistical Manual of Mental Disorders, Fifth Edition, Text Revision** (**DSM-5-TR**) is the principal diagnostic classification used in U.S. mental-health practice. It provides criteria sets, descriptive text, duration requirements, exclusions, course information, cultural considerations, differential diagnoses, and functional consequences. The American Psychiatric Association explicitly states that the criteria are for trained professionals using clinical judgment, not for self-diagnosis (American Psychiatric Association, 2022).
 
-![Figure 13.3: A flowchart from symptoms through DSM diagnosis to further causal and treatment questions, with a red X blocking a mistaken arrow that loops directly from diagnosis back to "cause explained"](../../docs/images/ch13/fig_diagnosis_is_not_a_cause_flowchart.png)
-*Figure 13.3. A DSM diagnosis organizes a symptom pattern into a recognized category. It does not, by itself, explain why the symptoms occurred or determine what treatment will help — those require further questions about biological, psychological, and social factors. Original figure.*
+The DSM improves **reliability** when it helps different clinicians use the same language and reach the same classification. Reliability is not the same as **validity**. Clinicians could agree consistently about a category while researchers remain uncertain whether the category maps onto one causal process. DSM-5 field trials illustrate the distinction: test-retest agreement varied substantially across diagnoses rather than reaching one uniformly high level (Regier et al., 2013).
 
-### The Diathesis-Stress Model
+![Figure 13.3: A flowchart from symptoms through DSM diagnosis to further causal and treatment questions, with a red X blocking a mistaken arrow that loops directly from diagnosis back to cause explained](../../docs/images/ch13/fig_diagnosis_is_not_a_cause_flowchart.png)
+*Figure 13.3. A diagnosis organizes a clinically significant pattern. It does not, by itself, explain why that pattern occurred or determine which treatment will help. Those require further evidence. Original figure.*
 
-No single factor determines whether someone develops a psychological disorder. The **diathesis-stress model** proposes that a person inherits or develops a vulnerability (*diathesis*) — genetic, neurological, or psychological — and that environmental stressors interact with that vulnerability to trigger disorder. The same stressor produces different outcomes in different people because their diatheses differ. The same diathesis can remain latent without sufficient stress.
+A **case formulation** goes beyond the label. It is a provisional account of how biological vulnerabilities, developmental history, current stressors, learned patterns, relationships, strengths, and maintaining conditions may interact for this person. A formulation can change as new evidence arrives. That is a feature, not a failure.
 
-![Figure 13.4: A diathesis-stress threshold model comparing high- and low-vulnerability bars under the same stressor — the high-vulnerability bar crosses the disorder threshold, the low-vulnerability bar does not](../../docs/images/ch13/fig_diathesis_stress_threshold_model.png)
-*Figure 13.4. The same stressor can push a high-vulnerability person across the disorder threshold while leaving a low-vulnerability person below it. Vulnerability functions as a baseline load, not a guarantee. Original figure.*
+### Labels Direct Attention
 
-The **biopsychosocial model** adds social context explicitly: biological vulnerabilities, psychological factors (cognition, coping style, learning history), and social determinants (poverty, trauma, social support, stigma) all contribute simultaneously, not as competing explanations.
+Diagnostic categories are useful because they compress information. Compression also directs attention. Once a label is present, clinicians may notice confirming evidence more readily or attribute a new symptom to the existing diagnosis.
 
-One specific social mechanism is worth naming directly: the **just-world hypothesis** — the belief that the world is basically fair, so people generally get what they deserve (Lerner, 1980). Applied to mental illness, this generates victim-blaming ("they must have brought this on themselves") and self-stigma, when a person applies that same reasoning to themselves. This is a social-psychology mechanism, not a clinical one (Chapter 11) — but it is one of the primary routes by which stigma toward psychological disorders is generated and sustained, and it shapes whether people seek treatment at all.
+**Diagnostic overshadowing** occurs when a physical symptom is incorrectly attributed to a psychiatric condition or disability, delaying investigation of another cause. Interviews with clinicians in four emergency departments documented examples and the practical pressures that make this error more likely (Shefer et al., 2014). The lesson is not “labels are useless.” It is that a useful classification must not replace continued causal investigation.
 
-### Classic Study Walkthrough: Rosenhan (1973), "On Being Sane in Insane Places"
+Rosenhan’s 1973 hospital study remains historically famous, but later investigation identified serious questions about its records and reported participants (Cahalan, 2019). It is best treated as a contested episode in the history of diagnosis—not clean proof that psychiatric classification is impossible.
 
-**Read this one carefully.** The Rosenhan study is one of the most cited in the history of abnormal psychology — and one of the most contested. Before looking at what it found, it is worth knowing that journalist Susannah Cahalan spent years investigating the study for her 2019 book *The Great Pretender* and found serious problems: Rosenhan's own unpublished notes contained discrepancies between his written accounts and what the records showed, and the identities and experiences of several described pseudopatients could not be independently verified. The study cannot be treated as clean experimental evidence. It is presented here because it shaped the field, influenced the DSM-III revision, and remains a useful frame — but reading it critically is the point, not incidental to it.
+> **Stop and Retrieve:** A clinician and a diagnosis manual agree that a patient meets criteria for panic disorder. What has been established? What still has to be investigated?
 
-**Background.** In the early 1970s, psychiatric diagnosis was often criticized as unreliable and as reflecting social control as much as clinical assessment. David Rosenhan designed a study to test whether psychiatric hospitals could distinguish genuine patients from pseudopatients — healthy people presenting fabricated symptoms.
+### Vulnerability, Context, and Probability
 
-**Method.** Eight pseudopatients, including Rosenhan himself, presented at various hospitals and reported hearing a voice that said "empty," "hollow," and "thud." No other false information was given. After admission, they behaved completely normally and reported feeling fine.
+The **diathesis-stress model** proposes that vulnerability and stress interact. A diathesis may involve genes, prenatal development, temperament, prior learning, health, or earlier adversity. Stress may involve acute events, chronic demands, discrimination, isolation, sleep disruption, or loss of resources. Neither side acts as destiny.
 
-**Results.** All eight were admitted. All but one were diagnosed with schizophrenia. Staff never detected the pseudopatients; other patients sometimes did. Once the diagnostic label was applied, normal behaviors were reinterpreted accordingly: pseudopatients who took notes had "note-writing behavior" logged in their charts. Average hospitalization was 19 days.
+The model is often drawn as a threshold because the picture is memorable. Here is the problem: a literal additive score can imply more precision than the framework provides. Vulnerabilities can alter exposure to stress; stress can alter biological systems; support can buffer risk; development can change all three. The relationship is probabilistic and dynamic.
 
-**Rosenhan's interpretation.** He concluded that it is impossible to distinguish the sane from the insane in psychiatric settings — that a diagnostic label, once attached, structures all subsequent perception of the person's behavior. The study contributed directly to the tightening of diagnostic criteria in DSM-III (1980).
+![Figure 13.4: Vulnerabilities, stressors, and supports interact over time through reciprocal arrows, and outcomes are represented as changing probabilities rather than bars crossing a fixed threshold](../../docs/images/ch13/ch13_vulnerability_context_probabilistic.svg)
+*Figure 13.4. Diathesis-stress reasoning asks how vulnerabilities, stressors, and protective resources interact over time. It changes probabilities; it does not calculate a person’s fate from a fixed vulnerability-plus-stress score. Original figure.*
 
-**The better-evidenced version of the same point.** Temerlin (1968) ran a cleaner test: clinicians listened to a recorded interview of a demonstrably healthy man, but a confederate authority figure briefly mentioned beforehand that the man "sounded neurotic." Diagnosis rates shifted substantially. This is the same anchoring mechanism from Chapter 9, now in a clinical context — and it does not rest on disputed field notes. Rosenhan's study made the argument famous; Temerlin's gives it a more defensible empirical foundation.
+The **biopsychosocial model** widens the frame further. Biological, psychological, and social explanations are not competing teams. Poverty can alter exposure to threat and access to treatment. Repeated threat can alter sleep and stress physiology. Learning history can influence avoidance. Medication effects can change the conditions under which new learning becomes possible. The point is interaction across levels.
 
----
+[Try the Chapter 13 Clinical Reasoning Lab: Diagnosis Under Uncertainty](../../docs/labs/ch13/diagnosis-under-uncertainty.html)
 
-## Section 2: Anxiety, Mood, and Psychotic Disorders
-
-### Anxiety Disorders
-
-A useful distinction: **fear** is a response to a threat that exists *right now* — your heart rate spikes because a snake is approaching. **Anxiety** is a response to a threat that *might* happen — worry, apprehension, dread of something not yet present. Most anxiety disorders involve anxiety more than fear, though panic disorder involves acute, fear-like episodes.
-
-**Generalized Anxiety Disorder (GAD)** is characterized by persistent, excessive worry across multiple domains — work, health, family, finances — that the person finds difficult to control, accompanied by physical symptoms (muscle tension, fatigue, sleep disruption). The worry is disproportionate to the actual probability or impact of the feared events.
-
-**Specific phobia** involves intense fear of a particular object or situation (heights, spiders, blood, flying) that is out of proportion to actual danger, recognized by the person as excessive, and that leads to avoidance. Phobias develop through classical conditioning (the feared stimulus was paired with a genuinely aversive experience) and are maintained through negative reinforcement: avoidance immediately reduces anxiety, which reinforces the avoidance, which prevents extinction (Chapter 7).
-
-**Social anxiety disorder** involves intense fear of social situations where one might be scrutinized or humiliated. It is distinct from shyness: it causes significant functional impairment and typically leads to avoidance of professional and social opportunities.
-
-**Panic disorder** involves recurrent unexpected panic attacks — sudden surges of intense fear with physical symptoms (racing heart, chest tightness, shortness of breath, dizziness) — accompanied by persistent worry about future attacks or behavioral changes designed to prevent them.
-
-**Obsessive-Compulsive Disorder (OCD)**, now in its own DSM chapter, involves intrusive, unwanted obsessions (recurrent thoughts, urges, or images) and compulsions (repetitive behaviors or mental acts performed to reduce the anxiety the obsessions generate). The compulsions provide short-term relief but maintain the disorder by preventing habituation to the anxiety.
-
-![Figure 13.5: A four-step cycle — trigger, anxiety rises, avoidance or compulsion, short-term relief, back to trigger — with a side branch from avoidance or compulsion labeled "Exposure: short-term anxiety, long-term extinction"](../../docs/images/ch13/fig_anxiety_maintenance_cycle.png)
-*Figure 13.5. What maintains anxiety disorders is not the trigger itself but the loop: avoidance or compulsion buys short-term relief, which reinforces the avoidance and prevents the anxiety from extinguishing on its own. Exposure interrupts the loop at that step. Original figure.*
-
-**Post-Traumatic Stress Disorder (PTSD)**, now in the Trauma- and Stressor-Related Disorders chapter of the DSM, involves intrusion symptoms (flashbacks, nightmares), avoidance of trauma-related cues, negative alterations in cognition and mood, and hyperarousal, following exposure to actual or threatened death, serious injury, or sexual violence. Not everyone exposed to trauma develops PTSD — biological diathesis, severity of the trauma, and social support all moderate the response.
-
-Why do traumatic memories intrude as though the event is happening now, rather than being remembered as something past? Ordinary episodic memories get contextualized — tagged with when and where — a process that depends on the hippocampus (Chapter 8). Extreme threat arousal (high cortisol, amygdala dominance) disrupts that contextualizing function while the trauma is happening. Brewin, Dalgleish, and Joseph's (1996) dual representation theory frames the result as two memory systems out of sync: a vivid, poorly contextualized sensory trace — why flashbacks feel present-tense rather than remembered — alongside a comparatively thin verbal narrative of what happened. The threat response also widens the net of what counts as dangerous, a generalization that is adaptive immediately after a real threat but maladaptive once it persists into a safer, changed environment.
-
-This creates a genuine bind: revising the memory — recontextualizing it as past and safe to think about — requires prefrontal function that the threat response itself suppresses. The moment the memory is most active is the moment the person is least equipped to process it.
-
-Trauma treatments are thought to work by getting the person to revisit the memory under conditions of safety, in a state where the prefrontal system can actually do its job — but exactly which mechanism does the updating is still an open question, not a settled one. Standard exposure therapy (Chapter 7) is most often explained through extinction: repeated safe exposure builds a new, competing association that inhibits the original fear response without erasing it. Nader, Schafe, and LeDoux (2000) demonstrated a second, distinct possibility — a consolidated memory, once retrieved, briefly becomes labile again before restabilizing, opening a window in which the original trace itself could be updated rather than just re-stored unchanged. This reconsolidation window is one proposed account of how treatments like EMDR work (Chen et al., 2014), but it is a candidate mechanism, not an established replacement for extinction — the two may operate together, or apply more to some treatments than others. Either way, the clinical target is the same: get the memory active enough to revise, paired with a signal of safety, while the threat response isn't in full control.
-
-### Mood Disorders
-
-**Major Depressive Disorder (MDD)** requires at least five of nine symptoms — including depressed mood or loss of interest/pleasure (*anhedonia*) — for at least two weeks, with significant impairment. Other symptoms include changes in appetite and sleep, fatigue, difficulty concentrating, feelings of worthlessness, and recurrent thoughts of death or suicidal ideation.
-
-![Figure 13.6: A circular loop connecting low mood, withdrawal and inactivity, fewer rewarding experiences, and lower motivation, with a teal arrow exiting the loop from withdrawal toward behavioral activation](../../docs/images/ch13/fig_depression_maintenance_loop.png)
-*Figure 13.6. Depression can be self-maintaining: low mood produces withdrawal, withdrawal produces fewer rewarding experiences, and fewer rewards lower motivation further. Behavioral activation (Section 4) interrupts the loop by scheduling activity before motivation returns. Original figure.*
-
-Aaron Beck's **cognitive triad of depression** identifies three negative schemas: views of the self (*I am worthless*), the world (*nothing ever goes right*), and the future (*it will always be this way*). These schemas filter incoming information to confirm the negative view — confirmation bias applied to self-evaluation (Chapter 9). Abramson, Seligman, and Teasdale (1978) extended this with a **depressogenic attributional style**: depressed individuals tend to attribute negative events to internal, stable, and global causes.
-
-The older "chemical imbalance" explanation — low serotonin causes depression — does not hold up under scrutiny. A 2022 umbrella review by Moncrieff and colleagues found no consistent evidence for reduced serotonin levels or activity in depression. This does not mean SSRIs are ineffective — the evidence for their efficacy is real — but it means we do not understand their mechanism as well as the popular story implied (Cipriani et al., 2018). Depression almost certainly involves HPA axis dysregulation, inflammatory processes, disrupted sleep, and circuit-level changes in prefrontal-limbic regulation.
-
-The Sapolsky/dopamine framing from Chapter 7 extends here: anhedonia in depression may reflect disrupted reward prediction error signaling. When dopamine anticipation signals fail — when nothing seems worth pursuing in advance — the motivational pull to initiate behavior collapses. This connects the phenomenology of depression (nothing seems worth doing) to disrupted dopaminergic anticipation circuitry in a way a serotonin story alone cannot.
-
-A third mechanism reframes anhedonia and withdrawal themselves. The behavioral profile of depression — withdrawal, fatigue, reduced appetite, loss of pleasure — is also the behavioral profile of an animal fighting an infection. Hart (1988) proposed that this "sickness behavior" is an evolved, centrally organized program that conserves energy for immune defense, not a breakdown. The same inflammatory cytokines that produce it during infection also produce depression-like states in humans when administered directly, and chronic low-grade inflammation predicts later depression onset (Dantzer & Kelley, 2007). This is not the whole story — it is one contributing mechanism, clearest in a subset of cases — but it reframes depression's profile as an ancient defensive program firing in response to chronic psychosocial stress rather than infection.
-
-**Persistent Depressive Disorder (PDD)**, formerly dysthymia, involves chronically depressed mood lasting at least two years that does not meet full MDD criteria. People with PDD often describe the low mood as simply *how they are* — they have no memory of feeling otherwise.
-
-**Bipolar Disorder** involves episodes of both depression and mania. **Bipolar I** requires at least one full manic episode: a period of abnormally elevated or irritable mood with increased energy, decreased need for sleep, grandiosity, racing thoughts, distractibility, and impulsive risk-taking, lasting at least one week and causing marked functional impairment. **Bipolar II** involves hypomanic episodes (less severe, no psychosis or hospitalization required) and depressive episodes. Bipolar disorder is substantially heritable; first-degree relatives of individuals with bipolar I have roughly a 10-fold increased risk compared to the general population (Craddock & Sklar, 2013).
-
-### Schizophrenia
-
-Schizophrenia has a lifetime prevalence of approximately 1% worldwide. Symptoms divide into two categories:
-
-**Positive symptoms** are excesses — experiences added on top of normal functioning:
-- *Hallucinations*: perceptual experiences without an external stimulus; most commonly auditory (hearing voices others do not hear)
-- *Delusions*: fixed, false beliefs held with conviction despite disconfirming evidence — persecutory, grandiose, or referential
-- *Disorganized thinking*: loose associations, tangential speech, incoherence
-- *Disorganized or catatonic behavior*
-
-**Negative symptoms** are deficits — reductions in normal functioning:
-- *Flat affect*: reduced emotional expressivity
-- *Alogia*: diminished speech output
-- *Avolition*: reduced goal-directed motivation
-- *Anhedonia*: reduced capacity for pleasure
-
-Positive symptoms are more responsive to antipsychotic medication; negative symptoms are harder to treat and more strongly predict long-term functional outcome.
-
-![Figure 13.7: A two-column comparison of schizophrenia symptoms — positive symptoms (experiences added): hallucinations, delusions, disorganized speech, disorganized behavior; negative symptoms (capacities reduced): flat affect, alogia, avolition, anhedonia, social withdrawal](../../docs/images/ch13/fig_schizophrenia_positive_negative_symptoms.png)
-*Figure 13.7. Positive symptoms are experiences added on top of normal functioning; negative symptoms are capacities reduced. Positive symptoms often respond better to antipsychotic medication — negative symptoms are usually harder to treat. Original figure.*
-
-The **dopamine hypothesis** proposes that excess dopaminergic activity in mesolimbic pathways underlies positive symptoms. Evidence: drugs that block D2 receptors reduce positive symptoms; drugs that increase dopamine (amphetamines, cocaine) can induce psychosis-like states in healthy individuals; antipsychotic drug potency correlates directly with D2 receptor affinity (Seeman et al., 1976). The hypothesis has been refined: reduced dopaminergic activity in the prefrontal cortex likely contributes to negative symptoms and cognitive deficits, alongside excess mesolimbic activity. Glutamate, particularly at NMDA receptors, is also implicated — the original hypothesis is almost certainly too simple.
-
-Schizophrenia is substantially heritable: concordance in identical twins is approximately 40–65%, indicating both strong genetic contributions and meaningful environmental influence (Cardno & Gottesman, 2000).
+> **Think About It:** A campus screening form flags a fictional student as “high risk.” What useful action could that result support, and what would still be unjustified without a clinical assessment?
 
 ---
 
-## Section 3: Personality Disorders and Neurodevelopmental Disorders
+## Section 2: Representative Disorders and Selected Maintenance Processes
+
+### Anxiety, Fear, and Avoidance
+
+**Fear** responds to a present threat. **Anxiety** anticipates a possible threat. Both are normal. Anxiety disorders involve patterns that are excessive or persistent relative to context and that cause clinically significant distress or impairment.
+
+| Pattern | Central feature | What not to infer |
+|---|---|---|
+| **Generalized anxiety disorder** | Difficult-to-control worry across several domains, with associated tension, fatigue, concentration, or sleep problems | Ordinary worry about one difficult week is not enough |
+| **Specific phobia** | Marked fear and avoidance of a particular object or situation | Every strong dislike or reasonable danger response is not a phobia |
+| **Social anxiety disorder** | Fear of scrutiny or negative evaluation that restricts functioning | Shyness alone is not a disorder |
+| **Panic disorder** | Recurrent unexpected panic attacks plus persistent concern or behavioral change | A single panic attack does not establish panic disorder |
+| **Obsessive-compulsive disorder** | Intrusive obsessions and compulsions performed to reduce distress or prevent a feared event | Repetitive preferences or neatness alone are not OCD |
+| **Post-traumatic stress disorder** | Intrusion, avoidance, changes in cognition or mood, and arousal after qualifying trauma exposure | Trauma exposure does not make PTSD inevitable |
+
+Avoidance offers a clean example of maintenance. Leaving a feared situation reduces anxiety quickly. That relief is **negative reinforcement**: removing an aversive state makes the escape response more likely next time. The person therefore receives less opportunity to learn that anxiety can decline without escape or that the feared outcome may not occur.
+
+![Figure 13.5: A cycle from threat cue to anxiety to avoidance or compulsion to immediate relief and then reduced opportunity for corrective learning; an exposure branch permits new corrective and safety learning](../../docs/images/ch13/ch13_anxiety_avoidance_learning_loop.svg)
+*Figure 13.5. Avoidance and compulsions can be maintained by immediate relief. Exposure-based treatment creates conditions for corrective or inhibitory learning; it does not promise that the original fear memory is erased. Original figure.*
+
+This loop is common, not universal. Anxiety can also be shaped by temperament, uncontrollable stress, social conditions, health, and biological sensitivity. A maintenance account explains why a pattern continues. It may not explain how it began.
+
+PTSD makes this distinction especially important. Traumatic memories can be vivid, fragmented, cue-sensitive, and difficult to place safely in the past. Dual-representation theory is one influential account of how sensory and contextual representations can become poorly integrated (Brewin, Dalgleish, & Joseph, 1996). Exposure-based and trauma-focused treatments can help, but researchers continue to debate the exact contributions of extinction, inhibitory learning, reconsolidation, meaning change, and emotion regulation. Treatment efficacy does not settle one mechanism.
+
+> **Stop and Retrieve:** Why can immediate relief make avoidance more likely even when avoidance worsens the long-term problem? Distinguish the reinforcer from the feared cue.
+
+### Depression and Bipolar Disorders
+
+**Major depressive disorder** involves depressed mood or loss of interest or pleasure, accompanied by additional cognitive, motivational, and bodily symptoms, for at least two weeks and with clinically significant distress or impairment. The diagnosis requires more than sadness. Grief, medical illness, substances, bipolar history, and other explanations must be considered.
+
+One maintenance pathway is behavioral withdrawal. Low mood and fatigue reduce activity. Reduced activity produces fewer opportunities for mastery, connection, or reward. Motivation then falls further.
+
+![Figure 13.6: A circular loop connecting low mood, withdrawal and inactivity, fewer rewarding experiences, and lower motivation, with an arrow exiting the loop from withdrawal toward behavioral activation](../../docs/images/ch13/fig_depression_maintenance_loop.png)
+*Figure 13.6. Behavioral withdrawal is one possible maintenance pathway in depression. Behavioral activation interrupts the loop by scheduling useful or rewarding action before waiting for motivation to return. Original figure.*
+
+Depression is not simply a serotonin shortage. An umbrella review found that the familiar serotonin-deficiency story is not supported as a general causal account (Moncrieff et al., 2022). Antidepressants can still reduce symptoms for some people (Cipriani et al., 2018). A treatment can be effective without proving that the untreated disorder was a simple deficiency of the chemical the treatment alters.
+
+Reward processing, inflammation, sleep, stress physiology, cognition, and social adversity are all active research areas. Findings are heterogeneous. Some may characterize subgroups, consequences, or maintaining conditions rather than one universal mechanism.
+
+**Persistent depressive disorder** involves a long-lasting depressive pattern. Major depressive episodes may occur during that persistent course; the condition is not defined merely as depression that never reaches the intensity of major depression.
+
+**Bipolar I disorder** requires at least one manic episode. Mania involves a distinct period of elevated, expansive, or irritable mood and increased activity or energy, with features such as reduced need for sleep, pressured speech, grandiosity, racing thoughts, and risky behavior. **Bipolar II disorder** involves hypomanic episodes and major depressive episodes. Hypomania is not simply “mild happiness”; it is a marked change from usual functioning, though it does not reach the severity of mania.
+
+> **Do Not Confuse: Depression with bipolar depression.** A current depressive episode does not reveal whether a person has unipolar or bipolar disorder. A history of mania or hypomania materially changes diagnosis and treatment decisions.
+
+### Schizophrenia and Psychosis
+
+Schizophrenia includes psychosis-related, cognitive, motivational, and functional disturbances. **Positive symptoms** add experiences or behaviors, such as hallucinations, delusions, and disorganized speech. **Negative symptoms** reduce expected capacities, such as emotional expression, speech, motivation, or social engagement.
+
+![Figure 13.7: Two-column comparison of schizophrenia symptoms, with positive symptoms as experiences added and negative symptoms as capacities reduced](../../docs/images/ch13/fig_schizophrenia_positive_negative_symptoms.png)
+*Figure 13.7. Positive symptoms add experiences such as hallucinations or delusions; negative symptoms reduce capacities such as motivation or expression. Depression, medication effects, and other causes must be considered when evaluating apparent negative symptoms. Original figure.*
+
+The **dopamine hypothesis** captures part of the picture, especially altered presynaptic dopamine function associated with psychosis and the reduction of many positive symptoms by D2-blocking medications. It is not a complete explanation of schizophrenia. Glutamate signaling, development, cognition, stress, and distributed circuits also matter (Howes & Kapur, 2009). Antipsychotic efficacy does not prove that schizophrenia is merely “too much dopamine.”
+
+Schizophrenia is substantially heritable, but identical-twin concordance is far below 100 percent. Genes alter probability; they do not determine a single inevitable outcome (Cardno & Gottesman, 2000).
+
+### Substance-Use Disorders
+
+Using a substance is not the same as having a **substance-use disorder** (**SUD**). Diagnosis concerns a problematic pattern: impaired control, persistent use despite harm, major role disruption, hazardous use, and related criteria over time.
+
+**Tolerance** means that more of a substance may be needed for the same effect. **Withdrawal** is a characteristic syndrome after reducing or stopping some substances. Neither feature alone establishes SUD. A patient taking a medication exactly as prescribed can develop physiological tolerance or withdrawal without showing the broader behavioral pattern of a disorder.
+
+Treatment may include behavioral therapy, medications for particular substances, harm-reduction strategies, recovery support, mutual-help resources, attention to housing or employment, and treatment of co-occurring conditions. Recurrence after improvement is clinically informative. It is not proof of weak character or proof that treatment was pointless (National Institute on Drug Abuse [NIDA], 2020).
+
+Chapters 3 and 7 covered reward circuitry, prediction, and reinforcement. Here the additional point is diagnostic: mechanism, pattern, impairment, and treatment are related questions, not interchangeable ones.
+
+> **Stop and Retrieve:** Why do tolerance and withdrawal fail as stand-alone tests for substance-use disorder? What additional evidence would matter?
+
+> **Think About It:** A news story says a newly identified brain difference “explains depression.” What questions would you ask before accepting that causal claim?
+
+---
+
+## Section 3: Personality and Neurodevelopmental Conditions
 
 ### Personality Disorders
 
-Chapter 11 covered trait consistency and the person-situation debate. Personality disorders sit at an extreme of that continuum: they represent patterns of inner experience and behavior that deviate markedly from cultural expectations, are pervasive and inflexible, cause significant distress or impairment, and are stable from adolescence or early adulthood onward. The DSM-5-TR organizes them into three clusters:
+Personality disorders involve enduring, inflexible patterns of inner experience and behavior that deviate from cultural expectations, appear across contexts, and cause distress or impairment. The diagnosis concerns pervasive organization—not one selfish act, one unstable relationship, or one unusual trait.
 
-**Cluster A** ("odd or eccentric"): paranoid, schizoid, and schizotypal. Individuals with schizotypal PD show sub-psychotic versions of the cognitive and perceptual distortions seen in schizophrenia — odd beliefs, ideas of reference, unusual perceptual experiences — without crossing the threshold for a full psychotic episode.
+The DSM groups ten personality disorders into three descriptive clusters: A (odd or eccentric), B (dramatic, emotional, or erratic), and C (anxious or fearful). The clusters are memory aids, not established causal systems.
 
-**Cluster B** ("dramatic, emotional, or erratic"): antisocial, borderline, histrionic, and narcissistic.
+**Antisocial personality disorder** involves a pervasive pattern of disregard for and violation of others’ rights, with evidence of conduct problems before age 15. It is not synonymous with criminality, psychopathy, or the legal standard of insanity.
 
-*Antisocial Personality Disorder (ASPD)* is a pervasive pattern of disregard for and violation of others' rights: repeated law-breaking, deceitfulness, impulsivity, aggression, recklessness, and lack of remorse. Recall from Chapter 3 that Phineas Gage's damage to the ventromedial prefrontal cortex — the region that integrates emotional signals into decision-making — produced a personality shift that resembles this pattern in several respects. ASPD has a significant genetic component and is related to but not identical with psychopathy, a construct defined by Cleckley (1941) and operationalized in the Hare Psychopathy Checklist-Revised (PCL-R; Hare, 1991). Psychopathy emphasizes callousness and shallow affect; not everyone with ASPD scores high on psychopathy measures, and not all high-PCL-R individuals are diagnosed with ASPD.
+**Borderline personality disorder** includes instability in relationships, self-image, and affect, often with impulsivity, intense fears of abandonment, or self-harm. Linehan’s biosocial account emphasizes transactions between emotional sensitivity and invalidating environments. It is an influential clinical model, not a demonstrated single origin for every case.
 
-> **Do Not Confuse: ASPD ≠ antisocial behavior ≠ psychopathy ≠ legal insanity.** ASPD is a clinical diagnosis requiring a pervasive pattern and evidence of conduct problems before age 15. Not all people with ASPD engage in criminal behavior; most people who engage in criminal behavior do not have ASPD. Psychopathy is a personality construct measured by the PCL-R, not a DSM category. Legal insanity is a legal standard — whether the person knew their act was wrong — and is rarely applied even in severe psychosis.
+> **Do Not Confuse: Trait, diagnosis, and moral judgment.** A diagnosis describes a pervasive pattern and associated impairment. It does not convert disliked behavior into a medical fact, erase responsibility, or justify stigma.
 
-*Borderline Personality Disorder (BPD)* involves instability in relationships, self-image, and affect, alongside marked impulsivity: frantic efforts to avoid abandonment, identity disturbance, recurrent suicidal behavior or self-harm, intense and unstable mood, and chronic feelings of emptiness. Marsha Linehan, who developed Dialectical Behavior Therapy specifically for BPD, proposed a biosocial theory: high innate emotional sensitivity combined with an *invalidating environment* — one that repeatedly communicates the person's emotional responses are wrong or excessive — produces the disorder (Linehan, 1993).
+### ADHD and Autism
 
-**Cluster C** ("anxious or fearful"): avoidant, dependent, and obsessive-compulsive. These involve chronic anxiety, fear of rejection, and rigidity.
+**Attention-deficit/hyperactivity disorder** (**ADHD**) is a neurodevelopmental condition involving developmentally inappropriate inattention, hyperactivity-impulsivity, or both, across settings with functional impairment. Executive-function and catecholamine systems are relevant, but “underactive dopamine” is too simple to serve as the diagnosis or cause. Stimulant response likewise does not prove a dopamine deficiency.
 
-### Neurodevelopmental Disorders
+**Autism spectrum disorder** (**ASD**) is a neurodevelopmental condition involving persistent differences in social communication and interaction together with restricted or repetitive patterns of behavior, interests, or sensory experience. Support needs, language, intellectual ability, sensory profile, and adaptive functioning vary widely.
 
-Neurodevelopmental disorders have onset in the developmental period and involve impairments present early in life, though they may not be formally diagnosed until later.
+Autism is strongly influenced by genetics and early development, but no single brain finding defines the spectrum. Studies of cortical organization, growth trajectories, connectivity, and synapses identify possible pathways and subgroup differences. They do not yet form one settled causal chain. The “broken mirror neuron” explanation is not well supported, and difficulty on a theory-of-mind task is neither universal nor a complete account of autistic social experience.
 
-**Attention-Deficit/Hyperactivity Disorder (ADHD)** is characterized by persistent inattention, hyperactivity-impulsivity, or both, that interfere with functioning. The inattentive presentation involves difficulty sustaining attention, poor organization, and distractibility. The hyperactive-impulsive presentation involves fidgeting, inability to remain seated, excessive talking, and difficulty waiting. The combined presentation involves both. ADHD affects approximately 5–8% of children; many continue to meet criteria into adulthood, typically with reduced hyperactivity but persistent inattention.
+Neurodevelopmental conditions are not failed versions of the maintenance loop from Figure 13.1. Learning and environment still shape functioning, but the chapter’s avoidance-and-relief lens is not their origin story.
 
-ADHD involves impaired prefrontal executive function — the system that regulates attention, inhibition, and working memory (Chapter 3). The Sapolsky/dopamine connection applies here: dopaminergic circuitry supporting goal-directed behavior and sustained effort appears underactive in ADHD. Stimulant medications (methylphenidate, amphetamine salts) increase dopamine and norepinephrine in prefrontal circuits, improving signal-to-noise for goal-directed attention.
+> **Stop and Retrieve:** What makes ADHD and autism neurodevelopmental conditions? Name one reason a group-level brain finding cannot diagnose an individual student.
 
-**Autism Spectrum Disorder (ASD)** is characterized by persistent deficits in social communication and social interaction across multiple contexts, alongside restricted, repetitive patterns of behavior, interests, or activities. "Spectrum" is accurate: individuals with ASD vary enormously in intellectual ability, language, and support needs. The core social-communication features include difficulty with the implicit conventions of social interaction and limited understanding of others' mental states — connecting directly to the Theory of Mind findings from Chapter 10 (Baron-Cohen, Leslie, & Frith, 1985).
-
-As flagged in Chapter 7: the popular "broken mirror neuron theory of autism" — which proposed that ASD reflects mirror neuron system dysfunction — is not well supported by current evidence. The well-documented finding is difficulty with Theory of Mind tasks. The mechanistic explanation remains contested.
-
-The origins of ASD appear to lie in prenatal brain development rather than postnatal experience. Postmortem tissue studies have found focal patches of disrupted cortical laminar architecture in prefrontal and temporal regions of individuals with ASD — an organizational failure that can only have occurred during the second trimester, when cortical layers are being established (Stoner et al., 2014). Consistent with this, children later diagnosed with ASD show accelerated brain overgrowth in the first year of life, before behavioral symptoms are detectable (Hazlett et al., 2017). At the synaptic level, Tang et al. (2014) found that cortical neurons in ASD postmortem tissue had significantly more synapses than age-matched controls, suggesting impaired **synaptic pruning** — the process by which microglia eliminate excess connections during development (Chapter 3). Many of the most replicated ASD-associated genetic variants affect proteins in the synaptic scaffolding families (SHANK, NRXN, NLGN) that regulate synapse formation and stability. Fetal active sleep — the in-utero precursor to REM — generates the spontaneous neural activity thought to drive activity-dependent synaptogenesis and circuit refinement; research on neonatal active sleep suggests that disruptions to this system during prenatal development may contribute to the synaptic excess observed in ASD (Blumberg, 2010). This is an active area of investigation, and the full causal chain from prenatal disruption to the specific behavioral profile of ASD remains to be worked out.
+> **Think About It:** A fictional accommodation request lists a diagnosis but not the student’s functional needs. Why is the label alone insufficient for deciding what support would help?
 
 ---
 
-## Section 4: Psychological and Biological Treatments
+## Section 4: Treatment Is a Matching Problem
 
-The psychotherapy literature contains a puzzle: hundreds of different therapeutic approaches exist, but when researchers compare them in controlled trials, most produce roughly similar outcomes for most disorders — a result sometimes called the **Dodo Bird Verdict** (Luborsky, Singer, & Luborsky, 1975), after Alice's declaration that "all have won and all must have prizes." The strongest predictor of outcome across approaches is not the specific technique the therapist uses but the quality of the **therapeutic alliance** — the collaborative, trusting relationship between therapist and client (Flückiger et al., 2018).
+### Common Processes and Specific Methods
 
-This does not mean technique is irrelevant. For specific disorders — particularly anxiety disorders — particular approaches show distinctly better outcomes. The overall picture: common factors (alliance, empathy, warmth) account for a large portion of effectiveness across disorders; specific techniques matter most for specific conditions.
+Psychotherapy is not one intervention. Neither is “the therapeutic relationship.” Several bona fide therapies help many clients, average differences among therapies are sometimes small, and specific methods matter more for some problems than others.
 
-![Figure 13.8: A hub-and-spoke diagram with common factors — therapeutic alliance, empathy, warmth, expectation of change — at the center, and spokes to psychodynamic therapy, client-centered therapy, CBT, DBT, pharmacotherapy, and ECT, each labeled with its technique-specific mechanism](../../docs/images/ch13/fig_therapy_mechanisms_map.png)
-*Figure 13.8. Psychotherapies share common relationship factors at the center while differing in the technique-specific mechanisms each approach targets. Original figure.*
+The **therapeutic alliance**—agreement on goals, collaboration on tasks, and an effective working bond—predicts outcome across therapy approaches (Flückiger et al., 2018). Prediction does not automatically establish causation. Early improvement can strengthen alliance, alliance can support later change, therapist skill can influence both, and the processes can reinforce one another.
 
-### Psychoanalytic and Psychodynamic Therapies
+Specific techniques also matter. Exposure and response prevention is central for OCD. Trauma-focused methods have evidence for PTSD. Behavioral activation targets depressive withdrawal. Skills-based treatments such as **dialectical behavior therapy** (**DBT**) were developed for problems involving severe emotion dysregulation and self-harm. For depression, several psychotherapies show broadly comparable average efficacy; for generalized anxiety disorder, comparative evidence more strongly favors CBT-based approaches. “All therapies are equal” is too strong. “Only technique matters” is also too strong.
 
-Classical psychoanalysis, developed by Freud, rests on the premise that psychological symptoms reflect unconscious conflicts, typically rooted in childhood experience. Technique involves **free association** (saying whatever comes to mind without censorship), **dream analysis**, working through **resistance** (unconscious avoidance of threatening material), and **transference** (the client's displacement of feelings from earlier relationships onto the therapist).
+| Approach | Primary work | Useful boundary |
+|---|---|---|
+| **Psychodynamic therapy** | Recurring relational patterns, conflict, emotion, and insight | Evidence of benefit does not prove every classical Freudian mechanism |
+| **Client-centered therapy** | Empathy, genuineness, nonjudgmental exploration, client agency | Warmth alone is not sufficient treatment for every condition |
+| **CBT** | Relationships among thoughts, behavior, emotion, and context | CBT is a family of methods, not one script |
+| **Exposure-based therapy** | New learning in the presence of feared cues without avoidance or ritual | Distress is approached deliberately and safely; fear need not be erased |
+| **DBT** | Acceptance plus change, skills, behavioral analysis, and treatment structure | DBT is more than generic mindfulness |
+| **Behavioral activation** | Re-engagement with activities linked to mastery, meaning, or reward | Action may precede motivation rather than wait for it |
 
-Modern **psychodynamic therapy** is briefer and more structured. It retains the focus on unconscious patterns and the therapeutic relationship as a vehicle for insight. Meta-analytic evidence suggests psychodynamic therapy produces outcomes comparable to other approaches for mood disorders and complex interpersonal problems (Shedler, 2010), though whether insight-based resolution of repressed conflict is the active mechanism is contested.
+### Medication and Somatic Treatments
 
-### Humanistic and Client-Centered Therapy
+Medication decisions balance indication, expected benefit, adverse effects, prior response, health conditions, interactions, monitoring burden, access, and client preference.
 
-Carl Rogers argued that people possess a natural drive toward growth that is blocked when they receive conditional rather than unconditional positive regard — when they learn that others' acceptance is contingent on being a particular way (Chapter 11). **Client-centered therapy** removes the evaluative dynamic: the therapist provides **unconditional positive regard**, **empathy** (genuine understanding of the client's inner world), and **congruence** (authenticity — no professional facade).
+**Antidepressants** include SSRIs, SNRIs, and older classes. They can be effective, especially for moderate-to-severe depression, but average effects do not predict one person’s response. Starting, switching, and stopping should be managed clinically because adverse effects and discontinuation symptoms vary.
 
-In this environment, Rogers argued, clients can explore and accept aspects of themselves they previously denied, moving toward greater congruence between their actual and ideal self. The therapist is non-directive: rather than interpreting or advising, they reflect what they hear, helping the client clarify their own experience.
+**Antipsychotic medications** reduce acute psychotic symptoms for many patients, but efficacy and adverse-effect profiles differ. First- and second-generation categories do not create a simple “old drugs cause movement problems; new drugs do not” division. Metabolic, cardiovascular, neurological, hormonal, and subjective effects all matter. Clozapine is especially important for treatment-resistant schizophrenia and requires monitoring because of serious risks. Current guidance emphasizes individualized selection and monitoring rather than a universally best drug (World Health Organization [WHO], 2023).
 
-Empirical support for the specific mechanism Rogers proposed is modest — non-directiveness is not consistently superior to more directive approaches for specific conditions. What is robustly supported is that the core conditions Rogers identified (empathy, warmth, genuineness) are strong predictors of alliance quality, which in turn predicts outcome across all therapy types (Rogers, 1957; Flückiger et al., 2018).
+**Mood stabilizers**, including lithium, can reduce mania and recurrence in bipolar disorder. Lithium requires blood-level and health monitoring because its effective and toxic doses are relatively close.
 
-*Sourcing note for DIS-009: see chapter header.*
+**Electroconvulsive therapy** (**ECT**) is performed under anesthesia with muscle relaxation. It can produce rapid, substantial improvement in severe depression, including some urgent or life-threatening presentations, and is also used for selected cases of catatonia and mania. ECT is not a punishment and does not resemble its common film portrayal.
 
-### Cognitive-Behavioral Therapy
+The important qualification is memory. Cognitive effects vary with treatment parameters and the person. They can include anterograde and retrograde impairment, and some autobiographical memory difficulties may persist. Consent should therefore address expected benefit, alternatives, uncertainty, and cognitive risks rather than promising that memory effects will always be brief (National Institute for Health and Care Excellence [NICE], 2022).
 
-**Cognitive-Behavioral Therapy (CBT)** integrates cognitive and behavioral approaches under the premise that thoughts, behaviors, and emotions mutually influence each other — and that changing any one produces change in the others.
+![Figure 13.8: Treatment selection begins with the specific problem and evidence, then considers risks and burdens, comparative evidence, and client context; psychotherapy, medication, combined care, and somatic treatment appear as options rather than spokes from one universal mechanism](../../docs/images/ch13/ch13_treatment_selection_evidence_context.svg)
+*Figure 13.8. Treatment is selected by matching evidence and clinical context to the person and problem. Relationship processes matter within psychotherapy, but medication and ECT are not extensions of a psychotherapy common-factors hub. Original figure.*
 
-Aaron Beck developed **cognitive therapy** originally for depression (Beck, Rush, Shaw, & Emery, 1979): the therapist helps clients identify automatic negative thoughts, examine the evidence for and against them, and develop more balanced alternatives (**cognitive restructuring**). Albert Ellis developed **Rational Emotive Behavior Therapy (REBT)**, targeting irrational *absolute demands* ("I must be approved of by everyone") and *catastrophizing* ("it would be awful if I failed") (Ellis, 1962).
+> **Stop and Retrieve:** Why does a medication’s efficacy fail to prove a simple chemical-deficiency theory of the untreated disorder? Give one alternative interpretation.
 
-Behavioral components are powerful in their own right. **Behavioral activation** for depression involves scheduling rewarding activities to break the cycle of withdrawal and low mood. **Exposure therapy** for anxiety involves graduated contact with feared stimuli without the feared consequence, allowing extinction of the conditioned fear response (Chapter 7). **Exposure and Response Prevention (ERP)** for OCD exposes clients to obsessive triggers while preventing the compulsive response, allowing anxiety to rise and naturally subside.
+### AI in Mental-Health Contexts
 
-CBT has the strongest empirical evidence base of any psychological treatment for depression, anxiety disorders, OCD, PTSD, eating disorders, and insomnia, with moderate-to-large effect sizes and outcomes that typically maintain after treatment ends (Hofmann et al., 2012).
+“AI therapy” combines tools with very different purposes and evidence.
 
-**Dialectical Behavior Therapy (DBT)**, developed by Linehan (1993) for BPD, adds acceptance-based and mindfulness-based components to CBT. The "dialectic" is the tension between *change* (the behavior is problematic) and *acceptance* (the client is doing the best they can given their history). DBT includes skills training in mindfulness, distress tolerance, emotion regulation, and interpersonal effectiveness.
+| Tool type | Plausible use | Questions that must be asked |
+|---|---|---|
+| **General-purpose chatbot** | Information, reflection, drafting questions for a clinician | Was it designed or tested for this use? What happens to sensitive data? How does it respond to risk? |
+| **Wellness or coaching product** | Structured exercises, reminders, mood tracking | Is the product making clinical claims? What evidence supports those claims? |
+| **Clinically evaluated digital intervention** | A defined intervention studied for a defined population and outcome | What was the comparison group? Were harms assessed? Does the evidence generalize? |
+| **Clinician-integrated tool** | Documentation, monitoring, screening support, between-session practice | Who reviews outputs? Who is accountable? How are errors and escalation handled? |
+| **Regulated clinical product** | A specified medical function under an applicable regulatory pathway | What exactly is authorized, for whom, and under what supervision? |
 
-### Biological Treatments
+A 2025 randomized wait-list-controlled trial found symptom improvement for a purpose-built generative therapeutic chatbot, demonstrating that categorical claims that such systems can never produce clinical benefit are untenable (Heinz et al., 2025). The study did not establish equivalence to licensed therapy, superiority to an active treatment, or safety across products and populations.
 
-**Drug therapies** operate on neurotransmitter systems to reduce symptoms.
+Privacy is also product-specific. HIPAA applies when a tool is operated by or for a covered entity or business associate under relevant conditions; it does not automatically protect every consumer health app or general-purpose chatbot (U.S. Department of Health and Human Services [HHS], 2026). Regulation, data handling, clinical oversight, and crisis procedures must be checked rather than inferred from a conversational interface.
 
-*Antidepressants.* **Selective serotonin reuptake inhibitors (SSRIs)** — fluoxetine, sertraline, escitalopram — block serotonin reuptake, increasing synaptic serotonin availability. They are the most commonly prescribed first-line treatment for depression and many anxiety disorders. As noted in Section 2, the serotonin-deficiency theory of depression is not supported by current evidence; we have an effective treatment whose mechanism we do not fully understand. Effect sizes are real but modest, and substantially larger for severe depression than mild depression (Cipriani et al., 2018). **SNRIs** act on both serotonin and norepinephrine. Older classes — **MAOIs** and **tricyclics** — are effective for some patients but carry more significant side effects and drug interactions.
+The responsible question is not “Can AI replace therapists?” as one timeless yes-or-no proposition. Ask: **Which tool, for which function, supported by what evidence, with what safeguards, and accountable to whom?**
 
-*Antipsychotics.* **First-generation (typical) antipsychotics** (haloperidol, chlorpromazine) block D2 receptors and reduce positive symptoms of schizophrenia but can produce serious movement side effects (tardive dyskinesia). **Second-generation (atypical) antipsychotics** (clozapine, risperidone, quetiapine) act on both dopamine and serotonin receptors, have fewer movement side effects, and show somewhat better efficacy for negative symptoms. Clozapine carries a risk of agranulocytosis requiring regular blood monitoring.
-
-*Mood stabilizers.* **Lithium** has been used for bipolar disorder since the 1950s and remains a first-line treatment for reducing the frequency and severity of manic episodes. Its mechanism is not fully understood. Regular blood level monitoring is required because the therapeutic window is narrow.
-
-*Anxiolytics.* **Benzodiazepines** (diazepam, alprazolam) enhance GABA-mediated inhibition, producing rapid relief of acute anxiety. They are effective for short-term use but carry significant risks of tolerance, dependence, and — critically — dangerous respiratory depression in combination with opioids or alcohol (Chapter 5). Evidence-based treatment for anxiety disorders uses SSRIs or SNRIs combined with CBT, not long-term benzodiazepine maintenance.
-
-**Electroconvulsive Therapy (ECT)** is one of the most misrepresented treatments in all of medicine. The cultural image — from Ken Kesey's *One Flew Over the Cuckoo's Nest* — involves a patient being shocked awake while conscious and convulsing against their will. Modern ECT looks nothing like this: it is administered under general anesthesia with muscle relaxants; the patient feels nothing; the electrical event occurs in the brain without visible convulsion. Brief electrical stimulation is applied to the scalp, inducing a controlled seizure of approximately 30–60 seconds.
-
-ECT is used primarily for **severe, treatment-resistant MDD** — cases in which multiple medication trials have failed and the patient's condition is life-threatening. For this indication, it is among the most effective treatments available, with response rates substantially better than further pharmacotherapy alone; real ECT significantly outperforms both simulated ECT and medication in controlled trials (Geddes et al., 2003). The mechanism is unknown. The primary side effect is temporary memory disruption — typically short-term memory for events around the time of treatment — which resolves for most patients.
-
----
-
-## AI Connection: Diagnosis, Therapy, and What AI Cannot Replace
-
-**The parallel.** AI tools are increasingly applied in mental health contexts: chatbots for psychoeducation and support, symptom-pattern flagging systems, natural language processing of clinical notes. These applications borrow directly from clinical psychology — diagnostic reasoning, empathic responsiveness, cognitive restructuring. The parallels are real enough to be instructive about *both* AI's capabilities and psychology's actual mechanisms.
-
-![Figure 13.9: A two-column "Same Surface, Different Function" comparison of AI mental-health chatbots versus licensed therapists, contrasting availability, clinical continuity, nonverbal monitoring, accountability, confidentiality, and crisis response](../../docs/images/ch13/fig_ai_vs_therapist_comparison.png)
-*Figure 13.9. AI tools can generate therapy-shaped language, but they do not perform the same clinical function as a licensed therapist: no longitudinal relationship, no reliable reading of nonverbal cues, no risk assessment or referrals, no legal accountability or confidentiality obligations, no crisis response. Original figure.*
-
-**Diagnostic reasoning.** The same heuristic failures that affect human clinicians affect AI diagnostic tools. Anchoring — premature commitment to an initial diagnostic hypothesis — occurs when systems trained on symptom-label pairs learn to weight early input heavily. Premature closure — stopping the diagnostic search once a plausible explanation is found — follows. These are the heuristics from Chapter 9 operating at scale. An AI diagnostic tool is running something like System 1 inference over high-dimensional inputs; it is not immune to the biases that characterize fast thinking.
-
-**Confidentiality and data handling.** Therapists operate under strict legal obligations: protected health information (PHI) under HIPAA cannot be disclosed without consent. When a client enters symptoms, experiences, or diagnoses into an AI system — a chatbot, a mental health app, a general-purpose assistant — the legal protections around that information depend entirely on the platform and its data use policies, which vary widely. The clinical concern is that users may share sensitive clinical information with AI tools without understanding that this information is not protected the way therapist-disclosed information is. What counts as PHI, and who is covered by HIPAA, are questions worth raising explicitly with students who may already be using AI systems for emotional support.
-
-**Emotional contagion and AI sentiment mirroring.** AI systems trained on text that includes distress, crisis, and self-harm content may mirror that distress rather than contain it. This is not empathy — it is pattern completion. A model learns that distress cues are typically followed by commiserating language because that is what the training data shows. A trained therapist provides empathic presence *with affect regulation*; they receive the client's distress without being dysregulated by it, and that regulated responsiveness is part of what is therapeutically useful. A language model produces empathy-shaped text with no internal state at all. In a user experiencing acute distress, responses that amplify rather than contain may carry real clinical risk.
-
-**What AI cannot do: cognitive restructuring.** CBT's cognitive restructuring requires several things a language model does not have: a client who *holds beliefs* (not merely produces text consistent with beliefs), an affective investment in those beliefs (the *feeling* of being worthless, not just the proposition), a capacity to experience relief when a belief is revised, and a therapist who notices what the client is *not* saying, monitors nonverbal cues, and calibrates when to challenge and when to wait. AI produces restructuring-shaped language. It can generate the surface form of a Socratic dialogue. It cannot do what the dialogue is designed to do, because the mechanism — a question aimed at a believing, feeling person who will notice the dissonance between the question and their schema — requires a behaving organism with beliefs and affect.
-
-**What the breakdown tells us.** These limitations are not merely technical gaps that better models will close. They reflect what psychotherapy actually is: a relationship in which change is mediated by the client's emotional engagement, the developing alliance, and the client's capacity to internalize new ways of relating to their own experience. A system that produces the output of a therapeutic interaction without any of the underlying mechanisms is not doing therapy. Students should know this — not to dismiss AI as a tool for psychoeducation, access to information, or self-monitoring — but because treating it as a substitute for human therapeutic relationship carries risks that the surface appearance of the interaction does not reveal.
+> **Think About It:** A wellness app reports symptom improvement in a wait-list-controlled study. What additional comparison, safety, privacy, and follow-up evidence would you want before calling it a clinical treatment?
 
 ---
 
 ## Chapter Summary
 
-Psychological disorders are defined by the 3D criteria — deviance, distress, and dysfunction — and classified by the DSM-5-TR, which describes symptom clusters without specifying causes. The diathesis-stress model frames disorders as arising from pre-existing vulnerabilities interacting with environmental stressors; the biopsychosocial model situates those vulnerabilities in biological, psychological, and social context simultaneously.
+A diagnosis classifies a clinically significant pattern. It does not, by itself, establish cause, mechanism, prognosis, or treatment. The 3Ds—distress, dysfunction, and deviance—are useful preliminary questions, not a universal checklist. Trained diagnosis also considers disorder-specific criteria, duration, impairment, development, culture, medical and substance exclusions, and differential evidence.
 
-Anxiety disorders involve excessive fear or worry: phobias and OCD are maintained by avoidance and compulsive behavior; GAD involves generalized worry; panic disorder involves recurrent unexpected panic attacks; PTSD follows traumatic exposure. Major depressive disorder involves pervasive depressed mood or anhedonia, shaped by Beck's cognitive triad and disrupted dopaminergic anticipation circuitry. The serotonin-deficiency model is not well supported. Bipolar disorder involves cycles of mania and depression with substantial genetic loading. Schizophrenia involves positive symptoms (hallucinations, delusions) and negative symptoms (flat affect, avolition), with the dopamine hypothesis probably capturing part of a more complex picture.
+Diathesis-stress and biopsychosocial frameworks organize interacting vulnerabilities, demands, resources, and levels of explanation. They change probabilities; they do not calculate destiny. Maintenance loops are narrower still. Avoidance, compulsions, and behavioral withdrawal can produce short-term consequences that preserve some problems over time, but those loops are not universal origin stories.
 
-Personality disorders represent inflexible trait patterns; ASPD and BPD are most clinically significant in Cluster B. Neurodevelopmental disorders, including ADHD (dopaminergic executive function deficit) and ASD (social communication and Theory of Mind deficits), have onset in the developmental period.
+Representative disorders differ in pattern and course. Anxiety disorders involve persistent fear, worry, panic, or rituals; mood disorders require more than ordinary sadness or energy variation; schizophrenia includes positive, negative, cognitive, and functional disturbances; substance-use disorders concern a problematic pattern rather than substance exposure alone. Personality and neurodevelopmental diagnoses require pervasive or developmental evidence, not one trait or one brain finding.
 
-Psychological treatments include psychodynamic therapy (insight and relational patterns), client-centered therapy (unconditional positive regard, empathy, congruence), and CBT — the most empirically supported approach, with specific evidence for anxiety, depression, OCD, and PTSD; DBT extends CBT for BPD. Biological treatments include SSRIs and other antidepressants (effective, mechanism partly unknown), antipsychotics (positive symptoms of schizophrenia), lithium (bipolar disorder), and ECT — an effective, often misunderstood treatment for severe treatment-resistant MDD. The therapeutic alliance is the most robust predictor of outcome across all forms of psychotherapy.
-
-A pattern recurs across most of the disorders in this chapter: an ordinarily adaptive process — threat detection, mood regulation, memory consolidation, social calibration — becomes rigid, overgeneralized, or stuck to conditions that no longer apply, and treatment works largely by helping that same system revise rather than replacing it with something else. This does not describe every condition in this chapter equally well — psychotic-spectrum and neurodevelopmental disorders involve more than a dial turned up on a normal process — but even there, the underlying mechanisms are recognizably psychological and biological, not evidence of a categorically different kind of mind.
-
----
-
-## Key Terms
-
-- **3D criteria** — Deviance, distress, and dysfunction: the three overlapping criteria used to define psychological disorder
-- **DSM-5-TR** — *Diagnostic and Statistical Manual of Mental Disorders*, Fifth Edition, Text Revision; the primary diagnostic classification system in the U.S.
-- **Diathesis-stress model** — Framework proposing that disorder arises from the interaction of a pre-existing vulnerability (diathesis) with environmental stressors
-- **Biopsychosocial model** — Framework attributing disorder to simultaneous biological, psychological, and social factors
-- **Generalized Anxiety Disorder (GAD)** — Persistent, excessive, difficult-to-control worry across multiple domains
-- **Panic disorder** — Recurrent unexpected panic attacks with persistent concern about future attacks
-- **Major Depressive Disorder (MDD)** — Syndrome involving depressed mood or anhedonia with associated cognitive, somatic, and motivational symptoms for at least two weeks
-- **Cognitive triad** — Beck's model of depression: negative schemas about the self, world, and future
-- **Anhedonia** — Reduced capacity to experience pleasure; a core symptom of depression and schizophrenia
-- **Bipolar I disorder** — Mood disorder involving at least one full manic episode
-- **Schizophrenia** — Psychotic disorder with positive symptoms (hallucinations, delusions, disorganized behavior) and negative symptoms (flat affect, alogia, avolition)
-- **Antisocial Personality Disorder (ASPD)** — Pervasive pattern of disregard for others' rights, deceitfulness, impulsivity, and lack of remorse
-- **Borderline Personality Disorder (BPD)** — Pattern of unstable relationships, self-image, and affect with marked impulsivity
-- **ADHD** — Neurodevelopmental disorder characterized by persistent inattention, hyperactivity-impulsivity, or both
-- **Autism Spectrum Disorder (ASD)** — Neurodevelopmental disorder with deficits in social communication and restricted, repetitive behaviors
-- **Cognitive restructuring** — CBT technique of identifying, examining, and revising automatic negative thoughts
-- **Exposure therapy** — Behavioral technique involving graduated contact with feared stimuli to permit extinction of conditioned fear
-- **Dialectical Behavior Therapy (DBT)** — CBT variant for BPD integrating change-oriented and acceptance-based skills
-- **Therapeutic alliance** — The collaborative, trusting relationship between therapist and client; the strongest cross-therapy predictor of outcome
-- **Electroconvulsive therapy (ECT)** — Biological treatment for severe, treatment-resistant MDD involving brief electrical stimulation of the brain under general anesthesia
-- **Dopamine hypothesis (schizophrenia)** — Theory that excess mesolimbic dopaminergic activity underlies positive symptoms; refined to include prefrontal dopamine deficits and glutamatergic involvement
-- **Sickness behavior** — An evolved, centrally organized behavioral program (withdrawal, fatigue, reduced appetite, anhedonia) that conserves resources for immune defense during infection; shares neuroimmune machinery with depression-like states
-- **Just-world hypothesis** — The belief that the world is basically fair and people generally get what they deserve; a social mechanism that generates victim-blaming and self-stigma around mental illness
-- **Memory reconsolidation** — The process by which a retrieved, consolidated memory briefly becomes labile before restabilizing, creating a window in which it can be updated rather than merely re-stored
-
----
-
-## Review Questions
-
-1. A college student spends two hours every morning checking that doors are locked, appliances are off, and windows are closed before she can leave her apartment. She is exhausted and late to class daily, and recognizes the behavior as excessive. Apply the 3D criteria. Does this pattern constitute a psychological disorder?
-
-   <details><summary>Discussion</summary>All three D criteria are met. Deviance: a two-hour checking routine before leaving home departs markedly from culturally typical behavior. Distress: she recognizes the behavior as excessive and is exhausted by it — significant personal suffering. Dysfunction: she is consistently late to class, meaning occupational/academic functioning is impaired. The pattern is consistent with Obsessive-Compulsive Disorder — obsessive fears (something will go wrong) maintained by compulsive checking that provides short-term relief but prevents extinction. Note: meeting criteria does not mean the clinician's work is done; a full evaluation would assess duration, rule out medical causes, and consider comorbidities.</details>
-
-2. Two people experience the same car accident. One develops PTSD; the other does not. What framework best explains this, and what factors would it predict matter?
-
-   <details><summary>Discussion</summary>The diathesis-stress model: both experienced the same stressor, but the one who developed PTSD likely had a higher diathesis — greater biological vulnerability (amygdala reactivity, HPA axis sensitivity), prior trauma history, or less social support in the aftermath. The model predicts that the same stressor produces different outcomes depending on pre-existing vulnerability, and that greater vulnerability requires less stress to trigger disorder. Social support after the trauma (a buffer) and prior trauma (an amplifier) are strong moderators of PTSD risk in the empirical literature.</details>
-
-3. Describe schizophrenia's positive and negative symptoms. Why does the distinction matter clinically?
-
-   <details><summary>Discussion</summary>Positive symptoms are excesses — hallucinations, delusions, disorganized thinking and behavior. Negative symptoms are deficits — flat affect, alogia (reduced speech), avolition (reduced motivation), anhedonia. The distinction matters clinically because they respond differently to treatment: antipsychotic medications reduce positive symptoms more reliably than negative symptoms. Negative symptoms are better predictors of long-term functional outcome — they determine how well a person can work, maintain relationships, and care for themselves — yet are the harder target for current pharmacotherapy.</details>
-
-4. What did Rosenhan (1973) conclude, and why should we treat that conclusion with some caution?
-
-   <details><summary>Discussion</summary>Rosenhan concluded that it is impossible for psychiatric institutions to distinguish sane from insane people, and that diagnostic labels, once applied, structure all subsequent clinical perception. We should treat this with caution because Cahalan (2019) raised serious questions about the study's data integrity — Rosenhan's notes contained discrepancies, and several pseudopatients' identities and experiences could not be independently verified. The study cannot be treated as clean experimental evidence for the strength of claim Rosenhan made. The broader phenomenon — that diagnostic labels influence clinical perception — is supported by other evidence (e.g., Temerlin, 1968), but the specific study that made this famous has a data problem.</details>
-
-5. A severely depressed patient has not responded to two SSRI trials and one SNRI trial. Their psychiatrist recommends ECT. What should the patient know about what ECT is and what the evidence shows?
-
-   <details><summary>Discussion</summary>Modern ECT has nothing in common with the image from *One Flew Over the Cuckoo's Nest*. It is administered under general anesthesia with muscle relaxants; the patient feels nothing and there are no visible convulsive movements. Brief electrical stimulation induces a controlled brain seizure (~30–60 seconds). For severe, treatment-resistant MDD, ECT is among the most effective available treatments — controlled trials show it significantly outperforms both simulated ECT and continued pharmacotherapy (Geddes et al., 2003). The primary side effect is temporary memory disruption around the time of treatment, which resolves for most patients. The mechanism is unknown. The three failed medication trials in this scenario are exactly the indication for which the evidence base is strongest.</details>
-
-6. What is the Dodo Bird Verdict, and what does it imply about choosing a therapy?
-
-   <details><summary>Discussion</summary>The Dodo Bird Verdict refers to the finding that different bona fide psychotherapies, when compared in controlled trials, tend to produce roughly similar outcomes across disorders. Luborsky et al. (1975) named this after Alice's pronouncement that "all have won and all must have prizes." The implication is that common factors — the therapeutic alliance, empathy, warmth, a credible rationale for change — account for a large portion of therapeutic effectiveness across approaches. This does not mean technique is irrelevant: exposure-based CBT for anxiety disorders consistently outperforms other approaches for that specific indication, and DBT was specifically designed for BPD. The practical implication is that the alliance is always worth attending to, and for anxiety disorders specifically, technique matters more than average.</details>
+Treatment is a matching problem. Psychotherapy alliance predicts outcome, while condition-specific techniques also matter. Medication and ECT require explicit tradeoffs among benefit, risk, urgency, preference, and monitoring. Treatment response does not prove a simple etiology. Mental-health AI must likewise be evaluated by product type, evidence, privacy, governance, and clinical integration.
 
 ---
 
@@ -351,94 +278,160 @@ A pattern recurs across most of the disorders in this chapter: an ordinarily ada
 
 | This chapter | Connects to | How |
 |---|---|---|
-| Diathesis-stress model | Ch. 3 (Neuroscience) | Biological vulnerabilities — amygdala reactivity, HPA axis, dopamine circuits — are the biological side of the diathesis |
-| Phobia development and maintenance | Ch. 7 (Learning) | Classical conditioning acquires the fear; negative reinforcement maintains avoidance; exposure therapy = extinction |
-| Anchoring and diagnostic errors | Ch. 9 (Thinking) | Diagnostic anchoring and premature closure are the same heuristic failures that affect human judgment generally |
-| PTSD and memory | Ch. 8 (Memory) | Hippocampal contextualization failure under threat arousal; dual representation theory of intrusive memory; reconsolidation as the mechanism behind EMDR/exposure |
-| Dopamine and depression/ADHD | Ch. 7, Ch. 3 | Reward prediction error; dopaminergic mechanisms in motivation and attention |
-| Sickness behavior and depression | Ch. 3 (Neuroscience), Ch. 12 (Emotion, Stress & Coping) | Inflammatory cytokines (IL-1β, TNF-α, IL-6) connecting chronic stress/allostatic load to depression-like states |
-| Theory of Mind and ASD | Ch. 10 (Lifespan Development) | False belief task, social cognition development |
-| Therapeutic alliance | Ch. 11 (Social Psychology) | Rogers's UPR already introduced; alliance as an interpersonal relationship |
-| Just-world hypothesis and stigma | Ch. 11 (Social Psychology) | Just-world hypothesis as the social mechanism generating and sustaining stigma and self-stigma toward mental illness |
-| ASPD and Phineas Gage | Ch. 3 (Neuroscience) | vmPFC damage and disrupted social-emotional regulation |
-| AI diagnostic tools / therapy chatbots | AI Connection (this chapter) | Heuristic failures in AI diagnostic systems; limits of restructuring-shaped language without a believing, feeling client |
+| Diagnosis versus explanation | Chapter 2 | Reliability, validity, measurement, and inference are different questions |
+| Neural and genetic vulnerability | Chapter 3 | Biological factors influence probability without becoming one-region or one-chemical explanations |
+| Panic, substances, and altered states | Chapter 5 | Bodily state and substances can mimic or modify psychological symptoms |
+| Avoidance and compulsions | Chapter 7 | Negative reinforcement can maintain behavior through immediate relief |
+| PTSD and depression | Chapter 8 | Memory is constructive; retrieval and context matter without making one memory mechanism universal |
+| Diagnostic anchoring | Chapter 9 | Labels can guide attention and produce premature closure |
+| Neurodevelopment | Chapter 10 | Developmental timing and trajectories matter for ADHD and autism |
+| Stigma, alliance, and support | Chapter 11 | Social judgment and relationships influence help-seeking and treatment |
+| Chronic demands and coping | Chapter 12 | Stress and coping alter risk and resources without defining a disorder |
 
 ---
 
-## References
+## Review Questions
 
-Abramson, L. Y., Seligman, M. E. P., & Teasdale, J. D. (1978). Learned helplessness in humans: Critique and reformulation. *Journal of Abnormal Psychology*, *87*(1), 49–74. [*not independently verified this session]
+1. **Multiple choice.** A student reports three days of intense worry before a major licensing exam but continues sleeping, attending class, and studying. Which conclusion is best supported?
 
-American Psychiatric Association. (2022). *Diagnostic and statistical manual of mental disorders* (5th ed., text rev.). American Psychiatric Association Publishing. [*not independently verified this session]
+   a. The student has generalized anxiety disorder because the worry is excessive.  
+   b. The student has a psychological disorder because the experience is distressing.  
+   c. The description indicates distress, but duration, breadth, impairment, and context do not establish a disorder.  
+   d. No clinical concern could ever be justified unless all three Ds are present.
 
-Baron-Cohen, S., Leslie, A. M., & Frith, U. (1985). Does the autistic child have a "theory of mind"? *Cognition*, *21*(1), 37–46. [*not independently verified this session]
+   <details><summary>Answer and rationale</summary><strong>c.</strong> Distress is real evidence, but a short, context-linked episode without demonstrated impairment does not establish generalized anxiety disorder. The 3Ds initiate questions; they are not a required intersection or a self-diagnostic rule.</details>
 
-Beck, A. T., Rush, A. J., Shaw, B. F., & Emery, G. (1979). *Cognitive therapy of depression*. Guilford Press. [*not independently verified this session]
+2. **Open response.** A clinician assigns a reliable diagnosis after a structured interview. Explain three questions that remain unanswered by the diagnosis alone.
 
-Blumberg, M. S. (2010). Beyond dreams: Do sleep-related movements contribute to brain development? *Frontiers in Neurology*, *1*, 140. [*not independently verified this session — verify paper title, journal, and volume before publication]
+   <details><summary>Model answer</summary>The diagnosis does not by itself establish etiology, identify which biological or psychosocial factors are most relevant for this person, or determine the best treatment. Prognosis, strengths, risks, preferences, access, and medical or substance contributors also require additional evidence.</details>
 
-Brewin, C. R., Dalgleish, T., & Joseph, S. (1996). A dual representation theory of posttraumatic stress disorder. *Psychological Review*, *103*(4), 670–686.
+3. **Multiple choice.** Two people experience similar job loss. One develops major depression and the other does not. Which statement best represents diathesis-stress reasoning?
 
-Cahalan, S. (2019). *The great pretender: The undercover mission that changed our understanding of madness*. Grand Central Publishing. [*not independently verified this session]
+   a. The person who developed depression must have had a genetic defect.  
+   b. Vulnerabilities, stressors, supports, and prior history can interact differently; the outcome does not reveal one hidden cause.  
+   c. Both people experienced the same stress score, so the difference is diagnostic error.  
+   d. The person without depression used the correct coping style.
 
-Cardno, A. G., & Gottesman, I. I. (2000). Twin studies of schizophrenia: From bow-and-arrow concordances to Star Wars Mx and functional genomics. *American Journal of Medical Genetics*, *97*(1), 12–17.
+   <details><summary>Answer and rationale</summary><strong>b.</strong> The framework is probabilistic. The outcome alone cannot identify a particular vulnerability, and the two people’s actual stress exposure and resources may also differ.</details>
 
-Chen, Y.-R., Hung, K.-W., Tsai, J.-C., Chu, H., Chung, M.-H., et al. (2014). Efficacy of eye-movement desensitization and reprocessing for patients with posttraumatic-stress disorder: A meta-analysis of randomized controlled trials. *PLoS ONE*, *9*(8), e103676.
+4. **Open response.** Explain how avoidance can be negatively reinforced. Then distinguish a maintenance explanation from an origin explanation.
 
-Cipriani, A., Furukawa, T. A., Salanti, G., Chaimani, A., Atkinson, L. Z., Ogawa, Y., … & Geddes, J. R. (2018). Comparative efficacy and acceptability of 21 antidepressant drugs for the acute treatment of adults with major depressive disorder. *The Lancet*, *391*(10128), 1357–1366. [*not independently verified this session]
+   <details><summary>Model answer</summary>Leaving a feared situation removes anxiety, so escape becomes more likely next time. That explains one process that can keep the pattern going. It does not show how the fear first developed; conditioning, temperament, trauma, modeling, health, and context may contribute to origin.</details>
 
-Cleckley, H. (1941). *The mask of sanity: An attempt to clarify some issues about the so-called psychopathic personality*. Mosby. [*not independently verified this session]
+5. **Multiple choice.** Which statement about persistent depressive disorder is most accurate?
 
-Craddock, N., & Sklar, P. (2013). Genetics of bipolar disorder. *The Lancet*, *381*(9878), 1654–1662.
+   a. It can never include a major depressive episode.  
+   b. It is diagnosed whenever sadness lasts longer than two weeks.  
+   c. It involves a long-duration depressive pattern, and major depressive episodes may occur during that course.  
+   d. It is the mild phase of bipolar II disorder.
 
-Dantzer, R., & Kelley, K. W. (2007). Twenty years of research on cytokine-induced sickness behavior. *Brain, Behavior, and Immunity*, *21*(2), 153–160.
+   <details><summary>Answer and rationale</summary><strong>c.</strong> Persistent depressive disorder concerns chronic course. It is not defined by never reaching major-depression intensity, and it is not a bipolar diagnosis.</details>
 
-Ellis, A. (1962). *Reason and emotion in psychotherapy*. Lyle Stuart. [*not independently verified this session]
+6. **Open response.** Why does antipsychotic response not prove that schizophrenia is simply caused by excess dopamine?
 
-Flückiger, C., Del Re, A. C., Wampold, B. E., & Horvath, A. O. (2018). The alliance in adult psychotherapy: A meta-analytic synthesis. *Psychotherapy*, *55*(4), 316–340.
+   <details><summary>Model answer</summary>A treatment can alter a pathway that reduces symptoms without reversing the original cause. Dopamine findings are strongest for parts of psychosis and do not account fully for negative symptoms, cognition, development, glutamate, stress, or heterogeneity across people.</details>
 
-Geddes, J., Carney, S., Cowen, P., Goodwin, G., Rogers, R., Dearness, K., … & Scott, A. (2003). Efficacy and safety of electroconvulsive therapy in depressive disorders: A systematic review and meta-analysis. *The Lancet*, *361*(9360), 799–808.
+7. **Multiple choice.** A patient taking prescribed opioids after surgery develops tolerance and withdrawal but follows the prescription and shows no impaired control, hazardous use, or continued use despite harm. What follows?
 
-Hare, R. D. (1991). *The Hare Psychopathy Checklist–Revised*. Multi-Health Systems. [*not independently verified this session]
+   a. Tolerance automatically establishes opioid-use disorder.  
+   b. Withdrawal automatically establishes opioid-use disorder.  
+   c. Physiological adaptation is present, but the information does not by itself establish a substance-use disorder.  
+   d. Prescribed substances cannot contribute to a substance-use disorder.
 
-Hart, B. L. (1988). Biological basis of the behavior of sick animals. *Neuroscience & Biobehavioral Reviews*, *12*(2), 123–137.
+   <details><summary>Answer and rationale</summary><strong>c.</strong> Tolerance and withdrawal can occur during medically supervised use. SUD diagnosis depends on the broader behavioral and functional pattern.</details>
 
-Hofmann, S. G., Asnaani, A., Vonk, I. J., Sawyer, A. T., & Fang, A. (2012). The efficacy of cognitive behavioral therapy: A review of meta-analyses. *Cognitive Therapy and Research*, *36*(5), 427–440. [*not independently verified this session]
+8. **Open response.** A client with OCD is considering supportive counseling or exposure and response prevention. Explain how both alliance and technique should enter the decision.
 
-Lerner, M. J. (1980). *The belief in a just world: A fundamental delusion*. Plenum Press.
+   <details><summary>Model answer</summary>A collaborative, trustworthy alliance can support engagement in any psychotherapy. OCD also has condition-specific evidence for exposure and response prevention. The accurate conclusion is not that relationship replaces technique or that technique makes relationship irrelevant; both affect whether an indicated treatment is delivered and sustained.</details>
 
-Linehan, M. M. (1993). *Cognitive-behavioral treatment of borderline personality disorder*. Guilford Press. [*not independently verified this session]
+9. **Multiple choice.** Which statement about ECT is most accurate?
 
-Luborsky, L., Singer, B., & Luborsky, L. (1975). Comparative studies of psychotherapies: Is it true that "everyone has won and all must have prizes"? *Archives of General Psychiatry*, *32*(8), 995–1008. [*not independently verified this session]
+   a. It is administered while the patient is awake so clinicians can monitor memory.  
+   b. It is used only after every medication has failed and has no role in urgent presentations.  
+   c. It can be highly effective for selected severe conditions, but consent must include variable cognitive and autobiographical-memory risks.  
+   d. Any memory disruption reliably resolves within days.
 
-Moncrieff, J., Cooper, R. E., Stockmann, T., Amendola, S., Hengartner, M. P., & Horowitz, M. A. (2022). The serotonin theory of depression: A systematic umbrella review of the evidence. *Molecular Psychiatry*, *27*(8), 3369–3380.
+   <details><summary>Answer and rationale</summary><strong>c.</strong> Modern ECT uses anesthesia and muscle relaxation. It may be considered in severe or urgent cases, and memory outcomes vary; they should not be guaranteed to be brief.</details>
 
-Nader, K., Schafe, G. E., & LeDoux, J. E. (2000). Fear memories require protein synthesis in the amygdala for reconsolidation after retrieval. *Nature*, *406*(6797), 722–726.
+10. **Open response.** A company calls its general-purpose chatbot “AI therapy.” List four pieces of evidence or governance information you would need before evaluating that claim.
 
-Rogers, C. R. (1951). *Client-centered therapy: Its current practice, implications and theory*. Houghton Mifflin. [*not independently verified this session]
+    <details><summary>Model answer</summary>Relevant questions include the intended population and function, comparison condition and outcomes in trials, adverse-event and crisis procedures, privacy and data-use rules, clinician oversight, regulatory status, accountability for errors, and whether findings generalize beyond the tested product.</details>
 
-Rogers, C. R. (1957). The necessary and sufficient conditions of therapeutic personality change. *Journal of Consulting Psychology*, *21*(2), 95–103.
+---
 
-Rosenhan, D. L. (1973). On being sane in insane places. *Science*, *179*(4070), 250–258. [*not independently verified this session]
+## Key Terms
 
-Seeman, P., Lee, T., Chau-Wong, M., & Wong, K. (1976). Antipsychotic drug doses and neuroleptic/dopamine receptors. *Nature*, *261*(5562), 717–719.
-
-Shedler, J. (2010). The efficacy of psychodynamic psychotherapy. *American Psychologist*, *65*(2), 98–109. [*not independently verified this session]
-
-Stoner, R., Chow, M. L., Boyle, M. P., Sunkin, S. M., Mouton, P. R., Roy, S., … Courchesne, E. (2014). Patches of disorganization in the neocortex of children with autism. *New England Journal of Medicine*, *370*(13), 1209–1219. [*not independently verified this session]
-
-Tang, G., Gudsnuk, K., Kuo, S.-H., Cotrina, M. L., Rosoklija, G., Sosunov, A., … Bhatt, D. L. (2014). Loss of mTOR-dependent macroautophagy causes autistic-like synaptic pruning deficits. *Neuron*, *83*(5), 1124–1134. [*not independently verified this session — verify full author list and page range]
-
-Hazlett, H. C., Gu, H., Munsell, B. C., Kim, S. H., Styner, M., Wolff, J. J., … Piven, J. (2017). Early brain development in infants at high risk for autism spectrum disorder. *Nature*, *542*(7641), 348–351. [*not independently verified this session]
-
-Substance Abuse and Mental Health Services Administration. (2022). *Key substance use and mental health indicators in the United States: Results from the 2021 National Survey on Drug Use and Health*. SAMHSA. [*not independently verified this session]
-
-Temerlin, M. K. (1968). Suggestion effects in psychiatric diagnosis. *Journal of Nervous and Mental Disease*, *147*(4), 349–353.
+- **Antipsychotic medication** — Medication used to reduce psychotic symptoms; drugs differ in benefits, adverse effects, and monitoring needs.
+- **Biopsychosocial model** — Framework organizing interacting biological, psychological, and social influences.
+- **Case formulation** — Provisional account of how relevant vulnerabilities, stressors, strengths, and maintaining processes may interact for a particular person.
+- **Cognitive-behavioral therapy (CBT)** — Family of treatments targeting relationships among cognition, behavior, emotion, physiology, and context.
+- **Diagnostic overshadowing** — Misattributing a new symptom to an existing psychiatric or disability label instead of adequately investigating alternatives.
+- **Diagnostic reliability** — Degree to which clinicians or assessments agree on a classification.
+- **Diagnostic validity** — Degree to which a classification captures a meaningful phenomenon for its intended purpose.
+- **Diathesis-stress model** — Framework in which vulnerabilities and environmental demands interact probabilistically.
+- **Dialectical behavior therapy (DBT)** — Structured treatment integrating acceptance and change strategies, behavioral analysis, skills, and coaching.
+- **DSM-5-TR** — Current text revision of the principal U.S. manual for classifying mental disorders.
+- **Electroconvulsive therapy (ECT)** — Treatment using a controlled seizure under anesthesia for selected severe psychiatric conditions.
+- **Exposure therapy** — Treatment involving structured contact with feared cues to support new learning without habitual avoidance.
+- **Maintenance process** — Process that helps a problem continue, which may differ from the process that originally produced it.
+- **Negative reinforcement** — Strengthening behavior by removing or reducing an aversive state.
+- **Positive and negative symptoms** — In schizophrenia, experiences added to functioning versus capacities reduced.
+- **Substance-use disorder (SUD)** — Clinically significant pattern of impaired control, continued use despite harm, or related functional problems.
+- **Therapeutic alliance** — Collaborative working relationship involving bond, goals, and tasks.
+- **Three Ds** — Distress, dysfunction, and deviance; introductory questions rather than a formal universal diagnostic checklist.
 
 ---
 
 ## Further Reading
 
-- Cahalan, S. (2019). *The great pretender*. Grand Central Publishing. — Investigative account of the Rosenhan study and what it tells us about psychiatric diagnosis and its history.
-- Linehan, M. M. (2020). *Building a life worth living: A memoir*. Random House. — Linehan's account of developing DBT, including her own experience as a patient.
-- Sapolsky, R. M. (2017). *Behave: The biology of humans at our best and worst*. Penguin. — Chapter 14 covers the biology of psychiatric conditions within his broader framework.
+- American Psychiatric Association. [About DSM-5-TR](https://www.psychiatry.org/psychiatrists/practice/dsm/about-dsm). — A concise official explanation of criteria sets, clinical judgment, differential diagnosis, and the descriptive text.
+- Cahalan, S. (2019). *The Great Pretender*. Grand Central Publishing. — Investigative history of Rosenhan’s study and the risks of building a field-wide conclusion on a famous but disputed account.
+- Linehan, M. M. (2020). *Building a Life Worth Living*. Random House. — Memoir and history of the development of DBT.
+- National Institute on Drug Abuse. [Treatment and Recovery](https://nida.nih.gov/publications/drugs-brains-behavior-science-addiction/treatment-recovery). — Evidence-calibrated overview of treatment, recurrence, and recovery.
+- U.S. Department of Health and Human Services. [Resources for Mobile Health Apps Developers](https://www.hhs.gov/hipaa/for-professionals/special-topics/health-apps/index.html). — Explains why privacy obligations depend on who operates a health tool and how it is connected to covered care.
+
+---
+
+## References
+
+American Psychiatric Association. (2022). *Diagnostic and statistical manual of mental disorders* (5th ed., text rev.). American Psychiatric Association Publishing.
+
+Barth, J., Munder, T., Gerger, H., Nüesch, E., Trelle, S., Znoj, H., Jüni, P., & Cuijpers, P. (2013). Comparative efficacy of seven psychotherapeutic interventions for patients with depression: A network meta-analysis. *PLoS Medicine, 10*(5), e1001454. https://doi.org/10.1371/journal.pmed.1001454
+
+Beck, A. T., Rush, A. J., Shaw, B. F., & Emery, G. (1979). *Cognitive therapy of depression*. Guilford Press.
+
+Brewin, C. R., Dalgleish, T., & Joseph, S. (1996). A dual representation theory of posttraumatic stress disorder. *Psychological Review, 103*(4), 670–686. https://doi.org/10.1037/0033-295X.103.4.670
+
+Cahalan, S. (2019). *The great pretender: The undercover mission that changed our understanding of madness*. Grand Central Publishing.
+
+Cardno, A. G., & Gottesman, I. I. (2000). Twin studies of schizophrenia: From bow-and-arrow concordances to Star Wars Mx and functional genomics. *American Journal of Medical Genetics, 97*(1), 12–17.
+
+Cipriani, A., Furukawa, T. A., Salanti, G., Chaimani, A., Atkinson, L. Z., Ogawa, Y., et al. (2018). Comparative efficacy and acceptability of 21 antidepressant drugs for the acute treatment of adults with major depressive disorder: A systematic review and network meta-analysis. *The Lancet, 391*(10128), 1357–1366. https://doi.org/10.1016/S0140-6736(17)32802-7
+
+Craske, M. G., Treanor, M., Conway, C. C., Zbozinek, T., & Vervliet, B. (2014). Maximizing exposure therapy: An inhibitory learning approach. *Behaviour Research and Therapy, 58*, 10–23. https://doi.org/10.1016/j.brat.2014.04.006
+
+Flückiger, C., Del Re, A. C., Wampold, B. E., & Horvath, A. O. (2018). The alliance in adult psychotherapy: A meta-analytic synthesis. *Psychotherapy, 55*(4), 316–340. https://doi.org/10.1037/pst0000172
+
+Heinz, M. V., Mackin, D. M., Trudeau, B. M., Bhattacharya, S., & Wang, Y. (2025). Randomized trial of a generative AI chatbot for mental health treatment. *NEJM AI*. https://doi.org/10.1056/AIoa2400802
+
+Howes, O. D., & Kapur, S. (2009). The dopamine hypothesis of schizophrenia: Version III—the final common pathway. *Schizophrenia Bulletin, 35*(3), 549–562. https://doi.org/10.1093/schbul/sbp006
+
+Linehan, M. M. (1993). *Cognitive-behavioral treatment of borderline personality disorder*. Guilford Press.
+
+Moncrieff, J., Cooper, R. E., Stockmann, T., Amendola, S., Hengartner, M. P., & Horowitz, M. A. (2022). The serotonin theory of depression: A systematic umbrella review of the evidence. *Molecular Psychiatry, 27*(8), 3369–3380. https://doi.org/10.1038/s41380-022-01661-0
+
+National Institute for Health and Care Excellence. (2022). *Depression in adults: Treatment and management (NG222).* https://www.nice.org.uk/guidance/ng222
+
+National Institute of Mental Health. (2024). *Mental illness.* https://www.nimh.nih.gov/health/statistics/mental-illness
+
+National Institute on Drug Abuse. (2020). *Treatment and recovery.* https://nida.nih.gov/publications/drugs-brains-behavior-science-addiction/treatment-recovery
+
+Regier, D. A., Narrow, W. E., Clarke, D. E., Kraemer, H. C., Kuramoto, S. J., Kuhl, E. A., & Kupfer, D. J. (2013). DSM-5 field trials in the United States and Canada, Part II: Test-retest reliability of selected categorical diagnoses. *American Journal of Psychiatry, 170*(1), 59–70. https://doi.org/10.1176/appi.ajp.2012.12070999
+
+Rogers, C. R. (1957). The necessary and sufficient conditions of therapeutic personality change. *Journal of Consulting Psychology, 21*(2), 95–103. https://doi.org/10.1037/h0045357
+
+Shefer, G., Henderson, C., Howard, L. M., Murray, J., & Thornicroft, G. (2014). Diagnostic overshadowing and other challenges involved in the diagnostic process of patients with mental illness who present in emergency departments with physical symptoms: A qualitative study. *PLoS ONE, 9*(11), e111682. https://doi.org/10.1371/journal.pone.0111682
+
+U.S. Department of Health and Human Services. (2026). *Resources for mobile health apps developers.* https://www.hhs.gov/hipaa/for-professionals/special-topics/health-apps/index.html
+
+World Health Organization. (2023). *Antipsychotic medicines for psychotic disorders.* https://www.who.int/teams/mental-health-and-substance-use/treatment-care/mental-health-gap-action-programme/evidence-centre/psychosis-and-bipolar-disorders/antipsychotic-medicines-for-psychotic-disorders

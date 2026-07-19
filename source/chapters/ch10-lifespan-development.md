@@ -1,24 +1,22 @@
 # Chapter 10: Lifespan Development
 
-> Drafting history & provenance: see `_provenance/ch10-lifespan-development.md` (and git log).
+> Canonical revised source. The pre-revision chapter is preserved in `_archive/ch10-lifespan-development.md`; drafting history and provenance remain in `_provenance/ch10-lifespan-development.md`.
 
 ---
 
 ## Misconception Opener
 
-A newborn cannot hold a conversation, solve a math problem, or reflect on her own motivations. An adult can do all three. The natural conclusion — the one most people carry around without examining — is that development is essentially a story of addition: children begin with a few basic mental tools, and they accumulate more with age until the adult set is complete.
+A newborn cannot hold a conversation, solve a math problem, or explain why she is angry. An adult can do all three. The natural conclusion is that development is mainly a story of addition: children begin with a few basic mental tools, then accumulate facts and skills until the adult set is complete.
 
-That picture is wrong in an important way, and the correction turns out to be one of developmental psychology's most useful insights. Children don't just know *less* than adults. At certain ages they think *differently* — using mental structures that lead reliably to conclusions that would strike an adult as strange, not because the child lacks facts, but because the child's reasoning follows different rules. A 4-year-old who watches water poured from a short, wide glass into a tall, thin one, and sincerely concludes there is now *more* water, is not being inattentive. She is reasoning as a 4-year-old reasons, which is genuinely not the same as how a 7-year-old reasons — not just quantitatively less, but qualitatively different. The child is not a defective adult; she is at a different stage of cognitive construction.
+That picture is wrong in an important way. Children do not merely know *less* than adults. The representations, strategies, and cognitive tools available to them change with development. Pour water from a short, wide glass into a tall, thin one and many 4-year-olds will insist that the tall glass now contains more. The child is not careless, and she is not a defective adult. She is solving the problem with the tools currently available to her—centering on height while failing to coordinate height and width.
 
-This matters beyond being an interesting fact. If children's thinking is qualitatively different at different ages, then how we teach, parent, and design environments for children must be calibrated to where they actually are — not to a scaled-down version of where we want them to end up.
+Piaget interpreted changes like this as evidence for broad cognitive stages. Later research shows a more complicated pattern: some changes look stage-like, others develop gradually, and performance often depends on the task. The durable lesson is not that every child switches mental operating systems on a fixed birthday. It is that development changes how a person represents and solves a problem. Teaching and parenting work better when they meet the learner who is actually present—not a smaller version of the adult we expect later.
 
 ---
 
 ## Where This Fits
 
-Why does it take a human being so much longer to grow up than any other animal on the planet — and why did evolution build it that way? That question sits underneath the whole chapter, and it's what gives the three organizing tensions below their teeth, rather than leaving them as truisms every student already half-suspects.
-
-Development is the thread that connects everything else in this book. The biological machinery introduced in Chapter 3 builds itself out over years. The learning mechanisms from Chapter 7 shape behavior from birth onward. The memory systems covered in Chapter 8 are not fully online at birth — the hippocampal connections that support explicit autobiographical memory complete their development only after infancy, which is one reason most adults have few reliable autobiographical memories from the first years of life. And the social behavior covered in Chapter 11 has its roots in the very first attachment relationships of infancy. This chapter traces the arc of that construction project from before birth through late adulthood, organizing the story around three recurring questions: How do nature and nurture interact? Does development proceed in discrete stages or gradually? And which aspects of who we are remain stable across the lifespan?
+Why do humans take so long to grow up? That question runs underneath this chapter. The biological machinery from Chapter 3 develops for years; the learning processes from Chapter 7 tune it; the memory systems from Chapter 8 become usable on different schedules; and the social behavior in Chapter 11 grows from early relationships and increasingly complex social worlds. We will follow that construction process from before birth through late adulthood using three recurring tensions: How do biology and experience interact? Does change occur gradually or in stages? And what remains stable while the person changes?
 
 ---
 
@@ -26,441 +24,479 @@ Development is the thread that connects everything else in this book. The biolog
 
 By the end of this chapter, students should be able to:
 
-1. **Distinguish** cross-sectional from longitudinal research designs and explain what cohort effects are.
-2. **Explain** how teratogens affect prenatal development, including the role of timing and dose.
-3. **Describe** the four stages of Piaget's theory, including their defining milestones, and evaluate major criticisms of the stage model.
-4. **Contrast** Piaget's and Vygotsky's accounts of cognitive development, and define the zone of proximal development.
-5. **Summarize** Ainsworth's attachment classifications and explain how early attachment relates to later development.
-6. **Distinguish** moral motivation from moral reasoning, using toddler helping, infant social evaluation, and Kohlberg's framework as examples.
-7. **Explain** why identity formation is a central developmental task of adolescence, and describe why Erikson's broader stage theory is useful but limited.
-8. **Explain** how fluid and crystallized intelligence change across adulthood and what drives those changes.
+1. **Distinguish** cross-sectional from longitudinal research and explain cohort effects, attrition, and practice effects.
+2. **Explain** how timing, dose, biology, and context shape the effects of prenatal teratogens.
+3. **Compare** Piaget's active-construction account with Vygotsky's socially supported account, including assimilation, accommodation, stages, the ZPD, and scaffolding.
+4. **Interpret** attachment classifications as probabilistic relationship patterns measured during reunion—not fixed traits or destinies.
+5. **Apply** differential susceptibility and parenting-style research without treating correlational patterns as simple one-way causes.
+6. **Distinguish** moral motivation from moral reasoning and explain how replication changes scientific conclusions.
+7. **Explain** adolescence and aging as uneven developmental reorganizations shaped by biology, experience, opportunity, and social context.
 
 ---
 
-## Section 1: How Development Is Studied, and How It Begins
+## Section 1: Development as Construction
 
-### The questions that frame everything
+### Three questions that organize the lifespan
 
-Every developmental psychologist eventually runs up against three fundamental tensions. The first is **nature and nurture**: how much of who we become is written in our genes, and how much is shaped by experience? By now — having covered behavioral genetics, neuroscience, and learning — you know the answer is not "one or the other." It is always both, and crucially, the two interact: the same environment can have dramatically different effects on children with different genetic profiles, and genetic tendencies are expressed differently in different environments. The orchid-dandelion framework (discussed in Section 3) captures one of the cleaner empirical examples of this interaction.
+Every developmental psychologist eventually runs into three tensions.
 
-### Why humans, specifically, take so long to grow up
+The first is **nature and nurture**. By now, the answer “both” should feel almost automatic—but it is only the beginning. Biology changes which environments people notice, evoke, and select. Experience changes which biological potentials are expressed and which pathways become practiced. Development is transactional: the child changes the environment, and the environment changes the child.
 
-Saying development is "always both nature and nurture" is true, but by itself it explains very little — every species shows some gene-environment interaction. What's distinctive about humans is how far the balance has been pushed toward the nurture side, and life history theory explains why (Kaplan, Hill, Lancaster, & Hurtado, 2000; Oxford & Geary, 2019).
+The second is **continuity versus stages**. Does a capacity grow gradually, like a tree trunk widening, or reorganize into a qualitatively different form, like metamorphosis? The answer depends partly on what you measure. Vocabulary may accumulate continuously while a strategy for solving a conservation problem appears more abruptly. A stage can be a useful map without being a rigid calendar.
 
-Every species falls somewhere on a fast-to-slow **life history** continuum. Fast species — mice, many fish — reproduce early, often, and invest little in each offspring. Slow species — elephants, great apes — reproduce late, rarely, and invest heavily. Humans sit at the extreme slow end of that continuum: the largest brain relative to body size of any species, the longest childhood, the latest average age of first reproduction, and the longest lifespan. This is not incidental to human psychology. It is one of the central facts the rest of the field spends its time explaining the consequences of.
+The third is **stability and change**. A temperamentally reactive infant may become a cautious adult, yet the expression of that reactivity changes with self-control, relationships, and context. Fluid cognitive abilities show average age-related trajectories, but people differ enormously around those averages. Stability never means absence of development.
 
-The brain is the reason the slowdown happened, and it is expensive. Around age four to five, a child's brain is running at close to double an adult brain's metabolic rate per gram, and consumes roughly two-thirds of the body's total resting-energy budget (Kuzawa et al., 2014; see Chapter 3) — even though the rest of the body is still small and still growing. No single caregiver, working alone, can fund an organ that costly for that long. **Secondary altriciality** is evolution's partial answer on the input side: human infants are born with brains at only about 28% of their eventual adult volume, noticeably less complete than a chimpanzee infant's brain, which is closer to 40% of its adult size at birth. Being born less finished means more of the brain's wiring gets built after birth, outside the womb, shaped by whatever social and physical world the infant actually lands in. Maximum immaturity at birth buys maximum postnatal plasticity — which is also why the sensitive periods, synaptogenesis, and pruning described earlier in this section matter as much as they do: they are the machinery that secondary altriciality makes possible.
+### Why humans take so long to grow up
 
-But an infant that immature, requiring years of costly brain construction, creates an energetic problem no lone mother evolved to solve by herself. **Cooperative breeding** is the social half of the answer: grandmothers, fathers, older siblings, and other kin routinely share the cost of provisioning and caring for offspring, reducing the burden on any one mother and permitting shorter intervals between births than a lone parent could sustain. Isler and van Schaik (2012) argue that this restructuring of the social ecology — not a sudden leap in intelligence — is what let hominin brains break through a "gray ceiling" that otherwise limits brain size in primates that raise offspring without help. On this account, human intelligence and human sociality co-evolved; neither came first.
+**Life history theory** asks how organisms allocate limited energy and time among growth, maintenance, and reproduction. Compared with other primates, humans combine an unusually long juvenile period, substantial postnatal brain growth, extensive learning, long life, and heavy investment in dependent offspring. That package is distinctive—but it is not one simple fast-to-slow ranking in which humans hold every record (Kaplan et al., 2000; Oxford & Geary, 2019).
 
-![Figure 10.1 — Human childhood is long, plastic, and expensive. Secondary altriciality shifts more brain construction after birth, while cooperative breeding helps pay the energetic and caregiving costs of that extended childhood.](../images/ch10/ch10_human_extended_development_life_history.png)
-*Figure 10.1. Human childhood is long, plastic, and expensive. Secondary altriciality shifts more brain construction after birth, while cooperative breeding helps pay the energetic and caregiving costs of that extended childhood.*
+Human childhood is long, plastic, and expensive. Around ages four to five, the developing brain consumes roughly two-thirds of the body's resting energy budget (Kuzawa et al., 2014). Human infants are also born neurologically immature relative to their eventual adult state, so an unusually large share of brain construction occurs after birth. This pattern is called **secondary altriciality**. More postnatal development creates a longer window in which local ecology, language, culture, and relationships can tune a highly capable nervous system.
 
-The comparison with Neanderthals is a natural experiment on this same point, though it should be read with real caution. Neanderthals had brain volumes comparable to, or larger than, those of modern humans — but the fossil evidence suggests they reached that volume through *faster* early postnatal brain growth, not a more extended developmental window (Ponce de León et al., 2008). If that pattern holds, the *pace* of brain development, not just its final size, may be what matters for the kind of extended plasticity described above. This remains an active area of paleoanthropological research built on a genuinely small fossil sample, not a settled conclusion.
+That long construction period also creates a provisioning problem. Human children require food, protection, teaching, and supervision for years. **Cooperative breeding**—care and provisioning supplied by fathers, grandparents, siblings, and other helpers—offers one important model for how ancestral human groups could support those costs (Isler & van Schaik, 2012). Secondary altriciality, cooperative care, social learning, diet, and brain expansion likely co-evolved. None is established as the single first cause.
 
-The second tension is **continuity versus stages**. Does development unfold like the widening of a tree trunk — slow, gradual, continuous — or like the metamorphosis of a caterpillar — sudden, discontinuous, with qualitatively new forms emerging at critical transitions? Piaget's answer was stages. Modern research has partly confirmed and partly complicated that answer, and we return to it in Section 2. Whatever the answer, notice that the extended childhood just described is what makes the question askable in the first place — a childhood compressed into a few months, the way many other mammals experience it, would leave little room for a multi-stage sequence to unfold at all.
+![Figure 10.1 — A network places extended human development at the center, connected reciprocally with extended postnatal brain development, secondary altriciality, social learning and culture, shared caregiving and provisioning, and diet, ecology, and the energetic costs of brain growth. The diagram is labeled as a model of interacting contributors rather than a complete origin story.](../../docs/images/ch10/ch10_human_extended_development_life_history.png)
 
-The third tension is **stability and change**: how much does personality, temperament, or intellectual ability remain consistent across the lifespan? The evidence is genuinely mixed. Some traits (notably Big Five personality dimensions) show substantial rank-order stability from early adulthood onward. Others (like fluid cognitive abilities) follow reliable developmental arcs.
+*Figure 10.1. Human childhood is long, plastic, and expensive. Extended postnatal brain development creates opportunities for learning, while shared caregiving helps support a long period of dependence. The figure summarizes a supported coevolutionary model, not a complete or uniquely established origin story.*
 
 ### How to study change across time
 
-Measuring development requires comparing people of different ages, which can be done in two fundamentally different ways. A **cross-sectional study** takes a snapshot: it measures people of different ages at the same point in time. It is efficient, but it confounds age with **cohort effects** — the characteristics of the era in which a particular group grew up. Americans who were children during the Great Depression show cognitive and personality profiles that differ from those who grew up in postwar prosperity, and those differences can look like aging effects when they are really generational ones.
+A **cross-sectional study** compares people of different ages at one point in time. Imagine testing 20-, 50-, and 80-year-olds this year. The design is fast, but age is confounded with **cohort effects**: the groups grew up in different historical conditions. Differences in schooling, nutrition, technology, pollution, or economic hardship can masquerade as effects of aging.
 
-A **longitudinal study** follows the same participants across years or decades, measuring the same people at multiple time points. It captures true change within individuals, but it is expensive, slow, and plagued by attrition: participants who drop out tend to be less healthy and less privileged, which can bias the picture of how the average person ages.
+A **longitudinal study** follows the same people across years or decades. It measures actual within-person change, but it is slow and expensive. It also faces **attrition**: participants who remain in a decades-long study are often healthier and more advantaged than those who leave. Repeated testing can produce practice effects, so later performance reflects both development and familiarity with the task.
 
-![Figure 10.2 — A two-panel infographic compares cross-sectional and longitudinal research designs. The cross-sectional panel shows different age groups tested in one year. The longitudinal panel shows the same people followed across multiple testing years.](../images/ch10/ch10_cross_sectional_vs_longitudinal.png)
-*Figure 10.2. Cross-sectional studies compare different age groups at one moment, which is fast but vulnerable to cohort effects. Longitudinal studies follow the same people across time, which tracks real within-person change but is slower and vulnerable to attrition.*
+![Figure 10.2 — A two-panel infographic compares cross-sectional and longitudinal research designs. The cross-sectional panel shows different age groups tested in one year. The longitudinal panel shows the same people followed across multiple testing years.](../../docs/images/ch10/ch10_cross_sectional_vs_longitudinal.png)
 
-*Stop and retrieve: What is the key difference between cross-sectional and longitudinal designs, and what problem does each have that the other avoids?*
+*Figure 10.2. Cross-sectional studies compare different age groups at one moment, which is efficient but vulnerable to cohort effects. Longitudinal studies follow the same people across time, which measures within-person change but is slower and vulnerable to attrition and repeated-testing effects.*
 
-### Before birth: teratogens and the prenatal environment
+> **Stop and Retrieve:** A study tests 20-, 50-, and 80-year-olds today. Another tests the same people every five years. Which design is which, and what is the signature weakness of each?
 
-The construction project begins before birth. **Teratogens** are environmental agents — chemical, biological, or physical — that disrupt normal prenatal development and can cause structural or functional deficits. Alcohol is among the most studied; heavy or binge drinking during pregnancy can cause fetal alcohol spectrum disorders, with effects ranging from mild cognitive impairment to the full profile of fetal alcohol syndrome (growth restriction, characteristic facial features, severe intellectual disability). Nicotine restricts fetal blood flow and is associated with low birth weight. Certain medications, high-dose radiation, and some viruses (rubella, cytomegalovirus) are also established teratogens.
+### Before birth: timing and dose
 
-Timing matters enormously for many teratogens. Different systems are vulnerable at different points because they are being constructed at different times; disruption during active construction does the most damage. This principle of sensitive periods extends beyond prenatal development into postnatal brain maturation. Alcohol is a partial exception to the simple timing story: while first-trimester exposure — when the brain is establishing its basic architecture — is associated with the most severe structural deficits, no point in pregnancy has been identified as a safe window for alcohol exposure. The brain is under construction throughout, and no threshold below which alcohol is harmless has been established (Jones & Smith, 1973).
+The construction project begins before birth. **Teratogens** are chemical, biological, or physical agents that can disrupt prenatal development. Alcohol, nicotine, certain medications, high-dose radiation, and infections such as rubella or cytomegalovirus are established examples.
+
+The effect of a teratogen depends on more than its name. **Timing** matters because organs and neural systems are built on different schedules; disruption during active construction can have especially large effects. **Dose and pattern** matter because risk generally rises with the amount and frequency of exposure, although the dose-response relationship differs among teratogens. The pregnant person's and fetus's biology, nutrition, stress, and other exposures also affect outcomes.
+
+Alcohol deserves an especially clear boundary. No amount or period of prenatal alcohol exposure has been established as safe. Exposure early in pregnancy can disrupt facial and organ development, while brain growth can be affected throughout pregnancy. Current public-health guidance therefore recommends avoiding alcohol during pregnancy rather than trying to identify a safe threshold (Centers for Disease Control and Prevention, 2026).
 
 ### Brain development after birth: building, pruning, and myelinating
 
-At birth, a human infant has most of the neurons it will ever have — roughly 86 billion — but the connections between them are sparse. Over the first two years, the brain undergoes an explosive phase of **synaptogenesis**: dendrites branch, synaptic connections are massively overproduced, and the brain builds far more circuitry than it will ultimately keep (Huttenlocher, 1979). This is followed by **synaptic pruning**, in which unused connections are eliminated. The principle is blunt but effective: use it or lose it. Connections that are activated by experience are maintained and strengthened; those that remain quiet are retracted. The result is a brain architecture precisely tuned to the environment the child actually encountered, rather than a generic architecture optimized for no particular environment.
+By birth, most of the brain's neurons have already been produced, but their connections continue to proliferate, reorganize, and specialize. During **synaptogenesis**, developing neural systems produce large numbers of synaptic connections. **Synaptic pruning** then weakens or eliminates some connections while other pathways stabilize.
 
-![Figure 10.3 — Early development overbuilds neural connections, then experience stabilizes frequently used pathways and prunes underused ones. The result is not a generic brain, but a brain tuned to the child's history of stimulation.](../images/ch10/ch10_synaptic_pruning_developmental_tuning.png)
-*Figure 10.3. Early development overbuilds neural connections, then experience stabilizes frequently used pathways and prunes underused ones. The result is not a generic brain, but a brain tuned to the child's history of stimulation.*
+The classroom shorthand is *use it or lose it*. Keep the shorthand, but do not take it literally. Patterns of activity help stabilize some connections, but experience is not acting alone. Genetically guided maturation, spontaneous neural activity, hormones, immune processes, and local cellular mechanisms also influence which connections remain. Development produces a brain increasingly tuned by repeated patterns of activity and experience—not a brain perfectly optimized for one environment.
 
-**Myelination** — the wrapping of axons in a fatty sheath that dramatically speeds signal transmission — proceeds from birth through adolescence and into early adulthood, with the prefrontal cortex among the last regions to be fully myelinated. This late maturation of the prefrontal cortex has direct consequences for adolescent behavior, which we return to in Section 4.
+Specialization also has a cost. A system that becomes more efficient at processing familiar input may become less flexible with unfamiliar input. Development is not merely adding capacity. It is also committing resources.
 
-The sensitive-period principle shows up dramatically in cases of extreme deprivation. Cases of extreme deprivation — such as the case of Genie in 1970s California, a child discovered after years of severe isolation — are consistent with the sensitive-period account: she failed to acquire normal language despite intensive intervention after rescue. These cases are not clean tests, however. Severe deprivation, trauma, malnutrition, and unstable later care are entangled together, making it impossible to isolate the timing effect alone. What they do suggest, with appropriate uncertainty, is that the developing brain is not equally plastic at all ages, and that some developmental windows may close.
+![Figure 10.3 — A three-stage sequence begins with many initial neural connections. Patterns of activity together with biological maturation then stabilize some pathways. In the final panel, stabilized pathways remain prominent while less-stabilized connections weaken, producing a more tuned network.](../../docs/images/ch10/ch10_synaptic_pruning_developmental_tuning.png)
 
-> **Think About It:** Think about a skill you learned early in life — a language, a musical instrument, a sport — and one you are trying to learn as an adult. Does the difference in ease match what you'd expect from the sensitive-period framework?
+*Figure 10.3. Development includes both growth and selective stabilization. Activity helps strengthen some pathways, while biological maturation and local cellular processes also shape pruning. Greater specialization can improve efficiency while reducing some forms of plasticity.*
 
----
+**Myelination** wraps axons in a fatty sheath that speeds and stabilizes signaling. Myelination and the reorganization of long-range networks continue through adolescence and into the twenties. Many developmental trajectories approach adult-like plateaus during the mid-twenties, especially those involving the coordination of regulatory networks, but there is no single birthday on which the entire brain becomes complete (Somerville, 2016).
 
-## Section 2: Cognitive Development — The Baby Scientist
+A **sensitive period** is a window in which a developing system is especially responsive to particular input. Sensitive does not mean all-or-none. Learning may remain possible later, but it can require more effort or produce a different outcome. Cases of extreme deprivation, including Genie, are consistent with limits on late language development, but they are not clean experiments: trauma, malnutrition, deprivation, and unstable care are inseparable. They show why developmental conclusions require both vivid cases and methodological restraint.
 
-### Piaget's core insight and his tools for thinking
-
-Jean Piaget's contribution to developmental psychology was not just a set of stage descriptions — it was a theoretical framework for *how* children come to know the world. Piaget was a constructivist: he argued that children are not passive recipients of information poured in from outside, but active constructors of their own understanding, building mental models by interacting with the world and revising those models when they break down.
-
-The basic cognitive tools in Piaget's system are **schemas** — mental frameworks that organize and interpret experience. When a child encounters a new experience, one of two things happens. In **assimilation**, the new experience is interpreted through an existing schema (a child who has a schema for "dog" calls every four-legged animal a dog). In **accommodation**, the schema itself is revised to fit the new experience (the child learns to distinguish dogs from cats, horses, and bears). Development proceeds through repeated cycles of assimilation and accommodation, with major reorganizations — Piaget called them **cognitive stages** — marking points at which the child's overall mode of thinking is qualitatively restructured.
-
-*Do Not Confuse: Assimilation and accommodation work in opposite directions. **Assimilation** fits a new experience into an old schema — the experience is changed, conceptually, to match the schema. **Accommodation** fits the schema to the experience — the mental structure changes to match reality. A quick diagnostic: which direction is the change? If the child's understanding shifts to match reality, that's accommodation. If the child's representation of reality shifts to match the schema, that's assimilation.*
-
-### The four stages and their milestones
-
-Piaget proposed that children pass through four stages in a fixed sequence, each defined by qualitatively different ways of reasoning.
-
-**Sensorimotor stage (birth to ~2 years).** Infants think primarily through perception and action — they literally know the world by moving through it. The defining milestone is **object permanence**: the understanding that objects continue to exist even when out of sight. Piaget observed that infants younger than about 8–9 months will not search for a toy hidden under a cloth, apparently losing interest the moment it disappears. He interpreted this as evidence that the concept "the toy still exists somewhere" had not yet formed (Piaget, 1954).
-
-**Preoperational stage (~2 to 7 years).** The child can now use symbols — language, pretend play, drawing — but thought is still limited in two important ways. First, the child is **egocentric**: she assumes that others see, know, and feel what she sees, knows, and feels. This is not selfishness but a genuine cognitive limitation — the child has difficulty taking a perspective other than her own. (Piaget demonstrated this with the three-mountains task, in which children almost always described a model landscape from their own viewpoint even when asked to describe what a doll on the other side would see.) Second, the child fails **conservation** tasks: she does not yet understand that quantity remains constant across perceptual transformations (Piaget, 1952). Watch water poured from a short wide glass into a tall thin one, and a preoperational child will typically judge the tall glass to contain more — she is centering attention on height and ignoring the compensating change in width.
-
-**Concrete operational stage (~7 to 12 years).** The child now solves conservation problems, can reverse mental operations, and thinks logically about concrete, tangible situations. She can no longer be fooled by the water transfer — she understands that pouring doesn't change the amount, because she can mentally run the operation in reverse.
-
-**Formal operational stage (~12 years onward).** Adolescents become capable of systematic, abstract, hypothetical reasoning — the kind required to ask "what would happen if...?" and to hold multiple hypotheses in mind simultaneously.
-
-![Figure 10.4 — A four-panel infographic summarizes Piaget's sensorimotor, preoperational, concrete operational, and formal operational stages. Each panel includes an age range, a simple illustration, and the main cognitive milestone.](../images/ch10/ch10_piaget_stages_sequence_with_caveat.png)
-*Figure 10.4. Piaget's stages are a useful map of broad changes in children's reasoning, not a rigid calendar. The model's enduring insight is that children's thinking can change qualitatively, while later research shows that many abilities emerge gradually, overlap across stages, and sometimes appear earlier than Piaget's original tasks suggested.*
-
-### Where Piaget was right, and where he was not
-
-Piaget's framework generated decades of productive research, and its core claim — that children reason qualitatively differently at different ages — has held up well. Where subsequent research has complicated the picture is in the *timing* and the *sharpness* of the stage boundaries.
-
-Baillargeon's violation-of-expectation experiments demonstrated object permanence in infants as young as 3–4 months: when objects disappeared in physically impossible ways (seeming to pass through solid surfaces), infants stared longer, suggesting they expected the object to persist (Baillargeon, 1987). This is much earlier than Piaget's own tasks suggested. The discrepancy likely reflects the difference between knowing that something exists and being able to coordinate that knowledge with a reaching action — Piaget's task required both, but surprise at an impossible event requires only the former.
-
-Similarly, **theory of mind** — the understanding that other people have beliefs, intentions, and desires that may differ from one's own, and that behavior follows from mental states, not just from reality — develops earlier than Piaget's egocentrism claims implied. Wimmer and Perner's (1983) false-belief task is the standard measure: a child watches a character place an object in a basket, leave the room, and return after another character has moved the object to a different location. Children who understand that the returning character has a *false belief* (she still thinks the object is in the basket) correctly predict she will look in the basket. Children below about 4 years of age typically fail — they say she will look where the object actually is, not where she falsely believes it to be. But this is age 4, not age 7, which is earlier than Piaget's three-mountains task suggested the egocentrism limitation was overcome.
-
-The pattern across these findings points to a conclusion Piaget's framework underweighted: infants do not arrive as blank constructors working from raw perceptual experience. Karen Wynn's (1992) classic demonstration showed that 5-month-old infants watching a puppet show — one object placed behind a screen, a second added — looked longer when the screen dropped to reveal an impossible outcome (one object) than the expected two. Some form of quantity tracking is operating well before language and well before formal operations. Elizabeth Spelke's (2000) **core knowledge** framework synthesizes these findings into a broader principle: infants arrive with domain-specific cognitive systems for representing objects, quantity, geometry, and agents. These systems are not constructed from scratch by general learning alone. They appear early enough that they are better understood as initial biases or representational starting points that experience then tunes and elaborates. Piaget's constructivist insight stands — infants actively build understanding — but they build from a richer starting kit than his original model assumed.
-
-### Vygotsky and the social construction of mind
-
-Piaget's child is largely a solo scientist, constructing knowledge through direct interaction with objects. Lev Vygotsky offered a complementary account in which cognitive development is fundamentally social: children develop higher mental functions through collaboration and instruction before they can perform those functions independently (Vygotsky, 1978).
-
-The centerpiece of Vygotsky's framework is the **zone of proximal development (ZPD)**: the gap between what a child can do independently and what she can do with guidance from a more capable partner — a parent, teacher, or more experienced peer. The zone is not a fixed quantity; it shifts as the child develops. Tasks that require scaffolding today become independent capabilities tomorrow. **Scaffolding** — the support structure that a more capable partner provides, calibrated to the child's current level and gradually withdrawn as competence grows — is the mechanism that drives development forward.
-
-![Figure 10.5 — A wide infographic shows three learning zones: tasks a learner can do alone, tasks in the zone of proximal development that can be done with guidance, and tasks that remain too hard even with help. A side panel shows scaffolding fading from strong support to independence.](../images/ch10/ch10_vygotsky_zpd_scaffolding.png)
-*Figure 10.5. The zone of proximal development is the instructional sweet spot: the task is just beyond what the learner can do alone, but achievable with calibrated support. Good scaffolding fades as competence grows, leaving the learner more capable after the support is removed.*
-
-Scaffolding is also, in a deeper sense, evolutionarily unusual. Csibra and Gergely (2011) argue that humans are the only species with **natural pedagogy**: communication specifically adapted for one individual to transmit generic, otherwise hard-to-observe knowledge to another, rather than simply modeling behavior for someone else to copy. Other animals learn a great deal by watching each other; almost none of them actively modify their own behavior to make learning easier for a naive observer the way human caregivers and teachers routinely do. A classroom, a worked example on a whiteboard, a parent narrating what she's doing while cooking, are all culturally elaborated versions of that basic teaching disposition. Scaffolding within the ZPD is Vygotsky's account of how that disposition actually moves a learner forward; natural pedagogy is the evolutionary claim for why humans bother teaching at all.
-
-Vygotsky also argued that language and thought are deeply intertwined in ways Piaget underestimated. Children's private speech — the running commentary children often produce while working on difficult tasks — is not meaningless self-entertainment; it is an internalization of the social dialogue through which children have been guided, now turned inward as a cognitive tool. Private speech declines in frequency as it is internalized into the inner monologue of adult thinking.
-
-The Noba module "Cognitive Development in Childhood" (Siegler, 2026) summarizes the relationship between Piaget and Vygotsky as follows: both saw the child as an active agent in her own development, but Piaget located the engine of development primarily in the child's individual encounters with the physical world, while Vygotsky located it in the child's social interactions with more capable others. Both perspectives have received substantial empirical support, and most contemporary developmental psychologists treat them as complementary rather than competing.
-
-> **AI Connection:** Vygotsky's ZPD has become a popular framework for thinking about AI-assisted learning — if AI can meet a student in the zone, providing just the right amount of support to make a difficult task achievable, it could be a powerful scaffold. The limitation is important to name: effective scaffolding requires calibration. A scaffold set too low leaves the learner in territory they could reach alone; a scaffold set too high skips the zone entirely. The danger with AI tutoring is the second case — when an AI completes the essay or produces the proof steps, the performance is completed but the learner's own schema remains unchanged. Effective scaffolding should leave the student more capable after the support is removed; AI-generated output that skips the zone entirely can produce the appearance of learning without the underlying development. Chapter 9 made a related point: statistical learning in infants and in large language models share a surface resemblance, but the infant's learning is embedded in a social context that actively calibrates difficulty — the caregiver who raises vocabulary complexity gradually as comprehension grows. A language model provides responses calibrated to the prompt, not to the learner's ZPD.
-
-*Stop and retrieve: How does Vygotsky's view of development differ from Piaget's? What role does the ZPD play in each?*
+> **Think About It:** Compare a skill you began early with one you began recently. Is the difference entirely a sensitive-period effect, or could practice time, motivation, instruction, and opportunity also explain it?
 
 ---
 
-## Section 3: Social and Emotional Development
+## Section 2: Cognitive Development—The Baby Scientist and the Social Learner
 
-### Attachment: the first relationship as a working model
+### Piaget's durable insight
 
-Decades of research have established that the quality of an infant's first close relationship has consequences that extend well beyond infancy. The theoretical account is John Bowlby's. Bowlby drew on evolutionary biology and ethology to argue that **attachment** — the deep, enduring emotional bond between infant and caregiver — is not a secondary byproduct of feeding, as learning theorists had assumed, but a biological system in its own right, shaped by natural selection because it kept vulnerable infants close to protective adults (Bowlby, 1969). An infant who fails to maintain proximity to caregivers in a dangerous environment does not survive to reproduce; the attachment behavioral system is the evolutionary solution to that problem.
+Jean Piaget treated children as active investigators rather than empty vessels. They build and revise **schemas**—mental frameworks that organize experience. In **assimilation**, the child interprets a new experience through an existing schema. A toddler who calls every four-legged animal “dog” is assimilating. In **accommodation**, the schema itself changes. Distinguishing dogs from cats, horses, and bears requires accommodation.
 
-From repeated interactions with caregivers — who respond sometimes promptly, sometimes inconsistently, sometimes not at all — infants build an **internal working model**: a mental representation of the social world that answers the questions *Is the world a safe place? Will my needs be met? Can I trust others?* These working models, laid down in the first year of life, tend to persist and influence how children — and later, adults — approach close relationships.
+> **Do Not Confuse:** Assimilation changes the interpretation of the experience to fit the schema. Accommodation changes the schema to fit the experience. Ask one diagnostic question: *Which one changed?*
 
-Bowlby's internal-working-model language describes the psychological outcome; Ruth Feldman's research on **biobehavioral synchrony** describes one plausible physiological mechanism for how it gets built. Mothers and infants coordinate not just gaze and vocal turn-taking but heart-rate rhythms, cortisol patterns, and oxytocin release during face-to-face interaction, achieved through synchronized eye contact, touch, and vocal exchange (Feldman, 2007; Feldman, Gordon, & Zagoory-Sharon, 2011) — extending the oxytocin material introduced in Chapter 3. Early in life, an infant's capacity to regulate its own physiological and emotional state is partly borrowed from the caregiver's regulated state through this coupling; over development, the infant gradually internalizes regulatory capacity that was initially supplied externally. Synchrony measured as early as 3–4 months predicts later attachment security and social competence.
+Piaget proposed four broad stages:
 
-### The Strange Situation: a window into attachment quality
+| Stage | Approximate age in Piaget's theory | Central development | Important boundary |
+|---|---:|---|---|
+| **Sensorimotor** | Birth–2 | Knowledge through perception and action; object permanence develops | Looking-time measures suggest some expectations about hidden objects earlier than search tasks do |
+| **Preoperational** | 2–7 | Symbolic thought expands; perspective taking and conservation remain difficult | Performance varies with task demands, language, and familiarity |
+| **Concrete operational** | 7–12 | Logical operations become reliable for concrete problems; conservation and reversibility improve | Competence is not equally general across every domain |
+| **Formal operational** | About 12 onward | Systematic hypothetical and abstract reasoning becomes possible | Not every adolescent or adult uses formal reasoning consistently in every context |
 
-Mary Ainsworth developed the **Strange Situation** procedure to measure individual differences in attachment security (Ainsworth, Blehar, Waters, & Wall, 1978). The procedure is deceptively simple: a 12–18-month-old infant is brought to an unfamiliar room, and the experimenters observe behavior across a series of episodes that include brief separations from the caregiver and reunions, as well as exposure to a stranger.
+![Figure 10.4 — A four-panel infographic summarizes Piaget's sensorimotor, preoperational, concrete operational, and formal operational stages. Each panel includes an age range, a simple illustration, and the main cognitive milestone.](../../docs/images/ch10/ch10_piaget_stages_sequence_with_caveat.png)
 
-The infant's behavior during *reunion* — not during separation, which is less diagnostic — reveals the quality of the attachment. Ainsworth identified three primary patterns:
+*Figure 10.4. Piaget's stages are a useful map of broad changes in children's reasoning, not a rigid calendar. Abilities emerge at different rates, overlap across stages, and can appear earlier when tasks reduce memory, language, or motor demands.*
 
-**Secure attachment** (roughly 60–65% of middle-class Western samples): The infant uses the caregiver as a secure base for exploration, shows distress at separation, seeks comfort on reunion, and is readily soothed. Securely attached infants have typically experienced caregiving that is sensitive and responsive — the caregiver has read and responded appropriately to the infant's signals across thousands of interactions.
+Piaget's strongest legacy is active construction. His rigid stage boundaries have held up less well. Baillargeon's violation-of-expectation studies found that infants looked longer at events in which a hidden object appeared to violate physical continuity. Those results provide evidence for early expectations about objects, but looking longer is not identical to possessing the fully articulated object concept of an older child (Baillargeon, 1987).
 
-**Anxious-ambivalent attachment** (roughly 10–15%): The infant is highly distressed at separation, difficult to soothe on reunion, and alternates between seeking comfort and resisting it — clinging and then pushing away. These infants have often experienced caregiving that was inconsistent: responsive at some times, unavailable at others. The infant's heightened attachment behavior appears to be a strategy adapted to an unreliable caregiver — escalate signaling because low-level signaling doesn't reliably work.
+False-belief tasks tell a similar story. By about age four, many children can predict that another person will act on a mistaken belief. That is earlier than Piaget's three-mountains task implied, but performance still depends on language, inhibition, and task complexity. Developmental tasks do not simply reveal a hidden competence. They require the child to understand instructions, remember information, inhibit a tempting response, and produce an answer.
 
-**Anxious-avoidant attachment** (roughly 20–25%): The infant shows little visible distress at separation and avoids or ignores the caregiver on reunion. This can look like independence; closer examination reveals it to be a suppression of attachment behavior, likely developed in response to caregiving that consistently rejected or withdrew from proximity-seeking.
+Core-knowledge research pushes the starting point earlier still. Infants show early-emerging systems or biases for tracking objects, quantities, geometry, and agents (Spelke, 2000; Wynn, 1992). These are not miniature adult theories. They are structured starting conditions that experience elaborates. Piaget was right that children construct knowledge. He underestimated how much structure the construction begins with.
 
-Researchers have identified additional patterns beyond these three — including a disorganized category associated with frightening or severely neglectful caregiving (Main & Solomon, 1986) — but secure, ambivalent, and avoidant cover the core of what most students encounter in the literature.
+### Vygotsky: minds develop between people
 
-![Figure 10.6 — A table-style infographic compares attachment styles by reunion behavior, typical caregiving history, and approximate share in Western samples. It emphasizes that reunion behavior, not separation distress alone, is diagnostic.](../images/ch10/ch10_attachment_styles_reunion_behavior.png)
-*Figure 10.6. Ainsworth's attachment classifications are read most clearly during reunion. Secure infants seek comfort and are soothed; anxious-ambivalent infants both seek and resist comfort; anxious-avoidant infants suppress attachment behavior and appear distant; disorganized infants show contradictory or frightened behavior. These are probabilistic relationship patterns, not fixed destinies.*
+Piaget's child often appears as a solo scientist. Lev Vygotsky placed social interaction nearer the center. Children first perform many cognitive acts with other people before they can perform them independently.
 
-> **Classic Study: The Strange Situation (Ainsworth et al., 1978)**
->
-> *Setup:* Ainsworth's Baltimore Longitudinal Study followed 26 mother-infant dyads from the first weeks of life, making detailed home observations of feeding and caregiving interactions. At 12 months, infants were brought to a lab for the Strange Situation procedure.
->
-> *Procedure:* Eight structured episodes, each about 3 minutes: infant and caregiver explore a room with toys; a stranger enters; caregiver leaves the infant briefly with the stranger; caregiver returns; caregiver leaves again (infant alone); stranger returns; caregiver returns.
->
-> *Key finding:* The home observation data predicted Strange Situation behavior powerfully. Infants whose mothers had been consistently sensitive and responsive during feeding and play in the first year showed secure behavior on reunion. Infants with inconsistently responsive mothers showed ambivalent behavior; those with consistently unresponsive or rejecting mothers showed avoidant behavior.
->
-> *Importance:* The study was among the first to operationalize Bowlby's theoretical constructs, demonstrating that individual differences in attachment were measurable and traceable to specific caregiving patterns. Secure attachment in infancy predicts better outcomes across childhood and adolescence: more positive peer relationships, better emotional regulation, and — though more modestly — somewhat better cognitive performance.
->
-> *A caution:* Most early attachment research was conducted with Western, middle-class samples. Cross-cultural research shows both universal patterns (the basic attachment behavioral system appears across cultures) and meaningful cultural variation in the distribution of attachment classifications — what counts as sensitive caregiving is partly culturally calibrated (van IJzendoorn & Kroonenberg, 1988). The Strange Situation should not be treated as a culture-universal assessment without acknowledging this.
+The **zone of proximal development (ZPD)** is the range between what a learner can do alone and what the learner can do with well-calibrated help. **Scaffolding** is the temporary support that makes performance within that zone possible and then fades as competence grows. The term *scaffolding* was introduced later by Wood, Bruner, and Ross (1976), but it fits Vygotsky's account of socially supported development.
 
-### Temperament and the orchid-dandelion distinction
+![Figure 10.5 — A wide infographic shows three learning zones: tasks a learner can do alone, tasks in the zone of proximal development that can be done with guidance, and tasks that remain too hard even with help. A side panel shows scaffolding fading from strong support to independence.](../../docs/images/ch10/ch10_vygotsky_zpd_scaffolding.png)
 
-Attachment quality is not determined solely by caregiver behavior. Infants arrive with **temperament** — biologically rooted, relatively stable individual differences in emotional reactivity, attention, and self-regulation. Thomas and Chess's (1977) classic longitudinal work identified easy, difficult, and slow-to-warm-up temperament profiles. Easily calmed, cheerful infants with regular biological rhythms tend to elicit warmer, more patient caregiving; highly reactive, irritable infants tend to elicit more stressed, inconsistent responses — which can then feed back into attachment outcomes. The goodness-of-fit between a child's temperament and the caregiver's style matters as much as either factor alone.
+*Figure 10.5. The ZPD is the instructional sweet spot: the task is just beyond what the learner can do alone but achievable with calibrated support. Effective scaffolding fades, leaving the learner more capable after the support disappears.*
 
-Boyce and Ellis's (2005) **biological sensitivity to context** framework — known more informally as the **orchid/dandelion hypothesis** — formalizes an important insight about temperament and environment: children vary not just in *how reactive* they are but in *how responsive to environmental quality* they are. Dandelion children — those with easy, robust temperament profiles — tend to develop reasonably well across a wide range of environments, from poor to excellent. They are buffered against environmental adversity. Orchid children — those with difficult or highly reactive temperament — are exquisitely sensitive to environmental quality in *both* directions. In supportive, predictable, high-quality environments, they often develop *better* than their dandelion peers; in adverse, chaotic, or low-quality environments, they tend to develop worse. The same genetic and biological sensitivity that makes an orchid child vulnerable to adversity makes her especially responsive to enrichment.
+Humans appear unusually adapted for **natural pedagogy**—actively signaling information in ways that make general knowledge easier for another person to learn—although teaching and learning-facilitation also occur in more limited forms in other species (Csibra & Gergely, 2011).
 
-This framework reframes "difficult temperament" as not straightforwardly bad but as a different ecological strategy — one with high risk in adverse conditions and high reward in good ones. It's also a concrete instance of the extended plasticity discussed in Section 1: secondary altriciality buys the developing brain an unusually long window of sensitivity to its environment, and orchid children are simply the clearer case of that sensitivity operating in both directions at once.
+Vygotsky also treated private speech as a cognitive tool. A child narrating “first this piece, then that one” is not merely talking to herself. She is internalizing the social dialogue that previously organized the task. What begins between people becomes part of the learner's own control system.
 
-### Parenting styles
+> **AI Connection:** An AI system becomes a scaffold only when it responds to the learner's demonstrated understanding, withholds unnecessary steps, and fades support. Producing the finished essay or proof may improve the product while leaving the learner unchanged. The test is what happens after the support is removed. Can you now solve a new problem without it?
 
-Diana Baumrind's (1966) research identified four primary **parenting styles** defined by two dimensions: demandingness (how much the parent sets and enforces expectations) and responsiveness (how much the parent responds to and accepts the child's needs and perspective).
+**Try it yourself:** [Compare complete-answer support, graduated hints, and performance after support fades](../../docs/labs/ch10/zpd-fading-support.html). The activity illustrates different forms of support; it does not diagnose or measure you.
 
-**Authoritative** parents are high on both. They set clear expectations and enforce them consistently, but they explain their reasoning, respond warmly to the child's perspective, and negotiate. Authoritative parenting is associated with the best overall outcomes across childhood and adolescence in Western samples: higher academic achievement, greater self-regulation, lower rates of externalizing behavior problems.
-
-**Authoritarian** parents are high on demandingness and low on responsiveness. Rules are enforced strictly and without negotiation; warmth is limited. Outcomes are generally less favorable than authoritative parenting, though the gap is smaller in some cultural contexts where authoritarian parenting is the norm and is not perceived by children as cold or harsh.
-
-**Permissive** parents are high on responsiveness and low on demandingness. They are warm and accepting but do not enforce clear expectations. Children often struggle with self-regulation.
-
-**Uninvolved** parents are low on both dimensions. This is the style associated with the worst developmental outcomes; in extreme cases it constitutes neglect.
-
-A reliable caveat: the parenting-style literature is correlational. Children influence parents as much as parents influence children, and the parenting styles that are most reliably associated with good outcomes in Western, middle-class samples show more variation in their effects across cultural contexts.
-
-### Moral motivation and moral reasoning
-
-The development of moral behavior breaks into two separable questions: where moral *motivation* comes from, and how moral *reasoning* becomes more sophisticated with development. These need not have the same answer.
-
-On motivation: by 18 months, toddlers spontaneously help adults who are struggling — handing over a dropped object, opening a cabinet door the adult cannot reach — without being asked and without any expectation of reward. Warneken and Tomasello (2006) documented this in 18-month-olds and, strikingly, in young chimpanzees as well, consistent with the idea that at least some forms of prosocial motivation have deep evolutionary roots and do not have to be constructed entirely through explicit teaching. Whether something like this motivational base is present even earlier — in preverbal infants — is an active area of inquiry. An influential study by Hamlin, Wynn, and Bloom (2007) found that 6-month-olds preferred a puppet that had helped another character over one that had hindered it, suggesting social evaluation before language. A large preregistered replication across 37 laboratories (Lucca et al., 2025), however, found that infants performed at chance — a direct null result. The story of very early moral motivation is not yet settled, and this is an honest place to leave it.
-
-On reasoning: Kohlberg (1969) proposed that the *logic* people use to justify moral judgments develops across three broad levels. Young children reason primarily from consequences to themselves. Most adolescents and adults reason from social norms and relationships. Some adults reach a level at which reasoning appeals to principles that transcend particular rules. The framework is useful for one insight worth keeping: people can disagree about the same moral situation not because one is factually wrong but because they are reasoning from different structural commitments. Its limitations are also worth knowing — the sample was all male, the dilemmas were framed around abstract justice, and the empirical support for the full hierarchy is weaker than the framework's influence would suggest. Don't memorize the levels; understand that the structure of moral reasoning, not just its content, changes across development, and that motivation and reasoning are distinct problems that developed differently.
-
-*Stop and retrieve: Warneken & Tomasello's toddler-helping finding and Kohlberg's stage model both concern moral development. What is each actually explaining, and why is neither a complete account of moral behavior by itself?*
+> **Stop and Retrieve:** Piaget and Vygotsky both describe an active learner. Where does each place the main engine of development, and what would count as evidence that scaffolding actually worked?
 
 ---
 
-## Section 4: Adolescence Through Adulthood — Identity, Maturity, and Aging
+## Section 3: Relationships, Temperament, and Moral Development
 
-### Development doesn't stop at adolescence
+### Attachment is a relationship pattern
 
-A recurring mistake in older developmental psychology was to treat adulthood as a plateau and late life as simple decline. Erik Erikson's (1963) contribution was to insist that meaningful psychological development continues across the full lifespan — that people face characteristic challenges at each life phase, shaped by the intersection of biology and social context, and that navigating those challenges (or not) has real consequences for wellbeing. Whether his specific stage labels, sequence, or count of eight are empirically justified is more doubtful; the data supporting the full framework as a universal developmental sequence are modest, and the life trajectory it assumes maps more cleanly onto 20th-century Western norms than onto the range of human lives across cultures and historical periods.
+John Bowlby argued that **attachment** is a biologically prepared system that keeps vulnerable infants near protective caregivers. Repeated interactions may contribute to an **internal working model**—expectations about whether comfort and support will be available. That is a useful theoretical mechanism, but it is not a permanent script written in the first year.
 
-The piece that has held up best, and that bears directly on what follows, is the observation that **identity formation** is the defining psychological task of adolescence. The question "Who am I?" — not just "What is my name and role?" but "What do I believe, what do I value, and what kind of person am I becoming?" — becomes urgent with puberty, abstract reasoning, and the social pressure to make consequential choices about future and self. That is the durable Eriksonian insight, and it needs no memorized stage list to be useful.
+Mary Ainsworth's **Strange Situation** measures how a 12- to 18-month-old organizes attachment behavior during brief separations and reunions with a familiar caregiver. Reunion is more diagnostic than separation alone.
 
-### The teenage brain: when impulse control lags reward seeking
+- **Secure:** The infant seeks contact or reassurance and is soothed enough to return to exploration.
+- **Anxious-ambivalent/resistant:** The infant seeks contact but also resists it and remains difficult to soothe.
+- **Anxious-avoidant:** The infant minimizes visible attachment behavior and avoids or ignores the caregiver during reunion.
+- **Disorganized:** The infant shows contradictory, disoriented, frozen, or frightened behavior without a coherent strategy.
 
-Adolescence is the period of most rapid physical and neural change after infancy. **Puberty** triggers a cascade of hormonal changes — gonadal hormones and adrenal androgens — that transform body and behavior. The onset of formal operational reasoning gives adolescents the cognitive capacity to reason abstractly about identity, ideology, and the future. And the frontal cortex, which underlies impulse control, risk assessment, and long-term planning, is among the last brain regions to complete myelination — a process that continues into the mid-20s.
+These classifications describe behavior in a particular relationship and procedure. They are not child personality types, and they are not the same constructs used in questionnaires about adult romantic attachment.
 
-The result is a characteristic developmental asymmetry: reward-seeking systems (the ventral striatum, dopamine circuits) mature earlier than regulatory systems (prefrontal cortex). Sensation-seeking peaks in the mid-teens; impulse control catches up only gradually as frontal maturation continues (Blakemore & Choudhury, 2006; Casey, Getz, & Galvan, 2008). This is not a design flaw — the elevated novelty-seeking and peer-orientation of adolescence may reflect adaptive pressures toward exploration and independence — but it does explain why adolescence is a period of elevated risk-taking across almost all cultures and historical periods studied.
+Caregiver sensitivity is associated with attachment security, but the average association is modest and variable across studies and contexts. Temperament, stress, family resources, culture, and changes in caregiving also matter. Early attachment predicts later functioning probabilistically—not as destiny. Even physiological coordination between caregivers and infants, sometimes called **biobehavioral synchrony**, is best treated as one possible mechanism within a larger relational system, not a biological proof of a fixed bond (Feldman, 2007).
 
-![Figure 10.7 — Adolescent risk-taking reflects a developmental mismatch: reward and novelty systems become highly active before prefrontal control systems fully mature.](../images/ch10/ch10_adolescent_dual_systems_crossover.svg)
-*Figure 10.7. Adolescent risk-taking reflects a developmental mismatch: reward and novelty systems become highly active before prefrontal control systems fully mature.*
+![Figure 10.6 — A table-style infographic compares attachment classifications by observable reunion behavior and emphasizes that the classifications describe relationship patterns, not fixed child traits. A footer describes caregiver sensitivity as a probabilistic correlate alongside temperament, stress, culture, and context.](../../docs/images/ch10/ch10_attachment_styles_reunion_behavior.png)
 
-Erikson's fifth stage, **identity versus role confusion**, is the psychosocial frame for this period. The adolescent task is to construct a coherent answer to the question "Who am I?" — not just a name and a social role, but a set of values, commitments, and beliefs that unify the self across contexts. The **"Who am I?"** inquiry is both an abstract intellectual exercise and a deeply lived experience during adolescence, driving the experimental identity exploration — trying out different groups, roles, ideologies, and presentations of self — that is characteristic of the period. Emerging adulthood (roughly 18–25) extends this period of identity exploration for many in industrialized societies, delaying the assumption of full adult social roles.
+*Figure 10.6. Strange Situation classifications are read most clearly at reunion. Secure infants seek comfort and are soothed; anxious-ambivalent infants both seek and resist comfort; anxious-avoidant infants minimize visible attachment behavior; disorganized infants show contradictory or frightened behavior. These are probabilistic relationship patterns whose distribution and meaning vary with culture and context.*
 
-> **Think About It:** Erikson's framework suggests that resolving the intimacy stage (young adulthood) depends on having built a stable identity first. Think about your own experience: does the sequence ring true? What would it mean to pursue deep intimacy without a stable sense of self?
+> **Classic Study: The Strange Situation**
+>
+> **Setup:** Ainsworth's Baltimore study combined repeated home observations with a structured laboratory procedure at about 12 months.
+>
+> **Procedure:** Across eight short episodes, the infant explored an unfamiliar room, encountered a stranger, experienced brief caregiver separations, and reunited with the caregiver.
+>
+> **Key contribution:** Ainsworth made Bowlby's theoretical ideas observable. Reunion behavior could be coded reliably, and caregiving sensitivity observed at home was associated with later attachment classification.
+>
+> **Boundary:** The original sample was small and culturally narrow. Later research supports a relationship between caregiver sensitivity and attachment security, but not the simple claim that one caregiving pattern mechanically produces one attachment type. The Strange Situation should not be treated as a culture-free personality test.
 
-### Adulthood and aging: what changes, what doesn't
+### Temperament and differential susceptibility
 
-Physical development peaks in early adulthood. Strength, reaction time, and sensory acuity generally reach their maximum in the early-to-mid 20s and show gradual decline thereafter, with the pace accelerating in late adulthood. These are averages, however, and individual variation is large; health behaviors (exercise, sleep, nutrition) moderate the trajectory substantially.
+Infants arrive with **temperament**—early individual differences in emotional reactivity, attention, activity, and self-regulation. Temperament affects the caregiving an infant elicits, while caregiving affects how temperament is expressed. A highly reactive infant and an exhausted caregiver can create a feedback loop; the same infant with predictable support may develop a very different regulatory pattern. The fit between child and environment matters.
 
-The distinction between **fluid intelligence** and **crystallized intelligence** — introduced in Chapter 9 in the context of IQ (Horn & Cattell, 1967) — maps directly onto patterns of adult cognitive aging. Fluid intelligence, which involves novel problem solving, working-memory capacity, and processing speed, begins a slow decline in the 30s and accelerates after 60. Crystallized intelligence, which involves accumulated knowledge, verbal ability, and expertise, continues to grow or remain stable well into late adulthood. An older adult who struggles with a novel logic puzzle (fluid) may vastly outperform a younger adult on a task requiring deep domain knowledge or sophisticated verbal reasoning (crystallized). This is the cognitive trade-off of aging: speed and flexibility decline, wisdom and knowledge accumulate.
+The **orchid/dandelion** metaphor captures **differential susceptibility**. Some children appear more responsive to environmental quality “for better and for worse”: they do especially poorly under adversity but especially well under supportive conditions. Less environmentally sensitive children show smaller differences across those conditions.
 
-![Figure 10.8 — Adult cognitive aging is a tradeoff, not simple decline. Fluid abilities tend to decline with age, while crystallized knowledge and expertise remain stable or continue to grow longer.](../images/ch10/ch10_fluid_crystallized_adulthood.svg)
-*Figure 10.8. Adult cognitive aging is a tradeoff, not simple decline. Fluid abilities tend to decline with age, while crystallized knowledge and expertise remain stable or continue to grow longer.*
+Do not turn the metaphor into two biological species of child. Susceptibility is better understood as a continuum, and it may differ across outcomes and periods of development. The important idea is the crossover: what looks like vulnerability in a harsh environment may be heightened plasticity in a supportive one.
 
-Memory shows a parallel pattern. Explicit memory for recent events (especially free recall) is more vulnerable to aging than recognition memory or long-term autobiographical memory for well-consolidated events. The subjective experience of forgetting names and recent details that many adults notice in midlife reflects real but modest decline in working-memory function — not the precursor to dementia that many fear.
+### Parenting styles: useful pattern, limited causal claim
 
-Perhaps the most counterintuitive finding in the psychology of aging is that subjective **well-being** does not reliably decline with age. Large-scale surveys consistently find that emotional well-being — ratio of positive to negative affect, satisfaction with life — is at least as high in late adulthood as in young adulthood, and often higher (Charles & Carstensen, 2010). Older adults report less anger, stress, and worry; they weight positive emotional experiences more heavily; and they are better at emotional regulation. Brain-imaging evidence mirrors this: neural reactivity to negative stimuli diminishes with age. The *midlife crisis* of popular imagination is more elusive in the data than in the cultural narrative.
+Parenting research often organizes behavior along two dimensions: **responsiveness** and **demandingness**. Baumrind's original work described three patterns; the later four-quadrant model added the uninvolved category (Baumrind, 1966; Maccoby & Martin, 1983).
+
+| Parenting pattern | Responsiveness | Demandingness | Typical description |
+|---|---:|---:|---|
+| **Authoritative** | High | High | Warm, responsive, and clear about expectations |
+| **Authoritarian** | Low | High | Strict control with limited negotiation or explanation |
+| **Permissive** | High | Low | Warm and accepting with few enforced limits |
+| **Uninvolved** | Low | Low | Limited warmth, monitoring, and structure |
+
+In many Western samples, authoritative parenting is associated with academic competence, self-regulation, and fewer externalizing problems. But this literature is mostly correlational. Children influence parents, shared genes affect both, economic stress constrains available parenting strategies, and cultural meaning changes how the same behavior is experienced. The table describes recurring patterns; it is not a four-box causal machine.
+
+### Moral motivation is not moral reasoning
+
+Moral development contains at least two problems. **Moral motivation** concerns why a person helps or avoids harm. **Moral reasoning** concerns how a person justifies a judgment.
+
+Warneken and Tomasello (2006) found that 18-month-old children spontaneously helped adults complete simple goals, often without reward. Young chimpanzees also helped in some conditions. The result suggests that basic prosocial motivation does not require a child to first master an explicit moral philosophy.
+
+Claims about even earlier moral evaluation remain unsettled. Hamlin, Wynn, and Bloom (2007) reported that 6-month-olds preferred a puppet that helped another character over one that hindered it. A large preregistered replication across 37 laboratories found performance at chance (Lucca et al., 2025). The original finding did not become meaningless, but confidence in the broad claim had to change. That is what cumulative science is supposed to do.
+
+Kohlberg studied **moral reasoning** rather than prosocial motivation. He proposed that justifications develop from self-focused consequences, through social rules and relationships, toward abstract principles. The useful insight is that two people can reach the same judgment for structurally different reasons. The full stage hierarchy is less secure: the original samples were male, the dilemmas emphasized abstract justice, cultural variation is substantial, and sophisticated reasoning does not guarantee moral behavior.
+
+> **Stop and Retrieve:** A toddler hands an adult a dropped object. An adolescent explains that stealing is wrong because social trust would collapse. Which example concerns moral motivation, which concerns moral reasoning, and why does neither alone explain moral behavior?
+
+---
+
+## Section 4: Adolescence and Adulthood—Reorganization, Not Completion
+
+### Identity across changing systems
+
+Erik Erikson's durable contribution was to insist that development continues beyond childhood. His full sequence of eight psychosocial stages is difficult to defend as a universal timetable, but his emphasis on **identity formation** during adolescence remains useful. Puberty changes the body; abstract thought expands possible selves; peers become more consequential; and society begins demanding commitments about education, work, relationships, politics, and values. “Who am I?” becomes both an intellectual problem and a lived one.
+
+**Emerging adulthood**, roughly the late teens through the twenties in many industrialized societies, can extend identity exploration before stable adult roles are assumed. It is not a universal biological stage. Its length depends heavily on educational systems, labor markets, family structure, culture, and economic resources.
+
+### The adolescent brain and the age-25 shorthand
+
+Brain development does not stop at puberty. Myelination, network integration, and the coordination of systems involved in planning, motivation, and self-regulation continue through adolescence and into the twenties. Many of these developmental patterns begin approaching adult-like plateaus around the mid-twenties. That does **not** mean that the brain is unfinished until a switch flips at 25 or that change stops afterward.
+
+One influential **dual-systems model** describes adolescence as a period when reward, novelty, and social-motivational systems become highly responsive before regulatory control is consistently adult-like. The model helps explain why risk rises especially in emotionally charged or peer-present situations. It is a schematic average, not a diagnosis of every adolescent. Teenagers can reason well in calm settings, and real-world behavior depends on peers, incentives, stress, sleep, practice, opportunity, and culture as well as neural development (Casey et al., 2008; Crone & Dahl, 2012; Somerville, 2016).
+
+Increased exploration is not simply a design flaw. Leaving childhood roles requires trying unfamiliar activities, testing social identities, and learning which risks are worth taking. The same developmental openness can produce discovery or danger depending on the environment.
+
+This is also where an everyday observation becomes useful. Car-insurance premiums often fall through the early-to-mid twenties, sometimes noticeably around 25. Insurers are not scanning prefrontal cortices; they are pricing actuarial patterns in crashes and claims. Continuing brain development may contribute to the age trend, but so do driving experience, exposure, legal restrictions, and self-selection. The example works because the behavioral pattern and developmental timing overlap—not because insurance rates prove a neural mechanism.
+
+![Figure 10.7 — A schematic chart shows reward and novelty sensitivity changing earlier on average while regulatory coordination develops over a longer period. Broad shaded bands indicate individual variation. A second panel shows peers, stakes, context, and opportunity shaping whether motivation becomes exploration, learning, or risk, and a note states that there is no single age when the brain becomes finished.](../../docs/images/ch10/ch10_adolescent_dual_systems_crossover.svg)
+
+*Figure 10.7. One influential model proposes a temporary mismatch between highly responsive motivational systems and still-developing regulatory control. The curves are schematic averages, not biological deadlines. Peers, incentives, stress, sleep, experience, and opportunity help determine whether heightened exploration becomes learning or danger.*
+
+> **Stop and Retrieve:** What does the dual-systems model explain well, and what does it miss when adolescent behavior is reduced to “an immature prefrontal cortex”?
+
+### Aging is a tradeoff, not a uniform decline
+
+Physical strength, reaction time, and sensory acuity show average decline across adulthood, especially in later life. But development remains uneven. Experience can compensate for slowing, health behaviors alter trajectories, and people differ widely around age averages.
+
+The distinction between **fluid intelligence** and **crystallized intelligence** makes the tradeoff visible. Fluid abilities—processing speed, working memory, and solving unfamiliar problems—tend to decline across adulthood. Crystallized abilities—vocabulary, accumulated knowledge, and expertise—remain stable longer and may continue growing. An older expert may respond more slowly to a novel puzzle while seeing the structure of a familiar professional problem immediately.
+
+![Figure 10.8 — A schematic chart shows some speeded novel-problem abilities declining earlier on average, while accumulated knowledge and expertise often remain stable or increase longer. Wide overlapping bands indicate substantial individual variation and overlap among age groups. Notes emphasize that aging is a tradeoff and that dementia is not ordinary aging.](../../docs/images/ch10/ch10_fluid_crystallized_adulthood.svg)
+
+*Figure 10.8. Some speeded novel-problem abilities tend to decline earlier on average, while accumulated knowledge and expertise often remain stable or increase longer. These are schematic group averages with substantial individual variation and overlap among age groups. Aging is a tradeoff, not one uniform decline, and dementia is not ordinary aging.*
+
+Memory follows a similarly uneven pattern. Free recall of recent events is often more vulnerable than recognition, habits, vocabulary, or well-practiced expertise. Forgetting a name and remembering it later is common. Dementia is not ordinary aging turned up slightly; it involves decline severe enough to interfere with independent functioning.
+
+> **Do Not Confuse:** Normal aging can include slower retrieval and occasional forgetting. Warning signs of possible disorder include progressive change that disrupts familiar tasks, navigation, judgment, language, or daily independence. A textbook cannot diagnose either one.
+
+Subjective well-being also resists the simple-decline story. Older adults often report less anger, stress, and worry and equal or greater emotional well-being than younger adults (Charles & Carstensen, 2010). **Socioemotional selectivity theory** offers one explanation: when time feels limited, people prioritize emotionally meaningful relationships and goals over exploration for its own sake (Carstensen, 1999). Aging brings real losses. It can also sharpen selection.
+
+> **Think About It:** Think of an older adult you know well. Where do you see losses in speed or flexibility, and where do you see compensation through knowledge, routines, emotional regulation, or selective investment?
 
 ---
 
 ## Chapter Summary
 
-The study of lifespan development is organized around three core tensions: nature versus nurture (always an interaction), continuity versus stages (probably both, depending on what you measure and how often), and stability versus change (some dimensions stable across life, others not). Development begins before birth, with teratogens capable of disrupting normal prenatal construction, especially during sensitive periods when particular systems are being built. Postnatally, the brain undergoes synaptogenesis and pruning — building enormous connectivity and then sculpting it through experience. Sensitive periods shape which features of the environment the developing brain is maximally responsive to.
+Development is an extended construction process organized by three tensions: biology and experience transact; some changes are gradual while others look more stage-like; and stability coexists with reorganization. Human childhood is unusually long, plastic, and expensive. Secondary altriciality and cooperative care are useful parts of a coevolutionary explanation for that pattern—not a complete single-cause story. Research design matters: cross-sectional studies risk cohort effects, while longitudinal studies risk attrition and practice effects.
 
-Piaget argued that children pass through four qualitatively distinct cognitive stages, constructing knowledge actively through assimilation and accommodation. Modern research confirms the broad progression while pushing milestone timing earlier than Piaget's tasks suggested — object permanence in early infancy, theory of mind by age 4. Crucially, infants do not arrive as blank constructors: core knowledge research (Wynn, 1992; Spelke, 2000) shows domain-specific systems for number, objects, and agents operating well before language, suggesting a richer starting state than Piaget assumed. Vygotsky added the critical insight that cognitive development is socially mediated: the zone of proximal development captures the space where learning happens with calibrated support that gradually withdraws as competence solidifies.
+Prenatal development depends on timing, dose, and biological context. After birth, synaptogenesis, pruning, myelination, and changing network organization produce both growth and specialization. “Use it or lose it” is useful shorthand only if you remember that experience works alongside genetically guided and cellular developmental processes.
 
-Attachment theory identifies early caregiver-infant relationships as the origin of working models of the social world. Ainsworth's Strange Situation revealed three main attachment patterns — secure, anxious-ambivalent, anxious-avoidant — traceable to differences in caregiver sensitivity, with additional patterns (including disorganized) identified subsequently. Temperament moderates these effects; orchid children are more sensitive to environmental quality in both directions. Parenting style research points toward authoritative parenting as associated with the best developmental outcomes, with important cultural caveats. On moral development, motivation and reasoning need separate accounts: spontaneous helping appears by 18 months (Warneken & Tomasello, 2006), suggesting prosocial motivation precedes language; Kohlberg's framework usefully maps the development of moral reasoning structure (preconventional → conventional → postconventional) while the empirical support for its full stage hierarchy is weaker than its influence would imply.
+Piaget's durable insight is that children actively construct knowledge through schemas, assimilation, and accommodation. His rigid stage boundaries are less secure. Early-emerging object, quantity, and agent representations suggest a richer starting kit than he assumed. Vygotsky added that cognitive tools are built socially: support within the ZPD should fade and leave the learner more capable. That is also the standard by which AI assistance should be judged.
 
-Development does not stop at adolescence — the Eriksonian insight that holds up best is that identity formation is the defining psychological task of the teenage years. The adolescent brain's asymmetry — reward systems maturing before impulse-control systems — explains elevated risk-taking. Across adulthood, fluid intelligence declines while crystallized intelligence is maintained; well-being is at least as high in late adulthood as in young adulthood, contrary to widespread expectation.
+Attachment classifications describe reunion behavior within a caregiver-child relationship, not permanent child traits. Caregiver sensitivity matters probabilistically alongside temperament, stress, culture, and later experience. Differential susceptibility captures the possibility that heightened environmental sensitivity creates outcomes “for better and for worse.” Parenting-style patterns are useful descriptions but weak one-way causal explanations. Moral motivation appears before sophisticated moral reasoning, and the failed large replication of early helper preference shows how scientific confidence should update.
 
-Running underneath all of it is a single evolutionary answer to the question this chapter opened with. Human childhood is long, plastic, and expensive because a brain that expensive can only be built with that much time and that much help: secondary altriciality buys the plasticity, cooperative breeding buys the household the resources to afford it, and attachment, language, teaching, and the slow construction of identity are the machinery layered on top that makes use of the time bought.
+Adolescence and adulthood continue the same construction process. Identity develops within changing biological and social systems. Many regulatory-development trajectories approach adult-like plateaus during the twenties, but there is no single age when the brain becomes complete. Dual-systems accounts illuminate some adolescent risk while peers and context determine much of its expression. Aging produces tradeoffs: fluid speed and flexibility tend to decline, crystallized knowledge remains stable longer, and emotional priorities may become more selective. Development never becomes simple addition—and it never entirely stops.
 
 ---
 
 ## Connections
 
-| Topic in This Chapter | Connects To | Why |
+| Concept from this chapter | Reappears in | Why it matters there |
 |---|---|---|
-| Synaptogenesis and pruning | Ch. 3 (Biological Bases) | Same mechanisms introduced for neuron structure now applied to brain development |
-| Sensitive periods for language | Ch. 9 (Thinking, Language & Intelligence) | Connects Chomsky's language acquisition device and critical period hypothesis to developmental neuroscience |
-| Attachment and internal working models | Ch. 11 (Social Psychology) | Mental models of social relationships underlie social perception, trust, and in-group/out-group behavior |
-| Object permanence and theory of mind | Ch. 5 (Consciousness) | ToM is a prerequisite for understanding that mental states (beliefs, desires) can differ from external reality |
-| Orchid/dandelion and gene-environment interaction | Ch. 3 (Biological Bases) | Differential susceptibility illustrates how the same gene can produce very different phenotypes in different environments |
-| Fluid and crystallized intelligence (aging) | Ch. 9 (Thinking, Language & Intelligence) | Extends the Horn & Cattell distinction introduced there into adult development |
-| Adolescent frontal cortex maturation | Ch. 3 (Biological Bases); Ch. 5 (Consciousness) | PFC maturation, first introduced for executive function, now applied to impulse control and risk-taking |
-| Well-being across adulthood | Ch. 12 (Emotion, Stress & Coping) | Emotional regulation and affective set-points connect to motivation and hedonic adaptation |
-| Expensive brain / secondary altriciality | Ch. 3 (Biological Bases) | Extends Kuzawa et al.'s brain-glucose finding into an evolutionary explanation for why human childhood is so long |
-| Biobehavioral synchrony (oxytocin, cortisol, heart-rate coupling) | Ch. 3 (Biological Bases) | Extends the oxytocin/neuropeptide material introduced there into the physiological mechanism of early attachment |
+| [Developmental tuning](#brain-development-after-birth-building-pruning-and-myelinating) | [Chapter 3 — Biological Bases](03-neuroscience.html) | Neural systems are built through interacting biological programs and activity, not genes or experience acting alone. |
+| [Sensitive periods](#brain-development-after-birth-building-pruning-and-myelinating) | [Chapter 9 — Thinking, Language & Intelligence](09-thinking-language-intelligence.html) | Language learning shows why heightened early plasticity is neither a blank slate nor a rigid deadline. |
+| [Schemas and active construction](#piagets-durable-insight) | [Chapter 8 — Memory](08-memory.html) | Memory and development both depend on structures that organize and reconstruct experience. |
+| [Scaffolding and the ZPD](#vygotsky-minds-develop-between-people) | [Chapter 7 — Learning](07-learning.html) | Effective support changes the learner's future performance rather than merely completing the current task. |
+| [Attachment as a relationship pattern](#attachment-is-a-relationship-pattern) | [Chapter 11 — Social Psychology](11-social-psychology.html) | Expectations about availability and trust influence later social interpretation without fixing destiny. |
+| [Differential susceptibility](#temperament-and-differential-susceptibility) | [Chapter 3 — Biological Bases](03-neuroscience.html) | The same environment can have different effects because individuals differ in environmental sensitivity. |
+| [Adolescent motivation and control](#the-adolescent-brain-and-the-age-25-shorthand) | [Chapter 12 — Emotion, Stress & Coping](12-emotion-stress-coping.html) | Emotion, reward, stress, peers, and self-regulation interact most strongly in high-arousal decisions. |
+| [Fluid and crystallized intelligence](#aging-is-a-tradeoff-not-a-uniform-decline) | [Chapter 9 — Thinking, Language & Intelligence](09-thinking-language-intelligence.html) | Aging reveals why intelligence is not one ability moving along one trajectory. |
 
 ---
 
 ## Review Questions
 
-1. A researcher wants to study whether children today perform better on working-memory tests than children in 1990. She tests 500 children aged 6–18 today and compares her results to published norms from 1990. Is this a cross-sectional or longitudinal study? What potential confound should concern her?
+1. A researcher tests 20-, 50-, and 80-year-olds in 2026. Another researcher tests the same participants every five years from age 20 onward. Identify each design and its signature weakness.
 
-2. Explain why the timing of teratogen exposure matters as much as the nature of the teratogen. What principle does this illustrate?
+<details>
+<summary>Answer</summary>
 
-3. A 4-year-old watches you pour water from a wide short glass into a tall narrow one. She says the tall glass has more water. According to Piaget, what cognitive limitation is she demonstrating? What is the name of the task used to measure this limitation, and at which stage is it typically resolved?
+The first is cross-sectional: it compares different age groups at one moment and is vulnerable to cohort effects. The second is longitudinal: it measures within-person change but is vulnerable to attrition and repeated-testing effects. The tempting error is to call any study involving age “longitudinal.” Longitudinal means following the same people over time.
 
-4. *Why is the wrong answer tempting?* Many students memorize assimilation as "new information changes the schema." Why is this backwards? Write a one-sentence correction.
+</details>
 
-5. Describe the ZPD in your own words. Give a concrete example of a teacher, parent, or peer acting as a scaffold within the ZPD. Now give an example of what it looks like when scaffolding skips the zone entirely.
+2. Why can the same teratogen produce different outcomes depending on timing and dose? Why does alcohol require a stronger public-health boundary than “avoid it during the first trimester”?
 
-6. Distinguish secure, anxious-ambivalent, and anxious-avoidant attachment. For each, describe the infant's most diagnostic behavior: what happens during *reunion* with the caregiver in the Strange Situation?
+<details>
+<summary>Answer</summary>
 
-7. An orchid child raised in a supportive, structured household shows fewer behavior problems than her dandelion classmates. The same orchid child, transferred to a chaotic, unpredictable environment, shows more problems than dandelion peers in the same environment. What does this pattern illustrate about the orchid-dandelion distinction?
+Different systems are under construction at different times, so exposure during an active developmental window can disrupt the system being built. Risk also generally rises with dose and frequency, although the relationship differs by teratogen and biological context. Alcohol can affect brain development throughout pregnancy, and no safe amount or time has been established. The tempting error is to convert “the first trimester is especially important for some structural effects” into “later exposure is safe.”
 
-8. Warneken and Tomasello found spontaneous helping in 18-month-olds. What does this finding imply about when moral motivation develops relative to Kohlberg's stage model? What are at least two limitations of Kohlberg's framework that the textbook identifies?
+</details>
 
-9. Why does adolescent risk-taking peak before impulse control fully develops? Which brain region's late maturation is primarily responsible for this asymmetry?
+3. A 4-year-old says a tall, narrow glass contains more water than a short, wide glass after watching the same water being poured between them. What does Piaget's account explain, and what would be overstated?
 
-10. Predict what would happen to each of the following cognitive abilities between ages 25 and 75, and explain why: (a) performance on a novel reasoning puzzle never seen before; (b) vocabulary breadth; (c) speed of mental arithmetic; (d) accumulated expertise in a professional domain.
+<details>
+<summary>Answer</summary>
 
-11. The "midlife crisis" is a widely believed phenomenon. What does the psychological evidence actually say about well-being across adulthood? Why might the cultural belief persist despite the evidence?
+Piaget explains the response as failure of conservation: the child centers on height and does not coordinate height with width or mentally reverse the transformation. It would be overstated to conclude that every child of that age possesses one globally preoperational mind or that the ability appears suddenly on a fixed birthday. Task demands and domain-specific development matter.
 
-12. *Connections question:* Erikson's fifth stage (identity versus role confusion) is the developmental task of adolescence. How does the frontal cortex maturation pattern you learned in this chapter help explain why adolescence is simultaneously the right time for identity exploration and a period of elevated vulnerability?
+</details>
+
+4. A child calls a horse “dog,” then later revises the category to distinguish dogs from horses. Identify assimilation and accommodation.
+
+<details>
+<summary>Answer</summary>
+
+Calling the horse “dog” is assimilation: the child interprets the new animal through the existing dog schema. Revising the schema to distinguish categories is accommodation. The tempting reversal is to think that any new information automatically changes the schema; sometimes the existing schema changes how the information is represented instead.
+
+</details>
+
+5. A student uses AI to produce a correct essay, then cannot explain the argument without the AI. Was the system functioning as a scaffold within the ZPD? Explain.
+
+<details>
+<summary>Answer</summary>
+
+Not necessarily. A scaffold should be calibrated to the learner, provide only the support needed, and fade so the learner can perform a related task independently. The correct product demonstrates assisted performance, not learning. The tempting error is to infer competence from the quality of the artifact rather than testing what remains after assistance is removed.
+
+</details>
+
+6. What does the Strange Situation classify, and what are two conclusions it does **not** justify?
+
+<details>
+<summary>Answer</summary>
+
+It classifies patterns of attachment behavior in a particular caregiver-child relationship, especially during reunion after brief separation. It does not justify treating the classification as a fixed child personality type, and it does not prove a deterministic caregiving history or adult romantic destiny. Caregiver sensitivity is associated with security, but temperament, context, culture, stress, and later relationships also matter.
+
+</details>
+
+7. Explain the orchid/dandelion metaphor without turning children into two biological categories.
+
+<details>
+<summary>Answer</summary>
+
+The metaphor represents differences in environmental susceptibility. More susceptible children may show worse outcomes in adverse environments and better outcomes in supportive environments; less susceptible children show smaller environmental differences. Susceptibility is better understood as a continuum and may vary by outcome and developmental period. The tempting error is to label a child permanently as one type.
+
+</details>
+
+8. Warneken and Tomasello's toddler-helping result and Kohlberg's stages both concern morality. What different questions do they answer? How did the large helper-hinderer replication change the evidence?
+
+<details>
+<summary>Answer</summary>
+
+Toddler helping concerns moral or prosocial motivation—why a child acts to help. Kohlberg concerns moral reasoning—how a person justifies judgments. Neither alone explains moral behavior. The multi-lab replication found no reliable infant preference for helpers over hinderers, so confidence in the claim of preverbal moral evaluation should decrease. The tempting error is to treat one influential result as settled once it enters textbooks.
+
+</details>
+
+9. What does the dual-systems model explain about adolescent risk, and what does it miss?
+
+<details>
+<summary>Answer</summary>
+
+The model explains why heightened motivation for reward, novelty, and social approval can temporarily outpace consistently adult-like regulatory control, especially in emotionally charged settings. It misses much if interpreted as “the prefrontal cortex is unfinished”: adolescent behavior also depends on peers, incentives, stress, sleep, experience, opportunity, and culture. Many adolescents reason well in calm conditions, and individual trajectories vary.
+
+</details>
+
+10. Predict the average age-related pattern for (a) a novel reasoning puzzle, (b) vocabulary, (c) rapid working-memory manipulation, and (d) expert judgment in a familiar domain. Then explain why none of these predictions diagnoses an individual.
+
+<details>
+<summary>Answer</summary>
+
+Novel reasoning, processing speed, and rapid working-memory manipulation depend heavily on fluid abilities and tend to decline across adulthood. Vocabulary and expert knowledge depend more on crystallized abilities and remain stable longer or continue growing. These are group averages with wide individual variation; education, health, practice, occupation, and measurement all affect a person's trajectory. The tempting error is to convert an average developmental curve into a forecast for one person.
+
+</details>
 
 ---
 
 ## Key Terms
 
-**Accommodation** — Revising an existing schema to incorporate new information that cannot be assimilated into the current framework.
+**Accommodation** — Revising an existing schema when experience cannot be represented adequately by the old one.
 
-**Assimilation** — Interpreting a new experience in terms of an existing schema, without changing the schema itself.
+**Assimilation** — Interpreting a new experience through an existing schema.
 
-**Attachment** — A deep, enduring emotional bond between an infant and a primary caregiver, proposed by Bowlby to be a biologically rooted behavioral system.
+**Attachment** — A biologically prepared system of proximity seeking and emotional bonding between a child and caregiver.
 
-**Authoritative parenting** — A parenting style high in both demandingness (clear expectations, consistent enforcement) and responsiveness (warmth, explanation of reasoning, sensitivity to child's perspective).
+**Cohort effect** — A difference associated with the historical conditions in which an age group developed, which can be mistaken for an effect of age.
 
-**Biological sensitivity to context (orchid/dandelion hypothesis)** — The framework, proposed by Boyce and Ellis, that children vary in their susceptibility to environmental quality: orchid children are highly sensitive to both adversity and enrichment; dandelion children are relatively buffered against environmental variation.
+**Conservation** — Understanding that quantity remains constant despite changes in appearance or arrangement.
 
-**Cohort effect** — A characteristic that distinguishes a particular generation due to the historical period and circumstances in which they grew up, which can confound cross-sectional comparisons of different age groups.
+**Cross-sectional study** — A design comparing different age groups at one point in time.
 
-**Core knowledge** — Spelke's term for domain-specific cognitive systems present at birth (or early infancy) for representing objects, number, geometry, and agents; the initial conditions that make subsequent learning possible rather than the product of it.
+**Crystallized intelligence** — Accumulated knowledge, vocabulary, and expertise that tend to remain stable longer across adulthood.
 
-**Conservation** — The understanding that the quantity of a substance remains constant despite perceptual transformations (such as changing the shape of a container); absent in Piaget's preoperational stage.
+**Differential susceptibility** — Individual variation in responsiveness to both adverse and supportive environments.
 
-**Cross-sectional study** — A research design that compares people of different ages at the same point in time; efficient but vulnerable to cohort effects.
+**Fluid intelligence** — Capacity for rapid processing, working-memory manipulation, and solving unfamiliar problems.
 
-**Egocentrism** — In Piaget's framework, the preoperational child's difficulty taking a perspective other than her own; a cognitive limitation, not a personality trait.
+**Identity formation** — The developmental construction of coherent values, commitments, roles, and beliefs about the self.
 
-**Emerging adulthood** — A period (roughly 18–25 years) of extended identity exploration in industrialized societies, characterized by delayed assumption of full adult social roles.
+**Longitudinal study** — A design following the same participants across time.
 
-**Erikson's psychosocial stages** — A lifespan theory of development in which each of eight stages presents a characteristic conflict whose resolution (successful or not) shapes subsequent development.
+**Moral motivation** — Processes that move a person toward helping, cooperation, or avoidance of harm.
 
-**Longitudinal study** — A research design that follows the same participants across time; captures true developmental change but is expensive and prone to attrition.
+**Moral reasoning** — The logic used to justify a moral judgment.
 
-**Object permanence** — The understanding that objects continue to exist when they are no longer perceptible; a milestone of Piaget's sensorimotor stage.
+**Object permanence** — Understanding that objects continue to exist when they are no longer directly perceived.
 
-**Orchid/dandelion hypothesis** — See biological sensitivity to context.
+**Scaffolding** — Temporary, calibrated support that fades as the learner becomes independently capable.
 
-**Parenting styles** — Baumrind's classification of parenting along dimensions of demandingness and responsiveness: authoritative, authoritarian, permissive, uninvolved.
+**Schema** — A mental framework that organizes and interprets experience.
 
-**Pruning (synaptic pruning)** — The elimination of underused synaptic connections during postnatal brain development; produces a brain architecture tuned to the individual's actual environment.
+**Sensitive period** — A developmental window of heightened responsiveness to particular forms of input.
 
-**Scaffolding** — Support provided by a more capable partner, calibrated to the learner's current ability and gradually withdrawn as competence develops; associated with Vygotsky's sociocultural theory.
+**Synaptic pruning** — Developmental weakening or elimination of some synaptic connections as neural systems reorganize and specialize.
 
-**Schema** — A mental framework that organizes and interprets experience; the basic cognitive tool in Piaget's developmental theory.
+**Teratogen** — A chemical, biological, or physical agent capable of disrupting prenatal development.
 
-**Sensitive period** — A window of development during which a particular system is especially responsive to specific environmental input, and especially vulnerable to its absence.
-
-**Synaptogenesis** — The overproduction of synaptic connections in early postnatal brain development, followed by pruning.
-
-**Teratogen** — An environmental agent (chemical, biological, or physical) that disrupts normal prenatal development.
-
-**Theory of mind (ToM)** — The understanding that other people have beliefs, desires, and intentions that may differ from one's own, and that behavior follows from mental states, not just from reality.
-
-**Zone of proximal development (ZPD)** — Vygotsky's term for the gap between what a learner can accomplish independently and what she can accomplish with guidance from a more capable partner; the space where effective learning and teaching occur.
-
-**Fluid intelligence** — The capacity for novel problem solving, working memory, and processing speed; declines gradually from early adulthood onward. Contrast with crystallized intelligence.
-
-**Crystallized intelligence** — Accumulated knowledge, verbal ability, and domain expertise; remains stable or continues to grow into late adulthood. Contrast with fluid intelligence.
-
-**Identity formation** — Erikson's term for the central psychological task of adolescence: constructing a coherent sense of values, beliefs, and commitments that unify the self across contexts.
-
-**Moral motivation** — The drive to act prosocially or avoid harm; appears early in development (spontaneous helping by 18 months) and does not require explicit moral reasoning.
-
-**Moral reasoning** — The cognitive process of justifying moral judgments by appeal to consequences, social norms, or abstract principles; the focus of Kohlberg's stage model.
-
-**Life history theory** — The evolutionary framework describing how species allocate energy and time among growth, reproduction, and maintenance across the lifespan; humans sit at the extreme slow end of the fast-slow continuum, investing an unusually long developmental period in a small number of offspring.
-
-**Secondary altriciality** — The human pattern of being born with a brain far less complete than that of other primates (roughly 28% of adult volume, versus roughly 40% in chimpanzees), which maximizes postnatal brain plasticity at the cost of an extended period of infant dependency.
-
-**Cooperative breeding** — A reproductive strategy in which individuals other than the biological mother — fathers, grandmothers, older siblings, and other kin — routinely help provision and care for offspring, reducing the mother's energetic burden and permitting a longer, costlier developmental period than she could support alone.
-
----
-
-## References
-
-Ainsworth, M. D. S., Blehar, M. C., Waters, E., & Wall, S. (1978). *Patterns of attachment: A psychological study of the strange situation.* Hillsdale, NJ: Erlbaum.
-
-Baillargeon, R. (1987). Object permanence in 3 1/2- and 4 1/2-month-old infants. *Developmental Psychology, 23,* 655–664.
-
-Baumrind, D. (1966). Effects of authoritative parental control on child behavior. *Child Development, 37*(4), 887–907.
-
-Blakemore, S.-J., & Choudhury, S. (2006). Development of the adolescent brain: Implications for executive function and social cognition. *Journal of Child Psychiatry and Psychology, 47,* 296–312.
-
-Bowlby, J. (1969). *Attachment and loss: Vol. 1. Attachment.* New York: Basic Books.
-
-Boyce, W. T., & Ellis, B. J. (2005). Biological sensitivity to context: I. An evolutionary-developmental theory of the origins and functions of stress reactivity. *Development & Psychopathology, 17,* 271–301.
-
-Casey, B. J., Getz, S., & Galvan, A. (2008). The adolescent brain. *Developmental Review, 28,* 62–77.
-
-Charles, S. T., & Carstensen, L. L. (2010). Social and emotional aging. *Annual Review of Psychology, 61,* 383–409.
-
-Csibra, G., & Gergely, G. (2011). Natural pedagogy as evolutionary adaptation. *Philosophical Transactions of the Royal Society B: Biological Sciences, 366*(1567), 1149–1157.
-
-Erikson, E. H. (1963). *Childhood and society* (2nd ed.). New York: Norton.
-
-Feldman, R. (2007). Parent–infant synchrony: Biological foundations and developmental outcomes. *Current Directions in Psychological Science, 16*(6), 340–345.
-
-Feldman, R., Gordon, I., & Zagoory-Sharon, O. (2011). Maternal and paternal plasma, salivary, and urinary oxytocin and parent–infant synchrony: Considering stress and affiliation components of human bonding. *Developmental Science, 14*(4), 752–761.
-
-Hamlin, J. K., Wynn, K., & Bloom, P. (2007). Social evaluation by preverbal infants. *Nature, 450,* 557–559.
-
-Horn, J. L., & Cattell, R. B. (1967). Age differences in fluid and crystallized intelligence. *Acta Psychologica, 26,* 107–129.
-
-Huttenlocher, P. R. (1979). Synaptic density in human frontal cortex — developmental changes and effects of aging. *Brain Research, 163,* 195–205.
-
-Isler, K., & van Schaik, C. P. (2012). How our ancestors broke through the gray ceiling: Comparative evidence for cooperative breeding in early *Homo*. *Current Anthropology, 53*(S6), S453–S465.
-
-Jones, K. L., & Smith, D. W. (1973). Recognition of the fetal alcohol syndrome in early infancy. *The Lancet, 302,* 999–1001.
-
-Kaplan, H., Hill, K., Lancaster, J., & Hurtado, A. M. (2000). A theory of human life history evolution: Diet, intelligence, and longevity. *Evolutionary Anthropology, 9*(4), 156–185.
-
-Kohlberg, L. (1969). Stage and sequence: The cognitive-developmental approach to socialization. In D. A. Goslin (Ed.), *Handbook of socialization theory and research* (pp. 347–480). Chicago: Rand McNally.
-
-Kuzawa, C. W., Chugani, H. T., Grossman, L. I., Lipovich, L., Muzik, O., Hof, P. R., Wildman, D. E., Sherwood, C. C., Leonard, W. R., & Lange, N. (2014). Metabolic costs and evolutionary implications of human brain development. *Proceedings of the National Academy of Sciences, 111*(36), 13010–13015.
-
-Lucca, K., Yuen, F., Wang, Y., Alessandroni, N., Allison, O., Alvarez, M., … Hamlin, J. K. (2025). Infants' social evaluation of helpers and hinderers: A large-scale, multi-lab, coordinated replication study. *Developmental Science, 28*(1), Article e13581. https://doi.org/10.1111/desc.13581
-
-Main, M., & Solomon, J. (1986). Discovery of an insecure-disorganized/disoriented attachment pattern. In T. B. Brazelton & M. W. Yogman (Eds.), *Affective development in infancy* (pp. 95–124). Norwood, NJ: Ablex.
-
-Oxford, J., & Geary, D. C. (2019). Life history evolution in hominins. In T. B. Henley, M. Rossano, & E. P. Kardas (Eds.), *Handbook of cognitive archaeology: Psychology in prehistory* (pp. 36–57). New York: Routledge.
-
-Piaget, J. (1952). *The child's concept of number.* New York: Norton.
-
-Piaget, J. (1954). *The construction of reality in the child.* New York: Basic Books.
-
-Ponce de León, M. S., Golovanova, L., Doronichev, V., Romanova, G., Akazawa, T., Kondo, O., Ishida, H., & Zollikofer, C. P. E. (2008). Neanderthal brain size at birth provides insights into the evolution of human life history. *Proceedings of the National Academy of Sciences, 105*(37), 13764–13768.
-
-Siegler, R. (2026). Cognitive development in childhood. In R. Biswas-Diener & E. Diener (Eds.), *Noba textbook series: Psychology.* Champaign, IL: DEF Publishers. Retrieved from http://noba.to/8uv4fn9h
-
-Spelke, E. S. (2000). Core knowledge. *American Psychologist, 55*(11), 1233–1243.
-
-Thomas, A., & Chess, S. (1977). *Temperament and development.* New York: Brunner/Mazel.
-
-van IJzendoorn, M. H., & Kroonenberg, P. M. (1988). Cross-cultural patterns of attachment: A meta-analysis of the Strange Situation. *Child Development, 59,* 147–156.
-
-Vygotsky, L. S. (1978). *Mind in society: The development of higher psychological processes.* Cambridge, MA: Harvard University Press.
-
-Warneken, F., & Tomasello, M. (2006). Altruistic helping in human infants and young chimpanzees. *Science, 311,* 1301–1303.
-
-Wimmer, H., & Perner, J. (1983). Beliefs about beliefs: Representation and constraining function of wrong beliefs in young children's understanding of deception. *Cognition, 13,* 103–128.
-
-Wynn, K. (1992). Addition and subtraction by human infants. *Nature, 358,* 749–750.
+**Zone of proximal development (ZPD)** — The range between what a learner can do alone and what the learner can do with effective guidance.
 
 ---
 
 ## Further Reading
 
-- Siegler, R. (2026). Cognitive development in childhood. *Noba Project.* http://noba.to/8uv4fn9h — Covers Piaget, Vygotsky, and information-processing approaches with good empirical depth.
-- Bretherton, I. (1992). The origins of attachment theory: John Bowlby and Mary Ainsworth. *Developmental Psychology, 28,* 759–775. — Clear historical account of how Bowlby's evolutionary framework and Ainsworth's empirical methods came together.
-- Blakemore, S.-J., & Choudhury, S. (2006). Development of the adolescent brain. *Journal of Child Psychiatry and Psychology, 47,* 296–312. — The most-cited accessible review of frontal cortex maturation in adolescence.
-- Boyce, W. T. (2019). *The orchid and the dandelion: Why sensitive children face challenges and how all can thrive.* New York: Knopf. — Boyce's own accessible summary of the orchid/dandelion hypothesis for a general audience.
+- Siegler, R. (2026). *Cognitive development in childhood.* Noba Project. — A concise evidence-based treatment of Piaget, Vygotsky, information processing, and the problem of continuous versus stage-like change.
+- Bretherton, I. (1992). The origins of attachment theory: John Bowlby and Mary Ainsworth. *Developmental Psychology, 28*, 759–775. — A clear history of how evolutionary theory and careful observation produced attachment research.
+- Somerville, L. H. (2016). Searching for signatures of brain maturity: What are we searching for? *Neuron, 92*, 1164–1167. — A brief corrective to the idea that the brain has one measurable maturity date.
+- Boyce, W. T. (2019). *The Orchid and the Dandelion.* Knopf. — An accessible account of environmental sensitivity, best read with the reminder that susceptibility is not a simple two-type taxonomy.
+
+---
+
+## References
+
+Ainsworth, M. D. S., Blehar, M. C., Waters, E., & Wall, S. (1978). *Patterns of attachment: A psychological study of the strange situation.* Erlbaum.
+
+Baillargeon, R. (1987). Object permanence in 3½- and 4½-month-old infants. *Developmental Psychology, 23*, 655–664.
+
+Baumrind, D. (1966). Effects of authoritative parental control on child behavior. *Child Development, 37*, 887–907.
+
+Bowlby, J. (1969). *Attachment and loss: Vol. 1. Attachment.* Basic Books.
+
+Boyce, W. T., & Ellis, B. J. (2005). Biological sensitivity to context: I. An evolutionary-developmental theory of the origins and functions of stress reactivity. *Development and Psychopathology, 17*, 271–301.
+
+Carstensen, L. L. (1999). Taking time seriously: A theory of socioemotional selectivity. *American Psychologist, 54*, 165–181.
+
+Casey, B. J., Getz, S., & Galvan, A. (2008). The adolescent brain. *Developmental Review, 28*, 62–77.
+
+Centers for Disease Control and Prevention. (2026, April 2). *About alcohol use during pregnancy.* https://www.cdc.gov/alcohol-pregnancy/about/index.html
+
+Charles, S. T., & Carstensen, L. L. (2010). Social and emotional aging. *Annual Review of Psychology, 61*, 383–409.
+
+Crone, E. A., & Dahl, R. E. (2012). Understanding adolescence as a period of social-affective engagement and goal flexibility. *Nature Reviews Neuroscience, 13*, 636–650.
+
+Csibra, G., & Gergely, G. (2011). Natural pedagogy as evolutionary adaptation. *Philosophical Transactions of the Royal Society B: Biological Sciences, 366*, 1149–1157.
+
+Erikson, E. H. (1963). *Childhood and society* (2nd ed.). Norton.
+
+Feldman, R. (2007). Parent-infant synchrony: Biological foundations and developmental outcomes. *Current Directions in Psychological Science, 16*, 340–345.
+
+Hamlin, J. K., Wynn, K., & Bloom, P. (2007). Social evaluation by preverbal infants. *Nature, 450*, 557–559.
+
+Horn, J. L., & Cattell, R. B. (1967). Age differences in fluid and crystallized intelligence. *Acta Psychologica, 26*, 107–129.
+
+Huttenlocher, P. R. (1979). Synaptic density in human frontal cortex—developmental changes and effects of aging. *Brain Research, 163*, 195–205.
+
+Isler, K., & van Schaik, C. P. (2012). How our ancestors broke through the gray ceiling: Comparative evidence for cooperative breeding in early *Homo*. *Current Anthropology, 53*(S6), S453–S465.
+
+Kaplan, H., Hill, K., Lancaster, J., & Hurtado, A. M. (2000). A theory of human life history evolution: Diet, intelligence, and longevity. *Evolutionary Anthropology, 9*, 156–185.
+
+Kohlberg, L. (1969). Stage and sequence: The cognitive-developmental approach to socialization. In D. A. Goslin (Ed.), *Handbook of socialization theory and research* (pp. 347–480). Rand McNally.
+
+Kuzawa, C. W., Chugani, H. T., Grossman, L. I., Lipovich, L., Muzik, O., Hof, P. R., Wildman, D. E., Sherwood, C. C., Leonard, W. R., & Lange, N. (2014). Metabolic costs and evolutionary implications of human brain development. *Proceedings of the National Academy of Sciences, 111*, 13010–13015.
+
+Lucca, K., Yuen, F., Wang, Y., Alessandroni, N., Allison, O., Alvarez, M., et al. (2025). Infants' social evaluation of helpers and hinderers: A large-scale, multi-lab, coordinated replication study. *Developmental Science, 28*(1), e13581.
+
+Maccoby, E. E., & Martin, J. A. (1983). Socialization in the context of the family: Parent-child interaction. In P. H. Mussen (Series Ed.) & E. M. Hetherington (Vol. Ed.), *Handbook of child psychology: Vol. 4. Socialization, personality, and social development* (4th ed., pp. 1–101). Wiley.
+
+Main, M., & Solomon, J. (1986). Discovery of an insecure-disorganized/disoriented attachment pattern. In T. B. Brazelton & M. W. Yogman (Eds.), *Affective development in infancy* (pp. 95–124). Ablex.
+
+Oxford, J., & Geary, D. C. (2019). Life history evolution in hominins. In T. B. Henley, M. Rossano, & E. P. Kardas (Eds.), *Handbook of cognitive archaeology: Psychology in prehistory* (pp. 36–57). Routledge.
+
+Piaget, J. (1952). *The child's concept of number.* Norton.
+
+Piaget, J. (1954). *The construction of reality in the child.* Basic Books.
+
+Spelke, E. S. (2000). Core knowledge. *American Psychologist, 55*, 1233–1243.
+
+Somerville, L. H. (2016). Searching for signatures of brain maturity: What are we searching for? *Neuron, 92*, 1164–1167.
+
+Vygotsky, L. S. (1978). *Mind in society: The development of higher psychological processes.* Harvard University Press.
+
+Warneken, F., & Tomasello, M. (2006). Altruistic helping in human infants and young chimpanzees. *Science, 311*, 1301–1303.
+
+Wimmer, H., & Perner, J. (1983). Beliefs about beliefs: Representation and constraining function of wrong beliefs in young children's understanding of deception. *Cognition, 13*, 103–128.
+
+Wood, D., Bruner, J. S., & Ross, G. (1976). The role of tutoring in problem solving. *Journal of Child Psychology and Psychiatry, 17*, 89–100.
+
+Wynn, K. (1992). Addition and subtraction by human infants. *Nature, 358*, 749–750.

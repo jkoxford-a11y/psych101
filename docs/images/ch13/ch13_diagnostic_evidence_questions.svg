@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="850" viewBox="0 0 1400 850" role="img" aria-labelledby="title desc">
+<title id="title">From concern to diagnosis</title>
+<desc id="desc">Three preliminary questions about distress, impairment, and unusual experience feed into a larger diagnostic process that considers criteria, duration, development and culture, exclusions, differential diagnosis, and trained clinical judgment.</desc>
+<rect width="1400" height="850" fill="#fbfcfe"/>
+<text x="700" y="68" text-anchor="middle" font-family="Arial" font-size="44" font-weight="700" fill="#1a1a2e">From concern to diagnosis</text>
+<text x="700" y="112" text-anchor="middle" font-family="Arial" font-size="24" fill="#4b5563">The “3Ds” begin the inquiry. They do not complete it.</text>
+<defs><marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0,0 L12,6 L0,12 z" fill="#4a6fa5"/></marker></defs>
+<rect x="90" y="190" width="340" height="120" rx="22" fill="#fff7ed" stroke="#b45309" stroke-width="4"/>
+<text x="260" y="240" text-anchor="middle" font-family="Arial" font-size="28" font-weight="700">Distress?</text>
+<text x="260" y="277" text-anchor="middle" font-family="Arial" font-size="22" fill="#4b5563">How much suffering?</text>
+<rect x="530" y="190" width="340" height="120" rx="22" fill="#fdf2f8" stroke="#be185d" stroke-width="4"/>
+<text x="700" y="240" text-anchor="middle" font-family="Arial" font-size="28" font-weight="700">Impairment?</text>
+<text x="700" y="277" text-anchor="middle" font-family="Arial" font-size="22" fill="#4b5563">What cannot be done?</text>
+<rect x="970" y="190" width="340" height="120" rx="22" fill="#f5f3ff" stroke="#7c3aed" stroke-width="4"/>
+<text x="1140" y="240" text-anchor="middle" font-family="Arial" font-size="28" font-weight="700">Unusual?</text>
+<text x="1140" y="277" text-anchor="middle" font-family="Arial" font-size="22" fill="#4b5563">Relative to which context?</text>
+<line x1="260" y1="325" x2="520" y2="440" stroke="#4a6fa5" stroke-width="6" marker-end="url(#arrow)"/>
+<line x1="700" y1="325" x2="700" y2="425" stroke="#4a6fa5" stroke-width="6" marker-end="url(#arrow)"/>
+<line x1="1140" y1="325" x2="880" y2="440" stroke="#4a6fa5" stroke-width="6" marker-end="url(#arrow)"/>
+<rect x="300" y="440" width="800" height="320" rx="28" fill="#eef4fb" stroke="#4a6fa5" stroke-width="5"/>
+<text x="700" y="500" text-anchor="middle" font-family="Arial" font-size="34" font-weight="700" fill="#1a1a2e">Clinical diagnostic process</text>
+<g font-family="Arial" font-size="23" fill="#1f2937">
+<text x="360" y="555">• Disorder-specific criteria</text>
+<text x="360" y="605">• Duration, severity, and course</text>
+<text x="360" y="655">• Developmental and cultural context</text>
+<text x="755" y="555">• Medical and substance exclusions</text>
+<text x="755" y="605">• Differential diagnosis</text>
+<text x="755" y="655">• Trained clinical judgment</text>
+</g>
+<text x="700" y="715" text-anchor="middle" font-family="Arial" font-size="23" font-weight="700" fill="#4a6fa5">Concern may warrant assessment without establishing a diagnosis</text>
+</svg>

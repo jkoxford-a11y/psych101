@@ -3,14 +3,14 @@
 (function () {
   'use strict';
 
-  const STORAGE_KEY = 'psych101-lab-ch07-classical-conditioning';
+  const STORAGE_KEY = 'psych101-lab-ch07-classical-conditioning-v2';
 
   const simulationConfig = {
     acquisitionTrialsRequired: 8,
     extinctionTrialsRequired: 8,
     acquisitionRate: 0.28,
     extinctionRate: 0.24,
-    recoveryShare: 0.35,
+    modeledRecoveryShare: 0.35,
     maxStrength: 100
   };
 
@@ -23,7 +23,7 @@
     crStrength: 0,
     peakStrength: 0,
     history: [{ trial: 0, phase: 'Baseline', strength: 0 }],
-    log: ['Baseline: The tone is neutral. CR strength starts at 0%.'],
+    log: ['Teaching-model baseline: the tone is not yet predictive. Illustrative CR strength starts at 0%.'],
     explanation: '',
     transfer: ''
   };
@@ -118,11 +118,11 @@
     state.crStrength = approachTarget(state.crStrength, simulationConfig.maxStrength, simulationConfig.acquisitionRate);
     state.peakStrength = Math.max(state.peakStrength, state.crStrength);
     state.history.push({ trial: state.trialCount, phase: 'Acquisition', strength: state.crStrength });
-    state.log.push(`Acquisition trial ${countPhaseTrials('Acquisition')}: CS tone plus US air puff. UR blink occurs; CR strength rises to ${formatStrength(state.crStrength)}.`);
+    state.log.push(`Acquisition trial ${countPhaseTrials('Acquisition')}: CS tone predicts the UCS air puff. The UCR blink occurs; modeled CR strength rises to ${formatStrength(state.crStrength)}.`);
 
     if (countPhaseTrials('Acquisition') >= simulationConfig.acquisitionTrialsRequired) {
       state.phase = 'extinction';
-      state.log.push('Acquisition complete. The tone alone now produces a conditioned response. Begin CS-alone extinction trials.');
+      state.log.push('Modeled acquisition complete. The tone alone now produces a conditioned response. Begin CS-alone extinction trials.');
     }
 
     saveState();
@@ -137,11 +137,11 @@
     state.trialCount += 1;
     state.crStrength = approachTarget(state.crStrength, 0, simulationConfig.extinctionRate);
     state.history.push({ trial: state.trialCount, phase: 'Extinction', strength: state.crStrength });
-    state.log.push(`Extinction trial ${countPhaseTrials('Extinction')}: CS tone alone. No US follows, so responding weakens to ${formatStrength(state.crStrength)}.`);
+    state.log.push(`Extinction trial ${countPhaseTrials('Extinction')}: the CS tone occurs without the UCS air puff, so modeled responding weakens to ${formatStrength(state.crStrength)}.`);
 
     if (countPhaseTrials('Extinction') >= simulationConfig.extinctionTrialsRequired) {
       state.phase = 'recovery-ready';
-      state.log.push('Extinction reduced the CR, but the original association has not been erased. Run the delay test.');
+      state.log.push('Extinction reduced modeled responding. Response decline alone cannot establish that the earlier CS–UCS learning was erased.');
     }
 
     saveState();
@@ -154,11 +154,11 @@
     }
 
     state.trialCount += 1;
-    const recoveredStrength = Math.max(state.crStrength, state.peakStrength * simulationConfig.recoveryShare);
+    const recoveredStrength = Math.max(state.crStrength, state.peakStrength * simulationConfig.modeledRecoveryShare);
     state.crStrength = Math.min(recoveredStrength, simulationConfig.maxStrength);
-    state.history.push({ trial: state.trialCount, phase: 'Spontaneous recovery', strength: state.crStrength });
-    state.log.push(`Spontaneous recovery test after a simulated delay: CS tone alone produces a partial CR of ${formatStrength(state.crStrength)}.`);
-    state.log.push('Key idea: extinction did not erase the original CS–CR association. Instead, it created a new, competing inhibitory connection — the CS now predicts “nothing coming.” After a delay, that inhibitory learning weakens faster than the original excitatory one, so the original association partially resurfaces. This is also why context matters: extinction learned in one setting often does not fully transfer to a new one, because the original association is still intact underneath.');
+    state.history.push({ trial: state.trialCount, phase: 'Modeled spontaneous recovery', strength: state.crStrength });
+    state.log.push(`Modeled recovery after a simulated delay: the code inserts a partial CR of ${formatStrength(state.crStrength)} when the CS tone is presented alone.`);
+    state.log.push('Interpretation boundary: this programmed rebound illustrates spontaneous recovery; it does not generate evidence for a storage mechanism. Real return-of-responding studies support the conclusion that extinction learning is context-sensitive and that earlier CS–UCS learning can remain available.');
     state.phase = 'complete';
     saveState();
     renderAll();
@@ -184,6 +184,7 @@
     elements.explanationStatus.textContent = '';
     elements.transferStatus.textContent = '';
     renderAll();
+    elements.acquisitionPrediction.focus();
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
 
@@ -211,12 +212,12 @@
   function renderSimulatorState() {
     const strengthText = formatStrength(state.crStrength);
     elements.phaseStatus.textContent = `Phase: ${phaseLabel(state.phase)}`;
-    elements.trialStatus.textContent = `CR strength: ${strengthText}`;
+    elements.trialStatus.textContent = `Modeled CR strength: ${strengthText}`;
     elements.phaseSummary.textContent = phaseSummary(state.phase);
     elements.currentPhase.textContent = phaseLabel(state.phase);
     elements.trialCount.textContent = String(state.trialCount);
     elements.crStrength.textContent = strengthText;
-    elements.graphSummary.textContent = `${phaseLabel(state.phase)}. ${state.trialCount} trial${state.trialCount === 1 ? '' : 's'} completed. CR strength is ${strengthText}.`;
+    elements.graphSummary.textContent = `${phaseLabel(state.phase)}. ${state.trialCount} simulated trial${state.trialCount === 1 ? '' : 's'} completed. Modeled CR strength is ${strengthText}.`;
     elements.runAcquisition.disabled = !state.committed || state.phase !== 'acquisition';
     elements.runExtinction.disabled = !state.committed || state.phase !== 'extinction';
     elements.runRecovery.disabled = !state.committed || state.phase !== 'recovery-ready';
@@ -242,7 +243,7 @@
     });
 
     addPhaseMarker('Extinction', points);
-    addPhaseMarker('Spontaneous recovery', points);
+    addPhaseMarker('Modeled spontaneous recovery', points);
   }
 
   function renderLog() {
@@ -257,7 +258,11 @@
   function renderReflectionPanels() {
     elements.explainPanel.hidden = state.phase !== 'complete';
     elements.transferPanel.hidden = state.phase !== 'complete';
-    elements.completionSummary.textContent = `Summary: acquisition raised CR strength to ${formatStrength(state.peakStrength)}, extinction reduced responding to ${formatStrength(state.history.filter(function(h){ return h.phase === 'Extinction'; }).slice(-1)[0]?.strength ?? 0)}, and after a simulated delay the spontaneous recovery test showed a partial return at ${formatStrength(state.crStrength)}. That partial return is the evidence that extinction suppressed the response rather than deleting the underlying association.`;
+    const extinctionHistory = state.history.filter(function (item) {
+      return item.phase === 'Extinction';
+    });
+    const finalExtinctionStrength = extinctionHistory.length ? extinctionHistory[extinctionHistory.length - 1].strength : 0;
+    elements.completionSummary.textContent = `Teaching-model summary: acquisition raised modeled CR strength to ${formatStrength(state.peakStrength)}, extinction reduced it to ${formatStrength(finalExtinctionStrength)}, and the programmed delay step inserted a partial return at ${formatStrength(state.crStrength)}. The important concept is that reduced responding does not by itself prove erasure; the rebound shown here is illustrative rather than experimental evidence.`;
     elements.explanationResponse.value = state.explanation;
     elements.transferResponse.value = state.transfer;
   }
@@ -311,8 +316,8 @@
     const labels = {
       acquisition: 'Acquisition',
       extinction: 'Extinction',
-      'recovery-ready': 'Delay before spontaneous recovery',
-      complete: 'Spontaneous recovery complete'
+      'recovery-ready': 'Delay before modeled recovery',
+      complete: 'Modeled spontaneous recovery complete'
     };
 
     return labels[phase] || 'Acquisition';
@@ -320,18 +325,18 @@
 
   function phaseSummary(phase) {
     if (phase === 'acquisition') {
-      return 'Run CS-US pairings. The tone (CS) is followed by the air puff (US), so the learned blink (CR) strengthens.';
+      return 'Run CS–UCS trials. The tone (CS) predicts the air puff (UCS), and modeled conditioned responding increases.';
     }
 
     if (phase === 'extinction') {
-      return 'Run CS-alone trials. The tone appears without the air puff, so the CR weakens. Extinction reduces responding; it does not erase learning.';
+      return 'Run CS-alone trials. The tone appears without the air puff, and modeled responding weakens. Response decline does not by itself establish erasure.';
     }
 
     if (phase === 'recovery-ready') {
-      return 'A simulated delay is ready. Test whether the CS alone produces a partial return of the CR.';
+      return 'The model is ready to insert an illustrative partial return after a simulated delay.';
     }
 
-    return 'Spontaneous recovery appeared: after a delay, the CS alone produced a partial CR.';
+    return 'The teaching model inserted a partial return after a delay. This is an illustration of spontaneous recovery, not experimental evidence produced by the simulator.';
   }
 
   function formatStrength(value) {

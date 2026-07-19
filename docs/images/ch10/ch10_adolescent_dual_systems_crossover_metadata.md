@@ -1,10 +1,11 @@
-# ch10_adolescent_dual_systems_crossover.svg
+# Figure 10.7 — Adolescent Development as a Schematic Average Model
 
-## Caption
-Adolescent risk-taking reflects a timing mismatch, not a globally immature brain. Reward and sensation-seeking systems rise fast and peak in the mid-teens, while prefrontal impulse control rises more gradually into the mid-20s. During the years when drive is high and control is still developing, the gap between the two systems is widest. Curves are schematic, not one dataset.
-
-## Alt text
-A line chart plots relative strength against age from 10 to 25. A reward and sensation-seeking curve rises quickly, peaks around ages 15 to 16, and then declines. An impulse-control curve rises gradually and continues upward into the mid-20s. A shaded region marks the widest gap, where high drive appears before mature control.
-
-## Attribution and status
-Original hand-coded SVG for Oxford Psychology 101, 2026. Concept follows dual-systems accounts of adolescent development; no copyrighted source image reproduced. Safe for public sharing.
+- **File:** `ch10_adolescent_dual_systems_crossover.svg`
+- **Status:** Use now; wired in the canonical source and final HTML.
+- **Caption:** One influential model proposes a temporary mismatch between highly responsive motivational systems and still-developing regulatory control. The curves are schematic averages, not biological deadlines. Peers, incentives, stress, sleep, experience, and opportunity help determine whether heightened exploration becomes learning or danger.
+- **Alt text:** A schematic chart shows reward and novelty sensitivity changing earlier on average while regulatory coordination develops over a longer period. Broad shaded bands indicate individual variation. A second panel shows peers, stakes, context, and opportunity shaping whether motivation becomes exploration, learning, or risk, and a note states that there is no single age when the brain becomes finished.
+- **Creation method:** Original hand-coded SVG for Oxford Psychology 101, revised in 2026. No external image assets used.
+- **Attribution:** Original programmatic figure for Oxford Psychology 101, 2026.
+- **License:** Project-created original.
+- **Public-sharing status:** Safe for public sharing.
+- **Accuracy caveats:** The curves are qualitative group averages with wide variation. The model does not imply identical trajectories, two brain lines as a complete cause of risk, or one age of neural completion.

@@ -42,7 +42,7 @@ pipeline/audits/ch0X-pre-review-audit.md]`.
 
 ## Read first
 - `AGENTS.md`
-- `HANDOFF.md` (Current Status + Next Up; skip Session Log unless it names this chapter)
+- the complete concise `HANDOFF.md`
 - `source/concept_lineage_revised.csv` (for the copyright-rule check below)
 - `source/voice_profile_merged.csv` (for the voice-fit spot-check below)
 - The chapter's own source Markdown (`source/chapters/[FILE].md`) and built HTML
