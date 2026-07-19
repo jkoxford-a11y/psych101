@@ -529,11 +529,11 @@ th {
 
 /* Wide figures that benefit from more horizontal room (e.g. dense infographics).
    Breaks out of the 780px text column by up to 160px on each side. */
-.chapter-figure.wide {
+.chapter-figure.wide:not(.expandable) {
   margin-left: clamp(-160px, -10vw, 0px);
   margin-right: clamp(-160px, -10vw, 0px);
 }
-.chapter-figure.wide img {
+.chapter-figure.wide:not(.expandable) img {
   max-width: 100%;
 }
 
@@ -562,43 +562,52 @@ th {
    clicking grows the image to full width in place (no modal, no new
    tab). The <a> wraps the <img> and points at the full-size image
    file directly, so it degrades to "open the image" with JS off. */
-.chapter-figure.expandable .figure-expand-toggle {
+.chapter-figure.expandable:not(.no-expand) .figure-expand-toggle {
   display: block;
+  width: 100%;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  text-decoration: none;
 }
 
-.chapter-figure.expandable img {
+.chapter-figure.expandable:not(.no-expand) img {
+  display: block;
   max-height: 340px;
+  max-width: 100%;
   width: auto;
   margin: 0 auto;
   cursor: zoom-in;
-  transition: max-height 0.25s ease;
+  transition: max-height 0.25s ease, width 0.25s ease;
 }
 
-.chapter-figure.expandable.is-expanded {
-  margin-left: clamp(-220px, -14vw, 0px);
-  margin-right: clamp(-220px, -14vw, 0px);
+.chapter-figure.expandable:not(.no-expand).is-expanded {
+  --figure-expanded-width: min(1100px, calc(100vw - var(--sidebar-width) - 4rem));
+  width: var(--figure-expanded-width);
+  max-width: var(--figure-expanded-width);
+  margin-left: calc((100% - var(--figure-expanded-width)) / 2);
+  margin-right: calc((100% - var(--figure-expanded-width)) / 2);
 }
 
-.chapter-figure.expandable.is-expanded img {
+.chapter-figure.expandable:not(.no-expand).is-expanded img {
   max-height: none;
-  width: 100%;
+  width: auto;
+  max-width: 100%;
   cursor: zoom-out;
 }
 
-/* On laptop-width screens, the fixed sidebar leaves too little room for the
-   desktop breakout margins and can push an expanded figure past the viewport. */
-@media (max-width: 1400px) {
-  .chapter-figure.expandable.is-expanded {
-    margin-left: 0;
-    margin-right: 0;
-  }
+.chapter-figure.expandable:not(.no-expand).is-expanded img[src$=".svg"] {
+  width: 100%;
 }
 
-.chapter-figure .figure-expand-hint {
-  margin-top: 0.5rem;
-  font-family: var(--font-ui);
-  font-size: 0.78rem;
-  color: var(--color-muted);
+.chapter-figure.expandable:not(.no-expand).is-expanded figcaption {
+  max-width: min(90%, 716px);
+}
+
+body.sidebar-collapsed .chapter-figure.expandable:not(.no-expand).is-expanded {
+  --figure-expanded-width: min(1100px, calc(100vw - 4rem));
 }
 
 /* ── Portrait strip (history section) ── */
@@ -678,13 +687,23 @@ th {
   /* Expanded figures stay inside the mobile content column. Using 100vw here
      includes the browser's vertical scrollbar in some engines, which creates
      a small but real page-level horizontal overflow. */
-  .chapter-figure.expandable.is-expanded {
+  .chapter-figure.wide,
+  .chapter-figure.expandable:not(.no-expand).is-expanded {
     width: 100%;
     max-width: 100%;
     margin-left: 0;
     margin-right: 0;
   }
-  .chapter-figure.expandable.is-expanded img {
+
+  .chapter-figure.expandable:not(.no-expand):not(.is-expanded) img {
+    max-width: 80%;
+  }
+
+  .chapter-figure.expandable:not(.no-expand).is-expanded img {
+    max-width: 100%;
+  }
+
+  .chapter-figure.expandable:not(.no-expand).is-expanded img[src$=".svg"] {
     width: 100%;
   }
 }
