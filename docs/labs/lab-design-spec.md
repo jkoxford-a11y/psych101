@@ -86,6 +86,18 @@ The privacy notice at the top of every lab must:
 - State that storage is sessionStorage / browser session only
 - List what is and is not stored
 
+### Restoration and start-over behavior
+
+Prediction commitment applies within a run; it must not trap a student in a restored run.
+
+- A restored committed prediction must be visibly rendered in its control, not merely represented in the state object.
+- A restored unfinished session must announce once that progress from the browser-tab session was resumed and must reveal the coherent active phase with its usable controls.
+- Every stateful lab must provide one reachable secondary **Start over** action as soon as meaningful progress exists. The student must not have to finish the run to reach it.
+- Start over discards the entire run. It must remove the lab's `sessionStorage` key and clear persisted and transient state, including selections, disabled states, active trials, feedback, logs, textareas, summaries, CSS classes, and inline styles.
+- After start over, focus moves to the prediction heading or first prediction control, and reloading must not restore the discarded run.
+- A transient timed or stimulus-display state that cannot resume safely must restore to a safe inter-trial state without duplicating a trial or event.
+- Rendered tests must check computed visibility and hit testing. A `hidden` attribute alone is insufficient evidence when author CSS can override the browser's default `[hidden]` rule.
+
 ---
 
 ## Accessibility checklist

@@ -59,6 +59,7 @@
   const distractorNumbers = [47, 18, 63, 24, 55, 32, 71, 46];
 
   let state = createInitialState();
+  let interactionLocked = false;
   const elements = {};
 
   function createInitialState() {
@@ -246,7 +247,7 @@
   }
 
   function recordEncodingResponse(answer) {
-    if (state.phase !== 'encoding') {
+    if (state.phase !== 'encoding' || !beginInteraction()) {
       return;
     }
 
@@ -286,7 +287,7 @@
   }
 
   function recordDistractorResponse(answer) {
-    if (state.phase !== 'distractor') {
+    if (state.phase !== 'distractor' || !beginInteraction()) {
       return;
     }
 
@@ -309,7 +310,7 @@
   }
 
   function recordRecognitionResponse(oldResponse) {
-    if (state.phase !== 'recognition') {
+    if (state.phase !== 'recognition' || !beginInteraction()) {
       return;
     }
 
@@ -369,6 +370,7 @@
     elements.explanationStatus.textContent = '';
     elements.transferStatus.textContent = '';
     renderAll();
+    elements.predictionChoices[0].focus();
     window.scrollTo({ top: 0, behavior: prefersReducedMotion() ? 'auto' : 'smooth' });
   }
 
@@ -398,8 +400,8 @@
     const visible = state.phase === 'encoding';
     elements.encodingPanel.hidden = !visible;
     elements.encodingStatus.textContent = state.lastEncodingStatus;
-    elements.encodingYes.disabled = !visible;
-    elements.encodingNo.disabled = !visible;
+    elements.encodingYes.disabled = !visible || interactionLocked;
+    elements.encodingNo.disabled = !visible || interactionLocked;
 
     if (!visible) {
       return;
@@ -434,8 +436,8 @@
     const visible = state.phase === 'distractor';
     elements.distractorPanel.hidden = !visible;
     elements.distractorStatus.textContent = state.lastDistractorStatus;
-    elements.distractorOdd.disabled = !visible;
-    elements.distractorEven.disabled = !visible;
+    elements.distractorOdd.disabled = !visible || interactionLocked;
+    elements.distractorEven.disabled = !visible || interactionLocked;
 
     if (!visible) {
       return;
@@ -449,8 +451,8 @@
     const visible = state.phase === 'recognition';
     elements.recognitionPanel.hidden = !visible;
     elements.recognitionStatus.textContent = state.lastRecognitionStatus;
-    elements.recognitionOld.disabled = !visible;
-    elements.recognitionNew.disabled = !visible;
+    elements.recognitionOld.disabled = !visible || interactionLocked;
+    elements.recognitionNew.disabled = !visible || interactionLocked;
 
     if (!visible) {
       return;
@@ -559,6 +561,19 @@
 
   function prefersReducedMotion() {
     return window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  }
+
+  function beginInteraction() {
+    if (interactionLocked) {
+      return false;
+    }
+
+    interactionLocked = true;
+    window.setTimeout(function () {
+      interactionLocked = false;
+      renderAll();
+    }, 300);
+    return true;
   }
 
   function saveState() {

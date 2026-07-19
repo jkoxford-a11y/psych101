@@ -245,7 +245,36 @@ Use `<h2>` for all major sections. Add an `id` attribute as a lowercase, hyphena
 <h2 id="references">References</h2>
 ```
 
-Section content headings (subsections within a section, rare): use `<h3>`.
+### 5a. Subsection headings (`<h3>`) — standard practice, not rare
+
+Each numbered content section (Section 1, Section 2, ...) should be broken into 2–4 `<h3>` subsections, each covering one topic-sized chunk a reader can hold in working memory at once. This is not optional polish — see the Rationale note below. Titles must be descriptive of the actual content ("Acquisition, extinction, and spontaneous recovery"), never generic ("Part 2" or "Subsection A").
+
+Give every `<h3>` a lowercase, hyphenated `id` slug, same convention as `<h2>`. Immediately after the `<h2>` that opens a numbered section, add an `.in-section-nav` block linking to that section's own `<h3>` ids only — **not** a chapter-wide table of contents, and **not** labeled "On this page" (these chapters are single continuous scrolling documents, not paginated; "In this section" is the accurate label).
+
+```html
+<h2 id="section-1-classical-conditioning-learning-what-predicts-what">Section 1: Classical Conditioning — Learning What Predicts What</h2>
+
+<div class="in-section-nav">
+  <strong>In this section:</strong>
+  <a href="#the-basic-association">The basic association</a><span class="sep">·</span>
+  <a href="#how-conditioning-changes">How conditioning changes</a><span class="sep">·</span>
+  <a href="#where-learning-spreads">Where learning spreads</a>
+</div>
+
+<h3 id="the-basic-association">The basic association</h3>
+<p>...</p>
+
+<h3 id="how-conditioning-changes">How conditioning changes</h3>
+<p>...</p>
+```
+
+`h3` already renders with a left accent rule (`border-left: 3px solid var(--color-accent)`, no background tint) in `docs/css/style.css` — this is deliberate: it keeps section structure visually distinct from the tinted `.callout` boxes, which use a colored left border *plus* background. Do not add a background tint to `h3`; that would blur the two back together.
+
+**Do not** add drop caps, numbered circle badges, or a repeated eyebrow label (e.g. "VISUAL MODEL") above figures. These are decorative-only and the seductive-details-effect literature shows unearned decoration measurably hurts retention (see Rationale). Key terms stay plain `<strong>` per §7 — no colored "chip" styling, no underline. Underline reads as a broken link on the web, and highlighting/pre-marking text for a reader is a low-utility technique on its own (Dunlosky et al., 2013) — bolding here is doing skim/wayfinding work, not a memory intervention, and shouldn't be styled as if it were more than that.
+
+**Rationale (Session 2026-07-14):** this pattern is grounded in Mayer's segmenting principle (chunked, learner-paced content outperforms continuous presentation, d≈0.98) and signaling/cueing principle (descriptive headings that expose structure improve learning, d≈0.52), working-memory chunk limits (~4 items, Cowan 2001) against stacking multiple term definitions in one paragraph, and the seductive-details-effect meta-analyses against decoration that doesn't carry structural signal. The existing Stop and Retrieve callouts remain the single strongest pedagogical device in this spec (testing effect / retrieval practice, one of only two techniques Dunlosky et al. rated high-utility) — don't let header/structure polish crowd out adding more of those.
+
+**Retrofit status:** the `h3` CSS change applies automatically to all already-built chapters (several already use `<h3>`, just without the accent rule). The `.in-section-nav` block and any new subsection chunking do **not** retrofit automatically — they require editing each chapter's markup, which is deferred (Jon's call, not yet scheduled).
 
 ---
 
@@ -260,10 +289,14 @@ Section content headings (subsections within a section, rare): use `<h3>`.
 
 ## 7. Body Prose
 
-- All body prose uses plain `<p>` tags — no bullets inside sections.
+- Paragraphs remain the default for body prose. Unordered lists are allowed when the authoritative source uses parallel examples, categories, contrasts, or steps that are clearer as a list. Do not mechanically convert ordinary prose into bullets, and preserve explicit authorial list structure from reviewed source materials. Lists should normally have an introductory paragraph and, when needed, a synthesis paragraph afterward.
 - First use of each key term: `<strong>term</strong>` (bold in body), not a separate span.
 - Inline cross-chapter cues in parentheses: just prose, no special tag.
 - `&amp;` for `&` throughout, `&mdash;` or `—` for em dash (UTF-8 direct is fine).
+
+### 7a. Logic Emphasis and Paragraph Fidelity
+
+Preserve source `<span class="logic-emphasis">...</span>` as the same HTML. Logic emphasis is colored textual emphasis for the author's exact selected word or phrase: it is not a key term, marker-style highlighting, or a substitute for bold key-term treatment. It must use dark teal text with bold weight, no background, and no underline; underlining remains reserved for links. Preserve the exact selected span rather than widening it during conversion, including any surrounding italic style. Presentation-layer subsection headings and `.in-section-nav` blocks may expose structure, but they must not split or rewrite an approved source paragraph.
 
 ---
 
@@ -320,6 +353,8 @@ Portrait strip (Ch1-specific, not needed for other chapters):
 ```html
 <!-- FIGURE PLACEHOLDER: Figure N.N — [description of what figure will show] — file not yet available -->
 ```
+
+**Expandable figures:** reusable click-to-expand behavior uses the shared `.expandable` CSS and `docs/js/figure-expand.js`. It is opt-in per chapter — add the `expandable`/`figure-expand-toggle` classes to a figure's markup *and* include `<script src="../js/figure-expand.js"></script>` before `</body>` in that chapter's HTML. Both pieces are required; a chapter with the classes but no script include will appear to expand but never collapse (confirmed failure mode — see Ch2, Session 92 in `GPT_project_log.md`).
 
 ---
 
@@ -478,6 +513,9 @@ References are alphabetical by first author's last name. The hanging-indent is h
 | Forgetting `<script src="../js/nav.js"></script>` before `</body>` | Always include |
 | Guessing a figure filename or demo URL | Leave a comment placeholder instead |
 | Sidebar not copied exactly | Copy §2 verbatim; only add `class="active"` |
+| Labeling the subsection nav "On this page" | Use "In this section" — chapters are single scrolling documents, not paginated (see §5a) |
+| `.in-section-nav` listing the whole chapter's headings | Scope it to the current `<h2>` section's own `<h3>` ids only |
+| Adding a background tint, drop cap, numbered badge, or repeated eyebrow label to `<h3>` or figures | Don't — decorative-only elements measurably hurt retention (see §5a Rationale); `<h3>` uses the accent left-rule only, no background |
 
 ---
 
@@ -491,6 +529,7 @@ Before saving the final HTML file, confirm:
 - [ ] Misconception Opener has `id="misconception-opener"`
 - [ ] All callout variant class names match the table in §4 exactly
 - [ ] All `<h2>` elements have `id` attributes
+- [ ] Each numbered content section has 2–4 descriptively-titled `<h3>` subsections with `id` attributes, and an `.in-section-nav` block (labeled "In this section," scoped to that section only) immediately after the `<h2>`
 - [ ] All review questions use `<ol class="options" type="a">` and `<details>/<summary>`
 - [ ] Key terms use `<dl class="key-terms">`, not a bullet list
 - [ ] No broken `<img>` tags — placeholder comments instead

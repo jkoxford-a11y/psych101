@@ -1,53 +1,15 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" role="img" aria-labelledby="title desc">
-  <title id="title">Adolescent dual systems crossover</title>
-  <desc id="desc">A line chart shows reward and sensation-seeking rising quickly and peaking in the mid-teens, while impulse control rises more gradually into the mid-twenties. The gap before the crossing is highlighted.</desc>
-
-  <defs>
-    <style>
-      .bg { fill: #fbfbf8; }
-      .title { font-family: Arial, Helvetica, sans-serif; font-size: 48px; font-weight: 700; fill: #1f2f46; }
-      .subtitle { font-family: Arial, Helvetica, sans-serif; font-size: 27px; fill: #4d5a6b; }
-      .panel-title { font-family: Arial, Helvetica, sans-serif; font-size: 31px; font-weight: 700; fill: #1f2f46; }
-      .label { font-family: Arial, Helvetica, sans-serif; font-size: 25px; font-weight: 700; fill: #1f2f46; }
-      .body { font-family: Arial, Helvetica, sans-serif; font-size: 24px; fill: #1f2f46; }
-      .small { font-family: Arial, Helvetica, sans-serif; font-size: 21px; fill: #4d5a6b; }
-      .tiny { font-family: Arial, Helvetica, sans-serif; font-size: 18px; fill: #5e6978; }
-      .axis { stroke: #2f4058; stroke-width: 3; fill: none; }
-      .grid { stroke: #d8dddf; stroke-width: 2; fill: none; }
-      .dash { stroke-dasharray: 10 10; }
-      .card { fill: #ffffff; stroke: #d8dddf; stroke-width: 2.5; }
-      .shadow { filter: drop-shadow(0 6px 10px rgba(35, 45, 60, 0.13)); }
-      .takeaway { font-family: Arial, Helvetica, sans-serif; font-size: 24px; fill: #1f2f46; }
-      .white-title { font-family: Arial, Helvetica, sans-serif; font-size: 28px; font-weight: 700; fill: #ffffff; }
-      .white-small { font-family: Arial, Helvetica, sans-serif; font-size: 21px; fill: #ffffff; }
-    </style>
-    <marker id="arrowhead-soft" markerWidth="14" markerHeight="14" refX="12" refY="7" orient="auto">
-      <path d="M0,0 L14,7 L0,14 Z" fill="#7a8da0" />
-    </marker>
-  </defs>
-  <rect class="bg" x="0" y="0" width="1600" height="900"/>
-
-<text class="title" x="80" y="82">In the teen brain, the gas pedal matures before the brakes</text>
-<text class="subtitle" x="82" y="124">Reward-seeking peaks in the mid-teens; impulse control keeps maturing into the mid-20s.</text>
-<g class="shadow" transform="translate(110,165)">
-  <rect class="card" x="0" y="0" width="1380" height="610" rx="30"/>
-  <rect x="330" y="80" width="420" height="425" rx="18" fill="#f5efe2" opacity="0.65"/>
-  <rect x="360" y="407" width="330" height="80" rx="14" fill="#ffffff"/>
-  <text class="small" x="383" y="437">widest gap:</text><text class="small" x="383" y="465">high drive, brakes still developing</text>
-  <path class="axis" d="M120 505 L1245 505 M120 505 L120 75"/>
-  <text class="label" x="685" y="570" text-anchor="middle">Age</text>
-  <text class="label" x="-306" y="50" transform="rotate(-90)">Relative strength</text>
-  <g class="tiny" text-anchor="middle">
-    <text x="120" y="542">10</text><text x="345" y="542">13</text><text x="570" y="542">16</text><text x="795" y="542">19</text><text x="1020" y="542">22</text><text x="1245" y="542">25</text>
-    <line class="grid" x1="120" y1="505" x2="120" y2="516"/><line class="grid" x1="345" y1="505" x2="345" y2="516"/><line class="grid" x1="570" y1="505" x2="570" y2="516"/><line class="grid" x1="795" y1="505" x2="795" y2="516"/><line class="grid" x1="1020" y1="505" x2="1020" y2="516"/><line class="grid" x1="1245" y1="505" x2="1245" y2="516"/>
-  </g>
-  <path d="M120 415 C260 250, 415 120, 560 118 C685 132, 850 205, 1245 300" fill="none" stroke="#c65f4b" stroke-width="9" stroke-linecap="round"/>
-  <path d="M120 455 C320 420, 500 360, 690 292 C875 225, 1060 175, 1245 140" fill="none" stroke="#456c86" stroke-width="9" stroke-linecap="round"/>
-  <text class="label" x="920" y="102" fill="#456c86">Impulse control</text>
-  <text class="small" x="920" y="131">prefrontal cortex</text>
-  <text class="label" x="885" y="354" fill="#c65f4b">Reward / sensation-seeking</text>
-  <text class="small" x="885" y="383">ventral striatum, dopamine</text>
-</g>
-<g transform="translate(120,805)"><rect x="0" y="0" width="1360" height="54" rx="27" fill="#f2f5f6" stroke="#cfd7db" stroke-width="2"/><text class="takeaway" x="680" y="36" text-anchor="middle">Not a broken brain — a timing mismatch between two systems on different clocks.</text></g>
-
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">A schematic average model of adolescent development</title><desc id="desc">A chart shows reward and novelty sensitivity changing earlier on average while regulatory coordination develops over a longer period. Broad shaded bands indicate wide individual variation. A second panel shows peers, stakes, context, and opportunity shaping whether motivation becomes exploration, learning, or risk. A note says there is no single age when the brain becomes finished.</desc>
+  <defs><style>text{font-family:Arial,Helvetica,sans-serif;fill:#18324a}.title{font-size:46px;font-weight:700}.sub{font-size:27px;fill:#56697a}.head{font-size:28px;font-weight:700}.body{font-size:23px;fill:#465d70}.axis{stroke:#334b60;stroke-width:3}.card{fill:#fff;stroke:#c7d5de;stroke-width:3}.reward{stroke:#c65f4b;fill:none;stroke-width:9}.control{stroke:#39738f;fill:none;stroke-width:9}.band-r{fill:#e9b8ad;opacity:.38}.band-c{fill:#a9cbd9;opacity:.42}.pill{font-size:24px;font-weight:700}.note{font-size:26px;font-weight:700}</style><filter id="s"><feDropShadow dx="0" dy="5" stdDeviation="7" flood-opacity=".12"/></filter></defs>
+  <rect width="1600" height="900" fill="#fbfcfa"/><text class="title" x="800" y="68" text-anchor="middle">Adolescent development: average tendencies, wide variation</text><text class="sub" x="800" y="108" text-anchor="middle">One useful model—not a timetable for every person</text>
+  <g filter="url(#s)"><rect class="card" x="90" y="150" width="940" height="610" rx="28"/><rect class="card" x="1070" y="150" width="440" height="610" rx="28"/></g>
+  <text class="head" x="145" y="205">Schematic group averages</text><path class="axis" d="M170 650H950M170 650V260"/><text class="body" x="560" y="710" text-anchor="middle">early adolescence → later adolescence → young adulthood</text><text class="body" x="105" y="455" transform="rotate(-90 105 455)" text-anchor="middle">relative tendency</text>
+  <path class="band-r" d="M170 570C330 300 470 230 610 260C740 285 850 390 950 450L950 535C830 480 720 390 605 365C470 340 330 415 170 650Z"/><path class="reward" d="M170 610C330 350 470 285 610 310C740 335 850 430 950 490"/>
+  <path class="band-c" d="M170 650C360 620 520 560 670 470C800 390 890 325 950 280L950 375C870 420 790 475 675 540C520 625 360 675 170 700Z"/><path class="control" d="M170 675C360 650 520 590 670 505C800 430 890 365 950 325"/>
+  <text class="head" x="565" y="278" fill="#c65f4b">Reward / novelty sensitivity</text><text class="head" x="585" y="610" fill="#39738f">Regulatory coordination</text><text class="body" x="280" y="735">Shaded bands = substantial individual variation</text>
+  <text class="head" x="1290" y="205" text-anchor="middle">Behavior also depends on</text>
+  <g><rect x="1120" y="255" width="150" height="70" rx="24" fill="#f5e6f7"/><text class="pill" x="1195" y="299" text-anchor="middle">Peers</text><rect x="1310" y="255" width="150" height="70" rx="24" fill="#fff0df"/><text class="pill" x="1385" y="299" text-anchor="middle">Stakes</text><rect x="1120" y="355" width="150" height="70" rx="24" fill="#e7f1fb"/><text class="pill" x="1195" y="399" text-anchor="middle">Context</text><rect x="1310" y="355" width="150" height="70" rx="24" fill="#e9f4e4"/><text class="pill" x="1385" y="399" text-anchor="middle">Opportunity</text></g>
+  <path d="M1290 455v70" stroke="#6c8798" stroke-width="6"/><path d="M1280 515l10 18 10-18" fill="none" stroke="#6c8798" stroke-width="6"/>
+  <text class="body" x="1290" y="575" text-anchor="middle">The same motivation can support</text><text class="head" x="1290" y="620" text-anchor="middle">exploration · learning · risk</text><text class="body" x="1290" y="675" text-anchor="middle">depending on the situation</text>
+  <rect x="215" y="795" width="1170" height="62" rx="31" fill="#eef4f6" stroke="#c7d5de" stroke-width="2"/><text class="note" x="800" y="835" text-anchor="middle">There is no single age at which every brain or regulatory skill becomes “finished.”</text>
 </svg>

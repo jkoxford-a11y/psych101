@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="820" viewBox="0 0 1400 820" role="img" aria-labelledby="title desc">
+<title id="title">Avoidance and corrective learning</title>
+<desc id="desc">A loop shows a trigger leading to anxiety, avoidance or compulsion, and immediate relief, which reinforces the response. A separate exit path shows supported approach or exposure creating corrective safety learning.</desc>
+<rect width="1400" height="820" fill="#fbfcfe"/>
+<text x="700" y="70" text-anchor="middle" font-family="Arial" font-size="44" font-weight="700" fill="#1a1a2e">Avoidance and corrective learning</text>
+<text x="700" y="115" text-anchor="middle" font-family="Arial" font-size="24" fill="#4b5563">A common maintenance loop—not the only pathway into anxiety</text>
+<defs><marker id="a" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0,0 L12,6 L0,12 z" fill="#4a6fa5"/></marker><marker id="g" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0,0 L12,6 L0,12 z" fill="#15803d"/></marker></defs>
+<rect x="100" y="250" width="260" height="140" rx="22" fill="#eef4fb" stroke="#4a6fa5" stroke-width="4"/>
+<text x="230" y="315" text-anchor="middle" font-family="Arial" font-size="30" font-weight="700">Trigger</text>
+<text x="230" y="352" text-anchor="middle" font-family="Arial" font-size="22">cue or uncertainty</text>
+<rect x="440" y="250" width="260" height="140" rx="22" fill="#fff7ed" stroke="#b45309" stroke-width="4"/>
+<text x="570" y="315" text-anchor="middle" font-family="Arial" font-size="30" font-weight="700">Anxiety rises</text>
+<text x="570" y="352" text-anchor="middle" font-family="Arial" font-size="22">threat feels urgent</text>
+<rect x="780" y="250" width="260" height="140" rx="22" fill="#fdf2f8" stroke="#be185d" stroke-width="4"/>
+<text x="910" y="305" text-anchor="middle" font-family="Arial" font-size="29" font-weight="700">Avoid or perform</text>
+<text x="910" y="342" text-anchor="middle" font-family="Arial" font-size="22">a compulsion</text>
+<rect x="1120" y="250" width="220" height="140" rx="22" fill="#f0fdf4" stroke="#15803d" stroke-width="4"/>
+<text x="1230" y="315" text-anchor="middle" font-family="Arial" font-size="29" font-weight="700">Relief now</text>
+<text x="1230" y="352" text-anchor="middle" font-family="Arial" font-size="22">response reinforced</text>
+<line x1="365" y1="320" x2="425" y2="320" stroke="#4a6fa5" stroke-width="7" marker-end="url(#a)"/>
+<line x1="705" y1="320" x2="765" y2="320" stroke="#4a6fa5" stroke-width="7" marker-end="url(#a)"/>
+<line x1="1045" y1="320" x2="1105" y2="320" stroke="#4a6fa5" stroke-width="7" marker-end="url(#a)"/>
+<path d="M1230 410 C1230 555, 230 555, 230 410" fill="none" stroke="#4a6fa5" stroke-width="7" marker-end="url(#a)"/>
+<rect x="440" y="495" width="580" height="54" rx="12" fill="#fbfcfe"/>
+<text x="730" y="530" text-anchor="middle" font-family="Arial" font-size="25" font-weight="700" fill="#4a6fa5">The feared prediction is not tested</text>
+<path d="M910 410 C910 620, 710 620, 710 670" fill="none" stroke="#15803d" stroke-width="8" marker-end="url(#g)"/>
+<rect x="425" y="660" width="570" height="105" rx="20" fill="#f0fdf4" stroke="#15803d" stroke-width="4"/>
+<text x="710" y="703" text-anchor="middle" font-family="Arial" font-size="28" font-weight="700">Supported approach or exposure</text>
+<text x="710" y="738" text-anchor="middle" font-family="Arial" font-size="23">new corrective and safety learning becomes possible</text>
+</svg>

@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2400" height="1350" viewBox="0 0 2400 1350" role="img" aria-labelledby="title desc">
+  <title id="title">Bandura 1965: learning versus performance</title>
+  <desc id="desc">A five-stage schematic. All children observe the same aggressive model. The model is rewarded, punished, or receives no consequence. In an initial test, imitation is lower after model punishment while rewarded and no-consequence conditions are similar. Every child is then offered a direct incentive. In a second test, imitation rises and the three conditions become much more similar.</desc>
+  <defs>
+    <style>
+      text { font-family: Arial, Helvetica, sans-serif; fill: #12233f; }
+      .title { font-size: 64px; font-weight: 700; }
+      .step { font-size: 32px; font-weight: 700; }
+      .label { font-size: 29px; font-weight: 700; }
+      .body { font-size: 26px; }
+      .small { font-size: 22px; }
+      .card { fill: #ffffff; stroke: #b9c8db; stroke-width: 3; }
+      .arrow { stroke: #345f91; stroke-width: 12; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+    </style>
+    <marker id="arrowhead" markerUnits="userSpaceOnUse" markerWidth="32" markerHeight="32" refX="28" refY="16" orient="auto"><path d="M0,0 L30,16 L0,32 Z" fill="#345f91"/></marker>
+  </defs>
+  <rect width="2400" height="1350" fill="#f7f9fc"/>
+  <text x="1200" y="88" text-anchor="middle" class="title">Bandura (1965): Learning versus performance</text>
+  <text x="1200" y="135" text-anchor="middle" class="body" fill="#52647b">Observed consequences changed whether learned actions were expressed.</text>
+
+  <!-- Stage 1 -->
+  <rect x="45" y="185" width="420" height="890" rx="28" class="card"/>
+  <circle cx="90" cy="235" r="28" fill="#1d5f9e"/><text x="90" y="246" text-anchor="middle" font-size="32" font-weight="700" fill="#fff">1</text>
+  <text x="135" y="247" class="step">Same observation</text>
+  <text x="255" y="300" text-anchor="middle" class="body">All children watch one model</text>
+  <text x="255" y="336" text-anchor="middle" class="body">show the same aggressive actions.</text>
+  <!-- Original simplified adult -->
+  <circle cx="180" cy="465" r="42" fill="#f1c7a6" stroke="#38526d" stroke-width="4"/>
+  <path d="M150 450 Q180 400 216 443" fill="#26384e"/>
+  <rect x="130" y="510" width="102" height="190" rx="34" fill="#4d86b8" stroke="#38526d" stroke-width="4"/>
+  <path d="M145 555 L84 470" stroke="#38526d" stroke-width="22" stroke-linecap="round"/><circle cx="80" cy="460" r="17" fill="#f1c7a6"/>
+  <path d="M217 560 L286 620" stroke="#38526d" stroke-width="22" stroke-linecap="round"/>
+  <path d="M158 700 L130 815 M205 700 L230 815" stroke="#38526d" stroke-width="26" stroke-linecap="round"/>
+  <!-- Original simplified inflatable doll -->
+  <ellipse cx="330" cy="620" rx="72" ry="205" fill="#f5efe4" stroke="#38526d" stroke-width="5"/>
+  <ellipse cx="330" cy="460" rx="55" ry="60" fill="#f5efe4" stroke="#38526d" stroke-width="5"/>
+  <circle cx="312" cy="450" r="5"/><circle cx="348" cy="450" r="5"/><path d="M312 480 Q330 495 348 480" stroke="#38526d" stroke-width="5" fill="none"/>
+  <path d="M286 575 Q330 545 374 575 M285 655 Q330 690 375 655" stroke="#d88642" stroke-width="14" fill="none"/>
+  <ellipse cx="330" cy="830" rx="115" ry="35" fill="#bdd2e4" stroke="#38526d" stroke-width="5"/>
+  <g fill="#6b87a5"><circle cx="125" cy="925" r="35"/><circle cx="210" cy="925" r="35"/><circle cx="295" cy="925" r="35"/><circle cx="380" cy="925" r="35"/></g>
+  <text x="255" y="1000" text-anchor="middle" class="label">One shared demonstration</text>
+
+  <path d="M475 630 H535" class="arrow" marker-end="url(#arrowhead)"/>
+
+  <!-- Stage 2 -->
+  <rect x="545" y="185" width="410" height="890" rx="28" class="card"/>
+  <circle cx="590" cy="235" r="28" fill="#1d5f9e"/><text x="590" y="246" text-anchor="middle" font-size="32" font-weight="700" fill="#fff">2</text>
+  <text x="635" y="247" class="step">Observed consequence</text>
+  <text x="750" y="305" text-anchor="middle" class="body">The model receives one outcome.</text>
+  <rect x="595" y="375" width="310" height="150" rx="22" fill="#e8f4e7" stroke="#55914d" stroke-width="3"/>
+  <circle cx="655" cy="450" r="36" fill="#55914d"/><path d="M638 452 L650 464 L674 433" stroke="#fff" stroke-width="9" fill="none"/>
+  <text x="715" y="438" class="label" fill="#2e6c32">Rewarded</text><text x="715" y="477" class="body">Model praised</text>
+  <rect x="595" y="550" width="310" height="150" rx="22" fill="#fff5db" stroke="#c18b23" stroke-width="3"/>
+  <circle cx="655" cy="625" r="36" fill="#c18b23"/><path d="M636 625 H674" stroke="#fff" stroke-width="9"/>
+  <text x="715" y="605" font-size="24" font-weight="700" fill="#8a5e05">No consequence</text><text x="715" y="644" class="body">No consequence</text><text x="715" y="676" class="body">follows</text>
+  <rect x="595" y="725" width="310" height="150" rx="22" fill="#f0ebf7" stroke="#7255a2" stroke-width="3"/>
+  <circle cx="655" cy="800" r="36" fill="#7255a2"/><path d="M638 783 L672 817 M672 783 L638 817" stroke="#fff" stroke-width="9"/>
+  <text x="715" y="788" class="label" fill="#553b84">Punished</text><text x="715" y="827" class="body">Model scolded</text>
+  <text x="750" y="1000" text-anchor="middle" class="label">Three observation conditions</text>
+
+  <path d="M965 630 H1025" class="arrow" marker-end="url(#arrowhead)"/>
+
+  <!-- Stage 3 -->
+  <rect x="1035" y="185" width="430" height="890" rx="28" class="card"/>
+  <circle cx="1080" cy="235" r="28" fill="#1d5f9e"/><text x="1080" y="246" text-anchor="middle" font-size="32" font-weight="700" fill="#fff">3</text>
+  <text x="1125" y="247" class="step">Initial test</text>
+  <text x="1250" y="300" text-anchor="middle" class="body">No direct incentive for the child</text>
+  <circle cx="1140" cy="445" r="42" fill="#55914d"/><path d="M1140 465 V425 M1122 443 L1140 425 L1158 443" stroke="#fff" stroke-width="9" fill="none"/><text x="1205" y="435" class="label" fill="#2e6c32">Rewarded</text><text x="1205" y="475" class="body">More imitation</text>
+  <circle cx="1140" cy="610" r="42" fill="#c18b23"/><path d="M1140 630 V590 M1122 608 L1140 590 L1158 608" stroke="#fff" stroke-width="9" fill="none"/><text x="1205" y="600" class="label" fill="#8a5e05">No consequence</text><text x="1205" y="640" class="body">More imitation</text>
+  <circle cx="1140" cy="775" r="42" fill="#7255a2"/><path d="M1140 755 V795 M1122 777 L1140 795 L1158 777" stroke="#fff" stroke-width="9" fill="none"/><text x="1205" y="765" class="label" fill="#553b84">Punished</text><text x="1205" y="805" class="body">Less imitation</text>
+  <text x="1250" y="900" text-anchor="middle" font-size="24" font-weight="700">Punished-model group imitates less</text>
+  <text x="1250" y="940" text-anchor="middle" class="body">Rewarded and no-consequence groups</text><text x="1250" y="975" text-anchor="middle" class="body">are broadly similar.</text>
+  <text x="1250" y="1030" text-anchor="middle" class="small" fill="#65758a">Qualitative categories — no effect sizes shown</text>
+
+  <path d="M1475 630 H1535" class="arrow" marker-end="url(#arrowhead)"/>
+
+  <!-- Stage 4 -->
+  <rect x="1545" y="185" width="330" height="890" rx="28" class="card"/>
+  <circle cx="1590" cy="235" r="28" fill="#1d5f9e"/><text x="1590" y="246" text-anchor="middle" font-size="32" font-weight="700" fill="#fff">4</text>
+  <text x="1635" y="247" class="step">Direct incentive</text>
+  <text x="1710" y="310" text-anchor="middle" class="body">Every child is offered</text><text x="1710" y="347" text-anchor="middle" class="body">an incentive to reproduce</text><text x="1710" y="384" text-anchor="middle" class="body">the observed actions.</text>
+  <circle cx="1710" cy="590" r="122" fill="#e7f0fb" stroke="#2a68a7" stroke-width="5"/>
+  <path d="M1710 485 L1740 552 L1812 560 L1757 608 L1774 680 L1710 642 L1646 680 L1663 608 L1608 560 L1680 552 Z" fill="#f0b72d" stroke="#9c7312" stroke-width="5"/>
+  <text x="1710" y="785" text-anchor="middle" class="label">Same offer for all groups</text>
+
+  <path d="M1885 630 H1945" class="arrow" marker-end="url(#arrowhead)"/>
+
+  <!-- Stage 5 -->
+  <rect x="1955" y="185" width="400" height="890" rx="28" class="card"/>
+  <circle cx="2000" cy="235" r="28" fill="#1d5f9e"/><text x="2000" y="246" text-anchor="middle" font-size="32" font-weight="700" fill="#fff">5</text>
+  <text x="2045" y="247" class="step">Incentive test</text>
+  <text x="2155" y="300" text-anchor="middle" class="body">Imitation rises; differences narrow.</text>
+  <circle cx="2050" cy="445" r="42" fill="#55914d"/><path d="M2050 465 V425 M2032 443 L2050 425 L2068 443" stroke="#fff" stroke-width="9" fill="none"/><text x="2115" y="435" class="label" fill="#2e6c32">Rewarded</text><text x="2115" y="475" class="body">Imitation increases</text>
+  <circle cx="2050" cy="610" r="42" fill="#c18b23"/><path d="M2050 630 V590 M2032 608 L2050 590 L2068 608" stroke="#fff" stroke-width="9" fill="none"/><text x="2115" y="600" class="label" fill="#8a5e05">No consequence</text><text x="2115" y="640" class="body">Imitation increases</text>
+  <circle cx="2050" cy="775" r="42" fill="#7255a2"/><path d="M2040 805 V755 M2023 773 L2040 755 L2057 773 M2065 805 V755 M2048 773 L2065 755 L2082 773" stroke="#fff" stroke-width="8" fill="none"/><text x="2115" y="765" class="label" fill="#553b84">Punished</text><text x="2115" y="805" font-size="23">Increases substantially</text>
+  <text x="2155" y="910" text-anchor="middle" class="label">Previously hidden learning</text><text x="2155" y="950" text-anchor="middle" class="body">becomes visible in performance.</text>
+  <text x="2155" y="1030" text-anchor="middle" class="small" fill="#65758a">Differences narrow</text>
+
+  <rect x="210" y="1130" width="1980" height="150" rx="34" fill="#e9f2fb" stroke="#2a68a7" stroke-width="4"/>
+  <text x="1200" y="1200" text-anchor="middle" font-size="40" font-weight="700">Observed consequences changed initial performance</text>
+  <text x="1200" y="1250" text-anchor="middle" font-size="40" font-weight="700">more clearly than acquisition.</text>
+</svg>

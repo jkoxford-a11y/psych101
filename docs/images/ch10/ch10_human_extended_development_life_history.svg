@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Interacting contributors to extended human development</title>
+  <desc id="desc">A network places extended human development at the center, connected reciprocally with extended postnatal brain development, secondary altriciality, social learning and culture, shared caregiving and provisioning, and diet, ecology, and the energetic costs of brain growth. A note identifies the diagram as a model of interacting contributors rather than a complete origin story.</desc>
+  <defs>
+    <style>
+      text{font-family:Arial,Helvetica,sans-serif;fill:#18324a}.title{font-size:48px;font-weight:700}.sub{font-size:27px;fill:#56697a}.node-title{font-size:28px;font-weight:700}.node-body{font-size:22px;fill:#42576a}.center{font-size:34px;font-weight:700;fill:#fff}.center-sub{font-size:23px;fill:#eef8fb}.note{font-size:25px;font-weight:700}.link{stroke:#718da0;stroke-width:5;fill:none}.card{fill:#fff;stroke:#c7d5de;stroke-width:3}.icon{fill:none;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}
+    </style>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto-start-reverse"><path d="M0 0L12 6L0 12Z" fill="#718da0"/></marker>
+    <filter id="shadow"><feDropShadow dx="0" dy="5" stdDeviation="7" flood-opacity=".12"/></filter>
+  </defs>
+  <rect width="1600" height="900" fill="#fbfcfa"/>
+  <text class="title" x="800" y="70" text-anchor="middle">Extended human development: an interacting system</text>
+  <text class="sub" x="800" y="112" text-anchor="middle">Likely coevolving contributors—not a one-way causal chain</text>
+
+  <path class="link" marker-start="url(#arrow)" marker-end="url(#arrow)" d="M610 365C520 315 505 272 455 238"/>
+  <path class="link" marker-start="url(#arrow)" marker-end="url(#arrow)" d="M645 475C535 500 500 545 450 585"/>
+  <path class="link" marker-start="url(#arrow)" marker-end="url(#arrow)" d="M990 365C1080 315 1095 272 1145 238"/>
+  <path class="link" marker-start="url(#arrow)" marker-end="url(#arrow)" d="M955 475C1065 500 1100 545 1150 585"/>
+  <path class="link" marker-start="url(#arrow)" marker-end="url(#arrow)" d="M800 545V665"/>
+
+  <g filter="url(#shadow)">
+    <rect class="card" x="95" y="155" width="430" height="190" rx="28"/>
+    <circle cx="160" cy="220" r="40" fill="#e7f1fb"/><path class="icon" stroke="#3974a5" d="M138 228c7-31 37-42 55-22 13 15 5 38-13 45-22 8-45-3-42-23zm18-30v-16m27 15 10-13"/>
+    <text class="node-title" x="220" y="205">Extended postnatal</text><text class="node-title" x="220" y="240">brain development</text>
+    <text class="node-body" x="130" y="300">More neural construction continues after birth</text>
+
+    <rect class="card" x="1075" y="155" width="430" height="190" rx="28"/>
+    <circle cx="1140" cy="220" r="40" fill="#f4eaf8"/><path class="icon" stroke="#8856a1" d="M1121 232c10-8 13-21 10-36m18 36c-10-8-13-21-10-36m-22 39c15 12 27 12 43 0"/>
+    <text class="node-title" x="1200" y="205">Secondary</text><text class="node-title" x="1200" y="240">altriciality</text>
+    <text class="node-body" x="1110" y="300">A long period of dependence after birth</text>
+
+    <rect class="card" x="95" y="525" width="430" height="190" rx="28"/>
+    <circle cx="160" cy="590" r="40" fill="#e9f4e4"/><path class="icon" stroke="#5f8c48" d="M139 602c0-20 8-31 21-31s21 11 21 31m-42 0h42m-36-38a15 15 0 1 1 30 0"/>
+    <text class="node-title" x="220" y="575">Shared caregiving</text><text class="node-title" x="220" y="610">and provisioning</text>
+    <text class="node-body" x="130" y="670">Care, food, protection, and teaching</text>
+
+    <rect class="card" x="1075" y="525" width="430" height="190" rx="28"/>
+    <circle cx="1140" cy="590" r="40" fill="#fff1df"/><path class="icon" stroke="#c47a2e" d="M1118 608c24-4 42-22 43-48-25 2-42 18-43 48zm0 0c11-13 20-25 30-36"/>
+    <text class="node-title" x="1200" y="575">Diet, ecology, and</text><text class="node-title" x="1200" y="610">brain-growth costs</text>
+    <text class="node-body" x="1290" y="655" text-anchor="middle">Energy and ecology constrain development</text>
+    <text class="node-body" x="1290" y="685" text-anchor="middle">and the costs of brain growth</text>
+
+    <rect class="card" x="585" y="665" width="430" height="135" rx="28"/>
+    <text class="node-title" x="800" y="720" text-anchor="middle">Social learning and culture</text>
+    <text class="node-body" x="800" y="760" text-anchor="middle">Knowledge accumulates across people and generations</text>
+  </g>
+
+  <g filter="url(#shadow)"><circle cx="800" cy="415" r="180" fill="#236f83" stroke="#174f5d" stroke-width="5"/><text class="center" x="800" y="390" text-anchor="middle">Extended human</text><text class="center" x="800" y="435" text-anchor="middle">development</text><text class="center-sub" x="800" y="480" text-anchor="middle">long · plastic · energetically costly</text></g>
+
+  <rect x="190" y="830" width="1220" height="50" rx="25" fill="#eef4f6" stroke="#c7d5de" stroke-width="2"/>
+  <text class="note" x="800" y="864" text-anchor="middle">A model of interacting contributors—not a complete or uniquely established origin story</text>
+</svg>

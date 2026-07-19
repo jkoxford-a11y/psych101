@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Coping Fit: Match the First Move - General Psychology</title>
+  <link rel="icon" href="data:," />
+  <link rel="stylesheet" href="../../css/style.css" />
+  <link rel="stylesheet" href="../../css/labs.css" />
+</head>
+<body data-lab-storage-key="psych101-ch12-coping-fit-v1">
+<div class="layout">
+  <aside class="sidebar" id="app-sidebar"></aside>
+  <script src="../../js/sidebar.js" data-dir="labs/ch12" data-active="" data-top="full"></script>
+  <main class="main lab-main">
+    <p class="chapter-meta">Learning Lab - Chapter 12</p>
+    <h1>Coping Fit: Match the First Move</h1>
+    <hr class="chapter-divider" />
+    <p>Coping is not a contest between two personality types. It is a fit problem: what can change, how activated are you right now, and which move makes the next useful move possible?</p>
+    <p>Allow about 10–15 minutes. This activity practices a decision rule; it does not measure or diagnose you.</p>
+
+    <div class="callout callout--note">
+      <div class="callout-title">Privacy and Accessibility</div>
+      <p>This lab runs entirely in your browser. It stores only your prediction, progress, classifications, explanation, and transfer response in <code>sessionStorage</code> for this browser session. It stores no names, emails, IDs, health information, analytics, or tracking data, and nothing is sent to a server.</p>
+      <button class="lab-btn lab-btn--secondary" type="button" id="reset-lab">Reset this lab</button>
+      <p class="save-status" id="reset-status" aria-live="polite"></p>
+    </div>
+
+    <section class="lab-panel" id="prediction-panel" aria-labelledby="prediction-heading">
+      <p class="lab-kicker">Phase 1 of 6 - Prediction</p>
+      <h2 id="prediction-heading" tabindex="-1">Predict and Commit</h2>
+      <label class="text-label" for="prediction">A controllable task is making a student too activated to think clearly. Which coping strategy should come first, and what should follow?</label>
+      <textarea id="prediction" rows="4" required></textarea>
+      <div class="lab-actions"><button class="lab-btn" type="button" id="commit-prediction">Commit prediction</button></div>
+      <p class="save-status" id="prediction-status" aria-live="polite"></p>
+    </section>
+
+    <section class="lab-panel" id="classification-panel" aria-labelledby="classification-heading" tabindex="-1" hidden>
+      <p class="lab-kicker">Phase 2 of 6 - Classify and Choose</p>
+      <h2 id="classification-heading">Match the First Move</h2>
+      <p id="scenario-progress" class="prediction-reminder"></p>
+      <article class="classifier-item" aria-labelledby="scenario-title">
+        <h3 id="scenario-title"></h3>
+        <p id="scenario-text"></p>
+        <label for="control-select">How controllable is the stressor right now?</label>
+        <select id="control-select"><option value="">Choose one</option><option value="high">Meaningfully controllable</option><option value="low">Mostly uncontrollable right now</option></select>
+        <label for="arousal-select">What is the scenario's current arousal level?</label>
+        <select id="arousal-select"><option value="">Choose one</option><option value="manageable">Manageable enough to act</option><option value="high">Too high for effective action</option></select>
+        <label for="strategy-select">Which response should come first?</label>
+        <select id="strategy-select"><option value="">Choose one</option><option value="problem">Problem-focused action</option><option value="emotion">Emotion-focused regulation</option><option value="sequence">Emotion-focused first, then problem-focused</option></select>
+        <button class="lab-btn" type="button" id="check-scenario">Check this match</button>
+        <div class="feedback-panel" id="scenario-feedback" aria-live="polite" hidden></div>
+        <div class="lab-actions"><button class="lab-btn" type="button" id="next-scenario" hidden>Next scenario</button></div>
+      </article>
+      <div class="event-log" aria-label="Activity event log"><ol id="event-log" aria-live="polite"></ol></div>
+    </section>
+
+    <section class="lab-panel" id="teaching-panel" aria-labelledby="teaching-heading" tabindex="-1" hidden>
+      <p class="lab-kicker">Phase 3 of 6 - Concept Reveal</p>
+      <h2 id="teaching-heading">What the Pattern Shows</h2>
+      <div class="callout callout--note">
+        <div class="callout-title">The coping-fit rule</div>
+        <p>Problem-focused coping fits a changeable stressor when arousal permits effective action. Emotion-focused coping fits an unchangeable demand, or it can come first when high arousal blocks useful action. The categories name targets, not people. Good coping can switch targets as the situation changes.</p>
+      </div>
+      <button class="lab-btn" type="button" id="continue-explanation">Explain the rule</button>
+    </section>
+
+    <section class="lab-panel" id="explanation-panel" aria-labelledby="explanation-heading" tabindex="-1" hidden>
+      <p class="lab-kicker">Phase 4 of 6 - Explain</p>
+      <h2 id="explanation-heading">Explain Why Fit Matters</h2>
+      <label class="text-label" for="explanation">In your own words, explain how controllability and current arousal determine which coping strategy should come first. Include why a poor-fit strategy can fail.</label>
+      <textarea id="explanation" rows="5"></textarea>
+      <button class="lab-btn" type="button" id="save-explanation">Save explanation</button>
+      <p class="save-status" id="explanation-status" aria-live="polite"></p>
+    </section>
+
+    <section class="lab-panel" id="transfer-panel" aria-labelledby="transfer-heading" tabindex="-1" hidden>
+      <p class="lab-kicker">Phase 5 of 6 - Transfer</p>
+      <h2 id="transfer-heading">Apply the Rule to a New Scenario</h2>
+      <p>Choose a personal but nonclinical situation such as a schedule conflict, a confusing assignment, a delayed reply, a club responsibility, or a household task. Do not enter health, trauma, diagnosis, or identifying information.</p>
+      <label class="text-label" for="transfer-scenario">Briefly describe the situation.</label><textarea id="transfer-scenario" rows="3"></textarea>
+      <label for="transfer-control">What can change now?</label><select id="transfer-control"><option value="">Choose one</option><option value="high">A meaningful part is controllable</option><option value="low">The central event is not controllable now</option><option value="mixed">Some parts are controllable; some are not</option></select>
+      <label for="transfer-arousal">Can effective action happen at the current arousal level?</label><select id="transfer-arousal"><option value="">Choose one</option><option value="yes">Yes</option><option value="no">No, regulate first</option></select>
+      <label class="text-label" for="transfer-plan">State the first coping move and, if needed, the next move. Explain the fit.</label><textarea id="transfer-plan" rows="4"></textarea>
+      <label class="option-row"><input type="checkbox" id="transfer-boundary" /> My answer distinguishes regulating the response from changing the stressor.</label>
+      <button class="lab-btn" type="button" id="save-transfer">Complete lab</button>
+      <p class="save-status" id="transfer-status" aria-live="polite"></p>
+    </section>
+
+    <section class="lab-panel" id="summary-panel" aria-labelledby="summary-heading" tabindex="-1" hidden>
+      <p class="lab-kicker">Phase 6 of 6 - Completion Summary</p>
+      <h2 id="summary-heading">What You Practiced</h2>
+      <div id="completion-summary" aria-live="polite"></div>
+      <div class="callout callout--think-about-it">
+        <div class="callout-title">Instructor Note</div>
+        <p>Have pairs compare one scenario where they chose the same strategy for different reasons. Debrief the high-arousal, controllable case: regulation is not avoidance when it makes later problem-focused action possible.</p>
+      </div>
+    </section>
+  </main>
+</div>
+<script src="../../js/labs-coping-fit.js"></script>
+<script src="../../js/lab-session-controls.js"></script>
+<script src="../../js/nav.js"></script>
+</body>
+</html>

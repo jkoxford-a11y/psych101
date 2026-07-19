@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="../../css/style.css" />
   <link rel="stylesheet" href="../../css/labs.css" />
 </head>
-<body>
+<body data-lab-storage-key="psych101-lab-ch02-correlation-causation-v3">
 <div class="layout">
   <aside class="sidebar" id="app-sidebar"></aside>
   <script src="../../js/sidebar.js" data-dir="labs/ch02" data-active="" data-top="full"></script>
@@ -17,11 +17,11 @@
     <h1>Correlation vs. Causation Classifier</h1>
     <hr class="chapter-divider" />
 
-    <p>Each headline below is fictional. First decide whether the headline's evidence can support a causal claim. Then reveal the study design, identify the research-methods problem, and explain your reasoning in one sentence.</p>
+    <p>Each headline below is fictional. First predict whether the headline's unseen evidence can support its causal claim. This initial prediction records the impression created by the headline; it is not scored. Then reveal the study design and make three separately scored judgments. Reverse causation and third variables are not competing answer choices: an observational study can leave either concern, both, or neither.</p>
 
-    <div class="callout callout--objectives">
+    <div class="callout callout--note">
       <div class="callout-title">Accessibility and Privacy</div>
-      <p>This lab is fully local to your browser. It stores your in-progress responses in sessionStorage so a refresh does not immediately erase your work, and it does not collect names, emails, IDs, analytics, or any personally identifying information.</p>
+      <p>This lab runs entirely in your browser. It stores predictions, judgments, and written responses in sessionStorage for this browser session so a refresh does not erase your work. It does not store names, emails, student IDs, analytics, or identifying information, and it sends no responses over a network.</p>
     </div>
 
     <section class="lab-panel" aria-labelledby="classifier-heading">
@@ -38,58 +38,53 @@
 
         <form id="lab-form" novalidate>
           <fieldset class="lab-fieldset" id="prediction-fieldset">
-            <legend>Predict and commit: based only on the headline, can the evidence support a causal claim?</legend>
+            <legend>Predict and commit: based only on the headline, can the unseen evidence support the stated causal claim?</legend>
             <label class="option-row">
               <input type="radio" name="causalPrediction" value="yes" />
-              <span>Yes, this could support a causal claim.</span>
+              <span>Yes, the evidence might support the causal claim.</span>
             </label>
             <label class="option-row">
               <input type="radio" name="causalPrediction" value="no" />
-              <span>No, this should be treated as correlational or uncertain.</span>
+              <span>No, the claim is probably correlational or uncertain.</span>
             </label>
           </fieldset>
 
           <button class="lab-btn" type="button" id="commit-prediction">Commit prediction</button>
 
-          <section class="observe-panel" id="observe-panel" hidden>
-            <h3>Observe the study design</h3>
+          <section class="observe-panel" id="observe-panel" hidden tabindex="-1" aria-labelledby="observe-heading">
+            <h3 id="observe-heading">Observe the study design</h3>
             <p id="study-details"></p>
 
             <fieldset class="lab-fieldset">
-              <legend>Identify the strongest research-methods classification.</legend>
-              <label class="option-row">
-                <input type="radio" name="problemType" value="experiment" />
-                <span>True experiment: random assignment supports a causal claim.</span>
-              </label>
-              <label class="option-row">
-                <input type="radio" name="problemType" value="correlation" />
-                <span>Correlation only: variables moved together, but no causal test was done.</span>
-              </label>
-              <label class="option-row">
-                <input type="radio" name="problemType" value="directionality" />
-                <span>Directionality problem: cause and effect could be reversed.</span>
-              </label>
-              <label class="option-row">
-                <input type="radio" name="problemType" value="third-variable" />
-                <span>Third-variable problem: another factor may explain both variables.</span>
-              </label>
-              <label class="option-row">
-                <input type="radio" name="problemType" value="both" />
-                <span>Both directionality and third-variable problems.</span>
-              </label>
+              <legend>1. Does this study design support the stated causal claim?</legend>
+              <label class="option-row"><input type="radio" name="causalSupport" value="yes" /><span>Yes</span></label>
+              <label class="option-row"><input type="radio" name="causalSupport" value="no" /><span>No</span></label>
             </fieldset>
 
-            <label class="text-label" for="student-explanation">Explain your classification in one sentence.</label>
-            <textarea id="student-explanation" name="studentExplanation" rows="4" placeholder="Example: This is correlational because..." required></textarea>
+            <fieldset class="lab-fieldset">
+              <legend>2. Could reverse causation remain plausible?</legend>
+              <label class="option-row"><input type="radio" name="reverseCausation" value="yes" /><span>Yes</span></label>
+              <label class="option-row"><input type="radio" name="reverseCausation" value="no" /><span>No</span></label>
+            </fieldset>
 
-            <button class="lab-btn" type="button" id="check-answer">Check answer</button>
+            <fieldset class="lab-fieldset">
+              <legend>3. Could a third variable remain plausible?</legend>
+              <label class="option-row"><input type="radio" name="thirdVariable" value="yes" /><span>Yes</span></label>
+              <label class="option-row"><input type="radio" name="thirdVariable" value="no" /><span>No</span></label>
+            </fieldset>
+
+            <label class="text-label" for="design-strengthening">4. What design change or additional evidence would strengthen the inference?</label>
+            <textarea id="design-strengthening" name="designStrengthening" rows="4" placeholder="Name a comparison, manipulation, time sequence, measure, or replication that would help." required></textarea>
+
+            <button class="lab-btn" type="button" id="check-answer">Check judgments</button>
           </section>
         </form>
 
-        <section class="feedback-panel" id="feedback-panel" hidden tabindex="-1" aria-live="polite">
+        <section class="feedback-panel" id="feedback-panel" hidden tabindex="-1" aria-live="polite" aria-labelledby="feedback-heading">
           <h3 id="feedback-heading"></h3>
           <p id="feedback-text"></p>
           <p id="model-explanation"></p>
+          <p><strong>One way to strengthen the inference:</strong> <span id="strengthening-example"></span></p>
           <div class="lab-actions">
             <button class="lab-btn" type="button" id="next-item">Next headline</button>
           </div>
@@ -97,39 +92,53 @@
       </article>
     </section>
 
-    <section class="lab-panel" id="summary-panel" hidden aria-labelledby="summary-heading">
+    <section class="lab-panel" id="summary-panel" hidden tabindex="-1" aria-labelledby="summary-heading">
       <h2 id="summary-heading">Summary and Transfer</h2>
       <p id="summary-score"></p>
+      <p id="summary-concept"></p>
       <div class="table-wrap">
         <table>
           <thead>
             <tr>
               <th>Headline</th>
-              <th>Your prediction</th>
-              <th>Your classification</th>
-              <th>Best classification</th>
+              <th>Initial prediction</th>
+              <th>Causal support</th>
+              <th>Reverse causation</th>
+              <th>Third variable</th>
             </tr>
           </thead>
           <tbody id="summary-table-body"></tbody>
         </table>
       </div>
 
-      <label class="text-label" for="transfer-response">Choose one headline and describe a study design that would get closer to establishing causation.</label>
-      <textarea id="transfer-response" rows="5"></textarea>
-      <div class="lab-actions">
-        <button class="lab-btn" type="button" id="save-transfer">Save transfer response locally</button>
-        <button class="lab-btn lab-btn--secondary" type="button" id="restart-lab">Restart lab</button>
-      </div>
-      <p class="save-status" id="transfer-status" aria-live="polite"></p>
+      <section aria-labelledby="explain-heading">
+        <h3 id="explain-heading">Explain</h3>
+        <label class="text-label" for="explain-response">Why is it a mistake to force reverse causation and third-variable concerns into one mutually exclusive “best flaw” category?</label>
+        <textarea id="explain-response" rows="5"></textarea>
+        <button class="lab-btn" type="button" id="save-explain">Save explanation and continue</button>
+        <p class="save-status" id="explain-status" aria-live="polite"></p>
+      </section>
+
+      <section id="transfer-panel" hidden tabindex="-1" aria-labelledby="transfer-heading">
+        <h3 id="transfer-heading">Transfer</h3>
+        <label class="text-label" for="transfer-response">A city finds that residents of neighborhoods with more trees report less stress. Apply all three judgments, then describe one design change or source of evidence that would strengthen a causal claim about trees reducing stress.</label>
+        <textarea id="transfer-response" rows="5"></textarea>
+        <div class="lab-actions">
+          <button class="lab-btn" type="button" id="save-transfer">Save transfer response locally</button>
+          <button class="lab-btn lab-btn--secondary" type="button" id="restart-lab">Restart lab</button>
+        </div>
+        <p class="save-status" id="transfer-status" aria-live="polite"></p>
+      </section>
     </section>
 
     <section class="callout callout--think-about-it">
       <div class="callout-title">Instructor Note</div>
-      <p>Use this lab as a 10-15 minute in-class pair activity. Students work in pairs, classify the headlines, choose two contested cases, and bring those cases to the debrief. Use the disagreements to distinguish causal language, directionality, third variables, and true random assignment.</p>
+      <p>Use this lab as a 10-15 minute pair activity. Ask pairs to compare cases where both causal alternatives remain plausible with randomized cases where neither does. The key debrief moment is that identifying one concern does not make the other disappear.</p>
     </section>
   </main>
 </div>
 <script src="../../js/nav.js"></script>
 <script src="../../js/labs-correlation-causation.js"></script>
+<script src="../../js/lab-session-controls.js"></script>
 </body>
 </html>

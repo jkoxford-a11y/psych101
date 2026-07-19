@@ -210,6 +210,14 @@ body.sidebar-collapsed .sidebar-toggle--float {
   color: var(--color-muted);
 }
 
+.toc-note {
+  font-size: 0.85rem;
+  font-style: italic;
+  color: var(--color-muted);
+  margin-top: -0.5rem;
+  margin-bottom: 1.5rem;
+}
+
 /* ── Typography ── */
 h1 {
   font-family: var(--font-ui);
@@ -234,6 +242,8 @@ h3 {
   font-weight: 600;
   margin: 1.75rem 0 0.5rem;
   color: var(--color-text);
+  padding-left: 0.85rem;
+  border-left: 3px solid var(--color-accent);
 }
 
 p { margin-bottom: 1.25rem; }
@@ -255,6 +265,39 @@ a { color: var(--color-accent); }
   border-top: 2px solid var(--color-accent);
   margin: 1.5rem 0 2.5rem;
   width: 60px;
+}
+
+/* ── In-section nav (scoped per h2, not a chapter-wide TOC) ── */
+.in-section-nav {
+  font-family: var(--font-ui);
+  font-size: 0.85rem;
+  color: var(--color-muted);
+  display: flex;
+  gap: 0.4rem;
+  flex-wrap: wrap;
+  align-items: baseline;
+  margin: -0.5rem 0 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.in-section-nav strong {
+  color: var(--color-text);
+  font-weight: 700;
+  margin-right: 0.3rem;
+}
+
+.in-section-nav a {
+  color: var(--color-accent);
+  text-decoration: none;
+}
+
+.in-section-nav a:hover {
+  text-decoration: underline;
+}
+
+.in-section-nav .sep {
+  color: var(--color-border);
 }
 
 /* ── Callout boxes ── */
@@ -281,6 +324,21 @@ a { color: var(--color-accent); }
 .key-term {
   font-weight: 700;
   color: var(--color-accent);
+}
+
+.logic-emphasis {
+  color: #0f5c5e;
+  font-weight: 700;
+  background: transparent;
+  text-decoration: none;
+}
+
+.main > ul {
+  margin: 0 0 1.25rem 1.5rem;
+}
+
+.main > ul li {
+  margin-bottom: 0.45rem;
 }
 
 /* ── TOC page ── */
@@ -344,6 +402,18 @@ a { color: var(--color-accent); }
 .where-this-fits {
   font-style: italic;
   color: var(--color-text);
+}
+
+/* Long DOI and resource URLs must wrap inside the reading column on narrow screens. */
+.further-reading,
+.references {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+.further-reading a,
+.references a {
+  word-break: break-all;
 }
 
 /* ── Tables (history table, connections table, etc.) ── */
@@ -515,6 +585,15 @@ th {
   cursor: zoom-out;
 }
 
+/* On laptop-width screens, the fixed sidebar leaves too little room for the
+   desktop breakout margins and can push an expanded figure past the viewport. */
+@media (max-width: 1400px) {
+  .chapter-figure.expandable.is-expanded {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
 .chapter-figure .figure-expand-hint {
   margin-top: 0.5rem;
   font-family: var(--font-ui);
@@ -580,21 +659,30 @@ th {
   .sidebar.collapsed {
     box-shadow: none;
   }
-  .main { padding: 2rem 1.25rem 4rem; }
+  .main {
+    min-width: 0;
+    padding: 2rem 1.25rem 4rem;
+  }
+  .chapter-meta { padding-left: 3rem; }
   h1 { font-size: 1.6rem; }
 
-  /* Expanded figures: hard-cap to the true viewport width instead of the
-     desktop clamp(-220px, -14vw, 0) breakout math, which assumes room that
-     isn't there once a touch device is this narrow (and was computing the
-     breakout against the full viewport width even when the old fixed-width
-     sidebar was still eating part of it in landscape) — that mismatch is
-     what caused the image to overflow past the screen edge with no way to
-     scroll back to the clipped part. */
+  /* Keep wide comparison tables inside the reading column. The table itself
+     remains available at full width through horizontal scrolling without
+     forcing the entire chapter page wider than the viewport. */
+  table {
+    display: block;
+    max-width: 100%;
+    overflow-x: auto;
+  }
+
+  /* Expanded figures stay inside the mobile content column. Using 100vw here
+     includes the browser's vertical scrollbar in some engines, which creates
+     a small but real page-level horizontal overflow. */
   .chapter-figure.expandable.is-expanded {
-    width: 100vw;
-    max-width: 100vw;
-    margin-left: calc(50% - 50vw);
-    margin-right: calc(50% - 50vw);
+    width: 100%;
+    max-width: 100%;
+    margin-left: 0;
+    margin-right: 0;
   }
   .chapter-figure.expandable.is-expanded img {
     width: 100%;

@@ -1,0 +1,17 @@
+{
+  "ok": true,
+  "spriteVersionNumber": 2,
+  "run_dir": "C:\\GitHub\\psych101\\.pet-runs\\synapse",
+  "spritesheet": "C:\\GitHub\\psych101\\.pet-runs\\synapse\\final\\spritesheet-extended.webp",
+  "validation": "C:\\GitHub\\psych101\\.pet-runs\\synapse\\final\\validation-extended.json",
+  "installed_validation": "C:\\GitHub\\psych101\\.pet-runs\\synapse\\final\\validation-installed.json",
+  "chroma_despill": "C:\\GitHub\\psych101\\.pet-runs\\synapse\\qa\\chroma-despill-extended.json",
+  "contact_sheet": "C:\\GitHub\\psych101\\.pet-runs\\synapse\\qa\\contact-sheet-extended.png",
+  "direction_sheet": "C:\\GitHub\\psych101\\.pet-runs\\synapse\\qa\\look-directions.png",
+  "direction_semantics": "C:\\GitHub\\psych101\\.pet-runs\\synapse\\qa\\direction-semantics.json",
+  "blind_direction_validation": "C:\\GitHub\\psych101\\.pet-runs\\synapse\\qa\\direction-blind-validation.json",
+  "blind_review_resolution": null,
+  "continuity": "C:\\GitHub\\psych101\\.pet-runs\\synapse\\qa\\look-continuity.json",
+  "review": "C:\\GitHub\\psych101\\.pet-runs\\synapse\\qa\\review.json",
+  "package": "C:\\Users\\oxfor\\.codex\\pets\\synapse"
+}
