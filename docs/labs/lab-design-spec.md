@@ -154,8 +154,6 @@ docs/labs/
   index.html                        — conceptual-map index (psychological function grouping)
   lab-design-spec.md                — this file
   assets/                           — shared assets if needed (currently unused; styles/JS are per-chapter)
-  ch02/
-    correlation-causation.html
   ch06/
     index.html
     process-s-process-c.html
