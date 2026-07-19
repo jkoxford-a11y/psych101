@@ -141,6 +141,19 @@ function cleanFigureAlt(value) {
   return value.replace(/^Figure \d+\.\d+\s*[—-]\s*/, "").trim();
 }
 
+const noExpandFigureFiles = new Set([
+  "fig3_1_neuron_anatomy_pressbooks.jpeg",
+  "fig3_2_action_potential_pressbooks.jpeg",
+]);
+
+function renderFigure(normalized, cleanAlt, caption) {
+  const cap = caption.replace(/^(Figure \d+\.\d+)\.\s*/, "<strong>$1.</strong> ");
+  if (noExpandFigureFiles.has(path.basename(normalized))) {
+    return `<figure class="chapter-figure no-expand"><img src="${normalized}" alt="${cleanAlt}" /><figcaption>${cap}</figcaption></figure>`;
+  }
+  return `<figure class="chapter-figure expandable"><a class="figure-expand-toggle" href="${normalized}" aria-label="Expand figure" aria-expanded="false"><img src="${normalized}" alt="${cleanAlt}" /></a><figcaption>${cap}</figcaption></figure>`;
+}
+
 function convertFigures(html) {
   html = html.replace(
     /<p><img src="([^"]+)" alt="([^"]*)"\s*><\/p>\s*<p><em>(Figure [\s\S]*?)<\/em><\/p>/g,
@@ -150,8 +163,7 @@ function convertFigures(html) {
         .replace(/^\.\.\/images\//, "../images/")
         .replace(/^\.\.\/\.\.\/images\//, "../images/");
       const cleanAlt = cleanFigureAlt(alt);
-      const cap = caption.replace(/^(Figure \d+\.\d+)\.\s*/, "<strong>$1.</strong> ");
-      return `<figure class="chapter-figure expandable"><a class="figure-expand-toggle" href="${normalized}" aria-label="Expand figure"><img src="${normalized}" alt="${cleanAlt}" /></a><figcaption>${cap}</figcaption></figure>`;
+      return renderFigure(normalized, cleanAlt, caption);
     },
   );
   return html.replace(
@@ -162,8 +174,7 @@ function convertFigures(html) {
         .replace(/^\.\.\/images\//, "../images/")
         .replace(/^\.\.\/\.\.\/images\//, "../images/");
       const cleanAlt = cleanFigureAlt(alt);
-      const cap = caption.replace(/^(Figure \d+\.\d+)\.\s*/, "<strong>$1.</strong> ");
-      return `<figure class="chapter-figure expandable"><a class="figure-expand-toggle" href="${normalized}" aria-label="Expand figure"><img src="${normalized}" alt="${cleanAlt}" /></a><figcaption>${cap}</figcaption></figure>`;
+      return renderFigure(normalized, cleanAlt, caption);
     },
   );
 }

@@ -1,6 +1,5 @@
-/* Shared responsive repair for chapter media.
-   Keeps deliberate desktop figure breakouts and large intrinsic video dimensions
-   from creating page-level horizontal overflow. */
+/* Shared responsive repair for generated chapter videos. Expandable-figure
+   sizing lives only in style.css so the two stylesheets cannot conflict. */
 
 /* Generated chapter videos may retain large intrinsic dimensions. Constrain
    them to the reading column at every viewport rather than styling them at
@@ -14,21 +13,4 @@
   width: 100%;
   max-width: 100%;
   height: auto;
-}
-
-@media (max-width: 700px), (hover: none) and (pointer: coarse) {
-  .chapter-figure.wide,
-  .chapter-figure.expandable.is-expanded {
-    width: 100%;
-    max-width: 100%;
-    margin-left: 0;
-    margin-right: 0;
-  }
-
-  .chapter-figure.wide img,
-  .chapter-figure.expandable.is-expanded img {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-  }
 }
