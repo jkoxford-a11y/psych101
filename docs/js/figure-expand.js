@@ -20,6 +20,7 @@
     link.className = 'figure-expand-toggle';
     link.href = image.getAttribute('src') || image.currentSrc;
     link.setAttribute('aria-label', 'Expand figure');
+    link.setAttribute('aria-expanded', 'false');
 
     figure.insertBefore(link, image);
     link.appendChild(image);
@@ -39,11 +40,11 @@
 
   document.querySelectorAll('.chapter-figure.wide').forEach(normalizeLegacyWideFigure);
 
-  document.querySelectorAll('.chapter-figure.expandable .figure-expand-toggle').forEach(function (link) {
-    link.setAttribute('aria-expanded', 'false');
+  document.querySelectorAll('.chapter-figure.expandable:not(.no-expand) .figure-expand-toggle').forEach(function (link) {
+    var figure = link.closest('.chapter-figure');
+    setState(figure, false);
     link.addEventListener('click', function (e) {
       e.preventDefault();
-      var figure = link.closest('.chapter-figure');
       setState(figure, !figure.classList.contains('is-expanded'));
     });
   });
