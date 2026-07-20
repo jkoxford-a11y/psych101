@@ -79,11 +79,11 @@
 ---
 
 ### Figure 3.6 — Synaptic transmission: release, receptor effects, and clearance
-**Filename:** `ch03_synaptic_transmission_release_receptors_clearance.png`
+**Filename:** `ch03_synaptic_transmission_and_clearance_routes.png`
 **Placement:** Section 2, after the receptor/clearance paragraph
-**Caption:** “Synaptic transmission is a short-lived chemical conversation. An arriving action potential triggers release; receptors translate that chemical message into a cellular effect. Reuptake and enzymatic degradation are two important ways the signal can end.”
-**Alt text:** “Two-panel educational infographic showing how a chemical synaptic signal is sent and cleared. In the left panel, an action potential reaches a blue presynaptic terminal, neurotransmitter molecules are released into the synaptic cleft, and the molecules bind to receptors on a green postsynaptic neuron. Receptor opening changes sodium or potassium ion movement, altering the postsynaptic neuron’s likelihood of firing. In the right panel, one route of clearance is reuptake through transporter proteins in the presynaptic membrane. The other route shows neurotransmitter molecules that remain in the cleft being broken into inactive pieces by enzymes.”
-**Attribution:** Original figure generated for Oxford Psychology 101 with ChatGPT image generation, 2026. No external copyrighted image assets intentionally used. Safe for public sharing pending final biological accuracy review.
+**Caption:** “Synaptic transmission begins when an action potential triggers neurotransmitter release from the presynaptic terminal. Neurotransmitter molecules cross the synaptic cleft and bind to postsynaptic receptors, changing ion flow and the receiving neuron’s likelihood of firing. Unbound neurotransmitter is then cleared by different mechanisms. Some molecules are taken back up through transporters in the presynaptic membrane; others are broken down by enzymes in the synaptic cleft. Reuptake and enzymatic degradation are alternative clearance routes, not required consecutive steps.”
+**Alt text:** “Three-panel educational infographic explaining chemical synaptic transmission and two clearance routes. The first panel shows an action potential reaching a blue presynaptic terminal, neurotransmitter molecules being released into the synaptic cleft, binding to receptors on a green postsynaptic neuron, and changing sodium or potassium ion flow. The second panel shows unbound neurotransmitter moving through a reuptake transporter in the presynaptic membrane and back into the terminal. The third panel shows unbound neurotransmitter in the synaptic cleft being broken into inactive fragments by an enzyme. The final two panels present reuptake and enzymatic breakdown as alternative ways to end the signal.”
+**Attribution:** Original figure generated for Oxford Psychology 101 with ChatGPT image generation, 2026. No external copyrighted image assets intentionally used. Direct biological-accuracy and text-legibility review passed 2026-07-20.
 **Status:** Use now.
 
 ---

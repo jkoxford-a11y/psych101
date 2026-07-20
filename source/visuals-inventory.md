@@ -68,7 +68,7 @@ Chapter 3 HTML is built. All 10 active figures are wired in both the source mark
 | 3.3 | Action potential: threshold, spike, and refractory period | ✅ wired / use now | `ch03/fig3_2_action_potential_pressbooks.jpeg` |
 | 3.4 | Myelin and saltatory conduction | ✅ wired / use now | `ch03/ch03_myelin_saltatory_conduction_speed_efficiency.png` |
 | 3.5 | Chemical messengers: wired and focal vs. broadcast | ✅ wired / use now | `ch03/ch03_chemical_messengers_wired_focal_vs_broadcast.png` |
-| 3.6 | Synaptic transmission: release, receptor effects, and clearance | ✅ wired / use now | `ch03/ch03_synaptic_transmission_release_receptors_clearance.png` |
+| 3.6 | Synaptic transmission: release, receptor effects, and clearance | ✅ wired / use now | `ch03/ch03_synaptic_transmission_and_clearance_routes.png` |
 | 3.7 | Excitation, inhibition, and circuit selectivity | ✅ wired / use now | `ch03/ch03_excitation_inhibition_circuit_selectivity.png` |
 | 3.8 | Dopamine and serotonin projection systems | ✅ wired / use now | `ch03/ch03_neuromodulator_projection_systems_dopamine_serotonin.png` |
 | 3.9 | Sympathetic and parasympathetic push-pull balance | ✅ wired / use now | `ch03/ch03_autonomic_balance_push_pull.png` |
