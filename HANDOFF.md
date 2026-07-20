@@ -1,6 +1,6 @@
 # Psych101 — Current Handoff
 
-**Last updated:** 2026-07-19 (repository-wide figure expansion repaired; figure, Signal Detection timed-flash, and Learning Lab local regressions pass; deployed human checks remain)
+**Last updated:** 2026-07-20
 **Canonical repository:** `C:\GitHub\psych101`
 
 This file records current state only. See `GPT_project_log.md` for completed-work history, `PROJECT_BACKLOG.md` for durable deferred work, `pipeline/audits/learning-lab-state-restoration-audit.md` for the repository-wide lab audit, `pipeline/audits/ch04-signal-detection-timed-flash-2026-07-18.md` for the current Signal Detection revision, and `pipeline/audits/ch07-image-work-pause-2026-07-17.md` for the paused Chapter 7 image lane.
@@ -33,7 +33,7 @@ Weber's Law, Blind-Spot Filling-In, and Context and Ambiguous Perception retain 
 
 ### Completed chapter lanes
 
-Chapters 1–3 and 9–13 have completed their canonical revision/validation cycles. Chapter 8's wired Levels of Processing and Interactive Imagery labs remain approved; Self-Reference Effect remains index-only. Do not reopen these lanes absent a specific defect or Jon's editorial request.
+Chapters 1–3 and 9–13 have completed their canonical revision/validation cycles. Chapter 3 is fully closed after its July 20 follow-up: the line-edit reconciliation is complete, review-answer positions are rebalanced, Learning Objective opening verbs are formatted consistently, and Figure 3.6 is rewired to the accurate replacement; no follow-up issue remains unresolved. Chapter 8's wired Levels of Processing and Interactive Imagery labs remain approved; Self-Reference Effect remains index-only. Do not reopen completed lanes absent a specific defect or Jon's editorial request.
 
 ### Paused image lanes
 

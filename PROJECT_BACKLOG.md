@@ -4,7 +4,6 @@ Durable future and deferred work that is not part of the immediately active task
 
 ## Editorial review
 
-- **Chapter 3 full line-by-line editorial pass** — Sections 3–4 and the back matter still have not received the same instructor review as Sections 1–2.
 - **Instructor line-by-line review across Chapters 2–13** — the current audit/revision sequence addresses conceptual accuracy and cognitive load, but most chapters will still benefit from a later sentence-level teaching pass after their canonical sources and figures stabilize.
 - **Review Chapter 11’s newly authored Connections rows and retrieval prompts** during the final instructor pass. They are canonical source content now, not uncommitted work.
 
