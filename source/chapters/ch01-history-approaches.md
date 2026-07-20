@@ -26,12 +26,12 @@ This chapter is the epistemological (that is, how scientists decide what is true
 
 By the end of this chapter, you should be able to:
 
-1. Define psychology as the scientific study of behavior and mental processes, and describe the breadth of the field beyond common stereotypes.
-2. Identify the major historical schools of thought in psychology, the question each was trying to answer, and how later approaches responded to unresolved problems while the traditions overlapped.
-3. Describe the modern theoretical perspectives in psychology and distinguish a useful question from an evidence-supported causal explanation.
-4. Apply the biopsychosocial model to organize contributors to a specific behavior or mental state, and explain why the model is not a completed causal account.
-5. Explain what the evolutionary perspective adds to psychological explanation, and where that kind of explanation needs to be handled with caution.
-6. Explain how psychological science relies on empirical evidence and revises conclusions as evidence changes, using hindsight bias, confirmation bias, replication, and self-correction.
+1. **Define** psychology as the scientific study of behavior and mental processes, and describe the breadth of the field beyond common stereotypes.
+2. **Identify** the major historical schools of thought in psychology, the question each was trying to answer, and how later approaches responded to unresolved problems while the traditions overlapped.
+3. **Describe** the modern theoretical perspectives in psychology and distinguish a useful question from an evidence-supported causal explanation.
+4. **Apply** the biopsychosocial model to organize contributors to a specific behavior or mental state, and explain why the model is not a completed causal account.
+5. **Explain** what the evolutionary perspective adds to psychological explanation, and where that kind of explanation needs to be handled with caution.
+6. **Explain** how psychological science relies on empirical evidence and revises conclusions as evidence changes, using hindsight bias, confirmation bias, replication, and self-correction.
 
 ---
 

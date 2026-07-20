@@ -274,7 +274,7 @@ function addSectionNav(html) {
     for (const match of section.matchAll(/<h3 id="([^"]+)">([\s\S]*?)<\/h3>/g)) {
       links.push(`<a href="#${match[1]}">${match[2]}</a>`);
     }
-    if (!links.length) return `${heading}${section}`;
+    if (links.length < 2) return `${heading}${section}`;
     return `${heading}<div class="in-section-nav"><strong>In this section:</strong> ${links.join('<span class="sep">·</span> ')}</div>${section}`;
   });
 }

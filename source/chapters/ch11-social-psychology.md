@@ -28,13 +28,13 @@ The chapter returns to personality at the end. That is not an unrelated topic ad
 
 By the end of this chapter, you should be able to:
 
-1. Explain the fundamental attribution error and self-serving bias and distinguish their directions.
-2. Explain cognitive dissonance and distinguish central-route from peripheral-route persuasion.
-3. Distinguish conformity from obedience and identify situational variables that change each.
-4. Distinguish group polarization, groupthink, stereotypes, prejudice, and discrimination.
-5. Use the bystander decision model and explain why helping and aggression require multiple levels of explanation.
-6. Describe the Big Five as dimensions rather than types.
-7. Explain how aggregation and situation strength resolve the person–situation debate.
+1. **Explain** the fundamental attribution error and self-serving bias and distinguish their directions.
+2. **Explain** cognitive dissonance and distinguish central-route from peripheral-route persuasion.
+3. **Distinguish** conformity from obedience and identify situational variables that change each.
+4. **Distinguish** group polarization, groupthink, stereotypes, prejudice, and discrimination.
+5. **Use** the bystander decision model and explain why helping and aggression require multiple levels of explanation.
+6. **Describe** the Big Five as dimensions rather than types.
+7. **Explain** how aggregation and situation strength resolve the person–situation debate.
 
 ---
 

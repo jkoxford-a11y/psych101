@@ -1,11 +1,17 @@
 # Psych101 — Current Handoff
 
-**Last updated:** 2026-07-19 (repository-wide figure expansion repaired; figure, Signal Detection timed-flash, and Learning Lab local regressions pass; deployed human checks remain)
+**Last updated:** 2026-07-20 (book-wide objective formatting and subsection navigation standardized; prior deployed human checks remain)
 **Canonical repository:** `C:\GitHub\psych101`
 
 This file records current state only. See `GPT_project_log.md` for completed-work history, `PROJECT_BACKLOG.md` for durable deferred work, `pipeline/audits/learning-lab-state-restoration-audit.md` for the repository-wide lab audit, `pipeline/audits/ch04-signal-detection-timed-flash-2026-07-18.md` for the current Signal Detection revision, and `pipeline/audits/ch07-image-work-pause-2026-07-17.md` for the paused Chapter 7 image lane.
 
 ## Current state
+
+### Book-wide objective formatting and section navigation
+
+All 92 canonical and rendered Learning Objectives across the Prologue and Chapters 1–13 now bold only the opening instructional verb, with wording otherwise unchanged. Numbered sections now omit navigation boxes for zero or one genuine subsection and show exactly one complete box for two or more. The four former one-link boxes are gone; useful boxes are present in Chapter 4 Section 4, Chapter 5 Sections 1–2, and Chapter 6 Section 2.
+
+`pipeline/bookwide_textbook_qc_audit.cjs` enforces the objective counts, navigation cardinality and targets, link resolution, and unique IDs. Static/invariant checks passed, figure markup remained byte-identical, and Jon confirmed all 14 pages at 1440×900 and 390×844 with no overflow, missing images, broken layouts, console errors, or figure changes. Chapter 7 received only its approved narrow objective-markup repair; its full-regeneration pause remains in force.
 
 ### Repository-wide figure expansion
 
@@ -47,6 +53,7 @@ Chapter 7 prose and Classical Conditioning work are complete, but full HTML rege
 
 ## Important files
 
+- Book-wide QC audit and regression: `pipeline/audits/bookwide-textbook-qc-2026-07-19.md`, `pipeline/bookwide_textbook_qc_audit.cjs`
 - Timed-flash audit: `pipeline/audits/ch04-signal-detection-timed-flash-2026-07-18.md`
 - Signal Detection implementation: `docs/labs/ch04/signal-detection.html`, `docs/labs/ch04/signal-detection.js`, `docs/labs/ch04/ch04-labs.css`
 - Signal Detection regression: `pipeline/ch04_signal_detection_mask_regression.cjs`

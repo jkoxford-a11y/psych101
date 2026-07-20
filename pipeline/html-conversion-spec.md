@@ -165,11 +165,13 @@ All callouts share the base class `callout` plus one variant class. **Do not inv
 <div class="callout callout--objectives">
   <div class="callout-title">By the end of this chapter, you should be able to:</div>
   <ol>
-    <li>Objective one.</li>
-    <li>Objective two.</li>
+    <li><strong>Describe</strong> objective one.</li>
+    <li><strong>Explain</strong> objective two.</li>
   </ol>
 </div>
 ```
+
+Bold only the first instructional verb in each objective. Do not bold the objective number, introductory material, or any additional verb later in the objective, and do not rewrite objective wording while applying this convention.
 
 ### Stop and Retrieve
 
@@ -249,7 +251,7 @@ Use `<h2>` for all major sections. Add an `id` attribute as a lowercase, hyphena
 
 Each numbered content section (Section 1, Section 2, ...) should be broken into 2–4 `<h3>` subsections, each covering one topic-sized chunk a reader can hold in working memory at once. This is not optional polish — see the Rationale note below. Titles must be descriptive of the actual content ("Acquisition, extinction, and spontaneous recovery"), never generic ("Part 2" or "Subsection A").
 
-Give every `<h3>` a lowercase, hyphenated `id` slug, same convention as `<h2>`. Immediately after the `<h2>` that opens a numbered section, add an `.in-section-nav` block linking to that section's own `<h3>` ids only — **not** a chapter-wide table of contents, and **not** labeled "On this page" (these chapters are single continuous scrolling documents, not paginated; "In this section" is the accurate label).
+Give every `<h3>` a lowercase, hyphenated `id` slug, same convention as `<h2>`. When a numbered section has two or more genuine `<h3>` subsections, immediately after its opening `<h2>` add exactly one `.in-section-nav` block linking to exactly those subsection ids. Do not render a navigation box for zero or one subsection. The box is **not** a chapter-wide table of contents and must **not** be labeled "On this page" (these chapters are single continuous scrolling documents, not paginated; "In this section" is the accurate label).
 
 ```html
 <h2 id="section-1-classical-conditioning-learning-what-predicts-what">Section 1: Classical Conditioning — Learning What Predicts What</h2>
@@ -533,6 +535,7 @@ References are alphabetical by first author's last name. The hanging-indent is h
 | Sidebar not copied exactly | Copy §2 verbatim; only add `class="active"` |
 | Labeling the subsection nav "On this page" | Use "In this section" — chapters are single scrolling documents, not paginated (see §5a) |
 | `.in-section-nav` listing the whole chapter's headings | Scope it to the current `<h2>` section's own `<h3>` ids only |
+| `.in-section-nav` shown for zero or one subsection | Omit the box; it requires at least two genuine `<h3>` subsections |
 | Adding a background tint, drop cap, numbered badge, or repeated eyebrow label to `<h3>` or figures | Don't — decorative-only elements measurably hurt retention (see §5a Rationale); `<h3>` uses the accent left-rule only, no background |
 
 ---
@@ -547,7 +550,8 @@ Before saving the final HTML file, confirm:
 - [ ] Misconception Opener has `id="misconception-opener"`
 - [ ] All callout variant class names match the table in §4 exactly
 - [ ] All `<h2>` elements have `id` attributes
-- [ ] Each numbered content section has 2–4 descriptively-titled `<h3>` subsections with `id` attributes, and an `.in-section-nav` block (labeled "In this section," scoped to that section only) immediately after the `<h2>`
+- [ ] Each numbered content section's genuine `<h3>` subsections have descriptive text and unique `id` attributes; sections with zero or one subsection have no `.in-section-nav`, while sections with two or more have exactly one box (labeled "In this section") containing exactly those links
+- [ ] Every Learning Objectives item bolds only its opening instructional verb, with all other wording and punctuation preserved
 - [ ] All review questions use `<ol class="options" type="a">` and `<details>/<summary>`
 - [ ] Key terms use `<dl class="key-terms">`, not a bullet list
 - [ ] No broken `<img>` tags — placeholder comments instead

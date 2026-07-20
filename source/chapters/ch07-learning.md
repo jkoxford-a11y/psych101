@@ -24,13 +24,13 @@ Chapter 6 closed by framing sleep as the model's offline maintenance window — 
 
 By the end of this chapter, you should be able to:
 
-1. Distinguish classical conditioning from operant conditioning by identifying whether a stimulus predicts another stimulus or a behavior is being changed by its consequences (APA IPI Theme 2: psychology explains general principles that apply across many situations).
-2. Diagram a classical-conditioning scenario using UCS, UCR, CS, and CR, and explain how acquisition, extinction, spontaneous recovery, generalization, and discrimination change responding over time.
-3. Differentiate positive reinforcement, negative reinforcement, positive punishment, and negative punishment, and correctly classify a novel scenario into one of the four.
-4. Explain how shaping and schedules of reinforcement influence the development and persistence of behavior without treating any schedule effect as universal across all tasks and species.
-5. Describe the selective cue–consequence pattern demonstrated by Garcia and Koelling, then distinguish that observed pattern from its evolutionary interpretation (APA IPI Theme 3: biological, psychological, and social factors interact).
-6. Use Bandura's and Tolman's findings to explain why learning must be distinguished from immediate performance and from direct reinforcement (APA IPI Theme 1: psychological science relies on evidence and revises itself as it accumulates).
-7. Interpret cue, reward, and omission responses as reward-prediction-error signals, and explain why this evidence does not make dopamine a universal pleasure, uncertainty, or motivation chemical.
+1. **Distinguish** classical conditioning from operant conditioning by identifying whether a stimulus predicts another stimulus or a behavior is being changed by its consequences (APA IPI Theme 2: psychology explains general principles that apply across many situations).
+2. **Diagram** a classical-conditioning scenario using UCS, UCR, CS, and CR, and explain how acquisition, extinction, spontaneous recovery, generalization, and discrimination change responding over time.
+3. **Differentiate** positive reinforcement, negative reinforcement, positive punishment, and negative punishment, and correctly classify a novel scenario into one of the four.
+4. **Explain** how shaping and schedules of reinforcement influence the development and persistence of behavior without treating any schedule effect as universal across all tasks and species.
+5. **Describe** the selective cue–consequence pattern demonstrated by Garcia and Koelling, then distinguish that observed pattern from its evolutionary interpretation (APA IPI Theme 3: biological, psychological, and social factors interact).
+6. **Use** Bandura's and Tolman's findings to explain why learning must be distinguished from immediate performance and from direct reinforcement (APA IPI Theme 1: psychological science relies on evidence and revises itself as it accumulates).
+7. **Interpret** cue, reward, and omission responses as reward-prediction-error signals, and explain why this evidence does not make dopamine a universal pleasure, uncertainty, or motivation chemical.
 
 ---
 

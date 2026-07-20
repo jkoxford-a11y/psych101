@@ -37,13 +37,13 @@ This chapter also introduces the neurochemical mechanisms behind major drug clas
 
 By the end of this chapter, you should be able to:
 
-1. Use blindsight to distinguish information processing, conscious perceptual content, and conscious access.
-2. Explain what the sea-squirt comparison does—and does not—show about nervous-system cost, movement, and the evolution of consciousness.
-3. Distinguish conscious state, perceptual content, access, attention, predictive inference, and phenomenal experience.
-4. Explain how selective attention and automaticity can dissociate from conscious content, using inattentional blindness and the cocktail-party effect.
-5. Apply predictive processing as a framework for constructed perception while explaining why it is not a complete theory or definition of consciousness.
-6. Evaluate how alcohol, reward-prediction-error paradigms, psychedelics, and comparison drug cases dissociate systems contributing to memory, perception, pain, motivation, and self-experience.
-7. Explain Chalmers' hard-problem framing and distinguish functional accounts of access and perception from an explanation of subjective experience.
+1. **Use** blindsight to distinguish information processing, conscious perceptual content, and conscious access.
+2. **Explain** what the sea-squirt comparison does—and does not—show about nervous-system cost, movement, and the evolution of consciousness.
+3. **Distinguish** conscious state, perceptual content, access, attention, predictive inference, and phenomenal experience.
+4. **Explain** how selective attention and automaticity can dissociate from conscious content, using inattentional blindness and the cocktail-party effect.
+5. **Apply** predictive processing as a framework for constructed perception while explaining why it is not a complete theory or definition of consciousness.
+6. **Evaluate** how alcohol, reward-prediction-error paradigms, psychedelics, and comparison drug cases dissociate systems contributing to memory, perception, pain, motivation, and self-experience.
+7. **Explain** Chalmers' hard-problem framing and distinguish functional accounts of access and perception from an explanation of subjective experience.
 
 ## Section 1: What Kind of Problem Is Consciousness?
 

@@ -32,12 +32,12 @@ Language belongs here because it is both a cognitive tool and the medium through
 
 By the end of this chapter, you should be able to:
 
-1. Distinguish concepts, prototypes, and exemplars, and explain how category structure supports generalization.
-2. Contrast algorithms and heuristics and explain how mental set, functional fixedness, and insight affect problem solving.
-3. Use the System 1/System 2 framework to compare availability, representativeness, confirmation bias, framing, and anchoring without assuming that they all arise from one mechanism.
-4. Describe the structure of language and explain why language acquisition is best understood through biological preparedness, statistical learning, and social experience rather than any one factor alone.
-5. Distinguish linguistic determinism from weaker forms of linguistic relativity and evaluate the strength of different examples.
-6. Compare *g*, fluid and crystallized intelligence, Gardner's and Sternberg's proposals, and explain how standardization, reliability, validity, and the Flynn Effect constrain the interpretation of IQ scores.
+1. **Distinguish** concepts, prototypes, and exemplars, and explain how category structure supports generalization.
+2. **Contrast** algorithms and heuristics and explain how mental set, functional fixedness, and insight affect problem solving.
+3. **Use** the System 1/System 2 framework to compare availability, representativeness, confirmation bias, framing, and anchoring without assuming that they all arise from one mechanism.
+4. **Describe** the structure of language and explain why language acquisition is best understood through biological preparedness, statistical learning, and social experience rather than any one factor alone.
+5. **Distinguish** linguistic determinism from weaker forms of linguistic relativity and evaluate the strength of different examples.
+6. **Compare** *g*, fluid and crystallized intelligence, Gardner's and Sternberg's proposals, and explain how standardization, reliability, validity, and the Flynn Effect constrain the interpretation of IQ scores.
 
 ---
 

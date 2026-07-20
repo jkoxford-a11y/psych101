@@ -29,12 +29,12 @@ Chapter 5 asked what it means for the brain's predictive model to become conscio
 
 By the end of this chapter, you should be able to:
 
-1. Describe the role of the suprachiasmatic nucleus in generating circadian rhythms, and explain what happens when internal timing and external light cues fall out of sync (APA IPI Theme 3: biological, psychological, and social factors interact).
-2. Distinguish the two processes in the two-process model of sleep regulation, and explain which interventions (caffeine, light, melatonin) act on which process and why that distinction matters practically.
-3. Describe the architecture of a typical night's sleep by EEG signature, and evaluate multiple, differently supported accounts of what that architecture may accomplish — including memory consolidation — while explaining why sleep's duration and structure vary across species.
-4. Compare activation-synthesis theory and threat-simulation theory as explanations operating at different levels for why dreams occur and why dream content skews the way it does.
-5. Distinguish NREM arousal parasomnias from REM sleep behavior disorder, and explain why the common belief that sleepwalkers are "acting out a dream" is mistaken.
-6. Evaluate the evidence linking sleep deprivation to impaired emotional regulation and other physiological consequences, distinguishing well-established findings from more limited or preliminary ones.
+1. **Describe** the role of the suprachiasmatic nucleus in generating circadian rhythms, and explain what happens when internal timing and external light cues fall out of sync (APA IPI Theme 3: biological, psychological, and social factors interact).
+2. **Distinguish** the two processes in the two-process model of sleep regulation, and explain which interventions (caffeine, light, melatonin) act on which process and why that distinction matters practically.
+3. **Describe** the architecture of a typical night's sleep by EEG signature, and evaluate multiple, differently supported accounts of what that architecture may accomplish — including memory consolidation — while explaining why sleep's duration and structure vary across species.
+4. **Compare** activation-synthesis theory and threat-simulation theory as explanations operating at different levels for why dreams occur and why dream content skews the way it does.
+5. **Distinguish** NREM arousal parasomnias from REM sleep behavior disorder, and explain why the common belief that sleepwalkers are "acting out a dream" is mistaken.
+6. **Evaluate** the evidence linking sleep deprivation to impaired emotional regulation and other physiological consequences, distinguishing well-established findings from more limited or preliminary ones.
 
 ---
 

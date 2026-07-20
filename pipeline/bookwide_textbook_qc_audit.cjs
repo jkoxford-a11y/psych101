@@ -76,6 +76,33 @@ function objectivesFor(markdown) {
   return items;
 }
 
+function renderedObjectivesFor(html) {
+  const heading = html.match(/<h2\b[^>]*\bid\s*=\s*(["'])learning-objectives\1[^>]*>[\s\S]*?<\/h2>/i);
+  if (!heading) return [];
+  const afterHeading = html.slice(heading.index + heading[0].length);
+  const nextHeading = afterHeading.search(/<h2\b/i);
+  const segment = nextHeading >= 0 ? afterHeading.slice(0, nextHeading) : afterHeading;
+  const list = segment.match(/<ol\b[^>]*>([\s\S]*?)<\/ol>/i);
+  if (!list) return [];
+  return [...list[1].matchAll(/<li\b[^>]*>([\s\S]*?)<\/li>/gi)].map((match, index) => {
+    const raw = match[1].trim();
+    const plain = stripTags(raw);
+    const tokens = plain.match(/[A-Za-z]+(?:['’-][A-Za-z]+)*/g) || [];
+    const verbIndex = tokens.findIndex((token) => instructionalVerbs.has(token.toLowerCase()));
+    const verb = verbIndex >= 0 ? tokens[verbIndex] : "";
+    const openingStrong = raw.match(/^\s*<strong\b[^>]*>\s*([^<]+?)\s*<\/strong>/i);
+    return {
+      number: index + 1,
+      raw,
+      plain,
+      instructionalVerb: verb,
+      verbPosition: verbIndex + 1,
+      beginsWithMeasurableVerb: verbIndex === 0,
+      openingVerbBold: Boolean(openingStrong && verb && stripTags(openingStrong[1]).toLowerCase() === verb.toLowerCase()),
+    };
+  });
+}
+
 function reviewQuestions(markdown) {
   const body = section(markdown, "Review Questions|Stop and Retrieve");
   const starts = [];
@@ -134,13 +161,17 @@ function navigationFor(html) {
     if (!/^Section\s+\d+\b/i.test(label)) continue;
     const segment = html.slice(headings[i].index + headings[i][0].length, i + 1 < headings.length ? headings[i + 1].index : html.length);
     const subheads = [...segment.matchAll(/<h3\b([^>]*)>([\s\S]*?)<\/h3>/gi)].map((m) => ({ id: attr(m[0], "id"), label: stripTags(m[2]) }));
-    const nav = segment.match(/<div\b[^>]*class\s*=\s*(["'])[^"']*\bin-section-nav\b[^"']*\1[^>]*>([\s\S]*?)<\/div>/i);
-    const links = nav ? [...nav[2].matchAll(/<a\b([^>]*)>([\s\S]*?)<\/a>/gi)].map((m) => ({ href: attr(m[0], "href"), label: stripTags(m[2]) })) : [];
+    const navs = [...segment.matchAll(/<div\b[^>]*class\s*=\s*(["'])[^"']*\bin-section-nav\b[^"']*\1[^>]*>([\s\S]*?)<\/div>/gi)];
+    const links = navs.flatMap((nav) => [...nav[2].matchAll(/<a\b([^>]*)>([\s\S]*?)<\/a>/gi)]
+      .map((m) => ({ href: attr(m[0], "href"), label: stripTags(m[2]) })));
     const checks = links.map((link) => ({ ...link, targetCount: link.href.startsWith("#") ? (ids[decodeURIComponent(link.href.slice(1))] || 0) : null }));
     const wordCount = (stripTags(segment).match(/\b[\w’'-]+\b/g) || []).length;
+    const navMatchesSubsections = navs.length === 1 && checks.length === subheads.length && checks.every((link, index) => (
+      link.href === `#${subheads[index].id}`
+    ));
     rows.push({ heading: label, id: attr(headings[i][0], "id"), wordCount, subsectionCount: subheads.length, subsections: subheads,
-      navPresent: Boolean(nav), linkCount: links.length, links: checks,
-      classification: !subheads.length ? (nav ? "awkward" : "absent") : subheads.length === 1 ? (nav ? "redundant" : "absent") : (links.length === subheads.length ? "useful" : "awkward") });
+      navPresent: navs.length > 0, navCount: navs.length, linkCount: links.length, links: checks, navMatchesSubsections,
+      classification: !subheads.length ? (navs.length ? "awkward" : "absent") : subheads.length === 1 ? (navs.length ? "redundant" : "absent") : (navMatchesSubsections ? "useful" : "awkward") });
   }
   const allInternalLinks = [...html.matchAll(/<a\b([^>]*)>([\s\S]*?)<\/a>/gi)].map((m) => ({ href: attr(m[0], "href"), label: stripTags(m[2]) }))
     .filter((link) => link.href.startsWith("#")).map((link) => ({ ...link, targetCount: ids[decodeURIComponent(link.href.slice(1))] || 0 }));
@@ -241,7 +272,7 @@ for (const [label, sourceRel, htmlRel] of pages) {
   const markdown = read(sourceRel), html = read(htmlRel); const questions = reviewQuestions(markdown);
   const figures = figuresFor(htmlRel, html, label);
   for (const f of figures.figures) if (f.exists && path.extname(f.relativeFile).toLowerCase() === ".svg") activeSvgs.add(f.relativeFile);
-  report.pages.push({ label, sourceRel, htmlRel, objectives: objectivesFor(markdown), questions,
+  report.pages.push({ label, sourceRel, htmlRel, objectives: objectivesFor(markdown), renderedObjectives: renderedObjectivesFor(html), questions,
     answerSummary: label === "Prologue" ? null : answerSummary(questions), navigation: navigationFor(html), figures });
 }
 for (const rel of [...activeSvgs].sort()) report.activeSvgAudits[rel] = svgAudit(path.join(ROOT, rel));
@@ -257,4 +288,54 @@ report.counts = {
   activeSvgs: activeSvgs.size,
 };
 
+const allSourceObjectives = report.pages.flatMap((page) => page.objectives);
+const allRenderedObjectives = report.pages.flatMap((page) => page.renderedObjectives);
+const allSections = report.pages.flatMap((page) => page.navigation.sections.map((sectionRow) => ({ page: page.label, ...sectionRow })));
+const oneLinkBoxes = allSections.filter((sectionRow) => sectionRow.navPresent && sectionRow.linkCount === 1);
+const zeroOrOneSubsectionBoxes = allSections.filter((sectionRow) => sectionRow.subsectionCount < 2 && sectionRow.navPresent);
+const invalidUsefulBoxes = allSections.filter((sectionRow) => sectionRow.subsectionCount >= 2 && (
+  sectionRow.navCount !== 1 || !sectionRow.navMatchesSubsections || sectionRow.links.some((link) => link.targetCount !== 1)
+));
+const brokenInternalLinks = report.pages.flatMap((page) => page.navigation.brokenInternalLinks.map((link) => ({ page: page.label, ...link })));
+const duplicateIds = report.pages.flatMap((page) => page.navigation.duplicateIds.map((item) => ({ page: page.label, ...item })));
+
+report.validation = {
+  counts: {
+    sourceObjectives: allSourceObjectives.length,
+    measurableSourceOpeningVerbs: allSourceObjectives.filter((item) => item.beginsWithMeasurableVerb).length,
+    boldSourceOpeningVerbs: allSourceObjectives.filter((item) => item.openingVerbBold).length,
+    renderedObjectives: allRenderedObjectives.length,
+    boldRenderedOpeningVerbs: allRenderedObjectives.filter((item) => item.openingVerbBold).length,
+    oneLinkBoxes: oneLinkBoxes.length,
+    zeroOrOneSubsectionBoxes: zeroOrOneSubsectionBoxes.length,
+    invalidUsefulBoxes: invalidUsefulBoxes.length,
+    brokenInternalLinks: brokenInternalLinks.length,
+    duplicateIds: duplicateIds.length,
+  },
+  oneLinkBoxes,
+  zeroOrOneSubsectionBoxes,
+  invalidUsefulBoxes,
+  brokenInternalLinks,
+  duplicateIds,
+  errors: [],
+};
+
+const expectedCounts = {
+  sourceObjectives: 92,
+  measurableSourceOpeningVerbs: 92,
+  boldSourceOpeningVerbs: 92,
+  renderedObjectives: 92,
+  boldRenderedOpeningVerbs: 92,
+  oneLinkBoxes: 0,
+  zeroOrOneSubsectionBoxes: 0,
+  invalidUsefulBoxes: 0,
+  brokenInternalLinks: 0,
+  duplicateIds: 0,
+};
+for (const [name, expected] of Object.entries(expectedCounts)) {
+  const actual = report.validation.counts[name];
+  if (actual !== expected) report.validation.errors.push(`${name}: expected ${expected}, found ${actual}`);
+}
+
 process.stdout.write(JSON.stringify(report, null, 2) + "\n");
+if (report.validation.errors.length) process.exitCode = 1;

@@ -29,12 +29,12 @@ Chapter 3 introduced the autonomic nervous system, the HPA axis, and individual 
 
 By the end of this chapter, you should be able to:
 
-1. Explain how homeostasis and allostasis provide complementary models of bodily regulation, and use the body-budget metaphor without treating it as a literal account.
-2. Distinguish core affect from a specific emotion and separate shared findings from a constructionist interpretation.
-3. Compare major emotion theories and explain what Patient S.M. does—and does not—show about the amygdala and fear.
-4. Describe emotional granularity and affect labeling at the level supported by current evidence.
-5. Distinguish rapid SAM activation from slower HPA activation, acute adaptive stress from chronic dysregulation, and historical GAS from allostatic load.
-6. Select and sequence coping strategies based on controllability, current arousal, timing, resources, and flexibility.
+1. **Explain** how homeostasis and allostasis provide complementary models of bodily regulation, and use the body-budget metaphor without treating it as a literal account.
+2. **Distinguish** core affect from a specific emotion and separate shared findings from a constructionist interpretation.
+3. **Compare** major emotion theories and explain what Patient S.M. does—and does not—show about the amygdala and fear.
+4. **Describe** emotional granularity and affect labeling at the level supported by current evidence.
+5. **Distinguish** rapid SAM activation from slower HPA activation, acute adaptive stress from chronic dysregulation, and historical GAS from allostatic load.
+6. **Select** and sequence coping strategies based on controllability, current arousal, timing, resources, and flexibility.
 
 ---
 

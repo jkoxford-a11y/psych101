@@ -35,13 +35,13 @@ This chapter is where the physical mechanism of behavior gets explained, and whe
 
 By the end of this chapter, you should be able to:
 
-1. Describe the structure of a neuron and explain how a typical action potential is generated and propagated.
-2. Distinguish neurotransmitters from hormones by delivery route, and explain why receptor and circuit context matter more than one-chemical psychological labels.
-3. Explain how excitation, inhibition, and neuromodulation change the probability and pattern of neural activity.
-4. Distinguish fast autonomic and slower endocrine components of stress regulation, and explain why repeated or prolonged activation can become costly (APA IPI Theme 3: biological, psychological, and social factors interact to shape behavior).
-5. Relate selected brain structures to the operations they contribute to, and explain why psychological functions emerge from networks rather than isolated regions (APA IPI Theme 5: our perceptions and biases, including beliefs about the brain, can be inaccurate).
-6. Evaluate the Phineas Gage and H.M. cases as evidence about frontal and medial-temporal systems, and explain what split-brain research does and does not show about ordinary intact brains.
-7. Generate a functional hypothesis for a neural or hormonal mechanism and distinguish that hypothesis from evidence about its immediate mechanism or evolutionary history.
+1. **Describe** the structure of a neuron and explain how a typical action potential is generated and propagated.
+2. **Distinguish** neurotransmitters from hormones by delivery route, and explain why receptor and circuit context matter more than one-chemical psychological labels.
+3. **Explain** how excitation, inhibition, and neuromodulation change the probability and pattern of neural activity.
+4. **Distinguish** fast autonomic and slower endocrine components of stress regulation, and explain why repeated or prolonged activation can become costly (APA IPI Theme 3: biological, psychological, and social factors interact to shape behavior).
+5. **Relate** selected brain structures to the operations they contribute to, and explain why psychological functions emerge from networks rather than isolated regions (APA IPI Theme 5: our perceptions and biases, including beliefs about the brain, can be inaccurate).
+6. **Evaluate** the Phineas Gage and H.M. cases as evidence about frontal and medial-temporal systems, and explain what split-brain research does and does not show about ordinary intact brains.
+7. **Generate** a functional hypothesis for a neural or hormonal mechanism and distinguish that hypothesis from evidence about its immediate mechanism or evolutionary history.
 
 ---
 

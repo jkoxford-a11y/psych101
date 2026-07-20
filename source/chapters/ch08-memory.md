@@ -24,12 +24,12 @@ Why does memory preserve meaning better than detail? That question is this chapt
 
 By the end of this chapter, you should be able to:
 
-1. Distinguish encoding, storage, and retrieval as the three processes memory requires, and explain how a failure at each stage produces a different kind of forgetting (APA IPI Theme 1: psychological science relies on evidence and revises itself as it accumulates).
-2. Describe the three-stage model of memory (sensory, short-term/working, long-term) and the evidence (Sperling's partial-report procedure, digit-span studies) that originally supported separating sensory memory and short-term memory from each other.
-3. Differentiate explicit from implicit memory, and episodic from semantic memory, using concrete examples and H.M.'s case as a guide to what each type does and doesn't depend on.
-4. Explain proactive and retroactive interference, decay, and the serial position effect as competing (and sometimes complementary) accounts of forgetting, and correctly classify a forgetting scenario using the right one.
-5. Evaluate why memory is reconstructive rather than reproductive, applying this to the misinformation effect, false memory, confabulation, and source misattribution (APA IPI Theme 5: our perceptions and biases — including memories — can be inaccurate).
-6. Apply evidence-based encoding and retrieval strategies (levels of processing, elaboration, chunking, spacing, retrieval practice) to your own studying (APA IPI Theme 6: psychological findings can be applied to everyday life).
+1. **Distinguish** encoding, storage, and retrieval as the three processes memory requires, and explain how a failure at each stage produces a different kind of forgetting (APA IPI Theme 1: psychological science relies on evidence and revises itself as it accumulates).
+2. **Describe** the three-stage model of memory (sensory, short-term/working, long-term) and the evidence (Sperling's partial-report procedure, digit-span studies) that originally supported separating sensory memory and short-term memory from each other.
+3. **Differentiate** explicit from implicit memory, and episodic from semantic memory, using concrete examples and H.M.'s case as a guide to what each type does and doesn't depend on.
+4. **Explain** proactive and retroactive interference, decay, and the serial position effect as competing (and sometimes complementary) accounts of forgetting, and correctly classify a forgetting scenario using the right one.
+5. **Evaluate** why memory is reconstructive rather than reproductive, applying this to the misinformation effect, false memory, confabulation, and source misattribution (APA IPI Theme 5: our perceptions and biases — including memories — can be inaccurate).
+6. **Apply** evidence-based encoding and retrieval strategies (levels of processing, elaboration, chunking, spacing, retrieval practice) to your own studying (APA IPI Theme 6: psychological findings can be applied to everyday life).
 
 ---
 

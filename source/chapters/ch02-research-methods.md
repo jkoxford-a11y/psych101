@@ -26,13 +26,13 @@ Chapter 1 ended with a problem: common sense about behavior is unreliable, and e
 
 By the end of this chapter, you should be able to:
 
-1. Distinguish descriptive, correlational, and experimental research designs, and identify which kind of question each one can and cannot answer.
-2. Explain why correlation does not establish causation, and identify the third-variable problem in a real example.
-3. Distinguish the consistency or precision of observed scores from evidence supporting their intended interpretation and use, and apply both questions to a real operational definition.
-4. Distinguish random sampling from random assignment, and explain how each supports a different part of a study's inference.
-5. Identify the independent variable, dependent variable, and control condition in a described experiment.
-6. Explain what a p-value does and does not tell you, and explain why effect size and confidence intervals add information that significance alone does not (Theme 1: psychological science relies on empirical evidence and adapts as new evidence emerges).
-7. Evaluate a research claim — including an AI-generated one — for sampling bias, operational vagueness, and overstated certainty.
+1. **Distinguish** descriptive, correlational, and experimental research designs, and identify which kind of question each one can and cannot answer.
+2. **Explain** why correlation does not establish causation, and identify the third-variable problem in a real example.
+3. **Distinguish** the consistency or precision of observed scores from evidence supporting their intended interpretation and use, and apply both questions to a real operational definition.
+4. **Distinguish** random sampling from random assignment, and explain how each supports a different part of a study's inference.
+5. **Identify** the independent variable, dependent variable, and control condition in a described experiment.
+6. **Explain** what a p-value does and does not tell you, and explain why effect size and confidence intervals add information that significance alone does not (Theme 1: psychological science relies on empirical evidence and adapts as new evidence emerges).
+7. **Evaluate** a research claim — including an AI-generated one — for sampling bias, operational vagueness, and overstated certainty.
 
 ---
 

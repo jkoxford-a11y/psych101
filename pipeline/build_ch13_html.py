@@ -155,7 +155,7 @@ def build() -> None:
             if node.name == "h3":
                 subheads.append(node)
             node = node.find_next_sibling()
-        if not subheads:
+        if len(subheads) < 2:
             continue
         nav = soup.new_tag("div", attrs={"class": "in-section-nav"})
         nav_label = soup.new_tag("strong")

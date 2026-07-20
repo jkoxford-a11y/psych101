@@ -26,13 +26,13 @@ Chapter 3 explained how a neuron generates an electrochemical signal; this chapt
 
 By the end of this chapter, you should be able to:
 
-1. Differentiate sensation from perception, and explain transduction as the physical process common to every sense organ.
-2. Define absolute threshold and difference threshold (Weber's Law), and apply signal detection theory to a real-world detection problem involving uncertainty.
-3. Describe the basic anatomy of the visual and auditory systems, and trace how each converts physical energy (light, sound waves) into a neural signal.
-4. Explain why trichromatic theory and opponent-process theory of color vision are complementary rather than competing, and apply the same logic to place theory and frequency theory of pitch perception.
-5. Distinguish top-down from bottom-up processing, and explain how perception actively constructs experience — through predictive coding's continuous testing of expectations against sensory input, and through the Gestalt principles and perceptual constancy that organize incomplete sensory input into a stable whole (APA IPI Theme 5: our perceptions and biases can be inaccurate).
-6. Explain the gate control theory of pain as a case where a "purely physical" sensation turns out to be shaped by signals descending from the brain.
-7. Apply the evolutionary perspective to explain why a specific sensory system is tuned the way it is, rather than some other plausible way it could have been built.
+1. **Differentiate** sensation from perception, and explain transduction as the physical process common to every sense organ.
+2. **Define** absolute threshold and difference threshold (Weber's Law), and apply signal detection theory to a real-world detection problem involving uncertainty.
+3. **Describe** the basic anatomy of the visual and auditory systems, and trace how each converts physical energy (light, sound waves) into a neural signal.
+4. **Explain** why trichromatic theory and opponent-process theory of color vision are complementary rather than competing, and apply the same logic to place theory and frequency theory of pitch perception.
+5. **Distinguish** top-down from bottom-up processing, and explain how perception actively constructs experience — through predictive coding's continuous testing of expectations against sensory input, and through the Gestalt principles and perceptual constancy that organize incomplete sensory input into a stable whole (APA IPI Theme 5: our perceptions and biases can be inaccurate).
+6. **Explain** the gate control theory of pain as a case where a "purely physical" sensation turns out to be shaped by signals descending from the brain.
+7. **Apply** the evolutionary perspective to explain why a specific sensory system is tuned the way it is, rather than some other plausible way it could have been built.
 
 ---
 
