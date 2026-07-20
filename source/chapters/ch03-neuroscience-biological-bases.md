@@ -458,9 +458,9 @@ d) the medication must work immediately
 
 **Myelin** — Insulating material around many axons that allows current to spread efficiently between nodes where action potentials are regenerated.
 
-**Neuron** — A cell specialized for receiving, integrating, and transmitting electrochemical signals.
-
 **Neuromodulator** — A chemical signal that alters how neurons or circuits respond, rather than carrying one fixed excitatory, inhibitory, or psychological instruction.
+
+**Neuron** — A cell specialized for receiving, integrating, and transmitting electrochemical signals.
 
 **Neuropeptide** — A peptide signaling molecule synthesized as a precursor protein and often used by neurons for slower, longer-lasting modulation.
 
@@ -518,8 +518,6 @@ Annese, J., Schenker-Ahmed, N. M., Bartsch, H., Maechler, P., Sheh, C., Thomas, 
 Arendt, D., Denes, A. S., Jékely, G., & Tessmar-Raible, K. (2008). The evolution of nervous system centralization. *Philosophical Transactions of the Royal Society B: Biological Sciences, 363*(1496), 1523–1528. https://doi.org/10.1098/rstb.2007.2242
 
 Bartz, J. A., Zaki, J., Bolger, N., & Ochsner, K. N. (2011). Social effects of oxytocin in humans: Context and person matter. *Trends in Cognitive Sciences, 15*(7), 301–309. https://doi.org/10.1016/j.tics.2011.05.002
-
-Corkin, S. (2013). *Permanent present tense: The unforgettable life of the amnesic patient H.M.* Basic Books.
 
 Cryan, J. F., O’Riordan, K. J., Cowan, C. S. M., Sandhu, K. V., Bastiaanssen, T. F. S., Boehme, M., Codagnone, M. G., Cussotto, S., Fulling, C., Golubeva, A. V., Guzzetta, K. E., Jaggar, M., Long-Smith, C. M., Lyte, J. M., Martin, J. A., Molinero-Perez, A., Moloney, G., Morelli, E., Morillas, E., … Dinan, T. G. (2019). The microbiota–gut–brain axis. *Physiological Reviews, 99*(4), 1877–2013.
 
