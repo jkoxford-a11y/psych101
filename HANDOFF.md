@@ -21,6 +21,12 @@ After integration with the Signal Detection and figure-expansion work, `pipeline
 
 Deployment still requires human spot checks of real-origin sessionStorage, keyboard operation, completed-state restart, and navigation.
 
+### Chapter 4 — Authoritative source reconciliation
+
+The approved line-edit reconciliation is complete in `source/chapters/ch04-sensation-perception.md`, with `pipeline/audits/ch04_line_edit_reconciliation_revision_spec_2026-07-20_v2.md` as the durable specification. The revised source preserves the instructor voice and approved logic emphasis, replaces and shortens Section 3, removes Müller-Lyer from chapter wiring while retaining its asset for possible slide-only use, relocates perceptual disorders, adds the somatosensation subsection, corrects the targeted sensory-science claims, and rebalances the review key.
+
+Source validation passes for specification fidelity, structure, citations, image paths and alt text, internal anchors, review answers, retained assets, and encoding. `docs/chapters/04-sensation-perception.html` has intentionally not been regenerated. The next Chapter 4 editorial action is source-to-HTML regeneration followed by source/HTML parity, chapter-lint, and browser render validation.
+
 ### Chapter 4 — Signal Detection
 
 The old outlined target remained visible until response and was pedagogically too obvious. Jon approved a replacement after reviewing isolated mockups: 450 ms fixation, 100 ms exposure, 10% peak contrast, Gaussian sigma 20, generated grayscale noise, and automatic remasking before response.
@@ -41,12 +47,14 @@ Chapter 7 prose and Classical Conditioning work are complete, but full HTML rege
 
 ## Immediate next actions
 
-1. Deploy and spot-check figure expansion: one desktop figure with the sidebar open, plus phone portrait and landscape.
-2. Deploy and visually test the approved Signal Detection calibration—a brief uncertain target, automatic remask before response, and both 12-trial conditions complete—and finish the deployed Learning Lab keyboard, real-sessionStorage, completed-restart, and navigation spot checks. Local automation does not close these checks; do not close either lane until all required human verification passes.
-3. Keep the Chapter 6 and Chapter 7 image lanes paused unless Jon explicitly changes lanes.
+1. Regenerate `docs/chapters/04-sensation-perception.html` from the reconciled Chapter 4 source, then validate source/HTML parity, chapter structure, figures, links, review/details markup, and browser rendering before closing the editorial lane.
+2. Deploy and spot-check figure expansion: one desktop figure with the sidebar open, plus phone portrait and landscape.
+3. Deploy and visually test the approved Signal Detection calibration—a brief uncertain target, automatic remask before response, and both 12-trial conditions complete—and finish the deployed Learning Lab keyboard, real-sessionStorage, completed-restart, and navigation spot checks. Local automation does not close these checks; do not close either lane until all required human verification passes.
+4. Keep the Chapter 6 and Chapter 7 image lanes paused unless Jon explicitly changes lanes.
 
 ## Important files
 
+- Chapter 4 reconciled source/specification: `source/chapters/ch04-sensation-perception.md`, `pipeline/audits/ch04_line_edit_reconciliation_revision_spec_2026-07-20_v2.md`
 - Timed-flash audit: `pipeline/audits/ch04-signal-detection-timed-flash-2026-07-18.md`
 - Signal Detection implementation: `docs/labs/ch04/signal-detection.html`, `docs/labs/ch04/signal-detection.js`, `docs/labs/ch04/ch04-labs.css`
 - Signal Detection regression: `pipeline/ch04_signal_detection_mask_regression.cjs`
