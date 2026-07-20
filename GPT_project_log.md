@@ -8,6 +8,26 @@ Repository rules and conventions live in `AGENTS.md`, not here. Current state an
 
 ## Log Entries
 
+### 2026-07-20 - Chapter 3 Line-Edit Reconciliation and HTML Regeneration
+
+- **Scope:** Reconciled the instructor’s Chapter 3 line-edit review into the authoritative Markdown and regenerated the Chapter 3 HTML. Initial files changed: `source/chapters/ch03-neuroscience-biological-bases.md` and `docs/chapters/03-neuroscience.html`.
+- **Editorial decisions:** Preserved useful list restructuring; revised the neuron/glia explanations, dopamine prediction-error sequence, SSRI mechanism, cortisol terminology, tend-and-befriend qualification, fMRI/BOLD, EEG, amygdala/network framing, Phineas Gage, and H.M.; removed the split-brain subsection and all dependent learning-objective, summary, connection, review-question, glossary, and reference material.
+- **References:** Added Allen and Lyons (2018), verified through PubMed; removed the uncited Corkin (2013) orphan reference; removed Nielsen and Sperry after deleting the split-brain section.
+- **Back-matter cleanup:** Restored alphabetical Key Terms order and produced 11 consecutively numbered review questions.
+- **Instructor-review corrections:** Subsequent review found that correct answers were excessively concentrated in option **b** and that objective-opening verbs lacked bold formatting. Before this log entry was committed, the seven objectives were corrected to bold only their opening measurable verbs—**Describe**, **Distinguish**, **Explain**, **Distinguish**, **Relate**, **Evaluate**, and **Generate**—and existing review options were reordered to the key `B C D A D A C A D B C` (A: 3, B: 2, C: 3, D: 3; longest run: 1). Answer letters and the two letter-specific rationale references were updated without rewriting their substantive explanations.
+- **Figure 3.6 inspection and repair:** Direct original-size and rendered inspection confirmed that the two-panel production figure’s reuptake arrows pointed from the presynaptic terminal toward the cleft, opposite the described mechanism. Replaced the chapter wiring with the already checked-in, directly inspected three-panel `ch03_synaptic_transmission_and_clearance_routes.png`, whose arrows move from the cleft through the presynaptic transporter into the terminal and whose final panels distinguish alternative clearance routes. No raster pixels were edited. Updated the caption, alt text, figure metadata, and visuals inventory; retained the superseded production image and its metadata for provenance.
+- **Generation workflow:** Regenerated only Chapter 3 with the checked-in generator:
+
+  ```powershell
+  $env:NODE_PATH='C:\Users\oxfor\.cache\codex-runtimes\codex-primary-runtime\dependencies\node\node_modules'
+  & 'C:\Users\oxfor\.cache\codex-runtimes\codex-primary-runtime\dependencies\node\bin\node.exe' pipeline/build_chapter_html.mjs 3
+  ```
+
+- **Validation:** After the follow-up corrections, Chapter 3 linting passed with 0 failures and 0 warnings. Answer/rationale consistency and bookwide QC confirmed seven correctly bolded objectives, the exact 11-answer key and distribution, 11 review disclosures, a resolving expandable Figure 3.6, and no missing chapter figures. Citation/reference matching, local paths, anchors, figures, video and lab links, split-brain removal, encoding checks, malformed-Markdown checks, and `git diff --check` passed. Rendered layouts passed at 1440×900, 1024×768, and 390×844 with all review disclosures opened and Figure 3.6 checked collapsed and expanded; no overflow, broken media, sidebar collision in the collapsed mobile state, or console warnings/errors were found.
+- **Navigation note:** Chapter 3 still has no separate bottom previous/next control. This matched the previous HTML and current generator/template behavior, so it was not treated as a Chapter 3 regression or patched locally.
+- **Commits:** `63ff44e73dc9e8f1e8448178aab0b7dfdb638dc5` — `Revise and regenerate Chapter 3` records the initial line-edit reconciliation and HTML regeneration. `c81b2c17badaa56c98e2a7b155232a0c184a7f6a` — `Correct Chapter 3 objectives review key and Figure 3.6` records the subsequent objective formatting, answer-position rebalancing, Figure 3.6 rewiring, regenerated HTML, metadata, and inventory corrections.
+- **Final status:** Chapter 3’s line-edit reconciliation, instructor-review corrections, Figure 3.6 repair, HTML regeneration, and validation are complete. No Chapter 3 issue from this follow-up remains unresolved.
+
 ### 2026-07-17 - Chapter 8 Learning Lab Validation
 
 - **Scope:** Completed end-to-end validation of the two Chapter 8 labs wired into the authoritative source and generated HTML: Levels of Processing and Interactive Imagery. Reviewed the Self-Reference Effect lab and retained it as index-only optional enrichment.
