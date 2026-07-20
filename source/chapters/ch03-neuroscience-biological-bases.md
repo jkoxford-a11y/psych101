@@ -35,13 +35,13 @@ This chapter is where the physical mechanism of behavior gets explained, and whe
 
 By the end of this chapter, you should be able to:
 
-1. Describe the structure of a neuron and explain how a typical action potential is generated and propagated.
-2. Distinguish neurotransmitters from hormones by delivery route, and explain why receptor and circuit context matter more than one-chemical psychological labels.
-3. Explain how excitation, inhibition, and neuromodulation change the probability and pattern of neural activity.
-4. Distinguish fast autonomic and slower endocrine components of stress regulation, and explain why repeated or prolonged activation can become costly (APA IPI Theme 3: biological, psychological, and social factors interact to shape behavior).
-5. Relate selected brain structures to the operations they contribute to, and explain why psychological functions emerge from networks rather than isolated regions (APA IPI Theme 5: our perceptions and biases, including beliefs about the brain, can be inaccurate).
-6. Evaluate the Phineas Gage and H.M. cases as evidence about frontal and medial-temporal systems.
-7. Generate a functional hypothesis for a neural or hormonal mechanism and distinguish that hypothesis from evidence about its immediate mechanism or evolutionary history.
+1. **Describe** the structure of a neuron and explain how a typical action potential is generated and propagated.
+2. **Distinguish** neurotransmitters from hormones by delivery route, and explain why receptor and circuit context matter more than one-chemical psychological labels.
+3. **Explain** how excitation, inhibition, and neuromodulation change the probability and pattern of neural activity.
+4. **Distinguish** fast autonomic and slower endocrine components of stress regulation, and explain why repeated or prolonged activation can become costly (APA IPI Theme 3: biological, psychological, and social factors interact to shape behavior).
+5. **Relate** selected brain structures to the operations they contribute to, and explain why psychological functions emerge from networks rather than isolated regions (APA IPI Theme 5: our perceptions and biases, including beliefs about the brain, can be inaccurate).
+6. **Evaluate** the Phineas Gage and H.M. cases as evidence about frontal and medial-temporal systems.
+7. **Generate** a functional hypothesis for a neural or hormonal mechanism and distinguish that hypothesis from evidence about its immediate mechanism or evolutionary history.
 
 ---
 
@@ -127,8 +127,8 @@ When an action potential reaches an axon terminal, vesicles fuse with the presyn
 
 A synaptic signal must also end. Two important routes are **reuptake**, in which transporters move neurotransmitter out of the cleft, and **enzymatic degradation**, in which enzymes break it down. Diffusion and uptake by surrounding cells also matter for some transmitters. Selective serotonin reuptake inhibitors (SSRIs), for example, inhibit the serotonin transporter, slowing the removal of serotonin from extracellular space and increasing serotonin signaling. That describes an immediate pharmacological action; it does not by itself explain why clinical effects take time or prove that depression began as a serotonin deficit.
 
-![Figure 3.6 — Two-panel educational infographic showing how a chemical synaptic signal is sent and cleared. In the left panel, an action potential reaches a blue presynaptic terminal, neurotransmitter molecules are released into the synaptic cleft, and the molecules bind to receptors on a green postsynaptic neuron. Receptor opening changes sodium or potassium ion movement, altering the postsynaptic neuron’s likelihood of firing. In the right panel, one route of clearance is reuptake through transporter proteins in the presynaptic membrane. The other route shows neurotransmitter molecules that remain in the cleft being broken into inactive pieces by enzymes.](../images/ch03/ch03_synaptic_transmission_release_receptors_clearance.png)
-*Figure 3.6. Synaptic transmission is a short-lived chemical conversation. An arriving action potential triggers release; receptors translate that chemical message into a cellular effect. Reuptake and enzymatic degradation are two important ways the signal can end.*
+![Figure 3.6 — Three-panel educational infographic explaining chemical synaptic transmission and two clearance routes. The first panel shows an action potential reaching a blue presynaptic terminal, neurotransmitter molecules being released into the synaptic cleft, binding to receptors on a green postsynaptic neuron, and changing sodium or potassium ion flow. The second panel shows unbound neurotransmitter moving through a reuptake transporter in the presynaptic membrane and back into the terminal. The third panel shows unbound neurotransmitter in the synaptic cleft being broken into inactive fragments by an enzyme. The final two panels present reuptake and enzymatic breakdown as alternative ways to end the signal.](../images/ch03/ch03_synaptic_transmission_and_clearance_routes.png)
+*Figure 3.6. Synaptic transmission begins when an action potential triggers neurotransmitter release from the presynaptic terminal. Neurotransmitter molecules cross the synaptic cleft and bind to postsynaptic receptors, changing ion flow and the receiving neuron’s likelihood of firing. Unbound neurotransmitter is then cleared by different mechanisms. Some molecules are taken back up through transporters in the presynaptic membrane; others are broken down by enzymes in the synaptic cleft. Reuptake and enzymatic degradation are alternative clearance routes, not required consecutive steps.*
 
 An **agonist** binds to a receptor and activates it. An **antagonist** binds without activating the receptor and blocks or reduces activation by another molecule. Antagonist does not mean harmful: naloxone is an opioid-receptor antagonist that can reverse an opioid overdose. Agonists and antagonists return in Chapter 5 when we examine psychoactive drugs and in Chapter 13 when we examine treatment.
 
@@ -336,33 +336,33 @@ d) whether it is produced above or below the neck
 **3.** A transmitter binds to two receptor types in two different circuits and produces opposite effects. What principle does this demonstrate?
 
 a) every transmitter has one fixed function  
-b) receptor and circuit context help determine a chemical signal’s effect  
-c) hormones never require receptors  
-d) inhibitory signaling is a failure of communication
+b) hormones never require receptors
+c) inhibitory signaling is a failure of communication
+d) receptor and circuit context help determine a chemical signal’s effect
 
-*Answer: b. The molecule is part of the message, not the complete psychological instruction.*
+*Answer: d. The molecule is part of the message, not the complete psychological instruction.*
 
 ---
 
 **4.** In the classical reward-learning pattern discussed in this chapter, which statement is most accurate?
 
-a) all dopamine activity everywhere measures pleasure  
-b) phasic activity in some midbrain dopamine neurons can resemble reward-prediction error in particular tasks  
+a) phasic activity in some midbrain dopamine neurons can resemble reward-prediction error in particular tasks
+b) all dopamine activity everywhere measures pleasure
 c) dopamine responds only when reward is consumed  
 d) prediction error is unrelated to learning
 
-*Answer: b. Why (a) is tempting: “pleasure chemical” is memorable. The evidence supports a restricted and powerful prediction-error pattern, not a universal definition of dopamine.*
+*Answer: a. Why (b) is tempting: “pleasure chemical” is memorable. The evidence supports a restricted and powerful prediction-error pattern, not a universal definition of dopamine.*
 
 ---
 
 **5.** A headline says, “fMRI reveals the brain region that causes political opinions.” What is the strongest immediate objection?
 
 a) fMRI records no physiological signal  
-b) fMRI usually measures condition-related hemodynamic differences and does not by itself establish causation  
-c) fMRI has perfect millisecond timing  
-d) fMRI works only in nonhuman animals
+b) fMRI has perfect millisecond timing
+c) fMRI works only in nonhuman animals
+d) fMRI usually measures condition-related hemodynamic differences and does not by itself establish causation
 
-*Answer: b. The BOLD response unfolds over seconds, and an activation difference does not establish that one region caused the behavior or acted alone.*
+*Answer: d. The BOLD response unfolds over seconds, and an activation difference does not establish that one region caused the behavior or acted alone.*
 
 ---
 
@@ -380,33 +380,33 @@ d) the endocrine response always happens before sensory detection
 **7.** Why can a useful stress response become costly?
 
 a) sympathetic and endocrine responses are always harmful  
-b) repeated, prolonged, or poorly terminated activation can impose physiological and behavioral costs  
-c) parasympathetic influence disappears permanently during stress  
+b) parasympathetic influence disappears permanently during stress
+c) repeated, prolonged, or poorly terminated activation can impose physiological and behavioral costs
 d) social evaluation cannot activate biological stress systems
 
-*Answer: b. The key distinction is not “physical threat good, modern stress fake.” It is how strongly, how long, and how controllably regulatory systems remain engaged.*
+*Answer: c. The key distinction is not “physical threat good, modern stress fake.” It is how strongly, how long, and how controllably regulatory systems remain engaged.*
 
 ---
 
 **8.** What do modern reconstructions add to the Phineas Gage case?
 
-a) certainty about every destroyed cell and every behavioral consequence  
-b) estimates of frontal and white-matter network damage, while preserving substantial uncertainty  
+a) estimates of frontal and white-matter network damage, while preserving substantial uncertainty
+b) certainty about every destroyed cell and every behavioral consequence
 c) proof that one prefrontal location contains personality  
 d) evidence that Harlow invented the injury
 
-*Answer: b. The skull constrains possible paths, but the brain tissue is gone and the behavioral record is sparse. The case supports a network contribution, not a clean one-region experiment.*
+*Answer: a. The skull constrains possible paths, but the brain tissue is gone and the behavioral record is sparse. The case supports a network contribution, not a clean one-region experiment.*
 
 ---
 
 **9.** What is the strongest conclusion from H.M.’s case?
 
 a) all memory is stored in the hippocampus  
-b) bilateral medial-temporal damage can devastate declarative learning while sparing some procedural learning  
-c) removing the hippocampus eliminates every old memory  
-d) procedural learning and declarative memory are the same system
+b) removing the hippocampus eliminates every old memory
+c) procedural learning and declarative memory are the same system
+d) bilateral medial-temporal damage can devastate declarative learning while sparing some procedural learning
 
-*Answer: b. H.M.’s surgery involved multiple medial-temporal structures, and postmortem analysis found residual hippocampal tissue. The declarative–procedural dissociation is the clean teaching result.*
+*Answer: d. H.M.’s surgery involved multiple medial-temporal structures, and postmortem analysis found residual hippocampal tissue. The declarative–procedural dissociation is the clean teaching result.*
 
 ---
 

@@ -4,7 +4,7 @@
 
 - **Filename:** `ch03_synaptic_transmission_release_receptors_clearance.png`
 - **Chapter:** 3 — Neuroscience and Biological Bases of Behavior
-- **Status:** Use now once the PNG has been added and the chapter wiring is approved
+- **Status:** Retired from Chapter 3 on 2026-07-20 after direct visual review confirmed that its reuptake arrows pointed from the presynaptic terminal toward the cleft
 - **Proposed placement:** Section 2, immediately after the paragraph beginning “When an action potential reaches the axon terminal...” and before the agonist/antagonist paragraph
 - **Proposed figure number:** Assign during wiring; inserting it here will shift the current later Chapter 3 figure numbers
 
