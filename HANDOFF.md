@@ -1,64 +1,73 @@
 # Psych101 — Current Handoff
 
-**Last updated:** 2026-07-20
+**Last updated:** 2026-07-21
 **Canonical repository:** `C:\GitHub\psych101`
 
-This file records current state only. See `GPT_project_log.md` for completed-work history, `PROJECT_BACKLOG.md` for durable deferred work, `pipeline/audits/learning-lab-state-restoration-audit.md` for the repository-wide lab audit, `pipeline/audits/ch04-signal-detection-timed-flash-2026-07-18.md` for the current Signal Detection revision, and `pipeline/audits/ch07-image-work-pause-2026-07-17.md` for the paused Chapter 7 image lane.
+This file records current state only. See `GPT_project_log.md` for completed-work history, `PROJECT_BACKLOG.md` for durable deferred work, `pipeline/audits/ch05-line-edit-html-deferral-2026-07-21.md` for the active Chapter 5 sequence, `pipeline/audits/learning-lab-state-restoration-audit.md` for the repository-wide lab audit, `pipeline/audits/ch04-signal-detection-timed-flash-2026-07-18.md` for the Signal Detection revision, and `pipeline/audits/ch07-image-work-pause-2026-07-17.md` for the paused Chapter 7 image lane.
 
 ## Current state
 
-### Repository-wide figure expansion
+### Chapter 5 — active line-edit lane
 
-The Prologue and Chapters 1–13 were audited. There are 80 explicit expandable figures, two low-resolution Chapter 3 figures marked `.no-expand`, and no active `.wide` figures. Chapters 1, 4, and 8 gained missing figure-expansion script wiring.
+The authoritative source is `source/chapters/ch05-consciousness.md`. A consciousness-only Word line-edit packet has been structurally prepared using paragraph splitting and limited list conversion without intentionally changing the chapter's argument. Jon is completing the instructor line edit before any source reconciliation or HTML work.
 
-Expanded width is capped at 1100px and accounts for the open sidebar and safe gutters; captions remain capped at 716px. `pipeline/figure_expansion_regression.cjs` passes all 14 pages at 1440×900, 1280×800, 1024×768, 390×844, and 844×390. A deployed human spot check remains for one desktop figure with the sidebar open and for phone portrait and landscape.
+Substantive judgments about the sea-squirt material, attention/clinical material, and comparison-drug table remain reserved for the instructor's line edit. Do not preempt those decisions with structural deletion, relocation, or compression.
 
-### Repository-wide Learning Labs
+`docs/chapters/05-consciousness.html` is obsolete: it is an older combined Consciousness + Sleep chapter containing circadian rhythms, sleep architecture, dreaming, sleep disorders, and sleep-deprivation material. `docs/chapters/06-sleep.html` already contains the separate current Sleep chapter. The Chapter 5 HTML must not be used as an editorial source or manually patched. After the line edit is reconciled into Markdown, add Chapter 5 to the shared builder, regenerate the page from source, and validate that the duplicated sleep material is gone.
 
-All 20 stateful standalone labs completed the automated state-restoration and restart-access audit. The repaired system preserves within-run prediction commitment, provides one conditional **Start over** action beside prediction after meaningful progress, restores visible saved values, announces genuine restoration once, clears only the lab-specific storage key, and returns focus to prediction.
+### Chapter 4 — authoritative source and HTML complete
 
-After integration with the Signal Detection and figure-expansion work, `pipeline/learning_lab_state_regression.cjs` passes all 20 labs at 1440 × 900, 390 × 844, and 844 × 390 for fresh state, commitment, restoration, restart, storage removal, focus, computed visibility, overflow, completion, and no-duplication behavior.
+The approved line-edit reconciliation is complete in `source/chapters/ch04-sensation-perception.md`, with `pipeline/audits/ch04_line_edit_reconciliation_revision_spec_2026-07-20_v2.md` as the durable specification.
 
-Deployment still requires human spot checks of real-origin sessionStorage, keyboard operation, completed-state restart, and navigation.
-
-### Chapter 4 — Authoritative source reconciliation
-
-The approved line-edit reconciliation is complete in `source/chapters/ch04-sensation-perception.md`, with `pipeline/audits/ch04_line_edit_reconciliation_revision_spec_2026-07-20_v2.md` as the durable specification. The revised source preserves the instructor voice and approved logic emphasis, replaces and shortens Section 3, removes Müller-Lyer from chapter wiring while retaining its asset for possible slide-only use, relocates perceptual disorders, adds the somatosensation subsection, corrects the targeted sensory-science claims, and rebalances the review key.
-
-Source validation passes for specification fidelity, structure, citations, image paths and alt text, internal anchors, review answers, retained assets, and encoding. `docs/chapters/04-sensation-perception.html` has intentionally not been regenerated. The next Chapter 4 editorial action is source-to-HTML regeneration followed by source/HTML parity, chapter-lint, and browser render validation.
+`docs/chapters/04-sensation-perception.html` was regenerated from the reconciled source in commit `6d0baf39f4f66240be47528cfe0006b1aa678707` (`Regenerate Chapter 4 HTML`). The same commit added guarded Chapter 4 options to `pipeline/build_chapter_html.mjs`. No Chapter 6 or line-edit-packet files were included. The Chapter 4 editorial lane is closed.
 
 ### Chapter 4 — Signal Detection
 
-The old outlined target remained visible until response and was pedagogically too obvious. Jon approved a replacement after reviewing isolated mockups: 450 ms fixation, 100 ms exposure, 10% peak contrast, Gaussian sigma 20, generated grayscale noise, and automatic remasking before response.
+The approved lab uses 450 ms fixation, 100 ms exposure, 10% peak contrast, Gaussian sigma 20, generated grayscale noise, and automatic remasking before response. Responses remain disabled during fixation and exposure, and tab loss cancels an unfinished trial without recording it.
 
-The lab now uses one canvas rather than a static CSS noise layer plus separate circular target. Responses remain disabled during fixation and exposure. The mask returns before responses enable, and tab loss cancels the unfinished trial without recording it. Trial balance, criterion conditions, outcome logic, event log, session state, explanation, and transfer remain unchanged.
+Static checks, JavaScript syntax, and `pipeline/ch04_signal_detection_mask_regression.cjs` pass. Weber's Law, Blind-Spot Filling-In, and Context and Ambiguous Perception retain their prior automated pass status. The size–weight illusion placeholder remains a separate build-or-remove decision.
 
-Static checks and JavaScript syntax pass. `pipeline/ch04_signal_detection_mask_regression.cjs` also passes its timed-flash, generated-canvas, response-lockout, automatic-remasking, exact-calibration, balanced-trial, and three-standard-viewport checks after integration.
+### Repository-wide figure expansion
 
-Weber's Law, Blind-Spot Filling-In, and Context and Ambiguous Perception retain their prior automated pass status. The size–weight illusion placeholder remains a separate build-or-remove decision.
+The Prologue and Chapters 1–13 were audited. There are 80 explicit expandable figures, two low-resolution Chapter 3 figures marked `.no-expand`, and no active `.wide` figures. Expanded width is capped at 1100px and accounts for the open sidebar and safe gutters; captions remain capped at 716px.
+
+`pipeline/figure_expansion_regression.cjs` passes all 14 pages at 1440×900, 1280×800, 1024×768, 390×844, and 844×390. A deployed human spot check remains for one desktop figure with the sidebar open and for phone portrait and landscape.
+
+### Repository-wide Learning Labs
+
+All 20 stateful standalone labs completed the automated state-restoration and restart-access audit. `pipeline/learning_lab_state_regression.cjs` passes all 20 labs at 1440 × 900, 390 × 844, and 844 × 390 for fresh state, commitment, restoration, restart, storage removal, focus, computed visibility, overflow, completion, and no-duplication behavior.
+
+Deployment still requires human spot checks of real-origin `sessionStorage`, keyboard operation, completed-state restart, and navigation.
 
 ### Completed chapter lanes
 
-Chapters 1–3 and 9–13 have completed their canonical revision/validation cycles. Chapter 3 is fully closed after its July 20 follow-up: the line-edit reconciliation is complete, review-answer positions are rebalanced, Learning Objective opening verbs are formatted consistently, and Figure 3.6 is rewired to the accurate replacement; no follow-up issue remains unresolved. Chapter 8's wired Levels of Processing and Interactive Imagery labs remain approved; Self-Reference Effect remains index-only. Do not reopen completed lanes absent a specific defect or Jon's editorial request.
+Chapters 1–4 and 9–13 have completed their canonical revision/validation cycles. Chapter 8's wired Levels of Processing and Interactive Imagery labs remain approved; Self-Reference Effect remains index-only. Do not reopen completed lanes absent a specific defect or Jon's editorial request.
 
 ### Paused image lanes
 
 Chapter 7 prose and Classical Conditioning work are complete, but full HTML regeneration remains deferred until its figure set is approved. Figure 7.7 remains unresolved because the current candidate overlaps. Resume only from direct SVG/PNG inspection if Jon explicitly reopens the lane. Chapter 6 flagged figure candidates remain queued while the project stays in a non-image lane.
 
+### Working-tree caution
+
+At the July 21 session close, unrelated local changes existed in several `line-edit-packets/` files and `source/chapters/ch06-sleep.md`. Do not use `git add .`, `git restore .`, or broad cleanup commands. Stage only exact authorized paths.
+
 ## Immediate next actions
 
-1. Regenerate `docs/chapters/04-sensation-perception.html` from the reconciled Chapter 4 source, then validate source/HTML parity, chapter structure, figures, links, review/details markup, and browser rendering before closing the editorial lane.
-2. Deploy and spot-check figure expansion: one desktop figure with the sidebar open, plus phone portrait and landscape.
-3. Deploy and visually test the approved Signal Detection calibration—a brief uncertain target, automatic remask before response, and both 12-trial conditions complete—and finish the deployed Learning Lab keyboard, real-sessionStorage, completed-restart, and navigation spot checks. Local automation does not close these checks; do not close either lane until all required human verification passes.
-4. Keep the Chapter 6 and Chapter 7 image lanes paused unless Jon explicitly changes lanes.
+1. Jon completes the Chapter 5 Word line edit.
+2. Reconcile the approved Word edits into `source/chapters/ch05-consciousness.md`, preserving the instructor's tracked decisions and validating the full chapter/back matter.
+3. Add a narrowly scoped Chapter 5 configuration to `pipeline/build_chapter_html.mjs`, regenerate `docs/chapters/05-consciousness.html`, and validate source/HTML parity, chapter structure, figures, links, callouts, review/details markup, encoding, and responsive rendering. Confirm that no duplicated sleep material remains.
+4. Complete the remaining deployed figure-expansion, Signal Detection, and Learning Lab human spot checks when returning to release validation.
+5. Keep the Chapter 6 and Chapter 7 image lanes paused unless Jon explicitly changes lanes.
 
 ## Important files
 
+- Chapter 5 authoritative source: `source/chapters/ch05-consciousness.md`
+- Chapter 5 workflow record: `pipeline/audits/ch05-line-edit-html-deferral-2026-07-21.md`
+- Obsolete generated page awaiting post-line-edit replacement: `docs/chapters/05-consciousness.html`
+- Current separate Sleep page: `docs/chapters/06-sleep.html`
 - Chapter 4 reconciled source/specification: `source/chapters/ch04-sensation-perception.md`, `pipeline/audits/ch04_line_edit_reconciliation_revision_spec_2026-07-20_v2.md`
-- Timed-flash audit: `pipeline/audits/ch04-signal-detection-timed-flash-2026-07-18.md`
-- Signal Detection implementation: `docs/labs/ch04/signal-detection.html`, `docs/labs/ch04/signal-detection.js`, `docs/labs/ch04/ch04-labs.css`
-- Signal Detection regression: `pipeline/ch04_signal_detection_mask_regression.cjs`
+- Shared builder: `pipeline/build_chapter_html.mjs`
+- Timed-flash audit/regression: `pipeline/audits/ch04-signal-detection-timed-flash-2026-07-18.md`, `pipeline/ch04_signal_detection_mask_regression.cjs`
 - Repository-wide lab audit/regression: `pipeline/audits/learning-lab-state-restoration-audit.md`, `pipeline/learning_lab_state_regression.cjs`
-- Shared lab behavior: `docs/js/lab-session-controls.js`, `docs/css/labs.css`, `docs/labs/lab-design-spec.md`
 - Durable deferred work: `PROJECT_BACKLOG.md`
 - Paused Chapter 7 lane: `pipeline/audits/ch07-image-work-pause-2026-07-17.md`
