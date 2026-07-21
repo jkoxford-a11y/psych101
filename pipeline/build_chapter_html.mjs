@@ -6,6 +6,18 @@ const require = createRequire(import.meta.url);
 const { marked } = require("marked");
 
 const chapters = {
+  "4": {
+    source: "source/chapters/ch04-sensation-perception.md",
+    output: "docs/chapters/04-sensation-perception.html",
+    title: "Sensation & Perception",
+    pillar: "Biological",
+    matchAnyItalicFigureCaption: true,
+    wrapCaptionlessFigures: true,
+    convertLabCallouts: true,
+    convertStructuredH4Callouts: true,
+    promoteSubheadings: true,
+    minimumSectionNavLinks: 2,
+  },
   "3": {
   source: "source/chapters/ch03-neuroscience-biological-bases.md",
   output: "docs/chapters/03-neuroscience.html",
@@ -146,17 +158,25 @@ const noExpandFigureFiles = new Set([
   "fig3_2_action_potential_pressbooks.jpeg",
 ]);
 
-function renderFigure(normalized, cleanAlt, caption) {
+function renderFigure(normalized, cleanAlt, caption = "") {
   const cap = caption.replace(/^(Figure \d+\.\d+)\.\s*/, "<strong>$1.</strong> ");
+  const captionHtml = cap ? `<figcaption>${cap}</figcaption>` : "";
   if (noExpandFigureFiles.has(path.basename(normalized))) {
-    return `<figure class="chapter-figure no-expand"><img src="${normalized}" alt="${cleanAlt}" /><figcaption>${cap}</figcaption></figure>`;
+    return `<figure class="chapter-figure no-expand"><img src="${normalized}" alt="${cleanAlt}" />${captionHtml}</figure>`;
   }
-  return `<figure class="chapter-figure expandable"><a class="figure-expand-toggle" href="${normalized}" aria-label="Expand figure" aria-expanded="false"><img src="${normalized}" alt="${cleanAlt}" /></a><figcaption>${cap}</figcaption></figure>`;
+  return `<figure class="chapter-figure expandable"><a class="figure-expand-toggle" href="${normalized}" aria-label="Expand figure" aria-expanded="false"><img src="${normalized}" alt="${cleanAlt}" /></a>${captionHtml}</figure>`;
 }
 
-function convertFigures(html) {
+function convertFigures(html, options = {}) {
+  const separateCaptionPattern = options.matchAnyItalicFigureCaption
+    ? /<p><img src="([^"]+)" alt="([^"]*)"\s*><\/p>\s*<p><em>([\s\S]*?)<\/em><\/p>/g
+    : /<p><img src="([^"]+)" alt="([^"]*)"\s*><\/p>\s*<p><em>(Figure [\s\S]*?)<\/em><\/p>/g;
+  const inlineCaptionPattern = options.matchAnyItalicFigureCaption
+    ? /<p><img src="([^"]+)" alt="([^"]*)"\s*>\s*<em>([\s\S]*?)<\/em><\/p>/g
+    : /<p><img src="([^"]+)" alt="([^"]*)"\s*>\s*<em>(Figure [\s\S]*?)<\/em><\/p>/g;
+
   html = html.replace(
-    /<p><img src="([^"]+)" alt="([^"]*)"\s*><\/p>\s*<p><em>(Figure [\s\S]*?)<\/em><\/p>/g,
+    separateCaptionPattern,
     (_all, src, alt, caption) => {
       const normalized = src
         .replace(/^\.\.\/\.\.\/docs\/images\//, "../images/")
@@ -166,8 +186,8 @@ function convertFigures(html) {
       return renderFigure(normalized, cleanAlt, caption);
     },
   );
-  return html.replace(
-    /<p><img src="([^"]+)" alt="([^"]*)"\s*>\s*<em>(Figure [\s\S]*?)<\/em><\/p>/g,
+  html = html.replace(
+    inlineCaptionPattern,
     (_all, src, alt, caption) => {
       const normalized = src
         .replace(/^\.\.\/\.\.\/docs\/images\//, "../images/")
@@ -175,6 +195,18 @@ function convertFigures(html) {
         .replace(/^\.\.\/\.\.\/images\//, "../images/");
       const cleanAlt = cleanFigureAlt(alt);
       return renderFigure(normalized, cleanAlt, caption);
+    },
+  );
+  if (!options.wrapCaptionlessFigures) return html;
+
+  return html.replace(
+    /<p><img src="([^"]+)" alt="([^"]*)"\s*><\/p>/g,
+    (_all, src, alt) => {
+      const normalized = src
+        .replace(/^\.\.\/\.\.\/docs\/images\//, "../images/")
+        .replace(/^\.\.\/images\//, "../images/")
+        .replace(/^\.\.\/\.\.\/images\//, "../images/");
+      return renderFigure(normalized, cleanFigureAlt(alt));
     },
   );
 }
@@ -188,7 +220,7 @@ function convertVideoBlocks(html) {
   );
 }
 
-function convertCallouts(html) {
+function convertCallouts(html, options = {}) {
   const classes = [
     ["A note on a popular myth", "misconception"],
     ["Stop and Retrieve", "stop-retrieve"],
@@ -200,6 +232,7 @@ function convertCallouts(html) {
     ["Classic Study Walkthrough", "classic-study"],
     ["Worked Example", "think-about-it"],
   ];
+  if (options.convertLabCallouts) classes.push(["Try it in the lab", "stop-retrieve"]);
   html = html.replace(/<blockquote>([\s\S]*?)<\/blockquote>/g, (_all, inner) => {
     const plain = inner.replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim();
     const found = classes.find(([label]) => plain.startsWith(label));
@@ -221,7 +254,7 @@ function convertCallouts(html) {
   );
 }
 
-function convertStructuredCallouts(html) {
+function convertStructuredCallouts(html, options = {}) {
   const wrap = (variant, title, body) => {
     return `<div class="callout callout--${variant}" id="${slugify(title)}"><div class="callout-title">${title}</div>${body.trim()}</div>`;
   };
@@ -238,6 +271,16 @@ function convertStructuredCallouts(html) {
     /<h4>(Do Not Confuse: Hemispheric Specialization[\s\S]*?Personality[^<]*?)<\/h4>([\s\S]*?)(?=<p>Calling the amygdala)/,
     (_all, title, body) => wrap("do-not-confuse", title, body),
   );
+  if (options.convertStructuredH4Callouts) {
+    html = html.replace(
+      /<h4>(Do Not Confuse:[\s\S]*?)<\/h4>([\s\S]*?)(?=<figure class="chapter-figure|<div class="callout|<h[234]|$)/g,
+      (_all, title, body) => wrap("do-not-confuse", title, body),
+    );
+    html = html.replace(
+      /<h4>(AI Connection:[\s\S]*?)<\/h4>\s*((?:<p>[\s\S]*?<\/p>\s*){2})/g,
+      (_all, title, body) => wrap("ai-connection", title, body),
+    );
+  }
   html = html.replace(
     /<h4>(Classic Study:[\s\S]*?)<\/h4>([\s\S]*?)(?=<h4>|<div class="callout callout--stop-retrieve">|<div class="callout callout--do-not-confuse">|<h[23]|$)/g,
     (_all, title, body) => wrap("classic-study", title, body),
@@ -247,6 +290,12 @@ function convertStructuredCallouts(html) {
     '<div class="callout callout--misconception" id="misconception-opener">',
   );
   return html;
+}
+
+function promoteSubheadings(html) {
+  return html.replace(/<h4>([\s\S]*?)<\/h4>/g, (_all, label) => {
+    return `<h3 id="${slugify(label)}">${label}</h3>`;
+  });
 }
 
 function wrapSpecialSections(html) {
@@ -268,13 +317,13 @@ function wrapSpecialSections(html) {
   return html;
 }
 
-function addSectionNav(html) {
+function addSectionNav(html, minimumLinks = 1) {
   return html.replace(/(<h2 id="(section-[^"]+)">[\s\S]*?<\/h2>)([\s\S]*?)(?=<h2 |$)/g, (_all, heading, _id, section) => {
     const links = [];
     for (const match of section.matchAll(/<h3 id="([^"]+)">([\s\S]*?)<\/h3>/g)) {
       links.push(`<a href="#${match[1]}">${match[2]}</a>`);
     }
-    if (!links.length) return `${heading}${section}`;
+    if (links.length < minimumLinks) return `${heading}${section}`;
     return `${heading}<div class="in-section-nav"><strong>In this section:</strong> ${links.join('<span class="sep">·</span> ')}</div>${section}`;
   });
 }
@@ -299,12 +348,13 @@ function build(number) {
   body = body.replace(/<hr>\s*/g, "");
   body = body.replace(/\.\.\/\.\.\/docs\/labs\//g, "../labs/");
   body = addHeadingIds(body);
-  body = convertFigures(body);
+  body = convertFigures(body, config);
   body = convertVideoBlocks(body);
-  body = convertCallouts(body);
-  body = convertStructuredCallouts(body);
+  body = convertCallouts(body, config);
+  body = convertStructuredCallouts(body, config);
+  if (config.promoteSubheadings) body = promoteSubheadings(body);
   body = wrapSpecialSections(body);
-  body = addSectionNav(body);
+  body = addSectionNav(body, config.minimumSectionNavLinks);
   body = wrapEndingSections(body);
 
   const titleEscaped = config.title.replace(/&/g, "&amp;");
@@ -334,7 +384,10 @@ ${body.trim()}
 </body>
 </html>
 `;
-  fs.writeFileSync(config.output, page, "utf8");
+  const existingOutput = fs.existsSync(config.output) ? fs.readFileSync(config.output, "utf8") : "";
+  const outputNewline = existingOutput.includes("\r\n") ? "\r\n" : "\n";
+  const normalizedPage = outputNewline === "\r\n" ? page.replace(/\r?\n/g, "\r\n") : page;
+  fs.writeFileSync(config.output, normalizedPage, "utf8");
   console.log(`Built ${config.output} from ${config.source}`);
 }
 
