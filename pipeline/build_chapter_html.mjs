@@ -18,6 +18,14 @@ const chapters = {
     promoteSubheadings: true,
     minimumSectionNavLinks: 2,
   },
+  "5": {
+    source: "source/chapters/ch05-consciousness.md",
+    output: "docs/chapters/05-consciousness.html",
+    title: "Consciousness — Processing, Experience, and Access",
+    pillar: "Biological",
+    matchAnyItalicFigureCaption: true,
+    minimumSectionNavLinks: 2,
+  },
   "3": {
   source: "source/chapters/ch03-neuroscience-biological-bases.md",
   output: "docs/chapters/03-neuroscience.html",

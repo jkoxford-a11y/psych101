@@ -1,19 +1,19 @@
 # Psych101 — Current Handoff
 
-**Last updated:** 2026-07-21
+**Last updated:** 2026-07-22
 **Canonical repository:** `C:\GitHub\psych101`
 
 This file records current state only. See `GPT_project_log.md` for completed-work history, `PROJECT_BACKLOG.md` for durable deferred work, `pipeline/audits/ch05-line-edit-html-deferral-2026-07-21.md` for the active Chapter 5 sequence, `pipeline/audits/learning-lab-state-restoration-audit.md` for the repository-wide lab audit, `pipeline/audits/ch04-signal-detection-timed-flash-2026-07-18.md` for the Signal Detection revision, and `pipeline/audits/ch07-image-work-pause-2026-07-17.md` for the paused Chapter 7 image lane.
 
 ## Current state
 
-### Chapter 5 — active line-edit lane
+### Chapter 5 — line edit and HTML complete
 
-The authoritative source is `source/chapters/ch05-consciousness.md`. A consciousness-only Word line-edit packet has been structurally prepared using paragraph splitting and limited list conversion without intentionally changing the chapter's argument. Jon is completing the instructor line edit before any source reconciliation or HTML work.
+The approved instructor line edit is reconciled in authoritative `source/chapters/ch05-consciousness.md`. The Methods Box retains three explanatory paragraphs and a separate Do Not Confuse box; the psychedelic account no longer uses REBUS as the prose label, while the actual article title remains unchanged; and the approved Katlowitz, dashboard, and review-question corrections are in place.
 
-Substantive judgments about the sea-squirt material, attention/clinical material, and comparison-drug table remain reserved for the instructor's line edit. Do not preempt those decisions with structural deletion, relocation, or compression.
+`pipeline/build_chapter_html.mjs` now has a narrowly scoped Chapter 5 configuration. `docs/chapters/05-consciousness.html` was regenerated from the current Consciousness-only source, replacing the obsolete combined Consciousness + Sleep page. Targeted structure/content checks, repository lint, local resource/fragment checks, and the five-viewport figure/responsive regression pass. The Chapter 5 line-edit and HTML-regeneration lane is closed with no known content or rendering issue.
 
-`docs/chapters/05-consciousness.html` is obsolete: it is an older combined Consciousness + Sleep chapter containing circadian rhythms, sleep architecture, dreaming, sleep disorders, and sleep-deprivation material. `docs/chapters/06-sleep.html` already contains the separate current Sleep chapter. The Chapter 5 HTML must not be used as an editorial source or manually patched. After the line edit is reconciled into Markdown, add Chapter 5 to the shared builder, regenerate the page from source, and validate that the duplicated sleep material is gone.
+These Chapter 5 changes remain uncommitted and unstaged. If publication through Git is authorized, stage and commit only `source/chapters/ch05-consciousness.md`, `pipeline/build_chapter_html.mjs`, `docs/chapters/05-consciousness.html`, `GPT_project_log.md`, and `HANDOFF.md` after one final diff review.
 
 ### Chapter 4 — authoritative source and HTML complete
 
@@ -49,21 +49,19 @@ Chapter 7 prose and Classical Conditioning work are complete, but full HTML rege
 
 ### Working-tree caution
 
-At the July 21 session close, unrelated local changes existed in several `line-edit-packets/` files and `source/chapters/ch06-sleep.md`. Do not use `git add .`, `git restore .`, or broad cleanup commands. Stage only exact authorized paths.
+The Chapter 5 lane changes only the five files listed above. Preserve any unrelated local changes in `line-edit-packets/`, `source/chapters/ch06-sleep.md`, or elsewhere. Do not use `git add .`, `git restore .`, or broad cleanup commands; stage only exact authorized paths.
 
 ## Immediate next actions
 
-1. Jon completes the Chapter 5 Word line edit.
-2. Reconcile the approved Word edits into `source/chapters/ch05-consciousness.md`, preserving the instructor's tracked decisions and validating the full chapter/back matter.
-3. Add a narrowly scoped Chapter 5 configuration to `pipeline/build_chapter_html.mjs`, regenerate `docs/chapters/05-consciousness.html`, and validate source/HTML parity, chapter structure, figures, links, callouts, review/details markup, encoding, and responsive rendering. Confirm that no duplicated sleep material remains.
-4. Complete the remaining deployed figure-expansion, Signal Detection, and Learning Lab human spot checks when returning to release validation.
-5. Keep the Chapter 6 and Chapter 7 image lanes paused unless Jon explicitly changes lanes.
+1. Review the final five-file Chapter 5 diff and, if authorized, publish it through a narrowly scoped commit/push.
+2. Complete the remaining deployed figure-expansion, Signal Detection, and Learning Lab human spot checks when returning to release validation.
+3. Keep the Chapter 6 and Chapter 7 image lanes paused unless Jon explicitly changes lanes.
 
 ## Important files
 
 - Chapter 5 authoritative source: `source/chapters/ch05-consciousness.md`
 - Chapter 5 workflow record: `pipeline/audits/ch05-line-edit-html-deferral-2026-07-21.md`
-- Obsolete generated page awaiting post-line-edit replacement: `docs/chapters/05-consciousness.html`
+- Current generated Chapter 5 page: `docs/chapters/05-consciousness.html`
 - Current separate Sleep page: `docs/chapters/06-sleep.html`
 - Chapter 4 reconciled source/specification: `source/chapters/ch04-sensation-perception.md`, `pipeline/audits/ch04_line_edit_reconciliation_revision_spec_2026-07-20_v2.md`
 - Shared builder: `pipeline/build_chapter_html.mjs`

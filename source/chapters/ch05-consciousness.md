@@ -82,7 +82,7 @@ This also prevents a common mistake: inferring experience directly from successf
 
 The dashboard does not turn three useful questions into three independent brain modules. State depends on interacting arousal and network systems. Content can include sights, sounds, pain, imagery, thoughts, and a sense of self. Access can support different uses in different tasks. The parts overlap because brains are coordinated systems.
 
-Here is the positive model we will build: the brain processes far more information than enters conscious experience. Attention influences which information gains wider access. Predictive systems help construct content. When selected information becomes accessible across more systems, it may be maintained, compared with goals, evaluated, described, and used to change an ongoing response. Those are substantial accomplishments. They still leave one question open: why any of this processing feels like something from the inside.
+Here is the working model we will build: the brain processes far more information than enters conscious experience. Attention influences which information gains wider access. Predictive systems help construct content. When selected information becomes accessible across more systems, it may be maintained, compared with goals, evaluated, described, and used to change an ongoing response. Those are substantial accomplishments. They still leave one question open: why any of this processing feels like something from the inside.
 
 ---
 
@@ -189,7 +189,7 @@ This distinction reaches forward to Chapter 8. An experience can guide speech or
 
 Classic psychedelics act strongly at cortical serotonin 5-HT2A receptors. Wakefulness often remains, while perceptual content, emotional meaning, time experience, and the ordinary sense of self may change. This makes psychedelic states useful here as a content-and-self case, not as a general chemical theory of consciousness.
 
-The REBUS model proposes that psychedelics relax the precision of high-level priors, allowing bottom-up or previously suppressed signals to exert more influence (Carhart-Harris & Friston, 2019). *Precision* here means the weight assigned to a prediction or error signal, not confidence spoken aloud. REBUS is one candidate model for organizing psychedelic effects.
+One predictive-processing account proposes that psychedelics relax the precision of high-level priors, allowing bottom-up or previously suppressed signals to exert more influence (Carhart-Harris & Friston, 2019). *Precision* here means the weight assigned to a prediction or error signal, not confidence spoken aloud. This is one candidate account of psychedelic effects.
 
 Relaxed priors do not guarantee more accurate perception, deeper truth, or therapeutic benefit. Dose, setting, expectation, learning history, and broader pharmacology still shape the experience. The useful dissociation is simpler: an organism can remain awake while ordinary perceptual content and self-experience change dramatically.
 
@@ -197,7 +197,7 @@ Relaxed priors do not guarantee more accurate perception, deeper truth, or thera
 
 **General anesthesia** can alter conscious state, responsiveness, memory, sensory processing, and large-scale network coordination. Different drugs and doses produce these changes through different mechanisms, which is one reason anesthesia cannot be treated as a single on/off switch (Mashour, 2024).
 
-Loss of responsiveness does not mean that every neural system has stopped processing information. In a 2026 study of seven anesthetized patients undergoing clinically indicated temporal-lobe surgery, direct hippocampal recordings retained information about unusual tones and—in four patients who heard speech—some semantic and grammatical properties of words (Katlowitz et al., 2026). The sample was small and clinically specialized. Neural representation is not the same as conscious comprehension or experience, so the finding is illustrative rather than load-bearing.
+Loss of responsiveness does not mean that every neural system has stopped processing information. In a 2026 study of seven anesthetized patients undergoing clinically indicated temporal-lobe surgery, direct hippocampal recordings retained information about unusual tones and—in four patients presented with a podcast—some semantic and grammatical properties of words (Katlowitz et al., 2026). The sample was small and clinically specialized. Neural representation is not the same as conscious comprehension or experience, so the finding is illustrative rather than load-bearing.
 
 This is also why an anesthesiologist monitors several things rather than looking for one “consciousness number.” A patient’s movement, autonomic responses, brain activity, and later memory provide different evidence, and anesthetic drugs can affect those indicators differently. The clinical goal is a controlled condition appropriate to the procedure, not the discovery of one universal neural off switch.
 
@@ -210,9 +210,9 @@ That boundary matters in both directions. Residual neural activity should not be
 | Blindsight | Awake and responsive | No ordinary seeing in the affected field | Visual information guides navigation without reportable vision | Processing from seeing |
 | Inattentional blindness | Awake and responsive | Unexpected visible item often not reported | Task-relevant information dominates access | Visible input from access |
 | Charles Bonnet syndrome | Awake | Vivid visual hallucination | Belief can reject the percept as unreal | Content from belief |
-| Alcohol blackout | Often awake and behaviorally active | Experience cannot be reconstructed fully afterward | New episodic encoding is disrupted | Behavior and possible experience from durable memory |
+| Alcohol blackout | Often awake and behaviorally active | Experience cannot be reconstructed fully afterward | New episodic encoding is disrupted | Wakeful behavior from durable episodic encoding |
 | Psychedelic state | Wakefulness often retained | Perception and self-experience may change | Behavior and evaluation vary with dose and context | Wakefulness from ordinary content |
-| General anesthesia | State and responsiveness reduced in drug- and dose-dependent ways | Ordinary experience is reduced or absent under adequate anesthesia | Some sensory or semantic representation may persist without report or later memory | Responsiveness from all neural processing |
+| General anesthesia | State and responsiveness reduced in drug- and dose-dependent ways | Ordinary experience is reduced or absent under adequate anesthesia | Some sensory or semantic representation may persist without report or later memory | Behavioral responsiveness from residual neural processing |
 
 > **Stop and Retrieve:** Choose two rows that look superficially similar. Explain how the state/content/access dashboard reveals a different dissociation in each.
 
@@ -340,7 +340,7 @@ d) motor behavior is scientifically irrelevant
 a) state from wakefulness
 b) conscious content from explicit belief
 c) memory from motor skill
-d) responsiveness from all neural processing
+d) behavioral responsiveness from residual neural processing
 
 *Answer: b. Charles Bonnet syndrome shows that vivid perceptual content can persist while belief rejects the content as unreal.*
 
@@ -364,7 +364,7 @@ b) all neural processing ends while memory improves
 c) only conscious state changes; content never does
 d) relaxed priors guarantee accurate perception
 
-*Answer: a. Psychedelics often alter content and self-experience without eliminating wakefulness; REBUS does not promise accuracy or benefit.*
+*Answer: a. Psychedelics often alter content and self-experience without eliminating wakefulness; relaxed priors do not guarantee accuracy or benefit.*
 
 ---
 
