@@ -15,6 +15,12 @@ The approved instructor line edit is reconciled in authoritative `source/chapter
 
 These Chapter 5 changes remain uncommitted and unstaged. If publication through Git is authorized, stage and commit only `source/chapters/ch05-consciousness.md`, `pipeline/build_chapter_html.mjs`, `docs/chapters/05-consciousness.html`, `GPT_project_log.md`, and `HANDOFF.md` after one final diff review.
 
+### Chapters 7–13 — line-edit packets prepared
+
+The seven unused instructor line-edit packets have completed a conservative structural-readability pass. They are clean baseline documents with no comments or tracked changes and are now awaiting Jon's instructor line edits.
+
+Do not regenerate these seven packets from the authoritative Markdown before instructor review is complete, because regeneration would replace the structurally prepared copies. The authoritative Markdown remains unchanged. The durable task record is `pipeline/audits/ch07-ch13-line-edit-packet-structural-prep-2026-07-22.md`.
+
 ### Chapter 4 — authoritative source and HTML complete
 
 The approved line-edit reconciliation is complete in `source/chapters/ch04-sensation-perception.md`, with `pipeline/audits/ch04_line_edit_reconciliation_revision_spec_2026-07-20_v2.md` as the durable specification.
@@ -53,14 +59,16 @@ The Chapter 5 lane changes only the five files listed above. Preserve any unrela
 
 ## Immediate next actions
 
-1. Review the final five-file Chapter 5 diff and, if authorized, publish it through a narrowly scoped commit/push.
-2. Complete the remaining deployed figure-expansion, Signal Detection, and Learning Lab human spot checks when returning to release validation.
-3. Keep the Chapter 6 and Chapter 7 image lanes paused unless Jon explicitly changes lanes.
+1. Begin Jon's instructor line edit with the prepared Chapter 7 packet, then proceed in order through Chapter 13 without regenerating the packets first.
+2. Review the final five-file Chapter 5 diff and, if authorized, publish it through a narrowly scoped commit/push.
+3. Complete the remaining deployed figure-expansion, Signal Detection, and Learning Lab human spot checks when returning to release validation.
+4. Keep the Chapter 6 and Chapter 7 image lanes paused unless Jon explicitly changes lanes.
 
 ## Important files
 
 - Chapter 5 authoritative source: `source/chapters/ch05-consciousness.md`
 - Chapter 5 workflow record: `pipeline/audits/ch05-line-edit-html-deferral-2026-07-21.md`
+- Chapters 7–13 packet-preparation record: `pipeline/audits/ch07-ch13-line-edit-packet-structural-prep-2026-07-22.md`
 - Current generated Chapter 5 page: `docs/chapters/05-consciousness.html`
 - Current separate Sleep page: `docs/chapters/06-sleep.html`
 - Chapter 4 reconciled source/specification: `source/chapters/ch04-sensation-perception.md`, `pipeline/audits/ch04_line_edit_reconciliation_revision_spec_2026-07-20_v2.md`
