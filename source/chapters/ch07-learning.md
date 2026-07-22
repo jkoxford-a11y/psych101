@@ -16,7 +16,12 @@ This chapter is built around two of the most thoroughly studied learning process
 
 ## Where This Fits
 
-Chapter 6 closed by framing sleep as the model's offline maintenance window — the brain taken off duty to consolidate, restore, and reorganize. This chapter is about the model getting updated while online. In the master loop this book keeps returning to — partial input, prediction, action, outcome, then updating or defense — learning is the revision step made visible. Experience changes what an organism expects and what it does next. The question that organizes the chapter is **why is unlearning often harder than learning?** Extinction shows that new learning can compete with old learning without simply erasing it. Bandura and Tolman show the other side of the same distinction: learning can occur before behavior reveals it. These principles return in Chapter 13, where exposure therapy uses expectancy violation and inhibitory learning rather than deleting fear, and in Chapter 11, where behavior spreads through observation without direct reinforcement of every learner.
+Chapter 4 asked how an organism extracts useful information from its environment. This chapter asks how experience changes which cues and actions matter. In the animal-model sequence, an organism takes in information, learns which events predict food, danger, or opportunity, and stores those relationships for later use. Chapter 8 turns to that final step. The complication here is that behavior is not a transparent readout of learning: organisms can learn without showing it, and old learning can survive after responding declines. Two cases organize the chapter:
+
+- Extinction shows that new learning can compete with old learning without simply erasing it.
+- Bandura and Tolman show the other side of the same distinction: learning can occur before behavior reveals it.
+
+These principles return in Chapter 13, where exposure therapy uses expectancy violation and inhibitory learning rather than deleting fear, and in Chapter 11, where behavior can spread through observation without direct reinforcement of every learner.
 
 ---
 
@@ -30,7 +35,7 @@ By the end of this chapter, you should be able to:
 4. Explain how shaping and schedules of reinforcement influence the development and persistence of behavior without treating any schedule effect as universal across all tasks and species.
 5. Describe the selective cue–consequence pattern demonstrated by Garcia and Koelling, then distinguish that observed pattern from its evolutionary interpretation (APA IPI Theme 3: biological, psychological, and social factors interact).
 6. Use Bandura's and Tolman's findings to explain why learning must be distinguished from immediate performance and from direct reinforcement (APA IPI Theme 1: psychological science relies on evidence and revises itself as it accumulates).
-7. Interpret cue, reward, and omission responses as reward-prediction-error signals, and explain why this evidence does not make dopamine a universal pleasure, uncertainty, or motivation chemical.
+7. Interpret cue, expected-reward, and omission responses as reward-prediction-error signals, and explain why this evidence does not make dopamine a universal pleasure or motivation chemical.
 
 ---
 
@@ -52,19 +57,15 @@ That distinction explains why extinguished responding can return. **Spontaneous 
 
 ![Figure 7.2. Extinction is new learning, not simple erasure. Acquisition establishes a CS–UCS prediction. Extinction establishes a competing, context-sensitive prediction that the CS will not be followed by the UCS. Responding can therefore remain low in the extinction context yet return after time or a context change. The figure is a teaching model, not a literal diagram of one stored association suppressing another.](../images/ch07/fig_extinction_not_erasure.png)
 
-Two more processes round out the basic toolkit. **Generalization** is the tendency for a CR to occur to stimuli that resemble the original CS. A dog conditioned to one tone may also salivate to a similar tone that was never paired with food. **Discrimination** is learning to respond differently to similar stimuli because they predict different outcomes. These are not opposite theories. They are outcomes of experience: generalization spreads a prediction to similar cues; discrimination narrows it when the environment provides evidence that the cues mean different things.
+Two more processes round out the basic toolkit. **Generalization** is the tendency for a CR to occur to stimuli that resemble the original CS. A dog conditioned to one tone may also salivate to a similar tone that was never paired with food. **Discrimination** is learning to respond differently to similar stimuli because they predict different outcomes. These are not opposite theories. Generalization can occur because two cues are perceptually difficult to distinguish or because the organism has not learned that their differences predict different outcomes. Discrimination requires both detecting a difference and learning that the difference matters. This is where sensation and learning meet: experience can sharpen responding only when the sensory system provides information that can be used.
 
 #### Classic Study: Watson and Rayner's "Little Albert"
 
 In 1920, John B. Watson and Rosalie Rayner attempted to condition fear in an infant they called "Albert B." Albert initially showed little fear of a white rat. Watson and Rayner then paired the rat with a loud noise made by striking a steel bar behind him. After several pairings, Albert sometimes cried, withdrew, or tried to move away when the rat appeared without the noise. Watson and Rayner also reported responses to other furry objects, which they interpreted as generalization (Watson & Rayner, 1920).
 
-The study is historically important, vivid, and ethically disturbing. It is not clean evidence by modern standards. It involved one infant, lacked the controls and standardized response measurement expected today, and produced a record later accounts often exaggerated or simplified. Even the strength and breadth of the reported generalization are difficult to establish from the surviving report and film (Harris, 1979). Little Albert is therefore best treated as an early, flawed illustration of conditioned emotional responding — not as definitive proof of how human phobias develop.
+Little Albert is memorable, but it is weak evidence by modern standards: one infant, no control group, inconsistent response measurement, and uncertain generalization. The ethics are clearer. Watson and Rayner deliberately produced distress and did not complete a deconditioning procedure before Albert left the hospital. Treat the study as a historically important, ethically troubling illustration of conditioned emotional responding — not as a definitive explanation of how human phobias develop (Harris, 1979).
 
 > **Stop and Retrieve:** What did Watson and Rayner claim to demonstrate? Then identify two reasons the study cannot carry the evidential weight that later textbook retellings often give it.
-
-The ethics are less ambiguous. Watson and Rayner deliberately produced distress in an infant who could not consent, and they did not complete a deconditioning procedure before Albert left the hospital. A modern review board would not approve the study. The lasting lesson is therefore double: emotional responses can be shaped by experience, and a memorable demonstration can become a myth when later retellings outrun the quality of the original evidence.
-
-> **Think About It:** Think of an everyday fear, dislike, or preference you have that does not seem fully rational. What learning history could plausibly contribute to it? What evidence would you need before concluding that classical conditioning actually caused it?
 
 #### Do Not Confuse: Classical Conditioning vs. Operant Conditioning
 
@@ -141,8 +142,6 @@ The result supports **latent learning**: learning that is not immediately expres
 
 > **Think About It:** Think of something you learned incidentally — the layout of a building, lyrics you never tried to memorize, or a route you have never driven yourself. What would make that learning become visible in your behavior?
 
-**Evidence boundary: mirror neurons.** Single-neuron recordings in macaques identified cells active during both action and observation (di Pellegrino et al., 1992). Human imaging shows overlapping action-observation networks, but this does not prove that mirror neurons explain observational learning, intention understanding, or autism. Bandura's behavioral evidence stands without that neural story; the mirror-neuron literature is useful mainly as a lesson in not turning a suggestive mechanism into the phenomenon itself.
-
 ---
 
 ## Section 4: Dopamine, Prediction Error, and Motivation
@@ -153,15 +152,11 @@ This pattern does not mean that dopamine stores the prediction or performs all l
 
 ![Figure 7.9. Reward prediction error across learning. An unexpected reward produces a positive phasic response. Once a cue predicts the reward, the response shifts to the cue and little error remains when the expected reward arrives. If the predicted reward is omitted, activity dips at the expected reward time. The figure represents a well-studied subset of dopamine neurons in specific tasks, not every dopamine signal in the brain.](../images/ch07/fig_dopamine_prediction_error_schultz.png)
 
-A related but distinct finding concerns uncertainty during a delay. Fiorillo, Tobler, and Schultz (2003) reported sustained activity between cue and possible reward that was greatest near 50% reward probability in their task. That is not the same signal as the brief cue, reward, and omission responses in Figure 7.9. One varies across the waiting period with uncertainty; the other reflects a momentary prediction error. Both are informative, but combining them into one sentence — "dopamine peaks during uncertain anticipation" — erases the distinction the experiments were designed to reveal.
+#### Do Not Confuse: Wanting vs. Liking
 
-![Figure 7.8. Two dopamine signals must be kept separate. A cue-related phasic response can vary with expected reward value, while sustained activity during the waiting period can be greatest near 50% reward probability, where uncertainty is highest. This schematic refers to the specific delayed-reward task studied by Fiorillo and colleagues, not to dopamine activity everywhere in the brain.](../images/ch07/fig_dopamine_uncertainty_curve.png)
-
-Dopamine also contributes to motivation, action, and incentive salience, but those functions are not identical to reward prediction error. The **wanting–liking distinction** is useful here. Wanting refers to incentive salience — how strongly a cue pulls behavior toward a reward. Liking refers to the hedonic pleasure of receiving it. In addiction, wanting can remain intense even when liking has diminished (Berridge & Robinson, 1998). The distinction helps explain why compulsive pursuit is not simply pleasure seeking, but it should not be treated as one universal dopamine job. Dopamine's effects depend on pathway, cell population, receptor, task, and timescale (Berke, 2018).
+Wanting is the motivational pull a cue or reward exerts on behavior; liking is the pleasure produced by receiving it. They can come apart, including in addiction. The distinction is useful, but it is not one universal account of dopamine: effects depend on pathway, receptor, task, and timescale (Berridge & Robinson, 1998; Berke, 2018).
 
 > **Stop and Retrieve:** A cue predicts a reward. After learning, what should happen to the phasic signal at the cue, at an expected reward, and when the expected reward is omitted? Answer before looking back at Figure 7.9.
-
-> **Think About It:** Think of something you have strongly wanted after it stopped being especially enjoyable. How does wanting-versus-liking describe the behavior without claiming that one chemical fully explains it?
 
 #### External Rewards and Intrinsic Motivation
 
@@ -169,23 +164,17 @@ Dopamine also contributes to motivation, action, and incentive salience, but tho
 
 This pattern is often called the **overjustification effect**, but the boundary conditions matter. The finding does not show that all rewards destroy motivation. Effects depend on whether the activity was initially interesting, whether the reward was expected, whether it was contingent on merely doing the task or on competence, and what outcome is measured. The useful lesson is narrower: adding an external reason can sometimes change how a person interprets why they are acting.
 
-#### AI Connection: RLHF Is Selection Without a Motivated Organism
-
-Large language models can be fine-tuned using **reinforcement learning from human feedback (RLHF)**. Human preferences help select outputs that the model becomes more likely to produce. The structural analogy to operant shaping is useful: both processes select progressively better approximations.
-
-The analogy stops before experience and motivation. Mathematical optimization changes model parameters; the model does not feel relief, want a reward, or carry a biological drive state from one trial to the next. RLHF resembles selection by consequences at the level of output probability, not the full psychology of reinforcement in an organism.
-
 ---
 
 ## Chapter Summary
 
-Classical conditioning is learning that one stimulus predicts another. UCS, UCR, CS, and CR identify the unlearned stimulus-response relation and the learned predictive cue. Acquisition depends on predictive contingency, not repetition alone. Extinction weakens responding by adding new, context-sensitive learning; spontaneous recovery and renewal show why reduced responding does not prove erasure. Little Albert remains a historically influential and ethically important illustration, but its single-case design and uneven record cannot carry the weight later textbook retellings often place on it.
+Classical conditioning is learning that one stimulus predicts another. UCS, UCR, CS, and CR identify the unlearned stimulus-response relation and the learned predictive cue. Acquisition depends on predictive contingency, not repetition alone. Extinction weakens responding by adding new, context-sensitive learning; spontaneous recovery and renewal show why reduced responding does not prove erasure. Little Albert is historically influential and ethically important, but its single-case design and uneven record make it an illustration rather than definitive evidence about phobias.
 
 Operant conditioning changes behavior through consequences. Reinforcement increases behavior; punishment decreases it; positive and negative mean adding and removing. Shaping builds new behavior through successive approximations. Reinforcement schedules produce characteristic response patterns, but their effects depend on the exact contingency, task, species, and learning history. Habits and extinction both expose a stability-versus-flexibility trade-off: past learning can continue to guide behavior after conditions change.
 
-Learning is constrained and can remain hidden from immediate performance. Garcia and Koelling demonstrated selective cue–consequence learning; an evolutionary history of recurrent ecological pairings is a strong interpretation rather than the observation itself. Bandura showed that observing a model can produce learning before the observer performs the behavior. Tolman and Honzik showed that experience in a maze can matter before reward reveals what was learned.
+Learning is constrained, and current behavior is not a transparent readout of what has been learned. Garcia and Koelling demonstrated selective cue–consequence learning; an evolutionary history of recurrent ecological pairings is a strong interpretation rather than the observation itself. Bandura showed that observing a model can produce learning before the observer performs the behavior. Tolman and Honzik showed that experience in a maze can matter before reward reveals what was learned.
 
-Reward-prediction-error signals provide a neural example of updating: some dopamine neurons respond when outcomes are better or worse than expected and shift their response to predictive cues. Sustained uncertainty-related activity, incentive salience, and motivational vigor are related dopamine findings, not interchangeable names for the same signal. Intrinsic and extrinsic motivation can also interact; external rewards sometimes undermine later free-choice engagement, but not under every condition.
+Reward-prediction-error signals provide a neural example of updating: some dopamine neurons respond when outcomes are better or worse than expected and shift their response to predictive cues. This does not make dopamine a universal pleasure or motivation chemical. Intrinsic and extrinsic motivation can also interact; external rewards sometimes undermine later free-choice engagement, but not under every condition.
 
 ---
 
@@ -309,9 +298,9 @@ d) Both are operant conditioning
 a) A large phasic response occurs at both the cue and the fully expected juice on every trial  
 b) The response shifts to the predictive cue; an expected juice produces little error; omission produces a dip at the expected time  
 c) Dopamine remains high continuously because the animal likes juice  
-d) The strongest response must occur whenever reward probability is 50%, regardless of when activity is measured  
+d) The signal disappears entirely once learning is complete because no further updating can occur
 
-*Answer: b. Why (d) is tempting: uncertainty-related sustained activity can be greatest near 50% probability in a specific delayed-reward task, but that is distinct from the cue, expected-reward, and omission pattern tested here.*
+*Answer: b. Why (a) is tempting: both the cue and juice matter during learning, but once the cue fully predicts the juice, the phasic error shifts to the cue and the expected juice produces little additional error.*
 
 ---
 
@@ -386,7 +375,7 @@ A careful historical examination of how a small, ambiguous study became a much c
 Skinner's accessible explanation of shaping through successive approximations.
 
 **Sapolsky, R. (2011, February 15). Dopamine jackpot! [Pritzker Lecture].** California Academy of Sciences.  
-A vivid public lecture on dopamine and anticipation. Read it as an analogy-rich interpretation, then compare its broader claims with the narrower experimental distinctions in Section 4.
+A vivid public lecture on dopamine and anticipation. Compare its broad framing with the cue, expected-reward, and omission pattern described in Section 4.
 
 **Berke, J. D. (2018). What does dopamine mean?** *Nature Neuroscience, 21*, 787–793.  
 A concise review of why dopamine's roles in learning, motivation, and action should not be collapsed into one slogan.
@@ -408,10 +397,6 @@ Berridge, K. C., & Robinson, T. E. (1998). What is the role of dopamine in rewar
 Bouton, M. E. (2026). Conditioning and learning. In R. Biswas-Diener & E. Diener (Eds.), *Noba textbook series: Psychology*. DEF Publishers.
 
 Deci, E. L. (1971). Effects of externally mediated rewards on intrinsic motivation. *Journal of Personality and Social Psychology, 18*(1), 105–115.
-
-di Pellegrino, G., Fadiga, L., Fogassi, L., Gallese, V., & Rizzolatti, G. (1992). Understanding motor events: A neurophysiological study. *Experimental Brain Research, 91*(1), 176–180.
-
-Fiorillo, C. D., Tobler, P. N., & Schultz, W. (2003). Discrete coding of reward probability and uncertainty by dopamine neurons. *Science, 299*(5614), 1898–1902.
 
 Garcia, J., & Koelling, R. A. (1966). Relation of cue to consequence in avoidance learning. *Psychonomic Science, 4*(1), 123–124.
 

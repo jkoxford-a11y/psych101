@@ -1,0 +1,41 @@
+Apply the approved Chapter 7 reconciliation mechanically. Do not make editorial judgments.
+
+Repository: C:\GitHub\psych101
+
+Inputs supplied with this task:
+- apply_ch07_line_edit_reconciliation.py
+- Chapter_7_Learning_Line_Edit_revised_2026-07-22.docx
+
+Required steps:
+1. Read AGENTS.md and HANDOFF.md.
+2. Inspect `git status --short`. Preserve every unrelated change.
+3. Copy the revised Word file over:
+   `line-edit-packets/Chapter_7_Learning_Line_Edit.docx`
+   This is the completed instructor line-edit record.
+4. Copy `apply_ch07_line_edit_reconciliation.py` temporarily to the repository root and run:
+   `python apply_ch07_line_edit_reconciliation.py`
+5. Delete the temporary root-level script after it succeeds. Do not add the script to the repository.
+6. Review the diff for only:
+   - `source/chapters/ch07-learning.md`
+   - `pipeline/audits/ch07-line-edit-reconciliation-2026-07-22.md`
+   - `line-edit-packets/Chapter_7_Learning_Line_Edit.docx`
+7. Append the exact suggested log entry from the new audit to `GPT_project_log.md`.
+8. Update HANDOFF.md narrowly:
+   - Chapter 7 instructor line edit is reconciled in authoritative source.
+   - Chapters 8–13 remain in the instructor line-edit queue.
+   - Chapter 7 HTML and figure wiring remain deferred.
+   - Figure 7.8 uncertainty content is no longer supported by prose and must be handled only when the image lane resumes.
+   - Immediate next instructor line-edit chapter is Chapter 8.
+9. Validate:
+   - `git diff --check`
+   - 11 review questions remain.
+   - prediction-error Figure 7.9 source reference remains.
+   - uncertainty Figure 7.8 source reference, mirror-neuron prose, RLHF prose, di Pellegrino reference, and Fiorillo reference are absent.
+   - `docs/chapters/07-learning.html`, `pipeline/build_chapter_html.mjs`, figure files, visual inventory, and backlog are unchanged.
+10. Do not regenerate HTML. Do not stage, commit, push, restore, or clean files.
+
+Return:
+- files changed
+- concise substantive summary
+- validation results
+- final `git status --short`
