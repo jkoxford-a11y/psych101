@@ -129,6 +129,21 @@ def set_fixed_table_geometry(table, widths):
             cell.vertical_alignment = WD_CELL_VERTICAL_ALIGNMENT.CENTER
 
 
+def repeat_table_header(row):
+    tr_pr = row._tr.get_or_add_trPr()
+    tbl_header = tr_pr.find(qn("w:tblHeader"))
+    if tbl_header is None:
+        tbl_header = OxmlElement("w:tblHeader")
+        tr_pr.append(tbl_header)
+    tbl_header.set(qn("w:val"), "true")
+
+
+def prevent_row_split(row):
+    tr_pr = row._tr.get_or_add_trPr()
+    if tr_pr.find(qn("w:cantSplit")) is None:
+        tr_pr.append(OxmlElement("w:cantSplit"))
+
+
 def add_page_field(paragraph):
     run = paragraph.add_run()
     fld_char = OxmlElement("w:fldChar")
@@ -216,9 +231,15 @@ def add_numbering_definition(doc, kind):
         start = OxmlElement("w:start")
         start.set(qn("w:val"), "1")
         num_fmt = OxmlElement("w:numFmt")
-        num_fmt.set(qn("w:val"), "bullet" if kind == "bullet" else "decimal")
+        num_fmt.set(
+            qn("w:val"),
+            "bullet" if kind == "bullet" else "lowerLetter" if kind == "letter" else "decimal",
+        )
         lvl_text = OxmlElement("w:lvlText")
-        lvl_text.set(qn("w:val"), "•" if kind == "bullet" else f"%{level + 1}.")
+        lvl_text.set(
+            qn("w:val"),
+            "•" if kind == "bullet" else f"%{level + 1})" if kind == "letter" else f"%{level + 1}.",
+        )
         suff = OxmlElement("w:suff")
         suff.set(qn("w:val"), "tab")
         lvl_jc = OxmlElement("w:lvlJc")
@@ -297,10 +318,28 @@ def add_inline(paragraph, text, *, default_bold=False, default_italic=False, col
             bold = italic = True
         elif token.startswith(("**", "__")):
             content = token[2:-2]
-            bold = True
+            add_inline(
+                paragraph,
+                content,
+                default_bold=True,
+                default_italic=default_italic,
+                color=color,
+                size=size,
+            )
+            cursor = match.end()
+            continue
         elif token.startswith(("*", "_")):
             content = token[1:-1]
-            italic = True
+            add_inline(
+                paragraph,
+                content,
+                default_bold=default_bold,
+                default_italic=True,
+                color=color,
+                size=size,
+            )
+            cursor = match.end()
+            continue
         else:
             content = token[1:-1]
             mono = True
@@ -354,7 +393,9 @@ def add_markdown_table(doc, rows):
     widths = [9360 // col_count] * col_count
     widths[-1] += 9360 - sum(widths)
     set_fixed_table_geometry(table, widths)
+    repeat_table_header(table.rows[0])
     for row_idx, row in enumerate(parsed):
+        prevent_row_split(table.rows[row_idx])
         for col_idx, value in enumerate(row):
             cell = table.cell(row_idx, col_idx)
             if row_idx == 0:
@@ -403,6 +444,7 @@ def markdown_to_docx(doc, markdown_text):
     body = []
     bullet_num_id = None
     decimal_num_id = None
+    letter_num_id = None
     active_list_kind = None
     in_code = False
     code_lines = []
@@ -415,10 +457,11 @@ def markdown_to_docx(doc, markdown_text):
             body = []
 
     def reset_list():
-        nonlocal active_list_kind, bullet_num_id, decimal_num_id
+        nonlocal active_list_kind, bullet_num_id, decimal_num_id, letter_num_id
         active_list_kind = None
         bullet_num_id = None
         decimal_num_id = None
+        letter_num_id = None
 
     while i < len(lines):
         raw = lines[i]
@@ -515,21 +558,24 @@ def markdown_to_docx(doc, markdown_text):
             add_inline(paragraph, " ".join(quote_parts))
             continue
 
-        list_match = re.match(r"^(\s*)([-+*]|\d+\.)\s+(.+)$", raw)
+        list_match = re.match(r"^(\s*)([-+*]|\d+\.|[a-z]\))\s+(.+)$", raw)
         if list_match:
             flush_body()
             indent_spaces = len(list_match.group(1).replace("\t", "    "))
             level = min(indent_spaces // 2, 8)
             marker = list_match.group(2)
-            kind = "bullet" if marker in ("-", "+", "*") else "decimal"
+            kind = "bullet" if marker in ("-", "+", "*") else "letter" if marker.endswith(")") else "decimal"
             if active_list_kind != kind:
                 active_list_kind = kind
                 if kind == "bullet":
                     bullet_num_id = add_numbering_definition(doc, "bullet")
-                else:
+                elif kind == "decimal":
                     decimal_num_id = add_numbering_definition(doc, "decimal")
+                else:
+                    letter_num_id = add_numbering_definition(doc, "letter")
             paragraph = doc.add_paragraph(style="List Bullet" if kind == "bullet" else "List Number")
-            set_paragraph_numbering(paragraph, bullet_num_id if kind == "bullet" else decimal_num_id, level)
+            num_id = bullet_num_id if kind == "bullet" else letter_num_id if kind == "letter" else decimal_num_id
+            set_paragraph_numbering(paragraph, num_id, level)
             add_inline(paragraph, list_match.group(3))
             i += 1
             continue
