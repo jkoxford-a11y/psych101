@@ -62,6 +62,15 @@ const chapters = {
     title: "Emotion, Stress & Coping",
     pillar: "Mental & Physical Health",
   },
+  "8": {
+    source: "source/chapters/ch08-memory.md",
+    output: "docs/chapters/08-memory.html",
+    title: "Memory",
+    pillar: "Cognitive",
+    matchAnyItalicFigureCaption: true,
+    convertStructuredH4Callouts: true,
+    minimumSectionNavLinks: 2,
+  },
 };
 
 const selected = process.argv.slice(2);
@@ -285,7 +294,7 @@ function convertStructuredCallouts(html, options = {}) {
       (_all, title, body) => wrap("do-not-confuse", title, body),
     );
     html = html.replace(
-      /<h4>(AI Connection:[\s\S]*?)<\/h4>\s*((?:<p>[\s\S]*?<\/p>\s*){2})/g,
+      /<h4>(AI Connection:[\s\S]*?)<\/h4>([\s\S]*?)(?=<div class="callout|<h[234]|<figure class="chapter-figure|$)/g,
       (_all, title, body) => wrap("ai-connection", title, body),
     );
   }
