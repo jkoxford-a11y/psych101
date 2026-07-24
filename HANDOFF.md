@@ -1,11 +1,22 @@
 # Psych101 — Current Handoff
 
-**Last updated:** 2026-07-22
+**Last updated:** 2026-07-23
 **Canonical repository:** `C:\GitHub\psych101`
 
 This file records current state only. See `GPT_project_log.md` for completed-work history, `PROJECT_BACKLOG.md` for durable deferred work, `pipeline/audits/ch05-line-edit-html-deferral-2026-07-21.md` for the active Chapter 5 sequence, `pipeline/audits/learning-lab-state-restoration-audit.md` for the repository-wide lab audit, `pipeline/audits/ch04-signal-detection-timed-flash-2026-07-18.md` for the Signal Detection revision, and `pipeline/audits/ch07-image-work-pause-2026-07-17.md` for the paused Chapter 7 image lane.
 
 ## Current state
+
+### Chapter 8 — line edit and labs complete
+
+The approved instructor line edit is reconciled in authoritative `source/chapters/ch08-memory.md`. Two new Learning Labs have been built and wired:
+
+- `docs/labs/ch08/misinformation-effect.html` + `docs/js/labs-misinformation-effect.js` — "Did You Really See That?" — misinformation effect (campus-theft scenario, embedded-presupposition follow-up questions, four-item memory test, results table, explanation, transfer)
+- `docs/labs/ch08/sperling-partial-report.html` + `docs/js/labs-sperling-partial-report.js` — "How Much Do You See at Once?" — Sperling partial-report paradigm (~100 ms flash, whole-report trials, partial-report trials with post-flash row cue, comparison results, explanation, transfer)
+
+Both labs follow the established IIFE / sessionStorage pattern. JavaScript syntax verified. Full phase-by-phase browser automation confirmed. "Try it yourself" links for both labs are in `source/chapters/ch08-memory.md`; chapter HTML regenerated at `docs/chapters/08-memory.html`. Chapter 8 now has four active labs: Sperling Partial-Report, Levels of Processing, Interactive Imagery, and Misinformation Effect.
+
+All Chapter 8 changes remain uncommitted. Commit: `source/chapters/ch08-memory.md`, `docs/chapters/08-memory.html`, `docs/labs/ch08/misinformation-effect.html`, `docs/js/labs-misinformation-effect.js`, `docs/labs/ch08/sperling-partial-report.html`, `docs/js/labs-sperling-partial-report.js`, `.claude/launch.json`.
 
 ### Chapter 5 — line edit and HTML complete
 
@@ -47,7 +58,7 @@ Deployment still requires human spot checks of real-origin `sessionStorage`, key
 
 ### Completed chapter lanes
 
-Chapters 1–4 and 9–13 have completed their canonical revision/validation cycles. Chapter 8's wired Levels of Processing and Interactive Imagery labs remain approved; Self-Reference Effect remains index-only. Do not reopen completed lanes absent a specific defect or Jon's editorial request.
+Chapters 1–4 and 9–13 have completed their canonical revision/validation cycles. Chapter 8's line edit is reconciled and its four labs (Sperling Partial-Report, Levels of Processing, Interactive Imagery, Misinformation Effect) are built and wired; Self-Reference Effect remains index-only. Do not reopen completed lanes absent a specific defect or Jon's editorial request.
 
 ### Paused image lanes
 
@@ -59,10 +70,11 @@ The Chapter 5 lane changes only the five files listed above. Preserve any unrela
 
 ## Immediate next actions
 
-1. Begin Jon's instructor line edit with the prepared Chapter 8 packet, then proceed in order through Chapter 13 without regenerating the packets first.
-2. Review the final five-file Chapter 5 diff and, if authorized, publish it through a narrowly scoped commit/push.
-3. Complete the remaining deployed figure-expansion, Signal Detection, and Learning Lab human spot checks when returning to release validation.
-4. Keep the Chapter 6 and Chapter 7 image lanes paused unless Jon explicitly changes lanes.
+1. Commit the Chapter 8 changes (seven files listed in the Chapter 8 section above) after one final diff review.
+2. Begin the instructor line edit for Chapter 9, then proceed in order through Chapter 13.
+3. Review the final five-file Chapter 5 diff and, if authorized, publish it through a narrowly scoped commit/push.
+4. Complete the remaining deployed figure-expansion, Signal Detection, and Learning Lab human spot checks when returning to release validation.
+5. Keep the Chapter 6 and Chapter 7 image lanes paused unless Jon explicitly changes lanes.
 
 ## Important files
 

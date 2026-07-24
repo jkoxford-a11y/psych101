@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>How Much Do You See at Once? - General Psychology</title>
+  <link rel="stylesheet" href="../../css/style.css" />
+  <link rel="stylesheet" href="../../css/labs.css" />
+</head>
+<body data-lab-storage-key="psych101-lab-ch08-sperling-partial-report-v1">
+<div class="layout">
+  <aside class="sidebar" id="app-sidebar"></aside>
+  <script src="../../js/sidebar.js" data-dir="labs/ch08" data-active="" data-top="full"></script>
+
+  <main class="main lab-main">
+    <p class="chapter-meta">Learning Lab - Chapter 8</p>
+    <h1>How Much Do You See at Once?</h1>
+    <hr class="chapter-divider" />
+
+    <p>In two sets of trials, a 3-by-3 grid of letters will flash briefly on screen. In the first set, try to report as many letters as you can from the whole grid. In the second set, you will not know which row to report until after the grid has already disappeared.</p>
+    <p>This is a teaching demonstration of iconic memory and the partial-report advantage, not a diagnostic test of your vision or attention.</p>
+
+    <div class="callout callout--note">
+      <div class="callout-title">Accessibility and Privacy</div>
+      <p>This lab requires the ability to read a briefly displayed letter grid (approximately 100 milliseconds). It runs entirely in your browser and stores your prediction, trial responses, explanation, and transfer response in <code>sessionStorage</code> for this browser session only. It sends no data to a server.</p>
+    </div>
+
+    <section class="lab-panel" aria-labelledby="predict-heading" id="prediction-panel">
+      <h2 id="predict-heading">Predict and Commit</h2>
+      <form id="prediction-form" novalidate>
+        <fieldset class="lab-fieldset">
+          <legend>After a very brief flash of a 3-by-3 grid of letters, how many of the 9 letters do you predict you will be able to report?</legend>
+          <label class="option-row"><input type="radio" name="prediction-count" value="1-2" /> 1 or 2</label>
+          <label class="option-row"><input type="radio" name="prediction-count" value="3-4" /> 3 or 4</label>
+          <label class="option-row"><input type="radio" name="prediction-count" value="5-6" /> 5 or 6</label>
+          <label class="option-row"><input type="radio" name="prediction-count" value="7-9" /> 7, 8, or all 9</label>
+        </fieldset>
+
+        <label class="text-label" for="prediction-reason">Why do you expect that? What limits how much a person can report from a brief flash?</label>
+        <textarea id="prediction-reason" rows="4" required placeholder="Commit to a reason before starting the trials."></textarea>
+
+        <button class="lab-btn" type="button" id="commit-prediction">Commit prediction</button>
+      </form>
+      <p class="save-status" id="prediction-status" aria-live="polite"></p>
+    </section>
+
+    <section class="lab-panel phase-panel" id="whole-intro-panel" hidden aria-labelledby="whole-intro-heading">
+      <h2 id="whole-intro-heading" tabindex="-1">Part 1: Whole Report</h2>
+      <p>In each of three trials, a 3-by-3 grid of 9 letters will flash for about one tenth of a second. Immediately after it disappears, type as many letters as you remember from anywhere in the grid. Order does not matter.</p>
+      <p>Each grid contains nine unrelated consonants. Do not look for patterns or words — just see as many letters as you can.</p>
+      <button class="lab-btn" type="button" id="start-whole">Start whole-report trials</button>
+    </section>
+
+    <section class="lab-panel phase-panel" id="whole-panel" hidden aria-labelledby="whole-heading">
+      <div class="lab-progress" aria-live="polite">
+        <span id="whole-counter">Trial 1 of 3</span>
+        <span>Whole report</span>
+      </div>
+      <h2 id="whole-heading" tabindex="-1">Whole Report — Trial <span id="whole-trial-num">1</span></h2>
+
+      <div id="whole-ready-section">
+        <p>When you are ready, click the button. The grid will flash for about one tenth of a second. Type as many letters as you can immediately after it disappears.</p>
+        <div class="curve-wrap" id="whole-grid-container" hidden aria-live="assertive" aria-atomic="true" role="img" aria-label="Letter grid"></div>
+        <button class="lab-btn" type="button" id="whole-flash-btn">Flash the grid</button>
+      </div>
+
+      <div id="whole-response-section" hidden>
+        <p>Type all the letters you saw from anywhere in the grid. Work quickly.</p>
+        <label class="text-label" for="whole-response">Letters you saw (any order, no spaces needed)</label>
+        <input type="text" id="whole-response" autocomplete="off" spellcheck="false" placeholder="Example: BFKGM" />
+        <button class="lab-btn" type="button" id="submit-whole">Submit response</button>
+      </div>
+      <p class="save-status" id="whole-status" aria-live="polite"></p>
+    </section>
+
+    <section class="lab-panel phase-panel" id="whole-results-panel" hidden aria-labelledby="whole-results-heading">
+      <h2 id="whole-results-heading" tabindex="-1">Whole-Report Results</h2>
+      <p id="whole-results-summary"></p>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th scope="col">Trial</th>
+              <th scope="col">Grid (top / middle / bottom)</th>
+              <th scope="col">Your response</th>
+              <th scope="col">Correct</th>
+            </tr>
+          </thead>
+          <tbody id="whole-results-body"></tbody>
+        </table>
+      </div>
+
+      <div class="callout callout--note">
+        <div class="callout-title">What to notice</div>
+        <p>Most people correctly identify 3 to 5 letters from the whole grid — well below the 9 available. This is not because they failed to see the grid. It is because verbal encoding is slow: by the time you have named a few letters, the others have faded. Sperling asked whether those lost letters were actually there at the moment of the flash, before fading began.</p>
+      </div>
+
+      <button class="lab-btn" type="button" id="continue-to-partial">Continue to partial report</button>
+    </section>
+
+    <section class="lab-panel phase-panel" id="partial-intro-panel" hidden aria-labelledby="partial-intro-heading">
+      <h2 id="partial-intro-heading" tabindex="-1">Part 2: Partial Report</h2>
+      <p>In each of three trials, the same kind of grid will flash for the same brief duration. This time, you will not know which row to report until <strong>after</strong> the grid has already disappeared. A cue will appear immediately telling you to report only the top, middle, or bottom row.</p>
+      <p>Because the cue comes after the flash, you cannot prepare for it in advance. You must try to see the whole grid, then retrieve only the cued row from memory.</p>
+      <button class="lab-btn" type="button" id="start-partial">Start partial-report trials</button>
+    </section>
+
+    <section class="lab-panel phase-panel" id="partial-panel" hidden aria-labelledby="partial-heading">
+      <div class="lab-progress" aria-live="polite">
+        <span id="partial-counter">Trial 1 of 3</span>
+        <span>Partial report</span>
+      </div>
+      <h2 id="partial-heading" tabindex="-1">Partial Report — Trial <span id="partial-trial-num">1</span></h2>
+
+      <div id="partial-ready-section">
+        <p>When you are ready, click the button. The grid will flash briefly. A cue will appear immediately afterward telling you which row to report.</p>
+        <div class="curve-wrap" id="partial-grid-container" hidden aria-live="assertive" aria-atomic="true" role="img" aria-label="Letter grid"></div>
+        <button class="lab-btn" type="button" id="partial-flash-btn">Flash the grid</button>
+      </div>
+
+      <div id="partial-response-section" hidden>
+        <p id="partial-cue-label" style="font-size: 1.2rem; font-weight: bold; margin-bottom: 0.5rem;"></p>
+        <p>Type only the letters from that row. Work quickly.</p>
+        <label class="text-label" for="partial-response">Letters from that row (any order)</label>
+        <input type="text" id="partial-response" autocomplete="off" spellcheck="false" maxlength="12" placeholder="Example: BFK" />
+        <button class="lab-btn" type="button" id="submit-partial">Submit response</button>
+      </div>
+      <p class="save-status" id="partial-status" aria-live="polite"></p>
+    </section>
+
+    <section class="lab-panel phase-panel" id="results-panel" hidden aria-labelledby="results-heading">
+      <h2 id="results-heading" tabindex="-1">Comparing Whole and Partial Report</h2>
+      <p id="results-summary"></p>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th scope="col">Condition</th>
+              <th scope="col">Letters required</th>
+              <th scope="col">Your average</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Whole report</th>
+              <td>All 9</td>
+              <td id="avg-whole">—</td>
+            </tr>
+            <tr>
+              <th scope="row">Partial report (per row)</th>
+              <td>3 from cued row</td>
+              <td id="avg-partial">—</td>
+            </tr>
+            <tr>
+              <th scope="row">Estimated full-grid capacity</th>
+              <td>Partial average × 3</td>
+              <td id="estimated-capacity">—</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th scope="col">Trial</th>
+              <th scope="col">Cued row</th>
+              <th scope="col">Row letters</th>
+              <th scope="col">Your response</th>
+              <th scope="col">Correct</th>
+            </tr>
+          </thead>
+          <tbody id="partial-results-body"></tbody>
+        </table>
+      </div>
+
+      <div class="callout callout--note">
+        <div class="callout-title">What the activity was designed to show</div>
+        <p>Sperling (1960) found that partial-report performance, when scaled to the full grid, exceeded whole-report performance. This shows that iconic memory initially holds a richer representation than verbal report can extract — the bottleneck is not in seeing the grid but in naming letters before the sensory trace decays. Partial report bypasses the bottleneck: the post-flash cue tells the visual system which letters to retrieve before they fade, and performance on any cued row is high precisely because all rows were available.</p>
+        <p>If your estimated capacity exceeded your whole-report average, your data follow the expected direction. If they did not, that can happen with short experiments: browser rendering timing varies, partial-report strategy differs across individuals, and three trials per condition give a noisy estimate.</p>
+      </div>
+
+      <div class="callout callout--do-not-confuse">
+        <div class="callout-title">Do Not Confuse: Sensory Memory with Short-Term Memory</div>
+        <p>Iconic memory is a brief, high-capacity sensory buffer — not short-term memory. Its capacity is large (roughly the full visual scene), but its duration is extremely short (a fraction of a second). Short-term memory has smaller capacity but longer duration and can be sustained by rehearsal. What Sperling demonstrated is that the visual system retains a complete representation of the stimulus briefly, even though short-term memory cannot hold all nine grid letters simultaneously. The partial-report advantage is evidence of the initial sensory representation, not of improved short-term encoding.</p>
+      </div>
+
+      <label class="text-label" for="explanation-response">Why did partial-report performance exceed whole-report performance, even though the same grid flashed for the same duration? Use the terms <strong>iconic memory</strong>, <strong>sensory trace</strong>, and <strong>verbal encoding</strong> in your answer.</label>
+      <textarea id="explanation-response" rows="5"></textarea>
+      <button class="lab-btn" type="button" id="save-explanation">Save explanation and continue</button>
+      <p class="save-status" id="explanation-status" aria-live="polite"></p>
+    </section>
+
+    <section class="lab-panel phase-panel" id="transfer-panel" hidden aria-labelledby="transfer-heading">
+      <h2 id="transfer-heading" tabindex="-1">Retrieve and Transfer</h2>
+      <p id="completion-summary"></p>
+      <label class="text-label" for="transfer-response">A classmate says: "Sperling just proved that people can see everything at once but only remember a little." Is that an accurate summary? If not, what is the more precise claim? Describe the difference between what the iconic memory trace contains and what short-term memory holds, and explain what it means to say that sensory memory has high capacity but very short duration.</label>
+      <textarea id="transfer-response" rows="6"></textarea>
+      <div class="lab-actions">
+        <button class="lab-btn" type="button" id="save-transfer">Save transfer response locally</button>
+        <button class="lab-btn lab-btn--secondary" type="button" id="restart-lab">Restart lab</button>
+      </div>
+      <p class="save-status" id="transfer-status" aria-live="polite"></p>
+    </section>
+
+    <section class="callout callout--think-about-it">
+      <div class="callout-title">Instructor Note</div>
+      <p>Run before or after the Sperling discussion. Most students predict 5 to 7 letters and report 3 to 4 in whole-report trials — the mismatch is a good debrief anchor. Key question: why did partial-report performance, scaled up, exceed whole-report performance if the grid was flashed for the same duration? If partial performance was also low, discuss whether strategy (trying to name letters before the cue appeared) or screen rendering variability affected results. Avoid emphasizing individual scores; compare class aggregate averages.</p>
+    </section>
+
+    <section class="callout callout--note">
+      <div class="callout-title">Evidence Base</div>
+      <p>The design replicates the logic of Sperling (1960). This version uses a 100-millisecond flash (versus the range Sperling used) to accommodate browser-rendering variability across devices. Partial-report cues are delivered by text rather than tone, and the grid is 3-by-3 rather than the larger arrays in the original studies. The core logic is preserved: the row cue comes only after the flash, so participants must hold the full grid in sensory memory to perform well on any cued row.</p>
+    </section>
+  </main>
+</div>
+<script src="../../js/nav.js"></script>
+<script src="../../js/labs-sperling-partial-report.js"></script>
+<script src="../../js/lab-session-controls.js"></script>
+</body>
+</html>

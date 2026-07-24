@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Did You Really See That? - General Psychology</title>
+  <link rel="stylesheet" href="../../css/style.css" />
+  <link rel="stylesheet" href="../../css/labs.css" />
+</head>
+<body data-lab-storage-key="psych101-lab-ch08-misinformation-effect-v1">
+<div class="layout">
+  <aside class="sidebar" id="app-sidebar"></aside>
+  <script src="../../js/sidebar.js" data-dir="labs/ch08" data-active="" data-top="full"></script>
+
+  <main class="main lab-main">
+    <p class="chapter-meta">Learning Lab - Chapter 8</p>
+    <h1>Did You Really See That?</h1>
+    <hr class="chapter-divider" />
+
+    <p>You are going to read a brief description of a campus incident, answer some follow-up questions about it, complete a short interruption, and then take a memory test on specific details from the original scene.</p>
+    <p>This is a teaching demonstration, not a test of your memory ability or a controlled experiment on you. Its purpose is to let you experience the misinformation effect and then explain what happened.</p>
+
+    <div class="callout callout--note">
+      <div class="callout-title">Accessibility and Privacy</div>
+      <p>This lab runs entirely in your browser. It stores your prediction, question responses, memory-test answers, explanation, and transfer response in <code>sessionStorage</code> for this browser session only. It does not collect names, student IDs, or analytics, and sends no data to a server.</p>
+    </div>
+
+    <section class="lab-panel" aria-labelledby="predict-heading" id="prediction-panel">
+      <h2 id="predict-heading">Predict and Commit</h2>
+      <form id="prediction-form" novalidate>
+        <fieldset class="lab-fieldset">
+          <legend>After reading a brief incident and answering some follow-up questions about it, how accurately do you expect to remember specific details from the original scene?</legend>
+          <label class="option-row"><input type="radio" name="prediction-accuracy" value="very" /> Very accurately — I expect to get most specific details right</label>
+          <label class="option-row"><input type="radio" name="prediction-accuracy" value="somewhat" /> Somewhat accurately — a few details might shift</label>
+          <label class="option-row"><input type="radio" name="prediction-accuracy" value="poorly" /> Poorly — I think follow-up questions could easily alter what I remember</label>
+        </fieldset>
+
+        <label class="text-label" for="prediction-reason">What do you think most affects how accurately people remember the details of a witnessed event?</label>
+        <textarea id="prediction-reason" rows="4" required placeholder="Commit to a reason before reading the incident."></textarea>
+
+        <button class="lab-btn" type="button" id="commit-prediction">Commit prediction</button>
+      </form>
+      <p class="save-status" id="prediction-status" aria-live="polite"></p>
+    </section>
+
+    <section class="lab-panel phase-panel" id="event-panel" hidden aria-labelledby="event-heading">
+      <h2 id="event-heading" tabindex="-1">Read the Incident Carefully</h2>
+      <p>Read the following account. You will answer some follow-up questions about it and then take a memory test on specific details. Read at your own pace.</p>
+
+      <div class="callout callout--note">
+        <div class="callout-title">The Incident</div>
+        <p>It was a Tuesday afternoon in the campus library. A student — let's call her Mia — was working at a table on the second floor, near the windows. Her textbooks were spread out in front of her, and she had set a brown laptop bag on the chair beside her.</p>
+        <p>Mia got up to find a book in the nearby stacks, leaving her table unattended. Shortly after, another person entered the study area — someone wearing a blue jacket, with short hair. They glanced around the room, walked directly to Mia's table, picked up the brown bag, and walked calmly toward the exit. A student at a nearby table glanced up briefly but said nothing.</p>
+        <p>Mia returned about three minutes later to find her bag gone.</p>
+      </div>
+
+      <button class="lab-btn" type="button" id="event-read">I have read this carefully</button>
+    </section>
+
+    <section class="lab-panel phase-panel" id="distractor-panel" hidden aria-labelledby="distractor-heading">
+      <div class="lab-progress" aria-live="polite">
+        <span id="distractor-counter">Number 1 of 6</span>
+        <span>Brief interruption</span>
+      </div>
+      <h2 id="distractor-heading" tabindex="-1">Clear the Workspace</h2>
+      <p>Classify each number as odd or even. This short interruption separates the reading from the follow-up questions.</p>
+
+      <div class="curve-wrap" aria-live="polite" aria-atomic="true">
+        <h2 id="distractor-number">43</h2>
+        <p>Is this number odd or even?</p>
+      </div>
+
+      <div class="sim-controls" aria-label="Number classification responses">
+        <button class="lab-btn" type="button" id="distractor-odd">Odd</button>
+        <button class="lab-btn" type="button" id="distractor-even">Even</button>
+      </div>
+      <p class="save-status" id="distractor-status" aria-live="polite"></p>
+    </section>
+
+    <section class="lab-panel phase-panel" id="questions-panel" hidden aria-labelledby="questions-heading">
+      <div class="lab-progress" aria-live="polite">
+        <span id="questions-counter">Question 1 of 7</span>
+        <span>Follow-up review</span>
+      </div>
+      <h2 id="questions-heading" tabindex="-1">Follow-Up Questions</h2>
+      <p>A researcher reviewing the incident wants your perspective on several aspects of what happened. Answer each question based on what you remember from the scene.</p>
+
+      <div class="curve-wrap">
+        <p id="question-text">Where in the library was Mia working when this happened?</p>
+      </div>
+
+      <label class="text-label" for="question-answer">Your answer</label>
+      <textarea id="question-answer" rows="3" placeholder="Respond in at least three words."></textarea>
+      <button class="lab-btn" type="button" id="next-question">Next question</button>
+      <p class="save-status" id="questions-status" aria-live="polite"></p>
+    </section>
+
+    <section class="lab-panel phase-panel" id="memory-panel" hidden aria-labelledby="memory-heading">
+      <div class="lab-progress" aria-live="polite">
+        <span id="memory-counter">Question 1 of 4</span>
+        <span>Memory test</span>
+      </div>
+      <h2 id="memory-heading" tabindex="-1">Memory Test</h2>
+      <p>Based on the original incident — not the follow-up questions — choose the answer that best matches what you read.</p>
+
+      <div class="curve-wrap" aria-live="polite" aria-atomic="true">
+        <p id="memory-question">What color was the jacket the person was wearing?</p>
+      </div>
+
+      <fieldset class="lab-fieldset" id="memory-choices" aria-label="Memory test choices">
+      </fieldset>
+
+      <button class="lab-btn" type="button" id="submit-memory">Submit answer</button>
+      <p class="save-status" id="memory-status" aria-live="polite"></p>
+    </section>
+
+    <section class="lab-panel phase-panel" id="results-panel" hidden aria-labelledby="results-heading">
+      <h2 id="results-heading" tabindex="-1">Your Results</h2>
+      <p id="results-summary"></p>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th scope="col">Detail</th>
+              <th scope="col">Original scene</th>
+              <th scope="col">Follow-up implied</th>
+              <th scope="col">Your answer</th>
+              <th scope="col">Outcome</th>
+            </tr>
+          </thead>
+          <tbody id="results-table-body">
+          </tbody>
+        </table>
+      </div>
+
+      <p>Questions 2, 4, 6, and 7 each embedded a detail that was not in the original scene. Question 2 referred to "the person in the red jacket" (the jacket was blue). Question 4 mentioned "the person with long hair" (the hair was short). Question 6 described "the green bag" (the bag was brown). Question 7 said "when the person ran toward the exit" (the person walked calmly). Each of these is a presupposition — a detail slipped in as if already established — rather than the main point of the question.</p>
+
+      <div class="callout callout--note">
+        <div class="callout-title">What the activity was designed to show</div>
+        <p>This design adapts the presupposition technique from Loftus and Palmer's (1974) classic study, in which the word "smashed" (versus "contacted") caused participants to recall higher speed estimates and to falsely report broken glass that was never in the film. The mechanism is not deception: when you later reconstruct the event, the post-event information has been processed alongside the original fragments, and the reconstruction blends both without cleanly flagging their sources.</p>
+        <p>If your memory-test answers matched the implied details rather than the original scene, the effect worked as designed. If they matched the original scene, that is also consistent with the effect — it is probabilistic. Some people, some items, and some question phrasings produce more distortion than others. What Loftus and Palmer established is the reliability of the phenomenon at the group level, not that every individual will always be misled on every detail.</p>
+      </div>
+
+      <div class="callout callout--do-not-confuse">
+        <div class="callout-title">Do Not Confuse: Misinformation Effect with Gullibility or Lying</div>
+        <p>Experiencing the misinformation effect is not evidence of being inattentive, uncritical, or easily fooled. Loftus and Palmer's participants watched a film carefully. The effect arises because reconstructive memory blends all information encountered about an event without cleanly flagging each piece's origin. A person reporting a misinformed detail is not lying; they sincerely believe it is accurate. The underlying mechanism is source misattribution: the detail from the question is remembered correctly, but its source — the question itself — is confused with the source of the original encoding.</p>
+      </div>
+
+      <label class="text-label" for="explanation-response">The follow-up questions altered what some people recalled from the scene. Why does this happen? Use the terms <strong>reconstructive memory</strong>, <strong>post-event information</strong>, and <strong>source misattribution</strong> in your answer.</label>
+      <textarea id="explanation-response" rows="5"></textarea>
+      <button class="lab-btn" type="button" id="save-explanation">Save explanation and continue</button>
+      <p class="save-status" id="explanation-status" aria-live="polite"></p>
+    </section>
+
+    <section class="lab-panel phase-panel" id="transfer-panel" hidden aria-labelledby="transfer-heading">
+      <h2 id="transfer-heading" tabindex="-1">Retrieve and Transfer</h2>
+      <p id="completion-summary"></p>
+      <label class="text-label" for="transfer-response">You are a juror in a mock trial exercise. A witness describes the incident with high confidence and specific detail. A classmate says, "They seemed so certain — I believe everything they said." What would you explain to that classmate about memory for witnessed events, and about what confident, detailed recall actually tells us about accuracy? Use the terms <strong>misinformation effect</strong> and <strong>reconstructive memory</strong>.</label>
+      <textarea id="transfer-response" rows="6"></textarea>
+      <div class="lab-actions">
+        <button class="lab-btn" type="button" id="save-transfer">Save transfer response locally</button>
+        <button class="lab-btn lab-btn--secondary" type="button" id="restart-lab">Restart lab</button>
+      </div>
+      <p class="save-status" id="transfer-status" aria-live="polite"></p>
+    </section>
+
+    <section class="callout callout--think-about-it">
+      <div class="callout-title">Instructor Note</div>
+      <p>Run before the reconstructive memory section to generate a prediction-and-surprise sequence, or afterward as an experiential check. Display class aggregate results — how many students chose each memory-test option — rather than focusing on individual scores. Questions 2, 4, 6, and 7 carry the misinformation; tracking which embedded details were most disruptive typically shows exit behavior (Question 7) and jacket color (Question 2) as strongest because those presuppositions are phrased most forcefully. Emphasize that the misinformation effect is a property of normal reconstructive memory, not a measure of intelligence or attentiveness.</p>
+    </section>
+
+    <section class="callout callout--note">
+      <div class="callout-title">Evidence Base</div>
+      <p>The design adapts the presupposition technique from Loftus and Palmer (1974). This version uses a text-based scenario rather than a film clip, which sacrifices the original study's film-fidelity while preserving the core misinformation delivery mechanism. The interpretation is qualified by the probabilistic nature of the effect and individual variability in susceptibility to leading questions.</p>
+    </section>
+  </main>
+</div>
+<script src="../../js/nav.js"></script>
+<script src="../../js/labs-misinformation-effect.js"></script>
+<script src="../../js/lab-session-controls.js"></script>
+</body>
+</html>
