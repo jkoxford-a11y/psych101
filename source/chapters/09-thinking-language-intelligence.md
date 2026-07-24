@@ -4,25 +4,29 @@
 
 ---
 
-## Misconception Opener: Do You Trust Your Own Thinking?
+## Misconception Opener: If You Can Look It Up, Why Learn It?
 
-You likely believe you are a fairly rational person. You pay attention to evidence, consider the facts, and think decisions through. Most people believe this about themselves—and most people are wrong in a specific, measurable way.
+Why memorize any of this? If you need a fact, you can search for it—or ask an AI, which will hand it over in seconds, fluently and with total confidence. It is a fair question, and it hides a costly assumption: that having access to information is the same as knowing how to use it.
 
-Human reasoning is not usually a slow, impartial weighing of every relevant fact. It is often fast, pattern-based, and shaped by shortcuts that serve us well but sometimes lead us astray. We overestimate events that come easily to mind. We judge a description by how well it fits a familiar type rather than by the relevant probabilities. We remain influenced by the first number we hear, even when it should be irrelevant. Most of the time, none of this feels like taking a shortcut. It just feels like thinking.
+It is not. A search returns a definition; an AI returns an explanation. Neither supplies the thing in *your* head that decides which distinction matters, notices when two confident claims contradict each other, or catches an answer that is wrong. You cannot evaluate information without something to evaluate it against.
 
-This is not a character flaw. A limited cognitive system cannot analyze every possibility from scratch. It must use prior experience to make quick, good-enough judgments under uncertainty. As you work through this chapter, try to catch yourself using the very shortcuts we discuss. It is harder than it sounds.
+But the opposite belief—that college is mainly about piling up facts—is just as wrong. Thinking runs on stored knowledge, yet isolated facts are inert. What makes knowledge useful is that it is *organized*: it tells you what belongs together, which differences matter, and what is likely to happen next. Psychologists call these organized representations **concepts**, and your mind runs on them. A radiologist glances at a scan and sees the tumor; a chess master glances at a board and sees the threat. Neither is remembering harder than you are. Each has built better concepts, and better concepts make better predictions than raw memory ever could—under real constraint, because working memory is small, time is short, and the evidence is almost always incomplete.
 
-**Stop and Predict:** Without looking anything up, write down your answer: are there more English words that begin with *k*, or more English words that have *k* as the third letter? Also write one sentence explaining how you made the judgment. You will return to this after reading Section 2.
+That gives us the loop that runs through the whole chapter: **build a model, use it to predict, check it against the evidence, and revise it when it misses.** This is not a claim that every thought marches through four conscious steps, or a theory of the entire mind. It is a way to track what good thinking actually requires. Concepts are how we build. Heuristics let us predict fast. Biases show where building, predicting, checking, or revising goes wrong. Language lets us share and inherit conceptual distinctions. Intelligence tests try to measure a few of the abilities involved. The same structure that makes you efficient can also make you confidently wrong—which is where this gets interesting, and where a fluent machine is no help at all.
+
+**Stop and Predict:** Without looking anything up, write down your answer: are there more English words that begin with *k*, or more with *k* as the third letter? Write one sentence explaining how you decided. You will return to this after Section 2.
 
 ---
 
 ## Where This Fits
 
-**Why is one good concept worth more than a hundred memorized facts?** Chapter 8 explored how memory encodes, stores, and reconstructs experience. This chapter asks what happens when we use what memory has retained: we form concepts, solve problems, make judgments, communicate, and attempt to measure cognitive performance.
+**Why is one good concept worth more than a hundred memorized facts?** Chapter 8 explored how memory encodes, stores, and reconstructs experience. This chapter asks what the mind *does* with what memory retains: it builds concepts, uses them to predict and solve problems, communicates them through language, and tries to measure some of the abilities involved.
 
-The connection is constraint. Working memory can hold only a small amount at once, and long-term memory does not preserve every episode as a complete recording. The mind therefore extracts useful regularities from experience. Throughout this chapter, **compression is a learning metaphor for that process, not a claim that concepts, language, and intelligence all share one literal cognitive mechanism**. The metaphor ties this chapter to the limited system developed across the book: cognition works by retaining enough structure to guide the next judgment while leaving much of the original detail behind.
+The reason is constraint. Working memory holds only a little at once, and long-term memory does not preserve every episode in full. A limited system cannot treat each situation from scratch, so it extracts the regularities that let it predict—what tends to go with what, what usually follows what. A concept is the compressed result.
 
-Language belongs here because it is both a cognitive tool and the medium through which much of what we know was acquired. Intelligence follows because intelligence tests sample several of the abilities involved in learning, reasoning, and adapting to new problems.
+But the connection is not simply “compression.” Compactness alone does not make a concept good. A useful concept supports accurate generalization, prediction, and transfer—and changes when the evidence no longer fits. That is also why concepts do not improve from *more* exposure alone. Experience sharpens a concept only when it reveals the structure that distinguishes one case from another. Comparing carefully chosen contrasting cases, paired with an explanation of why the difference matters, exposes distinctions a definition alone leaves invisible; interleaving examples rather than studying them in tidy blocks does related work, even though both feel slower while you do them (Schwartz & Bransford, 1998; Kornell & Bjork, 2008). Piling up more of the same is not the same as learning to see what matters.
+
+One loop organizes the chapter: **build a concept, use it to predict, check the prediction against the world, and revise the concept when it misses.** Concepts and categories are how minds build. Expertise and problem solving are prediction working well—and, sometimes, prediction so practiced it blocks a better answer. Heuristics and biases are what happens when a model is applied without the check. Language is how humans label, share, and inherit conceptual distinctions. Intelligence is how psychologists try to measure reasoning with novel problems and with accumulated knowledge. The central question is therefore not whether facts or concepts matter more—concepts must be built from facts. It is whether that knowledge has become organized well enough to guide a new judgment.
 
 **Connections to other chapters:** Working memory (Ch. 8) is the active workspace for reasoning and problem-solving. Attention and perception (Ch. 4) shape what information enters a judgment in the first place. Learning (Ch. 7) changes the expectations and strategies we bring to later problems. Development (Ch. 10) changes concepts, language, and cognitive performance across the lifespan. Social cognition (Ch. 11) applies many of the same judgment processes to people and groups.
 
@@ -32,7 +36,7 @@ Language belongs here because it is both a cognitive tool and the medium through
 
 By the end of this chapter, you should be able to:
 
-1. Distinguish concepts, prototypes, and exemplars, and explain how category structure supports generalization.
+1. **Distinguish** concepts, prototypes, and exemplars, and **explain** how category structure supports prediction and generalization.
 2. Contrast algorithms and heuristics and explain how mental set, functional fixedness, and insight affect problem solving.
 3. Use the System 1/System 2 framework to compare availability, representativeness, confirmation bias, framing, and anchoring without assuming that they all arise from one mechanism.
 4. Describe the structure of language and explain why language acquisition is best understood through biological preparedness, statistical learning, and social experience rather than any one factor alone.
@@ -43,27 +47,27 @@ By the end of this chapter, you should be able to:
 
 ## Section 1: Concepts, Categories, and Problem Solving
 
-### Concepts, Prototypes, and Exemplars
+### Concepts as Organized Models
 
-Your brain does not treat every experience as an isolated event. It organizes knowledge into **concepts**—mental categories that group objects, events, or ideas. Concepts let you recognize a dog you have never seen before without consciously checking a complete list of features.
+Your brain does not treat every experience as an isolated event. It organizes knowledge into **concepts**—mental representations of categories, relations, and ideas. A concept is the mind's basic tool for prediction. It lets you recognize a dog you have never seen, understand why negative reinforcement is not punishment, and identify a study as an experiment even when its details differ from every experiment you have met before. Recognize the animal across the yard as a dog and, without checking a list, you already expect fur, four legs, and barking, and you predict how it will act as you approach. Without concepts, each new case would have to be interpreted from scratch—something a limited system cannot afford.
 
-Many natural concepts are organized around a **prototype**, the most typical or representative member of a category. When you hear “bird,” you may picture something like a robin or sparrow rather than a penguin or ostrich—even though all are birds. New cases can feel more or less category-like depending on how closely they resemble that prototype (Rosch, 1975).
+Consider what expertise reveals about this. Chase and Simon (1973) showed chess masters and novices a board from a real game for five seconds, then asked them to reconstruct it. Masters placed the pieces almost perfectly; novices managed a handful. The obvious explanation—masters have better memory—is wrong. When the same pieces were arranged *randomly*, the masters' advantage vanished. The master does not remember more squares. Years of play have built richer concepts—familiar configurations of attack and defense—so a meaningful board compresses into a few large, predictive chunks instead of thirty separate pieces. Same limited memory; better concepts; better prediction. This is the engine of the chapter, and it is exactly what a semester of hard study is meant to do to your mind.
 
-People also use **exemplars**: specific remembered members of a category. An unusual dog may be classified by comparison with one particular dog you have encountered rather than with an abstract average. Prototype and exemplar accounts are not mutually exclusive. Which information matters depends on the category, the task, and your experience.
+Many concepts are organized around a **prototype**, a representation of a typical member. Hear “bird” and you may picture something closer to a robin than a penguin—though both are birds. New cases feel more or less category-like depending on how closely they resemble that prototype (Rosch, 1975). People also use **exemplars**: specific remembered members. You may recognize an unusual dog because it resembles one particular dog you have met rather than an abstract average. Prototypes and exemplars are not mutually exclusive, and they are not stages a learner passes through—experts do not simply graduate from prototypes to exemplars. What reliably changes with expertise is the *resolution* of the concept: the expert's carries finer, more diagnostic distinctions than the novice's.
 
 Concepts can also be organized hierarchically. “Animal” is a **superordinate** category, “dog” is a **basic-level** category, and “golden retriever” is a **subordinate** category. The basic level is often the default in everyday naming: specific enough to guide action, but broad enough to generalize.
 
 ![Figure 9.1: A category hierarchy begins with the broad superordinate category Animal, branches to the basic-level categories Dog, Bird, and Fish, and then narrows to the subordinate categories Golden retriever, Robin, and Salmon. The basic-level row is emphasized as the usual everyday naming level.](../../docs/images/ch09/ch09_category_hierarchy_superordinate_basic_subordinate.svg)
 *Figure 9.1. Categories can be organized from broad superordinate groups to everyday basic-level names and more specific subordinate groups. The basic level is often the everyday naming default. Original figure.*
 
-The compression metaphor helps connect these ideas to Chapter 8. Repeated encounters leave behind regularities: what usually predicts category membership, which examples are typical, and where one category sits relative to others. “Apple” becomes connected with fruit, food, sweetness, trees, seeds, pie, and many specific episodes. The resulting concept is useful because it preserves structure across experiences. It can also mislead because whatever was common enough to shape the representation may be a poor guide to an unusual case.
+The compression metaphor helps here, as long as we do not ask it to explain too much. Across many encounters with apples you retain relationships among fruit, food, sweetness, trees, seeds, pie, and particular episodes; you do not replay every apple before recognizing a new one. The concept preserves useful structure while discarding detail. That is efficient, and it is risky: a concept built from unrepresentative experience preserves the wrong regularities, and what gets compressed out can turn out to be what matters.
 
 ![Figure 9.2: From episodic memories to semantic knowledge. Several encounters with different dogs contribute overlapping information to a general representation of dogs. That representation is then used to recognize a new case, such as a husky, that is not identical to any earlier encounter. The diagram is a teaching model: category learning may draw on prototypes, exemplars, rules, and context rather than a single literal average.](../../docs/images/ch09/fig_prototype_compression_dogs.png)
 *Figure 9.2. From specific episodic encounters to general semantic knowledge. The “average dog” is a teaching shorthand, not a claim that every concept is stored as one literal prototype. Original figure.*
 
-Huth and colleagues (2016) found that related meanings produce organized patterns across broad regions of cortex. This supports a relational model of semantic representation, not the claim that concepts are stored as literal coordinates.
+Huth and colleagues (2016) found that related meanings evoke organized, overlapping patterns across broad regions of cortex. This supports a distributed, relational model of semantic representation—not the idea that a concept is stored as one location or as a single neural assembly holding the essence shared by every member.
 
-Concepts also change with development and expertise. **Assimilation** uses an existing concept to interpret a new case; **accommodation** changes the concept when the case does not fit. Repeated prediction errors sharpen a toddler's overextended “doggie” category, while expertise creates distinctions that novices compress together.
+**Concepts get better by being revised.** Piaget described two ways a mind meets a new case: **assimilation** interprets it with the current concept; **accommodation** changes the concept when the case does not fit. In this chapter's terms, assimilation is prediction and accommodation is the revision that follows a failed prediction. A toddler calls every four-legged animal “doggie” until repeated correction sharpens the category. The same process, run on harder material, turns a novice into an expert—but only when the experience exposes the distinction. Seeing the hundredth ordinary dog teaches nothing new; seeing a dog beside a wolf, or a Chihuahua beside a cat, forces the concept to sharpen where it matters.
 
 > **Worked Example: How the Concept of Reinforcement Changes**
 > Many students begin Chapter 7 with a crude prototype: reinforcement means reward, and rewards feel good. That model handles obvious cases until it meets *negative reinforcement*, which removes something unpleasant rather than adding something pleasant. The old prototype misclassifies the case. The concept must be rebuilt around the defining relation: a reinforcer is a consequence that makes a behavior more likely to recur. Once the concept is organized around behavior change rather than pleasantness, it can classify cases the student has never memorized.
@@ -74,25 +78,29 @@ Problems can be approached with procedures that emphasize certainty or with shor
 
 An **algorithm** is a step-by-step procedure that produces the correct result when the procedure applies and is followed correctly. Long division is an algorithm. Systematically testing every possible combination can also be algorithmic. The advantage is reliability; the disadvantage is that exhaustive procedures can be slow, cognitively expensive, or impossible when the problem is poorly defined.
 
-A **heuristic** is a shortcut or rule of thumb that often produces a useful answer without guaranteeing the best one. “Start with the most likely diagnosis” is a heuristic. “If it looks like a duck and quacks like a duck, treat it as a duck” is a heuristic for category assignment. Heuristics are not failed algorithms. They are often the only practical way for a limited system to act in time.
+A **heuristic** is a shortcut or rule of thumb that often produces a useful answer without guaranteeing the best one. “Start with the most likely diagnosis” is a heuristic. “If it looks like a duck and quacks like a duck, treat it as a duck” is a heuristic for category assignment. Heuristics are not failed algorithms; they are often the only practical way for a limited system to act in time. In this chapter's terms, a heuristic is a fast, usually-good prediction—a model applied quickly, and, when applied without a check, the source of the characteristic errors we examine next.
 
 The compression metaphor again helps: a heuristic retains a relationship that has predicted well often enough to become useful, while ignoring some of the detail. That trade-off explains both its efficiency and its characteristic errors.
 
 ### Problem Solving: Strategies and Obstacles
 
-Problem solving often depends on how the problem is represented. You might work forward from the current state, backward from the goal, or reduce the largest gap between them through **means-ends analysis**. The wrong representation creates the wrong search space, no matter how hard you search within it.
+Problem solving depends on how the problem is represented. You might work forward from the current state, backward from the goal, or reduce the largest gap through **means-ends analysis**. The wrong representation creates the wrong search space, no matter how hard you search within it—another way of saying the concept you bring determines the predictions you can make.
 
 A **mental set** is the tendency to use a strategy that worked before even when a new problem permits a better one. In Luchins' (1942) water-jar studies, people first solved several problems with the same multi-step formula. Many then applied that formula to a later problem that could be solved in one simple step. Prior success had made the old strategy easier to retrieve than the new structure was to see.
 
 ![Figure 9.3: Luchins' water-jar problems. Earlier problems require the same multi-step strategy. A later problem can be solved directly, but solvers primed by the earlier method often repeat the unnecessary steps.](../../docs/images/ch09/fig_luchins_water_jar_mental_set.png)
 *Figure 9.3. Mental set demonstrated with Luchins' (1942) water-jar problems. Original figure.*
 
-**Functional fixedness** is a related failure to see an object outside its conventional use. In Duncker's (1945) candle problem, participants receive a candle, matches, and a box of thumbtacks and must mount the candle on a wall without dripping wax on the table. The solution is to empty the box, tack it to the wall, and use it as a platform. The difficult step is not finding a hidden object. It is seeing the box as something other than a container.
+**Functional fixedness** is a related failure to see an object outside its conventional use. Before reading on, try Duncker's (1945) candle problem yourself: you have a candle, a book of matches, and a box of thumbtacks, and you must mount the candle on the wall so it burns without dripping wax on the table. Commit to a solution before you continue.
+
+The answer is to empty the box, tack the *box* to the wall, and stand the candle on it. Most people struggle not because they lack a piece but because they represent the box only as a container for the tacks. What was “fixed” was the concept, not the materials—and naming your own answer first is the point: you can usually feel the moment the box stops being a container and becomes a shelf.
 
 ![Figure 9.4: Duncker's candle problem. The solution requires emptying the thumbtack box, attaching it to the wall, and using it as a shelf for the candle.](../../docs/images/ch09/fig_functional_fixedness_candle_problem.png)
 *Figure 9.4. Functional fixedness demonstrated with Duncker's candle problem. Original figure.*
 
-**Insight** is a sudden shift in representation—the “aha” moment when the box becomes a shelf or two previously separate pieces of information combine into a solution. Insight can feel instantaneous, but the important change is in how the problem is organized, not in the sudden appearance of information that was never there (Jung-Beeman et al., 2004).
+**Insight** is that sudden shift in representation—the “aha” when the box becomes a shelf or two previously separate facts snap together. It can feel instantaneous, but the real change is in how the problem is organized, not in the arrival of information that was never there (Jung-Beeman et al., 2004).
+
+Here is the double edge that ties this section to the next. The very concepts that let an expert predict brilliantly can also capture attention and hide a better option. Bilalić, McLeod, and Gobet (2008) gave strong chess players a position that offered a familiar winning method *and* a faster, more elegant one. Players insisted they were searching for something better, but eye tracking showed their gaze kept returning to the squares tied to the solution they had already found. The first good idea, generated by a well-trained concept, quietly blocked the better one. Expertise is not freedom from bias; it is organized knowledge with greater power—including greater power to guide attention in the wrong direction. Expertise builds the model that predicts; the same model, applied without a deliberate check, becomes the source of the biases we turn to next.
 
 **Stop and Retrieve:** How are mental set and functional fixedness similar? What changes at the moment of insight?
 
@@ -140,7 +148,7 @@ Many participants choose B. The description makes “feminist” feel representa
 *Figure 9.6. The conjunction fallacy shown as a nested-set relationship. Original figure.*
 
 > **Classic Study Walkthrough: The Linda Problem**
-> Participants ranked “bank teller and feminist” above “bank teller” because the conjunction better matched Linda's description. Frequency and diagrammatic formats often reduce the error (Gigerenzer, 1991), showing that reasoning depends partly on how a problem is represented.
+> Participants rated “bank teller and feminist” as more probable than “bank teller” because the conjunction better matched Linda's description—a vivid representation checked against resemblance instead of the set relation. Frequency and diagrammatic formats reduce the error (Gigerenzer, 1991), which shows the mistake depends partly on how the problem is represented.
 
 ### Confirmation Bias and Testing a Rule
 
@@ -184,13 +192,9 @@ The biases in this section do not require one common mechanism. Each gives the l
 
 ### The AI Connection: Fluency Is Not Accuracy
 
-> AI-generated writing is often grammatical, organized, and confident. Those qualities make text easy to process—and easy processing can feel like evidence that a claim is true. The danger is not that polished prose switches off rational thought. It is that a smooth answer may give you no immediate reason to slow down and inspect its parts.
+> AI-generated writing is often grammatical, organized, and confident, and those qualities make it easy to process. Easy processing can feel like evidence that a claim is true. The danger is not that polished prose switches off thinking; it is that a smooth answer gives you no immediate reason to slow down and inspect its parts, even when it hides one invented citation, an outdated fact, or a confident causal claim.
 >
-> An answer can contain one invented citation, an outdated fact, or a confident causal claim while the surrounding prose remains coherent. Judging the whole response by how intelligent it sounds is therefore a reasoning shortcut.
->
-> Use the chapter's distinction deliberately: let a fluent explanation generate a possible answer, then check the claims that matter. Find the original source. Verify recent or unfamiliar facts. Ask whether the evidence supports the conclusion rather than merely appearing beside it.
->
-> It is tempting to call an AI system “System 1” because its output is fast and pattern-based. Do not take that analogy literally. System 1 describes a mode of human cognition. The useful lesson concerns your response to fluent output: confidence of tone is not evidence of accuracy.
+> Use the chapter's loop deliberately: let a fluent explanation build a candidate model, then check the claims that matter. Find the original source, verify unfamiliar facts, and ask whether the evidence supports the conclusion or merely sits beside it. It is tempting to call an AI system “System 1” because its output is fast and pattern-based, but do not take the analogy literally—System 1 describes a mode of human cognition. The useful lesson is about your response to fluent output: confidence of tone is not evidence of accuracy.
 
 **A bridge from heuristics to language.** The framing effect demonstrates that language does not merely report a decision problem. It helps determine which features become prominent. “Two hundred people will be saved” and “four hundred people will die” describe equivalent outcomes, but they direct attention toward different reference points. We now turn from the effects of particular wordings to the larger system that makes shared meaning possible.
 
@@ -220,17 +224,11 @@ English uses roughly 40 to 45 phonemes, depending on dialect. Those sounds combi
 
 ### How Children Acquire Language
 
-Behaviorism offered one early scientific account. Skinner (1957) proposed that imitation and reinforcement gradually shape children's speech toward adult language. Learning from caregivers clearly matters, but imitation and direct reinforcement cannot explain the entire process. Children routinely produce novel forms such as “I goed,” applying a rule they were not directly taught.
+No single mechanism explains how children build language, and the old debate maps neatly onto this chapter. Skinner (1957) proposed that imitation and reinforcement shape children's speech toward adult forms. Reinforcement matters, but it cannot be the whole story: children produce forms they never heard, such as “I goed,” applying a rule no one taught them. Chomsky (1965) argued the opposite—that the input is too sparse and ambiguous to account for the abstract grammar children acquire (the **poverty of the stimulus**)—and proposed an innate **universal grammar** and **Language Acquisition Device**. That forced psychology to explain children's active rule-building rather than treating language as a list of reinforced phrases, but it is an argument, not a measurement: rapid development and parallels between signed and spoken language support biological preparedness without establishing a fully specified universal grammar.
 
-Chomsky (1965) argued that the child's input is too limited and ambiguous to account for the abstract grammatical knowledge children acquire. This **poverty of the stimulus** argument motivated the proposal that humans possess **universal grammar** and a specialized **Language Acquisition Device**. These proposals were historically important because they forced psychology to explain children's active rule generation rather than treating language as a list of reinforced phrases.
+Between these poles sits the mechanism the rest of the chapter would predict: children extract structure from experience. Infants track statistical regularities across syllables to find likely word boundaries (Saffran, Aslin, & Newport, 1996), and social interaction gates that learning—infants picked up Mandarin speech contrasts from a live speaker but not from the same material on video (Kuhl, Tsao, & Liu, 2003). The defensible account is distributed: biological preparedness, statistical learning, social experience, and developmental constraints all contribute. Acquisition is concept-building run on language itself—structure pulled from evidence, not a list downloaded whole.
 
-The poverty-of-the-stimulus claim is an argument, not a direct measure of how much innate grammar must exist. Rapid development, children's rule generation, and parallels between signed and spoken language support biological preparedness without establishing a fully specified universal grammar or discrete LAD.
-
-Infants also track statistical regularities across syllables and use them to detect probable word boundaries (Saffran, Aslin, & Newport, 1996). Statistical learning matters, but it operates with attention, memory, biological development, and social input.
-
-Kuhl, Tsao, and Liu (2003) provide a vivid example. English-learning infants exposed to live Mandarin speakers improved their discrimination of Mandarin speech contrasts, while infants exposed to the study's recorded presentations did not show the same learning. The result shows that social interaction can powerfully gate phonetic learning in that setting. It should not be expanded into the claim that every component of language requires face-to-face teaching or that recorded language can never support learning.
-
-The most defensible account is distributed: biological preparedness, statistical learning, social experience, and developmental constraints all contribute. No single mechanism carries the explanation.
+That is also where language earns its place in this chapter. A word is a portable label for a conceptual distinction, and labels do real cognitive work: attaching one can help a learner acquire a novel category rather than merely name it afterward (Lupyan, Rakison, & McClelland, 2007). Language lets one mind hand a hard-won distinction to another, and lets a community preserve and refine structure across generations—which is why a semester can install concepts a field took a century to build.
 
 > **Current Debate: What Do Language Models Show?**
 > Large language models can produce grammatical language without a hand-coded universal grammar, which demonstrates that substantial linguistic structure can be learned from statistical input. It does not directly show how children learn. Models receive far more text than children, under very different conditions, and success at producing well-formed sentences is not identical to reasoning about the world.
@@ -249,9 +247,7 @@ Color provides a useful example. Russian has separate basic terms for lighter an
 
 Some languages rely on absolute directions such as north and east rather than left and right. Their speakers habitually maintain orientation information that speakers of egocentric languages often ignore (Levinson et al., 2002). This supports differences in practiced attention, not a general navigation superiority.
 
-Research with the Pirahã and Mundurukú suggests that approximate quantity does not require exact number words, while stable exact matching of larger sets depends heavily on a conventional counting system (Gordon, 2004; Pica et al., 2004). Number words are a cultural tool, not a measure of intelligence.
-
-Other famous examples, including grammatical gender and time metaphors, have replicated inconsistently. The broader theory therefore requires converging evidence rather than one memorable result.
+Other domains show weaker or less consistent effects. Approximate quantity does not require exact number words, although stable exact matching of larger sets leans on a conventional counting system (Gordon, 2004; Pica et al., 2004), and widely cited cases such as grammatical gender and time metaphors have replicated inconsistently. The theory therefore needs converging evidence rather than one memorable result.
 
 > **Do Not Confuse: Linguistic Relativity vs. Linguistic Determinism**
 > Linguistic determinism says that language makes certain thoughts impossible. The evidence does not support that claim. Weak linguistic relativity says that practiced linguistic categories can make some distinctions easier to notice, remember, or communicate. The size and reliability of that effect must be evaluated separately for color, space, number, and every other proposed domain.
@@ -282,33 +278,14 @@ A cleaner comparison avoids turning age into the explanation. The same experienc
 
 **Practice this in the lab:** Fluid intelligence is easiest to understand when you must infer a rule yourself. Try the [Finding the Rule lab](../../docs/labs/ch09/fluid-intelligence-rule-finding.html). Before seeing feedback, write down your predicted rule and the evidence that would prove it wrong. Then explain why the task depends on both pattern detection and working-memory control.
 
-### Gardner's Multiple Intelligences
+### Beyond *g*: What Conventional Tests May Omit
 
-Howard Gardner (1985) argued that conventional IQ tests sample too narrow a range of valued human abilities. His theory proposed several relatively independent intelligences:
+Two influential critiques argue that standard IQ tests sample too narrow a slice of human ability. Howard Gardner (1985) proposed several relatively independent “intelligences”—logical-mathematical, linguistic, spatial, musical, bodily-kinesthetic, interpersonal, intrapersonal, and naturalistic—to insist that academic test performance is not the whole of competence. Robert Sternberg (1985) distinguished **analytic** intelligence (solving structured problems), **creative** intelligence (handling novelty), and **practical** intelligence (adapting to real-world contexts that do not arrive as tidy test questions).
 
-1. **Logical-mathematical** — reasoning with numbers and logical relations
-2. **Verbal-linguistic** — sensitivity to language and verbal expression
-3. **Visual-spatial** — perceiving and manipulating spatial relations
-4. **Musical-rhythmic** — sensitivity to pitch, rhythm, and musical structure
-5. **Bodily-kinesthetic** — skilled control and use of the body
-6. **Interpersonal** — understanding other people's motives and emotions
-7. **Intrapersonal** — understanding one's own internal states
-8. **Naturalistic** — recognizing and classifying patterns in the natural world
-
-Gardner's framework reminds educators that academic test performance is not the whole of human competence. As a psychometric theory of independent intelligences, however, it is weakly supported (Waterhouse, 2006). The proposed abilities are not cleanly independent, and several resemble talents, personality characteristics, or expertise more than parallel cognitive factors.
+Both make a real point in this chapter's terms: a test samples only the concepts and reasoning it happens to measure, and structured test performance is not identical to effective action in a complex world. But as psychometric theories they are weakly supported. Gardner's proposed intelligences are not cleanly independent and often resemble talents, personality, or expertise more than parallel cognitive factors (Waterhouse, 2006); Sternberg's creative and practical abilities are hard to define and measure separately from *g*. Treat both as arguments about what conventional tests omit, not as established replacements for hierarchical models.
 
 > **Do Not Confuse: Multiple Intelligences and Learning Styles**
 > Gardner's theory does not show that students learn best when instruction is matched to a fixed “visual,” “auditory,” or “kinesthetic” style. Different content may require different representations, and students can have preferences, but the learning-styles matching claim is a separate idea and lacks strong evidence.
-
-### Sternberg's Triarchic Theory
-
-Robert Sternberg (1985) proposed three broad aspects of intelligent performance:
-
-- **Analytic intelligence:** analyzing, evaluating, comparing, and solving structured problems
-- **Creative intelligence:** generating novel approaches and responding to unfamiliar situations
-- **Practical intelligence:** adapting knowledge to real-world contexts that do not arrive as clearly defined test questions
-
-The theory highlights a real limitation: structured test performance is not identical to effective action in a complex environment. Yet practical and creative abilities are difficult to define and measure independently. Gardner and Sternberg are therefore best treated as critiques of what conventional tests omit, not established replacements for psychometric models.
 
 ### IQ: Standardization, Reliability, Validity, and Limits
 
@@ -333,15 +310,17 @@ Gene frequencies cannot explain large changes across a few decades. Nutrition, h
 
 ## Chapter Summary
 
-**Thinking:** Concepts allow a limited system to generalize across experience. Natural categories may draw on prototypes, exemplars, hierarchical relations, rules, and context. Algorithms emphasize reliable procedures; heuristics emphasize speed and workable approximation. Mental set and functional fixedness preserve an old representation when a problem requires a new one; insight is the shift that makes the solution visible.
+One loop runs through this chapter: a limited mind **builds** concepts from experience, uses them to **predict**, **checks** those predictions against the world, and **revises** the concepts when they miss. Everything else is a variation on it.
 
-**Judgment:** System 1 and System 2 describe useful processing modes, not literal brain modules or a simple battle between irrational and rational thought. Availability uses ease of recall, representativeness uses resemblance, confirmation bias favors belief-consistent evidence, framing changes reference points, and anchoring pulls estimates toward a starting value. These errors are related by cognitive constraint, but they do not all require one mechanism. Fluent AI output creates a practical version of the same problem: ease of processing is not evidence of truth.
+**Building and predicting:** Concepts let a limited system generalize far beyond what it can store—the chess master's few large chunks, not thirty remembered pieces. They draw on prototypes, exemplars, hierarchical relations, and context together, and they sharpen not with sheer exposure but with experience that exposes diagnostic structure. Algorithms trade speed for reliable procedure; heuristics trade certainty for a fast, usually-good prediction. Assimilation applies the current concept; accommodation revises it when a prediction fails.
 
-**Language:** Language builds an open-ended communication system from phonemes, morphemes, syntax, semantics, and pragmatics. Language acquisition cannot be reduced to imitation and reinforcement, but evidence for biological preparedness does not establish every detail of Chomsky's universal grammar or LAD. Statistical learning and social interaction contribute alongside biological and developmental constraints. Linguistic determinism is not supported; weaker linguistic relativity is most credible when it predicts limited, replicable changes in attention, memory, or processing efficiency.
+**When the check is skipped:** Mental set and functional fixedness keep an old representation running after the problem has changed, and the same well-trained concepts that let experts predict can capture their attention and hide a better solution. Heuristics and biases are the general case: availability substitutes ease of recall for frequency, representativeness substitutes resemblance for base rates, confirmation bias favors belief-consistent evidence, framing shifts the reference point, and anchoring drags an estimate toward a starting value. Each is a useful prediction applied without the check. Fluent AI output is a modern version of the same trap: ease of processing is not evidence of truth.
 
-**Intelligence:** Cognitive tests show a positive manifold summarized statistically by *g*. Fluid intelligence emphasizes novel reasoning; crystallized intelligence emphasizes accumulated knowledge. Gardner and Sternberg identify abilities and forms of competence that conventional tests may neglect, but their proposals do not have the same psychometric support as hierarchical models. IQ scores are standardized, reliable, and valid for selected predictions while remaining incomplete summaries. The Flynn Effect shows that population-level cognitive performance can change substantially with historical environments.
+**Sharing the structure:** Language lets humans label conceptual distinctions, hand them to one another, and inherit structure a single lifetime could never build alone—which is why a semester can install concepts a field took a century to discover. Its units, from phonemes to pragmatics, combine a small set of parts into unlimited meaning; its acquisition draws on biological preparedness, statistical learning, and social experience together. Linguistic determinism is not supported, but practiced linguistic categories can make some distinctions easier to notice.
 
-Across the chapter, compression remains a learning tool. A concept preserves regularities rather than every episode. A heuristic preserves a useful shortcut rather than every relevant variable. A word points toward more meaning than it can fully contain. A test score summarizes selected performances rather than the whole person. Thinking well does not require escaping these summaries. It requires knowing what each one preserves, what it discards, and when the discarded information matters.
+**Measuring it:** Fluid intelligence is finding and revising structure when existing knowledge runs out; crystallized intelligence is the accumulated conceptual structure itself. *g* summarizes their correlations; IQ scores are standardized, reliable, and useful for selected predictions while remaining incomplete. The Flynn Effect shows that concept-building responds to historical environments—the optimistic corollary of the whole chapter.
+
+Better concepts make better predictions, in the exam room and long after it. A concept preserves regularities rather than every episode; a heuristic preserves a shortcut rather than every variable; a word points toward more meaning than it can hold; a test score summarizes selected performances rather than a whole person. Thinking well is not escaping these compressions—it is knowing what each one keeps, what it throws away, and when the discarded part is the part that matters. That is what college is for, and no fluent machine can do it for you.
 
 ---
 
@@ -431,7 +410,11 @@ Across the chapter, compression remains a learning tool. A concept preserves reg
 
 ## References
 
+Bilalić, M., McLeod, P., & Gobet, F. (2008). Inflexibility of experts—Reality or myth? Quantifying the Einstellung effect in chess masters. *Cognitive Psychology*, *56*(2), 73–102.
+
 Bratsberg, B., & Rogeberg, O. (2018). Flynn effect and its reversal are both environmentally caused. *Proceedings of the National Academy of Sciences*, *115*(26), 6674–6678.
+
+Chase, W. G., & Simon, H. A. (1973). Perception in chess. *Cognitive Psychology*, *4*(1), 55–81.
 
 Chomsky, N. (1965). *Aspects of the theory of syntax*. MIT Press.
 
@@ -459,11 +442,15 @@ Kahneman, D. (2011). *Thinking, fast and slow*. Farrar, Straus and Giroux.
 
 Klayman, J., & Ha, Y.-W. (1987). Confirmation, disconfirmation, and information in hypothesis testing. *Psychological Review*, *94*(2), 211–228.
 
+Kornell, N., & Bjork, R. A. (2008). Learning concepts and categories: Is spacing the “enemy of induction”? *Psychological Science*, *19*(6), 585–592.
+
 Kuhl, P. K., Tsao, F.-M., & Liu, H.-M. (2003). Foreign-language experience in infancy: Effects of short-term exposure and social interaction on phonetic learning. *Proceedings of the National Academy of Sciences*, *100*(15), 9096–9101.
 
 Levinson, S. C., Kita, S., Haun, D. B. M., & Rasch, B. H. (2002). Returning the tables: Language affects spatial reasoning. *Cognition*, *84*(2), 155–188.
 
 Luchins, A. S. (1942). Mechanization in problem solving: The effect of Einstellung. *Psychological Monographs*, *54*(6, Whole No. 248).
+
+Lupyan, G., Rakison, D. H., & McClelland, J. L. (2007). Language is not just for talking: Redundant labels facilitate learning of novel categories. *Psychological Science*, *18*(12), 1077–1082.
 
 Mahowald, K., Ivanova, A. A., Blank, I. A., Kanwisher, N., Tenenbaum, J. B., & Fedorenko, E. (2024). Dissociating language and thought in large language models. *Trends in Cognitive Sciences*, *28*(4), 311–324.
 
@@ -472,6 +459,8 @@ Pica, P., Lemer, C., Izard, V., & Dehaene, S. (2004). Exact and approximate arit
 Rosch, E. (1975). Cognitive representations of semantic categories. *Journal of Experimental Psychology: General*, *104*(3), 192–233.
 
 Saffran, J. R., Aslin, R. N., & Newport, E. L. (1996). Statistical learning by 8-month-old infants. *Science*, *274*(5294), 1926–1928.
+
+Schwartz, D. L., & Bransford, J. D. (1998). A time for telling. *Cognition and Instruction*, *16*(4), 475–522.
 
 Skinner, B. F. (1957). *Verbal behavior*. Appleton-Century-Crofts.
 

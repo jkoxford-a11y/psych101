@@ -39,6 +39,95 @@ Do not maintain the same information in multiple project-state files. If you fin
 - Do not genericize prose into publisher prose.
 - Keep explanations student-facing, precise, and teachable.
 
+### Voice (Herr Prof. Dr. Awesome-Sauce)
+
+The instructor's voice is **confident, forward, exciting, vivid, fun, and deeply intellectual.**
+The audience is mostly first-year students straight out of high school — curious non-scientists,
+not researchers. The job is to get real ideas *into their heads* and make them want more, not to
+publish a defensible paper. Draft and edit to that standard. Consult `source/voice_profile_merged.csv`
+before drafting any chapter.
+
+### Pre-line-edit checklist (apply to every chapter BEFORE line editing)
+
+These rules are generalized from the instructor's completed line edits (Ch 1–8). Applying them up
+front stops the same corrections from being redone by hand in every chapter.
+
+1. **Do not qualify — and never over-qualify.** State the point with authority. Cut academic hedges
+   the moment they blunt the idea: "if imperfect," "though those are variable," "reliably harder,
+   because…," "remains an area of active research," "not by itself explain," "this doesn't prove."
+   These read as research-paper caution and cost students the very point they needed. When a genuine
+   caveat matters, state it **once, plainly, and move on** — never stack a second sentence that
+   re-hedges the same idea (see the Ch 4 predictive-coding rule: keep one qualification, delete the
+   repeat).
+
+2. **Cut epistemological throat-clearing.** Delete meta-commentary about what a study "does not
+   establish," "why a vivid case is not a surgical experiment," "none of this is a hierarchy," etc.
+   Teach the finding; don't narrate the philosophy of science around it unless that IS the lesson.
+
+3. **Lower cognitive load; cut word count.** Recurring instructor notes: "Quite wordy, lets adjust,"
+   "Shorten, high cognitive load," "Make it easier to read," "Need to simplify." Shorter sentences,
+   fewer clauses, one idea at a time. If a sentence survives having words removed with the same
+   meaning, remove them.
+
+4. **Keep the real mechanism — in vivid plain language.** Cutting hedges is not cutting substance.
+   The instructor *adds* concrete causal mechanism when it's missing (reuptake → enzyme breakdown;
+   ATP → adenosine → sleep pressure → caffeine "crash"; BOLD hemodynamics). Explain how it actually
+   works, in words a freshman can picture.
+
+5. **Gloss terms inline with `(i.e., …)`.** Define on the spot rather than in dense stand-alone
+   sentences: "ganglia (i.e., group of neuron cell bodies)," "chatbot (i.e., LLM, generative AI like
+   ChatGPT or Claude)." Fast, low-load, keeps momentum.
+
+6. **Tune every example to THIS cohort.** Reach for what first-years care about: SAT/IQ scores,
+   video-game performance, texting while studying, all-nighters vs. spaced practice, COVID as their
+   generation's flashbulb memory, ChatGPT/Claude. Prefer the relatable everyday *consequence*
+   ("pulling an all-nighter is more work and less payoff than 15–30 minutes every day").
+
+7. **Stay current and forward-looking.** "Chatbots are yesterday; they need to know about tomorrow —
+   it's college." Where tech is the example, reach for the frontier (agentic AI, current models),
+   not last year's version.
+
+8. **Mirror how the instructor actually teaches — prune what he doesn't.** Content he skips or finds
+   dull in lecture (e.g., sleep apnea/insomnia detail, self-reference effect) is a candidate for
+   cutting, not padding. The book should track his emphasis, not exhaustively cover a syllabus.
+
+9. **Make the point land — and give it the "why."** State the takeaway plainly and anchor it in the
+   recurring **evolutionary / comparative "animal model"** framing (an organism remembers what helps
+   it predict *now*; connections that aren't used decay). Don't bury the payoff under caveats.
+
+10. **Format for the eye.** Bold the load-bearing verbs/terms, and convert dense serial prose into
+    parallel bullets where it lowers load (misconception demos, hit/miss/false-alarm/correct-rejection,
+    rods/cones, bottom-up/top-down, Gestalt principles). Paragraph breaks separate demonstration,
+    interpretation, and forward pointer.
+
+**One-line test before submitting prose:** *Would this excite a curious 18-year-old and make the
+point unmissable — or does it read like a hedged journal paragraph?* Edit toward the former.
+
+### Keep the story (the additive half — don't let compression flatten the narrative)
+
+The checklist above is mostly *subtractive*. Applied alone it produces prose that is accurate, lean,
+and lifeless. Cutting hedges is necessary but not sufficient — every passage also needs a **narrative
+spine**, or the story is lost even when every sentence is correct.
+
+Diagnose the failure by asking: **is this term-driven or story-driven?** If the sentences exist to
+deliver definitions in sequence (term → definition → next term → definition — a "definition march"),
+the story is gone. Terms should be *earned by* the story, not the thing the story is built around.
+
+Restore the spine:
+
+- **Lead with the image or the stakes, not the definition.** Open on something the student can
+  picture or care about; let the technical terms arrive to explain what they're already looking at.
+  (E.g. a newborn brain is "*overgrown*" — start there, then name synaptogenesis.)
+- **Give every passage one clear arc:** setup → tension/process → payoff. Most chapter passages have
+  all three beats already but ordered as definitions, so the arc never lands.
+- **Put the payoff to work as the engine, not a tacked-on final clause.** The most exciting line
+  (usually the evolutionary / "why it matters for the organism" point) should drive the passage, not
+  trail it. If the best sentence is stranded at the end, the paragraph is built backwards.
+- **Turn flat catalogs into part of the story.** A bare list of mechanisms is inert; frame what the
+  list is *doing* in the narrative (e.g. "experience does much of the carving — but not alone: …").
+- **Prefer verbs with motion and images** (overbuilt, carves, sculpted, exploding) over static
+  is/are/consists-of constructions. The animal-model / evolutionary frame is the recurring engine.
+
 ## Figures
 
 - Prefer original explanatory diagrams.
