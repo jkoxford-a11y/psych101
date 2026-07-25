@@ -148,12 +148,33 @@ function preprocess(markdown) {
   text = text.replace(
     /(## Further Reading\s*\n)([\s\S]*?)(?=\n---\s*\n\s*## References)/,
     (_all, heading, body) => {
-      const blocks = body.trim().split(/\n\s*\n(?=(?:-\s*)?\*\*)/);
-      const items = blocks.map((block) => {
-        const normalized = block.trim().replace(/^-\s*/, "");
-        return `<div class="fr-item">\n${marked.parse(normalized)}</div>`;
-      });
-      return `${heading}\n<div class="further-reading">\n${items.join("\n")}\n</div>\n`;
+      const lines = body.trim().split(/\r?\n/);
+      const topLevelItems = [];
+      const preamble = [];
+      let currentItem = null;
+
+      for (const line of lines) {
+        const bullet = line.match(/^-\s+(.+)$/);
+        if (bullet) {
+          if (currentItem) topLevelItems.push(currentItem.join("\n"));
+          currentItem = [bullet[1]];
+        } else if (currentItem) {
+          currentItem.push(line);
+        } else {
+          preamble.push(line);
+        }
+      }
+      if (currentItem) topLevelItems.push(currentItem.join("\n"));
+
+      const blocks = topLevelItems.length
+        ? topLevelItems
+        : body.trim().split(/\n\s*\n(?=(?:-\s*)?\*\*)/).map((block) => block.trim().replace(/^-\s*/, ""));
+      const items = blocks.map((block) => `<div class="fr-item">\n${marked.parse(block.trim())}</div>`);
+      const preambleHtml =
+        topLevelItems.length && preamble.join("\n").trim()
+          ? `${marked.parse(preamble.join("\n").trim())}\n`
+          : "";
+      return `${heading}\n${preambleHtml}<div class="further-reading">\n${items.join("\n")}\n</div>\n`;
     },
   );
 
@@ -323,7 +344,10 @@ function wrapSpecialSections(html) {
   html = html.replace(
     /(<h2 id="learning-objectives">Learning Objectives<\/h2>)([\s\S]*?)(?=<h2 )/,
     (_all, heading, content) => {
-    const cleaned = content.replace(/^\s*<p>By the end of this chapter, you should be able to:<\/p>\s*/, "");
+    const cleaned = content.replace(
+      /^\s*<p>\s*By the end of this chapter,\s*(?:you|students)\s+should be able to:\s*<\/p>\s*/i,
+      "",
+    );
     return `${heading}<div class="callout callout--objectives"><div class="callout-title">By the end of this chapter, you should be able to:</div>${cleaned}</div>`;
   },
   );

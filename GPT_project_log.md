@@ -10,6 +10,13 @@ Repository rules and conventions live in `AGENTS.md`, not here. Current state an
 
 ## Log Entries
 
+### 2026-07-25 - Chapter 10 Review and HTML Alignment Repair (Codex)
+
+- **Scope:** Repaired four post-reconciliation Chapter 10 alignment defects without reopening settled prose: restored review coverage of parenting-style interpretation and moral development, restored the cooperative-care citation, and corrected shared-builder handling of objective introductions and top-level Further Reading bullets.
+- **Files changed:** `source/chapters/ch10-lifespan-development.md`, `pipeline/build_chapter_html.mjs`, regenerated `docs/chapters/10-lifespan-development.html`, `HANDOFF.md`, and `GPT_project_log.md`.
+- **Validation:** `node --check pipeline/build_chapter_html.mjs`, `python pipeline/lint_chapters.py`, and `git diff --check` passed. DOM-level checks confirmed 7 objectives with no duplicate introduction, review questions numbered 1–10 with 10 matching answer panels, required Learning Objective 5 and 6 coverage, 4 sibling Further Reading items with no nested list, 8 resolving figures with nonempty alt text, the ZPD lab link, and the Isler and van Schaik in-text citation plus bibliography entry. A pre-patch/patched builder comparison across all supported chapters found only the intended top-level-bullet normalization in Chapters 10 and 11; Chapter 11 text remained unchanged, and no other generated chapter file was modified.
+- **Not committed / remaining:** No helper–hinderer, natural-pedagogy, Csibra, Hamlin, Lucca, ManyBabies, or removed-replication content was restored. The decision not to create or wire a false-belief figure remains unchanged.
+
 ### 2026-07-25 - Chapter 10 Instructor-Line-Edit Reconciliation and HTML Regeneration (Codex)
 
 - **Scope:** Reconciled the accepted visible text from `line-edit-packets/Chapter_10_Lifespan_Development_Claude_v2.docx` into the authoritative Chapter 10 Markdown, applying the approved final wording while preserving repository structure and existing visual assets.

@@ -50,7 +50,7 @@ The third is **stability and change**. A reactive infant may become a cautious a
 
 Start with a hard constraint: an organism has a finite energy budget, and it cannot spend the same calorie twice. A calorie spent on growth cannot also be spent on maintenance or reproduction. **Life history theory** studies how organisms allocate that budget—fast or slow, cheap or expensive, many offspring or few. A fruit fly lives fast and dies young: mature in days, reproduce immediately, invest nothing in parenting. Humans sit near the opposite extreme. We take the slow, expensive strategy to its limit—an unusually large and energetically expensive brain, the longest childhood, late first reproduction, extreme parental investment, and the longest lifespan of any primate (Kaplan et al., 2000; Oxford & Geary, 2019). Developmental psychology exists because humans spend so much of life becoming human.
 
-One consequence of that long developmental period is that a human infant is remarkably expensive. In most primates, the mother bears nearly all direct care. Humans distribute the cost across fathers, grandparents, siblings, and other kin. That is why human family networks reach in both directions. It really does take a village to raise a human. Shared care also allows mothers to support dependent children of different ages at the same time. You have brothers and sisters because someone helped pay the energetic and caregiving bill.
+One consequence of that long developmental period is that a human infant is remarkably expensive. In most primates, the mother bears nearly all direct care. Humans distribute the cost across fathers, grandparents, siblings, and other kin. That is why human family networks reach in both directions. It really does take a village to raise a human. Shared care also allows mothers to support dependent children of different ages at the same time (Isler & van Schaik, 2012). You have brothers and sisters because someone helped pay the energetic and caregiving bill.
 
 That village is necessary because each human infant arrives profoundly underdeveloped. We essentially finish gestating outside the womb—a pattern called **secondary altriciality**. Human newborns arrive socially prepared but physically helpless. A newborn chimpanzee can cling to its mother while she moves; a human newborn cannot even hold up its own head. Humans also build brain before body. Around ages four to five, a child's brain burns roughly two-thirds of the body's resting energy—nearly double the share an adult brain takes (Kuzawa et al., 2014). That long immaturity leaves a wide window for the local social ecology to tune neural networks for the world they live in.
 
@@ -348,16 +348,25 @@ It classifies patterns of attachment behavior in a particular caregiver-child re
 
 </details>
 
-7. Explain the orchid/dandelion metaphor without turning children into two biological categories.
+7. Explain the orchid/dandelion metaphor without turning children into two biological categories. Then explain why the association between authoritative parenting and positive outcomes does not establish simple one-way causation.
 
 <details>
 <summary>Answer</summary>
 
-The metaphor represents differences in environmental susceptibility. More susceptible children may show worse outcomes in adverse environments and better outcomes in supportive environments; less susceptible children show smaller environmental differences. Susceptibility is better understood as a continuum and may vary by outcome and developmental period. The tempting error is to label a child permanently as one type.
+The orchid/dandelion metaphor represents differences in environmental susceptibility. More susceptible children may show worse outcomes in adverse environments and better outcomes in supportive environments; susceptibility is a continuum and can vary across outcomes and developmental periods. Authoritative parenting is associated with several positive outcomes in many Western samples, but the evidence is largely correlational. Children influence their parents, shared genes affect both, economic conditions constrain parenting, and parenting practices can carry different meanings across cultures. The tempting error is to convert either framework into a fixed child type or a parenting formula that mechanically produces an outcome.
 
 </details>
 
-8. What does the dual-systems model explain about adolescent risk, and what does it miss?
+8. Warneken and Tomasello’s toddler-helping result and Kohlberg’s stages both concern morality. What different developmental questions do they answer, and why does neither by itself explain moral behavior?
+
+<details>
+<summary>Answer</summary>
+
+Warneken and Tomasello’s result concerns moral or prosocial motivation—what moves a young child to help. Kohlberg’s stages concern moral reasoning—how a person justifies a judgment. A person can reason sophisticatedly without acting morally, and a young child can help without articulating a moral principle. The tempting error is to treat moral behavior, moral motivation, and moral reasoning as the same developmental achievement.
+
+</details>
+
+9. What does the dual-systems model explain about adolescent risk, and what does it miss?
 
 <details>
 <summary>Answer</summary>
@@ -366,7 +375,7 @@ The model explains why heightened motivation for reward, novelty, and social app
 
 </details>
 
-9. Predict the average age-related pattern for (a) a novel reasoning puzzle, (b) vocabulary, (c) rapid working-memory manipulation, and (d) expert judgment in a familiar domain. Then explain why none of these predictions diagnoses an individual.
+10. Predict the average age-related pattern for (a) a novel reasoning puzzle, (b) vocabulary, (c) rapid working-memory manipulation, and (d) expert judgment in a familiar domain. Then explain why none of these predictions diagnoses an individual.
 
 <details>
 <summary>Answer</summary>
