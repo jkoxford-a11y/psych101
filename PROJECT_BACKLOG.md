@@ -6,6 +6,9 @@ Durable future and deferred work that is not part of the immediately active task
 
 - **Instructor line-by-line review across Chapters 2–13** — the current audit/revision sequence addresses conceptual accuracy and cognitive load, but most chapters will still benefit from a later sentence-level teaching pass after their canonical sources and figures stabilize.
 - **Review Chapter 11’s newly authored Connections rows and retrieval prompts** during the final instructor pass. They are canonical source content now, not uncommitted work.
+- **Learning objectives drift after spine conversion** — a converted chapter teaches threads its objectives were written before. Chapter 11 now carries belonging, beliefs-transmitted vs. feelings-conditioned, and the caring/not-caring frame with no objective naming any of them, while its pre-review audit separately asked for objectives 7–8 to be consolidated. Objectives are pedagogical commitments, so the agent does not silently edit them; make this an explicit instructor step in every post-conversion pass, not a Chapter 11 one-off.
+- **Apparatus retrofit as a standing post-line-edit step** — retrieval prompts, Do Not Confuse boxes, and review questions across chapters mostly test term discrimination rather than the relations between constructs. `pipeline/spine-seed-protocol.md` routes this to the end of the conversion so prompts test the final text; Chapter 11's is pending and the same gap likely exists in earlier chapters.
+- **Settle the seed-packet packaging question before Chapter 12** — Chapter 11's packet ran to thirteen instructor decisions across fourteen pages. A format that routes everything to the instructor trains him to skim the decision boxes, which defeats them. Open proposal: split into a short instructor decision packet and a separate agent-facing conversion plan. Recorded as unresolved in `pipeline/spine-seed-protocol.md` → Step 6.
 
 ## Labs and demonstrations
 
@@ -38,6 +41,8 @@ Durable future and deferred work that is not part of the immediately active task
 - **Delete or disconnect the stale OneDrive repository copy** (`C:\Users\oxfor\OneDrive\Docs\GitHub\psych101` / `old_psych101`) from Cowork-connected folders.
 - **Review `pipeline/chatgpt-instructions.md`** — the restructured version has not received explicit instructor approval.
 - **Clean stale work orders after execution** — old comparison-draft paths and completed instructions should be updated, marked superseded, or archived so future agents do not follow them literally.
+- **Rename the three mis-extensioned text files in `docs/images/ch03/`** — "Info for Figure 35 02 04.png", "Info for ch03_nervous_system_centralization_semirealistic.png", and "Info for Simulated Connectivity Damage of Phineas Gage.png" are UTF-8 text notes, not images. They produce a recurring ~10-byte CRLF phantom diff because `.gitattributes` marks `*.png` binary while the committed blobs are LF-normalized. No image data is at risk, but they will keep reappearing as modified until renamed to `.txt` or the one-time renormalization runs. Two of the three sit inside `docs/images/ch03/3 images not used/`, which is already slated for deletion above — coordinate the two.
+- **Fix Chapter 8's three broken internal anchors** — `section-1-encoding--building-the-trace`, `section-2-storage--from-synapse-to-system`, and `section-4-when-memory-goes-wrong--reconstructive-memory-errors`. The hand-written cross-links use double hyphens; the generated heading IDs collapse the em-dash to a single hyphen. Self-contained to Chapter 8, three links, and the only linter warning currently outstanding across all 14 chapters.
 
 ## Deferred decisions
 

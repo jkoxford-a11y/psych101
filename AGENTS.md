@@ -167,6 +167,19 @@ question, and **name the spine connection early** in the prose (per the drafting
 The spine is the additive half of every conversion; `voice_profile_merged.csv` supplies persona and
 signature analogies. Use both.
 
+**Seed the spine before drafting prose.** Reading the Layer 3 notes and then drafting makes the
+framing decisions silently, and hands the instructor prose to react to rather than a lens to choose.
+For any chapter that reads as a construct inventory — and for the least-intuitive chapters as a matter
+of course — follow `pipeline/spine-seed-protocol.md`: run the thread-count diagnostic, draft
+per-section seeds (spine claim / lead / arc / payoff line / prune candidate / watch), measure the word
+trade, and deliver an editable packet to `line-edit-packets/` for the instructor to mark up. Prose
+drafting starts only after the seeds come back.
+
+The diagnostic is the load-bearing part: count occurrences of the chapter's own Layer 3 threads in its
+source. A thread the spine assigns to the chapter that scores zero is a measurable gap between two
+repo documents, not a matter of taste — and it is what makes the rest of the exercise arguable rather
+than stylistic.
+
 ### Human verification pass (residue check)
 
 Instruction-plus-spine conversion is carried by an agent; the required author/editorial pass is
