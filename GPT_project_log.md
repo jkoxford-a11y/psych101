@@ -10,6 +10,14 @@ Repository rules and conventions live in `AGENTS.md`, not here. Current state an
 
 ## Log Entries
 
+### 2026-07-25 - Chapter 10 Instructor-Line-Edit Reconciliation and HTML Regeneration (Codex)
+
+- **Scope:** Reconciled the accepted visible text from `line-edit-packets/Chapter_10_Lifespan_Development_Claude_v2.docx` into the authoritative Chapter 10 Markdown, applying the approved final wording while preserving repository structure and existing visual assets.
+- **Files changed:** `source/chapters/ch10-lifespan-development.md`, regenerated `docs/chapters/10-lifespan-development.html`, `HANDOFF.md`, and `GPT_project_log.md`.
+- **Editorial result:** Installed the approved life-history, secondary-altriciality, brain-development, sensitive-period, false-belief, Vygotsky, attachment/synchrony, adolescence, Proposal 11, and summary passages. Removed natural pedagogy and helper–hinderer material plus the Csibra and Gergely, Hamlin et al., and Lucca et al. references. Preserved all eight figure paths/captions/alt text, the ZPD Learning Lab, callouts, connections, Further Reading, and the Strange Situation material. Review questions now run consecutively 1–9, and Secondary altriciality is included in Key Terms.
+- **Validation:** `python pipeline/lint_chapters.py` reported Chapter 10 PASS with 0 failures and 0 warnings; `git diff --check` passed. Targeted checks confirmed 7 objectives, 9 review questions, 9 answer panels, 8 resolving figures numbered 10.1–10.8 with nonempty alt text, a populated 21-term glossary, resolving connection anchors, the retained ZPD lab link, and no forbidden helper–hinderer/natural-pedagogy/proposal-review/encoding residue. Desktop 1440×900 and mobile 390×844 browser inspection found no horizontal overflow, missing images, or console errors; review disclosures opened correctly.
+- **Not committed / remaining:** The proposed false-belief demonstration figure was deliberately not created or wired. The concrete Sally/Anne explanation resolves the current prose need; a dedicated figure remains a future editorial decision.
+
 ### 2026-07-25 - Repository Hygiene: Ignore Rules, Line-Ending Policy, Log-Ordering Repair (Claude/Cowork)
 
 - **Scope:** Repository tidying and log-hygiene pass. No chapter prose, figure, lab, or generated HTML was touched.
