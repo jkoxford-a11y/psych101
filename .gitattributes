@@ -1,0 +1,21 @@
+# Normalize text to LF in the repository; Git converts on checkout per platform.
+# Without this, `core.autocrlf=true` plus mixed on-disk endings produces the
+# whole-repo "phantom diff" that agents have repeatedly misread as real changes.
+* text=auto eol=lf
+
+# Explicitly binary — never diff, never line-ending-convert.
+*.docx binary
+*.dotx binary
+*.pptx binary
+*.xlsx binary
+*.zip  binary
+*.pdf  binary
+*.png  binary
+*.jpg  binary
+*.jpeg binary
+*.gif  binary
+*.webp binary
+*.mp4  binary
+*.ico  binary
+*.woff binary
+*.woff2 binary

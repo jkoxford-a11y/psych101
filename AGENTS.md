@@ -17,7 +17,7 @@ Don't load the entire chronological project log for every task — `HANDOFF.md` 
 Read these files according to the task:
 
 - `HANDOFF.md` — current state, active work, immediate next actions, and decisions needed. Overwrite rather than append. Keep concise (~500–1,000 words).
-- `GPT_project_log.md` — chronological record of major completed agent-assisted work. Append entries for major completed tasks; don't rewrite history.
+- `GPT_project_log.md` — reverse-chronological record of major completed agent-assisted work. Add entries for major completed tasks; don't rewrite history. Entry format and placement are specified under `## Logging` — follow it exactly.
 - `PROJECT_BACKLOG.md` — durable future and deferred work (editorial review, labs, figures, HTML/rendering, repository/workflow, open decisions). This repository does not use GitHub Issues for work tracking; `PROJECT_BACKLOG.md` is the durable backlog until that changes. Do not duplicate the full backlog inside `HANDOFF.md` — only the next 3–5 immediate actions belong there.
 - `HANDOFF-ARCHIVE.md` — frozen historical record of past Session Log entries and superseded Current Status snapshots, preserved verbatim. Not actively maintained; read only when tracing specific past history that isn't in `GPT_project_log.md`.
 - `pipeline/claude-work-environment.md` — Claude/Cowork-specific environment cautions (sandbox-mount staleness, canonical repo path, commit workflow). Read when operating in Claude or Cowork; other agents don't need it.
@@ -206,5 +206,29 @@ has already cut.
 
 ## Logging
 
-- For major tasks, append concise entries to `GPT_project_log.md`.
-- Do not include private chain-of-thought.
+For major completed tasks, add a concise entry to `GPT_project_log.md`. Do not include private chain-of-thought.
+
+### Where the entry goes — read this before writing one
+
+**`GPT_project_log.md` is newest-first. Insert new entries at the TOP, immediately below the `## Log Entries` heading — never at the bottom of the file.**
+
+This is stated because it previously went wrong. The file's header used to say only "chronological," which agents read in both directions: half the entries accumulated newest-first at the top and half accumulated oldest-first at the bottom, with the two blocks covering overlapping dates. The file was reflowed to uniform newest-first on 2026-07-25. Do not reintroduce the split — if the newest entry in the file is not the one nearest the top, stop and reconcile rather than appending.
+
+### Entry format
+
+Use a level-3 heading with an ISO date and a plain hyphen separator:
+
+```
+### YYYY-MM-DD - Title of the completed work (Agent/Tool)
+```
+
+- **ISO `YYYY-MM-DD` only** — no other date format, and no time component.
+- **A plain hyphen (`-`) between date and title**, not an en or em dash.
+- Date the entry to the day the work was completed. If work spans days, use the completion date.
+- Multiple entries may share a date; add the newest one above the others from that day.
+
+Body: bolded lead-ins (`**Scope:**`, `**Files changed:**`, `**Validation:**`, `**Not committed / remaining:**`) recording actions, decisions, files changed, validation performed, and remaining issues.
+
+### Keep state claims out of date
+
+An entry describes work as of the moment it was written. Claims like "uncommitted," "untracked," or "not yet committed" go stale the moment the commit lands and then actively mislead the next agent. Prefer describing *what* changed over *what its git status was*; if you must record commit status, the next agent to touch the file should correct it. Current repository state belongs in `HANDOFF.md`, not here.

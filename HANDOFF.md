@@ -11,14 +11,26 @@ A reusable **chapter voice-conversion workflow** was defined this session and wr
 
 **Chapter 10 is the first worked example, and is in progress.** A spine-installed draft was generated from the base source (`line-edit-packets/Chapter_10_Lifespan_Development_Claude_Draft.docx`); the instructor line-edited it directly (51 insertions / 28 deletions), heavily rewriting the life-history and cognitive-development prose in his own voice and examples. Those changes were accepted into a clean `line-edit-packets/Chapter_10_Lifespan_Development_Claude_v2.docx` (14–29% alloparental figure cut; "vocabulary → general knowledge" continuity-example fix; two instructor comments retained — soften the too-absolute opener, add a false-belief demo figure). Residue report: `pipeline/audits/ch10-claude-draft-verification-residue-2026-07-25.md`. The Ch10 base source (`source/chapters/ch10-lifespan-development.md`) is unchanged; finalized prose still needs to be reconciled back into it. A GPT/Codex Ch10 version is expected for comparison but had not landed on disk as of this session.
 
-**Repo state (per the instructor's Windows git):** the working tree is clean except this session's `AGENTS.md` edit (modified) and three untracked Ch10 files (the two `.docx` and the residue report). Prior chapter, lab, and figure lanes are committed and stable. Do not diagnose git state from the Linux sandbox — its whole-repo diffs are phantom line-ending artifacts. Durable cautions carried forward: the Chapter 6 and Chapter 7 image lanes remain paused; deployed human spot-checks for figure-expansion, Signal Detection, and Learning Labs remain for release validation. Stage exact paths; do not use `git add .`.
+**Repo state (per the instructor's Windows git):** the Chapter 10 work described above is committed. Prior chapter, lab, and figure lanes are committed and stable. A **repository-hygiene pass is in progress and uncommitted** — see the next section. Durable cautions carried forward: the Chapter 6 and Chapter 7 image lanes remain paused; deployed human spot-checks for figure-expansion, Signal Detection, and Learning Labs remain for release validation. Stage exact paths; do not use `git add .`.
+
+**Line-ending phantom diffs now have a real fix.** The repo ran `core.autocrlf=true` with no `.gitattributes` and genuinely mixed on-disk endings (most `.md` files LF, `PROJECT_BACKLOG.md` CRLF), which is what produced the whole-repo diffs agents kept misreading as real changes. A `.gitattributes` (`* text=auto eol=lf`, plus explicit `binary` for docx/png/mp4/zip) was added this session. It corrects behavior going forward but does **not** retroactively normalize files already committed with CRLF; a one-time `git add --renormalize .` would do that in a single large, noisy commit and has not been run — that is an open decision.
+
+## Repository hygiene pass (in progress, uncommitted)
+
+Completed and staged:
+
+- **`.gitignore` added** (the repo had none). `node_modules/` (16 files) and `.pet-runs/` (24 files, 6.9 MB of agent sprite/QA scratch) were removed from tracking via `git rm -r --cached`; both remain on disk. 40 staged deletions, 686 → 646 tracked files.
+- **`.gitattributes` added** — see above.
+- **`GPT_project_log.md` reflowed to uniform newest-first.** The file had drifted into two blocks with opposite orderings covering overlapping dates (26 entries newest-first at the top, 26 oldest-first at the bottom), because its header said only "chronological" without naming a direction. All 52 entries were verified byte-identical after the reflow. The convention is now stated explicitly in `AGENTS.md` → `## Logging` and restated in the log's own header.
+
+Deferred to `PROJECT_BACKLOG.md` → Repository and workflow, each needing an instructor decision: removing ~20 MB of unreferenced images that currently deploy to the live site from `docs/`; tracking down the numeric commit messages; and the one-time line-ending renormalization.
 
 ## Immediate next actions
 
 1. Finalize Chapter 10: soften the too-absolute chapter-opener line and add a false-belief demo figure (both flagged in `..._Claude_v2.docx` comments), then reconcile the finalized prose from that v2 back into `source/chapters/ch10-lifespan-development.md`.
 2. When the GPT/Codex Chapter 10 version lands, diff it against the spine + `AGENTS.md` standard and choose.
 3. Apply the `AGENTS.md` voice-conversion workflow to the remaining line-edit chapters (9, 11, 12, 13); for the least-intuitive chapters (e.g., Social Psychology), pre-draft spine seeds for the instructor to edit rather than author cold.
-4. Commit this session's work by exact paths — `AGENTS.md`, the three Chapter 10 files, `HANDOFF.md`, `GPT_project_log.md` — after a diff review; avoid `git add .`.
+4. Commit the repository-hygiene pass by exact paths — `.gitignore`, `.gitattributes`, `AGENTS.md`, `GPT_project_log.md`, `HANDOFF.md`, plus the 40 staged `node_modules/` and `.pet-runs/` deletions — after a diff review; avoid `git add .`. Then decide on the deferred `docs/` image cleanup and the one-time `git add --renormalize .`.
 5. Keep the Chapter 6 and Chapter 7 image lanes paused unless reopened; complete the deferred figure-expansion, Signal Detection, and Learning Lab human spot checks at release validation.
 
 ## Important files

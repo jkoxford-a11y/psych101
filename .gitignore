@@ -1,0 +1,18 @@
+# Dependencies — reinstall with `npm install` (see package.json / package-lock.json)
+node_modules/
+
+# Agent tool scratch output (sprite runs, QA renders, validation dumps)
+.pet-runs/
+
+# Word/Office lock files — this repo carries many .docx line-edit packets
+~$*.doc*
+~$*.xls*
+~$*.ppt*
+
+# OS cruft
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# npm logs
+npm-debug.log*
