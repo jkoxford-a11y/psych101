@@ -1,92 +1,36 @@
 # Psych101 — Current Handoff
 
-**Last updated:** 2026-07-23
+**Last updated:** 2026-07-25
 **Canonical repository:** `C:\GitHub\psych101`
 
-This file records current state only. See `GPT_project_log.md` for completed-work history, `PROJECT_BACKLOG.md` for durable deferred work, `pipeline/audits/ch05-line-edit-html-deferral-2026-07-21.md` for the active Chapter 5 sequence, `pipeline/audits/learning-lab-state-restoration-audit.md` for the repository-wide lab audit, `pipeline/audits/ch04-signal-detection-timed-flash-2026-07-18.md` for the Signal Detection revision, and `pipeline/audits/ch07-image-work-pause-2026-07-17.md` for the paused Chapter 7 image lane.
+This file records current state only. See `GPT_project_log.md` for completed-work history, `PROJECT_BACKLOG.md` for durable deferred work, and `AGENTS.md` for the chapter voice-conversion workflow and all conventions.
 
 ## Current state
 
-### Chapter 8 — line edit and labs complete
+A reusable **chapter voice-conversion workflow** was defined this session and written into `AGENTS.md` → `## Style`. It is now the standing process for turning base drafts into the instructor's voice: subtractive checklist → keep-the-story → install-the-spine (Layer 3 notes + student-facing spine question from `pipeline/theoretical-spine.md`, plus `theoretical-foundations.md`, `GPT_spine.md`, `concepts-semanticization-log.md`) → register calibration (vivid-not-chatty; cut residual qualifiers; avoid the absolute "this is THE key fact" tic; prune side-content as beyond-scope) → human verification pass (residue check) → reconcile against the instructor's line-edit markup as source of truth. Diagnosis behind it: the base drafts read as "spine-disconnected" — de-hedged but voiceless — because they were drafted at content level without installing the theoretical spine.
 
-The approved instructor line edit is reconciled in authoritative `source/chapters/ch08-memory.md`. Two new Learning Labs have been built and wired:
+**Chapter 10 is the first worked example, and is in progress.** A spine-installed draft was generated from the base source (`line-edit-packets/Chapter_10_Lifespan_Development_Claude_Draft.docx`); the instructor line-edited it directly (51 insertions / 28 deletions), heavily rewriting the life-history and cognitive-development prose in his own voice and examples. Those changes were accepted into a clean `line-edit-packets/Chapter_10_Lifespan_Development_Claude_v2.docx` (14–29% alloparental figure cut; "vocabulary → general knowledge" continuity-example fix; two instructor comments retained — soften the too-absolute opener, add a false-belief demo figure). Residue report: `pipeline/audits/ch10-claude-draft-verification-residue-2026-07-25.md`. The Ch10 base source (`source/chapters/ch10-lifespan-development.md`) is unchanged; finalized prose still needs to be reconciled back into it. A GPT/Codex Ch10 version is expected for comparison but had not landed on disk as of this session.
 
-- `docs/labs/ch08/misinformation-effect.html` + `docs/js/labs-misinformation-effect.js` — "Did You Really See That?" — misinformation effect (campus-theft scenario, embedded-presupposition follow-up questions, four-item memory test, results table, explanation, transfer)
-- `docs/labs/ch08/sperling-partial-report.html` + `docs/js/labs-sperling-partial-report.js` — "How Much Do You See at Once?" — Sperling partial-report paradigm (~100 ms flash, whole-report trials, partial-report trials with post-flash row cue, comparison results, explanation, transfer)
-
-Both labs follow the established IIFE / sessionStorage pattern. JavaScript syntax verified. Full phase-by-phase browser automation confirmed. "Try it yourself" links for both labs are in `source/chapters/ch08-memory.md`; chapter HTML regenerated at `docs/chapters/08-memory.html`. Chapter 8 now has four active labs: Sperling Partial-Report, Levels of Processing, Interactive Imagery, and Misinformation Effect.
-
-All Chapter 8 changes remain uncommitted. Commit: `source/chapters/ch08-memory.md`, `docs/chapters/08-memory.html`, `docs/labs/ch08/misinformation-effect.html`, `docs/js/labs-misinformation-effect.js`, `docs/labs/ch08/sperling-partial-report.html`, `docs/js/labs-sperling-partial-report.js`, `.claude/launch.json`.
-
-### Chapter 5 — line edit and HTML complete
-
-The approved instructor line edit is reconciled in authoritative `source/chapters/ch05-consciousness.md`. The Methods Box retains three explanatory paragraphs and a separate Do Not Confuse box; the psychedelic account no longer uses REBUS as the prose label, while the actual article title remains unchanged; and the approved Katlowitz, dashboard, and review-question corrections are in place.
-
-`pipeline/build_chapter_html.mjs` now has a narrowly scoped Chapter 5 configuration. `docs/chapters/05-consciousness.html` was regenerated from the current Consciousness-only source, replacing the obsolete combined Consciousness + Sleep page. Targeted structure/content checks, repository lint, local resource/fragment checks, and the five-viewport figure/responsive regression pass. The Chapter 5 line-edit and HTML-regeneration lane is closed with no known content or rendering issue.
-
-These Chapter 5 changes remain uncommitted and unstaged. If publication through Git is authorized, stage and commit only `source/chapters/ch05-consciousness.md`, `pipeline/build_chapter_html.mjs`, `docs/chapters/05-consciousness.html`, `GPT_project_log.md`, and `HANDOFF.md` after one final diff review.
-
-### Chapter 7 — instructor line edit reconciled
-
-The approved instructor line edit has been reconciled into authoritative `source/chapters/ch07-learning.md`. The completed instructor record is preserved in `line-edit-packets/Chapter_7_Learning_Line_Edit.docx`, and the durable reconciliation record is `pipeline/audits/ch07-line-edit-reconciliation-2026-07-22.md`.
-
-Chapter 7 generated HTML and figure wiring remain deferred until the paused Chapter 7 image lane resumes. The former dopamine-uncertainty Figure 7.8 is no longer supported by the chapter prose; do not renumber, remove, replace, promote, or wire it outside that resumed image lane. Chapters 8–13 remain in the instructor line-edit queue, with Chapter 8 next.
-
-### Chapter 4 — authoritative source and HTML complete
-
-The approved line-edit reconciliation is complete in `source/chapters/ch04-sensation-perception.md`, with `pipeline/audits/ch04_line_edit_reconciliation_revision_spec_2026-07-20_v2.md` as the durable specification.
-
-`docs/chapters/04-sensation-perception.html` was regenerated from the reconciled source in commit `6d0baf39f4f66240be47528cfe0006b1aa678707` (`Regenerate Chapter 4 HTML`). The same commit added guarded Chapter 4 options to `pipeline/build_chapter_html.mjs`. No Chapter 6 or line-edit-packet files were included. The Chapter 4 editorial lane is closed.
-
-### Chapter 4 — Signal Detection
-
-The approved lab uses 450 ms fixation, 100 ms exposure, 10% peak contrast, Gaussian sigma 20, generated grayscale noise, and automatic remasking before response. Responses remain disabled during fixation and exposure, and tab loss cancels an unfinished trial without recording it.
-
-Static checks, JavaScript syntax, and `pipeline/ch04_signal_detection_mask_regression.cjs` pass. Weber's Law, Blind-Spot Filling-In, and Context and Ambiguous Perception retain their prior automated pass status. The size–weight illusion placeholder remains a separate build-or-remove decision.
-
-### Repository-wide figure expansion
-
-The Prologue and Chapters 1–13 were audited. There are 80 explicit expandable figures, two low-resolution Chapter 3 figures marked `.no-expand`, and no active `.wide` figures. Expanded width is capped at 1100px and accounts for the open sidebar and safe gutters; captions remain capped at 716px.
-
-`pipeline/figure_expansion_regression.cjs` passes all 14 pages at 1440×900, 1280×800, 1024×768, 390×844, and 844×390. A deployed human spot check remains for one desktop figure with the sidebar open and for phone portrait and landscape.
-
-### Repository-wide Learning Labs
-
-All 20 stateful standalone labs completed the automated state-restoration and restart-access audit. `pipeline/learning_lab_state_regression.cjs` passes all 20 labs at 1440 × 900, 390 × 844, and 844 × 390 for fresh state, commitment, restoration, restart, storage removal, focus, computed visibility, overflow, completion, and no-duplication behavior.
-
-Deployment still requires human spot checks of real-origin `sessionStorage`, keyboard operation, completed-state restart, and navigation.
-
-### Completed chapter lanes
-
-Chapters 1–4 and 9–13 have completed their canonical revision/validation cycles. Chapter 8's line edit is reconciled and its four labs (Sperling Partial-Report, Levels of Processing, Interactive Imagery, Misinformation Effect) are built and wired; Self-Reference Effect remains index-only. Do not reopen completed lanes absent a specific defect or Jon's editorial request.
-
-### Paused image lanes
-
-Chapter 7 prose and Classical Conditioning work are complete, but full HTML regeneration remains deferred until its figure set is approved. Figure 7.7 remains unresolved because the current candidate overlaps. Resume only from direct SVG/PNG inspection if Jon explicitly reopens the lane. Chapter 6 flagged figure candidates remain queued while the project stays in a non-image lane.
-
-### Working-tree caution
-
-The Chapter 5 lane changes only the five files listed above. Preserve any unrelated local changes in `line-edit-packets/`, `source/chapters/ch06-sleep.md`, or elsewhere. Do not use `git add .`, `git restore .`, or broad cleanup commands; stage only exact authorized paths.
+**Repo state (per the instructor's Windows git):** the working tree is clean except this session's `AGENTS.md` edit (modified) and three untracked Ch10 files (the two `.docx` and the residue report). Prior chapter, lab, and figure lanes are committed and stable. Do not diagnose git state from the Linux sandbox — its whole-repo diffs are phantom line-ending artifacts. Durable cautions carried forward: the Chapter 6 and Chapter 7 image lanes remain paused; deployed human spot-checks for figure-expansion, Signal Detection, and Learning Labs remain for release validation. Stage exact paths; do not use `git add .`.
 
 ## Immediate next actions
 
-1. Commit the Chapter 8 changes (seven files listed in the Chapter 8 section above) after one final diff review.
-2. Begin the instructor line edit for Chapter 9, then proceed in order through Chapter 13.
-3. Review the final five-file Chapter 5 diff and, if authorized, publish it through a narrowly scoped commit/push.
-4. Complete the remaining deployed figure-expansion, Signal Detection, and Learning Lab human spot checks when returning to release validation.
-5. Keep the Chapter 6 and Chapter 7 image lanes paused unless Jon explicitly changes lanes.
+1. Finalize Chapter 10: soften the too-absolute chapter-opener line and add a false-belief demo figure (both flagged in `..._Claude_v2.docx` comments), then reconcile the finalized prose from that v2 back into `source/chapters/ch10-lifespan-development.md`.
+2. When the GPT/Codex Chapter 10 version lands, diff it against the spine + `AGENTS.md` standard and choose.
+3. Apply the `AGENTS.md` voice-conversion workflow to the remaining line-edit chapters (9, 11, 12, 13); for the least-intuitive chapters (e.g., Social Psychology), pre-draft spine seeds for the instructor to edit rather than author cold.
+4. Commit this session's work by exact paths — `AGENTS.md`, the three Chapter 10 files, `HANDOFF.md`, `GPT_project_log.md` — after a diff review; avoid `git add .`.
+5. Keep the Chapter 6 and Chapter 7 image lanes paused unless reopened; complete the deferred figure-expansion, Signal Detection, and Learning Lab human spot checks at release validation.
 
 ## Important files
 
+- Chapter voice-conversion workflow: `AGENTS.md` → `## Style`
+- Chapter 10 spine-installed draft + accepted clean version: `line-edit-packets/Chapter_10_Lifespan_Development_Claude_Draft.docx`, `line-edit-packets/Chapter_10_Lifespan_Development_Claude_v2.docx`
+- Chapter 10 verification-residue report: `pipeline/audits/ch10-claude-draft-verification-residue-2026-07-25.md`
+- Theoretical spine (Layer 3 + drafting rules): `pipeline/theoretical-spine.md` (also `pipeline/theoretical-foundations.md`, `GPT_spine.md`, `pipeline/concepts-semanticization-log.md`)
 - Chapter 5 authoritative source: `source/chapters/ch05-consciousness.md`
-- Chapter 5 workflow record: `pipeline/audits/ch05-line-edit-html-deferral-2026-07-21.md`
 - Chapters 7–13 packet-preparation record: `pipeline/audits/ch07-ch13-line-edit-packet-structural-prep-2026-07-22.md`
-- Chapter 7 reconciliation record: `pipeline/audits/ch07-line-edit-reconciliation-2026-07-22.md`
-- Current generated Chapter 5 page: `docs/chapters/05-consciousness.html`
-- Current separate Sleep page: `docs/chapters/06-sleep.html`
 - Chapter 4 reconciled source/specification: `source/chapters/ch04-sensation-perception.md`, `pipeline/audits/ch04_line_edit_reconciliation_revision_spec_2026-07-20_v2.md`
 - Shared builder: `pipeline/build_chapter_html.mjs`
-- Timed-flash audit/regression: `pipeline/audits/ch04-signal-detection-timed-flash-2026-07-18.md`, `pipeline/ch04_signal_detection_mask_regression.cjs`
 - Repository-wide lab audit/regression: `pipeline/audits/learning-lab-state-restoration-audit.md`, `pipeline/learning_lab_state_regression.cjs`
 - Durable deferred work: `PROJECT_BACKLOG.md`
-- Paused Chapter 7 lane: `pipeline/audits/ch07-image-work-pause-2026-07-17.md`
+- Paused Chapter 7 image lane: `pipeline/audits/ch07-image-work-pause-2026-07-17.md`

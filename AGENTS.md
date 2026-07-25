@@ -103,6 +103,26 @@ front stops the same corrections from being redone by hand in every chapter.
 **One-line test before submitting prose:** *Would this excite a curious 18-year-old and make the
 point unmissable — or does it read like a hedged journal paragraph?* Edit toward the former.
 
+### Register calibration (learned from instructor line edits)
+
+The subtractive checklist under-cuts relative to the instructor's actual tolerance. When converting,
+apply these on top of it:
+
+- **Vivid, not chatty.** Keep concrete images and the evolutionary through-line; cut conversational
+  scaffolding ("here's the…", "now the…"), showy verbs ("throw," "wreckage"), and attention-grabbing
+  metaphors ("placing a bet," "ship the brain early and finish it outside"). Vivid is the instructor's
+  own image; chatty is the connective tissue around it.
+- **Cut residual qualifiers even harder — when in doubt, cut the caveat.** A subtractive pass still
+  leaves too many. The instructor routinely deletes surviving hedges ("not a permanent script,"
+  "not because insurance rates prove a neural mechanism," "not a design flaw," style disclaimers).
+  One plain caveat at most; usually none.
+- **Avoid the absolute "this is THE central/key fact" tic.** Superlative framing ("the central fact
+  that makes human psychology possible") reads as overstatement and the instructor flags it on sight —
+  "there are several in this chapter." Make the point and move on; reserve emphasis for rare moments.
+- **Prune side-content as "beyond scope," don't catalog it.** A full mechanism list (e.g. "genetic
+  maturation, spontaneous activity, hormones, immune processes, local cellular signals…") is load the
+  instructor cuts to "there are other influences, beyond the scope here." Mirror what he teaches.
+
 ### Keep the story (the additive half — don't let compression flatten the narrative)
 
 The checklist above is mostly *subtractive*. Applied alone it produces prose that is accurate, lean,
@@ -127,6 +147,45 @@ Restore the spine:
   list is *doing* in the narrative (e.g. "experience does much of the carving — but not alone: …").
 - **Prefer verbs with motion and images** (overbuilt, carves, sculpted, exploding) over static
   is/are/consists-of constructions. The animal-model / evolutionary frame is the recurring engine.
+
+### Install the spine (required drafting input)
+
+The subtractive checklist removes publisher hedging; it does not supply the lens. That comes from the
+project's theoretical spine, which must be loaded before drafting or converting any chapter. A draft
+that applies the checklist without installing the spine is **spine-disconnected** — clean but
+voiceless, which is the failure mode most of the base drafts already show.
+
+Before drafting or line-editing a chapter, read its Layer 3 material and student-facing spine
+question, and **name the spine connection early** in the prose (per the drafting rules):
+
+- `pipeline/theoretical-spine.md` — §8 has per-chapter Layer 3 notes and the spine question; §7 has
+  the drafting rules and the **"do not overclaim" list**. If a Layer 3 note conflicts with the trunk
+  (§1–5), the trunk governs, and not all Layer 3 detail needs to reach student-facing text.
+- `pipeline/theoretical-foundations.md`, `GPT_spine.md`, `pipeline/concepts-semanticization-log.md`
+  — deeper elaborations of the same framework; consult as the chapter requires.
+
+The spine is the additive half of every conversion; `voice_profile_merged.csv` supplies persona and
+signature analogies. Use both.
+
+### Human verification pass (residue check)
+
+Instruction-plus-spine conversion is carried by an agent; the required author/editorial pass is
+**scoped to verifying interpolations, not rewriting voice** (the calibrated register holds across a
+full chapter). When converting a chapter, produce a short residue list flagging three things for
+author sign-off, and keep that same list in mind when reviewing any converted draft:
+
+1. **Imported facts without a citation.** Any quantitative claim or specific fact drawn from the spine
+   notes but not supported by a source in the *chapter's own* reference list. Spine-sourced ≠ cited.
+2. **Teaching-simplifications.** Any mechanism stated more simply than its source (these are often
+   intended — keep them, but mark them so the author signs off knowingly).
+3. **Agent interpolations.** Any cross-chapter link, analogy, or inference not present in the source
+   draft or the spine — keep or cut, author's call.
+
+**Reconcile against the instructor's markup, not just the base source.** When a chapter has an
+in-progress line-edit packet (tracked changes in `line-edit-packets/`, including on a prior Claude
+draft), that markup — not the base source markdown — is the source of truth for the instructor's
+decisions. Read it before drafting or before writing a residue list, or you will re-import content he
+has already cut.
 
 ## Figures
 

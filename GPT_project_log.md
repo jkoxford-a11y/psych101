@@ -8,6 +8,15 @@ Repository rules and conventions live in `AGENTS.md`, not here. Current state an
 
 ## Log Entries
 
+### 2026-07-25 - Chapter Voice-Conversion Workflow + Chapter 10 Worked Example (Claude/Cowork)
+
+- **Scope:** Generalized the instructor's completed line edits (Ch 1–8 packets) into a reusable voice-conversion workflow, wrote it into `AGENTS.md` → `## Style`, and produced Chapter 10 as the first worked example.
+- **Workflow added to `AGENTS.md`:** subtractive checklist; keep-the-story (narrative spine); install-the-spine as a required drafting input (Layer 3 notes + student-facing spine question from `theoretical-spine.md` §8/§7, plus `theoretical-foundations.md`, `GPT_spine.md`, `concepts-semanticization-log.md`); register calibration (vivid-not-chatty; cut residual qualifiers; avoid the absolute "THE key fact" framing; prune side-content as beyond-scope); human verification pass (residue check); reconcile against the instructor's tracked-changes packet as source of truth.
+- **Diagnosis recorded:** base drafts are "spine-disconnected" — de-hedged but voiceless because drafted without the theoretical spine.
+- **Chapter 10:** generated spine-installed `line-edit-packets/Chapter_10_Lifespan_Development_Claude_Draft.docx`; instructor line-edited it (51 insertions / 28 deletions), rewriting the life-history and cognitive-development prose in his own voice/examples; accepted into clean `line-edit-packets/Chapter_10_Lifespan_Development_Claude_v2.docx` (cut the 14–29% alloparental figure; vocabulary→general-knowledge continuity fix; retained two instructor comments). Residue report at `pipeline/audits/ch10-claude-draft-verification-residue-2026-07-25.md`.
+- **Files changed:** `AGENTS.md` (modified); new untracked: two Ch10 `.docx`, the residue report; plus `HANDOFF.md`, `GPT_project_log.md`.
+- **Not committed / remaining:** Ch10 base source `source/chapters/ch10-lifespan-development.md` unchanged — reconcile finalized prose into it; soften the too-absolute opener; add a false-belief demo figure; compare against the GPT/Codex Ch10 version when it lands; extend the workflow to Ch 9/11/12/13. Commit by exact paths (avoid `git add .`).
+
 ### 2026-07-23 - Chapter 8 Line Edit and Two New Learning Labs
 
 - **Scope:** Reconciled the instructor line edit for Chapter 8 (Memory) into the authoritative source, built two new Learning Labs, wired all four Chapter 8 labs into the chapter, and regenerated the chapter HTML.
