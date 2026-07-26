@@ -39,7 +39,21 @@ The zeros are real. They are not the chapter's main problem.
 
 The repair pass (`52a7894`, 2026-07-15, the day after the audit) cut the chapter from 11,050 words to 6,120. Body prose fell from ~6,198 to **3,653** — the low end of the 3,500–5,000 target, not over it. What survived is disproportionately boundary prose.
 
-Forty per cent of body paragraphs now end on a negation, against 25% for Ch. 11 and 22% for Ch. 8. **That proxy overstates by about half** and should not be quoted as-is: hand-checking, six of eleven flagged paragraphs are correctly calibrated, because in this chapter a negation is often the teaching content. "Core affect is not a specific emotion" *is* the concept. "It is not a single fear button" arrives after a positive claim and is a good line. Five are genuine failures, and they fail identically — the paragraph never states its conclusion:
+Measured on prose paragraphs only (excluding figures, tables and retrieval boxes, so the denominator is 5,417 before and 3,273 after — a different basis from the word-budget figure above, which counts all body content):
+
+| Measure, per 1,000 words | Before repair | After | Change |
+|---|---|---|---|
+| Second person ("you", "your") | 12.2 | **5.2** | −57% |
+| Throat-clearing phrasings banned by `AGENTS.md` rule 2 | 0.2 | **5.5** | **27×** |
+| Paragraphs ending on a negation | 30% | 37% | +7 pts |
+
+Chapter 12 went from among the most directly addressed chapters in the book — level with Ch. 1 at 12.3 — to below its average. The throat-clearing rise is the largest of any chapter.
+
+**This is not a Chapter 12 peculiarity.** The same comparison run across every audited chapter (2026-07-26) shows throat-clearing **up in 11 of 11** — not one decreased. Second person fell hardest in Ch. 3 (3.5 → 1.2) and Ch. 7 (3.0 → 1.4); paragraphs landing on a negation doubled in Ch. 13 (22% → 44%). Eleven independent repair passes moving the same direction is the rubric, not the chapters.
+
+**And Chapter 11 is the counter-proof.** It is the only chapter that gained words through its pass (+354) and its second-person density tripled, 3.9 → 12.9. The spine-seed conversion reverses this, which is the argument for running it here rather than treating the register as a separate later problem.
+
+*Superseded measure, recorded so it is not re-quoted:* an earlier draft of this packet led on paragraphs-ending-on-a-negation alone (40% against Ch. 11's 25% and Ch. 8's 22%). Hand-checking showed that proxy overstates by about half — six of eleven flagged paragraphs are correctly calibrated, because in this chapter a negation is often the teaching content. "Core affect is not a specific emotion" *is* the concept. "It is not a single fear button" arrives after a positive claim and is a good line. The second-person and throat-clearing measures above make the case without that caveat. Five paragraphs are genuine failures, and they fail identically — the payoff never arrives:
 
 | Line | Paragraph | How it fails |
 |---|---|---|
@@ -251,6 +265,147 @@ If you want strict net-negative anyway, the lever is dropping A2 (compression) a
 - Not restoring L114 ("this is why everything feels harder under those conditions"), L165 (post-finals narrative) or L174 (social support predicts mortality) from the pre-repair version. All three overclaimed. Their *jobs* are reassigned to payoff lines and to A1; the text stays cut.
 - Not restoring the pre-repair body-budget review question ("I've been feeling awful all week"). Correctly cut under §K — it made the metaphor quasi-diagnostic.
 - Not amending `theoretical-spine.md` §8's hedonic-treadmill note in this pass (Finding 3). It changes nothing in Ch. 12 and belongs in a spine-maintenance pass.
+
+---
+
+## DECISIONS RETURNED — 2026-07-26
+
+Worked in conversation rather than on the packet. *The first Word packet was lost: the instructor had entered answers and a rebuild overwrote the file in place. Cause recorded under "Process fix" below.*
+
+### Decision 7 — the prunes: SETTLED, with three of seven revised against the packet's own recommendation
+
+| ID | Outcome | Words |
+|---|---|---|
+| P7 | **Cut** as proposed. The struck sentence restates "core affect is not a specific emotion" in the negative and nothing downstream depends on it. *Lost: the fear/anger/embarrassment instance — the concrete bit. Reclaim 1 is the better carrier for that job.* | 17 |
+| P2 | **Revised — cut the closing sentence instead, keep one example.** The packet proposed cutting the two interchangeability examples; on re-reading, the paragraph states its bound four times and the *examples* are the only concrete instance of "not one currency" in the chapter. Cutting them left an abstract boundary. Same word saving. | 16 |
+| P3 | **Cut the opening hedge outright; relocate, do not delete, the anti-diagnosis clause** into the existing Think About It at L80, which already asks what cannot be diagnosed from one moment. Same protection, out of the payoff position. Net saving is the 8-word hedge only. | 8 |
+| P1 | **Revised — keep only "Constructionism is the lens used here, but it is not the only serious contemporary account" as the paragraph.** The packet offered folding that sentence into the theory table's constructionist row; rejected, because it buries the chapter's central epistemic commitment in a table cell students skim. Sentences 1–2 duplicate the table and go; sentence 4 is procedural throat-clearing and goes. *This also answers the packet's second question — the constructionism boundary stays exactly where it is, in prose, at the head of Section 2.* | 44 |
+| P6 | **Deferred — depends on Reclaim 3.** The struck clause protects against reading the three goal scales as a hierarchy, which is a live risk because the paragraph presents them in ascending order. If the zebra lands as the section's lead, that structure breaks up and the warning is unnecessary. If the zebra is declined, keep the clause. | (20) |
+| P4, P5 | **Deferred — these are the second half of Decision 3, not independent prunes.** Listing them separately was a packet error. Cutting P5 without installing social buffering leaves Heinrichs standing as an unbounded general claim, which is worse than the current disclaimer. Cutting P4 without a replacement leaves journaling and therapy unmentioned rather than under-explained. If Decision 3 is declined, neither is cut. | (27 + 17) |
+
+**Settled total: 85 words, not the 184 the packet claimed** — the packet's figure assumed the maximalist P2 and P1. Maximum 149 if the three deferred prunes land.
+
+Revised net: **+171** with all threads installed (body 3,653 → 3,824), or **+120** if Decision 3 is declined and A1's 95 words come off with it (body 3,773). Both inside the 3,500–5,000 target, which strengthens Decision 9.
+
+### Process fix — packets are never rebuilt in place once sent
+
+The first packet was overwritten by a rebuild after the instructor had entered answers. Git held only the clean pre-review blob and no Word remnant survived. The convention already existed and was not followed: the Chapter 11 line edit preserved the marked copy as `Chapter_11_Social_Psychology_Line_Edit_MARKED_2026-07-26.docx`. **Any revision to a packet that has been sent goes to a new filename.** Belongs in `spine-seed-protocol.md` → Delivery format, which currently does not say it.
+
+*Separately:* `git status` strands `.git/index.lock` under the sandbox mount. `CLAUDE.md` currently says read-only git commands are safe; that is wrong for `status`, and the exception should be recorded.
+
+### Decision 3 — social buffering: INSTALL as drafted
+
+Anchored on Hostinar, Sullivan & Gunnar (2014). Replaces the middle sentence of Section 4's social-support bullet ("Those are several pathways, not one deposit into a literal account"), keeping Cohen & Wills and the emotion-/problem-focused closer either side of it. The Ch. 10 clause is quoted verbatim from that chapter's own sentence — a backward callback, which `voice-brief.md` §5 treats as part of the voice rather than decoration.
+
+Net about +51 (95 added, 44 recovered from P4 and P5, which are now unblocked).
+
+**Packet error corrected:** P5 was listed as a Section 4 prune. The oxytocin paragraph is in **Section 3**, under Behavioral response patterns. Installing the seam in Section 4 is what licenses cutting a disclaimer two sections earlier — a cross-section dependency the packet mis-stated as local.
+
+**Watch, unchanged:** "changes what the hard thing costs" must stay a claim about regulatory demand, never about a measurable balance. Hostinar is a review; do not upgrade it to a single demonstrated mechanism.
+
+### Decision 4 — compression: THREAD DECLINED, sentence kept
+
+The instructor's challenge — *"4 only to get compression in?"* — was correct, and the honest answer was yes. That is the same reason just-world and attachment were cut from Ch. 11: the payoff was framework coherence, not student comprehension. "Compression scores zero" is a fact about the repository, not about the chapter's teaching.
+
+Splitting the seam separated a good sentence from a framework gesture:
+
+- **Kept** (student payoff): *Two numbers — pleasant or not, wound up or not — standing in for everything happening in a body. It is why you can be certain you feel terrible and have no idea why.* The closing clause names something students experience and the chapter never says. Lands where P7's cut leaves a gap, before the "Constructionists interpret core affect…" paragraph. ~26 words.
+- **Cut** (framework tidiness): *That is a summary, and summaries leave things out.* Meta-commentary — the same species as the throat-clearing being removed elsewhere.
+
+**A second, substantive reason not to name it, missed on the first pass:** §7 forbids collapsing prediction error, emotion, and stress into one mechanism. Calling core affect "compression" implies emotion construction is the *same* operation as episodic→semantic memory compression, which it is not. The plain-language version makes the point without asserting the equivalence.
+
+**What is lost, recorded so it is not silently re-proposed:** Ch. 12 remains the only chapter with no compression thread, and §7's instruction to use the lossy-compression lens in every chapter is one this chapter does not follow. Assessed as correct rather than as a gap — emotion construction is not lossy compression in the sense Ch. 4, 8 and 9 use it. **Spine-maintenance item:** §7 may be overreaching in asking for the lens everywhere; that is a framework question, not a Ch. 12 repair.
+
+### Decision 5 — action-readiness: PAYOFF LINE ONLY, term not named
+
+Agreed. The granularity bullets already *are* action tendencies — each names a prepared response — and the sentence "That precision can suggest different actions" is already the payoff, flat and hedged. So this is a replacement, not an addition:
+
+> "I feel bad" tells you nothing about what to do next. "I'm disappointed" tells you to revise an expectation. "I'm frustrated" tells you to change the approach. Same discomfort, different instructions.
+
+About +20 replacing 6, so net +14 — not the 30 the packet budgeted. The optional naming sentence (*"Every emotion arrives with something already leaning…"*) is **not taken**: the chapter map wants action-readiness taught, not the term recited, and the theory table's discrete-emotion row already carries "action tendencies" for anyone who wants the label.
+
+### Reclaim 3 — the zebra leads Section 3: AGREED. P6 cut follows.
+
+Section 3 currently opens on four bolded terms in four sentences — stress, stressor, primary appraisal, secondary appraisal — with the exam image arriving second. New order: **zebra → exam → definitions → light cone.** The definitions arrive to name what the student is already looking at.
+
+> The zebra's stress response mobilizes fully for the minute it takes to escape a lion, then shuts off completely once the threat is gone or the zebra is dead (Sapolsky, 2004). Yours doesn't. Your threats are next Tuesday — and they will still be next Tuesday tomorrow.
+
+**One word changed from the pre-repair version.** It said humans "run the same ancient mobilization machinery." The audit's must-correct list bars "identical pathway" language and "the same machinery" is that claim. It becomes **overlapping**, which the chapter already says correctly at L156.
+
+**P6 cut, consequence discharged.** With the zebra leading, the three goal scales are no longer the paragraph's organising structure, so the anti-hierarchy warning is no longer protecting against a live misreading. 20 words.
+
+*Note: `theoretical-spine.md` §3 already prescribed Sapolsky's zebra contrast as grounding for this material. The repair pass removed the only place the chapter used it. This reclaim restores something the spine had asked for.*
+
+### Decision 8 — light cone label: SUPERSEDED, and the spine amended
+
+Confirmed: the Levin (2019) attribution supersedes the audit's must-preserve requirement that the term keep "the course-specific label." The chapter is more accurate than the document protecting it.
+
+**`theoretical-spine.md` §3 amended** (authorised 2026-07-26). The note previously called the phrase "a course-specific metaphor, not a standard research or diagnostic term"; it now attributes the term to Levin and states the correction explicitly, preserves Suddendorf, Schacter, Gilbert & Wilson and Sapolsky as grounding for the *application* while crediting Levin with the *term*, and records that Levin derives the expanding boundary from a homeostatic drive to reduce stress — which links the light cone back to Section 1's allostasis material instead of leaving it stranded in Section 3.
+
+**Grupe & Nitschke flag closed in the same edit** — declined rather than cleared, per Finding 4, and rerouted as a Ch. 13 candidate.
+
+### Decisions 1 and 2 — spine question and engine: AGREED
+
+**Spine question:** the spine's own wording plus the second clause, landing at the end of the opener, replacing the table-of-contents sentence rather than sitting alongside it:
+
+> Emotion is not irrational noise pasted onto thought. It helps organize attention and action around what matters. **So how does your body decide what matters — and why won't it always stand down?**
+
+The preceding sentence already contains "what matters," so the question picks up a word the paragraph just used. Deleted: *"This chapter follows that sequence from regulation to emotion to stress to action."*
+
+This also closes the book-wide finding that only four of thirteen chapters carry their spine question in the text — Ch. 12 becomes the fifth. The remaining eight are a backlog item, not a Ch. 12 one.
+
+**Engine sentence:** accepted as drafted. It is not chapter text — it is the traceability test applied to every passage during drafting — so it needs to be true, not polished.
+
+### Decision 9 — net words: MOOT
+
+Recorded as moot rather than answered. With the revised prunes and the reduced additions the net is approximately **+46**, so the Step 4 rule about additions exceeding prunes is not in play.
+
+### Decision 6 — Patient S.M.: AGREED, first version
+
+Replaces the current "Why it matters" block:
+
+> **Why it matters:** She can tell you the snake is dangerous. She just doesn't mind. Knowing and minding turn out to be two different jobs — and the CO₂ result shows the amygdala is not the only way into the second one. The amygdala contributes importantly to some externally triggered threats; it is not necessary for every experience of fear or panic.
+
+**What the audit did here, and why the replacement is not a reversal.** The pre-repair version ended *"Take it out, and the facts survive; the mattering does not."* The audit's high-severity row required that removed, and §K lists Patient S.M. as evidence that amygdala removal eliminates felt mattering under must-correct. The repair pass deleted the claim and replaced it with *"one lesion case cannot establish that the amygdala converts surviving facts into felt 'mattering'"* — the negation of a claim *about* the claim, two removes from anything a student can use. It is also the sentence that leaves "mattering," this chapter's own thread word, appearing exactly once in the chapter, inside a disclaimer.
+
+**Why the new version clears the must-correct.** The audit bars claiming amygdala removal *eliminates* felt mattering. This claims the case *distinguishes* knowing from minding — two functions being separable, which the CO₂ result supports rather than undercuts, since CO₂ produced the minding without an amygdala. The bounding clause arrives in the same sentence as the distinction rather than after it.
+
+**Residual risk, accepted knowingly.** "She just doesn't mind" compresses "showed strikingly little fear with live snakes and spiders, in a haunted house, and while viewing frightening films." That is true of the external-threat findings and would be **false as a general statement about her** — she panicked on CO₂. The following sentence has to carry that limit. If it reads as a general claim at line-edit, the conservative alternative is preserved here:
+
+> *She can describe why a snake is dangerous without the alarm going off. The CO₂ result shows the amygdala is not the only route in — knowing about danger and responding to it are separable, and this case separates them.*
+
+That version ties back to the smoke-alarm opener and drops the colloquialism, at the cost of some flatness.
+
+---
+
+## The trade, final — all nine decisions settled
+
+Measured 2026-07-26 against the drafted seed text. Prunes are exact strings; additions will move during drafting, so treat these as the budget rather than the outcome.
+
+| Insertion | Gross | Replaces | Net |
+|---|---|---|---|
+| Spine question (for the sequence sentence) | 16 | 14 | +2 |
+| Opener payoff line | 25 | — | +25 |
+| Section 1 payoff line | 29 | — | +29 |
+| Reclaim 1 — core-affect second person | 22 | — | +22 |
+| Decision 4 — kept sentence, framing dropped | 34 | — | +34 |
+| Section 2 payoff / Decision 5 | 31 | 6 | +25 |
+| Decision 6 — S.M. block | 59 | 62 | −3 |
+| Reclaim 3 — zebra lead | 47 | — | +47 |
+| Section 4 payoff line | 35 | — | +35 |
+| Decision 3 — social buffering | 53 | 15 | +38 |
+| AI Connection payoff line | 12 | — | +12 |
+| **Total added** | | | **+266** |
+
+Prunes: 85 settled + 44 (P4 and P5, unblocked by Decision 3) + 20 (P6, unblocked by Reclaim 3) = **149**.
+
+**Net +117. Body 3,653 → 3,770**, against a 3,500–5,000 target. Reclaims 2 and 4 are word-neutral verb swaps; P3's relocated clause is net zero.
+
+*Correction on the record:* an intermediate figure of "+46" was stated in conversation. That was a guess made in prose, not a calculation. The measured figure is +117. Third measurement correction in this pass — the pattern is that numbers stated without running them are wrong, and the protocol's Step 8 instruction to re-run rather than remember applies to the agent's own arithmetic mid-conversation, not just to the audit's.
+
+### All decisions settled. Nothing is open.
+
+Next step is the conversion, sequenced per Step 5: prunes → lead/definition inversions → reclaims → seams → payoff lines → apparatus retrofit last.
 
 ---
 

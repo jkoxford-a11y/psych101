@@ -358,16 +358,41 @@ def build():
                ("3,653", "b"),
                (" — the low end of the 3,500 to 5,000 target, not over it. What survived is "
                 "disproportionately boundary prose.", "")])
-    rich(doc, [("Forty per cent of body paragraphs now end on a negation, against 25 per cent "
-                "for Chapter 11 and 22 per cent for Chapter 8. ", ""),
-               ("That proxy overstates the problem by about half and should not be quoted as "
-                "it stands.", "b"),
-               (" Hand-checking, six of eleven flagged paragraphs are correctly calibrated, "
-                "because in this chapter a negation is often the teaching content. “Core "
-                "affect is not a specific emotion” is the concept, not a hedge on it. "
-                "“It is not a single fear button” arrives after a positive claim and "
-                "is a good line. Five are genuine failures, and they fail identically: the "
-                "paragraph never states its conclusion.", "")])
+    para(doc, "Measured on prose paragraphs only — excluding figures, tables and retrieval "
+              "boxes, so the denominator is 5,417 before and 3,273 after. That is a different "
+              "basis from the word-budget figure above, which counts all body content.")
+    datatable(doc, ["Measure, per 1,000 words", "Before", "After", "Change"],
+              [["Second person (you, your)", "12.2", "*5.2", "*−57%"],
+               ["Throat-clearing phrasings banned by the AGENTS style rule",
+                "0.2", "*5.5", "*27×"],
+               ["Paragraphs ending on a negation", "30%", "37%", "+7 pts"]],
+              widths=[3.5, 0.85, 0.85, 1.3])
+    para(doc, "Chapter 12 went from among the most directly addressed chapters in the book — "
+              "level with Chapter 1 at 12.3 — to below its average. The throat-clearing rise "
+              "is the largest of any chapter.")
+    rich(doc, [("This is not a Chapter 12 peculiarity.", "b"),
+               (" The same comparison run across every audited chapter on 2026-07-26 shows "
+                "throat-clearing up in 11 of 11 — not one decreased. Second person fell "
+                "hardest in Chapter 3 (3.5 to 1.2) and Chapter 7 (3.0 to 1.4); paragraphs "
+                "landing on a negation doubled in Chapter 13 (22 to 44 per cent). Eleven "
+                "independent repair passes moving the same direction is the rubric, not the "
+                "chapters.", "")])
+    rich(doc, [("And Chapter 11 is the counter-proof.", "b"),
+               (" It is the only chapter that gained words through its pass, plus 354, and its "
+                "second-person density tripled, 3.9 to 12.9. The spine-seed conversion "
+                "reverses this — which is the argument for doing the register work here rather "
+                "than treating it as a separate later problem.", "")])
+    rich(doc, [("Superseded measure, recorded so it is not re-quoted: ", "i"),
+               ("an earlier draft of this packet led on paragraphs-ending-on-a-negation alone "
+                "(40 per cent against Chapter 11's 25 and Chapter 8's 22). Hand-checking showed "
+                "that proxy overstates by about half — six of eleven flagged paragraphs are "
+                "correctly calibrated, because in this chapter a negation is often the teaching "
+                "content. “Core affect is not a specific emotion” is the concept, not "
+                "a hedge on it. “It is not a single fear button” arrives after a "
+                "positive claim and is a good line. The two measures above make the case "
+                "without that caveat.", "i")])
+    para(doc, "Five paragraphs are genuine failures, and they fail identically: the payoff "
+              "never arrives.")
     datatable(doc, ["Line", "Paragraph", "How it fails"],
               [["L55", "body budget",
                 "Four sentences, three about what the metaphor is not. A student learns the "

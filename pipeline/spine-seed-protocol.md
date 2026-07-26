@@ -99,7 +99,9 @@ Mark as an instructor decision only what genuinely requires his judgment:
 
 Decide yourself, and record rather than ask: sentence-level trims, mechanical reordering, and anything the spine's drafting rules already settle.
 
-*Open question, unresolved as of 2026-07-25:* Chapter 11 produced thirteen instructor decisions across a fourteen-page document. That may be too many of both — a format that routes everything to the instructor trains him to skim the boxes, which defeats them. Candidate fix under consideration: split into a short **decision packet** (instructor, docx) and a **conversion plan** (agent, markdown in `pipeline/`). Pending the instructor's read of the Ch11 packet. Resolve this before the protocol is applied to Chapter 12.
+*Resolved 2026-07-26 (Chapter 12).* The instructor kept the **single-packet** format rather than splitting it. The fix for the skim problem is to hold the **decision count** down, not the page count — Ch12 ran nine decisions across fourteen pages, and everything the agent could settle itself went into a *Recorded, not asked* section in the same file. That worked; the split is not needed.
+
+**But nine boxes was still not the binding constraint.** The instructor's actual objection was *"hard to make decisions with the info available."* A decision box that names a prune as "P4, L121, journaling/friendship/therapy — whole, 27 words" requires him to open the source, find the line, read around it and reconstruct the context — nine times. See *Delivery format* for what a box has to contain instead.
 
 ## Step 7 — Record decisions in place
 
@@ -132,8 +134,27 @@ Requirements for the packet:
 - An index of all decisions at the front, so the instructor sees the scope before starting.
 - Cuts and closed items in visually distinct callouts, not buried in prose.
 - No inline code formatting or markdown syntax anywhere in the rendered text.
+- **Every decision quotes the current text in full, shows the proposal in place, and names what is lost.** A line number and a five-word label is not a decidable unit — it makes the instructor reconstruct the context the packet should have supplied. Added 2026-07-26 after the Ch12 packet was returned with *"hard to make decisions with the info available."* This makes the document longer and answerable, which is the right trade.
+- **Say when a decision is not independent.** Ch12 listed two prunes separately that were in fact the second half of a thread decision — cutting them without the thread would have left an unbounded claim, which is worse than the disclaimer being cut. Couplings are part of the decision.
 
-Build with `docx` (npm); render to PDF and read the pages before delivering. Never ship an unrendered packet.
+Build with `docx` (npm) or `python-docx`; render to PDF and read the pages before delivering. Never ship an unrendered packet.
+
+**Never rebuild a packet in place once it has been sent.** Any revision goes to a new filename — the convention `Chapter_11_Social_Psychology_Line_Edit_MARKED_2026-07-26.docx` already followed. Recorded 2026-07-26 because the Ch12 packet was rebuilt over the instructor's entered answers and they were unrecoverable: git held only the clean pre-review blob and Word left no remnant. Confirming "the file is closed" is not sufficient — the file being closed says nothing about whether it was saved.
+
+## Step 9 — Check the apparatus against the converted body
+
+Prose passes rewrite the body and leave learning objectives, review questions, the summary, key terms, and the Connections table describing the chapter that used to be there. Run both validators against the markdown after conversion:
+
+```bash
+python pipeline/check_chapter_coherence.py source/chapters/chNN-*.md
+python pipeline/lint_chapters.py
+```
+
+`lint_chapters.py` checks structure on generated HTML and passes all fourteen chapters; it cannot see this class of problem. See `AGENTS.md` → *The apparatus must be re-checked against the body after any prose pass* for what each report means.
+
+**The Ch11 evidence for why this is a required step, not a nicety.** After its conversion, Objective 5 and the Chapter Summary both taught *"multiple levels of explanation"* — the framing the instructor cut as Decision 9 — while seven threads the chapter now teaches were named in no objective at all, including the chapter's own spine question frame.
+
+**Objectives are pedagogical commitments. Propose, never edit silently.** The check surfaces drift; the instructor resolves it. Apparatus retrofit still runs last, so the prompts test the chapter as it finally reads.
 
 ---
 

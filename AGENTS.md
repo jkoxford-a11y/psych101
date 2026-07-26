@@ -227,6 +227,28 @@ has already cut.
 - Validate Further Reading items are separated.
 - Validate review/details structure is preserved.
 
+### The apparatus must be re-checked against the body after any prose pass
+
+**Two validators, and they catch different things.** `pipeline/lint_chapters.py` checks *structure* on generated HTML — required sections, review-question counts, anchors, alt text. It passes all fourteen chapters. `pipeline/check_chapter_coherence.py` checks *whether the apparatus still describes the chapter*, on the authoritative markdown. Run both.
+
+```bash
+python pipeline/check_chapter_coherence.py source/chapters/chNN-*.md
+python pipeline/lint_chapters.py
+```
+
+**Why this exists.** A conversion or repair pass rewrites the body and leaves learning objectives, review questions, the summary, key terms, and the Connections table describing the chapter that used to be there. After Chapter 11's conversion, Objective 5 and the Chapter Summary both taught *"multiple levels of explanation"* — the framing the instructor had cut — while seven threads the chapter now teaches were named in no objective at all. Nothing in the existing linter can see that.
+
+What it reports:
+
+- **FAIL** — provable. A citation with no reference entry; a reference never cited; a key term defined but absent from the body; the apparatus testing a study the body no longer contains.
+- **REVIEW** — judgement. A spine thread taught but named in no objective; a thread absent from the summary; a bolded term with no glossary entry; a missing spine question; a Connections anchor matching no heading; counts outside target.
+
+**REVIEW findings are not defects.** A thread can be deliberately unnamed — but that should be a decision, not an oversight. Surfacing it is the point.
+
+**Objectives are pedagogical commitments: never edit them silently.** When the check shows objective drift, propose the change and let the instructor decide. This is a standing post-conversion instructor step, not an agent fix.
+
+**Known limitation:** parenthetical citations of institutional authors and of surnames with a particle ("de Gelder", "van den Pol") can mis-key and appear as missing references. Eyeball that class; extend `ORGS` in the script as new institutional authors appear.
+
 ## Logging
 
 For major completed tasks, add a concise entry to `GPT_project_log.md`. Do not include private chain-of-thought.
