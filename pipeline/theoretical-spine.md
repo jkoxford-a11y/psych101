@@ -568,7 +568,9 @@ The predicted within/between asymmetry (§3, with Oxford, Ponzi, & Geary, 2010) 
 
 ### Ch. 12 — Emotion, Stress & Coping
 
-**Student-facing spine question:** *How does the body decide what matters?*
+**Student-facing spine question:** *So how does your body decide what matters — and why won't it always stand down?*
+
+*Revised 2026-07-26 at the instructor's direction during the Ch. 12 seed pass. The previous wording — "How does the body decide what matters?" — framed Sections 1 and 2 cleanly and left stress and coping to follow on. The second clause is what earns its keep: the back half of the chapter is mobilization that does not get called off. Second person replaces the third, matching the chapter's register. Installed at the end of the smoke-alarm opener, replacing a table-of-contents sentence.*
 
 **Social baseline theory — seeded here from the Ch. 11 pass (2026-07-25).** Other people are not only predicted and predicting; they can become part of the organism's own regulatory architecture. Coan and Beckes (2011) argue the brain treats social proximity as a baseline operating resource — reliable others lower the neural and physiological cost of threat and effortful self-regulation, with Coan, Schaefer, and Davidson (2006) as the anchor study. For this chapter the teaching line is that social support is not only emotional comfort: it changes what the regulatory system has to spend. This connects the coping material back to Ch. 11's belonging thread and gives "social support" a mechanism rather than a platitude. *Routed here rather than into Ch. 11 because it would have become a third-category taxonomy in that chapter's longest section; see §8 Ch. 11 notes for the placement reasoning. Literature in `theoretical-foundations.md` §22.*
 

@@ -1,6 +1,6 @@
 # Psych101 — Current Handoff
 
-**Last updated:** 2026-07-25
+**Last updated:** 2026-07-26
 **Canonical repository:** `C:\GitHub\psych101`
 
 This file records current state only. See `GPT_project_log.md` for completed-work history, `PROJECT_BACKLOG.md` for durable deferred work, and `AGENTS.md` for the chapter voice-conversion workflow and all conventions.
@@ -10,20 +10,28 @@ This file records current state only. See `GPT_project_log.md` for completed-wor
 **The chapter review process now has two distinct stages, and this is the main thing to understand before picking up work.**
 
 1. **Pre-review audit** (`pipeline/chapter-pre-review-audit-prompt.md`) — diagnoses conceptual, evidentiary, figure, and scope problems. Produces `pipeline/audits/chNN-pre-review-audit.md`. Repairs follow.
-2. **Spine seeding** (`pipeline/spine-seed-protocol.md`, new this session) — runs *after* repairs and *before* prose drafting. Diagnoses spine-disconnection mechanically, drafts per-section seeds, and routes framing decisions to the instructor as an editable Word packet. Prose drafting starts only when the packet comes back.
+2. **Spine seeding** (`pipeline/spine-seed-protocol.md`, added 2026-07-25) — runs *after* repairs and *before* prose drafting. Diagnoses spine-disconnection mechanically, drafts per-section seeds, and routes framing decisions to the instructor as an editable Word packet. Prose drafting starts only when the packet comes back.
 
 The second stage exists because reading the Layer 3 notes and then drafting makes the framing decisions silently, and hands the instructor prose to react to rather than a lens to choose. `AGENTS.md` → `## Style` → *Install the spine* now points at the protocol.
 
-**Chapter 11 is converted and awaiting the instructor's line edit.** The full spine conversion was applied to `source/chapters/ch11-social-psychology.md` after the instructor returned thirteen decisions on the seed packet. The chapter's student-facing spine question was replaced at his direction — *"Why do we care what other people think — and what makes that stop?"* — and `pipeline/theoretical-spine.md` §8 was updated to match. The line-edit packet is `line-edit-packets/Chapter_11_Social_Psychology_Line_Edit.docx`; the residue list scoping that pass is `pipeline/audits/ch11-conversion-residue-2026-07-25.md`.
+3. **The apparatus is now checked against the body after every prose pass.** `pipeline/check_chapter_coherence.py`, new 2026-07-26, runs on the authoritative markdown. `lint_chapters.py` checks structure on generated HTML and passes all fourteen chapters; it cannot see apparatus drift. Run both. See `AGENTS.md` → *The apparatus must be re-checked against the body after any prose pass* and protocol Step 9.
 
-**Chapters 10 and prior are stable.** The Chapter 10 finalization and the repository-hygiene pass described in the previous handoff both landed (commits `9b42ef2` and `1b6379e`). Durable cautions carried forward: the Chapter 6 and Chapter 7 image lanes remain paused; deployed human spot-checks for figure-expansion, Signal Detection, and Learning Labs remain for release validation. Stage exact paths; do not use `git add .`.
+**Audits are no longer authoritative on register.** Their must-preserve and must-correct findings are content commitments and stand; their prescriptions about hedging and qualification are superseded by `AGENTS.md` → `## Style`. Established 2026-07-26 after the Chapter 12 repair pass was traced as the cause of that chapter's voice loss. The rule is in `AGENTS.md` → *Audits are diagnostic, not authoritative*, and the underlying finding is that throat-clearing rose in **11 of 11** audited chapters and fell in none.
+
+**Chapter 12 is converted and awaiting the instructor's line edit.** All nine seed decisions were settled in conversation on 2026-07-26 and the conversion is applied to `source/chapters/ch12-emotion-stress-coping.md`, with HTML regenerated. Voice recovered: second person 4.5 → 10.6 per thousand words, throat-clearing 4.9 → 2.5, negation-final paragraphs 41% → 34%. The record of every decision and the reasoning for what was cut is `pipeline/ch12-spine-seeds.md`. Packets: `line-edit-packets/Chapter_12_Emotion_Stress_Coping_Line_Edit_POST_CONVERSION_2026-07-26.docx` for the line edit, `Chapter_12_Spine_Seeds_DECISIONS_2026-07-26.docx` for the decision record.
+
+**Chapter 11 is converted, line-edit round one applied, awaiting round two.** Spine question replaced at the instructor's direction — *"Why do we care what other people think — and what makes that stop?"* Packets: `Chapter_11_Social_Psychology_Line_Edit.docx` and the instructor's marked copy `..._MARKED_2026-07-26.docx`. Residue list: `pipeline/audits/ch11-conversion-residue-2026-07-25.md`.
+
+**Chapters 10 and prior are stable.** Durable cautions carried forward: the Chapter 6 and Chapter 7 image lanes remain paused; deployed human spot-checks for figure-expansion, Signal Detection, and Learning Labs remain for release validation.
+
+**Two git cautions.** Stage exact paths; never `git add .` — the working tree permanently shows three `docs/images/ch03/` files as modified because they are text notes with `.png` extensions colliding with the `*.png binary` rule in `.gitattributes`. Renaming them to `.txt` would retire this and is an open instructor decision in the backlog. And **`git status` strands `.git/index.lock` under the sandbox mount** — `CLAUDE.md` still says read-only git commands are safe, which is wrong for `status`. The instructor must delete the lock by hand before any further git operation.
 
 ## Immediate next actions
 
-1. **Instructor line-edits `Chapter_11_Social_Psychology_Line_Edit.docx`**, scoped by the residue report. Nothing downstream should start first.
-2. **After that edit, in this order:** reconcile the markup into the source → update Learning Objectives (see below) → apparatus retrofit → regenerate HTML → re-lint.
-3. **Settle the seed-packet packaging question** before applying the protocol to Chapter 12. Chapter 11's packet ran to thirteen decisions across fourteen pages; the open proposal is to split it into a short instructor decision packet and a separate agent-facing conversion plan. Recorded as unresolved in `pipeline/spine-seed-protocol.md` → Step 6.
-4. **Apply the protocol to Chapters 12 and 13.** Chapter 12 has a seed waiting: social baseline theory (Coan & Beckes) was promoted to the spine this session and deliberately routed to Ch. 12 rather than Ch. 11 — see `theoretical-spine.md` §8, Ch. 12 notes.
+1. **Instructor line-edits Chapter 12** — `Chapter_12_Emotion_Stress_Coping_Line_Edit_POST_CONVERSION_2026-07-26.docx`. One thing to look at specifically: the constructionism boundary sentence at the head of Section 2 sits between a heading and a large table and may still read as a stub.
+2. **Decide whether Chapter 12 gets the ED–SC layer now or waits on Chapter 1.** The backlog assigns Ch12 the ultimate ground for social-evaluative stress, and Oxford, Ponzi & Geary (2010) is a cortisol finding on exactly this chapter's subject — the chapter invokes socially evaluated threat three times without saying why social evaluation is threatening. Left out of the conversion because the backlog sequences proximate/ultimate into Chapter 1 first. Deciding this before the line edit avoids a second pass over the same paragraphs.
+3. **Apply the protocol to Chapter 13** — next in queue and third-worst on the voice measures, with negation-final paragraphs doubled 22% → 44% on a 51% cut. Its packet must quote current text beside every proposal; a packet of line numbers and short labels was returned as undecidable. Chapters 5 and 3 outrank several chapters ahead of them on damage (Ch3 lost two-thirds of its second person).
+4. **Review the twelve hard failures the new coherence check found in other chapters.** Nobody has looked at them. Includes the Chapter 8 double-hyphen anchor defect and key-term orphans in seven chapters.
 5. Keep the Chapter 6 and Chapter 7 image lanes paused unless reopened; complete the deferred figure-expansion, Signal Detection, and Learning Lab human spot checks at release validation.
 
 ## Chapter 11 — specific open items

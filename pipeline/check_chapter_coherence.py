@@ -161,17 +161,17 @@ def _surname(s: str) -> str:
 def citation_keys(text: str) -> set[tuple[str, str]]:
     """(surname, year) pairs from parenthetical and narrative citations."""
     keys = set()
-    for m in re.finditer(r"\(([^()]{0,200}?(?:19|20)\d{2}[a-z]?[^()]{0,200}?)\)", text):
+    for m in re.finditer(r"\(([^()]{0,200}?(?:1[6-9]|20)\d{2}[a-z]?[^()]{0,200}?)\)", text):
         inner = m.group(1)
         for cm in re.finditer(
                 r"([A-Z][^\W\d_][\w’'\-]*?[\w’'\-]+)(?:\s*(?:,|&|and|et al\.)\s*[A-Z][A-Za-z’'\-.]*)*"
-                r"[^;]*?((?:19|20)\d{2})", inner):
+                r"[^;]*?((?:1[6-9]|20)\d{2})", inner):
             keys.add((_surname(cm.group(1)), cm.group(2)))
     # narrative: "Festinger and Carlsmith (1959)", "Milgram's (1963)", "Adolphs et al. (1994)"
     for m in re.finditer(r"\b((?:Le|La|Van|Von|De|Den|Der|Du|Da|Di|El)\s+)?"
                          r"([A-Z][^\W\d_][\w’'\-]*?[\w’'\-]*)(?:’s|'s|’)?"
                          r"(?:\s+(?:et al\.|and\s+[A-Z][^\W\d_][\w’'\-]*?[\w’'\-]+|&\s*[A-Z][^\W\d_][\w’'\-]*?[\w’'\-]+))?"
-                         r"(?:’s|'s)?\s*\(((?:19|20)\d{2})", text):
+                         r"(?:’s|'s)?\s*\(((?:1[6-9]|20)\d{2})", text):
         particle, name, year = m.group(1), m.group(2), m.group(3)
         if name in NOT_NAMES:
             continue
@@ -268,7 +268,7 @@ def check(path: Path):
             continue
         candidates = {n for n in proper_nouns(blk)
                       if _surname(n) in author_names
-                      or re.search(re.escape(n) + r"(?:’s|'s)?\s*\((?:19|20)\d{2}", blk)}
+                      or re.search(re.escape(n) + r"(?:’s|'s)?\s*\((?:1[6-9]|20)\d{2}", blk)}
         for n in sorted(candidates):
             if _surname(n) not in {_surname(x) for x in proper_nouns(body)} \
                     and _surname(n) not in bn:

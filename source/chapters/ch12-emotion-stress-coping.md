@@ -15,7 +15,9 @@ Constructionism will organize this chapter because it gives us a useful question
 > **Do Not Confuse: Constructed Does Not Mean Fake or Chosen**
 > A constructed emotion is not imaginary, arbitrary, or consciously selected. Much of the process is automatic. The practical point is not "decide to feel differently." It is that bodily condition, context, concepts, and coping actions can change the conditions under which emotion unfolds.
 
-Emotion is not irrational noise pasted onto thought. It helps organize attention and action around what matters. Stress mobilizes the body when demands press against coping resources. Coping works best when the response fits the demand. This chapter follows that sequence from regulation to emotion to stress to action.
+Emotion is not irrational noise pasted onto thought. It helps organize attention and action around what matters. The alarm in your kitchen reacts to smoke; you react to what smoke might mean—and nobody arrives at that with the same history. Stress mobilizes the body when demands press against coping resources. Coping works best when the response fits the demand.
+
+So how does your body decide what matters—and why won't it always stand down?
 
 ---
 
@@ -33,8 +35,10 @@ By the end of this chapter, you should be able to:
 2. Distinguish core affect from a specific emotion and separate shared findings from a constructionist interpretation.
 3. Compare major emotion theories and explain what Patient S.M. does—and does not—show about the amygdala and fear.
 4. Describe emotional granularity and affect labeling at the level supported by current evidence.
-5. Distinguish rapid SAM activation from slower HPA activation, acute adaptive stress from chronic dysregulation, and historical GAS from allostatic load.
-6. Select and sequence coping strategies based on controllability, current arousal, timing, resources, and flexibility.
+5. Explain why a remembered, imagined, or socially evaluated threat can mobilize the body much as a present one does, using the cognitive light cone.
+6. Distinguish rapid SAM activation from slower HPA activation.
+7. Distinguish acute adaptive stress from chronic dysregulation, and historical GAS from allostatic load.
+8. Select and sequence coping strategies based on controllability, current arousal, timing, resources, and flexibility, and explain how a reliable other changes what a demand costs to handle.
 
 ---
 
@@ -46,13 +50,15 @@ You probably learned that the body maintains conditions such as temperature, blo
 
 **Allostasis** emphasizes a complementary fact: organisms also anticipate needs and adjust before a serious deviation occurs. You may become hungry before energy stores are critically low, or alert before an expected demand. In Sterling's (2012) formulation, the brain helps coordinate these anticipatory adjustments using prior experience and present information.
 
-The thermostat contrast is a teaching simplification, but a useful one. Homeostasis resembles a thermostat responding when the room cools. Allostasis resembles a system that knows your schedule and preheats the room. Real regulation uses both anticipation and feedback. One did not make the other obsolete.
+The thermostat contrast is a teaching simplification, but a useful one. Homeostasis resembles a thermostat that kicks on when the house gets cold. Allostasis resembles a thermostat that learns your schedule and preheats the house before you wake up. Real regulation uses both anticipation and feedback; one did not make the other obsolete.
+
+By the time you feel anything, your body has already moved. Feeling is not the report on what happened—it is part of getting ready for what might.
 
 ### The body budget is a framework, not an account balance
 
 Barrett (2017a) uses **body budget** as a metaphor for the conditions that make regulation easier or harder. Sleep, hydration, nutrition, movement, recovery time, social connection, workload, uncertainty, and illness can all alter what the body must manage. "Deposits" and "withdrawals" make those influences memorable.
 
-Here is the boundary: these conditions do not sit in one literal tank, and they cannot be converted into a single measurable balance. Social support is not metabolically interchangeable with glucose. A missed meal does not produce the same physiological change as a tense week. The framework is valuable because multiple conditions interact—not because one hidden meter explains every uncomfortable feeling.
+Here is the boundary: these conditions do not sit in one literal tank, and they cannot be converted into a single measurable balance. Social support is not metabolically interchangeable with glucose. The framework is valuable because multiple conditions interact.
 
 ![Balanced diagram labeled Body budget is a metaphor. Five supportive conditions—sleep, food and water, movement, social support, and recovery—appear on one side; five demands—workload, uncertainty, isolation, missed meals, and poor sleep—appear on the other. Arrows converge on present bodily condition and regulatory demand, with a note that the influences interact but are not one measurable account.](../../docs/images/ch12/fig_body_budget_deposits_withdrawals.png)
 *Figure 12.1. The body-budget framework organizes conditions that can support regulation and conditions that add demand. These influences interact, but they are not one literal resource tank. Original figure.*
@@ -66,26 +72,40 @@ James Russell's (1980) model of **core affect** describes a broad background sta
 - **Valence**: pleasant to unpleasant
 - **Arousal**: activated to deactivated
 
-You can be unpleasant and activated, as in agitation; pleasant and activated, as in excitement; unpleasant and deactivated, as in fatigue; or pleasant and deactivated, as in calm. Core affect is not a specific emotion. It does not by itself tell you whether high-arousal unpleasantness is fear, anger, embarrassment, or something else.
+You can be unpleasant and activated, as in agitation; pleasant and activated, as in excitement; unpleasant and deactivated, as in fatigue; or pleasant and deactivated, as in calm. Right now, reading this, you are somewhere on that map—perhaps mildly pleasant and moderately aroused; perhaps slightly unpleasant and low-arousal. Core affect is not a specific emotion.
+
+Two numbers—pleasant or not, wound up or not—standing in for everything happening in a body. It is why you can be certain you feel terrible and have no idea why.
 
 Constructionists interpret core affect as one ingredient the brain can categorize in context. Other emotion theories use dimensional feeling without accepting the stronger claim that every emotion is built from the same ingredients. The two-dimensional description is the shared model; what role it plays in producing emotion is theoretical.
 
 ![Circumplex diagram with arousal running from low to high and valence from unpleasant to pleasant. Examples include anxious and angry in high-arousal unpleasant space, energized and excited in high-arousal pleasant space, sad and fatigued in low-arousal unpleasant space, and calm and content in low-arousal pleasant space. A central label says core affect is not a specific emotion.](../../docs/images/ch12/fig_core_affect_circumplex.png)
 *Figure 12.2. Russell's circumplex describes broad dimensions of current feeling. Valence and arousal locate core affect; they do not, by themselves, specify an emotion. Original figure.*
 
-Sleep loss, hunger, social isolation, and sustained workload can each affect feeling and regulation, but not necessarily through one demonstrated body-budget mechanism. For example, experimental sleep loss reliably reduces positive affect and increases anxiety symptoms, while findings for negative affect vary with the kind of sleep loss and outcome measured (Palmer et al., 2024). Practical relevance does not require turning ordinary fatigue or distress into a physiological diagnosis.
+Sleep loss, hunger, social isolation, and sustained workload can each affect feeling and regulation. Experimental sleep loss reliably reduces positive affect and increases anxiety symptoms, while findings for negative affect vary with the kind of sleep loss and outcome measured (Palmer et al., 2024). Change the conditions and you change the starting point every feeling is built from.
 
 > **Stop and Retrieve:** Explain why homeostasis and allostasis are complementary. Then name the two dimensions of core affect and give two different emotions that could occupy the same region of the circumplex.
 
-> **Think About It:** A class discussion feels unusually irritating after a short night of sleep. What can you reasonably infer about bodily condition and emotion—and what can you *not* diagnose from that one moment?
+> **Think About It:** A class discussion feels unusually irritating after a short night of sleep. What can you reasonably infer about bodily condition and emotion—and what can you *not* diagnose from that one moment? Practical relevance does not require turning ordinary fatigue or distress into a physiological diagnosis; say where that line falls.
 
 ---
 
 ## Section 2: How Does a Feeling Become an Emotion?
 
+### The word you reach for changes what you do next
+
+"I feel bad" tells you nothing about what to do next. "I'm disappointed" tells you to revise an expectation. "I'm frustrated" tells you to change the approach. Same discomfort, different instructions.
+
+**Emotional granularity** is the degree to which someone distinguishes among emotional states. Compare these labels:
+
+- *Anxious*: an important outcome is uncertain; gather information, plan, or tolerate uncertainty.
+- *Frustrated*: an obstacle blocks a goal; change the approach or address the obstacle.
+- *Disappointed*: an expectation was not met; revise expectations, communicate, or seek another source of support.
+
+Across clinical and nonclinical research, higher granularity is robustly associated with functioning, social outcomes, and lower psychopathology (Ozomaro et al., 2025). The association is not a verdict about cause: better functioning may support granularity, granularity may sometimes support regulation, and both may depend on other skills.
+
 ### One evidence base, several interpretations
 
-Researchers broadly agree that emotional episodes can involve bodily state, appraisal, context, learning, conceptual knowledge, behavior, and distributed brain activity. They disagree about how those contributions are organized. Constructionism is the lens used here, but it is not the only serious contemporary account. This is the theoretical boundary for the section; we will not repeat it after every paragraph.
+Constructionism is the lens used here, but it is not the only serious contemporary account: the approaches below largely agree on what contributes to an emotional episode and disagree about how those contributions are organized (Barrett, 2017b).
 
 | Approach | Central proposal | Durable contribution | Important boundary |
 |---|---|---|---|
@@ -102,23 +122,15 @@ Distributed and multifunctional processing does not mean that every circuit cont
 
 **The question:** What does bilateral amygdala damage change about detecting and experiencing threat?
 
-**The evidence:** Patient S.M. has rare bilateral amygdala damage associated with Urbach–Wiethe disease. She had difficulty recognizing fear in faces (Adolphs et al., 1994). She showed strikingly little fear with live snakes and spiders, in a haunted house, and while viewing frightening films (Feinstein et al., 2011). She also allowed unusually close interpersonal distance (Kennedy et al., 2009). Yet the story changed when threat came from inside the body: inhaling 35% CO₂ triggered fear and a panic attack in S.M. and two other people with bilateral amygdala damage (Feinstein et al., 2013).
+**The evidence:** Patient S.M. handled live snakes and spiders, walked through a haunted house, and watched frightening films with strikingly little fear (Feinstein et al., 2011). She allowed unusually close interpersonal distance (Kennedy et al., 2009) and had difficulty recognizing fear in faces (Adolphs et al., 1994). She has rare bilateral amygdala damage associated with Urbach–Wiethe disease. Yet the story changed when threat came from inside the body: inhaling 35% CO₂ triggered fear and a panic attack in S.M. and two other people with bilateral amygdala damage (Feinstein et al., 2013).
 
-**Why it matters:** The amygdala contributes importantly to detecting and responding to some externally triggered threats. It is not necessary for every experience of fear or panic. The CO₂ result also supplies the specific inferential boundary: one lesion case cannot establish that the amygdala converts surviving facts into felt "mattering." The snakes, faces, personal-space, and respiratory-threat findings together point to multiple routes into fear.
+**Why it matters:** She can tell you the snake is dangerous. She just doesn't mind. Knowing and minding turn out to be two different jobs—and the CO₂ result shows the amygdala is not the only way into the second one. The amygdala contributes importantly to some externally triggered threats; it is not necessary for every experience of fear or panic.
 
-### Affect labeling and emotional granularity
+### Affect labeling
 
-**Affect labeling** means putting a feeling into words. In some laboratory tasks, labeling emotional stimuli changes self-report, task responding, and neural activity, including activity in prefrontal regions and the amygdala (Lieberman et al., 2007; Torre & Lieberman, 2018). The effects depend on task and timing; recent work also shows that labeling can sometimes interfere with later reappraisal (Ariely et al., 2026). The observed result is that labeling can alter responding in some contexts. Reduced prediction error, improved construction, or "quieting the emotional brain" are possible interpretations—not what every experiment directly demonstrated.
+**Affect labeling** means putting a feeling into words. In some laboratory tasks, labeling emotional stimuli changes self-report, task responding, and neural activity, including activity in prefrontal regions and the amygdala (Lieberman et al., 2007; Torre & Lieberman, 2018). The effects depend on task and timing; recent work also shows that labeling can sometimes interfere with later reappraisal (Ariely et al., 2026). The observed result is that labeling can alter responding in some contexts—reduced prediction error and improved construction are interpretations, not findings.
 
-**Emotional granularity** is the degree to which someone distinguishes among emotional states. Compare these labels:
-
-- *Anxious*: an important outcome is uncertain; gather information, plan, or tolerate uncertainty.
-- *Frustrated*: an obstacle blocks a goal; change the approach or address the obstacle.
-- *Disappointed*: an expectation was not met; revise expectations, communicate, or seek another source of support.
-
-That precision can suggest different actions. Across clinical and nonclinical research, higher granularity is robustly associated with functioning, social outcomes, and lower psychopathology (Ozomaro et al., 2025). The association is not a verdict about cause. Better functioning may support granularity, granularity may sometimes support regulation, both may depend on other skills, and evidence about reliable training remains developing.
-
-Journaling, friendship, and therapy can involve emotion language, but their benefits cannot be reduced to one affect-labeling mechanism. A useful tool need not be a master explanation.
+Journaling, friendship, and therapy all put feelings into words, and each does several other things at the same time.
 
 > **Stop and Retrieve:** Which statement is an observation and which is an interpretation? (A) In one task, labeling fearful faces changed reported distress and activity in several brain regions. (B) Labeling worked because the brain reduced prediction error while constructing a more accurate emotion. Explain your choice.
 
@@ -130,11 +142,13 @@ Journaling, friendship, and therapy can involve emotion language, but their bene
 
 ### Appraisal and the cognitive light cone
 
-**Stress** is a pattern of psychological and bodily responses that occurs when a person appraises demands as taxing or exceeding available coping resources (Lazarus & Folkman, 1984). A **stressor** is the event or condition being appraised. **Primary appraisal** asks whether the situation matters and whether it involves harm, threat, or challenge. **Secondary appraisal** concerns coping options and resources.
+A zebra's stress response mobilizes fully for the minute it takes to escape a lion, then shuts off completely once the threat is gone or the zebra is dead (Sapolsky, 2004). Yours doesn't. Your threats are next Tuesday—and they will still be next Tuesday tomorrow.
 
-The same exam can feel manageable when you have time, a plan, and sleep, but overwhelming when you feel unprepared and trapped. The event matters; so does the person–situation relationship.
+You run overlapping machinery on a very different range of things that count as a threat. The same exam can feel manageable when you have time, a plan, and sleep, but overwhelming when you feel unprepared and trapped. The event matters; so does the person–situation relationship.
 
-Michael Levin uses **cognitive light cone** for the spatial and temporal scale of the goals an agent can represent and work toward (Levin, 2019). At a small scale, action may regulate an immediate local condition. A broader horizon can include nearby places and short-term outcomes. Human goals can extend to a distant family member, next year's education, the future of an institution, or an abstract commitment. This is a comparison of goal horizons, not a rigid ladder or one score that captures an organism's entire cognition.
+That relationship has a name. **Stress** is a pattern of psychological and bodily responses that occurs when a person appraises demands as taxing or exceeding available coping resources (Lazarus & Folkman, 1984). A **stressor** is the event or condition being appraised. **Primary appraisal** asks whether the situation matters and whether it involves harm, threat, or challenge. **Secondary appraisal** concerns coping options and resources.
+
+Michael Levin uses **cognitive light cone** for the spatial and temporal scale of the goals an agent can represent and work toward (Levin, 2019). At a small scale, action may regulate an immediate local condition. A broader horizon can include nearby places and short-term outcomes. Human goals can extend to a distant family member, next year's education, the future of an institution, or an abstract commitment.
 
 A broader cognitive light cone is an achievement. It supports planning, cooperation, delayed action, long-term commitments, care for distant others, and collective or abstract goals. The boundary is not merely what an agent can sense or physically reach. It is what can matter enough to organize action.
 
@@ -174,7 +188,7 @@ The **fight-or-flight response** describes rapid mobilization that can support c
 
 Taylor et al. (2000) proposed **tend-and-befriend** to highlight nurturant and affiliative responding that earlier male-centered stress research underemphasized. Average sex differences have been reported, but the pattern is not a female-only system or a third autonomic branch. Men also affiliate; women also fight, flee, and freeze; context and learning matter.
 
-Oxytocin is involved in social behavior, but "the bonding hormone" is too simple. A frequently cited experiment exposed 37 healthy men to a laboratory social stressor after intranasal oxytocin or placebo and with or without support from a friend. The combination produced the lowest cortisol and anxiety responses (Heinrichs et al., 2003). That small experiment does not establish oxytocin as the general mechanism by which social support protects everyone.
+Oxytocin is involved in social behavior, but "the bonding hormone" is too simple. A frequently cited experiment exposed 37 healthy men to a laboratory social stressor after intranasal oxytocin or placebo and with or without support from a friend. The combination produced the lowest cortisol and anxiety responses (Heinrichs et al., 2003)—one small window onto the social buffering Section 4 returns to, and oxytocin is one candidate mediator among several.
 
 > **Stop and Retrieve:** Sort these into the correct category: immediate catecholamine-related cardiovascular mobilization; slower cortisol release; alarm–resistance–exhaustion; cumulative multisystem cost. Use the labels SAM, HPA, historical GAS, and allostatic load once each.
 
@@ -189,7 +203,7 @@ Oxytocin is involved in social behavior, but "the bonding hormone" is too simple
 
 **Problem-focused coping** acts on the stressor: gather information, make a plan, negotiate, practice, change the environment, or remove a demand. **Emotion-focused coping** acts on the response: reappraise, slow breathing, seek support, take a restorative break, or make room for feelings that cannot be solved away.
 
-These are strategies, not personality types. Effective coping depends on controllability, timing, current arousal, available resources, and flexibility.
+There is no best coping strategy, the way there is no best tool. There is only what the situation will let you change—and whether you are currently in a state to change it. These are strategies, not personality types.
 
 | Situation | Useful first move | Why |
 |---|---|---|
@@ -220,7 +234,7 @@ Some actions do not solve a particular stressor but improve the conditions under
 
 **Food and hydration:** Regular access to food and water supports ordinary physiological needs. Research links diet quality with mental-health outcomes, but mechanisms are complex and causal estimates vary (Firth et al., 2019). "Hangry" is a useful joke, not a complete theory of mood.
 
-**Social support:** Relationships can provide information, practical help, perspective, and emotional connection (Cohen & Wills, 1985). Those are several pathways, not one deposit into a literal account. Seeking support can be emotion-focused, problem-focused, or both.
+**Social support:** Relationships can provide information, practical help, perspective, and emotional connection (Cohen & Wills, 1985). Chapter 10 said it already: for a while, the caregiver's regulated body is the infant's regulation system, borrowed from the outside. You never entirely stop borrowing. Across animal models and human studies from infancy into adulthood, the presence of a familiar, reliable other dampens the stress response rather than only making it easier to bear (Hostinar et al., 2014). Reliable people do not only make a hard thing feel better—they change what the hard thing costs you to handle. Seeking support can be emotion-focused, problem-focused, or both.
 
 ### Hedonic adaptation and the Chapter 7 bridge
 
@@ -238,7 +252,7 @@ Current language models can produce empathic, angry, enthusiastic, or distressed
 
 Human emotion occurs in an embodied organism with allostasis, interoception, metabolic needs, developmental history, and social regulation. Current language models do not have human glucose regulation, breathing, cortisol rhythms, fatigue, or interoceptive signals. They can generate a precise label such as "overwhelmed and uncertain" without that label reporting a humanlike bodily state inside the model.
 
-This comparison is deliberately focused. It does not settle every philosophical question about every possible machine. It tells you why fluent emotional language from present systems is not, by itself, evidence of humanlike feeling. Useful as a mirror; not proof of a felt state.
+It can say "overwhelmed" perfectly. It has nothing to be overwhelmed about. That is why fluent emotional language from present systems is not, by itself, evidence of humanlike feeling. Useful as a mirror; not proof of a felt state.
 
 ---
 
@@ -246,13 +260,13 @@ This comparison is deliberately focused. It does not settle every philosophical 
 
 Homeostasis uses feedback to maintain regulated conditions; allostasis emphasizes anticipatory adjustment. Bodies use both. The body budget is a useful metaphor for interacting supports and demands, not a literal account. Interoception brings internal signals into regulation, while Russell's core affect model describes current feeling along valence and arousal. Core affect is not a specific emotion.
 
-Emotion theories agree that bodily state, appraisal, context, learning, conceptual knowledge, and brain systems matter, but disagree about how those pieces are organized. Constructionism is this chapter's organizing lens, not a settled definition. Patient S.M.'s response to external threats shows an important amygdala contribution; CO₂-induced fear and panic show that the amygdala is not required for every route into fear. Affect labeling can alter responding in some contexts, and granularity robustly correlates with functioning, but their mechanisms and trainability remain open questions.
+The word you reach for changes what you do next: "disappointed" points at an expectation, "frustrated" at an approach. Emotion theories agree that bodily state, appraisal, context, learning, conceptual knowledge, and brain systems matter, and disagree about how those pieces are organized; constructionism is this chapter's lens, not a settled definition. Patient S.M. separates knowing from minding—she can state that a snake is dangerous without the alarm arriving—while CO₂-induced panic shows the amygdala is not the only route into fear.
 
-Stress depends on demands, appraisal, coping resources, and time. SAM supports rapid catecholamine-related mobilization; the HPA axis contributes slower cortisol-related regulation. GAS remains a historical heuristic. Allostatic load better captures cumulative, multisystem costs of repeated or unresolved demands and inadequate recovery.
+A zebra's stress response ends when the lion does. Yours can run on a threat that is remembered, imagined, or merely someone's opinion, because human goals reach far enough that absent things can matter now. SAM supports rapid catecholamine-related mobilization; the HPA axis contributes slower cortisol-related regulation. GAS remains a historical heuristic, and allostatic load better captures the cumulative, multisystem cost of demands that repeat without recovery.
 
-Coping works through fit. Change a controllable stressor when you can; regulate the response when you cannot; sometimes regulate first so that action becomes possible. Sleep, movement, nourishment, and relationships can support flexible coping without sharing one magical mechanism.
+Coping works through fit. Change a controllable stressor when you can; regulate the response when you cannot; sometimes regulate first so that action becomes possible. Sleep, movement, and nourishment support the conditions coping happens in—and a reliable person does more than make a hard thing feel better, because borrowed regulation changes what the hard thing costs to handle.
 
-Underneath all of it is a humane point. Your body is not necessarily malfunctioning when it remains activated after finals or reacts strongly during a crowded week. It is an old, mostly effective system operating in a world full of remembered, symbolic, socially evaluated, and chronic threats. Useful in the short run; costly when left running.
+Underneath all of it is a humane point. Your body is not necessarily malfunctioning when it remains activated after finals or reacts strongly during a crowded week. It is an old, mostly excellent system operating in a world full of remembered, symbolic, socially evaluated, and chronic threats. Useful in the short run; costly when left running.
 
 ---
 
@@ -349,9 +363,13 @@ Use emotion-focused coping for the irreversible missed deadline: acknowledge dis
 
 **core affect** — broad feeling described along valence and arousal dimensions
 
+**emotional granularity** — the degree to which a person distinguishes among specific emotional states
+
 **emotion-focused coping** — strategies aimed primarily at regulating the response to a stressor
 
-**emotional granularity** — the degree to which a person distinguishes among specific emotional states
+**emotion-shaped output** — language patterned like human emotional expression, produced without a human body's regulatory state
+
+**fight-or-flight response** — rapid mobilization that can support confrontation or escape
 
 **General Adaptation Syndrome (GAS)** — Selye's historical alarm–resistance–exhaustion heuristic for prolonged stress
 
@@ -365,17 +383,17 @@ Use emotion-focused coping for the irreversible missed deadline: acknowledge dis
 
 **problem-focused coping** — strategies aimed primarily at changing a stressor
 
-**SAM system** — rapid sympathetic–adrenal–medullary activation involving sympathetic nerves and catecholamines
-
 **secondary appraisal** — evaluation of coping options and resources
 
 **stress** — psychological and bodily responding when demands are appraised as taxing or exceeding coping resources
 
 **stressor** — an event or condition appraised as demanding
 
-**theory of constructed emotion** — an influential account in which emotion instances emerge from bodily state, context, learning, and conceptualization
+**sympathetic–adrenal–medullary (SAM) system** — rapid activation involving sympathetic nerves and catecholamines
 
----
+**tend-and-befriend** — nurturant and affiliative responding under stress, proposed to complement fight-or-flight rather than replace it
+
+**theory of constructed emotion** — an influential account in which emotion instances emerge from bodily state, context, learning, and conceptualization
 
 ## Further Reading
 
@@ -397,8 +415,6 @@ Barrett, L. F. (2017a). *How Emotions Are Made: The Secret Life of the Brain*. H
 
 Barrett, L. F. (2017b). The theory of constructed emotion: An active inference account of interoception and categorization. *Social Cognitive and Affective Neuroscience, 12*, 1–23. https://doi.org/10.1093/scan/nsw154
 
-Barrett, L. F., Adolphs, R., Marsella, S., Martinez, A. M., & Pollak, S. D. (2019). Emotional expressions reconsidered: Challenges to inferring emotion from human facial movements. *Psychological Science in the Public Interest, 20*, 1–68. https://doi.org/10.1177/1529100619832930
-
 Brickman, P., Coates, D., & Janoff-Bulman, R. (1978). Lottery winners and accident victims: Is happiness relative? *Journal of Personality and Social Psychology, 36*, 917–927. https://doi.org/10.1037/0022-3514.36.8.917
 
 Cannon, W. B. (1927). The James–Lange theory of emotions: A critical examination and an alternative theory. *American Journal of Psychology, 39*, 106–124.
@@ -413,9 +429,9 @@ Feinstein, J. S., Buzza, C., Hurlemann, R., Follmer, R. L., Dahdaleh, N. S., Cor
 
 Firth, J., Marx, W., Dash, S., Carney, R., Teasdale, S. B., Solmi, M., Stubbs, B., Schuch, F. B., Carvalho, A. F., Jacka, F., & Sarris, J. (2019). The effects of dietary improvement on symptoms of depression and anxiety: A meta-analysis of randomized controlled trials. *Psychosomatic Medicine, 81*, 265–280. https://doi.org/10.1097/PSY.0000000000000673
 
-Gündem, D., Potočnik, J., De Winter, F.-L., et al. (2022). The neurobiological basis of affect is consistent with psychological construction theory and shares a common neural basis across emotional categories. *Communications Biology, 5*, 1354. https://doi.org/10.1038/s42003-022-04324-6
-
 Heinrichs, M., Baumgartner, T., Kirschbaum, C., & Ehlert, U. (2003). Social support and oxytocin interact to suppress cortisol and subjective responses to psychosocial stress. *Biological Psychiatry, 54*, 1389–1398. https://doi.org/10.1016/S0006-3223(03)00465-7
+
+Hostinar, C. E., Sullivan, R. M., & Gunnar, M. R. (2014). Psychobiological mechanisms underlying the social buffering of the hypothalamic–pituitary–adrenocortical axis: A review of animal models and human studies across development. *Psychological Bulletin, 140*(1), 256–282. https://doi.org/10.1037/a0032671
 
 Huang, K., Beckman, E. M., Ng, N., Dingle, G. A., Han, R., James, K. E., Winkler, E., Stylianou, M., & Gomersall, S. R. (2024). Effectiveness of physical activity interventions on undergraduate students' mental health: Systematic review and meta-analysis. *Health Promotion International, 39*(3), daae054. https://doi.org/10.1093/heapro/daae054
 
@@ -440,6 +456,8 @@ Palmer, C. A., Bower, J. L., Cho, K. W., Clementi, M. A., Lau, S., Oosterhoff, B
 Russell, G., & Lightman, S. (2019). The human stress response. *Nature Reviews Endocrinology, 15*, 525–534. https://doi.org/10.1038/s41574-019-0228-0
 
 Russell, J. A. (1980). A circumplex model of affect. *Journal of Personality and Social Psychology, 39*, 1161–1178. https://doi.org/10.1037/h0077714
+
+Sapolsky, R. M. (2004). *Why Zebras Don't Get Ulcers: The Acclaimed Guide to Stress, Stress-Related Diseases, and Coping* (3rd ed.). Holt Paperbacks.
 
 Schachter, S., & Singer, J. E. (1962). Cognitive, social, and physiological determinants of emotional state. *Psychological Review, 69*, 379–399. https://doi.org/10.1037/h0046234
 
