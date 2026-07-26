@@ -33,15 +33,17 @@ Do not maintain the same information in multiple project-state files. If you fin
 - `pipeline/html-conversion-spec.md` defines HTML/render expectations.
 - `source/visuals-inventory.md` tracks figure status (known to drift stale — cross-check per-chapter `docs/images/chXX/README*.md` files).
 
-### Audits are diagnostic, not authoritative
+### Evidence commitments are the only standing constraint on claims
 
-An audit in `pipeline/audits/` diagnoses a chapter as it stood on the audit date. It does not outrank this file.
+`pipeline/evidence-commitments.md` is the book-wide ledger of claims whose *wording is load-bearing* — sentences phrased as they are because the evidence does not support the stronger version. Consult it before softening, sharpening, shortening, or cutting a claim. It is the only file with standing authority over how a claim may be stated.
 
-- **Its must-preserve and must-correct findings are content commitments and stand.** Do not cut a protected asset or reinstate a corrected overclaim because a later pass found it inconvenient.
-- **Its prescriptions about hedging, qualification, and register do not stand.** `## Style` governs those. An audit that conflicts with `## Style` is stale by definition, not a competing authority.
+- **A row binds the claim, not the sentence.** Rewriting freely is fine as long as the bound survives. Adding a row requires a named source and a claim someone would plausibly strengthen back.
 - **A required boundary must be *stated*; where it lands is a register decision, not an accuracy one.** Putting a necessary caveat in the paragraph's final position is a choice, and usually the wrong one — the payoff belongs there. See *Keep the story*.
-- **An audit's measurements go stale the moment repairs land.** Word counts, prompt counts, and section lengths must be re-run against the current source, never quoted from the audit.
-- **Removing an overclaim does not discharge the obligation to replace its teaching function.** This is the failure mode that produces accurate, lifeless prose: the claim goes, nothing takes its place, and the paragraph ends on what is not true rather than on what is. Chapter 12's 2026-07-15 repair pass is the worked example — see the header note on `pipeline/audits/ch12-pre-review-audit.md`.
+- **Removing an overclaim does not discharge the obligation to replace its teaching function.** This is the failure mode that produces accurate, lifeless prose: the claim goes, nothing takes its place, and the paragraph ends on what is not true rather than on what is. Chapter 12's 2026-07-15 repair pass is the worked example.
+- **Nothing in the ledger overrides `## Style`.** It records what must remain true, never how to sound.
+- **Its status column goes stale the moment prose changes.** Re-verify against the current source; never quote it as a present-tense fact about the chapter.
+
+**The pre-review audits are gone, deliberately.** Twelve `pipeline/audits/chNN-pre-review-audit.md` files were extracted into the ledger and deleted on 2026-07-26 (recoverable at `a9dcedd`). They diagnosed drafts that no longer existed and were being read by later passes as standing authorities — which is how eleven chapters acquired hedge-heavy prose that the next pass then had to repair. **Do not resurrect one as a ledger, and do not treat a recovered copy as binding.** If a recovered audit contains a correction the ledger lacks, add the row rather than citing the audit. The remaining files in `pipeline/audits/` are conversion residues, validations, and reconciliations — records of specific passes, not chapter authorities.
 
 ## Style
 

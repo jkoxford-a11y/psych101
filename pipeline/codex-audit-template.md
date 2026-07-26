@@ -38,7 +38,12 @@ Do not use or trust [ANY KNOWN STALE/DUPLICATE COPY PATHS] or any similarly name
 Audit [CHAPTER NUMBER AND TITLE] and produce a written report of findings. This is a
 read-only audit — make no edits to chapter content, HANDOFF.md, or any other file. The
 report itself is the deliverable, written to `[REPORT OUTPUT PATH, e.g.
-pipeline/audits/ch0X-pre-review-audit.md]`.
+pipeline/audits/ch0X-<pass-name>-<date>.md]`.
+
+Note: the `chNN-pre-review-audit.md` lane is retired (see `pipeline/audits/README.md`).
+Do not write a report to that filename, and do not produce a must-preserve or
+must-correct ledger — claim-level constraints belong in
+`pipeline/evidence-commitments.md`, one row per claim, each with a named source.
 
 ## Read first
 - `AGENTS.md`

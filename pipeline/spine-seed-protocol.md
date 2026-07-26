@@ -33,11 +33,13 @@ A thread the spine assigns to the chapter that scores **0** is the finding. It m
 In this order:
 
 1. The chapter's Layer 3 notes and student-facing spine question — `pipeline/theoretical-spine.md` §8.
-2. The chapter's pre-review audit — `pipeline/audits/chNN-pre-review-audit.md`. It names must-preserve assets and repair items; seeds must not contradict either.
+2. The chapter's rows in `pipeline/evidence-commitments.md`. Read only the rows for this chapter; they name the claims whose wording is load-bearing.
 3. The chapter source itself, in full.
 4. The relevant section of `pipeline/theoretical-foundations.md` for anything the spine flags as needing verification.
 
-The audit's **must-preserve and must-correct findings are content commitments and stand** — if a seed would touch a protected asset, say so explicitly in the seed rather than proposing around it. But an audit does **not** outrank `AGENTS.md`: its prescriptions about hedging, qualification, and register are superseded by `## Style`. See `AGENTS.md` → *Audits are diagnostic, not authoritative*.
+**A seed may not unbind a committed claim.** If a seed would restate one of the chapter's rows, say so explicitly in the seed rather than proposing around it. Nothing in the ledger governs register — `AGENTS.md` → `## Style` does. See `AGENTS.md` → *Evidence commitments are the only standing constraint on claims*.
+
+**The pre-review audits were deleted on 2026-07-26** after being extracted into the ledger. Do not go looking for one, and do not treat a copy recovered from git (`a9dcedd`) as authority. They described drafts that no longer exist, and reading them as ledgers is what produced the hedge-heavy prose this protocol exists to repair.
 
 ## Step 3 — Seed structure, per section
 

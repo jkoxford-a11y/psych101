@@ -7,57 +7,89 @@ This file records current state only. See `GPT_project_log.md` for completed-wor
 
 ## Current state
 
-**The chapter review process now has two distinct stages, and this is the main thing to understand before picking up work.**
+**Chapter 13's two blocking framing decisions are settled and the source edits are applied.** Both decisions, the drafts, the rejected alternatives, and the verification run are recorded in the new `pipeline/ch13-spine-seeds.md`. Net +507 body words (3,211 → 3,718), no prunes required.
 
-1. **Pre-review audit** (`pipeline/chapter-pre-review-audit-prompt.md`) — diagnoses conceptual, evidentiary, figure, and scope problems. Produces `pipeline/audits/chNN-pre-review-audit.md`. Repairs follow.
-2. **Spine seeding** (`pipeline/spine-seed-protocol.md`, added 2026-07-25) — runs *after* repairs and *before* prose drafting. Diagnoses spine-disconnection mechanically, drafts per-section seeds, and routes framing decisions to the instructor as an editable Word packet. Prose drafting starts only when the packet comes back.
+What went into `source/chapters/ch13-psychological-disorders-therapy.md`:
 
-The second stage exists because reading the Layer 3 notes and then drafting makes the framing decisions silently, and hands the instructor prose to react to rather than a lens to choose. `AGENTS.md` → `## Style` → *Install the spine* now points at the protocol.
+1. **Decision 1 — proximate/ultimate framing: installed once, bounded, at the opening of Section 2** (*Anxiety, Fear, and Avoidance*), grounded in Nesse (2005). It deliberately does **not** use the words "proximate," "ultimate," or "Tinbergen," because no chapter in the book uses them — Ch. 1 installs the same distinction in plain language instead, and this matches it.
+2. **Decision 2 — the stigma bridge: mechanism built, both rows fixed.** New Section 1 subsection *What a Label Does Outside the Clinic* (public / self / structural stigma → the treatment gap), plus a Section 1 signal-detection paragraph that discharges a promise Ch. 4 had been making unpaid.
+3. Connections table: **added** a Ch. 4 row, **replaced** the factually wrong Ch. 11 row. Key Terms: one stigma entry. Learning objectives renumbered 5 → 7 to cover the new material.
+4. References added: Nesse (2005), Corrigan, Druss & Perlick (2014), Clement et al. (2015). All three verified against source records on 2026-07-26.
 
-3. **The apparatus is now checked against the body after every prose pass.** `pipeline/check_chapter_coherence.py`, new 2026-07-26, runs on the authoritative markdown. `lint_chapters.py` checks structure on generated HTML and passes all fourteen chapters; it cannot see apparatus drift. Run both. See `AGENTS.md` → *The apparatus must be re-checked against the body after any prose pass* and protocol Step 9.
+**The pre-review audit lane is retired.** The twelve `chNN-pre-review-audit.md` reports were extracted into `pipeline/evidence-commitments.md` and deleted; the deletion is confirmed done. The ledger holds only claims whose *wording is load-bearing*. `AGENTS.md` → *Evidence commitments are the only standing constraint on claims* replaces the old *Audits are diagnostic, not authoritative* section. Recovery hash for the deleted audits: `a9dcedd`.
 
-**Audits are no longer authoritative on register.** Their must-preserve and must-correct findings are content commitments and stand; their prescriptions about hedging and qualification are superseded by `AGENTS.md` → `## Style`. Established 2026-07-26 after the Chapter 12 repair pass was traced as the cause of that chapter's voice loss. The rule is in `AGENTS.md` → *Audits are diagnostic, not authoritative*, and the underlying finding is that throat-clearing rose in **11 of 11** audited chapters and fell in none.
+**Chapter 12's seed decisions are settled** — all nine, in `pipeline/ch12-spine-seeds.md` → *DECISIONS RETURNED*. Conversion has not been applied to the source yet.
 
-**Chapter 12 is converted and awaiting the instructor's line edit.** All nine seed decisions were settled in conversation on 2026-07-26 and the conversion is applied to `source/chapters/ch12-emotion-stress-coping.md`, with HTML regenerated. Voice recovered: second person 4.5 → 10.6 per thousand words, throat-clearing 4.9 → 2.5, negation-final paragraphs 41% → 34%. The record of every decision and the reasoning for what was cut is `pipeline/ch12-spine-seeds.md`. Packets: `line-edit-packets/Chapter_12_Emotion_Stress_Coping_Line_Edit_POST_CONVERSION_2026-07-26.docx` for the line edit, `Chapter_12_Spine_Seeds_DECISIONS_2026-07-26.docx` for the decision record.
+**Chapter 11 is converted and awaiting the instructor's line edit.** Packet: `line-edit-packets/Chapter_11_Social_Psychology_Line_Edit.docx`; marked copy `..._MARKED_2026-07-26.docx`. Residue: `pipeline/audits/ch11-conversion-residue-2026-07-25.md`.
 
-**Chapter 11 is converted, line-edit round one applied, awaiting round two.** Spine question replaced at the instructor's direction — *"Why do we care what other people think — and what makes that stop?"* Packets: `Chapter_11_Social_Psychology_Line_Edit.docx` and the instructor's marked copy `..._MARKED_2026-07-26.docx`. Residue list: `pipeline/audits/ch11-conversion-residue-2026-07-25.md`.
-
-**Chapters 10 and prior are stable.** Durable cautions carried forward: the Chapter 6 and Chapter 7 image lanes remain paused; deployed human spot-checks for figure-expansion, Signal Detection, and Learning Labs remain for release validation.
-
-**Two git cautions.** Stage exact paths; never `git add .` — the working tree permanently shows three `docs/images/ch03/` files as modified because they are text notes with `.png` extensions colliding with the `*.png binary` rule in `.gitattributes`. Renaming them to `.txt` would retire this and is an open instructor decision in the backlog. And **`git status` strands `.git/index.lock` under the sandbox mount** — `CLAUDE.md` still says read-only git commands are safe, which is wrong for `status`. The instructor must delete the lock by hand before any further git operation.
+**Chapters 10 and prior are stable.** Chapter 6 and Chapter 7 image lanes remain paused. Deferred human spot-checks for figure-expansion, Signal Detection, and Learning Labs remain for release validation.
 
 ## Immediate next actions
 
-1. **Instructor line-edits Chapter 12** — `Chapter_12_Emotion_Stress_Coping_Line_Edit_POST_CONVERSION_2026-07-26.docx`. One thing to look at specifically: the constructionism boundary sentence at the head of Section 2 sits between a heading and a large table and may still read as a stub.
-2. **Decide whether Chapter 12 gets the ED–SC layer now or waits on Chapter 1.** The backlog assigns Ch12 the ultimate ground for social-evaluative stress, and Oxford, Ponzi & Geary (2010) is a cortisol finding on exactly this chapter's subject — the chapter invokes socially evaluated threat three times without saying why social evaluation is threatening. Left out of the conversion because the backlog sequences proximate/ultimate into Chapter 1 first. Deciding this before the line edit avoids a second pass over the same paragraphs.
-3. **Apply the protocol to Chapter 13** — next in queue and third-worst on the voice measures, with negation-final paragraphs doubled 22% → 44% on a 51% cut. Its packet must quote current text beside every proposal; a packet of line numbers and short labels was returned as undecidable. Chapters 5 and 3 outrank several chapters ahead of them on damage (Ch3 lost two-thirds of its second person).
-4. **Review the twelve hard failures the new coherence check found in other chapters.** Nobody has looked at them. Includes the Chapter 8 double-hyphen anchor defect and key-term orphans in seven chapters.
-5. Keep the Chapter 6 and Chapter 7 image lanes paused unless reopened; complete the deferred figure-expansion, Signal Detection, and Learning Lab human spot checks at release validation.
+1. **Stage and commit the Chapter 13 work.** Exact paths, nothing else:
+   - `source/chapters/ch13-psychological-disorders-therapy.md`
+   - `pipeline/ch13-spine-seeds.md`
+   - `pipeline/build_chapter_html.mjs`
+   - `docs/chapters/13-disorders-therapy.html`
+   - `HANDOFF.md`
+2. **Decide the mixed review-question format question** (below). It is the one remaining lint warning on Ch. 13 and it silently drops five multiple-choice questions from the built page.
+3. **Register chapters 1, 6, 7 and the prologue** in the builder, on the same flagless spec, so their HTML stops drifting from source.
+4. **Apply the Chapter 12 conversion** from its settled decisions.
+5. **Instructor line-edits Chapter 11**, scoped by the residue report; then reconcile → objectives → apparatus retrofit → regenerate HTML → re-lint.
+6. Keep the Chapter 6 and Chapter 7 image lanes paused unless reopened.
 
-## Chapter 11 — specific open items
+## Builder — Chapter 13 registered, on the common spec, no flags
 
-- **Learning objectives were not touched** and now omit three threads the chapter teaches: belonging, beliefs-transmitted vs. feelings-conditioned, and the caring/not-caring frame. The pre-review audit separately asked for objectives 7–8 to be consolidated. Both are pedagogical commitments and the instructor's call.
-- **Apparatus retrofit is pending by design.** Four Stop and Retrieve, two Think About It, three Do Not Confuse, and seventeen review questions mostly test term discrimination rather than relations. The protocol runs this last so the prompts test the chapter as it finally reads.
-- **HTML is behind the source.** The AI Connection moved from a top-level section to a subsection at the end of Section 3, so its heading level changed from `##` to `###` and its anchor will move on regeneration. The linter currently passes against the *old* build — that result is stale.
-- **Word count is up 22%** (7,071 → 8,648). Reviewed and accepted by the instructor rather than compressed: what was removed was catalog, what was added is narrative. Revisit only if the chapter reads long in practice. Longest stretches are Section 1 (1,275) and Section 2 (1,380).
+**Resolved this session.** `pipeline/build_chapter_html.mjs` had no config for Ch. 13, so `docs/chapters/13-disorders-therapy.html` was frozen at **2026-07-19**. Ch. 13 is now registered with **source, output, title, pillar and nothing else** — the same shape as chapters 2, 3, 9, 10, 11 and 12. HTML regenerated and re-linted.
+
+The rebuild reproduces the previous structure exactly (8 figures, 3 Do-Not-Confuse callouts, 4 tables, 12 h2), plus the new subsection and its Stop and Retrieve. **Ch. 13 never needed per-chapter flags** — verified against its markdown: all 8 images carry `*Figure 13.N.` captions, Do-Not-Confuse are blockquotes rather than h4, and every section has ≥2 subheadings so the nav threshold is moot.
+
+**Why the flags exist at all, since the instruction is one spec for every chapter.** Only chapters 4, 5 and 8 carry them, and they are not spec variation — they are compatibility shims for markdown written before the convention settled. `matchAnyItalicFigureCaption` loosens the caption rule to accept *any* italic paragraph after an image; `convertStructuredH4Callouts` catches Do-Not-Confuse written as `<h4>` instead of a blockquote; `wrapCaptionlessFigures`, `convertLabCallouts` and `promoteSubheadings` are Ch. 4 only. **Turning them on globally would be actively harmful** — `matchAnyItalicFigureCaption` would silently convert legitimate italic prose following an image into a figure caption. The route to one spec is to normalize the source of 4, 5 and 8 and then delete the shims, not to spread them. `minimumSectionNavLinks` is the one genuine design inconsistency (2 for chapters 4/5/8, default 1 elsewhere) and should become a uniform default in the function signature.
+
+**Still unregistered:** chapters **1, 6, 7 and the prologue**. Same staleness risk, same caveat below.
+
+- **`lint_chapters.py` reads `docs/chapters/*.html`, not the Markdown source.** A PASS for an unregistered chapter is a pass on a stale artifact and says nothing about current source.
+
+### Open builder decision — mixed review-question types
+
+Ch. 13 lints clean except one warning: `review-q-count 5 found (spec wants 8-12)`. The source has **10** questions. Only 5 convert.
+
+The cause is a builder limitation, not a Ch. 13 authoring error. The parser has two branches. Branch 1 matches *question → `<details>`* and handles open-response. Branch 2 handles multiple choice in Ch. 4's format (`**N.**`, `a)` options, `*Answer:*`, `---` separators) — but it runs only `if (!questions.length)`, i.e. only when branch 1 matched nothing at all. **A chapter that mixes multiple-choice and open-response questions therefore cannot work.** Ch. 13 is the first chapter to mix them: its 5 open-response questions convert, its 5 multiple-choice questions are silently dropped.
+
+Every other chapter is uniform — Ch. 11 and Ch. 12 are all open-response, Ch. 4 is all multiple choice. Two ways forward, and this needs a decision:
+
+1. **Extend branch 1** to accept lettered options between the question and its `<details>`, giving one format that covers both question types. Touches parsing shared by all 14 chapters.
+2. **Reformat Ch. 13's 5 multiple-choice questions** into Ch. 4's branch-2 format — which does not work either, because branch 2 is unreachable once branch 1 matches anything.
+
+Option 1 is the only one that actually resolves it. Not done unilaterally: it changes shared parsing.
+
+## Chapter 13 — what is still open, none of it blocking
+
+1. **The five maintenance-lens disclaimers.** Decision 1 installs the framing that the 2026-07-15 repair pass over-hedged against, but it does not by itself remove the hedges. Separate cleanup, still wanted.
+2. **Register.** Measured after this session's edits: **1.3 second-person uses per 1,000 body words** — the lowest in the book by a wide margin (Ch. 12 post-repair was 5.2; Ch. 11 post-conversion 12.9). About half of body paragraphs still end on a negation. The additions did not worsen this (seven paragraphs added, one ending on a negation, deliberately — see the seed file's verification note), but the pre-existing problem is untouched.
+3. **Does the spine question move into the opener?** *"When does a protective model become costly?"* still appears only in figure captions and alt text, never in body prose. Ch. 12 precedent says move it.
+4. **Section 3 is 435 words**, roughly a third of its neighbours. Its position — that neurodevelopmental conditions are not maintenance loops — is correct and worth keeping; whether that justifies the length is a separate question.
+5. **Grupe & Nitschke (2013)** remains open for Ch. 13 in `evidence-commitments.md`. The Decision 1 install does not use it.
+6. **Opener prevalence figure** says "roughly one in five U.S. adults." NIMH's current figure is 23.1%. The existing hedge covers it; the phrasing is on the low side of the source.
 
 ## Repository notes
 
-- **Three files in `docs/images/ch03/` are not images.** Despite `.png` extensions, "Info for Figure 35 02 04.png" and two siblings are UTF-8 text notes. They produce a recurring ~10-byte CRLF phantom diff because `.gitattributes` now marks `*.png` binary while the committed blobs are LF-normalized. No image data is at risk. They will keep reappearing as modified until renamed to `.txt` or the one-time renormalization runs.
-- **Chapter 8 has three broken internal anchors.** Its own cross-links use double hyphens (`section-1-encoding--building-the-trace`) while the generated IDs collapse to single. Self-contained, three links, small fix.
-- Deferred and needing an instructor decision, all in `PROJECT_BACKLOG.md` → Repository and workflow: removing ~20 MB of unreferenced images that deploy to the live site from `docs/`; the numeric commit messages; and the one-time `git add --renormalize .`.
+- **Five reference-list entries in Ch. 13 are never cited in text** — Barth et al. (2013), Beck et al. (1979), Craske et al. (2014), Linehan (1993), Rogers (1957). Pre-existing, not introduced this session. Linehan and Rogers are discussed by name in prose without a parenthetical; the other three are unused. Either cite them or move them to Further Reading.
+- **`pipeline/evidence-commitments.md` has one OPEN row** — Ch. 10's life-history mosaic point (short interbirth intervals and high reproductive output alongside slow development) was requested and is not in the source.
+- **Three files in `docs/images/ch03/` are not images.** Despite `.png` extensions they are UTF-8 text notes, producing a recurring ~10-byte CRLF phantom diff. They reappear as modified until renamed to `.txt` or the one-time renormalization runs.
+- **Chapter 8 has three broken internal anchors** — cross-links use double hyphens where generated IDs collapse to single. Confirmed still failing in the current lint run.
+- **`git status` is not safe under the Cowork mount** — it takes `.git/index.lock` like a write command and cannot release it. Safe read-only commands are `git log`, `git diff`, `git show`, `git rev-list`. Stage exact paths; never `git add .`.
+- Deferred and needing a decision, in `PROJECT_BACKLOG.md`: removing ~20 MB of unreferenced images from `docs/`; the numeric commit messages; the one-time `git add --renormalize .`; and the twelve unreviewed coherence-check failures.
 
 ## Important files
 
-- **Spine-seed protocol:** `pipeline/spine-seed-protocol.md`
+- **Chapter 13 seeds, settled decisions, and verification run:** `pipeline/ch13-spine-seeds.md`
+- **Evidence commitments (claim-level constraints, book-wide):** `pipeline/evidence-commitments.md`
+- Spine-seed protocol: `pipeline/spine-seed-protocol.md`; paste-ready prompt: `pipeline/spine-seed-prompt.md`
 - Chapter voice-conversion workflow: `AGENTS.md` → `## Style`
 - Chapter 11 seeds and decision record: `pipeline/ch11-spine-seeds.md`
+- Chapter 12 seeds and settled decisions: `pipeline/ch12-spine-seeds.md`
 - Chapter 11 conversion residue: `pipeline/audits/ch11-conversion-residue-2026-07-25.md`
-- Chapter 11 pre-review audit: `pipeline/audits/ch11-pre-review-audit.md`
-- Theoretical spine (Layer 3 + drafting rules): `pipeline/theoretical-spine.md`; deeper elaborations in `pipeline/theoretical-foundations.md` (§22 covers social prediction), `GPT_spine.md`, `pipeline/concepts-semanticization-log.md`
-- Chapter 10 verification-residue report: `pipeline/audits/ch10-claude-draft-verification-residue-2026-07-25.md`
-- Chapters 7–13 packet-preparation record: `pipeline/audits/ch07-ch13-line-edit-packet-structural-prep-2026-07-22.md`
-- Shared builder: `pipeline/build_chapter_html.mjs`; line-edit packet builder: `pipeline/build_line_edit_docx.py`
-- Repository-wide lab audit/regression: `pipeline/audits/learning-lab-state-restoration-audit.md`, `pipeline/learning_lab_state_regression.cjs`
+- Theoretical spine (Layer 3 + drafting rules): `pipeline/theoretical-spine.md`; elaborations in `pipeline/theoretical-foundations.md`, `GPT_spine.md`, `pipeline/concepts-semanticization-log.md`
+- Shared builder: `pipeline/build_chapter_html.mjs` (**no Ch. 13 config — see blocker above**); line-edit packet builder: `pipeline/build_line_edit_docx.py`
 - Durable deferred work: `PROJECT_BACKLOG.md`
-- Paused Chapter 7 image lane: `pipeline/audits/ch07-image-work-pause-2026-07-17.md`

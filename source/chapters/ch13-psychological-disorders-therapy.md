@@ -36,10 +36,12 @@ One recurring lens remains useful: an ordinary process can become rigid or poorl
 By the end of this chapter, you should be able to:
 
 1. Explain what diagnosis does and does not establish, using duration, impairment, context, exclusions, and differential evidence.
-2. Apply diathesis-stress and biopsychosocial reasoning without treating either framework as a single cause or literal score.
-3. Distinguish representative anxiety, mood, psychotic, substance-use, personality, and neurodevelopmental patterns while calibrating mechanistic claims.
-4. Explain how avoidance, compulsions, and behavioral withdrawal can maintain selected problems without treating maintenance as origin.
-5. Evaluate psychological, medication, and somatic treatments by indication, evidence, risks, client preferences, access, and clinical context.
+2. Describe diagnosis as a decision under uncertainty in which the placement of a criterion determines whether misses or false alarms are more common.
+3. Distinguish public, self, and structural stigma, and explain how each affects whether a person seeks care.
+4. Apply diathesis-stress and biopsychosocial reasoning without treating either framework as a single cause or literal score.
+5. Distinguish representative anxiety, mood, psychotic, substance-use, personality, and neurodevelopmental patterns while calibrating mechanistic claims.
+6. Explain how avoidance, compulsions, and behavioral withdrawal can maintain selected problems without treating maintenance as origin.
+7. Evaluate psychological, medication, and somatic treatments by indication, evidence, risks, client preferences, access, and clinical context.
 
 ---
 
@@ -79,9 +81,23 @@ Diagnostic categories are useful because they compress information. Compression 
 
 **Diagnostic overshadowing** occurs when a physical symptom is incorrectly attributed to a psychiatric condition or disability, delaying investigation of another cause. Interviews with clinicians in four emergency departments documented examples and the practical pressures that make this error more likely (Shefer et al., 2014). The lesson is not “labels are useless.” It is that a useful classification must not replace continued causal investigation.
 
+Chapter 4 gave this trade-off a name. A clinician deciding whether a pattern is a disorder is running a detection problem under uncertainty, with four possible outcomes: a hit, a miss, a false alarm, and a correct rejection. Where the criterion sits determines which error happens more often. Set it loose and more people receive a diagnosis who would have been fine, along with treatment they did not need. Set it strict and more people who are suffering are told to wait. No setting eliminates both errors, so the real question is which error is worse in this case — a judgment about consequences, not a fact the symptoms contain.
+
 Rosenhan’s 1973 hospital study remains historically famous, but later investigation identified serious questions about its records and reported participants (Cahalan, 2019). It is best treated as a contested episode in the history of diagnosis—not clean proof that psychiatric classification is impossible.
 
 > **Stop and Retrieve:** A clinician and a diagnosis manual agree that a patient meets criteria for panic disorder. What has been established? What still has to be investigated?
+
+### What a Label Does Outside the Clinic
+
+A diagnosis also travels. It changes how other people treat the person who has it, and how that person treats themselves. If you have ever hesitated to tell someone about a health problem because of what they might conclude about you, you already know the mechanism from the inside.
+
+Researchers separate three versions. **Public stigma** is what the general population believes and does—the stereotype, the wariness, the hiring decision. **Self-stigma** is what happens when a person absorbs those beliefs and turns them inward, which costs self-esteem and the sense of being worth helping. **Structural stigma** is the version built into institutions: insurance rules, staffing levels, research funding, where the clinic is and what it looks like (Corrigan, Druss, & Perlick, 2014).
+
+The consequence shows up in who gets care. A systematic review of quantitative and qualitative studies found that stigma is associated with delaying or avoiding help, and identified the route it takes: people conceal the problem rather than disclose it, because disclosure is what applies the label (Clement et al., 2015). About half of U.S. adults with a mental illness received any mental health treatment in the past year (NIMH, 2024). Availability explains part of that gap. Anticipated judgment explains another part, and it is the part a course like this one can move.
+
+This is where Chapter 11 becomes directly useful. Stigma runs on the machinery that chapter describes: stereotypes applied to a category, social identity that makes the category feel like a different kind of person, and contact between groups as one of the better-evidenced ways to weaken the effect. A diagnosis creates a category. Chapter 11 explains what people do with categories.
+
+> **Stop and Retrieve:** Name the three forms of stigma and give one example of each. Which of the three would a public-awareness campaign be least able to change on its own?
 
 ### Vulnerability, Context, and Probability
 
@@ -104,7 +120,11 @@ The **biopsychosocial model** widens the frame further. Biological, psychologica
 
 ### Anxiety, Fear, and Avoidance
 
-**Fear** responds to a present threat. **Anxiety** anticipates a possible threat. Both are normal. Anxiety disorders involve patterns that are excessive or persistent relative to context and that cause clinically significant distress or impairment.
+**Fear** responds to a present threat. **Anxiety** anticipates a possible threat. Both are normal.
+
+Chapter 4 introduced the trade-off any detector faces under uncertainty: shifting a criterion to catch more real signals also produces more false alarms. Threat detection faces that trade-off with lopsided stakes. A false alarm wastes effort. A miss can end the organism. Natural selection sets the criterion accordingly, so systems that anticipate danger are built to over-detect it (Nesse, 2005).
+
+That is why the clinical question is calibration, not presence. Anxiety disorders involve anticipatory patterns that are excessive or persistent relative to context and that cause clinically significant distress or impairment. The system is doing its job at the wrong setting.
 
 | Pattern | Central feature | What not to infer |
 |---|---|---|
@@ -274,18 +294,19 @@ Treatment is a matching problem. Psychotherapy alliance predicts outcome, while 
 
 ---
 
-## Connections to Other Chapters
+## Connections
 
 | This chapter | Connects to | How |
 |---|---|---|
 | Diagnosis versus explanation | Chapter 2 | Reliability, validity, measurement, and inference are different questions |
+| Diagnosis under uncertainty | Chapter 4 | Hits, misses, and false alarms describe clinical decisions; where the criterion sits reflects which error is worse |
 | Neural and genetic vulnerability | Chapter 3 | Biological factors influence probability without becoming one-region or one-chemical explanations |
 | Panic, substances, and altered states | Chapter 5 | Bodily state and substances can mimic or modify psychological symptoms |
 | Avoidance and compulsions | Chapter 7 | Negative reinforcement can maintain behavior through immediate relief |
 | PTSD and depression | Chapter 8 | Memory is constructive; retrieval and context matter without making one memory mechanism universal |
 | Diagnostic anchoring | Chapter 9 | Labels can guide attention and produce premature closure |
 | Neurodevelopment | Chapter 10 | Developmental timing and trajectories matter for ADHD and autism |
-| Stigma, alliance, and support | Chapter 11 | Social judgment and relationships influence help-seeking and treatment |
+| Stigma and social categorization | Chapter 11 | Stereotypes, social identity, and contact explain what happens once a diagnosis creates a category |
 | Chronic demands and coping | Chapter 12 | Stress and coping alter risk and resources without defining a disorder |
 
 ---
@@ -376,6 +397,7 @@ Treatment is a matching problem. Psychotherapy alliance predicts outcome, while 
 - **Maintenance process** — Process that helps a problem continue, which may differ from the process that originally produced it.
 - **Negative reinforcement** — Strengthening behavior by removing or reducing an aversive state.
 - **Positive and negative symptoms** — In schizophrenia, experiences added to functioning versus capacities reduced.
+- **Stigma (public, self, structural)** — Negative beliefs and responses attached to a category: held by others, turned inward by the person, or built into institutions.
 - **Substance-use disorder (SUD)** — Clinically significant pattern of impaired control, continued use despite harm, or related functional problems.
 - **Therapeutic alliance** — Collaborative working relationship involving bond, goals, and tasks.
 - **Three Ds** — Distress, dysfunction, and deviance; introductory questions rather than a formal universal diagnostic checklist.
@@ -408,6 +430,10 @@ Cardno, A. G., & Gottesman, I. I. (2000). Twin studies of schizophrenia: From bo
 
 Cipriani, A., Furukawa, T. A., Salanti, G., Chaimani, A., Atkinson, L. Z., Ogawa, Y., et al. (2018). Comparative efficacy and acceptability of 21 antidepressant drugs for the acute treatment of adults with major depressive disorder: A systematic review and network meta-analysis. *The Lancet, 391*(10128), 1357–1366. https://doi.org/10.1016/S0140-6736(17)32802-7
 
+Clement, S., Schauman, O., Graham, T., Maggioni, F., Evans-Lacko, S., Bezborodovs, N., Morgan, C., Rüsch, N., Brown, J. S. L., & Thornicroft, G. (2015). What is the impact of mental health-related stigma on help-seeking? A systematic review of quantitative and qualitative studies. *Psychological Medicine, 45*(1), 11–27. https://doi.org/10.1017/S0033291714000129
+
+Corrigan, P. W., Druss, B. G., & Perlick, D. A. (2014). The impact of mental illness stigma on seeking and participating in mental health care. *Psychological Science in the Public Interest, 15*(2), 37–70. https://doi.org/10.1177/1529100614531398
+
 Craske, M. G., Treanor, M., Conway, C. C., Zbozinek, T., & Vervliet, B. (2014). Maximizing exposure therapy: An inhibitory learning approach. *Behaviour Research and Therapy, 58*, 10–23. https://doi.org/10.1016/j.brat.2014.04.006
 
 Flückiger, C., Del Re, A. C., Wampold, B. E., & Horvath, A. O. (2018). The alliance in adult psychotherapy: A meta-analytic synthesis. *Psychotherapy, 55*(4), 316–340. https://doi.org/10.1037/pst0000172
@@ -425,6 +451,8 @@ National Institute for Health and Care Excellence. (2022). *Depression in adults
 National Institute of Mental Health. (2024). *Mental illness.* https://www.nimh.nih.gov/health/statistics/mental-illness
 
 National Institute on Drug Abuse. (2020). *Treatment and recovery.* https://nida.nih.gov/publications/drugs-brains-behavior-science-addiction/treatment-recovery
+
+Nesse, R. M. (2005). Natural selection and the regulation of defenses: A signal detection analysis of the smoke detector principle. *Evolution and Human Behavior, 26*(1), 88–105. https://doi.org/10.1016/j.evolhumbehav.2004.08.002
 
 Regier, D. A., Narrow, W. E., Clarke, D. E., Kraemer, H. C., Kuramoto, S. J., Kuhl, E. A., & Kupfer, D. J. (2013). DSM-5 field trials in the United States and Canada, Part II: Test-retest reliability of selected categorical diagnoses. *American Journal of Psychiatry, 170*(1), 59–70. https://doi.org/10.1176/appi.ajp.2012.12070999
 

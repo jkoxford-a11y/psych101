@@ -10,6 +10,24 @@ Repository rules and conventions live in `AGENTS.md`, not here. Current state an
 
 ## Log Entries
 
+### 2026-07-26 - Pre-Review Audits Retired and Extracted into a Book-Wide Evidence Ledger (Claude)
+
+- **Scope:** Replaced twelve `pipeline/audits/chNN-pre-review-audit.md` reports with one file, `pipeline/evidence-commitments.md`. Arose during the Chapter 13 spine-seed pass, when the protocol's Step 2 instruction to read the chapter's audit as a content commitment led the agent to treat a document describing a superseded draft as a live ledger. The instructor's proposal was to delete the audits outright; the counter-argument that they hold the only record of *why* seven Ch13 evidentiary corrections were made was accepted, and the resolution was extraction rather than either deletion or a stale-marker header.
+
+- **The distinction the file is built on:** an audit contains claims about *the world* (a correction traceable to a source — permanent) and claims about *the draft* (counts, objectives, figure decisions, executive judgments — stale the moment repairs land). Only the first was carried across. The audits' evidence-standing *opinions* — ratings like "speculative as a chapter-wide adaptive theory" — were deliberately excluded: they are one auditor's read of a literature, and giving them a permanent home would relaunder them as authority in a new location, which is the failure being ended.
+
+- **Why deletion rather than the Ch12 scope-note pattern:** that pattern was decided on 2026-07-26 for Ch12 and applied to exactly one of twelve files; the other eleven carried no staleness marker at all. The measured consequence is book-wide — banned throat-clearing phrasings rose in 11 of 11 audited chapters and fell in none. A warning label on a document that is still being read as a ledger does not change how it is read.
+
+- **Verification:** 92 extracted commitments were grep-checked against the current chapter sources. 82 verified installed. Eight were satisfied by removal of the material (Ch5 opioid/GABA/appetite passages, Ch8 rereading, Ch9 attribute substitution and the stereotype-threat mechanism, Ch13 Tang et al. and Blumberg). One was a false negative in the check, not a gap — Ch11's Figures 11.6–11.7 use "Conceptual illustration; no empirical values are shown," which the search string missed. **One genuine OPEN row:** Ch10's life-history mosaic point — that slow development coexists with relatively short interbirth intervals and high reproductive output compared with other apes — was requested by the audit and is absent from the source. The superlative wording it was meant to correct *was* fixed ("of any primate"), so this is an unreplaced teaching function, not an uncorrected error.
+
+- **Files changed:** `pipeline/evidence-commitments.md` (new); `AGENTS.md` (`### Audits are diagnostic, not authoritative` replaced by `### Evidence commitments are the only standing constraint on claims`); `pipeline/spine-seed-protocol.md` Step 2; `pipeline/spine-seed-prompt.md` item 2; `pipeline/audits/README.md` (rewritten — the lane is retired, the rubrics are history, do not run them); `pipeline/codex-audit-template.md` (report path and a prohibition on producing new must-preserve ledgers); `HANDOFF.md`; this log.
+
+- **Not completed:** the twelve audit files are still on disk. The Cowork sandbox mount can create files inside the repo but cannot unlink them, so deletion must run natively. Recovery hash recorded in three places: `a9dcedd`.
+
+- **Left deliberately unedited:** historical references to the audits in `GPT_project_log.md`, `HANDOFF-ARCHIVE.md`, completed work-orders, and other files in `pipeline/audits/`. Those describe what happened during past passes and are accurate as history; rewriting them would be falsifying the record. Only live pointers were repaired.
+
+- **Remaining:** Chapter 13 seeding is blocked on two instructor decisions recorded in `HANDOFF.md` — the proximate/ultimate framing collision between `theoretical-spine.md` §3 and the repair pass, and the Ch13 Connections row that still promises Chapter 11 covers stigma, which it no longer does. The second is a factual error in shipped text, not a framing preference.
+
 ### 2026-07-26 - Chapter 12 Converted to the Spine; Apparatus Coherence Check Added to the Workflow (Claude)
 
 - **Scope:** Ran the spine-seed pass on Chapter 12, settled all nine decisions with the instructor, applied the conversion to the source, and built a new validator for a failure class nothing in the repository could see.

@@ -71,6 +71,12 @@ const chapters = {
     convertStructuredH4Callouts: true,
     minimumSectionNavLinks: 2,
   },
+  "13": {
+    source: "source/chapters/ch13-psychological-disorders-therapy.md",
+    output: "docs/chapters/13-disorders-therapy.html",
+    title: "Psychological Disorders & Therapy",
+    pillar: "Mental & Physical Health",
+  },
 };
 
 const selected = process.argv.slice(2);
