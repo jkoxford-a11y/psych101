@@ -16,7 +16,6 @@ const chapters = {
     convertLabCallouts: true,
     convertStructuredH4Callouts: true,
     promoteSubheadings: true,
-    minimumSectionNavLinks: 2,
   },
   "5": {
     source: "source/chapters/ch05-consciousness.md",
@@ -24,7 +23,6 @@ const chapters = {
     title: "Consciousness — Processing, Experience, and Access",
     pillar: "Biological",
     matchAnyItalicFigureCaption: true,
-    minimumSectionNavLinks: 2,
   },
   "3": {
   source: "source/chapters/ch03-neuroscience-biological-bases.md",
@@ -69,7 +67,6 @@ const chapters = {
     pillar: "Cognitive",
     matchAnyItalicFigureCaption: true,
     convertStructuredH4Callouts: true,
-    minimumSectionNavLinks: 2,
   },
   "13": {
     source: "source/chapters/ch13-psychological-disorders-therapy.md",
@@ -103,6 +100,39 @@ function renderDetails(raw) {
   return `<details>\n<summary>${summary}</summary>\n<div class="answer">${answer}</div>\n</details>`;
 }
 
+function renderReviewQuestions(body) {
+  const questions = [];
+  const headerPattern = /^(?:\*\*(\d+)\.\*\*|(\d+)\.)\s+([^\r\n]+)\r?$/gm;
+  const headers = [...body.matchAll(headerPattern)];
+
+  for (let index = 0; index < headers.length; index += 1) {
+    const header = headers[index];
+    const number = header[1] || header[2];
+    const blockEnd = index + 1 < headers.length ? headers[index + 1].index : body.length;
+    const block = body.slice(header.index + header[0].length, blockEnd);
+    const details = block.match(/<details>[\s\S]*?<\/details>/i);
+    const legacyAnswer = block.match(/^\*Answer:\s*([\s\S]*?)\*\s*$/m);
+    if (!details && !legacyAnswer) {
+      throw new Error(`Review question ${number} has no supported answer block`);
+    }
+
+    const answerStart = details?.index ?? legacyAnswer.index;
+    const prompt = block.slice(0, answerStart);
+    const options = [...prompt.matchAll(/^[ \t]*([a-z])[\.)][ \t]+(.+?)[ \t]*\r?$/gm)];
+    const optionHtml = options.length
+      ? `<ol class="options" type="a">\n${options.map((option) => `<li>${marked.parseInline(option[2].trim())}</li>`).join("\n")}\n</ol>\n`
+      : "";
+
+    const answerHtml = details
+      ? renderDetails(details[0])
+      : `<details>\n<summary>Show answer &amp; rationale</summary>\n<div class="answer"><p><strong>Answer:</strong> ${marked.parseInline(legacyAnswer[1].trim())}</p></div>\n</details>`;
+
+    questions.push(`<div class="review-q">\n<p><strong>${number}.</strong> ${marked.parseInline(header[3].trim())}</p>\n${optionHtml}${answerHtml}\n</div>`);
+  }
+
+  return questions;
+}
+
 function preprocess(markdown) {
   let text = markdown.replace(/^# .+\r?\n/, "");
   // Author-only notes and multiline work comments must never reach student HTML.
@@ -128,25 +158,7 @@ function preprocess(markdown) {
   text = text.replace(
     /(## Review Questions\s*\n)([\s\S]*?)(?=\n## )/,
     (_all, heading, body) => {
-      const questions = [];
-      const pattern = /(?:^|\n)\s*(?:\*\*(\d+)\.\*\*|(\d+)\.)\s+([^\n]+)\s*\n\s*(<details>[\s\S]*?<\/details>)/g;
-      let match;
-      while ((match = pattern.exec(body))) {
-        const number = match[1] || match[2];
-        questions.push(`<div class="review-q">\n<p><strong>${number}.</strong> ${marked.parseInline(match[3].trim())}</p>\n${renderDetails(match[4])}\n</div>`);
-      }
-
-      if (!questions.length) {
-        for (const block of body.split(/\n---\s*\n/)) {
-          const question = block.match(/^\s*\*\*(\d+)\.\*\*\s+([^\n]+)/);
-          const answer = block.match(/^\*Answer:\s*([\s\S]*?)\*\s*$/m);
-          if (!question || !answer) continue;
-          const options = [...block.matchAll(/^[a-d]\)\s+(.+)$/gm)];
-          if (!options.length) continue;
-          const optionHtml = options.map((option) => `<li>${marked.parseInline(option[1].trim())}</li>`).join("\n");
-          questions.push(`<div class="review-q">\n<p><strong>${question[1]}.</strong> ${marked.parseInline(question[2].trim())}</p>\n<ol class="options" type="a">\n${optionHtml}\n</ol>\n<details>\n<summary>Show answer &amp; rationale</summary>\n<div class="answer"><p><strong>Answer:</strong> ${marked.parseInline(answer[1].trim())}</p></div>\n</details>\n</div>`);
-        }
-      }
+      const questions = renderReviewQuestions(body);
       return `${heading}\n${questions.join("\n")}\n`;
     },
   );
@@ -364,7 +376,7 @@ function wrapSpecialSections(html) {
   return html;
 }
 
-function addSectionNav(html, minimumLinks = 1) {
+function addSectionNav(html, minimumLinks = 2) {
   return html.replace(/(<h2 id="(section-[^"]+)">[\s\S]*?<\/h2>)([\s\S]*?)(?=<h2 |$)/g, (_all, heading, _id, section) => {
     const links = [];
     for (const match of section.matchAll(/<h3 id="([^"]+)">([\s\S]*?)<\/h3>/g)) {

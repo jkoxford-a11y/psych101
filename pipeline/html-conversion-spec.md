@@ -435,7 +435,9 @@ The `href` in the concept link should point to the `id` of the section where the
 
 ## 12. Review Questions
 
-Each question uses this pattern:
+Review Questions may be **multiple-choice**, **open-response**, or a **mix of both formats in the same section**. Every numbered question uses its own `.review-q` block and includes one `<details>` answer block.
+
+Multiple-choice questions use this pattern:
 
 ```html
 <div class="review-q">
@@ -456,6 +458,22 @@ Each question uses this pattern:
 ```
 
 Note: `type="a"` on the `<ol>` renders letters (a, b, c, d). Do not use a different list type.
+
+Open-response questions omit the options list rather than emitting an empty one:
+
+```html
+<div class="review-q">
+  <p><strong>N.</strong> Open-response question?</p>
+  <details>
+    <summary>Model answer</summary>
+    <div class="answer">
+      <p>Model-answer text.</p>
+    </div>
+  </details>
+</div>
+```
+
+In a mixed-format section, preserve source order and apply the appropriate structure to each numbered question independently.
 
 ---
 
@@ -527,7 +545,8 @@ References are alphabetical by first author's last name. The hanging-indent is h
 | `callout--classic` | `callout--classic-study` |
 | `callout--ai` | `callout--ai-connection` |
 | Missing `id="misconception-opener"` on the opener div | Always add this id |
-| Omitting `type="a"` on review question option lists | Always include |
+| Omitting `type="a"` on multiple-choice option lists | Always include it for multiple-choice questions |
+| Emitting an empty options list for an open-response question | Omit `<ol class="options">`; keep the question's `<details>` model answer |
 | Forgetting `<script src="../js/nav.js"></script>` before `</body>` | Always include |
 | Guessing a figure filename or demo URL | Leave a comment placeholder instead |
 | Sidebar not copied exactly | Copy §2 verbatim; only add `class="active"` |
@@ -548,7 +567,7 @@ Before saving the final HTML file, confirm:
 - [ ] All callout variant class names match the table in §4 exactly
 - [ ] All `<h2>` elements have `id` attributes
 - [ ] Each numbered content section has 2–4 descriptively-titled `<h3>` subsections with `id` attributes, and an `.in-section-nav` block (labeled "In this section," scoped to that section only) immediately after the `<h2>`
-- [ ] All review questions use `<ol class="options" type="a">` and `<details>/<summary>`
+- [ ] Every review question uses `<details>/<summary>`; multiple-choice questions use `<ol class="options" type="a">`, and open-response questions do not emit an empty options list
 - [ ] Key terms use `<dl class="key-terms">`, not a bullet list
 - [ ] No broken `<img>` tags — placeholder comments instead
 - [ ] No placeholder `<iframe>` tags — placeholder comments instead
