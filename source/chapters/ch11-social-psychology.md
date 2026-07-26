@@ -6,9 +6,9 @@
 
 ## Misconception Opener: “I Would Never Do That”
 
-In 1963, Stanley Milgram recruited adults for what they believed was a study of memory and learning at Yale University. Each participant became the “teacher.” Every time the learner in the next room made an error, the teacher was instructed to press a switch delivering a stronger electric shock. The shocks were fake, the learner was a confederate, and the cries of pain were recorded. The participants did not know that.
+In 1963, Stanley Milgram recruited adults for what they believed was a study of memory and learning at Yale University. Each participant became the “teacher.” Every time the learner in the next room made an error, the teacher was instructed to press a switch delivering a stronger electric shock. The shocks were fake, the learner was a confederate (i.e., an actor working for the experimenter), and the cries of pain were recorded. The participants did not know that.
 
-Sixty-five percent continued to the final 450-volt switch. Before the study, Milgram asked psychiatrists to predict how many people would go that far. Their average prediction was about one person in a thousand.
+Sixty-five percent continued to the final 450-volt switch—a switch the generator labeled only **XXX**, two positions past *Danger: Severe Shock*. Before the study, Milgram asked psychiatrists to predict how many people would go that far: average prediction, one in a thousand.
 
 Most people hear this result and say some version of the same thing: *I would never do that.*
 
@@ -46,7 +46,7 @@ By the end of this chapter, you should be able to:
 
 ### Attribution: Finding a Cause
 
-A driver cuts you off. Before you have decided to think anything, you have already thought it: *reckless jerk.* Not “person rushing someone to the hospital.” You did not weigh the two. One arrived, and it arrived as a fact about the driver.
+A driver cuts you off. Before you have decided to think anything, you have already thought it: *reckless jerk.* Not “person rushing someone to the hospital.” You did not weigh the two. Only one arrived.
 
 You do this because you have to. Other people matter too much to wait on, and you will never have enough information before you must act. So you build a whole personality out of a single frame.
 
@@ -160,7 +160,9 @@ How big the effect is turns out to depend on who is in the room and when they li
 >
 > **Setup:** Participants believed they were helping study punishment and learning. The “teacher” sat at a shock generator with 30 switches from 15 to 450 volts. The learner, actually a confederate, answered questions from another room. Each error required a stronger shock.
 >
-> At 300 volts, the learner pounded on the wall. At 315 volts, another pound. Then silence. When participants hesitated, the experimenter used a sequence of prods ranging from “Please continue” to “You have no other choice; you must go on.”
+> The labels on the generator matter. The switches ran from *Slight Shock* up through *Intense* and *Extreme Intensity* to *Danger: Severe Shock*—and then two final switches marked only **XXX**. Participants were not pressing abstract numbers. They were pressing past the point the apparatus itself refused to name.
+>
+> At 300 volts, the learner pounded on the wall. At 315 volts, another pound. Then silence—and the silence is the point. From that switch onward, every participant who continued was shocking a man who had stopped responding. When participants hesitated, the experimenter used a sequence of prods ranging from “Please continue” to “You have no other choice; you must go on.”
 >
 > ![Figure 11.3: The Milgram setup. The participant sits with the experimenter at a shock generator while the learner is heard but not seen in another room.](../../docs/images/ch11/fig_milgram_obedience_setup.png)
 >
@@ -268,11 +270,11 @@ Later meta-analysis found that contact often helps even when every condition is 
 
 Polarization, groupthink, in-group favoritism, the pull of a norm: each is a mechanism, and so far none of them has been given a motive. Why should a group's opinion of you be able to move you at all?
 
-Because a group cannot sanction you unless belonging to it is worth something. Baumeister and Leary (1995) argued that the drive to form and maintain bonds is basic equipment rather than a preference—and that threats to a bond get treated as urgent almost regardless of what was violated. The specific rules are cultural and vary everywhere. The cost of being outside varies nowhere.
+Because a group cannot sanction you unless belonging to it is worth something—and for most of human history, it was worth everything. A person alone could not raise a child, survive an injury, or hold territory against anyone who arrived in a group. Whatever else our ancestors were adapted to, they were adapted to needing each other. So the drive to form and keep bonds is not a preference the research discovered; it is equipment, and threats to a bond get treated as urgent almost regardless of what was violated (Baumeister & Leary, 1995). The specific rules are cultural and vary everywhere. The cost of being outside varies nowhere.
 
 That single stake explains why several of this chapter's phenomena all pull in the same direction. Group membership regulates how you see yourself, so a threat to the group is a threat to you. Reputation is worth tracking because cooperation among non-relatives requires it. Norms bite because violating one puts standing at risk. Underneath the mechanisms is one thing being protected: your position in other people's estimation.
 
-Exclusion is biologically consequential, not merely unpleasant—for a social species, a damaged bond is a real functional threat, and the body responds accordingly. It is worth being precise about that claim, though. Social pain is not simply physical pain running on borrowed circuitry; current evidence points toward largely separate systems that converge on similar urgency rather than one alarm doing double duty. Being left out is not a bruise. It just gets your attention like one.
+And the body treats it as consequential, not merely unpleasant. For a social species, a damaged bond is a real functional threat, and exclusion recruits genuine distress and self-regulatory effort. Being left out is not a bruise. It just gets your attention like one.
 
 ### AI Connection: Fluency, Mind Perception, and Responsibility
 
@@ -344,7 +346,11 @@ The original frustration–aggression hypothesis claimed that frustration always
 
 Aggression can also be learned. In Bandura’s Bobo doll studies, children reproduced aggressive actions modeled by adults (Bandura, Ross, & Ross, 1961). Observation expands the behavioral repertoire. It does not compel the behavior every time an opportunity appears.
 
-Biological systems alter sensitivity to threat, status, provocation, and impulse control. They do not function as aggression switches. Testosterone is more consistently related to status competition under particular social conditions than to indiscriminate violence. The amygdala participates in threat-learning networks rather than serving as an aggression center. Prefrontal systems contribute to regulation but do not simply “turn off” aggression.
+Biological systems alter sensitivity to threat, status, provocation, and impulse control. They do not function as aggression switches. The amygdala participates in threat-learning networks rather than serving as an aggression center. Prefrontal systems contribute to regulation but do not simply “turn off” aggression.
+
+Testosterone is the clearest case, because it tracks the *structure* of a competition rather than the aggression in it. Oxford, Ponzi, and Geary (2010) had teams of young men compete at a violent multiplayer video game—once against another team, once against each other. Men who contributed most to beating the other team showed a testosterone rise afterward. The same men, competing against their own teammates, showed no such response; the highest scorers in that condition had *lower* testosterone and *higher* cortisol. Beating your own side does not register as winning. It registers as a problem.
+
+Which makes sense for an animal whose competitors have always come in groups. Turning on your own coalition costs you the coalition, and you will need it. Similar within-versus-between patterns show up in village domino matches and in rowing crews competing internally, so the finding is a pattern rather than a single result—but each study is small, all of them are men, and none of them licenses a general claim about human aggression.
 
 Classical accounts of **deindividuation** proposed that anonymity produces a loss of self-awareness and therefore antisocial behavior. The evidence supports a more precise conclusion: anonymity can increase conformity to whatever group norm is salient (Postmes & Spears, 1998). In a cruel group, anonymity may facilitate cruelty. In a prosocial group, it can facilitate cooperation. The group supplies the direction.
 
@@ -414,11 +420,11 @@ Strong situations rarely erase individual differences completely. They reduce th
 
 > **Stop and Retrieve:** Why is a modest correlation between a trait and one act not evidence that traits are meaningless? Give the climate–weather answer and the aggregation answer.
 
-### Development and Assessment
+### Measuring It
 
-Personality develops from **temperament** interacting with relationships, culture, learning, and life events. Temperament supplies early differences in reactivity and self-regulation. It is a starting condition, not a finished personality.
+Where these differences come from is Chapter 10's subject: **temperament** supplies the early variation in reactivity and self-regulation, and ecology shapes what that temperament becomes. A starting condition, not a finished personality.
 
-Personality assessment ranges from carefully validated inventories to tools that produce compelling stories with weak evidence. The NEO inventories were built to measure Big Five dimensions. The Rorschach is more complicated: some scores have evidence for particular uses, while many popular interpretations do not (Mihura et al., 2013).
+The question here is narrower. Once the differences exist, can we measure them? Personality assessment ranges from carefully validated inventories to tools that produce compelling stories on weak evidence. The NEO inventories were built to measure Big Five dimensions. The Rorschach is more complicated: some scores have evidence for particular uses, while many popular interpretations do not (Mihura et al., 2013).
 
 A result can feel personally accurate and still be a poor measurement instrument. That is not the same as knowing you.
 
@@ -633,6 +639,8 @@ Manning, R., Levine, M., & Collins, A. (2007). The Kitty Genovese murder and the
 Mihura, J. L., Meyer, G. J., Dumitrascu, N., & Bombel, G. (2013). The validity of individual Rorschach variables. *Psychological Bulletin, 139*(3), 548–605.
 
 Milgram, S. (1963). Behavioral study of obedience. *Journal of Abnormal and Social Psychology, 67*(4), 371–378.
+
+Oxford, J., Ponzi, D., & Geary, D. C. (2010). Hormonal responses differ when playing violent video games against an ingroup and outgroup. *Evolution and Human Behavior, 31*(3), 201–209.
 
 Pettigrew, T. F., & Tropp, L. R. (2006). A meta-analytic test of intergroup contact theory. *Journal of Personality and Social Psychology, 90*(5), 751–783.
 

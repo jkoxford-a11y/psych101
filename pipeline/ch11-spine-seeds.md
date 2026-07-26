@@ -305,6 +305,52 @@ Carried from the Ch10 residue report so the same corrections don't get made by h
 
 ---
 
+## OPEN THREADS from the line-edit pass — 2026-07-26
+
+Two of the instructor's line-edit comments are substantive enough to develop rather than apply. Both are recorded here because they may change the chapter's framing and, in the first case, the spine itself. **Neither is written into the chapter yet.**
+
+### Thread A — RESOLVED 2026-07-26: not a third channel, an ultimate frame
+
+**Outcome:** the instructor's academic lineage — Alexander's ecological dominance argument, developed by Flinn, Geary, & Ward (2005) — was added to `theoretical-spine.md` **§3 as a trunk principle**, alongside a new principle on naming proximate versus ultimate explanations. It was absent from all three spine documents before today (zero hits for ecological dominance, Alexander, Flinn, arms race, imbalance of power, or Wrangham), which is the likeliest reason this chapter converted proximate.
+
+**This dissolves the taxonomy problem rather than solving it.** Coalitional psychology is not a third influence channel to set beside informational and normative — it is the ultimate explanation of why *both* have force. Informational influence matters because misreading a coalition was costly; normative influence matters because exclusion from one was dangerous. Nothing gets added to the taxonomy, so the objection that killed this yesterday no longer applies.
+
+**Superseded reasoning is kept below for the record.**
+
+### Thread A (original framing — superseded)
+
+*Instructor comment [0], on the conformity section.*
+
+> "Humans and chimps rely heavily on coalitions. Visible dissent is bad for solidarity. Groups tend to conventions for appearance, like prototype identities in adolescents, greasers or jocks, or facial abrasion/scarring in some African tribes. Going with the group increases the strength of the group. Also makes other group dynamics happen. So yes, groups have info, but groups also have identities that apply to its members."
+
+**Why this is a real gap.** The chapter frames conformity through two channels: informational (other people as evidence) and normative (avoiding personal rejection). The instructor is pointing at a third thing that is neither. Going along **constitutes** the group — visible dissent damages solidarity, and shared conventions of appearance mark membership. Greasers and jocks, adolescent prototype identities, and ritual scarification are all the same operation: costly, visible signals of which coalition you belong to. For a hominin, coalition strength is not a social nicety; it is survival infrastructure. The chapter currently has no vocabulary for this, and it is *upstream* of the belonging thread rather than the same thing — belonging is the individual's stake in being included; coalition maintenance is the group-level function that stake serves.
+
+**Where it would go:** Section 2, alongside informational and normative influence. It also strengthens Section 3 — in-group favoritism and minimal-group findings make more sense if conformity is partly coalition-signaling.
+
+**The problem, stated honestly.** Social baseline theory (Coan & Beckes) was routed to Chapter 12 on 2026-07-25 *specifically* to avoid building a three-way influence taxonomy in Chapter 2's longest section, one page after Asch's own three-way taxonomy was cut as catalog. Adding coalitional influence here recreates exactly that problem — unless it is genuinely better motivated than the regulatory category was. There is an argument that it is: coalitional signaling is evolutionary and load-bearing for the chapter's own spine question, whereas regulatory influence is a mechanism that belongs where stress and coping already live.
+
+**Decide:** add coalitional influence as a third named mode in Section 2 / fold it into the belonging material in Section 3 without naming a third channel / leave out: ____________________
+
+**Before writing it:** find primary sources. Costly-signaling and coalition literature (Tooby & Cosmides on coalitional psychology; Boyd & Richerson on conformist transmission) has not been checked for this project. Do not draft from the reasoning above alone.
+
+### Thread B — Dissonance as model updating, not discomfort management
+
+*Instructor comment [18], on cognitive dissonance.*
+
+> "So your predictions say one thing and your behavior another… Does the behavior make new predictions? So you expect one thing, but by doing something else, you change what your brain is predicting, because circumstances have now changed."
+
+**This is sharper than what is in the chapter, and it is spine-native.** The chapter currently teaches dissonance the standard way: inconsistency is uncomfortable, discomfort motivates reduction, so a belief moves. The instructor's version reverses the causal weight. Your own behavior is evidence about the world. Having said the boring task was interesting for one dollar, the system now has a new observation to account for — and with no external justification available, the available inference is that the task was somewhat interesting. Festinger's participants did not paper over an inconsistency. They updated on data they had produced themselves.
+
+That framing makes dissonance a straightforward instance of the trunk's own loop (prediction → action → new evidence → update) rather than a bolt-on motivational mechanism, and it explains the dose-response result the standard account has to add a premise to reach: weak justification leaves more unexplained behavior, so more updating is required.
+
+**Constraint that applies.** `theoretical-spine.md` §7 forbids collapsing prediction error, dopamine, emotion, and stress into one mechanism. This thread is defensible because it stays inside *prediction and updating* and does not reach for stress physiology or dopamine. Comments [19] and [21] — dissonance as stress from mismatch, and Freud vindicated via superego conflict — do cross that line and are recorded in `PROJECT_BACKLOG.md` rather than seeded here.
+
+**Decide:** rewrite the dissonance passage on the updating account / present both accounts / leave the standard account: ____________________
+
+**Before writing it:** this is a reinterpretation of a classic finding, not a reported one. It needs either a source that already makes the argument (self-perception theory, Bem 1967, is the obvious neighbor and is genuinely contested against dissonance) or explicit framing as this book's own synthesis. Bem's self-perception account is close enough to the instructor's formulation that the chapter cannot present the idea as novel without acknowledging it.
+
+---
+
 ## Surfaced from §22 — not seeded above, needs your call
 
 Three things in `theoretical-foundations.md` §22 bear on this chapter and have never been promoted into the spine or the chapter. Flagging rather than seeding, because each would add scope to an already-oversized chapter.

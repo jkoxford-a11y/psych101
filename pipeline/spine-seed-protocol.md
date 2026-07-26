@@ -37,7 +37,7 @@ In this order:
 3. The chapter source itself, in full.
 4. The relevant section of `pipeline/theoretical-foundations.md` for anything the spine flags as needing verification.
 
-The audit's **must-preserve ledger** outranks any seed. If a seed would touch a must-preserve asset, say so explicitly in the seed rather than proposing around it.
+The audit's **must-preserve and must-correct findings are content commitments and stand** — if a seed would touch a protected asset, say so explicitly in the seed rather than proposing around it. But an audit does **not** outrank `AGENTS.md`: its prescriptions about hedging, qualification, and register are superseded by `## Style`. See `AGENTS.md` → *Audits are diagnostic, not authoritative*.
 
 ## Step 3 — Seed structure, per section
 

@@ -33,6 +33,16 @@ Do not maintain the same information in multiple project-state files. If you fin
 - `pipeline/html-conversion-spec.md` defines HTML/render expectations.
 - `source/visuals-inventory.md` tracks figure status (known to drift stale — cross-check per-chapter `docs/images/chXX/README*.md` files).
 
+### Audits are diagnostic, not authoritative
+
+An audit in `pipeline/audits/` diagnoses a chapter as it stood on the audit date. It does not outrank this file.
+
+- **Its must-preserve and must-correct findings are content commitments and stand.** Do not cut a protected asset or reinstate a corrected overclaim because a later pass found it inconvenient.
+- **Its prescriptions about hedging, qualification, and register do not stand.** `## Style` governs those. An audit that conflicts with `## Style` is stale by definition, not a competing authority.
+- **A required boundary must be *stated*; where it lands is a register decision, not an accuracy one.** Putting a necessary caveat in the paragraph's final position is a choice, and usually the wrong one — the payoff belongs there. See *Keep the story*.
+- **An audit's measurements go stale the moment repairs land.** Word counts, prompt counts, and section lengths must be re-run against the current source, never quoted from the audit.
+- **Removing an overclaim does not discharge the obligation to replace its teaching function.** This is the failure mode that produces accurate, lifeless prose: the claim goes, nothing takes its place, and the paragraph ends on what is not true rather than on what is. Chapter 12's 2026-07-15 repair pass is the worked example — see the header note on `pipeline/audits/ch12-pre-review-audit.md`.
+
 ## Style
 
 - Preserve the instructor-authored voice.

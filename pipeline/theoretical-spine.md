@@ -11,6 +11,8 @@
 
 Organisms do not receive reality directly. They receive partial, delayed, filtered signals from their bodies and the world. A nervous system must select what matters, extract useful structure from experience, predict what is likely, act before all evidence is available, and revise when errors matter. Human psychology is this process expanded across development, language, culture, memory, imagination, relationships, science, and self-reflection. We build models of reality, use them to act, resist revising them when they are tied to safety, identity, or belonging, update them when experience makes the old model too inaccurate or costly to maintain, and share them imperfectly with other people.
 
+**And the reason it expanded so far in us is that the hardest thing our ancestors had to model was each other.** Once hominins became ecologically dominant, the primary selective pressure was no longer predators, climate, or food — it was other hominins, competing in coalitions. That is an arms race rather than a fixed problem, which is why human cognition escalated the way it did. §3 develops this; every chapter's ultimate explanation runs through it.
+
 ---
 
 ## 2. The master loop
@@ -29,6 +31,32 @@ Key properties of the loop:
 ---
 
 ## 3. Core principles
+
+### Proximate and ultimate: always name which one you are giving
+
+Tinbergen's distinction governs every explanation in this book. A **proximate** explanation says how a mechanism works right now — what the system is doing, in this individual, in this situation. An **ultimate** explanation says what selective regime built a system that does that. Both are true at once; neither substitutes for the other.
+
+Psychology overwhelmingly teaches proximate explanations without saying so, and that omission is not neutral — it makes ordinary human behavior look arbitrary, or worse, like a list of flaws. "People conform because the group has information they lack" is a mechanism. It is correct. It also leaves the student with no reason why a nervous system would weight that information so heavily that it will override the evidence of its own eyes. The ultimate answer is in the next section, and it changes what the finding means.
+
+**Where this matters most:** Ch. 11 (social psychology is almost entirely proximate as a field), Ch. 13 (a disorder framed only proximately looks like a defect rather than a miscalibrated adaptation), Ch. 7 and 8 (learning and memory phenomena are much less arbitrary once the ecological problem is named), and Ch. 1, where the distinction should be introduced explicitly as part of levels of analysis.
+
+### Ecological dominance and social competition: why the system got so elaborate
+
+The thesis says human psychology is biological sense-making *expanded* across development, language, culture, memory, and self-reflection. This section is why it expanded.
+
+**The ecological dominance–social competition model (Alexander, 1989; Flinn, Geary, & Ward, 2005).** As hominins gained control over the extrinsic forces that select on most animals — predators, climate, food supply — those pressures weakened. What remained, and intensified, was other hominins. Once you are ecologically dominant, the primary impediment to surviving, reproducing, and thriving is the competing interests of other members of your own species. The selective environment becomes social.
+
+**This is the argument for rate, which nothing else explains well.** Extrinsic pressures are relatively static: a predator does not get smarter as fast as you do. Conspecific competition is self-escalating, because the thing you must out-think is another brain built by the same process, and the target moves with you. Arms races run away; ecological problems do not. Cooperative breeding and life history (Ch. 10) explain how an expensive brain gets *funded*. They do not explain why the escalation ran. This does.
+
+**The unit of competition is the coalition, which is why cooperation and competition are one system rather than two.** Hominin social competition is not primarily one-on-one. It is coalitional, and that has a consequence the model makes explicit: you cannot compete against another coalition without maintaining your own. Within-group support and between-group competition are the same problem seen from two sides, which is why extended childhood, pair bonding, alloparenting, and coalitionary behavior appear together in the hominin record rather than separately.
+
+**The comparative anchor: imbalance of power.** Chimpanzees conduct lethal coalitionary attacks on members of neighboring groups, and do so when numerical asymmetry makes the attack cheap (Wrangham, 1999). Wilson et al. (2014, *Nature*) analyzed 152 lethal attacks across sites and found adaptive strategies explained the pattern better than human disturbance — the first direct test of that alternative. Lethal intergroup coalitionary aggression is part of the behavioral repertoire of our closest living relative, not an artifact of contact with us.
+
+**The predicted asymmetry, with direct evidence.** If coalitions are the unit of competition, competitive responses should be *suppressed* inside the group and released at its boundary — because a male who injures ingroup rivals is worse off when the outgroup arrives (Boehm, 1993). This is observable hormonally. Oxford, Ponzi, and Geary (2010) found that men who contributed most to a between-group victory showed a testosterone increase afterward, while the same men showed no challenge response competing against their own teammates; the highest-ranking men in within-group competition had *lower* testosterone and *higher* cortisol. Beating your own coalition registers as social-evaluative threat, not as victory. Converging patterns appear in Wagner et al.'s within- versus between-village dominoes matches and Kivlighan et al.'s within-team rowing.
+
+**What this licenses, and what it does not.** It licenses treating other people as the most consequential feature of the human environment rather than one input among many — which is the ultimate ground for belonging, coalitional psychology, in-group/out-group effects, status, reputation, and social evaluative stress. It does **not** license claiming that warfare frequency in the Pleistocene is a settled quantity. The ethnographic record of contemporary mobile foragers is contested on exactly this point (Fry & Söderberg, 2013, and the ongoing exchange around it), and those societies are a weak proxy for ancestral conditions in either direction. ED–SC is a well-motivated model integrating paleoanthropology, cognitive psychology, and neurobiology — not an established fact. Teach the selective logic and the comparative evidence; do not teach a casualty rate.
+
+*Primary sources: Alexander (1989); Flinn, Geary, & Ward (2005), "Ecological dominance, social competition, and coalitionary arms races," Evolution and Human Behavior; Wrangham (1999); Wilson et al. (2014), Nature; Boehm (1993); Oxford, Ponzi, & Geary (2010). The last is the instructor's own work — use as grounding, and see the Ch. 11 notes for the in-text citation question.*
 
 ### Biological substrate, not biological reductionism
 
@@ -219,6 +247,9 @@ Personality and social psychology sit at the intersection of multiple spine thre
 **What the framework should not do:**
 
 *On scope:*
+- **Name whether an explanation is proximate or ultimate whenever both are available.** A mechanism presented alone makes behavior look arbitrary or defective. This is the most common framing failure in the base drafts.
+- Do not present ED–SC as established fact. It is a well-motivated model. Teach the selective logic (ecological dominance shifts pressure onto conspecifics; coalitions are the unit; arms races explain rate) and the comparative evidence (chimpanzee lethal coalitionary aggression; the within/between hormonal asymmetry). Do not attach numbers to Pleistocene intergroup violence — the ethnographic record is actively contested (Fry & Söderberg, 2013, and the exchange around it), and contemporary mobile foragers are a weak proxy for ancestral conditions in either direction.
+- Do not let the coalitional frame become "humans are violent." The same model predicts *suppressed* competition and active reconciliation inside the coalition, and it makes cooperation and competition one system rather than two. A treatment that yields only the aggressive half has misread it.
 - Do not say the brain *is* a prediction machine as if that settles the debate. Say the brain *uses* prediction as a major organizing principle.
 - Do not say "everything psychological is biological" without adding that biological explanation does not exhaust the psychological.
 - Do not present active inference / free energy minimization as consensus neuroscience. Use as background rationale, not as a claim to teach.
@@ -447,6 +478,8 @@ Personality and social psychology sit at the intersection of multiple spine thre
 
 *Primary source: Oxford & Geary, "Life History Evolution in Hominins" (Jon's paper — use as grounding reference for this chapter, not necessarily as an in-text citation for an intro course).*
 
+**How this chapter joins §3.** Life history explains how an expensive brain is *funded* — slow growth, provisioning, cooperative breeding, an extended window for tuning. Ecological dominance and social competition explain why the brain was worth that cost and why the escalation ran. The two halves are one argument and should be written as such: coalitional competition raised the payoff for social intelligence; cooperative breeding paid the bill. Note also that ED–SC predicts the package — extended childhood, pair bonding, alloparenting, and coalitionary behavior appearing together rather than separately — which is exactly the co-occurrence this chapter documents.
+
 **Life history theory as the organizing framework.** Humans are at the extreme slow end of the fast/slow life history continuum: largest brains, longest developmental period, latest first reproduction, longest lifespan. This is not incidental — it is the central explanatory fact about human psychology.
 
 **The expensive brain problem.** At approximately 4 years of age, the human brain consumes nearly double the glucose of an adult brain. Somatic growth slows to compensate. No single mother can fund this alone.
@@ -472,6 +505,10 @@ Personality and social psychology sit at the intersection of multiple spine thre
 **Student-facing spine question:** *Why do we care what other people think — and what makes that stop?*
 
 *Revised 2026-07-25 (instructor). The previous wording — "Why do other people's models change our own?" — was accurate but framed the chapter entirely around **reading** other people, which covers Sections 1, 3, and 5 and leaves the back half unframed. The chapter's second half is caring switching off or inverting: bystander non-intervention, deindividuation, obedience despite visible distress, prejudice, discrimination, aggression. The "what makes that stop" clause is what earns the question, and it forces the right discipline — every answer must be a **named condition** (anonymity, diffusion of responsibility, group boundary, authority structure, situation strength), which keeps the chapter mechanistic rather than drifting toward a chapter about empathy. Consequence: kin selection and reciprocal altruism become the evolutionary answer to "why only sometimes" rather than a levels-of-explanation catalog.*
+
+**The ultimate frame for this chapter is §3's ecological dominance and social competition — and it was missing when the chapter was first converted.** Social psychology as a field is almost entirely proximate, and a chapter that inherits that gives students mechanisms with no reason behind them. "The group has information you lack" is true and insufficient. The ultimate version: for a hominin, other people *were* the selective environment, coalitions were the unit of competition, and a human without a group did not merely feel bad — he was in serious trouble. Belonging is therefore not a preference the chapter observes; it is equipment the chapter explains. Conformity's pull, the force of the in-group/out-group boundary, status sensitivity, reputation tracking, and social-evaluative stress all descend from this and should be written as descendants of it rather than as separate findings.
+
+The predicted within/between asymmetry (§3, with Oxford, Ponzi, & Geary, 2010) is the mechanism-level evidence: competitive response suppressed inside the coalition, released at the boundary. It is also the answer to this chapter's own spine question — caring is coalition-structured, which is precisely why it has an edge.
 
 **Social psychology as model-building organisms in contact.** Social psychology studies what happens when model-building organisms interpret, influence, coordinate with, and defend themselves against other model-building organisms. Other people are the most important input the brain processes — the most relevant, most variable, most consequential, and most ambiguous source of information an organism encounters. Social cognition is not a specialized module; it is the prediction system applied to its most important domain.
 

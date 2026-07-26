@@ -4,6 +4,24 @@
 **Audit rubric:** `pipeline/audits/chapter-pre-review-audit-prompt-v3.md`  
 **Status:** Diagnostic only. No chapter prose, HTML, figures, labs, metadata, inventories, or project-state files were changed during the audit.
 
+---
+
+> ## Scope note added 2026-07-26 — read before using this audit
+>
+> The repair pass ran the day after this audit (`52a7894`, 2026-07-15) and cut the chapter from 11,050 words to 6,120. **This document describes a file that no longer exists.** See `AGENTS.md` → *Audits are diagnostic, not authoritative*.
+>
+> **Still binding:** §C Must-Preserve Ledger and §K Must correct / Must not happen, as content commitments. The four High-severity accuracy corrections are installed and load-bearing — the CO₂ boundary on Patient S.M., GAS as historical heuristic, the cortisol-does-not-cause-the-heart-rate fix, and the removal of dopamine RPE as the mechanism of hedonic adaptation. Do not undo these.
+>
+> **No longer binding:** §F, the hedging and qualification audit, and the "keep one caveat per claim" instruction in the §E Medium-severity row. Register is governed by `AGENTS.md` → `## Style`. §F is also factually stale: "The chapter is not globally overhedged" was a claim about the pre-repair document.
+>
+> **Stale measurements — re-run, do not quote:** every word count here, including the 6,198 opener-through-AI figure. Body prose measured 3,653 words on 2026-07-26, at the low end of the 3,500–5,000 target rather than over it.
+>
+> **Two §C ledger rows have been legitimately overtaken:**
+> - *Cognitive light cone* requires "the course-specific label." The repair pass replaced it with an attribution to Levin (2019), which is correct — Levin defines the term as the outer spatial and temporal boundary of the largest goal a system can work toward. This also makes `theoretical-spine.md` §3's "course-specific metaphor, not a standard research or diagnostic term" note stale.
+> - *Closing cadence* was flagged as "too prediction-exclusive as written." The repair correctly dropped "prediction" and incidentally also dropped "excellent" — a register loss with no accuracy justification.
+>
+> **What went wrong, for the next chapter's benefit.** This audit's §K says "Do not remove body budget or the cognitive light cone without replacing their teaching functions." The repair pass removed three overclaims correctly — the body-budget mechanism claim, the unsupported social-support-predicts-mortality claim, and the post-finals GAS explanation — and replaced none of their teaching functions. The result is five paragraphs whose payoff never arrives and which end on what is not true. That is a repair-pass failure, not an audit failure, but the audit's structure made it easy: it specified boundaries to add in eight places and narrative to preserve in one.
+
 ## A. Executive judgment
 
 Chapter 12 has a strong, unusually coherent teaching story: the brain anticipates bodily needs, core affect supplies a background state, emotions organize what matters, chronic human simulation can keep stress physiology engaged, and coping works best when it matches the problem. The body-budget metaphor, cognitive light cone, Selye origin story, coping matrix, and AI embodiment contrast make that story vivid in the instructor's voice. The chapter is broadly grounded in real affective and stress science, but it is not ready for line editing because one influential theory—the theory of constructed emotion—repeatedly becomes the established account rather than the chapter's explicitly chosen framework. Patient SM is then made to prove more than the case can show, while the HPA/GAS figures convert simplifications into literal, partly incorrect physiology. Several practical claims about granularity, affect labeling, social support, sleep, nutrition, and exercise move from association to mechanism or intervention without adequate support. The chapter also exceeds its cognitive budget and underuses retrieval: approximately 6,198 words from opener through the AI section, a 417-word summary, 25 glossary terms, one Stop and Retrieve prompt, one student-facing Think About It prompt, and seven review questions. A focused conceptual, visual, and alignment repair pass should precede line editing.
