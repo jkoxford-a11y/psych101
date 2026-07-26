@@ -31,10 +31,10 @@ Chapter 3 introduced the autonomic nervous system, the HPA axis, and individual 
 
 By the end of this chapter, you should be able to:
 
-1. Explain how homeostasis and allostasis provide complementary models of bodily regulation, and use the body-budget metaphor without treating it as a literal account.
+1. Explain how homeostasis and allostasis provide complementary models of bodily regulation, and use the body-budget metaphor to trace how a metabolic deficit becomes unpleasant affect.
 2. Distinguish core affect from a specific emotion and separate shared findings from a constructionist interpretation.
-3. Compare major emotion theories and explain what Patient S.M. does—and does not—show about the amygdala and fear.
-4. Describe emotional granularity and affect labeling at the level supported by current evidence.
+3. Compare major emotion theories and explain what we can conclude about the amygdala's role in fear from Patient S.M.
+4. Describe emotional granularity and affect labeling.
 5. Explain why a remembered, imagined, or socially evaluated threat can mobilize the body much as a present one does, using the cognitive light cone.
 6. Distinguish rapid SAM activation from slower HPA activation.
 7. Distinguish acute adaptive stress from chronic dysregulation, and historical GAS from allostatic load.
@@ -54,14 +54,14 @@ The thermostat contrast is a teaching simplification, but a useful one. Homeosta
 
 By the time you feel anything, your body has already moved. Feeling is not the report on what happened—it is part of getting ready for what might.
 
-### The body budget is a framework, not an account balance
+### The body budget
 
-Barrett (2017a) uses **body budget** as a metaphor for the conditions that make regulation easier or harder. Sleep, hydration, nutrition, movement, recovery time, social connection, workload, uncertainty, and illness can all alter what the body must manage. "Deposits" and "withdrawals" make those influences memorable.
+Barrett (2017a) uses **body budget** as a metaphor for allostatic regulation — the running management of the body's metabolic resources. Deposits come from eating, sleeping, and supportive social contact. Withdrawals come from moving, learning, fighting infection, coping with uncertainty, and meeting threats.
 
-Here is the boundary: these conditions do not sit in one literal tank, and they cannot be converted into a single measurable balance. Social support is not metabolically interchangeable with glucose. The framework is valuable because multiple conditions interact.
+Acute stress without enough recovery leaves a metabolic deficit. You feel that deficit as unpleasant affect — bad, before you know why. Context supplies the rest, and the same deficit becomes dread before an exam or irritation in a crowded room. Let it repeat without recovery and the cost accumulates as **allostatic load** (i.e., cumulative wear and tear), which Section 3 takes up.
 
 ![Balanced diagram labeled Body budget is a metaphor. Five supportive conditions—sleep, food and water, movement, social support, and recovery—appear on one side; five demands—workload, uncertainty, isolation, missed meals, and poor sleep—appear on the other. Arrows converge on present bodily condition and regulatory demand, with a note that the influences interact but are not one measurable account.](../../docs/images/ch12/fig_body_budget_deposits_withdrawals.png)
-*Figure 12.1. The body-budget framework organizes conditions that can support regulation and conditions that add demand. These influences interact, but they are not one literal resource tank. Original figure.*
+*Figure 12.1. The body-budget metaphor organizes what supports regulation against what draws it down. Original figure.*
 
 ### Interoception and core affect
 
@@ -74,9 +74,9 @@ James Russell's (1980) model of **core affect** describes a broad background sta
 
 You can be unpleasant and activated, as in agitation; pleasant and activated, as in excitement; unpleasant and deactivated, as in fatigue; or pleasant and deactivated, as in calm. Right now, reading this, you are somewhere on that map—perhaps mildly pleasant and moderately aroused; perhaps slightly unpleasant and low-arousal. Core affect is not a specific emotion.
 
-Two numbers—pleasant or not, wound up or not—standing in for everything happening in a body. It is why you can be certain you feel terrible and have no idea why.
+Heartbeat, gut, temperature, muscle tension, blood sugar — and what you actually feel of all that is two things: pleasant or not, wound up or not. That is enough to tell you something is off, and nowhere near enough to tell you what. Which is why you can be certain you feel terrible and have no idea why.
 
-Constructionists interpret core affect as one ingredient the brain can categorize in context. Other emotion theories use dimensional feeling without accepting the stronger claim that every emotion is built from the same ingredients. The two-dimensional description is the shared model; what role it plays in producing emotion is theoretical.
+Core affect is the raw material, not the emotion. The same unpleasant, activated state becomes dread before an exam, anger in an argument, and exhilaration at the top of a drop. What turns it into one of those is the context you are in and the concept you bring to it — the job Section 2 takes up.
 
 ![Circumplex diagram with arousal running from low to high and valence from unpleasant to pleasant. Examples include anxious and angry in high-arousal unpleasant space, energized and excited in high-arousal pleasant space, sad and fatigued in low-arousal unpleasant space, and calm and content in low-arousal pleasant space. A central label says core affect is not a specific emotion.](../../docs/images/ch12/fig_core_affect_circumplex.png)
 *Figure 12.2. Russell's circumplex describes broad dimensions of current feeling. Valence and arousal locate core affect; they do not, by themselves, specify an emotion. Original figure.*
@@ -128,9 +128,9 @@ Distributed and multifunctional processing does not mean that every circuit cont
 
 ### Affect labeling
 
-**Affect labeling** means putting a feeling into words. In some laboratory tasks, labeling emotional stimuli changes self-report, task responding, and neural activity, including activity in prefrontal regions and the amygdala (Lieberman et al., 2007; Torre & Lieberman, 2018). The effects depend on task and timing; recent work also shows that labeling can sometimes interfere with later reappraisal (Ariely et al., 2026). The observed result is that labeling can alter responding in some contexts—reduced prediction error and improved construction are interpretations, not findings.
+**Affect labeling** means putting a feeling into words. In some laboratory tasks, labeling emotional stimuli changes self-report, task responding, and neural activity, including activity in prefrontal regions and the amygdala (Lieberman et al., 2007; Torre & Lieberman, 2018). The effects depend on task and timing; recent work also shows that labeling can sometimes interfere with later reappraisal (Ariely et al., 2026). The observed result is that labeling can alter responding in some contexts—reduced prediction error and improved construction are interpretations.
 
-Journaling, friendship, and therapy all put feelings into words, and each does several other things at the same time.
+Journaling, friendship, and therapy all put feelings into words, which can provide reflection, social support, new interpretations, memory organization, and other forms of regulation.
 
 > **Stop and Retrieve:** Which statement is an observation and which is an interpretation? (A) In one task, labeling fearful faces changed reported distress and activity in several brain regions. (B) Labeling worked because the brain reduced prediction error while constructing a more accurate emotion. Explain your choice.
 
@@ -258,7 +258,7 @@ It can say "overwhelmed" perfectly. It has nothing to be overwhelmed about. That
 
 ## Chapter Summary
 
-Homeostasis uses feedback to maintain regulated conditions; allostasis emphasizes anticipatory adjustment. Bodies use both. The body budget is a useful metaphor for interacting supports and demands, not a literal account. Interoception brings internal signals into regulation, while Russell's core affect model describes current feeling along valence and arousal. Core affect is not a specific emotion.
+Homeostasis uses feedback to maintain regulated conditions; allostasis emphasizes anticipatory adjustment. Bodies use both. The body budget is a metaphor for the allostatic regulation of metabolic resources: deficits without recovery accumulate as allostatic load. Interoception brings internal signals into regulation, while Russell's core affect model describes current feeling along valence and arousal. Core affect is not a specific emotion.
 
 The word you reach for changes what you do next: "disappointed" points at an expectation, "frustrated" at an approach. Emotion theories agree that bodily state, appraisal, context, learning, conceptual knowledge, and brain systems matter, and disagree about how those pieces are organized; constructionism is this chapter's lens, not a settled definition. Patient S.M. separates knowing from minding—she can state that a snake is dangerous without the alarm arriving—while CO₂-induced panic shows the amygdala is not the only route into fear.
 
@@ -357,7 +357,7 @@ Use emotion-focused coping for the irreversible missed deadline: acknowledge dis
 
 **allostatic load** — cumulative multisystem cost associated with repeated or sustained demands and inadequate recovery
 
-**body budget** — a metaphor for interacting conditions that support regulation or add regulatory demand, not a literal measurable account
+**body budget** — a metaphor for allostatic regulation of the body's metabolic resources, in which deposits support regulation and withdrawals draw it down
 
 **cognitive light cone** — the spatial and temporal scale of goals an agent can represent and work toward
 
