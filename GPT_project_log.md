@@ -10,6 +10,24 @@ Repository rules and conventions live in `AGENTS.md`, not here. Current state an
 
 ## Log Entries
 
+### 2026-07-27 - Chapter 2 pre-line-edit hedge and wordiness audit
+
+**Trigger.** The instructor reported that Ch2 still carried hedges and negation-framed sentences after the spine-seed pass, and that the prose was wordy enough to add load. His own partial fixes were sitting in `line-edit-packets/Chapter_2_Research_Methods_and_Statistics_Line_Edit_2026-07-27.docx` as three comments and six tracked-change runs.
+
+**Instructor markup recovered from the packet.** Comment on the opener's "Here is the problem" paragraph: "I started to condense this, but perhaps you can do it better. Too many words." Comment spanning the two paragraphs after it: "These too." Comment on the Section 1 opener: "Lets remove references to me, a collegue was interested I potentially using the book too." Tracked changes showed two reusable moves — rewrite a negation-framed sentence positively ("Descriptive methods are not merely what researchers use when they cannot run an experiment — they" → "Descriptive methods are often gateways to experimental research. They"), and delete a trailing hedge clause outright ("even though convergence still does not establish what caused it").
+
+**Applied across the whole chapter.** Generalized those two moves plus the `AGENTS.md` pre-line-edit checklist items 1–3. Specific classes cut: the repeated hedge-tic "psychology's clearest ordinary basis for causal inference" (4 occurrences → "clearest causal test"); mechanism catalogs the register-calibration rule flags as load ("settings, measures, treatments, attrition patterns, and processes"; "uneven dropout, contamination between conditions, poor measurement, failed manipulation, or a biased analysis"); epistemological throat-clearing about the chapter's own choices ("so this chapter keeps the randomized experiment as the clearest introductory model without pretending it is the only causal tool"); stacked re-hedges ("Neither feature, by itself, settles every question about internal or external validity"); and hedge tails on otherwise clean claims ("with appropriate caveats"). Three overlong paragraphs were split rather than only trimmed — the 194-word hot sauce reliability/validity paragraph, the 145-word random-sampling/WEIRD paragraph, and the 120-word random-assignment paragraph. Negations that carry the actual lesson were kept (correlation cannot establish causation; the p-value "does **not** tell you" list, which Learning Objective 6 is written against).
+
+**First person removed.** Section 1's autobiographical opener became "Field research in animal behavioral ecology runs on a hard constraint: you do not get to manipulate anything," preserving the behavioral-ecology throughline and the Section 4 callback to it. Ch2 now contains no authorial first person.
+
+**Measurements.** Body prose (excluding tables, figures, headings, callouts, and everything from Chapter Summary onward) 4,844 → 3,981 words, −18%. Negation tokens (not/cannot/never/nor/neither) in the body 84 → 56, −33%. Whole file 9,948 → 8,992 words.
+
+**Validation.** `check_chapter_coherence.py` output is byte-identical before and after (compared against a `git show HEAD:` copy) — same 2 fails and 2 reviews, all of them previously documented false-positive classes: slash-joined key terms ("Placebo / placebo effect", "Volunteer bias / sampling bias"), institutional-author keying, "and colleagues" narrative citations, and multi-year combined citations. `lint_chapters.py` 14/14 PASS, 0 warnings, after rebuilding all chapter HTML. Every Key Terms entry still appears in the body; the one Key Terms edit was to `Convergence`, whose trailing hedge clause the instructor had already deleted from the body text.
+
+**Files changed.** `source/chapters/ch02-research-methods.md`, `docs/chapters/02-research-methods.html` (regenerated), `HANDOFF.md`, this log. New packet `line-edit-packets/Chapter_2_Research_Methods_and_Statistics_Line_Edit_POST_AUDIT_2026-07-27.docx` built from the audited source; the instructor's marked-up `..._Line_Edit_2026-07-27.docx` was left untouched, per the rule that a revised packet always goes to a new filename.
+
+**Open for the instructor.** Whether the no-first-person rule is book-wide or Ch2-local. If book-wide, `pipeline/voice-brief.md` §2 contradicts it — it lists "Occasional first-person disclosure of his own background where it earns the framing" as a voice feature — and first person survives in Ch1, 4, 5, 7, 9, 11, 12, 13 and, most heavily, the prologue.
+
 ### 2026-07-27 - Chapter 4 Spine-Seed Pass: Anosognosia Installed; Müller-Lyer Re-Verified and Kept Out (Claude)
 
 - **Scope:** Ran the spine-seed protocol on Chapter 4, in chat per the instructor's standing preference, no `.docx` packet. Seed record in `pipeline/ch04-spine-seeds.md`.

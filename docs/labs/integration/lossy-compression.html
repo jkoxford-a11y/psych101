@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>What Did the System Throw Away? - General Psychology</title>
+  <link rel="icon" href="data:," />
+  <link rel="stylesheet" href="../../css/style.css" />
+  <link rel="stylesheet" href="../../css/labs.css" />
+  <style>
+    .integration-station[hidden],
+    .station-reveal[hidden] {
+      display: none !important;
+    }
+
+    .station-tag {
+      font-family: var(--font-ui);
+      font-size: 0.86rem;
+      font-weight: 700;
+      color: var(--color-accent);
+    }
+
+    .context-stage,
+    .memory-stage {
+      display: grid;
+      min-height: 11rem;
+      place-items: center;
+      padding: 1.25rem;
+      margin: 1rem 0;
+      border: 1px solid var(--color-border);
+      border-radius: 6px;
+      background: #f9fafb;
+      text-align: center;
+    }
+
+    .context-sequence {
+      font: 700 clamp(2.4rem, 9vw, 4.8rem)/1.2 Georgia, serif;
+      letter-spacing: 0.08em;
+      white-space: nowrap;
+    }
+
+    .ambiguous-glyph {
+      position: relative;
+      display: inline-block;
+      width: 0.58em;
+      height: 0.88em;
+      margin: 0 0.06em;
+      overflow: hidden;
+      border-left: 0.09em solid #172b4d;
+      color: transparent;
+      vertical-align: -0.08em;
+    }
+
+    .ambiguous-glyph::before,
+    .ambiguous-glyph::after {
+      content: "";
+      position: absolute;
+      left: -0.02em;
+      width: 0.48em;
+      height: 0.38em;
+      border: 0.08em solid #172b4d;
+      border-left: 0;
+      border-radius: 0 0.5em 0.5em 0;
+    }
+
+    .ambiguous-glyph::before {
+      top: 0.02em;
+      transform: skewY(8deg);
+    }
+
+    .ambiguous-glyph::after {
+      bottom: 0.02em;
+      transform: skewY(-8deg);
+    }
+
+    .context-pair,
+    .case-pair {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 1rem;
+      margin: 1rem 0;
+    }
+
+    .context-card,
+    .case-card {
+      padding: 1rem;
+      border: 1px solid var(--color-border);
+      border-radius: 6px;
+      background: #f9fafb;
+    }
+
+    .context-card {
+      text-align: center;
+    }
+
+    .memory-word {
+      margin: 0;
+      font: 700 clamp(2rem, 8vw, 4rem)/1.2 var(--font-ui);
+    }
+
+    .range-output {
+      display: inline-block;
+      min-width: 3.5rem;
+      font-family: var(--font-ui);
+      font-weight: 700;
+    }
+
+    .full-width-range {
+      width: 100%;
+    }
+
+    .ledger-empty {
+      font-style: italic;
+      color: var(--color-muted);
+    }
+
+    .summary-block {
+      padding-bottom: 0.75rem;
+      margin-bottom: 1rem;
+      border-bottom: 1px solid var(--color-border);
+    }
+
+    @media (max-width: 680px) {
+      .context-pair,
+      .case-pair {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .ambiguous-glyph::before,
+      .ambiguous-glyph::after {
+        transition: none;
+      }
+    }
+  </style>
+</head>
+<body data-lab-storage-key="psych101-lab-integration-lossy-compression-v1">
+<div class="layout">
+  <aside class="sidebar" id="app-sidebar"></aside>
+  <script src="../../js/sidebar.js" data-dir="labs/integration" data-active="labs" data-top="full"></script>
+
+  <main class="main lab-main">
+    <p class="chapter-meta">Cumulative Learning Lab - Chapters 4, 8, 11, and 13</p>
+    <h1>What Did the System Throw Away?</h1>
+    <hr class="chapter-divider" />
+    <p><strong>A Cross-Chapter Lab on Lossy Compression</strong></p>
+    <p>Plan on 15–20 minutes.</p>
+
+    <p>Your mind does not preserve every available detail equally. It builds usable representations: a stable percept, the meaning of an event, an expectation about a group, or a label for a recurring pattern.</p>
+    <p>That usually works. It also means that some information is lost.</p>
+    <p>In this lab, you will complete four short stations. At each one, ask:</p>
+    <ol>
+      <li>What was preserved?</li>
+      <li>What was discarded?</li>
+      <li>When did the discarded information become important?</li>
+    </ol>
+
+    <div class="callout callout--note">
+      <div class="callout-title">Accessibility, privacy, and boundaries</div>
+      <p>This is a teaching demonstration. It does not measure your perceptual ability, memory ability, bias, diagnostic reasoning, mental health, or AI literacy. Fictional cases do not diagnose anyone.</p>
+      <p>Your prediction, progress, responses, explanation, and transfer response remain in <code>sessionStorage</code> for this browser-tab session. The lab collects no names, emails, IDs, health information, analytics, or tracking, and sends nothing to a server.</p>
+    </div>
+
+    <section class="lab-panel" id="prediction-panel" aria-labelledby="prediction-heading">
+      <p class="lab-kicker">Phase 1 of 6 - Prediction and Commitment</p>
+      <h2 id="prediction-heading" tabindex="-1">Predict and Commit</h2>
+      <form id="prediction-form" novalidate>
+        <fieldset class="lab-fieldset">
+          <legend>Perceptual illusions, false memories, stereotypes, and diagnostic errors appear to be different problems. Do you predict that they share a general trade-off?</legend>
+          <label class="option-row"><input type="radio" name="prediction-choice" value="yes" /> Yes. Each may preserve useful structure while losing detail.</label>
+          <label class="option-row"><input type="radio" name="prediction-choice" value="no" /> No. They are too different for the same framework to clarify them.</label>
+          <label class="option-row"><input type="radio" name="prediction-choice" value="unsure" /> Unsure. I need to see the cases first.</label>
+        </fieldset>
+        <label class="text-label" for="prediction-reason">Explain your prediction. What do you think a system gains—and risks—when it simplifies complex information?</label>
+        <textarea id="prediction-reason" rows="5" required></textarea>
+        <button class="lab-btn" type="button" id="commit-prediction">Commit prediction</button>
+      </form>
+      <p class="save-status" id="prediction-status" aria-live="polite"></p>
+    </section>
+
+    <section class="lab-panel phase-panel" id="station-panel" aria-labelledby="station-heading" hidden>
+      <p class="lab-kicker">Phase 2 of 6 - Manipulation and Observation</p>
+      <h2 id="station-heading" tabindex="-1">Four Sequential Stations</h2>
+      <p class="station-tag" id="station-progress" aria-live="polite"></p>
+
+      <div class="integration-station" id="perception-station" hidden>
+        <h3 id="perception-heading" tabindex="-1">Perception: Context Settles Ambiguity</h3>
+        <p id="perception-instruction">Look at the sequence and commit your judgment before the other context appears.</p>
+        <div class="context-stage" id="perception-stage" role="img" aria-label="A central ambiguous mark shown within one surrounding sequence">
+          <div class="context-sequence" id="perception-sequence"></div>
+        </div>
+        <fieldset class="lab-fieldset">
+          <legend>What is the central mark?</legend>
+          <label class="option-row"><input type="radio" name="perception-choice" value="B" /> The letter B</label>
+          <label class="option-row"><input type="radio" name="perception-choice" value="13" /> The number 13</label>
+          <label class="option-row"><input type="radio" name="perception-choice" value="ambiguous" /> Ambiguous / cannot decide</label>
+        </fieldset>
+        <button class="lab-btn" type="button" id="record-perception">Commit this judgment</button>
+        <p class="save-status" id="perception-status" aria-live="polite"></p>
+        <div class="station-reveal" id="perception-reveal" hidden>
+          <h3 id="perception-reveal-heading" tabindex="-1">Perception Reveal</h3>
+          <div class="context-pair">
+            <div class="context-card">
+              <div class="context-sequence">A <span class="ambiguous-glyph" aria-label="ambiguous central mark"></span> C</div>
+              <p>Letter context</p>
+            </div>
+            <div class="context-card">
+              <div class="context-sequence">12 <span class="ambiguous-glyph" aria-label="the identical ambiguous central mark"></span> 14</div>
+              <p>Number context</p>
+            </div>
+          </div>
+          <p><strong>The central marks were physically identical. Only the surrounding context changed.</strong></p>
+          <div class="feedback-panel">
+            <h3>What the station shows</h3>
+            <p>Perception must settle ambiguous input into a usable interpretation. Context helps determine which interpretation wins. The percept preserves coherence while making the unresolved ambiguity less visible.</p>
+            <p>This does not mean expectations can make any input look like anything. Context has its strongest influence when incoming evidence supports more than one interpretation.</p>
+          </div>
+          <button class="lab-btn" type="button" id="continue-perception">Continue to Memory</button>
+        </div>
+      </div>
+
+      <div class="integration-station" id="memory-station" hidden>
+        <h3 id="memory-heading" tabindex="-1">Memory: Meaning Without an Exact Record</h3>
+        <div id="memory-ready">
+          <p>Ten words will appear individually at a consistent pace. Attend to each word; you will make memory judgments after a brief interruption.</p>
+          <button class="lab-btn" type="button" id="start-memory-list">Start the word list</button>
+          <p class="save-status" id="memory-ready-status" aria-live="polite"></p>
+        </div>
+        <div id="memory-presentation" hidden>
+          <div class="memory-stage" aria-live="polite" aria-atomic="true">
+            <p class="memory-word" id="memory-word"></p>
+          </div>
+          <p class="save-status" id="memory-presentation-status">Keep watching. The response controls will appear after the list.</p>
+        </div>
+        <div id="memory-distractor" hidden>
+          <p id="distractor-progress" class="station-tag"></p>
+          <div class="memory-stage">
+            <div>
+              <p class="memory-word" id="distractor-number"></p>
+              <p>Is this number odd or even?</p>
+            </div>
+          </div>
+          <div class="lab-actions">
+            <button class="lab-btn" type="button" data-parity="odd">Odd</button>
+            <button class="lab-btn" type="button" data-parity="even">Even</button>
+          </div>
+          <p class="save-status" id="distractor-status" aria-live="polite"></p>
+        </div>
+        <div id="memory-test" hidden>
+          <p id="memory-test-progress" class="station-tag"></p>
+          <div class="memory-stage">
+            <div>
+              <p class="memory-word" id="memory-test-word"></p>
+              <p>Was this word shown in the original list?</p>
+            </div>
+          </div>
+          <fieldset class="lab-fieldset">
+            <legend>Choose one response.</legend>
+            <label class="option-row"><input type="radio" name="memory-choice" value="shown" /> Shown</label>
+            <label class="option-row"><input type="radio" name="memory-choice" value="not-shown" /> Not shown</label>
+          </fieldset>
+          <button class="lab-btn" type="button" id="record-memory-answer">Record response</button>
+          <p class="save-status" id="memory-test-status" aria-live="polite"></p>
+        </div>
+        <div class="station-reveal" id="memory-reveal" hidden>
+          <h3 id="memory-reveal-heading" tabindex="-1">Memory Reveal</h3>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr><th scope="col">Test word</th><th scope="col">Original list</th><th scope="col">Your response</th></tr>
+              </thead>
+              <tbody id="memory-results-body"></tbody>
+            </table>
+          </div>
+          <p><strong>Sleep was related to every part of the list, but the word itself was never shown.</strong></p>
+          <div class="feedback-panel">
+            <h3>What the station shows</h3>
+            <p>Memory often preserves meaning better than exact membership. The list strongly activated the idea of sleep, even though the word itself was absent. Semantic organization usually helps memory by connecting related information. It can also make an expected word feel familiar enough to be mistaken for one that was presented.</p>
+            <p>Selecting the absent word is not evidence of poor memory. Not selecting it does not disprove the phenomenon. The reliable finding is a group-level tendency in semantic-associate false-memory tasks.</p>
+          </div>
+          <button class="lab-btn" type="button" id="continue-memory">Continue to Social Categorization</button>
+        </div>
+      </div>
+
+      <div class="integration-station" id="social-station" hidden>
+        <h3 id="social-heading" tabindex="-1">Social Judgment: A Prototype Built from a Biased Sample</h3>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th scope="col">Sampled members</th><th scope="col">Volunteered to lead</th><th scope="col">Did not volunteer</th></tr>
+            </thead>
+            <tbody>
+              <tr><th scope="row">Luma</th><td>3</td><td>1</td></tr>
+              <tr><th scope="row">Vardo</th><td>1</td><td>3</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <fieldset class="lab-fieldset">
+          <legend>Based only on these examples, which team appears more likely to take charge?</legend>
+          <label class="option-row"><input type="radio" name="social-choice" value="Luma" /> Luma</label>
+          <label class="option-row"><input type="radio" name="social-choice" value="Vardo" /> Vardo</label>
+          <label class="option-row"><input type="radio" name="social-choice" value="insufficient" /> The available evidence is not sufficient</label>
+        </fieldset>
+        <label class="text-label" for="social-confidence">How confident are you in that judgment? <output class="range-output" id="social-confidence-output" for="social-confidence">50%</output></label>
+        <input class="full-width-range" type="range" id="social-confidence" min="0" max="100" value="50" />
+        <button class="lab-btn" type="button" id="record-social">Commit this judgment</button>
+        <p class="save-status" id="social-status" aria-live="polite"></p>
+        <div class="station-reveal" id="social-reveal" hidden>
+          <h3 id="social-reveal-heading" tabindex="-1">Sampling Reveal</h3>
+          <p><strong>The four Luma profiles came from team captains. The four Vardo profiles came from new members.</strong></p>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr><th scope="col">Full team</th><th scope="col">Led at least one task</th><th scope="col">Did not lead</th></tr>
+              </thead>
+              <tbody>
+                <tr><th scope="row">Luma, 20 members</th><td>8</td><td>12</td></tr>
+                <tr><th scope="row">Vardo, 20 members</th><td>9</td><td>11</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="feedback-panel">
+            <h3>What the station shows</h3>
+            <p>A social prototype summarizes the examples you have encountered. That is useful when you must form expectations from incomplete information. But the prototype cannot automatically preserve the sampling process that produced those examples.</p>
+            <p>Vivid or repeatedly encountered members can shape an expectation about an entire group even when they are not representative. The problem is not categorization by itself. The problem is forgetting that the category was built from a particular—and possibly biased—sample.</p>
+          </div>
+          <button class="lab-btn" type="button" id="continue-social">Continue to Diagnosis</button>
+        </div>
+      </div>
+
+      <div class="integration-station" id="diagnosis-station" hidden>
+        <h3 id="diagnosis-heading" tabindex="-1">Diagnosis: A Pattern Label Is Not a Causal Explanation</h3>
+        <div class="case-pair">
+          <article class="case-card">
+            <h4>Morgan</h4>
+            <p>Morgan’s difficulties began after a major loss. Withdrawal from friends and previously rewarding activities has become a major part of the continuing pattern.</p>
+          </article>
+          <article class="case-card">
+            <h4>Riley</h4>
+            <p>Riley has experienced several episodes across multiple years. The current episode has no clear immediate precipitating event and includes severe disruption of sleep and daily rhythms.</p>
+          </article>
+        </div>
+        <p><strong>Both fictional cases have received the same diagnostic label: major depressive disorder.</strong></p>
+        <fieldset class="lab-fieldset">
+          <legend>What does the shared diagnosis establish?</legend>
+          <label class="option-row"><input type="radio" name="diagnosis-choice" value="same-cause" /> The two cases must have the same cause.</label>
+          <label class="option-row"><input type="radio" name="diagnosis-choice" value="same-treatment" /> The two cases should receive exactly the same treatment.</label>
+          <label class="option-row"><input type="radio" name="diagnosis-choice" value="shared-pattern" /> The cases share a clinically recognized symptom pattern, but their causes, maintaining processes, and treatment needs may differ.</label>
+          <label class="option-row"><input type="radio" name="diagnosis-choice" value="everything" /> The label explains everything important about both cases.</label>
+        </fieldset>
+        <button class="lab-btn" type="button" id="record-diagnosis">Commit this answer</button>
+        <p class="save-status" id="diagnosis-status" aria-live="polite"></p>
+        <div class="station-reveal" id="diagnosis-reveal" hidden>
+          <h3 id="diagnosis-reveal-heading" tabindex="-1">Diagnosis Reveal</h3>
+          <div class="feedback-panel" id="diagnosis-feedback">
+            <h3 id="diagnosis-feedback-heading"></h3>
+            <p>The cases share a clinically recognized symptom pattern, but their causes, maintaining processes, and treatment needs may differ.</p>
+            <p>Diagnosis compresses a complex presentation into a shared pattern label. That label can support communication, research, eligibility decisions, and treatment planning. It does not contain the individual causal history inside it.</p>
+            <p>Two people can meet the same diagnostic criteria through different developmental paths and remain stuck for different reasons. The label organizes the pattern. A clinical formulation asks what produced and maintains it in this person.</p>
+          </div>
+          <button class="lab-btn" type="button" id="continue-diagnosis">Reveal the Shared Principle</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="lab-panel" id="ledger-panel" aria-labelledby="ledger-heading" hidden>
+      <h2 id="ledger-heading">Compression Ledger</h2>
+      <p class="ledger-empty" id="ledger-empty">Complete a station to add its entry.</p>
+      <div class="table-wrap" id="ledger-table-wrap" hidden>
+        <table class="summary-table">
+          <thead>
+            <tr><th scope="col">System</th><th scope="col">Preserved</th><th scope="col">Discarded</th><th scope="col">Loss mattered when…</th></tr>
+          </thead>
+          <tbody id="ledger-body"></tbody>
+        </table>
+      </div>
+      <div class="event-log" aria-label="Plain-text station event log">
+        <ol id="event-log" aria-live="polite"></ol>
+      </div>
+    </section>
+
+    <section class="lab-panel phase-panel" id="concept-panel" aria-labelledby="concept-heading" hidden>
+      <p class="lab-kicker">Phase 3 of 6 - Explicit Concept Explanation</p>
+      <h2 id="concept-heading" tabindex="-1">What the Four Stations Share</h2>
+      <div class="callout callout--note">
+        <div class="callout-title">What the completed ledger shows</div>
+        <p>Across all four stations, the system kept enough structure to produce a useful answer:</p>
+        <ul>
+          <li>perception produced a coherent percept;</li>
+          <li>memory retained semantic meaning;</li>
+          <li>social judgment formed an expectation;</li>
+          <li>diagnosis named a recurring symptom pattern.</li>
+        </ul>
+        <p>The errors appeared when the task later required information that had not been preserved.</p>
+        <p><strong>Lossy compression is a trade-off.</strong> Preserving everything would be slow, costly, and often unnecessary. Preserving what usually matters makes fast interpretation and action possible. The same economy creates predictable errors at the boundaries.</p>
+        <p><strong>Compression describes a shared functional trade-off, not one shared mechanism.</strong> Perception, memory, social judgment, and diagnosis do not operate through the same biological or computational process. They are being compared because each preserves some structure while losing other information.</p>
+      </div>
+      <div class="callout callout--do-not-confuse">
+        <div class="callout-title">Do Not Confuse: shared trade-off ≠ shared mechanism</div>
+        <p>These systems are not interchangeable. Context-sensitive perception, reconstructive memory, prototype formation, and clinical classification involve different evidence and mechanisms. Compression is the comparison being tested, not a claim that one process explains them all.</p>
+      </div>
+      <button class="lab-btn" type="button" id="continue-concept">Explain the Comparison</button>
+    </section>
+
+    <section class="lab-panel phase-panel" id="explain-panel" aria-labelledby="explain-heading" hidden>
+      <p class="lab-kicker">Phase 4 of 6 - Explain</p>
+      <h2 id="explain-heading" tabindex="-1">Compare the Systems</h2>
+      <label class="text-label" for="explanation-response">Compare the memory station with one other station. Explain:</label>
+      <ol>
+        <li>what each system preserved;</li>
+        <li>what each discarded;</li>
+        <li>why the discarded information later mattered; and</li>
+        <li>one important difference between the mechanisms involved.</li>
+      </ol>
+      <p>Use the term <strong>lossy compression</strong> and at least two of these terms: <strong>ambiguity</strong>, <strong>gist</strong>, <strong>prototype</strong>, <strong>sampling bias</strong>, <strong>diagnostic label</strong>, or <strong>clinical formulation</strong>.</p>
+      <textarea id="explanation-response" rows="7"></textarea>
+      <button class="lab-btn" type="button" id="save-explanation">Save explanation</button>
+      <p class="save-status" id="explanation-status" aria-live="polite"></p>
+    </section>
+
+    <section class="lab-panel phase-panel" id="transfer-panel" aria-labelledby="transfer-heading" hidden>
+      <p class="lab-kicker">Phase 5 of 6 - Transfer</p>
+      <h2 id="transfer-heading" tabindex="-1">Audit an AI Summary</h2>
+      <p>This is a fixed simulated summary. The lab does not call an AI service.</p>
+      <div class="callout callout--note">
+        <div class="callout-title">Source</div>
+        <p>In one introductory psychology course, students who chose to complete three optional practice quizzes scored higher on the unit exam than students who completed none. Because students chose whether to take the quizzes, the comparison cannot establish that the quizzes caused the score difference. The result also came from one course and did not compare every possible study method.</p>
+      </div>
+      <div class="callout callout--ai-connection">
+        <div class="callout-title">Simulated AI summary</div>
+        <p>Three practice quizzes caused students to perform substantially better, demonstrating that retrieval practice improves learning in every course.</p>
+      </div>
+      <div id="transfer-classifications">
+        <label for="claim-association">Students completing three quizzes scored higher</label>
+        <select id="claim-association">
+          <option value="">Choose a classification</option>
+          <option value="supported">Supported by the source</option>
+          <option value="causal">Unsupported causal addition</option>
+          <option value="magnitude">Magnitude not established</option>
+          <option value="generalization">Unsupported generalization</option>
+        </select>
+        <label for="claim-cause">The quizzes caused the difference</label>
+        <select id="claim-cause">
+          <option value="">Choose a classification</option>
+          <option value="supported">Supported by the source</option>
+          <option value="causal">Unsupported causal addition</option>
+          <option value="magnitude">Magnitude not established</option>
+          <option value="generalization">Unsupported generalization</option>
+        </select>
+        <label for="claim-magnitude">The improvement was substantial</label>
+        <select id="claim-magnitude">
+          <option value="">Choose a classification</option>
+          <option value="supported">Supported by the source</option>
+          <option value="causal">Unsupported causal addition</option>
+          <option value="magnitude">Magnitude not established</option>
+          <option value="generalization">Unsupported generalization</option>
+        </select>
+        <label for="claim-generalization">The finding applies to every course</label>
+        <select id="claim-generalization">
+          <option value="">Choose a classification</option>
+          <option value="supported">Supported by the source</option>
+          <option value="causal">Unsupported causal addition</option>
+          <option value="magnitude">Magnitude not established</option>
+          <option value="generalization">Unsupported generalization</option>
+        </select>
+      </div>
+      <label class="text-label" for="transfer-response">What gist did the summary preserve? What qualifications did it discard? Why did those discarded details matter?</label>
+      <textarea id="transfer-response" rows="6"></textarea>
+      <button class="lab-btn" type="button" id="save-transfer">Check classifications and complete the lab</button>
+      <p class="save-status" id="transfer-status" aria-live="polite"></p>
+      <div class="station-reveal" id="transfer-feedback" hidden>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th scope="col">Claim</th><th scope="col">Correct classification</th><th scope="col">Your classification</th></tr></thead>
+            <tbody id="transfer-results-body"></tbody>
+          </table>
+        </div>
+        <div class="feedback-panel">
+          <h3 id="transfer-feedback-heading" tabindex="-1">What the audit shows</h3>
+          <p>The summary preserved the broad association: students who completed the quizzes scored higher. It discarded self-selection, causal uncertainty, unspecified effect size, and the limited setting.</p>
+          <p>Those details became important when the summary changed an association into a causal claim and generalized one classroom result to every course. Fluent compression preserved the story while weakening its evidential boundaries.</p>
+        </div>
+        <button class="lab-btn" type="button" id="finish-lab">View Completion Summary</button>
+      </div>
+    </section>
+
+    <section class="lab-panel phase-panel" id="summary-panel" aria-labelledby="summary-heading" hidden>
+      <p class="lab-kicker">Phase 6 of 6 - Completion Summary</p>
+      <h2 id="summary-heading" tabindex="-1">What You Practiced</h2>
+      <div id="completion-summary" aria-live="polite"></div>
+      <p><strong>You practiced identifying what a representation preserves, what it loses, and when that loss becomes consequential. Compression is not the opposite of intelligent functioning. It is one of the conditions that makes intelligent functioning possible—and one reason intelligent systems make patterned mistakes.</strong></p>
+      <div class="lab-actions">
+        <button class="lab-btn lab-btn--secondary" type="button" id="restart-lab">Start over</button>
+        <a class="lab-btn" href="../index.html">Return to Learning Labs</a>
+      </div>
+    </section>
+
+    <section class="callout callout--think-about-it" aria-labelledby="instructor-heading">
+      <div class="callout-title" id="instructor-heading">Instructor Note</div>
+      <p>Assign this lab after students have completed Chapters 4, 8, 11, and 13, or use it as a cumulative final-unit activity. Have pairs compare which station most strongly tempted them toward an overconfident judgment.</p>
+      <p>The key debrief is not “all mistakes are compression.” It is the narrower comparison: each system preserved structure that was usually useful, and the error appeared when discarded information became relevant.</p>
+      <p>Do not focus on whether individual students selected the false-memory lure or made the biased group judgment. Use class patterns only as discussion material, never as evidence about an individual student.</p>
+    </section>
+
+    <section class="callout callout--note" aria-labelledby="evidence-heading">
+      <div class="callout-title" id="evidence-heading">Memory station evidence base</div>
+      <p>The word-list station adapts the Deese–Roediger–McDermott (DRM) semantic-associate false-memory paradigm: Deese, J. (1959). On the prediction of occurrence of particular verbal intrusions in immediate recall. <em>Journal of Experimental Psychology, 58</em>(1), 17–22. https://doi.org/10.1037/h0046671; Roediger, H. L., III, &amp; McDermott, K. B. (1995). Creating false memories: Remembering words not presented in lists. <em>Journal of Experimental Psychology: Learning, Memory, and Cognition, 21</em>(4), 803–814. https://doi.org/10.1037/0278-7393.21.4.803.</p>
+    </section>
+  </main>
+</div>
+<script src="../../js/labs-lossy-compression.js"></script>
+<script src="../../js/lab-session-controls.js"></script>
+<script src="../../js/nav.js"></script>
+</body>
+</html>

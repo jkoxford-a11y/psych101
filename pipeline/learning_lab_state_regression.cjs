@@ -32,6 +32,7 @@ const labs = [
   ['docs/labs/ch11/change-the-situation.html', 'psych101_ch11_change_situation_v1'],
   ['docs/labs/ch12/coping-fit.html', 'psych101-ch12-coping-fit-v1'],
   ['docs/labs/ch13/diagnosis-under-uncertainty.html', 'psych101-ch13-diagnosis-uncertainty-v1'],
+  ['docs/labs/integration/lossy-compression.html', 'psych101-lab-integration-lossy-compression-v1'],
 ].map(([pagePath, storageKey]) => ({ pagePath, storageKey }))
   .filter(lab => !process.env.LAB_FILTER || lab.pagePath.includes(process.env.LAB_FILTER));
 
@@ -205,6 +206,11 @@ async function driveToCompletion(page, label) {
     }
 
     await fillVisibleControls(page, 'main input, main textarea, main select');
+    const timedMemoryPresentation = page.locator('#memory-presentation');
+    if (await timedMemoryPresentation.count() === 1 && await timedMemoryPresentation.isVisible()) {
+      await page.locator('#memory-distractor').waitFor({ state: 'visible', timeout: 15000 });
+      continue;
+    }
     const candidates = page.locator('main button.lab-btn:visible:not(#restart-lab):not(#reset-lab):not(#save-transfer):not(#mirror-board)');
     const count = await candidates.count();
     if (process.env.DEBUG_LAB_STATE) {
@@ -222,7 +228,10 @@ async function driveToCompletion(page, label) {
       }
     }
     assert.ok(clicked, `${label}: completion driver found no enabled action at step ${step}`);
-    await page.waitForTimeout(page.url().includes('/ch08/') ? 330 : 30);
+    const settleMs = page.url().includes('signal-detection')
+      ? 650
+      : (page.url().includes('/ch08/') ? 330 : 30);
+    await page.waitForTimeout(settleMs);
   }
   throw new Error(`${label}: completion driver exceeded its step limit`);
 }
