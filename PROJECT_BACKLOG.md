@@ -23,6 +23,7 @@ Durable future and deferred work that is not part of the immediately active task
 
 ## Labs and demonstrations
 
+- **Cross-chapter lossy-compression lab is built; chapter wiring remains deferred.** `docs/labs/integration/lossy-compression.html` is linked from the central Learning Labs index and connects Chapters 4, 8, 11, and 13 through perception, memory, social categorization, diagnosis, and a fixed simulated-AI transfer audit. Do not add chapter Markdown or generated-HTML links until placement is explicitly reviewed and approved.
 - **Complete the deployed-page human Learning Lab state/restoration spot check** — the repository-wide automated audit is complete. On deployed pages, verify the relocated Start over control with Tab/Shift+Tab and Enter/Space, one real same-tab reload/restore and completed-state restart, sidebar/return navigation, and the Signal Detection mask behavior. See `pipeline/audits/learning-lab-state-restoration-audit.md` and `pipeline/audits/ch04-lab-validation.md`.
 - **Build the size–weight illusion lab or remove the placeholder** — both Chapter 4 files still say “when available,” but no such lab exists in `docs/labs/ch04/`.
 - **Live-test both Chapter 3 labs** at desktop, portrait-mobile, and landscape-mobile widths, including completion, mid-session reload, focus/state restoration, reset, labels, and cue/outcome traces.
