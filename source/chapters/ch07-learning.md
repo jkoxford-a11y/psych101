@@ -16,7 +16,7 @@ This chapter is built around two of the most thoroughly studied learning process
 
 ## Where This Fits
 
-Chapter 4 asked how an organism extracts useful information from its environment. This chapter asks how experience changes which cues and actions matter. In the animal-model sequence, an organism takes in information, learns which events predict food, danger, or opportunity, and stores those relationships for later use. Chapter 8 turns to that final step. The complication here is that behavior is not a transparent readout of learning: organisms can learn without showing it, and old learning can survive after responding declines. Two cases organize the chapter:
+Chapter 4 asked how an organism extracts useful information from its environment. This chapter asks how experience changes which cues and actions matter. In the animal-model sequence, an organism takes in information, learns which events predict food, danger, or opportunity, and stores those relationships for later use. Chapter 8 turns to that final step. The question that organizes the chapter is **why can learning occur without being visible in behavior?** Behavior is not a transparent readout of learning: organisms can learn without showing it, and old learning can survive after responding declines. Two cases organize the chapter:
 
 - Extinction shows that new learning can compete with old learning without simply erasing it.
 - Bandura and Tolman show the other side of the same distinction: learning can occur before behavior reveals it.
@@ -182,9 +182,9 @@ Reward-prediction-error signals provide a neural example of updating: some dopam
 
 | Concept from this chapter | Reappears in | Why it matters there |
 |---|---|---|
-| [Extinction](#section-1-classical-conditioning--learning-what-predicts-what) | Ch. 13 — Psychological Disorders & Therapy | Exposure therapy uses expectancy violation and inhibitory learning; treatment reduces fear without guaranteeing that the original association has been erased |
+| [Extinction](#section-1-classical-conditioning-learning-what-predicts-what) | Ch. 13 — Psychological Disorders & Therapy | Exposure therapy uses expectancy violation and inhibitory learning; treatment reduces fear without guaranteeing that the original association has been erased |
 | [Little Albert and conditioned fear](#classic-study-watson-and-rayners-little-albert) | Ch. 13 — Psychological Disorders & Therapy | Fear conditioning is one contributor to some fears and phobias, while the study itself illustrates why vivid historical cases need methods scrutiny |
-| [Preparedness](#garcia-and-koelling-selective-cueconsequence-learning) | Ch. 1 — History & Approaches | The observed selective-learning pattern and its evolutionary interpretation provide a worked example of separating evidence from adaptive explanation |
+| [Preparedness](#garcia-and-koelling-selective-cue-consequence-learning) | Ch. 1 — History & Approaches | The observed selective-learning pattern and its evolutionary interpretation provide a worked example of separating evidence from adaptive explanation |
 | [Observational learning](#bandura-and-the-bobo-doll-learning-by-watching) | Ch. 11 — Social Psychology | Behavior, norms, and aggression can spread through observation without direct reinforcement of every learner |
 | [Latent learning](#tolman-and-honzik-learning-before-reward-reveals-it) | Ch. 8 — Memory | Stored information can influence later behavior even when current performance does not reveal that it was learned |
 | [Reward prediction error](#section-4-dopamine-prediction-error-and-motivation) | Ch. 3 — Neuroscience and Biological Bases | A transmitter's function depends on circuit, timing, and task; one well-studied signal should not become a one-chemical explanation |
@@ -321,6 +321,8 @@ d) Intrinsic and extrinsic motivation cannot interact
 
 **Classical conditioning** — Learning in which one stimulus comes to predict another and elicits a conditioned response.
 
+**Cognitive map** — Tolman's term for an internal representation of spatial or relational structure, acquired through experience independent of reinforcement.
+
 **Conditioned response (CR)** — A learned response elicited by a conditioned stimulus.
 
 **Conditioned stimulus (CS)** — A stimulus that comes to predict an unconditioned stimulus through learning.
@@ -329,11 +331,27 @@ d) Intrinsic and extrinsic motivation cannot interact
 
 **Discrimination** — Learning to respond differently to similar stimuli because they predict different outcomes.
 
+**Elicited** — Produced automatically by a preceding stimulus, as a conditioned or unconditioned response is; contrasted with behavior that is emitted.
+
+**Emitted** — Produced by the organism rather than triggered by a preceding stimulus, as operant behavior is; contrasted with behavior that is elicited.
+
 **Extinction** — A decline in conditioned or operant responding when the expected outcome no longer follows; the decline does not by itself prove erasure of earlier learning.
+
+**Extrinsic motivation** — Acting for a separable outcome such as money, a grade, or approval, rather than for the activity's own sake.
+
+**Fixed-interval** — A reinforcement schedule that reinforces the first response after a set period has elapsed, often producing a pause followed by accelerating responding.
+
+**Fixed-ratio** — A reinforcement schedule that reinforces after a set number of responses, often producing rapid responding followed by a post-reinforcement pause.
 
 **Generalization** — Extension of learned responding to stimuli or situations resembling the original one.
 
+**Habits** — Actions rapidly triggered by familiar cues with little deliberation, formed through repeated operant learning; efficient, but capable of persisting after the outcome that originally supported them has changed.
+
+**Intrinsic motivation** — Engaging in an activity for its own sake rather than for a separable outcome.
+
 **Latent learning** — Learning that occurs before it is visible in performance and becomes apparent when conditions provide a reason to use it.
+
+**Law of effect** — Thorndike's principle that behaviors followed by satisfying consequences become more likely to recur, while behaviors followed by discomforting consequences become less likely.
 
 **Negative reinforcement** — A consequence that increases behavior by removing or preventing an aversive stimulus.
 
@@ -360,6 +378,10 @@ d) Intrinsic and extrinsic motivation cannot interact
 **Unconditioned response (UCR)** — A response elicited by an unconditioned stimulus without the relevant conditioning history.
 
 **Unconditioned stimulus (UCS)** — A stimulus that elicits an unconditioned response without the relevant conditioning history.
+
+**Variable-interval** — A reinforcement schedule that reinforces the first response after changing, unpredictable intervals, often producing steady, moderate responding.
+
+**Variable-ratio** — A reinforcement schedule that reinforces after an unpredictable number of responses around an average, often producing high, steady responding.
 
 ---
 
@@ -393,8 +415,6 @@ Bandura, A., Ross, D., & Ross, S. A. (1961). Transmission of aggression through 
 Berke, J. D. (2018). What does dopamine mean? *Nature Neuroscience, 21*, 787–793.
 
 Berridge, K. C., & Robinson, T. E. (1998). What is the role of dopamine in reward: Hedonic impact, reward learning, or incentive salience? *Brain Research Reviews, 28*(3), 309–369.
-
-Bouton, M. E. (2026). Conditioning and learning. In R. Biswas-Diener & E. Diener (Eds.), *Noba textbook series: Psychology*. DEF Publishers.
 
 Deci, E. L. (1971). Effects of externally mediated rewards on intrinsic motivation. *Journal of Personality and Social Psychology, 18*(1), 105–115.
 

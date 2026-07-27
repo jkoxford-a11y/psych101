@@ -6,6 +6,30 @@ const require = createRequire(import.meta.url);
 const { marked } = require("marked");
 
 const chapters = {
+  "1": {
+    source: "source/chapters/ch01-history-approaches.md",
+    output: "docs/chapters/01-history-approaches.html",
+    title: "History and Approaches to Psychology",
+    pillar: "Foundations",
+    convertStructuredH4Callouts: true,
+    promoteSubheadings: true,
+  },
+  "6": {
+    source: "source/chapters/ch06-sleep.md",
+    output: "docs/chapters/06-sleep.html",
+    title: "Sleep",
+    pillar: "Biological",
+    convertStructuredH4Callouts: true,
+    promoteSubheadings: true,
+  },
+  "7": {
+    source: "source/chapters/ch07-learning.md",
+    output: "docs/chapters/07-learning.html",
+    title: "Learning",
+    pillar: "Cognitive",
+    convertStructuredH4Callouts: true,
+    promoteSubheadings: true,
+  },
   "4": {
     source: "source/chapters/ch04-sensation-perception.md",
     output: "docs/chapters/04-sensation-perception.html",

@@ -303,6 +303,8 @@ d) sleep serves no function that could plausibly be explained by natural selecti
 
 **Activation-synthesis theory** — Hobson and McCarley's (1977) theory that dreams arise from the forebrain's attempt to interpret internally generated neural activity during REM sleep.
 
+**Active sleep** — REM-like sleep state predominant in fetuses and newborns; the proportion of REM-like sleep declines as development proceeds toward a more adult-like pattern.
+
 **Adenosine** — A metabolic byproduct of neural activity that contributes to homeostatic sleep pressure by accumulating during wakefulness; dissipates during sleep; its receptors are blocked by caffeine.
 
 **Chronotype** — An individual's biologically driven preference for sleep and alertness timing; adolescents show a characteristic phase delay (later sleep-wake cycle) that returns toward earlier timing in adulthood.
@@ -311,7 +313,11 @@ d) sleep serves no function that could plausibly be explained by natural selecti
 
 **Entrainment** — The synchronization of an internal biological rhythm to an external cue, most often the light-dark cycle.
 
+**Ghrelin** — A hunger-signaling hormone released by the stomach; sleep restriction raises ghrelin, increasing hunger and preference for high-calorie foods.
+
 **Glymphatic system** — The brain's cerebrospinal-fluid-based waste-clearance mechanism; well established in animal studies, with more indirect and still-developing evidence in humans. Associated with clearing metabolic byproducts — notably amyloid-beta — more efficiently during deep slow-wave sleep than during wakefulness.
+
+**Leptin** — A satiety-signaling hormone released by fat tissue; sleep restriction lowers leptin, contributing to increased hunger.
 
 **Melatonin** — A hormone released by the pineal gland, under suprachiasmatic control, that signals biological night and promotes sleepiness.
 
@@ -328,6 +334,8 @@ d) sleep serves no function that could plausibly be explained by natural selecti
 **REM sleep behavior disorder** — A parasomnia in which REM atonia fails, allowing the sleeper to physically enact dream content during REM sleep; distinct from NREM arousal parasomnias such as sleepwalking.
 
 **Sleep paralysis** — A brief overlap of wakeful awareness with REM atonia, producing awareness with inability to move; dreamlike perceptions, sensed presence, chest pressure, or fear may occur but are not required.
+
+**Sleep pressure** — The homeostatic drive to sleep that builds during wakefulness, to which adenosine contributes; discharged by sleep and masked, but not reduced, by caffeine.
 
 **Suprachiasmatic nucleus (SCN)** — A structure in the hypothalamus that serves as the body's master circadian clock, entrained by light input from the retina.
 

@@ -33,7 +33,7 @@ The chapter returns to personality at the end. That is not an unrelated topic ad
 By the end of this chapter, you should be able to:
 
 1. Explain the fundamental attribution error and self-serving bias and distinguish their directions.
-2. Explain cognitive dissonance and distinguish central-route from peripheral-route persuasion.
+2. Explain cognitive dissonance, distinguish central-route from peripheral-route persuasion, and describe how source amnesia blurs belief from feeling.
 3. Distinguish conformity from obedience and identify situational variables that change each.
 4. Distinguish group polarization, groupthink, stereotypes, prejudice, and discrimination.
 5. Use the bystander decision model and explain why helping and aggression require multiple levels of explanation.
@@ -74,7 +74,7 @@ Same compression, aimed in the opposite direction. Outward, the situation gets d
 
 > **Do Not Confuse: FAE vs. Self-Serving Bias**
 >
-> The FAE concerns how we explain **other people’s behavior**: too much person, too little situation. The self-serving bias concerns how we explain **our own outcomes**: internal credit for success, external blame for failure. You can show both biases in the same five-minute conversation.
+> The FAE concerns how we explain other people’s behavior: too much person, too little situation. The self-serving bias concerns how we explain our own outcomes: internal credit for success, external blame for failure. You can show both biases in the same five-minute conversation.
 
 ### Cognitive Dissonance: When Behavior Changes Belief
 
@@ -228,7 +228,7 @@ The remedy is structural, not motivational. Telling people to “think independe
 
 > **Do Not Confuse: Polarization vs. Groupthink**
 >
-> Group polarization changes the **extremity** of an existing tendency after discussion. Groupthink reduces the **quality of evaluation** because disagreement is suppressed. A group can show either, both, or neither.
+> Group polarization changes the extremity of an existing tendency after discussion. Groupthink reduces the quality of evaluation because disagreement is suppressed. A group can show either, both, or neither.
 
 ### Stereotypes, Prejudice, and Discrimination
 
@@ -422,7 +422,7 @@ Strong situations rarely erase individual differences completely. They reduce th
 
 ### Measuring It
 
-Where these differences come from is Chapter 10's subject: **temperament** supplies the early variation in reactivity and self-regulation, and ecology shapes what that temperament becomes. A starting condition, not a finished personality.
+Where these differences come from is Chapter 10's subject: temperament supplies the early variation in reactivity and self-regulation, and ecology shapes what that temperament becomes. A starting condition, not a finished personality.
 
 The question here is narrower. Once the differences exist, can we measure them? Personality assessment ranges from carefully validated inventories to tools that produce compelling stories on weak evidence. The NEO inventories were built to measure Big Five dimensions. The Rorschach is more complicated: some scores have evidence for particular uses, while many popular interpretations do not (Mihura et al., 2013).
 
@@ -434,7 +434,7 @@ The chapter opened with a claim about what you would never do, and it can now be
 
 ## Chapter Summary
 
-Social psychology studies how people think about, influence, and respond to other people. The fundamental attribution error leads us to overestimate character and underestimate situation when explaining others. The self-serving bias protects our own self-image. Cognitive dissonance shows that behavior can reshape belief, while the elaboration likelihood model distinguishes careful argument evaluation from reliance on peripheral cues.
+Social psychology studies how people think about, influence, and respond to other people. The fundamental attribution error leads us to overestimate character and underestimate situation when explaining others. The self-serving bias protects our own self-image. Cognitive dissonance shows that behavior can reshape belief, while the elaboration likelihood model distinguishes careful argument evaluation from reliance on peripheral cues. Source amnesia—losing track of where a claim came from—can blur the line between belief and feeling, letting a repeated claim arrive with the weight of firsthand knowledge.
 
 Conformity is influence from peers and group norms; obedience is influence embedded in an authority relationship. Asch showed the power of unanimity and the protective effect of one ally. Milgram showed that incremental escalation, authority relationships, distance, and scientific purpose could produce harmful continuation, although the exact mechanism remains contested. The Stanford Prison Experiment remains a flawed illustration rather than clean evidence.
 
@@ -475,6 +475,8 @@ Personality traits are real dimensions, not fixed types. They predict patterns b
 
 **Conformity** — Changing belief or behavior in response to a perceived group norm.
 
+**Contact hypothesis** — The proposal that intergroup contact is especially likely to reduce prejudice when groups have equal status, cooperate toward shared goals, receive institutional support, and interact repeatedly.
+
 **Deindividuation** — Reduced personal identifiability in a group; its effects depend substantially on salient group norms.
 
 **Diffusion of responsibility** — Reduced personal obligation when responsibility is shared among multiple possible actors.
@@ -503,6 +505,8 @@ Personality traits are real dimensions, not fixed types. They predict patterns b
 
 **Pluralistic ignorance** — Misreading a group norm because everyone privately doubts it while publicly appearing to accept it.
 
+**Positive distinctiveness** — A favorable comparison between one's in-group and other groups that can result from social categorization.
+
 **Prejudice** — A positive or negative evaluation of people based on group membership.
 
 **Self-serving bias** — Taking internal credit for success and assigning failure to external causes.
@@ -512,6 +516,8 @@ Personality traits are real dimensions, not fixed types. They predict patterns b
 **Social identity theory** — A framework explaining how self-categorization and group comparison shape judgment and behavior.
 
 **Social loafing** — Reduced individual effort when personal contribution is difficult to identify.
+
+**Source amnesia** — Retaining a claim while losing track of where it came from, so it arrives with the weight of something learned firsthand.
 
 **Stereotype** — A generalized belief about members of a social category.
 

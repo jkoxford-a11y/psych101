@@ -276,6 +276,10 @@ Use a level-3 heading with an ISO date and a plain hyphen separator:
 
 Body: bolded lead-ins (`**Scope:**`, `**Files changed:**`, `**Validation:**`, `**Not committed / remaining:**`) recording actions, decisions, files changed, validation performed, and remaining issues.
 
+### Commit messages for batched pushes
+
+Cowork sessions cannot `git commit` or `git push` (see `CLAUDE.md`), so work accumulates locally and gets pushed later from a native shell — often bundling several unrelated pieces of work into one commit. There is no honest one-line subject for a grab-bag commit; the subject can stay terse (including the numeric placeholders some commit tools default to). What matters is the **body**: list the `GPT_project_log.md` entry titles and dates that the push corresponds to. That gives a mechanical link from commit to explanation, so a later session can find the "why" for any commit by date instead of correlating git diffs against the log by hand.
+
 ### Keep state claims out of date
 
 An entry describes work as of the moment it was written. Claims like "uncommitted," "untracked," or "not yet committed" go stale the moment the commit lands and then actively mislead the next agent. Prefer describing *what* changed over *what its git status was*; if you must record commit status, the next agent to touch the file should correct it. Current repository state belongs in `HANDOFF.md`, not here.

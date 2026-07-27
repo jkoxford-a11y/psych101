@@ -251,7 +251,7 @@ Four original explanatory diagrams are wired in the canonical source and regener
 
 | # | Description | Status | Notes |
 |---|-------------|--------|-------|
-| 12.1 | Body-budget supports/demands framework; explicitly metaphorical | ✅ wired/use now, Jon review | `ch12/fig_body_budget_deposits_withdrawals.svg/.png` |
+| 12.1 | Body-budget deposits/withdrawals framework; traces inadequate recovery to metabolic deficit and unpleasant affect | ✅ revised/wired/use now | `ch12/fig_body_budget_deposits_withdrawals.svg/.png` |
 | 12.2 | Russell core-affect circumplex; model-neutral takeaway | ✅ wired/use now, Jon review | `ch12/fig_core_affect_circumplex.svg/.png` |
 | 12.3 | Cognitive light cone as nested spatial and temporal goal horizons; stress-appraisal application kept secondary | ✅ wired/use now, Jon review | `ch12/ch12_cognitive_light_cone_goal_horizon.svg` |
 | 12.4 | Historical GAS contrasted with recovery and multisystem allostatic load | ✅ wired/use now, Jon review | `ch12/fig_general_adaptation_syndrome.svg/.png` |

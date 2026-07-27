@@ -60,8 +60,8 @@ Barrett (2017a) uses **body budget** as a metaphor for allostatic regulation —
 
 Acute stress without enough recovery leaves a metabolic deficit. You feel that deficit as unpleasant affect — bad, before you know why. Context supplies the rest, and the same deficit becomes dread before an exam or irritation in a crowded room. Let it repeat without recovery and the cost accumulates as **allostatic load** (i.e., cumulative wear and tear), which Section 3 takes up.
 
-![Balanced diagram labeled Body budget is a metaphor. Five supportive conditions—sleep, food and water, movement, social support, and recovery—appear on one side; five demands—workload, uncertainty, isolation, missed meals, and poor sleep—appear on the other. Arrows converge on present bodily condition and regulatory demand, with a note that the influences interact but are not one measurable account.](../../docs/images/ch12/fig_body_budget_deposits_withdrawals.png)
-*Figure 12.1. The body-budget metaphor organizes what supports regulation against what draws it down. Original figure.*
+![Diagram titled Body Budget: Deposits and Withdrawals. Eating, sleeping, and supportive social contact appear as deposits that replenish metabolic resources; moving, learning, fighting infection, coping with uncertainty, and meeting threats appear as withdrawals that draw on them. Both connect to present bodily condition, framed by what the body needs now and what it will need next. A final sequence shows demands outpacing recovery leading to metabolic deficit and then unpleasant affect, which context may shape into dread, irritation, fatigue, or another experience.](../../docs/images/ch12/fig_body_budget_deposits_withdrawals.png)
+*Figure 12.1. The body-budget metaphor shows allostatic regulation as metabolic deposits and withdrawals. Eating, sleeping, and supportive social contact replenish resources; moving, learning, fighting infection, coping with uncertainty, and meeting threats draw on them. When demands outpace recovery, a metabolic deficit can contribute to unpleasant affect. Original figure.*
 
 ### Interoception and core affect
 

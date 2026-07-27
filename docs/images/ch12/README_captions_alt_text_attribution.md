@@ -1,19 +1,18 @@
 # Chapter 12 Figure Metadata
 
-**Last reconciled:** 2026-07-15  
+**Last reconciled:** 2026-07-26  
 **Status:** Four original explanatory diagrams are wired in the canonical source and regenerated Chapter 12 HTML. Final status is **use now**.
 
-## Figure 12.1 — Body-budget framework
+## Figure 12.1 — Body-budget deposits and withdrawals
 
 - **Files:** `fig_body_budget_deposits_withdrawals.svg`, `fig_body_budget_deposits_withdrawals.png`
-- **Teaching job:** Distinguish interacting supportive conditions and added demands without depicting one literal resource tank.
-- **Caption:** The body-budget framework organizes conditions that can support regulation and conditions that add demand. These influences interact, but they are not one literal resource tank.
-- **Alt text:** Balanced diagram labeled “Body budget is a metaphor.” Five supportive conditions—sleep, food and water, movement, social support, and recovery—appear on one side; five demands—workload, uncertainty, isolation, missed meals, and poor sleep—appear on the other. Arrows converge on present bodily condition and regulatory demand, with a note that the influences interact but are not one measurable account.
-- **Creation method:** Original programmatic SVG authored for Oxford Psychology 101 and rasterized locally to PNG.
+- **Teaching job:** Show how allostatic regulation coordinates metabolic deposits and withdrawals, and trace how demands that outpace recovery can contribute to unpleasant affect.
+- **Caption:** The body-budget metaphor describes how the brain anticipates needs and coordinates metabolic resources. Eating, sleeping, and supportive social contact replenish those resources; moving, learning, fighting infection, coping with uncertainty, and meeting threats draw on them. When demands outpace recovery, the resulting metabolic deficit can contribute to unpleasant affect.
+- **Alt text:** Diagram titled “Body Budget: Deposits and Withdrawals.” Eating, sleeping, and supportive social contact appear as deposits that replenish metabolic resources; moving, learning, fighting infection, coping with uncertainty, and meeting threats appear as withdrawals that draw on them. Both connect to present bodily condition, framed by what the body needs now and what it will need next. A final sequence shows demands outpacing recovery leading to metabolic deficit and then unpleasant affect, which context may shape into dread, irritation, fatigue, or another experience.
+- **Creation method:** Original programmatic SVG revised for Oxford Psychology 101 and rasterized locally to PNG.
 - **Attribution:** Original figure for Oxford Psychology 101, 2026. No external image assets used.
 - **License:** Repository-authored original; safe for public sharing under the textbook's project license.
 - **Public-sharing status:** Use now.
-- **Caveat:** “Body budget” is a metaphor/framework, not a validated single scale or one interchangeable physiological account.
 
 ## Figure 12.2 — Core-affect circumplex
 

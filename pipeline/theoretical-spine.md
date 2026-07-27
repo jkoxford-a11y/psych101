@@ -403,7 +403,7 @@ Personality and social psychology sit at the intersection of multiple spine thre
 
 ### Ch. 7 — Learning
 
-**Student-facing spine question:** *Why is unlearning harder than learning?*
+**Student-facing spine question:** *Why can learning occur without being visible in behavior?*
 
 **Extinction as prediction error, not erasure.** Extinction is not the deletion of the original association. It is new inhibitory learning layered on top — a new prediction ("CS no longer predicts US") that competes with the original. The original trace remains. This is why spontaneous recovery occurs, why renewal occurs when context changes, and why extinguished responses can return under stress. The organism's model was updated, but the prior was not erased — it was suppressed by a more recent prediction.
 
