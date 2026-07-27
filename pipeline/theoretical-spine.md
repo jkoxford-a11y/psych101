@@ -481,7 +481,7 @@ Personality and social psychology sit at the intersection of multiple spine thre
 
 **Flynn Effect ties to the "how the model gets built" development thread.** Richer environments supply more and better raw material for the compression process to work on — independent of genes entirely.
 
-**Group differences: this is where a lossy compression becomes socially dangerous.** Frame explicitly as the darkest, highest-stakes version of the chapter's own argument — a compressed score mistaken for a fixed essence. Jon reviewed the existing hedged treatment of this topic (real in the data, contested in interpretation, not explained by between-group genetics, stereotype threat as one documented mechanism, environmental factors substantial) and chose to keep it essentially as-is, tied to this framing sentence, rather than shrink, swap the example, or cut it — treat that as a settled editorial decision, not open for silent revision.
+**Group differences were explicitly retired from Chapter 9 on 2026-07-27.** An earlier pass recorded a decision to keep a bounded group-differences paragraph, but the exact draft that became canonical did not contain it. When the spine-seed diagnostic surfaced that mismatch, Jon chose to keep the passage out. Do not re-propose it as missing Chapter 9 content. The chapter retains the broader boundary that IQ is a standardized summary, not a fixed substance or a complete person; stereotype threat remains assigned to Chapter 11.
 
 ---
 

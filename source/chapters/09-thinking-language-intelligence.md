@@ -108,11 +108,11 @@ Here is the double edge that ties this section to the next. The very concepts th
 
 ## Section 2: Heuristics, Biases, and the Two-Mode View
 
+**Return to your prediction from the opener.** Most people report that English has more words beginning with *k* than words with *k* in the third position. In fact, the third-position words are more common. Words beginning with *k*—*king, key, kite*—are easier to search for because dictionaries and memory organize words strongly by their initial sound. Ease of retrieval is mistaken for frequency (Tversky & Kahneman, 1973).
+
 ### System 1 and System 2
 
 One influential framework distinguishes two broad processing modes (Kahneman, 2011). **System 1** is fast, automatic, associative, and often outside awareness. **System 2** is slower, deliberate, attention-demanding, and capable of following explicit rules. Both are constrained by the information available to them.
-
-These labels are summaries, not two literal brain structures or a complete theory of judgment. Different automatic processes can produce different errors, and deliberate thought does not guarantee a correct conclusion.
 
 > **Do Not Confuse: System 1 ≠ Irrational; System 2 ≠ Rational**
 > System 1 is fast and associative, not inherently defective. It recognizes a friend's face, reads a familiar word, and detects many patterns accurately. System 2 is slow and deliberate, but it can rationalize a preferred conclusion or apply the wrong rule with great care. Treat the distinction as two processing modes, not as a good system fighting a bad one.
@@ -125,8 +125,6 @@ These labels are summaries, not two literal brain structures or a complete theor
 When estimating how frequent or probable something is, people often use the ease with which examples come to mind. This is the **availability heuristic** (Tversky & Kahneman, 1973).
 
 Availability often works because common events usually are easier to recall. But ease of recall is also affected by vividness, recency, media coverage, and personal relevance. A dramatic event may be mentally available even when it is rare. A common but uneventful risk may be difficult to picture and therefore underestimated.
-
-**Return to your prediction from the opener.** Most people report that English has more words beginning with *k* than words with *k* in the third position. In fact, the third-position words are more common. Words beginning with *k*—*king, key, kite*—are easier to search for because dictionaries and memory organize words strongly by their initial sound. Ease of retrieval is mistaken for frequency (Tversky & Kahneman, 1973).
 
 ### The Representativeness Heuristic
 
@@ -180,7 +178,7 @@ Anchoring appears in negotiations, pricing, diagnosis, and everyday estimation. 
 
 ### Different Shortcuts, Related Vulnerabilities
 
-The biases in this section do not require one common mechanism. Each gives the limited system a different way to simplify a judgment.
+These shortcuts do not share one mechanism. Each works by throwing information away; bias appears when the problem needs exactly what that shortcut discarded.
 
 | Judgment pattern | What becomes easy to use | What may be neglected |
 |---|---|---|
@@ -204,7 +202,7 @@ The biases in this section do not require one common mechanism. Each gives the l
 
 Every person builds meaning from a different history. Language lets private minds coordinate through public symbols. In this chapter's compression metaphor, a word is a low-cost signal pointing toward a richer network of meaning. That economy makes teaching and culture possible, but two people can use the same word while carrying somewhat different assumptions.
 
-Language and thought interact without being identical. People with severe language impairment can retain substantial nonlinguistic reasoning, although language may still support some forms of complex thought (Fedorenko, Piantadosi, & Gibson, 2024).
+Language and thought interact without being identical. Fedorenko, Piantadosi, and Gibson (2024) argue that language is primarily a tool for communication; a competing view treats it chiefly as an instrument of thought. The evidence does not settle that debate, and neither should this chapter.
 
 ### The Structure of Language
 
@@ -218,7 +216,7 @@ Human language builds an enormous range of messages from a small set of reusable
 | **Semantics** | Conventional meanings of words and sentences | “Bank” can refer to money or the side of a river |
 | **Pragmatics** | How context and social expectations shape meaning | “Could you pass the salt?” functions as a request |
 
-English uses roughly 40 to 45 phonemes, depending on dialect. Those sounds combine into morphemes; morphemes combine under syntactic rules; semantics and pragmatics allow the resulting sequences to refer, imply, request, joke, and deceive. A limited set of components can therefore generate an effectively unlimited set of messages.
+A limited set of components can therefore generate an effectively unlimited set of messages.
 
 **Stop and Retrieve:** In the sentence “Dogs barked,” identify the morphemes. Then explain why “Can you open the window?” can be grammatically a question but pragmatically a request.
 
