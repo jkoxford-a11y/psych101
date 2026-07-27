@@ -10,6 +10,20 @@ Repository rules and conventions live in `AGENTS.md`, not here. Current state an
 
 ## Log Entries
 
+### 2026-07-27 - Chapter 5 Spine-Seed Pass (Cowork)
+
+**Scope:** Ran `pipeline/spine-seed-protocol.md` on Chapter 5 (Consciousness). The Step 1 diagnostic returned zeros on bottleneck/bandwidth, binding, octopus, Seth/self-as-construction (four probes), Eagleman/neural delay, cognitive light cone, and the chapter's own student-facing spine question. Two findings drove the pass. First, `self` appeared twelve times in the body and every instance was a modifier — Section 4's psychedelic case leaned on "the ordinary sense of self" against a construct the chapter never built, while `evidence-commitments.md` L64 deferred the strong self claim to "Ch. 5's Seth extension," a thread that did not exist. Second, Ch. 4 hands the binding problem forward twice (body close and Connections row) into a chapter containing `bind` zero times.
+
+**Decisions (settled in chat, six routed):** D1 self-as-construction accepted; D2 binding accepted via global-workspace theory; D3 octopus accepted; D6 camera-analogy limitation moved to the end of §2; **D4 (Eagleman) and D5 (cognitive light cone) declined**, with reasoning recorded in place per Step 7 rather than deleted.
+
+**Verification changed the content.** The rubber hand illusion was cut from D1 and replaced with depersonalization: Lush (2020) and Lush et al. (2020) argue the paradigm is confounded by demand characteristics and trait phenomenological control, the Ehrsson-group rebuttal and Lush/Seth reply remain unresolved, and Seth is himself a co-author on the critique. Third instance of the Asch/Müller-Lyer pattern where verifying strengthened the caution. Separately, Young (1963) gives ~300 million of ~500 million octopus neurons in the arm ganglia — three-fifths, not the spine's "approximately two-thirds"; `theoretical-spine.md` L388 corrected in place with the original preserved.
+
+**Files changed:** `source/chapters/ch05-consciousness.md` (body 4,096 → 4,384 words, +288 against seven prunes; four references added — Hochner 2012, Seth & Tsakiris 2018, Sierra & David 2011, Young 1963), `docs/chapters/05-consciousness.html` (rebuilt), `pipeline/ch05-spine-seeds.md` (new), `pipeline/theoretical-spine.md`, `HANDOFF.md`, this log.
+
+**Validation:** `lint_chapters.py` 14/14 PASS, 0 warnings. `check_chapter_coherence.py` baseline (from `git show HEAD:`, read-only) fail=1 review=1 → post fail=1 review=2; the spine-question review item cleared, the `Gelder (2008)` failure is byte-identical pre/post and is the documented particle-surname false positive. All eighteen in-text parentheticals verified by hand against the reference list; alphabetical order confirmed. The two new review items are apparatus drift and were **proposed, not installed** — a learning objective and a Chapter Summary sentence both naming the self thread.
+
+**Remaining:** apparatus retrofit (LO renumbering, summary sentence, whether *depersonalization* becomes a Key Term); `theoretical-spine.md` L386 still assigns the cognitive light cone to Ch. 5 and should be re-pointed to Ch. 12.
+
 ### 2026-07-27 - Cross-Chapter Lossy Compression Learning Lab Built (Codex)
 
 **Scope:** Implemented the approved cumulative Learning Lab, “What Did the System Throw Away? — A Cross-Chapter Lab on Lossy Compression,” as a six-phase, state-driven activity linking perception, memory, social categorization, diagnosis, and a fixed simulated-AI transfer audit. The lab uses `sessionStorage`, sequential station gating, a visible Compression Ledger with a plain-text equivalent event log, safe timed-list restoration, one-time resume announcement, early Start over access, focus-managed phase changes, and no live AI, analytics, external libraries, or network requests. The central Learning Labs index is the only placement; chapter wiring remains intentionally absent.

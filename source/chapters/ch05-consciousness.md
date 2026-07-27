@@ -23,7 +23,9 @@ This chapter is about how researchers pull these processes apart.
 
 ## Where This Fits
 
-Chapter 4 established that perception is constructed rather than copied: sensory evidence interacts with prior knowledge, context, and the brain’s best current interpretation. This chapter asks which of those many processed signals become part of experience and which become available for report, reasoning, and flexible action. Chapter 6 will use the same distinctions to examine sleep, dreaming, responsiveness, and internally generated content. Chapter 8 will return to another separation that matters here: having an experience and storing a durable memory of it are different biological achievements.
+Chapter 4 established that perception is constructed rather than copied: sensory evidence interacts with prior knowledge, context, and the brain’s best current interpretation. It also left a question open. Color is processed in one set of regions, motion in another, form in a third — and yet you experience one moving red ball. How separately processed signals become a single unified experience is the binding problem, and this chapter is where it comes due.
+
+So this chapter asks a narrower and stranger question than Chapter 4 did: why don’t we experience most of what our brain is doing? Which of those many processed signals become part of experience, and which become available for report, reasoning, and flexible action? Chapter 6 will use the same distinctions to examine sleep, dreaming, responsiveness, and internally generated content. Chapter 8 will return to another separation that matters here: having an experience and storing a durable memory of it are different biological achievements.
 
 ---
 
@@ -58,8 +60,6 @@ For this chapter, we will use a three-question dashboard:
 
 These are partly separable dimensions, not three settings on one mechanism. The dashboard is this chapter’s teaching synthesis, informed by multidimensional approaches that challenge the idea that every condition fits neatly on one ladder from “less conscious” to “more conscious” (Bayne, Hohwy, & Owen, 2016). It is not an official taxonomy on which all consciousness researchers have agreed. Its value is practical: it forces us to ask a better question.
 
-Try the dashboard on an ordinary moment. You are awake in class, so your state supports a wide range of possible experiences. Your current content might include the instructor’s voice, the pressure of the chair, and a worry about an assignment. Yet only some of that content is being maintained and used. When you compare the instructor’s example with yesterday’s reading, information has gained the kind of access that supports reasoning and memory. A moment later, the pressure of the chair may become central content because you shift position. The dashboard describes a changing organization, not three boxes filled once and left alone.
-
 <!-- FIGURE PLACEHOLDER
 Suggested title: Consciousness Is Not One Dial
 Suggested filename: ch05_consciousness_not_one_dial.png
@@ -80,7 +80,7 @@ This also prevents a common mistake: inferring experience directly from successf
 
 ### What the dashboard does—and does not—claim
 
-The dashboard does not turn three useful questions into three independent brain modules. State depends on interacting arousal and network systems. Content can include sights, sounds, pain, imagery, thoughts, and a sense of self. Access can support different uses in different tasks. The parts overlap because brains are coordinated systems.
+The dashboard does not turn three useful questions into three independent brain modules. State, content, and access overlap constantly, because brains are coordinated systems rather than committees.
 
 Here is the working model we will build: the brain processes far more information than enters conscious experience. Attention influences which information gains wider access. Predictive systems help construct content. When selected information becomes accessible across more systems, it may be maintained, compared with goals, evaluated, described, and used to change an ongoing response. Those are substantial accomplishments. They still leave one question open: why any of this processing feels like something from the inside.
 
@@ -96,21 +96,25 @@ Think of an automatic camera with a manual override. The camera can manage focus
 
 The “manual override” is not a tiny photographer inside your head. There is no internal observer who watches the brain’s screen and takes control. The point is functional: **conscious access may allow selected information to be used more broadly and flexibly, but complex information processing also occurs outside awareness.** Researchers therefore study possible functions in the plural rather than assuming that consciousness contributes one magic capacity to every task (Ludwig, 2022).
 
-“Broader” does not mean that every brain system receives an identical copy. It means that information initially handled for one specialized purpose can become available to more kinds of use. A sudden road closure may need to be held in mind, compared with your destination, translated into a new route, and communicated to a passenger. Each of those operations has unconscious components. The candidate contribution of access is the coordination of selected information across the changing demands of the task.
+“Broader” does not mean that every brain system receives an identical copy. It means that information initially handled for one specialized purpose can become available to more kinds of use — coordinated across the changing demands of a task rather than locked to the job it was first recruited for.
 
-One compact candidate account is **global-workspace theory**. Specialized systems process information locally and in parallel; selected information may become amplified and broadly available across a global neuronal workspace. That availability could support memory, evaluation, language, and flexible action (Mashour et al., 2020). This is a candidate explanation of access. It does not explain why globally available information feels like anything.
+One compact candidate account is **global-workspace theory**. Specialized systems process information locally and in parallel; selected information may become amplified and broadly available across a global neuronal workspace. That availability could support memory, evaluation, language, and flexible action (Mashour et al., 2020). It is also a candidate answer to the question Chapter 4 handed forward: separately processed features may be experienced together because they are made available together. This is a candidate explanation of access. It does not explain why globally available information feels like anything.
 
 ### Attention and automaticity
 
-**Selective attention** biases processing toward some information and away from other information. It is a family of selection processes, not one anatomical gate. **Automaticity** develops when practice allows a skill to run with less conscious monitoring. A pianist can adjust timing and force without verbally planning each finger movement. A driver can maintain lane position while discussing weekend plans. These behaviors remain sensitive to information; they simply do not require each component to occupy conscious access.
+Selection is not a design flaw. Sensory systems deliver far more signal than downstream systems can evaluate at once, and an organism that waited to weigh every input would arrive at the right answer after the moment for acting on it had passed. The constraint is bandwidth, time, and the demands of ongoing action. Something has to decide what gets through.
 
-The automatic-camera analogy now has a clear limit. Skilled routines can be flexible, and deliberate thought can be clumsy. Conscious access is especially useful when information must be held available for a new combination or correction, but it is not the sole source of intelligence in the system.
+**Selective attention** biases processing toward some information and away from other information. It is a family of selection processes, not one anatomical gate. **Automaticity** develops when practice allows a skill to run with less conscious monitoring. A pianist can adjust timing and force without verbally planning each finger movement. A driver can maintain lane position while discussing weekend plans. These behaviors remain sensitive to information; they simply do not require each component to occupy conscious access.
 
 **Inattentional blindness** makes selection visible. In the best-known demonstration, participants counted basketball passes while a person in a gorilla suit crossed the scene. Many participants did not report the gorilla (Simons & Chabris, 1999). Their eyes were open and the image reached the retina. The pass-counting task organized attention so strongly that the unexpected event often failed to gain reportable access.
 
 Notice what this does not establish. A missing report does not prove that every feature of the gorilla received zero processing. The experiment shows that clearly visible input can fail to become available for report when attention is engaged elsewhere. Looking is not the same as accessing.
 
+It also sets up the chapter’s working hierarchy. Attention selects and suppresses signals that never become reportable at all, which means consciousness is narrower than attention rather than identical to it.
+
 The **cocktail-party effect** is the possibility that personally important information—classically, your own name—captures attention even when it occurs in a conversation you are not following. Researchers often study it with **dichotic listening**, in which different spoken messages are presented to the two ears and the participant attends to only one. In a preregistered replication, 29 percent of listeners reported noticing their name in the unattended message (Röer & Cowan, 2021). The result shows that unattended information can sometimes capture attention. It does not give everyone a perfectly reliable name alarm.
+
+The automatic-camera analogy has now earned its keep, and it has a limit. Skilled routines can be flexible, and deliberate thought can be clumsy. Conscious access is especially useful when information must be held available for a new combination or correction, but it is not the sole source of intelligence in the system.
 
 > **Think About It:** You are following directions on an unfamiliar route when a passenger asks a complicated question. Which operations can remain automatic? Which information is likely to gain access? What might force the current response to be interrupted?
 
@@ -134,9 +138,22 @@ The **cocktail-party effect** is the possibility that personally important infor
 
 ## Section 3: How Conscious Content Is Constructed
 
+### Charles Bonnet syndrome: seeing without believing
+
+A person with advanced macular degeneration looks into an empty room and sees a crowd of people standing in it. She can describe their clothing. She also knows, calmly and without argument, that no one is there.
+
+This is **Charles Bonnet syndrome**: vivid visual hallucination in the context of significant vision loss, commonly accompanied by preserved insight that the images are unreal. The clinical literature varies in its exact diagnostic criteria, but that pairing is the core of it (Hamedani & Pelak, 2019). Reduced visual input leaves perceptual systems with weaker external constraint, and internally generated activity contributes more strongly to what is seen.
+
+The preserved insight is the real lesson here. Vivid conscious content can occur while explicit belief rejects that content. Knowing that the crowd is unreal does not necessarily make the crowd disappear. Seeing and believing are different achievements.
+
+![Reduced visual input from eye disease is shown alongside vivid internally generated images, while a separate belief label states that the person knows the images are not real.](../images/ch05/charles_bonnet.png)
+*Charles Bonnet syndrome separates perceptual content from belief. Significant vision loss can coexist with vivid visual hallucinations and preserved insight that the images are unreal (Hamedani & Pelak, 2019).*
+
+> **Stop and Retrieve:** A person sees a small dog sitting on an empty chair and calmly states that no dog is present. Use the dashboard. What content is present? What belief is present? Why would “the person is confused” be a poor summary?
+
 ### Prediction and sensory evidence
 
-Chapter 4 showed that perception is an active achievement. Incoming signals are noisy and incomplete, so the brain uses prior information and context to interpret them. In **predictive processing**, perceptual systems generate hypotheses about incoming input and revise those hypotheses when prediction and evidence diverge (Clark, 2013).
+The crowd in the empty room is strange, but the machinery producing it is ordinary. Chapter 4 showed that perception is an active achievement. Incoming signals are noisy and incomplete, so the brain uses prior information and context to interpret them. In **predictive processing**, perceptual systems generate hypotheses about incoming input and revise those hypotheses when prediction and evidence diverge (Clark, 2013).
 
 A simplified loop looks like this:
 
@@ -148,26 +165,19 @@ A simplified loop looks like this:
 ![A four-step loop shows prior information supporting a prediction, sensory evidence arriving, mismatch producing prediction error, and updating of prediction, attention, or action before the cycle repeats.](../images/ch05/the_prediction_model.png)
 *Predictive processing describes an interaction between prior information and sensory evidence. The loop helps explain how perceptual content is constructed and revised; it is not a complete theory of consciousness (Clark, 2013).*
 
-The framework explains machinery that can shape content. It is not the definition of consciousness, and illusions or hallucinations do not uniquely prove it. Many constructive accounts expect perception to depend on both incoming signals and internal organization. The important bridge from Chapter 4 is narrower and stronger: what you experience is an interpretation, not a copy.
-
-### Charles Bonnet syndrome: seeing without believing
-
-People with significant vision loss sometimes experience vivid visual hallucinations while retaining the belief that the images are not real. A person might see patterned walls, animals, faces, or a crowd in an empty room. This is **Charles Bonnet syndrome**. The clinical literature varies in its exact diagnostic criteria, but visual hallucination in the context of visual loss is central, and preserved insight is common (Hamedani & Pelak, 2019).
-
-Reduced visual input leaves perceptual systems with weaker external constraint. Internally generated activity can then contribute more strongly to what is seen. That pattern is consistent with constructive and predictive accounts, although it does not uniquely prove one mechanism or one theory of consciousness.
-
-The preserved insight is the real lesson here. Vivid conscious content can occur while explicit belief rejects that content. Knowing that the crowd is unreal does not necessarily make the crowd disappear. Seeing and believing are different achievements.
-
-![Reduced visual input from eye disease is shown alongside vivid internally generated images, while a separate belief label states that the person knows the images are not real.](../images/ch05/charles_bonnet.png)
-*Charles Bonnet syndrome separates perceptual content from belief. Significant vision loss can coexist with vivid visual hallucinations and preserved insight that the images are unreal (Hamedani & Pelak, 2019).*
-
-> **Stop and Retrieve:** A person sees a small dog sitting on an empty chair and calmly states that no dog is present. Use the dashboard. What content is present? What belief is present? Why would “the person is confused” be a poor summary?
+The framework describes machinery that can shape content; it is not a definition of consciousness, and hallucinations do not uniquely prove it. The bridge from Chapter 4 is narrower and stronger: what you experience is an interpretation, not a copy.
 
 ### Content is more than external input
 
 Blindsight and Charles Bonnet syndrome point in opposite directions. In blindsight, external visual information guides action without ordinary visual content. In Charles Bonnet syndrome, vivid visual content appears despite weak or missing external input. Put the cases together and the lesson becomes difficult to miss: conscious content is neither a raw readout of stimulation nor a guarantee of accurate belief.
 
 This is why attention and prediction occupy different places in the chapter’s model. Attention helps determine which information receives priority and wider access. Predictive processes help organize the content that is experienced. They interact, but they answer different questions.
+
+### The experiencer is constructed too
+
+The same logic runs one step further, and this is where it gets uncomfortable. If what you see is the brain’s best interpretation of noisy input, the same should hold for its interpretation of the organism doing the seeing. Anil Seth and Manos Tsakiris have argued exactly this: the experienced self is another model — a running prediction about what kind of body this is, what state it is in, and what it is about to do (Seth & Tsakiris, 2018). The evidence they point to is that this sense can come apart from everything else. In depersonalization, people describe perceiving normally and reasoning normally while experience stops feeling like it belongs to them, as though they were observing themselves from slightly outside (Sierra & David, 2011). Perception intact, belief intact, ownership altered. This is an argument rather than a settled result, and other researchers read the same evidence differently.
+
+It is worth asking how general the human arrangement is. An octopus has roughly 500 million neurons, but about 300 million of them sit in ganglia inside the arms rather than in the central brain, and an arm severed from that brain will still reach, grasp, and withdraw in response to touch (Young, 1963; Hochner, 2012). Each arm carries out a great deal of its own sensing and its own deciding. Whether there is one unified “what it is like” to be an octopus, or something it is like to be each arm, is not currently answerable. What the case does establish is narrower and still useful: centralizing control in one place is a solution to the problem of coordinating a body, not the only solution, and not the definition of having a mind.
 
 ---
 
@@ -191,7 +201,7 @@ Classic psychedelics act strongly at cortical serotonin 5-HT2A receptors. Wakefu
 
 One predictive-processing account proposes that psychedelics relax the precision of high-level priors, allowing bottom-up or previously suppressed signals to exert more influence (Carhart-Harris & Friston, 2019). *Precision* here means the weight assigned to a prediction or error signal, not confidence spoken aloud. This is one candidate account of psychedelic effects.
 
-Relaxed priors do not guarantee more accurate perception, deeper truth, or therapeutic benefit. Dose, setting, expectation, learning history, and broader pharmacology still shape the experience. The useful dissociation is simpler: an organism can remain awake while ordinary perceptual content and self-experience change dramatically.
+Relaxed priors do not guarantee more accurate perception, deeper truth, or therapeutic benefit. Dose, setting, expectation, learning history, and broader pharmacology still shape the experience. The useful dissociation is simpler: an organism can remain awake while ordinary perceptual content changes dramatically — and, if the self is the kind of model Section 3 described, there is no reason that model should be exempt.
 
 ### General anesthesia: responsiveness is not all processing
 
@@ -201,7 +211,7 @@ Loss of responsiveness does not mean that every neural system has stopped proces
 
 This is also why an anesthesiologist monitors several things rather than looking for one “consciousness number.” A patient’s movement, autonomic responses, brain activity, and later memory provide different evidence, and anesthetic drugs can affect those indicators differently. The clinical goal is a controlled condition appropriate to the procedure, not the discovery of one universal neural off switch.
 
-That boundary matters in both directions. Residual neural activity should not be dismissed as “nothing,” but it should not be promoted into proof that the patient consciously understood a podcast. The study reinforces the chapter’s first lesson: substantial processing can remain when ordinary responsiveness and later memory are profoundly altered.
+The study reinforces the chapter’s first lesson: substantial processing can remain when ordinary responsiveness and later memory are profoundly altered.
 
 ### The cumulative dashboard
 
@@ -222,7 +232,7 @@ That boundary matters in both directions. Residual neural activity should not be
 
 ### Six separations, one cumulative model
 
-The cases now form one argument. Blindsight separates processing from seeing. Inattentional blindness separates visible input from access. Charles Bonnet syndrome separates content from belief. Alcohol blackout separates ongoing behavior from durable memory. Psychedelic states separate wakefulness from ordinary content and self-experience. General anesthesia separates responsiveness from the claim that all neural processing has stopped.
+The cases now form one argument rather than six curiosities. Each of them pries apart two things that ordinary language treats as one thing, and the table above is that argument in compressed form.
 
 These are real scientific accomplishments. Attention research explains how task demands prioritize information. Predictive processing explains how prior information and sensory evidence help construct content. Global-workspace proposals offer a candidate mechanism by which selected information becomes more broadly available. Report and no-report methods give researchers complementary ways to test those claims. The dashboard turns separate findings into a usable model.
 
@@ -485,6 +495,8 @@ de Gelder, B., Tamietto, M., van Boxtel, G., Goebel, R., Sahraie, A., van den St
 
 Hamedani, A. G., & Pelak, V. S. (2019). The Charles Bonnet syndrome: A systematic review of diagnostic criteria. *Current Treatment Options in Neurology, 21*(9), 41. https://doi.org/10.1007/s11940-019-0582-1
 
+Hochner, B. (2012). An embodied view of octopus neurobiology. *Current Biology, 22*(20), R887–R892. https://doi.org/10.1016/j.cub.2012.09.001
+
 Katlowitz, K. A., Cole, E. R., Mickiewicz, E. A., et al. (2026). Plasticity and language in the anaesthetized human hippocampus. *Nature, 654*, 714–723. https://doi.org/10.1038/s41586-026-10448-0
 
 Ludwig, D. (2022). The functional contributions of consciousness. *Consciousness and Cognition, 104*, 103383. https://doi.org/10.1016/j.concog.2022.103383
@@ -495,8 +507,14 @@ Mashour, G. A., Roelfsema, P., Changeux, J.-P., & Dehaene, S. (2020). Conscious 
 
 Röer, J. P., & Cowan, N. (2021). A preregistered replication and extension of the cocktail party phenomenon: One’s name captures attention, unexpected words do not. *Journal of Experimental Psychology: Learning, Memory, and Cognition, 47*(2), 234–242. https://doi.org/10.1037/xlm0000874
 
+Seth, A. K., & Tsakiris, M. (2018). Being a beast machine: The somatic basis of selfhood. *Trends in Cognitive Sciences, 22*(11), 969–981. https://doi.org/10.1016/j.tics.2018.08.008
+
+Sierra, M., & David, A. S. (2011). Depersonalization: A selective impairment of self-awareness. *Consciousness and Cognition, 20*(1), 99–108. https://doi.org/10.1016/j.concog.2010.10.018
+
 Simons, D. J., & Chabris, C. F. (1999). Gorillas in our midst: Sustained inattentional blindness for dynamic events. *Perception, 28*(9), 1059–1074. https://doi.org/10.1068/p281059
 
 Tsuchiya, N., Wilke, M., Frässle, S., & Lamme, V. A. F. (2015). No-report paradigms: Extracting the true neural correlates of consciousness. *Trends in Cognitive Sciences, 19*(12), 757–770. https://doi.org/10.1016/j.tics.2015.10.002
 
 Wetherill, R. R., & Fromme, K. (2016). Alcohol-induced blackouts: A review of recent clinical research with practical implications and recommendations for future studies. *Alcoholism: Clinical and Experimental Research, 40*(5), 922–935. https://doi.org/10.1111/acer.13051
+
+Young, J. Z. (1963). The number and sizes of nerve cells in Octopus. *Proceedings of the Zoological Society of London, 140*(2), 229–254. https://doi.org/10.1111/j.1469-7998.1963.tb01862.x
