@@ -398,6 +398,8 @@ Personality and social psychology sit at the intersection of multiple spine thre
 
 ### Ch. 6 — Sleep
 
+**Student-facing spine question:** *What is your brain doing that it cannot do while you are awake?*
+
 **Sleep as model maintenance — detailed version.** Three functional layers for Ch. 6:
 
 - *Consolidation.* Memory traces laid down during waking are replayed, tagged, and transferred during sleep — particularly during slow-wave and REM stages. Sleep supports episodic-to-semantic compression; deprivation disrupts this and is not simply recoverable with effort.

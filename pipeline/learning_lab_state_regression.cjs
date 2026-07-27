@@ -28,6 +28,7 @@ const labs = [
   ['docs/labs/ch08/levels-of-processing.html', 'psych101-lab-ch08-levels-of-processing-v1'],
   ['docs/labs/ch08/self-reference-effect.html', 'psych101-lab-ch08-self-reference-effect-v1'],
   ['docs/labs/ch09/fluid-intelligence-rule-finding.html', 'psych101-lab-ch09-fluid-intelligence-rule-finding'],
+  ['docs/labs/ch09/semantic-map.html', 'psych101-lab-ch09-semantic-map-v1'],
   ['docs/labs/ch10/zpd-fading-support.html', 'psych101_ch10_zpd_fading_support_v1'],
   ['docs/labs/ch11/change-the-situation.html', 'psych101_ch11_change_situation_v1'],
   ['docs/labs/ch12/coping-fit.html', 'psych101-ch12-coping-fit-v1'],
@@ -201,7 +202,7 @@ async function driveToCompletion(page, label) {
     if (await transfer.isVisible()) {
       await fillVisibleControls(page, '#transfer-panel input, #transfer-panel textarea, #transfer-panel select');
       const saveTransfer = page.locator('#save-transfer, #submit-transfer');
-      if (await saveTransfer.count() === 1 && await saveTransfer.isEnabled()) await saveTransfer.click();
+      if (await saveTransfer.count() === 1 && await saveTransfer.isVisible() && await saveTransfer.isEnabled()) await saveTransfer.click();
       if (await finishLab.count() === 0) return;
     }
 

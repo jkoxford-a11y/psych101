@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Where Does It Belong? - General Psychology</title>
+  <link rel="stylesheet" href="../../css/style.css" />
+  <link rel="stylesheet" href="../../css/labs.css" />
+</head>
+<body data-lab-storage-key="psych101-lab-ch09-semantic-map-v1">
+<div class="layout">
+  <aside class="sidebar" id="app-sidebar"></aside>
+  <script src="../../js/sidebar.js" data-dir="labs/ch09" data-active="" data-top="full"></script>
+
+  <main class="main lab-main">
+    <p class="chapter-meta">Learning Lab - Chapter 9</p>
+    <h1>Where Does It Belong?</h1>
+    <p class="lab-kicker">Build, Test, and Revise a Concept</p>
+    <hr class="chapter-divider" />
+
+    <p>A definition tells you what a word means. A concept does more: it organizes examples, highlights useful similarities, marks important differences, and helps you predict what a new case will do.</p>
+    <p>In this 12&ndash;18 minute lab, you will build a map of a familiar category, test it against cases near the boundary, and then apply the same reasoning to a psychology concept that students often misclassify.</p>
+
+    <div class="callout callout--note">
+      <div class="callout-title">Teaching Activity, Accessibility, and Privacy</div>
+      <p>This is a teaching activity, not a test of intelligence, expertise, conceptual ability, memory, or bias. It stores only your lab responses and progress in <code>sessionStorage</code> for this browser-tab session. It stores no names, emails, student IDs, analytics, tracking data, or personal examples. Nothing is transmitted to a server.</p>
+      <p>Do not enter personal mental-health information or identifying information. You can complete every prompt using only the cases supplied here.</p>
+    </div>
+
+    <section class="lab-panel" aria-labelledby="objectives-heading">
+      <h2 id="objectives-heading">What You Will Practice</h2>
+      <ol>
+        <li><strong>Distinguish</strong> category membership from typicality.</li>
+        <li><strong>Distinguish</strong> prototypes from exemplars.</li>
+        <li><strong>Explain</strong> what atypical members and feature-sharing nonmembers reveal.</li>
+        <li><strong>Revise</strong> a concept after contrasting cases expose a weakness.</li>
+        <li><strong>Apply</strong> the same reasoning to the functional definition of reinforcement.</li>
+      </ol>
+    </section>
+
+    <section class="lab-panel" id="prediction-panel" aria-labelledby="prediction-heading">
+      <h2 id="prediction-heading" tabindex="-1">Phase 1: Predict and Commit</h2>
+      <form id="prediction-form" novalidate>
+        <fieldset class="lab-fieldset">
+          <legend>Do you expect the most typical-looking members of a category to also be the clearest members?</legend>
+          <label class="option-row"><input type="radio" name="prediction" value="rise-together" /> <span>Yes. Typicality and category membership should mostly rise and fall together.</span></label>
+          <label class="option-row"><input type="radio" name="prediction" value="mostly-with-exceptions" /> <span>Mostly, but some clear members may be poor examples of the category.</span></label>
+          <label class="option-row"><input type="radio" name="prediction" value="unrelated" /> <span>No. Typicality and category membership should be unrelated.</span></label>
+          <label class="option-row"><input type="radio" name="prediction" value="unsure" /> <span>Unsure. I need to compare the cases first.</span></label>
+        </fieldset>
+
+        <fieldset class="lab-fieldset">
+          <legend>What feature do you think people rely on most when deciding whether an animal is a bird?</legend>
+          <label class="option-row"><input type="radio" name="feature" value="flight" /> <span>Ability to fly</span></label>
+          <label class="option-row"><input type="radio" name="feature" value="feathers" /> <span>Feathers</span></label>
+          <label class="option-row"><input type="radio" name="feature" value="wings" /> <span>Wings</span></label>
+          <label class="option-row"><input type="radio" name="feature" value="eggs" /> <span>Laying eggs</span></label>
+          <label class="option-row"><input type="radio" name="feature" value="resemblance" /> <span>Overall resemblance to a typical bird</span></label>
+          <label class="option-row"><input type="radio" name="feature" value="no-single-feature" /> <span>No single feature is enough</span></label>
+        </fieldset>
+
+        <label class="text-label" for="prediction-reasoning">Explain your prediction in one or two sentences.</label>
+        <textarea id="prediction-reasoning" rows="4" required></textarea>
+        <button class="lab-btn" type="button" id="commit-prediction">Commit prediction</button>
+      </form>
+      <p class="save-status" id="prediction-status" aria-live="polite"></p>
+    </section>
+
+    <section class="lab-panel phase-panel" id="bird-panel" hidden aria-labelledby="bird-heading">
+      <div class="lab-progress" aria-live="polite">
+        <span id="bird-progress">Animal 1 of 7</span>
+        <span>Two judgments per animal</span>
+      </div>
+      <h2 id="bird-heading" tabindex="-1">Phase 2: Build and Test the Bird Map</h2>
+
+      <div id="bird-rating-view">
+        <article class="classifier-item">
+          <p class="lab-kicker">Current case</p>
+          <h3 id="animal-name">Robin</h3>
+          <form id="bird-rating-form" novalidate>
+            <label class="text-label" for="membership-confidence">How confident are you that this animal is a bird?</label>
+            <input id="membership-confidence" type="range" min="0" max="100" step="25" value="50" aria-describedby="membership-scale membership-value" style="width: 100%;" />
+            <p id="membership-value" class="prediction-reminder" aria-live="polite">Current confidence: 50</p>
+            <p id="membership-scale" class="term-reminder">0 = definitely not a bird; 25 = probably not; 50 = unsure; 75 = probably a bird; 100 = definitely a bird.</p>
+
+            <fieldset class="lab-fieldset">
+              <legend>How typical is this as an example of a bird?</legend>
+              <label class="option-row"><input type="radio" name="typicality" value="1" /> <span>1 - Very atypical</span></label>
+              <label class="option-row"><input type="radio" name="typicality" value="2" /> <span>2 - Somewhat atypical</span></label>
+              <label class="option-row"><input type="radio" name="typicality" value="3" /> <span>3 - Neither typical nor atypical</span></label>
+              <label class="option-row"><input type="radio" name="typicality" value="4" /> <span>4 - Somewhat typical</span></label>
+              <label class="option-row"><input type="radio" name="typicality" value="5" /> <span>5 - Very typical</span></label>
+            </fieldset>
+
+            <button class="lab-btn" type="button" id="submit-bird-rating">Record judgments</button>
+          </form>
+          <p class="save-status" id="bird-rating-status" aria-live="polite"></p>
+        </article>
+      </div>
+
+      <div id="bird-map-view" hidden>
+        <div class="callout callout--note">
+          <div class="callout-title">Category Status Revealed</div>
+          <p>Robin, penguin, eagle, ostrich, and chicken are birds. Bat and butterfly are not birds. Your typicality ratings are judgments, not right-or-wrong answers.</p>
+        </div>
+
+        <div class="curve-wrap">
+          <svg class="curve-svg" id="bird-map" viewBox="0 0 720 500" role="img" aria-labelledby="bird-map-title bird-map-desc">
+            <title id="bird-map-title">Your semantic map of the seven animal cases</title>
+            <desc id="bird-map-desc">Each labeled animal is plotted by the student's typicality rating from one to five and bird-membership confidence from zero to one hundred. The same values and actual category status appear in the table below.</desc>
+            <g id="bird-map-layer"></g>
+          </svg>
+        </div>
+
+        <div class="table-wrap">
+          <table class="summary-table">
+            <thead>
+              <tr><th scope="col">Animal</th><th scope="col">Membership confidence</th><th scope="col">Typicality rating</th><th scope="col">Actual category status</th></tr>
+            </thead>
+            <tbody id="bird-map-table"></tbody>
+          </table>
+        </div>
+
+        <div id="comparison-view">
+          <p class="lab-kicker" id="comparison-progress">Comparison 1 of 4</p>
+          <h3 id="comparison-heading" tabindex="-1">Test the Map</h3>
+          <form id="comparison-form" novalidate>
+            <fieldset class="lab-fieldset" id="comparison-fieldset">
+              <legend id="comparison-prompt"></legend>
+              <div id="comparison-options"></div>
+            </fieldset>
+            <button class="lab-btn" type="button" id="submit-comparison">Check response</button>
+          </form>
+          <div class="feedback-panel" id="comparison-feedback" hidden tabindex="-1" aria-live="polite">
+            <h3 id="comparison-feedback-heading"></h3>
+            <p id="comparison-feedback-text"></p>
+            <button class="lab-btn" type="button" id="next-comparison">Next comparison</button>
+          </div>
+          <p class="save-status" id="comparison-status" aria-live="polite"></p>
+        </div>
+
+        <div id="revision-view" hidden>
+          <h3 id="revision-heading" tabindex="-1">Revise Your Map</h3>
+          <form id="revision-form" novalidate>
+            <fieldset class="lab-fieldset">
+              <legend>Looking back at your original feature choice, would you revise it?</legend>
+              <label class="option-row"><input type="checkbox" name="revision" value="keep" /> <span>Keep my original choice</span></label>
+              <label class="option-row"><input type="checkbox" name="revision" value="more-feathers" /> <span>Put more weight on feathers</span></label>
+              <label class="option-row"><input type="checkbox" name="revision" value="less-flight" /> <span>Put less weight on flight</span></label>
+              <label class="option-row"><input type="checkbox" name="revision" value="separate-judgments" /> <span>Distinguish typicality from category membership</span></label>
+              <label class="option-row"><input type="checkbox" name="revision" value="no-visible-feature" /> <span>No single visible feature fully captures the concept</span></label>
+            </fieldset>
+            <label class="text-label" for="revision-explanation">What did the contrasting cases force your original concept to change?</label>
+            <textarea id="revision-explanation" rows="4" required></textarea>
+            <button class="lab-btn" type="button" id="save-revision">Save revision</button>
+          </form>
+          <p class="save-status" id="revision-status" aria-live="polite"></p>
+        </div>
+      </div>
+
+      <h3>Text Event Log</h3>
+      <div class="event-log" aria-live="polite">
+        <ol id="event-list"></ol>
+      </div>
+    </section>
+
+    <section class="lab-panel phase-panel" id="concept-panel" hidden aria-labelledby="concept-heading">
+      <h2 id="concept-heading" tabindex="-1">Phase 3: What the Map Shows</h2>
+      <p class="prediction-reminder" id="prediction-ledger"></p>
+      <div id="concept-map-copy"></div>
+
+      <div class="callout callout--note">
+        <div class="callout-title">Concept Reveal</div>
+        <p>Concepts organize cases so that you can generalize beyond what you have already seen. That organization is not the same as memorizing a definition.</p>
+        <p>A <strong>prototype</strong> captures what a typical member is like. An <strong>exemplar</strong> is a specific member retained in memory. Both can help you classify a new case.</p>
+        <p><strong>Typicality</strong> is graded. A robin may feel more bird-like than a penguin. <strong>Category membership</strong> asks a different question: does the case belong at all? A penguin can therefore be a clear member and an atypical example. A bat can resemble part of the prototype without becoming a member.</p>
+        <p>Borderline and contrasting cases improve a concept because they reveal which similarities predict membership and which are merely familiar.</p>
+        <p><strong>A useful concept is not merely compact. It preserves the distinctions that support prediction and changes when the evidence no longer fits.</strong></p>
+        <p>Typicality judgments can vary across people and experience. Prototypes, exemplars, rules, and relational knowledge can work together; they are not mutually exclusive systems or successive stages every learner passes through.</p>
+      </div>
+
+      <div class="callout callout--do-not-confuse">
+        <div class="callout-title">Do Not Confuse: a semantic map with a literal brain map</div>
+        <p>The map on this page makes relationships among examples visible. It does not claim that every concept is stored as a two-dimensional picture. Concepts can draw on prototypes, remembered exemplars, rules, relations, context, and broader knowledge.</p>
+      </div>
+
+      <button class="lab-btn" type="button" id="continue-to-explain">Continue to explanation</button>
+    </section>
+
+    <section class="lab-panel phase-panel" id="explain-panel" hidden aria-labelledby="explain-heading">
+      <h2 id="explain-heading" tabindex="-1">Phase 4: Explain</h2>
+      <label class="text-label" for="explanation-response">Why can a penguin be a clear member of the bird category while remaining an atypical example? Distinguish <strong>category membership</strong> from <strong>typicality</strong>, define <strong>prototype</strong> and <strong>exemplar</strong>, and explain what the bat comparison reveals.</label>
+      <textarea id="explanation-response" rows="7"></textarea>
+      <button class="lab-btn" type="button" id="save-explanation">Save explanation locally</button>
+      <p class="save-status" id="explanation-status" aria-live="polite"></p>
+      <p class="prediction-reminder" id="explanation-reminder" tabindex="-1" hidden>A good answer separates &ldquo;belongs to the category&rdquo; from &ldquo;resembles the most typical member.&rdquo;</p>
+      <button class="lab-btn" type="button" id="continue-to-transfer" hidden>Continue to reinforcement transfer</button>
+    </section>
+
+    <section class="lab-panel phase-panel" id="transfer-panel" hidden aria-labelledby="transfer-heading">
+      <h2 id="transfer-heading" tabindex="-1">Phase 5: Transfer - Rebuild Reinforcement</h2>
+      <p>Familiar categories often rely heavily on resemblance. Scientific concepts may instead depend on a relation that is easy to miss.</p>
+      <p>Many students begin with the prototype &ldquo;reinforcement means reward.&rdquo; Test that prototype against the following cases.</p>
+
+      <div id="transfer-prediction-view">
+        <p>The five cases are: <strong>Food pellet</strong>, <strong>Seat-belt buzzer</strong>, <strong>Ten-dollar homework reward</strong>, <strong>Phone-checking relief</strong>, and <strong>Extra laps</strong>.</p>
+        <form id="transfer-prediction-form" novalidate>
+          <fieldset class="lab-fieldset">
+            <legend>Which case sounds most like reinforcement before you inspect what happened to the behavior?</legend>
+            <label class="option-row"><input type="radio" name="transferPrediction" value="food-pellet" /> <span>Food pellet</span></label>
+            <label class="option-row"><input type="radio" name="transferPrediction" value="seat-belt-buzzer" /> <span>Seat-belt buzzer</span></label>
+            <label class="option-row"><input type="radio" name="transferPrediction" value="ten-dollar-reward" /> <span>Ten-dollar homework reward</span></label>
+            <label class="option-row"><input type="radio" name="transferPrediction" value="phone-relief" /> <span>Phone-checking relief</span></label>
+            <label class="option-row"><input type="radio" name="transferPrediction" value="extra-laps" /> <span>Extra laps</span></label>
+          </fieldset>
+          <button class="lab-btn" type="button" id="commit-transfer-prediction">Commit transfer prediction</button>
+        </form>
+        <p class="save-status" id="transfer-prediction-status" aria-live="polite"></p>
+      </div>
+
+      <div id="transfer-case-view" hidden>
+        <div class="lab-progress" aria-live="polite">
+          <span id="transfer-progress">Case 1 of 5</span>
+          <span>Classify the consequence by what happened next</span>
+        </div>
+        <article class="classifier-item">
+          <p class="lab-kicker">Current case</p>
+          <h3 id="transfer-case-heading" tabindex="-1"></h3>
+          <p id="transfer-case-text"></p>
+          <form id="transfer-case-form" novalidate>
+            <fieldset class="lab-fieldset">
+              <legend>Was something added, removed, or was that distinction not relevant?</legend>
+              <label class="option-row"><input type="radio" name="consequenceDirection" value="added" /> <span>Something was added</span></label>
+              <label class="option-row"><input type="radio" name="consequenceDirection" value="removed" /> <span>Something was removed or reduced</span></label>
+              <label class="option-row"><input type="radio" name="consequenceDirection" value="not-relevant" /> <span>That distinction was not relevant</span></label>
+            </fieldset>
+            <fieldset class="lab-fieldset">
+              <legend>What happened to the future behavior?</legend>
+              <label class="option-row"><input type="radio" name="behaviorChange" value="increased" /> <span>It increased</span></label>
+              <label class="option-row"><input type="radio" name="behaviorChange" value="decreased" /> <span>It decreased</span></label>
+              <label class="option-row"><input type="radio" name="behaviorChange" value="unchanged" /> <span>It was unchanged</span></label>
+            </fieldset>
+            <fieldset class="lab-fieldset">
+              <legend>Was the consequence functioning as reinforcement?</legend>
+              <label class="option-row"><input type="radio" name="isReinforcement" value="yes" /> <span>Yes</span></label>
+              <label class="option-row"><input type="radio" name="isReinforcement" value="no" /> <span>No</span></label>
+            </fieldset>
+            <button class="lab-btn" type="button" id="submit-transfer-case">Check classification</button>
+          </form>
+          <p class="save-status" id="transfer-case-status" aria-live="polite"></p>
+        </article>
+      </div>
+
+      <div class="feedback-panel" id="transfer-feedback" hidden tabindex="-1" aria-live="polite">
+        <h3 id="transfer-feedback-heading"></h3>
+        <p id="transfer-feedback-text"></p>
+        <button class="lab-btn" type="button" id="next-transfer-case">Next case</button>
+      </div>
+
+      <div id="reinforcement-map-view" hidden>
+        <div class="curve-wrap">
+          <svg class="curve-svg" id="reinforcement-map" viewBox="0 0 720 500" role="img" aria-labelledby="reinforcement-map-title reinforcement-map-desc">
+            <title id="reinforcement-map-title">Functional map of the five reinforcement cases</title>
+            <desc id="reinforcement-map-desc">Cases are plotted by whether something was added or removed and whether future behavior increased, decreased, or remained unchanged. The same classifications appear in the table below.</desc>
+            <g id="reinforcement-map-layer"></g>
+          </svg>
+        </div>
+
+        <div class="table-wrap">
+          <table class="summary-table">
+            <thead>
+              <tr><th scope="col">Case</th><th scope="col">Added or removed</th><th scope="col">Behavior change</th><th scope="col">Functional classification</th></tr>
+            </thead>
+            <tbody id="reinforcement-map-table"></tbody>
+          </table>
+        </div>
+
+        <div class="callout callout--note">
+          <div class="callout-title">Transfer Concept Reveal</div>
+          <p>The everyday prototype of reinforcement is &ldquo;something pleasant given as a reward.&rdquo; That prototype handles the food-pellet case and fails on the others.</p>
+          <p>The scientific concept is organized around a diagnostic relation: <strong>a consequence reinforces behavior when the behavior becomes more likely to occur again</strong>. Added versus removed determines positive versus negative. Increased versus decreased behavior determines reinforcement versus punishment.</p>
+          <p>The better concept predicts cases the prototype misclassifies. Reinforcement is defined by the increase in future behavior, not by whether someone intended a reward or whether the consequence felt pleasant.</p>
+        </div>
+
+        <label class="text-label" for="final-response">Explain why the $10 case was not reinforcement while stopping the seat-belt buzzer was. Use the terms <strong>prototype</strong>, <strong>defining relation</strong>, <strong>behavior increase</strong>, and <strong>negative reinforcement</strong>.</label>
+        <textarea id="final-response" rows="7"></textarea>
+        <button class="lab-btn" type="button" id="save-transfer">Save final response</button>
+        <button class="lab-btn" type="button" id="finish-lab" hidden>View completion summary</button>
+        <p class="save-status" id="final-response-status" aria-live="polite"></p>
+      </div>
+    </section>
+
+    <section class="lab-panel phase-panel" id="summary-panel" hidden aria-labelledby="summary-heading">
+      <h2 id="summary-heading" tabindex="-1">Phase 6: Completion Summary</h2>
+      <p id="completion-summary"></p>
+      <div id="summary-content"></div>
+      <div class="lab-actions">
+        <button class="lab-btn lab-btn--secondary" type="button" id="restart-lab">Start over</button>
+        <a class="lab-btn lab-btn--secondary" href="../index.html">Return to Learning Labs</a>
+        <a class="lab-btn lab-btn--secondary" href="fluid-intelligence-rule-finding.html">Try the separate fluid-intelligence lab</a>
+      </div>
+    </section>
+
+    <section class="callout callout--think-about-it" aria-labelledby="instructor-note-heading">
+      <div class="callout-title" id="instructor-note-heading">Instructor Note</div>
+      <p>Run this lab after the Chapter 9 concepts section or use it to retrieve Chapter 7's reinforcement distinction. The key discussion moment is the contrast between the penguin and the bat: membership and typicality are different judgments.</p>
+      <p>In the transfer section, compare the $10 reward attempt with the seat-belt buzzer. Students often classify consequences by pleasantness or intention. The functional definition asks what happened to future behavior.</p>
+      <p>Do not treat an individual student's map or misclassification as evidence of ability or bias. The activity is designed to produce revision, not to measure a stable trait.</p>
+    </section>
+
+    <section class="callout callout--note" aria-labelledby="evidence-note-heading">
+      <div class="callout-title" id="evidence-note-heading">Evidence Note</div>
+      <p>Chapter 9's prototype and typicality discussion, grounded in Rosch (1975), motivates the familiar-category comparison. The chapter also describes exemplars as specific remembered cases and treats prototype and exemplar accounts as compatible. The transfer section uses Chapter 7's functional definition: reinforcement is demonstrated when a consequence increases the future likelihood of behavior. These maps are instructional visualizations, not replications of one laboratory paradigm.</p>
+    </section>
+  </main>
+</div>
+<script src="../../js/nav.js"></script>
+<script src="../../js/labs-semantic-map.js"></script>
+<script src="../../js/lab-session-controls.js"></script>
+</body>
+</html>
