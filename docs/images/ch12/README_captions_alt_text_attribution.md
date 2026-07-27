@@ -1,7 +1,7 @@
 # Chapter 12 Figure Metadata
 
-**Last reconciled:** 2026-07-26  
-**Status:** Four original explanatory diagrams are wired in the canonical source and regenerated Chapter 12 HTML. Final status is **use now**.
+**Last reconciled:** 2026-07-27  
+**Status:** Four original explanatory diagrams remain wired in the canonical source and regenerated Chapter 12 HTML. Final status for the wired set is **use now**. One approved Figure 12.3 replacement candidate is documented below but is not yet present in the repository or wired.
 
 ## Figure 12.1 — Body-budget deposits and withdrawals
 
@@ -38,6 +38,20 @@
 - **Public-sharing status:** Use now.
 - **Caveat:** The nested horizons are a teaching schematic, not a rigid evolutionary ladder or a claim that an agent's cognition reduces to one measurable cone. The past/memory cue indicates temporal reach through retained information; human symbolic stress is an application of the framework, not its definition.
 - **Retired artwork:** `fig_cognitive_light_cone_hpa_axis.svg/.png` is no longer wired. The corrected SAM/HPA prose is sufficient, so the combined pathway artwork was not retained as a separate figure.
+
+### Approved replacement candidate — Absent events matter now
+
+- **Proposed file:** `ch12_cognitive_light_cone_absent_events_matter_now.png`
+- **Current status:** Approved replacement candidate. Metadata is recorded here, but the PNG is not yet present in the repository and the current Figure 12.3 SVG remains wired.
+- **Teaching job:** Center the agent at Here and Now, show goal reach expanding outward across space and into remembered and anticipated time, and make the Chapter 12 application visible: an absent event can be appraised now and recruit a present stress response.
+- **Caption:** A cognitive light cone represents the spatial and temporal range of events and goals that can organize an agent's behavior. Human goals can extend into remembered experience, anticipated futures, distant relationships, and collective commitments. Because those absent events can enter appraisal now, they can recruit a present stress response. Original explanatory figure based on Levin's framework.
+- **Alt text:** Space-time diagram centered on “Here and Now,” where appraisal and action occur. Past and memory extend downward, future and anticipation extend upward, and three increasingly broad goal horizons extend outward from the center: immediate and local, nearby and short-term, and distant and long-term. Examples include hunger in the present, a remembered conflict, an exam next week, and a distant relationship or collective goal. An arrow from the upcoming exam returns to present appraisal, showing how an event that is not physically present can recruit a stress response now.
+- **Creation method:** Original AI-assisted explanatory infographic generated for Oxford Psychology 101, 2026. The concept and spatiotemporal organization are informed by Levin (2019), especially the cognitive-boundary framework illustrated in his Figure 2; no published artwork was copied or reproduced.
+- **Attribution:** Original figure generated for Oxford Psychology 101 with ChatGPT image generation, 2026. Based on the cognitive-light-cone framework developed by Michael Levin (2019).
+- **License:** Project-created original; intended for public sharing under the textbook's project license with Levin (2019) cited as the conceptual source.
+- **Public-sharing status:** Candidate/reference until the final PNG is added to the repository and checked at chapter and mobile display sizes.
+- **Accuracy notes:** The contours are conceptual rather than empirical measurements or rankings. A cognitive light cone concerns the events and goals an agent can measure, model, and attempt to affect—not sensory range alone. The exam-to-stress arrow is the Chapter 12 application of the framework, not its general definition.
+- **Design decision:** Unlike the current SVG, spatial reach expands symmetrically outward from Here and Now. This corrects the earlier left-to-right near/distant axis while preserving past below, future above, and the agent at the origin.
 
 ## Figure 12.4 — GAS and allostatic load
 
