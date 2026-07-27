@@ -166,6 +166,8 @@ That classical pattern is powerful, but it is not a complete definition of dopam
 
 #### Do Not Confuse: Chemical Influence vs. Chemical Cause
 
+If you've heard depression explained as a "chemical imbalance," that framing did not come from a research consensus. It came largely from direct-to-consumer pharmaceutical advertising beginning in the 1990s, which needed a one-sentence mechanism simple enough to sell in thirty seconds.
+
 **The claim:** Depression is caused by low serotonin, and antidepressants work by correcting that deficiency.
 
 **The problem:** The simple serotonin-deficiency model is not supported as a general explanation of depression. One influential umbrella review found no consistent evidence that depression is characterized by a straightforward serotonin deficit, while also noting limitations and variation across the underlying evidence (Moncrieff et al., 2023).
@@ -246,6 +248,8 @@ Other methods answer different questions. **EEG** records voltage fluctuations u
 | Amygdala | Learning about biologically relevant events, including threat, and influencing attention and memory | A dedicated fear organ |
 | Hypothalamus | Coordinating homeostasis, motivated behavior, autonomic control, and endocrine signaling | One drive center |
 | Brainstem and cerebellum | Vital regulation, arousal, movement coordination, prediction, and learning | Merely “primitive” support hardware |
+
+One constraint is worth naming here. Working memory — holding a small amount of information active and available — is remarkably limited, typically to only about four items at a time (Cowan, 2001). The prefrontal cortex is among the most metabolically expensive tissue in the brain. One hypothesis worth taking seriously, though not yet confirmed, is that this narrow ceiling is set partly by energy cost: a wider working-memory window might simply be too expensive to run continuously, not merely a feature evolution never got around to expanding.
 
 ### Brain Regions Are Specialized, but Behavior Is Networked
 
@@ -518,6 +522,8 @@ Annese, J., Schenker-Ahmed, N. M., Bartsch, H., Maechler, P., Sheh, C., Thomas, 
 Arendt, D., Denes, A. S., Jékely, G., & Tessmar-Raible, K. (2008). The evolution of nervous system centralization. *Philosophical Transactions of the Royal Society B: Biological Sciences, 363*(1496), 1523–1528. https://doi.org/10.1098/rstb.2007.2242
 
 Bartz, J. A., Zaki, J., Bolger, N., & Ochsner, K. N. (2011). Social effects of oxytocin in humans: Context and person matter. *Trends in Cognitive Sciences, 15*(7), 301–309. https://doi.org/10.1016/j.tics.2011.05.002
+
+Cowan, N. (2001). The magical number 4 in short-term memory: A reconsideration of mental storage capacity. *Behavioral and Brain Sciences, 24*(1), 87–114. https://doi.org/10.1017/S0140525X01003922
 
 Cryan, J. F., O’Riordan, K. J., Cowan, C. S. M., Sandhu, K. V., Bastiaanssen, T. F. S., Boehme, M., Codagnone, M. G., Cussotto, S., Fulling, C., Golubeva, A. V., Guzzetta, K. E., Jaggar, M., Long-Smith, C. M., Lyte, J. M., Martin, J. A., Molinero-Perez, A., Moloney, G., Morelli, E., Morillas, E., … Dinan, T. G. (2019). The microbiota–gut–brain axis. *Physiological Reviews, 99*(4), 1877–2013.
 

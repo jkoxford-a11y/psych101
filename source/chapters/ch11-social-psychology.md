@@ -6,7 +6,7 @@
 
 ## Misconception Opener: “I Would Never Do That”
 
-In 1963, Stanley Milgram recruited adults for what they believed was a study of memory and learning at Yale University. Each participant became the “teacher.” Every time the learner in the next room made an error, the teacher was instructed to press a switch delivering a stronger electric shock. The shocks were fake, the learner was a confederate (i.e., an actor working for the experimenter), and the cries of pain were recorded. The participants did not know that.
+Stanley Milgram (1963) recruited adults for what they believed was a study of memory and learning at Yale University. Each participant became the “teacher.” Every time the learner in the next room made an error, the teacher was instructed to press a switch delivering a stronger electric shock. The shocks were fake, the learner was a confederate (i.e., an actor working for the experimenter), and the cries of pain were recorded. The participants did not know that.
 
 Sixty-five percent continued to the final 450-volt switch—a switch the generator labeled only **XXX**, two positions past *Danger: Severe Shock*. Before the study, Milgram asked psychiatrists to predict how many people would go that far: average prediction, one in a thousand.
 
@@ -78,7 +78,7 @@ Same compression, aimed in the opposite direction. Outward, the situation gets d
 
 ### Cognitive Dissonance: When Behavior Changes Belief
 
-We usually assume that beliefs cause behavior. Leon Festinger proposed that the arrow also runs backward.
+We usually assume that beliefs cause behavior. Leon Festinger (1957) proposed that the arrow also runs backward.
 
 **Cognitive dissonance** is the psychological discomfort produced by inconsistency among beliefs, attitudes, and known behavior. Because inconsistency is uncomfortable, people are motivated to reduce it. Sometimes they change their behavior. Sometimes they change the story they tell about the behavior.
 
@@ -196,7 +196,7 @@ The broader situationist insight remains well supported: roles, norms, incentive
 
 Other people change your behavior without saying anything at all.
 
-**Social facilitation** is improved performance on well-practiced tasks when others are present, and impaired performance on difficult or unfamiliar ones. Zajonc’s account was arousal, which strengthens whatever response is already dominant—a help when that response is right, a problem when it is not. **Social loafing** is the opposite pressure: effort drops when nobody can tell what you contributed. A six-person rope-pulling team pulls harder than one person and less hard per person.
+**Social facilitation** is improved performance on well-practiced tasks when others are present, and impaired performance on difficult or unfamiliar ones. Zajonc’s (1965) account was arousal, which strengthens whatever response is already dominant—a help when that response is right, a problem when it is not. **Social loafing** is the opposite pressure: effort drops when nobody can tell what you contributed. A six-person rope-pulling team pulls harder than one person and less hard per person.
 
 | Social condition | Likely effect | Example |
 |---|---|---|
@@ -262,7 +262,7 @@ Early formulations gave self-esteem a major causal role. Evidence for a simple u
 
 ### Contact Between Groups
 
-Allport’s **contact hypothesis** proposed that intergroup contact is especially likely to reduce prejudice when groups have equal status, cooperate toward shared goals, receive institutional support, and interact repeatedly rather than superficially.
+Allport’s (1954) **contact hypothesis** proposed that intergroup contact is especially likely to reduce prejudice when groups have equal status, cooperate toward shared goals, receive institutional support, and interact repeatedly rather than superficially.
 
 Later meta-analysis found that contact often helps even when every condition is not fully present (Pettigrew & Tropp, 2006). The conditions are best understood as facilitators. Contact is not magic. Unequal, hostile, coercive, or competitive contact can reinforce the very categories it was supposed to weaken.
 
@@ -521,11 +521,11 @@ Personality traits are real dimensions, not fixed types. They predict patterns b
 
 **Stereotype** — A generalized belief about members of a social category.
 
-**Strong situation** — A context with clear norms or constraints that narrows behavioral variation.
+**Strong situations** — Contexts with clear norms or constraints that narrow behavioral variation.
 
 **Trait** — A relatively stable dimension of individual difference.
 
-**Weak situation** — A context with ambiguous norms and substantial behavioral latitude.
+**Weak situations** — Contexts with ambiguous norms and substantial behavioral latitude.
 
 ---
 

@@ -52,10 +52,16 @@
 | fMRI | Hemodynamic timing means the signal lags neural activity; inference wording must reflect it. | — | installed |
 | Chemical imbalance | Same boundary as Ch. 1, and must not slide to "antidepressants do not work." Cite one year for Moncrieff consistently. | Moncrieff et al., *Mol Psychiatry* | installed |
 | Absolutes | "Every neuron," internodes "cannot fire," and exhaustive synaptic-clearance language are all overstatements. | — | installed |
+| Working memory / PFC metabolic cost | The ~4-item capacity figure is well-supported; the energy-cost explanation for *why* the ceiling sits there is a hypothesis, stated as such on both mentions, not a confirmed mechanism (spine-seed Seed B, 2026-07-27). | Cowan (2001), *Behav Brain Sci* 24(1), 87–114 | installed |
 
 ## Chapter 4 — Sensation & Perception
 
 The Chapter 4 audit was mechanical (citation integrity, parity, counts) and produced no accuracy corrections. Two lineage flags survive and are recorded under *Unresolved lineage flags* below.
+
+| Claim | How it must stay bounded | Source | Status |
+|---|---|---|---|
+| Müller-Lyer / carpentered-world hypothesis | Not currently in the chapter — kept out. If reintroduced, the causal explanation (environment exposure → illusion susceptibility) must not be presented as clean confirming evidence. Original study confounded ethnicity with environment; carpentered-world explanation is now widely disputed on methodological grounds; Jahoda's same-group rural/urban comparison found no significant difference. The cross-population susceptibility difference appears to have replicated — the causal story does not. | Segall, Campbell & Herskovits (1963/1966) | verified 2026-07-27, kept out |
+| Anosognosia (perceptual disorders) | A specific deficit in bodily self-monitoring, not general denial. Do not extend to "the self is fake" — that stronger claim belongs to Ch. 5's Seth extension, not here. | Orfei et al. (2007), *Brain* 130(12), 3075–3090 | installed |
 
 ## Chapter 5 — Consciousness
 

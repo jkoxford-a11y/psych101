@@ -97,7 +97,7 @@ This is not a neat timeline in which one school defeated another. These traditio
 
 | School | Core question | Contribution | Limitation |
 |---|---|---|---|
-| **Wundt's experimental psychology and Titchener's structuralism** (1879; 1898) | How can conscious experience be studied experimentally, and what are its elements? | Wundt established an experimental laboratory and used trained introspection within a broader framework often called voluntarism; Titchener developed structuralism more specifically | Introspective reports were unreliable across observers, and a catalog of elements could not capture the full range of mental life |
+| **Wundt's experimental psychology and Titchener's structuralism** (1879; 1898) | How can conscious experience be studied experimentally, and what are its elements? | Wundt established an experimental laboratory and used trained introspection within a broader framework often called voluntarism (Wundt, 1897); Titchener developed structuralism more specifically | Introspective reports were unreliable across observers, and a catalog of elements could not capture the full range of mental life |
 | **Functionalism** (James, 1890) | What is the mind *for*? | Connected mind to adaptation and function | Less unified as a laboratory program than behaviorism; harder to reduce to a single method |
 | **Behaviorism** (Watson, 1913; Skinner, 1945, 1957) | How can behavior be explained through relations among environment, action, and consequence? | Rigorous, replicable principles of learning and conditioning | Early behaviorist accounts struggled with language and other generative cognition; Chomsky's critique exposed the gap without showing that learning was irrelevant |
 | **Psychoanalysis** (Freud) | What is hidden from awareness? | Drew attention to unconscious motivation and early experience | Claims were structured so that no outcome could disconfirm them — weak falsifiability (Popper, 1959) |
@@ -159,7 +159,7 @@ The historical schools are still alive, though they have changed shape. Today's 
 | Sociocultural | What social norms, roles, institutions, or cultural expectations matter? |
 | Evolutionary | What adaptive problem might this mechanism have helped solve? |
 
-A few of these are worth one more sentence. The biological perspective gets a full chapter of its own — Chapter 3 is entirely about this level of analysis. Behavioral approaches have produced some of clinical psychology's clearest treatment tools, especially exposure-based treatments for anxiety and phobias. Other behavioral interventions, including applied behavior analysis, have a substantial evidence base but also require careful ethical discussion about goals, consent, and quality of life. The cognitive perspective — **cognitive psychology** — is one of the most productive research perspectives in the field, though hardly the only candidate for that title. The sociocultural perspective gets its own extended treatment in Chapter 11.
+A few of these are worth one more sentence. The biological perspective gets a full chapter of its own — Chapter 3 is entirely about this level of analysis. Biological and evolutionary are not two competing answers to the same question: the biological perspective asks how a mechanism works, the evolutionary perspective asks what it was built to do, and a psychologist usually wants both. Psychologists call these a **proximate explanation** and an **ultimate explanation**; you will see the pair again in Chapters 7, 8, 10, 11, and 13. Behavioral approaches have produced some of clinical psychology's clearest treatment tools, especially exposure-based treatments for anxiety and phobias. Other behavioral interventions, including applied behavior analysis, have a substantial evidence base but also require careful ethical discussion about goals, consent, and quality of life. The cognitive perspective — **cognitive psychology** — is one of the most productive research perspectives in the field, though hardly the only candidate for that title. The sociocultural perspective gets its own extended treatment in Chapter 11.
 
 ### One Behavior, Several Questions
 
@@ -169,6 +169,8 @@ No perspective is sufficient alone. Here is an everyday example: why did you che
 - The cognitive perspective points to the discomfort of an unresolved question ("did they respond?") competing for your attention until you resolve it.
 - The sociocultural perspective points to a social environment that treats constant availability as normal.
 - The evolutionary perspective asks why a brain would be built to find social information so hard to ignore in the first place — and points to the cost of missing socially relevant information for a species that depends on group cooperation to survive.
+
+That last question is a different kind from the other three. It is not asking what is driving you to check your phone right now — it is asking why a brain built to do that would exist at all.
 
 None of these four answers has to contradict the others. Each is answering a different question about the same five seconds of behavior, and evidence determines how much weight each answer deserves.
 
@@ -408,6 +410,8 @@ d) The finding is irrelevant because alliance was emphasized by humanistic psych
 
 **Mental process** — An internal event — perceiving, thinking, remembering, deciding, feeling — that drives behavior but cannot be observed directly; inferred from behavior, self-report, physiology, and neural activity.
 
+**Proximate explanation** — An account of how a mechanism works in the moment, in a particular individual or situation; paired with an ultimate explanation, which asks why a system built to do that exists at all. Both can be true of the same behavior at once.
+
 **Psychoanalysis** — The theoretical and clinical system developed by Freud, emphasizing unconscious processes, early experience, and intrapsychic conflict as determinants of behavior; scientifically limited by lack of falsifiability.
 
 **Psychology** — The scientific study of behavior and mental processes; broader than the popular association with therapy and mental illness, spanning basic research, applied science, and clinical practice alike.
@@ -418,13 +422,15 @@ d) The finding is irrelevant because alliance was emphasized by humanistic psych
 
 **Therapeutic alliance** — The working relationship between therapist and client; a stronger alliance reliably predicts better therapy outcomes across orientations, although that association alone does not establish a uniquely causal mechanism.
 
+**Ultimate explanation** — An account of what selective history built a mechanism that works the way it does; paired with a proximate explanation, which asks how that mechanism operates right now. Both can be true of the same behavior at once.
+
 ---
 
 ## Further Reading
 
-**American Psychological Association — What is psychology?**  
-https://www.apa.org/education-career/guide/subfields/what-is-psychology  
-Brief, authoritative overview of the field's scope and the range of careers psychologists pursue.
+**American Psychological Association — Psychology careers guide**  
+https://www.apa.org/education-career/guide/careers  
+Brief, authoritative overview of the field's scope and the range of careers psychologists pursue. (Link corrected 2026-07-27 — the previous URL 404s.)
 
 **Noba Project — History of Psychology** (Baker & Sperry)  
 https://nobaproject.com/modules/history-of-psychology  

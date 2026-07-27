@@ -16,6 +16,8 @@ from __future__ import annotations
 import argparse
 import html
 import re
+import subprocess
+import sys
 from datetime import date
 from pathlib import Path
 
@@ -31,8 +33,10 @@ from docx.shared import Inches, Pt, RGBColor
 ROOT = Path(__file__).resolve().parents[1]
 SOURCE_DIR = ROOT / "source" / "chapters"
 DEFAULT_OUTPUT = ROOT / "line-edit-packets"
+WINDOWS_RENDERER = ROOT / "pipeline" / "render_docx_windows.py"
 
 CHAPTER_SOURCES = {
+    2: "ch02-research-methods.md",
     3: "ch03-neuroscience-biological-bases.md",
     4: "ch04-sensation-perception.md",
     5: "ch05-consciousness.md",
@@ -259,6 +263,15 @@ def add_numbering_definition(doc, kind):
         spacing.set(qn("w:lineRule"), "auto")
         p_pr.extend([tabs, ind, spacing])
         lvl.extend([start, num_fmt, lvl_text, suff, lvl_jc, p_pr])
+        if kind == "bullet":
+            r_pr = OxmlElement("w:rPr")
+            fonts = OxmlElement("w:rFonts")
+            fonts.set(qn("w:ascii"), "Calibri")
+            fonts.set(qn("w:hAnsi"), "Calibri")
+            size = OxmlElement("w:sz")
+            size.set(qn("w:val"), "22")
+            r_pr.extend([fonts, size])
+            lvl.append(r_pr)
         abstract.append(lvl)
 
     numbering.append(abstract)
@@ -287,6 +300,8 @@ def set_paragraph_numbering(paragraph, num_id, level=0):
 
 
 def clean_inline_markup(text):
+    text = re.sub(r"</summary>\s*", ": ", text, flags=re.I)
+    text = re.sub(r"<(?:strong|b)\b[^>]*>(.*?)</(?:strong|b)>", r"**\1**", text, flags=re.I)
     text = html.unescape(text)
     text = re.sub(r"<span\b[^>]*>(.*?)</span>", r"**\1**", text, flags=re.I)
     text = re.sub(r"<br\s*/?>", " ", text, flags=re.I)
@@ -601,6 +616,34 @@ def markdown_to_docx(doc, markdown_text):
     flush_body()
 
 
+def apply_pagination_guards(doc):
+    """Keep predictable packet elements from breaking across pages."""
+    paragraphs = doc.paragraphs
+    objectives_index = None
+    section_one_index = None
+
+    for index, paragraph in enumerate(paragraphs):
+        text = paragraph.text.strip()
+        if text == "Learning Objectives":
+            objectives_index = index
+        if re.match(r"^Section\s+1\b", text, flags=re.I):
+            section_one_index = index
+            break
+
+    if objectives_index is not None and section_one_index is not None:
+        for paragraph in paragraphs[objectives_index + 1 : section_one_index]:
+            if paragraph.style and paragraph.style.name in ("List Bullet", "List Number"):
+                paragraph.paragraph_format.keep_together = True
+        paragraphs[section_one_index].paragraph_format.page_break_before = True
+
+    for index, paragraph in enumerate(paragraphs[:-1]):
+        if "artwork omitted from line-edit packet; caption follows" not in paragraph.text:
+            continue
+        paragraph.paragraph_format.keep_together = True
+        paragraph.paragraph_format.keep_with_next = True
+        paragraphs[index + 1].paragraph_format.widow_control = False
+
+
 def extract_title(markdown_text, chapter_number):
     match = re.search(r"^#\s+(.+)$", markdown_text, flags=re.M)
     if match:
@@ -625,7 +668,7 @@ def build_packet(chapter_number, source_path, output_dir):
     section.page_height = Inches(11)
     section.top_margin = Inches(1)
     section.right_margin = Inches(1)
-    section.bottom_margin = Inches(1)
+    section.bottom_margin = Inches(1.2)
     section.left_margin = Inches(1)
     section.header_distance = Inches(0.492)
     section.footer_distance = Inches(0.492)
@@ -670,6 +713,7 @@ def build_packet(chapter_number, source_path, output_dir):
     )
 
     markdown_to_docx(doc, markdown_text)
+    apply_pagination_guards(doc)
 
     core = doc.core_properties
     core.title = title + " - Line Edit"
@@ -683,6 +727,28 @@ def build_packet(chapter_number, source_path, output_dir):
     return output_path
 
 
+def render_packet(packet_path, render_root):
+    """Render through the repository's Windows-safe LibreOffice wrapper."""
+    if not WINDOWS_RENDERER.exists():
+        raise FileNotFoundError(f"Windows renderer not found: {WINDOWS_RENDERER}")
+    output_dir = render_root / packet_path.stem
+    if output_dir.exists() and any(output_dir.iterdir()):
+        raise FileExistsError(f"Render output directory is not empty: {output_dir}")
+    output_dir.mkdir(parents=True, exist_ok=True)
+    subprocess.run(
+        [
+            sys.executable,
+            str(WINDOWS_RENDERER),
+            str(packet_path),
+            "--output_dir",
+            str(output_dir),
+            "--emit_pdf",
+        ],
+        check=True,
+    )
+    return output_dir
+
+
 def parse_args():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument(
@@ -691,9 +757,14 @@ def parse_args():
         type=int,
         default=sorted(CHAPTER_SOURCES),
         choices=sorted(CHAPTER_SOURCES),
-        help="Chapter numbers to export (default: 3-13).",
+        help="Chapter numbers to export (default: 2-13).",
     )
     parser.add_argument("--output-dir", type=Path, default=DEFAULT_OUTPUT)
+    parser.add_argument(
+        "--render-dir",
+        type=Path,
+        help="Optionally render each packet to page PNGs with the Windows-safe renderer.",
+    )
     return parser.parse_args()
 
 
@@ -703,6 +774,9 @@ def main():
         source_path = SOURCE_DIR / CHAPTER_SOURCES[chapter]
         output = build_packet(chapter, source_path, args.output_dir)
         print(output)
+        if args.render_dir:
+            render_output = render_packet(output, args.render_dir)
+            print(render_output)
 
 
 if __name__ == "__main__":

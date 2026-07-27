@@ -323,7 +323,7 @@ d) sleep serves no function that could plausibly be explained by natural selecti
 
 **NREM sleep** — Non-rapid-eye-movement sleep, comprising three EEG-defined scoring categories (NREM 1–3), not a continuous depth ladder.
 
-**Orexin** (hypocretin) — A neuropeptide produced by lateral hypothalamic neurons that promotes and stabilizes wakefulness; its loss through autoimmune destruction causes Type 1 narcolepsy.
+**Orexin** — Also called hypocretin; a neuropeptide produced by lateral hypothalamic neurons that promotes and stabilizes wakefulness. Its loss through autoimmune destruction causes Type 1 narcolepsy.
 
 **Polysomnography** — The simultaneous recording of brain activity (EEG), eye movement (EOG), and muscle activity (EMG) used to characterize sleep stages.
 

@@ -173,6 +173,8 @@ Section 1 introduced bottom-up and top-down processing through two quick demonst
 - **Bottom-up processing** builds a percept from incoming sensory data, assembling simple features into increasingly complex representations.
 - **Top-down processing** uses existing knowledge, expectations, goals, and context to shape how that input is interpreted (Privitera, 2026).
 
+Top-down processing exists because bottom-up processing alone cannot keep up: the eye and ear deliver far more raw signal than the brain has time or attention to fully analyze, so the nervous system fills the gap with prediction instead of exhaustive computation.
+
 Both operate together. An experienced radiologist and an untrained viewer receive the same image, but the radiologist's learned expectations change which patterns become meaningful. Expertise does not alter the pixels. It alters what the visual system can extract from them.
 
 One influential account of this interaction is **predictive coding**. Higher brain areas generate predictions about likely input, while lower areas return information about mismatches — **prediction errors** — between what was expected and what arrived (Rao & Ballard, 1999). On this account, perception is less like reading a message and more like sending a draft and receiving tracked changes. The brain proposes an interpretation; sensory evidence corrects it.
@@ -228,6 +230,8 @@ If perception is constructed across multiple stages, damage at different stages 
 **Visual agnosia** is difficulty recognizing objects despite intact basic vision. A person may see edges, colors, and shapes yet fail to assemble them into a recognized object (Lissauer, 1890). **Prosopagnosia** is a more selective deficit in recognizing familiar faces despite otherwise adequate vision and, in many cases, preserved recognition of nonface objects. These conditions separate sensation from later interpretation.
 
 **Charles Bonnet syndrome** shows a different failure. People with substantial visual loss may experience vivid visual hallucinations while retaining insight that the images are not real (Teunisse et al., 1996). Reduced visual input appears to release or destabilize activity in visual association systems. Predictive coding offers one possible interpretation — expectations are less constrained by incoming evidence — but it is not the only account.
+
+**Anosognosia** shows a still stranger failure: after certain right-hemisphere strokes, a patient with obvious left-side paralysis may insist that the arm works fine — not lying, and not general denial, but a specific deficit in the brain's own monitoring of the body's state (Orfei et al., 2007). It reveals that even the sense of what your own body is currently doing is a construction, one that can fail independently of the paralysis itself.
 
 These disorders make perceptual construction visible by showing how it can fail. They are consistent with predictive coding, but they do not prove it.
 
@@ -285,7 +289,7 @@ Two senses that are not on most people's intuitive list are the vestibular sense
 
 Vision begins when rods and cones transduce light in the retina. Cones support color and fine detail in the fovea; rods provide greater sensitivity in dim light and dominate the periphery. Depth perception combines binocular, physiological, pictorial, and motion cues. Hubel and Wiesel showed that visual cortex extracts particular features and that normal early experience is required for cortical organization during critical periods. Color vision likewise requires two complementary stages: three cone classes sample wavelength information, and downstream opponent channels compare those cone signals.
 
-Perception is not a recording. Bottom-up evidence and top-down expectations operate together, and predictive coding is one influential account of how prediction error may coordinate that exchange. The dress demonstrates how an ambiguous image can support different stable interpretations because the visual system must infer illumination before surface color. Gestalt principles describe how fragmented input is grouped into coherent wholes, while perceptual constancy stabilizes objects as viewing conditions change. Visual agnosia, prosopagnosia, and Charles Bonnet syndrome reveal different failures of perceptual construction without proving any single theoretical framework.
+Perception is not a recording. Bottom-up evidence and top-down expectations operate together, and predictive coding is one influential account of how prediction error may coordinate that exchange. The dress demonstrates how an ambiguous image can support different stable interpretations because the visual system must infer illumination before surface color. Gestalt principles describe how fragmented input is grouped into coherent wholes, while perceptual constancy stabilizes objects as viewing conditions change. Visual agnosia, prosopagnosia, Charles Bonnet syndrome, and anosognosia reveal different failures of perceptual construction without proving any single theoretical framework.
 
 Hearing uses both place information along the basilar membrane and temporal patterns in auditory-nerve firing to represent pitch. Somatosensation includes touch, temperature, body position, and pain. Gate control theory shows that pain is modulated by competing sensory input and descending signals from the brain rather than determined by tissue damage alone. Taste and smell transduce chemical stimulation, while vestibular and proprioceptive systems provide information about balance, movement, and body position.
 
@@ -455,6 +459,8 @@ d) only ask how the sense organ works mechanically, not why it is tuned the way 
 
 **Accommodation** — A monocular depth cue in which the eye's lens changes shape to focus on objects at different distances.
 
+**Anosognosia** — A deficit in the brain's own monitoring of the body's state, in which a person with an obvious impairment (such as paralysis after a right-hemisphere stroke) is unable to recognize that the impairment exists.
+
 **Binding problem** — The question of how the brain integrates information processed by separate neural streams (color, motion, form) into a single, unified perceptual experience.
 
 **Bottom-up processing** — Building a perceptual experience from raw sensory data, piece by piece, without reliance on prior knowledge or expectation.
@@ -569,6 +575,8 @@ Hubel, D. H., & Wiesel, T. N. (1970). The period of susceptibility to the physio
 Lissauer, H. (1890). Ein Fall von Seelenblindheit nebst einem Beitrage zur Theorie derselben. *Archiv für Psychiatrie und Nervenkrankheiten, 21*(2), 222–270.
 
 Melzack, R., & Wall, P. D. (1965). Pain mechanisms: A new theory. *Science, 150*, 971–979.
+
+Orfei, M. D., Robinson, R. G., Prigatano, G. P., Starkstein, S., Rüsch, N., Bria, P., Caltagirone, C., & Spalletta, G. (2007). Anosognosia for hemiplegia after stroke is a multifaceted phenomenon: a systematic review of the literature. *Brain, 130*(12), 3075–3090.
 
 Penfield, W., & Rasmussen, T. (1950). *The cerebral cortex of man: A clinical study of localization of function*. Macmillan.
 
