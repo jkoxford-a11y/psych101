@@ -1,190 +1,192 @@
 # Evidence Commitments
 
-**What this is.** The book-wide ledger of claims whose *wording is load-bearing* — places where a sentence is phrased the way it is because the evidence does not support the stronger version. Before you soften, sharpen, shorten, or cut a sentence in this list, read the row.
+**Purpose.** This is the book-wide ledger of claims whose evidential boundary is load-bearing. It records the strongest version the evidence supports so later edits do not sharpen a claim past its source.
 
-**What this is not.** Not a style guide, not a repair plan, not a description of any chapter's current structure. It contains no word counts, no objective counts, no figure decisions, and no register prescriptions. `AGENTS.md` → `## Style` governs voice, and nothing here overrides it. **A boundary in this file must be *stated somewhere* in the chapter; where it lands is a register decision, not an accuracy one.** Putting a caveat in a paragraph's final position is a choice, and usually the wrong one.
+**This is a constraint ledger, not a sentence bank.** Each `Supported claim` cell identifies what must remain true. Draft that claim directly in the chapter's confident student-facing voice. Do not copy the ledger's audit language, rejected stronger claim, or cautionary contrast into student prose merely to demonstrate compliance.
 
-**Provenance.** Extracted 2026-07-26 from the twelve `pipeline/audits/chNN-pre-review-audit.md` files, which were then deleted. Those audits diagnosed drafts that no longer exist and were being read by later passes as standing authorities; that is what this file replaces. **Recovery: the audits are in git at `a9dcedd`** (`git show a9dcedd:pipeline/audits/ch13-pre-review-audit.md`).
+**Claim first; boundary checked silently.** A row does not require a caveat sentence. The supported claim may be installed as one clean affirmative sentence, distributed across the explanation, or satisfied by removing the topic. State a contrast only when correcting that misconception is itself part of the lesson. If an edit adds a hedge or negation solely because one appeared in this ledger, the edit is defective.
 
-**What was deliberately not carried forward.** The audits' evidence-standing *opinions* — ratings like "speculative as a chapter-wide theory" — did not move here. They are one auditor's read of a literature, and giving them a permanent home would relaunder them as authority, which is the problem this file exists to end. Only corrections traceable to a named source came across.
+**Style authority.** `AGENTS.md` → `## Style` and `pipeline/voice-brief.md` govern register. Evidence calibration changes what the book may claim; it does not require journal-style qualification, epistemological throat-clearing, or a paragraph ending on what is unproven.
 
-**Status column.** `installed` = the bounded wording is present in the current source, verified by grep on 2026-07-26. `removed` = the correction was satisfied by cutting the material. `OPEN` = requested and not found; needs a decision. Re-verify rather than trusting this column after any prose pass.
+**Provenance.** Extracted 2026-07-26 from the twelve deleted `pipeline/audits/chNN-pre-review-audit.md` files. Those audits diagnosed obsolete drafts and had begun functioning as standing hedge instructions. Recovery remains available at `a9dcedd`, but recovered audits carry no authority. Only the supported claims retained here are binding.
 
-**Adding a row.** A row earns its place only if it names a source and a claim someone would plausibly strengthen back. Do not record general cautions here.
+**Status column.** `installed` means the supported claim was found in the source on the recorded verification date. `removed` means the material was cut. `OPEN` means a decision remains. Status is disposable metadata: re-verify against the current source after any prose pass.
+
+**Adding a row.** Name a source and write the strongest supported claim in affirmative form. Record a row only when a later editor could plausibly strengthen the claim beyond that evidence. General cautions belong elsewhere.
 
 ---
 
 ## Chapter 1 — History & Approaches
 
-| Claim | How it must stay bounded | Source | Status |
+| Claim | Supported claim | Source | Status |
 |---|---|---|---|
-| Therapeutic alliance | Reliably *predicts* outcome across orientations. Not "the most important factor," not an independently established mechanism. Keep one bidirectionality note. | Flückiger et al. (2018) | installed |
-| Watson vs. Skinner | Watson made publicly observable behavior psychology's subject; Skinner also treated private events as behavior but denied them autonomous causal status. Not one "observable behavior only" doctrine. | — | installed |
-| Structuralism | Attributed most directly to Titchener. Wundt's controlled introspection is an antecedent; Wundt is voluntarism. | — | installed |
-| Internalized anger (depression) | A historical psychodynamic account, not a currently comparably supported mechanism. Evidence weighting must arrive before or inside the example, not after. | — | installed |
-| Chemical imbalance | Rejects a *simple serotonin-deficiency* account. Must not become "serotonin is irrelevant" or "antidepressants do not work." | Moncrieff et al. (2022) | installed |
-| Replication | Open Science Collaboration (2015) is the flagship project. Its sample must not become a universal replication rate for all subfields. | OSC (2015) | installed |
-| Milgram's 39-psychiatrist forecast | The 1963 paper supports the observed obedience result, not the forecast. Cite forecast and outcome separately. | Milgram (1963) + later record | installed |
-| Biopsychosocial model | Organizes vulnerability, maintenance, context, and treatment planning. Not a diagnostic test and not a causal explanation — this must stay consistent with Ch. 13. | — | installed |
+| Therapeutic alliance | Therapeutic alliance reliably predicts outcome across orientations; alliance quality and improvement may influence one another. | Flückiger et al. (2018) | installed |
+| Watson vs. Skinner | Watson made publicly observable behavior psychology's subject. Skinner also treated private events as behavior while denying them autonomous causal status. | — | installed |
+| Structuralism | Structuralism is attributed most directly to Titchener. Wundt's controlled introspection is an antecedent within voluntarism. | — | installed |
+| Internalized anger (depression) | Present internalized anger as a historical psychodynamic account, with current evidence weighting supplied before or within the example. | — | installed |
+| Chemical imbalance | Evidence rejects a simple serotonin-deficiency account of depression; serotonin remains biologically relevant and antidepressants can reduce symptoms. | Moncrieff et al. (2022) | installed |
+| Replication | Use Open Science Collaboration (2015) as a flagship estimate from its sampled studies and fields. | OSC (2015) | installed |
+| Milgram's 39-psychiatrist forecast | Attribute the observed obedience result to Milgram (1963) and source the psychiatrists' forecast separately. | Milgram (1963) + later record | installed |
+| Biopsychosocial model | The biopsychosocial model organizes vulnerability, maintenance, context, and treatment planning; diagnosis and causal explanation require separate evidence. | — | installed |
 
 ## Chapter 2 — Research Methods
 
-| Claim | How it must stay bounded | Source | Status |
+| Claim | Supported claim | Source | Status |
 |---|---|---|---|
-| Causal inference | Simple correlation cannot establish causation; randomized experiments are psychology's clearest ordinary basis. But natural experiments, quasi-experiments, and strong longitudinal designs can sometimes support causal conclusions without random assignment. | — | installed |
-| Random assignment | Balances participant characteristics **in expectation**; makes systematic preexisting differences unlikely. It does not "rule out" preexisting differences or guarantee equivalent realized groups. | — | installed |
-| Random sampling | Supports population representativeness — one component of generalizability. External validity also depends on settings, measures, treatments, and attrition. | — | installed |
-| Reliability and validity | Reliability = consistency/precision under specified conditions. Validity = the extent to which evidence and theory support a proposed interpretation and use of scores. Inadequate reliability constrains validity claims. Do not label a target panel "valid but unreliable." | — | installed |
-| Placebo (asthma study) | Participants **reported improvement**; objective airway function did not improve. Do not write "real relief," and do not imply subjective outcomes are unreal because the objective measure did not move. | — | installed |
-| Tuskegee | Involved deception, withholding of information and treatment, and the absence of meaningful informed consent. Not consent that existed "on paper" and failed. | — | installed |
-| Animal research | Independent oversight plus replacement–reduction–refinement. Present because the book opens with animal behavioral ecology. | — | installed |
+| Causal inference | Simple correlation establishes association. Causal conclusions require additional design or evidence; randomized experiments provide psychology's clearest ordinary basis, while natural experiments, quasi-experiments, and strong longitudinal designs can also support them. | — | installed |
+| Random assignment | Random assignment balances participant characteristics **in expectation**, making systematic preexisting differences unlikely. | — | installed |
+| Random sampling | Random sampling supports population representativeness. External validity also depends on settings, measures, treatments, and attrition. | — | installed |
+| Reliability and validity | Reliability is consistency or precision under specified conditions. Validity is the extent to which evidence and theory support a proposed interpretation and use of scores; weak reliability constrains validity. | — | installed |
+| Placebo (asthma study) | Participants **reported improvement** while objective airway function remained unchanged. Subjective experience and airway function are distinct outcomes. | — | installed |
+| Tuskegee | Describe the deception, withholding of information and treatment, and absence of meaningful informed consent. | — | installed |
+| Animal research | Animal research is governed by independent oversight and replacement, reduction, and refinement. Its inclusion follows the book's animal behavioral-ecology framing. | — | installed |
 
 ## Chapter 3 — Neuroscience & Biological Bases
 
-| Claim | How it must stay bounded | Source | Status |
+| Claim | Supported claim | Source | Status |
 |---|---|---|---|
-| Dopamine | "Dopamine is not just pleasure" must not become "dopamine is prediction error." RPE scope is bounded on every surface. | Gershman et al. (2024), *Nat Neurosci* 27, 1645–1655 | installed |
-| Phineas Gage | Lesion anatomy per the connectivity reconstruction; do not infer "selectively spared" function. | Van Horn et al. (2012), *PLOS ONE* 7(5), e37454 | installed |
-| Patient H.M. | Do not teach a clean "forming not storing" inference or a pure-hippocampus lesion. | Annese et al. (2014), *Nat Commun* 5, 3122 | installed |
-| Neuropeptides | Definition must match the transmission literature in body and glossary. | van den Pol (2012), *Neuron* 76(1), 98–115 | installed |
-| Cortisol | Not the only glucose pathway. Evolutionary-mismatch framing stays a model. | — | installed |
-| Tend-and-befriend / oxytocin | Stated with uncertainty, not as demonstrated social mechanism. | — | installed |
-| fMRI | Hemodynamic timing means the signal lags neural activity; inference wording must reflect it. | — | installed |
-| Chemical imbalance | Same boundary as Ch. 1, and must not slide to "antidepressants do not work." Cite one year for Moncrieff consistently. | Moncrieff et al., *Mol Psychiatry* | installed |
-| Absolutes | "Every neuron," internodes "cannot fire," and exhaustive synaptic-clearance language are all overstatements. | — | installed |
-| Working memory / PFC metabolic cost | The ~4-item capacity figure is well-supported; the energy-cost explanation for *why* the ceiling sits there is a hypothesis, stated as such on both mentions, not a confirmed mechanism (spine-seed Seed B, 2026-07-27). | Cowan (2001), *Behav Brain Sci* 24(1), 87–114 | installed |
+| Dopamine | Dopamine contributes to multiple psychological functions. Reward-prediction-error activity is a pathway- and task-bounded finding. | Gershman et al. (2024), *Nat Neurosci* 27, 1645–1655 | installed |
+| Phineas Gage | Use the connectivity reconstruction for lesion anatomy and limit functional claims to documented behavioral changes and disrupted networks. | Van Horn et al. (2012), *PLOS ONE* 7(5), e37454 | installed |
+| Patient H.M. | Describe extensive medial-temporal damage and a severe but system-selective memory profile that included limited preserved learning. | Annese et al. (2014), *Nat Commun* 5, 3122 | installed |
+| Neuropeptides | The body and glossary definitions must match the transmission literature. | van den Pol (2012), *Neuron* 76(1), 98–115 | installed |
+| Cortisol | Cortisol is one contributor to glucose mobilization. Evolutionary mismatch is presented as a model. | — | installed |
+| Tend-and-befriend / oxytocin | Present tend-and-befriend and oxytocin as a proposed, context-dependent account of social stress responses. | — | installed |
+| fMRI | The BOLD signal follows neural activity through a slower hemodynamic response; interpret temporal order and mechanism accordingly. | — | installed |
+| Chemical imbalance | Use the Chapter 1 boundary: a simple serotonin-deficiency account is unsupported, while antidepressants can reduce symptoms. Use one publication year for Moncrieff consistently. | Moncrieff et al., *Mol Psychiatry* | installed |
+| Absolutes | Use scoped neuronal and synaptic language. Describe internodes and clearance mechanisms without universal or exhaustive claims. | — | installed |
+| Working memory / PFC metabolic cost | The approximately four-item capacity estimate is well supported. The PFC energy-cost explanation for that ceiling remains a hypothesis on both mentions. | Cowan (2001), *Behav Brain Sci* 24(1), 87–114 | installed |
 
 ## Chapter 4 — Sensation & Perception
 
-The Chapter 4 audit was mechanical (citation integrity, parity, counts) and produced no accuracy corrections. Two lineage flags survive and are recorded under *Unresolved lineage flags* below.
+The Chapter 4 audit produced no additional accuracy corrections. Two lineage flags survive under *Unresolved lineage flags*.
 
-| Claim | How it must stay bounded | Source | Status |
+| Claim | Supported claim | Source | Status |
 |---|---|---|---|
-| Müller-Lyer / carpentered-world hypothesis | Not currently in the chapter — kept out. If reintroduced, the causal explanation (environment exposure → illusion susceptibility) must not be presented as clean confirming evidence. Original study confounded ethnicity with environment; carpentered-world explanation is now widely disputed on methodological grounds; Jahoda's same-group rural/urban comparison found no significant difference. The cross-population susceptibility difference appears to have replicated — the causal story does not. | Segall, Campbell & Herskovits (1963/1966) | verified 2026-07-27, kept out |
-| Anosognosia (perceptual disorders) | A specific deficit in bodily self-monitoring, not general denial. Do not extend to "the self is fake" — that stronger claim belongs to Ch. 5's Seth extension, not here. | Orfei et al. (2007), *Brain* 130(12), 3075–3090 | installed |
+| Müller-Lyer / carpentered-world hypothesis | Keep the passage out unless reintroduced from current evidence. Cross-population susceptibility differences appear to replicate; the environmental-causation account remains disputed because the original comparison confounded ethnicity with environment and Jahoda's same-group rural/urban comparison found no significant difference. | Segall, Campbell & Herskovits (1963/1966) | verified 2026-07-27, kept out |
+| Anosognosia (perceptual disorders) | Describe anosognosia as a specific deficit in bodily self-monitoring. Broader claims about the nature of self require separate evidence and belong in Chapter 5. | Orfei et al. (2007), *Brain* 130(12), 3075–3090 | installed |
 
 ## Chapter 5 — Consciousness
 
-| Claim | How it must stay bounded | Source | Status |
+| Claim | Supported claim | Source | Status |
 |---|---|---|---|
-| Cocktail-party name capture | Roughly 29% of participants noticed their own name. "Reliably breaks through" overstates the base rate. | Röer & Cowan, preregistered replication | installed |
-| Charles Bonnet syndrome | Deafferentation is a leading explanation, not settled pathogenesis. Retained insight is characteristic — do not write "indistinguishable from the inside from ordinary vision." | CBS review (PMC8330457) | installed |
-| Predictive processing | One proposed account, compared against global workspace, higher-order, re-entry, and IIT approaches. Not an established identity with consciousness. Seth (2021) is a trade book; Rao & Ballard (1999) concerns visual cortex, not consciousness. | — | installed |
-| AI "hallucination" | The term is explicitly metaphorical and contested. Next-token prediction is not the same computation as cortical predictive coding. | — | installed |
-| Psychedelics / REBUS | Influential but proposed. Whichever precision-weighting direction is taught must be stated *consistently* — the draft once described relaxed priors and reduced trust in error signals in the same passage, which are opposite claims. | — | installed |
-| Opioids and pain | Sensory-discriminative and affective-motivational dimensions are separable, but opioids reduce both intensity and unpleasantness. Not "suffering only." | human remifentanil data | removed — passage cut |
-| Alcohol / GABA | GABAergic effects matter, but alcohol is pharmacologically broad; the chain from GABA to blackout to respiratory death is too unified for a multi-target drug. | — | removed — passage cut |
-| Cannabis and appetite | Endocannabinoid involvement in feeding is documented. Do not write "it's not that you're suddenly hungrier." | — | removed — passage cut |
+| Cocktail-party name capture | Roughly 29% of participants noticed their own name; describe name capture as occasional rather than reliable. | Röer & Cowan, preregistered replication | installed |
+| Charles Bonnet syndrome | Deafferentation is a leading explanation, and retained insight is characteristic. | CBS review (PMC8330457) | installed |
+| Predictive processing | Present predictive processing as one proposed account alongside global workspace, higher-order, re-entry, and IIT approaches. Seth (2021) is a trade-book synthesis; Rao and Ballard (1999) addresses visual cortex. | — | installed |
+| AI "hallucination" | Use *hallucination* as a metaphorical and contested label. Distinguish next-token prediction from cortical predictive coding. | — | installed |
+| Psychedelics / REBUS | Present REBUS as an influential proposal and use one internally consistent account of precision weighting. | — | installed |
+| Opioids and pain | Keep the passage removed. If restored, state that opioids can reduce both pain intensity and unpleasantness while preserving their distinction. | human remifentanil data | removed — passage cut |
+| Alcohol / GABA | Keep the passage removed. If restored, describe alcohol as a pharmacologically broad, multi-target drug. | — | removed — passage cut |
+| Cannabis and appetite | Keep the passage removed. If restored, describe endocannabinoid involvement in feeding and appetite directly. | — | removed — passage cut |
 
 ## Chapter 7 — Learning
 
-| Claim | How it must stay bounded | Source | Status |
+| Claim | Supported claim | Source | Status |
 |---|---|---|---|
-| Extinction | Return of responding reflects competing, context-sensitive learning — not deletion, and not a demonstrated differential decay rate. The learned relation is CS–US, not CS–CR. No teleological "in case the world reverts." | Bouton (2004), *Learn Mem* 11, 485–494 | installed |
-| Contingency | Pairing and prediction are not equivalent; repetition is insufficient when the US is equally probable in the background. | Rescorla (1968) | installed |
-| Little Albert | A flawed historical illustration, not the field's "clearest demonstration." Single participant, weak controls, ambiguous coding, mythologized record. | Harris (1979); Powell et al. (2014) | installed |
-| Preparedness | Names a selective cue-consequence associability pattern. The adaptive account is the leading *interpretation*, not the observed result. Must hold across objectives, figures, glossary, and questions. | — | installed |
-| Reinforcement schedules | Fixed-ratio produces break-and-run with a post-reinforcement pause; "scallop" belongs to fixed-interval. Fast/slow acquisition and extinction resistance are conditional patterns, not a general law. | — | installed |
-| Dopamine | Cue-evoked RPE, sustained uncertainty-related activity, and wanting/incentive salience are distinct findings and must not be narrated as one signal. Sapolsky's retirement/afterlife extension is an analogy. | Berke (2018), doi:10.1038/s41593-018-0152-y | installed |
-| Intrinsic motivation | State the conditions under which external rewards undermine intrinsic motivation. Do not convert to "rewards backfire." | Deci, Koestner & Ryan (1999) | installed |
-| Bobo doll | Distinguish the model-consequence phase from the later direct-incentive test. Do not assert a clean rewarded > no-consequence > punished ordering, or that children expected punishment themselves. | Bandura (1965) | installed |
+| Extinction | Extinction adds competing, context-sensitive learning about the CS–US relation. Return of responding reflects competition and context. | Bouton (2004), *Learn Mem* 11, 485–494 | installed |
+| Contingency | Learning depends on whether the CS changes the probability of the US; repetition alone is insufficient when the US is equally probable in the background. | Rescorla (1968) | installed |
+| Little Albert | Use Little Albert as a flawed historical illustration: one participant, weak controls, ambiguous coding, and a mythologized record. | Harris (1979); Powell et al. (2014) | installed |
+| Preparedness | Preparedness names selective cue–consequence associability. The adaptive account is an interpretation of that pattern. Apply this distinction across objectives, figures, glossary, and questions. | — | installed |
+| Reinforcement schedules | Fixed-ratio schedules produce break-and-run responding with a post-reinforcement pause; fixed-interval schedules produce the scallop. Acquisition speed and extinction resistance depend on schedule parameters and context. | — | installed |
+| Dopamine | Cue-evoked reward-prediction error, sustained uncertainty-related activity, and wanting or incentive salience are distinct findings. Sapolsky's retirement and afterlife extension functions as analogy. | Berke (2018), doi:10.1038/s41593-018-0152-y | installed |
+| Intrinsic motivation | External rewards can reduce intrinsic motivation under specific conditions; state those conditions when teaching the effect. | Deci, Koestner & Ryan (1999) | installed |
+| Bobo doll | Describe the model-consequence phase and the later direct-incentive test separately, reporting the observed comparisons from each phase. | Bandura (1965) | installed |
 
 ## Chapter 8 — Memory
 
-| Claim | How it must stay bounded | Source | Status |
+| Claim | Supported claim | Source | Status |
 |---|---|---|---|
-| Confabulation | Do **not** define it by an encoded-event criterion — confabulations can be fantastic and foundationless. The defensible boundary is that human confabulation arises within autobiographical, motivational, affective, and source-monitoring systems, while language-model output is a different computational process. | Johnson & Raye; clinical overview (PMID 30725646) | installed |
-| Survival processing | The effect is broadly supported; the evolutionary interpretation is one account among elaboration, distinctiveness, and scenario richness. Do not say memory was "tuned this way on purpose" or that forgetting is the compression it evolved to do. | Nairne et al. (2007) | installed — **was not, until 2026-07-27.** The Ch. 8 spine-seed pass found both forbidden strings in the source verbatim at L158 ("tuned this way on purpose", "the compression it evolved to do"). Row had read `installed` regardless. Paragraph rewritten; strings now grep to 0; rival accounts named in the prose as this row requires. Treat other `installed` statuses as unverified until checked. |
-| Patient H.M. | Severe system-selective impairment, not an absolute declarative/nondeclarative wall. He showed limited new *semantic* learning. Avoid "gone, permanently and completely" and "no explicit memory whatsoever." | O'Kane, Kensinger & Corkin (2004) | installed |
-| LTP | Not the singular cellular basis of durable memory. | — | installed |
-| Rereading | Not shallow processing *by definition*. | — | removed — passage cut |
+| Confabulation | Human confabulation arises within autobiographical, motivational, affective, and source-monitoring systems and may be fantastic or foundationless. Language-model output is a different computational process. | Johnson & Raye; clinical overview (PMID 30725646) | installed |
+| Survival processing | The survival-processing effect is broadly supported. Its evolutionary interpretation is one account alongside elaboration, distinctiveness, and scenario richness. | Nairne et al. (2007) | installed — repaired 2026-07-27 after the prior status proved false; treat other statuses as unverified until checked |
+| Patient H.M. | H.M. showed severe system-selective impairment together with limited new semantic learning. | O'Kane, Kensinger & Corkin (2004) | installed |
+| LTP | Long-term potentiation is one cellular mechanism that can contribute to durable memory. | — | installed |
+| Rereading | Keep the passage removed. If reintroduced, classify depth of processing by what the learner does with the material rather than by the technique's name. | — | removed — passage cut |
 
 ## Chapter 9 — Thinking, Language & Intelligence
 
-| Claim | How it must stay bounded | Source | Status |
+| Claim | Supported claim | Source | Status |
 |---|---|---|---|
-| Wason selection task | Researchers disagree whether the pattern reflects confirmation bias, matching bias, task interpretation, or information-gain search. Not "confirmation bias in miniature." | PMC11561113; PMC3098374 | installed |
-| Attribute substitution | One mechanism among several — not an umbrella covering confirmation-seeking, reference points, defaults, and every anchoring effect. | — | removed — term cut |
-| Organ donation | Primarily a **default effect**. Framing, implied norms, effort, and loss aversion may explain why defaults matter. | PMC10192178 | installed |
-| Chomsky / poverty of the stimulus | Chomsky's critique showed strict behaviorism was inadequate. Universal Grammar and poverty-of-stimulus remain disputed learnability arguments, not established fact. | Cambridge *Language* critique | installed |
-| Kuhl et al. | Tested short-term learning of foreign-language phonetic contrasts under live social exposure. Does not establish social interaction as necessary for language acquisition generally. | Kuhl et al. (2003), *PNAS* | installed |
-| Anchoring | The 1974 demonstration used a wheel-derived anchor and UN-membership estimates. The Chicago-population item is a later variant and must be cited as such. | PMC8006283 | installed |
-| Linda / conjunction fallacy | Real, but not invariant to representation — explicit frequency or nested-set formats sharply reduce errors. | Tversky & Kahneman (1983) | installed |
-| Group differences in test scores | Current evidence does not *establish* genetic causation for socially defined group gaps — which is not the same as proving no genetic contribution under every definition. Race and ethnicity are not biological proxies. Stereotype threat is context-sensitive, not a general account of mean gaps. | 2024 meta-analysis (PMID 38421748); National Academies (2023) | retired from Ch. 9 by instructor decision, 2026-07-27; retain boundary if the topic returns; stereotype threat remains in Ch. 11 |
-| Water-jar figure | Any Luchins-style figure must be checked so every intermediate volume is reachable and the simple solution actually hits the stated target. The prior figure showed an impossible sequence. | — | installed |
+| Wason selection task | Present confirmation bias, matching bias, task interpretation, and information-gain search as competing explanations for the response pattern. | PMC11561113; PMC3098374 | installed |
+| Attribute substitution | Keep the term removed. If restored, present attribute substitution as one mechanism among several. | — | removed — term cut |
+| Organ donation | Organ-donation enrollment is primarily a **default effect**. Framing, implied norms, effort, and loss aversion may help explain why defaults matter. | PMC10192178 | installed |
+| Chomsky / poverty of the stimulus | Chomsky's critique established the inadequacy of strict behaviorism for language. Universal Grammar and poverty-of-stimulus remain disputed learnability arguments. | Cambridge *Language* critique | installed |
+| Kuhl et al. | Kuhl et al. tested short-term learning of foreign-language phonetic contrasts under live social exposure. | Kuhl et al. (2003), *PNAS* | installed |
+| Anchoring | The 1974 demonstration used a wheel-derived anchor and UN-membership estimates. Cite the Chicago-population item as a later variant. | PMC8006283 | installed |
+| Linda / conjunction fallacy | The conjunction fallacy is robust but representation-sensitive; explicit frequency and nested-set formats sharply reduce errors. | Tversky & Kahneman (1983) | installed |
+| Group differences in test scores | Keep this topic retired from Chapter 9. If it returns elsewhere, current evidence leaves genetic causation for socially defined group gaps unestablished; race and ethnicity are poor biological proxies, and stereotype-threat effects are context-sensitive. | 2024 meta-analysis (PMID 38421748); National Academies (2023) | retired from Ch. 9 by instructor decision, 2026-07-27; stereotype threat remains in Ch. 11 |
+| Water-jar figure | Every intermediate volume in a Luchins-style figure must be reachable, and the simple solution must hit the stated target. | — | installed |
 
 ## Chapter 10 — Lifespan Development
 
-| Claim | How it must stay bounded | Source | Status |
+| Claim | Supported claim | Source | Status |
 |---|---|---|---|
-| Human life history | Comparative primate claims only — "of any primate," not universal superlatives. Brain/body ratio is not encephalization. The evolutionary account is a supported model, not a solved equation. | Bogin et al.; Schuppli et al.; Roth & Dicke | installed |
-| Life-history mosaic | Slow development and longevity coexist with relatively short interbirth intervals and high reproductive output compared with other apes. | Bogin et al. (PMC7293148) | **OPEN** — requested, not found in current source |
-| Attachment | Sensitivity–security is a modest, heterogeneous association (pooled *r* ≈ .25, 22,914 dyads). Stability from infancy is modest. The Strange Situation classifies relationship behavior under a procedure — not an enduring trait or an adult romantic style. | Madigan et al. (2024); Pinquart et al. (2020) | installed |
-| Adolescent dual systems | A schematic account of average developmental tendencies. Not two independent systems, not a universal reward peak, not a single-region deficit, and not established as the cause of identity exploration. | Pfeifer & Allen (PMC6990093) | installed |
-| Baillargeon | "Provided early looking-time evidence consistent with" — not "demonstrated" object permanence. | — | installed |
-| Core knowledge | Early-emerging systems or biases, not "present at birth." | — | installed |
-| Orchid/dandelion | A metaphor for a susceptibility continuum, not two biological categories. | Lionetti et al. (2021) | installed |
-| Parenting styles | Baumrind (1966) had three styles; the neglectful/uninvolved quadrant was formalized later. | — | installed |
-| Scaffolding | Introduced by Wood, Bruner & Ross (1976) and later linked to Vygotskian theory. Not Vygotsky's own mechanism. | Wood, Bruner & Ross (1976) | installed |
-| Prenatal alcohol | Jones & Smith (1973) is the historical first case report, not support for current no-safe-amount guidance. Cite current public-health guidance separately. | CDC | installed |
+| Human life history | Use comparative primate claims, distinguish brain/body ratio from encephalization, and present the evolutionary account as a supported model. | Bogin et al.; Schuppli et al.; Roth & Dicke | installed |
+| Life-history mosaic | Human slow development and longevity coexist with relatively short interbirth intervals and high reproductive output compared with other apes. | Bogin et al. (PMC7293148) | **OPEN** — requested, not found in current source |
+| Attachment | Sensitivity and security show a modest, heterogeneous association (pooled *r* ≈ .25, 22,914 dyads), and stability from infancy is modest. The Strange Situation classifies relationship behavior under a specific procedure. | Madigan et al. (2024); Pinquart et al. (2020) | installed |
+| Adolescent dual systems | Use dual-systems language as a schematic account of average developmental tendencies produced by interacting systems. Individual trajectories vary, and identity exploration requires its own explanation. | Pfeifer & Allen (PMC6990093) | installed |
+| Baillargeon | Baillargeon's studies provided early looking-time evidence consistent with object permanence. | — | installed |
+| Core knowledge | Core knowledge refers to early-emerging systems or biases. | — | installed |
+| Orchid/dandelion | Orchid and dandelion are metaphors for positions along a susceptibility continuum. | Lionetti et al. (2021) | installed |
+| Parenting styles | Baumrind (1966) described three styles; the neglectful or uninvolved quadrant was formalized later. | — | installed |
+| Scaffolding | Wood, Bruner, and Ross (1976) introduced scaffolding; later scholarship connected it to Vygotskian theory. | Wood, Bruner & Ross (1976) | installed |
+| Prenatal alcohol | Use Jones and Smith (1973) as the historical first case report and current public-health guidance as the source for present recommendations. | CDC | installed |
 
 ## Chapter 11 — Social Psychology
 
-| Claim | How it must stay bounded | Source | Status |
+| Claim | Supported claim | Source | Status |
 |---|---|---|---|
-| Milgram | Harmful continuation was produced by the structured authority relationship, but the mechanism is contested — identification with the scientific project may have mattered more than orders, and the order-like prod was *least* effective. Remove "good people," which the experiment did not establish. | Haslam, Reicher & Birney (2014) | installed |
-| Anthropomorphism | Not the fundamental attribution error. Do not describe one AI answer as conformity to a consensus, and do not claim every social mechanism presupposes a mental-state-bearing source. | Strachan et al. (2024) | installed |
-| Social identity | Positive distinctiveness, without making self-esteem the single causal motive. | Rubin & Hewstone (1998) | installed |
-| Stereotype threat | Context-sensitive and often small in operational settings. | Shewach, Sackett & Quint (2019) | installed |
-| Deindividuation | Anonymity increases conformity to salient group norms — which may be prosocial or antisocial. Not "loss of self → aggression." | Postmes & Spears (1998) | installed |
-| Figures 11.6–11.7 | Values are invented. Captions must say so — currently "Conceptual illustration; no empirical values are shown." Never restore empirical precision. | — | installed |
-| Asch | Bounded during the repair pass alongside the chapter's other classics. Do not teach a conformity rate from study-guide secondaries; the Asch taxonomy did not survive verification. Bond & Smith (1996), a 133-study meta-analysis, is the better anchor. | Bond & Smith (1996) | installed |
+| Milgram | The structured authority relationship produced harmful continuation. Identification with the scientific project may have mattered more than direct orders, and the order-like prod was least effective. Characterize the situation and observed behavior rather than participants' moral character. | Haslam, Reicher & Birney (2014) | installed |
+| Anthropomorphism | Treat anthropomorphism, the fundamental attribution error, and conformity as distinct constructs. A single AI answer supplies no consensus cue; name specifically which social mechanisms require a perceived mind. | Strachan et al. (2024) | installed |
+| Social identity | Social identity can motivate positive distinctiveness through several processes; self-esteem is one candidate rather than a single cause. | Rubin & Hewstone (1998) | installed |
+| Stereotype threat | Stereotype-threat effects are context-sensitive and often small in operational settings. | Shewach, Sackett & Quint (2019) | installed |
+| Deindividuation | Anonymity increases conformity to salient group norms, which may be prosocial or antisocial. | Postmes & Spears (1998) | installed |
+| Figures 11.6–11.7 | Captions identify the values as conceptual illustrations with no empirical values shown. | — | installed |
+| Asch | Anchor conformity claims and rates in Bond and Smith's 133-study meta-analysis. | Bond & Smith (1996) | installed |
 
 ## Chapter 12 — Emotion, Stress & Coping
 
-| Claim | How it must stay bounded | Source | Status |
+| Claim | Supported claim | Source | Status |
 |---|---|---|---|
-| Constructionism | Named once as the chapter's chosen influential framework, in prose, at the head of Section 2. Not settled neuroscience, and classic theories are historical simplifications rather than defeated foils. | Gündem et al. (2022) | installed |
-| Patient S.M. | Bilateral amygdala-damage patients, including S.M., experienced fear and panic during CO₂ inhalation. The amygdala is important for some externally triggered threat responses, not necessary for all fear. Never restore "take it out, and the facts survive; the mattering does not." | Feinstein et al. (2013) | installed |
-| Stress physiology | Separate fast SAM effects from slower HPA/cortisol effects. Cortisol is not a single direct cause of increased heart rate. | Russell & Lightman (2019) | installed |
-| Physical vs. simulated stressors | "**Overlapping**," never "identical pathway" or "the same machinery." | — | installed |
-| General adaptation syndrome | A historical heuristic. No literal universal resource curve and no "15–25% remaining" endpoint. Post-finals illness is a familiar hypothesis, not a GAS explanation. | — | installed |
-| Chronic stress and immunity | Immune **dysregulation** — which can include suppression *and* inflammation. Not simply suppression. | Dhabhar (2009) | installed |
-| Hedonic adaptation | A descriptive well-being pattern. Dopamine RPE is not its established mechanism; at most a limited analogy to updating. | Berridge (2007) | installed |
-| Oxytocin / Heinrichs | One small experiment in healthy men using intranasal oxytocin. Effects are context- and sex-dependent. | Heinrichs et al.; Love (2018) | installed |
-| Granularity and affect labeling | Granularity is robustly *associated* with functioning. Labeling does not necessarily reduce "subcortical arousal," and friendship and therapy do not demonstrably work through this mechanism. | Ozomaro et al. (2025); Ariely et al. (2026) | installed |
-| Cognitive light cone | The term is Levin's (2019); Suddendorf, Schacter, Gilbert & Wilson, and Sapolsky ground the *application*. Levin derives the expanding boundary from a homeostatic drive to reduce stress. | Levin (2019) | installed |
-| Grupe & Nitschke (2013) | Verifies as a real, well-cited paper, but concerns **pathological** anxiety. Declined for Ch. 12 because it imports a diagnostic frame. Live candidate for Ch. 13 only. | Grupe & Nitschke (2013), *Nat Rev Neurosci* 14, 488–501 | declined for Ch. 12; open for Ch. 13 |
+| Constructionism | Present constructionism once as the chapter's chosen influential framework alongside alternatives. Treat classic theories as historical simplifications. | Gündem et al. (2022) | installed |
+| Patient S.M. | Bilateral amygdala-damage patients, including S.M., experienced fear and panic during CO₂ inhalation. The amygdala contributes strongly to some externally triggered threat responses. | Feinstein et al. (2013) | installed |
+| Stress physiology | Separate fast SAM effects from slower HPA and cortisol effects. Explain increased heart rate through the fast sympathetic pathway. | Russell & Lightman (2019) | installed |
+| Physical vs. simulated stressors | Physical and simulated stressors recruit **overlapping** stress systems. | — | installed |
+| General adaptation syndrome | Present general adaptation syndrome as a historical heuristic. Use its phases conceptually, without a literal universal resource curve or numeric endpoint; treat post-finals illness as a familiar hypothesis. | — | installed |
+| Chronic stress and immunity | Chronic stress produces immune **dysregulation**, including both suppression and inflammation. | Dhabhar (2009) | installed |
+| Hedonic adaptation | Hedonic adaptation is a descriptive well-being pattern. Dopamine reward-prediction error offers only a limited analogy to updating. | Berridge (2007) | installed |
+| Oxytocin / Heinrichs | Heinrichs et al. studied one small sample of healthy men using intranasal oxytocin; effects vary with context and sex. | Heinrichs et al.; Love (2018) | installed |
+| Granularity and affect labeling | Emotional granularity is robustly associated with functioning. Describe affect-labeling effects at the level directly measured, and treat proposed friendship and therapy mechanisms separately. | Ozomaro et al. (2025); Ariely et al. (2026) | installed |
+| Cognitive light cone | *Cognitive light cone* is Levin's term. Suddendorf, Schacter, Gilbert and Wilson, and Sapolsky support the chapter's application; Levin derives the expanding boundary from a homeostatic drive to reduce stress. | Levin (2019) | installed |
+| Grupe & Nitschke (2013) | The paper concerns pathological anxiety. Keep it declined for Chapter 12 and available as a Chapter 13 candidate. | Grupe & Nitschke (2013), *Nat Rev Neurosci* 14, 488–501 | declined for Ch. 12; open for Ch. 13 |
 
 ## Chapter 13 — Psychological Disorders & Therapy
 
-| Claim | How it must stay bounded | Source | Status |
+| Claim | Supported claim | Source | Status |
 |---|---|---|---|
-| The 3Ds | An introductory heuristic that opens an inquiry. Not a definition, not a required intersection, and not a diagnostic decision rule. | APA DSM-5-TR overview | installed |
-| Reliability vs. validity | Clinicians can agree consistently about a category while its mapping to one causal process stays uncertain. Field-trial agreement varied substantially across diagnoses rather than reaching one high level. | Regier et al. (2013) | installed |
-| Rosenhan | A contested episode in the history of diagnosis. Not clean proof that psychiatric classification is impossible. | Cahalan (2019) | installed |
-| Serotonin and depression | The serotonin-deficiency story is unsupported as a general causal account; antidepressants can still reduce symptoms. Efficacy does not prove the untreated disorder was a deficiency of what the drug alters. | Moncrieff et al. (2022); Cipriani et al. (2018) | installed |
-| Dopamine hypothesis | Captures part of psychosis, especially presynaptic dopamine function and D2 blockade. Antipsychotic efficacy does not prove "too much dopamine." | Howes & Kapur (2009) | installed |
-| Schizophrenia heritability | Substantial, with identical-twin concordance far below 100%. Genes alter probability. | Cardno & Gottesman (2000) | installed |
-| ECT and memory | Cognitive effects vary with parameters and person, can include anterograde and retrograde impairment, and some autobiographical difficulty may persist. Consent must address this rather than promising brief effects. | NICE (2022) | installed |
-| Antipsychotic selection | Efficacy–adverse-effect–preference balancing. No simple "old drugs cause movement problems, new ones don't" division. Clozapine is primarily a treatment-resistant option requiring monitoring. | WHO (2023) | installed |
-| Therapeutic alliance | Predicts outcome across approaches; prediction does not establish causation. "All therapies are equal" and "only technique matters" are both too strong — comparative evidence favors CBT-based approaches for GAD while depression therapies show smaller average differences. | Flückiger et al. (2018); Barth et al. (2013) | installed |
-| Maintenance vs. origin | Avoidance, compulsions, and behavioral withdrawal explain why a pattern *continues*. Not an origin story, and not a general theory of psychopathology. Neurodevelopmental conditions are outside the lens. | — | installed |
-| Mental-health AI | A controlled trial reported symptom improvement for a purpose-built generative chatbot, so categorical "AI can never help" claims are untenable. It did not establish equivalence to licensed therapy, superiority to active treatment, or safety across products. | Heinz et al. (2025), *NEJM AI* | installed |
-| HIPAA | Applies when a tool is operated by or for a covered entity or business associate. It does not automatically protect consumer health apps or general-purpose chatbots. | HHS health-app guidance | installed |
-| Fetal sleep → ASD | Removed. Blumberg (2010) supports a developmental role for sleep-related movement; it does not establish prenatal sleep disruption as an ASD pathway. Do not reintroduce. | Blumberg (2010) | removed |
-| Tang et al. | Removed. The chapter had the wrong terminal author and the article concerns neuronal mTOR-dependent autophagy, not a demonstrated microglial ASD mechanism. If reintroduced, cite pages 1131–1143 correctly. | Tang et al. | removed |
+| The 3Ds | Use the 3Ds as an introductory heuristic that opens inquiry; diagnosis uses broader criteria and clinical judgment. | APA DSM-5-TR overview | installed |
+| Reliability vs. validity | Clinicians can agree consistently about a category while its mapping to one causal process remains uncertain. Field-trial agreement varied substantially across diagnoses. | Regier et al. (2013) | installed |
+| Rosenhan | Present Rosenhan as a contested episode in the history of diagnosis that illustrates institutional and classification problems. | Cahalan (2019) | installed |
+| Serotonin and depression | A general serotonin-deficiency account of depression is unsupported, while antidepressants can reduce symptoms. Drug efficacy and disorder etiology are separate questions. | Moncrieff et al. (2022); Cipriani et al. (2018) | installed |
+| Dopamine hypothesis | The dopamine hypothesis captures part of psychosis, especially presynaptic dopamine function and D2 blockade. Drug response and disorder etiology are separate questions. | Howes & Kapur (2009) | installed |
+| Schizophrenia heritability | Schizophrenia is substantially heritable, while identical-twin concordance remains far below 100%; genes alter probability. | Cardno & Gottesman (2000) | installed |
+| ECT and memory | Cognitive effects vary with treatment parameters and person, can include anterograde and retrograde impairment, and may include persistent autobiographical difficulty. Consent must cover this range. | NICE (2022) | installed |
+| Antipsychotic selection | Antipsychotic selection balances efficacy, adverse effects, and patient preference. Clozapine is primarily a monitored treatment-resistant option. | WHO (2023) | installed |
+| Therapeutic alliance | Therapeutic alliance predicts outcome across approaches. Comparative evidence favors CBT-based approaches for GAD, while depression therapies show smaller average differences. | Flückiger et al. (2018); Barth et al. (2013) | installed |
+| Maintenance vs. origin | Avoidance, compulsions, and behavioral withdrawal explain maintenance. Etiology requires separate evidence, and neurodevelopmental conditions fall outside this lens. | — | installed |
+| Mental-health AI | A controlled trial found symptom improvement with a purpose-built generative chatbot. Claims about equivalence to licensed therapy, superiority to active treatment, product-wide safety, or generalization require direct evidence. | Heinz et al. (2025), *NEJM AI* | installed |
+| HIPAA | HIPAA applies when a tool is operated by or for a covered entity or business associate. Consumer health apps and general-purpose chatbots require separate privacy analysis. | HHS health-app guidance | installed |
+| Fetal sleep → ASD | Keep the passage removed. Blumberg (2010) supports a developmental role for sleep-related movement. | Blumberg (2010) | removed |
+| Tang et al. | Keep the passage removed. The article concerns neuronal mTOR-dependent autophagy; any future use must cite pages 1131–1143 and identify the authors correctly. | Tang et al. | removed |
 
 ---
 
 ## Unresolved lineage flags
 
-Not accuracy claims — open provenance questions requiring a human proximity read. Carried forward so deleting the audits does not lose them.
+These are open provenance questions for human proximity review. They carry no claim-level authority.
 
 | Concept | Question | Chapter |
 |---|---|---|
-| `SP-004` Weber's Law | Lineage row remains `needs-verification` despite instructor-original origin columns and Noba provenance. Clearance was not inferred from provenance alone. | Ch. 4 |
-| `SP-014` Tesla Vision framing | Row says the framing first appeared with Myers-13e while labeling origin `instructor-original`; provenance disclaims Myers wording. Those facts coexist, so it stays a human decision. | Ch. 4 |
-| `LRN-016` Dopamine and reinforcement schedules | Marked `needs-verification`. The chapter cites primary monkey electrophysiology but the surrounding synthesis extends beyond those studies — a calibration question, not a missing citation. | Ch. 7 |
-| `MEM-019` Confabulation, `MEM-020` Source misattribution | Marked `needs-verification`. Not a copyright problem in themselves; the open question is whether the current wording descends from a source that actually discusses clinical confabulation. | Ch. 8 |
-| `DIS-009` Client-centered therapy | Drafted independently from Rogers (1951, 1957) and the Flückiger meta-analysis when Noba was unreachable. No commercial-wording risk evident. | Ch. 13 |
+| `SP-004` Weber's Law | The lineage row remains `needs-verification` despite instructor-original origin columns and Noba provenance. Clearance was not inferred from provenance alone. | Ch. 4 |
+| `SP-014` Tesla Vision framing | The row says the framing first appeared with Myers-13e while labeling origin `instructor-original`; provenance disclaims Myers wording. Those facts coexist, so it remains a human decision. | Ch. 4 |
+| `LRN-016` Dopamine and reinforcement schedules | The item remains `needs-verification`. The chapter cites primary monkey electrophysiology, while the surrounding synthesis extends beyond those studies. | Ch. 7 |
+| `MEM-019` Confabulation, `MEM-020` Source misattribution | The items remain `needs-verification`. The question is whether current wording descends from a source that discusses clinical confabulation. | Ch. 8 |
+| `DIS-009` Client-centered therapy | Drafted independently from Rogers (1951, 1957) and the Flückiger meta-analysis when Noba was unreachable. No commercial-wording risk is evident. | Ch. 13 |
