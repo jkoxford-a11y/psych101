@@ -268,7 +268,7 @@ Later meta-analysis found that contact often helps even when every condition is 
 
 ### Why Any of This Has Force
 
-Polarization, groupthink, in-group favoritism, the pull of a norm: each is a mechanism, and so far none of them has been given a motive. Why should a group's opinion of you be able to move you at all?
+Polarization, groupthink, in-group favoritism, the pull of a norm: each is a **proximate explanation**, a mechanism that changes behavior now. The **ultimate explanation** asks why those mechanisms have force at all. Why should a group's opinion of you be able to move you at all?
 
 Because a group cannot sanction you unless belonging to it is worth something—and for most of human history, it was worth everything. A person alone could not raise a child, survive an injury, or hold territory against anyone who arrived in a group. Whatever else our ancestors were adapted to, they were adapted to needing each other. So the drive to form and keep bonds is not a preference the research discovered; it is equipment, and threats to a bond get treated as urgent almost regardless of what was violated (Baumeister & Leary, 1995). The specific rules are cultural and vary everywhere. The cost of being outside varies nowhere.
 
@@ -509,6 +509,8 @@ Personality traits are real dimensions, not fixed types. They predict patterns b
 
 **Prejudice** — A positive or negative evaluation of people based on group membership.
 
+**Proximate explanation** — Explains how a social mechanism changes behavior in a particular situation.
+
 **Self-serving bias** — Taking internal credit for success and assigning failure to external causes.
 
 **Situational attribution** — Explaining behavior through surrounding conditions or constraints.
@@ -524,6 +526,8 @@ Personality traits are real dimensions, not fixed types. They predict patterns b
 **Strong situations** — Contexts with clear norms or constraints that narrow behavioral variation.
 
 **Trait** — A relatively stable dimension of individual difference.
+
+**Ultimate explanation** — Explains why selective history built that social mechanism.
 
 **Weak situations** — Contexts with ambiguous norms and substantial behavioral latitude.
 

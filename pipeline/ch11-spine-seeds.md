@@ -307,13 +307,17 @@ Carried from the Ch10 residue report so the same corrections don't get made by h
 
 ## OPEN THREADS from the line-edit pass — 2026-07-26
 
-Two of the instructor's line-edit comments are substantive enough to develop rather than apply. Both are recorded here because they may change the chapter's framing and, in the first case, the spine itself. **Neither is written into the chapter yet.**
+Two of the instructor's line-edit comments were substantive enough to develop rather than apply. Both are recorded here because they affect the chapter's framing. **Thread A was approved and installed on 2026-07-28; Thread B remains open and separate.**
 
-### Thread A — RESOLVED 2026-07-26: not a third channel, an ultimate frame
+### Thread A — RESOLVED 2026-07-26; INSTALLED 2026-07-28: not a third channel, an ultimate frame
 
 **Outcome:** the instructor's academic lineage — Alexander's ecological dominance argument, developed by Flinn, Geary, & Ward (2005) — was added to `theoretical-spine.md` **§3 as a trunk principle**, alongside a new principle on naming proximate versus ultimate explanations. It was absent from all three spine documents before today (zero hits for ecological dominance, Alexander, Flinn, arms race, imbalance of power, or Wrangham), which is the likeliest reason this chapter converted proximate.
 
 **This dissolves the taxonomy problem rather than solving it.** Coalitional psychology is not a third influence channel to set beside informational and normative — it is the ultimate explanation of why *both* have force. Informational influence matters because misreading a coalition was costly; normative influence matters because exclusion from one was dangerous. Nothing gets added to the taxonomy, so the objection that killed this yesterday no longer applies.
+
+**Installed after reconciling the marked line-edit packet:** the opening of `### Why Any of This Has Force` now names polarization, groupthink, in-group favoritism, and norms as proximate explanations, then asks the ultimate question: why those mechanisms have force at all. The existing next paragraph supplies the evolutionary answer through dependence on groups and the cost of exclusion. No third influence category or new empirical claim was added.
+
+**Apparatus decision, approved and installed:** `Proximate explanation` and `Ultimate explanation` are now Chapter 11 Key Terms with short, chapter-specific definitions. This cleared the bold-term review introduced by the prose change and returned coherence from `fail=0 review=3` to `fail=0 review=2`.
 
 **Superseded reasoning is kept below for the record.**
 

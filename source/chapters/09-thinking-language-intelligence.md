@@ -38,7 +38,7 @@ By the end of this chapter, you should be able to:
 
 1. **Distinguish** concepts, prototypes, and exemplars, and **explain** how category structure supports prediction and generalization.
 2. Contrast algorithms and heuristics and explain how mental set, functional fixedness, and insight affect problem solving.
-3. Use the System 1/System 2 framework to compare availability, representativeness, confirmation bias, framing, and anchoring without assuming that they all arise from one mechanism.
+3. **Explain** how fast and deliberate thinking can produce predictable errors in judgment.
 4. Describe the structure of language and explain why language acquisition is best understood through biological preparedness, statistical learning, and social experience rather than any one factor alone.
 5. Distinguish linguistic determinism from weaker forms of linguistic relativity and evaluate the strength of different examples.
 6. Compare *g*, fluid and crystallized intelligence, Gardner's and Sternberg's proposals, and explain how standardization, reliability, validity, and the Flynn Effect constrain the interpretation of IQ scores.
@@ -312,9 +312,9 @@ One loop runs through this chapter: a limited mind **builds** concepts from expe
 
 **Building and predicting:** Concepts let a limited system generalize far beyond what it can store—the chess master's few large chunks, not thirty remembered pieces. They draw on prototypes, exemplars, hierarchical relations, and context together, and they sharpen not with sheer exposure but with experience that exposes diagnostic structure. Algorithms trade speed for reliable procedure; heuristics trade certainty for a fast, usually-good prediction. Assimilation applies the current concept; accommodation revises it when a prediction fails.
 
-**When the check is skipped:** Mental set and functional fixedness keep an old representation running after the problem has changed, and the same well-trained concepts that let experts predict can capture their attention and hide a better solution. Heuristics and biases are the general case: availability substitutes ease of recall for frequency, representativeness substitutes resemblance for base rates, confirmation bias favors belief-consistent evidence, framing shifts the reference point, and anchoring drags an estimate toward a starting value. Each is a useful prediction applied without the check. Fluent AI output is a modern version of the same trap: ease of processing is not evidence of truth.
+**When the check is skipped:** Mental set and functional fixedness keep an old representation running after the problem changes; expert concepts can do the same by capturing attention. Availability substitutes ease of recall for frequency, representativeness substitutes resemblance for base rates, confirmation bias favors supporting evidence, framing uses language to shift the reference point, and anchoring pulls judgment toward a starting value. Fluent AI output exploits the same weakness: ease of processing is not evidence of truth.
 
-**Sharing the structure:** Language lets humans label conceptual distinctions, hand them to one another, and inherit structure a single lifetime could never build alone—which is why a semester can install concepts a field took a century to discover. Its units, from phonemes to pragmatics, combine a small set of parts into unlimited meaning; its acquisition draws on biological preparedness, statistical learning, and social experience together. Linguistic determinism is not supported, but practiced linguistic categories can make some distinctions easier to notice.
+**Sharing the structure:** Language labels conceptual distinctions and lets people inherit structure no single lifetime could build alone. A small set of units combines into unlimited meaning, and acquisition draws on biological preparedness, statistical learning, and social experience. Language does not determine thought, but practiced categories can make some distinctions easier to notice.
 
 **Measuring it:** Fluid intelligence is finding and revising structure when existing knowledge runs out; crystallized intelligence is the accumulated conceptual structure itself. *g* summarizes their correlations; IQ scores are standardized, reliable, and useful for selected predictions while remaining incomplete. The Flynn Effect shows that concept-building responds to historical environments—the optimistic corollary of the whole chapter.
 
@@ -369,9 +369,9 @@ Better concepts make better predictions, in the exam room and long after it. A c
 
 <details><summary>Why this matters</summary>E and 7 could reveal violations. Because wording, matching, context, and conditional reasoning also matter, the task does not isolate one bias.</details>
 
-**6.** Explain the difference between framing and anchoring. Give one example in which two descriptions are equivalent and one in which an initial number pulls a later estimate.
+**6.** How can wording change a decision even when the facts stay the same? How is that different from anchoring?
 
-<details><summary>Why this matters</summary>Framing changes the reference point for equivalent outcomes; anchoring pulls an estimate toward an initial number.</details>
+<details><summary>Why this matters</summary>Framing makes a different feature or reference point prominent—such as lives saved versus lives lost. Anchoring instead pulls an estimate toward an initial number.</details>
 
 **7.** How do phonemes, morphemes, syntax, semantics, and pragmatics contribute different information to language? Why can neither reinforcement nor an innate LAD alone provide a complete acquisition account?
 
@@ -415,8 +415,6 @@ Bratsberg, B., & Rogeberg, O. (2018). Flynn effect and its reversal are both env
 Chase, W. G., & Simon, H. A. (1973). Perception in chess. *Cognitive Psychology*, *4*(1), 55–81.
 
 Chomsky, N. (1965). *Aspects of the theory of syntax*. MIT Press.
-
-Deary, I. J. (2001). *Intelligence: A very short introduction*. Oxford University Press.
 
 Duncker, K. (1945). On problem-solving. *Psychological Monographs*, *58*(5, Whole No. 270).
 
@@ -486,6 +484,7 @@ Winawer, J., Witthoft, N., Frank, M. C., Wu, L., Wade, A. R., & Boroditsky, L. (
 
 ## Further Reading
 
+- Deary, I. J. (2020). *Intelligence: A very short introduction* (2nd ed.). Oxford University Press. — A concise overview of what intelligence tests measure, why cognitive abilities correlate, how scores change across generations and the lifespan, and what those scores can—and cannot—predict.
 - Kahneman, D. (2011). *Thinking, fast and slow.* Farrar, Straus and Giroux. — An influential synthesis of research on judgment and decision making. Read it as a productive framework rather than the final word on every bias or dual-process mechanism.
 - Pinker, S. (1994). *The language instinct.* William Morrow. — An accessible case for a strong biological and nativist account of language, best read alongside statistical-learning and interactionist perspectives.
 - Nisbett, R. E. (2003). *The geography of thought.* Free Press. — A broad argument about culture and cognition that connects to linguistic relativity while also illustrating the need to separate memorable claims from strongly replicated effects.

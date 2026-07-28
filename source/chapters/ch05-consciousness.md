@@ -39,8 +39,9 @@ By the end of this chapter, you should be able to:
 4. Describe global-workspace theory as one candidate account of conscious access.
 5. Compare reports and no-report paradigms, including what cognitive motor dissociation teaches about responsiveness.
 6. Use predictive processing and Charles Bonnet syndrome to explain how conscious content can be constructed while remaining distinct from belief.
-7. Compare alcohol blackout, psychedelic states, and general anesthesia across state, content, behavior, access, and memory.
-8. Distinguish functional explanations of consciousness from Chalmers’s hard problem.
+7. Explain how the brain constructs a sense of self, and use depersonalization to show that ownership can change while perception and reasoning remain intact.
+8. Compare alcohol blackout, psychedelic states, and general anesthesia across state, content, behavior, access, and memory.
+9. Distinguish functional explanations of consciousness from Chalmers’s hard problem.
 
 ---
 
@@ -175,7 +176,7 @@ This is why attention and prediction occupy different places in the chapter’s 
 
 ### The experiencer is constructed too
 
-The same logic runs one step further, and this is where it gets uncomfortable. If what you see is the brain’s best interpretation of noisy input, the same should hold for its interpretation of the organism doing the seeing. Anil Seth and Manos Tsakiris have argued exactly this: the experienced self is another model — a running prediction about what kind of body this is, what state it is in, and what it is about to do (Seth & Tsakiris, 2018). The evidence they point to is that this sense can come apart from everything else. In depersonalization, people describe perceiving normally and reasoning normally while experience stops feeling like it belongs to them, as though they were observing themselves from slightly outside (Sierra & David, 2011). Perception intact, belief intact, ownership altered. This is an argument rather than a settled result, and other researchers read the same evidence differently.
+The same logic runs one step further, and this is where it gets uncomfortable. If what you see is the brain’s best interpretation of noisy input, the same should hold for its interpretation of the organism doing the seeing. Anil Seth and Manos Tsakiris have argued exactly this: the experienced self is another model — a running prediction about what kind of body this is, what state it is in, and what it is about to do (Seth & Tsakiris, 2018). The evidence they point to is that this sense can come apart from everything else. In **depersonalization**, people describe perceiving normally and reasoning normally while experience stops feeling like it belongs to them, as though they were observing themselves from slightly outside (Sierra & David, 2011). Perception intact, belief intact, ownership altered. This is an argument rather than a settled result, and other researchers read the same evidence differently.
 
 It is worth asking how general the human arrangement is. An octopus has roughly 500 million neurons, but about 300 million of them sit in ganglia inside the arms rather than in the central brain, and an arm severed from that brain will still reach, grasp, and withdraw in response to touch (Young, 1963; Hochner, 2012). Each arm carries out a great deal of its own sensing and its own deciding. Whether there is one unified “what it is like” to be an octopus, or something it is like to be each arm, is not currently answerable. What the case does establish is narrower and still useful: centralizing control in one place is a solution to the problem of coordinating a body, not the only solution, and not the definition of having a mind.
 
@@ -258,7 +259,7 @@ The brain processes far more information than enters conscious experience. Blind
 
 Selective attention prioritizes information, while automaticity allows practiced behavior to run with less conscious monitoring. The cocktail-party effect shows that unattended information can sometimes capture attention, although it does not do so reliably for everyone. Global-workspace theory proposes that selected information becomes amplified and broadly available to specialized systems. Reports provide valuable evidence about experience; no-report methods reduce some operations required by reporting but remain inferential. Cognitive motor dissociation shows that observable responsiveness can underestimate preserved cognition in some patients.
 
-Predictive processing helps explain how prior information and sensory evidence construct conscious content. Charles Bonnet syndrome demonstrates that vivid visual content can coexist with the belief that the content is unreal. Alcohol blackout separates wakeful behavior from durable episodic encoding. Psychedelic states can preserve wakefulness while altering perceptual content and self-experience. General anesthesia changes state, responsiveness, memory, sensory processing, and network coordination without necessarily ending every local computation.
+Predictive processing helps explain how prior information and sensory evidence construct conscious content. The same constructive logic may extend to the experienced self: depersonalization shows that perception and reasoning can remain intact while ownership changes. Charles Bonnet syndrome demonstrates that vivid visual content can coexist with the belief that the content is unreal. Alcohol blackout separates wakeful behavior from durable episodic encoding. Psychedelic states can preserve wakefulness while altering perceptual content and self-experience. General anesthesia changes state, responsiveness, memory, sensory processing, and network coordination without necessarily ending every local computation.
 
 These functional explanations leave Chalmers’s hard problem unresolved. Explaining access, report, perception, memory, and action does not yet explain why those processes are accompanied by subjective experience.
 
@@ -430,6 +431,8 @@ d) why alcohol disrupts episodic encoding
 **Conscious content** — What is being experienced at a particular moment, such as a sight, sound, pain, thought, or image.
 
 **Conscious state** — An organism’s overall condition of wakefulness, responsiveness, and apparent capacity for experience.
+
+**Depersonalization** — An altered sense of self in which experience feels detached or no longer fully one’s own, even when perception and reasoning remain intact.
 
 **Dichotic listening** — A procedure in which different auditory messages are presented to the two ears while the participant attends to one message.
 

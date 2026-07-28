@@ -8,10 +8,10 @@
 
 Delivered as chat iteration, not a `.docx` packet — the workflow settled across Chs. 12, 1–6.
 
-> **STATUS: all five decisions approved by the instructor and installed, 2026-07-27.**
+> **STATUS: all five seed decisions approved by the instructor and installed, 2026-07-27; apparatus, citation, and Chapter 1 label follow-through completed, 2026-07-28.**
 > Body 7,268 → 7,398 words (**+130**). Lint 14/14 PASS, 0 warnings. Coherence checker output is byte-identical to the pre-edit baseline — this pass introduced no new failures and no new review items.
 > Verified by sorted-word diff against `git show HEAD:source/chapters/ch08-memory.md`: the only vocabulary that left the chapter belongs to the four edited passages. No paragraph was dropped.
-> **Still open:** the Step 9 apparatus retrofit (below), and one pre-existing defect the verification pass surfaced — see *Incidental finding*.
+> The Step 9 apparatus retrofit and the Baddeley reference defect are resolved below. The remaining hard finding is the documented singular/plural `Flashbulb memory` checker false positive.
 
 ---
 
@@ -266,7 +266,7 @@ Two 65-word do-it-yourself tails in Section 1, both trailing paragraphs that had
 
 `check_chapter_coherence.py` reports `fail=2 review=2` on Ch. 8, and the output is **byte-identical before and after this pass** — all four items predate it. Three are known false-positive classes; one is real.
 
-- **REAL: `Baddeley (2000)` is cited in the body (L63, for the episodic buffer) and has no reference-list entry.** The list carries only `Baddeley, A. D., & Hitch, G. (1974)`. Not fixed here — adding a bibliographic record is a citation decision, not a spine-seed edit, and it should be entered from the actual source rather than from memory. Flagged.
+- **RESOLVED, 2026-07-28: `Baddeley (2000)` is cited in the body (L63, for the episodic buffer) and initially had no reference-list entry.** The instructor approved the record after verification against PubMed; the canonical reference now includes the article title, journal, volume, issue, pages, and DOI. The coherence check improved from `fail=2 review=2` to `fail=1 review=2`.
 - *Noise:* `key term defined but absent from body: Flashbulb memory` — the body says "Flashbulb **memories**" in bold at L194. The checker's literal-string match on the singular Key Term misses it. Known class.
 - *Noise:* `reference entry not cited: Laney (2026), McDermott (2026)` — both are Further Reading entries and correctly uncited in text.
 - *Noise:* seven bolded-with-no-Key-Terms-entry items, including `backward digit span`. Pre-existing and unchanged by Decision 5.
@@ -286,7 +286,9 @@ Two 65-word do-it-yourself tails in Section 1, both trailing paragraphs that had
 
 Run **last**, after the body decisions above are resolved, so the prompts test the chapter as it finally reads.
 
-1. **Learning Objective 3** currently reads *"**Differentiate** explicit from implicit memory, and episodic from semantic memory…"* — pure term discrimination, and it is the objective that would need to change most if Decision 3 lands. Proposed replacement: *"**Explain** how episodic experience compresses into semantic knowledge, and use that relationship — together with H.M.'s case — to distinguish explicit from implicit memory."* Tests the relation instead of the labels.
-2. **Chapter Summary L210** already closes on lossy compression, correctly. But its middle sentence still describes explicit memory as splitting "into episodic and semantic," siblings again. One clause fix if Decision 3 lands.
-3. **Undecided, needs you:** should `schema` become a bolded Key Term if Decision 3 installs the concept? The draft deliberately avoids the word so the coherence checker does not demand an entry — the same move Ch. 5 made with *depersonalization*. Adding the term is a separate call from adding the idea.
+1. **Learning Objective 3 — APPROVED AND INSTALLED, 2026-07-28.** The drafted replacement was simplified by the instructor and installed as: **“Explain how episodic memories become semantic knowledge, and use H.M.'s case to distinguish explicit from implicit memory.”** This tests the relationship instead of sorting four labels.
+2. **Chapter Summary — APPROVED AND INSTALLED, 2026-07-28.** Replaced the sibling-list sentence with: **“Functionally, explicit memories include specific episodes and the semantic knowledge extracted across them; implicit memory includes procedural memory and priming. These systems can be damaged independently.”** The Summary now carries the same episodic-to-semantic relationship as the body.
+3. **`Schema` Key Term — DECLINED, 2026-07-28.** The instructor approved retaining the episodic-to-semantic mechanism without adding the label. `Schema` appears zero times in Chapter 8, and Chapter 10 already teaches the term directly through Piaget. Adding a body label only to justify a glossary entry would increase taxonomy without improving the explanation. Do not re-propose it as a missing Chapter 8 term.
 4. **Not acted on:** `backward digit span` is bolded with no Key Terms entry (see Decision 5). Pre-existing.
+5. **Baddeley (2000) reference — APPROVED AND INSTALLED, 2026-07-28.** Added the verified bibliographic record for the episodic-buffer citation. This clears the only real citation failure; the remaining `Flashbulb memory` failure is the documented singular/plural false positive.
+6. **Proximate/ultimate labels — APPROVED AND INSTALLED, 2026-07-28.** Preserved the full decay/interference account and added one sentence identifying those mechanisms as **proximate explanations**. Replaced the next paragraph's generic “zoom out” transition with **ultimate explanation**, making Chapter 1's promised distinction explicit without adding a new argument or changing the survival-processing evidence boundary. No Chapter 8 glossary entries were added; Chapter 1 already defines both terms.

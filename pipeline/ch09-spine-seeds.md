@@ -9,7 +9,7 @@
 
 > **STATUS: decisions resolved and installed, 2026-07-27.**
 >
-> Decision 1 approved; Decision 2 retired. Body 6,306 → 6,254 words (**−52**). Generated HTML synchronized. Lint 14/14 PASS with 0 warnings; coherence remains `fail=0 review=5`.
+> Decision 1 approved; Decision 2 retired. Body 6,306 → 6,254 words (**−52**). On 2026-07-28, the instructor approved a simpler Learning Objective 3 centered on how fast and deliberate thinking produce predictable errors, a two-paragraph Summary compression that joins framing to language, a relational replacement for Review Question 6, and moving Deary to Further Reading using the 2020 second edition. Chapter 9's apparatus decisions are complete. Generated HTML synchronized. Lint 14/14 PASS with 0 warnings; coherence is `fail=0 review=4`.
 >
 > Delivery was chat iteration, not a `.docx` packet, following the workflow now settled across Chapters 1–9, 11–13.
 
@@ -236,7 +236,7 @@ The current source goes directly from the Flynn Effect to `Stop and Retrieve`. T
 
 Objectives are pedagogical commitments and are not changed silently.
 
-1. **Learning Objective 3** names framing but not its role as the bridge from shortcut to language. If Decision 1 lands, propose revising LO3 so students explain how wording helps construct the representation being judged, not merely compare the bias labels.
-2. **Chapter Summary** names framing in the bias inventory and language in the next paragraph but never joins them. It is already 446 words, so retrofit by replacement or compression, not addition.
-3. **Review Questions** remain mostly term-discrimination prompts. After the body settles, convert one Section 2/3 question to test the relationship among framing, language, and conceptual representation.
-4. **Reference cleanup:** Deary (2001) is genuinely uncited in the body. Decide whether it supports a retained claim or belongs in Further Reading; do not silently delete it during the spine pass.
+1. **Learning Objective 3 — APPROVED AND INSTALLED, 2026-07-28.** The first proposal tried to preserve the bias inventory and add the framing→language bridge. The instructor rejected that cognitive load: the point is to see how the two modes of thinking produce errors. Installed wording: **“Explain how fast and deliberate thinking can produce predictable errors in judgment.”** The checker still requests the framing→language bridge by name; that review remains intentionally unresolved rather than bloating the objective.
+2. **Chapter Summary — APPROVED AND INSTALLED, 2026-07-28.** The instructor approved replacing the `When the check is skipped` and `Sharing the structure` paragraphs with compressed versions. The Summary went from 445 to 389 measured words. It now states directly that “framing uses language to shift the reference point,” then opens the next paragraph with language labeling conceptual distinctions. The summary-length review cleared. The checker still claims the bridge is absent despite that exact wording; this is a confirmed false negative, not a reason to add more prose.
+3. **Review Question 6 — APPROVED AND INSTALLED, 2026-07-28.** Replaced the definition/example prompt with: **“How can wording change a decision even when the facts stay the same? How is that different from anchoring?”** The model answer explains that framing makes a feature or reference point prominent while anchoring pulls an estimate toward an initial number. All 10 questions and all 10 answer panels remain.
+4. **Deary reference — APPROVED AND MOVED, 2026-07-28.** The unused 2001 first-edition entry was removed from References and replaced in the existing Further Reading section with Deary's verified 2020 second edition plus a student-facing description. It was not forced into a body citation because it is an accessible synthesis, while retained scientific claims use more specific sources. Validation initially caught that Chapter 9 already had a Further Reading section later in the source; the duplicate experimental placement was removed, leaving one heading, one generated ID, and four sibling items.

@@ -9,7 +9,7 @@
 
 > **STATUS: decisions resolved and installed, 2026-07-28.**
 >
-> Decision 1 was rewritten by the instructor and installed with an evidence correction. Decision 2 was rejected; the instructor-authored life-history and shared-care prose remains intact. Decision 3 was approved and installed. Body 5,059 → 5,175 words (**+116**). Objectives, summary, review questions, glossary, figures, and labs were not changed.
+> Decision 1 was rewritten by the instructor and installed with an evidence correction. Decision 2 was rejected; the instructor-authored life-history and shared-care prose remains intact. Decision 3 was approved and installed. Body 5,059 → 5,175 words (**+116**). On 2026-07-28, the instructor also approved a new first Learning Objective connecting life history, secondary altriciality, shared care, and social competition plus `Proximate level` and `Ultimate level` Key Terms. Summary, review questions, figures, and labs were not changed.
 >
 > Delivery and revision happened in chat. The instructor edited the proposed passages directly before installation.
 
@@ -156,6 +156,8 @@ and:
 
 What is lost by rejecting the seed: the chapter does not name the “life-history mosaic” or explicitly contrast unusually slow development with comparatively short interbirth intervals. That is an accepted scope decision, not a prose defect. Do not re-propose it as a mechanical repair.
 
+**Ledger reconciliation, 2026-07-28:** `pipeline/evidence-commitments.md` now marks this thread retired from Chapter 10 and retains the row to prevent silent re-proposal. Its source cell also records that PMCID PMC7293148 is Richerson and Boyd (2020), not Bogin et al.; the exact evidentiary support must be reverified if the topic returns.
+
 ### Decision 3 — Name the proximate/ultimate distinction in adolescence — **APPROVED AND INSTALLED**
 
 The instructor approved two labels inside the existing adolescent-brain paragraph:
@@ -164,9 +166,25 @@ The instructor approved two labels inside the existing adolescent-brain paragrap
 
 The paragraph's explanation and payoff remain otherwise intact. The immediately preceding sentence now begins “Brain development continues through puberty.”
 
-### Recorded, not asked — apparatus remains unchanged
+### Apparatus Decision 1 — Add the missing chapter-engine objective — **APPROVED AND INSTALLED**
 
-The coherence checker correctly surfaces three judgment calls: life-history theory and secondary altriciality are taught in the body but not named in a Learning Objective; the Chapter Summary does not name life-history theory; and the newly bolded proximate/ultimate labels are not Chapter 10 Key Terms. Those are apparatus decisions, not silent fixes. No objective, summary, review question, or glossary entry was changed in this pass.
+The instructor approved this new Objective 1:
+
+> **Use** life history theory to explain why human childhood is unusually long, connecting finite energy, secondary altriciality, shared caregiving, and social competition.
+
+The existing seven objectives became 2–8 without wording changes. This cleared both objective-level coherence reviews.
+
+The Chapter Summary already states that human childhood is “long, plastic, and expensive” because features of a “slow, brain-heavy life history evolved together,” then names secondary altriciality and shared caregiving. The remaining summary review is exact-phrase checker noise; no Summary edit is needed.
+
+### Apparatus Decision 2 — Add the proximate/ultimate Key Terms — **APPROVED AND INSTALLED**
+
+The instructor approved:
+
+> **Proximate level** — Explains how a developmental mechanism works within an individual or situation; paired with the ultimate level.
+
+> **Ultimate level** — Explains why selective history built a developmental pattern; paired with the proximate level.
+
+The article in the body phrase `(the **ultimate level**)` now sits outside the bold span so the displayed wording is unchanged while the bold term matches the glossary entry exactly.
 
 ---
 
@@ -176,5 +194,5 @@ The coherence checker correctly surfaces three judgment calls: life-history theo
 - The rejected life-history-mosaic insertion is absent; the village and siblings lines remain.
 - The Flinn, Geary, and Ward (2005) in-text citation has a matching reference entry.
 - Structural lint: 14/14 chapters PASS with zero warnings.
-- Chapter 10 coherence result remains at the pre-installation category baseline: `fail=1 review=7`. The bolded-term review now also lists `proximate level` and `the ultimate level`, an expected apparatus prompt from Decision 3. The failure is the checker's institutional-author parsing of the CDC citation; apparatus findings remain proposals.
+- After the approved objective, Chapter 10 coherence improved from `fail=1 review=7` to `fail=1 review=5`. Both objective-thread reviews cleared. The approved Key Terms then cleared `proximate level` and `ultimate level` from the missing-glossary list; the category count remains five because that review also contains pre-existing bold terms. The remaining summary review is a false negative against prose that already names the life-history connection. The failure remains the checker's institutional-author parsing of the CDC citation.
 - No bad ` ? ` separator mojibake; `git diff --check` clean.

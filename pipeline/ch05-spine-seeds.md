@@ -389,12 +389,14 @@ Settled by existing precedent or by the spine's own drafting rules. Listed so th
 
 Reading: the **spine-question review item cleared** (R1 did its job). The `Gelder (2008)` failure is **identical pre and post** and is a documented false-positive class — the reference list has `de Gelder, B., ...` and the checker's author keying takes `Gelder` in one direction and `de` in the other. Not a defect; not touched.
 
-**Two new review items, both correct, both apparatus — proposed, not installed**, per Step 9's rule that objectives are pedagogical commitments:
+**Two new review items, both correct at discovery, both resolved by instructor decision on 2026-07-28:**
 
-1. **A learning objective is owed.** Proposed as a new LO 7, with the existing 7 and 8 renumbering to 8 and 9: *"Explain why the sense of self is treated in this chapter as a constructed model rather than a direct perception, and use depersonalization to say what that claim does and does not commit you to."*
-2. **The Chapter Summary omits the thread.** Proposed insertion at the end of the third summary paragraph: *"The same constructive logic has been extended to the experiencing self: Seth and Tsakiris treat it as another model rather than a direct perception, and depersonalization shows that ownership of experience can be altered while perception and belief remain intact. This is an argument under active debate, not a settled result."*
+1. **Learning Objective 7 — APPROVED AND INSTALLED.** The instructor chose the simpler wording: *"Explain how the brain constructs a sense of self, and use depersonalization to show that ownership can change while perception and reasoning remain intact."* The prior Objectives 7 and 8 are now 8 and 9.
+2. **Chapter Summary — APPROVED AND INSTALLED.** Added after the predictive-processing sentence: *"The same constructive logic may extend to the experienced self: depersonalization shows that perception and reasoning can remain intact while ownership changes."*
 
-Also unresolved and **not** proposed here, because it is a Key Terms decision rather than a drift fix: *depersonalization* is used in the body without a Key Terms entry. It is deliberately unbolded so the checker does not demand one. If it should be a key term, that is a call for the apparatus pass.
+**`Depersonalization` Key Term — APPROVED AND INSTALLED.** Its first body occurrence is now bolded, and the glossary defines it as an altered sense of self in which experience feels detached or no longer fully one's own even when perception and reasoning remain intact.
+
+**Checker result after installation:** still `fail=1 review=2`. The `Gelder (2008)` failure remains the documented particle-surname false positive. The two self-thread reviews are now confirmed wording-match false negatives: the new Objective explicitly says the brain “constructs a sense of self,” and the Summary says the same constructive logic may extend to “the experienced self.”
 
 ## Post-install measurement
 

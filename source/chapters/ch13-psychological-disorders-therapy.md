@@ -122,7 +122,7 @@ The **biopsychosocial model** widens the frame further. Biological, psychologica
 
 **Fear** responds to a present threat. **Anxiety** anticipates a possible threat. Both are normal.
 
-Chapter 4 introduced the trade-off any detector faces under uncertainty: shifting a criterion to catch more real signals also produces more false alarms. Threat detection faces that trade-off with lopsided stakes. A false alarm wastes effort. A miss can end the organism. Natural selection sets the criterion accordingly, so systems that anticipate danger are built to over-detect it (Nesse, 2005).
+The **ultimate explanation** asks why threat detection is calibrated toward false alarms. Chapter 4 introduced the trade-off any detector faces under uncertainty: shifting a criterion to catch more real signals also produces more false alarms. Threat detection faces that trade-off with lopsided stakes. A false alarm wastes effort. A miss can end the organism. Natural selection sets the criterion accordingly, so systems that anticipate danger are built to over-detect it (Nesse, 2005).
 
 That is why the clinical question is calibration, not presence. Anxiety disorders involve anticipatory patterns that are excessive or persistent relative to context and that cause clinically significant distress or impairment. The system is doing its job at the wrong setting.
 
@@ -135,7 +135,7 @@ That is why the clinical question is calibration, not presence. Anxiety disorder
 | **Obsessive-compulsive disorder** | Intrusive obsessions and compulsions performed to reduce distress or prevent a feared event | Repetitive preferences or neatness alone are not OCD |
 | **Post-traumatic stress disorder** | Intrusion, avoidance, changes in cognition or mood, and arousal after qualifying trauma exposure | Trauma exposure does not make PTSD inevitable |
 
-Avoidance offers a clean example of maintenance. Leaving a feared situation reduces anxiety quickly. That relief is **negative reinforcement**: removing an aversive state makes the escape response more likely next time. The person therefore receives less opportunity to learn that anxiety can decline without escape or that the feared outcome may not occur.
+The **proximate explanation** is the maintenance loop. Leaving a feared situation reduces anxiety quickly. That relief is **negative reinforcement**: removing an aversive state makes the escape response more likely next time. The person therefore receives less opportunity to learn that anxiety can decline without escape or that the feared outcome may not occur.
 
 ![Figure 13.5: A cycle from threat cue to anxiety to avoidance or compulsion to immediate relief and then reduced opportunity for corrective learning; an exposure branch permits new corrective and safety learning](../../docs/images/ch13/ch13_anxiety_avoidance_learning_loop.svg)
 *Figure 13.5. Avoidance and compulsions can be maintained by immediate relief. Exposure-based treatment creates conditions for corrective or inhibitory learning; it does not promise that the original fear memory is erased. Original figure.*

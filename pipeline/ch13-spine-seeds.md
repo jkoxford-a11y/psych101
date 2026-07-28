@@ -1,7 +1,7 @@
 # Chapter 13 — Spine Seeds (for instructor edit)
 
 **Drafted:** 2026-07-26
-**Status:** Both blocking decisions settled and **applied to `source/chapters/ch13-psychological-disorders-therapy.md` on 2026-07-26**. This file is now the decision record for that pass, not a pending packet. The *Still open* items at the end remain open.
+**Status:** Both blocking decisions settled and **applied to `source/chapters/ch13-psychological-disorders-therapy.md` on 2026-07-26**. The proximate/ultimate vocabulary follow-through was approved and applied on 2026-07-28 after Chapter 1 introduced and promised the terms. This file is now the decision record for that pass, not a pending packet. The *Still open* items at the end remain open.
 
 **Applied, exactly:** S2 anxiety opener replaced · S1 signal-detection paragraph added to *Labels Direct Attention* · new S1 subsection *What a Label Does Outside the Clinic* with its own Stop and Retrieve · Connections table Ch. 4 row added and Ch. 11 row replaced · one Key Terms entry · learning objectives renumbered 5 → 7 · three references added. Body 3,211 → 3,718.
 **Inputs:** `pipeline/theoretical-spine.md` §3 + Ch. 13 Layer 3 notes, `pipeline/evidence-commitments.md`, `source/chapters/ch13-psychological-disorders-therapy.md`, `source/chapters/ch04-sensation-perception.md`, `source/chapters/ch11-social-psychology.md`, `AGENTS.md` → `## Style`.
@@ -58,6 +58,8 @@ Section-level: S1 Diagnosis 757 · S2 Disorders 1,061 · S3 Personality/Neurodev
 ### Decision 1 — proximate/ultimate framing for anxiety: INSTALL, bounded, Section 2
 
 Settled in conversation. Install once, in Section 2, at the opening of *Anxiety, Fear, and Avoidance*. Not chapter framing.
+
+> **Vocabulary follow-through, approved and installed 2026-07-28.** The rationale below accurately records why the 2026-07-26 pass did the conceptual work without Tinbergen's labels: Chapter 1 had not yet introduced them. Chapter 1 now explicitly defines `Proximate explanation` and `Ultimate explanation` and promises their return in Chapter 13. The instructor therefore approved two bounded labels in the existing anxiety account: the smoke-detector/false-alarm paragraph now opens with the **ultimate explanation**, while the later negative-reinforcement maintenance paragraph opens with the **proximate explanation**. No empirical claim or evidence boundary changed, and no local Key Terms entries were added because Chapter 1 defines both terms.
 
 **Two facts that shaped the final form:**
 

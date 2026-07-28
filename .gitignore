@@ -4,6 +4,13 @@ node_modules/
 # Agent tool scratch output (sprite runs, QA renders, validation dumps)
 .pet-runs/
 
+# Generated lecture decks. A .pptx is a zip, so git cannot delta-compress it —
+# every rebuild would store a complete new copy. Rebuild with
+# `python pipeline/build_chapter_deck.py <n>`; attach decks to a GitHub Release
+# when a citable snapshot is needed. Seeds (pipeline/slides/) and slide assets
+# (slides/) ARE committed; only the build output is ignored.
+build/
+
 # Word/Office lock files — this repo carries many .docx line-edit packets
 ~$*.doc*
 ~$*.xls*

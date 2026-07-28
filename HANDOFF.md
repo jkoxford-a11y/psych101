@@ -7,54 +7,65 @@ This file records current state only. See `GPT_project_log.md` for completed-wor
 
 ## Current state
 
-**Chapter 10 has completed the spine-seed protocol.** Record: `pipeline/ch10-spine-seeds.md`. The instructor rewrote and approved the ecological-dominance/social-competition connection, rejected the proposed life-history-mosaic insertion and its coupled cut, and approved proximate/ultimate labels in the adolescent-brain passage. The installed D1 preserves the Flinn, Geary, and Ward lineage while correcting the evidence wording: brain size and cognition increased rapidly in the hominin lineage, not “exponentially over the last million years,” and “principal hostile force of nature” is attributed to Alexander rather than Darwin. The matching 2005 reference is installed. D2 is explicitly retired from this pass; the instructor's village and siblings lines remain intact. Body 5,059 → 5,175 words (**+116**). Source and generated HTML are synchronized.
+**All Chapters 1–13 have completed the spine-seed protocol.** The current working method is chat iteration, one chapter at a time, with instructor decisions shown before prose changes. The Chapter 5–6 and Chapter 8–13 decision sequence remains in the working tree; source Markdown and regenerated chapter HTML were validated after each approved install. Chapter 1's proximate/ultimate forward promise is fulfilled in Chapters 7, 8, 10, 11, and 13. No commit or push has been made for this sequence.
 
-**Chapter 10 validation:** structural lint passes 14/14 chapters with zero warnings. Coherence remains at the pre-installation category baseline, `fail=1 review=7`. The failure is the known institutional-author parsing problem for CDC; the bolded-term review now expectedly includes `proximate level` and `the ultimate level`. Objectives, Chapter Summary, review questions, Key Terms, figures, and labs were not changed. The open apparatus decisions are whether to name life-history theory and secondary altriciality in an objective, name life history in the summary, and add the proximate/ultimate labels to Chapter 10's Key Terms.
+**Chapter 10 is complete and preserves the instructor's academic lineage and prose.** The approved ecological-dominance/social-competition paragraph retains Flinn, Geary, and Ward, while the proposed life-history-mosaic insertion and its coupled cut were explicitly rejected. The village and siblings lines remain. The adolescent proximate/ultimate language, Objective 1, and glossary decisions are installed and validated. Record: `pipeline/ch10-spine-seeds.md`.
 
-**All Chapters 1–13 have now had the actual spine-seed protocol run.** The working method is chat iteration, one chapter at a time. `pipeline/spine-seed-protocol.md` Step 8 still describes the superseded DOCX-packet delivery path and should eventually be brought into line with practice.
+**The evidence-commitment workflow has been paused and reframed.** A read-only comparison checked all 105 rows in `pipeline/evidence-commitments.md` against current chapter Markdown. The instructor then identified that treating ledger rows as prose directives would reintroduce the hedging and negation framing removed during the completed chapter audits. Therefore:
 
-**Chapters 8 and 9 remain the strongest warning against trusting ledger status cells.** Chapter 8's survival-processing row read `installed` while the chapter contained both forbidden claims verbatim; that prose and status note were repaired. Chapter 9's group-differences row also claimed an installed thread absent from the canonical chapter; the instructor retired it from Chapter 9. The rest of `pipeline/evidence-commitments.md` has not been systematically checked. Chapter 10's life-history-mosaic row still reads OPEN even though the instructor rejected that insertion in this pass; correcting the ledger is a separate decision because the evidence boundary may remain useful while the chapter assignment is retired.
+- Do **not** install the audit's proposed Charles Bonnet, H.M., rereading, attachment, or Baillargeon prose changes.
+- Do **not** use an `installed` status as authority to restore language or content.
+- Keep chapter prose frozen while the ledger itself is audited.
+- A valid ledger row may bind a factual claim, but it must not prescribe hedge-heavy sentence form, resurrect retired prose, or override approved instructor language.
 
-**Recent chapter apparatus decisions remain open.** Chapter 9 needs a framing→language objective/summary connection, a relation-testing review question, and a cite-or-move decision for Deary (2001). Chapter 8 needs the drafted Objective 3 and summary retrofit, a decision on `schema` as a Key Term, and a verified reference entry for the genuinely uncited Baddeley (2000). Chapter 6 still has drafted objective/summary wording that removes the obsolete “differently supported” framing. Chapter 5 still has a drafted constructed-self objective/summary retrofit and an open `depersonalization` Key Term decision.
+**Two findings stand independently of the ledger and remain open for later approval.**
 
-**Chapter 1's proximate/ultimate forward promise is fulfilled in Chapters 7 and 10, but not yet in Chapters 8, 11, and 13.** Chapter 11 remains the highest-value missing use because the theoretical spine names it as the chapter where the distinction matters most. Chapter 6 is pre-wired for the labels but is not named in Chapter 1's promise.
+1. Chapter 9's current Luchins water-jar figure is mechanically invalid: the stated goal is four liters in B, while the labeled simple solution fills B to seven liters, and the earlier sequence contains an unreachable state.
+2. Chapter 13's Moncrieff reference gives incorrect metadata for DOI `10.1038/s41380-022-01661-0`. The final journal citation is 2023, *Molecular Psychiatry, 28*, 3243–3256, matching Chapters 1 and 3. These are factual production issues, not invitations to reopen chapter voice.
 
-**Chapter 2's pre-line-edit hedge/wordiness audit still awaits one scope decision:** is the no-first-person rule Chapter 2-local or book-wide? A book-wide rule would conflict with `pipeline/voice-brief.md` and current prose in eight chapters plus the prologue.
+**Completed chapter decisions remain settled.** Chapter 5's constructed-self apparatus, Chapter 6's simplified objective and summary, Chapter 8's episodic-to-semantic apparatus and deliberate `schema` decline, Chapter 9's simplified objective and retired group-differences thread, and the Chapter 11/13 proximate-ultimate installs should not be re-proposed through the ledger audit. Chapter 11's dissonance-as-updating thread remains separately open.
+
+**A lecture-deck generator pilot is present as a separate, self-contained work area.** `pipeline/build_chapter_deck.py`, `pipeline/slides/`, `slides/`, and the `build/` line in `.gitignore` are presentation tooling, not chapter work. The generator is a sibling of `pipeline/build_chapter_html.mjs`: it reads the same canonical chapter Markdown and emits a 16:9 `.pptx`. It does not write to `source/`, `docs/`, or any pipeline record. Chapter 6 builds to 66 slides at 1.6 MB; built decks land in `build/` and are **not** committed, because a `.pptx` is a zip that git stores whole on every rebuild. Rebuild with `python pipeline/build_chapter_deck.py 6 --render`. Details in `GPT_project_log.md` (2026-07-28, Claude Code) and `pipeline/slides/README.md`.
+
+Awaiting the instructor's markup pass on slide *grammar* — which slide kinds, density, and titles are wrong — before the ingest half (capturing PowerPoint edits back into the seed) is written. Grammar changes move slide keys, so building ingest first would orphan overrides. A marked-up copy should be saved under a distinct filename; the generated deck is overwritten by the next rebuild.
+
+**Chapter 2's complete nine-figure sequence has been re-audited and repaired.** The rendered inspection found four defects that the 2026-07-15 review metadata missed: Figure 2.2's fourth dart cloud was precise rather than dispersed, Figure 2.3's lower positive-direction cue did not rise, Figure 2.5 overgeneralized sampling/assignment as external/internal validity and duplicated a marker ID, and Figure 2.6 used an overbroad title and overflowed its causal footer box. Those four assets and their metadata are repaired; Figures 2.1, 2.4, 2.7, 2.8, and 2.9 required no change. Desktop and 390×844 mobile views have no page overflow, and all nine figures expand and collapse correctly. The authoritative Markdown needed no caption/alt change; the Chapter 2 builder regenerated the HTML byte-identically.
+
+**The repository is mixed.** Preserve every unrelated change. The deck-pilot files above are a distinct scope: do not modify, remove, stage, or characterize them as part of the chapter/ledger sequence, and equally do not let the ledger audit touch them.
 
 ## Immediate next actions
 
-1. **Resolve Chapter 10's follow-on record and apparatus decisions:** retire or revise the ledger's OPEN life-history-mosaic assignment; decide whether life history/secondary altriciality belong in an objective and summary; decide whether proximate/ultimate become Chapter 10 Key Terms.
-2. **Retrofit Chapter 9's apparatus** from `pipeline/ch09-spine-seeds.md` Step 9 and decide whether to cite or move Deary (2001).
-3. **Retrofit Chapter 8's apparatus** from `pipeline/ch08-spine-seeds.md` Step 9; verify and add the Baddeley (2000) bibliographic record; decide on `schema`.
-4. **Audit all evidence-commitment rows against current chapter prose.** Treat every `installed` status as unverified until checked.
-5. **Resolve Chapter 7's figure-number gap:** captions skip 7.8, while unreferenced dopamine-uncertainty PNG/SVG assets exist. Restore that figure or renumber 7.9 → 7.8.
-6. **Complete the proximate/ultimate propagation** in Chapters 8, 11, and 13 as one deliberate pass.
-7. **Repair the theoretical-spine ownership note** that still assigns the cognitive light cone to Chapter 5; Chapter 12 owns it.
+1. **Audit `pipeline/evidence-commitments.md` itself, read-only first.** Compare each row with current instructor decisions, the de-hedging/wordiness audits, and current prose. Classify rows as: genuine factual boundary; hedge/negation prescription; stale status; retired/removed content; or unsupported/incorrect source metadata.
+2. **Present proposed ledger decisions in chat before editing the ledger.** Do not change chapter prose during this audit. Preserve the instructor's approved words and do not infer that a ledger disagreement requires a chapter revision.
+3. **After explicit approval, reconcile ledger rows only.** Re-read `HANDOFF.md` immediately before updating it. Validate exact scope and do not commit or push.
+4. **Handle the water-jar figure and Moncrieff metadata separately** after the ledger audit or when the instructor chooses; neither requires reopening surrounding prose.
+5. Later project items remain: Chapter 7's missing Figure 7.8 decision, the theoretical-spine cognitive-light-cone ownership note, Chapter 2's no-first-person scope, and Chapter 11 Thread B.
+6. **Deck pilot, independent of the ledger sequence:** instructor markup on slide grammar, then a `.potx` template (decks currently render in the default Office theme), then the PowerPoint-edit ingest. Do not interleave with the ledger audit.
 
-## Files changed by the current Chapter 10 pass
+## Current intentional file scope
 
-- `source/chapters/ch10-lifespan-development.md`
-- `docs/chapters/10-lifespan-development.html`
-- `pipeline/ch10-spine-seeds.md`
-- `GPT_project_log.md`
-- `HANDOFF.md`
+The existing Chapter 5–6 and Chapter 8–13 decision sequence includes the corresponding source Markdown, generated HTML, and `pipeline/chNN-spine-seeds.md` files, plus `pipeline/evidence-commitments.md`, `GPT_project_log.md`, and `HANDOFF.md`. Inspect `git status` and exact diffs before any write; do not bulk add, clean, reset, restore, commit, or push.
 
-No Chapter 10 objective, summary, review question, glossary, figure, image, lab, shared builder, evidence-ledger row, commit, or remote branch changed.
+The deck pilot is a second, non-overlapping scope: `pipeline/build_chapter_deck.py`, `pipeline/slides/README.md`, `pipeline/slides/ch06.md`, `slides/ch06/assets/manifest.md`, and `.gitignore`. Stage it separately from the chapter/ledger sequence.
 
-## Repository notes
+The completed Chapter 2 figure audit is a third, non-overlapping scope: `docs/images/ch02/ch02_reliability_validity_accuracy_precision.png`, `docs/images/ch02/ch02_correlation_direction_strength.png`, `docs/images/ch02/fig2-5-random-sampling-vs-assignment.svg`, `docs/images/ch02/fig_experiment_flowchart.svg`, `docs/images/ch02/README_captions_alt_text_attribution.md`, `source/visuals-inventory.md`, plus this handoff and the matching project-log entry. Keep it separate from both the ledger sequence and deck pilot.
 
-- `pipeline/build_chapter_html.mjs` registers Chapters 1–13 and accepts chapter numbers as arguments. `node pipeline/build_chapter_html.mjs 10` rebuilds only Chapter 10; calling it with no number rebuilds all registered chapters. The prologue is separate.
-- Baseline `pipeline/check_chapter_coherence.py` before editing; its citation, singular/plural Key Terms, institutional-author, and apostrophe-anchor false-positive classes are documented in `PROJECT_BACKLOG.md`.
-- Run Python validators with `-X utf8` on Windows. `check_chapter_coherence.py --all` can otherwise hit console encoding failures on Chapter 9.
-- Preserve exact file scope in this mixed repository. Do not bulk add, clean, reset, or restore.
-- A revised line-edit packet always gets a new filename; never rebuild over instructor markup.
-- Three `.png` files in `docs/images/ch03/` are UTF-8 text notes and can generate recurring line-ending noise.
+## Validation and operating notes
+
+- Source Markdown is authoritative; regenerate chapter HTML rather than patching generated HTML.
+- Run Python validators with `-X utf8` on Windows.
+- `pipeline/check_chapter_coherence.py` and `pipeline/lint_chapters.py` test different things; run both after approved chapter changes.
+- Known checker false positives include particle surnames, institutional authors, singular/plural glossary matching, wording-match thread misses, and apostrophe anchors.
+- `pipeline/spine-seed-protocol.md` Step 8 still describes a superseded DOCX delivery path and eventually needs alignment with the chat-review workflow.
+- Always preserve exact file scope in this mixed worktree.
 
 ## Important files
 
-- Chapter 10 decisions: `pipeline/ch10-spine-seeds.md`
+- Evidence ledger under review: `pipeline/evidence-commitments.md`
 - Spine protocol: `pipeline/spine-seed-protocol.md`
-- Evidence ledger: `pipeline/evidence-commitments.md`
+- Chapter 10 decisions: `pipeline/ch10-spine-seeds.md`
+- Chapter 11 decisions: `pipeline/ch11-spine-seeds.md`
 - Theoretical spine: `pipeline/theoretical-spine.md`
 - Validators: `pipeline/check_chapter_coherence.py`, `pipeline/lint_chapters.py`
+- Deck generator and seed format: `pipeline/build_chapter_deck.py`, `pipeline/slides/README.md`
 - Durable deferred work: `PROJECT_BACKLOG.md`

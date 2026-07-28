@@ -4,6 +4,8 @@ This file is the chapter-specific visual manifest for Chapter 2, **Research Meth
 
 **Reconciled 2026-07-15** during the canonical Chapter 2 revision: all nine figures are wired into the canonical source and regenerated HTML in order (Figures 2.1–2.9). Figure 2.2 received a wording-only raster repair so the target analogy no longer equates validity with literal accuracy or labels the imprecise panel “high validity.” Figure 2.5 now uses the existing no-number SVG rather than the stale PNG that embedded an incorrect figure number. The placebo asset's repaired citation was rechecked and its stale public-sharing blocker removed. See `GPT_project_log.md` for the full change log.
 
+**Re-audited 2026-07-28 from the rendered chapter:** the prior review missed four visible defects. Figure 2.2's fourth panel showed a tight rather than low-reliability dart cloud; Figure 2.3's lower positive-direction cue did not rise from lower left to upper right; Figure 2.5 used overbroad validity labels and duplicate SVG marker IDs; and Figure 2.6 used an overbroad title and overflowed its causal footer box. All four were repaired and rechecked at desktop and mobile widths. Figures 2.1, 2.4, 2.7, 2.8, and 2.9 required no change.
+
 ---
 
 ## `ch02_research_process_cycle.png`
@@ -52,7 +54,7 @@ Circular infographic showing seven recurring stages of psychological research: O
 **Working title:** Reliability and Validity: Four Measurement Outcomes  
 **Placement:** In Section 1, "Two More Questions Every Measure Has to Answer," immediately after reliability and validity are introduced. Replaced `fig_reliability_validity_dartboard.svg` and `fig2-6-reliability-validity-targets.svg`.  
 **Caption number:** Figure 2.2 (wired 2026-07-10).  
-**Status:** **Wired — use now.** Wording repaired and accuracy, accessibility, expansion, and desktop/mobile-width review completed 2026-07-15.
+**Status:** **Wired — use now.** Wording repaired 2026-07-15; fourth-panel dart geometry repaired and the complete figure rechecked 2026-07-28.
 **Recommended display:** `chapter-figure wide expandable` because the four-panel comparison contains explanatory labels that benefit from enlargement.
 
 ### Caption
@@ -65,7 +67,7 @@ Four-panel target diagram comparing measurement accuracy and precision. The firs
 
 ### Creation and attribution
 
-- **Creation method:** Original educational infographic generated with ChatGPT image generation, July 2026, from project-specific direction and content; wording-only repair generated 2026-07-15 from the existing asset, preserving the panel layout, target/dart positions, palette, and visual hierarchy.
+- **Creation method:** Original educational infographic generated with ChatGPT image generation, July 2026, from project-specific direction and content; wording-only repair generated 2026-07-15. A targeted 2026-07-28 edit dispersed the fourth-panel darts around an off-center lower-left cloud while preserving the approved wording, layout, palette, and hierarchy.
 - **Direction and curation:** Jonathan K. Oxford.
 - **Attribution text:** Original figure generated for Oxford Psychology 101 with ChatGPT image generation, 2026. Directed and curated by Jonathan K. Oxford. No external copyrighted image assets intentionally used.
 - **External source assets:** None intentionally used.
@@ -223,7 +225,7 @@ Three-row dot-and-whisker diagram using fictional training-program results. The 
 **Working title:** Correlation: Direction and Strength  
 **Placement:** In Section 2 immediately after the paragraph introducing the correlation coefficient. Replaced `fig_correlation_scatter.png`.  
 **Caption number:** Figure 2.3 (wired 2026-07-10).  
-**Status:** **Wired — use now.** Accuracy, accessibility, expansion, and desktop/mobile-width review completed 2026-07-15.
+**Status:** **Wired — use now.** Lower positive-direction arrow repaired and the complete figure rechecked 2026-07-28.
 **Recommended display:** `chapter-figure wide expandable` because the five scatterplots and labels benefit from enlargement on smaller screens.
 
 ### Caption
@@ -236,7 +238,7 @@ Five side-by-side scatterplots illustrate correlations ranging from strong posit
 
 ### Creation and attribution
 
-- **Creation method:** Original simulated educational infographic generated with ChatGPT image generation, July 2026, from project-specific direction and fictional scatterplot data.
+- **Creation method:** Original simulated educational infographic generated with ChatGPT image generation, July 2026, from project-specific direction and fictional scatterplot data; targeted lower positive-arrow correction generated 2026-07-28 with all plots, signs, coefficients, wording, and other layout held fixed.
 - **Direction and curation:** Jonathan K. Oxford.
 - **Attribution text:** Original simulated figure generated for Oxford Psychology 101 with ChatGPT image generation, 2026. Directed and curated by Jonathan K. Oxford. No external copyrighted image assets intentionally used.
 - **External source assets:** None intentionally used.
@@ -268,7 +270,7 @@ Five side-by-side scatterplots illustrate correlations ranging from strong posit
 **Working title:** Random Sampling versus Random Assignment
 **Placement:** Section 3, after the prose distinguishing who enters a study from how enrolled participants enter conditions.
 **Caption number:** Figure 2.5.
-**Status:** **Wired — use now.** The canonical revision replaced the stale `fig_random_sampling_vs_assignment.png`, which embedded “Fig 2.6,” with this existing no-number SVG.
+**Status:** **Wired — use now.** The canonical revision replaced the stale `fig_random_sampling_vs_assignment.png`, which embedded “Fig 2.6,” with this existing no-number SVG. Inference labels, footer, and marker definitions were repaired 2026-07-28.
 **Recommended display:** `chapter-figure expandable`.
 
 **Caption:** **Random sampling and random assignment answer different research-design questions.** Random sampling determines who gets into the study and supports population representativeness, one component of external validity. Random assignment determines who goes into which condition, balances participant characteristics in expectation, and strengthens causal inference within the study.
@@ -286,7 +288,7 @@ Five side-by-side scatterplots illustrate correlations ranging from strong posit
 **Working title:** Anatomy of a Randomized Experiment — Hot Sauce Paradigm
 **Placement:** Section 3, after the hot-sauce worked example.
 **Caption number:** Figure 2.6.
-**Status:** **Wired — use now.**
+**Status:** **Wired — use now.** Title and calibrated two-line footer repaired 2026-07-28; flow, group labels, arrows, and shared DV rechecked.
 **Recommended display:** `chapter-figure expandable`.
 
 **Caption:** **The logic of a randomized experiment, mapped onto the hot sauce paradigm.** Participants enter conditions by chance; the researcher manipulates the prompt and measures hot sauce allocation in both groups. Randomization strengthens the causal comparison but does not substitute for sound measurement, implementation, or analysis.

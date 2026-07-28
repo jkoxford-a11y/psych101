@@ -24,13 +24,14 @@ Why do humans take so long to grow up? That question runs underneath this chapte
 
 By the end of this chapter, students should be able to:
 
-1. **Distinguish** cross-sectional from longitudinal research and explain cohort effects, attrition, and practice effects.
-2. **Explain** how timing, dose, biology, and context shape the effects of prenatal teratogens.
-3. **Compare** Piaget's active-construction account with Vygotsky's socially supported account, including assimilation, accommodation, stages, the ZPD, and scaffolding.
-4. **Interpret** attachment classifications as probabilistic relationship patterns measured during reunion—not fixed traits or destinies.
-5. **Apply** differential susceptibility and parenting-style research without treating correlational patterns as one-way causes.
-6. **Distinguish** moral motivation from moral reasoning.
-7. **Explain** adolescence and aging as uneven developmental reorganizations shaped by biology, experience, opportunity, and social context.
+1. **Use** life history theory to explain why human childhood is unusually long, connecting finite energy, secondary altriciality, shared caregiving, and social competition.
+2. **Distinguish** cross-sectional from longitudinal research and explain cohort effects, attrition, and practice effects.
+3. **Explain** how timing, dose, biology, and context shape the effects of prenatal teratogens.
+4. **Compare** Piaget's active-construction account with Vygotsky's socially supported account, including assimilation, accommodation, stages, the ZPD, and scaffolding.
+5. **Interpret** attachment classifications as probabilistic relationship patterns measured during reunion—not fixed traits or destinies.
+6. **Apply** differential susceptibility and parenting-style research without treating correlational patterns as one-way causes.
+7. **Distinguish** moral motivation from moral reasoning.
+8. **Explain** adolescence and aging as uneven developmental reorganizations shaped by biology, experience, opportunity, and social context.
 
 ---
 
@@ -233,7 +234,7 @@ Erik Erikson's lasting contribution was to insist that development does not stop
 
 Brain development continues through puberty. Myelination, network integration, and the coordination of systems for planning, motivation, and self-regulation keep going through adolescence and into the twenties, with many patterns reaching adult-like plateaus around the mid-twenties. That does not mean the brain is “unfinished” until a switch flips at 25, or that change stops afterward.
 
-Adolescence is also, in evolutionary terms (**the ultimate level**), a distinctly human stretch of life and it has a job to do. At the **proximate level**, the influential **dual-systems model** describes it as a period when reward, novelty, and social-motivational systems become intensely responsive before regulatory control is consistently adult-like. That temporary mismatch helps explain why risk spikes most in emotionally charged or peer-present moments—the exact settings in which a teenager is learning the adult social, economic, and reproductive world. Ultimately, teenagers reason well in calm settings, and real behavior rides on peers, incentives, stress, sleep, practice, opportunity, and culture as much as on neural development (Casey et al., 2008; Crone & Dahl, 2012; Somerville, 2016).
+Adolescence is also, in evolutionary terms (the **ultimate level**), a distinctly human stretch of life and it has a job to do. At the **proximate level**, the influential **dual-systems model** describes it as a period when reward, novelty, and social-motivational systems become intensely responsive before regulatory control is consistently adult-like. That temporary mismatch helps explain why risk spikes most in emotionally charged or peer-present moments—the exact settings in which a teenager is learning the adult social, economic, and reproductive world. Ultimately, teenagers reason well in calm settings, and real behavior rides on peers, incentives, stress, sleep, practice, opportunity, and culture as much as on neural development (Casey et al., 2008; Crone & Dahl, 2012; Somerville, 2016).
 
 Leaving childhood *requires* trying unfamiliar things, testing identities, and learning which risks are worth taking. The same openness that produces danger in a harsh environment produces discovery in a supportive one—the orchid logic again, now aimed at the whole social world.
 
@@ -418,6 +419,8 @@ Novel reasoning, processing speed, and rapid working-memory manipulation depend 
 
 **Object permanence** — Understanding that objects continue to exist when they are no longer directly perceived.
 
+**Proximate level** — Explains how a developmental mechanism works within an individual or situation; paired with the ultimate level.
+
 **Scaffolding** — Temporary, calibrated support that fades as the learner becomes independently capable.
 
 **Schema** — A mental framework that organizes and interprets experience.
@@ -429,6 +432,8 @@ Novel reasoning, processing speed, and rapid working-memory manipulation depend 
 **Synaptic pruning** — Developmental weakening or elimination of some synaptic connections as neural systems reorganize and specialize.
 
 **Teratogen** — A chemical, biological, or physical agent capable of disrupting prenatal development.
+
+**Ultimate level** — Explains why selective history built a developmental pattern; paired with the proximate level.
 
 **Zone of proximal development (ZPD)** — The range between what a learner can do alone and what the learner can do with effective guidance.
 

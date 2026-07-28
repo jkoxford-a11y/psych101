@@ -191,25 +191,22 @@ and L24 — flagged, not proposed.
 
 ## Step 9 — Apparatus check
 
-Run against the converted body. Objectives are pedagogical commitments: **proposed, not installed.**
+Run against the converted body. Objectives are pedagogical commitments; the two changes below were approved and installed on 2026-07-28.
 
-**Learning Objective 3** currently reads *"…evaluate multiple, differently supported accounts of what that
-architecture may accomplish."* The chapter no longer presents the accounts as differently supported rivals. Proposed
-replacement:
+**Learning Objective 3 — APPROVED AND INSTALLED.** The chapter no longer presents the accounts as differently
+supported rivals. The instructor chose the simpler replacement:
 
-> 3. Describe the architecture of a typical night's sleep by EEG signature, distinguish what sleep does for the
->    brain from why an animal that sleeps was favored by selection, and explain why sleep's duration and structure
->    vary across species.
+> 3. Describe a typical night's sleep by its EEG patterns, explain what sleep does for the brain, and explain why
+>    sleep varies across species.
 
-**Chapter Summary** L182 carries the same wording — *"Several accounts of why sleep exists carry real but uneven
-support"* — and has the same problem. Proposed replacement for that clause:
+**Chapter Summary — APPROVED AND INSTALLED.** Replaced *"Several accounts of why sleep exists carry real but uneven
+support"* with:
 
-> Accounts of why sleep exists answer two different questions: restoration and memory reorganization say what sleep
-> does for the brain, while the evolutionary trade-off between activity and vulnerability says why an animal that
-> sleeps was favored at all.
+> Accounts of sleep answer two questions: restoration and memory reorganization explain what sleep does for the
+> brain; evolutionary trade-offs explain why sleeping animals were favored at all.
 
-**Undecided:** whether the spine question should also appear in the Misconception Opener. L13's closing sentence is
-already its declarative form; making both interrogative may read as repetition. Left as-is pending a call.
+**Misconception Opener — NO CHANGE NEEDED.** L13 already closes on the declarative form of the spine question.
+Repeating it as a question would add repetition without a new teaching function.
 
 ---
 
