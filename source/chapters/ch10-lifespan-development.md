@@ -58,6 +58,8 @@ That village is necessary because each human infant arrives profoundly underdeve
 
 *Figure 10.1. Human childhood is long, plastic, and expensive. Extended postnatal brain development creates opportunities for learning, while shared caregiving helps support a long period of dependence. The figure summarizes a supported coevolutionary model, not a complete or uniquely established origin story.*
 
+Life history and shared care explain how the brain was funded; the ecological-dominance/social-competition model explains why brain size and cognitive capacity increased so rapidly in the hominin lineage. As one hominin coalition (i.e., a coalition of members of the human lineage) gained cognitive facility, rival coalitions did too. It was an evolutionary arms race over access to the valuable resources needed to support such expensive offspring. Once many of Darwin’s traditional hostile forces of nature were partly controlled, other hominins became what Alexander called our own “principal hostile force of nature.” Thus, the model treats within-group cooperation and between-group competition as the primary selective force shaping human social cognition (Flinn, Geary, & Ward, 2005).
+
 ### How to study change across time
 
 This chapter introduces two new methods to study change over time.
@@ -229,9 +231,9 @@ Erik Erikson's lasting contribution was to insist that development does not stop
 
 ### The adolescent brain and the age-25 shorthand
 
-Brain development does not halt at puberty. Myelination, network integration, and the coordination of systems for planning, motivation, and self-regulation keep going through adolescence and into the twenties, with many patterns reaching adult-like plateaus around the mid-twenties. That does not mean the brain is “unfinished” until a switch flips at 25, or that change stops afterward.
+Brain development continues through puberty. Myelination, network integration, and the coordination of systems for planning, motivation, and self-regulation keep going through adolescence and into the twenties, with many patterns reaching adult-like plateaus around the mid-twenties. That does not mean the brain is “unfinished” until a switch flips at 25, or that change stops afterward.
 
-Adolescence is also, in evolutionary terms, a distinctly human stretch of life—barely present in great apes—and it has a job to do. The influential **dual-systems model** describes it as a period when reward, novelty, and social-motivational systems become intensely responsive before regulatory control is consistently adult-like. That temporary mismatch helps explain why risk spikes most in emotionally charged or peer-present moments—the exact settings in which a teenager is learning the adult social, economic, and reproductive world. Ultimately, teenagers reason well in calm settings, and real behavior rides on peers, incentives, stress, sleep, practice, opportunity, and culture as much as on neural development (Casey et al., 2008; Crone & Dahl, 2012; Somerville, 2016).
+Adolescence is also, in evolutionary terms (**the ultimate level**), a distinctly human stretch of life and it has a job to do. At the **proximate level**, the influential **dual-systems model** describes it as a period when reward, novelty, and social-motivational systems become intensely responsive before regulatory control is consistently adult-like. That temporary mismatch helps explain why risk spikes most in emotionally charged or peer-present moments—the exact settings in which a teenager is learning the adult social, economic, and reproductive world. Ultimately, teenagers reason well in calm settings, and real behavior rides on peers, incentives, stress, sleep, practice, opportunity, and culture as much as on neural development (Casey et al., 2008; Crone & Dahl, 2012; Somerville, 2016).
 
 Leaving childhood *requires* trying unfamiliar things, testing identities, and learning which risks are worth taking. The same openness that produces danger in a harsh environment produces discovery in a supportive one—the orchid logic again, now aimed at the whole social world.
 
@@ -464,6 +466,8 @@ Charles, S. T., & Carstensen, L. L. (2010). Social and emotional aging. *Annual 
 Crone, E. A., & Dahl, R. E. (2012). Understanding adolescence as a period of social-affective engagement and goal flexibility. *Nature Reviews Neuroscience, 13*, 636–650.
 
 Erikson, E. H. (1963). *Childhood and society* (2nd ed.). Norton.
+
+Flinn, M. V., Geary, D. C., & Ward, C. V. (2005). Ecological dominance, social competition, and coalitionary arms races: Why humans evolved extraordinary intelligence. *Evolution and Human Behavior, 26*, 10–46.
 
 Feldman, R. (2007). Parent-infant synchrony: Biological foundations and developmental outcomes. *Current Directions in Psychological Science, 16*, 340–345.
 
