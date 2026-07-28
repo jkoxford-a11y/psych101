@@ -35,11 +35,11 @@ Do not maintain the same information in multiple project-state files. If you fin
 
 ### Evidence commitments are the only standing constraint on claims
 
-`pipeline/evidence-commitments.md` is the book-wide ledger of claims whose *wording is load-bearing* — sentences phrased as they are because the evidence does not support the stronger version. Consult it before softening, sharpening, shortening, or cutting a claim. It is the only file with standing authority over how a claim may be stated.
+`pipeline/evidence-commitments.md` is the book-wide ledger of claims whose evidential boundary is load-bearing. Consult it before softening, sharpening, shortening, or cutting a listed claim. It is the only file with standing authority over the strongest version the evidence supports.
 
-- **A row binds the claim, not the sentence.** Rewriting freely is fine as long as the bound survives. Adding a row requires a named source and a claim someone would plausibly strengthen back.
-- **A required boundary must be *stated*; where it lands is a register decision, not an accuracy one.** Putting a necessary caveat in the paragraph's final position is a choice, and usually the wrong one — the payoff belongs there. See *Keep the story*.
-- **Removing an overclaim does not discharge the obligation to replace its teaching function.** This is the failure mode that produces accurate, lifeless prose: the claim goes, nothing takes its place, and the paragraph ends on what is not true rather than on what is. Chapter 12's 2026-07-15 repair pass is the worked example.
+- **A row binds the claim, not the sentence.** Rewriting freely is expected as long as the supported claim survives. Adding a row requires a named source and a claim someone could plausibly strengthen past the evidence.
+- **Install the supported claim, not the rebuttal.** The ledger is a silent accuracy check, not a sentence bank. A row does not require a caveat, negation, or explicit statement of the stronger claim it excludes. State a contrast only when correcting that misconception is itself part of the lesson. Adding “not,” “does not establish,” “only,” “merely,” or similar defensive wording solely because it appeared in the ledger is a style defect.
+- **Removing an overclaim does not discharge the obligation to replace its teaching function.** This is the failure mode that produces accurate, lifeless prose: the claim goes, nothing takes its place, and the paragraph ends on what is untrue or unproven. Chapter 12's 2026-07-15 repair pass is the worked example.
 - **Nothing in the ledger overrides `## Style`.** It records what must remain true, never how to sound.
 - **Its status column goes stale the moment prose changes.** Re-verify against the current source; never quote it as a present-tense fact about the chapter.
 
