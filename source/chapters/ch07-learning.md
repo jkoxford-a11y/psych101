@@ -223,12 +223,12 @@ d) conditioned response
 
 **2.** A tone has been paired with shock until it elicits fear. The tone is then presented repeatedly without shock and fear declines. Later, the tone produces fear again in a different room. Which conclusion best connects classical and operant extinction?
 
-a) Extinction proves the original learning was deleted in both cases  
+a) In both cases, behavior can decline when the expected outcome stops occurring, while earlier learning may remain capable of returning
 b) Extinction occurs only in classical conditioning  
-c) In both cases, behavior can decline when the expected outcome stops occurring, while earlier learning may remain capable of returning  
+c) Extinction proves the original learning was deleted in both cases
 d) In both cases, spontaneous recovery means acquisition has started over from the beginning  
 
-*Answer: c. Why (a) is tempting: responding became weak, which can look like erasure. Return of responding after time or context change shows why performance during extinction cannot by itself establish that earlier learning disappeared.*
+*Answer: a. Why (c) is tempting: responding became weak, which can look like erasure. Return of responding after time or context change shows why performance during extinction cannot by itself establish that earlier learning disappeared.*
 
 ---
 
@@ -245,12 +245,12 @@ d) negative reinforcement
 
 **4.** In a laboratory, a rat receives food after an unpredictable number of lever presses. When food delivery stops, lever pressing persists for many trials. Which statement is most defensible?
 
-a) The rat was on a variable-ratio schedule, and intermittent reinforcement history can produce persistent responding during extinction  
-b) The rat was on a fixed-interval schedule because time always causes scalloped responding  
+a) The rat was on a fixed-interval schedule because time always causes scalloped responding
+b) The rat was on a variable-ratio schedule, and intermittent reinforcement history can produce persistent responding during extinction
 c) Variable-ratio schedules make every behavior permanently resistant to extinction  
 d) The result proves dopamine alone caused the persistence  
 
-*Answer: a. Why (c) is tempting: variable-ratio responding can be highly persistent under common laboratory conditions, but schedule effects depend on the organism, task, contingency, and reinforcement history. Persistent does not mean permanent.*
+*Answer: b. Why (c) is tempting: variable-ratio responding can be highly persistent under common laboratory conditions, but schedule effects depend on the organism, task, contingency, and reinforcement history. Persistent does not mean permanent.*
 
 ---
 
@@ -268,22 +268,22 @@ d) vicarious reinforcement
 **6.** Garcia and Koelling found that rats learned taste–illness and audiovisual-cue–shock relationships more readily than the crossed relationships. Which statement separates observation from interpretation correctly?
 
 a) The experiment directly observed natural selection changing the rats' brains  
-b) The observed result was selective cue–consequence learning; evolutionary history is a leading explanation for why that selectivity exists  
-c) The study showed that temporal delay never matters in conditioning  
+b) The study showed that temporal delay never matters in conditioning
+c) The observed result was selective cue–consequence learning; evolutionary history is a leading explanation for why that selectivity exists
 d) The study showed that rats cannot learn audiovisual associations  
 
-*Answer: b. Why (a) is tempting: the evolutionary account is plausible and useful, but the experiment measured learning in rats, not the historical process that produced the bias.*
+*Answer: c. Why (a) is tempting: the evolutionary account is plausible and useful, but the experiment measured learning in rats, not the historical process that produced the bias.*
 
 ---
 
 **7.** In Bandura's 1965 study, children who saw a model punished initially imitated less. When all children were later offered direct incentives to reproduce the model's actions, group differences narrowed. This best supports the conclusion that:
 
-a) the punished-model group had learned nothing  
-b) observed consequences affected performance more clearly than acquisition  
+a) observed consequences affected performance more clearly than acquisition
+b) the punished-model group had learned nothing
 c) punishment erased the observed behavior from memory  
 d) observational learning requires direct reinforcement  
 
-*Answer: b. Why (a) is tempting: low initial imitation looks like low learning. The later incentive test revealed behavior that had been acquired but not previously performed.*
+*Answer: a. Why (b) is tempting: low initial imitation looks like low learning. The later incentive test revealed behavior that had been acquired but not previously performed.*
 
 ---
 
@@ -301,33 +301,33 @@ d) the maze became physically easier on day eleven
 **9.** A cat freezes when it sees a cabinet where its paw was once pinched. The same cat paws at a pantry door more often because pawing sometimes produces food. Which classification is correct?
 
 a) Both are classical conditioning  
-b) Freezing is classical conditioning; pawing is operant conditioning  
+b) Both are operant conditioning
 c) Freezing is operant conditioning; pawing is classical conditioning  
-d) Both are operant conditioning  
+d) Freezing is classical conditioning; pawing is operant conditioning
 
-*Answer: b. Why (c) is tempting: freezing is an action, but it is elicited by a cue that predicts an aversive event. Pawing changes because of the consequence it produces.*
+*Answer: d. Why (c) is tempting: freezing is an action, but it is elicited by a cue that predicts an aversive event. Pawing changes because of the consequence it produces.*
 
 ---
 
 **10.** After learning, a cue reliably predicts juice. Which pattern best matches a reward-prediction-error account in the studied dopamine neurons?
 
 a) A large phasic response occurs at both the cue and the fully expected juice on every trial  
-b) The response shifts to the predictive cue; an expected juice produces little error; omission produces a dip at the expected time  
-c) Dopamine remains high continuously because the animal likes juice  
+b) Dopamine remains high continuously because the animal likes juice
+c) The response shifts to the predictive cue; an expected juice produces little error; omission produces a dip at the expected time
 d) The signal disappears entirely once learning is complete because no further updating can occur
 
-*Answer: b. Why (a) is tempting: both the cue and juice matter during learning, but once the cue fully predicts the juice, the phasic error shifts to the cue and the expected juice produces little additional error.*
+*Answer: c. Why (a) is tempting: both the cue and juice matter during learning, but once the cue fully predicts the juice, the phasic error shifts to the cue and the expected juice produces little additional error.*
 
 ---
 
 **11.** Students initially enjoy solving a puzzle. One group is promised money for each puzzle during a middle session; another group is not. Later, with no money offered and no one watching, the previously paid group spends less free-choice time on the puzzle. Which conclusion is warranted?
 
-a) Any reward always destroys intrinsic motivation  
-b) Expected external rewards can sometimes reduce later free-choice engagement in an already interesting activity  
+a) Expected external rewards can sometimes reduce later free-choice engagement in an already interesting activity
+b) Any reward always destroys intrinsic motivation
 c) Money has no effect on behavior  
 d) Intrinsic and extrinsic motivation cannot interact  
 
-*Answer: b. Why (a) is tempting: the study demonstrates a real reduction under these conditions, but it does not justify a universal claim about every reward, task, or measure of motivation.*
+*Answer: a. Why (b) is tempting: the study demonstrates a real reduction under these conditions, but it does not justify a universal claim about every reward, task, or measure of motivation.*
 
 ---
 

@@ -27,7 +27,7 @@ const labs = [
   ['docs/labs/ch08/interactive-imagery.html', 'psych101-lab-ch08-interactive-imagery-v1'],
   ['docs/labs/ch08/levels-of-processing.html', 'psych101-lab-ch08-levels-of-processing-v1'],
   ['docs/labs/ch08/self-reference-effect.html', 'psych101-lab-ch08-self-reference-effect-v1'],
-  ['docs/labs/ch09/fluid-intelligence-rule-finding.html', 'psych101-lab-ch09-fluid-intelligence-rule-finding'],
+  ['docs/labs/ch09/fluid-intelligence-rule-finding.html', 'psych101-lab-ch09-fluid-intelligence-rule-finding-v2'],
   ['docs/labs/ch09/semantic-map.html', 'psych101-lab-ch09-semantic-map-v1'],
   ['docs/labs/ch10/zpd-fading-support.html', 'psych101_ch10_zpd_fading_support_v1'],
   ['docs/labs/ch11/change-the-situation.html', 'psych101_ch11_change_situation_v1'],
@@ -67,7 +67,18 @@ function chromeExecutable() {
 }
 
 async function fillVisibleControls(page, selector) {
-  await page.locator(selector).evaluateAll((controls, response) => {
+  const selectOverrides = page.url().includes('change-the-situation') ? {
+    'asch-variable': 'unanimity',
+    'asch-behavior': 'judgments',
+    'asch-mechanism': 'dissent',
+    'milgram-variable': 'relationships',
+    'milgram-behavior': 'endpoint',
+    'milgram-mechanism': 'structure',
+    'bystander-variable': 'number',
+    'bystander-behavior': 'report',
+    'bystander-mechanism': 'diffusion',
+  } : {};
+  await page.locator(selector).evaluateAll((controls, payload) => {
     const visible = element => {
       const style = getComputedStyle(element);
       return style.display !== 'none' && style.visibility !== 'hidden' && element.getClientRects().length > 0 && !element.disabled;
@@ -82,7 +93,9 @@ async function fillVisibleControls(page, selector) {
       } else if (control.type === 'checkbox') {
         control.checked = true;
       } else if (control.tagName === 'SELECT') {
-        const option = Array.from(control.options).find(item => item.value && !item.disabled);
+        const override = payload.selectOverrides[control.id];
+        const option = Array.from(control.options).find(item => item.value === override)
+          || Array.from(control.options).find(item => item.value && !item.disabled);
         if (option) control.value = option.value;
       } else if (control.type === 'number') {
         const min = Number(control.min);
@@ -90,12 +103,12 @@ async function fillVisibleControls(page, selector) {
       } else if (control.type === 'range') {
         control.value = control.value || control.min || '1';
       } else if (control.tagName === 'TEXTAREA' || control.type === 'text') {
-        control.value = response;
+        control.value = payload.response;
       }
       control.dispatchEvent(new Event('input', { bubbles: true }));
       control.dispatchEvent(new Event('change', { bubbles: true }));
     });
-  }, richResponse);
+  }, { response: richResponse, selectOverrides });
 }
 
 async function predictionSnapshot(page) {

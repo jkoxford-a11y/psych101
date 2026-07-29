@@ -216,11 +216,11 @@ d) melatonin causes blindness when light is removed
 **2.** In the two-process model, a person who pulls a stressful all-nighter eventually feels overwhelmingly sleepy near dawn even though their body clock is signaling "daytime, be alert." The overwhelming sleepiness is driven by:
 
 a) Process C, the circadian alerting signal  
-b) Process S, the homeostatic sleep pressure that builds with time awake  
+b) a failure of the retinohypothalamic tract
 c) melatonin suppression by morning light  
-d) a failure of the retinohypothalamic tract  
+d) Process S, the homeostatic sleep pressure that builds with time awake
 
-*Answer: b. Why (a) is tempting: Process C is certainly involved in the conflict, but it is actually pushing toward alertness at dawn — the sleepiness itself comes from Process S, the accumulated sleep pressure that keeps rising the longer you stay awake regardless of the time of day.*
+*Answer: d. Why (a) is tempting: Process C is certainly involved in the conflict, but it is actually pushing toward alertness at dawn — the sleepiness itself comes from Process S, the accumulated sleep pressure that keeps rising the longer you stay awake regardless of the time of day.*
 
 ---
 
@@ -237,12 +237,12 @@ d) a state with no measurable EEG activity
 
 **4.** Sleepwalking and night terrors are classified as NREM arousal parasomnias. They typically emerge from:
 
-a) REM sleep, as a failure of REM atonia  
-b) deep NREM sleep, usually in the first half of the night  
+a) deep NREM sleep, usually in the first half of the night
+b) REM sleep, as a failure of REM atonia
 c) the transition from wakefulness into NREM 1  
 d) only during naps, never during overnight sleep  
 
-*Answer: b. Why (a) is tempting: it fits the common assumption that sleepwalking means "acting out a dream," and that description actually applies to a different disorder — REM sleep behavior disorder, in which REM atonia fails and people enact dream content. Ordinary sleepwalking arises from deep NREM sleep, well before the dreaming state.*
+*Answer: a. Why (b) is tempting: it fits the common assumption that sleepwalking means "acting out a dream," and that description actually applies to a different disorder — REM sleep behavior disorder, in which REM atonia fails and people enact dream content. Ordinary sleepwalking arises from deep NREM sleep, well before the dreaming state.*
 
 ---
 
@@ -271,22 +271,22 @@ d) the process that synchronizes the circadian clock to the light-dark cycle via
 **7.** According to Yoo et al. (2007), sleep-deprived participants showed a specific pattern of brain activity linked to stronger emotional reactions to negative images. That pattern was:
 
 a) increased dopamine release in the reward pathway  
-b) reduced prefrontal-amygdala connectivity alongside greater amygdala reactivity  
+b) suppression of the SCN's melatonin output
 c) elevated activity in the hippocampus  
-d) suppression of the SCN's melatonin output  
+d) reduced prefrontal-amygdala connectivity alongside greater amygdala reactivity
 
-*Answer: b. Why (a) is tempting: dopamine is associated with motivation and emotional processing, but the specific fMRI finding is the prefrontal-amygdala circuit. Because the study is correlational, this pattern is best treated as a strong candidate mechanism rather than proof of a single cause — but it is the mechanism the data actually show.*
+*Answer: d. Why (a) is tempting: dopamine is associated with motivation and emotional processing, but the specific fMRI finding is the prefrontal-amygdala circuit. Because the study is correlational, this pattern is best treated as a strong candidate mechanism rather than proof of a single cause — but it is the mechanism the data actually show.*
 
 ---
 
 **8.** A student studies for an exam the night before rather than cramming the morning of, reasoning that "sleeping on it" will help. Based on the memory-consolidation evidence in this chapter, which statement best reflects the actual state of the research?
 
 a) Sleep transfers all new memories from the hippocampus to the cortex in a fixed, universal process, so the strategy works identically for any kind of studied material  
-b) Sleep-related memory reorganization is real but depends on the type of memory, the task, and which sleep stages actually occur, so the benefit is genuine but not uniform or guaranteed  
-c) Memory consolidation only happens in REM sleep, so a full night of only NREM sleep would provide no benefit at all  
+b) Memory consolidation only happens in REM sleep, so a full night of only NREM sleep would provide no benefit at all
+c) Sleep-related memory reorganization is real but depends on the type of memory, the task, and which sleep stages actually occur, so the benefit is genuine but not uniform or guaranteed
 d) There is no credible evidence that sleep affects memory in humans; the effect is limited to zebra finches and other non-human animals  
 
-*Answer: b. Why (a) is tempting: the "hippocampus transfers memories to the cortex during sleep" story is a common simplification, but the chapter is explicit that consolidation effects vary by memory system, task, and sleep architecture rather than following one uniform, guaranteed pathway.*
+*Answer: c. Why (a) is tempting: the "hippocampus transfers memories to the cortex during sleep" story is a common simplification, but the chapter is explicit that consolidation effects vary by memory system, task, and sleep architecture rather than following one uniform, guaranteed pathway.*
 
 ---
 

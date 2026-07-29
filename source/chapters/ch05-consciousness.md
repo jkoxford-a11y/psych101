@@ -305,11 +305,11 @@ d) the dashboard is only a metaphor for drug dosage
 **3.** A practiced pianist corrects timing while thinking about dinner. Which conclusion best follows?
 
 a) the performance receives no information processing
-b) automatic skilled behavior can remain responsive while requiring less conscious monitoring
-c) consciousness is required for each finger movement
+b) consciousness is required for each finger movement
+c) automatic skilled behavior can remain responsive while requiring less conscious monitoring
 d) attention and conscious content are identical
 
-*Answer: b. Automaticity reduces the need to hold every component in conscious access while leaving the behavior responsive to relevant information.*
+*Answer: c. Automaticity reduces the need to hold every component in conscious access while leaving the behavior responsive to relevant information.*
 
 ---
 
@@ -327,11 +327,11 @@ d) how serotonin receptors generate all conscious content
 **5.** In a no-report study, a pupil response changes when a participant’s percept appears to switch. What is the strongest conclusion?
 
 a) the pupil directly reveals phenomenal experience
-b) the indicator may reduce report-related operations but still requires an inference about experience
+b) motor and decision demands can never affect consciousness research
 c) reports have no scientific value
-d) motor and decision demands can never affect consciousness research
+d) the indicator may reduce report-related operations but still requires an inference about experience
 
-*Answer: b. No-report indicators can reduce some confounds, but they do not directly read private experience.*
+*Answer: d. No-report indicators can reduce some confounds, but they do not directly read private experience.*
 
 ---
 
@@ -348,12 +348,12 @@ d) motor behavior is scientifically irrelevant
 
 **7.** A person with severe vision loss sees patterned figures and knows they are unreal. Which dissociation is most central?
 
-a) state from wakefulness
-b) conscious content from explicit belief
+a) conscious content from explicit belief
+b) state from wakefulness
 c) memory from motor skill
 d) behavioral responsiveness from residual neural processing
 
-*Answer: b. Charles Bonnet syndrome shows that vivid perceptual content can persist while belief rejects the content as unreal.*
+*Answer: a. Charles Bonnet syndrome shows that vivid perceptual content can persist while belief rejects the content as unreal.*
 
 ---
 
@@ -370,12 +370,12 @@ d) behavior stops completely during a blackout
 
 **9.** Which comparison best distinguishes a psychedelic state from passing out?
 
-a) wakefulness may remain while content and self-experience change
+a) only conscious state changes; content never does
 b) all neural processing ends while memory improves
-c) only conscious state changes; content never does
+c) wakefulness may remain while content and self-experience change
 d) relaxed priors guarantee accurate perception
 
-*Answer: a. Psychedelics often alter content and self-experience without eliminating wakefulness; relaxed priors do not guarantee accuracy or benefit.*
+*Answer: c. Psychedelics often alter content and self-experience without eliminating wakefulness; relaxed priors do not guarantee accuracy or benefit.*
 
 ---
 
@@ -393,22 +393,22 @@ d) responsiveness and neural processing are the same measure
 **11.** The 2025 Cogitate adversarial collaboration is most useful as an example of:
 
 a) one theory permanently defeating every rival
-b) advocates agreeing on predictions in advance and learning from challenges to both theories
+b) evidence that theory testing is impossible
 c) a study proving that consciousness has exactly three dimensions
-d) evidence that theory testing is impossible
+d) advocates agreeing on predictions in advance and learning from challenges to both theories
 
-*Answer: b. Some findings fit parts of each theory and central predictions of both were challenged; there was no clean winner.*
+*Answer: d. Some findings fit parts of each theory and central predictions of both were challenged; there was no clean winner.*
 
 ---
 
 **12.** Chalmers’s hard problem asks:
 
 a) how information is reported and used in action
-b) why physical and computational processing is accompanied by subjective experience
-c) how researchers calculate a pupil response
+b) how researchers calculate a pupil response
+c) why physical and computational processing is accompanied by subjective experience
 d) why alcohol disrupts episodic encoding
 
-*Answer: b. Functional explanations can address access, report, perception, memory, and action while leaving the existence of felt experience unexplained.*
+*Answer: c. Functional explanations can address access, report, perception, memory, and action while leaving the existence of felt experience unexplained.*
 
 ---
 

@@ -43,6 +43,7 @@
       supportsCausation: false,
       reversePlausible: false,
       thirdPlausible: true,
+      causalSupportOrder: ['no', 'yes'],
       feedback: 'Adult literacy cannot travel backward in time to change childhood book ownership, so reverse causation is not the main concern here. Family resources, school quality, language exposure, and other third variables remain plausible.',
       strengthen: 'Use prospective records, measure likely confounds before the outcome, and compare results with interventions that increase children\'s access to books and reading.'
     },
@@ -186,6 +187,7 @@
     elements.observePanel.hidden = true;
     elements.feedbackPanel.hidden = true;
     elements.feedbackPanel.classList.remove('is-correct', 'is-incorrect');
+    orderRadioGroup('causalSupport', item.causalSupportOrder || ['yes', 'no']);
     elements.commitPrediction.disabled = false;
     elements.checkAnswer.disabled = false;
     setPredictionControlsDisabled(false);
@@ -196,6 +198,18 @@
     } else if (existingResponse && existingResponse.prediction) {
       restoreCommittedPrediction(existingResponse);
     }
+  }
+
+  function orderRadioGroup(name, values) {
+    const inputs = Array.from(elements.form.querySelectorAll(`input[name="${name}"]`));
+    if (!inputs.length) return;
+    const fieldset = inputs[0].closest('fieldset');
+    const labels = new Map(inputs.map(function (input) {
+      return [input.value, input.closest('label')];
+    }));
+    values.forEach(function (value) {
+      fieldset.appendChild(labels.get(value));
+    });
   }
 
   function commitPrediction() {

@@ -245,11 +245,11 @@ d) partial report eliminates the need for any memory at all
 **2.** A string of nine letters is much harder to hold in short-term memory than the same nine letters grouped into three recognizable three-letter chunks. This illustrates:
 
 a) decay theory
-b) chunking
+b) source misattribution
 c) the serial position effect
-d) source misattribution
+d) chunking
 
-*Answer: b. Why (a) is tempting: this scenario does involve a memory limitation, but the relevant limitation here is STM's capacity for a fixed number of discrete units — chunking increases how much raw information fits within that fixed number of units, which is a separate phenomenon from the passive time-based fading decay theory describes.*
+*Answer: d. Why (a) is tempting: this scenario does involve a memory limitation, but the relevant limitation here is STM's capacity for a fixed number of discrete units — chunking increases how much raw information fits within that fixed number of units, which is a separate phenomenon from the passive time-based fading decay theory describes.*
 
 ---
 
@@ -266,12 +266,12 @@ d) sensory memory
 
 **4.** Re-reading a textbook chapter several times produces weaker retention than explaining the same material aloud in your own words. This is best explained by:
 
-a) repetition is always superior to any other study method
+a) explaining requires deeper, meaning-based processing than re-reading's relatively shallow, surface-level processing
 b) re-reading involves deep processing, while explaining involves shallow processing
-c) explaining requires deeper, meaning-based processing than re-reading's relatively shallow, surface-level processing
+c) repetition is always superior to any other study method
 d) memory capacity is fixed regardless of study method
 
-*Answer: c. Why (b) has the relationship backward: re-reading tends to engage shallow, surface-level processing of familiar word-shapes, while explaining material in your own words requires actively engaging with its meaning — deep processing — which is why explaining typically produces the more durable memory trace, not the other way around.*
+*Answer: a. Why (b) has the relationship backward: re-reading tends to engage shallow, surface-level processing of familiar word-shapes, while explaining material in your own words requires actively engaging with its meaning — deep processing — which is why explaining typically produces the more durable memory trace, not the other way around.*
 
 ---
 
@@ -289,22 +289,22 @@ d) procedural memory requires conscious awareness to function
 **6.** Recall is reliably worse for words in the middle of a long list than for words at the beginning or end. The advantage for end-of-list words specifically is called:
 
 a) the primacy effect, because it occurs first
-b) the recency effect, attributed to those items still being available in short-term memory at recall
-c) decay theory
+b) decay theory
+c) the recency effect, attributed to those items still being available in short-term memory at recall
 d) the misinformation effect
 
-*Answer: b. Why (a) is tempting: primacy and recency are easy to swap, but primacy specifically refers to the beginning-of-list advantage (attributed to extra rehearsal time helping those items into long-term storage); the end-of-list advantage, attributed to those items still sitting in short-term memory at the moment of the test, is the recency effect.*
+*Answer: c. Why (a) is tempting: primacy and recency are easy to swap, but primacy specifically refers to the beginning-of-list advantage (attributed to extra rehearsal time helping those items into long-term storage); the end-of-list advantage, attributed to those items still sitting in short-term memory at the moment of the test, is the recency effect.*
 
 ---
 
 **7.** Participants who learned a word list and then slept forgot less than participants who learned the same list and then stayed awake for an equal number of hours doing normal activities. This finding is most damaging to:
 
 a) interference theory, because it shows time alone causes forgetting
-b) pure decay theory, because equal time passed in both conditions yet forgetting differed
+b) the levels of processing framework
 c) the serial position effect
-d) the levels of processing framework
+d) pure decay theory, because equal time passed in both conditions yet forgetting differed
 
-*Answer: b. Why (a) has it backward: if anything, this result supports interference theory rather than damaging it — the wakeful group encountered new information and activity that could interfere with the list, while the sleeping group did not, which is exactly why pure decay theory (where only elapsed time should matter, predicting equal forgetting in both groups) struggles to explain the actual difference observed.*
+*Answer: d. Why (a) has it backward: if anything, this result supports interference theory rather than damaging it — the wakeful group encountered new information and activity that could interfere with the list, while the sleeping group did not, which is exactly why pure decay theory (where only elapsed time should matter, predicting equal forgetting in both groups) struggles to explain the actual difference observed.*
 
 ---
 
@@ -321,12 +321,12 @@ d) flashbulb memory formation
 
 **9.** A person confidently and sincerely reports a detailed false memory, with no awareness that it is inaccurate and no intent to deceive. This is most precisely described as:
 
-a) lying
-b) confabulation
+a) confabulation
+b) lying
 c) the recency effect
 d) source misattribution
 
-*Answer: b. Why (a) is tempting: the content is false, which can look deception-adjacent, but confabulation is defined specifically by the absence of any intent to deceive — the person experiences the fabricated memory as genuinely real, which is the entire reason confabulation is studied as a memory phenomenon rather than treated as dishonesty.*
+*Answer: a. Why (b) is tempting: the content is false, which can look deception-adjacent, but confabulation is defined specifically by the absence of any intent to deceive — the person experiences the fabricated memory as genuinely real, which is the entire reason confabulation is studied as a memory phenomenon rather than treated as dishonesty.*
 
 ---
 

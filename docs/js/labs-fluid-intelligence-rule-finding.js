@@ -3,7 +3,7 @@
 (function () {
   'use strict';
 
-  const STORAGE_KEY = 'psych101-lab-ch09-fluid-intelligence-rule-finding';
+  const STORAGE_KEY = 'psych101-lab-ch09-fluid-intelligence-rule-finding-v2';
   const SVG_NS = 'http://www.w3.org/2000/svg';
 
   const puzzles = [
@@ -12,9 +12,9 @@
       type: 'Practice puzzle',
       instructions: 'Start with one rule. Across each row, the shape changes in the same order.',
       matrix: [['○', '△', '□'], ['○', '△', '□'], ['○', '△', '?']],
-      choices: ['○', '△', '□', '▥'],
-      labels: ['Empty circle', 'Empty triangle', 'Empty square', 'Striped square'],
-      correct: 2,
+      choices: ['□', '○', '△', '▥'],
+      labels: ['Empty square', 'Empty circle', 'Empty triangle', 'Striped square'],
+      correct: 0,
       explanation: 'Across each row, the shape sequence is circle → triangle → square. The missing piece is an empty square.',
       ruleSummary: 'You compressed the visible examples into one rule: shape changes across each row.'
     },
@@ -23,9 +23,9 @@
       type: 'Combined-rules puzzle',
       instructions: 'Now two rules matter at once: one across rows, one down columns.',
       matrix: [['○', '△', '□'], ['◍', '▵', '▥'], ['●', '▲', '?']],
-      choices: ['□', '▥', '■', '▲'],
-      labels: ['Empty square', 'Striped square', 'Solid square', 'Solid triangle'],
-      correct: 2,
+      choices: ['□', '▥', '▲', '■'],
+      labels: ['Empty square', 'Striped square', 'Solid triangle', 'Solid square'],
+      correct: 3,
       explanation: 'Across each row, the shape changes circle → triangle → square. Down each column, the fill changes empty → striped → solid. The missing piece is a solid square.',
       ruleSummary: 'You had to hold two relations in mind at once: shape across rows and fill down columns.'
     },
@@ -34,9 +34,9 @@
       type: 'Relational puzzle',
       instructions: 'The rule depends on number and position rather than shape identity.',
       matrix: [['•', '••', '•••'], ['·\n•', '·\n••', '·\n•••'], ['·\n·\n•', '·\n·\n••', '?']],
-      choices: ['·\n·\n••', '·\n•••', '·\n·\n•••', '·\n·\n••••'],
-      labels: ['Two dots at the bottom', 'Three dots in the middle', 'Three dots at the bottom', 'Four dots at the bottom'],
-      correct: 2,
+      choices: ['·\n·\n••', '·\n·\n•••', '·\n•••', '·\n·\n••••'],
+      labels: ['Two dots at the bottom', 'Three dots at the bottom', 'Three dots in the middle', 'Four dots at the bottom'],
+      correct: 1,
       explanation: 'Across each row, the number of dots increases from one to two to three. Down each column, the dots move from top to middle to bottom. The missing piece is three dots at the bottom.',
       ruleSummary: 'You had to track relations, not just choose the most visually similar option.'
     },

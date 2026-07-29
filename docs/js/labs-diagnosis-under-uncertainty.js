@@ -7,30 +7,35 @@
       title: 'Duration and impairment',
       text: 'The pattern has lasted five weeks. Morgan has missed deadlines, stopped completing routine tasks, and is at risk of failing two courses.',
       expected: 'assessment',
+      choiceOrder: ['insufficient', 'assessment', 'consistent'],
       why: 'Duration and impairment make the concern clinically significant, but several explanations remain possible. Further assessment is warranted; a diagnosis is not yet established.'
     },
     {
       title: 'Associated symptoms',
       text: 'Morgan reports depressed mood most days, markedly reduced interest, fatigue, difficulty concentrating, reduced appetite, and feelings of worthlessness.',
       expected: 'assessment',
+      choiceOrder: ['insufficient', 'consistent', 'assessment'],
       why: 'The symptom cluster is consistent with a depressive episode, but context, course, medical or substance effects, and alternatives still require evaluation.'
     },
     {
       title: 'Course and differential evidence',
       text: 'Morgan reports no history of manic or hypomanic episodes and no psychotic symptoms. The change is not limited to one class or relationship.',
       expected: 'assessment',
+      choiceOrder: ['assessment', 'insufficient', 'consistent'],
       why: 'This information narrows important alternatives, but it does not complete the medical, substance, developmental, and contextual assessment.'
     },
     {
       title: 'Context and exclusions',
       text: 'A medical evaluation finds no condition explaining the symptoms. Morgan reports no medication change or substance use that accounts for them. A recent conflict is stressful but does not fully explain the breadth and persistence of the pattern.',
       expected: 'assessment',
+      choiceOrder: ['insufficient', 'assessment', 'consistent'],
       why: 'Relevant exclusions and context strengthen the inference, but a brief educational vignette is still not a clinical diagnosis.'
     },
     {
       title: 'Clinical synthesis',
       text: 'After a structured interview, a licensed clinician documents that the full symptom, duration, impairment, exclusion, and differential criteria for a major depressive episode are met.',
       expected: 'consistent',
+      choiceOrder: ['insufficient', 'assessment', 'consistent'],
       why: 'The evidence is now consistent with the named clinical classification. The diagnosis still does not reveal one cause or dictate one treatment.'
     }
   ];
@@ -234,6 +239,12 @@
     el.disclosureProgress.textContent = 'Disclosure ' + (state.index + 1) + ' of ' + disclosures.length;
     el.disclosureTitle.textContent = disclosure.title;
     el.disclosureText.textContent = disclosure.text;
+    const optionsByValue = new Map(Array.from(el.evidenceStatus.options).map(function (option) {
+      return [option.value, option];
+    }));
+    disclosure.choiceOrder.forEach(function (value) {
+      el.evidenceStatus.appendChild(optionsByValue.get(value));
+    });
 
     const saved = state.judgments.find(function (item) { return item.index === state.index; });
     el.evidenceStatus.value = saved ? saved.chosen : '';
