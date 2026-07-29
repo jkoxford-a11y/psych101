@@ -10,6 +10,16 @@ Repository rules and conventions live in `AGENTS.md`, not here. Current state an
 
 ## Log Entries
 
+### 2026-07-29 - Figure 6.3 Two-Process Scale Repair (Codex)
+
+**Scope:** Repaired the highest remaining P0 figure issue. The former Figure 6.3 placed Process S sleep pressure and Process C circadian alerting on one high-to-low alertness axis, reversing the ordinary meaning of greater sleep pressure. Rebuilt the figure as two aligned panels with separately defined scales: Process S rises during wakefulness and falls during sleep, while Process C shows a distinct SCN-timed alerting rhythm. The practical teaching job remains: caffeine and naps are grouped with Process S, while morning light, melatonin, and evening light are grouped with circadian timing.
+
+**Files changed:** Replaced `docs/images/ch06/fig_process_s_process_c_levers.png` with an original programmatic SVG. Updated Figure 6.3's caption, alt text, and path in `source/chapters/ch06-sleep.md`; regenerated `docs/chapters/06-sleep.html`; reconciled `docs/images/ch06/ch06_figure_specs.md` and `source/visuals-inventory.md`; marked F-003 resolved in `pipeline/audits/bookwide-figure-audit-TEMP.md`; updated `HANDOFF.md`.
+
+**Validation:** The SVG parses as valid XML and loads at 1600×1200. Browser inspection covered the normal chapter context and the full artwork, including separate left and right checks for curve-label collisions and all five intervention cards. The final curves do not cross explanatory text, and each vertical scale names its own construct and direction. `pipeline/check_chapter_coherence.py source/chapters/ch06-sleep.md` is clean (`fail=0 review=0`), `pipeline/lint_chapters.py` passes 14/14 chapters, and `git diff --check` passes.
+
+**Not committed / remaining:** The invalid Figure 6.3 bitmap was removed and remains recoverable from Git history. Chapter 6 Figures 6.1, 6.2, 6.4, and 6.5 remain open in the temporary catalog. Continue the ranked P0 queue with Figure 4.5 unless the instructor selects another figure.
+
 ### 2026-07-29 - Figures 12.3 and 9.3 P0 Production Repairs (Codex)
 
 **Scope:** Completed the first two P0 repairs in the temporary bookwide figure catalog. Figure 12.3's artwork was coherent but its PNG bytes were stored under an `.svg` filename, causing browsers to parse it as XML and fail. Figure 9.3 used invented water-jar capacities with a four-unit target that neither its labeled shortcut nor its old-strategy state sequence could produce. Rebuilt Figure 9.3 around verified classic Luchins problems: the earlier examples repeat B − A − 2C, and the later A = 23, B = 49, C = 3 problem reaches 20 through both B − A − 2C and the simpler A − C route.

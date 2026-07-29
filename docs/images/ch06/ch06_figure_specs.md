@@ -47,7 +47,7 @@ Preferred figure style:
 |---|---|---|---|---|
 | `ch06_sleep_active_maintenance_system` | not built | **High priority new build** | Misconception opener / Where This Fits | Build first after spec approval |
 | `ch06_scn_circadian_clock_entrainment` | `fig_scn_pathway.png/.svg` | **Active, review/revise candidate** | Section 1 | Keep if readable; revise if too plain or cramped |
-| `ch06_two_process_sleep_model` | `fig_two_process_sleep_model.png/.svg` | **Retired from current text; decision needed** | Section 1, if reinserted | Either leave retired or rebuild as practical lever diagram |
+| `ch06_two_process_sleep_model` | `fig_process_s_process_c_levers.svg` | **Active; rebuilt 2026-07-29** | Section 1 | Use now; separate Process S and Process C scales |
 | `ch06_sleep_architecture_hypnogram` | `fig_sleep_hypnogram.png/.svg` | **Active, review/revise candidate** | Section 2 | Keep if readable; revise if too abstract or small |
 | `ch06_glymphatic_clearance_deep_sleep` | not built | **High priority new build** | Section 2, after glymphatic paragraph | Build next; this is likely the strongest new mechanism figure |
 | `ch06_lifespan_sleep_maintenance_arc` | not built | **Medium priority** | Section 3 | Useful if Section 3 needs visual support |
@@ -240,15 +240,15 @@ Original figure generated for Oxford Psychology 101 with ChatGPT image generatio
 
 ## Current file
 
-`fig_two_process_sleep_model.png/.svg`
+`fig_process_s_process_c_levers.svg`
 
 ## Suggested future filename if rebuilt
 
-`ch06_two_process_sleep_model_process_s_process_c.png`
+Current filename retained; no further rename needed.
 
 ## Status
 
-**Currently retired from the chapter source. Decision needed.** The concept remains central in Section 1 and Review Question 2, but the image is no longer referenced in the markdown. If retained, the figure should earn its place by making caffeine, light, melatonin, and naps easier to reason about.
+**Active; rebuilt 2026-07-29.** The figure now uses separate vertical scales for Process S sleep pressure and Process C circadian alerting, preserving the practical-lever teaching job without treating the two signals as one alertness measure.
 
 ## Placement if reinserted
 
@@ -294,7 +294,7 @@ A two-panel graph compares homeostatic sleep pressure and circadian alerting acr
 
 ## Decision note
 
-If the chapter already explains this well through the table, keep the figure retired. If students need a visual model for exam reasoning, rebuild this as a practical lever diagram rather than a generic textbook curve.
+Decision completed: retain the figure as a practical lever diagram. The rebuilt SVG is wired into the authoritative chapter source and keeps the two processes on separate scales.
 
 ---
 
@@ -677,7 +677,7 @@ A side-by-side comparison contrasts activation-synthesis theory and threat-simul
 1. **Opening anchor:** `ch06_sleep_active_maintenance_system.png`
 2. **Glymphatic mechanism:** `ch06_glymphatic_clearance_deep_sleep.png`
 3. **Review active figures:** SCN pathway and hypnogram for readability and conceptual fit.
-4. **Decide two-process figure:** keep retired, or rebuild as a practical lever diagram.
+4. **Two-process figure:** rebuilt as a practical lever diagram and active.
 5. **Build PFC-amygdala deprivation figure** if Section 4 needs a mechanism anchor.
 6. **Only then consider** lifespan, parasomnia, or dream-theory figures.
 

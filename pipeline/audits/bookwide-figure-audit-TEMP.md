@@ -36,7 +36,7 @@
 |---|---|---|---|---|---|---|
 | F-001 | P0 | Figure 12.3 | RESOLVED 2026-07-29 | The file was a PNG stored with an `.svg` extension, so the browser displayed an XML/encoding error. The underlying artwork was coherent when decoded as PNG. | Renamed the asset `.png`, updated the authoritative source and durable inventory, rebuilt Chapter 12, and browser-checked the rendered figure. | S |
 | F-002 | P0 | Figure 9.3 | RESOLVED 2026-07-29 | The former water-jar capacities and four-unit goal were mechanically inconsistent: filling B produced seven units, and the depicted old strategy contained an unreachable state. | Replaced it with verified classic Luchins problems. The later A = 23, B = 49, C = 3 problem reaches the target of 20 through both B − A − 2C and the simpler A − C route; every displayed equation and the rendered SVG were checked. | M |
-| F-003 | P0 | Figure 6.3 | OPEN | A single alertness axis is applied to circadian alerting and sleep pressure even though greater Process S means more pressure and ordinarily less alertness. | Give Process C and Process S separately defined scales or use a convergence diagram that does not put them on one alertness axis. | M |
+| F-003 | P0 | Figure 6.3 | RESOLVED 2026-07-29 | The former figure applied one alertness axis to circadian alerting and sleep pressure even though greater Process S means more pressure and ordinarily less alertness. | Rebuilt it as two aligned panels with separately labeled scales: Process S runs from low to high sleep pressure, while Process C runs from low to high circadian alerting. The practical levers are grouped by the process they affect, and the rendered SVG was checked at chapter and full-artwork sizes. | M |
 | F-004 | P0 | Figure 4.5 | OPEN | Prediction error flows directly to perception. No arrow carries error into an updated prediction/model, so the numbered causal loop is incomplete. | Use Prediction → Evidence → Error → Update → Perception/Action → new evidence. | M |
 | F-005 | P0 | Figure 6.2 | OPEN | The SCN is depicted in the wrong anatomical location. | Redraw it in the anterior hypothalamus immediately above the optic chiasm and re-check the retinal input path. | M |
 | F-006 | P0 | Figure 3.9 | OPEN | Cortisol is shown as a sympathetic-branch output. Cortisol belongs to the slower HPA-axis response, not the autonomic sympathetic branch itself. | Separate sympathetic–adrenal-medullary activity from HPA/cortisol activity; avoid treating every organ as a mirrored push–pull pair. | M |
@@ -71,7 +71,7 @@
 | 3 | Open: Figure 3.9 autonomic/HPA distinction. |
 | 4 | Highest remaining cluster: prediction loop, pitch coding, Weber graphic, color-processing boundary, same-pixels demonstration, and numbering control. |
 | 5 | Open: Charles Bonnet mechanism framing and stale figure inventory. |
-| 6 | Highest chapter-level repair burden: all figures except 6.3 were already partly flagged in source; 6.3 adds a newly identified axis/construct problem. |
+| 6 | Figure 6.3 resolved with separate sleep-pressure and circadian-alerting scales. Figures 6.1, 6.2, 6.4, and 6.5 remain open. |
 | 7 | Open: Figures 7.2, 7.5, 7.9, and the 7.8 scope decision. |
 | 8 | Open: Figure 8.1 classic/current model labeling. |
 | 9 | Figure 9.3 resolved with verified classic water-jar values and valid routes. Figure 9.5 remains open. |
