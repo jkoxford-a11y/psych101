@@ -1,33 +1,40 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080" role="img">
-<rect width="1920" height="1080" fill="white"/>
-<defs>
-  <marker id="arrow-blue" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M 0 0 L 12 6 L 0 12 z" fill="#2563EB"/></marker>
-  <marker id="arrow-green" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M 0 0 L 12 6 L 0 12 z" fill="#059669"/></marker>
-</defs>
-<text x="960" y="115" font-family="Arial, sans-serif" font-size="54" font-weight="700" fill="#1F2937" text-anchor="middle" dominant-baseline="middle">Random Sampling vs. Random Assignment</text>
-<rect x="75.0" y="517.5" width="350" height="165" rx="28" fill="#DBEAFE" stroke="#2563EB" stroke-width="4"/>
-<text x="250" y="600" font-family="Arial, sans-serif" font-size="36" font-weight="700" fill="#1F2937" text-anchor="middle" dominant-baseline="middle">Population</text>
-<rect x="535.0" y="517.5" width="350" height="165" rx="28" fill="#D1FAE5" stroke="#059669" stroke-width="4"/>
-<text x="710" y="579.3" font-family="Arial, sans-serif" font-size="36" font-weight="700" fill="#1F2937" text-anchor="middle" dominant-baseline="middle">Study</text>
-<text x="710" y="620.6999999999999" font-family="Arial, sans-serif" font-size="36" font-weight="700" fill="#1F2937" text-anchor="middle" dominant-baseline="middle">sample</text>
-<rect x="1115.0" y="355.0" width="370" height="150" rx="28" fill="#FFEDD5" stroke="#EA580C" stroke-width="4"/>
-<text x="1300" y="409.3" font-family="Arial, sans-serif" font-size="36" font-weight="700" fill="#1F2937" text-anchor="middle" dominant-baseline="middle">Experimental</text>
-<text x="1300" y="450.7" font-family="Arial, sans-serif" font-size="36" font-weight="700" fill="#1F2937" text-anchor="middle" dominant-baseline="middle">group</text>
-<rect x="1115.0" y="645.0" width="370" height="150" rx="28" fill="#FEE2E2" stroke="#DC2626" stroke-width="4"/>
-<text x="1300" y="699.3" font-family="Arial, sans-serif" font-size="36" font-weight="700" fill="#1F2937" text-anchor="middle" dominant-baseline="middle">Control</text>
-<text x="1300" y="740.6999999999999" font-family="Arial, sans-serif" font-size="36" font-weight="700" fill="#1F2937" text-anchor="middle" dominant-baseline="middle">group</text>
-<line x1="425" y1="600" x2="535" y2="600" stroke="#2563EB" stroke-width="7" marker-end="url(#arrow-blue)"/>
-<line x1="885" y1="600" x2="1115" y2="470" stroke="#059669" stroke-width="7" marker-end="url(#arrow-green)"/>
-<line x1="885" y1="600" x2="1115" y2="700" stroke="#059669" stroke-width="7" marker-end="url(#arrow-green)"/>
-<text x="505" y="435.45" font-family="Arial, sans-serif" font-size="34" font-weight="700" fill="#2563EB" text-anchor="middle" dominant-baseline="middle">random</text>
-<text x="505" y="474.54999999999995" font-family="Arial, sans-serif" font-size="34" font-weight="700" fill="#2563EB" text-anchor="middle" dominant-baseline="middle">sampling</text>
-<text x="1015" y="365.45" font-family="Arial, sans-serif" font-size="34" font-weight="700" fill="#059669" text-anchor="middle" dominant-baseline="middle">random</text>
-<text x="1015" y="404.54999999999995" font-family="Arial, sans-serif" font-size="34" font-weight="700" fill="#059669" text-anchor="middle" dominant-baseline="middle">assignment</text>
-<rect x="340" y="836" width="470" height="118" rx="24" fill="#DBEAFE"/>
-<text x="575" y="877.75" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#2563EB" text-anchor="middle" dominant-baseline="middle">Who gets into the study?</text>
-<text x="575" y="912.25" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#2563EB" text-anchor="middle" dominant-baseline="middle">Population representativeness</text>
-<rect x="1005" y="836" width="470" height="118" rx="24" fill="#D1FAE5"/>
-<text x="1240" y="877.75" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#059669" text-anchor="middle" dominant-baseline="middle">Who goes into which condition?</text>
-<text x="1240" y="912.25" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#059669" text-anchor="middle" dominant-baseline="middle">Stronger causal comparison</text>
-<text x="960" y="1010" font-family="Arial, sans-serif" font-size="28" font-weight="400" fill="#64748B" text-anchor="middle" dominant-baseline="middle">They solve different inference problems.</text>
+<svg width="1919.9999999999998" height="1080" xmlns="http://www.w3.org/2000/svg" role="img">
+ <defs>
+  <marker orient="auto" refY="6" refX="10" markerHeight="12" markerWidth="12" id="arrow-blue">
+   <path id="svg_1" fill="#2563EB" d="m0,0l12,6l-12,6l0,-12z"/>
+  </marker>
+  <marker orient="auto" refY="6" refX="10" markerHeight="12" markerWidth="12" id="arrow-green">
+   <path id="svg_2" fill="#059669" d="m0,0l12,6l-12,6l0,-12z"/>
+  </marker>
+ </defs>
+ <g>
+  <title>Layer 1</title>
+  <rect x="2.66668" y="-1.33334" id="svg_3" fill="white" height="1080" width="1920"/>
+  <text id="svg_4" dominant-baseline="middle" text-anchor="middle" fill="#1F2937" font-weight="700" font-size="54" font-family="Arial, sans-serif" y="115" x="960">Random Sampling vs. Random Assignment</text>
+  <rect id="svg_5" stroke-width="4" stroke="#2563EB" fill="#DBEAFE" rx="28" height="165" width="350" y="517.5" x="75"/>
+  <text id="svg_6" dominant-baseline="middle" text-anchor="middle" fill="#1F2937" font-weight="700" font-size="36" font-family="Arial, sans-serif" y="600" x="250">Population</text>
+  <rect id="svg_7" stroke-width="4" stroke="#059669" fill="#D1FAE5" rx="28" height="165" width="350" y="517.5" x="535"/>
+  <text id="svg_8" dominant-baseline="middle" text-anchor="middle" fill="#1F2937" font-weight="700" font-size="36" font-family="Arial, sans-serif" y="579.3" x="710">Study</text>
+  <text id="svg_9" dominant-baseline="middle" text-anchor="middle" fill="#1F2937" font-weight="700" font-size="36" font-family="Arial, sans-serif" y="620.7" x="710">sample</text>
+  <rect id="svg_10" stroke-width="4" stroke="#EA580C" fill="#FFEDD5" rx="28" height="150" width="370" y="355" x="1115"/>
+  <text id="svg_11" dominant-baseline="middle" text-anchor="middle" fill="#1F2937" font-weight="700" font-size="36" font-family="Arial, sans-serif" y="409.3" x="1300">Experimental</text>
+  <text id="svg_12" dominant-baseline="middle" text-anchor="middle" fill="#1F2937" font-weight="700" font-size="36" font-family="Arial, sans-serif" y="450.7" x="1300">group</text>
+  <rect id="svg_13" stroke-width="4" stroke="#DC2626" fill="#FEE2E2" rx="28" height="150" width="370" y="645" x="1115"/>
+  <text id="svg_14" dominant-baseline="middle" text-anchor="middle" fill="#1F2937" font-weight="700" font-size="36" font-family="Arial, sans-serif" y="699.3" x="1300">Control</text>
+  <text id="svg_15" dominant-baseline="middle" text-anchor="middle" fill="#1F2937" font-weight="700" font-size="36" font-family="Arial, sans-serif" y="740.7" x="1300">group</text>
+  <line stroke="#2563EB" id="svg_16" marker-end="url(#arrow-blue)" stroke-width="7" y2="600" x2="522.99993" y1="600" x1="425"/>
+  <line stroke="#059669" id="svg_17" marker-end="url(#arrow-green)" stroke-width="7" y2="475.33336" x2="1094.99988" y1="601.33335" x1="885"/>
+  <line stroke="#059669" id="svg_18" marker-end="url(#arrow-green)" stroke-width="7" y2="685.33325" x2="1093.66655" y1="595.99997" x1="885"/>
+  <text id="svg_19" dominant-baseline="middle" text-anchor="middle" fill="#2563EB" font-weight="700" font-size="34" font-family="Arial, sans-serif" y="435.45" x="505">random</text>
+  <text id="svg_20" dominant-baseline="middle" text-anchor="middle" fill="#2563EB" font-weight="700" font-size="34" font-family="Arial, sans-serif" y="474.55" x="505">sampling</text>
+  <text id="svg_21" dominant-baseline="middle" text-anchor="middle" fill="#059669" font-weight="700" font-size="34" font-family="Arial, sans-serif" y="365.45" x="1015">random</text>
+  <text id="svg_22" dominant-baseline="middle" text-anchor="middle" fill="#059669" font-weight="700" font-size="34" font-family="Arial, sans-serif" y="404.55" x="1015">assignment</text>
+  <rect id="svg_23" fill="#DBEAFE" rx="24" height="118" width="470" y="836" x="340"/>
+  <text id="svg_24" dominant-baseline="middle" text-anchor="middle" fill="#2563EB" font-weight="700" font-size="30" font-family="Arial, sans-serif" y="877.75" x="575">Who gets into the study?</text>
+  <text id="svg_25" dominant-baseline="middle" text-anchor="middle" fill="#2563EB" font-weight="700" font-size="30" font-family="Arial, sans-serif" y="912.25" x="575">Population representativeness</text>
+  <rect stroke="null" id="svg_26" fill="#D1FAE5" rx="24" height="118" width="488.6668" y="836" x="986.3332"/>
+  <text id="svg_27" dominant-baseline="middle" text-anchor="middle" fill="#059669" font-weight="700" font-size="30" font-family="Arial, sans-serif" y="877.75" x="1240">Who goes into which condition?</text>
+  <text id="svg_28" dominant-baseline="middle" text-anchor="middle" fill="#059669" font-weight="700" font-size="30" font-family="Arial, sans-serif" y="912.25" x="1240">Stronger causal comparison</text>
+  <text id="svg_29" dominant-baseline="middle" text-anchor="middle" fill="#64748B" font-weight="400" font-size="28" font-family="Arial, sans-serif" y="1010" x="960">They solve different inference problems.</text>
+ </g>
 </svg>
