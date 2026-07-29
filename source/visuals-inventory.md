@@ -89,7 +89,7 @@ Use `docs/images/ch04/README_captions_alt_text_attribution.md` as the authoritat
 | inline | Psychometric function / absolute threshold | ⚠️ | `ch04/fig_psychometric_function_webvision.jpg` — CC BY-NC 4.0; confirm non-commercial use assumptions before public release. |
 | 4.3 | Retina rods/cones/fovea/blind spot infographic | ✅ | `ch04/fig_retina_rods_cones_fovea_blindspot.png` |
 | 4.4 | Two-stage color vision: trichromatic cones + opponent-process channels | ✅ | `ch04/ch04_color_vision_two_stage_model_v1.png` |
-| 4.5 | Perception prediction loop | ✅ | `ch04/ch04_perception_prediction_loop.png` |
+| 4.5 | Perception prediction loop | ✅ wired/use now | `ch04/ch04_perception_prediction_loop.svg` — prediction error now flows into an explicit model-update step before the next prediction and perceptual/action cycle. |
 | 4.6 | Same pixels / illumination assumptions | ✅ | `ch04/ch04_same_pixels_illumination_assumptions_v1.png` |
 | 4.7 | Original Gestalt principles panel | ✅ | `ch04/fig_gestalt_principles_original.png/.svg` — replaces OpenStax composite. |
 | inline | Good continuation W/M redrawing | ✅ | `ch04/ch04_good_continuation_wm_redrawing.png/.svg` |
@@ -128,7 +128,7 @@ All 5 core figures are wired, but an editorial audit-reconciliation pass (2026-0
 | # | Description | Status | Filename / note |
 |---|-------------|--------|-----------------|
 | 6.1 | Sleep as active maintenance system | ⚠️ wired, flagged | `ch06/fig_sleep_active_maintenance_system.png` — kept provisionally; the image's literal five-panel framing is in tension with the chapter's revised central argument (overlapping processes, not five discrete jobs). Caption/alt text softened around it; image itself flagged for a future simplification redesign. |
-| 6.2 | SCN circadian pathway | ⚠️ needs revision | `ch06/fig_scn_circadian_clock_entrainment.png` — SCN's anatomical location in the image is incorrect; not public-ready until redrawn. Melatonin wording in the surrounding caption checked and left as-is. |
+| 6.2 | SCN circadian pathway | ✅ wired/use now | `ch06/fig_scn_circadian_clock_entrainment_inset.png` — rebuilt with a simplified anatomical inset placing the paired SCN in the anterior hypothalamus immediately above the optic chiasm; retinal input and downstream circadian outputs remain explicit. |
 | 6.3 | Two-process model as practical lever diagram | ✅ wired/use now | `ch06/fig_process_s_process_c_levers.svg` — rebuilt with separate scales for sleep pressure and circadian alerting; practical levers are grouped by the process they affect. |
 | 6.4 | Sleep architecture hypnogram | ⚠️ needs revision | `ch06/fig_sleep_architecture_cycles.png` — the fixed early/middle/late-night functional assignment (restoration → consolidation → emotional processing) is misleading and overstates how cleanly those processes map onto specific hours; not public-ready until redrawn without that timetable. Caption/alt text in `ch06-sleep.md` already removed the fixed mapping. |
 | 6.5 | Glymphatic clearance mechanism | ⚠️ needs revision | `ch06/fig_glymphatic_clearance_deep_sleep.png` — mechanism is depicted with more certainty than the human evidence supports (strong in animal studies, indirect/developing in humans); not public-ready until the diagram itself signals that gap. Caption/alt text hedged in the chapter text as an interim measure. |

@@ -1,0 +1,126 @@
+<svg width="1600" height="1050" xmlns="http://www.w3.org/2000/svg" aria-labelledby="title desc" role="img">
+ <title id="title">Prediction error updates the model</title>
+ <desc id="desc">A prediction loop with seven connected parts. The world supplies partial sensory evidence. Evidence and a top-down prediction from the current model meet at a comparison step. Residual mismatch becomes prediction error, which flows into an explicit update-the-model step. The updated model generates the next prediction and guides perception and action. Action samples or changes the world, producing new sensory evidence.</desc>
+ <defs>
+  <filter height="140%" width="140%" y="-20%" x="-20%" id="shadow"/>
+  <marker markerUnits="userSpaceOnUse" orient="auto" refY="12" refX="22" markerHeight="24" markerWidth="24" id="blueArrow">
+   <path id="svg_1" fill="#1f67a7" d="m0,0l24,12l-24,12l0,-24z"/>
+  </marker>
+  <marker markerUnits="userSpaceOnUse" orient="auto" refY="12" refX="22" markerHeight="24" markerWidth="24" id="greenArrow">
+   <path id="svg_2" fill="#267044" d="m0,0l24,12l-24,12l0,-24z"/>
+  </marker>
+  <marker markerUnits="userSpaceOnUse" orient="auto" refY="12" refX="22" markerHeight="24" markerWidth="24" id="purpleArrow">
+   <path id="svg_3" fill="#6b4aa1" d="m0,0l24,12l-24,12l0,-24z"/>
+  </marker>
+  <marker markerUnits="userSpaceOnUse" orient="auto" refY="12" refX="22" markerHeight="24" markerWidth="24" id="navyArrow">
+   <path id="svg_4" fill="#16477a" d="m0,0l24,12l-24,12l0,-24z"/>
+  </marker>
+ </defs>
+ <!-- Flow labels -->
+ <!-- Top row -->
+ <!-- Bottom row -->
+ <!-- Main arrows -->
+ <!-- Prediction returns to comparison -->
+ <!-- Action closes the outer loop -->
+ <!-- Explicit correction point -->
+ <!-- Takeaway -->
+ <g>
+  <title>Layer 1</title>
+  <rect id="svg_5" fill="#f6f9fc" height="1050" width="1600"/>
+  <text id="svg_6" fill="#123f73" font-family="Aptos, Arial, sans-serif" text-anchor="middle" font-weight="850" font-size="48" class="sans navy" y="64" x="800">Prediction error updates the model</text>
+  <text id="svg_7" fill="#526879" font-family="Aptos, Arial, sans-serif" text-anchor="middle" font-size="27" class="sans muted" y="108" x="800">It is a correction signal—not the percept itself.</text>
+  <rect id="svg_8" stroke-width="2" stroke="#7aa7cd" fill="#e8f2fb" rx="25" height="50" width="220" y="139" x="340"/>
+  <circle id="svg_9" fill="#1f67a7" r="10" cy="164" cx="376"/>
+  <text id="svg_10" font-weight="800" font-family="Aptos, Arial, sans-serif" fill="#1f67a7" font-size="20px" class="flowLabel" y="171" x="402">BOTTOM-UP</text>
+  <rect id="svg_11" stroke-width="2" stroke="#79ad8b" fill="#e9f6ed" rx="25" height="50" width="220" y="139" x="690"/>
+  <circle id="svg_12" fill="#267044" r="10" cy="164" cx="726"/>
+  <text id="svg_13" font-weight="800" font-family="Aptos, Arial, sans-serif" fill="#267044" font-size="20px" class="flowLabel" y="171" x="752">TOP-DOWN</text>
+  <rect stroke="#9e88bf" id="svg_14" stroke-width="2" fill="#f2edfa" rx="25" height="50" width="267.99998" y="139" x="1040"/>
+  <circle id="svg_15" fill="#6b4aa1" r="10" cy="164" cx="1076"/>
+  <text id="svg_16" font-weight="800" font-family="Aptos, Arial, sans-serif" fill="#6b4aa1" font-size="20px" class="flowLabel" y="171" x="1102">ERROR / UPDATE</text>
+  <g id="svg_17" filter="url(#shadow)">
+   <rect id="svg_18" stroke-width="3" fill="#ffffff" stroke="#527b9f" class="box" rx="22" height="190" width="290" y="240" x="40"/>
+  </g>
+  <circle id="svg_19" stroke-width="2" stroke="#527b9f" fill="#e9f2f8" r="27" cy="285" cx="185"/>
+  <path id="svg_20" fill="#65a56f" d="m171,292q14,-22 28,0q-6,14 -14,21q-8,-7 -14,-21z"/>
+  <path id="svg_21" stroke-linecap="round" stroke-width="3" stroke="#527b9f" d="m185,313l0,15"/>
+  <text id="svg_22" text-anchor="middle" font-weight="850" font-size="21.5px" font-family="Aptos, Arial, sans-serif" fill="#315b7d" class="boxTitle" y="359" x="185">WORLD</text>
+  <text id="svg_23" text-anchor="middle" fill="#294255" font-size="19.5px" font-family="Aptos, Arial, sans-serif" class="boxText" y="393" x="185">Objects and events</text>
+  <g id="svg_24" filter="url(#shadow)">
+   <rect id="svg_25" stroke-width="3" fill="#ffffff" stroke="#397bb4" class="box" rx="22" height="190" width="290" y="240" x="350"/>
+  </g>
+  <circle id="svg_26" stroke-width="2" stroke="#397bb4" fill="#e8f2fb" r="27" cy="285" cx="495"/>
+  <path id="svg_27" stroke-width="3" stroke="#1f67a7" fill="none" d="m481,285q14,-13 28,0q-14,15 -28,0z"/>
+  <circle id="svg_28" fill="#1f67a7" r="5" cy="285" cx="495"/>
+  <text id="svg_29" text-anchor="middle" font-weight="850" font-size="21.5px" font-family="Aptos, Arial, sans-serif" fill="#1f67a7" class="boxTitle" y="350" x="495">SENSORY EVIDENCE</text>
+  <text id="svg_30" text-anchor="middle" fill="#294255" font-size="19.5px" font-family="Aptos, Arial, sans-serif" class="boxText" y="383" x="495">Partial, noisy input</text>
+  <text id="svg_31" text-anchor="middle" fill="#294255" font-size="19.5px" font-family="Aptos, Arial, sans-serif" class="boxText" y="410" x="495">from receptors</text>
+  <g id="svg_32" filter="url(#shadow)">
+   <rect id="svg_33" stroke-width="3" fill="#ffffff" stroke="#c08b35" class="box" rx="22" height="190" width="290" y="240" x="660"/>
+  </g>
+  <circle id="svg_34" stroke-width="2" stroke="#c08b35" fill="#fff4dc" r="27" cy="285" cx="805"/>
+  <path id="svg_35" stroke-linecap="round" stroke-width="4" stroke="#a46e16" d="m791,279l28,0m-28,12l28,0"/>
+  <text id="svg_36" text-anchor="middle" font-weight="850" font-size="21.5px" font-family="Aptos, Arial, sans-serif" fill="#9b691b" class="boxTitle" y="350" x="805">COMPARE</text>
+  <text id="svg_37" text-anchor="middle" fill="#294255" font-size="19.5px" font-family="Aptos, Arial, sans-serif" class="boxText" y="383" x="805">What arrived vs.</text>
+  <text id="svg_38" text-anchor="middle" fill="#294255" font-size="19.5px" font-family="Aptos, Arial, sans-serif" class="boxText" y="410" x="805">what was predicted</text>
+  <g id="svg_39" filter="url(#shadow)">
+   <rect id="svg_40" stroke-width="3" fill="#ffffff" stroke="#7454a5" class="box" rx="22" height="190" width="290" y="240" x="970"/>
+  </g>
+  <circle id="svg_41" stroke-width="2" stroke="#7454a5" fill="#f2edfa" r="27" cy="285" cx="1115"/>
+  <path id="svg_42" stroke-linejoin="round" stroke-width="3" stroke="#6b4aa1" fill="none" d="m1102,298l13,-26l13,26l-26,0z"/>
+  <line id="svg_43" stroke-linecap="round" stroke-width="3" stroke="#6b4aa1" y2="289" x2="1115" y1="280" x1="1115"/>
+  <circle id="svg_44" fill="#6b4aa1" r="2.5" cy="294" cx="1115"/>
+  <text id="svg_45" text-anchor="middle" font-weight="850" font-size="21.5px" font-family="Aptos, Arial, sans-serif" fill="#6b4aa1" class="boxTitle" y="350" x="1115">PREDICTION ERROR</text>
+  <text id="svg_46" text-anchor="middle" fill="#294255" font-size="19.5px" font-family="Aptos, Arial, sans-serif" class="boxText" y="383" x="1115">The residual mismatch</text>
+  <text id="svg_47" text-anchor="middle" fill="#294255" font-size="19.5px" font-family="Aptos, Arial, sans-serif" class="boxText" y="410" x="1115">that still needs explaining</text>
+  <g id="svg_48" filter="url(#shadow)">
+   <rect id="svg_49" stroke-width="3" fill="#ffffff" stroke="#7454a5" class="box" rx="22" height="190" width="290" y="555" x="970"/>
+  </g>
+  <circle id="svg_50" stroke-width="2" stroke="#7454a5" fill="#f2edfa" r="27" cy="600" cx="1115"/>
+  <path id="svg_51" stroke-linejoin="round" stroke-linecap="round" stroke-width="4" stroke="#6b4aa1" fill="none" d="m1103,602l9,9l17,-22"/>
+  <text id="svg_52" text-anchor="middle" font-weight="850" font-size="21.5px" font-family="Aptos, Arial, sans-serif" fill="#6b4aa1" class="boxTitle" y="665" x="1115">UPDATE THE MODEL</text>
+  <text id="svg_53" text-anchor="middle" fill="#294255" font-size="19.5px" font-family="Aptos, Arial, sans-serif" class="boxText" y="698" x="1115">Use the error to revise</text>
+  <text id="svg_54" text-anchor="middle" fill="#294255" font-size="19.5px" font-family="Aptos, Arial, sans-serif" class="boxText" y="725" x="1115">the brain's best explanation</text>
+  <g id="svg_55" filter="url(#shadow)">
+   <rect id="svg_56" stroke-width="3" fill="#ffffff" stroke="#3c8759" class="box" rx="22" height="190" width="290" y="555" x="660"/>
+  </g>
+  <circle id="svg_57" stroke-width="2" stroke="#3c8759" fill="#e9f6ed" r="27" cy="600" cx="805"/>
+  <path id="svg_58" fill="#73a982" d="m792,605q13,-24 26,0q-13,10 -26,0z"/>
+  <circle id="svg_59" fill="#267044" r="4" cy="600" cx="805"/>
+  <text id="svg_60" text-anchor="middle" font-weight="850" font-size="21.5px" font-family="Aptos, Arial, sans-serif" fill="#267044" class="boxTitle" y="665" x="805">CURRENT MODEL</text>
+  <text id="svg_61" text-anchor="middle" fill="#294255" font-size="19.5px" font-family="Aptos, Arial, sans-serif" class="boxText" y="698" x="805">Generates the next prediction</text>
+  <text id="svg_62" text-anchor="middle" fill="#294255" font-size="19.5px" font-family="Aptos, Arial, sans-serif" class="boxText" y="725" x="805">about likely sensory input</text>
+  <g id="svg_63" filter="url(#shadow)">
+   <rect id="svg_64" stroke-width="3" fill="#ffffff" stroke="#527b9f" class="box" rx="22" height="190" width="290" y="555" x="350"/>
+  </g>
+  <circle id="svg_65" stroke-width="2" stroke="#527b9f" fill="#e9f2f8" r="27" cy="600" cx="495"/>
+  <circle id="svg_66" fill="#315b7d" r="8" cy="589" cx="495"/>
+  <path id="svg_67" stroke-linecap="round" stroke-width="4" stroke="#315b7d" fill="none" d="m481,614q14,-14 28,0"/>
+  <path id="svg_68" stroke-linejoin="round" stroke-linecap="round" stroke-width="3" stroke="#3c8759" fill="none" d="m513,598l9,9l15,-19"/>
+  <text id="svg_69" text-anchor="middle" font-weight="850" font-size="21.5px" font-family="Aptos, Arial, sans-serif" fill="#315b7d" class="boxTitle" y="665" x="495">PERCEIVE &amp; ACT</text>
+  <text id="svg_70" text-anchor="middle" fill="#294255" font-size="19.5px" font-family="Aptos, Arial, sans-serif" class="boxText" y="698" x="495">Experience guides looking,</text>
+  <text id="svg_71" text-anchor="middle" fill="#294255" font-size="19.5px" font-family="Aptos, Arial, sans-serif" class="boxText" y="725" x="495">reaching, and moving</text>
+  <line id="svg_72" marker-end="url(#blueArrow)" stroke-linecap="round" stroke-width="8" stroke="#1f67a7" y2="335" x2="350" y1="335" x1="330"/>
+  <line id="svg_73" marker-end="url(#blueArrow)" stroke-linecap="round" stroke-width="8" stroke="#1f67a7" y2="335" x2="660" y1="335" x1="640"/>
+  <line id="svg_74" marker-end="url(#purpleArrow)" stroke-linecap="round" stroke-width="8" stroke="#6b4aa1" y2="335" x2="970" y1="335" x1="950"/>
+  <line id="svg_75" marker-end="url(#purpleArrow)" stroke-linecap="round" stroke-width="8" stroke="#6b4aa1" y2="540" x2="1115" y1="430" x1="1115"/>
+  <line id="svg_76" marker-end="url(#purpleArrow)" stroke-linecap="round" stroke-width="8" stroke="#6b4aa1" y2="650" x2="950" y1="650" x1="970"/>
+  <line id="svg_77" marker-end="url(#navyArrow)" stroke-linecap="round" stroke-width="8" stroke="#16477a" y2="650" x2="640" y1="650" x1="660"/>
+  <path id="svg_78" marker-end="url(#greenArrow)" stroke-linecap="round" stroke-width="8" stroke="#267044" fill="none" d="m805,555c0,-50 0,-81 0,-110"/>
+  <rect id="svg_79" stroke-width="2" stroke="#79ad8b" fill="#e9f6ed" rx="18" height="48" width="360" y="470" x="625"/>
+  <text id="svg_80" font-family="Aptos, Arial, sans-serif" text-anchor="middle" fill="#267044" font-weight="800" font-size="18.5" class="sans" y="502" x="805">NEXT TOP-DOWN PREDICTION</text>
+  <path id="svg_81" marker-end="url(#navyArrow)" stroke-linecap="round" stroke-dasharray="12 10" stroke-width="7" stroke="#16477a" fill="none" d="m360,650c-120,0 -175,-75 -175,-203"/>
+  <rect id="svg_82" stroke-width="2" stroke="#7a9bb7" fill="#e9f2f8" rx="16" height="84" width="268" y="487" x="67"/>
+  <text id="svg_83" font-family="Aptos, Arial, sans-serif" text-anchor="middle" fill="#16477a" font-weight="800" font-size="20" class="sans" y="520" x="201">ACTION SAMPLES OR</text>
+  <text id="svg_84" font-family="Aptos, Arial, sans-serif" text-anchor="middle" fill="#16477a" font-weight="800" font-size="20" class="sans" y="548" x="201">CHANGES THE WORLD</text>
+  <rect id="svg_85" stroke-width="2.5" stroke="#d5a249" fill="#fff8e9" rx="18" height="136" width="240" y="268" x="1300"/>
+  <text id="svg_86" font-family="Aptos, Arial, sans-serif" text-anchor="middle" fill="#8f621b" font-weight="850" font-size="22" class="sans" y="310" x="1420">THE MISSING STEP</text>
+  <text id="svg_87" font-family="Aptos, Arial, sans-serif" text-anchor="middle" fill="#294255" font-size="20" class="sans" y="344" x="1420">Error corrects the model</text>
+  <text id="svg_88" font-family="Aptos, Arial, sans-serif" text-anchor="middle" fill="#294255" font-size="20" class="sans" y="373" x="1420">before the next prediction.</text>
+  <path id="svg_89" stroke-dasharray="8 7" stroke-width="4" stroke="#d5a249" fill="none" d="m1300,365c-30,45 -60,135 -95,190"/>
+  <rect id="svg_90" fill="#123f73" rx="24" height="150" width="1260" y="825" x="170"/>
+  <text id="svg_91" font-family="Aptos, Arial, sans-serif" text-anchor="middle" fill="#ffffff" font-weight="850" font-size="25" class="sans" y="870" x="800">Model predicts → evidence tests → error corrects → updated model predicts again</text>
+  <text id="svg_92" font-family="Aptos, Arial, sans-serif" text-anchor="middle" fill="#dbeafa" font-size="23" class="sans" y="910" x="800">The same updated model helps construct perception and guide action.</text>
+  <text id="svg_93" font-family="Aptos, Arial, sans-serif" text-anchor="middle" fill="#dbeafa" font-size="23" class="sans" y="946" x="800">Action then creates the next round of sensory evidence.</text>
+ </g>
+</svg>

@@ -46,7 +46,7 @@ Preferred figure style:
 | Proposed slug | Current file | Status | Placement | Decision |
 |---|---|---|---|---|
 | `ch06_sleep_active_maintenance_system` | not built | **High priority new build** | Misconception opener / Where This Fits | Build first after spec approval |
-| `ch06_scn_circadian_clock_entrainment` | `fig_scn_pathway.png/.svg` | **Active, review/revise candidate** | Section 1 | Keep if readable; revise if too plain or cramped |
+| `ch06_scn_circadian_clock_entrainment` | `fig_scn_circadian_clock_entrainment_inset.png` | **Active; rebuilt 2026-07-29** | Section 1 | Use now; anatomical inset places paired SCN directly above optic chiasm |
 | `ch06_two_process_sleep_model` | `fig_process_s_process_c_levers.svg` | **Active; rebuilt 2026-07-29** | Section 1 | Use now; separate Process S and Process C scales |
 | `ch06_sleep_architecture_hypnogram` | `fig_sleep_hypnogram.png/.svg` | **Active, review/revise candidate** | Section 2 | Keep if readable; revise if too abstract or small |
 | `ch06_glymphatic_clearance_deep_sleep` | not built | **High priority new build** | Section 2, after glymphatic paragraph | Build next; this is likely the strongest new mechanism figure |
@@ -176,15 +176,11 @@ PNG suitable for textbook and slides.
 
 ## Current file
 
-`fig_scn_pathway.png/.svg`
-
-## Suggested future filename if revised
-
-`ch06_scn_circadian_clock_entrainment.png`
+`fig_scn_circadian_clock_entrainment_inset.png`
 
 ## Status
 
-**Active in current chapter source as Fig. 6.1. Review before final approval.**
+**Active in current chapter source as Fig. 6.2. Rebuilt and approved 2026-07-29.**
 
 ## Placement
 
@@ -221,14 +217,15 @@ Preferred visual grammar:
 - Do not imply the pineal gland generates the circadian rhythm.
 - Do not imply the SCN only responds passively to light.
 - Keep the anatomy approximate and clearly simplified.
+- Show the paired SCN in the anterior hypothalamus immediately above the optic chiasm.
 
 ## Caption draft
 
-Light synchronizes the circadian system, but it does not create it. The SCN in the hypothalamus maintains an internally generated rhythm and uses retinal light input to entrain that rhythm to the external day-night cycle; one downstream output is timed melatonin release from the pineal gland.
+The light-to-SCN pathway and its downstream circadian outputs, simplified for teaching purposes. The anatomical inset places the paired SCN in the anterior hypothalamus immediately above the optic chiasm.
 
 ## Alt text draft
 
-A pathway diagram shows light entering the eye, retinal input traveling through the retinohypothalamic tract to the SCN in the hypothalamus, and SCN output influencing the pineal gland and melatonin release. A small inset indicates that the rhythm continues without light, but light synchronizes it to the day.
+An infographic shows light entering the eye and a yellow retinal pathway reaching an anatomical inset. The inset places the paired suprachiasmatic nuclei in the anterior hypothalamus immediately above the optic chiasm. Blue output arrows connect the circadian system with brain areas, the pineal gland and melatonin release, body temperature, adrenal cortisol rhythms, and the sleep-wake cycle.
 
 ## Attribution
 

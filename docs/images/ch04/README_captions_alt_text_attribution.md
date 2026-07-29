@@ -53,13 +53,12 @@ All figures listed in reading order. Figure numbers refer to v0.4 markdown.
 
 ---
 
-### Fig 4.5 — `ch04_perception_prediction_loop.png`
-*(Also present as `perception as a predictive loop model.png` — older version with spaces in filename; not referenced in markdown. Safe to delete the old version manually.)*
-**Caption:** Perception as a prediction loop. Rather than passively receiving sensory data, the brain continuously generates predictions, compares them against incoming evidence, and updates its model accordingly. The loop is closed by action — behavior changes the sensory input, which feeds the next cycle of prediction and correction.
-**Alt text:** "Perception Is a Prediction Loop." A five-step circular diagram: (1) World — rich and complex, we never get all of it; (2) Sensory Evidence — senses provide partial, noisy input; (3) Prediction Error — incoming evidence compared with expectation, mismatch produces prediction error; (4) Prediction — brain's best current guess about the world; top-down predictions shape early processing; (5) Perception — updated model becomes conscious experience and guides action. Actions change the world and produce new sensory input. Bottom label: "Not a recording — a controlled guess."
+### Fig 4.5 — `ch04_perception_prediction_loop.svg`
+**Caption:** Perception as a prediction loop. Bottom-up evidence and a top-down prediction meet at comparison. Any residual prediction error updates the model, which generates the next prediction and guides perception and action. Action closes the loop by producing new sensory input.
+**Alt text:** "Prediction error updates the model." The world supplies partial sensory evidence. That bottom-up evidence meets a top-down prediction from the brain's current model at a comparison step. Residual mismatch becomes prediction error, which flows into an explicit update-the-model step. The updated model generates the next prediction and guides perception and action. Action samples or changes the world, producing new sensory evidence. A callout emphasizes that error corrects the model before the next prediction.
 **Source:** Original diagram — Jon Oxford, 2026.
 **License:** © Jon Oxford — all rights reserved until open license assigned.
-**Status:** ✅ In use. No figure number embedded in artwork — good for reuse.
+**Status:** ✅ In use; rebuilt 2026-07-29 to add the missing model-update step. No figure number embedded in artwork — good for reuse.
 
 ---
 
@@ -126,7 +125,7 @@ All figures listed in reading order. Figure numbers refer to v0.4 markdown.
 
 | File | Notes |
 |---|---|
-| `perception as a predictive loop model.png` | Older version of Fig 4.5; superseded by `ch04_perception_prediction_loop.png`. Safe to delete. |
+| `perception as a predictive loop model.png` | Older version of Fig 4.5; superseded by `ch04_perception_prediction_loop.svg`. Safe to delete. |
 | `fig_gestalt_principles_openstax.png` | Replaced by `fig_gestalt_principles_original.png`. OpenStax CC BY-NC-SA — no longer referenced. Safe to delete. |
 | `fig_gestalt_*_openstax.webp` (×5) | Source files used to build the old OpenStax composite — no longer needed. Safe to delete. |
 | `fig_retina_rods_cones.png` / `.svg` | Programmatic data-curve version — superseded by `fig_retina_rods_cones_fovea_blindspot.png` (infographic). |

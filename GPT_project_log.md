@@ -10,6 +10,26 @@ Repository rules and conventions live in `AGENTS.md`, not here. Current state an
 
 ## Log Entries
 
+### 2026-07-29 - Figure 6.2 SCN Anatomical-Inset Repair (Codex)
+
+**Scope:** Repaired the fifth ranked P0 figure issue. The former sagittal-brain marker placed the SCN too far posteriorly and superiorly. Replaced that ambiguous marker with a simplified anatomical inset showing the paired suprachiasmatic nuclei in the anterior hypothalamus immediately above the optic chiasm. The retinal input now terminates at the inset, while the figure retains its five downstream circadian outputs.
+
+**Files changed:** Replaced `docs/images/ch06/fig_scn_circadian_clock_entrainment.png` with `docs/images/ch06/fig_scn_circadian_clock_entrainment_inset.png`; updated Figure 6.2's caption, alt text, and path in `source/chapters/ch06-sleep.md`; regenerated `docs/chapters/06-sleep.html`; reconciled `docs/images/ch06/ch06_figure_specs.md`, `source/visuals-inventory.md`, and `source/chapters/_provenance/ch06-sleep.md`; marked F-005 resolved in `pipeline/audits/bookwide-figure-audit-TEMP.md`; updated `HANDOFF.md`.
+
+**Validation:** The replacement has a valid PNG signature, is served with HTTP 200 as `image/png`, and loads at 1536×1024. Browser inspection covered the normal Chapter 6 layout and full artwork; it confirmed the inset labels, paired SCN above the optic chiasm, terminating yellow retinal pathway, and all five connected blue output arrows. `pipeline/check_chapter_coherence.py source/chapters/ch06-sleep.md` is clean (`fail=0 review=0`), `pipeline/lint_chapters.py` passes 14/14 chapters, the added-line separator check passes, and `git diff --check` passes.
+
+**Not committed / remaining:** The former Figure 6.2 bitmap was removed and remains recoverable from Git history. Continue the ranked P0 queue with Figure 3.9 unless the instructor selects another figure.
+
+### 2026-07-29 - Figure 4.5 Prediction-Error Loop Repair (Codex)
+
+**Scope:** Repaired the fourth ranked P0 figure issue. The former Figure 4.5 sent prediction error toward perception but never showed the correction updating the generative model. Rebuilt the loop so bottom-up evidence and the current model's top-down prediction meet at comparison, residual error flows into an explicit update-the-model step, the updated model produces the next prediction and guides perception/action, and action produces the next round of sensory evidence.
+
+**Files changed:** Replaced `docs/images/ch04/ch04_perception_prediction_loop.png` with an original programmatic SVG; updated Figure 4.5's caption, alt text, and path in `source/chapters/ch04-sensation-perception.md`; regenerated `docs/chapters/04-sensation-perception.html`; reconciled `docs/images/ch04/README_captions_alt_text_attribution.md` and `source/visuals-inventory.md`; marked F-004 resolved in `pipeline/audits/bookwide-figure-audit-TEMP.md`; updated `HANDOFF.md`.
+
+**Validation:** The replacement parses as valid SVG, is served with HTTP 200 as `image/svg+xml`, and was visually inspected both in the normal Chapter 4 layout and at full-artwork size. That pass also caught and corrected oversized arrow markers and node-title overflow before completion. `pipeline/lint_chapters.py` passes 14/14 chapters, the added-line separator check and `git diff --check` pass, and no active source or generated page still references the retired PNG. `pipeline/check_chapter_coherence.py` reports the pre-existing Chapter 4 baseline (`fail=2 review=5`) for the Helmholtz reference, difference-threshold glossary matching, and apparatus review items; this repair changes only Figure 4.5's path, alt text, and caption.
+
+**Not committed / remaining:** The superseded Figure 4.5 PNG was removed and remains recoverable from Git history. Continue the ranked P0 queue with Figure 6.2 unless the instructor selects another figure.
+
 ### 2026-07-29 - Figure 6.3 Two-Process Scale Repair (Codex)
 
 **Scope:** Repaired the highest remaining P0 figure issue. The former Figure 6.3 placed Process S sleep pressure and Process C circadian alerting on one high-to-low alertness axis, reversing the ordinary meaning of greater sleep pressure. Rebuilt the figure as two aligned panels with separately defined scales: Process S rises during wakefulness and falls during sleep, while Process C shows a distinct SCN-timed alerting rhythm. The practical teaching job remains: caffeine and naps are grouped with Process S, while morning light, melatonin, and evening light are grouped with circadian timing.
