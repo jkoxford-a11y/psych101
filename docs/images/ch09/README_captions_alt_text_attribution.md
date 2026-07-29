@@ -14,6 +14,17 @@ Reconciled 2026-07-15 after promotion and final HTML regeneration. The category 
 - **Public-sharing status:** Use now; final desktop and narrow-screen rendering check completed.
 - **Caveat:** The hierarchy illustrates one common everyday basic level. Basic-level naming can vary with expertise, culture, and task.
 
+## Figure 9.3 — Luchins water-jar mental set
+
+- **Filename:** `fig_luchins_water_jar_mental_set.svg`
+- **Caption:** In Luchins' (1942) water-jar problems, earlier items repeatedly used the rule B − A − 2C. A later problem with A = 23, B = 49, and C = 3 could still be solved by that rule, but A − C reached the same target of 20 directly. Mental set made the practiced route easier to retrieve.
+- **Alt text:** Classic Luchins water-jar problems. Earlier examples repeatedly use the rule B minus A minus twice C. A later problem has jar capacities A equals 23, B equals 49, and C equals 3, with a target of 20. The practiced rule still works because 49 minus 23 minus 6 equals 20, but the direct rule A minus C reaches the same target because 23 minus 3 equals 20.
+- **Creation method:** Original programmatic SVG created for Oxford Psychology 101, 2026.
+- **Attribution:** Original figure generated for Oxford Psychology 101 with ChatGPT-assisted programmatic drawing, 2026. Problem values are from Luchins (1942).
+- **Public-sharing status:** Use now after final desktop and narrow-screen rendering checks.
+- **Accuracy note:** The repeated training examples and later test problem use values from the classic problem set. Both displayed solutions to the later problem equal 20; the contrast is efficiency, not correctness.
+- **Retired artwork:** The former `fig_luchins_water_jar_mental_set.png` used invented capacities and an invalid state sequence and is no longer wired.
+
 ## Campus conjunction-fallacy nested sets — unused candidate
 
 - **Filename:** `ch09_conjunction_fallacy_nested_sets.svg`

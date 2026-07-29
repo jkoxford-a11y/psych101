@@ -10,6 +10,16 @@ Repository rules and conventions live in `AGENTS.md`, not here. Current state an
 
 ## Log Entries
 
+### 2026-07-29 - Figures 12.3 and 9.3 P0 Production Repairs (Codex)
+
+**Scope:** Completed the first two P0 repairs in the temporary bookwide figure catalog. Figure 12.3's artwork was coherent but its PNG bytes were stored under an `.svg` filename, causing browsers to parse it as XML and fail. Figure 9.3 used invented water-jar capacities with a four-unit target that neither its labeled shortcut nor its old-strategy state sequence could produce. Rebuilt Figure 9.3 around verified classic Luchins problems: the earlier examples repeat B − A − 2C, and the later A = 23, B = 49, C = 3 problem reaches 20 through both B − A − 2C and the simpler A − C route.
+
+**Files changed:** Renamed `docs/images/ch12/ch12_cognitive_light_cone_goal_horizon.svg` to `.png` and updated the Chapter 12 source, generated HTML, figure metadata, and durable inventory. Replaced the retired `docs/images/ch09/fig_luchins_water_jar_mental_set.png` with an original programmatic SVG, updated the Chapter 9 caption and alt text in the authoritative Markdown, regenerated Chapter 9 HTML, and reconciled Chapter 9 metadata and the durable inventory. Marked F-001 and F-002 resolved in `pipeline/audits/bookwide-figure-audit-TEMP.md`; updated `HANDOFF.md`.
+
+**Validation:** Figure 12.3 has the PNG signature, is served as `image/png`, loads at 1536×1024, and renders normally in Chapter 12. Figure 9.3 is valid XML, loads at 1600×1050, and was visually checked in normal chapter context and at full artwork size. All five displayed Figure 9.3 equations were independently recalculated and match their targets. `pipeline/lint_chapters.py` passes 14/14 chapters. Chapter 9 and Chapter 12 coherence checks have no hard failures; their remaining review notices predate these figure repairs. `git diff --check` passes.
+
+**Not committed / remaining:** The invalid Figure 9.3 bitmap was removed and remains recoverable from Git history. Figure 9.5 remains the other open Chapter 9 catalog item. Continue the ranked catalog from F-003 unless the instructor selects another figure; do not mix this pass with unrelated ledger or deck-pilot work.
+
 ### 2026-07-28 - Chapter 2 Complete Figure-Sequence Audit and Repair (Codex)
 
 **Scope:** Audited all nine Chapter 2 figures from their rendered chapter context at desktop and 390×844 mobile widths rather than relying on the 2026-07-15 review metadata. The earlier visual review had missed four concrete defects. Repaired only Figures 2.2, 2.3, 2.5, and 2.6; inspection found no additional factual, directional, numerical, clipping, labeling, or attribution defect in Figures 2.1, 2.4, 2.7, 2.8, or 2.9.

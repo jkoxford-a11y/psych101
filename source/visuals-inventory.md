@@ -182,7 +182,7 @@ Final nine-figure set wired in the canonical source and regenerated HTML.
 |---|-------------|--------|-----------------|
 | 9.1 | Hierarchical category structure | ✅ wired/use now | `ch09/ch09_category_hierarchy_superordinate_basic_subordinate.svg` — Animal → Dog/Bird/Fish → Golden retriever/Robin/Salmon; basic row is the everyday naming level. |
 | 9.2 | Prototype compression | ✅ | `ch09/fig_prototype_compression_dogs.png` |
-| 9.3 | Luchins water-jar mental-set demo | ✅ | `ch09/fig_luchins_water_jar_mental_set.png` |
+| 9.3 | Luchins water-jar mental-set demo using verified classic problems | ✅ wired/use now | `ch09/fig_luchins_water_jar_mental_set.svg` |
 | 9.4 | Duncker candle problem | ✅ | `ch09/fig_functional_fixedness_candle_problem.png` |
 | 9.5 | System 1 vs. System 2 dual-process diagram | ✅ | `ch09/fig_system1_system2_dual_process.png` |
 | 9.6 | Linda conjunction fallacy / nested sets | ✅ | `ch09/fig_linda_conjunction_fallacy.png` |
@@ -253,7 +253,7 @@ Four original explanatory diagrams are wired in the canonical source and regener
 |---|-------------|--------|-------|
 | 12.1 | Body-budget deposits/withdrawals framework; traces inadequate recovery to metabolic deficit and unpleasant affect | ✅ revised/wired/use now | `ch12/fig_body_budget_deposits_withdrawals.svg/.png` |
 | 12.2 | Russell core-affect circumplex; model-neutral takeaway | ✅ wired/use now, Jon review | `ch12/fig_core_affect_circumplex.svg/.png` |
-| 12.3 | Cognitive light cone as nested spatial and temporal goal horizons; stress-appraisal application kept secondary | ✅ wired/use now, Jon review | `ch12/ch12_cognitive_light_cone_goal_horizon.svg` |
+| 12.3 | Cognitive light cone as nested spatial and temporal goal horizons; stress-appraisal application kept secondary | ✅ wired/use now, Jon review | `ch12/ch12_cognitive_light_cone_goal_horizon.png` |
 | 12.4 | Historical GAS contrasted with recovery and multisystem allostatic load | ✅ wired/use now, Jon review | `ch12/fig_general_adaptation_syndrome.svg/.png` |
 | — | Emotion theories comparison | 🔲 | Optional; already a table in text. |
 | — | Coping strategy matrix | 🔲 | Optional; text has a matching table. |

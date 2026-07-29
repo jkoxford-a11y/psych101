@@ -1,0 +1,130 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1050" viewBox="0 0 1600 1050" role="img" aria-labelledby="title desc">
+  <title id="title">Mental set in Luchins' water-jar problems</title>
+  <desc id="desc">Earlier problems repeatedly use the rule B minus A minus twice C. A later problem with jars A equals 23, B equals 49, and C equals 3 has a target of 20. The learned rule still works, but the direct rule A minus C reaches 20 more simply.</desc>
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="5" stdDeviation="8" flood-color="#17324d" flood-opacity="0.12"/>
+    </filter>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0,0 L12,6 L0,12 Z" fill="#315b7d"/>
+    </marker>
+    <style>
+      .sans { font-family: Aptos, Arial, sans-serif; }
+      .navy { fill: #123f73; }
+      .ink { fill: #183247; }
+      .muted { fill: #536779; }
+      .white { fill: #ffffff; }
+      .panel { fill: #ffffff; stroke: #a9bfd2; stroke-width: 2.5; }
+      .equation { font-family: Aptos, Arial, sans-serif; font-size: 34px; font-weight: 700; fill: #123f73; }
+      .jar-label { font-family: Aptos, Arial, sans-serif; font-size: 25px; font-weight: 700; fill: #183247; text-anchor: middle; }
+    </style>
+  </defs>
+
+  <rect width="1600" height="1050" fill="#f6f9fc"/>
+  <text x="800" y="62" class="sans navy" font-size="45" font-weight="800" text-anchor="middle">Mental set: A learned rule can hide a shortcut</text>
+  <text x="800" y="101" class="sans muted" font-size="24" text-anchor="middle">Classic Luchins water-jar problems, using the original capacities and targets</text>
+
+  <g filter="url(#shadow)">
+    <rect x="55" y="135" width="700" height="760" rx="25" class="panel"/>
+  </g>
+  <path d="M80 135 H730 A25 25 0 0 1 755 160 V225 H55 V160 A25 25 0 0 1 80 135 Z" fill="#123f73"/>
+  <text x="405" y="181" class="sans white" font-size="31" font-weight="800" text-anchor="middle">EARLIER PROBLEMS</text>
+  <text x="405" y="214" class="sans white" font-size="21" text-anchor="middle">The same rule succeeds again and again</text>
+
+  <text x="405" y="277" class="sans ink" font-size="24" font-weight="700" text-anchor="middle">Capacities and targets (arbitrary units)</text>
+  <g class="sans" font-size="22" text-anchor="middle">
+    <rect x="92" y="306" width="626" height="54" rx="11" fill="#eaf2f8"/>
+    <text x="158" y="341" class="navy" font-weight="800">A</text>
+    <text x="259" y="341" class="navy" font-weight="800">B</text>
+    <text x="360" y="341" class="navy" font-weight="800">C</text>
+    <text x="485" y="341" class="navy" font-weight="800">Target</text>
+    <text x="627" y="341" class="navy" font-weight="800">Check</text>
+
+    <rect x="92" y="369" width="626" height="70" rx="11" fill="#f7fafc" stroke="#d9e4ed"/>
+    <text x="158" y="413" class="ink">21</text>
+    <text x="259" y="413" class="ink">127</text>
+    <text x="360" y="413" class="ink">3</text>
+    <text x="485" y="413" class="ink" font-weight="700">100</text>
+    <text x="627" y="413" class="ink">127 − 21 − 6</text>
+
+    <rect x="92" y="448" width="626" height="70" rx="11" fill="#ffffff" stroke="#d9e4ed"/>
+    <text x="158" y="492" class="ink">14</text>
+    <text x="259" y="492" class="ink">163</text>
+    <text x="360" y="492" class="ink">25</text>
+    <text x="485" y="492" class="ink" font-weight="700">99</text>
+    <text x="627" y="492" class="ink">163 − 14 − 50</text>
+
+    <rect x="92" y="527" width="626" height="70" rx="11" fill="#f7fafc" stroke="#d9e4ed"/>
+    <text x="158" y="571" class="ink">18</text>
+    <text x="259" y="571" class="ink">43</text>
+    <text x="360" y="571" class="ink">10</text>
+    <text x="485" y="571" class="ink" font-weight="700">5</text>
+    <text x="627" y="571" class="ink">43 − 18 − 20</text>
+  </g>
+
+  <rect x="115" y="631" width="580" height="123" rx="18" fill="#e8f1fa" stroke="#78a6cc" stroke-width="2"/>
+  <text x="405" y="675" class="sans ink" font-size="23" font-weight="700" text-anchor="middle">One rule solves every row</text>
+  <text x="405" y="724" class="equation" text-anchor="middle">B − A − 2C = target</text>
+
+  <circle cx="154" cy="819" r="29" fill="#123f73"/>
+  <path d="M143 819 l8 8 17 -19" fill="none" stroke="#ffffff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="200" y="811" class="sans ink" font-size="23" font-weight="700">Practice makes this rule</text>
+  <text x="200" y="843" class="sans ink" font-size="23" font-weight="700">fast and easy to retrieve.</text>
+
+  <path d="M776 510 H824" fill="none" stroke="#315b7d" stroke-width="9" stroke-linecap="round" marker-end="url(#arrow)"/>
+  <text x="800" y="470" class="sans navy" font-size="20" font-weight="800" text-anchor="middle">NEXT</text>
+
+  <g filter="url(#shadow)">
+    <rect x="845" y="135" width="700" height="760" rx="25" class="panel"/>
+  </g>
+  <path d="M870 135 H1520 A25 25 0 0 1 1545 160 V225 H845 V160 A25 25 0 0 1 870 135 Z" fill="#123f73"/>
+  <text x="1195" y="181" class="sans white" font-size="31" font-weight="800" text-anchor="middle">LATER TEST PROBLEM</text>
+  <text x="1195" y="214" class="sans white" font-size="21" text-anchor="middle">The practiced rule works—but a shortcut is available</text>
+
+  <g transform="translate(929 270)">
+    <g>
+      <rect x="26" y="0" width="56" height="17" rx="5" fill="#315b7d"/>
+      <path d="M32 17 V35 Q14 43 14 66 V147 Q14 163 30 163 H78 Q94 163 94 147 V66 Q94 43 76 35 V17 Z" fill="#e7f3fb" stroke="#5587ad" stroke-width="3"/>
+      <path d="M18 110 H90 V147 Q90 159 78 159 H30 Q18 159 18 147 Z" fill="#88c4e8" opacity="0.62"/>
+      <text x="54" y="87" class="jar-label">A</text>
+      <text x="54" y="142" class="jar-label">23</text>
+    </g>
+    <g transform="translate(178 -18)">
+      <rect x="26" y="0" width="56" height="17" rx="5" fill="#315b7d"/>
+      <path d="M32 17 V35 Q9 43 9 71 V165 Q9 181 27 181 H81 Q99 181 99 165 V71 Q99 43 76 35 V17 Z" fill="#e7f3fb" stroke="#5587ad" stroke-width="3"/>
+      <path d="M13 113 H95 V165 Q95 177 81 177 H27 Q13 177 13 165 Z" fill="#88c4e8" opacity="0.62"/>
+      <text x="54" y="94" class="jar-label">B</text>
+      <text x="54" y="158" class="jar-label">49</text>
+    </g>
+    <g transform="translate(374 32)">
+      <rect x="26" y="0" width="56" height="17" rx="5" fill="#315b7d"/>
+      <path d="M32 17 V35 Q19 43 19 62 V115 Q19 130 33 130 H75 Q89 130 89 115 V62 Q89 43 76 35 V17 Z" fill="#e7f3fb" stroke="#5587ad" stroke-width="3"/>
+      <path d="M23 92 H85 V115 Q85 126 75 126 H33 Q23 126 23 115 Z" fill="#88c4e8" opacity="0.62"/>
+      <text x="54" y="80" class="jar-label">C</text>
+      <text x="54" y="116" class="jar-label">3</text>
+    </g>
+  </g>
+  <rect x="1370" y="291" width="130" height="90" rx="15" fill="#fff4dc" stroke="#d9a441" stroke-width="2"/>
+  <text x="1435" y="326" class="sans ink" font-size="19" font-weight="700" text-anchor="middle">TARGET</text>
+  <text x="1435" y="363" class="sans navy" font-size="31" font-weight="800" text-anchor="middle">20</text>
+
+  <rect x="885" y="474" width="620" height="152" rx="18" fill="#f3f5f7" stroke="#aebbc5" stroke-width="2"/>
+  <circle cx="928" cy="518" r="22" fill="#71808d"/>
+  <path d="M917 518 l7 7 15 -17" fill="none" stroke="#ffffff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="967" y="511" class="sans ink" font-size="22" font-weight="800">PRACTICED ROUTE</text>
+  <text x="967" y="547" class="sans muted" font-size="21">Apply the familiar rule:</text>
+  <text x="967" y="592" class="sans ink" font-size="31" font-weight="800">B − A − 2C = 49 − 23 − 6 = 20</text>
+  <text x="1458" y="547" class="sans muted" font-size="19" font-weight="700" text-anchor="end">Correct, but cumbersome</text>
+
+  <rect x="885" y="649" width="620" height="172" rx="18" fill="#e9f7ee" stroke="#4f9b67" stroke-width="3"/>
+  <circle cx="928" cy="699" r="24" fill="#2f8a4c"/>
+  <path d="M916 699 l8 8 17 -20" fill="none" stroke="#ffffff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="967" y="690" class="sans ink" font-size="22" font-weight="800">DIRECT ROUTE</text>
+  <text x="967" y="731" class="sans" font-size="34" font-weight="800" fill="#1e713a">A − C = 23 − 3 = 20</text>
+  <text x="967" y="774" class="sans ink" font-size="21">Fill A; use C once. Exactly 20 remains in A.</text>
+  <text x="1195" y="862" class="sans navy" font-size="23" font-weight="800" text-anchor="middle">Same target. Far fewer operations.</text>
+
+  <rect x="170" y="927" width="1260" height="87" rx="22" fill="#123f73"/>
+  <text x="800" y="965" class="sans white" font-size="24" font-weight="700" text-anchor="middle">Prior success makes the old rule come to mind first—even when the current problem</text>
+  <text x="800" y="996" class="sans white" font-size="24" font-weight="700" text-anchor="middle">offers a simpler route. That pull of the practiced strategy is mental set.</text>
+</svg>

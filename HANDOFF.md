@@ -1,6 +1,6 @@
 # Psych101 — Current Handoff
 
-**Last updated:** 2026-07-28
+**Last updated:** 2026-07-29
 **Canonical repository:** `C:\GitHub\psych101`
 
 This file records current state only. See `GPT_project_log.md` for completed-work history, `PROJECT_BACKLOG.md` for durable deferred work, and `AGENTS.md` for operating rules.
@@ -18,10 +18,7 @@ This file records current state only. See `GPT_project_log.md` for completed-wor
 - Keep chapter prose frozen while the ledger itself is audited.
 - A valid ledger row may bind a factual claim, but it must not prescribe hedge-heavy sentence form, resurrect retired prose, or override approved instructor language.
 
-**Two findings stand independently of the ledger and remain open for later approval.**
-
-1. Chapter 9's current Luchins water-jar figure is mechanically invalid: the stated goal is four liters in B, while the labeled simple solution fills B to seven liters, and the earlier sequence contains an unreachable state.
-2. Chapter 13's Moncrieff reference gives incorrect metadata for DOI `10.1038/s41380-022-01661-0`. The final journal citation is 2023, *Molecular Psychiatry, 28*, 3243–3256, matching Chapters 1 and 3. These are factual production issues, not invitations to reopen chapter voice.
+**One finding stands independently of the ledger and remains open for later approval.** Chapter 13's Moncrieff reference gives incorrect metadata for DOI `10.1038/s41380-022-01661-0`. The final journal citation is 2023, *Molecular Psychiatry, 28*, 3243–3256, matching Chapters 1 and 3. This is a factual production issue, not an invitation to reopen chapter voice.
 
 **Completed chapter decisions remain settled.** Chapter 5's constructed-self apparatus, Chapter 6's simplified objective and summary, Chapter 8's episodic-to-semantic apparatus and deliberate `schema` decline, Chapter 9's simplified objective and retired group-differences thread, and the Chapter 11/13 proximate-ultimate installs should not be re-proposed through the ledger audit. Chapter 11's dissonance-as-updating thread remains separately open.
 
@@ -31,6 +28,10 @@ Awaiting the instructor's markup pass on slide *grammar* — which slide kinds, 
 
 **Chapter 2's complete nine-figure sequence has been re-audited and repaired.** The rendered inspection found four defects that the 2026-07-15 review metadata missed: Figure 2.2's fourth dart cloud was precise rather than dispersed, Figure 2.3's lower positive-direction cue did not rise, Figure 2.5 overgeneralized sampling/assignment as external/internal validity and duplicated a marker ID, and Figure 2.6 used an overbroad title and overflowed its causal footer box. Those four assets and their metadata are repaired; Figures 2.1, 2.4, 2.7, 2.8, and 2.9 required no change. Desktop and 390×844 mobile views have no page overflow, and all nine figures expand and collapse correctly. The authoritative Markdown needed no caption/alt change; the Chapter 2 builder regenerated the HTML byte-identically.
 
+**The first two P0 items in the temporary figure catalog are resolved.** Figure 12.3 was a valid PNG mislabeled as SVG; the asset, source reference, generated HTML, metadata, and inventory now use `.png`, and the browser serves it as `image/png`. Figure 9.3's invented and mechanically invalid water-jar sequence was replaced with an original SVG based on verified classic Luchins problems. The later A = 23, B = 49, C = 3 problem reaches 20 through both B − A − 2C and the simpler A − C route; all displayed arithmetic and the rendered figure were checked.
+
+**A temporary bookwide figure-audit catalog is active.** Before starting or resuming figure work, read `pipeline/audits/bookwide-figure-audit-TEMP.md`. It records the current ranked issue queue, proposed fixes, and repair effort without replacing chapter Markdown or `source/visuals-inventory.md` as authority. Keep it current during this finite pass, then delete it using the deletion gate in the file. Figure 2.3's plot order versus coefficient-scale contradiction is recorded there as open.
+
 **The repository is mixed.** Preserve every unrelated change. The deck-pilot files above are a distinct scope: do not modify, remove, stage, or characterize them as part of the chapter/ledger sequence, and equally do not let the ledger audit touch them.
 
 ## Immediate next actions
@@ -38,7 +39,7 @@ Awaiting the instructor's markup pass on slide *grammar* — which slide kinds, 
 1. **Audit `pipeline/evidence-commitments.md` itself, read-only first.** Compare each row with current instructor decisions, the de-hedging/wordiness audits, and current prose. Classify rows as: genuine factual boundary; hedge/negation prescription; stale status; retired/removed content; or unsupported/incorrect source metadata.
 2. **Present proposed ledger decisions in chat before editing the ledger.** Do not change chapter prose during this audit. Preserve the instructor's approved words and do not infer that a ledger disagreement requires a chapter revision.
 3. **After explicit approval, reconcile ledger rows only.** Re-read `HANDOFF.md` immediately before updating it. Validate exact scope and do not commit or push.
-4. **Handle the water-jar figure and Moncrieff metadata separately** after the ledger audit or when the instructor chooses; neither requires reopening surrounding prose.
+4. **Handle the Moncrieff metadata separately** after the ledger audit or when the instructor chooses; it does not require reopening surrounding prose.
 5. Later project items remain: Chapter 7's missing Figure 7.8 decision, the theoretical-spine cognitive-light-cone ownership note, Chapter 2's no-first-person scope, and Chapter 11 Thread B.
 6. **Deck pilot, independent of the ledger sequence:** instructor markup on slide grammar, then a `.potx` template (decks currently render in the default Office theme), then the PowerPoint-edit ingest. Do not interleave with the ledger audit.
 
@@ -49,6 +50,8 @@ The existing Chapter 5–6 and Chapter 8–13 decision sequence includes the cor
 The deck pilot is a second, non-overlapping scope: `pipeline/build_chapter_deck.py`, `pipeline/slides/README.md`, `pipeline/slides/ch06.md`, `slides/ch06/assets/manifest.md`, and `.gitignore`. Stage it separately from the chapter/ledger sequence.
 
 The completed Chapter 2 figure audit is a third, non-overlapping scope: `docs/images/ch02/ch02_reliability_validity_accuracy_precision.png`, `docs/images/ch02/ch02_correlation_direction_strength.png`, `docs/images/ch02/fig2-5-random-sampling-vs-assignment.svg`, `docs/images/ch02/fig_experiment_flowchart.svg`, `docs/images/ch02/README_captions_alt_text_attribution.md`, `source/visuals-inventory.md`, plus this handoff and the matching project-log entry. Keep it separate from both the ledger sequence and deck pilot.
+
+The active bookwide figure-repair pass is a fourth scope: `pipeline/audits/bookwide-figure-audit-TEMP.md`, the exact figure assets and per-chapter metadata named by resolved rows, their authoritative chapter Markdown, regenerated chapter HTML, `source/visuals-inventory.md`, this handoff, and matching project-log entries. Figures 12.3 and 9.3 are resolved; preserve all unrelated chapter, ledger, and deck-pilot changes.
 
 ## Validation and operating notes
 
@@ -67,5 +70,6 @@ The completed Chapter 2 figure audit is a third, non-overlapping scope: `docs/im
 - Chapter 11 decisions: `pipeline/ch11-spine-seeds.md`
 - Theoretical spine: `pipeline/theoretical-spine.md`
 - Validators: `pipeline/check_chapter_coherence.py`, `pipeline/lint_chapters.py`
+- Temporary figure-repair queue (delete when pass is complete): `pipeline/audits/bookwide-figure-audit-TEMP.md`
 - Deck generator and seed format: `pipeline/build_chapter_deck.py`, `pipeline/slides/README.md`
 - Durable deferred work: `PROJECT_BACKLOG.md`

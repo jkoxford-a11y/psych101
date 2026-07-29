@@ -88,8 +88,8 @@ Problem solving depends on how the problem is represented. You might work forwar
 
 A **mental set** is the tendency to use a strategy that worked before even when a new problem permits a better one. In Luchins' (1942) water-jar studies, people first solved several problems with the same multi-step formula. Many then applied that formula to a later problem that could be solved in one simple step. Prior success had made the old strategy easier to retrieve than the new structure was to see.
 
-![Figure 9.3: Luchins' water-jar problems. Earlier problems require the same multi-step strategy. A later problem can be solved directly, but solvers primed by the earlier method often repeat the unnecessary steps.](../../docs/images/ch09/fig_luchins_water_jar_mental_set.png)
-*Figure 9.3. Mental set demonstrated with Luchins' (1942) water-jar problems. Original figure.*
+![Figure 9.3: Classic Luchins water-jar problems. Earlier examples repeatedly use the rule B minus A minus twice C. A later problem has jar capacities A equals 23, B equals 49, and C equals 3, with a target of 20. The practiced rule still works because 49 minus 23 minus 6 equals 20, but the direct rule A minus C reaches the same target because 23 minus 3 equals 20.](../../docs/images/ch09/fig_luchins_water_jar_mental_set.svg)
+*Figure 9.3. In Luchins' (1942) water-jar problems, earlier items repeatedly used the rule B − A − 2C. A later problem with A = 23, B = 49, and C = 3 could still be solved by that rule, but A − C reached the same target of 20 directly. Mental set made the practiced route easier to retrieve. Original figure.*
 
 **Functional fixedness** is a related failure to see an object outside its conventional use. Before reading on, try Duncker's (1945) candle problem yourself: you have a candle, a book of matches, and a box of thumbtacks, and you must mount the candle on the wall so it burns without dripping wax on the table. Commit to a solution before you continue.
 

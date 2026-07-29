@@ -28,11 +28,11 @@
 
 ## Figure 12.3 — Cognitive light cone as a goal horizon
 
-- **File:** `ch12_cognitive_light_cone_goal_horizon.svg`
+- **File:** `ch12_cognitive_light_cone_goal_horizon.png`
 - **Teaching job:** Show that a cognitive light cone concerns the spatial and temporal scale of goals an agent can represent and work toward.
 - **Caption:** A cognitive light cone represents the spatial and temporal scale of goals an agent can represent and work toward—not merely what it can sense or physically reach. Humans can organize present action around distant relationships, future outcomes, institutions, and abstract commitments. That expanded goal horizon supports planning and cooperation, while also allowing absent threats to enter present stress appraisal. Original explanatory figure based on the framework developed by Levin (2019).
 - **Alt text:** Space-time diagram centered on Here and Now. The horizontal dimension runs from near to distant space. The temporal dimension reaches from a past/memory cue through the present toward the future. Three increasingly broad goal horizons surround the center: immediate bodily and local regulation; nearby organisms, learned routes, and short-term outcomes; and future self, distant relationships, institutions, abstract commitments, and long-term collective outcomes. A note states that goal scale is not sensory range alone. The takeaway says that a broader goal horizon lets distant outcomes guide present action, so threats to distant goals can enter present appraisal now.
-- **Creation method:** Original programmatic SVG authored for Oxford Psychology 101; no published Levin figure was copied.
+- **Creation method:** Original explanatory diagram authored for Oxford Psychology 101 and stored as PNG; no published Levin figure was copied.
 - **Attribution:** Original explanatory figure for Oxford Psychology 101, 2026, based on Levin (2019). No external image assets used.
 - **License:** Repository-authored original; safe for public sharing under the textbook's project license.
 - **Public-sharing status:** Use now.
@@ -42,7 +42,7 @@
 ### Approved replacement candidate — Absent events matter now
 
 - **Proposed file:** `ch12_cognitive_light_cone_absent_events_matter_now.png`
-- **Current status:** Approved replacement candidate. Metadata is recorded here, but the PNG is not yet present in the repository and the current Figure 12.3 SVG remains wired.
+- **Current status:** Approved replacement candidate. Metadata is recorded here, but the candidate PNG is not yet present in the repository and the current Figure 12.3 PNG remains wired.
 - **Teaching job:** Center the agent at Here and Now, show goal reach expanding outward across space and into remembered and anticipated time, and make the Chapter 12 application visible: an absent event can be appraised now and recruit a present stress response.
 - **Caption:** A cognitive light cone represents the spatial and temporal range of events and goals that can organize an agent's behavior. Human goals can extend into remembered experience, anticipated futures, distant relationships, and collective commitments. Because those absent events can enter appraisal now, they can recruit a present stress response. Original explanatory figure based on Levin's framework.
 - **Alt text:** Space-time diagram centered on “Here and Now,” where appraisal and action occur. Past and memory extend downward, future and anticipation extend upward, and three increasingly broad goal horizons extend outward from the center: immediate and local, nearby and short-term, and distant and long-term. Examples include hunger in the present, a remembered conflict, an exam next week, and a distant relationship or collective goal. An arrow from the upcoming exam returns to present appraisal, showing how an event that is not physically present can recruit a stress response now.
