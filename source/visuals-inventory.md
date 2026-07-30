@@ -24,12 +24,12 @@ Markdown draft complete (v0.2). Awaiting Jon's line-by-line review. HTML convers
 
 ## Chapter 1 — History & Approaches
 
-**Canonical revision completed 2026-07-17.** Active figures were opened and inspected. Visible numbering is sequential (1.1, 1.2); the language figure retains its legacy `fig_1_3` filename without exposing 1.3 to readers. The portrait strip remains active, and complete provenance, license, modification, attribution, sharing-status, and caveat records are in the Chapter 1 image manifest. The removed Maslow image remains archived and unapproved for reuse.
+**Canonical revision completed 2026-07-17 and Figure 1.2 repaired 2026-07-30.** Active figures were opened and inspected. Visible numbering is sequential (1.1, 1.2), and the language figure now uses a matching Chapter 1 filename. The portrait strip remains active, and complete provenance, license, modification, attribution, sharing-status, and caveat records are in the Chapter 1 image manifest. The removed Maslow image remains archived and unapproved for reuse.
 
 | # | Description | Status | Filename |
 |---|-------------|--------|----------|
 | 1.1 | One behavior, many psychological questions (phone/notification) | ✅ | `ch01/fig_1_1_scope_map.png` |
-| 1.2 | Skinner / Chomsky / LLM language diagram (legacy filename retained) | ✅ inspected; metadata complete | `ch01/fig_1_3_language_explanations.png` |
+| 1.2 | Behaviorist / cognitive / language-model explanations for fluent output | ✅ wired/use now | `ch01/ch01_fluent_language_different_mechanisms.svg` — simplified, color-coded pathways share one observable novel-prompt performance; the behaviorist consequence loop now returns to future verbal responding. |
 | archived (former 1.2) | Maslow hierarchy — removed Session 91 (weak sourcing; not approved for reuse) | archived | `ch01/_archive/fig_1_2_maslow_hierarchy.png` |
 | — | Portraits: Wundt, James, Watson, Freud, Skinner | ✅ inspected; metadata complete (Watson has non-U.S. rights caveat) | `ch01/portrait_*.jpg` |
 
@@ -43,7 +43,7 @@ Markdown draft complete (v0.2). Awaiting Jon's line-by-line review. HTML convers
 |---|-------------|--------|-----------------|
 | 2.1 | Research process cycle (Observe→Define→Relate→Test→Estimate→Replicate→Revise) | ✅ wired | `ch02/ch02_research_process_cycle.png` — replaces the former evidence-ladder framing |
 | 2.2 | Accuracy/precision target analogy with modern reliability/validity caveat | ✅ wired; wording and fourth-panel geometry repaired | `ch02/ch02_reliability_validity_accuracy_precision.png` — the two low-reliability panels now show distinct centered vs. biased dispersed clouds; replaces `fig_reliability_validity_dartboard.svg` and `fig2-6-reliability-validity-targets.svg` |
-| 2.3 | Correlation direction/strength (five scatterplots) | ✅ wired; positive-direction cue repaired | `ch02/ch02_correlation_direction_strength.png` — lower positive arrow now rises lower-left to upper-right; replaces `fig_correlation_scatter.png` |
+| 2.3 | Correlation direction/strength (five scatterplots) | ✅ wired/use now | `ch02/ch02_correlation_direction_strength.svg` — plots and coefficient scale now run together from strong negative through zero to strong positive; replaces the contradictory PNG |
 | 2.4 | Third-variable problem (Age → Shoe size / Reading ability) | ✅ wired | `ch02/ch02_third_variable_age_shoe_size_reading.png` — renamed from user-selected UUID asset `40af6fe3-f8d2-4d0a-a7f5-17022b340904-_edit.png`; replaces `fig_third_variable_problem.png/.svg` |
 | 2.5 | Random sampling vs. random assignment | ✅ wired; inference labels repaired | `ch02/fig2-5-random-sampling-vs-assignment.svg` — now distinguishes population representativeness from stronger causal comparison and uses valid non-conflicting marker IDs |
 | 2.6 | Randomized experiment flowchart (hot sauce paradigm, IV/DV/control) | ✅ repaired | `ch02/fig_experiment_flowchart.svg` — randomized-experiment title and calibrated two-line causal footer fit inside the enlarged box |
@@ -88,7 +88,7 @@ Use `docs/images/ch04/README_captions_alt_text_attribution.md` as the authoritat
 | # | Description | Status | Filename / note |
 |---|-------------|--------|-----------------|
 | 4.1 | Sensation/perception pipeline with top-down feedback | ✅ | `ch04/fig_sensation_perception_pipeline.png/.svg` |
-| 4.2 | Signal detection matrix | ✅ | `ch04/fig_signal_detection_matrix.png/.svg` |
+| 4.2 | Weber's Law: JND versus starting intensity | ✅ wired/use now | `ch04/ch04_weber_law_jnd_vs_intensity.svg` — directly plots ΔI against I and labels the constant 0.10 ratio; replaces the misleading intensity-against-itself graphic. |
 | inline | Psychometric function / absolute threshold | ⚠️ | `ch04/fig_psychometric_function_webvision.jpg` — CC BY-NC 4.0; confirm non-commercial use assumptions before public release. |
 | 4.3 | Retina rods/cones/fovea/blind spot infographic | ✅ | `ch04/fig_retina_rods_cones_fovea_blindspot.png` |
 | 4.4 | Two-stage color vision: trichromatic cones + opponent-process channels | ✅ | `ch04/ch04_color_vision_two_stage_model_v1.png` |
@@ -97,11 +97,13 @@ Use `docs/images/ch04/README_captions_alt_text_attribution.md` as the authoritat
 | 4.7 | Original Gestalt principles panel | ✅ | `ch04/fig_gestalt_principles_original.png/.svg` — replaces OpenStax composite. |
 | inline | Good continuation W/M redrawing | ✅ | `ch04/ch04_good_continuation_wm_redrawing.png/.svg` |
 | 4.8 | Müller-Lyer illusion | ✅ | `ch04/ch04_muller-lyer.jpeg` — CC BY 4.0 source tracked in Ch4 README. |
-| 4.9 | Cochlea / place theory vs. frequency theory | ✅ | `ch04/fig_cochlea_place_frequency_pitch.png` |
+| 4.9 | Place and temporal pitch coding | ✅ wired/use now | `ch04/ch04_pitch_place_temporal_volley.svg` — separates place of peak activity from phase-locked timing and shows the 1,000-Hz example as a pooled volley rather than one neuron's firing rate. |
 | 4.10 | Gate control theory of pain | ✅ | `ch04/fig_gate_control_pain.png` |
 | — | Depth cues illustration (monocular vs. binocular) | 🔲 | Still possible if the live chapter needs it; not currently confirmed as a blocker. |
 
 **Open Ch4 tasks:** browser-check the live rendered page for image loading, mobile width, caption length, and readability; decide later whether Fig 4.1 should remain as the simple pipeline or be replaced by a less linear diagram; keep license flags visible for Webvision; retire/fold `CH04_IMAGE_REVISION_TRACKER_TEMP.md` after final Ch4 review.
+
+**Retired/unwired:** `fig_signal_detection_matrix.png/.svg` remains available but is not used by the current chapter; signal-detection outcomes are taught as a compact list.
 
 ---
 
@@ -130,11 +132,11 @@ All 5 core figures are wired, but an editorial audit-reconciliation pass (2026-0
 
 | # | Description | Status | Filename / note |
 |---|-------------|--------|-----------------|
-| 6.1 | Sleep as active maintenance system | ⚠️ wired, flagged | `ch06/fig_sleep_active_maintenance_system.png` — kept provisionally; the image's literal five-panel framing is in tension with the chapter's revised central argument (overlapping processes, not five discrete jobs). Caption/alt text softened around it; image itself flagged for a future simplification redesign. |
+| 6.1 | Sleep as active maintenance system | ✅ retained for current edition; future reassessment | `ch06/fig_sleep_active_maintenance_system.png` — instructor retained the direct active-maintenance teaching point on 2026-07-30. Reassess the five-panel organization and glymphatic evidence framing in a future book revision, not the current figure pass. |
 | 6.2 | SCN circadian pathway | ✅ wired/use now | `ch06/fig_scn_circadian_clock_entrainment_inset.png` — rebuilt with a simplified anatomical inset placing the paired SCN in the anterior hypothalamus immediately above the optic chiasm; retinal input and downstream circadian outputs remain explicit. |
 | 6.3 | Two-process model as practical lever diagram | ✅ wired/use now | `ch06/fig_process_s_process_c_levers.svg` — rebuilt with separate scales for sleep pressure and circadian alerting; practical levers are grouped by the process they affect. |
-| 6.4 | Sleep architecture hypnogram | ⚠️ needs revision | `ch06/fig_sleep_architecture_cycles.png` — the fixed early/middle/late-night functional assignment (restoration → consolidation → emotional processing) is misleading and overstates how cleanly those processes map onto specific hours; not public-ready until redrawn without that timetable. Caption/alt text in `ch06-sleep.md` already removed the fixed mapping. |
-| 6.5 | Glymphatic clearance mechanism | ⚠️ needs revision | `ch06/fig_glymphatic_clearance_deep_sleep.png` — mechanism is depicted with more certainty than the human evidence supports (strong in animal studies, indirect/developing in humans); not public-ready until the diagram itself signals that gap. Caption/alt text hedged in the chapter text as an interim measure. |
+| 6.4 | Sleep architecture hypnogram | ✅ wired/use now | `ch06/ch06_sleep_architecture_hypnogram_nrem_rem_cycles.svg` — retains the typical stage pattern while replacing the fixed function timetable with architecture observations and an explicit functions-overlap takeaway. |
+| 6.5 | Glymphatic clearance mechanism | ⚠️ revision deferred by user | `ch06/fig_glymphatic_clearance_deep_sleep.png` — mechanism is depicted with more certainty than the human evidence supports (strong in animal studies, indirect/developing in humans); not public-ready until the diagram itself signals that gap. Caption/alt text hedged in the chapter text as an interim measure. Skipped in the current repair pass on 2026-07-30. |
 | 6.6 | Drug tolerance/withdrawal mechanism | 🔲 | Reconsider fit; most drug content moved to Ch5. |
 | 6.7 | Dream theories comparison diagram | 🔲 | On hold. |
 | — | `hypnogram.mp4` | ⚠️ | Not wired. Decide whether videos belong in markdown chapters or lab pages. |
@@ -151,7 +153,7 @@ All 9 figures are wired.
 | 7.2 | Extinction is not erasure | ✅ | `ch07/fig_extinction_not_erasure.png` |
 | 7.3 | Operant conditioning 2×2 | ✅ | `ch07/fig_operant_conditioning_2x2.png` |
 | 7.4 | Reinforcement schedules comparison | ✅ | `ch07/fig_reinforcement_schedules.png` |
-| 7.5 | Garcia & Koelling preparedness | ✅ | `ch07/fig_garcia_koelling_preparedness.png` |
+| 7.5 | Garcia and Koelling compound-cue training and selective tests | ✅ wired/use now | `ch07/ch07_garcia_koelling_compound_cue_test.svg` — shows taste plus light/tone together during training, outcome groups, and separated cue tests; replaces the misleading four-pairing matrix. |
 | 7.6 | Bobo doll / observational learning setup | ✅ | `ch07/fig_bobo_doll_observational_learning.png` |
 | 7.7 | Tolman & Honzik delayed-reward latent-learning graph | ✅ | `ch07/fig_tolman_cognitive_map.png` |
 | 7.8 | Dopamine uncertainty curve | ✅ | `ch07/fig_dopamine_uncertainty_curve.png` |
@@ -166,7 +168,7 @@ All six completed SVGs wired into `ch08-memory.md` in Session 78.
 
 | # | Description | Status | Filename / note |
 |---|-------------|--------|-----------------|
-| 8.1 | Atkinson-Shiffrin three-box model | ✅ wired | `ch08_atkinson_shiffrin_three_box_model.svg` — wired into Section 1. |
+| 8.1 | Atkinson-Shiffrin three-box model | ✅ wired — revised | `ch08_atkinson_shiffrin_three_box_model.svg` — explicitly labeled as the classic model; historical `7 ± 2` estimate distinguished from the durable sharply-limited-capacity lesson, and literal “unlimited”/“lifetime” claims removed. |
 | 8.2 | Baddeley's working memory model | ✅ wired — revised | `ch08_baddeley_working_memory_model.svg` — four-component model with episodic buffer and long-term-memory connection; source, HTML, caption, alt text, and metadata synchronized. |
 | 8.3 | Levels of processing | ✅ wired | `ch08_levels_of_processing_shallow_to_deep.svg` — wired into Section 1; two-level gradient, not three-tier taxonomy. |
 | 8.4 | Explicit vs. implicit memory taxonomy tree | ✅ wired | `ch08_memory_taxonomy_tree.svg` — wired before the memory systems table. |

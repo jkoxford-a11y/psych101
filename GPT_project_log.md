@@ -10,6 +10,76 @@ Repository rules and conventions live in `AGENTS.md`, not here. Current state an
 
 ## Log Entries
 
+### 2026-07-30 - Figure 8.1 Classic Memory-Model Labeling Repair (Codex)
+
+**Scope:** Resolved the first P2 row in the temporary bookwide figure catalog without redesigning the useful three-stage map. The artwork now identifies Atkinson-Shiffrin as a classic model, presents `7 ± 2` as a classic estimate beneath the durable lesson that short-term capacity is sharply limited, and replaces the literal long-term-memory labels “unlimited” and “lifetime” with “very large capacity” and “some memories last decades.” The surrounding chapter language now gives the same clear distinction between Miller's historical estimate and newer estimates near three or four meaningful chunks.
+
+**Files changed:** Revised `docs/images/ch08/ch08_atkinson_shiffrin_three_box_model.svg`; synchronized the Figure 8.1 body introduction, alt text, caption, and Chapter Summary in `source/chapters/ch08-memory.md`; regenerated `docs/chapters/08-memory.html`; reconciled the Chapter 8 figure metadata and wiring record, durable visual inventory, temporary figure audit, and `HANDOFF.md`.
+
+**Validation:** The SVG was visually inspected at full size and in its generated chapter context; every label remains inside its box. The Chapter 8 expansion regression passes all six figures at desktop (1440×900), laptop (1280×800), compact desktop (1024×768), portrait phone (390×844), and landscape phone (844×390), with no page-level overflow and no poor expansion candidates. `pipeline/lint_chapters.py` passes 14/14 chapters. The Chapter 8 coherence checker retains one pre-existing hard glossary/body mismatch plus two reference-review notices and unrelated bold-term reviews; this repair did not introduce them.
+
+**Not committed / remaining:** The next ranked issue is Figure 4.4's false “eye” versus “brain” boundary for opponent processing.
+
+### 2026-07-30 - Figure 7.5 Garcia–Koelling Experiment Repair (Codex)
+
+**Scope:** Resolved the final active P1 repair after the instructor retained Figures 6.1 and 6.5 for future reassessment. The former Figure 7.5 used a four-cell cue-by-outcome matrix that made the study look like four separately trained cue–consequence pairings. Replaced it with a three-stage color diagram: flavored water and light/tone occur together during drinking, groups then experience illness or shock, and the cues are tested separately. The results now visibly show strong taste avoidance after illness and strong audiovisual-cue avoidance after shock.
+
+**Files changed:** Added `docs/images/ch07/ch07_garcia_koelling_compound_cue_test.svg`; updated Figure 7.5's path, alt text, and caption in `source/chapters/ch07-learning.md`; regenerated `docs/chapters/07-learning.html`; added Figure 7.5 metadata to the Chapter 7 image record; reconciled the durable visual inventory, temporary figure audit, and `HANDOFF.md`. The former `fig_garcia_koelling_preparedness.png` remains preserved but unwired and is identified as retired in Chapter 7 metadata.
+
+**Validation:** The experimental sequence was checked against Garcia and Koelling's 1966 primary report, DOI `10.3758/BF03342209`. The SVG parses as XML and was visually checked at full artwork size and in the chapter's collapsed and expanded states. The Chapter 7 expansion regression passes all eight expandable figures at desktop (1440×900), laptop (1280×800), compact desktop (1024×768), portrait phone (390×844), and landscape phone (844×390), with no page-level overflow and no poor expansion candidates. The Chapter 7 coherence checker has no hard failures and retains one pre-existing Connections-anchor review notice; `pipeline/lint_chapters.py` passes 14/14 chapters, and `git diff --check` passes.
+
+**Not committed / remaining:** The next ranked issue is Figure 8.1's presentation of classic modal-memory-model labels as current literal properties.
+
+### 2026-07-30 - Figure 4.2 Weber-Law Graph Repair (Codex)
+
+**Scope:** Resolved the next ranked P1 row in the temporary bookwide figure catalog. The former Weber graphic plotted stimulus intensity against itself while leaving the actual just-noticeable differences as annotations, so the visual trajectory did not encode the proportional relationship described by the prose. Replaced it with a color-coded graph whose horizontal axis is starting intensity and vertical axis is JND. The points directly show 20→2, 40→4, 80→8, 120→12, and 160→16, while the line and side card label the constant ratio ΔI/I = 0.10.
+
+**Files changed:** Added `docs/images/ch04/ch04_weber_law_jnd_vs_intensity.svg`; updated the authoritative Chapter 4 Markdown with the new path, alt text, Figure 4.2 number, and caption; regenerated `docs/chapters/04-sensation-perception.html`; reconciled the Chapter 4 image manifest, durable visual inventory, temporary figure audit, and `HANDOFF.md`. The former Weber variants remain preserved but unwired. The unused signal-detection matrix is now recorded as unwired rather than incorrectly cataloged as Figure 4.2.
+
+**Validation:** The SVG parses as XML and was visually checked at full artwork size and in the chapter's collapsed and expanded states. The Chapter 4 expansion regression passes all ten expandable figures at desktop (1440×900), laptop (1280×800), compact desktop (1024×768), portrait phone (390×844), and landscape phone (844×390), with no page-level overflow and no poor expansion candidates. `pipeline/lint_chapters.py` passes 14/14 chapters and `git diff --check` passes. The Chapter 4 coherence checker retains its pre-existing `fail=2 review=5` baseline; this figure-only repair did not broaden into those issues.
+
+**Not committed / remaining:** The next ranked P1 issue is Figure 6.1's five discrete sleep “jobs.” Chapter 4's remaining numbering row is narrowed to the missing 4.8 decision.
+
+### 2026-07-30 - Figure 1.2 Fluent-Language Mechanisms Repair (Codex)
+
+**Scope:** Resolved the next active P1 row after the instructor deferred Figure 6.5. Replaced Figure 1.2's dense monochrome raster with a simplified color-coded comparison: orange for behaviorist learning history, blue for cognitive generative structure, purple for language-model statistical learning, and teal for the shared observable performance. Replaced the introspective “I understand” statement with producing a fluent, context-appropriate response to a novel prompt, and redirected the behaviorist consequence loop toward future verbal responding rather than the cue.
+
+**Files changed:** Added `docs/images/ch01/ch01_fluent_language_different_mechanisms.svg`; updated Figure 1.2's path and alt text in `source/chapters/ch01-history-approaches.md`; regenerated `docs/chapters/01-history-approaches.html`; reconciled the Chapter 1 image manifest, durable visual inventory, temporary figure audit, and `HANDOFF.md`. The former `fig_1_3_language_explanations.png` remains preserved but unwired and is identified as retired in the Chapter 1 manifest.
+
+**Validation:** The SVG parses as XML and was visually checked at full artwork size and in the chapter's collapsed and expanded states. The Chapter 1 expansion regression passes both expandable figures at desktop (1440×900), laptop (1280×800), compact desktop (1024×768), portrait phone (390×844), and landscape phone (844×390), with no page-level overflow and no poor expansion candidates. The Chapter 1 coherence checker has no hard failures and retains one pre-existing reference-citation review notice; `pipeline/lint_chapters.py` passes 14/14 chapters, and `git diff --check` passes.
+
+**Not committed / remaining:** The next ranked P1 issue is Chapter 4's inline Weber graphic.
+
+### 2026-07-30 - Figure 6.4 Sleep-Architecture Repair (Codex)
+
+**Scope:** Resolved the second P1 row in the temporary bookwide figure catalog. The former Figure 6.4 paired a valid hypnogram with an exclusive early/middle/late-night timetable for restoration, memory consolidation, and emotional processing. Replaced it with a deterministic SVG that retains the stage-distribution teaching job while showing three observable architecture shifts: more NREM 3 earlier, stages recurring across cycles, and longer REM periods toward morning. The takeaway now states directly that architecture shifts while biological functions overlap.
+
+**Files changed:** Added `docs/images/ch06/ch06_sleep_architecture_hypnogram_nrem_rem_cycles.svg`; updated Figure 6.4's path, alt text, and caption in `source/chapters/ch06-sleep.md`; regenerated `docs/chapters/06-sleep.html`; reconciled the Chapter 6 figure specification, durable visual inventory, temporary figure audit, and `HANDOFF.md`. The former PNG remains preserved but unwired and is identified as retired in the Chapter 6 specification.
+
+**Validation:** The SVG parses as XML and was visually checked at full artwork size and in the chapter's collapsed and expanded states. The Chapter 6 expansion regression passes all five figures at desktop (1440×900), laptop (1280×800), compact desktop (1024×768), portrait phone (390×844), and landscape phone (844×390), with no page-level overflow and no poor expansion candidates. The Chapter 6 coherence checker is clean (`fail=0 review=0`), `pipeline/lint_chapters.py` passes 14/14 chapters, and `git diff --check` passes.
+
+**Not committed / remaining:** The next ranked P1 issue is Figure 6.5's overconfident glymphatic-clearance mechanism.
+
+### 2026-07-30 - Figure 2.3 Correlation Order Repair (Codex)
+
+**Scope:** Resolved the first P1 row in the temporary bookwide figure catalog. The former Figure 2.3 ordered its five plots from strong positive to strong negative while the coefficient scale beneath them ran from −1 to +1. Replaced the raster with a deterministic SVG whose plots, signs, trend lines, colors, and scale all run strong negative → moderate negative → zero → moderate positive → strong positive.
+
+**Files changed:** Added `docs/images/ch02/ch02_correlation_direction_strength.svg`; updated Figure 2.3's path and alt text in `source/chapters/ch02-research-methods.md`; regenerated `docs/chapters/02-research-methods.html`; reconciled the Chapter 2 image manifest, image-wiring handoff, durable visual inventory, temporary figure audit, and `HANDOFF.md`. The former PNG remains preserved but unwired and is identified as superseded in the manifest.
+
+**Validation:** The SVG parses as XML, carries no embedded figure number, and was visually checked at full artwork size and in the chapter's collapsed and expanded states. The Chapter 2 expansion regression passes all nine figures at desktop (1440×900), laptop (1280×800), compact desktop (1024×768), portrait phone (390×844), and landscape phone (844×390), with no page-level overflow and no poor expansion candidates. `pipeline/lint_chapters.py` passes 14/14 chapters and `git diff --check` passes. The Chapter 2 coherence checker retains its pre-existing `fail=2 review=2` baseline for institutional-author/reference and compound glossary-term matching; this figure-only repair did not broaden into those issues.
+
+**Not committed / remaining:** The next ranked P1 issue is Figure 6.4's exclusive function-by-time blocks.
+
+### 2026-07-30 - Figure 4.9 Place and Temporal Pitch-Coding Repair (Codex)
+
+**Scope:** Resolved the final P0 row in the temporary bookwide figure catalog. The former Figure 4.9 described pitch as “how fast neurons fire” and drew one dense spike train for a 1,000-Hz sound, implying that an individual neuron simply fires on every cycle as pitch rises. Replaced it with a two-panel original SVG: place coding shows where activity peaks along the basilar membrane, while temporal coding shows 250-Hz phase locking and a 1,000-Hz pooled volley in which three auditory-nerve fibers share cycles.
+
+**Files changed:** Added `docs/images/ch04/ch04_pitch_place_temporal_volley.svg`; updated Figure 4.9's path, alt text, and caption in `source/chapters/ch04-sensation-perception.md`; regenerated `docs/chapters/04-sensation-perception.html`; reconciled the Chapter 4 image manifest, durable visual inventory, temporary figure audit, and `HANDOFF.md`. The former raster remains preserved but unwired and is marked retired in the Chapter 4 manifest.
+
+**Validation:** The SVG parses as XML, carries no embedded figure number, and was visually checked at full artwork size and in the chapter's collapsed and expanded states. The Chapter 4 expansion regression passes all ten figures at desktop (1440×900), laptop (1280×800), compact desktop (1024×768), portrait phone (390×844), and landscape phone (844×390), with no page-level overflow and no poor expansion candidates. `pipeline/lint_chapters.py` passes 14/14 chapters and `git diff --check` passes. The Chapter 4 coherence checker retains its pre-existing `fail=2 review=5` baseline—an unmatched Helmholtz reference, a glossary-matching issue, and review-level apparatus notices—which this figure-only repair did not broaden into.
+
+**Not committed / remaining:** The P0 figure queue is complete. The next ranked issue is the user-confirmed P1 Figure 2.3 plot-order/coefficient-scale contradiction.
+
 ### 2026-07-30 - Chapter 3 Signaling and Autonomic Figure Repair (Codex)
 
 **Scope:** Replaced the former combined neurotransmitter/hormone Figure 3.5 with two consecutive full-width figures: focal neurotransmitter signaling (Figure 3.5) and HPA-axis endocrine signaling (Figure 3.6). Corrected the HPA brain callout to “Changes neural activity and behavior” while preserving the surrounding raster. Replaced the former autonomic figure with a four-organ sympathetic/parasympathetic comparison (Figure 3.10) that contains no cortisol, HPA, SAM, adrenal-medullary, adrenaline, or global-mode claim. Renumbered the remaining active figures to produce a continuous 3.1–3.11 sequence and marked F-006 resolved.

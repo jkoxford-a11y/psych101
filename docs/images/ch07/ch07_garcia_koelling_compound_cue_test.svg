@@ -1,0 +1,156 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+  <title id="title">Garcia and Koelling: the cue-consequence match matters</title>
+  <desc id="desc">A three-stage diagram of the Garcia and Koelling experiment. Rats first drink flavored water while light and tone cues occur together. One group then experiences illness and another experiences shock. When the cues are tested separately, the illness group strongly avoids the taste but weakly avoids the light and tone, while the shock group shows the reverse pattern. The observed result is selective cue-consequence learning; evolutionary preparedness is an interpretation.</desc>
+
+  <defs>
+    <filter id="shadow" x="-15%" y="-15%" width="130%" height="140%">
+      <feDropShadow dx="0" dy="7" stdDeviation="8" flood-color="#102A43" flood-opacity="0.12"/>
+    </filter>
+    <marker id="arrow-blue" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#2563EB"/>
+    </marker>
+    <marker id="arrow-slate" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#486581"/>
+    </marker>
+  </defs>
+
+  <rect width="1600" height="1000" fill="#F7FAFC"/>
+
+  <text x="800" y="68" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="45" font-weight="800" fill="#102A43">
+    Garcia &amp; Koelling: Selective Cue–Consequence Learning
+  </text>
+  <text x="800" y="112" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="23" fill="#486581">
+    The cues occurred together. The outcome determined which cue later controlled avoidance.
+  </text>
+
+  <!-- Stage 1: Compound cue -->
+  <g filter="url(#shadow)">
+    <rect x="55" y="165" width="440" height="660" rx="28" fill="#FFFFFF" stroke="#2563EB" stroke-width="3"/>
+  </g>
+  <path d="M83 165 H467 Q495 165 495 193 V270 H55 V193 Q55 165 83 165 Z" fill="#EAF2FF"/>
+  <circle cx="105" cy="217" r="25" fill="#2563EB"/>
+  <text x="105" y="226" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="25" font-weight="800" fill="#FFFFFF">1</text>
+  <text x="148" y="210" font-family="Segoe UI, Arial, sans-serif" font-size="28" font-weight="800" fill="#174EA6">COMPOUND CUE</text>
+  <text x="148" y="240" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700" fill="#2563EB">PRESENTED TOGETHER</text>
+
+  <text x="275" y="317" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="800" letter-spacing="1.2" fill="#486581">
+    SAME DRINKING EPISODE
+  </text>
+
+  <rect x="90" y="350" width="155" height="215" rx="24" fill="#FFF7ED" stroke="#EA580C" stroke-width="2.5"/>
+  <path d="M168 386 C143 419 132 438 132 457 C132 478 148 494 168 494 C188 494 204 478 204 457 C204 438 193 419 168 386 Z" fill="#FDBA74" stroke="#EA580C" stroke-width="3"/>
+  <text x="168" y="520" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="800" fill="#9A3412">Flavored</text>
+  <text x="168" y="546" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="800" fill="#9A3412">water</text>
+
+  <text x="275" y="457" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="40" font-weight="700" fill="#78909C">+</text>
+
+  <rect x="305" y="350" width="155" height="215" rx="24" fill="#F5F3FF" stroke="#7C3AED" stroke-width="2.5"/>
+  <circle cx="351" cy="431" r="25" fill="#DDD6FE" stroke="#7C3AED" stroke-width="3"/>
+  <path d="M342 425 Q351 409 360 425 M344 438 H358" fill="none" stroke="#7C3AED" stroke-width="3.5" stroke-linecap="round"/>
+  <path d="M389 414 Q409 431 389 448 M399 402 Q431 431 399 460" fill="none" stroke="#7C3AED" stroke-width="4" stroke-linecap="round"/>
+  <text x="383" y="520" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="800" fill="#5B21B6">Light +</text>
+  <text x="383" y="546" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="800" fill="#5B21B6">tone</text>
+
+  <rect x="93" y="598" width="364" height="150" rx="22" fill="#EFF6FF"/>
+  <text x="275" y="642" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="800" fill="#174EA6">
+    Both cues are present
+  </text>
+  <text x="275" y="674" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="800" fill="#174EA6">
+    while the rat drinks.
+  </text>
+  <text x="275" y="718" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="600" fill="#486581">
+    They are not trained separately.
+  </text>
+
+  <!-- Arrow from stage 1 -->
+  <line x1="510" y1="495" x2="548" y2="495" stroke="#2563EB" stroke-width="5" marker-end="url(#arrow-blue)"/>
+
+  <!-- Stage 2: Outcomes -->
+  <g filter="url(#shadow)">
+    <rect x="565" y="165" width="360" height="660" rx="28" fill="#FFFFFF" stroke="#D97706" stroke-width="3"/>
+  </g>
+  <path d="M593 165 H897 Q925 165 925 193 V270 H565 V193 Q565 165 593 165 Z" fill="#FFF1DD"/>
+  <circle cx="615" cy="217" r="25" fill="#D97706"/>
+  <text x="615" y="226" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="25" font-weight="800" fill="#FFFFFF">2</text>
+  <text x="658" y="210" font-family="Segoe UI, Arial, sans-serif" font-size="28" font-weight="800" fill="#8C3D05">OUTCOME</text>
+  <text x="658" y="240" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700" fill="#D97706">DIFFERS BY GROUP</text>
+
+  <text x="745" y="316" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="800" fill="#486581">
+    After the compound cue:
+  </text>
+
+  <rect x="610" y="360" width="270" height="155" rx="22" fill="#FFF7ED" stroke="#EA580C" stroke-width="2.5"/>
+  <circle cx="660" cy="410" r="27" fill="#EA580C"/>
+  <text x="660" y="418" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="800" fill="#FFFFFF">A</text>
+  <text x="706" y="405" font-family="Segoe UI, Arial, sans-serif" font-size="23" font-weight="800" fill="#9A3412">ILLNESS</text>
+  <text x="745" y="455" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="19" font-weight="600" fill="#713B0B">
+    Internal malaise
+  </text>
+  <text x="745" y="484" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="18" fill="#713B0B">
+    follows drinking
+  </text>
+
+  <rect x="610" y="580" width="270" height="155" rx="22" fill="#F5F3FF" stroke="#7C3AED" stroke-width="2.5"/>
+  <circle cx="660" cy="630" r="27" fill="#7C3AED"/>
+  <text x="660" y="638" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="800" fill="#FFFFFF">B</text>
+  <text x="706" y="625" font-family="Segoe UI, Arial, sans-serif" font-size="23" font-weight="800" fill="#5B21B6">SHOCK</text>
+  <text x="745" y="675" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="19" font-weight="600" fill="#4C1D95">
+    External pain
+  </text>
+  <text x="745" y="704" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="18" fill="#4C1D95">
+    follows drinking
+  </text>
+
+  <!-- Arrow from stage 2 -->
+  <line x1="940" y1="495" x2="978" y2="495" stroke="#2563EB" stroke-width="5" marker-end="url(#arrow-blue)"/>
+
+  <!-- Stage 3: Separate tests -->
+  <g filter="url(#shadow)">
+    <rect x="995" y="165" width="550" height="660" rx="28" fill="#FFFFFF" stroke="#0F766E" stroke-width="3"/>
+  </g>
+  <path d="M1023 165 H1517 Q1545 165 1545 193 V270 H995 V193 Q995 165 1023 165 Z" fill="#E8F7F4"/>
+  <circle cx="1045" cy="217" r="25" fill="#0F766E"/>
+  <text x="1045" y="226" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="25" font-weight="800" fill="#FFFFFF">3</text>
+  <text x="1088" y="210" font-family="Segoe UI, Arial, sans-serif" font-size="27" font-weight="800" fill="#115E59">SEPARATE CUE TESTS</text>
+  <text x="1088" y="240" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700" fill="#0F766E">SELECTIVE AVOIDANCE APPEARS</text>
+
+  <!-- Illness results -->
+  <rect x="1032" y="312" width="476" height="205" rx="22" fill="#FFFBF5" stroke="#FDBA74" stroke-width="2"/>
+  <text x="1064" y="350" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="800" fill="#9A3412">ILLNESS GROUP</text>
+  <rect x="1058" y="375" width="200" height="110" rx="17" fill="#FFEDD5" stroke="#EA580C" stroke-width="2.5"/>
+  <text x="1158" y="409" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700" fill="#713B0B">Taste alone</text>
+  <text x="1158" y="452" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="900" fill="#EA580C">STRONG</text>
+  <text x="1158" y="476" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" fill="#9A3412">avoidance</text>
+
+  <rect x="1282" y="375" width="200" height="110" rx="17" fill="#F1F5F9" stroke="#94A3B8" stroke-width="2"/>
+  <text x="1382" y="409" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700" fill="#475569">Light + tone</text>
+  <text x="1382" y="452" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="900" fill="#64748B">WEAK</text>
+  <text x="1382" y="476" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" fill="#475569">avoidance</text>
+
+  <!-- Shock results -->
+  <rect x="1032" y="550" width="476" height="205" rx="22" fill="#FAF8FF" stroke="#C4B5FD" stroke-width="2"/>
+  <text x="1064" y="588" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="800" fill="#5B21B6">SHOCK GROUP</text>
+  <rect x="1058" y="613" width="200" height="110" rx="17" fill="#F1F5F9" stroke="#94A3B8" stroke-width="2"/>
+  <text x="1158" y="647" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700" fill="#475569">Taste alone</text>
+  <text x="1158" y="690" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="900" fill="#64748B">WEAK</text>
+  <text x="1158" y="714" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" fill="#475569">avoidance</text>
+
+  <rect x="1282" y="613" width="200" height="110" rx="17" fill="#EDE9FE" stroke="#7C3AED" stroke-width="2.5"/>
+  <text x="1382" y="647" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700" fill="#4C1D95">Light + tone</text>
+  <text x="1382" y="690" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="900" fill="#7C3AED">STRONG</text>
+  <text x="1382" y="714" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" fill="#5B21B6">avoidance</text>
+
+  <!-- Takeaway -->
+  <g filter="url(#shadow)">
+    <rect x="92" y="858" width="1416" height="112" rx="24" fill="#102A43"/>
+  </g>
+  <text x="800" y="898" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="800" letter-spacing="2" fill="#9FB3C8">
+    OBSERVED PATTERN
+  </text>
+  <text x="800" y="934" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="27" font-weight="800" fill="#FFFFFF">
+    Taste tracked illness. Light and tone tracked shock.
+  </text>
+  <text x="800" y="960" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="600" fill="#D9E2EC">
+    Evolutionary preparedness explains the selectivity; the experiment measured the learning pattern.
+  </text>
+</svg>

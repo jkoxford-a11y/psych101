@@ -220,12 +220,12 @@ Three-row dot-and-whisker diagram using fictional training-program results. The 
 
 ---
 
-## `ch02_correlation_direction_strength.png`
+## `ch02_correlation_direction_strength.svg`
 
 **Working title:** Correlation: Direction and Strength  
 **Placement:** In Section 2 immediately after the paragraph introducing the correlation coefficient. Replaced `fig_correlation_scatter.png`.  
 **Caption number:** Figure 2.3 (wired 2026-07-10).  
-**Status:** **Wired — use now.** Lower positive-direction arrow repaired and the complete figure rechecked 2026-07-28.
+**Status:** **Wired — use now.** Rebuilt as a deterministic SVG on 2026-07-30 so the five plots and coefficient scale run in the same direction: strong negative → zero → strong positive.
 **Recommended display:** `chapter-figure wide expandable` because the five scatterplots and labels benefit from enlargement on smaller screens.
 
 ### Caption
@@ -234,11 +234,11 @@ Three-row dot-and-whisker diagram using fictional training-program results. The 
 
 ### Alt text
 
-Five side-by-side scatterplots illustrate correlations ranging from strong positive to strong negative. The first shows points tightly clustered around an upward-sloping line, labeled approximately plus 0.90. The second shows a looser upward pattern, approximately plus 0.50. The middle panel shows scattered points with no clear straight-line pattern, approximately zero. The fourth shows a moderate downward pattern, approximately minus 0.50. The fifth shows points tightly clustered around a downward-sloping line, approximately minus 0.90. A brief legend explains that the sign indicates direction and values closer to negative one or positive one indicate stronger linear relationships.
+Five side-by-side scatterplots align with a coefficient scale from negative one on the left to positive one on the right. The first shows points tightly clustered around a downward-sloping line, labeled approximately minus 0.90. The second shows a looser downward pattern, approximately minus 0.50. The middle panel shows scattered points with no clear straight-line pattern, approximately zero. The fourth shows a moderate upward pattern, approximately plus 0.50. The fifth shows points tightly clustered around an upward-sloping line, approximately plus 0.90. Labels explain that the sign indicates direction and distance from zero indicates the strength of the linear relationship.
 
 ### Creation and attribution
 
-- **Creation method:** Original simulated educational infographic generated with ChatGPT image generation, July 2026, from project-specific direction and fictional scatterplot data; targeted lower positive-arrow correction generated 2026-07-28 with all plots, signs, coefficients, wording, and other layout held fixed.
+- **Creation method:** Original deterministic SVG created with project-specific simulated scatterplot data, 2026-07-30. It replaces the earlier generated raster so panel order, signs, coefficients, trend lines, and the −1-to-+1 scale are mechanically aligned.
 - **Direction and curation:** Jonathan K. Oxford.
 - **Attribution text:** Original simulated figure generated for Oxford Psychology 101 with ChatGPT image generation, 2026. Directed and curated by Jonathan K. Oxford. No external copyrighted image assets intentionally used.
 - **External source assets:** None intentionally used.
@@ -255,11 +255,11 @@ Five side-by-side scatterplots illustrate correlations ranging from strong posit
 
 ### Asset notes
 
-- **Generated dimensions:** 1536 × 1024 pixels.
-- **Aspect ratio:** 3:2. Use the wide/expandable display pattern rather than cropping.
+- **Generated dimensions:** 1600 × 1000 SVG viewBox.
+- **Aspect ratio:** 8:5. Use the wide/expandable display pattern rather than cropping.
 - **Embedded numbering:** None.
-- **Supersedes:** `fig_correlation_scatter.png`, which is visually inconsistent with the revised Chapter 2 figure set.
-- **Final filename:** `ch02_correlation_direction_strength.png`
+- **Supersedes:** `ch02_correlation_direction_strength.png`, whose positive-to-negative panel order contradicted its negative-to-positive coefficient scale; that raster had already superseded `fig_correlation_scatter.png`.
+- **Final filename:** `ch02_correlation_direction_strength.svg`
 
 ---
 

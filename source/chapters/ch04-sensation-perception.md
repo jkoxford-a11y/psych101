@@ -66,7 +66,8 @@ The first principle is that detection has a floor. Each sense organ requires som
 
 Detecting whether *something* is there is one problem. Detecting whether something *changed* is a related but separate problem, and it follows a different rule. Pick up a 1-pound weight, then a 2-pound weight — the difference is obvious. Now pick up a 10-pound weight, then an 11-pound weight — also a 1-pound difference, but it is much harder to notice. This is **Weber's Law**: the smallest detectable difference between two stimuli — the **difference threshold**, or **just noticeable difference (JND)** — is not a fixed amount, but a roughly constant *proportion* of the original stimulus's size (Weber, 1834; formalized by Fechner, 1860). A bigger stimulus needs a bigger absolute change before the difference registers, even though the proportional change required stays about the same. You can feel this directly: [try the Weber's Law demo in the Ch. 4 lab](../labs/ch04/webers-law.html).
 
-![Graph showing Weber's Law: as base intensity I increases along the x-axis, the just-noticeable difference ΔI increases proportionally, so that the ratio ΔI/I remains constant at 0.1 across all five data points plotted.](../images/ch04/fig_webers_law_jnd_proportion.png)
+![Figure 4.2 — Graph of Weber's Law with starting stimulus intensity on the horizontal axis and the just-noticeable difference on the vertical axis. Points at 20 and 2, 40 and 4, 80 and 8, 120 and 12, and 160 and 16 lie on a straight line labeled delta I equals 0.10 times I. A side panel shows that delta I divided by I remains 0.10 as the absolute change grows.](../images/ch04/ch04_weber_law_jnd_vs_intensity.svg)
+*Figure 4.2. Weber's Law: as starting intensity rises, the just-noticeable difference rises in direct proportion. In this example, ΔI/I = 0.10, so doubling the starting intensity doubles the smallest detectable change. Original figure.*
 
 > **Stop and Retrieve:** Before reading on — in your own words, what is the difference between an absolute threshold and a difference threshold, and how does Weber's Law connect to the second one?
 
@@ -252,9 +253,9 @@ Temporal coding becomes less precise as frequency rises, while place coding beco
 
 > **Stop and Retrieve:** Before moving on — in one sentence each, what does place theory explain well, and what does frequency theory explain well, about pitch perception?
 
-![Figure 4.9 — Instructional infographic titled "Pitch Is Coded in Two Ways." Top section shows a cutaway cochlea and an unrolled basilar membrane, labeled with frequency regions from high-frequency at the base to low-frequency at the apex, illustrating place theory. Bottom section shows waveform examples with neural firing patterns that follow the timing of lower-frequency sounds, illustrating temporal coding. Labels identify the scala vestibuli, scala tympani, Organ of Corti, basilar membrane, hair cells, and auditory nerve.](../images/ch04/fig_cochlea_place_frequency_pitch.png)
+![Figure 4.9 — Two-panel diagram of pitch coding. The place-code panel shows high-frequency activity peaking near the stiff base of the basilar membrane and low-frequency activity peaking toward the flexible apex. The temporal-code panel shows spikes phase-locking to a 250-Hz waveform and a 1,000-Hz volley pattern: three auditory-nerve fibers each fire on only some cycles, while their pooled spikes preserve the wave's repeating period.](../images/ch04/ch04_pitch_place_temporal_volley.svg)
 
-*Figure 4.9. Pitch is coded with complementary place and temporal information. Basilar-membrane location is especially informative for high frequencies; phase-locked timing patterns contribute most at lower frequencies. Neither mechanism alone explains pitch across the full hearing range.*
+*Figure 4.9. Pitch is coded with complementary place and temporal information. Basilar-membrane location is especially informative for high frequencies. At lower frequencies, spikes can phase-lock to the sound wave; as the rate rises, groups of auditory-nerve fibers can share cycles in a volley pattern. Neither mechanism alone explains pitch across the full hearing range.*
 
 #### Somatosensation: Touch, Temperature, and Pain
 

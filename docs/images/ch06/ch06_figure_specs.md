@@ -65,7 +65,7 @@ Preferred figure style:
 
 ## Status
 
-**High priority new build.** This should be the chapter's visual thesis.
+**Retained for the current edition by instructor decision, 2026-07-30.** The current `fig_sleep_active_maintenance_system.png` remains the chapter's visual thesis. Its direct active-maintenance message takes priority over adding evidence qualifications to the artwork. Reassess the five-panel organization and glymphatic evidence framing in a future book revision; do not re-propose this repair during the current figure pass.
 
 ## Placement
 
@@ -299,15 +299,11 @@ Decision completed: retain the figure as a practical lever diagram. The rebuilt 
 
 ## Current file
 
-`fig_sleep_hypnogram.png/.svg`
-
-## Suggested future filename if revised
-
-`ch06_sleep_architecture_hypnogram_nrem_rem_cycles.png`
+`ch06_sleep_architecture_hypnogram_nrem_rem_cycles.svg`
 
 ## Status
 
-**Active in current chapter source as Fig. 6.2. Review before final approval.**
+**Active in current chapter source as Figure 6.4. Rebuilt 2026-07-30.** The hypnogram retains the stage-distribution teaching job while removing the former early/middle/late-night function timetable.
 
 ## Placement
 
@@ -347,17 +343,21 @@ Required visual features:
 - Do not imply vivid dreaming only ever occurs in REM, if the caption has space for nuance.
 - Keep graph readable at slide distance.
 
-## Caption draft
+## Caption
 
-A typical night's sleep cycles through NREM and REM stages about every 90 minutes. Deep NREM sleep is concentrated in the first half of the night, while REM periods lengthen toward morning. The figure is simplified: real sleep varies across individuals, age, stress, alcohol use, illness, and sleep disorders.
+Sleep stage cycling across a typical night. Deep NREM sleep is concentrated earlier, REM recurs and lengthens toward morning, and stage proportions vary across cycles. The architecture shifts; sleep's biological functions overlap across stages and time.
 
-## Alt text draft
+## Alt text
 
-A hypnogram plots sleep stage across eight hours. The line descends from wake into NREM stages, reaches deep NREM 3 early in the night, then cycles back toward REM several times. Later cycles contain less deep sleep and longer REM periods.
+A typical simplified eight-hour hypnogram shows repeated movement through wake, REM, and NREM stages. NREM 3 is concentrated in the first two cycles, while REM periods recur and lengthen toward morning. Three summary cards describe those architecture shifts without assigning restoration, memory, or regulation to exclusive clock blocks.
 
 ## Attribution
 
-Original figure generated/programmed for Oxford Psychology 101, 2026. Safe for public sharing pending final accuracy review.
+Original programmatic SVG created for Oxford Psychology 101, 2026. Safe for public sharing.
+
+## Retired predecessor
+
+`fig_sleep_architecture_cycles.png` remains preserved but unwired. Its lower third assigned restoration, memory consolidation, and emotional processing to exclusive early/middle/late-night blocks and should not be restored.
 
 ---
 

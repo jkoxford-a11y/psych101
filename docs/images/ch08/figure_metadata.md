@@ -4,9 +4,9 @@ All six figures are original hand-coded SVGs for Oxford Psychology 101, 2026. Sa
 
 ## `ch08_atkinson_shiffrin_three_box_model.svg`
 
-**Caption:** The Atkinson-Shiffrin model maps memory as three stages that differ in capacity and duration: a brief, high-capacity sensory buffer; a sharply limited short-term/working memory; and an effectively unlimited long-term store. The three "boxes" are a simplification: modern research treats them as functionally distinct processes rather than physical containers, but the map is still useful for locating where memory succeeds or fails.
+**Caption:** The classic Atkinson-Shiffrin model maps memory as three stages: a brief, high-capacity sensory buffer; a sharply limited short-term store; and a very large long-term store, where some memories persist for decades. The boxes represent functionally distinct stages, not physical containers.
 
-**Alt text:** A three-panel flow diagram shows information moving from Sensory Memory, with high capacity and a duration under one second, to Short-Term/Working Memory, with about seven plus or minus two items and a duration of seconds to about one minute, to Long-Term Memory, with effectively unlimited capacity and a lifetime duration. Arrows labeled Attention and Encoding connect the panels moving forward; a thinner return arrow labeled Retrieval moves from Long-Term Memory back to Short-Term/Working Memory. Small downward arrows beneath each panel indicate information can be lost at every stage.
+**Alt text:** A three-panel flow diagram titled Classic Atkinson-Shiffrin Model shows information moving from Sensory Memory, with high capacity and a duration under one second, to Short-Term/Working Memory, labeled sharply limited with the classic estimate of seven plus or minus two items and a duration of seconds to about one minute, to Long-Term Memory, with very large capacity and some memories lasting decades. Arrows labeled Attention and Encoding connect the panels moving forward; a thinner return arrow labeled Retrieval moves from Long-Term Memory back to Short-Term/Working Memory. Small downward arrows beneath each panel indicate information can be lost or not retrieved at every stage.
 
 ## `ch08_memory_taxonomy_tree.svg`
 

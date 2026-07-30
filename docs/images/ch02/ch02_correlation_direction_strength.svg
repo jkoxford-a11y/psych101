@@ -1,0 +1,219 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+  <title id="title">Correlation direction and strength from negative one to positive one</title>
+  <desc id="desc">Five scatterplots are ordered from strong negative correlation on the left through moderate negative, no linear relationship, moderate positive, and strong positive on the right. The plots align with a coefficient scale running from negative one through zero to positive one.</desc>
+  <defs>
+    <linearGradient id="page" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fbfdff"/>
+      <stop offset="1" stop-color="#f1f5f9"/>
+    </linearGradient>
+    <linearGradient id="r-scale" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#b42318"/>
+      <stop offset="0.5" stop-color="#98a2b3"/>
+      <stop offset="1" stop-color="#175cd3"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#101828" flood-opacity="0.12"/>
+    </filter>
+    <style>
+      .title { font: 700 56px Arial, Helvetica, sans-serif; fill: #101828; }
+      .subtitle { font: 400 27px Arial, Helvetica, sans-serif; fill: #344054; }
+      .card-title { font: 700 28px Arial, Helvetica, sans-serif; fill: #101828; }
+      .card-body { font: 400 23px Arial, Helvetica, sans-serif; fill: #344054; }
+      .panel-title { font: 700 25px Arial, Helvetica, sans-serif; }
+      .r-label { font: 700 23px Arial, Helvetica, sans-serif; }
+      .axis-label { font: 700 20px Arial, Helvetica, sans-serif; fill: #101828; }
+      .caption { font: 400 21px Arial, Helvetica, sans-serif; fill: #344054; }
+      .scale-main { font: 700 25px Arial, Helvetica, sans-serif; }
+      .scale-sub { font: 400 20px Arial, Helvetica, sans-serif; fill: #475467; }
+      .footer { font: 700 27px Arial, Helvetica, sans-serif; fill: #ffffff; }
+      .axis { stroke: #101828; stroke-width: 3; stroke-linecap: round; }
+      .trend-neg { stroke: #b42318; stroke-width: 4; stroke-linecap: round; }
+      .trend-pos { stroke: #175cd3; stroke-width: 4; stroke-linecap: round; }
+      .trend-zero { stroke: #667085; stroke-width: 4; stroke-linecap: round; }
+      .dot-neg { fill: #d92d20; stroke: #7a271a; stroke-width: 1.5; }
+      .dot-pos { fill: #2e90fa; stroke: #1849a9; stroke-width: 1.5; }
+      .dot-zero { fill: #667085; stroke: #344054; stroke-width: 1.5; }
+    </style>
+  </defs>
+
+  <rect width="1600" height="1000" fill="url(#page)"/>
+
+  <text class="title" x="800" y="75" text-anchor="middle">Correlation: direction and strength</text>
+  <text class="subtitle" x="800" y="118" text-anchor="middle">The sign tells you the direction. Distance from zero tells you the strength of the linear relationship.</text>
+
+  <g filter="url(#shadow)">
+    <rect x="70" y="150" width="1460" height="140" rx="24" fill="#ffffff" stroke="#b2ccff" stroke-width="2"/>
+  </g>
+  <line x1="555" y1="177" x2="555" y2="263" stroke="#d0d5dd" stroke-width="2"/>
+  <line x1="1045" y1="177" x2="1045" y2="263" stroke="#d0d5dd" stroke-width="2"/>
+
+  <circle cx="125" cy="220" r="40" fill="#fee4e2"/>
+  <path d="M105 238 L143 200 M113 200 H143 V230" fill="none" stroke="#b42318" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <text class="card-title" x="185" y="198">Direction</text>
+  <text class="card-body" x="185" y="230">Negative slopes down;</text>
+  <text class="card-body" x="185" y="258">positive slopes up.</text>
+
+  <circle cx="620" cy="220" r="40" fill="#eaf2ff"/>
+  <circle cx="604" cy="220" r="7" fill="#175cd3"/>
+  <circle cx="620" cy="220" r="7" fill="#175cd3"/>
+  <circle cx="636" cy="220" r="7" fill="#175cd3"/>
+  <text class="card-title" x="680" y="198">Strength</text>
+  <text class="card-body" x="680" y="230">Values nearer −1 or +1</text>
+  <text class="card-body" x="680" y="258">form tighter lines.</text>
+
+  <rect x="1090" y="180" width="395" height="80" rx="16" fill="#f9fafb" stroke="#98a2b3" stroke-width="2"/>
+  <text class="card-title" x="1122" y="214"><tspan font-style="italic">r</tspan> ranges from −1 to +1</text>
+  <text class="card-body" x="1122" y="246"><tspan font-style="italic">r</tspan> = 0 means no linear relationship.</text>
+
+  <!-- Panel 1: strong negative -->
+  <g transform="translate(60 325)">
+    <rect x="0" y="0" width="270" height="400" rx="20" fill="#fff7f6" stroke="#fecdca" stroke-width="2"/>
+    <text class="panel-title" x="135" y="38" text-anchor="middle" fill="#b42318">Strong negative</text>
+    <text class="r-label" x="135" y="70" text-anchor="middle" fill="#b42318">r ≈ −0.90</text>
+    <line class="axis" x1="38" y1="315" x2="238" y2="315"/>
+    <line class="axis" x1="38" y1="315" x2="38" y2="100"/>
+    <text class="axis-label" x="242" y="337">X</text>
+    <text class="axis-label" x="19" y="103">Y</text>
+    <line class="trend-neg" x1="55" y1="115" x2="225" y2="297"/>
+    <g class="dot-neg">
+      <circle cx="58" cy="119" r="6"/><circle cx="69" cy="135" r="6"/>
+      <circle cx="79" cy="139" r="6"/><circle cx="88" cy="160" r="6"/>
+      <circle cx="99" cy="166" r="6"/><circle cx="109" cy="178" r="6"/>
+      <circle cx="117" cy="193" r="6"/><circle cx="129" cy="199" r="6"/>
+      <circle cx="139" cy="218" r="6"/><circle cx="149" cy="222" r="6"/>
+      <circle cx="158" cy="240" r="6"/><circle cx="169" cy="245" r="6"/>
+      <circle cx="178" cy="260" r="6"/><circle cx="188" cy="265" r="6"/>
+      <circle cx="198" cy="282" r="6"/><circle cx="211" cy="286" r="6"/>
+      <circle cx="82" cy="150" r="6"/><circle cx="123" cy="207" r="6"/>
+      <circle cx="153" cy="231" r="6"/><circle cx="204" cy="294" r="6"/>
+    </g>
+    <text class="caption" x="135" y="355" text-anchor="middle">As X increases,</text>
+    <text class="caption" x="135" y="382" text-anchor="middle">Y decreases consistently.</text>
+  </g>
+
+  <!-- Panel 2: moderate negative -->
+  <g transform="translate(365 325)">
+    <rect x="0" y="0" width="270" height="400" rx="20" fill="#fffbfa" stroke="#fecdca" stroke-width="2"/>
+    <text class="panel-title" x="135" y="38" text-anchor="middle" fill="#b42318">Moderate negative</text>
+    <text class="r-label" x="135" y="70" text-anchor="middle" fill="#b42318">r ≈ −0.50</text>
+    <line class="axis" x1="38" y1="315" x2="238" y2="315"/>
+    <line class="axis" x1="38" y1="315" x2="38" y2="100"/>
+    <text class="axis-label" x="242" y="337">X</text>
+    <text class="axis-label" x="19" y="103">Y</text>
+    <line class="trend-neg" x1="55" y1="128" x2="225" y2="286"/>
+    <g class="dot-neg">
+      <circle cx="56" cy="158" r="6"/><circle cx="66" cy="205" r="6"/>
+      <circle cx="77" cy="138" r="6"/><circle cx="88" cy="226" r="6"/>
+      <circle cx="97" cy="177" r="6"/><circle cx="106" cy="249" r="6"/>
+      <circle cx="116" cy="196" r="6"/><circle cx="126" cy="219" r="6"/>
+      <circle cx="136" cy="165" r="6"/><circle cx="146" cy="258" r="6"/>
+      <circle cx="156" cy="223" r="6"/><circle cx="166" cy="276" r="6"/>
+      <circle cx="176" cy="206" r="6"/><circle cx="187" cy="252" r="6"/>
+      <circle cx="197" cy="286" r="6"/><circle cx="211" cy="235" r="6"/>
+      <circle cx="72" cy="187" r="6"/><circle cx="112" cy="151" r="6"/>
+      <circle cx="154" cy="193" r="6"/><circle cx="203" cy="264" r="6"/>
+    </g>
+    <text class="caption" x="135" y="355" text-anchor="middle">As X increases,</text>
+    <text class="caption" x="135" y="382" text-anchor="middle">Y tends to decrease.</text>
+  </g>
+
+  <!-- Panel 3: zero -->
+  <g transform="translate(670 325)">
+    <rect x="0" y="0" width="260" height="400" rx="20" fill="#f9fafb" stroke="#d0d5dd" stroke-width="2"/>
+    <text class="panel-title" x="130" y="38" text-anchor="middle" fill="#344054">No linear relationship</text>
+    <text class="r-label" x="130" y="70" text-anchor="middle" fill="#475467">r ≈ 0.00</text>
+    <line class="axis" x1="33" y1="315" x2="228" y2="315"/>
+    <line class="axis" x1="33" y1="315" x2="33" y2="100"/>
+    <text class="axis-label" x="232" y="337">X</text>
+    <text class="axis-label" x="14" y="103">Y</text>
+    <line class="trend-zero" x1="50" y1="211" x2="215" y2="211"/>
+    <g class="dot-zero">
+      <circle cx="55" cy="132" r="6"/><circle cx="68" cy="262" r="6"/>
+      <circle cx="78" cy="192" r="6"/><circle cx="88" cy="293" r="6"/>
+      <circle cx="99" cy="155" r="6"/><circle cx="108" cy="235" r="6"/>
+      <circle cx="118" cy="180" r="6"/><circle cx="128" cy="279" r="6"/>
+      <circle cx="138" cy="119" r="6"/><circle cx="148" cy="218" r="6"/>
+      <circle cx="158" cy="291" r="6"/><circle cx="168" cy="166" r="6"/>
+      <circle cx="178" cy="248" r="6"/><circle cx="188" cy="130" r="6"/>
+      <circle cx="198" cy="211" r="6"/><circle cx="211" cy="281" r="6"/>
+      <circle cx="73" cy="226" r="6"/><circle cx="113" cy="127" r="6"/>
+      <circle cx="154" cy="198" r="6"/><circle cx="207" cy="174" r="6"/>
+    </g>
+    <text class="caption" x="130" y="355" text-anchor="middle">No clear</text>
+    <text class="caption" x="130" y="382" text-anchor="middle">straight-line trend.</text>
+  </g>
+
+  <!-- Panel 4: moderate positive -->
+  <g transform="translate(965 325)">
+    <rect x="0" y="0" width="270" height="400" rx="20" fill="#f9fbff" stroke="#b2ccff" stroke-width="2"/>
+    <text class="panel-title" x="135" y="38" text-anchor="middle" fill="#175cd3">Moderate positive</text>
+    <text class="r-label" x="135" y="70" text-anchor="middle" fill="#175cd3">r ≈ +0.50</text>
+    <line class="axis" x1="38" y1="315" x2="238" y2="315"/>
+    <line class="axis" x1="38" y1="315" x2="38" y2="100"/>
+    <text class="axis-label" x="242" y="337">X</text>
+    <text class="axis-label" x="19" y="103">Y</text>
+    <line class="trend-pos" x1="55" y1="286" x2="225" y2="128"/>
+    <g class="dot-pos">
+      <circle cx="56" cy="254" r="6"/><circle cx="66" cy="207" r="6"/>
+      <circle cx="77" cy="274" r="6"/><circle cx="88" cy="186" r="6"/>
+      <circle cx="97" cy="235" r="6"/><circle cx="106" cy="163" r="6"/>
+      <circle cx="116" cy="216" r="6"/><circle cx="126" cy="193" r="6"/>
+      <circle cx="136" cy="247" r="6"/><circle cx="146" cy="154" r="6"/>
+      <circle cx="156" cy="189" r="6"/><circle cx="166" cy="136" r="6"/>
+      <circle cx="176" cy="206" r="6"/><circle cx="187" cy="160" r="6"/>
+      <circle cx="197" cy="126" r="6"/><circle cx="211" cy="177" r="6"/>
+      <circle cx="72" cy="225" r="6"/><circle cx="112" cy="273" r="6"/>
+      <circle cx="154" cy="219" r="6"/><circle cx="203" cy="148" r="6"/>
+    </g>
+    <text class="caption" x="135" y="355" text-anchor="middle">As X increases,</text>
+    <text class="caption" x="135" y="382" text-anchor="middle">Y tends to increase.</text>
+  </g>
+
+  <!-- Panel 5: strong positive -->
+  <g transform="translate(1270 325)">
+    <rect x="0" y="0" width="270" height="400" rx="20" fill="#f5f9ff" stroke="#b2ccff" stroke-width="2"/>
+    <text class="panel-title" x="135" y="38" text-anchor="middle" fill="#175cd3">Strong positive</text>
+    <text class="r-label" x="135" y="70" text-anchor="middle" fill="#175cd3">r ≈ +0.90</text>
+    <line class="axis" x1="38" y1="315" x2="238" y2="315"/>
+    <line class="axis" x1="38" y1="315" x2="38" y2="100"/>
+    <text class="axis-label" x="242" y="337">X</text>
+    <text class="axis-label" x="19" y="103">Y</text>
+    <line class="trend-pos" x1="55" y1="297" x2="225" y2="115"/>
+    <g class="dot-pos">
+      <circle cx="58" cy="293" r="6"/><circle cx="69" cy="277" r="6"/>
+      <circle cx="79" cy="273" r="6"/><circle cx="88" cy="252" r="6"/>
+      <circle cx="99" cy="246" r="6"/><circle cx="109" cy="234" r="6"/>
+      <circle cx="117" cy="219" r="6"/><circle cx="129" cy="213" r="6"/>
+      <circle cx="139" cy="194" r="6"/><circle cx="149" cy="190" r="6"/>
+      <circle cx="158" cy="172" r="6"/><circle cx="169" cy="167" r="6"/>
+      <circle cx="178" cy="152" r="6"/><circle cx="188" cy="147" r="6"/>
+      <circle cx="198" cy="130" r="6"/><circle cx="211" cy="126" r="6"/>
+      <circle cx="82" cy="262" r="6"/><circle cx="123" cy="205" r="6"/>
+      <circle cx="153" cy="181" r="6"/><circle cx="204" cy="118" r="6"/>
+    </g>
+    <text class="caption" x="135" y="355" text-anchor="middle">As X increases,</text>
+    <text class="caption" x="135" y="382" text-anchor="middle">Y increases consistently.</text>
+  </g>
+
+  <!-- Coefficient scale -->
+  <text class="scale-main" x="800" y="770" text-anchor="middle" fill="#101828">The coefficient scale matches the plot order</text>
+  <rect x="170" y="805" width="1260" height="18" rx="9" fill="url(#r-scale)"/>
+  <g stroke="#101828" stroke-width="3">
+    <line x1="170" y1="793" x2="170" y2="836"/>
+    <line x1="485" y1="799" x2="485" y2="830"/>
+    <line x1="800" y1="793" x2="800" y2="836"/>
+    <line x1="1115" y1="799" x2="1115" y2="830"/>
+    <line x1="1430" y1="793" x2="1430" y2="836"/>
+  </g>
+  <text class="scale-main" x="170" y="867" text-anchor="middle" fill="#b42318">−1</text>
+  <text class="scale-main" x="485" y="867" text-anchor="middle" fill="#b42318">−0.5</text>
+  <text class="scale-main" x="800" y="867" text-anchor="middle" fill="#475467">0</text>
+  <text class="scale-main" x="1115" y="867" text-anchor="middle" fill="#175cd3">+0.5</text>
+  <text class="scale-main" x="1430" y="867" text-anchor="middle" fill="#175cd3">+1</text>
+  <text class="scale-sub" x="170" y="895" text-anchor="middle">strong negative</text>
+  <text class="scale-sub" x="800" y="895" text-anchor="middle">no linear relationship</text>
+  <text class="scale-sub" x="1430" y="895" text-anchor="middle">strong positive</text>
+
+  <rect x="210" y="925" width="1180" height="55" rx="27" fill="#101828"/>
+  <text class="footer" x="800" y="962" text-anchor="middle">Correlation describes a pattern. It does not prove cause and effect.</text>
+</svg>

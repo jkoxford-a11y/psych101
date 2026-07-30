@@ -1,0 +1,185 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1050" viewBox="0 0 1600 1050" role="img" aria-labelledby="title desc">
+  <title id="title">Pitch uses complementary place and temporal information</title>
+  <desc id="desc">The top panel shows that different sound frequencies produce peak activity at different places along the basilar membrane. The bottom panel shows phase-locked auditory-nerve spikes. At a faster one-thousand-hertz rate, three fibers each fire on only some cycles, while their pooled volley preserves the sound's repeating period.</desc>
+  <defs>
+    <linearGradient id="page" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f8fbff"/>
+      <stop offset="1" stop-color="#eef4fb"/>
+    </linearGradient>
+    <linearGradient id="membrane" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#dbeafe"/>
+      <stop offset="0.55" stop-color="#d1fae5"/>
+      <stop offset="1" stop-color="#fee2e2"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="5" stdDeviation="7" flood-color="#0f2744" flood-opacity="0.12"/>
+    </filter>
+    <marker id="arrow-blue" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0,0 L12,6 L0,12 Z" fill="#1d4ed8"/>
+    </marker>
+    <style>
+      .title { font: 700 54px Arial, Helvetica, sans-serif; fill: #102a43; }
+      .subtitle { font: 400 27px Arial, Helvetica, sans-serif; fill: #486581; }
+      .panel-title { font: 700 34px Arial, Helvetica, sans-serif; fill: #102a43; }
+      .panel-kicker { font: 700 24px Arial, Helvetica, sans-serif; letter-spacing: 1.2px; }
+      .body { font: 400 24px Arial, Helvetica, sans-serif; fill: #243b53; }
+      .body-bold { font: 700 24px Arial, Helvetica, sans-serif; fill: #102a43; }
+      .label { font: 700 23px Arial, Helvetica, sans-serif; fill: #102a43; }
+      .small { font: 400 20px Arial, Helvetica, sans-serif; fill: #486581; }
+      .small-bold { font: 700 20px Arial, Helvetica, sans-serif; fill: #243b53; }
+      .tiny { font: 400 18px Arial, Helvetica, sans-serif; fill: #486581; }
+      .axis { stroke: #829ab1; stroke-width: 2; }
+      .guide { stroke: #bcccdc; stroke-width: 2; stroke-dasharray: 6 7; }
+      .spike { stroke: #0f766e; stroke-width: 5; stroke-linecap: round; }
+      .pool-spike { stroke: #1d4ed8; stroke-width: 6; stroke-linecap: round; }
+    </style>
+  </defs>
+
+  <rect width="1600" height="1050" fill="url(#page)"/>
+
+  <text class="title" x="70" y="78">Pitch is coded with two kinds of information</text>
+  <text class="subtitle" x="72" y="120">The cochlea tells the brain <tspan font-weight="700" fill="#1d4ed8">where</tspan> activity peaks and <tspan font-weight="700" fill="#0f766e">when</tspan> auditory-nerve spikes occur.</text>
+
+  <!-- Place-code panel -->
+  <g filter="url(#shadow)">
+    <rect x="55" y="155" width="1490" height="350" rx="26" fill="#ffffff" stroke="#9fb3c8" stroke-width="2"/>
+  </g>
+  <text class="panel-kicker" x="90" y="205" fill="#1d4ed8">PLACE CODE</text>
+  <text class="panel-title" x="90" y="246">Where does activity peak?</text>
+  <text class="body" x="90" y="287">Different frequencies drive the strongest response at different locations along the basilar membrane.</text>
+
+  <rect x="115" y="335" width="220" height="58" rx="14" fill="#e8f0ff"/>
+  <text class="label" x="225" y="363" text-anchor="middle" fill="#1d4ed8">BASE</text>
+  <text class="tiny" x="225" y="385" text-anchor="middle">narrower and stiffer</text>
+  <rect x="1265" y="335" width="220" height="58" rx="14" fill="#fff0f0"/>
+  <text class="label" x="1375" y="363" text-anchor="middle" fill="#b91c1c">APEX</text>
+  <text class="tiny" x="1375" y="385" text-anchor="middle">wider and more flexible</text>
+
+  <path d="M330 353 L1270 327 L1270 459 L330 433 Z" fill="url(#membrane)" stroke="#627d98" stroke-width="3"/>
+  <path d="M330 421 L1270 447" fill="none" stroke="#9fb3c8" stroke-width="4"/>
+  <g stroke="#9fb3c8" stroke-width="2">
+    <line x1="385" y1="351" x2="385" y2="435"/>
+    <line x1="455" y1="349" x2="455" y2="437"/>
+    <line x1="535" y1="347" x2="535" y2="439"/>
+    <line x1="625" y1="344" x2="625" y2="441"/>
+    <line x1="725" y1="341" x2="725" y2="444"/>
+    <line x1="835" y1="338" x2="835" y2="447"/>
+    <line x1="955" y1="335" x2="955" y2="450"/>
+    <line x1="1085" y1="332" x2="1085" y2="453"/>
+    <line x1="1195" y1="329" x2="1195" y2="456"/>
+  </g>
+
+  <path d="M365 421 C392 419 399 373 425 349 C451 373 457 420 487 424 Z" fill="#3b82f6" fill-opacity="0.84" stroke="#1d4ed8" stroke-width="3"/>
+  <line x1="425" y1="349" x2="425" y2="326" stroke="#1d4ed8" stroke-width="3"/>
+  <text class="small-bold" x="425" y="319" text-anchor="middle" fill="#1d4ed8">8,000 Hz</text>
+  <text class="tiny" x="425" y="342" text-anchor="middle">high-frequency peak</text>
+
+  <path d="M1040 453 C1085 446 1100 393 1144 366 C1188 393 1204 449 1250 457 Z" fill="#ef4444" fill-opacity="0.74" stroke="#b91c1c" stroke-width="3"/>
+  <line x1="1144" y1="366" x2="1144" y2="326" stroke="#b91c1c" stroke-width="3"/>
+  <text class="small-bold" x="1144" y="319" text-anchor="middle" fill="#b91c1c">250 Hz</text>
+  <text class="tiny" x="1144" y="342" text-anchor="middle">low-frequency peak</text>
+
+  <path d="M560 472 H965" fill="none" stroke="#1d4ed8" stroke-width="3" marker-end="url(#arrow-blue)"/>
+  <text class="small-bold" x="762" y="464" text-anchor="middle">The place of peak activity shifts with frequency</text>
+
+  <!-- Temporal-code panel -->
+  <g filter="url(#shadow)">
+    <rect x="55" y="535" width="1490" height="425" rx="26" fill="#ffffff" stroke="#9fb3c8" stroke-width="2"/>
+  </g>
+  <text class="panel-kicker" x="90" y="585" fill="#0f766e">TEMPORAL CODE</text>
+  <text class="panel-title" x="90" y="626">When do spikes occur?</text>
+  <text class="body" x="90" y="668">At lower frequencies, spikes align with a consistent phase of the sound wave. The repeating interval carries pitch information.</text>
+
+  <line x1="800" y1="690" x2="800" y2="915" stroke="#d9e2ec" stroke-width="3"/>
+
+  <!-- 250-Hz example -->
+  <rect x="90" y="695" width="655" height="205" rx="18" fill="#f0fdfa" stroke="#99f6e4" stroke-width="2"/>
+  <text class="label" x="120" y="735" fill="#0f766e">Illustrative lower rate: 250 Hz</text>
+  <text class="small" x="120" y="765">One auditory-nerve fiber can phase-lock across successive cycles.</text>
+  <line class="axis" x1="135" y1="825" x2="705" y2="825"/>
+  <path d="M145 825
+           C168 775 192 775 215 825
+           C238 875 262 875 285 825
+           C308 775 332 775 355 825
+           C378 875 402 875 425 825
+           C448 775 472 775 495 825
+           C518 875 542 875 565 825
+           C588 775 612 775 635 825
+           C658 875 682 875 705 825"
+        fill="none" stroke="#0f766e" stroke-width="4"/>
+  <g class="spike">
+    <line x1="180" y1="858" x2="180" y2="890"/>
+    <line x1="320" y1="858" x2="320" y2="890"/>
+    <line x1="460" y1="858" x2="460" y2="890"/>
+    <line x1="600" y1="858" x2="600" y2="890"/>
+  </g>
+  <g class="guide">
+    <line x1="180" y1="775" x2="180" y2="894"/>
+    <line x1="320" y1="775" x2="320" y2="894"/>
+    <line x1="460" y1="775" x2="460" y2="894"/>
+    <line x1="600" y1="775" x2="600" y2="894"/>
+  </g>
+  <text class="tiny" x="122" y="882">Fiber A</text>
+
+  <!-- 1,000-Hz volley example -->
+  <rect x="855" y="695" width="655" height="205" rx="18" fill="#eef4ff" stroke="#bfdbfe" stroke-width="2"/>
+  <text class="label" x="885" y="735" fill="#1d4ed8">Faster temporal rate: 1,000 Hz</text>
+  <text class="small" x="885" y="765">Fibers share the cycles; no single fiber must fire on every one.</text>
+  <line class="axis" x1="890" y1="806" x2="1475" y2="806"/>
+  <path d="M895 806
+           C905 781 915 781 925 806 C935 831 945 831 955 806
+           C965 781 975 781 985 806 C995 831 1005 831 1015 806
+           C1025 781 1035 781 1045 806 C1055 831 1065 831 1075 806
+           C1085 781 1095 781 1105 806 C1115 831 1125 831 1135 806
+           C1145 781 1155 781 1165 806 C1175 831 1185 831 1195 806
+           C1205 781 1215 781 1225 806 C1235 831 1245 831 1255 806
+           C1265 781 1275 781 1285 806 C1295 831 1305 831 1315 806
+           C1325 781 1335 781 1345 806 C1355 831 1365 831 1375 806
+           C1385 781 1395 781 1405 806 C1415 831 1425 831 1435 806
+           C1445 781 1455 781 1465 806"
+        fill="none" stroke="#1d4ed8" stroke-width="3"/>
+
+  <text class="tiny" x="885" y="844">Fiber A</text>
+  <text class="tiny" x="885" y="868">Fiber B</text>
+  <text class="tiny" x="885" y="892">Fiber C</text>
+  <text class="tiny" x="885" y="925" font-weight="700" fill="#1d4ed8">Pooled volley</text>
+
+  <g class="guide">
+    <line x1="935" y1="778" x2="935" y2="930"/>
+    <line x1="995" y1="778" x2="995" y2="930"/>
+    <line x1="1055" y1="778" x2="1055" y2="930"/>
+    <line x1="1115" y1="778" x2="1115" y2="930"/>
+    <line x1="1175" y1="778" x2="1175" y2="930"/>
+    <line x1="1235" y1="778" x2="1235" y2="930"/>
+    <line x1="1295" y1="778" x2="1295" y2="930"/>
+    <line x1="1355" y1="778" x2="1355" y2="930"/>
+    <line x1="1415" y1="778" x2="1415" y2="930"/>
+  </g>
+  <g class="spike">
+    <line x1="935" y1="824" x2="935" y2="844"/>
+    <line x1="1115" y1="824" x2="1115" y2="844"/>
+    <line x1="1295" y1="824" x2="1295" y2="844"/>
+    <line x1="995" y1="848" x2="995" y2="868"/>
+    <line x1="1175" y1="848" x2="1175" y2="868"/>
+    <line x1="1355" y1="848" x2="1355" y2="868"/>
+    <line x1="1055" y1="872" x2="1055" y2="892"/>
+    <line x1="1235" y1="872" x2="1235" y2="892"/>
+    <line x1="1415" y1="872" x2="1415" y2="892"/>
+  </g>
+  <g class="pool-spike">
+    <line x1="935" y1="902" x2="935" y2="928"/>
+    <line x1="995" y1="902" x2="995" y2="928"/>
+    <line x1="1055" y1="902" x2="1055" y2="928"/>
+    <line x1="1115" y1="902" x2="1115" y2="928"/>
+    <line x1="1175" y1="902" x2="1175" y2="928"/>
+    <line x1="1235" y1="902" x2="1235" y2="928"/>
+    <line x1="1295" y1="902" x2="1295" y2="928"/>
+    <line x1="1355" y1="902" x2="1355" y2="928"/>
+    <line x1="1415" y1="902" x2="1415" y2="928"/>
+  </g>
+
+  <rect x="250" y="985" width="1100" height="48" rx="24" fill="#102a43"/>
+  <text x="800" y="1018" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700" fill="#ffffff">
+    Pitch is a partnership: place says WHERE; phase-locked timing says WHEN.
+  </text>
+</svg>

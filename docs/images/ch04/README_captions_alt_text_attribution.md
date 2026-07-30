@@ -15,12 +15,12 @@ All figures listed in reading order. Figure numbers refer to v0.4 markdown.
 
 ---
 
-### Fig 4.2 — `fig_signal_detection_matrix.png` / `.svg`
-**Caption:** Signal detection theory separates sensory sensitivity from the observer's decision criterion. Two people with identical sensitivity can have very different hit and false-alarm rates if their criteria differ.
-**Alt text:** Two-by-two matrix crossing stimulus present versus absent with observer says yes versus no, with the four cells labeled Hit, Miss, False Alarm, and Correct Rejection, each with a real-world example.
-**Source:** Original diagram — Jon Oxford / Claude, 2026.
+### Fig 4.2 — `ch04_weber_law_jnd_vs_intensity.svg`
+**Caption:** Weber's Law: as starting intensity rises, the just-noticeable difference rises in direct proportion. In this example, ΔI/I = 0.10, so doubling the starting intensity doubles the smallest detectable change.
+**Alt text:** Graph of Weber's Law with starting stimulus intensity on the horizontal axis and the just-noticeable difference on the vertical axis. Points at 20 and 2, 40 and 4, 80 and 8, 120 and 12, and 160 and 16 lie on a straight line labeled delta I equals 0.10 times I. A side panel shows that delta I divided by I remains 0.10 as the absolute change grows.
+**Source:** Original programmatic SVG — OpenAI Codex, 2026.
 **License:** © Jon Oxford — all rights reserved until open license assigned.
-**Status:** ✅ In use.
+**Status:** ✅ In use; rebuilt 2026-07-30 so the axes directly encode base intensity and JND rather than plotting intensity against itself. No figure number embedded in artwork.
 
 ---
 
@@ -101,11 +101,11 @@ All figures listed in reading order. Figure numbers refer to v0.4 markdown.
 
 ---
 
-### Fig 4.9 — `fig_cochlea_place_frequency_pitch.png`
-*(Previously `fig_cochlea_infographic.png` — renamed for descriptive clarity.)*
-**Caption:** Place theory and frequency theory solve different parts of the pitch-encoding problem. High frequencies are localized by where the basilar membrane deflects (place); very low frequencies are tracked by how fast auditory neurons fire (frequency). Neither mechanism alone covers the full human hearing range.
-**Alt text:** Instructional infographic titled "Pitch Is Coded in Two Ways." Top section shows a cutaway cochlea and an unrolled basilar membrane, labeled with frequency regions from high-frequency at the base to low-frequency at the apex, illustrating place theory. Bottom section shows waveform examples with slow and fast neural firing patterns, illustrating frequency theory's rate-coding for lower pitches.
-**Source:** Original diagram — Jon Oxford / Claude, 2026.
+### Fig 4.9 — `ch04_pitch_place_temporal_volley.svg`
+*(Replaces `fig_cochlea_place_frequency_pitch.png`, which incorrectly presented higher pitch as a faster spike rate from individual neurons.)*
+**Caption:** Pitch is coded with complementary place and temporal information. Basilar-membrane location is especially informative for high frequencies. At lower frequencies, spikes can phase-lock to the sound wave; as the rate rises, groups of auditory-nerve fibers can share cycles in a volley pattern. Neither mechanism alone explains pitch across the full hearing range.
+**Alt text:** Two-panel diagram of pitch coding. The place-code panel shows high-frequency activity peaking near the stiff base of the basilar membrane and low-frequency activity peaking toward the flexible apex. The temporal-code panel shows spikes phase-locking to a 250-Hz waveform and a 1,000-Hz volley pattern: three auditory-nerve fibers each fire on only some cycles, while their pooled spikes preserve the wave's repeating period.
+**Source:** Original programmatic SVG — OpenAI Codex, 2026. Scientific correction checked against Verschooten et al. (2018), *Nature Communications*, 9, 4688, and Moore et al. (2019), *Hearing Research*, 377, 109–120.
 **License:** © Jon Oxford — all rights reserved until open license assigned.
 **Status:** ✅ In use.
 
@@ -129,7 +129,12 @@ All figures listed in reading order. Figure numbers refer to v0.4 markdown.
 | `fig_gestalt_principles_openstax.png` | Replaced by `fig_gestalt_principles_original.png`. OpenStax CC BY-NC-SA — no longer referenced. Safe to delete. |
 | `fig_gestalt_*_openstax.webp` (×5) | Source files used to build the old OpenStax composite — no longer needed. Safe to delete. |
 | `fig_retina_rods_cones.png` / `.svg` | Programmatic data-curve version — superseded by `fig_retina_rods_cones_fovea_blindspot.png` (infographic). |
-| `fig_cochlea_pitch_theory.png` / `.svg` | Programmatic version — superseded by `fig_cochlea_place_frequency_pitch.png`. |
+| `fig_cochlea_place_frequency_pitch.png` | Retired Figure 4.9; incorrectly presented higher pitch as a faster spike rate from individual neurons. |
+| `fig_webers_law_jnd_proportion.png` / `.svg` | Retired Weber graphic; plotted stimulus intensity against itself and left JND as annotations rather than the y-variable. |
+| `ch04_weber_law_minimal_v2.png` / `.svg` | Earlier minimal Weber concept; superseded by the labeled Figure 4.2 graph. |
+| `ch04_webers_law_weights.png` | Earlier example-based Weber concept; superseded by the labeled Figure 4.2 graph. |
+| `fig_signal_detection_matrix.png` / `.svg` | Unwired; the live chapter teaches the four outcomes as a compact text list rather than a numbered figure. |
+| `unused/fig_cochlea_pitch_theory.png` / `.svg` | Older programmatic version; superseded by `ch04_pitch_place_temporal_volley.svg`. |
 | `fig_gate_control_pain.svg` | SVG source for Fig 4.10 — keep as source file alongside PNG. |
 | `fig_signal_detection_matrix.svg` | SVG source for Fig 4.2 — keep. |
 | `fig_sensation_perception_pipeline.svg` | SVG source for Fig 4.1 — keep. |

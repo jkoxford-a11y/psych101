@@ -1,0 +1,145 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+  <title id="title">Fluent language: same performance, different mechanisms</title>
+  <desc id="desc">A color-coded comparison of behaviorist, cognitive, and large-language-model explanations for a shared observable performance: producing a fluent, context-appropriate response to a novel prompt. The behaviorist pathway shows context, verbal response, and consequence, with consequences feeding back to future responding. The cognitive pathway shows internal structure generating novel sentences. The language-model pathway shows training text shaping learned weights that support next-token prediction and fluent output. The takeaway is that performance shows what a system can do, not how it did it.</desc>
+
+  <defs>
+    <filter id="shadow" x="-15%" y="-15%" width="130%" height="140%">
+      <feDropShadow dx="0" dy="7" stdDeviation="8" flood-color="#102A43" flood-opacity="0.12"/>
+    </filter>
+    <marker id="arrow-orange" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#C65D07"/>
+    </marker>
+    <marker id="arrow-blue" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#2563EB"/>
+    </marker>
+    <marker id="arrow-purple" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#7C3AED"/>
+    </marker>
+  </defs>
+
+  <rect width="1600" height="1000" fill="#F7FAFC"/>
+
+  <text x="800" y="72" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="48" font-weight="800" fill="#102A43">
+    Fluent Language: Same Performance, Different Mechanisms
+  </text>
+  <text x="800" y="116" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="24" fill="#486581">
+    Three explanations ask what produces the same observable behavior.
+  </text>
+
+  <g filter="url(#shadow)">
+    <rect x="135" y="150" width="1330" height="118" rx="26" fill="#E8F7F4" stroke="#0F766E" stroke-width="3"/>
+  </g>
+  <text x="800" y="187" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="800" letter-spacing="2.2" fill="#0F766E">
+    SHARED OBSERVATION
+  </text>
+  <text x="800" y="232" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="29" font-weight="700" fill="#102A43">
+    Produces a fluent, context-appropriate response to a novel prompt
+  </text>
+
+  <!-- Behaviorist panel -->
+  <g filter="url(#shadow)">
+    <rect x="50" y="310" width="480" height="520" rx="28" fill="#FFFFFF" stroke="#C65D07" stroke-width="3"/>
+  </g>
+  <path d="M78 310 H502 Q530 310 530 338 V408 H50 V338 Q50 310 78 310 Z" fill="#FFF1DD"/>
+  <circle cx="100" cy="360" r="25" fill="#C65D07"/>
+  <path d="M88 360 H112 M100 348 V372" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round"/>
+  <text x="140" y="352" font-family="Segoe UI, Arial, sans-serif" font-size="29" font-weight="800" fill="#8C3D05">Behaviorist</text>
+  <text x="140" y="382" font-family="Segoe UI, Arial, sans-serif" font-size="19" font-weight="600" fill="#9A4D0A">LEARNING HISTORY</text>
+
+  <rect x="78" y="455" width="112" height="74" rx="16" fill="#FFF7ED" stroke="#C65D07" stroke-width="2.5"/>
+  <text x="134" y="485" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700" fill="#713B0B">Cue +</text>
+  <text x="134" y="510" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700" fill="#713B0B">context</text>
+
+  <rect x="226" y="455" width="142" height="74" rx="16" fill="#FFE8C2" stroke="#C65D07" stroke-width="2.5"/>
+  <text x="297" y="486" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="800" fill="#713B0B">Verbal</text>
+  <text x="297" y="511" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="800" fill="#713B0B">response</text>
+
+  <rect x="404" y="455" width="98" height="74" rx="16" fill="#FFF7ED" stroke="#C65D07" stroke-width="2.5"/>
+  <text x="453" y="499" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700" fill="#713B0B">Outcome</text>
+
+  <line x1="194" y1="492" x2="217" y2="492" stroke="#C65D07" stroke-width="4" marker-end="url(#arrow-orange)"/>
+  <line x1="372" y1="492" x2="395" y2="492" stroke="#C65D07" stroke-width="4" marker-end="url(#arrow-orange)"/>
+  <path d="M453 542 C448 633 314 648 299 542" fill="none" stroke="#C65D07" stroke-width="4" marker-end="url(#arrow-orange)"/>
+  <rect x="222" y="592" width="276" height="44" rx="14" fill="#FFFFFF"/>
+  <text x="360" y="621" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700" fill="#8C3D05">shapes future responding</text>
+
+  <rect x="88" y="680" width="404" height="100" rx="20" fill="#FFF7ED"/>
+  <text x="290" y="721" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="800" fill="#713B0B">Consequences change</text>
+  <text x="290" y="753" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="800" fill="#713B0B">response probability.</text>
+
+  <!-- Cognitive panel -->
+  <g filter="url(#shadow)">
+    <rect x="560" y="310" width="480" height="520" rx="28" fill="#FFFFFF" stroke="#2563EB" stroke-width="3"/>
+  </g>
+  <path d="M588 310 H1012 Q1040 310 1040 338 V408 H560 V338 Q560 310 588 310 Z" fill="#EAF2FF"/>
+  <circle cx="610" cy="360" r="25" fill="#2563EB"/>
+  <path d="M597 366 Q610 343 623 366 M600 370 H620" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round"/>
+  <text x="650" y="352" font-family="Segoe UI, Arial, sans-serif" font-size="29" font-weight="800" fill="#174EA6">Cognitive</text>
+  <text x="650" y="382" font-family="Segoe UI, Arial, sans-serif" font-size="19" font-weight="600" fill="#2563EB">GENERATIVE STRUCTURE</text>
+
+  <rect x="650" y="442" width="300" height="70" rx="17" fill="#EFF6FF" stroke="#2563EB" stroke-width="2.5"/>
+  <text x="800" y="485" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="800" fill="#174EA6">Internal structure</text>
+
+  <line x1="800" y1="517" x2="800" y2="547" stroke="#2563EB" stroke-width="4" marker-end="url(#arrow-blue)"/>
+
+  <rect x="650" y="556" width="300" height="70" rx="17" fill="#DDEBFF" stroke="#2563EB" stroke-width="2.5"/>
+  <text x="800" y="599" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="800" fill="#174EA6">Combines words by rules</text>
+
+  <line x1="800" y1="631" x2="800" y2="661" stroke="#2563EB" stroke-width="4" marker-end="url(#arrow-blue)"/>
+
+  <rect x="650" y="670" width="300" height="70" rx="17" fill="#C9DEFF" stroke="#2563EB" stroke-width="2.5"/>
+  <text x="800" y="713" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="800" fill="#174EA6">Novel sentence</text>
+
+  <text x="800" y="782" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="800" fill="#174EA6">
+    Finite structure → many sentences
+  </text>
+
+  <!-- Language-model panel -->
+  <g filter="url(#shadow)">
+    <rect x="1070" y="310" width="480" height="520" rx="28" fill="#FFFFFF" stroke="#7C3AED" stroke-width="3"/>
+  </g>
+  <path d="M1098 310 H1522 Q1550 310 1550 338 V408 H1070 V338 Q1070 310 1098 310 Z" fill="#F1EAFE"/>
+  <circle cx="1120" cy="360" r="25" fill="#7C3AED"/>
+  <circle cx="1111" cy="353" r="4" fill="#FFFFFF"/>
+  <circle cx="1129" cy="353" r="4" fill="#FFFFFF"/>
+  <path d="M1108 368 Q1120 378 1132 368" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round"/>
+  <text x="1160" y="352" font-family="Segoe UI, Arial, sans-serif" font-size="29" font-weight="800" fill="#5B21B6">Language Model</text>
+  <text x="1160" y="382" font-family="Segoe UI, Arial, sans-serif" font-size="19" font-weight="600" fill="#7C3AED">STATISTICAL LEARNING</text>
+
+  <rect x="1104" y="450" width="156" height="76" rx="16" fill="#F5F3FF" stroke="#7C3AED" stroke-width="2.5"/>
+  <text x="1182" y="480" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="19" font-weight="800" fill="#5B21B6">Training</text>
+  <text x="1182" y="507" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="19" font-weight="800" fill="#5B21B6">text</text>
+
+  <rect x="1360" y="450" width="156" height="76" rx="16" fill="#EDE9FE" stroke="#7C3AED" stroke-width="2.5"/>
+  <text x="1438" y="480" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="19" font-weight="800" fill="#5B21B6">Learned</text>
+  <text x="1438" y="507" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="19" font-weight="800" fill="#5B21B6">weights</text>
+
+  <line x1="1265" y1="488" x2="1351" y2="488" stroke="#7C3AED" stroke-width="4" marker-end="url(#arrow-purple)"/>
+
+  <rect x="1360" y="590" width="156" height="76" rx="16" fill="#E4DCFD" stroke="#7C3AED" stroke-width="2.5"/>
+  <text x="1438" y="620" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="800" fill="#5B21B6">Next-token</text>
+  <text x="1438" y="647" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="800" fill="#5B21B6">prediction</text>
+
+  <line x1="1438" y1="531" x2="1438" y2="581" stroke="#7C3AED" stroke-width="4" marker-end="url(#arrow-purple)"/>
+
+  <rect x="1104" y="590" width="156" height="76" rx="16" fill="#D9CEFC" stroke="#7C3AED" stroke-width="2.5"/>
+  <text x="1182" y="620" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="19" font-weight="800" fill="#5B21B6">Fluent</text>
+  <text x="1182" y="647" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="19" font-weight="800" fill="#5B21B6">response</text>
+
+  <line x1="1355" y1="628" x2="1269" y2="628" stroke="#7C3AED" stroke-width="4" marker-end="url(#arrow-purple)"/>
+
+  <rect x="1108" y="705" width="404" height="75" rx="20" fill="#F5F3FF"/>
+  <text x="1310" y="737" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="800" fill="#5B21B6">Statistical learning can yield</text>
+  <text x="1310" y="766" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="800" fill="#5B21B6">fluent text.</text>
+
+  <!-- Takeaway -->
+  <g filter="url(#shadow)">
+    <rect x="135" y="870" width="1330" height="88" rx="24" fill="#102A43"/>
+  </g>
+  <text x="800" y="905" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="800" letter-spacing="2.2" fill="#9FB3C8">
+    TEACHING POINT
+  </text>
+  <text x="800" y="940" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="29" font-weight="800" fill="#FFFFFF">
+    Performance tells us what a system can do—not how it did it.
+  </text>
+</svg>

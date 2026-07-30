@@ -48,7 +48,7 @@ All listed PNGs are now present in `docs/images/ch02/`.
 
 ### 3. Correlation direction and strength
 
-- Asset: `docs/images/ch02/ch02_correlation_direction_strength.png`
+- Asset: `docs/images/ch02/ch02_correlation_direction_strength.svg`
 - Replace: `fig_correlation_scatter.png`.
 - Placement: Immediately after the paragraph introducing Pearson's correlation coefficient.
 - Display: `chapter-figure wide expandable`.

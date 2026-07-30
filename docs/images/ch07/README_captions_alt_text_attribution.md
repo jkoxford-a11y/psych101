@@ -12,3 +12,17 @@
 - **Data status:** The cumulative records are schematic characteristic shapes. The extinction-session values are illustrative teaching values, not measurements reproduced from a particular experiment.
 - **Interpretation caveats:** Panel A depicts established responding while reinforcement is available, not speed of initial acquisition and not a universal quantitative ranking of response rates. Exact rates depend on schedule values, reinforcement density, organism, task, and history. Panel B illustrates a common partial-reinforcement extinction effect after normalizing each history to its own baseline; it does not support a universal ordering among fixed-ratio, variable-ratio, fixed-interval, and variable-interval schedules.
 - **Figure number in image:** None.
+
+## Figure 7.5 — Garcia and Koelling selective cue–consequence learning
+
+- **File:** `ch07_garcia_koelling_compound_cue_test.svg`.
+- **Caption:** Rats experienced flavored water and light-and-tone cues together, followed by illness or shock. When the cues were tested separately, the illness group avoided the taste more strongly, while the shock group avoided the audiovisual cues more strongly. The observed result is selective cue–consequence learning; evolutionary preparedness explains why that selectivity may exist.
+- **Alt text:** Three-stage diagram of Garcia and Koelling's experiment. Rats first drink flavored water while light and tone cues occur together. One group then experiences illness and another experiences shock. When the cues are tested separately, the illness group strongly avoids the taste but weakly avoids the light and tone, while the shock group shows the reverse pattern.
+- **Origin and attribution:** Original figure created for Oxford Psychology 101.
+- **Creation method:** Deterministic hand-authored SVG using vector shapes, paths, text, and system fonts.
+- **External assets:** None. No external copyrighted image assets were used.
+- **License / public-sharing status:** Original course artwork; approved for public sharing with the Oxford Psychology 101 textbook.
+- **Scientific basis:** Simplified from Garcia and Koelling (1966), *Psychonomic Science, 4*(1), 123–124, DOI `10.3758/BF03342209`. The primary report describes gustatory and audiovisual stimuli presented together before shock, toxin, or X-ray consequences, followed by selective transfer of avoidance to the cue appropriate to the consequence.
+- **Interpretation boundary:** The compound-cue training and selective test results are the observed experimental logic. Evolutionary preparedness is the leading interpretation of why those cue–consequence relations are learned selectively.
+- **Figure number in image:** None.
+- **Retired predecessor:** `fig_garcia_koelling_preparedness.png` remains preserved but unwired. Its four-cell matrix made the compound cues look like separately trained cue–outcome pairs.

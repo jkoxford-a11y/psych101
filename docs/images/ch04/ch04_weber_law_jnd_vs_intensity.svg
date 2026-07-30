@@ -1,0 +1,143 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="950" viewBox="0 0 1600 950" role="img" aria-labelledby="title desc">
+  <title id="title">Weber's Law: the just-noticeable difference grows with starting intensity</title>
+  <desc id="desc">A graph plots starting stimulus intensity on the horizontal axis and the just-noticeable difference on the vertical axis. Five points at 20 and 2, 40 and 4, 80 and 8, 120 and 12, and 160 and 16 lie on a straight line labeled delta I equals 0.10 times I. A side panel shows that delta I divided by I stays at 0.10 even as the absolute change grows.</desc>
+
+  <defs>
+    <filter id="shadow" x="-15%" y="-15%" width="130%" height="140%">
+      <feDropShadow dx="0" dy="7" stdDeviation="8" flood-color="#102A43" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <rect width="1600" height="950" fill="#F7FAFC"/>
+
+  <text x="800" y="68" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="47" font-weight="800" fill="#102A43">
+    Weber's Law: The JND Grows with Starting Intensity
+  </text>
+  <text x="800" y="112" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="23" fill="#486581">
+    Here, the smallest detectable change stays at 10% of the starting stimulus.
+  </text>
+
+  <!-- Graph card -->
+  <g filter="url(#shadow)">
+    <rect x="70" y="155" width="1040" height="690" rx="28" fill="#FFFFFF" stroke="#D9E2EC" stroke-width="2"/>
+  </g>
+
+  <!-- Grid -->
+  <g stroke="#D9E2EC" stroke-width="2">
+    <line x1="220" y1="760" x2="1020" y2="760"/>
+    <line x1="220" y1="630" x2="1020" y2="630"/>
+    <line x1="220" y1="500" x2="1020" y2="500"/>
+    <line x1="220" y1="370" x2="1020" y2="370"/>
+    <line x1="220" y1="240" x2="1020" y2="240"/>
+
+    <line x1="220" y1="240" x2="220" y2="760"/>
+    <line x1="420" y1="240" x2="420" y2="760"/>
+    <line x1="620" y1="240" x2="620" y2="760"/>
+    <line x1="820" y1="240" x2="820" y2="760"/>
+    <line x1="1020" y1="240" x2="1020" y2="760"/>
+  </g>
+
+  <!-- Axes -->
+  <line x1="220" y1="760" x2="1040" y2="760" stroke="#102A43" stroke-width="5" stroke-linecap="round"/>
+  <line x1="220" y1="780" x2="220" y2="220" stroke="#102A43" stroke-width="5" stroke-linecap="round"/>
+
+  <!-- Tick labels -->
+  <g font-family="Segoe UI, Arial, sans-serif" font-size="20" fill="#486581">
+    <text x="220" y="796" text-anchor="middle">0</text>
+    <text x="420" y="796" text-anchor="middle">40</text>
+    <text x="620" y="796" text-anchor="middle">80</text>
+    <text x="820" y="796" text-anchor="middle">120</text>
+    <text x="1020" y="796" text-anchor="middle">160</text>
+
+    <text x="194" y="767" text-anchor="end">0</text>
+    <text x="194" y="637" text-anchor="end">4</text>
+    <text x="194" y="507" text-anchor="end">8</text>
+    <text x="194" y="377" text-anchor="end">12</text>
+    <text x="194" y="247" text-anchor="end">16</text>
+  </g>
+
+  <text x="620" y="828" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="25" font-weight="700" fill="#102A43">
+    Starting stimulus intensity, I
+  </text>
+  <text x="112" y="500" text-anchor="middle" transform="rotate(-90 112 500)" font-family="Segoe UI, Arial, sans-serif" font-size="25" font-weight="700" fill="#102A43">
+    Just-noticeable difference, ΔI
+  </text>
+
+  <!-- Proportional relationship -->
+  <line x1="220" y1="760" x2="1020" y2="240" stroke="#2563EB" stroke-width="8" stroke-linecap="round"/>
+
+  <g fill="#EA580C" stroke="#FFFFFF" stroke-width="5">
+    <circle cx="320" cy="695" r="13"/>
+    <circle cx="420" cy="630" r="13"/>
+    <circle cx="620" cy="500" r="13"/>
+    <circle cx="820" cy="370" r="13"/>
+    <circle cx="1020" cy="240" r="13"/>
+  </g>
+
+  <g font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700" fill="#9A3412">
+    <text x="320" y="727" text-anchor="middle">20 → 2</text>
+    <text x="420" y="612" text-anchor="middle">40 → 4</text>
+    <text x="620" y="482" text-anchor="middle">80 → 8</text>
+    <text x="820" y="352" text-anchor="middle">120 → 12</text>
+    <text x="1020" y="222" text-anchor="middle">160 → 16</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="646" y="392" width="292" height="68" rx="20" fill="#EFF6FF" stroke="#2563EB" stroke-width="2.5"/>
+  </g>
+  <text x="792" y="435" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="25" font-weight="800" fill="#174EA6">
+    ΔI = 0.10 × I
+  </text>
+
+  <!-- Constant-proportion card -->
+  <g filter="url(#shadow)">
+    <rect x="1145" y="155" width="385" height="690" rx="28" fill="#FFFFFF" stroke="#0F766E" stroke-width="3"/>
+  </g>
+  <path d="M1173 155 H1502 Q1530 155 1530 183 V280 H1145 V183 Q1145 155 1173 155 Z" fill="#E8F7F4"/>
+  <text x="1338" y="204" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="800" letter-spacing="1.8" fill="#0F766E">
+    CONSTANT PROPORTION
+  </text>
+  <text x="1338" y="254" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="34" font-weight="800" fill="#115E59">
+    ΔI / I = 0.10
+  </text>
+
+  <text x="1338" y="334" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="700" fill="#486581">
+    Starting intensity
+  </text>
+  <text x="1338" y="364" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="700" fill="#486581">
+    Required change
+  </text>
+
+  <g font-family="Segoe UI, Arial, sans-serif" font-size="25" font-weight="800">
+    <rect x="1195" y="400" width="286" height="72" rx="18" fill="#F0FDFA"/>
+    <text x="1262" y="445" text-anchor="middle" fill="#115E59">40</text>
+    <text x="1338" y="445" text-anchor="middle" fill="#78909C">→</text>
+    <text x="1414" y="445" text-anchor="middle" fill="#EA580C">+4</text>
+
+    <rect x="1195" y="494" width="286" height="72" rx="18" fill="#F0FDFA"/>
+    <text x="1262" y="539" text-anchor="middle" fill="#115E59">80</text>
+    <text x="1338" y="539" text-anchor="middle" fill="#78909C">→</text>
+    <text x="1414" y="539" text-anchor="middle" fill="#EA580C">+8</text>
+
+    <rect x="1195" y="588" width="286" height="72" rx="18" fill="#F0FDFA"/>
+    <text x="1262" y="633" text-anchor="middle" fill="#115E59">160</text>
+    <text x="1338" y="633" text-anchor="middle" fill="#78909C">→</text>
+    <text x="1414" y="633" text-anchor="middle" fill="#EA580C">+16</text>
+  </g>
+
+  <rect x="1182" y="702" width="312" height="100" rx="20" fill="#FFF7ED"/>
+  <text x="1338" y="741" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="800" fill="#9A3412">
+    Bigger starting stimulus
+  </text>
+  <text x="1338" y="772" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="21" font-weight="800" fill="#9A3412">
+    → bigger JND
+  </text>
+
+  <!-- Takeaway -->
+  <g filter="url(#shadow)">
+    <rect x="180" y="875" width="1240" height="58" rx="22" fill="#102A43"/>
+  </g>
+  <text x="800" y="913" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="25" font-weight="800" fill="#FFFFFF">
+    The required change grows; the proportion stays the same.
+  </text>
+</svg>

@@ -132,7 +132,7 @@ A language model can generate a convincing answer. It can even produce the sente
 
 Performance tells us what a system can do. By itself, it does not tell us how the system did it — or whether its internal processes resemble ours.
 
-![Figure 1.2 — Three-panel diagram comparing Skinner's behaviorist account of language, Chomsky's generative grammar account, and large language models producing fluent text through statistical learning. All three accounts can produce or explain fluent output, but that shared performance alone does not identify the internal mechanism.](../images/ch01/fig_1_3_language_explanations.png)
+![Figure 1.2 — Color-coded comparison of behaviorist, cognitive, and language-model explanations for the shared observable performance of producing a fluent, context-appropriate response to a novel prompt. The behaviorist pathway shows consequences shaping future verbal responding, the cognitive pathway shows internal structure generating novel sentences, and the language-model pathway shows training text shaping learned weights and next-token prediction.](../images/ch01/ch01_fluent_language_different_mechanisms.svg)
 *Figure 1.2. Three ways to explain fluent language. Skinner emphasized learned verbal behavior; Chomsky argued for generative internal structure; large language models produce fluency through statistical learning over text corpora. Fluent output alone does not settle which mechanism produced it. Original figure by Jonathan K. Oxford with assistance from ChatGPT.*
 
 > **Stop and Retrieve:** Why can fluent output alone not identify the internal process that produced it? Name two kinds of converging evidence you would want before making a claim about mechanism.

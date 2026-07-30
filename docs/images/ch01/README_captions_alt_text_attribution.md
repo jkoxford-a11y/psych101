@@ -72,16 +72,18 @@ This manifest covers every image active in Chapter 1. The archived Maslow hierar
 - **Public-sharing status:** Yes, for this public textbook project.
 - **Caveat:** This is an explanatory schematic, not empirical data. Its current Section 1 placement is intentional, although it also previews Section 3's multiple-perspectives argument.
 
-### `fig_1_3_language_explanations.png` — visible Figure 1.2
+### `ch01_fluent_language_different_mechanisms.svg` — visible Figure 1.2
 
-- **Source page / creator:** Project-original figure by Jonathan K. Oxford with assistance from ChatGPT; no external source page. The retained filename predates the visible renumbering.
+- **Source page / creator:** Project-original figure by Jonathan K. Oxford with assistance from ChatGPT; no external source page.
 - **License:** Licensed for public use in this textbook project.
-- **Modifications:** Created and curated for the chapter; no later pixel edits documented. The bitmap contains no embedded figure number, so the visible number is supplied by source and HTML captions.
+- **Modifications:** Rebuilt as a deterministic color-coded SVG on 2026-07-30. Removed the repeated core-claim/best-for/caution blocks, replaced the introspective “I understand” statement with observable novel-prompt performance, and redirected the behaviorist consequence loop toward future verbal responding. The artwork contains no embedded figure number, so the visible number is supplied by source and HTML captions.
 - **Caption:** Figure 1.2. Three ways to explain fluent language. Skinner emphasized learned verbal behavior; Chomsky argued for generative internal structure; large language models produce fluency through statistical learning over text corpora. Fluent output alone does not settle which mechanism produced it. Original figure by Jonathan K. Oxford with assistance from ChatGPT.
-- **Alt text:** Three-panel diagram comparing Skinner's behaviorist account of language, Chomsky's generative grammar account, and large language models producing fluent text through statistical learning. All three accounts can produce or explain fluent output, but that shared performance alone does not identify the internal mechanism.
+- **Alt text:** Color-coded comparison of behaviorist, cognitive, and language-model explanations for the shared observable performance of producing a fluent, context-appropriate response to a novel prompt. The behaviorist pathway shows consequences shaping future verbal responding, the cognitive pathway shows internal structure generating novel sentences, and the language-model pathway shows training text shaping learned weights and next-token prediction.
 - **Attribution text:** Original figure by Jonathan K. Oxford with assistance from ChatGPT.
 - **Public-sharing status:** Yes, for this public textbook project.
 - **Caveat:** The three accounts are illustrative rather than exhaustive. Similar output does not establish that the systems use the same mechanism.
+
+**Retired predecessor:** `fig_1_3_language_explanations.png` remains preserved but unwired. Its top statement treated “I understand” as a shared observation, and its behaviorist feedback arrow returned toward the cue rather than future responding.
 
 ## Archived image
 
