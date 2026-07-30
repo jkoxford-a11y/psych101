@@ -36,6 +36,10 @@ Chapter 3's former signaling/autonomic problem is also resolved. Figures 3.5 and
 
 **The repository is mixed.** Preserve every unrelated change. The deck-pilot files above are a distinct scope: do not modify, remove, stage, or characterize them as part of the chapter/ledger sequence, and equally do not let the ledger audit touch them.
 
+**A repository-hygiene pass is in progress, independent of the chapter/ledger/deck-pilot work above.** `.git` was 333 MB of the repo's 544 MB total, and roughly 35 MB of dead/duplicate/pending content was being tracked in the working tree — some of it (everything under `docs/images/`) deployed wholesale to the live GitHub Pages site by `.github/workflows/static.yml`. Ten paths were moved to `C:\Users\oxfor\OneDrive\z Teaching\zzz Psych101_archive\` (mirrored relative paths, nothing deleted) and committed/pushed as `261f5ba`: the `docs/images/ch03/ch04/ch07/ch10` dead/duplicate/candidate folders, `Images for Cover/`, `Potential Images for Chapters Holding Space/` (the instructor's active staging area for future chapters — kept intact, see `source/chapters/_provenance/ch13-psychological-disorders-therapy.md:134`), and the superseded `Chapter_10_Lifespan_Development_Claude_Draft.docx`/`_v2.docx` pair. `git gc` plus manual removal of 24 orphaned `tmp_obj_*` files then took `.git` from 333 MB to 225 MB, fully packed, no history rewrite involved. Full detail: `GPT_project_log.md` (2026-07-30, Claude Code).
+
+A further pass — purging the ~225 MB of genuine old-version blob history with `git filter-repo` — was prepared (tool installed, full-history backup bundle created) but **paused before execution** after discovering two live git worktrees share this repo's object database, one of them on a branch not yet merged into `main`. See "Repository hygiene — next actions" below.
+
 ## Immediate next actions
 
 1. **Continue the ranked figure queue** with Figure 4.4: replace the false “eye” versus “brain” boundary with cones followed by retinal, LGN, and cortical opponent channels, and re-check the cone-response curves.
@@ -46,6 +50,14 @@ Chapter 3's former signaling/autonomic problem is also resolved. Figures 3.5 and
 6. Later project items remain: Chapter 7's missing Figure 7.8 decision, the theoretical-spine cognitive-light-cone ownership note, Chapter 2's no-first-person scope, and Chapter 11 Thread B.
 7. **Deck pilot, independent of the ledger sequence:** instructor markup on slide grammar, then a `.potx` template (decks currently render in the default Office theme), then the PowerPoint-edit ingest. Do not interleave with the ledger audit.
 
+## Repository hygiene — next actions (independent scope, start here tomorrow)
+
+1. **Check both live worktrees for uncommitted changes before touching history.** `C:\GitHub\psych101-bookwide-qc` (branch `audit/bookwide-textbook-qc`, already merged into `main`) and `C:\GitHub\psych101-formatting-navigation` (branch `fix/bookwide-formatting-navigation`, diverged 2026-07-20, **not yet merged into `main`**). Both share this repo's `.git` object database — rewriting history underneath an active checkout with uncommitted work is the failure mode to avoid.
+2. **Check the three remote-only branches for divergence from `main`:** `origin/agent/ch06-learning-labs`, `origin/agent/ch08-connections-further-reading`, `origin/codex/ch3-nervous-system-figure-candidates`. Not yet checked.
+3. **Decide what happens to any unmerged work found in steps 1–2** (merge it, preserve the branch through the rewrite, or explicitly abandon it) before running `git filter-repo`.
+4. **Run the `git filter-repo` path-removal pass** for the ten already-archived paths (full list and each path's earliest touching commit are in the 2026-07-30 Claude Code log entry) — this rewrites 524 of 538 commits. A full-history backup bundle already exists at `C:\Users\oxfor\OneDrive\z Teaching\zzz Psych101_archive\_pre-filter-repo-backup\psych101-full-history-2026-07-30.bundle` in case anything needs to be restored.
+5. **The final `git push --force` to `origin/main` must be run by the instructor directly** — agent git-safety rules prohibit force-pushing to main/master even on explicit request.
+
 ## Current intentional file scope
 
 The existing Chapter 5–6 and Chapter 8–13 decision sequence includes the corresponding source Markdown, generated HTML, and `pipeline/chNN-spine-seeds.md` files, plus `pipeline/evidence-commitments.md`, `GPT_project_log.md`, and `HANDOFF.md`. Inspect `git status` and exact diffs before any write; do not bulk add, clean, reset, restore, commit, or push.
@@ -55,6 +67,8 @@ The deck pilot is a second, non-overlapping scope: `pipeline/build_chapter_deck.
 The completed Chapter 2 figure audit is a third, non-overlapping scope: `docs/images/ch02/ch02_reliability_validity_accuracy_precision.png`, `docs/images/ch02/ch02_correlation_direction_strength.svg`, `docs/images/ch02/fig2-5-random-sampling-vs-assignment.svg`, `docs/images/ch02/fig_experiment_flowchart.svg`, `docs/images/ch02/README_captions_alt_text_attribution.md`, `source/visuals-inventory.md`, plus this handoff and the matching project-log entry. Keep it separate from both the ledger sequence and deck pilot.
 
 The active bookwide figure-repair pass is a fourth scope: `pipeline/audits/bookwide-figure-audit-TEMP.md`, the exact figure assets and per-chapter metadata named by resolved rows, their authoritative chapter Markdown, regenerated chapter HTML, `source/visuals-inventory.md`, this handoff, and matching project-log entries. Figures 12.3, 9.3, 8.1, 7.5, 6.2, 6.3, 6.4, 4.2, 4.5, 4.9, 2.3, 1.2, and the Chapter 3 signaling/autonomic sequence are resolved; preserve all unrelated chapter, ledger, and deck-pilot changes. Figure 1.1's responsive prototype remains deliberately unwired until the higher-priority queue is complete.
+
+Repository hygiene is a fifth, non-overlapping scope: `.gitignore`, `.git` itself (gc/prune/eventual history rewrite), and the OneDrive archive at `C:\Users\oxfor\OneDrive\z Teaching\zzz Psych101_archive\` (moved-out cruft and pending images/docx, plus the pre-rewrite backup bundle under `_pre-filter-repo-backup\`). Touches no chapter, ledger, or deck-pilot files.
 
 ## Validation and operating notes
 
