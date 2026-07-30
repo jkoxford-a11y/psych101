@@ -23,3 +23,17 @@ desktop.ini
 
 # npm logs
 npm-debug.log*
+
+# Superseded/duplicate figure drafts and cover-art exploration — archived outside
+# git at C:\Users\oxfor\OneDrive\z Teaching\zzz Psych101_archive, not the published site.
+docs/images/**/*not used*/
+docs/images/**/unused/
+docs/images/**/candidates/
+docs/images/**/replaced*/
+docs/images/**/Alternatives/
+docs/images/**/*_polished_draft_assets/
+/Images for Cover/
+
+# Pre-publication image staging area (Jon's holding pen for unmatched chapters) —
+# archived outside git; mine it from the OneDrive copy when starting a new chapter's figures.
+/Potential Images for Chapters Holding Space/
