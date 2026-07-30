@@ -55,7 +55,7 @@ A motion graphic may use this PNG as a locked background. It should animate Pane
 
 ## Wiring record
 
-- Wired as Figure 3.6 on 2026-07-20 after direct original-size comparison with the superseded two-panel image.
+- Wired as Figure 3.7 after the 2026-07-30 Chapter 3 signaling-figure installation; its direct original-size biological-accuracy review passed on 2026-07-20.
 - Source Markdown, generated HTML, caption/alt-text inventory, and visuals inventory use this filename.
 - The superseded two-panel image remains in the repository for provenance; it is not wired into the chapter.
 - Figure number and expandable-figure behavior are preserved.

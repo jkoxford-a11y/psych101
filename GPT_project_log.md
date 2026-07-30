@@ -10,6 +10,16 @@ Repository rules and conventions live in `AGENTS.md`, not here. Current state an
 
 ## Log Entries
 
+### 2026-07-30 - Chapter 3 Signaling and Autonomic Figure Repair (Codex)
+
+**Scope:** Replaced the former combined neurotransmitter/hormone Figure 3.5 with two consecutive full-width figures: focal neurotransmitter signaling (Figure 3.5) and HPA-axis endocrine signaling (Figure 3.6). Corrected the HPA brain callout to “Changes neural activity and behavior” while preserving the surrounding raster. Replaced the former autonomic figure with a four-organ sympathetic/parasympathetic comparison (Figure 3.10) that contains no cortisol, HPA, SAM, adrenal-medullary, adrenaline, or global-mode claim. Renumbered the remaining active figures to produce a continuous 3.1–3.11 sequence and marked F-006 resolved.
+
+**Files changed:** Added `docs/images/ch03/ch03_neurotransmitter_signaling_wired_focal.png`, `docs/images/ch03/ch03_hpa_axis_hormonal_signaling.png`, and `docs/images/ch03/ch03_autonomic_regulation_organ_specific_push_pull.png`; updated Chapter 3's authoritative Markdown and regenerated HTML; reconciled the Chapter 3 caption/alt/attribution record, synaptic-transmission wiring record, figure-style-guide filename examples, durable visual inventory, temporary figure audit, and `HANDOFF.md`. The former combined-messenger and autonomic binaries remain preserved but unwired and are marked retired in Chapter 3 metadata.
+
+**Validation:** All three installed PNGs are 1536 × 1024 and load at full natural resolution. The HPA edit changes pixels only within the former brain-callout sentence region and rendered without a visible seam, font mismatch, overlap, or degraded artwork. Browser checks at 1280 × 720 and 390 × 844 confirmed 11 figures, correct paths, no horizontal overflow or console errors, and working expand/collapse behavior. `pipeline/lint_chapters.py` passes 14/14 chapters and `git diff --check` passes. The Chapter 3 coherence checker retains its pre-existing `fail=2 review=4` apparatus baseline: citation-name parsing, capitalized glossary matching for the autonomic branches, one stale Connections anchor, and review-level glossary/summary notes; this figure repair did not broaden into those issues.
+
+**Not committed / remaining:** No commit, staging, or push was made. The app-provided PNGs visually matched the supplied 1536 × 1024 artwork but their attachment-stream SHA-256 values differed from the hashes listed in the task; the exact installed hashes are retained in the task record. Figure 4.9 is the next unresolved P0 figure.
+
 ### 2026-07-29 - Answer-Position Audit and Defect Repair (Codex)
 
 **Scope:** Fixed the confirmed Chapter 9 fluid-intelligence lab defect by reordering its four option sets atomically so the correct sequence is A-D-B-C while preserving every prompt, rule, correct proposition, and feedback explanation. Audited all active choice-based learning labs and Chapters 1-13 Review Questions for answer-position artifacts. Repaired four additional genuine lab patterns (sleep-state detective, change-the-situation, coping-fit, and diagnosis-under-uncertainty), one cross-item run in correlation-versus-causation, and concentrated/long-run Review Question keys in Chapters 5-8. Left short or below-threshold patterns unchanged when the audit did not support a mechanical defect.

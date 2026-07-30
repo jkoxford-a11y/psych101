@@ -59,7 +59,7 @@ Markdown draft complete (v0.2). Awaiting Jon's line-by-line review. HTML convers
 
 ## Chapter 3 — Neuroscience & Biological Bases
 
-Chapter 3 HTML is built. All 10 active figures are wired in both the source markdown and rendered HTML; the generated PNG figures are expandable in Chapter 3.
+Chapter 3 HTML is built. All 11 active figures are wired in both the source Markdown and rendered HTML; the generated PNG figures are expandable in Chapter 3. The former combined chemical-messenger figure and former autonomic-balance figure are retired and unwired.
 
 | # | Description | Status | Filename / note |
 |---|-------------|--------|-----------------|
@@ -67,14 +67,17 @@ Chapter 3 HTML is built. All 10 active figures are wired in both the source mark
 | 3.2 | Neuron anatomy and signal direction | ✅ wired / use now | `ch03/fig3_1_neuron_anatomy_pressbooks.jpeg` |
 | 3.3 | Action potential: threshold, spike, and refractory period | ✅ wired / use now | `ch03/fig3_2_action_potential_pressbooks.jpeg` |
 | 3.4 | Myelin and saltatory conduction | ✅ wired / use now | `ch03/ch03_myelin_saltatory_conduction_speed_efficiency.png` |
-| 3.5 | Chemical messengers: wired and focal vs. broadcast | ✅ wired / use now | `ch03/ch03_chemical_messengers_wired_focal_vs_broadcast.png` |
-| 3.6 | Synaptic transmission: release, receptor effects, and clearance | ✅ wired / use now | `ch03/ch03_synaptic_transmission_and_clearance_routes.png` |
-| 3.7 | Excitation, inhibition, and circuit selectivity | ✅ wired / use now | `ch03/ch03_excitation_inhibition_circuit_selectivity.png` |
-| 3.8 | Dopamine and serotonin projection systems | ✅ wired / use now | `ch03/ch03_neuromodulator_projection_systems_dopamine_serotonin.png` |
-| 3.9 | Sympathetic and parasympathetic push-pull balance | ✅ wired / use now | `ch03/ch03_autonomic_balance_push_pull.png` |
-| 3.10 | Lateral brain lobes | ✅ wired / use now | `ch03/ch03_lateral_brain_lobes_minimal_labels.png` |
+| 3.5 | Neurotransmitter signaling: wired and focal | ✅ wired / use now | `ch03/ch03_neurotransmitter_signaling_wired_focal.png` |
+| 3.6 | Hormonal signaling in action: the HPA axis | ✅ wired / use now | `ch03/ch03_hpa_axis_hormonal_signaling.png` |
+| 3.7 | Synaptic transmission: release, receptor effects, and clearance | ✅ wired / use now | `ch03/ch03_synaptic_transmission_and_clearance_routes.png` |
+| 3.8 | Excitation, inhibition, and circuit selectivity | ✅ wired / use now | `ch03/ch03_excitation_inhibition_circuit_selectivity.png` |
+| 3.9 | Dopamine and serotonin projection systems | ✅ wired / use now | `ch03/ch03_neuromodulator_projection_systems_dopamine_serotonin.png` |
+| 3.10 | Autonomic regulation: organ-specific push-pull | ✅ wired / use now | `ch03/ch03_autonomic_regulation_organ_specific_push_pull.png` |
+| 3.11 | Lateral brain lobes | ✅ wired / use now | `ch03/ch03_lateral_brain_lobes_minimal_labels.png` |
 
-**Expandable figures:** 3.1 and 3.4–3.10. Figures 3.2 and 3.3 remain non-expandable because their Pressbooks JPEGs are only 770×391 and 487×352 pixels, so enlargement would not reveal useful additional detail.
+**Expandable figures:** 3.1 and 3.4–3.11. Figures 3.2 and 3.3 remain non-expandable because their Pressbooks JPEGs are only 770×391 and 487×352 pixels, so enlargement would not reveal useful additional detail.
+
+**Retired/unwired:** `ch03/ch03_chemical_messengers_wired_focal_vs_broadcast.png` and `ch03/ch03_autonomic_balance_push_pull.png` remain in the repository for provenance but are no longer active chapter figures.
 
 ---
 
