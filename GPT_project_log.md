@@ -10,6 +10,16 @@ Repository rules and conventions live in `AGENTS.md`, not here. Current state an
 
 ## Log Entries
 
+### 2026-08-03 - Session Log: Objective-Bolding Reconciliation Committed, Pause Point for Next Session (Claude Code)
+
+**Scope:** Closes out this session's repository-hygiene resume work (see the matching entry immediately below for full technical detail) and records the pause point.
+
+**Committed:** The book-wide objective-verb bolding reconciliation — 11 source Markdown files, 10 regenerated chapter HTML pages, `docs/chapters/prologue.html`, and this log/`HANDOFF.md` — was staged by exact path (never `git add .`) and committed as `24c162a` ("Bold Learning Objective opening verbs book-wide; reconcile stale formatting branch") on `main`. Working tree is clean afterward. **Not pushed** to `origin`.
+
+**Where this leaves repository hygiene:** Steps 1–3 of the 2026-07-30 resume sequence are done and now committed: both live worktrees confirmed clean, all three remote-only branches confirmed already merged, and the one unmerged branch (`fix/bookwide-formatting-navigation`) reconciled without reverting chapter wording. `fix/bookwide-formatting-navigation` (local worktree and `origin`) is superseded and can be deleted or left to lapse whenever convenient — it is not required for anything further.
+
+**Next actions, in order:** (1) Run the `git filter-repo` path-removal pass for the ten already-archived paths — nothing is blocking this now; see `HANDOFF.md` → "Repository hygiene — next actions," item 4, for the exact scope and the existing backup bundle location. (2) The instructor runs the final `git push --force` to `origin/main` directly. Everything else in `HANDOFF.md` (figure queue, evidence-commitments ledger audit, deck pilot) is untouched by this session and unblocked independently of the filter-repo step.
+
 ### 2026-08-03 - Repository Hygiene Resumed: fix/bookwide-formatting-navigation Reconciled Without Reverting Chapter Wording (Claude Code)
 
 **Scope:** Resumed the repository-hygiene resume sequence left in `HANDOFF.md` (2026-07-30): check both live worktrees for uncommitted work, check the three remote-only branches for divergence, decide what to do with anything unmerged, before running `git filter-repo`.
