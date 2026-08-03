@@ -1,11 +1,13 @@
 # Psych101 — Current Handoff
 
-**Last updated:** 2026-08-03 (repository-hygiene resume sequence completed through step 3 and committed; filter-repo itself has not run)
+**Last updated:** 2026-08-03 (the `git filter-repo` history rewrite has run; only the instructor's force-push to `origin/main` remains)
 **Canonical repository:** `C:\GitHub\psych101`
 
 This file records current state only. See `GPT_project_log.md` for completed-work history, `PROJECT_BACKLOG.md` for durable deferred work, and `AGENTS.md` for operating rules.
 
 ## Current state
+
+**The `git filter-repo` history rewrite has run.** `.git` went from 225 MB to 195 MB; `main` now has 537 commits, every one with a new SHA (expected from a full history rewrite — this is why the eventual sync with GitHub must be a force-push, not a normal push). Before running it, the two live worktrees were removed and three now-redundant local branches deleted (`audit/bookwide-textbook-qc`, `fix/standardize-figure-expansion` — both strict ancestors of `main`; `fix/bookwide-formatting-navigation` — its one unique commit remains on `origin` regardless). filter-repo then removed the `origin` remote by default (its own standard behavior) and converted the old `refs/remotes/origin/*` tracking refs into local branches once `origin` was gone — `origin` was immediately re-added (same URL), and the reappeared local branches (`agent/ch06-learning-labs`, `agent/ch08-connections-further-reading`, `codex/ch3-nervous-system-figure-candidates`, `audit/bookwide-textbook-qc`, `fix/bookwide-formatting-navigation`, `fix/standardize-figure-expansion`, plus a previously-unnoted `work/ch13-canonical-revision`) are harmless — all in rewritten/path-stripped form, none with a worktree attached, safe to ignore or delete later. Confirmed zero remaining references to the ten target paths across all real branches/tags; the 14 `refs/codex/turn-diffs/checkpoints/...` refs (raw tree objects, tool-internal Codex checkpoint bookkeeping, deliberately left untouched) are the only reason the full ~35 MB estimated on 2026-07-30 wasn't entirely reclaimed. `pipeline/lint_chapters.py` still passes 14/14 — working-tree content is unchanged, only history. Full detail: `GPT_project_log.md` (2026-08-03, Claude Code). **The pre-rewrite full-history backup bundle is still at** `C:\Users\oxfor\OneDrive\z Teaching\zzz Psych101_archive\_pre-filter-repo-backup\psych101-full-history-2026-07-30.bundle` in case anything needs restoring.
 
 **Repository-hygiene steps 1–3 of the resume sequence are done; the unmerged `fix/bookwide-formatting-navigation` branch is reconciled.** Both live worktrees (`psych101-bookwide-qc`, `psych101-formatting-navigation`) had clean working trees, no uncommitted changes. `audit/bookwide-textbook-qc` is fully merged into `main`. The three remote-only branches (`origin/agent/ch06-learning-labs`, `origin/agent/ch08-connections-further-reading`, `origin/codex/ch3-nervous-system-figure-candidates`) are all fully merged into `main` already — nothing to preserve. `fix/bookwide-formatting-navigation`'s one unmerged commit could not be merged directly (it would have reverted post-07-20 chapter wording in about a dozen chapters, and its nav-cardinality fix was already independently redone on `main`), so the merge was aborted and its actual intent — bolding the opening verb of every Learning Objective — was re-applied fresh against current chapter content instead: 76 objectives across the Prologue and Chapters 1, 2, 4, 5, 6, 7, 9, 11, 12, 13 now bold their opening verb, joining the 23 already bold in Chapters 3, 8, and 10, for 99/99 book-wide. Ten chapter HTML pages were regenerated through `pipeline/build_chapter_html.mjs`; `docs/chapters/prologue.html` (no checked-in generator) was hand-edited identically. `pipeline/lint_chapters.py` passes 14/14; `check_chapter_coherence.py` is unchanged except two unrelated pre-existing hint-string differences. Full detail: `GPT_project_log.md` (2026-08-03, Claude Code). **Committed as `24c162a`, not pushed.** `fix/bookwide-formatting-navigation` (local and `origin`) is now superseded and safe to delete or leave to lapse.
 
@@ -54,13 +56,13 @@ A further pass — purging the ~225 MB of genuine old-version blob history with 
 
 ## Repository hygiene — next actions (independent scope)
 
-Steps 1–3 are done (2026-08-03; see the current-state note above and the matching log entry). What remains:
+Steps 1–4 are done (2026-08-03; see the current-state note above and the matching log entries). What remains:
 
 1. ~~Check both live worktrees for uncommitted changes before touching history.~~ Done — both clean.
 2. ~~Check the three remote-only branches for divergence from `main`.~~ Done — all three already fully merged.
 3. ~~Decide what happens to any unmerged work found in steps 1–2.~~ Done — `fix/bookwide-formatting-navigation`'s one unmerged commit was reconciled by re-applying its intent fresh rather than merging; the branch is now superseded.
-4. **Run the `git filter-repo` path-removal pass** for the ten already-archived paths (full list and each path's earliest touching commit are in the 2026-07-30 Claude Code log entry) — this rewrites 524 of 538 commits. A full-history backup bundle already exists at `C:\Users\oxfor\OneDrive\z Teaching\zzz Psych101_archive\_pre-filter-repo-backup\psych101-full-history-2026-07-30.bundle` in case anything needs to be restored.
-5. **The final `git push --force` to `origin/main` must be run by the instructor directly** — agent git-safety rules prohibit force-pushing to main/master even on explicit request.
+4. ~~Run the `git filter-repo` path-removal pass for the ten already-archived paths.~~ Done — `.git` is now 195 MB (was 225 MB); `main` has 537 commits, all with new SHAs. See the current-state note above for the origin-remote and reappeared-local-branch side effects.
+5. **The final `git push --force` to `origin/main` must be run by the instructor directly** — agent git-safety rules prohibit force-pushing to main/master even on explicit request. This is the one remaining step; nothing else is blocking it.
 
 ## Current intentional file scope
 
