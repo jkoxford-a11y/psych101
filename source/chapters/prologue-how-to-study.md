@@ -30,14 +30,14 @@ Read this before you start Chapter 1. The rest of the book was designed with the
 
 By the end of this prologue, you should be able to:
 
-1. Distinguish exposure from learning and explain why familiarity after rereading is unreliable.
-2. Explain how attention and working memory create the conditions for encoding.
-3. Describe why deep processing produces more durable memories than shallow processing.
-4. Explain the testing effect and its implications for study practice.
-5. Describe why distributed practice outperforms massed practice for long-term retention.
-6. Use operant conditioning to explain procrastination and phone-checking during study sessions.
-7. Define metacognition and explain what Kruger & Dunning (1999) actually found.
-8. Evaluate whether a given use of AI supports learning or replaces the cognitive work that learning requires.
+1. **Distinguish** exposure from learning and explain why familiarity after rereading is unreliable.
+2. **Explain** how attention and working memory create the conditions for encoding.
+3. **Describe** why deep processing produces more durable memories than shallow processing.
+4. **Explain** the testing effect and its implications for study practice.
+5. **Describe** why distributed practice outperforms massed practice for long-term retention.
+6. **Use** operant conditioning to explain procrastination and phone-checking during study sessions.
+7. **Define** metacognition and explain what Kruger & Dunning (1999) actually found.
+8. **Evaluate** whether a given use of AI supports learning or replaces the cognitive work that learning requires.
 
 ---
 

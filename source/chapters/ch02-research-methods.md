@@ -26,13 +26,13 @@ How do we know when our model of reality is wrong? Not by feeling more certain �
 
 By the end of this chapter, you should be able to:
 
-1. Distinguish descriptive, correlational, and experimental research designs, and identify which kind of question each one can and cannot answer.
-2. Explain why correlation does not establish causation, and identify the third-variable problem in a real example.
-3. Distinguish the consistency of observed scores from the evidence supporting how those scores are interpreted, and apply both questions to a real operational definition.
-4. Distinguish random sampling from random assignment, and explain how each supports a different part of a study's inference.
-5. Identify the independent variable, dependent variable, and control condition in a described experiment.
-6. Explain what a p-value does and does not tell you, and why effect size and confidence intervals add what significance alone cannot (Theme 1: psychological science relies on empirical evidence and adapts as new evidence emerges).
-7. Evaluate a research claim — including an AI-generated one — for sampling bias, operational vagueness, and overstated certainty.
+1. **Distinguish** descriptive, correlational, and experimental research designs, and identify which kind of question each one can and cannot answer.
+2. **Explain** why correlation does not establish causation, and identify the third-variable problem in a real example.
+3. **Distinguish** the consistency of observed scores from the evidence supporting how those scores are interpreted, and apply both questions to a real operational definition.
+4. **Distinguish** random sampling from random assignment, and explain how each supports a different part of a study's inference.
+5. **Identify** the independent variable, dependent variable, and control condition in a described experiment.
+6. **Explain** what a p-value does and does not tell you, and why effect size and confidence intervals add what significance alone cannot (Theme 1: psychological science relies on empirical evidence and adapts as new evidence emerges).
+7. **Evaluate** a research claim — including an AI-generated one — for sampling bias, operational vagueness, and overstated certainty.
 
 ---
 

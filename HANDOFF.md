@@ -1,11 +1,13 @@
 # Psych101 — Current Handoff
 
-**Last updated:** 2026-07-30
+**Last updated:** 2026-08-03 (repository-hygiene resume sequence completed through step 3; the unmerged formatting/objective-bolding branch is reconciled without reverting chapter wording — filter-repo itself has not run)
 **Canonical repository:** `C:\GitHub\psych101`
 
 This file records current state only. See `GPT_project_log.md` for completed-work history, `PROJECT_BACKLOG.md` for durable deferred work, and `AGENTS.md` for operating rules.
 
 ## Current state
+
+**Repository-hygiene steps 1–3 of the resume sequence are done; the unmerged `fix/bookwide-formatting-navigation` branch is reconciled.** Both live worktrees (`psych101-bookwide-qc`, `psych101-formatting-navigation`) had clean working trees, no uncommitted changes. `audit/bookwide-textbook-qc` is fully merged into `main`. The three remote-only branches (`origin/agent/ch06-learning-labs`, `origin/agent/ch08-connections-further-reading`, `origin/codex/ch3-nervous-system-figure-candidates`) are all fully merged into `main` already — nothing to preserve. `fix/bookwide-formatting-navigation`'s one unmerged commit could not be merged directly (it would have reverted post-07-20 chapter wording in about a dozen chapters, and its nav-cardinality fix was already independently redone on `main`), so the merge was aborted and its actual intent — bolding the opening verb of every Learning Objective — was re-applied fresh against current chapter content instead: 76 objectives across the Prologue and Chapters 1, 2, 4, 5, 6, 7, 9, 11, 12, 13 now bold their opening verb, joining the 23 already bold in Chapters 3, 8, and 10, for 99/99 book-wide. Ten chapter HTML pages were regenerated through `pipeline/build_chapter_html.mjs`; `docs/chapters/prologue.html` (no checked-in generator) was hand-edited identically. `pipeline/lint_chapters.py` passes 14/14; `check_chapter_coherence.py` is unchanged except two unrelated pre-existing hint-string differences. Full detail: `GPT_project_log.md` (2026-08-03, Claude Code). **Nothing from this pass is committed yet.** `fix/bookwide-formatting-navigation` (local and `origin`) is now superseded and safe to delete or leave to lapse.
 
 **All Chapters 1–13 have completed the spine-seed protocol.** The current working method is chat iteration, one chapter at a time, with instructor decisions shown before prose changes. The Chapter 5–6 and Chapter 8–13 decision sequence remains in the working tree; source Markdown and regenerated chapter HTML were validated after each approved install. Chapter 1's proximate/ultimate forward promise is fulfilled in Chapters 7, 8, 10, 11, and 13. No commit or push has been made for this sequence.
 
@@ -50,11 +52,13 @@ A further pass — purging the ~225 MB of genuine old-version blob history with 
 6. Later project items remain: Chapter 7's missing Figure 7.8 decision, the theoretical-spine cognitive-light-cone ownership note, Chapter 2's no-first-person scope, and Chapter 11 Thread B.
 7. **Deck pilot, independent of the ledger sequence:** instructor markup on slide grammar, then a `.potx` template (decks currently render in the default Office theme), then the PowerPoint-edit ingest. Do not interleave with the ledger audit.
 
-## Repository hygiene — next actions (independent scope, start here tomorrow)
+## Repository hygiene — next actions (independent scope)
 
-1. **Check both live worktrees for uncommitted changes before touching history.** `C:\GitHub\psych101-bookwide-qc` (branch `audit/bookwide-textbook-qc`, already merged into `main`) and `C:\GitHub\psych101-formatting-navigation` (branch `fix/bookwide-formatting-navigation`, diverged 2026-07-20, **not yet merged into `main`**). Both share this repo's `.git` object database — rewriting history underneath an active checkout with uncommitted work is the failure mode to avoid.
-2. **Check the three remote-only branches for divergence from `main`:** `origin/agent/ch06-learning-labs`, `origin/agent/ch08-connections-further-reading`, `origin/codex/ch3-nervous-system-figure-candidates`. Not yet checked.
-3. **Decide what happens to any unmerged work found in steps 1–2** (merge it, preserve the branch through the rewrite, or explicitly abandon it) before running `git filter-repo`.
+Steps 1–3 are done (2026-08-03; see the current-state note above and the matching log entry). What remains:
+
+1. ~~Check both live worktrees for uncommitted changes before touching history.~~ Done — both clean.
+2. ~~Check the three remote-only branches for divergence from `main`.~~ Done — all three already fully merged.
+3. ~~Decide what happens to any unmerged work found in steps 1–2.~~ Done — `fix/bookwide-formatting-navigation`'s one unmerged commit was reconciled by re-applying its intent fresh rather than merging; the branch is now superseded.
 4. **Run the `git filter-repo` path-removal pass** for the ten already-archived paths (full list and each path's earliest touching commit are in the 2026-07-30 Claude Code log entry) — this rewrites 524 of 538 commits. A full-history backup bundle already exists at `C:\Users\oxfor\OneDrive\z Teaching\zzz Psych101_archive\_pre-filter-repo-backup\psych101-full-history-2026-07-30.bundle` in case anything needs to be restored.
 5. **The final `git push --force` to `origin/main` must be run by the instructor directly** — agent git-safety rules prohibit force-pushing to main/master even on explicit request.
 
@@ -69,6 +73,8 @@ The completed Chapter 2 figure audit is a third, non-overlapping scope: `docs/im
 The active bookwide figure-repair pass is a fourth scope: `pipeline/audits/bookwide-figure-audit-TEMP.md`, the exact figure assets and per-chapter metadata named by resolved rows, their authoritative chapter Markdown, regenerated chapter HTML, `source/visuals-inventory.md`, this handoff, and matching project-log entries. Figures 12.3, 9.3, 8.1, 7.5, 6.2, 6.3, 6.4, 4.2, 4.5, 4.9, 2.3, 1.2, and the Chapter 3 signaling/autonomic sequence are resolved; preserve all unrelated chapter, ledger, and deck-pilot changes. Figure 1.1's responsive prototype remains deliberately unwired until the higher-priority queue is complete.
 
 Repository hygiene is a fifth, non-overlapping scope: `.gitignore`, `.git` itself (gc/prune/eventual history rewrite), and the OneDrive archive at `C:\Users\oxfor\OneDrive\z Teaching\zzz Psych101_archive\` (moved-out cruft and pending images/docx, plus the pre-rewrite backup bundle under `_pre-filter-repo-backup\`). Touches no chapter, ledger, or deck-pilot files.
+
+The book-wide objective-verb bolding reconciliation is a sixth, non-overlapping scope, arising from repository-hygiene step 3: the 11 source Markdown files and 10 regenerated HTML files listed in the 2026-08-03 log entry, plus `docs/chapters/prologue.html` (hand-edited, no generator script), this handoff, and the matching project-log entry. Every change is limited to wrapping an already-existing opening Learning Objective verb in `**`/`<strong>`; no wording, punctuation, figure, caption, or other content changed. Keep separate from the ledger sequence, deck pilot, and figure-repair pass.
 
 ## Validation and operating notes
 

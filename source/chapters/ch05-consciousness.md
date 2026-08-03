@@ -33,15 +33,15 @@ So this chapter asks a narrower and stranger question than Chapter 4 did: why do
 
 By the end of this chapter, you should be able to:
 
-1. Use blindsight to explain why information processing and conscious visual experience are not identical.
-2. Apply the chapter’s state/content/access dashboard to cases in which dimensions of consciousness come apart.
-3. Explain how selective attention and automaticity influence access without treating attention as a single anatomical gate.
-4. Describe global-workspace theory as one candidate account of conscious access.
-5. Compare reports and no-report paradigms, including what cognitive motor dissociation teaches about responsiveness.
-6. Use predictive processing and Charles Bonnet syndrome to explain how conscious content can be constructed while remaining distinct from belief.
-7. Explain how the brain constructs a sense of self, and use depersonalization to show that ownership can change while perception and reasoning remain intact.
-8. Compare alcohol blackout, psychedelic states, and general anesthesia across state, content, behavior, access, and memory.
-9. Distinguish functional explanations of consciousness from Chalmers’s hard problem.
+1. **Use** blindsight to explain why information processing and conscious visual experience are not identical.
+2. **Apply** the chapter’s state/content/access dashboard to cases in which dimensions of consciousness come apart.
+3. **Explain** how selective attention and automaticity influence access without treating attention as a single anatomical gate.
+4. **Describe** global-workspace theory as one candidate account of conscious access.
+5. **Compare** reports and no-report paradigms, including what cognitive motor dissociation teaches about responsiveness.
+6. **Use** predictive processing and Charles Bonnet syndrome to explain how conscious content can be constructed while remaining distinct from belief.
+7. **Explain** how the brain constructs a sense of self, and use depersonalization to show that ownership can change while perception and reasoning remain intact.
+8. **Compare** alcohol blackout, psychedelic states, and general anesthesia across state, content, behavior, access, and memory.
+9. **Distinguish** functional explanations of consciousness from Chalmers’s hard problem.
 
 ---
 

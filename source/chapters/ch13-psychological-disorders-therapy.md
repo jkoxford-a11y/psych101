@@ -35,13 +35,13 @@ One recurring lens remains useful: an ordinary process can become rigid or poorl
 
 By the end of this chapter, you should be able to:
 
-1. Explain what diagnosis does and does not establish, using duration, impairment, context, exclusions, and differential evidence.
-2. Describe diagnosis as a decision under uncertainty in which the placement of a criterion determines whether misses or false alarms are more common.
-3. Distinguish public, self, and structural stigma, and explain how each affects whether a person seeks care.
-4. Apply diathesis-stress and biopsychosocial reasoning without treating either framework as a single cause or literal score.
-5. Distinguish representative anxiety, mood, psychotic, substance-use, personality, and neurodevelopmental patterns while calibrating mechanistic claims.
-6. Explain how avoidance, compulsions, and behavioral withdrawal can maintain selected problems without treating maintenance as origin.
-7. Evaluate psychological, medication, and somatic treatments by indication, evidence, risks, client preferences, access, and clinical context.
+1. **Explain** what diagnosis does and does not establish, using duration, impairment, context, exclusions, and differential evidence.
+2. **Describe** diagnosis as a decision under uncertainty in which the placement of a criterion determines whether misses or false alarms are more common.
+3. **Distinguish** public, self, and structural stigma, and explain how each affects whether a person seeks care.
+4. **Apply** diathesis-stress and biopsychosocial reasoning without treating either framework as a single cause or literal score.
+5. **Distinguish** representative anxiety, mood, psychotic, substance-use, personality, and neurodevelopmental patterns while calibrating mechanistic claims.
+6. **Explain** how avoidance, compulsions, and behavioral withdrawal can maintain selected problems without treating maintenance as origin.
+7. **Evaluate** psychological, medication, and somatic treatments by indication, evidence, risks, client preferences, access, and clinical context.
 
 ---
 
