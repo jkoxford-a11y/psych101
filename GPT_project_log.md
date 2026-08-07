@@ -10,6 +10,14 @@ Repository rules and conventions live in `AGENTS.md`, not here. Current state an
 
 ## Log Entries
 
+### 2026-08-03 - Session Close: "protect main" Ruleset Re-Enabled (Claude Code)
+
+**Scope:** Final step of the repository-hygiene arc. After the force-push landed (see the entry immediately below), the instructor re-enabled "Block force pushes" on the "protect main" GitHub ruleset, restoring the protection that had been temporarily disabled to let the rewritten history through.
+
+**Verified, not just reported:** `gh api repos/jkoxford-a11y/psych101/rulesets/19147225` confirms the ruleset's `rules` array again contains both `deletion` and `non_fast_forward`, with `updated_at` timestamped today — the instructor's change is live, not just claimed. `bypass_actors` remains empty and `current_user_can_bypass` remains `"never"`, matching the original configuration exactly.
+
+**Closes:** the entire 2026-07-30 → 2026-08-03 repository-hygiene arc — cruft archival, worktree/branch cleanup, `git filter-repo` rewrite, instructor force-push, ruleset restore — is complete end to end. Nothing further outstanding in this scope.
+
 ### 2026-08-03 - Repository Hygiene Sequence Closed Out: Force-Push Landed (Claude Code)
 
 **Scope:** Closes out the repository-hygiene resume sequence begun 2026-07-30. The rewritten history (see the filter-repo entry immediately below) needed a force-push to `origin/main` to take effect on GitHub — reserved for the instructor, since agent git-safety rules prohibit force-pushing to `main`/`master` even on explicit request.
