@@ -10,6 +10,16 @@ Repository rules and conventions live in `AGENTS.md`, not here. Current state an
 
 ## Log Entries
 
+### 2026-08-03 - Repository Hygiene Sequence Closed Out: Force-Push Landed (Claude Code)
+
+**Scope:** Closes out the repository-hygiene resume sequence begun 2026-07-30. The rewritten history (see the filter-repo entry immediately below) needed a force-push to `origin/main` to take effect on GitHub — reserved for the instructor, since agent git-safety rules prohibit force-pushing to `main`/`master` even on explicit request.
+
+**Blocker found and diagnosed:** The instructor's first `git push --force origin main` attempt was silently rejected. Diagnosis: GitHub's classic branch-protection API reported `main` as "not protected," but a newer-style repository *ruleset* named "protect main" (created 2026-07-18, `gh api repos/jkoxford-a11y/psych101/rulesets`) carried a `non_fast_forward` rule on the default branch with `bypass_actors: []` and `current_user_can_bypass: "never"` — meaning no one, including the owner, could force-push while it was active. An attempt to patch the ruleset via `gh api` on the instructor's behalf was itself blocked by Claude Code's own auto-mode safety classifier (modifying a repository security setting), so the instructor was walked through doing it manually instead: GitHub → Settings → Rules → Rulesets → "protect main" → uncheck "Block force pushes" (leaving "Restrict deletions" checked) → Save.
+
+**Verified:** After the instructor disabled the force-push block and re-ran the push, `git ls-remote origin main` confirmed `origin/main` now matches local `main` exactly at `c68217d` (537 commits, rewritten history, `.git` at 195 MB). The push is live on GitHub.
+
+**Not committed / remaining:** The instructor still needs to re-enable "Block force pushes" on the "protect main" ruleset now that the push is done, to restore normal protection against future accidental history-destroying pushes — this is a GitHub settings change, not a repo file, so it isn't tracked here beyond this reminder. With this, the entire 2026-07-30–2026-08-03 repository-hygiene arc (cruft archival → worktree/branch cleanup → filter-repo rewrite → force-push) is complete.
+
 ### 2026-08-03 - Repository Hygiene: git filter-repo Path-Removal Pass Executed (Claude Code)
 
 **Scope:** Completed repository-hygiene step 4 — the `git filter-repo` history rewrite prepared and paused on 2026-07-30, blocked at the time by two live worktrees sharing this repo's object database and three unchecked remote-only branches.
