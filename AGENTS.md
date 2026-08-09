@@ -12,6 +12,8 @@ These instructions apply to all agents — GPT, Codex, Claude, and Cowork — wo
 
 Don't load the entire chronological project log for every task — `HANDOFF.md` should already tell you what's current.
 
+For external Gemini textbook audits, read `pipeline/review-protocols/gemini.md`; Gemini findings require canonical-source verification before editing.
+
 ## Project-state files
 
 Read these files according to the task:
