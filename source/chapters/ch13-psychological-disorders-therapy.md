@@ -292,6 +292,8 @@ Representative disorders differ in pattern and course. Anxiety disorders involve
 
 Treatment is a matching problem. Psychotherapy alliance predicts outcome, while condition-specific techniques also matter. Medication and ECT require explicit tradeoffs among benefit, risk, urgency, preference, and monitoring. Treatment response does not prove a simple etiology. Mental-health AI must likewise be evaluated by product type, evidence, privacy, governance, and clinical integration.
 
+Return to Casey: exhaustion and two weeks of withdrawal were evidence, not a verdict, and the missing context — overnight shifts, a parent's surgery, anemia — changed the causal story before any diagnosis was warranted. Symptoms are evidence, not verdicts, at every step this chapter covered, from the 3Ds through diathesis-stress to treatment matching.
+
 ---
 
 ## Connections

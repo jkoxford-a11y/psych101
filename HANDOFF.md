@@ -1,11 +1,13 @@
 # Psych101 — Current Handoff
 
-**Last updated:** 2026-08-03 (repository-hygiene sequence fully closed out — filter-repo ran, force-push landed on `origin/main`, "protect main" ruleset re-enabled)
+**Last updated:** 2026-08-09 (external audit verification pass closed out — two confirmed defects fixed, chapter-number sweep done, two action-selection callbacks added, three spine-question loops closed)
 **Canonical repository:** `C:\GitHub\psych101`
 
 This file records current state only. See `GPT_project_log.md` for completed-work history, `PROJECT_BACKLOG.md` for durable deferred work, and `AGENTS.md` for operating rules.
 
 ## Current state
+
+**The external Gemini-audit verification pass (2026-08-09) is closed out.** All four of the audit's claims were checked against current canonical chapter Markdown only (never planning notes), one confirmed defect (Ch12 falsely crediting Ch3 with "individual differences in stress reactivity") was fixed, a follow-up mechanical sweep found the prologue's entire chapter-number cross-reference apparatus stale from a historical Ch5/Ch6 split (plus one leaked instance in Ch2) and fixed it, two action-selection callbacks were added (Ch11 Milgram, Ch10 dual-systems) after a third candidate (Ch7 extinction) was considered and rejected, and three chapters (Ch1, Ch2, Ch13) that lacked any closing-loop device for their opening framing question got one, in each chapter's own voice rather than a standardized template. `pipeline/lint_chapters.py` passes 14/14 after regenerating the six affected chapter HTML pages; `pipeline/check_chapter_coherence.py --all` was run afterward and every finding is pre-existing (see `PROJECT_BACKLOG.md`). Full detail: `GPT_project_log.md`, 2026-08-09. **One new, real finding from that pass remains genuinely open and is not yet acted on:** `pipeline/theoretical-spine.md` registers a spine question for Ch13 — "When does a protective model become costly?" — that was never actually installed in the chapter's prose; see "Immediate next actions" below.
 
 **The repository-hygiene sequence (2026-07-30 through 2026-08-03) is fully closed out — nothing outstanding in this scope.** Ten dead/duplicate/pending paths were archived off to OneDrive, the two live worktrees and three now-redundant branches were cleaned up, the unmerged `fix/bookwide-formatting-navigation` branch was reconciled by re-applying its actual intent (bolding all 99 Learning Objectives' opening verbs, book-wide) rather than merging its stale content, `git filter-repo` stripped the ten archived paths from all real history (`.git` 225 MB → 195 MB, `main` now 537 commits with new SHAs), the instructor's force-push landed on `origin/main`, and the "protect main" GitHub ruleset's force-push block — temporarily disabled to let that push through — has been confirmed re-enabled (`gh api`, `non_fast_forward` rule present, `updated_at` timestamped 2026-08-03). `origin/main` is at `a8e7231`, matching local `main` exactly. Full detail across all phases: `GPT_project_log.md`, entries dated 2026-07-30 and 2026-08-03. The pre-rewrite full-history backup bundle remains at `C:\Users\oxfor\OneDrive\z Teaching\zzz Psych101_archive\_pre-filter-repo-backup\psych101-full-history-2026-07-30.bundle` in case anything ever needs restoring.
 
@@ -44,13 +46,14 @@ A further pass — purging the ~225 MB of genuine old-version blob history with 
 
 ## Immediate next actions
 
-1. **Continue the ranked figure queue** with Figure 4.4: replace the false “eye” versus “brain” boundary with cones followed by retinal, LGN, and cortical opponent channels, and re-check the cone-response curves.
-2. **Audit `pipeline/evidence-commitments.md` itself, read-only first.** Compare each row with current instructor decisions, the de-hedging/wordiness audits, and current prose. Classify rows as: genuine factual boundary; hedge/negation prescription; stale status; retired/removed content; or unsupported/incorrect source metadata.
-3. **Present proposed ledger decisions in chat before editing the ledger.** Do not change chapter prose during this audit. Preserve the instructor's approved words and do not infer that a ledger disagreement requires a chapter revision.
-4. **After explicit approval, reconcile ledger rows only.** Re-read `HANDOFF.md` immediately before updating it. Validate exact scope and do not commit or push.
-5. **Handle the Moncrieff metadata separately** after the ledger audit or when the instructor chooses; it does not require reopening surrounding prose.
-6. Later project items remain: Chapter 7's missing Figure 7.8 decision, the theoretical-spine cognitive-light-cone ownership note, Chapter 2's no-first-person scope, and Chapter 11 Thread B.
-7. **Deck pilot, independent of the ledger sequence:** instructor markup on slide grammar, then a `.potx` template (decks currently render in the default Office theme), then the PowerPoint-edit ingest. Do not interleave with the ledger audit.
+1. **Decide what to do about Ch13's uninstalled spine question.** `pipeline/theoretical-spine.md` registers "When does a protective model become costly?" for Ch13, but it was never installed in the chapter's prose — surfaced by `check_chapter_coherence.py`, not fixed here, because installing it is a chapter-content decision under `pipeline/spine-seed-protocol.md`, not a mechanical fix. Decide whether it belongs alongside or in place of the existing Misconception Opener thesis ("symptoms are evidence, not verdicts"), and whether Ch10's registered question needs a matching one-clause wording fix ("...than other animals?"). See `GPT_project_log.md`, 2026-08-09, and `PROJECT_BACKLOG.md`.
+2. **Continue the ranked figure queue** with Figure 4.4: replace the false “eye” versus “brain” boundary with cones followed by retinal, LGN, and cortical opponent channels, and re-check the cone-response curves.
+3. **Audit `pipeline/evidence-commitments.md` itself, read-only first.** Compare each row with current instructor decisions, the de-hedging/wordiness audits, and current prose. Classify rows as: genuine factual boundary; hedge/negation prescription; stale status; retired/removed content; or unsupported/incorrect source metadata.
+4. **Present proposed ledger decisions in chat before editing the ledger.** Do not change chapter prose during this audit. Preserve the instructor's approved words and do not infer that a ledger disagreement requires a chapter revision.
+5. **After explicit approval, reconcile ledger rows only.** Re-read `HANDOFF.md` immediately before updating it. Validate exact scope and do not commit or push.
+6. **Handle the Moncrieff metadata separately** after the ledger audit or when the instructor chooses; it does not require reopening surrounding prose.
+7. Later project items remain: Chapter 7's missing Figure 7.8 decision, the theoretical-spine cognitive-light-cone ownership note, Chapter 2's no-first-person scope, and Chapter 11 Thread B.
+8. **Deck pilot, independent of the ledger sequence:** instructor markup on slide grammar, then a `.potx` template (decks currently render in the default Office theme), then the PowerPoint-edit ingest. Do not interleave with the ledger audit.
 
 ## Repository hygiene — closed out
 
@@ -69,6 +72,8 @@ The active bookwide figure-repair pass is a fourth scope: `pipeline/audits/bookw
 Repository hygiene is a fifth, non-overlapping scope: `.gitignore`, `.git` itself (gc/prune/eventual history rewrite), and the OneDrive archive at `C:\Users\oxfor\OneDrive\z Teaching\zzz Psych101_archive\` (moved-out cruft and pending images/docx, plus the pre-rewrite backup bundle under `_pre-filter-repo-backup\`). Touches no chapter, ledger, or deck-pilot files.
 
 The book-wide objective-verb bolding reconciliation is a sixth, non-overlapping scope, arising from repository-hygiene step 3: the 11 source Markdown files and 10 regenerated HTML files listed in the 2026-08-03 log entry, plus `docs/chapters/prologue.html` (hand-edited, no generator script), this handoff, and the matching project-log entry. Every change is limited to wrapping an already-existing opening Learning Objective verb in `**`/`<strong>`; no wording, punctuation, figure, caption, or other content changed. Keep separate from the ledger sequence, deck pilot, and figure-repair pass.
+
+The 2026-08-09 external-audit verification pass is a seventh, non-overlapping scope: `source/chapters/{ch01-history-approaches,ch02-research-methods,ch10-lifespan-development,ch11-social-psychology,ch12-emotion-stress-coping,ch13-psychological-disorders-therapy,prologue-how-to-study}.md`, the six regenerated `docs/chapters/{01,02,10,11,12,13}-*.html` pages, hand-edited `docs/chapters/prologue.html`, this handoff, and the matching project-log entry. See `GPT_project_log.md` (2026-08-09) for the exact per-file change list. Keep separate from the ledger sequence, deck pilot, figure-repair pass, and bolding reconciliation.
 
 ## Validation and operating notes
 

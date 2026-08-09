@@ -280,6 +280,8 @@ Randomized experiments give psychology its clearest causal test: manipulate an i
 
 Descriptive statistics summarize the sample; inferential statistics estimate what it says about the population, most visibly through statistical significance — a narrow claim about the data under a null model, not a measure of a finding's size, importance, or truth. Effect size and confidence intervals answer what a p-value cannot: how large, and how precisely known. And because any single study can be wrong, replication is what finally earns a finding scientific trust.
 
+That is how you know when your model of reality is wrong: not by feeling more certain, but by using tools built to catch error that intuition alone cannot — operational definitions, appropriate comparison groups, random assignment, and the statistical machinery this chapter just walked through.
+
 ---
 
 ## Connections
@@ -291,7 +293,7 @@ Descriptive statistics summarize the sample; inferential statistics estimate wha
 | [Reliability and validity](#two-more-questions-every-measure-has-to-answer) | Ch. 9 — Thinking, Language & Intelligence | IQ test standardization is the clearest applied case of these two questions — a test can be highly reliable while its validity as a measure of "intelligence" remains genuinely contested |
 | [Placebo effect](#section-4-bias-controls-and-research-ethics) | Ch. 13 — Psychological Disorders & Therapy | Treatment claims require an appropriate comparison; placebo or attention controls can help separate a treatment's specific ingredients from context, ritual, expectation, and change over time |
 | [Volunteer bias / WEIRD samples](#section-2-the-trap-of-together-means-together) | Ch. 10 — Lifespan Development | Longitudinal studies lose participants non-randomly over years of follow-up, which can quietly bias conclusions about how people change across the lifespan |
-| [Effect size and statistical significance](#beyond-significance-effect-size-and-confidence-intervals) | Ch. 6 — Learning | Effect sizes in reinforcement-schedule research, not significance alone, determine which findings about what actually strengthens behavior get taken seriously |
+| [Effect size and statistical significance](#beyond-significance-effect-size-and-confidence-intervals) | Ch. 7 — Learning | Effect sizes in reinforcement-schedule research, not significance alone, determine which findings about what actually strengthens behavior get taken seriously |
 | [Double-blind procedure / observer-expectancy effects](#section-4-bias-controls-and-research-ethics) | Ch. 1 — History & Approaches | This method exists specifically to guard against the confirmation bias discussed in Chapter 1 — Clever Hans is confirmation bias with hooves |
 | [Replication](#section-5-knowing-what-to-believe-statistics-significance-and-replication) | Ch. 1 — History & Approaches | Chapter 1 introduced the replication crisis as evidence the field is self-correcting; this chapter explains the statistical reason any single study needs that check |
 

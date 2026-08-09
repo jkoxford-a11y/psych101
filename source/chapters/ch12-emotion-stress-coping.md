@@ -23,7 +23,7 @@ So how does your body decide what matters—and why won't it always stand down?
 
 ## Where This Fits
 
-Chapter 3 introduced the autonomic nervous system, the HPA axis, and individual differences in stress reactivity. Chapter 7 showed how learning and prediction change behavior; its reward-prediction-error material is adjacent to, but not an explanation of, well-being adaptation here. Chapter 10 showed how relationships can support regulation across development. This chapter brings those threads together inside the present body. Chapter 13 then asks what happens when distress and dysregulation become persistent enough to impair daily life.
+Chapter 3 introduced the autonomic nervous system and the HPA axis. Chapter 7 showed how learning and prediction change behavior; its reward-prediction-error material is adjacent to, but not an explanation of, well-being adaptation here. Chapter 10 showed how relationships can support regulation across development. This chapter brings those threads together inside the present body. Chapter 13 then asks what happens when distress and dysregulation become persistent enough to impair daily life.
 
 ---
 

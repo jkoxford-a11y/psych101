@@ -229,6 +229,8 @@ Modern psychology operates from multiple theoretical perspectives, not a single 
 
 Psychology exists as a science because common sense about human behavior is unreliable. Hindsight bias makes every finding look obvious after the fact. Confirmation bias protects informal theories from disconfirmation. Systematic observation, controlled methods, and institutional accountability through replication and peer review are not perfect — the replication crisis revealed real and sometimes substantial weaknesses in research practice. Self-correction is possible, not automatic: the problems in the field were identified and addressed through the scientific process itself, not through anyone being exceptionally honest.
 
+That is also the answer to the question this chapter opened with. The same behavior looks different depending on who explains it because each perspective is answering a different question about it — structure, function, consequence, meaning, information processing, or biological mechanism — not because only one of them has gotten it right.
+
 ---
 
 ## Connections

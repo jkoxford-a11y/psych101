@@ -104,7 +104,7 @@ Emma's mistake is not laziness. Her mistake is confusing being near information 
 
 **Think About It:** Think of a time this semester when you were physically in class but mentally somewhere else. What was competing for your attention? What do you remember from that part of the session?
 
-*(Connects forward → Ch. 5 States of Consciousness: attention, inattentional blindness; Ch. 7 Memory: the Atkinson-Shiffrin model)*
+*(Connects forward → Ch. 5 States of Consciousness: attention, inattentional blindness; Ch. 8 Memory: the Atkinson-Shiffrin model)*
 
 ---
 
@@ -130,7 +130,7 @@ Several specific encoding strategies are well supported:
 
 **Think About It:** The last time you read a textbook chapter, were you processing meaning or just recognizing words? What would you have had to do differently to process more deeply?
 
-*(Connects forward → Ch. 7 Memory: levels-of-processing, self-reference effect; Ch. 4 Sensation & Perception: dual coding and visual imagery)*
+*(Connects forward → Ch. 8 Memory: levels-of-processing, self-reference effect; Ch. 4 Sensation & Perception: dual coding and visual imagery)*
 
 ---
 
@@ -162,7 +162,7 @@ The **Stop & Retrieve** prompts throughout this book interrupt passive reading a
 
 **Think About It:** Think about the last time you got something wrong on a practice question. Did you treat it as failure, or as a signal about what to review? What would it look like to treat errors as information rather than defeat?
 
-*(Connects forward → Ch. 7 Memory: retrieval, encoding specificity; Ch. 6 Learning: reinforcement and feedback)*
+*(Connects forward → Ch. 8 Memory: retrieval, encoding specificity; Ch. 7 Learning: reinforcement and feedback)*
 
 ---
 
@@ -184,7 +184,7 @@ There is also a subtler mechanism. When material is slightly forgotten and then 
 
 **Think About It:** How many days before the next exam are you reading this? Map out what a spaced review schedule would actually look like — specific sessions on specific days — rather than a vague intention to "review later."
 
-*(Connects forward → Ch. 6 Learning: reinforcement schedules, extinction; Ch. 7 Memory: forgetting curves, storage)*
+*(Connects forward → Ch. 7 Learning: reinforcement schedules, extinction; Ch. 8 Memory: forgetting curves, storage)*
 
 ---
 
@@ -202,7 +202,7 @@ The all-nighter trade is worse than it appears. You gain hours of exposure while
 
 > **Stop & Retrieve:** Name three distinct functions of sleep that matter for learning. Which do you think students underestimate most?
 
-*(Connects forward → Ch. 5 States of Consciousness: sleep stages, memory consolidation during sleep)*
+*(Connects forward → Ch. 6 Sleep: sleep stages, memory consolidation during sleep)*
 
 ---
 
@@ -222,7 +222,7 @@ None of these patterns means you are bad at studying. They mean your habits have
 
 **Think About It:** Think of a study habit you have that you know does not work well. Walk it through the reinforcement framework: What behavior? What consequence followed? What made the consequence reinforcing? What would a better reinforcement structure look like?
 
-*(Connects forward → Ch. 6 Learning: negative reinforcement, variable reinforcement schedules; Ch. 13 Disorders & Therapy: avoidance maintenance of anxiety)*
+*(Connects forward → Ch. 7 Learning: negative reinforcement, variable reinforcement schedules; Ch. 13 Disorders & Therapy: avoidance maintenance of anxiety)*
 
 ---
 
@@ -248,7 +248,7 @@ A calibrated learner is not one who is always uncertain. It is one who knows *wh
 
 **Think About It:** Think of a topic where you feel highly confident. What would you actually have to do to find out whether that confidence is calibrated? What would discovering a gap feel like, and how would you want to respond to it?
 
-*(Connects forward → Ch. 8 Thinking, Language & Intelligence: heuristics, dual-process theory, System 1 fluency; Ch. 2 Research Methods: reliability and validity applied to self-assessment)*
+*(Connects forward → Ch. 9 Thinking, Language & Intelligence: heuristics, dual-process theory, System 1 fluency; Ch. 2 Research Methods: reliability and validity applied to self-assessment)*
 
 ---
 
@@ -280,7 +280,7 @@ One diagnostic question worth asking before you open AI: **Am I stuck, or am I a
 
 **Think About It:** Think of one specific way you have used AI in a course that might have replaced retrieval rather than supported it. What would you do differently now?
 
-*(Connects forward → Ch. 7 Memory: cognitive offloading, illusion of knowing; Ch. 8 Thinking: dual-process theory, System 1 fluency; Ch. 10 Social Psychology: ELM peripheral processing)*
+*(Connects forward → Ch. 8 Memory: cognitive offloading, illusion of knowing; Ch. 9 Thinking: dual-process theory, System 1 fluency; Ch. 11 Social Psychology: ELM peripheral processing)*
 
 ---
 
@@ -324,16 +324,16 @@ Use this before your first quiz. Schedule three retrieval sessions rather than o
 | Concept from this prologue | Reappears in | Why it matters there |
 |---|---|---|
 | Selective attention and inattentional blindness | Ch. 5 — States of Consciousness | Attention is the entry point to the consciousness chapter; change blindness and inattentional blindness are demonstrated phenomena |
-| Working memory limits | Ch. 7 — Memory | Baddeley's working memory model; why cognitive load matters for learning new material |
-| Encoding depth and the self-reference effect | Ch. 7 — Memory | Levels-of-processing framework; why self-referential encoding outperforms semantic encoding |
-| Retrieval and the testing effect | Ch. 7 — Memory | Every Stop & Retrieve prompt in the book applies this principle |
-| Spaced practice and the forgetting curve | Ch. 6 — Learning | Ebbinghaus connects to the operant conditioning literature on schedules and extinction |
+| Working memory limits | Ch. 8 — Memory | Baddeley's working memory model; why cognitive load matters for learning new material |
+| Encoding depth and the self-reference effect | Ch. 8 — Memory | Levels-of-processing framework; why self-referential encoding outperforms semantic encoding |
+| Retrieval and the testing effect | Ch. 8 — Memory | Every Stop & Retrieve prompt in the book applies this principle |
+| Spaced practice and the forgetting curve | Ch. 7 — Learning | Ebbinghaus connects to the operant conditioning literature on schedules and extinction |
 | Dual coding and visual imagery | Ch. 4 — Sensation & Perception | How the visual system processes spatial and relational information differently than verbal working memory |
-| Negative reinforcement and procrastination | Ch. 6 — Learning | Same mechanism drives avoidance behavior and phobia maintenance; see Ch. 13 |
-| Variable reinforcement schedules | Ch. 6 — Learning | The most persistent behavior patterns are maintained by the most unpredictable rewards |
-| Metacognition and calibration | Ch. 8 — Thinking, Language & Intelligence | Dual-process theory: System 1 fluency as the signal that fools metacognitive monitoring |
-| AI fluency and the illusion of knowing | Ch. 8 — Thinking, Language & Intelligence | Availability heuristic, schema-driven output; why polished text activates comprehension signals prematurely |
-| AI and social desirability / sycophancy | Ch. 10 — Social Psychology | AI systems trained on human preference ratings may systematically agree — same mechanism as social desirability bias |
+| Negative reinforcement and procrastination | Ch. 7 — Learning | Same mechanism drives avoidance behavior and phobia maintenance; see Ch. 13 |
+| Variable reinforcement schedules | Ch. 7 — Learning | The most persistent behavior patterns are maintained by the most unpredictable rewards |
+| Metacognition and calibration | Ch. 9 — Thinking, Language & Intelligence | Dual-process theory: System 1 fluency as the signal that fools metacognitive monitoring |
+| AI fluency and the illusion of knowing | Ch. 9 — Thinking, Language & Intelligence | Availability heuristic, schema-driven output; why polished text activates comprehension signals prematurely |
+| AI and social desirability / sycophancy | Ch. 11 — Social Psychology | AI systems trained on human preference ratings may systematically agree — same mechanism as social desirability bias |
 
 ---
 
