@@ -44,6 +44,11 @@ CHAPTERS = [
     ("Ch 13", "source/chapters/ch13-psychological-disorders-therapy.md"),
 ]
 
+EXAM_BANKS = [
+    ("Exam bank Ch 1", "pipeline/exam-bank/ch01-exam-bank.md"),
+    ("Exam bank Ch 2", "pipeline/exam-bank/ch02-exam-bank.md"),
+]
+
 SKIPPED_LABS = [
     ("docs/labs/ch03/action-potential-threshold.html", "prediction plus simulation; no scored knowledge-choice items"),
     ("docs/labs/ch04/blind-spot-filling-in.html", "perceptual observation; no single objectively correct response"),
@@ -277,7 +282,7 @@ def add_pattern_warnings(row: AuditRow) -> None:
     ):
         row.warnings.append("conspicuous monotonic position march")
 
-    for period in (2, 3):
+    for period in (2, 3, 4):
         if len(values) >= period * 3 and all(
             values[index] == values[index % period] for index in range(len(values))
         ):
@@ -313,6 +318,42 @@ def parse_chapter(label: str, source: str) -> AuditRow:
         positions.append(
             ord(answer_match.group(1).lower()) - ord("a") + 1 if answer_match else None
         )
+        option_counts.append(len(options))
+    return make_row(label, positions, option_counts)
+
+
+def parse_exam_bank(label: str, source: str) -> AuditRow:
+    """Parse pipeline/exam-bank/chNN-exam-bank.md's Gate 2 candidate pool.
+
+    Format differs from parse_chapter's book Review Questions: items are
+    headed '**Item X.Y**' rather than numbered '**N.**', and the keyed
+    option is marked inline with '**[KEY]**' rather than a separate
+    'Answer:' line, since exam-bank items carry per-option metadata that
+    the book's Review Questions don't.
+    """
+    markdown = read(source)
+    section = re.search(
+        r"^##\s+Gate 2\b.*$([\s\S]*?)(?=^##\s+Next step|\Z)",
+        markdown,
+        re.M,
+    )
+    if not section:
+        raise ValueError("Gate 2 candidate-items section not found")
+    body = section.group(1)
+    starts = list(re.finditer(r"^\*\*Item\s+\S+\*\*\s*$", body, re.M))
+    positions: list[int | None] = []
+    option_counts: list[int] = []
+    for index, start in enumerate(starts):
+        block = body[start.start() : starts[index + 1].start() if index + 1 < len(starts) else len(body)]
+        options = list(re.finditer(r"^([a-z])\)\s+.+$", block, re.M))
+        if len(options) < 2:
+            continue
+        keyed = None
+        for option in options:
+            if "[KEY]" in option.group(0):
+                keyed = ord(option.group(1).lower()) - ord("a") + 1
+                break
+        positions.append(keyed)
         option_counts.append(len(options))
     return make_row(label, positions, option_counts)
 
@@ -641,6 +682,11 @@ def main() -> int:
         try:
             rows.append(parse_chapter(label, source))
         except Exception as error:  # compact tool output is more useful than a traceback
+            parse_errors.append(f"{label}: {error}")
+    for label, source in EXAM_BANKS:
+        try:
+            rows.append(parse_exam_bank(label, source))
+        except Exception as error:
             parse_errors.append(f"{label}: {error}")
     for parser in LAB_PARSERS:
         try:

@@ -21,6 +21,10 @@ Thumbs.db
 desktop.ini
 .DS_Store
 
+# Python bytecode cache
+__pycache__/
+*.pyc
+
 # npm logs
 npm-debug.log*
 
