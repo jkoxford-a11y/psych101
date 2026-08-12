@@ -91,7 +91,7 @@ Use `docs/images/ch04/README_captions_alt_text_attribution.md` as the authoritat
 | 4.2 | Weber's Law: JND versus starting intensity | ✅ wired/use now | `ch04/ch04_weber_law_jnd_vs_intensity.svg` — directly plots ΔI against I and labels the constant 0.10 ratio; replaces the misleading intensity-against-itself graphic. |
 | inline | Psychometric function / absolute threshold | ⚠️ | `ch04/fig_psychometric_function_webvision.jpg` — CC BY-NC 4.0; confirm non-commercial use assumptions before public release. |
 | 4.3 | Retina rods/cones/fovea/blind spot infographic | ✅ | `ch04/fig_retina_rods_cones_fovea_blindspot.png` |
-| 4.4 | Two-stage color vision: trichromatic cones + opponent-process channels | ✅ | `ch04/ch04_color_vision_two_stage_model_v1.png` |
+| 4.4 | Two-stage color vision: trichromatic cones + opponent-process channels | ✅ | `ch04/ch04_color_vision_two_stage_model_v2.png` — replaces v1 (2026-08-12): removed false "Eye"/"Brain" location labels in favor of an explicit Retina → LGN → Cortex pathway (opponent processing begins in retinal circuits, not centrally); corrected cone-response curves to realistic overlapping S/M/L peaks instead of evenly-spaced RGB-style curves and fixed a duplicated-curve rendering artifact. Bookwide figure audit F-016, resolved. |
 | 4.5 | Perception prediction loop | ✅ wired/use now | `ch04/ch04_perception_prediction_loop.svg` — prediction error now flows into an explicit model-update step before the next prediction and perceptual/action cycle. |
 | 4.6 | Same pixels / illumination assumptions | ✅ | `ch04/ch04_same_pixels_illumination_assumptions_v1.png` |
 | 4.7 | Original Gestalt principles panel | ✅ | `ch04/fig_gestalt_principles_original.png/.svg` — replaces OpenStax composite. |
