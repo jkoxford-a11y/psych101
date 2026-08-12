@@ -16,7 +16,7 @@ Piaget read changes like this as evidence for broad cognitive stages. The real p
 
 ## Where This Fits
 
-Why do humans take so long to grow up? That question runs underneath this chapter. The biological machinery from Chapter 3 develops for years; the learning processes from Chapter 7 tune it; the memory systems from Chapter 8 become usable on different schedules; and the social behavior in Chapter 11 grows from early relationships and increasingly complex social worlds. We will follow that construction process from before birth through late adulthood using three recurring tensions: How do biology and experience interact? Does change occur gradually or in stages? And what remains stable while the person changes?
+Why does it take humans so much longer to grow up than other animals? That question runs underneath this chapter. The biological machinery from Chapter 3 develops for years; the learning processes from Chapter 7 tune it; the memory systems from Chapter 8 become usable on different schedules; and the social behavior in Chapter 11 grows from early relationships and increasingly complex social worlds. We will follow that construction process from before birth through late adulthood using three recurring tensions: How do biology and experience interact? Does change occur gradually or in stages? And what remains stable while the person changes?
 
 ---
 

@@ -24,7 +24,7 @@ Chapter 3 introduced genes, neural systems, and chemical signaling without reduc
 
 This chapter brings those levels together. A diagnosis organizes a clinically significant pattern. It does not, by itself, explain where that pattern came from. Biological vulnerability, development, learning, cognition, relationships, culture, opportunity, and stress can interact differently in different people who receive the same diagnosis.
 
-One recurring lens remains useful: an ordinary process can become rigid or poorly matched to present conditions. Avoidance can reduce anxiety now while preserving it later. Withdrawal can conserve effort today while shrinking access to reward tomorrow. A compulsion can buy relief while strengthening the next compulsion. This is a **maintenance lens**, not a general theory of psychopathology. It fits some problems better than others, and it does not explain the origins of every disorder.
+One recurring lens remains useful: an ordinary process can become rigid or poorly matched to present conditions. Avoidance can reduce anxiety now while preserving it later. Withdrawal can conserve effort today while shrinking access to reward tomorrow. A compulsion can buy relief while strengthening the next compulsion. This is a **maintenance lens**, not a general theory of psychopathology. It fits some problems better than others, and it does not explain the origins of every disorder. You will see the same shape again in this chapter's anxiety and depression sections: a system still doing exactly what it evolved or learned to do, now running at a cost that outweighs its benefit.
 
 ![Figure 13.1: A bounded maintenance lens showing a short-term protective response, immediate relief, and a feedback path that can preserve a problem over time, alongside a boundary note that the lens applies to some symptoms rather than all disorders](../../docs/images/ch13/ch13_maintenance_lens_bounded.svg)
 *Figure 13.1. A response can make sense in the short term yet help maintain a problem over time. This lens is especially useful for avoidance, compulsions, trauma-related threat learning, and behavioral withdrawal; it is not a universal architecture of psychological disorder. Original figure.*
@@ -124,7 +124,7 @@ The **biopsychosocial model** widens the frame further. Biological, psychologica
 
 The **ultimate explanation** asks why threat detection is calibrated toward false alarms. Chapter 4 introduced the trade-off any detector faces under uncertainty: shifting a criterion to catch more real signals also produces more false alarms. Threat detection faces that trade-off with lopsided stakes. A false alarm wastes effort. A miss can end the organism. Natural selection sets the criterion accordingly, so systems that anticipate danger are built to over-detect it (Nesse, 2005).
 
-That is why the clinical question is calibration, not presence. Anxiety disorders involve anticipatory patterns that are excessive or persistent relative to context and that cause clinically significant distress or impairment. The system is doing its job at the wrong setting.
+That is why the clinical question is calibration, not presence. Anxiety disorders involve anticipatory patterns that are excessive or persistent relative to context and that cause clinically significant distress or impairment. The system is doing its job at the wrong setting. This is the pattern this chapter keeps returning to: a protective system, still working, now miscalibrated to a setting it was never tuned for.
 
 | Pattern | Central feature | What not to infer |
 |---|---|---|
@@ -293,6 +293,8 @@ Representative disorders differ in pattern and course. Anxiety disorders involve
 Treatment is a matching problem. Psychotherapy alliance predicts outcome, while condition-specific techniques also matter. Medication and ECT require explicit tradeoffs among benefit, risk, urgency, preference, and monitoring. Treatment response does not prove a simple etiology. Mental-health AI must likewise be evaluated by product type, evidence, privacy, governance, and clinical integration.
 
 Return to Casey: exhaustion and two weeks of withdrawal were evidence, not a verdict, and the missing context — overnight shifts, a parent's surgery, anemia — changed the causal story before any diagnosis was warranted. Symptoms are evidence, not verdicts, at every step this chapter covered, from the 3Ds through diathesis-stress to treatment matching.
+
+A second thread ran underneath the disorders themselves: the anxious detector calibrated to over-warn, the withdrawal that conserves effort today while shrinking tomorrow's reward — protective systems, still doing their job, now costing more than they are worth.
 
 ---
 
