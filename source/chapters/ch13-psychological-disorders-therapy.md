@@ -155,7 +155,7 @@ One maintenance pathway is behavioral withdrawal. Low mood and fatigue reduce ac
 ![Figure 13.6: A circular loop connecting low mood, withdrawal and inactivity, fewer rewarding experiences, and lower motivation, with an arrow exiting the loop from withdrawal toward behavioral activation](../../docs/images/ch13/fig_depression_maintenance_loop.png)
 *Figure 13.6. Behavioral withdrawal is one possible maintenance pathway in depression. Behavioral activation interrupts the loop by scheduling useful or rewarding action before waiting for motivation to return. Original figure.*
 
-Depression is not simply a serotonin shortage. An umbrella review found that the familiar serotonin-deficiency story is not supported as a general causal account (Moncrieff et al., 2022). Antidepressants can still reduce symptoms for some people (Cipriani et al., 2018). A treatment can be effective without proving that the untreated disorder was a simple deficiency of the chemical the treatment alters.
+Depression is not simply a serotonin shortage. An umbrella review found that the familiar serotonin-deficiency story is not supported as a general causal account (Moncrieff et al., 2023). Antidepressants can still reduce symptoms for some people (Cipriani et al., 2018). A treatment can be effective without proving that the untreated disorder was a simple deficiency of the chemical the treatment alters.
 
 Reward processing, inflammation, sleep, stress physiology, cognition, and social adversity are all active research areas. Findings are heterogeneous. Some may characterize subgroups, consequences, or maintaining conditions rather than one universal mechanism.
 
@@ -448,7 +448,7 @@ Howes, O. D., & Kapur, S. (2009). The dopamine hypothesis of schizophrenia: Vers
 
 Linehan, M. M. (1993). *Cognitive-behavioral treatment of borderline personality disorder*. Guilford Press.
 
-Moncrieff, J., Cooper, R. E., Stockmann, T., Amendola, S., Hengartner, M. P., & Horowitz, M. A. (2022). The serotonin theory of depression: A systematic umbrella review of the evidence. *Molecular Psychiatry, 27*(8), 3369–3380. https://doi.org/10.1038/s41380-022-01661-0
+Moncrieff, J., Cooper, R. E., Stockmann, T., Amendola, S., Hengartner, M. P., & Horowitz, M. A. (2023). The serotonin theory of depression: A systematic umbrella review of the evidence. *Molecular Psychiatry, 28*, 3243–3256. https://doi.org/10.1038/s41380-022-01661-0
 
 National Institute for Health and Care Excellence. (2022). *Depression in adults: Treatment and management (NG222).* https://www.nice.org.uk/guidance/ng222
 
