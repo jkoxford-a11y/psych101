@@ -150,7 +150,7 @@ All 9 figures are wired.
 | # | Description | Status | Filename / note |
 |---|-------------|--------|-----------------|
 | 7.1 | Classical conditioning diagram | ✅ | `ch07/fig_classical_conditioning_ucs_cs.png` |
-| 7.2 | Extinction is not erasure | ✅ | `ch07/fig_extinction_not_erasure.png` |
+| 7.2 | Extinction is not erasure | ✅ revised/wired/use now | `ch07/fig_extinction_not_erasure.png` — keeps the earlier Bell → Food relationship available while context-sensitive Bell + extinction context → No food learning controls current behavior; the lower curve is explicitly observable responding, not association strength. |
 | 7.3 | Operant conditioning 2×2 | ✅ | `ch07/fig_operant_conditioning_2x2.png` |
 | 7.4 | Reinforcement schedules comparison | ✅ | `ch07/fig_reinforcement_schedules.png` |
 | 7.5 | Garcia and Koelling compound-cue training and selective tests | ✅ wired/use now | `ch07/ch07_garcia_koelling_compound_cue_test.svg` — shows taste plus light/tone together during training, outcome groups, and separated cue tests; replaces the misleading four-pairing matrix. |

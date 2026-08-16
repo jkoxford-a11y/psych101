@@ -1,5 +1,18 @@
 # Chapter 7 Figure Metadata
 
+## Figure 7.2 — Extinction is not erasure
+
+- **File:** `fig_extinction_not_erasure.png` (1578 × 996 rendered asset).
+- **Caption:** Extinction adds new, context-sensitive learning rather than erasing the earlier relationship. Responding falls when the new Bell + extinction context → No food relationship controls behavior, but the earlier Bell → Food relationship remains available. After time or a context change, the earlier learning can regain influence and responding may return. The lower curve shows observable responding, not stored association strength.
+- **Alt text:** Three-stage infographic separating inferred learning from observed responding. Acquisition shows Bell to Food learning with salivation rising. During extinction, the earlier Bell to Food relationship remains visible while a new Bell plus extinction context to No food relationship controls behavior and salivation falls. After time or a context change, the earlier learning may regain influence and salivation may return. A lower curve is explicitly labeled observed responding, not association strength.
+- **Origin and attribution:** Original figure generated for Oxford Psychology 101 with OpenAI image generation, 2026.
+- **Creation method:** Built-in OpenAI image generation using the former Figure 7.2 as an edit target, followed by an instructor-approved redesign and a targeted context-change clarification.
+- **External assets:** No external copyrighted image assets were intentionally used.
+- **License / public-sharing status:** Original course artwork; approved for public sharing with the Oxford Psychology 101 textbook after instructor and scientific-accuracy review on 2026-08-16.
+- **Data status:** The observed-salivation curve is a schematic teaching pattern, not measurements reproduced from a particular experiment.
+- **Interpretation boundary:** The two relationships are a teaching model of competing, context-sensitive learning. The curve depicts observable responding and must not be read as a direct measurement of stored association strength.
+- **Figure number in image:** None.
+
 ## Figure 7.4 — Reinforcement schedules
 
 - **Files:** `fig_reinforcement_schedules.svg` (editable source); `fig_reinforcement_schedules.png` (2400 × 1680 rendered asset).
