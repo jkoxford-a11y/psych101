@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Same image, two illumination models</title>
+  <desc id="desc">A single ambiguous striped fabric image branches into two interpretation paths. One assumes cool blue shadow and discounts blue, producing a lighter warmer inferred surface. The other assumes warm yellow light and discounts yellow, producing a darker cooler inferred surface. The sensory input is shown once, so the figure does not falsely depict two different images as identical pixels.</desc>
+  <defs>
+    <linearGradient id="fabricBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#b8b2a3"/>
+      <stop offset="0.5" stop-color="#8d877a"/>
+      <stop offset="1" stop-color="#6f6b61"/>
+    </linearGradient>
+    <linearGradient id="stripe1" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#c6bea7"/>
+      <stop offset="1" stop-color="#aaa28e"/>
+    </linearGradient>
+    <linearGradient id="stripe2" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#77766f"/>
+      <stop offset="1" stop-color="#565953"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-opacity="0.15"/>
+    </filter>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="10" markerHeight="10" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#4a4f55"/>
+    </marker>
+  </defs>
+
+  <rect width="1600" height="900" fill="#ffffff"/>
+
+  <text x="800" y="74" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="44" font-weight="700" fill="#1f252b">Same Image, Two Illumination Models</text>
+  <text x="800" y="116" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="24" fill="#4f565c">The sensory input is fixed. The inferred lighting model changes the perceived surface.</text>
+
+  <!-- Single input card -->
+  <g filter="url(#shadow)">
+    <rect x="545" y="160" width="510" height="285" rx="24" fill="#f7f7f5" stroke="#c9cdd1" stroke-width="2"/>
+  </g>
+  <text x="800" y="205" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="27" font-weight="700" fill="#24292f">One digital image</text>
+  <text x="800" y="237" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="20" fill="#5f666d">One fixed pattern of pixels</text>
+
+  <!-- stylized ambiguous fabric input, deliberately neutral/ambiguous -->
+  <g transform="translate(655 260)">
+    <rect x="0" y="0" width="290" height="145" rx="14" fill="url(#fabricBg)" stroke="#666b70" stroke-width="2"/>
+    <path d="M15 18 C75 5, 115 32, 175 17 C215 7, 252 14, 275 28 L275 54 C230 40, 190 64, 135 48 C90 36, 48 58, 15 43 Z" fill="url(#stripe1)" opacity="0.95"/>
+    <path d="M15 66 C70 52, 120 78, 170 64 C225 48, 250 58, 275 70 L275 98 C230 83, 190 110, 133 92 C87 78, 50 101, 15 88 Z" fill="url(#stripe2)" opacity="0.98"/>
+    <path d="M15 110 C70 95, 112 125, 171 108 C218 95, 250 101, 275 115 L275 132 C225 118, 187 143, 133 127 C84 113, 47 136, 15 123 Z" fill="url(#stripe1)" opacity="0.95"/>
+    <path d="M25 8 C86 43, 204 15, 265 48" fill="none" stroke="#ffffff" stroke-opacity="0.28" stroke-width="5"/>
+  </g>
+
+  <!-- Branch arrows -->
+  <path d="M760 446 C690 520, 500 505, 405 552" fill="none" stroke="#4a4f55" stroke-width="5" marker-end="url(#arrow)"/>
+  <path d="M840 446 C910 520, 1100 505, 1195 552" fill="none" stroke="#4a4f55" stroke-width="5" marker-end="url(#arrow)"/>
+  <rect x="585" y="461" width="430" height="42" rx="14" fill="#ffffff"/>
+  <text x="800" y="490" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700" fill="#4a4f55">Visual system estimates the illuminant</text>
+
+  <!-- Left interpretation -->
+  <g filter="url(#shadow)">
+    <rect x="125" y="555" width="585" height="235" rx="24" fill="#fbfcfd" stroke="#9eb8d0" stroke-width="3"/>
+  </g>
+  <circle cx="190" cy="620" r="29" fill="#dbe9f6" stroke="#6f98bb" stroke-width="2"/>
+  <text x="190" y="628" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700" fill="#315a78">A</text>
+  <text x="240" y="610" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700" fill="#24313b">Assume cool / blue shadow</text>
+  <text x="240" y="648" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#4f5c65">Discount more of the blue cast</text>
+  <line x1="210" y1="690" x2="625" y2="690" stroke="#d4d9dd" stroke-width="2"/>
+  <text x="190" y="738" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#5a6066">Inferred surface:</text>
+  <rect x="380" y="710" width="245" height="54" rx="10" fill="#d7c89e" stroke="#9a8d68" stroke-width="2"/>
+  <text x="502" y="745" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="700" fill="#463f2c">lighter • warmer</text>
+
+  <!-- Right interpretation -->
+  <g filter="url(#shadow)">
+    <rect x="890" y="555" width="585" height="235" rx="24" fill="#fbfcfd" stroke="#d7b879" stroke-width="3"/>
+  </g>
+  <circle cx="955" cy="620" r="29" fill="#f6ead1" stroke="#c79d48" stroke-width="2"/>
+  <text x="955" y="628" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700" fill="#7a5a17">B</text>
+  <text x="1005" y="610" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700" fill="#24313b">Assume warm / yellow light</text>
+  <text x="1005" y="648" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#4f5c65">Discount more of the warm cast</text>
+  <line x1="975" y1="690" x2="1390" y2="690" stroke="#d4d9dd" stroke-width="2"/>
+  <text x="955" y="738" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#5a6066">Inferred surface:</text>
+  <rect x="1145" y="710" width="245" height="54" rx="10" fill="#58667a" stroke="#364456" stroke-width="2"/>
+  <text x="1267" y="745" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="700" fill="#ffffff">darker • cooler</text>
+
+  <!-- Bottom key -->
+  <rect x="245" y="818" width="1110" height="52" rx="16" fill="#f1f3f4"/>
+  <text x="800" y="851" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="700" fill="#2c3338">Same sensory input → different lighting assumptions → different inferred surface colors</text>
+</svg>
