@@ -44,12 +44,12 @@ All figures listed in reading order. Figure numbers refer to v0.4 markdown.
 
 ---
 
-### Fig 4.4 — `ch04_color_vision_two_stage_model_v1.png`
-**Caption:** Color vision operates in two complementary stages. The eye's cones measure raw wavelength energy (trichromatic stage); downstream ganglion cells compare those cone signals in opponent pairs (opponent-process stage). Afterimages and the impossibility of reddish-green or bluish-yellow arise from Stage 2.
-**Alt text:** "Two Stages of Color Vision." Left panel (Stage 1: Trichromatic Theory — The Eye): incoming light activates three cone photoreceptor types with different sensitivity curves; cones send separate signals to the brain about how much light of each type is present. Right panel (Stage 2: Opponent-Process Theory — The Brain): opponent channels compare cone signals in red/green, yellow/blue, and light/dark pairs. Key idea label: Stage 1 measures light with three cone types; Stage 2 constructs color by comparing opponent pairs.
-**Source:** Original diagram — Jon Oxford, 2026.
+### Fig 4.4 — `ch04_color_vision_two_stage_model_v2.png`
+**Caption:** Color vision operates in two complementary stages. Cones in the retina measure raw wavelength energy (trichromatic stage); downstream neural channels then compare those cone signals in opponent pairs — a comparison that begins in the retina and continues through the LGN to cortex, not a separate "eye" and "brain" process (opponent-process stage). Afterimages and why reddish-green and bluish-yellow are not normally perceived as ordinary mixtures arise from Stage 2.
+**Alt text:** "Two Stages of Color Vision." Left panel shows three cone types — S, M, and L — in the retina with overlapping wavelength-sensitivity curves, including substantial overlap between M and L. Right panel shows a Retina → LGN → Cortex pathway in which downstream neural channels, beginning in retinal circuitry, compare cone outputs in red-versus-green, yellow-versus-blue, and light-versus-dark opponent channels. A final box connects opponent processing to afterimages and the absence of ordinary reddish-green and bluish-yellow mixtures.
+**Source:** Original figure generated for Oxford Psychology 101 with ChatGPT image generation, 2026. No external copyrighted image assets intentionally used.
 **License:** © Jon Oxford — all rights reserved until open license assigned.
-**Status:** ✅ In use. No figure number embedded in artwork — good for reuse.
+**Status:** ✅ In use; regenerated 2026-08-12 to remove the false Eye/Brain boundary, show Retina → LGN → Cortex, and correct the cone-response curves. Bookwide figure audit F-016 resolved.
 
 ---
 
@@ -63,11 +63,11 @@ All figures listed in reading order. Figure numbers refer to v0.4 markdown.
 ---
 
 ### Fig 4.6 — `ch04_same_pixels_illumination_assumptions_v1.png`
-**Caption:** Same pixels, different percepts. Both scenarios deliver identical light to the retina; what differs is the brain's unconscious assumption about the illuminant. Assumption A (cool/blue shadow) leads to a lighter, warmer perceived surface color; Assumption B (warm/yellow light) leads to a darker, cooler one. This is the mechanism behind the viral dress illusion — and a concrete demonstration that perception is inference, not readout.
-**Alt text:** "Same Pixels, Different Percepts." Two scenarios show the same fabric object under different lighting assumptions. In Assumption A (blue shadow), the brain discounts the blue cast and perceives the surface as lighter and warmer. In Assumption B (warm light), the brain discounts yellow and perceives the surface as darker and cooler. The center panel shows that both eyes receive an identical pattern of light from the object. Key idea label: "Perception is an inference. With the same sensory input, different assumptions lead the brain to different interpretations of the world."
-**Source:** Original diagram — Jon Oxford, 2026.
+**Caption:** Same image, different percepts. The visual system must estimate the illuminant before inferring surface color. Different assumptions about that illuminant can therefore produce different color experiences from the same image file.
+**Alt text:** "Same Image, Two Illumination Models." One fixed digital image is shown once at the top, then branches into two interpretation paths. Under a cool/blue-shadow assumption, the visual system discounts more of the blue cast and infers a lighter, warmer surface. Under a warm/yellow-light assumption, it discounts more of the warm cast and infers a darker, cooler surface. The figure's key relationship is one fixed sensory input leading to different inferred surface colors when the assumed illuminant changes.
+**Source:** Original programmatic diagram — OpenAI, 2026. Editable source companion: `ch04_same_input_two_illumination_models.svg`. No external copyrighted image assets used.
 **License:** © Jon Oxford — all rights reserved until open license assigned.
-**Status:** ✅ In use. No figure number embedded in artwork — good for reuse.
+**Status:** ✅ In use; rebuilt 2026-08-16 so the artwork shows one literal input once and branches to two illumination models, eliminating the former contradiction in which visibly different scenes were labeled "same pixels." The active PNG path was replaced in place, so the chapter source and generated HTML did not need a path change. Bookwide figure audit F-017 resolved.
 
 ---
 
@@ -125,6 +125,8 @@ All figures listed in reading order. Figure numbers refer to v0.4 markdown.
 
 | File | Notes |
 |---|---|
+| `ch04_same_input_two_illumination_models.svg` | Editable source companion for the rebuilt Figure 4.6 PNG installed at the existing live filename. Keep. |
+| `ch04_same_input_two_illumination_models.png` | Duplicate export of the rebuilt Figure 4.6; safe to delete after confirming the live PNG path contains the same blob. |
 | `perception as a predictive loop model.png` | Older version of Fig 4.5; superseded by `ch04_perception_prediction_loop.svg`. Safe to delete. |
 | `fig_gestalt_principles_openstax.png` | Replaced by `fig_gestalt_principles_original.png`. OpenStax CC BY-NC-SA — no longer referenced. Safe to delete. |
 | `fig_gestalt_*_openstax.webp` (×5) | Source files used to build the old OpenStax composite — no longer needed. Safe to delete. |
