@@ -1,309 +1,669 @@
 # Lecture Deck Generation Spec
 
-> Governs how every chapter of the Psych101 textbook becomes a lecture deck.
-> Author: Jon Oxford Ph.D. | Drafted 2026-07-29 | Version 0.1
-> **Status: PROPOSAL — not adopted.** Open questions in §14 are genuinely open.
-> Implementation: `pipeline/build_chapter_deck.py`. Seed format: `pipeline/slides/README.md`.
+> Governs how Psych101 textbook chapters become lecture decks.
+> Author: Jon Oxford, Ph.D. | Adopted 2026-08-16 | Version 1.0
+> **Status: ACTIVE PROJECT STANDARD.**
+>
+> This version reconciles the 2026-07-29 prototype rules with the mature 4:3 decks developed through Chapters 2–10. It replaces the earlier proposal status and resolves the major grammar/workflow questions exposed by those builds.
 
 ---
 
-## 0. Scope
+## 0. Scope and authority
 
-This spec governs the deck. It does not govern the chapter — `chapter-spec.md` does that, and where the two disagree the chapter wins.
+A lecture deck is a **teaching artifact derived from a chapter**. It is not a chapter summary, a reading substitute, or a second place where textbook content decisions are made.
 
-A deck is a **teaching artifact derived from a chapter**. It is not a summary of the chapter, not a reading substitute, and not a second place where content decisions get made.
+Use this order of authority:
 
----
+1. `AGENTS.md` — repository rules and scope discipline.
+2. `HANDOFF.md` — current state and immediate next actions.
+3. `source/chapters/chNN-*.md` — authoritative chapter content.
+4. `pipeline/voice-brief.md` — authorial voice and recurring cases.
+5. `pipeline/evidence-commitments.md` — load-bearing evidence boundaries.
+6. **This file** — lecture-deck pedagogy, slide grammar, visual standard, and QA.
+7. `pipeline/activity-library.md` — reusable activity patterns.
+8. `pipeline/slides/chNN.md` — chapter-specific teaching decisions that must survive rebuilds.
+9. `slides/chNN/assets/manifest.md` — slide-only visual provenance.
+10. Generated `.pptx` — disposable output.
 
-## 1. Design philosophy
+Where the deck and chapter disagree about psychology, **the chapter wins**. Where they disagree about what belongs on screen, **the deck spec wins**.
 
-### 1.1 The room criterion
-
-The chapter already decided what belongs in the book. The deck decides something different:
-
-> **Does this need to happen in the room?**
-
-Exposition can be read. Class time should carry what fails when read alone:
-
-- committing to a prediction before the answer exists
-- generating an explanation and watching it fall short
-- discovering your own intuition was wrong, in front of the evidence
-- arguing with a peer and having to justify the answer
-- sorting cases where the categories overlap and the overlap is the lesson
-
-Everything else is a candidate for the speaker notes, an optional slide, or nothing at all. "This is important" is not a reason for a slide; the chapter already established importance. "A student cannot get this from reading" is a reason.
-
-This criterion replaces slide counts. It is content-based, it has a stopping rule, and it does not change when the calendar does.
-
-### 1.2 Build what the chapter earns
-
-Do not inflate a thin section to fill a period, and do not compress a rich one to fit. A deck that is honestly short is a correct deck.
-
-### 1.3 Prose belongs in the notes
-
-Chapter prose is written for a page. On a slide it is unreadable; in the speaker notes it is exactly right. Each paragraph contributes **one claim** to the slide and its **full text** to the notes.
-
-### 1.4 Slide titles carry claims
-
-A slide titled "Figure 6.2" tells the room nothing. A slide titled "Light entrains the clock; the clock does not need light to run" is the teaching. Titles state the claim; figure and table numbers live in the notes for pointing back at the book.
+The legacy automatic paragraph-to-slide generator (`pipeline/build_chapter_deck.py` plus the original seed-override format in `pipeline/slides/README.md`) is implementation history, not the pedagogical standard. It may be reused only if it produces the explicit teaching moves described here. Raw chapter paragraphs are never a sufficient slide plan.
 
 ---
 
-## 2. Source of truth
+## 1. Governing principle: build teaching moves, not chapter summaries
 
-| Artifact | Status | Hand-edited? |
-|---|---|---|
-| `source/chapters/chNN-*.md` | Canonical | Yes — this is the book |
-| `pipeline/slides/chNN.md` (seed) | Canonical *for teaching decisions* | Yes |
-| `pipeline/ai-modules/chNN.md` | Canonical *for the AI layer* (§7) | Yes |
-| `slides/chNN/assets/` | Canonical for slide-only images | Yes |
-| `build/decks/*.pptx` | Derived | **Never** |
-| `build/decks/*.deck-model.json` | Derived | **Never** |
+The relevant unit is a **teaching move**.
 
-Built decks are rebuilt, not committed — a `.pptx` is a zip, and version control stores a whole new copy on every rebuild. Attach a deck to a release when a citable snapshot is needed.
+Before making a slide, ask:
 
-A teaching decision that contradicts the chapter is a seed entry, never a chapter edit. A *content* decision that the chapter got wrong is a chapter edit, never a seed entry. If you cannot tell which you are making, it is a chapter edit and it goes through the normal chapter workflow.
+> **What should happen in the room that reading the chapter alone does not accomplish as well?**
 
----
+Strong reasons for a slide include:
 
-## 3. Modules and stopping points
+- students must commit before the answer appears;
+- two ideas are easy to confuse and need a visible contrast;
+- a mechanism becomes clearer as a sequence or system;
+- a case makes an abstract idea usable;
+- evidence needs to be weighed rather than merely named;
+- a misconception needs to be activated and repaired;
+- students need retrieval, classification, explanation, or transfer;
+- the chapter argument needs to be reassembled after detail.
 
-### 3.1 Modules are the chapter's own sections
+Weak reasons include:
 
-Verified against Chapters 1 and 6: the chapter's `## Section N` headings already are the teaching modules. No separate module-authoring layer exists or should be created.
+- “this paragraph is important”;
+- “the textbook has a heading here”;
+- “we have not put this term on a slide yet”;
+- “the deck seems short.”
 
-Chapter 1 → four modules: What Is Psychology · A Short History · Modern Perspectives · Why Science?
+**Do not ask, “What material belongs on slides?” Ask, “What sequence of cognitive moves will cause students to understand the chapter?”**
 
-### 3.2 Module sizing
-
-Modules are sized to the **smallest common class period**, not the largest.
-
-A MWF section runs ~50-minute periods, or roughly **35–45 usable minutes** after settling, transitions, and a mid-class break. A module must be enterable and completable inside that. Longer meetings run two or three modules; they do not require a differently built deck.
-
-**Do not emit "Day 1" and "Day 2" decks.** Day boundaries are calendar facts, not content facts, and they differ across MWF, TTh, summer, evening, and online sections of the same course.
-
-### 3.3 Stopping points
-
-Every module boundary is a stopping point. A stopping point must be **conceptually complete** — the argument so far stands on its own and the next module opens a new question.
-
-The generator marks stopping points explicitly. "We ran out of time at slide 17" is not one.
-
-### 3.4 The break
-
-A mid-class break is a design asset, not lost time. Where a chapter has a predict-then-reveal structure, the break belongs **inside the gap**: students commit before, the reveal lands after. The delay strengthens the effect rather than interrupting it.
-
-Chapter 1's Milgram prediction is the worked example.
+A short deck can be correct. A long deck can be correct. Slide count is a consequence of the teaching problem, not a target.
 
 ---
 
-## 4. Slide grammar
+## 2. What students should retain
 
-What the generator derives from a chapter, and why. The implementation lives in the `CONFIG` block at the top of `build_chapter_deck.py`; this section states the rules the config encodes.
+Every deck begins by identifying the chapter’s **governing argument** and the 3–5 questions students should still be able to answer two weeks later.
 
-| Chapter element | Becomes | Notes |
-|---|---|---|
-| `# Chapter N: Title` | Title slide | |
-| Misconception Opener quote | Hook slide, quote alone, no title | The misconception is stated, not yet answered |
-| Misconception correction prose | Concept slide(s) | |
-| Where This Fits | One framing slide | Lead with the bolded question |
-| Learning Objectives | Agenda, 3 per slide, own numbering | Bullets suppressed — placeholder bullets collide with the numbers |
-| `## Section N:` | Module divider + stopping point | |
-| `### Subsection` | Slide title for what follows | Not its own slide |
-| `#### Do Not Confuse` / `#### Classic Study` | Own slide, role-tagged | These are labelled teaching moves |
-| Figure + caption | Full-bleed image, caption small, alt text → notes | Title = the claim (§1.4) |
-| Markdown table | Real PowerPoint table, split at 4 data rows with header repeated | PowerPoint auto-grows rows; long tables run off the slide silently |
-| `> **Stop and Retrieve:**` / `> **Think About It:**` | Prompt slide | |
-| `**Try it yourself:**` + lab link | Lab slide | |
-| Review Questions | One slide each, answer + rationale in notes | See §14.4 |
-| Key Terms | Grouped, 4 per slide | |
-| Further Reading, References | Omitted | |
+The roadmap is not a projection of the formal Learning Objectives. Compress objectives into student-facing questions.
 
-**Roadmap slides.** A chapter may carry one, displayed whole, ~20 seconds. Revealing questions one at a time is a learning-objectives ritual with animation attached; the section dividers reactivate each question at the point it becomes live.
+Examples from the mature decks:
+
+- Chapter 8: How does a memory get built? What gets stored? Why do we forget? Why does remembering change?
+- Chapter 9: How do concepts preserve structure? When do shortcuts become bias? How does language make meaning public? What does an intelligence score summarize and discard?
+- Chapter 10: How do we study change? How do biology and experience build each other? How do minds develop with other people? What reorganizes after childhood?
+
+A roadmap normally appears whole and lasts about 20–30 seconds. Section dividers reactivate the relevant question when it becomes live.
 
 ---
 
-## 5. Slide tiers
+## 3. Visual standard
 
-Every slide record carries exactly one tier. Routes are produced by **filtering on tier**, never by an instructor deciding mid-lecture what to skip.
+### 3.1 Format
 
-| Tier | Meaning |
-|---|---|
-| `core` | The argument breaks without it |
-| `enrichment` | Deepens a point the core already makes; cut cleanly |
-| `activity` | An activity slide; may be core or optional, tagged separately |
-| `backup` | Answers an anticipated question; shown only if asked |
+- PowerPoint **4:3**.
+- Slide size **10 × 7.5 inches**.
+- White or near-white canvas.
+- Designed first for classroom projection, not laptop reading.
 
-Planned branching is legitimate teaching. Unplanned cutting from an overbuilt deck is the defect this tiering exists to prevent.
+### 3.2 Visual direction
 
----
+**Museum catalogue meets modern science classroom.**
 
-## 6. Activities
+- dark charcoal text;
+- restrained teal structural accent;
+- one warm accent when emphasis is useful;
+- large editorial typography;
+- strong negative space;
+- flat, clean geometry;
+- explanatory figures rather than decorative imagery;
+- minimal shadows, gradients, borders, and ornamental cards;
+- humor comes from the teaching, not from decorative graphics.
 
-Activities are selected from `pipeline/activity-library.md`, not invented per chapter. The library carries the patterns, their material triggers, and their evidence base; this section carries the rules any activity must satisfy regardless of pattern.
+### 3.3 Typography and density
 
-### 6.1 Admission test
+Default ranges:
 
-An activity earns its place only if it passes §1.1 and has a **failure mode** — a way for a student's own answer to be wrong, and for them to find out. An activity that cannot fail is exposition with a pause in it.
+- primary title / claim: **40–48 pt**;
+- ordinary instructional text: **30–34 pt**;
+- short labels: **24–28 pt**;
+- source/footer: **14–16 pt**.
 
-### 6.2 Required fields
+Never shrink text to rescue an overloaded slide. Instead:
 
-Every activity carries: the prompt as students see it · what students physically produce (write, vote, tell a partner) · the debrief move · estimated minutes · tier · what it would replace if cut.
+1. remove material that belongs in notes;
+2. split the cognitive move;
+3. simplify the visual;
+4. move detail to backup.
 
-### 6.3 Overlapping categories are a lesson, not a bug
+Projected paragraphs are a defect. A good slide usually contains a claim, a structure, and enough words to make the structure interpretable.
 
-Where a sort has genuinely overlapping dimensions, **run two passes** rather than forcing exclusive buckets.
+### 3.4 Layout discipline
 
-Chapter 1's camera test is the worked example. "A student says, 'I am not nervous'" is simultaneously observable behavior and self-report evidence about an inferred state. A single three-way sort makes that item incoherent. Two passes — *what is directly recorded vs. inferred*, then *what kind of evidence is being used* — teach the actual distinction.
-
-### 6.4 Placement follows the chapter
-
-An activity whose honest debrief requires machinery from a later chapter belongs in that later chapter. Chapter 1's Wason 2-4-6 is the worked example: a debrief that is fair to the positive-test-strategy literature has to teach hypothesis-space structure, which Chapter 9 owns. Tag it `enrichment` in Chapter 1 on **conceptual** grounds, not time.
-
-Two extended bias demonstrations in one lecture is one too many regardless.
-
----
-
-## 7. The AI layer
-
-The AI Psych Pilot runs pre/post AI-literacy assessment across the semester. Its modules therefore have to be consistent across sections, traceable to assessment constructs, and stable enough to cite. They are not slide tweaks.
-
-### 7.1 Content location
-
-AI modules live in **`pipeline/ai-modules/chNN.md`**, tracked and reviewed like chapter content, with a registry in `pipeline/ai-modules/README.md` mapping each module to the pilot construct it serves. Seeds reference them by ID; seeds do not contain them.
-
-Rationale: seed files are volatile per-chapter slide adjustments. Pilot instrumentation cannot live in a volatile file.
-
-### 7.2 Three types
-
-| Type | What it is |
-|---|---|
-| `connection` | A brief application inside the normal lecture flow |
-| `module` | A structured activity — predict, compare, critique, calibrate, revise |
-| `assessment-bridge` | Deliberately aligned to a pilot pre/post measure |
-
-### 7.3 Required fields
-
-Psychological learning objective · AI-literacy objective · student task · whether students commit before consulting AI · evidence or calibration target · relationship to the pilot instrument · tier.
-
-### 7.4 The psychology leads
-
-An AI element must teach a psychological principle first, with AI as the modern instance. Chapter 1's black-box inference is the template: *similar output does not establish similar mechanism* — a claim about inference that Skinner and Chomsky were already arguing about.
-
-The boundary line belongs in the notes: if the room turns it into an AI lecture, the answer is that the same question was asked twenty slides ago.
-
-### 7.5 Not every chapter
-
-Some chapters earn a substantial module, some a one-line connection, some nothing. A mechanical AI element per chapter produces filler and would corrupt the pilot's own measurements.
+- One hard idea or task per slide.
+- Titles carry the claim whenever possible.
+- Use parallel alignment for comparisons.
+- Use left-to-right flow for mechanisms and processes.
+- Use central-node or network layouts for systems.
+- Use asymmetry when it clarifies hierarchy; do not fill empty space merely because it exists.
+- Repeated slide-type labels and the footer should occupy stable positions across the deck.
+- Do not use tiny completed tables. If a table matters, simplify it or reveal its rows/columns in teachable chunks.
 
 ---
 
-## 8. Per-slide record
+## 4. Mature slide grammar
 
-Every slide in `deck-model.json` carries:
+The uppercase label is the student-facing **pedagogical role**, not merely a visual layout name. Use the smallest vocabulary that accurately describes the teaching move.
 
-| # | Field | Required | Notes |
-|---|---|---|---|
-| 1 | `key` | ✅ | Stable identity — §9 |
-| 2 | `fingerprint` | ✅ | Hash of source text; change detection |
-| 3 | `module` | ✅ | Owning chapter section |
-| 4 | `tier` | ✅ | §5 |
-| 5 | `kind` | ✅ | title / divider / concept / figure / table / prompt / activity / lab / question / terms |
-| 6 | `title` | ✅ | The claim (§1.4) |
-| 7 | `body` | ✅ | What is on the slide |
-| 8 | `notes` | ✅ | Full source prose, plus instructor moves |
-| 9 | `source_anchor` | ✅ | Chapter section this derives from |
-| 10 | `activity` | nullable | §6.2 fields |
-| 11 | `ai_element` | nullable | §7.3 fields; typed |
-| 12 | `story_slot` | **nullable** | Joke, story, or demo. Mandatory humor produces filler |
-| 13 | `omitted` | ✅ | What was deliberately left off the slide, and why |
-| 14 | `est_minutes` | ✅ | **Metadata only** — §11 |
-| 15 | `instructor_watch` | nullable | Misreadings to head off; sourced from spine seeds |
+### 4.1 Orientation
 
-Field 13 is mandatory and is the most useful field in the record: it is the only place that distinguishes "not taught" from "taught aloud, deliberately not on the slide."
+**TITLE** — establishes the chapter argument, not just the chapter name.
 
----
+**MISCONCEPTION OPENER** — states the attractive wrong belief before correction.
 
-## 9. Slide identity
+**ROADMAP** — 3–5 student-facing questions organizing the lecture.
 
-Overrides must point at something that does not move.
+**SECTION DIVIDER** — resets attention and reactivates the next governing question.
 
-- Keys are **positional within a module** — `ch06-s1-p2` is Section 1's second concept slide. Inserting a paragraph shifts keys inside one section, not across the deck.
-- Figures, key terms, and review questions get **semantic** keys — `ch06-fig-6-2`, `ch06-term-adenosine`, `ch06-rq-5`.
-- Each slide also carries a **fingerprint** of its source text: the fallback when a key is deleted, and the signal that prose changed underneath an override.
-- Keys and fingerprints are written into the speaker notes so they survive a round trip through PowerPoint.
+### 4.2 Explanation
 
-**Orphaned overrides are reported, never dropped.** A pipeline that silently discards human decisions is worse than no pipeline.
+**CORE CLAIM** — one proposition worth remembering.
 
----
+**CORE TOOL** — a reusable diagnostic or conceptual framework students should apply later.
 
-## 10. Images and provenance
+**DISTINCTION** — separates two related concepts whose boundary matters.
 
-- Book figures come from `docs/images/chNN/` and keep the book's own attribution records.
-- Slide-only images live in `slides/chNN/assets/` with a separate `manifest.md`.
-- Any new image is `provenance: UNKNOWN` until a human fills it in. A deck given to another instructor is redistribution.
-- Long edge capped at 2560px. Illustrations embed as JPEG, flat diagrams as PNG, transparency stays lossless. Originals are never modified.
-- `psych101_figure_style_guide.md`'s "no decorative stock images" rule governs the book. Slides may be looser; the provenance requirement does not relax.
+**COMPARISON** — parallel comparison across two or more alternatives.
 
----
+**DO NOT CONFUSE** — misconception prevention; use when a familiar but wrong equivalence is likely.
 
-## 11. Time is metadata
+**MECHANISM** — explains why or how an outcome occurs.
 
-Per-slide and per-activity minute estimates are recorded so an instructor can navigate. They are **diagnostic, never a mandate**.
+**PROCESS** — visible sequence over time or stages.
 
-Time estimates may be used to: detect a mislabeled deck, expose uncounted activity cost, warn that a module cannot fit the smallest common period.
+**SYSTEM MAP** — interacting contributors, pathways, or constraints; avoids false single-cause stories.
 
-They may **not** be used to: set a slide-count target, choose which activity to cut, or justify adding material.
+**WORKED EXAMPLE** — concrete case → reasoning → conclusion.
 
-The Chapter 1 blueprint is the cautionary case. The arithmetic correctly caught that a draft claiming 31 slides contained 40 and never counted the prediction, revote, or debrief — a real finding. It was then used to pick an activity for removal, which was the wrong use of a right measurement.
+**APPLICATION** — uses a chapter principle to make a practical decision or solve a new case.
 
----
+### 4.3 Evidence
 
-## 12. Evidence and citation discipline
+**CLASSIC EVIDENCE** — a study or procedure whose design itself teaches the concept.
 
-Slides inherit `pipeline/evidence-commitments.md`. Two rules that specifically bite on slides:
+**EVIDENCE** — data or result needed to support the current claim.
 
-**Separate sources stay separate.** Chapter 1's Milgram slide carries two citations because they are two sources — the psychiatrists' 1-in-1,000 forecast (Milgram, 1974) and the observed 26-of-40 result (Milgram, 1963). That separation is itself a teaching point about where predictions come from.
+**EVIDENCE BOUNDARY** — separates the robust conclusion from the tempting overreach. Use sparingly; it is a teaching slide only when the boundary itself is cognitively important.
 
-**Contested interpretations go in the notes, not on the slide.** Where a deck stakes an argument on a study whose evidentiary record is disputed, the instructor gets a line to say — *"this study has its own problems, and you will meet them in Chapter 11"* — which converts the objection into the section's own argument. The student slide stays clean.
+**METHODS** — makes an inferential design problem visible (e.g., cross-sectional vs. longitudinal; correlation vs. causation).
+
+### 4.4 Student thinking
+
+**PREDICTION** — students commit before the answer or result.
+
+**ACTIVITY** — students produce an answer, classification, explanation, sketch, vote, comparison, or decision.
+
+**RETRIEVAL** — students reconstruct prior material without simply rereading it.
+
+A rhetorical question on a content slide is **not** an activity. Activity status requires an actual student action and a debrief.
+
+### 4.5 Integration and close
+
+**SYNTHESIS** — reassembles several mechanisms/distinctions into the chapter argument.
+
+**CLOSE** or **RETRIEVAL CLOSE** — students answer the opener or governing question in their own words, often with the two-sentence pattern: concede why the misconception is attractive, then explain why it fails.
+
+**REFERENCE** — instructor-facing backup such as natural stopping points; normally hidden from the student route.
+
+Do not invent a new slide type because a one-off layout looks different. New labels require a recurring pedagogical job.
 
 ---
 
-## 13. Validation checklist
+## 5. Choosing the slide type: decision rules
 
-Run before a deck is taught from.
+For each candidate piece of chapter content, ask in order:
 
-- [ ] Every slide has a tier, and the core route stands alone as an argument
-- [ ] Every activity has a failure mode (§6.1) and all §6.2 fields
-- [ ] No slide's job is "students could read this"
-- [ ] Slide titles state claims, not labels
-- [ ] Every module is enterable and completable in ~35–45 minutes
-- [ ] Every module boundary is conceptually complete
-- [ ] `omitted` (field 13) is populated on every slide
-- [ ] No orphaned seed keys in the build report
-- [ ] Every slide-only image has a provenance row
-- [ ] Multi-source claims cite each source separately
-- [ ] Contested interpretations appear in notes, not on slides
-- [ ] AI elements teach the psychology first and map to a pilot construct
-- [ ] Deck rebuilds clean from source with no hand edits
+1. **Is this part of the governing argument?**
+   - yes → `CORE CLAIM`, `CORE TOOL`, or `SYNTHESIS`.
+2. **Must students discriminate concepts?**
+   - yes → `DISTINCTION`, `COMPARISON`, or `DO NOT CONFUSE`.
+3. **Is causal or temporal structure the point?**
+   - yes → `MECHANISM`, `PROCESS`, or `SYSTEM MAP`.
+4. **Does understanding depend on the evidence pattern or design?**
+   - yes → `CLASSIC EVIDENCE`, `EVIDENCE`, `EVIDENCE BOUNDARY`, or `METHODS`.
+5. **Would a concrete case make the abstraction usable?**
+   - yes → `WORKED EXAMPLE` or `APPLICATION`.
+6. **Should students commit, retrieve, classify, explain, or transfer?**
+   - yes → `PREDICTION`, `ACTIVITY`, or `RETRIEVAL`.
+7. **Is the material useful aloud but not visually?**
+   - put it in speaker notes.
+8. **Does it merely repeat the reading without improving the room?**
+   - omit it.
+
+Do not preserve textbook order mechanically. Preserve the chapter’s **argumentative dependencies**.
 
 ---
 
-## 14. Decisions still open
+## 6. Slide status and lecture routes
 
-Genuinely unresolved. These are the questions worth review.
+Every slide carries exactly one status:
 
-**14.1 Hinge slides.** Chapter 1's black-box inference is the payoff to Skinner–Chomsky (end of Section 2) *and* the setup for institutional safeguards (Section 4). It has two homes. Should the model support a first-class `hinge` construct with a primary location and a callback, or is a seeded callback slide in Section 4 sufficient?
+- **core** — required for the governing argument;
+- **optional** — useful extension that can disappear without breaking continuity;
+- **backup** — anticipated question, deeper evidence, alternate example, or instructor planning material.
 
-**14.2 Module sizing.** Is 35–45 minutes right, and does it survive chapters whose sections are badly unequal? Chapter 6 has three sections of very different weight. Should oversized sections split into sub-modules, and if so, on what boundary?
+`activity` is a **slide type**, not a status.
 
-**14.3 AI content location.** §7.1 proposes `pipeline/ai-modules/chNN.md` with a registry. Alternatives: an `ai:` block inside the seed (simpler, less traceable), or a separate repository owned by the pilot (most traceable, worst coupling). The pilot's assessment needs decide this, and they are not yet written down.
+The core route must stand alone as a coherent lecture. Optional and backup material must not be prerequisites for later core slides.
 
-**14.4 Review questions in lecture decks.** The generator currently produces one slide per review question — nine for Chapter 6. These are written as *reading* comprehension checks. Should they be in a lecture deck at all, become a separate quiz-review deck, or be filtered to those that pass §1.1?
+Do not build an overstuffed deck and expect the instructor to improvise cuts while teaching.
 
-**14.5 Backup slides.** Do anticipated-question slides live at the end of the main deck, in a separate appendix deck, or only in notes?
+---
 
-**14.6 Field reconciliation.** §8 defines fifteen fields. The original Chapter 1 blueprint draft referenced a twelve-field generator spec (its field 8 = joke/story, 9 = core/optional, 12 = intentionally omitted). That draft list has not been reconciled against this one, and the numbering here should not be assumed to match it.
+## 7. Activities
 
-**14.7 Slide-count ceilings.** §11 forbids counts as targets. Should any ceiling exist at all — even a soft warning at, say, 80 slides — or does any number reintroduce the failure mode?
+Use `pipeline/activity-library.md` as the pattern library. Select from the material outward; do not start with a quota.
 
-**14.8 Second render target.** The same model can render reveal.js, which would embed the book's 21 interactive labs live in lecture. Does that change anything in this spec, or is it purely a renderer concern?
+An activity earns its place when it adds cognitive work that prose cannot:
+
+- prediction;
+- classification;
+- comparison;
+- retrieval;
+- mechanism construction;
+- evidence evaluation;
+- explanation revision;
+- transfer to a new case.
+
+Every activity slide or activity embedded in notes must specify:
+
+1. **what students physically do**;
+2. **what they produce**;
+3. **how long it takes** when timing matters;
+4. **the debrief**;
+5. **the likely failure mode or tempting wrong answer** when one exists;
+6. **what the activity can and cannot establish** when evidential overreach is possible.
+
+Prediction tasks require a real commitment before reveal. When hindsight is part of the lesson, the prediction should be written or otherwise recordable.
+
+Do not duplicate an existing Learning Lab with a weaker slide activity. If the lab performs the cognitive work better, use the lab.
+
+---
+
+## 8. Speaker notes: required schema
+
+Every student-facing slide must contain structured notes in this exact order:
+
+- **Intent:** why this slide exists.
+- **Instructor move:** what to explain, ask, demonstrate, or emphasize.
+- **Activity procedure:** exact steps, or `None`.
+- **Reveal intention:** what appears first, later, or remains static.
+- **Evidence boundary:** the accuracy constraint that matters here, or `None needed`.
+- **Source anchor:** chapter section, figure, study, or cross-chapter connection.
+- **Transition:** why the next slide follows.
+- **Optional elaboration:** story, joke, local example, or tangent; usually `None`.
+- **Status:** `core`, `optional`, or `backup`.
+- **Intentionally omitted:** material deliberately kept off-screen.
+
+The notes must allow the author months later—or another competent instructor—to reconstruct the intended teaching move.
+
+### 8.1 What belongs in notes rather than on screen
+
+- full textbook explanation;
+- caveats needed for scientific accuracy but not for visual instruction;
+- citations that do not need to be visible to students;
+- historical detail;
+- instructor examples and stories;
+- alternate explanations students may raise;
+- what to listen for in student answers;
+- the exact reveal/debrief sequence.
+
+Notes are not a dumping ground for content omitted accidentally. `Intentionally omitted` forces the distinction.
+
+---
+
+## 9. Evidence discipline
+
+Slides inherit the chapter’s evidence commitments. Do not sharpen, soften, or modernize a consequential claim without checking `pipeline/evidence-commitments.md` and the chapter’s own sources.
+
+### 9.1 Confidence before qualification
+
+The slide should usually state the strongest supported teaching claim directly. Put a limitation on screen only when the limitation is itself part of the concept students must learn.
+
+Examples:
+
+- `Sensitive periods are windows, not cliffs` earns a visible boundary because the misconception is the lesson.
+- routine sample limitations normally belong in notes.
+
+### 9.2 Separate evidence sources
+
+When two numbers or claims come from two different sources, keep them separate. Do not collapse predictions and observed results into one citation.
+
+### 9.3 Classic studies
+
+Use classic studies for what they genuinely demonstrate. If a study is historically useful but evidentially compromised, teach the durable inference and record the limitation in notes unless the methodological problem is itself the lesson.
+
+---
+
+## 10. Figures and visuals
+
+Figures must earn projection space.
+
+Use a textbook figure when:
+
+- its instructional job matches the slide;
+- labels remain legible from the back of the room;
+- the complete figure does not introduce irrelevant complexity.
+
+Build a **slide-native visual** when:
+
+- the book figure is too dense;
+- the lecture needs only one part of it;
+- the concept is better represented as a simple process, comparison, timeline, or system map;
+- the projection version needs larger labels or a different aspect ratio.
+
+Do not distort the textbook figure merely to make it fit. Redraw the teaching structure instead.
+
+The figure philosophy in `docs/images/psych101_figure_style_guide.md` still governs: explanatory mechanism, comparison, system relationship, or misconception repair over decoration.
+
+### 10.1 Provenance
+
+- book figures: `docs/images/chNN/` plus existing metadata;
+- slide-only assets: `slides/chNN/assets/`;
+- slide-only provenance: `slides/chNN/assets/manifest.md`.
+
+Generated or redrawn visuals need provenance just as textbook visuals do.
+
+---
+
+## 11. Animation-ready construction
+
+Native animation generation is not required. Construct the deck so manual PowerPoint reveals are easy.
+
+### Sequential text
+
+Use separate paragraphs inside a text placeholder so the instructor can apply `Appear → By Paragraph`.
+
+### Independent visual reveals
+
+Keep reveal units as separate objects/groups. When the implementation permits naming, use:
+
+- `REVEAL_01`
+- `REVEAL_02`
+- `REVEAL_03`
+- `CONCLUSION`
+
+Do not group reveal objects with static titles or structure.
+
+### Complex sequences
+
+Prefer duplicate-slide builds to fragile animation when the diagram changes substantially.
+
+Speaker notes must always record the intended reveal order.
+
+---
+
+## 12. Natural stopping points
+
+Decks must support different meeting lengths without “Day 1 / Day 2” hard-coding.
+
+A natural stopping point is a conceptual boundary where:
+
+- the argument so far is complete enough to stand;
+- the next slide opens a new question or mechanism;
+- students can retrieve what they just learned.
+
+Section boundaries are the default candidates, but not every textbook section is equally sized. Large sections may contain an internal stopping point after a completed mechanism/evidence arc.
+
+An instructor-facing `REFERENCE` slide may list the best stopping points at the end of the deck. It is `backup`, not part of the student lecture route.
+
+Time estimates are diagnostic metadata, not slide-count mandates.
+
+---
+
+## 13. Standard deck arc
+
+Not every chapter needs every move, but mature decks usually follow this logic:
+
+1. **TITLE** — chapter argument.
+2. **PREDICTION** or **MISCONCEPTION OPENER** when the opener supports commitment.
+3. **CORE CLAIM / CORE TOOL** — initial repair.
+4. **ROADMAP** — 3–5 lecture questions.
+5. **SECTION DIVIDER**.
+6. Explanation sequence using claims, contrasts, mechanisms, evidence, cases, and activities as earned.
+7. Retrieval or a natural stop when the conceptual arc closes.
+8. Repeat for later sections.
+9. **SYNTHESIS** — reconstruct the governing argument.
+10. **CLOSE / RETRIEVAL CLOSE** — answer the opening claim or transfer the central tool.
+11. Optional **REFERENCE** slide for instructor planning.
+
+The order is argumentative, not ceremonial. A chapter may open directly with a prediction before the roadmap when that preserves surprise.
+
+---
+
+## 14. Material normally kept off-screen
+
+Do not automatically reproduce:
+
+- complete Learning Objective wording;
+- every historical date;
+- biographies;
+- complete definitions when a concrete case teaches the concept better;
+- full reference lists;
+- full glossary;
+- review-question banks;
+- every retrieval box;
+- every figure;
+- every qualification;
+- the full Connections table;
+- all chapter prose;
+- AI modules merely because AI appears elsewhere in the course.
+
+The default is **less text, more structure**.
+
+---
+
+## 15. AI content
+
+Psychology remains primary. An AI example or module belongs only when it clarifies the psychological idea or serves an explicitly approved AI-literacy objective.
+
+Do not insert an AI activity mechanically into every chapter.
+
+When an AI activity is used:
+
+- students should normally attempt the psychological task before consulting AI;
+- the AI output becomes an object for comparison, critique, or calibration;
+- the notes must identify the psychological learning objective and the AI-literacy objective separately.
+
+---
+
+## 16. Codex / agent workflow for a new chapter
+
+This is the workflow an agent should follow without relying on conversational memory.
+
+### Step 1 — Load authority
+
+Read:
+
+1. `AGENTS.md`;
+2. `HANDOFF.md`;
+3. the authoritative chapter Markdown;
+4. `pipeline/voice-brief.md`;
+5. relevant rows in `pipeline/evidence-commitments.md`;
+6. this file;
+7. `pipeline/activity-library.md`;
+8. the prior chapter deck seed/plan if continuity is relevant.
+
+Do **not** treat `pipeline/slides/README.md`'s legacy paragraph-to-slide behavior as the design target.
+
+### Step 2 — Diagnose before authoring
+
+Write a chapter deck blueprint containing:
+
+- governing argument;
+- 3–5 roadmap questions;
+- core claims;
+- high-value distinctions;
+- mechanisms/processes;
+- evidence cases;
+- activities/predictions;
+- figures or slide-native visuals;
+- intentional omissions;
+- natural stopping points;
+- likely evidence boundaries.
+
+The blueprint is a teaching sequence, not an outline of every heading.
+
+### Step 3 — Build slide records
+
+For every slide define:
+
+- slide type;
+- claim/title;
+- visible content structure;
+- status;
+- speaker notes using §8;
+- visual/reveal plan;
+- source anchor;
+- intentional omissions.
+
+### Step 4 — Generate PowerPoint
+
+Use the approved 4:3 design system. Reuse established layouts and geometry. Do not invent a new visual theme per chapter.
+
+If the rendering implementation lacks a true `.potx` master, reproduce the established 4:3 white design programmatically and keep layout constants centralized. The absence of a template is not permission to change the look.
+
+### Step 5 — Render and inspect
+
+Render every slide. Inspect the **actual images**, not merely the PPTX object tree.
+
+Check:
+
+- title wrapping;
+- body overflow;
+- font size;
+- spacing and alignment;
+- object collisions;
+- visual hierarchy;
+- figure readability;
+- repeated label/footer placement;
+- excessive density;
+- awkward empty space;
+- broken arrows/lines;
+- whether a slide that technically fits still reads from a lecture hall.
+
+Repair the deck and rerender until the full set is clean.
+
+### Step 6 — Content QA
+
+Verify:
+
+- the core route forms a coherent argument;
+- roadmap questions are answered;
+- every activity has a real student action and debrief;
+- evidence boundaries match the chapter;
+- no chapter claim was silently strengthened or weakened;
+- recurring cases and cross-chapter links are accurate;
+- no review-question bank or glossary was dumped into the lecture deck.
+
+### Step 7 — Persist decisions
+
+Record durable chapter-specific teaching decisions in `pipeline/slides/chNN.md` or the current canonical chapter deck source. Do not rely on manual edits to a generated PPTX.
+
+For major completed deck work, update `GPT_project_log.md` and `HANDOFF.md` according to repository rules.
+
+---
+
+## 17. Reference implementation: Chapters 8–10
+
+The mature Chapter 8–10 4:3 decks are the reference behavior for this specification. The canonical external visual reference is currently:
+
+`ch10_lifespan_development_4x3_draft.pptx`
+
+Because generated PPTX binaries are intentionally not committed, the following patterns define what Codex must reproduce.
+
+### 17.1 Chapter 10 — prediction → repair
+
+**PREDICTION**
+
+> Which statement best captures development?
+> “Children are mostly incomplete adults.”
+> Commit first. Then explain your reason to a neighbor.
+
+The following **CORE CLAIM** uses conservation to show *why* the tempting answer fails. The prediction is not decorative interaction; it creates a commitment that the next slide can repair.
+
+### 17.2 Chapter 10 — mechanism instead of term list
+
+**MECHANISM**
+
+> Humans follow a slow, expensive strategy.
+> An organism cannot spend the same calorie twice.
+
+The slide makes life-history tradeoffs visible as a continuum and leaves paleoanthropological nuance in notes.
+
+### 17.3 Chapter 10 — methods as inference
+
+**COMPARISON**
+
+> Two designs ask different change questions.
+> Age difference is not automatically aging.
+
+Cross-sectional and longitudinal designs appear with their signature inferential weaknesses, followed by the diagnostic question: are we comparing ages, cohorts, or within-person change?
+
+### 17.4 Chapter 8 — a reusable core tool
+
+**CORE TOOL**
+
+> Memory has three places to fail.
+> “I forgot” is not a diagnosis.
+
+Encoding, storage, and retrieval become a diagnostic framework rather than three definitions.
+
+### 17.5 Chapter 9 — activity with a failure mode
+
+**PREDICTION**
+
+> More English words beginning with K, or with K as the third letter?
+
+Students commit and state the basis of judgment before availability is named. The debrief separates ease of retrieval from actual frequency.
+
+### 17.6 Mature note style
+
+A strong note block looks like this:
+
+```text
+Intent: Teach teratogens as conditional developmental risks rather than a memorized list.
+Instructor move: Keep the logic on-screen: timing, dose/pattern, and organism/context.
+Activity procedure: None.
+Reveal intention: Levers left to right; alcohol boundary last.
+Evidence boundary: Use the chapter’s public-health wording: no amount and no stage of prenatal alcohol exposure has been shown safe.
+Source anchor: Section 1, Before birth: timing and dose.
+Transition: Prenatal construction leads into the postnatal build-and-carve process.
+Optional elaboration: None.
+Status: core
+Intentionally omitted: Detailed list of infections, medications, and physical agents.
+```
+
+Codex should match this level of specificity, not merely attach generic presenter notes.
+
+---
+
+## 18. Validation checklist
+
+Before a deck is considered finished:
+
+- [ ] Governing argument is identifiable in one sentence.
+- [ ] Roadmap has 3–5 student-facing questions, not copied objectives.
+- [ ] Every core slide advances the argument or makes students do useful cognitive work.
+- [ ] Slide titles state claims or tasks rather than generic topics.
+- [ ] One hard idea/task per slide.
+- [ ] All student-facing text is projection-readable; no rescue-by-shrinking.
+- [ ] Every slide uses the structured notes schema in §8.
+- [ ] Every activity includes a real student action and debrief.
+- [ ] Core/optional/backup status is explicit.
+- [ ] Evidence boundaries agree with chapter source and evidence commitments.
+- [ ] Figures are projection-readable and instructionally necessary.
+- [ ] Slide-only visuals have provenance.
+- [ ] Reveal intentions are constructible in PowerPoint.
+- [ ] Natural stopping points are identified.
+- [ ] Synthesis reconstructs the chapter rather than listing terms.
+- [ ] Close requires retrieval, explanation, or transfer.
+- [ ] Full deck has been rendered and visually inspected slide by slide.
+- [ ] No overlaps, clipped text, broken lines, or unreadably dense slides remain.
+- [ ] Generated PPTX is treated as output; durable decisions live in text source/spec files.
+
+---
+
+## 19. Remaining implementation work
+
+The pedagogy and slide grammar are now settled enough to automate Chapters 11–13. Remaining implementation work should not reopen those decisions:
+
+1. build or designate a real reusable `.potx` / `.pptx` master if desired;
+2. centralize the established 4:3 geometry in the generator;
+3. make the generator consume an explicit authored deck model rather than chapter paragraphs;
+4. add PowerPoint-edit ingest only after slide identities are stable;
+5. consider a reveal.js renderer later as a renderer concern, not a reason to change slide grammar.
+
+The next useful test of this standard is **Chapter 11 Social Psychology generated by Codex**, followed by rendered visual and pedagogical review against Chapters 8–10.
