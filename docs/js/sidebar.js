@@ -1,15 +1,22 @@
 (function () {
   "use strict";
 
-  var TOP_ITEMS_FULL = [
-    { id: "toc", label: "Table of Contents", path: "index.html" },
+  var TOC_ITEM = { id: "toc", label: "Table of Contents", path: "toc.html" };
+
+  var ABOUT_GROUP = {
+    name: "About This Book",
+    chapters: [
+      { id: "cover", label: "Cover", path: "index.html" },
+      { id: "front-matter", label: "Front Matter", path: "front-matter.html" }
+    ]
+  };
+
+  var TOP_ITEMS_AFTER_ABOUT_FULL = [
     { id: "prologue", label: "0 — Prologue: How to Actually Learn This Stuff", path: "chapters/prologue.html" },
     { id: "labs", label: "Learning Labs", path: "labs/index.html" }
   ];
 
-  var TOP_ITEMS_TOC_ONLY = [
-    { id: "toc", label: "Table of Contents", path: "index.html" }
-  ];
+  var TOP_ITEMS_AFTER_ABOUT_TOC_ONLY = [];
 
   var PILLARS = [
     {
@@ -93,10 +100,53 @@
     return e;
   }
 
+  // Renders a collapsible group (used for both the top-level "About This
+  // Book" group and each subject-pillar group) as one <li> appended to ul.
+  function renderToggleGroup(ul, group, currentDir, activeId) {
+    var containsActive = group.chapters.some(function (c) { return c.id === activeId; });
+
+    var groupLi = el("li", { class: "pillar-group" });
+
+    var toggle = el("button", {
+      class: "pillar-toggle",
+      type: "button",
+      "aria-expanded": containsActive ? "true" : "false"
+    });
+    toggle.appendChild(document.createTextNode(group.name));
+    var chevron = el("span", { class: "chevron", "aria-hidden": "true" }, "▾");
+    toggle.appendChild(chevron);
+    groupLi.appendChild(toggle);
+
+    var itemsWrap = el("ul", { class: "pillar-chapters" + (containsActive ? " expanded" : "") });
+
+    group.chapters.forEach(function (item) {
+      var li = el("li");
+      if (item.path) {
+        var a = el("a", { href: resolveHref(currentDir, item.path) }, item.label);
+        if (item.id === activeId) a.setAttribute("class", "active");
+        li.appendChild(a);
+      } else {
+        li.setAttribute("class", "pillar-note");
+        li.appendChild(document.createTextNode(item.label + " "));
+        li.appendChild(el("span", { class: "toc-pending" }, item.pending || "(coming soon)"));
+      }
+      itemsWrap.appendChild(li);
+    });
+
+    groupLi.appendChild(itemsWrap);
+    ul.appendChild(groupLi);
+
+    toggle.addEventListener("click", function () {
+      var expanded = toggle.getAttribute("aria-expanded") === "true";
+      toggle.setAttribute("aria-expanded", expanded ? "false" : "true");
+      itemsWrap.classList.toggle("expanded", !expanded);
+    });
+  }
+
   function render(root, opts) {
     var currentDir = opts.dir || "";
     var activeId = opts.active || "";
-    var topItems = opts.top === "toc-only" ? TOP_ITEMS_TOC_ONLY : TOP_ITEMS_FULL;
+    var afterAboutItems = opts.top === "toc-only" ? TOP_ITEMS_AFTER_ABOUT_TOC_ONLY : TOP_ITEMS_AFTER_ABOUT_FULL;
 
     var inner = el("div", { class: "sidebar-inner" });
 
@@ -113,7 +163,15 @@
     var nav = el("nav", { "aria-label": "Book navigation" });
     var ul = el("ul");
 
-    topItems.forEach(function (item) {
+    var tocLi = el("li");
+    var tocA = el("a", { href: resolveHref(currentDir, TOC_ITEM.path) }, TOC_ITEM.label);
+    if (TOC_ITEM.id === activeId) tocA.setAttribute("class", "active");
+    tocLi.appendChild(tocA);
+    ul.appendChild(tocLi);
+
+    renderToggleGroup(ul, ABOUT_GROUP, currentDir, activeId);
+
+    afterAboutItems.forEach(function (item) {
       var li = el("li");
       var a = el("a", { href: resolveHref(currentDir, item.path) }, item.label);
       if (item.id === activeId) a.setAttribute("class", "active");
@@ -125,44 +183,7 @@
     ul.appendChild(el("li", { style: "height: 0.6rem;" }));
 
     PILLARS.forEach(function (pillar) {
-      var containsActive = pillar.chapters.some(function (c) { return c.id === activeId; });
-
-      var groupLi = el("li", { class: "pillar-group" });
-
-      var toggle = el("button", {
-        class: "pillar-toggle",
-        type: "button",
-        "aria-expanded": containsActive ? "true" : "false"
-      });
-      toggle.appendChild(document.createTextNode(pillar.name));
-      var chevron = el("span", { class: "chevron", "aria-hidden": "true" }, "▾");
-      toggle.appendChild(chevron);
-      groupLi.appendChild(toggle);
-
-      var chaptersWrap = el("ul", { class: "pillar-chapters" + (containsActive ? " expanded" : "") });
-
-      pillar.chapters.forEach(function (chapter) {
-        var cLi = el("li");
-        if (chapter.path) {
-          var a = el("a", { href: resolveHref(currentDir, chapter.path) }, chapter.label);
-          if (chapter.id === activeId) a.setAttribute("class", "active");
-          cLi.appendChild(a);
-        } else {
-          cLi.setAttribute("class", "pillar-note");
-          cLi.appendChild(document.createTextNode(chapter.label + " "));
-          cLi.appendChild(el("span", { class: "toc-pending" }, chapter.pending || "(coming soon)"));
-        }
-        chaptersWrap.appendChild(cLi);
-      });
-
-      groupLi.appendChild(chaptersWrap);
-      ul.appendChild(groupLi);
-
-      toggle.addEventListener("click", function () {
-        var expanded = toggle.getAttribute("aria-expanded") === "true";
-        toggle.setAttribute("aria-expanded", expanded ? "false" : "true");
-        chaptersWrap.classList.toggle("expanded", !expanded);
-      });
+      renderToggleGroup(ul, pillar, currentDir, activeId);
     });
 
     nav.appendChild(ul);
