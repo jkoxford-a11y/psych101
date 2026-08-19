@@ -669,6 +669,17 @@ body.sidebar-collapsed .chapter-figure.expandable:not(.no-expand).is-expanded {
   box-shadow: 0 1px 4px rgba(0,0,0,0.10);
 }
 
+.cover-hero figcaption {
+  margin-top: 0.75rem;
+  font-family: var(--font-ui);
+  font-size: 0.85rem;
+  color: var(--color-muted);
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.5;
+}
+
 .sr-only {
   position: absolute;
   width: 1px;
